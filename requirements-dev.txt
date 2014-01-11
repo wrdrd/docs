@@ -1,0 +1,1 @@
+-e git+https://github.com/amoffat/sh#egg=sh
