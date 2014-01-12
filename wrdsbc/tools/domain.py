@@ -61,6 +61,9 @@ def dig_dnskey(zone):
 
 
 def check_google_mx(domain):
+    """
+    https://support.google.com/a/topic/2716885?hl=en&ref_topic=2426592
+    """
     output = sh.dig(domain, "mx", "+short").rstrip()
     log.debug(output)
     result = None
@@ -79,6 +82,9 @@ def check_google_mx(domain):
 
 
 def check_google_spf(domain):
+    """
+    https://support.google.com/a/answer/178723?hl=en
+    """
     output = sh.dig(domain, "txt", "+short").rstrip()
     log.debug(output)
     expected = u"v=spf1 include:_spf.google.com ~all"
