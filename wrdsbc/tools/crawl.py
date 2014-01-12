@@ -11,15 +11,17 @@ pip install requests beautifulsoup4
 
 """
 
+import StringIO
 import datetime
+import functools
 import itertools
 import logging
 import sys
+import urlparse
 from collections import Counter
 from collections import OrderedDict
 from collections import defaultdict
 from collections import namedtuple
-from pprint import pformat
 
 import bs4
 import nltk
@@ -188,6 +190,9 @@ class ResultStore(object):
     def __setitem__(self, k, v):
         return self.db.__setitem__(k, v)
 
+    def itervalues(self):
+        return self.db.itervalues()
+
 
 def expand_link(_src, _url):
     src = urlobject.URLObject(_src)
@@ -208,65 +213,57 @@ def strip_fragment(url):
     return unicode(url.without_fragment())
 
 
-def filter_link(url, domain):
-    if url.startswith(domain):
-        return True
-    return False
+def same_netloc(_url, _domain):
+    url = urlparse.urlsplit(_url)
+    dom = urlparse.urlsplit(_domain)
+    return url.netloc == dom.netloc
 
 
-def crawl_url(start_url):
+def crawl_url(start_url, output=sys.stdout):
     queue = URLCrawlQueue()
 
     queue.push(
         CrawlRequest(start_url, start_url, current_datetime()))
 
     crawled = ResultStore()
-    links = list()
-    images = list()
-    csses = list()
-    jses = list()
-    keywords = list()
 
     while queue.count():  # TODO
         crawl_req = queue.pop()
+        url = crawl_req.url
         log.info("Fetching URL: %s" % str(crawl_req))
         crawl_status = {
             'crawl_req': crawl_req,
-            'status': 'pending',
         }
 
         try:
-            resp = requests.get(crawl_req.url)
+            resp = requests.get(url)
         except Exception as e:
             log.info("Crawl ERROR: %r (%r)" % (crawl_req, str(e)))
             queue.error(crawl_req)
             crawl_status.update(
                 {'status': 'ERROR',
                  'error': str(e)})
-            crawled[crawl_req.url] = crawl_status
+            crawled[url] = crawl_status
             continue
 
         crawl_status.update({
-            'status': 'fetched',
+            'status_date': current_datetime(),
             'status_code': resp.status_code,
             'status_reason': resp.reason
         })
 
         if resp.status_code != 200:
-            crawled[crawl_req.url] = crawl_status
+            crawled[url] = crawl_status
             continue
 
         bs = bs4.BeautifulSoup(resp.content)
 
-        url = crawl_req.url
         _links = extract_links(url, bs)
         _links = list(_links)
 
-        crawled[crawl_req.url] = crawl_status
-
         for link in _links:
             _link = strip_fragment(expand_link(url, link.href))
-            if filter_link(_link, start_url):
+            if same_netloc(_link, start_url):
                 queue.push(CrawlRequest(url, _link, current_datetime()))
             #else:
             #    log.debug("Skipping %r" % _link)
@@ -276,15 +273,17 @@ def crawl_url(start_url):
         _js = extract_js(url, bs)
         _keywords = extract_keywords(url, bs)
 
-        links.extend(_links)
-        images.extend(_images)
-        csses.extend(_css)
-        jses.extend(_js)
-        keywords.append(_keywords)
+        crawl_status.update({
+            'links': _links,
+            'images': _images,
+            'css': _css,
+            'js': _js,
+            'keywords': _keywords})
 
+        crawled[url] = crawl_status
         queue.done(crawl_req)
 
-    return crawled, links, images, csses, jses, keywords
+    return crawled
 
 
 def sum_counters(iterable):
@@ -318,16 +317,16 @@ def frequency_table(counterdict, sort_by='count'):
         yield _tuple
 
 
-def print_frequency_table(frequencies):
+def print_frequency_table(frequencies, output=sys.stdout):
+    write = functools.partial(print, file=output)
     hdrfmt = "    %5s %6s  %s"
-    rowfmt = "    {:.2%} {:-6}  {}"
-    print(hdrfmt % ("pct", "count", "word"))
-    print("   %s" % ('-'*42))
+    rowfmt = u"    {:.2%} {:-6}  {}"
+    write(hdrfmt % ("pct", "count", "word"))
+    write("   %s" % ('-'*42))
     for row in frequencies:
-        #print(row)
         if len(row) != 3:
             raise Exception(row)
-        print(rowfmt.format(*row))
+        write(rowfmt.format(*row))
 
 
 def to_a_search_engine(url):
@@ -339,55 +338,126 @@ def to_a_search_engine(url):
             itertools.chain(*(x.split('\n') for x in lines)))
 
 
-def wrdcrawler(url):
-    crawled, links, images, csses, jses, keywords = crawl_url(url)
-    word_frequencies = sum_counters(k.frequencies for k in keywords)
+def wrdcrawler(url, output=sys.stdout):
+    write = functools.partial(print, file=output)
 
-    print("Crawled pages")
-    print("=============")
+    crawled = crawl_url(url)
+
+    keywords = (page.get('keywords') for page in crawled.itervalues())
+    word_frequencies = sum_counters(k.frequencies for k in keywords if k)
+
+    write("Crawled pages")
+    write("=============")
+    write("")
     for crawled_url in crawled:
-        print(u" * %s" % crawled_url)
-    print("\n")
+        write(u" * %s" % crawled_url)
+    write("\n")
 
 
-    print("To a search engine")
-    print("==================")
-    print("::\n")
+    write("To a search engine")
+    write("==================")
+    write("::\n")
     for line in to_a_search_engine(url):
-        print(u"    %s" % line)
+        write(u"    %s" % line)
+    write("\n")
 
-    print("\n")
-    print("Word Frequencies by count")
-    print("=========================")
-    print("::\n")
-    print_frequency_table(frequency_table(word_frequencies, sort_by='count'))
+    write("Word Frequencies by count")
+    write("=========================")
+    write("::\n")
+    print_frequency_table(
+        frequency_table(word_frequencies, sort_by='count'),
+        output=output)
+    write('\n')
 
-    print('\n')
-    print("Word Frequencies by name")
-    print("========================")
-    print("::\n")
-    print_frequency_table(frequency_table(word_frequencies, sort_by='name'))
+    write("Word Frequencies by name")
+    write("========================")
+    write("::\n")
+    print_frequency_table(
+        frequency_table(word_frequencies, sort_by='name'),
+        output=output)
+    write('\n')
+
+    return output
 
 
 
 import unittest
 class Test_wrdcrawler(unittest.TestCase):
+    def test_crawl_url(self):
+        START_URL = "http://localhost:1000/"
+        output = StringIO.StringIO()
+        crawled = crawl_url(START_URL, output=output)
+        self.assertTrue(crawled)
+
     def test_wrdcrawler(self):
         START_URL="http://localhost:10000/"
-        crawled, links, images, csses, jses, keywords = wrdcrawler(START_URL)
-        self.assertTrue(links)
-        print(pformat(sorted(links)))
-        print(pformat(sorted(images)))
-        print(pformat(sorted(csses)))
-        print(pformat(sorted(jses)))
-        print(pformat(sorted(keywords)))
+        output = StringIO.StringIO()
+        output = wrdcrawler(START_URL, output=output)
+        output.seek(0)
+        print(output.read())
+        self.assertTrue(output)
 
-        keyword_counts = sorted(
-            sum_counters(k.frequencies for k in keywords).iteritems(),
-            key=lambda x: x[1],
-            reverse=True)
+        #print(pformat(keyword_counts))
 
-        print(pformat(keyword_counts))
+    def test_expand_link(self):
+        test_data = (
+            (("http://localhost/index.html", "About.html"),
+             "http://localhost/About.html"),
+            (("http://localhost:8080#Test", "About.html"),
+             "http://localhost:8080/About.html"),
+            (("http://localhost?query", "About.html#Test"),
+             "http://localhost/About.html#Test"),
+        )
+        for input_, expected_output in test_data:
+            output = expand_link(*input_)
+            self.assertEqual(output, expected_output)
+
+    def test_strip_fragment(self):
+        test_data = (
+            ("http://localhost/#test",
+             "http://localhost/"),
+            ("http://localhost:8080?query#Test",
+             "http://localhost:8080?query"),
+            ("http://localhost?query",
+             "http://localhost?query"),
+        )
+        for input_, expected_output in test_data:
+            output = strip_fragment(input_)
+            self.assertEqual(output, expected_output)
+
+    def test_same_netloc(self):
+        test_data = (
+            (("http://localhost/index.html", "http://localhost/"),
+             True),
+            (("http://localhost:8080#Test", "http://localhost/"),
+             False),
+            (("http://localhost:8080#Test", "http://localhost"),
+             False),
+        )
+        for input_, expected_output in test_data:
+            output = same_netloc(*input_)
+            try:
+                self.assertEqual(output, expected_output)
+            except:
+                print(input_)
+                raise
+
+    def test_sum_counters(self):
+        c1 = {'a': 2, 'b': 1, 'c': 3}
+        c2 = {'a': 1, 'b': 2,         'd': 3}
+        csum = sum_counters([c1, c2])
+        for k,v in csum.iteritems():
+            self.assertEqual(v, 3, k)
+
+    def test_tokenize(self):
+        input_ = "d'yer mak'er is a great song, don't you think?"
+        expected_output = [
+            "d'yer", "mak'er", "is", "a", "great", "song", ",",
+            "do",
+            "n't", "you", "think", "?"]
+        output = list(tokenize(input_))
+        self.assertEqual(output, expected_output,
+                         (input_, output, expected_output))
 
 
 def main(*args):
@@ -439,7 +509,7 @@ def main(*args):
     url = args[0]
 
     if opts.crawl:
-        wrdcrawler(url)
+        print(wrdcrawler(url))
 
     if opts.text:
         for line in to_a_search_engine(url):
