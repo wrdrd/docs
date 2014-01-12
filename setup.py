@@ -42,7 +42,8 @@ setup(
     test_suite='tests',
     entry_points={
         'console_scripts': [
-            'domaintool = wrdsbc.tools.domain:main'
+            'domaintool = wrdsbc.tools.domain:main',
+            'crawl = wrdsbc.tools.crawl:main',
         ]
     }
 )
