@@ -17,6 +17,8 @@ if sys.argv[-1] == 'publish':
 readme = open('README.rst').read()
 history = open('HISTORY.rst').read().replace('.. :changelog:', '')
 
+requires = ['sh']
+
 setup(
     name='wrdsbc',
     version='0.1.0',
@@ -30,8 +32,7 @@ setup(
     ],
     package_dir={'wrdsbc': 'wrdsbc'},
     include_package_data=True,
-    install_requires=[
-    ],
+    install_requires=requires,
     license="",
     zip_safe=False,
     keywords='wrdsbc',
@@ -39,4 +40,9 @@ setup(
         'Natural Language :: English',
     ],
     test_suite='tests',
+    entry_points={
+        'console_scripts': [
+            'domaintool = wrdsbc.tools.domain:main'
+        ]
+    }
 )
