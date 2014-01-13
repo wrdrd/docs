@@ -44,6 +44,7 @@ setup(
         'console_scripts': [
             'domaintool = wrdsbc.tools.domain:main',
             'crawl = wrdsbc.tools.crawl:main',
+            'stripsinglehtml = wrdsbc.tools.stripsinglehtml:main',
         ]
     }
 )
