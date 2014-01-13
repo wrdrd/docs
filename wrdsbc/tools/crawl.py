@@ -41,17 +41,19 @@ urllib3log = logging.getLogger('requests.packages.urllib3.connectionpool')
 urllib3log.setLevel(logging.ERROR)
 
 
-Link = namedtuple('Link', ('loc', 'href', 'name', 'target', 'text'))
+Link = namedtuple('Link', ('loc', 'href', 'name', 'target', 'text', 'parent_id'))
 
 def extract_links(url, bs):
     links = bs.findAll('a')
     for l in links:
+        nearest_parent = l.find_parent(attrs={'id': lambda x: bool(x)}).get('id')
         yield Link(
             url,
             l.get('href'),
             l.get('name'),
             l.get('target'),
-            l.text)
+            l.text.strip(),
+            nearest_parent)
 
 
 Image = namedtuple('Image', ('loc', 'src', 'alt', 'height', 'width', 'text'))
