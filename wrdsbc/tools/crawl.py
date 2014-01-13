@@ -481,10 +481,20 @@ def main(*args):
                     help=('Crawl from the specified URL'
                          ' and write a few reports to stdout'))
 
+    prs.add_option('-H', '--html',
+                    dest='html',
+                    action='store_true',
+                    help=('Print the raw HTML of the specified URL'))
+
     prs.add_option('-s', '--text',
                     dest='text',
                     action='store_true',
                     help=('Parse the text out of the specified URL'))
+
+    prs.add_option('-l', '--links', # TODO
+                    dest='links',
+                    action='store_true',
+                    help=('Extract links from the specified URL'))
 
     prs.add_option('-v', '--verbose',
                     dest='verbose',
@@ -510,16 +520,34 @@ def main(*args):
         import unittest
         sys.exit(unittest.main())
 
+
+    if not any((opts.crawl, opts.html, opts.text, opts.links)):
+        prs.print_help()
+        sys.exit(1)
+
     if len(args) != 1:
+        prs.print_help()
         raise Exception("Must specify a URL")
     url = args[0]
 
     if opts.crawl:
         print(wrdcrawler(url))
+        sys.exit(0)
+
+
+    resp = requests.get(url)
+    bs = bs4.BeautifulSoup(resp.content)
+    if opts.html:
+        print(resp.content)
 
     if opts.text:
         for line in to_a_search_engine(url):
             print(line)
+
+    if opts.links:
+        for link in extract_links(url, bs):
+            print(link)
+
 
 if __name__ == "__main__":
     sys.exit(main())
