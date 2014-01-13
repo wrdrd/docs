@@ -212,7 +212,11 @@ def expand_link(_src, _url):
 
 def strip_fragment(url):
     url = urlobject.URLObject(url)
-    return unicode(url.without_fragment())
+    _url = url.without_fragment()
+    if not(unicode(_url)):
+        return u'/'
+    else:
+        return unicode(_url)
 
 
 def same_netloc(_url, _domain):
