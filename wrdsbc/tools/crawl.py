@@ -344,6 +344,85 @@ def to_a_search_engine(url):
             itertools.chain(*(x.split('\n') for x in lines)))
 
 
+def build_dot_graph(url, links, label=None, output=sys.stdout):
+    write = functools.partial(print, file=output)
+
+    import cgi
+    links = list( itertools.chain(*links) )
+    def gvescape(link):
+        _url = urlobject.URLObject(link)
+        urlstr = None
+        if same_netloc(url, link):
+            urlstr = unicode(_url.with_scheme('').with_netloc(''))
+        else:
+            urlstr = unicode(_url)
+
+        return u'"%s"' % cgi.escape(urlstr, quote=True)
+
+    nodes = OrderedDict()
+    for link in links:
+        if link.loc not in nodes:
+            nodes[link.loc] = {
+                'URL': expand_link(url, link.loc)} # TODO
+        link_href = strip_fragment(link.href)
+        if link_href not in nodes:
+            nodes[link_href] = {
+                'URL': expand_link(url, link_href)} # TODO
+
+    write("digraph link_structure {")
+    # This is why we use libraries.
+    if label:
+        write('  graph [ label="%s" ];' % label)
+
+    write("    edge [ weight=1.2 ] ;")
+    write("    node [ nodesep=0.75 ranksep=0.75 ];")
+    #write('    size="7.75,10.25" ;')  # TODO: 8.5x11
+    #write("    ranksep=2 ;")
+    write('    ratio="compress" ;')
+
+
+    if 0:
+        for key, _links in itertools.groupby(links, lambda x: x.parent_id):
+            label = key and key.replace('-','_') or '_'
+            write(u"  subgraph %s {" % label)
+            #style=filled fillcolor=lightgrey ] %s ;" % (label))
+            #write(u'  { rank=same; %s ; }' % (
+            #    u' '.join((gvescape(strip_fragment(link.href))
+            #        for link in _links))))
+            for link in _links:
+                write(u'    node [ URL=%s label=%s  ] %s ;' % (
+                    gvescape(node.get('URL')),
+                    gvescape(loc),
+                    gvescape(link.href)))
+                write(u'  %s -> %s [ label="%s" bgcolor=lightgrey ] ;' % (
+                    gvescape(label),
+                    gvescape(expand_link(url, strip_fragment(link.href)),
+                    cgi.escape(label, quote=True)
+                )))
+            write(u"  }")
+
+
+
+    for loc, node in nodes.iteritems():
+        write('  node [ URL=%s label=%s  ] %s ;' % (
+            gvescape(node.get('URL')),
+            gvescape(loc),
+            gvescape(loc)))
+
+
+    for link in links:
+        write(u'  %s -> %s [ label="%s" ] ;' % (
+            gvescape(link.loc),
+            gvescape(strip_fragment(link.href)),
+            cgi.escape(link.text, quote=True)
+        ))
+
+    write("}")
+
+    return output
+
+
+
 def wrdcrawler(url, output=sys.stdout):
     write = functools.partial(print, file=output)
 
@@ -359,6 +438,17 @@ def wrdcrawler(url, output=sys.stdout):
         write(u" * %s" % crawled_url)
     write("\n")
 
+
+    links = (page.get('links') for page in crawled.itervalues())
+    write("Page Graph")
+    write("==========")
+    build_dot_graph( # TODO: indentation
+        url,
+        (l for l in links if l),
+        label=url,
+        output=output
+    )
+    write("\n")
 
     write("To a search engine")
     write("==================")
@@ -465,6 +555,15 @@ class Test_wrdcrawler(unittest.TestCase):
         self.assertEqual(output, expected_output,
                          (input_, output, expected_output))
 
+    def test_other(self): # TODO
+        import requests, bs4, itertools
+        url = 'http://localhost:8181'
+        bs = bs4.BeautifulSoup(requests.get(url).content)
+        links = list(extract_links(url, bs))
+        for key, links in itertools.groupby(links, lambda x: x.parent_id):
+            print("## %s" % key)
+            print(list(links))
+
 
 def main(*args):
     import logging
@@ -496,6 +595,12 @@ def main(*args):
                     action='store_true',
                     help=('Extract links from the specified URL'))
 
+    prs.add_option('-d', '--dotgraph',
+                    dest='dotgraph',
+                    action='store_true',
+                    help=('Draw DOT graph from links within the page at '
+                          'the specified URL'))
+
     prs.add_option('-v', '--verbose',
                     dest='verbose',
                     action='store_true',)
@@ -521,7 +626,7 @@ def main(*args):
         sys.exit(unittest.main())
 
 
-    if not any((opts.crawl, opts.html, opts.text, opts.links)):
+    if not any((opts.crawl, opts.html, opts.text, opts.links, opts.dotgraph)):
         prs.print_help()
         sys.exit(1)
 
@@ -547,6 +652,10 @@ def main(*args):
     if opts.links:
         for link in extract_links(url, bs):
             print(link)
+
+    if opts.dotgraph:
+        # TODO
+        build_dot_graph(url, [extract_links(url, bs), ], label=url)
 
 
 if __name__ == "__main__":
