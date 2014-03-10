@@ -3,4 +3,5 @@ requests
 beautifulsoup4
 URLObject
 NLTK
-
+networkx
+pydot
