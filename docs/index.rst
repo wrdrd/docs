@@ -12,7 +12,10 @@ Contents:
    :maxdepth: 2
 
    readme
-   process
+   collaboration-plan
+   business
+   webdev
+   systems
    installation
    usage
    authors
