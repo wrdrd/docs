@@ -221,7 +221,7 @@ Photography
 * Product photos
 
 
-TODO: photography guidelines (closeups, angles, exposure)
+.. TODO: photography guidelines (closeups, angles, exposure)
 
 
 Layout Graphics

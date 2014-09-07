@@ -6,7 +6,7 @@
 wrd r&d documentation
 =======================
 
-| documentation: https://wrd.github.io/docs/
+| docs: https://wrd.github.io/docs/
 | source: https://github.com/wrd/docs
 
 
@@ -15,10 +15,10 @@ contents:
 .. toctree::
    :maxdepth: 4
 
+   consulting/small-business
+   consulting/web-development
+   consulting/information-systems
    consulting/collaboration-plan
-   consulting/business
-   consulting/webdev
-   consulting/systems
    wrdsbc/readme
    wrdsbc/installation
    wrdsbc/usage
