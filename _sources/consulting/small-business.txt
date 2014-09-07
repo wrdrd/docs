@@ -288,17 +288,17 @@ Restaurant
 
 * Online Reviews
 
+  * Zagat
+
   * Yelp
 
     * Photos
 
   * UrbanSpoon
 
-    * TODO
+    * Photos
 
 
 
-TODO
-======
-compression, quality control, dynamic webapps, web service integration
+.. TODO: compression, quality control, dynamic webapps, web service integration
 
