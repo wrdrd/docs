@@ -54,8 +54,4 @@ div.tip p.admonition-title:before {
 @media (min-width: 768px) {
   
   
-  div.container {
-    width: 768px;
-  }
-  
 }
