@@ -11,15 +11,15 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   readme
-   collaboration-plan
-   business
-   webdev
-   systems
-   installation
-   usage
-   authors
-   history
+   consulting/collaboration-plan
+   consulting/business
+   consulting/webdev
+   consulting/systems
+   wrdsbc/readme
+   wrdsbc/installation
+   wrdsbc/usage
+   wrdsbc/authors
+   wrdsbc/history
 
 Indices and tables
 ==================

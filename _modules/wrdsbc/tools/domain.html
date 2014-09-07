@@ -146,33 +146,33 @@
 
 <span class="n">log</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">()</span>
 
-<div class="viewcode-block" id="nslookup"><a class="viewcode-back" href="../../../wrdsbc.tools.html#wrdsbc.tools.domain.nslookup">[docs]</a><span class="k">def</span> <span class="nf">nslookup</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
+<div class="viewcode-block" id="nslookup"><a class="viewcode-back" href="../../../wrdsbc/wrdsbc.tools.html#wrdsbc.tools.domain.nslookup">[docs]</a><span class="k">def</span> <span class="nf">nslookup</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">domain</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s">&#39;.&#39;</span><span class="p">):</span>
         <span class="n">domain</span> <span class="o">=</span> <span class="n">domain</span> <span class="o">+</span> <span class="s">&#39;.&#39;</span>
     <span class="n">output</span> <span class="o">=</span> <span class="n">sh</span><span class="o">.</span><span class="n">nslookup</span><span class="p">(</span><span class="n">domain</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">output</span>
 </div>
-<div class="viewcode-block" id="whois"><a class="viewcode-back" href="../../../wrdsbc.tools.html#wrdsbc.tools.domain.whois">[docs]</a><span class="k">def</span> <span class="nf">whois</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
+<div class="viewcode-block" id="whois"><a class="viewcode-back" href="../../../wrdsbc/wrdsbc.tools.html#wrdsbc.tools.domain.whois">[docs]</a><span class="k">def</span> <span class="nf">whois</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
     <span class="n">output</span> <span class="o">=</span> <span class="n">sh</span><span class="o">.</span><span class="n">whois</span><span class="p">(</span><span class="n">domain</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">output</span>
 
 </div>
-<div class="viewcode-block" id="dig_all"><a class="viewcode-back" href="../../../wrdsbc.tools.html#wrdsbc.tools.domain.dig_all">[docs]</a><span class="k">def</span> <span class="nf">dig_all</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
+<div class="viewcode-block" id="dig_all"><a class="viewcode-back" href="../../../wrdsbc/wrdsbc.tools.html#wrdsbc.tools.domain.dig_all">[docs]</a><span class="k">def</span> <span class="nf">dig_all</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
     <span class="n">output</span> <span class="o">=</span> <span class="n">sh</span><span class="o">.</span><span class="n">dig</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="s">&quot;+cmd&quot;</span><span class="p">,</span> <span class="s">&quot;+nocomments&quot;</span><span class="p">,</span> <span class="s">&quot;+question&quot;</span><span class="p">,</span> <span class="s">&quot;+noidentify&quot;</span><span class="p">,</span><span class="s">&quot;+nostats&quot;</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">output</span>
 
 </div>
-<div class="viewcode-block" id="dig_ns"><a class="viewcode-back" href="../../../wrdsbc.tools.html#wrdsbc.tools.domain.dig_ns">[docs]</a><span class="k">def</span> <span class="nf">dig_ns</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
+<div class="viewcode-block" id="dig_ns"><a class="viewcode-back" href="../../../wrdsbc/wrdsbc.tools.html#wrdsbc.tools.domain.dig_ns">[docs]</a><span class="k">def</span> <span class="nf">dig_ns</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
     <span class="n">output</span> <span class="o">=</span> <span class="n">sh</span><span class="o">.</span><span class="n">dig</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="s">&quot;ns&quot;</span><span class="p">,</span> <span class="s">&quot;+cmd&quot;</span><span class="p">,</span> <span class="s">&quot;+nocomments&quot;</span><span class="p">,</span> <span class="s">&quot;+question&quot;</span><span class="p">,</span> <span class="s">&quot;+noidentify&quot;</span><span class="p">,</span><span class="s">&quot;+nostats&quot;</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">output</span>
 
 </div>
-<div class="viewcode-block" id="dig_txt"><a class="viewcode-back" href="../../../wrdsbc.tools.html#wrdsbc.tools.domain.dig_txt">[docs]</a><span class="k">def</span> <span class="nf">dig_txt</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
+<div class="viewcode-block" id="dig_txt"><a class="viewcode-back" href="../../../wrdsbc/wrdsbc.tools.html#wrdsbc.tools.domain.dig_txt">[docs]</a><span class="k">def</span> <span class="nf">dig_txt</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
     <span class="n">output</span> <span class="o">=</span> <span class="n">sh</span><span class="o">.</span><span class="n">dig</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="s">&quot;txt&quot;</span><span class="p">,</span> <span class="s">&quot;+cmd&quot;</span><span class="p">,</span> <span class="s">&quot;+nocomments&quot;</span><span class="p">,</span> <span class="s">&quot;+question&quot;</span><span class="p">,</span> <span class="s">&quot;+noidentify&quot;</span><span class="p">,</span><span class="s">&quot;+nostats&quot;</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">output</span>
 
 </div>
-<div class="viewcode-block" id="dig_spf"><a class="viewcode-back" href="../../../wrdsbc.tools.html#wrdsbc.tools.domain.dig_spf">[docs]</a><span class="k">def</span> <span class="nf">dig_spf</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
+<div class="viewcode-block" id="dig_spf"><a class="viewcode-back" href="../../../wrdsbc/wrdsbc.tools.html#wrdsbc.tools.domain.dig_spf">[docs]</a><span class="k">def</span> <span class="nf">dig_spf</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    https://en.wikipedia.org/wiki/Sender_Policy_Framework</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -180,7 +180,7 @@
     <span class="k">return</span> <span class="n">output</span>
 
 </div>
-<div class="viewcode-block" id="dig_mx"><a class="viewcode-back" href="../../../wrdsbc.tools.html#wrdsbc.tools.domain.dig_mx">[docs]</a><span class="k">def</span> <span class="nf">dig_mx</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
+<div class="viewcode-block" id="dig_mx"><a class="viewcode-back" href="../../../wrdsbc/wrdsbc.tools.html#wrdsbc.tools.domain.dig_mx">[docs]</a><span class="k">def</span> <span class="nf">dig_mx</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    https://en.wikipedia.org/wiki/MX_record</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -188,12 +188,12 @@
     <span class="k">return</span> <span class="n">mx_output</span>
 
 </div>
-<div class="viewcode-block" id="dig_dnskey"><a class="viewcode-back" href="../../../wrdsbc.tools.html#wrdsbc.tools.domain.dig_dnskey">[docs]</a><span class="k">def</span> <span class="nf">dig_dnskey</span><span class="p">(</span><span class="n">zone</span><span class="p">):</span>
+<div class="viewcode-block" id="dig_dnskey"><a class="viewcode-back" href="../../../wrdsbc/wrdsbc.tools.html#wrdsbc.tools.domain.dig_dnskey">[docs]</a><span class="k">def</span> <span class="nf">dig_dnskey</span><span class="p">(</span><span class="n">zone</span><span class="p">):</span>
     <span class="n">output</span> <span class="o">=</span> <span class="n">sh</span><span class="o">.</span><span class="n">dig</span><span class="p">(</span><span class="s">&#39;+dnssec&#39;</span><span class="p">,</span> <span class="n">zone</span><span class="p">,</span> <span class="s">&#39;dnskey&#39;</span><span class="p">,</span> <span class="s">&quot;+cmd&quot;</span><span class="p">,</span> <span class="s">&quot;+nocomments&quot;</span><span class="p">,</span> <span class="s">&quot;+question&quot;</span><span class="p">,</span> <span class="s">&quot;+noidentify&quot;</span><span class="p">,</span><span class="s">&quot;+nostats&quot;</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">output</span>
 
 </div>
-<div class="viewcode-block" id="check_google_mx"><a class="viewcode-back" href="../../../wrdsbc.tools.html#wrdsbc.tools.domain.check_google_mx">[docs]</a><span class="k">def</span> <span class="nf">check_google_mx</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
+<div class="viewcode-block" id="check_google_mx"><a class="viewcode-back" href="../../../wrdsbc/wrdsbc.tools.html#wrdsbc.tools.domain.check_google_mx">[docs]</a><span class="k">def</span> <span class="nf">check_google_mx</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    https://support.google.com/a/topic/2716885?hl=en&amp;ref_topic=2426592</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -214,7 +214,7 @@
     <span class="k">return</span> <span class="n">result</span>
 
 </div>
-<div class="viewcode-block" id="check_google_spf"><a class="viewcode-back" href="../../../wrdsbc.tools.html#wrdsbc.tools.domain.check_google_spf">[docs]</a><span class="k">def</span> <span class="nf">check_google_spf</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
+<div class="viewcode-block" id="check_google_spf"><a class="viewcode-back" href="../../../wrdsbc/wrdsbc.tools.html#wrdsbc.tools.domain.check_google_spf">[docs]</a><span class="k">def</span> <span class="nf">check_google_spf</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    https://support.google.com/a/answer/178723?hl=en</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -229,7 +229,7 @@
     <span class="k">return</span> <span class="bp">False</span>
 
 </div>
-<div class="viewcode-block" id="domain_tools"><a class="viewcode-back" href="../../../wrdsbc.tools.html#wrdsbc.tools.domain.domain_tools">[docs]</a><span class="k">def</span> <span class="nf">domain_tools</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
+<div class="viewcode-block" id="domain_tools"><a class="viewcode-back" href="../../../wrdsbc/wrdsbc.tools.html#wrdsbc.tools.domain.domain_tools">[docs]</a><span class="k">def</span> <span class="nf">domain_tools</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    mainfunc</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -252,7 +252,7 @@
     <span class="k">return</span> <span class="mi">0</span>
 
 </div>
-<div class="viewcode-block" id="google_domain_tools"><a class="viewcode-back" href="../../../wrdsbc.tools.html#wrdsbc.tools.domain.google_domain_tools">[docs]</a><span class="k">def</span> <span class="nf">google_domain_tools</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
+<div class="viewcode-block" id="google_domain_tools"><a class="viewcode-back" href="../../../wrdsbc/wrdsbc.tools.html#wrdsbc.tools.domain.google_domain_tools">[docs]</a><span class="k">def</span> <span class="nf">google_domain_tools</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
     <span class="n">mx</span> <span class="o">=</span> <span class="n">check_google_mx</span><span class="p">(</span><span class="n">domain</span><span class="p">)</span>
     <span class="n">spf</span> <span class="o">=</span> <span class="n">check_google_spf</span><span class="p">(</span><span class="n">domain</span><span class="p">)</span>
     <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="ow">not</span> <span class="p">(</span><span class="n">mx</span> <span class="ow">and</span> <span class="n">spf</span><span class="p">))</span>
@@ -264,7 +264,7 @@
 <span class="c">#        pass</span>
 
 </div>
-<div class="viewcode-block" id="main"><a class="viewcode-back" href="../../../wrdsbc.tools.html#wrdsbc.tools.domain.main">[docs]</a><span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
+<div class="viewcode-block" id="main"><a class="viewcode-back" href="../../../wrdsbc/wrdsbc.tools.html#wrdsbc.tools.domain.main">[docs]</a><span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
     <span class="kn">import</span> <span class="nn">logging</span>
     <span class="kn">import</span> <span class="nn">optparse</span>
     <span class="kn">import</span> <span class="nn">sys</span>
