@@ -6,10 +6,14 @@
 wrd r&d documentation
 =======================
 
+| documentation: https://wrd.github.io/docs/
+| source: https://github.com/wrd/docs
+
+
 contents:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
 
    consulting/collaboration-plan
    consulting/business
