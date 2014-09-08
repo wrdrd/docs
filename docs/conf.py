@@ -56,8 +56,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'WRD Small Business Consulting'
-copyright = u'2014, WRD R&D'
+project = u'wrd r&d documentation'
+copyright = u'2014 wrd r&d'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -194,7 +194,7 @@ html_static_path = ['_static']
 #html_show_sourcelink = True
 
 # If true, "Created using Sphinx" is shown in the HTML footer. Default is True.
-#html_show_sphinx = True
+html_show_sphinx = False
 
 # If true, "(C) Copyright ..." is shown in the HTML footer. Default is True.
 #html_show_copyright = True
@@ -258,7 +258,7 @@ latex_documents = [
 # (source start file, name, description, authors, manual section).
 man_pages = [
     ('index', 'wrdrd', u'wrd r&d documentation',
-     [u'WRD R&D'], 1)
+     [u'wrd r&d'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -272,8 +272,8 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
   ('index', 'wrdrd', u'wrd r&d documentation',
-   u'WRD R&D', 'wrdrd', 'wrd r&d documentation',
-   'WRD R&D'),
+   u'wrd r&d', 'wrdrd', 'wrd r&d documentation',
+   'wrd r&d'),
 ]
 
 # Documents to append as an appendix to all manuals.
