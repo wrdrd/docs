@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    
+    <title>Information Systems &mdash; wrd r&amp;d docs</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    
+<link rel="stylesheet" href="../_static/css/basicstrap-base.css" type="text/css" />
+<link rel="stylesheet" href="../_static/css/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" href="../_static/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="../_static/css/font-awesome-ie7.min.css">
+<![endif]-->
+
+<style type="text/css">
+  body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+}
+</style>
+
+<link rel="stylesheet" href="../_static/basicstrap.css" type="text/css" />
+<link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+<link rel="stylesheet" href="../_static/css/bootstrap-responsive.min.css" type="text/css" />
+    
+<script type="text/javascript">
+  var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:    '../',
+            VERSION:     '0.1.0',
+            COLLAPSE_INDEX: false,
+            FILE_SUFFIX: '.html',
+            HAS_SOURCE:  true
+  };
+</script>
+<script type="text/javascript" src="../_static/js/jquery.min.js"></script>
+<script type="text/javascript" src="../_static/underscore.js"></script>
+<script type="text/javascript" src="../_static/doctools.js"></script>
+<script type="text/javascript" src="../_static/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.show-sidebar').click(function(e) {
+       e.preventDefault();
+       if ($(".show-sidebar").html() == "Open Table Of Contents") {
+          $('.for-mobile').removeClass('hidden-phone');
+          $(".show-sidebar").html("Close Table Of Contents");
+       } else {
+          $(".show-sidebar").html("Open Table Of Contents");
+       }
+    });
+  });
+  $(window).load(function () {
+    /*
+
+     * Scroll the window to avoid the topnav bar
+     * https://github.com/twitter/bootstrap/issues/1768
+     */
+    if ($(".navbar.navbar-fixed-top").length > 0) {
+      // var navHeight = $(".navbar").height(),
+      var navHeight = 40,
+        shiftWindow = function() { scrollBy(0, -navHeight - 10); };
+
+      if (location.hash) {
+        setTimeout(shiftWindow, 1);
+      }
+
+      window.addEventListener("hashchange", shiftWindow);
+    }
+  });
+</script>
+    <link rel="search" type="application/opensearchdescription+xml"
+    title="Search within wrd r&amp;d docs"
+    href="../_static/opensearch.xml"/>
+    <link rel="top" title="wrd r&amp;d docs" href="../index.html" />
+    <link rel="next" title="Collaboration Plan" href="collaboration-plan.html" />
+    <link rel="prev" title="Software Development" href="software-development.html" /> 
+  </head>
+  <body role="document">
+    <div class="navbar navbar-fixed-top " role="navigation" aria-label="top navigation">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <div role="banner">
+            <a class="brand" href="../index.html">wrd r&amp;d docs</a>
+          </div>
+          <div class="nav-collapse collapse">
+            <ul class="nav pull-right">
+              
+                <li>
+                <a href="../genindex.html" title="General Index" accesskey="I">index</a>
+                </li>
+                <li>
+                <a href="../py-modindex.html" title="Python Module Index" >modules</a>
+                </li>
+                <li>
+                <a href="collaboration-plan.html" title="Collaboration Plan" accesskey="N">next</a>
+                </li>
+                <li>
+                <a href="software-development.html" title="Software Development" accesskey="P">previous</a>
+                </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- container -->
+    <div class="container-fluid">
+
+
+      
+      <div class="row-fluid hidden-desktop hidden-tablet">
+      
+<div class="span5 ">
+  <a class="visible-phone btn btn-small show-sidebar" data-toggle="collapse" data-target=".for-mobile">Open Table Of Contents</a>
+  <div class="for-mobile sidebar hidden-phone" role="navigation" aria-label="main navigation">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Information Systems</a><ul>
+<li><a class="reference internal" href="#criteria">Criteria</a><ul>
+<li><a class="reference internal" href="#roi">ROI</a></li>
+<li><a class="reference internal" href="#need-want">Need / Want</a></li>
+<li><a class="reference internal" href="#maintainability">Maintainability</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#clouds">Clouds</a><ul>
+<li><a class="reference internal" href="#software-as-a-service">Software-as-a-Service</a></li>
+<li><a class="reference internal" href="#platform-as-a-service">Platform-as-a-Service</a></li>
+<li><a class="reference internal" href="#infrastructure-as-a-service">Infrastructure-as-a-Service</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#information-security">Information Security</a><ul>
+<li><a class="reference internal" href="#confidentiality">Confidentiality</a></li>
+<li><a class="reference internal" href="#integrity">Integrity</a></li>
+<li><a class="reference internal" href="#availability">Availability</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#business-continuity">Business Continuity</a><ul>
+<li><a class="reference internal" href="#backups">Backups</a></li>
+<li><a class="reference internal" href="#reliability">Reliability</a></li>
+<li><a class="reference internal" href="#scenarios">Scenarios</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#business-systems">Business Systems</a><ul>
+<li><a class="reference internal" href="#google-apps">Google Apps</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#handling-money">Handling Money</a><ul>
+<li><a class="reference internal" href="#accounting">Accounting</a><ul>
+<li><a class="reference internal" href="#quickbooks">QuickBooks</a></li>
+<li><a class="reference internal" href="#freshbooks">Freshbooks</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#payments">Payments</a><ul>
+<li><a class="reference internal" href="#google-payments">Google Payments</a></li>
+<li><a class="reference internal" href="#paypal">Paypal</a></li>
+<li><a class="reference internal" href="#square">Square</a></li>
+<li><a class="reference internal" href="#apple">Apple</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sales">Sales</a><ul>
+<li><a class="reference internal" href="#customer-relationship-management-crm">Customer Relationship Management (CRM)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#business-intelligence">Business Intelligence</a><ul>
+<li><a class="reference internal" href="#strategy">Strategy</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="software-development.html"
+                        title="previous chapter">Software Development</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="collaboration-plan.html"
+                        title="next chapter">Collaboration Plan</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/consulting/information-systems.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" role="search">
+  <h3>Quick search</h3>
+  <form class="search form-search" action="../search.html" method="get">
+      <div class="input-append">
+        <input type="text" class="search-query" name="q">
+        <input type="submit" class="btn" value="Go" />
+      </div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+  </div>
+</div>
+      </div>
+      
+
+      <!-- row -->
+      <div class="row-fluid">
+        
+        
+
+        <div class="span7">
+          <div class="document" role="main">
+            <div class="documentwrapper">
+              <div class="bodywrapper">
+                <div class="body">
+                  
+  <div class="section" id="information-systems">
+<h1>Information Systems<a class="headerlink" href="#information-systems" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Information_systems#Types_of_information_systems">https://en.wikipedia.org/wiki/Information_systems#Types_of_information_systems</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/List_of_collaborative_software">https://en.wikipedia.org/wiki/List_of_collaborative_software</a></p>
+<div class="section" id="criteria">
+<h2>Criteria<a class="headerlink" href="#criteria" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>ROI (Returns/Cost :: Output/Input)</li>
+<li>Need / Want</li>
+<li>Maintainability</li>
+</ul>
+<div class="section" id="roi">
+<h3>ROI<a class="headerlink" href="#roi" title="Permalink to this headline">¶</a></h3>
+<p>The investment should be justified by gains in productivity / efficiency.</p>
+<p>Productivity / Efficiency:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">output</span> <span class="o">/</span> <span class="nb">input</span>
+</pre></div>
+</div>
+<p>Hours, Units, Dollars</p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Productivity">https://en.wikipedia.org/wiki/Productivity</a></p>
+</div>
+<div class="section" id="need-want">
+<h3>Need / Want<a class="headerlink" href="#need-want" title="Permalink to this headline">¶</a></h3>
+<p>Communication and collaboration are essential to success.</p>
+</div>
+<div class="section" id="maintainability">
+<h3>Maintainability<a class="headerlink" href="#maintainability" title="Permalink to this headline">¶</a></h3>
+<p>Choosing Components</p>
+<ul class="simple">
+<li>In n-years, will I be able to find someone who can maintain this?<ul>
+<li>Locally? Globally?</li>
+<li>Job listing keyword search [rough approximation]</li>
+<li>Job board search</li>
+</ul>
+</li>
+<li>In n-years, will there still be a community supporting these
+components?</li>
+<li>Is it open source? How do we find/pay/train someone to understand
+how it works?</li>
+<li>Is there a <em>non-profit</em> software foundation behind this component?</li>
+</ul>
+</div>
+</div>
+<div class="section" id="clouds">
+<h2>Clouds<a class="headerlink" href="#clouds" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Cloud_computing">https://en.wikipedia.org/wiki/Cloud_computing</a></p>
+<p>Why would I want to run my business &#8220;in the cloud&#8221;?</p>
+<p>What are our core competencies?</p>
+<p>Do we need/want to run this all ourselves?</p>
+<p>Would it be more safe/secure to outsource the management of these
+business systems?</p>
+<p>Application layers:</p>
+<ul class="simple">
+<li>Application</li>
+<li>Platform (Database, APIs)
+* # TODO: define API (OS API, Infrastructure API, Web API, Language API)</li>
+<li>Infrastructure (Physical and Virtual Servers)</li>
+</ul>
+<div class="section" id="software-as-a-service">
+<h3>Software-as-a-Service<a class="headerlink" href="#software-as-a-service" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Software_as_a_service">https://en.wikipedia.org/wiki/Software_as_a_service</a></p>
+<p>Example: GMail is software hosted as a service on Google&#8217;s
+infrastructure; there&#8217;s no need to internally pay for and manage servers in a
+datacenter anywhere.</p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Application_service_provider">https://en.wikipedia.org/wiki/Application_service_provider</a></p>
+</div>
+<div class="section" id="platform-as-a-service">
+<h3>Platform-as-a-Service<a class="headerlink" href="#platform-as-a-service" title="Permalink to this headline">¶</a></h3>
+<p>Platform-as-a-Service providers abstract a bit further in that they
+provide an implementation of platform APIs on top of which applications
+can be developed and hosted.</p>
+<p>Heroku, AppEngine and AppScale are examples of Platforms-as-a-Service.</p>
+</div>
+<div class="section" id="infrastructure-as-a-service">
+<h3>Infrastructure-as-a-Service<a class="headerlink" href="#infrastructure-as-a-service" title="Permalink to this headline">¶</a></h3>
+<p>Infrastructure-as-a-Service providers provide a bit more than regular
+hosting services in that they offer something like virtual datacenter
+resources.</p>
+<p>Amazon Web Services (AWS), Rackspace, and Google Compute Engine
+are examples of
+Infrastructure-as-a-Service: they provide servers, networks, and
+redundant storage systems on top of which IT systems can be
+developed, tested, and deployed.</p>
+</div>
+</div>
+<div class="section" id="information-security">
+<h2>Information Security<a class="headerlink" href="#information-security" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Information_security">https://en.wikipedia.org/wiki/Information_security</a></p>
+<p>Managing risk and uncertainty.</p>
+<p>Standards:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Statement_on_Auditing_Standards_No._70:_Service_Organizations">https://en.wikipedia.org/wiki/Statement_on_Auditing_Standards_No._70:_Service_Organizations</a></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Evaluation_Assurance_Level">https://en.wikipedia.org/wiki/Evaluation_Assurance_Level</a></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Cloud_computing_security">https://en.wikipedia.org/wiki/Cloud_computing_security</a></li>
+</ul>
+<div class="section" id="confidentiality">
+<h3>Confidentiality<a class="headerlink" href="#confidentiality" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Confidentiality">https://en.wikipedia.org/wiki/Confidentiality</a></p>
+</div>
+<div class="section" id="integrity">
+<h3>Integrity<a class="headerlink" href="#integrity" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Data_integrity">https://en.wikipedia.org/wiki/Data_integrity</a></p>
+</div>
+<div class="section" id="availability">
+<h3>Availability<a class="headerlink" href="#availability" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Availability">https://en.wikipedia.org/wiki/Availability</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Service-level_agreement">https://en.wikipedia.org/wiki/Service-level_agreement</a></p>
+</div>
+</div>
+<div class="section" id="business-continuity">
+<h2>Business Continuity<a class="headerlink" href="#business-continuity" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Business_continuity">https://en.wikipedia.org/wiki/Business_continuity</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Business_continuity_planning">https://en.wikipedia.org/wiki/Business_continuity_planning</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Disaster_recovery">https://en.wikipedia.org/wiki/Disaster_recovery</a></p>
+<p>See <a class="reference internal" href="#information-security">Information Security</a> (<a class="reference internal" href="#availability">Availability</a>)</p>
+<div class="section" id="backups">
+<h3>Backups<a class="headerlink" href="#backups" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Backup">https://en.wikipedia.org/wiki/Backup</a></p>
+</div>
+<div class="section" id="reliability">
+<h3>Reliability<a class="headerlink" href="#reliability" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Reliability_engineering">https://en.wikipedia.org/wiki/Reliability_engineering</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Redundancy_(engineering">https://en.wikipedia.org/wiki/Redundancy_(engineering</a>)</p>
+</div>
+<div class="section" id="scenarios">
+<h3>Scenarios<a class="headerlink" href="#scenarios" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Scenario_planning">https://en.wikipedia.org/wiki/Scenario_planning</a></p>
+</div>
+</div>
+<div class="section" id="business-systems">
+<h2>Business Systems<a class="headerlink" href="#business-systems" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Online_office_suite">https://en.wikipedia.org/wiki/Online_office_suite</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Comparison_of_office_suites">https://en.wikipedia.org/wiki/Comparison_of_office_suites</a></p>
+<div class="section" id="google-apps">
+<h3>Google Apps<a class="headerlink" href="#google-apps" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>$5/user/month // $50/user/year</li>
+<li>gmail (e.g. <a class="reference external" href="mailto:username&#37;&#52;&#48;example&#46;org">username<span>&#64;</span>example<span>&#46;</span>org</a>)<ul>
+<li>can add aliases (e.g. <a class="reference external" href="mailto:webmaster&#37;&#52;&#48;example&#46;org">webmaster<span>&#64;</span>example<span>&#46;</span>org</a> -&gt; <a class="reference external" href="mailto:username&#37;&#52;&#48;example&#46;org">username<span>&#64;</span>example<span>&#46;</span>org</a>)</li>
+<li>can setup forwarding (e.g. <a class="reference external" href="mailto:username&#37;&#52;&#48;example&#46;org">username<span>&#64;</span>example<span>&#46;</span>org</a> -&gt; <a class="reference external" href="mailto:username&#37;&#52;&#48;gmail&#46;com">username<span>&#64;</span>gmail<span>&#46;</span>com</a>)</li>
+</ul>
+</li>
+<li>mail, contacts, chat, calendar, drive, docs, sheets, slides,
+groups, sites<ul>
+<li>drive: online storage</li>
+<li>sites: (e.g. employees.example.org)<ul>
+<li>update through web interface</li>
+<li>file sharing (employee handbook pdf)</li>
+</ul>
+</li>
+<li>groups: [employee] emailing list<ul>
+<li>don&#8217;t need accounts for every employee, they can use their
+own email addresses (everything gets relayed)</li>
+<li>basically like archived emails with always on reply-all</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference external" href="http://google.com/a">http://google.com/a</a></li>
+<li><a class="reference external" href="http://learn.googleapps.com/">http://learn.googleapps.com/</a></li>
+<li>TODO: <a class="reference external" href="https://www.google.com/enterprise/marketplace/">https://www.google.com/enterprise/marketplace/</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="handling-money">
+<h2>Handling Money<a class="headerlink" href="#handling-money" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Transaction_processing">https://en.wikipedia.org/wiki/Transaction_processing</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard">https://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard</a></p>
+<div class="section" id="accounting">
+<h3>Accounting<a class="headerlink" href="#accounting" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="quickbooks">
+<h4>QuickBooks<a class="headerlink" href="#quickbooks" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/QuickBooks">https://en.wikipedia.org/wiki/QuickBooks</a></p>
+<ul class="simple">
+<li>Square integrates with QuickBooks</li>
+<li><a class="reference external" href="http://www.google.com/enterprise/marketplace/search?query=quickbooks">http://www.google.com/enterprise/marketplace/search?query=quickbooks</a></li>
+</ul>
+</div>
+<div class="section" id="freshbooks">
+<h4>Freshbooks<a class="headerlink" href="#freshbooks" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>online billing / invoicing / accounting (freshbooks, ...)</li>
+</ul>
+</div>
+</div>
+<div class="section" id="payments">
+<h3>Payments<a class="headerlink" href="#payments" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="google-payments">
+<h4>Google Payments<a class="headerlink" href="#google-payments" title="Permalink to this headline">¶</a></h4>
+<blockquote>
+<div><ul class="simple">
+<li>online billing with Google Payments<ul>
+<li><a class="reference external" href="http://www.google.com/wallet/business/payments/">http://www.google.com/wallet/business/payments/</a></li>
+<li><a class="reference external" href="http://www.google.com/wallet/business/offers/index.html">http://www.google.com/wallet/business/offers/index.html</a><ul>
+<li>similar to Groupon, LivingSocial</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>unfortunately there&#8217;s not yet a Square API</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="paypal">
+<h4>Paypal<a class="headerlink" href="#paypal" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="square">
+<h4>Square<a class="headerlink" href="#square" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="apple">
+<h4>Apple<a class="headerlink" href="#apple" title="Permalink to this headline">¶</a></h4>
+</div>
+</div>
+</div>
+<div class="section" id="sales">
+<h2>Sales<a class="headerlink" href="#sales" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Central contacts database</li>
+<li>Sales pipeline</li>
+</ul>
+<div class="section" id="customer-relationship-management-crm">
+<h3>Customer Relationship Management (CRM)<a class="headerlink" href="#customer-relationship-management-crm" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Customer_relationship_management">https://en.wikipedia.org/wiki/Customer_relationship_management</a></p>
+<blockquote>
+<div><ul class="simple">
+<li><ol class="first arabic">
+<li>opt-in e-mailing list (mailchimp, ...)</li>
+</ol>
+</li>
+<li><ol class="first arabic" start="2">
+<li>contact information &#8220;rolodex&#8221;</li>
+</ol>
+</li>
+<li><ol class="first arabic" start="3">
+<li>&#8220;sales pipeline&#8221;</li>
+</ol>
+</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="business-intelligence">
+<h2>Business Intelligence<a class="headerlink" href="#business-intelligence" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Business_intelligence">https://en.wikipedia.org/wiki/Business_intelligence</a></p>
+<div class="section" id="strategy">
+<h3>Strategy<a class="headerlink" href="#strategy" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Strategic_planning">https://en.wikipedia.org/wiki/Strategic_planning</a></p>
+</div>
+</div>
+</div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+         
+<div class="span5 visible-desktop visible-tablet">
+  <div class=" sidebar hidden-phone" role="navigation" aria-label="main navigation">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Information Systems</a><ul>
+<li><a class="reference internal" href="#criteria">Criteria</a><ul>
+<li><a class="reference internal" href="#roi">ROI</a></li>
+<li><a class="reference internal" href="#need-want">Need / Want</a></li>
+<li><a class="reference internal" href="#maintainability">Maintainability</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#clouds">Clouds</a><ul>
+<li><a class="reference internal" href="#software-as-a-service">Software-as-a-Service</a></li>
+<li><a class="reference internal" href="#platform-as-a-service">Platform-as-a-Service</a></li>
+<li><a class="reference internal" href="#infrastructure-as-a-service">Infrastructure-as-a-Service</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#information-security">Information Security</a><ul>
+<li><a class="reference internal" href="#confidentiality">Confidentiality</a></li>
+<li><a class="reference internal" href="#integrity">Integrity</a></li>
+<li><a class="reference internal" href="#availability">Availability</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#business-continuity">Business Continuity</a><ul>
+<li><a class="reference internal" href="#backups">Backups</a></li>
+<li><a class="reference internal" href="#reliability">Reliability</a></li>
+<li><a class="reference internal" href="#scenarios">Scenarios</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#business-systems">Business Systems</a><ul>
+<li><a class="reference internal" href="#google-apps">Google Apps</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#handling-money">Handling Money</a><ul>
+<li><a class="reference internal" href="#accounting">Accounting</a><ul>
+<li><a class="reference internal" href="#quickbooks">QuickBooks</a></li>
+<li><a class="reference internal" href="#freshbooks">Freshbooks</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#payments">Payments</a><ul>
+<li><a class="reference internal" href="#google-payments">Google Payments</a></li>
+<li><a class="reference internal" href="#paypal">Paypal</a></li>
+<li><a class="reference internal" href="#square">Square</a></li>
+<li><a class="reference internal" href="#apple">Apple</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sales">Sales</a><ul>
+<li><a class="reference internal" href="#customer-relationship-management-crm">Customer Relationship Management (CRM)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#business-intelligence">Business Intelligence</a><ul>
+<li><a class="reference internal" href="#strategy">Strategy</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="software-development.html"
+                        title="previous chapter">Software Development</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="collaboration-plan.html"
+                        title="next chapter">Collaboration Plan</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/consulting/information-systems.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" role="search">
+  <h3>Quick search</h3>
+  <form class="search form-search" action="../search.html" method="get">
+      <div class="input-append">
+        <input type="text" class="search-query" name="q">
+        <input type="submit" class="btn" value="Go" />
+      </div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+  </div>
+</div> 
+        
+      </div><!-- /row -->
+
+      <!-- row -->
+      <div class="row-fluid">
+<div class="related navbar " role="navigation" aria-label="related navigation">
+  <div class="navbar-inner">
+    <ul class="nav pull-right">
+      
+        <li><a href="../genindex.html" title="General Index" >index</a></li>
+        <li><a href="../py-modindex.html" title="Python Module Index" >modules</a></li>
+        <li><a href="collaboration-plan.html" title="Collaboration Plan" >next</a></li>
+        <li><a href="software-development.html" title="Software Development" >previous</a></li>
+        <li><a href="../index.html">wrd r&amp;d docs</a></li> 
+      
+    </ul>
+  </div>
+</div>
+      </div><!-- /row -->
+
+      <!-- footer -->
+      <footer role="contentinfo">
+          &copy; Copyright 2014, WRD R&amp;D.
+        Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.3a0.
+      </footer>
+      <!-- /footer -->
+
+    </div>
+    <!-- /container -->
+
+  </body>
+</html>

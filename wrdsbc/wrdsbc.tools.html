@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    
+    <title>wrdsbc.tools package &mdash; wrd r&amp;d docs</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    
+<link rel="stylesheet" href="../_static/css/basicstrap-base.css" type="text/css" />
+<link rel="stylesheet" href="../_static/css/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" href="../_static/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="../_static/css/font-awesome-ie7.min.css">
+<![endif]-->
+
+<style type="text/css">
+  body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+}
+</style>
+
+<link rel="stylesheet" href="../_static/basicstrap.css" type="text/css" />
+<link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+<link rel="stylesheet" href="../_static/css/bootstrap-responsive.min.css" type="text/css" />
+    
+<script type="text/javascript">
+  var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:    '../',
+            VERSION:     '0.1.0',
+            COLLAPSE_INDEX: false,
+            FILE_SUFFIX: '.html',
+            HAS_SOURCE:  true
+  };
+</script>
+<script type="text/javascript" src="../_static/js/jquery.min.js"></script>
+<script type="text/javascript" src="../_static/underscore.js"></script>
+<script type="text/javascript" src="../_static/doctools.js"></script>
+<script type="text/javascript" src="../_static/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.show-sidebar').click(function(e) {
+       e.preventDefault();
+       if ($(".show-sidebar").html() == "Open Table Of Contents") {
+          $('.for-mobile').removeClass('hidden-phone');
+          $(".show-sidebar").html("Close Table Of Contents");
+       } else {
+          $(".show-sidebar").html("Open Table Of Contents");
+       }
+    });
+  });
+  $(window).load(function () {
+    /*
+
+     * Scroll the window to avoid the topnav bar
+     * https://github.com/twitter/bootstrap/issues/1768
+     */
+    if ($(".navbar.navbar-fixed-top").length > 0) {
+      // var navHeight = $(".navbar").height(),
+      var navHeight = 40,
+        shiftWindow = function() { scrollBy(0, -navHeight - 10); };
+
+      if (location.hash) {
+        setTimeout(shiftWindow, 1);
+      }
+
+      window.addEventListener("hashchange", shiftWindow);
+    }
+  });
+</script>
+    <link rel="search" type="application/opensearchdescription+xml"
+    title="Search within wrd r&amp;d docs"
+    href="../_static/opensearch.xml"/>
+    <link rel="top" title="wrd r&amp;d docs" href="../index.html" />
+    <link rel="next" title="Credits" href="authors.html" />
+    <link rel="prev" title="Usage" href="usage.html" /> 
+  </head>
+  <body role="document">
+    <div class="navbar navbar-fixed-top " role="navigation" aria-label="top navigation">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <div role="banner">
+            <a class="brand" href="../index.html">wrd r&amp;d docs</a>
+          </div>
+          <div class="nav-collapse collapse">
+            <ul class="nav pull-right">
+              
+                <li>
+                <a href="../genindex.html" title="General Index" accesskey="I">index</a>
+                </li>
+                <li>
+                <a href="../py-modindex.html" title="Python Module Index" >modules</a>
+                </li>
+                <li>
+                <a href="authors.html" title="Credits" accesskey="N">next</a>
+                </li>
+                <li>
+                <a href="usage.html" title="Usage" accesskey="P">previous</a>
+                </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- container -->
+    <div class="container-fluid">
+
+
+      
+      <div class="row-fluid hidden-desktop hidden-tablet">
+      
+<div class="span5 ">
+  <a class="visible-phone btn btn-small show-sidebar" data-toggle="collapse" data-target=".for-mobile">Open Table Of Contents</a>
+  <div class="for-mobile sidebar hidden-phone" role="navigation" aria-label="main navigation">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">wrdsbc.tools package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-wrdsbc.tools.crawl">wrdsbc.tools.crawl module</a></li>
+<li><a class="reference internal" href="#module-wrdsbc.tools.domain">wrdsbc.tools.domain module</a></li>
+<li><a class="reference internal" href="#module-wrdsbc.tools.stripsinglehtml">wrdsbc.tools.stripsinglehtml module</a></li>
+<li><a class="reference internal" href="#module-wrdsbc.tools">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="usage.html"
+                        title="previous chapter">Usage</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="authors.html"
+                        title="next chapter">Credits</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/wrdsbc/wrdsbc.tools.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" role="search">
+  <h3>Quick search</h3>
+  <form class="search form-search" action="../search.html" method="get">
+      <div class="input-append">
+        <input type="text" class="search-query" name="q">
+        <input type="submit" class="btn" value="Go" />
+      </div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+  </div>
+</div>
+      </div>
+      
+
+      <!-- row -->
+      <div class="row-fluid">
+        
+        
+
+        <div class="span7">
+          <div class="document" role="main">
+            <div class="documentwrapper">
+              <div class="bodywrapper">
+                <div class="body">
+                  
+  <div class="section" id="wrdsbc-tools-package">
+<h1>wrdsbc.tools package<a class="headerlink" href="#wrdsbc-tools-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-wrdsbc.tools.crawl">
+<span id="wrdsbc-tools-crawl-module"></span><h2>wrdsbc.tools.crawl module<a class="headerlink" href="#module-wrdsbc.tools.crawl" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="wrdsbc.tools.crawl.CSS">
+<em class="property">class </em><code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">CSS</code><a class="headerlink" href="#wrdsbc.tools.crawl.CSS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">tuple</span></code></p>
+<p>CSS(loc, src)</p>
+<dl class="attribute">
+<dt id="wrdsbc.tools.crawl.CSS.loc">
+<code class="descname">loc</code><a class="headerlink" href="#wrdsbc.tools.crawl.CSS.loc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="wrdsbc.tools.crawl.CSS.src">
+<code class="descname">src</code><a class="headerlink" href="#wrdsbc.tools.crawl.CSS.src" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="wrdsbc.tools.crawl.CrawlRequest">
+<em class="property">class </em><code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">CrawlRequest</code><a class="headerlink" href="#wrdsbc.tools.crawl.CrawlRequest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">tuple</span></code></p>
+<p>CrawlRequest(src, url, datetime)</p>
+<dl class="attribute">
+<dt id="wrdsbc.tools.crawl.CrawlRequest.datetime">
+<code class="descname">datetime</code><a class="headerlink" href="#wrdsbc.tools.crawl.CrawlRequest.datetime" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 2</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="wrdsbc.tools.crawl.CrawlRequest.src">
+<code class="descname">src</code><a class="headerlink" href="#wrdsbc.tools.crawl.CrawlRequest.src" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="wrdsbc.tools.crawl.CrawlRequest.url">
+<code class="descname">url</code><a class="headerlink" href="#wrdsbc.tools.crawl.CrawlRequest.url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="wrdsbc.tools.crawl.Image">
+<em class="property">class </em><code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">Image</code><a class="headerlink" href="#wrdsbc.tools.crawl.Image" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">tuple</span></code></p>
+<p>Image(loc, src, alt, height, width, text)</p>
+<dl class="attribute">
+<dt id="wrdsbc.tools.crawl.Image.alt">
+<code class="descname">alt</code><a class="headerlink" href="#wrdsbc.tools.crawl.Image.alt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 2</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="wrdsbc.tools.crawl.Image.height">
+<code class="descname">height</code><a class="headerlink" href="#wrdsbc.tools.crawl.Image.height" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 3</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="wrdsbc.tools.crawl.Image.loc">
+<code class="descname">loc</code><a class="headerlink" href="#wrdsbc.tools.crawl.Image.loc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="wrdsbc.tools.crawl.Image.src">
+<code class="descname">src</code><a class="headerlink" href="#wrdsbc.tools.crawl.Image.src" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="wrdsbc.tools.crawl.Image.text">
+<code class="descname">text</code><a class="headerlink" href="#wrdsbc.tools.crawl.Image.text" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 5</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="wrdsbc.tools.crawl.Image.width">
+<code class="descname">width</code><a class="headerlink" href="#wrdsbc.tools.crawl.Image.width" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 4</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="wrdsbc.tools.crawl.JS">
+<em class="property">class </em><code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">JS</code><a class="headerlink" href="#wrdsbc.tools.crawl.JS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">tuple</span></code></p>
+<p>JS(loc, src)</p>
+<dl class="attribute">
+<dt id="wrdsbc.tools.crawl.JS.loc">
+<code class="descname">loc</code><a class="headerlink" href="#wrdsbc.tools.crawl.JS.loc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="wrdsbc.tools.crawl.JS.src">
+<code class="descname">src</code><a class="headerlink" href="#wrdsbc.tools.crawl.JS.src" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="wrdsbc.tools.crawl.KeywordFrequency">
+<em class="property">class </em><code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">KeywordFrequency</code><a class="headerlink" href="#wrdsbc.tools.crawl.KeywordFrequency" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">tuple</span></code></p>
+<p>KeywordFrequency(url, frequencies)</p>
+<dl class="attribute">
+<dt id="wrdsbc.tools.crawl.KeywordFrequency.frequencies">
+<code class="descname">frequencies</code><a class="headerlink" href="#wrdsbc.tools.crawl.KeywordFrequency.frequencies" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="wrdsbc.tools.crawl.KeywordFrequency.url">
+<code class="descname">url</code><a class="headerlink" href="#wrdsbc.tools.crawl.KeywordFrequency.url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="wrdsbc.tools.crawl.Link">
+<em class="property">class </em><code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">Link</code><a class="headerlink" href="#wrdsbc.tools.crawl.Link" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">tuple</span></code></p>
+<p>Link(loc, href, name, target, text, parent_id)</p>
+<dl class="attribute">
+<dt id="wrdsbc.tools.crawl.Link.href">
+<code class="descname">href</code><a class="headerlink" href="#wrdsbc.tools.crawl.Link.href" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="wrdsbc.tools.crawl.Link.loc">
+<code class="descname">loc</code><a class="headerlink" href="#wrdsbc.tools.crawl.Link.loc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="wrdsbc.tools.crawl.Link.name">
+<code class="descname">name</code><a class="headerlink" href="#wrdsbc.tools.crawl.Link.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 2</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="wrdsbc.tools.crawl.Link.parent_id">
+<code class="descname">parent_id</code><a class="headerlink" href="#wrdsbc.tools.crawl.Link.parent_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 5</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="wrdsbc.tools.crawl.Link.target">
+<code class="descname">target</code><a class="headerlink" href="#wrdsbc.tools.crawl.Link.target" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 3</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="wrdsbc.tools.crawl.Link.text">
+<code class="descname">text</code><a class="headerlink" href="#wrdsbc.tools.crawl.Link.text" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 4</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="wrdsbc.tools.crawl.ResultStore">
+<em class="property">class </em><code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">ResultStore</code><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#ResultStore"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.ResultStore" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="wrdsbc.tools.crawl.ResultStore.itervalues">
+<code class="descname">itervalues</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#ResultStore.itervalues"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.ResultStore.itervalues" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="wrdsbc.tools.crawl.Test_wrdcrawler">
+<em class="property">class </em><code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">Test_wrdcrawler</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#Test_wrdcrawler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.Test_wrdcrawler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="method">
+<dt id="wrdsbc.tools.crawl.Test_wrdcrawler.test_build_networkx_graph">
+<code class="descname">test_build_networkx_graph</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#Test_wrdcrawler.test_build_networkx_graph"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.Test_wrdcrawler.test_build_networkx_graph" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="wrdsbc.tools.crawl.Test_wrdcrawler.test_crawl_url">
+<code class="descname">test_crawl_url</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#Test_wrdcrawler.test_crawl_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.Test_wrdcrawler.test_crawl_url" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="wrdsbc.tools.crawl.Test_wrdcrawler.test_expand_link">
+<code class="descname">test_expand_link</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#Test_wrdcrawler.test_expand_link"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.Test_wrdcrawler.test_expand_link" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="wrdsbc.tools.crawl.Test_wrdcrawler.test_other">
+<code class="descname">test_other</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#Test_wrdcrawler.test_other"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.Test_wrdcrawler.test_other" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="wrdsbc.tools.crawl.Test_wrdcrawler.test_same_netloc">
+<code class="descname">test_same_netloc</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#Test_wrdcrawler.test_same_netloc"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.Test_wrdcrawler.test_same_netloc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="wrdsbc.tools.crawl.Test_wrdcrawler.test_strip_fragment">
+<code class="descname">test_strip_fragment</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#Test_wrdcrawler.test_strip_fragment"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.Test_wrdcrawler.test_strip_fragment" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="wrdsbc.tools.crawl.Test_wrdcrawler.test_sum_counters">
+<code class="descname">test_sum_counters</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#Test_wrdcrawler.test_sum_counters"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.Test_wrdcrawler.test_sum_counters" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="wrdsbc.tools.crawl.Test_wrdcrawler.test_tokenize">
+<code class="descname">test_tokenize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#Test_wrdcrawler.test_tokenize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.Test_wrdcrawler.test_tokenize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="wrdsbc.tools.crawl.Test_wrdcrawler.test_wrdcrawler">
+<code class="descname">test_wrdcrawler</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#Test_wrdcrawler.test_wrdcrawler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.Test_wrdcrawler.test_wrdcrawler" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="wrdsbc.tools.crawl.URLCrawlQueue">
+<em class="property">class </em><code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">URLCrawlQueue</code><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#URLCrawlQueue"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.URLCrawlQueue" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="wrdsbc.tools.crawl.URLCrawlQueue.DONE">
+<code class="descname">DONE</code><em class="property"> = 2</em><a class="headerlink" href="#wrdsbc.tools.crawl.URLCrawlQueue.DONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="wrdsbc.tools.crawl.URLCrawlQueue.ERROR">
+<code class="descname">ERROR</code><em class="property"> = 3</em><a class="headerlink" href="#wrdsbc.tools.crawl.URLCrawlQueue.ERROR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="wrdsbc.tools.crawl.URLCrawlQueue.NEW">
+<code class="descname">NEW</code><em class="property"> = 0</em><a class="headerlink" href="#wrdsbc.tools.crawl.URLCrawlQueue.NEW" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="wrdsbc.tools.crawl.URLCrawlQueue.OUT">
+<code class="descname">OUT</code><em class="property"> = 1</em><a class="headerlink" href="#wrdsbc.tools.crawl.URLCrawlQueue.OUT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="wrdsbc.tools.crawl.URLCrawlQueue.count">
+<code class="descname">count</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#URLCrawlQueue.count"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.URLCrawlQueue.count" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="wrdsbc.tools.crawl.URLCrawlQueue.done">
+<code class="descname">done</code><span class="sig-paren">(</span><em>item</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#URLCrawlQueue.done"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.URLCrawlQueue.done" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="wrdsbc.tools.crawl.URLCrawlQueue.error">
+<code class="descname">error</code><span class="sig-paren">(</span><em>item</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#URLCrawlQueue.error"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.URLCrawlQueue.error" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="wrdsbc.tools.crawl.URLCrawlQueue.pop">
+<code class="descname">pop</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#URLCrawlQueue.pop"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.URLCrawlQueue.pop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="wrdsbc.tools.crawl.URLCrawlQueue.push">
+<code class="descname">push</code><span class="sig-paren">(</span><em>item</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#URLCrawlQueue.push"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.URLCrawlQueue.push" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="wrdsbc.tools.crawl.build_networkx_graph">
+<code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">build_networkx_graph</code><span class="sig-paren">(</span><em>url</em>, <em>links</em>, <em>label=None</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10ff0a150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#build_networkx_graph"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.build_networkx_graph" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="wrdsbc.tools.crawl.crawl_url">
+<code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">crawl_url</code><span class="sig-paren">(</span><em>start_url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10ff0a150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#crawl_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.crawl_url" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="wrdsbc.tools.crawl.current_datetime">
+<code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">current_datetime</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#current_datetime"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.current_datetime" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="wrdsbc.tools.crawl.expand_link">
+<code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">expand_link</code><span class="sig-paren">(</span><em>_src</em>, <em>_url</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#expand_link"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.expand_link" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="wrdsbc.tools.crawl.extract_css">
+<code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">extract_css</code><span class="sig-paren">(</span><em>url</em>, <em>bs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#extract_css"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.extract_css" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="wrdsbc.tools.crawl.extract_images">
+<code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">extract_images</code><span class="sig-paren">(</span><em>url</em>, <em>bs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#extract_images"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.extract_images" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="wrdsbc.tools.crawl.extract_js">
+<code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">extract_js</code><span class="sig-paren">(</span><em>url</em>, <em>bs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#extract_js"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.extract_js" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="wrdsbc.tools.crawl.extract_keywords">
+<code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">extract_keywords</code><span class="sig-paren">(</span><em>url</em>, <em>bs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#extract_keywords"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.extract_keywords" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="wrdsbc.tools.crawl.extract_links">
+<code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">extract_links</code><span class="sig-paren">(</span><em>url</em>, <em>bs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#extract_links"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.extract_links" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="wrdsbc.tools.crawl.extract_words_from_bs">
+<code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">extract_words_from_bs</code><span class="sig-paren">(</span><em>bs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#extract_words_from_bs"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.extract_words_from_bs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="wrdsbc.tools.crawl.frequency_table">
+<code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">frequency_table</code><span class="sig-paren">(</span><em>counterdict</em>, <em>sort_by='count'</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#frequency_table"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.frequency_table" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="wrdsbc.tools.crawl.get_stop_words">
+<code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">get_stop_words</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#get_stop_words"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.get_stop_words" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="wrdsbc.tools.crawl.get_text_from_bs">
+<code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">get_text_from_bs</code><span class="sig-paren">(</span><em>bs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#get_text_from_bs"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.get_text_from_bs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="wrdsbc.tools.crawl.get_unicode_stdout">
+<code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">get_unicode_stdout</code><span class="sig-paren">(</span><em>stdout=None</em>, <em>errors='replace'</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#get_unicode_stdout"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.get_unicode_stdout" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="wrdsbc.tools.crawl.main">
+<code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">main</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#main"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.main" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="wrdsbc.tools.crawl.print_frequency_table">
+<code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">print_frequency_table</code><span class="sig-paren">(</span><em>frequencies</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10ff0a150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#print_frequency_table"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.print_frequency_table" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="wrdsbc.tools.crawl.same_netloc">
+<code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">same_netloc</code><span class="sig-paren">(</span><em>_url</em>, <em>_domain</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#same_netloc"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.same_netloc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="wrdsbc.tools.crawl.strip_fragment">
+<code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">strip_fragment</code><span class="sig-paren">(</span><em>url</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#strip_fragment"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.strip_fragment" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="wrdsbc.tools.crawl.strip_script_styles_from_bs">
+<code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">strip_script_styles_from_bs</code><span class="sig-paren">(</span><em>bs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#strip_script_styles_from_bs"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.strip_script_styles_from_bs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="wrdsbc.tools.crawl.sum_counters">
+<code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">sum_counters</code><span class="sig-paren">(</span><em>iterable</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#sum_counters"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.sum_counters" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="wrdsbc.tools.crawl.to_a_search_engine">
+<code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">to_a_search_engine</code><span class="sig-paren">(</span><em>url</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#to_a_search_engine"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.to_a_search_engine" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="wrdsbc.tools.crawl.tokenize">
+<code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">tokenize</code><span class="sig-paren">(</span><em>text</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#tokenize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.tokenize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="wrdsbc.tools.crawl.word_frequencies">
+<code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">word_frequencies</code><span class="sig-paren">(</span><em>url</em>, <em>keywords</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#word_frequencies"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.word_frequencies" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="wrdsbc.tools.crawl.wrdcrawler">
+<code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">wrdcrawler</code><span class="sig-paren">(</span><em>url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10ff0a150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#wrdcrawler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.wrdcrawler" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="wrdsbc.tools.crawl.write_nxgraph_to_dot">
+<code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">write_nxgraph_to_dot</code><span class="sig-paren">(</span><em>g</em>, <em>output</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#write_nxgraph_to_dot"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.write_nxgraph_to_dot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="wrdsbc.tools.crawl.write_nxgraph_to_json">
+<code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">write_nxgraph_to_json</code><span class="sig-paren">(</span><em>g</em>, <em>output</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#write_nxgraph_to_json"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.write_nxgraph_to_json" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-wrdsbc.tools.domain">
+<span id="wrdsbc-tools-domain-module"></span><h2>wrdsbc.tools.domain module<a class="headerlink" href="#module-wrdsbc.tools.domain" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="wrdsbc.tools.domain.check_google_mx">
+<code class="descclassname">wrdsbc.tools.domain.</code><code class="descname">check_google_mx</code><span class="sig-paren">(</span><em>domain</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/domain.html#check_google_mx"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.domain.check_google_mx" title="Permalink to this definition">¶</a></dt>
+<dd><p><a class="reference external" href="https://support.google.com/a/topic/2716885?hl=en&amp;ref_topic=2426592">https://support.google.com/a/topic/2716885?hl=en&amp;ref_topic=2426592</a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="wrdsbc.tools.domain.check_google_spf">
+<code class="descclassname">wrdsbc.tools.domain.</code><code class="descname">check_google_spf</code><span class="sig-paren">(</span><em>domain</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/domain.html#check_google_spf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.domain.check_google_spf" title="Permalink to this definition">¶</a></dt>
+<dd><p><a class="reference external" href="https://support.google.com/a/answer/178723?hl=en">https://support.google.com/a/answer/178723?hl=en</a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="wrdsbc.tools.domain.dig_all">
+<code class="descclassname">wrdsbc.tools.domain.</code><code class="descname">dig_all</code><span class="sig-paren">(</span><em>domain</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/domain.html#dig_all"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.domain.dig_all" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="wrdsbc.tools.domain.dig_dnskey">
+<code class="descclassname">wrdsbc.tools.domain.</code><code class="descname">dig_dnskey</code><span class="sig-paren">(</span><em>zone</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/domain.html#dig_dnskey"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.domain.dig_dnskey" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="wrdsbc.tools.domain.dig_mx">
+<code class="descclassname">wrdsbc.tools.domain.</code><code class="descname">dig_mx</code><span class="sig-paren">(</span><em>domain</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/domain.html#dig_mx"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.domain.dig_mx" title="Permalink to this definition">¶</a></dt>
+<dd><p><a class="reference external" href="https://en.wikipedia.org/wiki/MX_record">https://en.wikipedia.org/wiki/MX_record</a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="wrdsbc.tools.domain.dig_ns">
+<code class="descclassname">wrdsbc.tools.domain.</code><code class="descname">dig_ns</code><span class="sig-paren">(</span><em>domain</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/domain.html#dig_ns"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.domain.dig_ns" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="wrdsbc.tools.domain.dig_spf">
+<code class="descclassname">wrdsbc.tools.domain.</code><code class="descname">dig_spf</code><span class="sig-paren">(</span><em>domain</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/domain.html#dig_spf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.domain.dig_spf" title="Permalink to this definition">¶</a></dt>
+<dd><p><a class="reference external" href="https://en.wikipedia.org/wiki/Sender_Policy_Framework">https://en.wikipedia.org/wiki/Sender_Policy_Framework</a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="wrdsbc.tools.domain.dig_txt">
+<code class="descclassname">wrdsbc.tools.domain.</code><code class="descname">dig_txt</code><span class="sig-paren">(</span><em>domain</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/domain.html#dig_txt"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.domain.dig_txt" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="wrdsbc.tools.domain.domain_tools">
+<code class="descclassname">wrdsbc.tools.domain.</code><code class="descname">domain_tools</code><span class="sig-paren">(</span><em>domain</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/domain.html#domain_tools"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.domain.domain_tools" title="Permalink to this definition">¶</a></dt>
+<dd><p>mainfunc</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="wrdsbc.tools.domain.google_domain_tools">
+<code class="descclassname">wrdsbc.tools.domain.</code><code class="descname">google_domain_tools</code><span class="sig-paren">(</span><em>domain</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/domain.html#google_domain_tools"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.domain.google_domain_tools" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="wrdsbc.tools.domain.main">
+<code class="descclassname">wrdsbc.tools.domain.</code><code class="descname">main</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/domain.html#main"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.domain.main" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="wrdsbc.tools.domain.nslookup">
+<code class="descclassname">wrdsbc.tools.domain.</code><code class="descname">nslookup</code><span class="sig-paren">(</span><em>domain</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/domain.html#nslookup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.domain.nslookup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="wrdsbc.tools.domain.whois">
+<code class="descclassname">wrdsbc.tools.domain.</code><code class="descname">whois</code><span class="sig-paren">(</span><em>domain</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/domain.html#whois"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.domain.whois" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-wrdsbc.tools.stripsinglehtml">
+<span id="wrdsbc-tools-stripsinglehtml-module"></span><h2>wrdsbc.tools.stripsinglehtml module<a class="headerlink" href="#module-wrdsbc.tools.stripsinglehtml" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="wrdsbc.tools.stripsinglehtml.Test_stripsinglehtml">
+<em class="property">class </em><code class="descclassname">wrdsbc.tools.stripsinglehtml.</code><code class="descname">Test_stripsinglehtml</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/stripsinglehtml.html#Test_stripsinglehtml"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.stripsinglehtml.Test_stripsinglehtml" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="method">
+<dt id="wrdsbc.tools.stripsinglehtml.Test_stripsinglehtml.test_stripsinglehtml">
+<code class="descname">test_stripsinglehtml</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/stripsinglehtml.html#Test_stripsinglehtml.test_stripsinglehtml"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.stripsinglehtml.Test_stripsinglehtml.test_stripsinglehtml" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="wrdsbc.tools.stripsinglehtml.format_for_google_sites">
+<code class="descclassname">wrdsbc.tools.stripsinglehtml.</code><code class="descname">format_for_google_sites</code><span class="sig-paren">(</span><em>bs</em>, <em>strip_h1=True</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/stripsinglehtml.html#format_for_google_sites"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.stripsinglehtml.format_for_google_sites" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="wrdsbc.tools.stripsinglehtml.main">
+<code class="descclassname">wrdsbc.tools.stripsinglehtml.</code><code class="descname">main</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/stripsinglehtml.html#main"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.stripsinglehtml.main" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="wrdsbc.tools.stripsinglehtml.stripsinglehtml">
+<code class="descclassname">wrdsbc.tools.stripsinglehtml.</code><code class="descname">stripsinglehtml</code><span class="sig-paren">(</span><em>path='index.html'</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/stripsinglehtml.html#stripsinglehtml"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.stripsinglehtml.stripsinglehtml" title="Permalink to this definition">¶</a></dt>
+<dd><p>strip markup from sphinx singlehtml files
+(rather than writing a sphinx [...]-er)</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-wrdsbc.tools">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-wrdsbc.tools" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+         
+<div class="span5 visible-desktop visible-tablet">
+  <div class=" sidebar hidden-phone" role="navigation" aria-label="main navigation">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">wrdsbc.tools package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-wrdsbc.tools.crawl">wrdsbc.tools.crawl module</a></li>
+<li><a class="reference internal" href="#module-wrdsbc.tools.domain">wrdsbc.tools.domain module</a></li>
+<li><a class="reference internal" href="#module-wrdsbc.tools.stripsinglehtml">wrdsbc.tools.stripsinglehtml module</a></li>
+<li><a class="reference internal" href="#module-wrdsbc.tools">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="usage.html"
+                        title="previous chapter">Usage</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="authors.html"
+                        title="next chapter">Credits</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/wrdsbc/wrdsbc.tools.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" role="search">
+  <h3>Quick search</h3>
+  <form class="search form-search" action="../search.html" method="get">
+      <div class="input-append">
+        <input type="text" class="search-query" name="q">
+        <input type="submit" class="btn" value="Go" />
+      </div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+  </div>
+</div> 
+        
+      </div><!-- /row -->
+
+      <!-- row -->
+      <div class="row-fluid">
+<div class="related navbar " role="navigation" aria-label="related navigation">
+  <div class="navbar-inner">
+    <ul class="nav pull-right">
+      
+        <li><a href="../genindex.html" title="General Index" >index</a></li>
+        <li><a href="../py-modindex.html" title="Python Module Index" >modules</a></li>
+        <li><a href="authors.html" title="Credits" >next</a></li>
+        <li><a href="usage.html" title="Usage" >previous</a></li>
+        <li><a href="../index.html">wrd r&amp;d docs</a></li> 
+      
+    </ul>
+  </div>
+</div>
+      </div><!-- /row -->
+
+      <!-- footer -->
+      <footer role="contentinfo">
+          &copy; Copyright 2014, WRD R&amp;D.
+        Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.3a0.
+      </footer>
+      <!-- /footer -->
+
+    </div>
+    <!-- /container -->
+
+  </body>
+</html>
