@@ -1,6 +1,11 @@
 wrdsbc.tools package
 ====================
 
+.. automodule:: wrdsbc.tools
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
 Submodules
 ----------
 
@@ -29,10 +34,3 @@ wrdsbc.tools.stripsinglehtml module
     :show-inheritance:
 
 
-Module contents
----------------
-
-.. automodule:: wrdsbc.tools
-    :members:
-    :undoc-members:
-    :show-inheritance:
