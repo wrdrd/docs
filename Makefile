@@ -43,8 +43,10 @@ coverage:
 
 docs-api:
 	rm -f docs/wrdsbc/wrdsbc.rst
+	rm -f docs/wrdsbc/wrdsbc.*.rst
 	rm -f docs/wrdsbc/modules.rst
 	sphinx-apidoc -M -o docs/wrdsbc/ wrdsbc
+	rm -f docs/wrdsbc/modules.rst
 
 docs: clean-docs docs-api
 	$(MAKE) -C docs html

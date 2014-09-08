@@ -169,6 +169,9 @@ Structured Data
 Web Design
 ~~~~~~~~~~~
 
+
+.. _web-layout:
+
 Web Layout
 +++++++++++
 A box-model composition of DOM objects, their styles, and their

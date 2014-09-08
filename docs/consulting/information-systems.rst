@@ -249,6 +249,9 @@ Sales
 * Central contacts database
 * Sales pipeline
 
+
+.. _crm:
+
 Customer Relationship Management (CRM)
 +++++++++++++++++++++++++++++++++++++++
 https://en.wikipedia.org/wiki/Customer_relationship_management

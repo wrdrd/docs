@@ -12,15 +12,9 @@ https://en.wikipedia.org/wiki/Strategic_management
 
 https://en.wikipedia.org/wiki/Management_by_objectives
 
-https://en.wikipedia.org/wiki/Tactic_(method)
+`<https://en.wikipedia.org/wiki/Tactic_(method)>`_
 
 https://en.wikipedia.org/wiki/Business_process
-
-
-Business Information
-~~~~~~~~~~~~~~~~~~~~~
-
-* Acquire structured data markup
 
 
 Marketing
@@ -76,7 +70,7 @@ https://en.wikipedia.org/wiki/Profit-based_sales_targets
 
 Relationships
 ++++++++++++++
-See `Customer Relationship Management`_
+See :ref:`Customer Relationship Management (CRM) <crm>`
 
 Cold, Warm, and Hot
 
@@ -226,7 +220,7 @@ Photography
 
 Layout Graphics
 ````````````````
-See `Image Based Layouts`_
+See :ref:`Web Layout <web-layout>`
 
 # TODO:
 
