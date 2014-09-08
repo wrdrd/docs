@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
-  <ShortName>WRD Small Business Consulting</ShortName>
+  <ShortName>wrd r&amp;d documentation</ShortName>
   <Description>Search wrd r&amp;d docs</Description>
   <InputEncoding>utf-8</InputEncoding>
   <Url type="text/html" method="get"
