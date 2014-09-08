@@ -3,5 +3,6 @@ requests
 beautifulsoup4
 URLObject
 NLTK
+textblob
 networkx
 pydot

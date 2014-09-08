@@ -3,23 +3,39 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-WRD Small Business Consulting
-=============================
+wrd r&d documentation
+=======================
 
-Contents:
+| docs: https://wrd.github.io/docs/
+| source: https://github.com/wrd/docs
+
+
+consulting
+------------
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
-   readme
-   collaboration-plan
-   business
-   webdev
-   systems
-   installation
-   usage
-   authors
-   history
+   consulting/small-business
+   consulting/web-development
+   consulting/software-development
+   consulting/information-systems
+   consulting/collaboration-plan
+
+
+wrdsbc
+--------
+
+.. toctree::
+   :maxdepth: 3
+
+   wrdsbc/readme
+   wrdsbc/installation
+   wrdsbc/usage
+   wrdsbc/wrdsbc.tools
+   wrdsbc/authors
+   wrdsbc/history
+
 
 Indices and tables
 ==================

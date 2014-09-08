@@ -1,7 +1,6 @@
 ===============================
-WRD Small Business Consulting
+wrd r&d documentation
 ===============================
 
-WRD Small Business Consulting Tools and Documentation
-
+https://wrd.github.io/docs/
 

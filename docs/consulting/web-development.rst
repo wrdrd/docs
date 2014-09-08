@@ -1,5 +1,5 @@
-Web
-----
+Web Development
+-----------------
 
 Web Glossary
 ~~~~~~~~~~~~~~~

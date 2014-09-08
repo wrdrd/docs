@@ -24,12 +24,17 @@ from collections import defaultdict
 from collections import namedtuple
 
 import bs4
-import networkx
-import nltk
 import requests
-import textblob
 import urlobject
 
+import networkx
+
+try:
+    import nltk
+    import textblob
+except ImportError as e:
+    nltk = None
+    textblob = None
 
 def get_unicode_stdout(stdout=None, errors='replace', **kwargs):
     import codecs
@@ -107,7 +112,7 @@ def get_stop_words():
         STOP_WORDS = dict.fromkeys(nltk.corpus.stopwords.words('english'), 1)
         STOP_WORDS.update({'pm':1, 'am':1})
         STOP_WORDS.pop('about')
-get_stop_words()
+#get_stop_words()
 
 
 def get_text_from_bs(bs):
@@ -611,6 +616,8 @@ def main(*args):
 
         if opts.verbose:
             logging.getLogger().setLevel(logging.DEBUG)
+
+    get_stop_words()
 
     if opts.run_tests:
         sys.argv = [sys.argv[0]] + args

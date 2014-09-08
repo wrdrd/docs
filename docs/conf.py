@@ -57,7 +57,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'WRD Small Business Consulting'
-copyright = u'2014, Wes Turner'
+copyright = u'2014, WRD R&D'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -123,14 +123,14 @@ html_theme_options = {
     #'nav_fixed_top': False,
     'nav_fixed': False,
     'nav_width': '900px',
-    'content_fixed': True,
+    'content_fixed': False,
     'content_width': '768px',
     'row_fixed': False,
     'noresponsive': False,
     'googlewebfont': False,
     'googlewebfont_url': 'http://fonts.googleapis.com/css?family=Lily+Script+One',
     'googlewebfont_style': u"font-family: 'Lily Script One' cursive;",
-    'header_inverse': True,
+    'header_inverse': False,
     'relbar_inverse': False,
     'inner_theme': False,
     'inner_theme_name': 'bootswatch-readable',
@@ -147,7 +147,7 @@ html_theme_options = {
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = "WRD Small Business Consulting"
+html_title = "wrd r&d docs"
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
@@ -202,13 +202,13 @@ html_static_path = ['_static']
 # If true, an OpenSearch description file will be output, and all pages will
 # contain a <link> tag referring to it.  The value of this option must be the
 # base URL from which the finished HTML is served.
-#html_use_opensearch = ''
+html_use_opensearch = 'https://wrd.github.io/docs/'
 
 # This is the file name suffix for HTML files (e.g. ".xhtml").
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'wrdsbcdoc'
+htmlhelp_basename = 'wrdrddoc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -227,8 +227,8 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'wrdsbc.tex', u'WRD Small Business Consulting Documentation',
-   u'Wes Turner', 'manual'),
+  ('index', 'wrdrd.tex', u'wrd r&d documentation',
+   u'wrd r&d', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -257,8 +257,8 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'wrdsbc', u'WRD Small Business Consulting Documentation',
-     [u'Wes Turner'], 1)
+    ('index', 'wrdrd', u'wrd r&d documentation',
+     [u'WRD R&D'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -271,9 +271,9 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'wrdsbc', u'WRD Small Business Consulting Documentation',
-   u'Wes Turner', 'wrdsbc', 'One line description of project.',
-   'Miscellaneous'),
+  ('index', 'wrdrd', u'wrd r&d documentation',
+   u'WRD R&D', 'wrdrd', 'wrd r&d documentation',
+   'WRD R&D'),
 ]
 
 # Documents to append as an appendix to all manuals.
@@ -284,6 +284,7 @@ texinfo_documents = [
 
 # How to display URL addresses: 'footnote', 'no', or 'inline'.
 #texinfo_show_urls = 'footnote'
+#texinfo_show_urls = 'inline'
 
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 #texinfo_no_detailmenu = False

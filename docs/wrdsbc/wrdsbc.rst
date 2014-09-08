@@ -1,6 +1,11 @@
 wrdsbc package
 ==============
 
+.. automodule:: wrdsbc
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
 Subpackages
 -----------
 
@@ -20,10 +25,3 @@ wrdsbc.wrdsbc module
     :show-inheritance:
 
 
-Module contents
----------------
-
-.. automodule:: wrdsbc
-    :members:
-    :undoc-members:
-    :show-inheritance:

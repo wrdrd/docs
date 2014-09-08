@@ -23,6 +23,9 @@ clean-pyc:
 	find . -name '*.pyo' -exec rm -f {} +
 	find . -name '*~' -exec rm -f {} +
 
+clean-docs:
+	rm -rf docs/_build/
+
 lint:
 	flake8 wrdsbc tests
 
@@ -38,13 +41,20 @@ coverage:
 	coverage html
 	open htmlcov/index.html
 
-docs:
-	rm -f docs/wrdsbc.rst
-	rm -f docs/modules.rst
-	sphinx-apidoc -o docs/ wrdsbc
-	$(MAKE) -C docs clean
+docs-api:
+	rm -f docs/wrdsbc/wrdsbc.rst
+	rm -f docs/wrdsbc/modules.rst
+	sphinx-apidoc -M -o docs/wrdsbc/ wrdsbc
+
+docs: clean-docs docs-api
 	$(MAKE) -C docs html
+	#$(MAKE) -C docs singlehtml
+
+docs-open: docs open-docs
+
+open-docs:
 	open docs/_build/html/index.html
+	#open docs/_build/singlehtml/index.html
 
 release: clean
 	python setup.py sdist upload
@@ -52,3 +62,9 @@ release: clean
 sdist: clean
 	python setup.py sdist
 	ls -l dist
+
+gh-pages:
+	# Push docs to gh-pages branch with a .nojekyll file
+	ghp-import -n -p ./docs/_build/html/
+	#ghp-import -n -p ./docs/_build/singlehtml/
+
