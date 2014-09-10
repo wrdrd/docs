@@ -3,15 +3,15 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-wrd r&d documentation
+WRD R&D Documentation
 =======================
 
-| docs: https://wrd.github.io/docs/
-| source: https://github.com/wrd/docs
+| Docs (HTML): https://wrd.github.io/docs/
+| Source (ReStructuredText): https://github.com/wrd/docs
 
 
-consulting
-------------
+Web Consulting
+----------------
 
 .. toctree::
    :maxdepth: 3
