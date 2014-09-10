@@ -147,7 +147,7 @@ html_theme_options = {
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = "wrd r&d docs"
+html_title = "WRD R&D Documentation"
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
@@ -227,7 +227,7 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'wrdrd.tex', u'wrd r&d documentation',
+  ('index', 'wrdrd.tex', u'WRD R&D Documentation',
    u'wrd r&d', 'manual'),
 ]
 
@@ -257,7 +257,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'wrdrd', u'wrd r&d documentation',
+    ('index', 'wrdrd', u'WRD R&D Documentation',
      [u'WRD R&D'], 1)
 ]
 
@@ -271,8 +271,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'wrdrd', u'wrd r&d documentation',
-   u'WRD R&D', 'wrdrd', 'wrd r&d documentation',
+  ('index', 'wrdrd', u'WRD R&D Documentation',
+   u'WRD R&D', 'wrdrd', 'WRD R&D Documentation',
    'WRD R&D'),
 ]
 
