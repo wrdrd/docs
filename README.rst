@@ -1,6 +1,6 @@
 ===============================
-wrd r&d documentation
+WRD R&D Documentation
 ===============================
 
-https://wrd.github.io/docs/
+https://wrdrd.github.io/docs/
 
