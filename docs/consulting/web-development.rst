@@ -407,9 +407,10 @@ Hosting / DNS
     * ``http://reverseip.domaintools.com/search/?q=$IP``
 
 
-Web Development
-~~~~~~~~~~~~~~~~
 Requirements
+~~~~~~~~~~~~~~
+https://en.wikipedia.org/wiki/Requirements_analysis
 
-User Stories
+https://en.wikipedia.org/wiki/User_story
+
 
