@@ -11,7 +11,7 @@ https://en.wikipedia.org/wiki/Software_development_process
 
 https://en.wikipedia.org/wiki/Category:Software_design_patterns
 
-* https://en.wikipedia.org/wiki/Architectural_pattern_(computer_science)
+* `<https://en.wikipedia.org/wiki/Architectural_pattern_(computer_science)>`_
 * http://martinfowler.com/eaaCatalog/  
 
 https://en.wikipedia.org/wiki/Software_engineering
@@ -21,7 +21,7 @@ Computer Science
 -----------------
 https://en.wikipedia.org/wiki/Computer_science#Applied_computer_science
 
-https://en.wikipedia.org/wiki/Abstraction_(computer_science)
+`<https://en.wikipedia.org/wiki/Abstraction_(computer_science)>`_
 
 https://en.wikipedia.org/wiki/Category:Algorithms
 
