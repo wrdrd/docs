@@ -238,13 +238,13 @@ and movies at various points in a testing workflow.
 
 Bootstrap
 +++++++++++
-https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)
+`<https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)>`_
 
 * What is Bootstrap?
 
   * A responsive HTML and CSS (LESS) Framework
   * http://getbootstrap.com/
-  * https://en.wikipedia.org/wiki/LESS_(stylesheet_language)
+  * `<https://en.wikipedia.org/wiki/LESS_(stylesheet_language)>`_
 
 * Styles / Themes / Templates
 
@@ -407,9 +407,10 @@ Hosting / DNS
     * ``http://reverseip.domaintools.com/search/?q=$IP``
 
 
-Web Development
-~~~~~~~~~~~~~~~~
 Requirements
+~~~~~~~~~~~~~~
+https://en.wikipedia.org/wiki/Requirements_analysis
 
-User Stories
+https://en.wikipedia.org/wiki/User_story
+
 
