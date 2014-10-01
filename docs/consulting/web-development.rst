@@ -387,10 +387,11 @@ Hosting / DNS
 
     * Privacy / WhoisGuard?
 
-  * Reigration Service Provider
+  * DNS Registration Service Provider
   * Linux Commandline:
 
     * ``dig $DOMAIN``
+    * ``dig +qr any $DOMAIN``
     * ``dig -t mx $DOMAIN``
     * ``whois $DOMAIN``
 
