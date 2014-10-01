@@ -32,6 +32,8 @@ https://en.wikipedia.org/wiki/Business_model
 * Business Model examples: https://gist.github.com/ndarville/4295324
 
 
+.. _business-roi:
+
 ROI
 ~~~~
 https://en.wikipedia.org/wiki/Return_on_investment
@@ -50,6 +52,8 @@ Are there benchmarks for how / what competitors are doing in this space?
 What are our desired outcomes from this experiment?
 
 What do we want to happen when our message reaches people?
+
+See: :ref:`Information Systems > ROI <is-roi>`
 
 
 Marketing

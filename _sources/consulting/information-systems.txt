@@ -12,6 +12,9 @@ Criteria
 * Need / Want
 * Maintainability
 
+
+.. _is-roi:
+
 ROI
 ++++
 The investment should be justified by gains in productivity / efficiency.
@@ -24,6 +27,7 @@ Hours, Units, Dollars
 
 https://en.wikipedia.org/wiki/Productivity
 
+See: :ref:`Business > ROI <business-roi>`
 
 Need / Want
 ++++++++++++

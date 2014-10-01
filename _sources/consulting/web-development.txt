@@ -406,6 +406,8 @@ Hosting / DNS
 
     * ``http://reverseip.domaintools.com/search/?q=$IP``
 
+See: :py:mod:`wrdsbc.tools.domain`
+
 
 Requirements
 ~~~~~~~~~~~~~~
