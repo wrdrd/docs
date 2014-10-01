@@ -1,10 +1,18 @@
 Small Business Consulting
 =========================
 
-
 Business
 ----------
+https://en.wikipedia.org/wiki/Business
+
 https://en.wikipedia.org/wiki/Small_business
+
+https://en.wikipedia.org/wiki/Enterprise
+
+
+Strategic Planning
+--------------------
+https://en.wikipedia.org/wiki/Strategic_planning
 
 https://en.wikipedia.org/wiki/Goal
 
@@ -17,26 +25,11 @@ https://en.wikipedia.org/wiki/Management_by_objectives
 https://en.wikipedia.org/wiki/Business_process
 
 
-Marketing
-----------
-* https://en.wikipedia.org/wiki/Marketing
-* https://en.wikipedia.org/wiki/Marketing_plan
-* https://en.wikipedia.org/wiki/Online_marketing
+Business Modelling
+--------------------
+https://en.wikipedia.org/wiki/Business_model
 
-The Four Ps
-~~~~~~~~~~~~
-
-Price
-++++++
-
-Promotion
-++++++++++
-
-Positioning
-++++++++++++
-
-Product
-++++++++
+* Business Model examples: https://gist.github.com/ndarville/4295324
 
 
 ROI
@@ -59,6 +52,48 @@ What are our desired outcomes from this experiment?
 What do we want to happen when our message reaches people?
 
 
+Marketing
+----------
+https://en.wikipedia.org/wiki/Marketing
+
+https://en.wikipedia.org/wiki/Marketing_plan
+
+https://en.wikipedia.org/wiki/Online_marketing
+
+
+Relationships
+~~~~~~~~~~~~~~
+https://en.wikipedia.org/wiki/Customer_relationship_management
+
+https://en.wikipedia.org/wiki/Business_relationship_management
+
+https://en.wikipedia.org/wiki/Enterprise_relationship_management
+
+https://en.wikipedia.org/wiki/Interpersonal_relationship
+
+https://en.wikipedia.org/wiki/Tuckman%27s_stages_of_group_development
+
+Interactions: Cold, Warm, and Hot
+
+See :ref:`Customer Relationship Management (CRM) <crm>`
+
+
+The Four Ps
+~~~~~~~~~~~~
+
+Price
+++++++
+
+Promotion
+++++++++++
+
+Positioning
+++++++++++++
+
+Product
+++++++++
+
+
 Sales
 ~~~~~~
 https://en.wikipedia.org/wiki/Sales
@@ -67,12 +102,6 @@ https://en.wikipedia.org/wiki/Sales_process_engineering
 
 https://en.wikipedia.org/wiki/Profit-based_sales_targets
 
-
-Relationships
-++++++++++++++
-See :ref:`Customer Relationship Management (CRM) <crm>`
-
-Cold, Warm, and Hot
 
 
 Metrics
