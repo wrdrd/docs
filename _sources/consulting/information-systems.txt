@@ -156,7 +156,7 @@ Reliability
 +++++++++++
 https://en.wikipedia.org/wiki/Reliability_engineering
 
-https://en.wikipedia.org/wiki/Redundancy_(engineering)
+`<https://en.wikipedia.org/wiki/Redundancy_(engineering)>`_
 
 
 Scenarios
