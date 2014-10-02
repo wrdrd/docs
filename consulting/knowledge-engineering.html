@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    
+    <title>Knowledge Engineering &mdash; WRD R&amp;D Documentation</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    
+<link rel="stylesheet" href="../_static/css/basicstrap-base.css" type="text/css" />
+<link rel="stylesheet" href="../_static/css/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" href="../_static/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="../_static/css/font-awesome-ie7.min.css">
+<![endif]-->
+
+<style type="text/css">
+  body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+}
+</style>
+
+<link rel="stylesheet" href="../_static/basicstrap.css" type="text/css" />
+<link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+<link rel="stylesheet" href="../_static/css/bootstrap-responsive.min.css" type="text/css" />
+    
+<script type="text/javascript">
+  var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:    '../',
+            VERSION:     '0.1.0',
+            COLLAPSE_INDEX: false,
+            FILE_SUFFIX: '.html',
+            HAS_SOURCE:  true
+  };
+</script>
+<script type="text/javascript" src="../_static/js/jquery.min.js"></script>
+<script type="text/javascript" src="../_static/underscore.js"></script>
+<script type="text/javascript" src="../_static/doctools.js"></script>
+<script type="text/javascript" src="../_static/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.show-sidebar').click(function(e) {
+       e.preventDefault();
+       if ($(".show-sidebar").html() == "Open Table Of Contents") {
+          $('.for-mobile').removeClass('hidden-phone');
+          $(".show-sidebar").html("Close Table Of Contents");
+       } else {
+          $(".show-sidebar").html("Open Table Of Contents");
+       }
+    });
+  });
+  $(window).load(function () {
+    /*
+
+     * Scroll the window to avoid the topnav bar
+     * https://github.com/twitter/bootstrap/issues/1768
+     */
+    if ($(".navbar.navbar-fixed-top").length > 0) {
+      // var navHeight = $(".navbar").height(),
+      var navHeight = 40,
+        shiftWindow = function() { scrollBy(0, -navHeight - 10); };
+
+      if (location.hash) {
+        setTimeout(shiftWindow, 1);
+      }
+
+      window.addEventListener("hashchange", shiftWindow);
+    }
+  });
+</script>
+    <link rel="search" type="application/opensearchdescription+xml"
+    title="Search within WRD R&amp;D Documentation"
+    href="../_static/opensearch.xml"/>
+    <link rel="top" title="WRD R&amp;D Documentation" href="../index.html" />
+    <link rel="next" title="Entrepreneurship" href="entrepreneurship.html" />
+    <link rel="prev" title="Data Science" href="data-science.html" /> 
+  </head>
+  <body role="document">
+    <div class="navbar navbar-fixed-top " role="navigation" aria-label="top navigation">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <div role="banner">
+            <a class="brand" href="../index.html">WRD R&amp;D Documentation</a>
+          </div>
+          <div class="nav-collapse collapse">
+            <ul class="nav pull-right">
+              
+                <li>
+                <a href="../genindex.html" title="General Index" accesskey="I">index</a>
+                </li>
+                <li>
+                <a href="../py-modindex.html" title="Python Module Index" >modules</a>
+                </li>
+                <li>
+                <a href="entrepreneurship.html" title="Entrepreneurship" accesskey="N">next</a>
+                </li>
+                <li>
+                <a href="data-science.html" title="Data Science" accesskey="P">previous</a>
+                </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- container -->
+    <div class="container-fluid">
+
+
+      
+      <div class="row-fluid hidden-desktop hidden-tablet">
+      
+<div class="span5 ">
+  <a class="visible-phone btn btn-small show-sidebar" data-toggle="collapse" data-target=".for-mobile">Open Table Of Contents</a>
+  <div class="for-mobile sidebar hidden-phone" role="navigation" aria-label="main navigation">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Knowledge Engineering</a><ul>
+<li><a class="reference internal" href="#data-structures">Data Structures</a></li>
+<li><a class="reference internal" href="#databases">Databases</a></li>
+<li><a class="reference internal" href="#object-relations">Object Relations</a></li>
+<li><a class="reference internal" href="#data-grid">Data Grid</a></li>
+<li><a class="reference internal" href="#relational-databases">Relational Databases</a></li>
+<li><a class="reference internal" href="#nosql-databases">NoSQL Databases</a></li>
+<li><a class="reference internal" href="#distributed-databases">Distributed Databases</a></li>
+<li><a class="reference internal" href="#linked-data">Linked Data</a></li>
+<li><a class="reference internal" href="#data-analysis">Data Analysis</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="data-science.html"
+                        title="previous chapter">Data Science</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="entrepreneurship.html"
+                        title="next chapter">Entrepreneurship</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/consulting/knowledge-engineering.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" role="search">
+  <h3>Quick search</h3>
+  <form class="search form-search" action="../search.html" method="get">
+      <div class="input-append">
+        <input type="text" class="search-query" name="q">
+        <input type="submit" class="btn" value="Go" />
+      </div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+  </div>
+</div>
+      </div>
+      
+
+      <!-- row -->
+      <div class="row-fluid">
+        
+        
+
+        <div class="span7">
+          <div class="document" role="main">
+            <div class="documentwrapper">
+              <div class="bodywrapper">
+                <div class="body">
+                  
+  <div class="section" id="knowledge-engineering">
+<h1>Knowledge Engineering<a class="headerlink" href="#knowledge-engineering" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Knowledge_engineering">https://en.wikipedia.org/wiki/Knowledge_engineering</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Knowledge_representation_and_reasoning">https://en.wikipedia.org/wiki/Knowledge_representation_and_reasoning</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Knowledge#Communicating_knowledge">https://en.wikipedia.org/wiki/Knowledge#Communicating_knowledge</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Schema">https://en.wikipedia.org/wiki/Schema</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Epistemology">https://en.wikipedia.org/wiki/Epistemology</a></p>
+<ul class="simple">
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Truth">https://en.wikipedia.org/wiki/Truth</a></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Belief">https://en.wikipedia.org/wiki/Belief</a></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Theory_of_justification">https://en.wikipedia.org/wiki/Theory_of_justification</a></li>
+</ul>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Category:Logic">https://en.wikipedia.org/wiki/Category:Logic</a></p>
+<ul class="simple">
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Set_theory">https://en.wikipedia.org/wiki/Set_theory</a></li>
+</ul>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Category:Reasoning">https://en.wikipedia.org/wiki/Category:Reasoning</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Entailment">https://en.wikipedia.org/wiki/Entailment</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Inference">https://en.wikipedia.org/wiki/Inference</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Category:Ontology">https://en.wikipedia.org/wiki/Category:Ontology</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Category:Ontology_(information_science)">https://en.wikipedia.org/wiki/Category:Ontology_(information_science)</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Category:Graph_theory">https://en.wikipedia.org/wiki/Category:Graph_theory</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Category:Knowledge">https://en.wikipedia.org/wiki/Category:Knowledge</a></p>
+<div class="section" id="data-structures">
+<h2>Data Structures<a class="headerlink" href="#data-structures" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Data_structure">https://en.wikipedia.org/wiki/Data_structure</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/List_of_data_structures">https://en.wikipedia.org/wiki/List_of_data_structures</a></p>
+<ul class="simple">
+<li><a class="reference external" href="http://rosettacode.org/wiki/Category:Programming_Tasks">http://rosettacode.org/wiki/Category:Programming_Tasks</a></li>
+</ul>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Array_data_structure">https://en.wikipedia.org/wiki/Array_data_structure</a></p>
+<ul class="simple">
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/List_of_data_structures#Arrays">https://en.wikipedia.org/wiki/List_of_data_structures#Arrays</a></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Matrix_(computer_science)">https://en.wikipedia.org/wiki/Matrix_(computer_science)</a></li>
+</ul>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Linked_list">https://en.wikipedia.org/wiki/Linked_list</a></p>
+<ul class="simple">
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/List_of_data_structures#Lists">https://en.wikipedia.org/wiki/List_of_data_structures#Lists</a></li>
+</ul>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Tree_data_structure">https://en.wikipedia.org/wiki/Tree_data_structure</a></p>
+<ul class="simple">
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/List_of_data_structures#Trees">https://en.wikipedia.org/wiki/List_of_data_structures#Trees</a></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/B-tree">https://en.wikipedia.org/wiki/B-tree</a></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Trie">https://en.wikipedia.org/wiki/Trie</a></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Abstract_syntax_tree">https://en.wikipedia.org/wiki/Abstract_syntax_tree</a></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Parse_tree">https://en.wikipedia.org/wiki/Parse_tree</a></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Decision_tree">https://en.wikipedia.org/wiki/Decision_tree</a></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Minmax">https://en.wikipedia.org/wiki/Minmax</a></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Database_index">https://en.wikipedia.org/wiki/Database_index</a></li>
+</ul>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Record_(computer_science)">https://en.wikipedia.org/wiki/Record_(computer_science)</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Field_(computer_science)">https://en.wikipedia.org/wiki/Field_(computer_science)</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Index#Computer_science">https://en.wikipedia.org/wiki/Index#Computer_science</a></p>
+</div>
+<div class="section" id="databases">
+<h2>Databases<a class="headerlink" href="#databases" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Database">https://en.wikipedia.org/wiki/Database</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Database_schema">https://en.wikipedia.org/wiki/Database_schema</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Create,_read,_update_and_delete">https://en.wikipedia.org/wiki/Create,_read,_update_and_delete</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/CRUD">https://en.wikipedia.org/wiki/CRUD</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/ACID">https://en.wikipedia.org/wiki/ACID</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Query_plan">https://en.wikipedia.org/wiki/Query_plan</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Database_index">https://en.wikipedia.org/wiki/Database_index</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Search_engine_indexing">https://en.wikipedia.org/wiki/Search_engine_indexing</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Category:Database_software_comparisons">https://en.wikipedia.org/wiki/Category:Database_software_comparisons</a></p>
+</div>
+<div class="section" id="object-relations">
+<h2>Object Relations<a class="headerlink" href="#object-relations" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Object-relational_mapping">https://en.wikipedia.org/wiki/Object-relational_mapping</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Object-relational_impedance_mismatch">https://en.wikipedia.org/wiki/Object-relational_impedance_mismatch</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/List_of_object-relational_mapping_software">https://en.wikipedia.org/wiki/List_of_object-relational_mapping_software</a></p>
+</div>
+<div class="section" id="data-grid">
+<h2>Data Grid<a class="headerlink" href="#data-grid" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Data_grid">https://en.wikipedia.org/wiki/Data_grid</a></p>
+</div>
+<div class="section" id="relational-databases">
+<h2>Relational Databases<a class="headerlink" href="#relational-databases" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Relational_database">https://en.wikipedia.org/wiki/Relational_database</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Relational_database_management_system">https://en.wikipedia.org/wiki/Relational_database_management_system</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Relational_model">https://en.wikipedia.org/wiki/Relational_model</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Database_normalization">https://en.wikipedia.org/wiki/Database_normalization</a></p>
+<ul class="simple">
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Denormalization">https://en.wikipedia.org/wiki/Denormalization</a></li>
+</ul>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Relational_algebra">https://en.wikipedia.org/wiki/Relational_algebra</a></p>
+<ul class="simple">
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Projection_(relational_algebra)">https://en.wikipedia.org/wiki/Projection_(relational_algebra)</a></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/SQL">https://en.wikipedia.org/wiki/SQL</a></li>
+</ul>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Comparison_of_relational_database_management_systems">https://en.wikipedia.org/wiki/Comparison_of_relational_database_management_systems</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/OLAP">https://en.wikipedia.org/wiki/OLAP</a></p>
+</div>
+<div class="section" id="nosql-databases">
+<h2>NoSQL Databases<a class="headerlink" href="#nosql-databases" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/NoSQL">https://en.wikipedia.org/wiki/NoSQL</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Column_(data_store)">https://en.wikipedia.org/wiki/Column_(data_store)</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Keyspace_(distributed_data_store)">https://en.wikipedia.org/wiki/Keyspace_(distributed_data_store)</a></p>
+<ul class="simple">
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Column_family">https://en.wikipedia.org/wiki/Column_family</a></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Super_column">https://en.wikipedia.org/wiki/Super_column</a></li>
+</ul>
+</div>
+<div class="section" id="distributed-databases">
+<h2>Distributed Databases<a class="headerlink" href="#distributed-databases" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Distributed_database">https://en.wikipedia.org/wiki/Distributed_database</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Distributed_data_store">https://en.wikipedia.org/wiki/Distributed_data_store</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Distributed_computing">https://en.wikipedia.org/wiki/Distributed_computing</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Category:Distributed_computing_problems">https://en.wikipedia.org/wiki/Category:Distributed_computing_problems</a></p>
+<ul class="simple">
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Consensus_(computer_science)">https://en.wikipedia.org/wiki/Consensus_(computer_science)</a></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Leader_election">https://en.wikipedia.org/wiki/Leader_election</a></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Distributed_concurrency_control">https://en.wikipedia.org/wiki/Distributed_concurrency_control</a></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Distributed_lock_manager">https://en.wikipedia.org/wiki/Distributed_lock_manager</a></li>
+</ul>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Category:Distributed_algorithms">https://en.wikipedia.org/wiki/Category:Distributed_algorithms</a></p>
+<ul class="simple">
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Paxos_(computer_science)">https://en.wikipedia.org/wiki/Paxos_(computer_science)</a></li>
+</ul>
+</div>
+<div class="section" id="linked-data">
+<h2>Linked Data<a class="headerlink" href="#linked-data" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Linked_data">https://en.wikipedia.org/wiki/Linked_data</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Template:Semantic_Web">https://en.wikipedia.org/wiki/Template:Semantic_Web</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Category:Semantic_Web">https://en.wikipedia.org/wiki/Category:Semantic_Web</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Entity-attribute-value_model">https://en.wikipedia.org/wiki/Entity-attribute-value_model</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Resource_Description_Framework">https://en.wikipedia.org/wiki/Resource_Description_Framework</a> (RDF)</p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/RDF_Schema">https://en.wikipedia.org/wiki/RDF_Schema</a> (RDFS)</p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/SPARQL">https://en.wikipedia.org/wiki/SPARQL</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Web_Ontology_Language">https://en.wikipedia.org/wiki/Web_Ontology_Language</a> (OWL)</p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Reification_(computer_science">https://en.wikipedia.org/wiki/Reification_(computer_science</a>)#Reification_on_Semantic_Web</p>
+<p><a class="reference external" href="https://en.wikipedia.org/w/index.php?title=Eigenclass_model&amp;oldid=592778140#In_RDF_Schema">https://en.wikipedia.org/w/index.php?title=Eigenclass_model&amp;oldid=592778140#In_RDF_Schema</a></p>
+</div>
+<div class="section" id="data-analysis">
+<h2>Data Analysis<a class="headerlink" href="#data-analysis" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Category:Data_analysis">https://en.wikipedia.org/wiki/Category:Data_analysis</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Category:Statistical_inference">https://en.wikipedia.org/wiki/Category:Statistical_inference</a></p>
+<p>See: <a class="reference internal" href="data-science.html#data-science"><em>Data Science</em></a></p>
+</div>
+</div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+         
+<div class="span5 visible-desktop visible-tablet">
+  <div class=" sidebar hidden-phone" role="navigation" aria-label="main navigation">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Knowledge Engineering</a><ul>
+<li><a class="reference internal" href="#data-structures">Data Structures</a></li>
+<li><a class="reference internal" href="#databases">Databases</a></li>
+<li><a class="reference internal" href="#object-relations">Object Relations</a></li>
+<li><a class="reference internal" href="#data-grid">Data Grid</a></li>
+<li><a class="reference internal" href="#relational-databases">Relational Databases</a></li>
+<li><a class="reference internal" href="#nosql-databases">NoSQL Databases</a></li>
+<li><a class="reference internal" href="#distributed-databases">Distributed Databases</a></li>
+<li><a class="reference internal" href="#linked-data">Linked Data</a></li>
+<li><a class="reference internal" href="#data-analysis">Data Analysis</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="data-science.html"
+                        title="previous chapter">Data Science</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="entrepreneurship.html"
+                        title="next chapter">Entrepreneurship</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/consulting/knowledge-engineering.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" role="search">
+  <h3>Quick search</h3>
+  <form class="search form-search" action="../search.html" method="get">
+      <div class="input-append">
+        <input type="text" class="search-query" name="q">
+        <input type="submit" class="btn" value="Go" />
+      </div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+  </div>
+</div> 
+        
+      </div><!-- /row -->
+
+      <!-- row -->
+      <div class="row-fluid">
+<div class="related navbar " role="navigation" aria-label="related navigation">
+  <div class="navbar-inner">
+    <ul class="nav pull-right">
+      
+        <li><a href="../genindex.html" title="General Index" >index</a></li>
+        <li><a href="../py-modindex.html" title="Python Module Index" >modules</a></li>
+        <li><a href="entrepreneurship.html" title="Entrepreneurship" >next</a></li>
+        <li><a href="data-science.html" title="Data Science" >previous</a></li>
+        <li><a href="../index.html">WRD R&amp;D Documentation</a></li> 
+      
+    </ul>
+  </div>
+</div>
+      </div><!-- /row -->
+
+      <!-- footer -->
+      <footer role="contentinfo">
+          &copy; Copyright 2014 WRD R&amp;D.
+      </footer>
+      <!-- /footer -->
+
+    </div>
+    <!-- /container -->
+
+  </body>
+</html>
