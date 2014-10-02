@@ -55,6 +55,8 @@ Clouds
 ~~~~~~~
 https://en.wikipedia.org/wiki/Cloud_computing
 
+https://en.wikipedia.org/wiki/Cloud_computing#Service_models
+
 Why would I want to run my business "in the cloud"?
 
 What are our core competencies?
@@ -85,6 +87,8 @@ https://en.wikipedia.org/wiki/Application_service_provider
 
 Platform-as-a-Service
 ++++++++++++++++++++++
+https://en.wikipedia.org/wiki/Platform_as_a_service
+
 Platform-as-a-Service providers abstract a bit further in that they
 provide an implementation of platform APIs on top of which applications
 can be developed and hosted.
@@ -94,6 +98,8 @@ Heroku, AppEngine and AppScale are examples of Platforms-as-a-Service.
 
 Infrastructure-as-a-Service
 +++++++++++++++++++++++++++++++++++++
+
+
 Infrastructure-as-a-Service providers provide a bit more than regular
 hosting services in that they offer something like virtual datacenter
 resources.
