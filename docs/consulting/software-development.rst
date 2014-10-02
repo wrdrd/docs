@@ -53,31 +53,56 @@ https://en.wikipedia.org/wiki/Agile_software_development
 https://en.wikipedia.org/wiki/Lean_software_development
 
 * http://epf.eclipse.org/wikis/epfpractices/
-* https://en.wikipedia.org/wiki/Stand-up_meeting
 
-  1. What did I accomplish yesterday?
-  2. What will I do today?
-  3. What obstacles are impeding my progress?
+Stand-up Meeting
+~~~~~~~~~~~~~~~~~
+https://en.wikipedia.org/wiki/Stand-up_meeting
 
-* https://en.wikipedia.org/wiki/Test-driven_development (TDD)
-* https://en.wikipedia.org/wiki/Extreme_programming (XP)
+https://en.wikipedia.org/wiki/Scrum_(software_development)#Daily_scrum_meeting
 
-  * http://epf.eclipse.org/wikis/xp/
+- What did I accomplish yesterday?
+- What will I do today?
+- What obstacles are impeding my progress?
 
-* https://en.wikipedia.org/wiki/Unified_Process (UP, OpenUP)
+.. note:: Meeting participants need not actually stand.
 
-  * http://epf.eclipse.org/wikis/openup/
+Digital Stand-up Meeting
+```````````````````````````
+* Collaboratively edited (running) document
+* Chat (IM, Voice, Video)
 
-* `<https://en.wikipedia.org/wiki/Scrum_(software_development)>`_
-  (Scrum)
+Test-driven Development
+~~~~~~~~~~~~~~~~~~~~~~~~
+https://en.wikipedia.org/wiki/Test-driven_development (TDD)
 
-  + http://epf.eclipse.org/wikis/scrum/
-  * http://epf.eclipse.org/wikis/scrum/Scrum/tasks/the_daily_scrum_C8FB7908.html
 
+Extreme Programming
+~~~~~~~~~~~~~~~~~~~~
+https://en.wikipedia.org/wiki/Extreme_programming (XP)
+
+* http://epf.eclipse.org/wikis/xp/
+
+Unified Process
+~~~~~~~~~~~~~~~~~
+https://en.wikipedia.org/wiki/Unified_Process (UP, OpenUP)
+
+* http://epf.eclipse.org/wikis/openup/
+
+Scrum
+~~~~~~~
+`<https://en.wikipedia.org/wiki/Scrum_(software_development)>`_ (Scrum)
+
+* http://epf.eclipse.org/wikis/scrum/
+* http://epf.eclipse.org/wikis/scrum/Scrum/tasks/the_daily_scrum_C8FB7908.html
+
+Effort Estimation
+~~~~~~~~~~~~~~~~~~~
 https://en.wikipedia.org/wiki/Software_development_effort_estimation
 
 * https://en.wikipedia.org/wiki/Planning_poker
 
+Kanban
+~~~~~~~
 https://en.wikipedia.org/wiki/Kanban (Kanban)
 
 `<https://en.wikipedia.org/wiki/Kanban_(development)>`_
