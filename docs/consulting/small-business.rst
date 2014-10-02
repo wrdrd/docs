@@ -10,6 +10,15 @@ https://en.wikipedia.org/wiki/Small_business
 https://en.wikipedia.org/wiki/Enterprise
 
 
+Books
+~~~~~~
+
+* http://personalmba.com/best-business-books/
+* https://www.quora.com/What-books-should-entrepreneurs-read
+* https://en.wikipedia.org/wiki/The_Five_Dysfunctions_of_a_Team
+* https://en.wikipedia.org/wiki/Getting_Things_Done  
+
+
 Strategy
 -----------
 https://en.wikipedia.org/wiki/Strategy
@@ -29,11 +38,17 @@ https://en.wikipedia.org/wiki/Management_by_objectives
 https://en.wikipedia.org/wiki/Business_process
 
 
-Business Modelling
+Business Modeling
 --------------------
 https://en.wikipedia.org/wiki/Business_model
 
+https://en.wikipedia.org/wiki/Cash_flow
+
+https://en.wikipedia.org/wiki/Risk
+
 * Business Model examples: https://gist.github.com/ndarville/4295324
+* https://en.wikipedia.org/wiki/List_of_the_largest_software_companies
+* https://en.wikipedia.org/wiki/Business_models_for_open-source_software
 
 
 .. _business-roi:

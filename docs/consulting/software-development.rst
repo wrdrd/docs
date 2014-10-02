@@ -30,3 +30,14 @@ https://en.wikipedia.org/wiki/Category:Algorithms
 * https://rosalind.info
 
 https://en.wikipedia.org/wiki/Computer_engineering
+
+
+Open Source
+-------------
+https://en.wikipedia.org/wiki/Open_source
+
+https://en.wikipedia.org/wiki/Open-source_software
+
+https://en.wikipedia.org/wiki/Open-source_software_security#The_debate
+
+https://en.wikipedia.org/wiki/Network_effect
