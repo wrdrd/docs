@@ -211,17 +211,50 @@ https://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard
 
 Accounting
 +++++++++++
+https://en.wikipedia.org/wiki/Accounting
+
+https://en.wikipedia.org/wiki/Double-entry_bookkeeping_system
+
+https://en.wikipedia.org/wiki/Accountant
+
+https://en.wikipedia.org/wiki/Financial_statement
+
+https://en.wikipedia.org/wiki/Business_valuation
+
+
+GNUCash
+--------
+http://en.wikipedia.org/wiki/GnuCash
+
+* Free and Open Source
+* Personal Accounting
+* Small Business Accounting
+
+
+Quicken
+---------
+https://en.wikipedia.org/wiki/Quicken
+
+* Personal Accounting
+* USA Version
+* International Versions
+
 
 QuickBooks
 ````````````
 https://en.wikipedia.org/wiki/QuickBooks
 
+* Small Business Accounting
 * Square integrates with QuickBooks
 * http://www.google.com/enterprise/marketplace/search?query=quickbooks
 
+
 Freshbooks
 ````````````
-* online billing / invoicing / accounting (freshbooks, ...)
+http://www.freshbooks.com/
+
+* Cloud accounting
+* Online Invoicing, Accounting & Billing Software
 
 
 Payments
@@ -229,24 +262,36 @@ Payments
 
 Google Payments
 `````````````````
-  * online billing with Google Payments
+http://en.wikipedia.org/wiki/Google_Wallet
 
-    * http://www.google.com/wallet/business/payments/
-    * http://www.google.com/wallet/business/offers/index.html
+http://en.wikipedia.org/wiki/Google_Checkout
 
-      * similar to Groupon, LivingSocial
+* http://www.google.com/wallet/business/payments/
+* http://www.google.com/wallet/business/offers/index.html
 
-  * unfortunately there's not yet a Square API
+  * similar to Groupon, LivingSocial
 
 Paypal
 ```````
-
+https://en.wikipedia.org/wiki/PayPal
 
 Square
 ````````
+`<http://en.wikipedia.org/wiki/Square,_Inc.>`_
+
+* Square Reader (plugs into headphone jack)
+* Square Register (app)
+
+Amazon
+-------
+https://en.wikipedia.org/wiki/Amazon_Payments
+
 
 Apple
 ``````
+https://en.wikipedia.org/wiki/Apple_Pay
+
+
 
 Sales
 ~~~~~~~
