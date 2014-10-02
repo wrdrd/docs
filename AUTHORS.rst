@@ -3,7 +3,7 @@ Credits
 =======
 
 | WRD R&D
-| https://www.wrdrd.com/
+| http://www.wrdrd.com/
 
 
 Lead
