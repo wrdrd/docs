@@ -46,6 +46,10 @@ http://epf.eclipse.org/wikis/epfpractices/
 * http://epf.eclipse.org/wikis/openup/
 * http://epf.eclipse.org/wikis/scrum/
 
+https://en.wikipedia.org/wiki/Software_development_effort_estimation
+
+https://en.wikipedia.org/wiki/Planning_poker
+
 https://en.wikipedia.org/wiki/Kanban  
 
 `<https://en.wikipedia.org/wiki/Kanban_(development)>`_
