@@ -20,6 +20,7 @@ Web Consulting
    consulting/web-development
    consulting/software-development
    consulting/information-systems
+   consulting/data-science
    consulting/entrepreneurship
    consulting/collaboration-plan
 
