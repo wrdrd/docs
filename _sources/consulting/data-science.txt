@@ -20,6 +20,68 @@ https://en.wikipedia.org/wiki/Data_science
 Theory
 --------
 
+Science
++++++++++
+https://en.wikipedia.org/wiki/Science
+
+
+Cognitive Biases
+~~~~~~~~~~~~~~~~~~
+https://en.wikipedia.org/wiki/Cognitive_bias
+
+https://en.wikipedia.org/wiki/Heuristics_in_judgment_and_decision-making
+
+https://en.wikipedia.org/wiki/List_of_cognitive_biases
+
+* https://en.wikipedia.org/wiki/Confirmation_bias
+* https://en.wikipedia.org/wiki/Post_hoc_ergo_propter_hoc
+* https://en.wikipedia.org/wiki/Controlling_for_a_variable
+
+  * "distance walked per day"
+  * "sports played" (sport, years)
+
+https://en.wikipedia.org/wiki/Critical_thinking
+
+
+Open Science
+~~~~~~~~~~~~~~
+https://en.wikipedia.org/wiki/Open_science
+
+ * https://en.wikipedia.org/wiki/Open_source
+ * https://en.wikipedia.org/wiki/Open_standard
+
+   * https://en.wikipedia.org/wiki/Web_standards
+
+ * https://en.wikipedia.org/wiki/Open_data
+
+https://en.wikipedia.org/wiki/Peer_review
+
+* https://en.wikipedia.org/wiki/Repeatability
+* https://en.wikipedia.org/wiki/Reproducibility
+
+
+Scientific Method
+~~~~~~~~~~~~~~~~~~
+https://en.wikipedia.org/wiki/Scientific_method
+
+https://en.wikipedia.org/wiki/Argument
+
+https://en.wikipedia.org/wiki/Empirical_evidence
+
+https://en.wikipedia.org/wiki/Hypothesis
+
+* https://en.wikipedia.org/wiki/Statistical_hypothesis_testing
+* https://en.wikipedia.org/wiki/Null_hypothesis
+* https://en.wikipedia.org/wiki/Alternative_hypothesis
+* https://en.wikipedia.org/wiki/Dependent_and_independent_variables
+
+https://en.wikipedia.org/wiki/Design_of_experiments
+
+* https://en.wikipedia.org/wiki/Design_of_experiments#Discussion_topics_when_setting_up_an_experimental_design
+* https://en.wikipedia.org/wiki/Repeatability  
+* https://en.wikipedia.org/wiki/Reproducibility
+
+
 Math
 +++++
 https://en.wikipedia.org/wiki/Mathematics
@@ -85,67 +147,6 @@ https://en.wikipedia.org/wiki/Sensitivity_analysis
 https://en.wikipedia.org/wiki/Receiver_operating_characteristic
 
 
-Science
-+++++++++
-https://en.wikipedia.org/wiki/Science
-
-
-Cognitive Biases
-~~~~~~~~~~~~~~~~~~
-https://en.wikipedia.org/wiki/Cognitive_bias
-
-https://en.wikipedia.org/wiki/Heuristics_in_judgment_and_decision-making
-
-https://en.wikipedia.org/wiki/List_of_cognitive_biases
-
-* https://en.wikipedia.org/wiki/Confirmation_bias
-* https://en.wikipedia.org/wiki/Post_hoc_ergo_propter_hoc
-* https://en.wikipedia.org/wiki/Controlling_for_a_variable
-
-  * "distance walked per day"
-  * "sports played" (sport, years)
-
-https://en.wikipedia.org/wiki/Critical_thinking
-
-
-Open Science
-~~~~~~~~~~~~~~
-https://en.wikipedia.org/wiki/Open_science
-
- * https://en.wikipedia.org/wiki/Open_source
- * https://en.wikipedia.org/wiki/Open_standard
-
-   * https://en.wikipedia.org/wiki/Web_standards
-
- * https://en.wikipedia.org/wiki/Open_data
-
-https://en.wikipedia.org/wiki/Peer_review
-
-* https://en.wikipedia.org/wiki/Repeatability
-* https://en.wikipedia.org/wiki/Reproducibility
-
-
-Scientific Method
-~~~~~~~~~~~~~~~~~~
-https://en.wikipedia.org/wiki/Scientific_method
-
-https://en.wikipedia.org/wiki/Argument
-
-https://en.wikipedia.org/wiki/Empirical_evidence
-
-https://en.wikipedia.org/wiki/Hypothesis
-
-* https://en.wikipedia.org/wiki/Statistical_hypothesis_testing
-* https://en.wikipedia.org/wiki/Null_hypothesis
-* https://en.wikipedia.org/wiki/Alternative_hypothesis
-* https://en.wikipedia.org/wiki/Dependent_and_independent_variables
-
-https://en.wikipedia.org/wiki/Design_of_experiments
-
-* https://en.wikipedia.org/wiki/Design_of_experiments#Discussion_topics_when_setting_up_an_experimental_design
-* https://en.wikipedia.org/wiki/Repeatability  
-* https://en.wikipedia.org/wiki/Reproducibility
-
 
 
 Analysis
@@ -159,15 +160,14 @@ Learning
 ~~~~~~~~~
 https://en.wikipedia.org/wiki/Learning
 
+* http://plato.stanford.edu/entries/learning-formal/
+* http://plato.stanford.edu/entries/logic-inductive/
+
 https://en.wikipedia.org/wiki/Perceptual_learning
 
 https://en.wikipedia.org/wiki/Pattern_recognition_(psychology)#False_pattern_recognition
 
 `<https://en.wikipedia.org/wiki/Perturbation_theory_(quantum_mechanics)>`_
-
-
-* http://plato.stanford.edu/entries/learning-formal/
-* http://plato.stanford.edu/entries/logic-inductive/
 
 
 Data Mining
