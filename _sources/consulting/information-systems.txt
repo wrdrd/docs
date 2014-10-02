@@ -260,8 +260,8 @@ http://www.freshbooks.com/
 Payments
 ++++++++++
 
-Google Payments
-`````````````````
+Google 
+````````
 http://en.wikipedia.org/wiki/Google_Wallet
 
 http://en.wikipedia.org/wiki/Google_Checkout
@@ -271,7 +271,7 @@ http://en.wikipedia.org/wiki/Google_Checkout
 
   * similar to Groupon, LivingSocial
 
-Paypal
+PayPal
 ```````
 https://en.wikipedia.org/wiki/PayPal
 
