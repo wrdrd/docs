@@ -12,9 +12,11 @@ https://en.wikipedia.org/wiki/Enterprise
 
 Strategic Planning
 --------------------
+https://en.wikipedia.org/wiki/Goal
+
 https://en.wikipedia.org/wiki/Strategic_planning
 
-https://en.wikipedia.org/wiki/Goal
+https://en.wikipedia.org/wiki/Strategic_thinking
 
 https://en.wikipedia.org/wiki/Strategic_management
 
