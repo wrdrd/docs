@@ -6,8 +6,19 @@ https://en.wikipedia.org/wiki/Knowledge_representation_and_reasoning
 
 https://en.wikipedia.org/wiki/Knowledge#Communicating_knowledge
 
+https://en.wikipedia.org/wiki/Category:Knowledge
+
+https://en.wikipedia.org/wiki/Category:Graph_theory
+
 https://en.wikipedia.org/wiki/Schema
 
+https://en.wikipedia.org/wiki/Category:Ontology
+
+`<https://en.wikipedia.org/wiki/Category:Ontology_(information_science)>`_
+
+
+Logic, Reasoning, and Inference
+---------------------------------
 https://en.wikipedia.org/wiki/Epistemology
 
 * https://en.wikipedia.org/wiki/Truth
@@ -17,25 +28,53 @@ https://en.wikipedia.org/wiki/Epistemology
 https://en.wikipedia.org/wiki/Category:Logic
 
 * https://en.wikipedia.org/wiki/Set_theory
-
+* https://en.wikipedia.org/wiki/First-order_predicate_logic (FOL)
+* https://en.wikipedia.org/wiki/Description_logic (DL; DLP (Description Logic Programming))
+  * https://en.wikipedia.org/wiki/Description_logic#Notation
+  * https://en.wikipedia.org/wiki/TBox (Schema: Class/Property Ontology)
+  * https://en.wikipedia.org/wiki/ABox (Facts / Instances)
 
 https://en.wikipedia.org/wiki/Category:Reasoning
 
-https://en.wikipedia.org/wiki/Entailment
+* https://en.wikipedia.org/wiki/Entailment
+* https://en.wikipedia.org/wiki/Inference
+* http://www.w3.org/TR/owl2-profiles/#Introduction
+* https://en.wikipedia.org/wiki/Category:Statistical_inference
 
-https://en.wikipedia.org/wiki/Inference
+See: :ref:`Data Science <data-science>`
 
-https://en.wikipedia.org/wiki/Category:Ontology
 
-`<https://en.wikipedia.org/wiki/Category:Ontology_(information_science)>`_
+Data Grid
+------------
+https://en.wikipedia.org/wiki/Data_grid
 
-https://en.wikipedia.org/wiki/Category:Graph_theory
 
-https://en.wikipedia.org/wiki/Category:Knowledge
+
+
+
+Databases
+-----------
+https://en.wikipedia.org/wiki/Database
+
+https://en.wikipedia.org/wiki/Database_schema
+
+https://en.wikipedia.org/wiki/Create,_read,_update_and_delete
+
+https://en.wikipedia.org/wiki/CRUD
+
+https://en.wikipedia.org/wiki/ACID
+
+https://en.wikipedia.org/wiki/Query_plan
+
+https://en.wikipedia.org/wiki/Database_index
+
+https://en.wikipedia.org/wiki/Search_engine_indexing
+
+https://en.wikipedia.org/wiki/Category:Database_software_comparisons
 
 
 Data Structures
------------------
+++++++++++++++++
 https://en.wikipedia.org/wiki/Data_structure
 
 https://en.wikipedia.org/wiki/List_of_data_structures
@@ -69,44 +108,19 @@ https://en.wikipedia.org/wiki/Tree_data_structure
 https://en.wikipedia.org/wiki/Index#Computer_science
 
 
-
-Databases
------------
-https://en.wikipedia.org/wiki/Database
-
-https://en.wikipedia.org/wiki/Database_schema
-
-https://en.wikipedia.org/wiki/Create,_read,_update_and_delete
-
-https://en.wikipedia.org/wiki/CRUD
-
-https://en.wikipedia.org/wiki/ACID
-
-https://en.wikipedia.org/wiki/Query_plan
-
-https://en.wikipedia.org/wiki/Database_index
-
-https://en.wikipedia.org/wiki/Search_engine_indexing
-
-https://en.wikipedia.org/wiki/Category:Database_software_comparisons
-
-
-Object Relations
------------------
+Object Relational Mapping
++++++++++++++++++++++++++++
 https://en.wikipedia.org/wiki/Object-relational_mapping
+
+* https://en.wikipedia.org/wiki/Active_record_pattern
 
 https://en.wikipedia.org/wiki/Object-relational_impedance_mismatch
 
 https://en.wikipedia.org/wiki/List_of_object-relational_mapping_software
 
 
-Data Grid
-------------
-https://en.wikipedia.org/wiki/Data_grid
-
-
 Relational Databases
----------------------
++++++++++++++++++++++
 https://en.wikipedia.org/wiki/Relational_database
 
 https://en.wikipedia.org/wiki/Relational_database_management_system
@@ -129,7 +143,7 @@ https://en.wikipedia.org/wiki/OLAP
 
 
 NoSQL Databases
------------------
++++++++++++++++++
 https://en.wikipedia.org/wiki/NoSQL
 
 `<https://en.wikipedia.org/wiki/Column_(data_store)>`_
@@ -141,7 +155,7 @@ https://en.wikipedia.org/wiki/NoSQL
 
 
 Distributed Databases
-------------------------
+++++++++++++++++++++++++
 https://en.wikipedia.org/wiki/Distributed_database
 
 https://en.wikipedia.org/wiki/Distributed_data_store
@@ -154,6 +168,7 @@ https://en.wikipedia.org/wiki/Category:Distributed_computing_problems
 * https://en.wikipedia.org/wiki/Leader_election  
 * https://en.wikipedia.org/wiki/Distributed_concurrency_control
 * https://en.wikipedia.org/wiki/Distributed_lock_manager  
+*   
 
 https://en.wikipedia.org/wiki/Category:Distributed_algorithms
 
@@ -165,13 +180,25 @@ Linked Data
 -------------
 https://en.wikipedia.org/wiki/Linked_data
 
+https://en.wikipedia.org/wiki/Entity-attribute-value_model
+
+
+Semantic Web
+-------------
+https://en.wikipedia.org/wiki/Semantic_Web
+
 https://en.wikipedia.org/wiki/Template:Semantic_Web
 
 https://en.wikipedia.org/wiki/Category:Semantic_Web
 
-https://en.wikipedia.org/wiki/Entity-attribute-value_model
+* TODO: http://5stardata.info/
 
+
+RDF RDFS OWL SPARQL
++++++++++++++++++++++++
 https://en.wikipedia.org/wiki/Resource_Description_Framework (RDF)
+
+* `<https://en.wikipedia.org/wiki/Turtle_(syntax)>`_
 
 https://en.wikipedia.org/wiki/RDF_Schema (RDFS)
 
@@ -184,11 +211,7 @@ https://en.wikipedia.org/wiki/Reification_(computer_science)#Reification_on_Sema
 https://en.wikipedia.org/w/index.php?title=Eigenclass_model&oldid=592778140#In_RDF_Schema
 
 
-Data Analysis
---------------
+Schema.org
++++++++++++
+http://schema.rdfs.org/all.ttl
 
-https://en.wikipedia.org/wiki/Category:Data_analysis
-
-https://en.wikipedia.org/wiki/Category:Statistical_inference
-
-See: :ref:`Data Science <data-science>`

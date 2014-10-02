@@ -40,15 +40,22 @@ https://en.wikipedia.org/wiki/Software_development_process
 * https://en.wikipedia.org/wiki/Lean_software_development
 * https://en.wikipedia.org/wiki/Agile_software_development
 
-http://epf.eclipse.org/wikis/epfpractices/
+  * http://epf.eclipse.org/wikis/epfpractices/
+  * https://en.wikipedia.org/wiki/Extreme_programming
 
-* http://epf.eclipse.org/wikis/xp/  
-* http://epf.eclipse.org/wikis/openup/
-* http://epf.eclipse.org/wikis/scrum/
+    * http://epf.eclipse.org/wikis/xp/  
+
+  * https://en.wikipedia.org/wiki/Unified_Process
+
+    * http://epf.eclipse.org/wikis/openup/
+
+  * `<https://en.wikipedia.org/wiki/Scrum_(software_development)>`_
+
+    + http://epf.eclipse.org/wikis/scrum/
 
 https://en.wikipedia.org/wiki/Software_development_effort_estimation
 
-https://en.wikipedia.org/wiki/Planning_poker
+* https://en.wikipedia.org/wiki/Planning_poker
 
 https://en.wikipedia.org/wiki/Kanban  
 
