@@ -255,6 +255,9 @@ https://en.wikipedia.org/wiki/FreshBooks
 
 * Cloud accounting
 * Online Invoicing, Accounting & Billing Software
+* Time Tracking
+* Export to QuickBooks
+* http://community.freshbooks.com/addons/  
 
 
 Payments
