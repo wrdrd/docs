@@ -223,7 +223,7 @@ https://en.wikipedia.org/wiki/Business_valuation
 
 
 GNUCash
---------
+`````````
 http://en.wikipedia.org/wiki/GnuCash
 
 * Free and Open Source
@@ -232,7 +232,7 @@ http://en.wikipedia.org/wiki/GnuCash
 
 
 Quicken
----------
+`````````
 https://en.wikipedia.org/wiki/Quicken
 
 * Personal Accounting
