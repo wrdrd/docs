@@ -98,7 +98,7 @@ Heroku, AppEngine and AppScale are examples of Platforms-as-a-Service.
 
 Infrastructure-as-a-Service
 +++++++++++++++++++++++++++++++++++++
-
+https://en.wikipedia.org/wiki/Category:Cloud_infrastructure
 
 Infrastructure-as-a-Service providers provide a bit more than regular
 hosting services in that they offer something like virtual datacenter
