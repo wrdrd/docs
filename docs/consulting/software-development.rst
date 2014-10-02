@@ -5,10 +5,6 @@ https://en.wikipedia.org/wiki/Software_development
 
 https://en.wikipedia.org/wiki/Software_development_process
 
-* https://en.wikipedia.org/wiki/Waterfall_model
-* https://en.wikipedia.org/wiki/Lean_software_development
-* https://en.wikipedia.org/wiki/Agile_software_development
-
 https://en.wikipedia.org/wiki/Category:Software_design_patterns
 
 * `<https://en.wikipedia.org/wiki/Architectural_pattern_(computer_science)>`_
@@ -32,6 +28,29 @@ https://en.wikipedia.org/wiki/Category:Algorithms
 https://en.wikipedia.org/wiki/Computer_engineering
 
 
+Project Management
+-------------------
+https://en.wikipedia.org/wiki/Project_management
+
+https://en.wikipedia.org/wiki/Software_project_management
+
+https://en.wikipedia.org/wiki/Software_development_process
+
+* https://en.wikipedia.org/wiki/Waterfall_model
+* https://en.wikipedia.org/wiki/Lean_software_development
+* https://en.wikipedia.org/wiki/Agile_software_development
+
+http://epf.eclipse.org/wikis/epfpractices/
+
+* http://epf.eclipse.org/wikis/xp/  
+* http://epf.eclipse.org/wikis/openup/
+* http://epf.eclipse.org/wikis/scrum/
+
+https://en.wikipedia.org/wiki/Kanban  
+
+`<https://en.wikipedia.org/wiki/Kanban_(development)>`_
+
+
 Open Source
 -------------
 https://en.wikipedia.org/wiki/Open_source
@@ -39,5 +58,7 @@ https://en.wikipedia.org/wiki/Open_source
 https://en.wikipedia.org/wiki/Open-source_software
 
 https://en.wikipedia.org/wiki/Open-source_software_security#The_debate
+
+https://en.wikipedia.org/wiki/Comparison_of_open-source_software_hosting_facilities
 
 https://en.wikipedia.org/wiki/Network_effect
