@@ -283,7 +283,7 @@ Square
 * Square Register (app)
 
 Amazon
--------
+```````
 https://en.wikipedia.org/wiki/Amazon_Payments
 
 
