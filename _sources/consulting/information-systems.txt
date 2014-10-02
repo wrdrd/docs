@@ -251,7 +251,7 @@ https://en.wikipedia.org/wiki/QuickBooks
 
 Freshbooks
 ````````````
-http://www.freshbooks.com/
+https://en.wikipedia.org/wiki/FreshBooks
 
 * Cloud accounting
 * Online Invoicing, Accounting & Billing Software
