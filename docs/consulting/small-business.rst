@@ -10,8 +10,10 @@ https://en.wikipedia.org/wiki/Small_business
 https://en.wikipedia.org/wiki/Enterprise
 
 
-Strategic Planning
---------------------
+Strategy
+-----------
+https://en.wikipedia.org/wiki/Strategy
+
 https://en.wikipedia.org/wiki/Goal
 
 https://en.wikipedia.org/wiki/Strategic_planning
