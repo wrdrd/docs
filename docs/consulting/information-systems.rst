@@ -111,6 +111,14 @@ redundant storage systems on top of which IT systems can be
 developed, tested, and deployed.
 
 
+Configuration Management
+++++++++++++++++++++++++++
+https://en.wikipedia.org/wiki/Configuration_management#Software
+
+https://en.wikipedia.org/wiki/Software_configuration_management
+
+https://en.wikipedia.org/wiki/Comparison_of_open-source_configuration_management_software
+
 
 Information Security
 ~~~~~~~~~~~~~~~~~~~~~
