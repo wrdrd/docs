@@ -128,7 +128,13 @@ https://en.wikipedia.org/wiki/Profit-based_sales_targets
 
 
 Metrics
-~~~~~~~
+~~~~~~~~
+https://en.wikipedia.org/wiki/Performance_metric
+
+https://en.wikipedia.org/wiki/Performance_indicator
+
+https://en.wikipedia.org/wiki/Critical_success_factor
+
 
 Web Analytics
 ++++++++++++++
