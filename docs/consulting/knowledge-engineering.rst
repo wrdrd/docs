@@ -25,36 +25,48 @@ https://en.wikipedia.org/wiki/Epistemology
 * https://en.wikipedia.org/wiki/Belief
 * https://en.wikipedia.org/wiki/Theory_of_justification  
 
+.. contents::
+   :local:
+
 Logic
 +++++++
 https://en.wikipedia.org/wiki/Logic
 
 https://en.wikipedia.org/wiki/Category:Logic
 
-* https://en.wikipedia.org/wiki/Boolean_algebra
-* https://en.wikipedia.org/wiki/Set_theory
-* https://en.wikipedia.org/wiki/List_of_logic_symbols
-* https://en.wikipedia.org/wiki/Many-valued_logic
+https://en.wikipedia.org/wiki/List_of_logic_symbols
 
-  + https://en.wikipedia.org/wiki/Three-valued_logic (True, False, Unknown)
-  + https://en.wikipedia.org/wiki/Fuzzy_logic
-  + https://en.wikipedia.org/wiki/Probabilistic_logic
+Boolean Algebra
+````````````````
+https://en.wikipedia.org/wiki/Boolean_algebra
 
-.. contents::
+Set Theory
+````````````
+https://en.wikipedia.org/wiki/Set_theory
 
-.. _propositional-logic:
+Many-valued Logic
+````````````````````
+https://en.wikipedia.org/wiki/Many-valued_logic
+
+Three-valued Logic
+~~~~~~~~~~~~~~~~~~~~
+https://en.wikipedia.org/wiki/Three-valued_logic (True, False, Unknown)
+
+Fuzzy Logic
+~~~~~~~~~~~~~
+https://en.wikipedia.org/wiki/Fuzzy_logic
+
+Probabilistic Logic
+~~~~~~~~~~~~~~~~~~~~~
+https://en.wikipedia.org/wiki/Probabilistic_logic
 
 Propositional Logic
 `````````````````````
 https://en.wikipedia.org/wiki/Propositional_logic
 
-.. _first-order-logic:
-
 First-order Logic
 ```````````````````
 https://en.wikipedia.org/wiki/First-order_logic (FOL)
-
-.. _description-logic:
 
 Description Logic
 ```````````````````
@@ -301,7 +313,7 @@ https://en.wikipedia.org/wiki/Comma-separated_values
 
 Resource Description Framework (RDF)
 ++++++++++++++++++++++++++++++++++++++
-See: `RDF`
+See: :ref:`RDF`
 
 
 Linked Data
@@ -313,6 +325,7 @@ https://en.wikipedia.org/wiki/Entity-attribute-value_model
 * http://www.w3.org/TR/ld-glossary/#x5-star-linked-open-data
 * http://5stardata.info/
 
+See: :ref:`Semantic Web`
 
 Semantic Web
 -------------
