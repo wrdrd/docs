@@ -35,6 +35,8 @@ https://en.wikipedia.org/wiki/List_of_cognitive_biases
 
 * https://en.wikipedia.org/wiki/Confirmation_bias
 * https://en.wikipedia.org/wiki/Post_hoc_ergo_propter_hoc
+* https://en.wikipedia.org/wiki/Logical_fallacies#See_also
+* https://en.wikipedia.org/wiki/List_of_fallacies
 * https://en.wikipedia.org/wiki/Controlling_for_a_variable
 
   * "distance walked per day"
@@ -80,6 +82,10 @@ https://en.wikipedia.org/wiki/Design_of_experiments
 * https://en.wikipedia.org/wiki/Design_of_experiments#Discussion_topics_when_setting_up_an_experimental_design
 * https://en.wikipedia.org/wiki/Repeatability  
 * https://en.wikipedia.org/wiki/Reproducibility
+
+https://en.wikipedia.org/wiki/Meta-analysis
+
+https://en.wikipedia.org/wiki/Systematic_review
 
 
 Math
