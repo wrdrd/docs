@@ -91,7 +91,32 @@ Math
 +++++
 https://en.wikipedia.org/wiki/Mathematics
 
-https://en.wikipedia.org/wiki/List_of_mathematical_symbols
+https://en.wikipedia.org/wiki/Outline_of_mathematics
+
+* http://www.iflscience.com/brain/math-gifs-will-help-you-understand-these-concepts-better-your-teacher-ever-did
+
+
+Mathematical Notation
+~~~~~~~~~~~~~~~~~~~~~~~
+* https://en.wikipedia.org/wiki/Outline_of_mathematics#Mathematical_notation
+* https://en.wikipedia.org/wiki/List_of_mathematical_symbols
+* https://en.wikipedia.org/wiki/Greek_letters_used_in_mathematics,_science,_and_engineering
+* https://en.wikipedia.org/wiki/Latin_letters_used_in_mathematics
+
+LaTeX
+~~~~~~
+https://en.wikipedia.org/wiki/LaTeX
+
+* https://en.wikipedia.org/wiki/LaTeX#Examples
+* http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference
+* http://nbviewer.ipython.org/github/ipython/ipython/blob/master/examples/Notebook/Typesetting%20Equations.ipynb
+
+
+Tools
+``````
+* http://docs.mathjax.org/en/latest/tex.html
+* http://ipython.org/ipython-doc/dev/install/install.html#mathjax
+
 
 Information Theory
 ~~~~~~~~~~~~~~~~~~~~
