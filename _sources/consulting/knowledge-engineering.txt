@@ -245,7 +245,7 @@ https://en.wikipedia.org/wiki/Template:Semantic_Web
 https://en.wikipedia.org/wiki/Category:Semantic_Web
 
 
-.. _semweb-standards:
+.. _semantic-web-standards:
 
 Semantic Web Standards
 +++++++++++++++++++++++

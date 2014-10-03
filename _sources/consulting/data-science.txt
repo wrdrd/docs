@@ -52,7 +52,7 @@ https://en.wikipedia.org/wiki/Open_science
 * https://en.wikipedia.org/wiki/Open_source
 * https://en.wikipedia.org/wiki/Open_standard
   (:ref:`Web Standards <web-standards>`,
-  :ref:`Semantic Web Standards <semweb-standards>`)
+  :ref:`Semantic Web Standards <semantic-web-standards>`)
 * https://en.wikipedia.org/wiki/Open_data
 
 https://en.wikipedia.org/wiki/Peer_review
