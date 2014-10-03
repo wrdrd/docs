@@ -230,9 +230,9 @@ NoSQL Databases
 +++++++++++++++++
 https://en.wikipedia.org/wiki/NoSQL
 
-`<https://en.wikipedia.org/wiki/Column_(data_store)>`_
-
 `<https://en.wikipedia.org/wiki/Keyspace_(distributed_data_store)>`_
+
+`<https://en.wikipedia.org/wiki/Column_(data_store)>`_
 
 * `<https://en.wikipedia.org/wiki/Column_family>`_
 * `<https://en.wikipedia.org/wiki/Super_column>`_
