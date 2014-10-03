@@ -25,24 +25,68 @@ https://en.wikipedia.org/wiki/Epistemology
 * https://en.wikipedia.org/wiki/Belief
 * https://en.wikipedia.org/wiki/Theory_of_justification  
 
+Logic
++++++++
+https://en.wikipedia.org/wiki/Logic
+
 https://en.wikipedia.org/wiki/Category:Logic
 
+* https://en.wikipedia.org/wiki/Boolean_algebra
 * https://en.wikipedia.org/wiki/Set_theory
 * https://en.wikipedia.org/wiki/List_of_logic_symbols
-* https://en.wikipedia.org/wiki/First-order_predicate_logic (FOL)
-* https://en.wikipedia.org/wiki/Description_logic (DL; DLP (Description Logic Programming))
+* https://en.wikipedia.org/wiki/Many-valued_logic
 
-  * https://en.wikipedia.org/wiki/Description_logic#Notation
-  * https://en.wikipedia.org/wiki/TBox (Schema: Class/Property Ontology)
-  * https://en.wikipedia.org/wiki/ABox (Facts / Instances)
+  + https://en.wikipedia.org/wiki/Three-valued_logic (True, False, Unknown)
+  + https://en.wikipedia.org/wiki/Fuzzy_logic
+  + https://en.wikipedia.org/wiki/Probabilistic_logic
+
+.. contents::
+
+.. _propositional-logic:
+
+Propositional Logic
+`````````````````````
+https://en.wikipedia.org/wiki/Propositional_logic
+
+.. _first-order-logic:
+
+First-order Logic
+```````````````````
+https://en.wikipedia.org/wiki/First-order_logic (FOL)
+
+.. _description-logic:
+
+Description Logic
+```````````````````
+https://en.wikipedia.org/wiki/Description_logic (DL; DLP (Description Logic Programming))
+
+* https://en.wikipedia.org/wiki/Description_logic#Notation
+* https://en.wikipedia.org/wiki/Description_logic#Relationship_with_other_logics
+
+* https://en.wikipedia.org/wiki/TBox (Schema: Class/Property Ontology)
+* https://en.wikipedia.org/wiki/ABox (Facts / Instances)
+
+.. _reasoning:
+
+Reasoning
+++++++++++
+https://en.wikipedia.org/wiki/Deductive_reasoning
 
 https://en.wikipedia.org/wiki/Category:Reasoning
 
-* https://en.wikipedia.org/wiki/Entailment
-* https://en.wikipedia.org/wiki/Inference
-* https://en.wikipedia.org/wiki/Category:Statistical_inference
+https://en.wikipedia.org/wiki/Semantic_reasoner
 
-  * http://www.w3.org/TR/owl2-profiles/#Introduction
+Inference
+```````````
+* https://en.wikipedia.org/wiki/Inference
+* https://en.wikipedia.org/wiki/Rule_of_inference (Logic)
+* https://en.wikipedia.org/wiki/Category:Statistical_inference (Logic + Math)
+
+Entailment
+~~~~~~~~~~~~
+https://en.wikipedia.org/wiki/Entailment
+
+* http://www.w3.org/TR/owl2-profiles/#Introduction
 
 See: :ref:`Data Science <data-science>`
 
@@ -56,30 +100,6 @@ https://en.wikipedia.org/wiki/File_format
 `<https://en.wikipedia.org/wiki/Field_(computer_science)>`_
 
 https://en.wikipedia.org/wiki/Index#Computer_science
-
-
-Databases
------------
-https://en.wikipedia.org/wiki/Database
-
-https://en.wikipedia.org/wiki/Database_schema
-
-https://en.wikipedia.org/wiki/Create,_read,_update_and_delete
-
-https://en.wikipedia.org/wiki/CRUD
-
-https://en.wikipedia.org/wiki/ACID
-
-https://en.wikipedia.org/wiki/Query_plan
-
-https://en.wikipedia.org/wiki/Database_index
-
-https://en.wikipedia.org/wiki/Search_engine_indexing
-
-https://en.wikipedia.org/wiki/Category:Database_software_comparisons
-
-* http://db-engines.com/en/ranking
-
 
 Data Structures
 ++++++++++++++++
@@ -114,6 +134,30 @@ https://en.wikipedia.org/wiki/Tree_data_structure
 * https://en.wikipedia.org/wiki/Decision_tree
 * https://en.wikipedia.org/wiki/Minmax  
 * https://en.wikipedia.org/wiki/Database_index
+
+
+
+Databases
+-----------
+https://en.wikipedia.org/wiki/Database
+
+https://en.wikipedia.org/wiki/Database_schema
+
+https://en.wikipedia.org/wiki/Create,_read,_update_and_delete
+
+https://en.wikipedia.org/wiki/CRUD
+
+https://en.wikipedia.org/wiki/ACID
+
+https://en.wikipedia.org/wiki/Query_plan
+
+https://en.wikipedia.org/wiki/Database_index
+
+https://en.wikipedia.org/wiki/Search_engine_indexing
+
+https://en.wikipedia.org/wiki/Category:Database_software_comparisons
+
+* http://db-engines.com/en/ranking
 
 
 .. _orm:
@@ -162,6 +206,7 @@ SQL
 ````
 https://en.wikipedia.org/wiki/SQL
 
+* `<https://en.wikipedia.org/wiki/Null_(SQL)#Comparisons_with_NULL_and_the_three-valued_logic_.283VL.29>`_
 * `<https://en.wikipedia.org/wiki/Join_(SQL)>`_
 * https://en.wikipedia.org/wiki/SQL_injection
 * http://cwe.mitre.org/top25/#CWE-89 (#1)
