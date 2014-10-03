@@ -24,6 +24,10 @@ Science
 +++++++++
 https://en.wikipedia.org/wiki/Science
 
+https://en.wikipedia.org/wiki/Outline_of_science
+
+https://en.wikipedia.org/wiki/Category:Science
+
 
 Cognitive Biases
 ~~~~~~~~~~~~~~~~~~
@@ -111,9 +115,8 @@ https://en.wikipedia.org/wiki/LaTeX
 * http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference
 * http://nbviewer.ipython.org/github/ipython/ipython/blob/master/examples/Notebook/Typesetting%20Equations.ipynb
 
-
 Tools
-``````
+
 * http://docs.mathjax.org/en/latest/tex.html
 * http://ipython.org/ipython-doc/dev/install/install.html#mathjax
 
@@ -147,35 +150,60 @@ Statistics
 ~~~~~~~~~~~
 https://en.wikipedia.org/wiki/Statistics
 
-* https://en.wikipedia.org/wiki/Outline_of_statistics
+https://en.wikipedia.org/wiki/Outline_of_statistics
+
+https://en.wikipedia.org/wiki/Category:Statistics
+
+* https://en.wikipedia.org/wiki/Notation_in_probability_and_statistics
 * http://apcentral.collegeboard.com/apc/public/courses/teachers_corner/2151.html
 * https://www.class-central.com/search?q=statistics
-* http://onlinestatbook.com/2/index.html
-* https://en.wikipedia.org/wiki/Notation_in_probability_and_statistics
 
+Parametric Statistics
+````````````````````````
+https://en.wikipedia.org/wiki/Parametric_statistics
 
+Regression Analysis
+^^^^^^^^^^^^^^^^^^^^^
 https://en.wikipedia.org/wiki/Regression_analysis
 
+https://en.wikipedia.org/wiki/Template:Regression_bar
+
 * https://en.wikipedia.org/wiki/Simple_linear_regression
+* https://en.wikipedia.org/wiki/Ordinary_least_squares
 
-https://en.wikipedia.org/wiki/Correlation_and_dependence
 
-https://en.wikipedia.org/wiki/Correlation_does_not_imply_causation
+Nonparametric Statistics
+```````````````````````````
+https://en.wikipedia.org/wiki/Nonparametric_statistics
 
-https://en.wikipedia.org/wiki/Causality
+Descriptive Statistics
+^^^^^^^^^^^^^^^^^^^^^^^^
+https://en.wikipedia.org/wiki/Descriptive_statistics
 
+
+Statistical Inference
+^^^^^^^^^^^^^^^^^^^^^^^
 https://en.wikipedia.org/wiki/Statistical_inference
 
+* https://en.wikipedia.org/wiki/Statistical_inference#Models_and_assumptions
 * https://en.wikipedia.org/wiki/Statistical_inference#Modes_of_inference
 
 * https://en.wikipedia.org/wiki/Multivariate_statistics
 
   * https://en.wikipedia.org/wiki/Factor_analysis
 
+
+Causality
+```````````
+https://en.wikipedia.org/wiki/Causality
+
+https://en.wikipedia.org/wiki/Correlation_and_dependence
+
+https://en.wikipedia.org/wiki/Correlation_does_not_imply_causation
+
 https://en.wikipedia.org/wiki/Sensitivity_analysis
 
 https://en.wikipedia.org/wiki/Receiver_operating_characteristic
-
 
 
 
@@ -244,6 +272,43 @@ https://en.wikipedia.org/wiki/Data_visualization
 Data Visualization Tools
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* http://www.reddit.com/r/Python/comments/1gsxcb/python_graphingchart_toolslibraries/
-* http://mpld3.github.io/
+
+https://en.wikipedia.org/wiki/Matplotlib
+
+* http://scipy-lectures.github.io/intro/matplotlib/matplotlib.html
+* http://nbviewer.ipython.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb
+* http://tonysyu.github.com/mpltools/auto_examples/index.html#style-package
 * http://stanford.edu/~mwaskom/software/seaborn/index.html
+* http://mpld3.github.io/ (Matplotlib + D3.js)
+
+
+https://en.wikipedia.org/wiki/MayaVi
+
+* https://github.com/enthought/mayavi
+* https://scipy-lectures.github.io/packages/3d_plotting/index.html
+
+
+http://bokeh.pydata.org/
+
+http://vispy.org/ (OpenGL)
+
+http://nbviewer.ipython.org/github/jakevdp/OpenVisConf2014/blob/master/PythonVis.ipynb
+
+https://trifacta.github.io/vega/
+
+* https://github.com/wrobstory/vincent
+
+https://en.wikipedia.org/wiki/Plotly
+
+* https://plot.ly/
+
+
+https://en.wikipedia.org/wiki/D3.js
+
+* http://d3js.org/
+
+https://en.wikipedia.org/wiki/Three.js
+
+* http://threejs.org/
+
+
