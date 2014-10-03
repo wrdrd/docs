@@ -337,7 +337,7 @@ Schema Resources
 ++++++++++++++++++
 * http://prefix.cc
 * http://lov.okfn.org/dataset/lov/
-a
+
 
 Schema.org
 +++++++++++
