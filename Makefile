@@ -70,3 +70,5 @@ gh-pages:
 	ghp-import -n -p ./docs/_build/html/
 	#ghp-import -n -p ./docs/_build/singlehtml/
 
+push:
+	git push
