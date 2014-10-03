@@ -175,6 +175,8 @@ https://en.wikipedia.org/wiki/Category:Distributed_algorithms
 * `<https://en.wikipedia.org/wiki/Paxos_(computer_science)>`_
 
 
+.. _web-standards:
+
 Web Standards
 ---------------
 https://en.wikipedia.org/wiki/Web_standards
@@ -230,6 +232,9 @@ https://en.wikipedia.org/wiki/Linked_data
 
 https://en.wikipedia.org/wiki/Entity-attribute-value_model
 
+* http://www.w3.org/TR/ld-glossary/#x5-star-linked-open-data
+* http://5stardata.info/
+
 
 Semantic Web
 -------------
@@ -239,8 +244,8 @@ https://en.wikipedia.org/wiki/Template:Semantic_Web
 
 https://en.wikipedia.org/wiki/Category:Semantic_Web
 
-* TODO: http://5stardata.info/
 
+.. _semweb-standards:
 
 Semantic Web Standards
 +++++++++++++++++++++++
@@ -328,7 +333,7 @@ https://en.wikipedia.org/wiki/Web_Ontology_Language
 * http://www.w3.org/TR/owl2-quick-reference/
 * http://www.w3.org/TR/owl2-profiles/
 
-https://en.wikipedia.org/wiki/Reification_(computer_science)#Reification_on_Semantic_Web
+`<https://en.wikipedia.org/wiki/Reification_(computer_science)#Reification_on_Semantic_Web>`_
 
 https://en.wikipedia.org/w/index.php?title=Eigenclass_model&oldid=592778140#In_RDF_Schema
 
