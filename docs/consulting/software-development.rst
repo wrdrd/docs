@@ -60,14 +60,14 @@ https://en.wikipedia.org/wiki/Stand-up_meeting
 
 `<https://en.wikipedia.org/wiki/Scrum_(software_development)#Daily_scrum_meeting>`_
 
+.. note:: Meeting participants need not actually stand.
+
 Three Questions
 `````````````````
 
  - What did I accomplish yesterday?
  - What will I do today?
  - What obstacles are impeding my progress?
-
-.. note:: Meeting participants need not actually stand.
 
 Digital Stand-up Meeting
 ```````````````````````````
