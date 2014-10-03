@@ -202,7 +202,7 @@ html_show_sphinx = False
 # If true, an OpenSearch description file will be output, and all pages will
 # contain a <link> tag referring to it.  The value of this option must be the
 # base URL from which the finished HTML is served.
-html_use_opensearch = 'https://wrd.github.io/docs/'
+html_use_opensearch = 'https://wrdrd.github.io/docs/'
 
 # This is the file name suffix for HTML files (e.g. ".xhtml").
 #html_file_suffix = None
@@ -228,7 +228,7 @@ latex_elements = {
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
   ('index', 'wrdrd.tex', u'WRD R&D Documentation',
-   u'wrd r&d', 'manual'),
+   u'WRD R&D', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
