@@ -33,6 +33,9 @@ https://en.wikipedia.org/wiki/Category:Logic
 
 https://en.wikipedia.org/wiki/List_of_logic_symbols
 
+.. contents::
+   :local:
+
 Boolean Algebra
 ````````````````
 https://en.wikipedia.org/wiki/Boolean_algebra
@@ -57,21 +60,13 @@ Probabilistic Logic
 ~~~~~~~~~~~~~~~~~~~~~
 https://en.wikipedia.org/wiki/Probabilistic_logic
 
-.. contents::
-
-.. _propositional-logic:
-
 Propositional Logic
 `````````````````````
 https://en.wikipedia.org/wiki/Propositional_logic
 
-.. _first-order-logic:
-
 First-order Logic
 ```````````````````
 https://en.wikipedia.org/wiki/First-order_logic (FOL)
-
-.. _description-logic:
 
 Description Logic
 ```````````````````
