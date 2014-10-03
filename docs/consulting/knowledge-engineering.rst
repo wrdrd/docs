@@ -28,8 +28,10 @@ https://en.wikipedia.org/wiki/Epistemology
 https://en.wikipedia.org/wiki/Category:Logic
 
 * https://en.wikipedia.org/wiki/Set_theory
+* https://en.wikipedia.org/wiki/List_of_logic_symbols
 * https://en.wikipedia.org/wiki/First-order_predicate_logic (FOL)
 * https://en.wikipedia.org/wiki/Description_logic (DL; DLP (Description Logic Programming))
+
   * https://en.wikipedia.org/wiki/Description_logic#Notation
   * https://en.wikipedia.org/wiki/TBox (Schema: Class/Property Ontology)
   * https://en.wikipedia.org/wiki/ABox (Facts / Instances)
@@ -38,18 +40,22 @@ https://en.wikipedia.org/wiki/Category:Reasoning
 
 * https://en.wikipedia.org/wiki/Entailment
 * https://en.wikipedia.org/wiki/Inference
-* http://www.w3.org/TR/owl2-profiles/#Introduction
 * https://en.wikipedia.org/wiki/Category:Statistical_inference
+
+  * http://www.w3.org/TR/owl2-profiles/#Introduction
 
 See: :ref:`Data Science <data-science>`
 
 
-Data Grid
-------------
-https://en.wikipedia.org/wiki/Data_grid
+File Structures
+-----------------
+https://en.wikipedia.org/wiki/File_format
 
+`<https://en.wikipedia.org/wiki/Record_(computer_science)>`_
 
+`<https://en.wikipedia.org/wiki/Field_(computer_science)>`_
 
+https://en.wikipedia.org/wiki/Index#Computer_science
 
 
 Databases
@@ -72,6 +78,8 @@ https://en.wikipedia.org/wiki/Search_engine_indexing
 
 https://en.wikipedia.org/wiki/Category:Database_software_comparisons
 
+* http://db-engines.com/en/ranking
+
 
 Data Structures
 ++++++++++++++++
@@ -81,15 +89,21 @@ https://en.wikipedia.org/wiki/List_of_data_structures
 
 * http://rosettacode.org/wiki/Category:Programming_Tasks
 
+Arrays
+````````
 https://en.wikipedia.org/wiki/Array_data_structure
 
 * https://en.wikipedia.org/wiki/List_of_data_structures#Arrays
 * `<https://en.wikipedia.org/wiki/Matrix_(computer_science)>`_
 
+Lists
+```````
 https://en.wikipedia.org/wiki/Linked_list
 
 * https://en.wikipedia.org/wiki/List_of_data_structures#Lists
 
+Trees
+```````
 https://en.wikipedia.org/wiki/Tree_data_structure
 
 * https://en.wikipedia.org/wiki/List_of_data_structures#Trees
@@ -101,12 +115,8 @@ https://en.wikipedia.org/wiki/Tree_data_structure
 * https://en.wikipedia.org/wiki/Minmax  
 * https://en.wikipedia.org/wiki/Database_index
 
-`<https://en.wikipedia.org/wiki/Record_(computer_science)>`_
 
-`<https://en.wikipedia.org/wiki/Field_(computer_science)>`_
-
-https://en.wikipedia.org/wiki/Index#Computer_science
-
+.. _orm:
 
 Object Relational Mapping
 +++++++++++++++++++++++++++
@@ -123,23 +133,40 @@ Relational Databases
 +++++++++++++++++++++
 https://en.wikipedia.org/wiki/Relational_database
 
-https://en.wikipedia.org/wiki/Relational_database_management_system
-
 https://en.wikipedia.org/wiki/Relational_model
 
 https://en.wikipedia.org/wiki/Database_normalization
 
+* https://en.wikipedia.org/wiki/Natural_key
+* https://en.wikipedia.org/wiki/Surrogate_key
+* https://en.wikipedia.org/wiki/Foreign_key
 * https://en.wikipedia.org/wiki/Denormalization
 
 https://en.wikipedia.org/wiki/Relational_algebra
 
 * `<https://en.wikipedia.org/wiki/Projection_(relational_algebra)>`_
-* https://en.wikipedia.org/wiki/SQL
+* https://en.wikipedia.org/wiki/Relational_algebra#Joins_and_join-like_operators
+* https://en.wikipedia.org/wiki/Relational_algebra#Common_extensions
 
-https://en.wikipedia.org/wiki/Comparison_of_relational_database_management_systems
+https://en.wikipedia.org/wiki/Relational_database_management_system
+
+* https://en.wikipedia.org/wiki/Comparison_of_relational_database_management_systems
+* https://en.wikipedia.org/wiki/SQLite
+* https://en.wikipedia.org/wiki/MySQL
+* https://en.wikipedia.org/wiki/PostgreSQL
+* https://en.wikipedia.org/wiki/Virtuoso_Universal_Server
+* https://en.wikipedia.org/wiki/OLAP
 
 
-https://en.wikipedia.org/wiki/OLAP
+SQL
+````
+https://en.wikipedia.org/wiki/SQL
+
+* `<https://en.wikipedia.org/wiki/Join_(SQL)>`_
+* https://en.wikipedia.org/wiki/SQL_injection
+* http://cwe.mitre.org/top25/#CWE-89 (#1)
+
+See: :ref:`orm`
 
 
 NoSQL Databases
@@ -151,7 +178,8 @@ https://en.wikipedia.org/wiki/NoSQL
 `<https://en.wikipedia.org/wiki/Keyspace_(distributed_data_store)>`_
 
 * `<https://en.wikipedia.org/wiki/Column_family>`_
-* `<https://en.wikipedia.org/wiki/Super_column>`_  
+* `<https://en.wikipedia.org/wiki/Super_column>`_
+* https://en.wikipedia.org/wiki/Apache_Accumulo
 
 
 Distributed Databases
@@ -173,6 +201,11 @@ https://en.wikipedia.org/wiki/Category:Distributed_computing_problems
 https://en.wikipedia.org/wiki/Category:Distributed_algorithms
 
 * `<https://en.wikipedia.org/wiki/Paxos_(computer_science)>`_
+
+
+Data Grid
+------------
+https://en.wikipedia.org/wiki/Data_grid
 
 
 .. _web-standards:
@@ -223,7 +256,7 @@ https://en.wikipedia.org/wiki/Comma-separated_values
 
 Resource Description Framework (RDF)
 ++++++++++++++++++++++++++++++++++++++
-See: `RDF`_
+See: `RDF`
 
 
 Linked Data
