@@ -31,14 +31,31 @@ https://en.wikipedia.org/wiki/Logic
 
 https://en.wikipedia.org/wiki/Category:Logic
 
-* https://en.wikipedia.org/wiki/Boolean_algebra
-* https://en.wikipedia.org/wiki/Set_theory
-* https://en.wikipedia.org/wiki/List_of_logic_symbols
-* https://en.wikipedia.org/wiki/Many-valued_logic
+https://en.wikipedia.org/wiki/List_of_logic_symbols
 
-  + https://en.wikipedia.org/wiki/Three-valued_logic (True, False, Unknown)
-  + https://en.wikipedia.org/wiki/Fuzzy_logic
-  + https://en.wikipedia.org/wiki/Probabilistic_logic
+Boolean Algebra
+````````````````
+https://en.wikipedia.org/wiki/Boolean_algebra
+
+Set Theory
+````````````
+https://en.wikipedia.org/wiki/Set_theory
+
+Many-valued Logic
+````````````````````
+https://en.wikipedia.org/wiki/Many-valued_logic
+
+Three-valued Logic
+~~~~~~~~~~~~~~~~~~~~
+https://en.wikipedia.org/wiki/Three-valued_logic (True, False, Unknown)
+
+Fuzzy Logic
+~~~~~~~~~~~~~
+https://en.wikipedia.org/wiki/Fuzzy_logic
+
+Probabilistic Logic
+~~~~~~~~~~~~~~~~~~~~~
+https://en.wikipedia.org/wiki/Probabilistic_logic
 
 .. contents::
 
@@ -206,7 +223,7 @@ SQL
 ````
 https://en.wikipedia.org/wiki/SQL
 
-* https://en.wikipedia.org/wiki/Null_(SQL)#Comparisons_with_NULL_and_the_three-valued_logic_.283VL.29  
+* `<https://en.wikipedia.org/wiki/Null_(SQL)#Comparisons_with_NULL_and_the_three-valued_logic_.283VL.29>`_
 * `<https://en.wikipedia.org/wiki/Join_(SQL)>`_
 * https://en.wikipedia.org/wiki/SQL_injection
 * http://cwe.mitre.org/top25/#CWE-89 (#1)
@@ -301,7 +318,7 @@ https://en.wikipedia.org/wiki/Comma-separated_values
 
 Resource Description Framework (RDF)
 ++++++++++++++++++++++++++++++++++++++
-See: `RDF`
+See: :ref:`RDF`
 
 
 Linked Data
@@ -313,6 +330,7 @@ https://en.wikipedia.org/wiki/Entity-attribute-value_model
 * http://www.w3.org/TR/ld-glossary/#x5-star-linked-open-data
 * http://5stardata.info/
 
+See: :ref:`Semantic Web`
 
 Semantic Web
 -------------
