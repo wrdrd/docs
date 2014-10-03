@@ -69,7 +69,7 @@ https://en.wikipedia.org/wiki/Scrum_(software_development)#Daily_scrum_meeting
 Digital Stand-up Meeting
 ```````````````````````````
 * Collaboratively edited (running) document
-* Chat (IM, Voice, Video)  
+* Chat (IM, Voice, Video)
 
 Test-driven Development
 ~~~~~~~~~~~~~~~~~~~~~~~~
