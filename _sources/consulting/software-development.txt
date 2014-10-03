@@ -60,6 +60,9 @@ https://en.wikipedia.org/wiki/Stand-up_meeting
 
 `<https://en.wikipedia.org/wiki/Scrum_(software_development)#Daily_scrum_meeting>`_
 
+Three Questions
+`````````````````
+
  - What did I accomplish yesterday?
  - What will I do today?
  - What obstacles are impeding my progress?
