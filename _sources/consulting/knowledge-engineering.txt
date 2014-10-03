@@ -341,7 +341,7 @@ Schema Resources
 
 Schema.org
 +++++++++++
-http://en.wikipedia.org/wiki/Schema.org
+https://en.wikipedia.org/wiki/Schema.org
 
 * http://schema.org/
 * http://www.w3.org/wiki/WebSchemas
