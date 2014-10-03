@@ -44,10 +44,10 @@ https://en.wikipedia.org/wiki/Software_development_process
 
 Waterfall
 +++++++++++
-* https://en.wikipedia.org/wiki/Waterfall_model
+https://en.wikipedia.org/wiki/Waterfall_model
 
-Agile Software Development
-++++++++++++++++++++++++++++
+Agile
++++++++
 https://en.wikipedia.org/wiki/Agile_software_development
 
 https://en.wikipedia.org/wiki/Lean_software_development
@@ -58,11 +58,11 @@ Stand-up Meeting
 ~~~~~~~~~~~~~~~~~
 https://en.wikipedia.org/wiki/Stand-up_meeting
 
-https://en.wikipedia.org/wiki/Scrum_(software_development)#Daily_scrum_meeting
+`<https://en.wikipedia.org/wiki/Scrum_(software_development)#Daily_scrum_meeting>`_
 
-- What did I accomplish yesterday?
-- What will I do today?
-- What obstacles are impeding my progress?
+ - What did I accomplish yesterday?
+ - What will I do today?
+ - What obstacles are impeding my progress?
 
 .. note:: Meeting participants need not actually stand.
 
