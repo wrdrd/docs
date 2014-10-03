@@ -175,6 +175,54 @@ https://en.wikipedia.org/wiki/Category:Distributed_algorithms
 * `<https://en.wikipedia.org/wiki/Paxos_(computer_science)>`_
 
 
+Web Standards
+---------------
+https://en.wikipedia.org/wiki/Web_standards
+
+
+HTTP
++++++
+https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
+
+* https://tools.ietf.org/html/rfc2616
+* https://www.mnot.net/blog/2014/06/07/rfc2616_is_dead
+* http://tools.ietf.org/html/rfc7230#page-5
+
+
+HTML
++++++
+https://en.wikipedia.org/wiki/HTML
+
+* http://www.w3.org/TR/html4/
+* http://www.w3.org/TR/html5/
+* http://www.w3.org/html/wg/drafts/html/master/
+
+
+XML
+++++
+https://en.wikipedia.org/wiki/XML
+
+* http://www.w3.org/TR/xml/
+
+
+JSON
++++++
+https://en.wikipedia.org/wiki/JSON
+
+* https://tools.ietf.org/html/rfc7159
+* http://json.org/
+
+CSV
+++++
+https://en.wikipedia.org/wiki/Comma-separated_values
+
+* https://tools.ietf.org/html/rfc4180
+
+
+Resource Description Framework (RDF)
+++++++++++++++++++++++++++++++++++++++
+See: `RDF`_
+
 
 Linked Data
 -------------
@@ -194,24 +242,116 @@ https://en.wikipedia.org/wiki/Category:Semantic_Web
 * TODO: http://5stardata.info/
 
 
-RDF RDFS OWL SPARQL
+Semantic Web Standards
 +++++++++++++++++++++++
-https://en.wikipedia.org/wiki/Resource_Description_Framework (RDF)
 
-* `<https://en.wikipedia.org/wiki/Turtle_(syntax)>`_
+RDF
+````
+https://en.wikipedia.org/wiki/Resource_Description_Framework
 
-https://en.wikipedia.org/wiki/RDF_Schema (RDFS)
+* http://www.w3.org/TR/rdf11-concepts/
+* http://www.w3.org/TR/rdf-primer/
 
+N-Triples
+~~~~~~~~~~~
+http://en.wikipedia.org/wiki/N-Triples
+
+* http://www.w3.org/TR/n-triples/
+
+RDF/XML
+~~~~~~~~
+https://en.wikipedia.org/wiki/RDF/XML
+
+* http://www.w3.org/TR/rdf-syntax-grammar/
+
+TriX
+~~~~~
+`<https://en.wikipedia.org/wiki/TriX_(syntax)>`_
+
+
+Notation3
+~~~~~~~~~~
+http://en.wikipedia.org/wiki/Notation3
+
+* http://www.w3.org/TeamSubmission/n3/
+* ``=>`` implies
+
+Turtle
+~~~~~~~~
+`<https://en.wikipedia.org/wiki/Turtle_(syntax)>`_
+
+* http://www.w3.org/TR/turtle/
+
+TriG
+~~~~~
+`<https://en.wikipedia.org/wiki/TriG_(syntax)>`_
+
+* http://www.w3.org/TR/trig/
+
+
+
+RDFa
+``````
+http://en.wikipedia.org/wiki/RDFa
+
+* http://www.w3.org/TR/rdfa-primer/
+* http://www.w3.org/TR/html-rdfa/ (HTML5, XHTML5)
+
+JSON-LD
+````````
+http://en.wikipedia.org/wiki/JSON-LD
+
+* http://www.w3.org/TR/json-ld/
+* http://json-ld.org/
+
+RDFS
+`````
+https://en.wikipedia.org/wiki/RDF_Schema
+
+* http://www.w3.org/TR/rdf-schema/
+
+SPARQL
+```````
 https://en.wikipedia.org/wiki/SPARQL
 
-https://en.wikipedia.org/wiki/Web_Ontology_Language (OWL)
+* http://www.w3.org/TR/sparql11-overview/
+* http://www.w3.org/TR/sparql11-query/
+* http://www.w3.org/TR/sparql11-update/
+* http://www.w3.org/TR/sparql11-entailment/
+
+OWL
+`````
+https://en.wikipedia.org/wiki/Web_Ontology_Language
+
+* http://www.w3.org/TR/owl2-overview/
+* http://www.w3.org/TR/owl2-primer/
+* http://www.w3.org/TR/owl2-quick-reference/
+* http://www.w3.org/TR/owl2-profiles/
 
 https://en.wikipedia.org/wiki/Reification_(computer_science)#Reification_on_Semantic_Web
 
 https://en.wikipedia.org/w/index.php?title=Eigenclass_model&oldid=592778140#In_RDF_Schema
 
 
+Schema Resources
+++++++++++++++++++
+* http://prefix.cc
+* http://lov.okfn.org/dataset/lov/
+a
+
 Schema.org
 +++++++++++
-http://schema.rdfs.org/all.ttl
+http://en.wikipedia.org/wiki/Schema.org
+
+* http://schema.org/
+* http://www.w3.org/wiki/WebSchemas
+
+Schema.org RDF
+````````````````
+* http://schema.rdfs.org/all.json
+* http://schema.rdfs.org/all.rdf
+* http://schema.rdfs.org/all.nt
+* http://schema.rdfs.org/all.ttl *
+* http://schema.rdfs.org/all-classes.csv
+* http://schema.org/docs/schemaorg.owl
 
