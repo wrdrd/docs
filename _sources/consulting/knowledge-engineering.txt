@@ -328,7 +328,7 @@ https://en.wikipedia.org/wiki/Web_Ontology_Language
 * http://www.w3.org/TR/owl2-quick-reference/
 * http://www.w3.org/TR/owl2-profiles/
 
-https://en.wikipedia.org/wiki/Reification_(computer_science)#Reification_on_Semantic_Web
+`<https://en.wikipedia.org/wiki/Reification_(computer_science)#Reification_on_Semantic_Web>`_
 
 https://en.wikipedia.org/w/index.php?title=Eigenclass_model&oldid=592778140#In_RDF_Schema
 
