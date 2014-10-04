@@ -221,11 +221,29 @@ https://en.wikipedia.org/wiki/Learning
 * http://plato.stanford.edu/entries/learning-formal/
 * http://plato.stanford.edu/entries/logic-inductive/
 
+https://en.wikipedia.org/wiki/Autodidacticism
+
 https://en.wikipedia.org/wiki/Perceptual_learning
 
 https://en.wikipedia.org/wiki/Pattern_recognition_(psychology)#False_pattern_recognition
 
+https://en.wikipedia.org/wiki/Rhetoric
+
+https://en.wikipedia.org/wiki/Socratic_method
+
+https://en.wikipedia.org/wiki/Socratic_questioning
+
+https://en.wikipedia.org/wiki/Platonic_dialogue#The_dialogues
+
+https://en.wikipedia.org/wiki/Dialectic
+
+https://en.wikipedia.org/wiki/Dialogue
+
 `<https://en.wikipedia.org/wiki/Perturbation_theory_(quantum_mechanics)>`_
+
+https://en.wikipedia.org/wiki/Validated_learning
+
+https://en.wikipedia.org/wiki/Organizational_learning
 
 
 Data Mining
@@ -239,6 +257,8 @@ https://en.wikipedia.org/wiki/Extract,_transform,_load
 Machine Learning
 ~~~~~~~~~~~~~~~~~~
 https://en.wikipedia.org/wiki/Machine_learning
+
+https://en.wikipedia.org/wiki/Online_machine_learning
 
 * https://en.wikipedia.org/wiki/Supervised_learning
 * https://en.wikipedia.org/wiki/Unsupervised_learning
