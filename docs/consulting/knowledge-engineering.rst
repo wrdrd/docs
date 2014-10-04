@@ -455,7 +455,6 @@ OWL
 `````
 https://en.wikipedia.org/wiki/Web_Ontology_Language
 
-
 * http://www.w3.org/TR/owl2-overview/
 * http://www.w3.org/TR/owl2-primer/
 * http://www.w3.org/TR/owl2-quick-reference/
@@ -465,12 +464,13 @@ PROV
 ```````
 http://www.w3.org/2011/prov/wiki/Main_Page
 
-
 * `<http://www.w3.org/ns/prov#>`_
 * http://www.w3.org/ns/prov.owl
 * http://www.w3.org/TR/prov-overview/
 * http://www.w3.org/TR/prov-primer/
+* http://www.w3.org/TR/prov-o/
 
+https://en.wikipedia.org/wiki/Provenance#Data_provenance
 
 OA
 ````
@@ -480,6 +480,7 @@ http://www.openannotation.org/
 * http://prefix.cc/oa
 * http://lov.okfn.org/dataset/lov/details/vocabulary_oa.html
 
+https://en.wikipedia.org/wiki/Web_annotation
 
 
 Semantic Web Tools
