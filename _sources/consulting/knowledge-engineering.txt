@@ -271,6 +271,10 @@ Web Standards
 ---------------
 https://en.wikipedia.org/wiki/Web_standards
 
+https://en.wikipedia.org/wiki/World_Wide_Web_Consortium#Standards
+
+https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force
+
 
 HTTP
 +++++
@@ -320,8 +324,7 @@ Linked Data
 -------------
 https://en.wikipedia.org/wiki/Linked_data
 
-https://en.wikipedia.org/wiki/Entity-attribute-value_model
-
+* http://www.w3.org/DesignIssues/LinkedData.html
 * http://www.w3.org/TR/ld-glossary/#x5-star-linked-open-data
 * http://5stardata.info/
 
@@ -335,11 +338,33 @@ https://en.wikipedia.org/wiki/Template:Semantic_Web
 
 https://en.wikipedia.org/wiki/Category:Semantic_Web
 
+`<https://en.wikipedia.org/wiki/Semantics_(computer_science)>`_
+
+* http://www.w3.org/2001/sw/wiki/Books
+
+
 
 .. _semantic-web-standards:
 
 Semantic Web Standards
 +++++++++++++++++++++++
+
+`<https://en.wikipedia.org/wiki/Statement_(computer_science)>`_
+
+`<https://en.wikipedia.org/wiki/Resource_(computing)>`_
+
+https://en.wikipedia.org/wiki/Entity-attribute-value_model
+
+https://en.wikipedia.org/wiki/Tuple
+
+* `<https://en.wikipedia.org/wiki/Triple_(mathematics)>`_
+* `<https://en.wikipedia.org/wiki/3-tuple>`_
+* `<https://en.wikipedia.org/wiki/Quad_(mathematics)>`_
+* `<https://en.wikipedia.org/wiki/4-tuple>`_
+
+`<https://en.wikipedia.org/wiki/Reification_(computer_science)#Reification_on_Semantic_Web>`_
+
+https://en.wikipedia.org/w/index.php?title=Eigenclass_model&oldid=592778140#In_RDF_Schema
 
 RDF
 ````
@@ -347,6 +372,7 @@ https://en.wikipedia.org/wiki/Resource_Description_Framework
 
 * http://www.w3.org/TR/rdf11-concepts/
 * http://www.w3.org/TR/rdf-primer/
+
 
 N-Triples
 ~~~~~~~~~~~
@@ -364,9 +390,10 @@ TriX
 ~~~~~
 `<https://en.wikipedia.org/wiki/TriX_(syntax)>`_
 
+* http://www.w3.org/2004/03/trix/rdfg-1/
 
-Notation3
-~~~~~~~~~~
+N3
+~~~~
 http://en.wikipedia.org/wiki/Notation3
 
 * http://www.w3.org/TeamSubmission/n3/
@@ -399,12 +426,19 @@ http://en.wikipedia.org/wiki/JSON-LD
 
 * http://www.w3.org/TR/json-ld/
 * http://json-ld.org/
+* http://json-ld.org/playground/
 
 RDFS
 `````
 https://en.wikipedia.org/wiki/RDF_Schema
 
 * http://www.w3.org/TR/rdf-schema/
+
+SKOS
+`````
+https://en.wikipedia.org/wiki/Simple_Knowledge_Organization_System
+
+* `<http://www.w3.org/2004/02/skos/core#>`_
 
 SPARQL
 ```````
@@ -414,25 +448,61 @@ https://en.wikipedia.org/wiki/SPARQL
 * http://www.w3.org/TR/sparql11-query/
 * http://www.w3.org/TR/sparql11-update/
 * http://www.w3.org/TR/sparql11-entailment/
+* http://www.w3.org/wiki/SparqlImplementations
+* http://www.w3.org/2009/sparql/implementations/#sparql11-entailment
 
 OWL
 `````
 https://en.wikipedia.org/wiki/Web_Ontology_Language
+
 
 * http://www.w3.org/TR/owl2-overview/
 * http://www.w3.org/TR/owl2-primer/
 * http://www.w3.org/TR/owl2-quick-reference/
 * http://www.w3.org/TR/owl2-profiles/
 
-`<https://en.wikipedia.org/wiki/Reification_(computer_science)#Reification_on_Semantic_Web>`_
+PROV
+```````
+http://www.w3.org/2011/prov/wiki/Main_Page
 
-https://en.wikipedia.org/w/index.php?title=Eigenclass_model&oldid=592778140#In_RDF_Schema
+
+* `<http://www.w3.org/ns/prov#>`_
+* http://www.w3.org/ns/prov.owl
+* http://www.w3.org/TR/prov-overview/
+* http://www.w3.org/TR/prov-primer/
 
 
-Schema Resources
-++++++++++++++++++
+OA
+````
+http://www.openannotation.org/
+
+* http://www.openannotation.org/spec/core/
+* http://prefix.cc/oa
+* http://lov.okfn.org/dataset/lov/details/vocabulary_oa.html
+
+
+
+Semantic Web Tools
++++++++++++++++++++++
+
+RDFJS
+~~~~~~
+http://www.w3.org/community/rdfjs/
+
+
+
+RDFLib
+~~~~~~~
+https://en.wikipedia.org/wiki/RDFLib
+
+* https://rdflib.readthedocs.org/en/latest/intro_to_creating_rdf.html
+
+
+Web Schema Resources
++++++++++++++++++++++
 * http://prefix.cc
 * http://lov.okfn.org/dataset/lov/
+* http://lod-cloud.net/
 
 
 Schema.org
@@ -440,7 +510,9 @@ Schema.org
 https://en.wikipedia.org/wiki/Schema.org
 
 * http://schema.org/
+* http://schema.org/docs/full.html
 * http://www.w3.org/wiki/WebSchemas
+* http://www.w3.org/wiki/WebSchemas/SchemaDotOrgProposals
 
 Schema.org RDF
 ````````````````
