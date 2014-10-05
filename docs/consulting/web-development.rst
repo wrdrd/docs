@@ -388,40 +388,39 @@ Hosting / DNS
 .. _dns-configuration:
 
 DNS Configuration
-~~~~~~~~~~~~~~~~~~~
++++++++++++++++++++
+:term:`DNS` Domain Name Information (A, CNAME, MX)
 ::
 
     DOMAIN="<domainname>"
     IP=$(nslookup $DOMAIN)
 
-* DNS Domain Name Information (A, CNAME, MX)
+* Date of Registration / Expiration
+* Registrant (Name, Address, Email)
 
-  * Date of Registration / Expiration
-  * Registrant (Name, Address, Email)
+  * Privacy / WhoisGuard
 
-    * Privacy / WhoisGuard?
+* DNS Registration Service Provider
+* Linux/OSX DNS Commands::
 
-  * DNS Registration Service Provider
-  * Linux/OSX DNS Commands::
+    nslookup DOMAIN
+    dig $DOMAIN
+    dig +qr any $DOMAIN
+    dig -t mx $DOMAIN
+    whois $DOMAIN
+    whois $DOMAIN | egrep 'Registrar|Date|Domain Status|Registrant|Admin'
 
-      nslookup DOMAIN
-      dig $DOMAIN
-      dig +qr any $DOMAIN
-      dig -t mx $DOMAIN
-      whois $DOMAIN
-      whois $DOMAIN | egrep 'Registrar|Date|Domain Status|Registrant|Admin'
+* Online Whois
 
-  * Online Whois
-
-    * http://whois.domaintools.com/$DOMAIN
+  * http://whois.domaintools.com/$DOMAIN
 
 Web Hosting
-~~~~~~~~~~~~~
-* Web Hosting Information
++++++++++++++
+Web Hosting Information
 
-  * Reverse IP (How many sites are hosted from the same IP address?)
+* Reverse IP (How many sites are hosted from the same IP address?)
 
-    * http://reverseip.domaintools.com/search/?q=$IP
+  * http://reverseip.domaintools.com/search/?q=$IP
 
 See: :py:mod:`wrdsbc.tools.domain`
 
