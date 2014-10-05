@@ -419,9 +419,9 @@ Web Hosting
 ~~~~~~~~~~~~~
 * Web Hosting Information
 
-  * Reverse IP (How many sites are hosted from the same IP address?)::
+  * Reverse IP (How many sites are hosted from the same IP address?)
 
-      http://reverseip.domaintools.com/search/?q=$IP
+    * http://reverseip.domaintools.com/search/?q=$IP
 
 See: :py:mod:`wrdsbc.tools.domain`
 
