@@ -289,5 +289,15 @@ texinfo_documents = [
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 #texinfo_no_detailmenu = False
 
+def configure_meta_tags(app, pagename, templatename, context, doctree):
+    metatags = context.get('metatags', '')
+    metatags += """
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- TODO: ogp.me -->
+    <!-- TODO: twitter cards -->
+    """
+    context['metatags'] = metatags
+
 def setup(app):
     app.add_javascript('js/local.js')
+    app.connect('html-page-context', configure_meta_tags)
