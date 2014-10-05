@@ -418,7 +418,8 @@ Web Hosting
 +++++++++++++
 :term:`Web Hosting <web-hosting-service>` Information
 
-* Reverse IP (How many sites are hosted from the same IP address?)
+* Reverse IP (How many sites are hosted from the same
+  :term:`IP address`?)
 
   * http://reverseip.domaintools.com/search/?q=$IP
 
