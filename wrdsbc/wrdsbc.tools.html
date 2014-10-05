@@ -8,18 +8,16 @@
     <meta charset="utf-8" />
     
     <title>wrdsbc.tools package &mdash; WRD R&amp;D Documentation</title>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
     
+
 <link rel="stylesheet" href="../_static/css/basicstrap-base.css" type="text/css" />
-<link rel="stylesheet" href="../_static/css/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" id="current-theme" href="../_static/css/bootstrap3/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" id="current-adjust-theme" type="text/css" />
+
 <link rel="stylesheet" href="../_static/css/font-awesome.min.css">
-<!--[if IE 7]>
-<link rel="stylesheet" href="../_static/css/font-awesome-ie7.min.css">
-<![endif]-->
 
 <style type="text/css">
   body {
@@ -29,9 +27,8 @@
 }
 </style>
 
-<link rel="stylesheet" href="../_static/basicstrap.css" type="text/css" />
+<link rel="stylesheet" href="../_static/css/basicstrap.css" type="text/css" />
 <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-<link rel="stylesheet" href="../_static/css/bootstrap-responsive.min.css" type="text/css" />
     
 <script type="text/javascript">
   var DOCUMENTATION_OPTIONS = {
@@ -42,41 +39,14 @@
             HAS_SOURCE:  true
   };
 </script>
-<script type="text/javascript" src="../_static/js/jquery.min.js"></script>
-<script type="text/javascript" src="../_static/underscore.js"></script>
-<script type="text/javascript" src="../_static/doctools.js"></script>
-<script type="text/javascript" src="../_static/js/local.js"></script>
-<script type="text/javascript" src="../_static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/local.js"></script>
+    <script type="text/javascript" src="../_static/js/bootstrap3.min.js"></script>
+<script type="text/javascript" src="../_static/js/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="../_static/js/basicstrap.js"></script>
 <script type="text/javascript">
-  $(document).ready(function(){
-    $('.show-sidebar').click(function(e) {
-       e.preventDefault();
-       if ($(".show-sidebar").html() == "Open Table Of Contents") {
-          $('.for-mobile').removeClass('hidden-phone');
-          $(".show-sidebar").html("Close Table Of Contents");
-       } else {
-          $(".show-sidebar").html("Open Table Of Contents");
-       }
-    });
-  });
-  $(window).load(function () {
-    /*
-
-     * Scroll the window to avoid the topnav bar
-     * https://github.com/twitter/bootstrap/issues/1768
-     */
-    if ($(".navbar.navbar-fixed-top").length > 0) {
-      // var navHeight = $(".navbar").height(),
-      var navHeight = 40,
-        shiftWindow = function() { scrollBy(0, -navHeight - 10); };
-
-      if (location.hash) {
-        setTimeout(shiftWindow, 1);
-      }
-
-      window.addEventListener("hashchange", shiftWindow);
-    }
-  });
 </script>
     <link rel="search" type="application/opensearchdescription+xml"
     title="Search within WRD R&amp;D Documentation"
@@ -86,52 +56,23 @@
     <link rel="prev" title="Usage" href="usage.html" /> 
   </head>
   <body role="document">
-    <div class="navbar navbar-fixed-top " role="navigation" aria-label="top navigation">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+    <div id="navbar-top" class="navbar navbar-fixed-top navbar-default" role="navigation" aria-label="top navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </a>
-          <div role="banner">
-            <a class="brand" href="../index.html">WRD R&amp;D Documentation</a>
-          </div>
-          <div class="nav-collapse collapse">
-            <ul class="nav pull-right">
-              
-                <li>
-                <a href="../genindex.html" title="General Index" accesskey="I">index</a>
-                </li>
-                <li>
-                <a href="../py-modindex.html" title="Python Module Index" >modules</a>
-                </li>
-                <li>
-                <a href="authors.html" title="Credits" accesskey="N">next</a>
-                </li>
-                <li>
-                <a href="usage.html" title="Usage" accesskey="P">previous</a>
-                </li>
-              
-            </ul>
-          </div>
+          </button>
+          <a class="navbar-brand" href="../index.html">WRD R&amp;D Documentation</a>
         </div>
-      </div>
-    </div>
-    
-
-    <!-- container -->
-    <div class="container-fluid">
-
-
-      
-      <div class="row-fluid hidden-desktop hidden-tablet">
-      
-<div class="span5 ">
-  <a class="visible-phone btn btn-small show-sidebar" data-toggle="collapse" data-target=".for-mobile">Open Table Of Contents</a>
-  <div class="for-mobile sidebar hidden-phone" role="navigation" aria-label="main navigation">
-  <h3><a href="../index.html">Table Of Contents</a></h3>
-  <ul>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown visible-xs">
+                <a role="button" id="localToc" data-toggle="dropdown" data-target="#" href="#">Table Of Contents <b class="caret"></b></a>
+                <ul class="dropdown-menu localtoc sp-localtoc" role="menu" aria-labelledby="localToc">
+                <ul>
 <li><a class="reference internal" href="#">wrdsbc.tools package</a><ul>
 <li><a class="reference internal" href="#submodules">Submodules</a></li>
 <li><a class="reference internal" href="#module-wrdsbc.tools.crawl">wrdsbc.tools.crawl module</a></li>
@@ -141,44 +82,44 @@
 </li>
 </ul>
 
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="usage.html"
-                        title="previous chapter">Usage</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="authors.html"
-                        title="next chapter">Credits</a></p>
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="../_sources/wrdsbc/wrdsbc.tools.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
-<div id="searchbox" role="search">
-  <h3>Quick search</h3>
-  <form class="search form-search" action="../search.html" method="get">
-      <div class="input-append">
-        <input type="text" class="search-query" name="q">
-        <input type="submit" class="btn" value="Go" />
+                </ul>
+              </li>
+
+            
+              <li><a href="usage.html" title="Usage" accesskey="P">previous </a></li>
+              <li><a href="authors.html" title="Credits" accesskey="N">next </a></li>
+              <li><a href="../py-modindex.html" title="Python Module Index" >modules </a></li>
+              <li><a href="../genindex.html" title="General Index" accesskey="I">index </a></li>
+            
+            <li class="visible-xs"><a href="../_sources/wrdsbc/wrdsbc.tools.txt" rel="nofollow">Show Source</a></li>
+
+            <li class="visible-xs">
+                <form class="search form-search form-inline navbar-form navbar-right sp-searchbox" action="../search.html" method="get">
+                  <div class="input-append input-group">
+                    <input type="text" class="search-query form-control" name="q" placeholder="Search...">
+                    <span class="input-group-btn">
+                    <input type="submit" class="btn" value="Go" />
+                    </span>
+                  </div>
+                  <input type="hidden" name="check_keywords" value="yes" />
+                  <input type="hidden" name="area" value="default" />
+                </form>
+            </li>
+          </ul>
+        </div>
       </div>
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
-</div>
-  </div>
-</div>
-      </div>
-      
+    </div>
+    
+
+    <!-- container -->
+    <div class="container-fluid">
 
       <!-- row -->
-      <div class="row-fluid">
+      <div class="row">
         
         
 
-        <div class="span7">
+        <div class="col-md-7">
           <div class="document" role="main">
             <div class="documentwrapper">
               <div class="bodywrapper">
@@ -474,12 +415,12 @@
 
 <dl class="function">
 <dt id="wrdsbc.tools.crawl.build_networkx_graph">
-<code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">build_networkx_graph</code><span class="sig-paren">(</span><em>url</em>, <em>links</em>, <em>label=None</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10abdb150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#build_networkx_graph"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.build_networkx_graph" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">build_networkx_graph</code><span class="sig-paren">(</span><em>url</em>, <em>links</em>, <em>label=None</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10a798150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#build_networkx_graph"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.build_networkx_graph" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="function">
 <dt id="wrdsbc.tools.crawl.crawl_url">
-<code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">crawl_url</code><span class="sig-paren">(</span><em>start_url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10abdb150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#crawl_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.crawl_url" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">crawl_url</code><span class="sig-paren">(</span><em>start_url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10a798150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#crawl_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.crawl_url" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="function">
@@ -549,7 +490,7 @@
 
 <dl class="function">
 <dt id="wrdsbc.tools.crawl.print_frequency_table">
-<code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">print_frequency_table</code><span class="sig-paren">(</span><em>frequencies</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10abdb150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#print_frequency_table"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.print_frequency_table" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">print_frequency_table</code><span class="sig-paren">(</span><em>frequencies</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10a798150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#print_frequency_table"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.print_frequency_table" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="function">
@@ -589,7 +530,7 @@
 
 <dl class="function">
 <dt id="wrdsbc.tools.crawl.wrdcrawler">
-<code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">wrdcrawler</code><span class="sig-paren">(</span><em>url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10abdb150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#wrdcrawler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.wrdcrawler" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">wrdcrawler</code><span class="sig-paren">(</span><em>url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10a798150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#wrdcrawler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.wrdcrawler" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="function">
@@ -716,8 +657,8 @@
           </div>
         </div>
          
-<div class="span5 visible-desktop visible-tablet">
-  <div class=" sidebar hidden-phone" role="navigation" aria-label="main navigation">
+<div class="col-md-5 hidden-xs">
+  <div class="sidebar hidden-xs" role="navigation" aria-label="main navigation">
   <h3><a href="../index.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">wrdsbc.tools package</a><ul>
@@ -744,10 +685,12 @@
    </div>
 <div id="searchbox" role="search">
   <h3>Quick search</h3>
-  <form class="search form-search" action="../search.html" method="get">
-      <div class="input-append">
-        <input type="text" class="search-query" name="q">
+  <form class="search form-inline" action="../search.html" method="get">
+      <div class="input-append input-group">
+        <input type="text" class="search-query form-control" name="q" placeholder="Search...">
+        <span class="input-group-btn">
         <input type="submit" class="btn" value="Go" />
+        </span>
       </div>
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
@@ -762,16 +705,18 @@
       </div><!-- /row -->
 
       <!-- row -->
-      <div class="row-fluid">
-<div class="related navbar " role="navigation" aria-label="related navigation">
+      <div class="row footer-relbar">
+<div id="navbar-related" class=" related navbar navbar-default" role="navigation" aria-label="related navigation">
   <div class="navbar-inner">
-    <ul class="nav pull-right">
+    <ul class="nav navbar-nav">
+        <li><a href="../index.html">WRD R&amp;D Documentation</a></li>
+    </ul>
+    <ul class="nav navbar-nav pull-right hidden-xs hidden-sm">
       
-        <li><a href="../genindex.html" title="General Index" >index</a></li>
-        <li><a href="../py-modindex.html" title="Python Module Index" >modules</a></li>
-        <li><a href="authors.html" title="Credits" >next</a></li>
         <li><a href="usage.html" title="Usage" >previous</a></li>
-        <li><a href="../index.html">WRD R&amp;D Documentation</a></li> 
+        <li><a href="authors.html" title="Credits" >next</a></li>
+        <li><a href="../py-modindex.html" title="Python Module Index" >modules</a></li>
+        <li><a href="../genindex.html" title="General Index" >index</a></li> 
       
     </ul>
   </div>
