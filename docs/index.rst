@@ -6,6 +6,13 @@ WRD R&D Documentation
 | Docs (HTML): https://wrdrd.github.io/docs/
 | Source (ReStructuredText): https://github.com/wrdrd/docs
 
+**Quicklinks**
+
+| Homepage: https://www.wrdrd.com/
+| GitHub: https://github.com/wrdrd
+| Wiki: https://github.com/wrdrd/wiki/wiki
+
+
 
 Web Consulting
 ----------------
