@@ -389,7 +389,8 @@ Hosting / DNS
 
 DNS Configuration
 +++++++++++++++++++
-:term:`DNS` Domain Name Information (A, CNAME, MX)
+:term:`DNS` :term:`Domain Name` Information (``A``, ``AAAA`, ``CNAME``,
+``TXT``, ``MX``, ``SRV``)
 ::
 
     DOMAIN="<domainname>"
