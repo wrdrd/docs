@@ -300,9 +300,9 @@ def configure_meta_tags(app, pagename, templatename, context, doctree):
     -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="WRD R&D" />
-    <meta property="og:image" content="https://wrdrd.github.io/static/png/drawing-7.09-v0.1.1--_desk.svg-470x242.png" />
+    <meta property="og:image" content="http://www.wrdrd.com/static/png/drawing-7.09-v0.1.1--_desk.svg-470x242.png" />
     <meta property="og:image:width" content="470" />
-    <meta property="og:image:height" content="246" />
+    <meta property="og:image:height" content="242" />
 
     <!--
     <meta property="og:image" content="./_static/img/logo.png" />
