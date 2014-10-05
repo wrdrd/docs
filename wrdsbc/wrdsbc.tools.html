@@ -8,8 +8,31 @@
     <meta charset="utf-8" />
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- TODO: ogp.me -->
+
+    <!-- OpenGraph Metadata: ogp.me -->
+    <!--
+    <meta property="og:title" content="{{ title }}" />
+    -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="WRD R&D" />
+    <meta property="og:description" content="WRD R&D Documentation" />
+
+    <!--
+    <meta property="og:image" content="./_static/img/logo.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="300" />
+
+    <meta property="og:image" content="./_static/img/logotype.png" />
+    <meta property="og:image:secure_url" content="./_static/img/logo.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="300" />
+    -->
+
     <!-- TODO: twitter cards -->
+    <meta property="twitter:site" content="wrdrd" />
+    <meta property="twitter:creator" content="wrdrd" />
     
     <title>wrdsbc.tools package &mdash; WRD R&amp;D Documentation</title>
     <meta name="description" content="">
@@ -419,12 +442,12 @@
 
 <dl class="function">
 <dt id="wrdsbc.tools.crawl.build_networkx_graph">
-<code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">build_networkx_graph</code><span class="sig-paren">(</span><em>url</em>, <em>links</em>, <em>label=None</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10820a150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#build_networkx_graph"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.build_networkx_graph" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">build_networkx_graph</code><span class="sig-paren">(</span><em>url</em>, <em>links</em>, <em>label=None</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x100965150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#build_networkx_graph"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.build_networkx_graph" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="function">
 <dt id="wrdsbc.tools.crawl.crawl_url">
-<code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">crawl_url</code><span class="sig-paren">(</span><em>start_url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10820a150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#crawl_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.crawl_url" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">crawl_url</code><span class="sig-paren">(</span><em>start_url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x100965150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#crawl_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.crawl_url" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="function">
@@ -494,7 +517,7 @@
 
 <dl class="function">
 <dt id="wrdsbc.tools.crawl.print_frequency_table">
-<code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">print_frequency_table</code><span class="sig-paren">(</span><em>frequencies</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10820a150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#print_frequency_table"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.print_frequency_table" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">print_frequency_table</code><span class="sig-paren">(</span><em>frequencies</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x100965150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#print_frequency_table"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.print_frequency_table" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="function">
@@ -534,7 +557,7 @@
 
 <dl class="function">
 <dt id="wrdsbc.tools.crawl.wrdcrawler">
-<code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">wrdcrawler</code><span class="sig-paren">(</span><em>url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10820a150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#wrdcrawler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.wrdcrawler" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdsbc.tools.crawl.</code><code class="descname">wrdcrawler</code><span class="sig-paren">(</span><em>url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x100965150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdsbc/tools/crawl.html#wrdcrawler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdsbc.tools.crawl.wrdcrawler" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="function">
