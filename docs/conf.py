@@ -294,32 +294,32 @@ def configure_meta_tags(app, pagename, templatename, context, doctree):
     metatags += """
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- OpenGraph metadata: ogp.me -->
-    <!--
-    <meta property="og:title" content="{{ title }}" />
-    <meta property="og:description" content="WRD R&D Documentation" />
-    -->
+    <meta property="og:title" content="{title}" />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="WRD R&D" />
-    <meta property="og:image" content="http://www.wrdrd.com/static/png/drawing-7.09-v0.1.1--_desk.svg-470x242.png" />
-    <meta property="og:image:width" content="470" />
-    <meta property="og:image:height" content="242" />
-
+    <meta property="og:site_name" content="{og_site_name}" />
     <!--
-    <meta property="og:image" content="./_static/img/logo.png" />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="400" />
-    <meta property="og:image:height" content="300" />
-
-    <meta property="og:image" content="./_static/img/logotype.png" />
+    <meta property="og:description" content="{description}" />
+    -->
+    <meta property="og:image" content="{og_image_url}" />
+    <meta property="og:image:width" content="{og_image_width}" />
+    <meta property="og:image:height" content="{og_image_height}" />
+    <!--
     <meta property="og:image:secure_url" content="./_static/img/logo.png" />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="400" />
-    <meta property="og:image:height" content="300" />
     -->
     <!-- Twitter metadata -->
-    <meta property="twitter:site" content="wrdrd" />
-    <meta property="twitter:creator" content="wrdrd" />
-    """
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:title" content="{title}" />
+    <meta property="twitter:description" content="{description}" />
+    <meta property="twitter:site" content="{twitter_user}" />
+    <meta property="twitter:creator" content="{twitter_user}" />
+    """.format(
+        title=context.get('title',''),
+        description=context.get('description', ''),
+        og_site_name="WRD R&D",
+        og_image_url="http://www.wrdrd.com/static/png/drawing-7.09-v0.1.1--_desk.svg-470x242.png",
+        og_image_width="470",
+        og_image_height="242",
+        twitter_user="wrdrd")
     context['metatags'] = metatags
 
 def setup(app):
