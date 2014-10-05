@@ -416,7 +416,7 @@ DNS Configuration
 
 Web Hosting
 +++++++++++++
-Web Hosting Information
+:term:`Web Hosting <web-hosting-service>` Information
 
 * Reverse IP (How many sites are hosted from the same IP address?)
 
