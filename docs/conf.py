@@ -293,8 +293,32 @@ def configure_meta_tags(app, pagename, templatename, context, doctree):
     metatags = context.get('metatags', '')
     metatags += """
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- TODO: ogp.me -->
-    <!-- TODO: twitter cards -->
+    <!-- OpenGraph metadata: ogp.me -->
+    <!--
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:description" content="WRD R&D Documentation" />
+    -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="WRD R&D" />
+    <meta property="og:image" content="https://wrdrd.github.io/static/png/drawing-7.09-v0.1.1--_desk.svg-470x242.png" />
+    <meta property="og:image:width" content="470" />
+    <meta property="og:image:height" content="246" />
+
+    <!--
+    <meta property="og:image" content="./_static/img/logo.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="300" />
+
+    <meta property="og:image" content="./_static/img/logotype.png" />
+    <meta property="og:image:secure_url" content="./_static/img/logo.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="300" />
+    -->
+    <!-- Twitter metadata -->
+    <meta property="twitter:site" content="wrdrd" />
+    <meta property="twitter:creator" content="wrdrd" />
     """
     context['metatags'] = metatags
 
