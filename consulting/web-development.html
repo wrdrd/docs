@@ -147,9 +147,11 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#web-development-checklist">Web Development Checklist</a></li>
-<li><a class="reference internal" href="#hosting-dns">Hosting / DNS</a></li>
+<li><a class="reference internal" href="#hosting-dns">Hosting / DNS</a><ul>
 <li><a class="reference internal" href="#dns-configuration">DNS Configuration</a></li>
 <li><a class="reference internal" href="#web-hosting">Web Hosting</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#requirements">Requirements</a></li>
 </ul>
 </li>
@@ -526,21 +528,19 @@ and movies at various points in a testing workflow.</p>
 </div>
 <div class="section" id="hosting-dns">
 <h2>Hosting / DNS<a class="headerlink" href="#hosting-dns" title="Permalink to this headline">¶</a></h2>
-</div>
 <div class="section" id="dns-configuration">
-<span id="index-5"></span><span id="id4"></span><h2>DNS Configuration<a class="headerlink" href="#dns-configuration" title="Permalink to this headline">¶</a></h2>
+<span id="index-5"></span><span id="id4"></span><h3>DNS Configuration<a class="headerlink" href="#dns-configuration" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="#term-dns"><em class="xref std std-term">DNS</em></a> Domain Name Information (A, CNAME, MX)</p>
 <div class="highlight-python"><div class="highlight"><pre>DOMAIN=&quot;&lt;domainname&gt;&quot;
 IP=$(nslookup $DOMAIN)
 </pre></div>
 </div>
 <ul>
-<li><p class="first">DNS Domain Name Information (A, CNAME, MX)</p>
-<ul>
 <li><p class="first">Date of Registration / Expiration</p>
 </li>
 <li><p class="first">Registrant (Name, Address, Email)</p>
 <ul class="simple">
-<li>Privacy / WhoisGuard?</li>
+<li>Privacy / WhoisGuard</li>
 </ul>
 </li>
 <li><p class="first">DNS Registration Service Provider</p>
@@ -561,21 +561,18 @@ whois $DOMAIN | egrep &#39;Registrar|Date|Domain Status|Registrant|Admin&#39;
 </ul>
 </li>
 </ul>
-</li>
-</ul>
 </div>
 <div class="section" id="web-hosting">
-<h2>Web Hosting<a class="headerlink" href="#web-hosting" title="Permalink to this headline">¶</a></h2>
+<h3>Web Hosting<a class="headerlink" href="#web-hosting" title="Permalink to this headline">¶</a></h3>
+<p>Web Hosting Information</p>
 <ul class="simple">
-<li>Web Hosting Information<ul>
 <li>Reverse IP (How many sites are hosted from the same IP address?)<ul>
 <li><a class="reference external" href="http://reverseip.domaintools.com/search/?q=$IP">http://reverseip.domaintools.com/search/?q=$IP</a></li>
 </ul>
 </li>
 </ul>
-</li>
-</ul>
 <p>See: <a class="reference internal" href="../wrdsbc/wrdsbc.tools.html#module-wrdsbc.tools.domain" title="wrdsbc.tools.domain"><code class="xref py py-mod docutils literal"><span class="pre">wrdsbc.tools.domain</span></code></a></p>
+</div>
 </div>
 <div class="section" id="requirements">
 <h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
@@ -611,9 +608,11 @@ whois $DOMAIN | egrep &#39;Registrar|Date|Domain Status|Registrant|Admin&#39;
 </ul>
 </li>
 <li><a class="reference internal" href="#web-development-checklist">Web Development Checklist</a></li>
-<li><a class="reference internal" href="#hosting-dns">Hosting / DNS</a></li>
+<li><a class="reference internal" href="#hosting-dns">Hosting / DNS</a><ul>
 <li><a class="reference internal" href="#dns-configuration">DNS Configuration</a></li>
 <li><a class="reference internal" href="#web-hosting">Web Hosting</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#requirements">Requirements</a></li>
 </ul>
 </li>
