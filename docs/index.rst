@@ -8,7 +8,7 @@ WRD R&D Documentation
 
 **Quicklinks**
 
-| Homepage: https://www.wrdrd.com/
+| Homepage: http://www.wrdrd.com/
 | GitHub: https://github.com/wrdrd
 | Wiki: https://github.com/wrdrd/wiki/wiki
 
