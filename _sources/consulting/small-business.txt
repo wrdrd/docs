@@ -1,6 +1,10 @@
 Small Business Consulting
 =========================
 
+
+.. index:: Business
+.. _business:   
+
 Business
 ----------
 https://en.wikipedia.org/wiki/Business
@@ -10,6 +14,9 @@ https://en.wikipedia.org/wiki/Small_business
 https://en.wikipedia.org/wiki/Enterprise
 
 
+.. index:: Business Books
+.. _business-books:   
+
 Books
 ~~~~~~
 
@@ -18,6 +25,10 @@ Books
 * https://en.wikipedia.org/wiki/The_Five_Dysfunctions_of_a_Team
 * https://en.wikipedia.org/wiki/Getting_Things_Done  
 
+
+.. index:: Strategy (Business)
+.. index:: Business Strategy
+.. _business-strategy:   
 
 Strategy
 -----------
@@ -38,6 +49,9 @@ https://en.wikipedia.org/wiki/Management_by_objectives
 https://en.wikipedia.org/wiki/Business_process
 
 
+.. index:: Business Modeling
+.. _business-modeling:   
+
 Business Modeling
 --------------------
 https://en.wikipedia.org/wiki/Business_model
@@ -51,6 +65,8 @@ https://en.wikipedia.org/wiki/Risk
 * https://en.wikipedia.org/wiki/Business_models_for_open-source_software
 
 
+.. index:: ROI
+.. index:: Business ROI   
 .. _business-roi:
 
 ROI
@@ -75,6 +91,9 @@ What do we want to happen when our message reaches people?
 See: :ref:`Information Systems > ROI <is-roi>`
 
 
+.. index:: Marketing
+.. _marketing:   
+
 Marketing
 ----------
 https://en.wikipedia.org/wiki/Marketing
@@ -83,6 +102,9 @@ https://en.wikipedia.org/wiki/Marketing_plan
 
 https://en.wikipedia.org/wiki/Online_marketing
 
+
+.. index:: Business Relationships
+.. _business-relationships:   
 
 Relationships
 ~~~~~~~~~~~~~~
@@ -101,21 +123,35 @@ Interactions: Cold, Warm, and Hot
 See :ref:`Customer Relationship Management (CRM) <crm>`
 
 
+.. index:: The Four Ps
+.. _the-four-ps:   
+
 The Four Ps
 ~~~~~~~~~~~~
+
+.. index:: Price
 
 Price
 ++++++
 
+.. index:: Promotion
+
 Promotion
 ++++++++++
+
+.. index:: Positioning
 
 Positioning
 ++++++++++++
 
+.. index:: Product
+
 Product
 ++++++++
 
+
+.. index:: Sales
+.. _sales:   
 
 Sales
 ~~~~~~
@@ -126,6 +162,9 @@ https://en.wikipedia.org/wiki/Sales_process_engineering
 https://en.wikipedia.org/wiki/Profit-based_sales_targets
 
 
+.. index:: Metrics
+.. index:: Business Metrics
+.. _business-metrics:   
 
 Metrics
 ~~~~~~~~
@@ -136,6 +175,9 @@ https://en.wikipedia.org/wiki/Performance_indicator
 https://en.wikipedia.org/wiki/Critical_success_factor
 
 
+.. index:: Web Analytics
+.. _web-analytics:   
+
 Web Analytics
 ++++++++++++++
 
@@ -143,6 +185,8 @@ Web Analytics
 * https://en.wikipedia.org/wiki/Conversion_marketing#Conversion_rate
 * Acquire Analytics tracking codes
 
+
+.. index:: Branding
 
 Branding
 ~~~~~~~~~~
@@ -162,6 +206,8 @@ Concept
 
   * How do you want them to feel?
 
+.. index:: Copy (marketing)
+.. _marketing-copy:   
 
 Copy
 +++++
@@ -169,8 +215,14 @@ Copy
 * Keywords and phrases
 
 
+.. index:: Graphic Design
+.. _graphic-design:   
+
 Graphic Design
 +++++++++++++++
+
+.. index:: Color Scheme
+.. _color-scheme:   
 
 Color scheme
 `````````````
@@ -180,6 +232,11 @@ Hex Codes
 
 Pantone Codes
 
+
+.. index:: Typeface
+.. index:: Typography
+.. index:: Fonts   
+.. _types:   
 
 Types
 ```````
@@ -192,6 +249,9 @@ http://www.google.com/fonts
 Web-compatible font names
 
 
+.. index:: Logo (graphical)
+.. _logo:   
+
 Logo
 `````
 https://en.wikipedia.org/wiki/Logo#Internet-compatible_logos
@@ -199,6 +259,10 @@ https://en.wikipedia.org/wiki/Logo#Internet-compatible_logos
 Logo: Graphic Image
 
 Logotype/Wordmark: Stylized Business Name
+
+
+.. index:: Favicon
+.. _favicon:   
 
 Favicon
 ````````
@@ -209,6 +273,9 @@ https://en.wikipedia.org/wiki/Favicon
 * `<https://en.wikipedia.org/wiki/ICO_(file_format)>`_
 * Transparent backgrounds work well
 
+
+.. index:: Social Media Images
+.. _social-media-images:   
 
 Social Media Images
 ````````````````````
@@ -265,6 +332,8 @@ Sources:
 * http://help.linkedin.com/app/answers/detail/a_id/32617
 
 
+.. index:: Photography
+.. _photography:   
 
 Photography
 ````````````
@@ -275,6 +344,10 @@ Photography
 
 .. TODO: photography guidelines (closeups, angles, exposure)
 
+
+.. index:: Web Layout Graphics
+.. index:: Layout Graphics
+.. _layout-graphics:   
 
 Layout Graphics
 ````````````````
@@ -294,10 +367,15 @@ TODO: note regarding SVG vector images
 TODO: note regarding image layouts
 
 
-
+.. index:: Social Media
+.. _social-media:   
 
 Social Media
 ~~~~~~~~~~~~~~
+
+
+.. index:: Location Based Services
+.. _location-based-services:   
 
 Location Based Services
 ++++++++++++++++++++++++
@@ -318,7 +396,7 @@ Location Based Services
 
 * Bing Maps
 
-  * TODO
+  * 
 
 * Foursquare
 
@@ -349,8 +427,4 @@ Restaurant
   * UrbanSpoon
 
     * Photos
-
-
-
-.. TODO: compression, quality control, dynamic webapps, web service integration
 

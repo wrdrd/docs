@@ -1,9 +1,17 @@
+
+.. index:: Entrepreneurship
+.. _entrepreneurship:   
+
 Entrepreneurship
 ==================
 https://en.wikipedia.org/wiki/Entrepreneurship
 
 * https://www.quora.com/Book-Recommendations/What-books-should-entrepreneurs-read
 * http://personalmba.com/best-business-books/
+
+
+.. index:: Economics
+.. _economics:   
 
 Economics
 -----------

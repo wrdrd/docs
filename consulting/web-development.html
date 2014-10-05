@@ -137,8 +137,8 @@
 <li><a class="reference internal" href="#structured-data">Structured Data</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#web-design">Web Design</a><ul>
-<li><a class="reference internal" href="#web-layout">Web Layout</a><ul>
+<li><a class="reference internal" href="#index-1">Web Design</a><ul>
+<li><a class="reference internal" href="#index-2">Web Layout</a><ul>
 <li><a class="reference internal" href="#image-based-layouts">Image Based Layouts</a></li>
 </ul>
 </li>
@@ -146,7 +146,7 @@
 <li><a class="reference internal" href="#bootstrap">Bootstrap</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#web-page">Web Page</a></li>
+<li><a class="reference internal" href="#web-page-checklist">Web Page Checklist</a></li>
 <li><a class="reference internal" href="#hosting-dns">Hosting / DNS</a></li>
 <li><a class="reference internal" href="#requirements">Requirements</a></li>
 </ul>
@@ -288,7 +288,7 @@ depending on Web Standards and individual implementations.</p>
 </dl>
 </div>
 <div class="section" id="web-content">
-<h2>Web Content<a class="headerlink" href="#web-content" title="Permalink to this headline">¶</a></h2>
+<span id="index-0"></span><h2>Web Content<a class="headerlink" href="#web-content" title="Permalink to this headline">¶</a></h2>
 <p>Media Resources: Copy, Text, Photos, Images, Videos (things with URLs)</p>
 <div class="section" id="structured-data">
 <h3>Structured Data<a class="headerlink" href="#structured-data" title="Permalink to this headline">¶</a></h3>
@@ -334,14 +334,15 @@ depending on Web Standards and individual implementations.</p>
 </ul>
 </li>
 </ul>
+<span class="target" id="web-design"></span></div>
 </div>
-</div>
-<div class="section" id="web-design">
-<h2>Web Design<a class="headerlink" href="#web-design" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="web-layout">
-<span id="id1"></span><h3>Web Layout<a class="headerlink" href="#web-layout" title="Permalink to this headline">¶</a></h3>
-<p>A box-model composition of DOM objects, their styles, and their
-behaviors at various screen sizes and resoultions.</p>
+<div class="section" id="index-1">
+<span id="id1"></span><h2>Web Design<a class="headerlink" href="#index-1" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Web_design">https://en.wikipedia.org/wiki/Web_design</a></p>
+<span class="target" id="web-layout"></span><div class="section" id="index-2">
+<span id="id2"></span><h3>Web Layout<a class="headerlink" href="#index-2" title="Permalink to this headline">¶</a></h3>
+<p>A <em>web layout</em> is a box-model composition of DOM objects, their styles, and their
+behaviors at various screen sizes and resolutions.</p>
 <p>Different browsers implement the DOM, HTML, CSS, and Javascript
 differently. It is necessary to test a web layout in the browsers which
 are utilized by the target audience.</p>
@@ -395,7 +396,7 @@ screen shots) of web layouts.</p>
 and movies at various points in a testing workflow.</p>
 </div>
 <div class="section" id="bootstrap">
-<h3>Bootstrap<a class="headerlink" href="#bootstrap" title="Permalink to this headline">¶</a></h3>
+<span id="index-3"></span><h3>Bootstrap<a class="headerlink" href="#bootstrap" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)">https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)</a></p>
 <ul class="simple">
 <li>What is Bootstrap?<ul>
@@ -428,32 +429,32 @@ and movies at various points in a testing workflow.</p>
 </ul>
 </div>
 </div>
-<div class="section" id="web-page">
-<h2>Web Page<a class="headerlink" href="#web-page" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="web-page-checklist">
+<span id="index-4"></span><h2>Web Page Checklist<a class="headerlink" href="#web-page-checklist" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Pick a CSS framework</li>
-<li>Create page layout template<ul>
-<li>Create or acquire static template<ul>
+<li>[ ] Pick a CSS framework</li>
+<li>[ ] Create page layout template<ul>
+<li>[ ] Create or acquire static template<ul>
 <li>Helps if it already contains CSS framework</li>
 </ul>
 </li>
-<li>Create or acquire dynamic template</li>
+<li>[ ] Create or acquire dynamic template</li>
 </ul>
 </li>
-<li>Create static HTML page from layout template</li>
-<li>Port content from existing site<ul>
-<li>Add HTML formatting</li>
-<li>Add CSS #id and classes</li>
+<li>[ ] Create static HTML page from layout template</li>
+<li>[ ] Port content from existing site<ul>
+<li>[ ] Add HTML formatting</li>
+<li>[ ] Add CSS #id deep link anchors and classes</li>
 </ul>
 </li>
-<li>Add structured data markup to page<ul>
-<li>Add standard header tags<ul>
-<li>meta description</li>
-<li>link rel=&#8221;canonical&#8221;</li>
-<li>lang=&#8221;en&#8221;</li>
+<li>[ ] Add structured data markup to page<ul>
+<li>[ ] Add standard header tags<ul>
+<li>[ ] <code class="docutils literal"><span class="pre">meta</span></code> tags: description</li>
+<li>[ ] <code class="docutils literal"><span class="pre">link</span> <span class="pre">rel=&quot;canonical&quot;</span></code></li>
+<li>[ ] <code class="docutils literal"><span class="pre">lang=&quot;en&quot;</span></code></li>
 </ul>
 </li>
-<li>Add OpenGraph meta markup<ul>
+<li>[ ] Add OpenGraph meta markup<ul>
 <li><a class="reference external" href="http://ogp.me/">http://ogp.me/</a></li>
 <li>og:title</li>
 <li>og:type</li>
@@ -463,60 +464,57 @@ and movies at various points in a testing workflow.</p>
 </li>
 </ul>
 </li>
-<li>Section: Navbar<ul>
-<li>Add CSS #id for single-page layout</li>
-</ul>
-</li>
-<li>Section: Above the fold<ul>
+<li>[ ] Section: Navbar</li>
+<li>[ ] Section: Above the fold<ul>
 <li>Image</li>
 <li>Video</li>
 <li>Text</li>
 </ul>
 </li>
-<li>Add &lt;h1&gt; tag</li>
-<li>Section: About<ul>
-<li>schema:Organization</li>
-<li>Description</li>
+<li>[ ] Add an <code class="docutils literal"><span class="pre">&lt;h1&gt;</span></code> tag with a page title</li>
+<li>[ ] Section: About<ul>
+<li>[ ] Description</li>
+<li><code class="docutils literal"><span class="pre">schema:Organization</span></code></li>
 </ul>
 </li>
-<li>Section: Products<ul>
-<li>Acquire product/menu/service offering information</li>
-<li>Format product/menu/service offering information as HTML</li>
-<li>Convert product/menu/service offering information to structured data</li>
+<li>[ ] Section: Products<ul>
+<li>[ ] Acquire product/menu/service offering information</li>
+<li>[ ] Format product/menu/service offering information as HTML</li>
+<li>[ ] Convert product/menu/service offering information to structured data</li>
 </ul>
 </li>
-<li>Section: Media / In the news<ul>
-<li>Research media profile</li>
-<li>Acquire news media assets</li>
+<li>[ ] Section: Media / In the news<ul>
+<li>[ ] Research media profile</li>
+<li>[ ] Acquire news media assets</li>
 </ul>
 </li>
-<li>Section: Contact<ul>
-<li>Name, Address, Telephone</li>
-<li>Email</li>
-<li>Locations (LocalBusiness)<ul>
-<li>Embed map thumbnail/widget</li>
-<li>Link to Directions</li>
+<li>[ ] Section: Contact<ul>
+<li>[ ] Name, Address, Telephone</li>
+<li>[ ] Email</li>
+<li>[ ] Locations (LocalBusiness)<ul>
+<li>[ ] Embed map thumbnail/widget</li>
+<li>[ ] Link to Directions</li>
 </ul>
 </li>
-<li>Social Media<ul>
-<li>Facebook</li>
-<li>Twitter</li>
-<li>Google+</li>
-<li>LinkedIn</li>
+<li>[ ] Social Media<ul>
+<li>[ ] Google+</li>
+<li>[ ] Twitter</li>
+<li>[ ] Facebook</li>
+<li>[ ] LinkedIn</li>
 <li>[...]</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>Section: Footer<ul>
-<li>&amp;copy; &lt;year&gt; &lt;business name&gt;</li>
-<li>&lt;location&gt;</li>
-<li>Feedback</li>
-<li>Terms</li>
-<li>Privacy</li>
+<li>[ ] Section: Footer<ul>
+<li>[ ] Copyleft: <code class="docutils literal"><span class="pre">&amp;copy;</span> <span class="pre">&lt;year&gt;</span> <span class="pre">&lt;business</span> <span class="pre">name&gt;</span></code></li>
+<li>[ ] &lt;location&gt;</li>
+<li>[ ] Feedback</li>
+<li>[ ] Terms</li>
+<li>[ ] Privacy</li>
 </ul>
 </li>
-<li>Section: Post-load JS scripts<ul>
+<li>[ ] Section: Post-load JS scripts<ul>
 <li>JS libraries</li>
 <li>Analytics loaders</li>
 </ul>
@@ -524,36 +522,43 @@ and movies at various points in a testing workflow.</p>
 </ul>
 </div>
 <div class="section" id="hosting-dns">
-<h2>Hosting / DNS<a class="headerlink" href="#hosting-dns" title="Permalink to this headline">¶</a></h2>
+<span id="index-5"></span><h2>Hosting / DNS<a class="headerlink" href="#hosting-dns" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre>DOMAIN=&quot;&lt;domainname&gt;&quot;
+IP=$(nslookup $DOMAIN)
+</pre></div>
+</div>
+<ul>
+<li><p class="first">DNS Domain Name Information (A, CNAME, MX)</p>
+<ul>
+<li><p class="first">Date of Registration / Expiration</p>
+</li>
+<li><p class="first">Registrant (Name, Address, Email)</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">DOMAIN=&quot;&lt;domainname&gt;&quot;</span></code></li>
-<li><code class="docutils literal"><span class="pre">IP=$(nslookup</span> <span class="pre">$DOMAIN)</span></code></li>
-<li>DNS Domain Name Information (A, CNAME, MX)<ul>
-<li>Date of Registration / Expiration</li>
-<li>DNS Provider</li>
-<li>Registrant (Name, Address, Email)<ul>
 <li>Privacy / WhoisGuard?</li>
 </ul>
 </li>
-<li>DNS Registration Service Provider</li>
-<li>Linux Commandline:<ul>
-<li><code class="docutils literal"><span class="pre">dig</span> <span class="pre">$DOMAIN</span></code></li>
-<li><code class="docutils literal"><span class="pre">dig</span> <span class="pre">+qr</span> <span class="pre">any</span> <span class="pre">$DOMAIN</span></code></li>
-<li><code class="docutils literal"><span class="pre">dig</span> <span class="pre">-t</span> <span class="pre">mx</span> <span class="pre">$DOMAIN</span></code></li>
-<li><code class="docutils literal"><span class="pre">whois</span> <span class="pre">$DOMAIN</span></code><ul>
-<li><code class="docutils literal"><span class="pre">egrep</span> <span class="pre">'Registrar|Date|Domain</span> <span class="pre">Status|Registrant|Admin</span></code></li>
-</ul>
+<li><p class="first">DNS Registration Service Provider</p>
 </li>
-</ul>
+<li><p class="first">Linux/OSX DNS Commands:</p>
+<div class="highlight-python"><div class="highlight"><pre>nslookup DOMAIN
+dig $DOMAIN
+dig +qr any $DOMAIN
+dig -t mx $DOMAIN
+whois $DOMAIN
+whois $DOMAIN | egrep &#39;Registrar|Date|Domain Status|Registrant|Admin&#39;
+</pre></div>
+</div>
 </li>
-<li>Online<ul>
+<li><p class="first">Online Whois</p>
+<ul class="simple">
 <li><a class="reference external" href="http://whois.domaintools.com/$DOMAIN">http://whois.domaintools.com/$DOMAIN</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li>Web Hosting Information<ul>
-<li>Reverse IP (How many sites hosted at same IP?)<ul>
+<li><p class="first">Web Hosting Information</p>
+<ul class="simple">
+<li>Reverse IP (How many sites are hosted from the same IP address?)<ul>
 <li><code class="docutils literal"><span class="pre">http://reverseip.domaintools.com/search/?q=$IP</span></code></li>
 </ul>
 </li>
@@ -586,8 +591,8 @@ and movies at various points in a testing workflow.</p>
 <li><a class="reference internal" href="#structured-data">Structured Data</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#web-design">Web Design</a><ul>
-<li><a class="reference internal" href="#web-layout">Web Layout</a><ul>
+<li><a class="reference internal" href="#index-1">Web Design</a><ul>
+<li><a class="reference internal" href="#index-2">Web Layout</a><ul>
 <li><a class="reference internal" href="#image-based-layouts">Image Based Layouts</a></li>
 </ul>
 </li>
@@ -595,7 +600,7 @@ and movies at various points in a testing workflow.</p>
 <li><a class="reference internal" href="#bootstrap">Bootstrap</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#web-page">Web Page</a></li>
+<li><a class="reference internal" href="#web-page-checklist">Web Page Checklist</a></li>
 <li><a class="reference internal" href="#hosting-dns">Hosting / DNS</a></li>
 <li><a class="reference internal" href="#requirements">Requirements</a></li>
 </ul>

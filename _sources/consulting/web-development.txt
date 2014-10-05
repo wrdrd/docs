@@ -118,6 +118,7 @@ Web Glossary
 
         https://en.wikipedia.org/wiki/Web_standards
 
+.. index:: Web Content
 
 Web Content
 ~~~~~~~~~~~~~
@@ -166,16 +167,22 @@ Structured Data
     * menu text/URL
     * servesCuisine text
 
+
+.. _web-design:
+.. index:: Web Design
+
 Web Design
 ~~~~~~~~~~~
+https://en.wikipedia.org/wiki/Web_design
 
 
 .. _web-layout:
+.. index:: Web Layout
 
 Web Layout
 +++++++++++
-A box-model composition of DOM objects, their styles, and their
-behaviors at various screen sizes and resoultions.
+A *web layout* is a box-model composition of DOM objects, their styles, and their
+behaviors at various screen sizes and resolutions.
 
 Different browsers implement the DOM, HTML, CSS, and Javascript
 differently. It is necessary to test a web layout in the browsers which
@@ -236,6 +243,8 @@ Some Javascript testing tools and services support taking screen captures
 and movies at various points in a testing workflow.
 
 
+.. index:: Bootstrap
+
 Bootstrap
 +++++++++++
 `<https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)>`_
@@ -267,39 +276,38 @@ Bootstrap
     * Slower to load on a phone or tablet
 
 
-Web Page
-~~~~~~~~~
+.. index:: Web Page Checklist
 
-* Pick a CSS framework
+Web Page Checklist
+~~~~~~~~~~~~~~~~~~~~
 
-* Create page layout template
+* [ ] Pick a CSS framework
+* [ ] Create page layout template
 
-  * Create or acquire static template
+  * [ ] Create or acquire static template
 
     * Helps if it already contains CSS framework
 
-  * Create or acquire dynamic template
+  * [ ] Create or acquire dynamic template
+
+* [ ] Create static HTML page from layout template
 
 
-* Create static HTML page from layout template
+* [ ] Port content from existing site
+
+  * [ ] Add HTML formatting
+  * [ ] Add CSS #id deep link anchors and classes
 
 
-* Port content from existing site
+* [ ] Add structured data markup to page
 
-  * Add HTML formatting
-  * Add CSS #id and classes
+  * [ ] Add standard header tags
 
+    * [ ] ``meta`` tags: description
+    * [ ] ``link rel="canonical"``
+    * [ ] ``lang="en"``
 
-* Add structured data markup to page
-
-  * Add standard header tags
-
-    * meta description
-
-    * link rel="canonical"
-    * lang="en"
-
-  * Add OpenGraph meta markup
+  * [ ] Add OpenGraph meta markup
 
     * http://ogp.me/
     * og:title
@@ -308,102 +316,102 @@ Web Page
     * og:url
 
 
-* Section: Navbar
+* [ ] Section: Navbar
 
-  * Add CSS #id for single-page layout
-
-
-* Section: Above the fold
+* [ ] Section: Above the fold
 
   * Image
   * Video
   * Text
 
 
-* Add <h1> tag
+* [ ] Add an ``<h1>`` tag with a page title
+
+* [ ] Section: About
+
+  * [ ] Description
+  * ``schema:Organization``
 
 
-* Section: About
+* [ ] Section: Products
 
-  * schema:Organization
-  * Description
-
-
-* Section: Products
-
-  * Acquire product/menu/service offering information
-  * Format product/menu/service offering information as HTML
-  * Convert product/menu/service offering information to structured data
+  * [ ] Acquire product/menu/service offering information
+  * [ ] Format product/menu/service offering information as HTML
+  * [ ] Convert product/menu/service offering information to structured data
 
 
-* Section: Media / In the news
+* [ ] Section: Media / In the news
 
-  * Research media profile
-  * Acquire news media assets
+  * [ ] Research media profile
+  * [ ] Acquire news media assets
 
 
-* Section: Contact
+* [ ] Section: Contact
 
-  * Name, Address, Telephone
-  * Email
-  * Locations (LocalBusiness)
+  * [ ] Name, Address, Telephone
+  * [ ] Email
+  * [ ] Locations (LocalBusiness)
 
-    * Embed map thumbnail/widget
-    * Link to Directions
+    * [ ] Embed map thumbnail/widget
+    * [ ] Link to Directions
 
-  * Social Media
+  * [ ] Social Media
 
-    * Facebook
-    * Twitter
-    * Google+
-    * LinkedIn
+    * [ ] Google+
+    * [ ] Twitter
+    * [ ] Facebook
+    * [ ] LinkedIn
     * [...]
 
 
-* Section: Footer
+* [ ] Section: Footer
 
-  * &copy; <year> <business name>
-  * <location> 
-  * Feedback
-  * Terms
-  * Privacy
+  * [ ] Copyleft: ``&copy; <year> <business name>``
+  * [ ] <location> 
+  * [ ] Feedback
+  * [ ] Terms
+  * [ ] Privacy
 
 
-* Section: Post-load JS scripts
+* [ ] Section: Post-load JS scripts
 
   * JS libraries
   * Analytics loaders
 
 
+.. index:: DNS Configuration
+
 Hosting / DNS
 ~~~~~~~~~~~~~
-* ``DOMAIN="<domainname>"``
-* ``IP=$(nslookup $DOMAIN)``
+::
+
+    DOMAIN="<domainname>"
+    IP=$(nslookup $DOMAIN)
+
 * DNS Domain Name Information (A, CNAME, MX)
 
   * Date of Registration / Expiration
-  * DNS Provider
   * Registrant (Name, Address, Email)
 
     * Privacy / WhoisGuard?
 
   * DNS Registration Service Provider
-  * Linux Commandline:
+  * Linux/OSX DNS Commands::
 
-    * ``dig $DOMAIN``
-    * ``dig +qr any $DOMAIN``
-    * ``dig -t mx $DOMAIN``
-    * ``whois $DOMAIN``
+      nslookup DOMAIN
+      dig $DOMAIN
+      dig +qr any $DOMAIN
+      dig -t mx $DOMAIN
+      whois $DOMAIN
+      whois $DOMAIN | egrep 'Registrar|Date|Domain Status|Registrant|Admin'
 
-      * ``egrep 'Registrar|Date|Domain Status|Registrant|Admin``
-
-  * Online
+  * Online Whois
 
     * http://whois.domaintools.com/$DOMAIN
 
 * Web Hosting Information
 
-  * Reverse IP (How many sites hosted at same IP?)
+  * Reverse IP (How many sites are hosted from the same IP address?)
 
     * ``http://reverseip.domaintools.com/search/?q=$IP``
 
