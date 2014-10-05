@@ -48,13 +48,23 @@ docs-api:
 	sphinx-apidoc -M -o docs/wrdsbc/ wrdsbc
 	rm -f docs/wrdsbc/modules.rst
 
-docs: clean-docs docs-api
+
+
+STATIC:="./docs/_static"
+LOCALJS="$(STATIC)/js/local.js"
+
+localjs:
+	echo '' > $(LOCALJS)
+	cat $(STATIC)/js/newtab.js >> $(LOCALJS)
+	cat $(STATIC)/js/ga.js >> $(LOCALJS)
+
+docs: clean-docs docs-api localjs
 	$(MAKE) -C docs html
 	#$(MAKE) -C docs singlehtml
 
-docs-open: docs open-docs
+docs-open: docs open
 
-open-docs:
+open:
 	open docs/_build/html/index.html
 	#open docs/_build/singlehtml/index.html
 
@@ -70,5 +80,9 @@ gh-pages:
 	ghp-import -n -p ./docs/_build/html/
 	#ghp-import -n -p ./docs/_build/singlehtml/
 
+pull:
+	git pull
+
 push:
 	git push
+
