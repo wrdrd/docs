@@ -1,4 +1,6 @@
 
+.. index:: Collaboration Plan
+.. _collaboration-plan:   
 
 Collaboration Plan
 --------------------
@@ -32,6 +34,9 @@ Versioned shared storage folders are so much easier to work with.
 
 An email with a link to the (updated) files is helpful.
 
+
+.. index:: Mailing List Collaboration
+.. _mailing-list-collaboration:   
 
 Mailing List
 ~~~~~~~~~~~~~
@@ -90,6 +95,10 @@ sometimes it's easier to address everyone at the same time.
         The [...] look great, thanks.
 
 
+.. index:: Project Site
+.. index:: Team Site
+.. _project-site:   
+
 Project Site
 ~~~~~~~~~~~~~
 
@@ -108,7 +117,8 @@ Links to:
 * works in progress
 * roadmap with dates and links to deliverables
 
-TODO: Document-based collaboration
+
+Re: Document-based collaboration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Coming from a software development perspective, where:
 
