@@ -148,6 +148,8 @@
 </li>
 <li><a class="reference internal" href="#web-development-checklist">Web Development Checklist</a></li>
 <li><a class="reference internal" href="#hosting-dns">Hosting / DNS</a></li>
+<li><a class="reference internal" href="#dns-configuration">DNS Configuration</a></li>
+<li><a class="reference internal" href="#web-hosting">Web Hosting</a></li>
 <li><a class="reference internal" href="#requirements">Requirements</a></li>
 </ul>
 </li>
@@ -523,7 +525,10 @@ and movies at various points in a testing workflow.</p>
 </ul>
 </div>
 <div class="section" id="hosting-dns">
-<span id="index-5"></span><h2>Hosting / DNS<a class="headerlink" href="#hosting-dns" title="Permalink to this headline">¶</a></h2>
+<h2>Hosting / DNS<a class="headerlink" href="#hosting-dns" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="dns-configuration">
+<span id="index-5"></span><span id="id4"></span><h2>DNS Configuration<a class="headerlink" href="#dns-configuration" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python"><div class="highlight"><pre>DOMAIN=&quot;&lt;domainname&gt;&quot;
 IP=$(nslookup $DOMAIN)
 </pre></div>
@@ -557,11 +562,17 @@ whois $DOMAIN | egrep &#39;Registrar|Date|Domain Status|Registrant|Admin&#39;
 </li>
 </ul>
 </li>
-<li><p class="first">Web Hosting Information</p>
-<ul class="simple">
-<li>Reverse IP (How many sites are hosted from the same IP address?)<ul>
-<li><code class="docutils literal"><span class="pre">http://reverseip.domaintools.com/search/?q=$IP</span></code></li>
 </ul>
+</div>
+<div class="section" id="web-hosting">
+<h2>Web Hosting<a class="headerlink" href="#web-hosting" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">Web Hosting Information</p>
+<ul>
+<li><p class="first">Reverse IP (How many sites are hosted from the same IP address?):</p>
+<div class="highlight-python"><div class="highlight"><pre>http://reverseip.domaintools.com/search/?q=$IP
+</pre></div>
+</div>
 </li>
 </ul>
 </li>
@@ -603,6 +614,8 @@ whois $DOMAIN | egrep &#39;Registrar|Date|Domain Status|Registrant|Admin&#39;
 </li>
 <li><a class="reference internal" href="#web-development-checklist">Web Development Checklist</a></li>
 <li><a class="reference internal" href="#hosting-dns">Hosting / DNS</a></li>
+<li><a class="reference internal" href="#dns-configuration">DNS Configuration</a></li>
+<li><a class="reference internal" href="#web-hosting">Web Hosting</a></li>
 <li><a class="reference internal" href="#requirements">Requirements</a></li>
 </ul>
 </li>
