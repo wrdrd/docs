@@ -244,6 +244,7 @@ and movies at various points in a testing workflow.
 
 
 .. index:: Bootstrap
+.. _bootstrap:
 
 Bootstrap
 +++++++++++
@@ -278,8 +279,9 @@ Bootstrap
 
 .. index:: Web Page Checklist
 
-Web Page Checklist
-~~~~~~~~~~~~~~~~~~~~
+Web Development Checklist
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+See also: `<http://webdevchecklist.com/>`_
 
 * [ ] Pick a CSS framework
 * [ ] Create page layout template
@@ -310,11 +312,10 @@ Web Page Checklist
   * [ ] Add OpenGraph meta markup
 
     * http://ogp.me/
-    * og:title
-    * og:type
-    * og:image (:width, :height, :type)
-    * og:url
-
+    * ``og:title``
+    * ``og:type``
+    * ``og:image`` (``:width``, ``:height``, ``:type``)
+    * ``og:url``
 
 * [ ] Section: Navbar
 
@@ -329,8 +330,8 @@ Web Page Checklist
 
 * [ ] Section: About
 
-  * [ ] Description
-  * ``schema:Organization``
+  * [ ] Add textual escription
+  * [ ] Add structured data (e.g. ``schema:Organization``)
 
 
 * [ ] Section: Products
@@ -350,7 +351,7 @@ Web Page Checklist
 
   * [ ] Name, Address, Telephone
   * [ ] Email
-  * [ ] Locations (LocalBusiness)
+  * [ ] Locations (``schema:LocalBusiness``)
 
     * [ ] Embed map thumbnail/widget
     * [ ] Link to Directions
@@ -361,13 +362,13 @@ Web Page Checklist
     * [ ] Twitter
     * [ ] Facebook
     * [ ] LinkedIn
-    * [...]
+    * [ ] [...]
 
 
 * [ ] Section: Footer
 
   * [ ] Copyleft: ``&copy; <year> <business name>``
-  * [ ] <location> 
+  * [ ] <location>
   * [ ] Feedback
   * [ ] Terms
   * [ ] Privacy
@@ -375,8 +376,8 @@ Web Page Checklist
 
 * [ ] Section: Post-load JS scripts
 
-  * JS libraries
-  * Analytics loaders
+  * [ ] JS libraries
+  * [ ] Analytics loaders
 
 
 .. index:: DNS Configuration
