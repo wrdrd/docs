@@ -4,6 +4,7 @@ from __future__ import print_function
 """
 stripsinglehtml
 """
+import codecs
 import bs4
 
 def stripsinglehtml(path='index.html'):
@@ -12,7 +13,7 @@ def stripsinglehtml(path='index.html'):
     (rather than writing a sphinx [...]-er)
     """
     contents = None
-    with open(path, 'r') as f:
+    with codecs.open(path, 'r', encoding='utf8') as f:
         contents = f.read()
 
     bs = bs4.BeautifulSoup(contents)
@@ -91,7 +92,6 @@ def main(*args):
         raise Exception("Must specify a file path")
     path = args[0]
 
-    import codecs
     sys.stdout = codecs.getwriter('utf-8')(sys.stdout, errors='replace')
 
     bs = stripsinglehtml(path)
