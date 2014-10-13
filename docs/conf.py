@@ -325,3 +325,9 @@ def configure_meta_tags(app, pagename, templatename, context, doctree):
 def setup(app):
     app.add_javascript('js/local.js')
     app.connect('html-page-context', configure_meta_tags)
+
+
+if __name__ == "__main__":
+    context = {}
+    output = configure_meta_tags(None, None, None, context, None)
+    print(context.get('metatags'))
