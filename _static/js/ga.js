@@ -11,6 +11,7 @@ var keymap = {
 if (document.location.hostname in keymap) {
     var gajs_id = keymap[document.location.hostname];
     ga('create', gajs_id, 'auto');
+    ga('require', 'displayfeatures');
     ga('send', 'pageview');
 }
 
