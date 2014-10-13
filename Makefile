@@ -55,8 +55,8 @@ LOCALJS="$(STATIC)/js/local.js"
 
 localjs:
 	echo '' > $(LOCALJS)
-	cat $(STATIC)/js/newtab.js >> $(LOCALJS)
 	cat $(STATIC)/js/ga.js >> $(LOCALJS)
+	cat $(STATIC)/js/newtab.js >> $(LOCALJS)
 
 docs: clean-docs docs-api localjs
 	$(MAKE) -C docs html
