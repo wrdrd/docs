@@ -182,6 +182,15 @@
 <span class="n">Link</span> <span class="o">=</span> <span class="n">namedtuple</span><span class="p">(</span><span class="s">&#39;Link&#39;</span><span class="p">,</span> <span class="p">(</span><span class="s">&#39;loc&#39;</span><span class="p">,</span> <span class="s">&#39;href&#39;</span><span class="p">,</span> <span class="s">&#39;name&#39;</span><span class="p">,</span> <span class="s">&#39;target&#39;</span><span class="p">,</span> <span class="s">&#39;text&#39;</span><span class="p">,</span> <span class="s">&#39;parent_id&#39;</span><span class="p">))</span>
 
 <div class="viewcode-block" id="extract_links"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.crawl.extract_links">[docs]</a><span class="k">def</span> <span class="nf">extract_links</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">bs</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Find ``&lt;a&gt;`` links in a given BeautifulSoup object</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        url (str): URL of the BeautifulSoup object</span>
+<span class="sd">        bs (bs4.BeautifulSoup): BeautifulSoup object</span>
+<span class="sd">    Yields:</span>
+<span class="sd">        Link: a :py:class:`Link`</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">links</span> <span class="o">=</span> <span class="n">bs</span><span class="o">.</span><span class="n">findAll</span><span class="p">(</span><span class="s">&#39;a&#39;</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="n">links</span><span class="p">:</span>
         <span class="n">elem</span> <span class="o">=</span> <span class="n">l</span><span class="o">.</span><span class="n">find_parent</span><span class="p">(</span><span class="n">attrs</span><span class="o">=</span><span class="p">{</span><span class="s">&#39;id&#39;</span><span class="p">:</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">bool</span><span class="p">(</span><span class="n">x</span><span class="p">)})</span>
@@ -198,6 +207,15 @@
 <span class="n">Image</span> <span class="o">=</span> <span class="n">namedtuple</span><span class="p">(</span><span class="s">&#39;Image&#39;</span><span class="p">,</span> <span class="p">(</span><span class="s">&#39;loc&#39;</span><span class="p">,</span> <span class="s">&#39;src&#39;</span><span class="p">,</span> <span class="s">&#39;alt&#39;</span><span class="p">,</span> <span class="s">&#39;height&#39;</span><span class="p">,</span> <span class="s">&#39;width&#39;</span><span class="p">,</span> <span class="s">&#39;text&#39;</span><span class="p">))</span>
 
 <div class="viewcode-block" id="extract_images"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.crawl.extract_images">[docs]</a><span class="k">def</span> <span class="nf">extract_images</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">bs</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Find ``&lt;img&gt;`` images in a given BeautifulSoup object</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        url (str): URL of the BeautifulSoup object</span>
+<span class="sd">        bs (bs4.BeautifulSoup): BeautifulSoup object</span>
+<span class="sd">    Yields:</span>
+<span class="sd">        Image: a :py:class:`Image`</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">images</span> <span class="o">=</span> <span class="n">bs</span><span class="o">.</span><span class="n">findAll</span><span class="p">(</span><span class="s">&#39;img&#39;</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">images</span><span class="p">:</span>
         <span class="k">yield</span> <span class="n">Image</span><span class="p">(</span>
@@ -212,6 +230,15 @@
 <span class="n">CSS</span> <span class="o">=</span> <span class="n">namedtuple</span><span class="p">(</span><span class="s">&#39;CSS&#39;</span><span class="p">,</span> <span class="p">(</span><span class="s">&#39;loc&#39;</span><span class="p">,</span> <span class="s">&#39;src&#39;</span><span class="p">))</span>
 
 <div class="viewcode-block" id="extract_css"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.crawl.extract_css">[docs]</a><span class="k">def</span> <span class="nf">extract_css</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">bs</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Find CSS ``&lt;link&gt;`` links in a given BeautifulSoup object</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        url (str): URL of the BeautifulSoup object</span>
+<span class="sd">        bs (bs4.BeautifulSoup): BeautifulSoup object</span>
+<span class="sd">    Yields:</span>
+<span class="sd">        CSS: a :py:class:`CSS`</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">csses</span> <span class="o">=</span> <span class="n">bs</span><span class="o">.</span><span class="n">findAll</span><span class="p">(</span><span class="s">&#39;link&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s">&#39;rel&#39;</span><span class="p">:</span><span class="s">&#39;stylesheet&#39;</span><span class="p">})</span>
     <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">csses</span><span class="p">:</span>
         <span class="k">yield</span> <span class="n">CSS</span><span class="p">(</span>
@@ -222,6 +249,15 @@
 <span class="n">JS</span> <span class="o">=</span> <span class="n">namedtuple</span><span class="p">(</span><span class="s">&#39;JS&#39;</span><span class="p">,</span> <span class="p">(</span><span class="s">&#39;loc&#39;</span><span class="p">,</span> <span class="s">&#39;src&#39;</span><span class="p">))</span>
 
 <div class="viewcode-block" id="extract_js"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.crawl.extract_js">[docs]</a><span class="k">def</span> <span class="nf">extract_js</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">bs</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Find JS ``&lt;script&gt;`` links in a given BeautifulSoup object</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        url (str): URL of the BeautifulSoup object</span>
+<span class="sd">        bs (bs4.BeautifulSoup): BeautifulSoup object</span>
+<span class="sd">    Yields:</span>
+<span class="sd">        JS: a :py:class:`JS`</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">jses</span> <span class="o">=</span> <span class="n">bs</span><span class="o">.</span><span class="n">findAll</span><span class="p">(</span><span class="s">&#39;script&#39;</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">jses</span><span class="p">:</span>
         <span class="n">type_</span> <span class="o">=</span> <span class="n">j</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">&#39;type&#39;</span><span class="p">)</span>
@@ -234,11 +270,25 @@
 
 </div>
 <div class="viewcode-block" id="tokenize"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.crawl.tokenize">[docs]</a><span class="k">def</span> <span class="nf">tokenize</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Tokenize the given text with textblob</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        text (str): text to tokenize</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        iterable: tokens</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">textblob</span><span class="o">.</span><span class="n">tokenizers</span><span class="o">.</span><span class="n">word_tokenize</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
 
 </div>
 <span class="n">STOP_WORDS</span> <span class="o">=</span> <span class="bp">None</span>
 <div class="viewcode-block" id="get_stop_words"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.crawl.get_stop_words">[docs]</a><span class="k">def</span> <span class="nf">get_stop_words</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Get english stop words from NLTK with a few modifications</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        dict: dictionary of stop words</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">global</span> <span class="n">STOP_WORDS</span>
     <span class="k">if</span> <span class="n">STOP_WORDS</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
         <span class="n">STOP_WORDS</span> <span class="o">=</span> <span class="nb">dict</span><span class="o">.</span><span class="n">fromkeys</span><span class="p">(</span><span class="n">nltk</span><span class="o">.</span><span class="n">corpus</span><span class="o">.</span><span class="n">stopwords</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s">&#39;english&#39;</span><span class="p">),</span> <span class="mi">1</span><span class="p">)</span>
@@ -248,10 +298,26 @@
 
 </div>
 <div class="viewcode-block" id="get_text_from_bs"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.crawl.get_text_from_bs">[docs]</a><span class="k">def</span> <span class="nf">get_text_from_bs</span><span class="p">(</span><span class="n">bs</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Get text from a BeautifulSoup object</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        bs (bs4.BeautifulSoup): BeautifulSoup object</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        unicode: newline-joined unicode string</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="s">u&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">,</span><span class="s">&#39; &#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">bs</span><span class="o">.</span><span class="n">strings</span><span class="p">)</span>
 
 </div>
 <div class="viewcode-block" id="strip_script_styles_from_bs"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.crawl.strip_script_styles_from_bs">[docs]</a><span class="k">def</span> <span class="nf">strip_script_styles_from_bs</span><span class="p">(</span><span class="n">bs</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Strip ``&lt;script&gt;`` and ``&lt;style&gt;`` tags from a BeautifulSoup object</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        bs (bs4.BeautifulSoup): BeautifulSoup object</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        bs4.BeautifulSoup: BeautifulSoup object with tags removed</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="c">#bs = bs.copy()</span>
     <span class="k">for</span> <span class="n">tag</span> <span class="ow">in</span> <span class="p">(</span><span class="s">&#39;script&#39;</span><span class="p">,</span> <span class="s">&#39;style&#39;</span><span class="p">):</span>
         <span class="k">for</span> <span class="n">elem</span> <span class="ow">in</span> <span class="n">bs</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="n">tag</span><span class="p">):</span>
@@ -260,6 +326,14 @@
 
 </div>
 <div class="viewcode-block" id="extract_words_from_bs"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.crawl.extract_words_from_bs">[docs]</a><span class="k">def</span> <span class="nf">extract_words_from_bs</span><span class="p">(</span><span class="n">bs</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Get just the text from an HTML page</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        bs (bs4.BeautifulSoup): BeautifulSoup object</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        unicode: newline-joined unicode string</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">body</span> <span class="o">=</span> <span class="n">bs</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">&#39;body&#39;</span><span class="p">)</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">body</span><span class="p">:</span>
         <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="n">body</span><span class="p">)</span>
@@ -270,6 +344,15 @@
 <span class="n">KeywordFrequency</span> <span class="o">=</span> <span class="n">namedtuple</span><span class="p">(</span><span class="s">&#39;KeywordFrequency&#39;</span><span class="p">,</span> <span class="p">(</span><span class="s">&#39;url&#39;</span><span class="p">,</span> <span class="s">&#39;frequencies&#39;</span><span class="p">))</span>
 
 <div class="viewcode-block" id="word_frequencies"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.crawl.word_frequencies">[docs]</a><span class="k">def</span> <span class="nf">word_frequencies</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">keywords</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Get frequencies (counts) for a set of (non-stopword) keywords</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        url (str): URL from which keywords were derived</span>
+<span class="sd">        keywords (iterable): iterable of keywords</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        KeywordFrequency: :py:class:`KeywordFrequency`</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">words</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">keywords</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">KeywordFrequency</span><span class="p">(</span>
         <span class="n">url</span><span class="p">,</span>
@@ -277,33 +360,72 @@
 
 </div>
 <div class="viewcode-block" id="extract_keywords"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.crawl.extract_keywords">[docs]</a><span class="k">def</span> <span class="nf">extract_keywords</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">bs</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Extract keyword frequencies from a given BeautifulSoup object</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        url (str): URL of the BeautifulSoup object</span>
+<span class="sd">        bs (bs4.BeautifulSoup): BeautifulSoup object</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        KeywordFrequency: :py:class:`KeywordFrequency`</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">word_frequencies</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">tokenize</span><span class="p">(</span><span class="n">extract_words_from_bs</span><span class="p">(</span><span class="n">bs</span><span class="p">)))</span>
 
 </div>
 <div class="viewcode-block" id="current_datetime"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.crawl.current_datetime">[docs]</a><span class="k">def</span> <span class="nf">current_datetime</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Get the current datetime in ISO format</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        str: current datetime in ISO format</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">isoformat</span><span class="p">()</span>
 
 </div>
 <span class="n">CrawlRequest</span> <span class="o">=</span> <span class="n">namedtuple</span><span class="p">(</span><span class="s">&#39;CrawlRequest&#39;</span><span class="p">,</span> <span class="p">(</span><span class="s">&#39;src&#39;</span><span class="p">,</span> <span class="s">&#39;url&#39;</span><span class="p">,</span> <span class="s">&#39;datetime&#39;</span><span class="p">))</span>
 
 <div class="viewcode-block" id="URLCrawlQueue"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.crawl.URLCrawlQueue">[docs]</a><span class="k">class</span> <span class="nc">URLCrawlQueue</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Queue of CrawlRequest URLs to crawl and their states</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">NEW</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="n">OUT</span> <span class="o">=</span> <span class="mi">1</span>
     <span class="n">DONE</span> <span class="o">=</span> <span class="mi">2</span>
     <span class="n">ERROR</span> <span class="o">=</span> <span class="mi">3</span>
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Initialize new URLCrawlQueue</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            URLCrawlQueue: new URLCrawlQueue</span>
+<span class="sd">        &quot;&quot;&quot;</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">already</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">q</span> <span class="o">=</span> <span class="p">[]</span>
 
-    <span class="k">def</span> <span class="nf">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">q</span><span class="o">.</span><span class="n">__iter__</span><span class="p">()</span>
+<div class="viewcode-block" id="URLCrawlQueue.__iter__"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.crawl.URLCrawlQueue.__iter__">[docs]</a>    <span class="k">def</span> <span class="nf">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Iterate over enqueued URLs to crawl</span>
 
+<span class="sd">        Returns:</span>
+<span class="sd">            iterable: Iterable of :py:class:`CrawlRequest`</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">q</span><span class="o">.</span><span class="n">__iter__</span><span class="p">()</span>
+</div>
 <div class="viewcode-block" id="URLCrawlQueue.pop"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.crawl.URLCrawlQueue.pop">[docs]</a>    <span class="k">def</span> <span class="nf">pop</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Pop a CrawlRequest off the queue and mark it as ``URLCrawlQueue.OUT``</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            CrawlRequest: :py:class:`CrawlRequest`</span>
+<span class="sd">        &quot;&quot;&quot;</span>
         <span class="n">item</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">q</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">already</span><span class="p">[</span><span class="n">item</span><span class="o">.</span><span class="n">url</span><span class="p">]</span> <span class="o">=</span> <span class="n">URLCrawlQueue</span><span class="o">.</span><span class="n">OUT</span>
         <span class="k">return</span> <span class="n">item</span>
 </div>
 <div class="viewcode-block" id="URLCrawlQueue.push"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.crawl.URLCrawlQueue.push">[docs]</a>    <span class="k">def</span> <span class="nf">push</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Push a CrawlRequest onto the queue and mark it as ``URLCrawlQueue.NEW``</span>
+<span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">if</span> <span class="n">item</span><span class="o">.</span><span class="n">url</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">already</span><span class="p">:</span>  <span class="c"># one shot</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">already</span><span class="p">[</span><span class="n">item</span><span class="o">.</span><span class="n">url</span><span class="p">]</span> <span class="o">=</span> <span class="n">URLCrawlQueue</span><span class="o">.</span><span class="n">NEW</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">q</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
@@ -311,33 +433,87 @@
         <span class="c">#    log.debug(&quot;Skipping already enqueued: %s&quot; % str(item))</span>
 </div>
 <div class="viewcode-block" id="URLCrawlQueue.done"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.crawl.URLCrawlQueue.done">[docs]</a>    <span class="k">def</span> <span class="nf">done</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Mark a CrawlRequest as ``URLCrawlQueue.DONE``</span>
+<span class="sd">        &quot;&quot;&quot;</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">already</span><span class="p">[</span><span class="n">item</span><span class="o">.</span><span class="n">url</span><span class="p">]</span> <span class="o">=</span> <span class="n">URLCrawlQueue</span><span class="o">.</span><span class="n">DONE</span>
 </div>
 <div class="viewcode-block" id="URLCrawlQueue.error"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.crawl.URLCrawlQueue.error">[docs]</a>    <span class="k">def</span> <span class="nf">error</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Mark a CrawlRequest as ``URLCrawlQueue.ERROR``</span>
+<span class="sd">        &quot;&quot;&quot;</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">already</span><span class="p">[</span><span class="n">item</span><span class="o">.</span><span class="n">url</span><span class="p">]</span> <span class="o">=</span> <span class="n">URLCrawlQueue</span><span class="o">.</span><span class="n">ERROR</span>
 </div>
 <div class="viewcode-block" id="URLCrawlQueue.count"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.crawl.URLCrawlQueue.count">[docs]</a>    <span class="k">def</span> <span class="nf">count</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Get the count of the ``URLCrawlQueue.NEW`` :py:class:`CrawlRequest`s</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            int: count of ``URLCrawlQueue.NEW`` :py:class:`CrawlRequest`s</span>
+<span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">q</span><span class="p">)</span>
 
 </div></div>
 <div class="viewcode-block" id="ResultStore"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.crawl.ResultStore">[docs]</a><span class="k">class</span> <span class="nc">ResultStore</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Result store interface</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Initialize a new :py:class:`ResultStore`</span>
+<span class="sd">        &quot;&quot;&quot;</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">db</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">()</span>
 
-    <span class="k">def</span> <span class="nf">__contains__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+<div class="viewcode-block" id="ResultStore.__contains__"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.crawl.ResultStore.__contains__">[docs]</a>    <span class="k">def</span> <span class="nf">__contains__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Check whether the given key is in the :py:class:`ResultStore`</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            k (str): key</span>
+<span class="sd">        Returns:</span>
+<span class="sd">            bool: whether or not k is in ``self.db``</span>
+<span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">k</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">db</span>
+</div>
+<div class="viewcode-block" id="ResultStore.__iter__"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.crawl.ResultStore.__iter__">[docs]</a>    <span class="k">def</span> <span class="nf">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Get an iterable over the keys in ``self.db``</span>
 
-    <span class="k">def</span> <span class="nf">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="sd">        Returns:</span>
+<span class="sd">            iterable: an iterable over the keys in ``self.db``</span>
+<span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">db</span><span class="o">.</span><span class="n">__iter__</span><span class="p">()</span>
+</div>
+<div class="viewcode-block" id="ResultStore.__setitem__"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.crawl.ResultStore.__setitem__">[docs]</a>    <span class="k">def</span> <span class="nf">__setitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Set a (key, value) pair in ``self.db``</span>
 
-    <span class="k">def</span> <span class="nf">__setitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="p">):</span>
+<span class="sd">        Args:</span>
+<span class="sd">            k (str): key</span>
+<span class="sd">            v (str): value</span>
+<span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">db</span><span class="o">.</span><span class="n">__setitem__</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span>
-
+</div>
 <div class="viewcode-block" id="ResultStore.itervalues"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.crawl.ResultStore.itervalues">[docs]</a>    <span class="k">def</span> <span class="nf">itervalues</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Get an iterable over the values in ``self.db``</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            iterable: an iterable over the values in ``self.db``</span>
+<span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">db</span><span class="o">.</span><span class="n">itervalues</span><span class="p">()</span>
 
 </div></div>
 <div class="viewcode-block" id="expand_link"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.crawl.expand_link">[docs]</a><span class="k">def</span> <span class="nf">expand_link</span><span class="p">(</span><span class="n">_src</span><span class="p">,</span> <span class="n">_url</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Expand a link given the containing document&#39;s URI</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        _src (str): containing document&#39;s URI</span>
+<span class="sd">        _url (str): link URI</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        str: expanded URI</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">src</span> <span class="o">=</span> <span class="n">urlobject</span><span class="o">.</span><span class="n">URLObject</span><span class="p">(</span><span class="n">_src</span><span class="p">)</span>
     <span class="n">url</span> <span class="o">=</span> <span class="n">urlobject</span><span class="o">.</span><span class="n">URLObject</span><span class="p">(</span><span class="n">_url</span><span class="p">)</span>
 
@@ -352,6 +528,14 @@
 
 </div>
 <div class="viewcode-block" id="strip_fragment"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.crawl.strip_fragment">[docs]</a><span class="k">def</span> <span class="nf">strip_fragment</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Strip the #fragment portion from a URI</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        url (str): URI to strip #fragment from</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        str: stripped URI (``/`` if otherwise empty)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">url</span> <span class="o">=</span> <span class="n">urlobject</span><span class="o">.</span><span class="n">URLObject</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
     <span class="n">_url</span> <span class="o">=</span> <span class="n">url</span><span class="o">.</span><span class="n">without_fragment</span><span class="p">()</span>
     <span class="k">if</span> <span class="ow">not</span><span class="p">(</span><span class="nb">unicode</span><span class="p">(</span><span class="n">_url</span><span class="p">)):</span>
@@ -360,13 +544,31 @@
         <span class="k">return</span> <span class="nb">unicode</span><span class="p">(</span><span class="n">_url</span><span class="p">)</span>
 
 </div>
-<div class="viewcode-block" id="same_netloc"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.crawl.same_netloc">[docs]</a><span class="k">def</span> <span class="nf">same_netloc</span><span class="p">(</span><span class="n">_url</span><span class="p">,</span> <span class="n">_domain</span><span class="p">):</span>
-    <span class="n">url</span> <span class="o">=</span> <span class="n">urlparse</span><span class="o">.</span><span class="n">urlsplit</span><span class="p">(</span><span class="n">_url</span><span class="p">)</span>
-    <span class="n">dom</span> <span class="o">=</span> <span class="n">urlparse</span><span class="o">.</span><span class="n">urlsplit</span><span class="p">(</span><span class="n">_domain</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">url</span><span class="o">.</span><span class="n">netloc</span> <span class="o">==</span> <span class="n">dom</span><span class="o">.</span><span class="n">netloc</span>
+<div class="viewcode-block" id="same_netloc"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.crawl.same_netloc">[docs]</a><span class="k">def</span> <span class="nf">same_netloc</span><span class="p">(</span><span class="n">url1</span><span class="p">,</span> <span class="n">url2</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Check whether two URIs have the same netloc</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        url1 (str): first URI</span>
+<span class="sd">        url2 (str): second URI</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        bool: True if both URIs have the same netloc</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">_url1</span> <span class="o">=</span> <span class="n">urlparse</span><span class="o">.</span><span class="n">urlsplit</span><span class="p">(</span><span class="n">url1</span><span class="p">)</span>
+    <span class="n">_url2</span> <span class="o">=</span> <span class="n">urlparse</span><span class="o">.</span><span class="n">urlsplit</span><span class="p">(</span><span class="n">url2</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">_url1</span><span class="o">.</span><span class="n">netloc</span> <span class="o">==</span> <span class="n">_url2</span><span class="o">.</span><span class="n">netloc</span>
 
 </div>
 <div class="viewcode-block" id="crawl_url"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.crawl.crawl_url">[docs]</a><span class="k">def</span> <span class="nf">crawl_url</span><span class="p">(</span><span class="n">start_url</span><span class="p">,</span> <span class="n">output</span><span class="o">=</span><span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Crawl pages starting at ``start_url``</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        start_url (str): URL to start crawling from</span>
+<span class="sd">        output (filelike): file to ``.write()`` output to</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        ResultStore: :py:class:`ResultStore` of (URL, crawl_status_dict) pairs</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">queue</span> <span class="o">=</span> <span class="n">URLCrawlQueue</span><span class="p">()</span>
 
     <span class="n">queue</span><span class="o">.</span><span class="n">push</span><span class="p">(</span>
@@ -434,14 +636,31 @@
 
 </div>
 <div class="viewcode-block" id="sum_counters"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.crawl.sum_counters">[docs]</a><span class="k">def</span> <span class="nf">sum_counters</span><span class="p">(</span><span class="n">iterable</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Sum the counts of an iterable</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        iterable (iterable): iterable of collections.Counter dicts</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        defaultdict: dict of (key, count) pairs</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">totals</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="mi">0</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">counts</span> <span class="ow">in</span> <span class="n">iterable</span><span class="p">:</span>
-        <span class="k">for</span> <span class="n">key</span><span class="p">,</span><span class="n">value</span> <span class="ow">in</span> <span class="n">counts</span><span class="o">.</span><span class="n">iteritems</span><span class="p">():</span>
+        <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">counts</span><span class="o">.</span><span class="n">iteritems</span><span class="p">():</span>
             <span class="n">totals</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">+=</span> <span class="n">value</span>
     <span class="k">return</span> <span class="n">totals</span>
 
 </div>
 <div class="viewcode-block" id="frequency_table"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.crawl.frequency_table">[docs]</a><span class="k">def</span> <span class="nf">frequency_table</span><span class="p">(</span><span class="n">counterdict</span><span class="p">,</span> <span class="n">sort_by</span><span class="o">=</span><span class="s">&#39;count&#39;</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Calculate and sort a frequency table from a collections.Counter dict</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        counterdict (dict): a collections.Counter dict of (key, count) pairs</span>
+<span class="sd">        sort_by (str): either ``count`` or ``name``</span>
+<span class="sd">    Yields:</span>
+<span class="sd">        tuple: (%, count, key)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">total</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">counterdict</span><span class="o">.</span><span class="n">itervalues</span><span class="p">()))</span>
     <span class="n">keyfunc</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span>
     <span class="n">reverse</span> <span class="o">=</span> <span class="bp">None</span>
@@ -465,6 +684,13 @@
 
 </div>
 <div class="viewcode-block" id="print_frequency_table"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.crawl.print_frequency_table">[docs]</a><span class="k">def</span> <span class="nf">print_frequency_table</span><span class="p">(</span><span class="n">frequencies</span><span class="p">,</span> <span class="n">output</span><span class="o">=</span><span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Print a formatted ASCII frequency table</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        frequencies (iterable): iterable of (%, count, word) tuples</span>
+<span class="sd">        output (filelike): output to ``print()`` to</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">write</span> <span class="o">=</span> <span class="n">functools</span><span class="o">.</span><span class="n">partial</span><span class="p">(</span><span class="k">print</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="n">output</span><span class="p">)</span>
     <span class="n">hdrfmt</span> <span class="o">=</span> <span class="s">&quot;    </span><span class="si">%5s</span><span class="s"> </span><span class="si">%6s</span><span class="s">  </span><span class="si">%s</span><span class="s">&quot;</span>
     <span class="n">rowfmt</span> <span class="o">=</span> <span class="s">u&quot;    {:.2%} {:-6}  {}&quot;</span>
@@ -477,6 +703,14 @@
 
 </div>
 <div class="viewcode-block" id="to_a_search_engine"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.crawl.to_a_search_engine">[docs]</a><span class="k">def</span> <span class="nf">to_a_search_engine</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Get a list of words (e.g. as a classic search engine)</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        url (str): URL to ``HTTP GET`` with ``requests.get``</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        iterable: iterable of tokens</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">content</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span><span class="o">.</span><span class="n">content</span>
     <span class="n">bs</span> <span class="o">=</span> <span class="n">bs4</span><span class="o">.</span><span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
     <span class="n">bs</span> <span class="o">=</span> <span class="n">strip_script_styles_from_bs</span><span class="p">(</span><span class="n">bs</span><span class="p">)</span>
@@ -485,8 +719,17 @@
             <span class="n">itertools</span><span class="o">.</span><span class="n">chain</span><span class="p">(</span><span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">)))</span>
 
 </div>
-<div class="viewcode-block" id="build_networkx_graph"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.crawl.build_networkx_graph">[docs]</a><span class="k">def</span> <span class="nf">build_networkx_graph</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">links</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">output</span><span class="o">=</span><span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="p">):</span>
-    <span class="c">#write = functools.partial(print, file=output)</span>
+<div class="viewcode-block" id="build_networkx_graph"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.crawl.build_networkx_graph">[docs]</a><span class="k">def</span> <span class="nf">build_networkx_graph</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">links</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Build a networkx.DiGraph from an iterable of links from a given URL</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        url (str): URL from which the given links are derived</span>
+<span class="sd">        links (iterable): iterable of :py:class:`Link` objects</span>
+<span class="sd">        label (str): label/title for graph</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        networkx.DiGraph: directed graph of links</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="kn">import</span> <span class="nn">cgi</span>
     <span class="k">def</span> <span class="nf">escape</span><span class="p">(</span><span class="n">var</span><span class="p">):</span>
         <span class="k">return</span> <span class="s">&#39;&quot;</span><span class="si">%s</span><span class="s">&quot;&#39;</span> <span class="o">%</span> <span class="n">cgi</span><span class="o">.</span><span class="n">escape</span><span class="p">(</span><span class="n">var</span><span class="p">,</span> <span class="n">quote</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
@@ -513,10 +756,24 @@
 
 </div>
 <div class="viewcode-block" id="write_nxgraph_to_dot"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.crawl.write_nxgraph_to_dot">[docs]</a><span class="k">def</span> <span class="nf">write_nxgraph_to_dot</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="n">output</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Write a networkx graph as DOT to the specified output</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        g (networkx.Graph): graph to write as DOT</span>
+<span class="sd">        output (filelike): output to write to</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">networkx</span><span class="o">.</span><span class="n">drawing</span><span class="o">.</span><span class="n">write_dot</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="n">output</span><span class="p">)</span>
 
 </div>
 <div class="viewcode-block" id="write_nxgraph_to_json"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.crawl.write_nxgraph_to_json">[docs]</a><span class="k">def</span> <span class="nf">write_nxgraph_to_json</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="n">output</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Write a networkx graph as JSON to the specified output</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        g (networkx.Graph): graph to write as JSON</span>
+<span class="sd">        output (filelike): output to write to</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="kn">import</span> <span class="nn">json</span>
     <span class="kn">from</span> <span class="nn">networkx.readwrite</span> <span class="kn">import</span> <span class="n">json_graph</span>
     <span class="n">jsond</span> <span class="o">=</span> <span class="n">json_graph</span><span class="o">.</span><span class="n">node_link_data</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
@@ -524,6 +781,15 @@
 
 </div>
 <div class="viewcode-block" id="wrdcrawler"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.crawl.wrdcrawler">[docs]</a><span class="k">def</span> <span class="nf">wrdcrawler</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">output</span><span class="o">=</span><span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Fetch and generate a report for the given URL</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        url (str): URL to fetch</span>
+<span class="sd">        output (filelike): output to ``print()`` to</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        filelike: output</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">write</span> <span class="o">=</span> <span class="n">functools</span><span class="o">.</span><span class="n">partial</span><span class="p">(</span><span class="k">print</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="n">output</span><span class="p">)</span>
 
     <span class="n">crawled</span> <span class="o">=</span> <span class="n">crawl_url</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
@@ -695,6 +961,14 @@
 
 </div></div>
 <div class="viewcode-block" id="main"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.crawl.main">[docs]</a><span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    :py:module:`wrdrd.tools.crawl` main method: parse arguments and run commands</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        args (list): list of commandline arguments</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        int: nonzero returncode on error</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="kn">import</span> <span class="nn">logging</span>
     <span class="kn">import</span> <span class="nn">optparse</span>
     <span class="kn">import</span> <span class="nn">sys</span>
