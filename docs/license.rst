@@ -1,5 +1,5 @@
 
-Copyright
+License
 ==========
 
 .. image:: _static/img/cc-by-sa-4.0-88x31.png 
