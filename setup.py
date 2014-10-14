@@ -24,7 +24,7 @@ requires = [
 
 setup(
     name='wrdrd',
-    version='0.1.0',
+    version='0.2.0',
     description='WRD R&D Web Consulting Tools and Documentation',
     long_description=readme + '\n\n' + history,
     author='Wes Turner',
