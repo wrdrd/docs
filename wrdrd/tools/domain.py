@@ -376,7 +376,15 @@ def domain_tools(domain):
 
 def check_google_domain(domain, dkim_prefix=DEFAULT_GOOGLE_DKIM_PREFIX):
     """
-    https://support.google.com/a/answer/2716802
+    Check DNS MX, SPF, DMARC, and DKIM records for a Google Apps domain
+
+    Args:
+        domain (str): DNS domain
+        dkim_prefix (str): DKIM prefix (``<prefix>._domainkey``)
+    Returns:
+        int: nonzero returncode on failure (sum of returncodes)
+
+    | https://support.google.com/a/answer/2716802
     """
     mx = check_google_mx(domain)
     spf = check_google_spf(domain)
@@ -400,7 +408,12 @@ def check_google_domain(domain, dkim_prefix=DEFAULT_GOOGLE_DKIM_PREFIX):
 
 def main(*args):
     """
-    wrdrd.tools.domain main method
+    :py:mod:`wrdrd.tools.domain` main method
+
+    Args:
+        args (list): commandline arguments
+    Returns:
+        int: nonzero returncode on failure (sum of returncodes)
     """
     import logging
     import optparse
