@@ -20,8 +20,10 @@ def stripsinglehtml(path='index.html'):
     bs.find('body')
     bs = bs.find('body')
     [x.extract() for x in bs.find_all('a', {'class':'headerlink'})]
-    bs.find('div', {'class':'sphinxsidebar'}).extract()
-    bs.find('div', {'id':'indices-and-tables'}).extract()
+    elem = bs.find('div', {'class':'sphinxsidebar'})
+    elem and elem.extract()
+    elem = bs.find('div', {'id':'indices-and-tables'})
+    elem and elem.extract()
     [x.extract() for x in bs.find_all('div', {'class':'related'})]
 
     return bs
