@@ -157,6 +157,32 @@ def check_google_dmarc(domain):
     log.error('err', msg=errmsg)
     return 1
 
+DEFAULT_GOOGLE_DKIM_PREFIX = 'google'
+
+def check_google_dkim(domain, prefix=DEFAULT_GOOGLE_DKIM_PREFIX):
+    """
+    https://support.google.com/a/answer/174126
+    https://admin.google.com/AdminHome?fral=1#AppDetails:service=email&flyout=dkim
+
+    .. note:: This does not validate DKIM signatures and
+       defaults to the default ``google`` prefix
+    """
+    dkim_record_name = "%s._domainkey.%s" % (prefix, domain)
+    cmd = sarge.shell_format("dig {0} txt +short", dkim_record_name)
+    log.info('cmd', op='check_google_dkim', cmd=cmd)
+    proc = sarge.capture_both(cmd)
+    output = proc.stdout.text.rstrip().split('\n')
+    for line in output:
+        log.debug('TXT', record=line)
+        expected = u"\"v=DKIM1"  # ... "\; p=none\; rua=mailto:"
+        if line.startswith(expected):
+            if 'k=' in line and 'p=' in line:
+                return 0
+
+    errmsg = "%s is not a valid DKIM record" % (output)
+    log.error('err', msg=errmsg)
+    return 1
+
 
 def domain_tools(domain):
     """
@@ -224,19 +250,20 @@ def domain_tools(domain):
     return returncode
 
 
-def check_google_domain(domain):
+def check_google_domain(domain, dkim_prefix=DEFAULT_GOOGLE_DKIM_PREFIX):
     """
     https://support.google.com/a/answer/2716802
     """
     mx = check_google_mx(domain)
     spf = check_google_spf(domain)
     dmarc = check_google_dmarc(domain)
+    dkim = check_google_dkim(domain, prefix=dkim_prefix)
 
-    returncode = mx + spf + dmarc  # TODO: + dkim
+    returncode = mx + spf + dmarc + dkim
     if returncode:
-        log.error('err', mx=mx, spf=spf, dmarc=dmarc)
+        log.error('err', mx=mx, spf=spf, dmarc=dmarc, dkim=dkim)
     else:
-        log.info('OK', mx=mx, spf=spf, dmarc=dmarc)
+        log.info('OK', mx=mx, spf=spf, dmarc=dmarc, dkim=dkim)
 
     return returncode
 
