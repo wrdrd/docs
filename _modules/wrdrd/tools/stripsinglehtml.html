@@ -133,15 +133,21 @@
 <span class="c"># encoding: utf-8</span>
 <span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span>
 <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">stripsinglehtml</span>
+<span class="sd">wrdrd.tools.stripsinglehtml</span>
 <span class="sd">&quot;&quot;&quot;</span>
 <span class="kn">import</span> <span class="nn">codecs</span>
 <span class="kn">import</span> <span class="nn">bs4</span>
+
 
 <div class="viewcode-block" id="stripsinglehtml"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.stripsinglehtml.stripsinglehtml">[docs]</a><span class="k">def</span> <span class="nf">stripsinglehtml</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="s">&#39;index.html&#39;</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    strip markup from sphinx singlehtml files</span>
 <span class="sd">    (rather than writing a sphinx [...]-er)</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        path (str): path to a Sphinx singlehtml file</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        beautifulsoup4.BeautifulSoup: trimmed HTML file</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">contents</span> <span class="o">=</span> <span class="bp">None</span>
     <span class="k">with</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="s">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s">&#39;utf8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
@@ -158,44 +164,56 @@
     <span class="p">[</span><span class="n">x</span><span class="o">.</span><span class="n">extract</span><span class="p">()</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">bs</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&#39;div&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s">&#39;class&#39;</span><span class="p">:</span><span class="s">&#39;related&#39;</span><span class="p">})]</span>
 
     <span class="k">return</span> <span class="n">bs</span>
-</div>
-<span class="n">GOOGLE_SITES_TABLE_OF_CONTENTS</span> <span class="o">=</span> <span class="p">(</span><span class="s">&quot;&quot;&quot;&lt;div&gt;&lt;img src=&quot;https://www.google.com/chart?chc=sites&amp;amp;cht=d&amp;amp;chdp=sites&amp;amp;chl=%5B%5BTable+of+contents&#39;%3D20&#39;f%5Cv&#39;a%5C%3D0&#39;10&#39;%3D249&#39;0&#39;dim&#39;%5Cbox1&#39;b%5CF6F6F6&#39;fC%5CF6F6F6&#39;eC%5C0&#39;sk&#39;%5C%5B&#39;%5D&#39;a%5CV%5C%3D12&#39;f%5C%5DV%5Cta%5C%3D10&#39;%3D0&#39;%3D250&#39;%3D297&#39;dim&#39;%5C%3D10&#39;%3D10&#39;%3D250&#39;%3D297&#39;vdim&#39;%5Cbox1&#39;b%5Cva%5CF6F6F6&#39;fC%5CC8C8C8&#39;eC%5C&#39;a%5C%5Do%5CLauto&#39;f%5C&amp;amp;sig=TzxATGSyGo59uvdEcnpk0pMmCmI&quot; data-type=&quot;toc&quot; data-props=&quot;align:left;maxDepth:6;width:250;&quot; width=&quot;250&quot; height=&quot;300&quot; style=&quot;display:block;text-align:left;margin-right:auto;&quot;&gt;&lt;/div&gt;&quot;&quot;&quot;</span><span class="p">)</span>
 
-<div class="viewcode-block" id="format_for_google_sites"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.stripsinglehtml.format_for_google_sites">[docs]</a><span class="k">def</span> <span class="nf">format_for_google_sites</span><span class="p">(</span><span class="n">bs</span><span class="p">,</span> <span class="n">strip_h1</span><span class="o">=</span><span class="bp">True</span><span class="p">):</span>
-    <span class="n">bs</span> <span class="o">=</span> <span class="n">bs</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">&#39;div&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s">&#39;class&#39;</span><span class="p">:</span> <span class="s">&#39;body&#39;</span><span class="p">})</span>
-    <span class="n">h1</span> <span class="o">=</span> <span class="n">bs</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">&#39;h1&#39;</span><span class="p">)</span>
-    <span class="n">h1</span><span class="o">.</span><span class="n">insert_after</span><span class="p">(</span><span class="n">bs4</span><span class="o">.</span><span class="n">BeautifulSoup</span><span class="p">()</span><span class="o">.</span><span class="n">new_tag</span><span class="p">(</span><span class="s">&quot;div&quot;</span><span class="p">,</span> <span class="n">thespot</span><span class="o">=</span><span class="s">&quot;???&quot;</span><span class="p">))</span>
-    <span class="k">if</span> <span class="n">strip_h1</span><span class="p">:</span>
-        <span class="n">h1</span><span class="o">.</span><span class="n">extract</span><span class="p">()</span>
-        <span class="c"># TODO: replace with comment</span>
-    <span class="n">p</span> <span class="o">=</span> <span class="n">bs</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">&#39;p&#39;</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">p</span><span class="o">.</span><span class="n">text</span> <span class="o">==</span> <span class="s">u&#39;Contents:&#39;</span><span class="p">:</span>
-        <span class="n">p</span><span class="o">.</span><span class="n">extract</span><span class="p">()</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s">&quot;???&quot;</span><span class="p">)</span>  <span class="c"># TODO</span>
-    <span class="k">return</span> <span class="nb">unicode</span><span class="p">(</span><span class="n">bs</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span>
-        <span class="sd">&#39;&#39;&#39;&lt;div thespot=&quot;???&quot;&gt;&lt;/div&gt;&#39;&#39;&#39;</span><span class="p">,</span>
-        <span class="n">GOOGLE_SITES_TABLE_OF_CONTENTS</span><span class="p">)</span>
+<span class="c">#GOOGLE_SITES_TABLE_OF_CONTENTS = (&quot;&quot;&quot;&lt;div&gt;&lt;img src=&quot;https://www.google.com/chart?chc=sites&amp;amp;cht=d&amp;amp;chdp=sites&amp;amp;chl=%5B%5BTable+of+contents&#39;%3D20&#39;f%5Cv&#39;a%5C%3D0&#39;10&#39;%3D249&#39;0&#39;dim&#39;%5Cbox1&#39;b%5CF6F6F6&#39;fC%5CF6F6F6&#39;eC%5C0&#39;sk&#39;%5C%5B&#39;%5D&#39;a%5CV%5C%3D12&#39;f%5C%5DV%5Cta%5C%3D10&#39;%3D0&#39;%3D250&#39;%3D297&#39;dim&#39;%5C%3D10&#39;%3D10&#39;%3D250&#39;%3D297&#39;vdim&#39;%5Cbox1&#39;b%5Cva%5CF6F6F6&#39;fC%5CC8C8C8&#39;eC%5C&#39;a%5C%5Do%5CLauto&#39;f%5C&amp;amp;sig=TzxATGSyGo59uvdEcnpk0pMmCmI&quot; data-type=&quot;toc&quot; data-props=&quot;align:left;maxDepth:6;width:250;&quot; width=&quot;250&quot; height=&quot;300&quot; style=&quot;display:block;text-align:left;margin-right:auto;&quot;&gt;&lt;/div&gt;&quot;&quot;&quot;)</span>
+
+<span class="c">#def format_for_google_sites(bs, strip_h1=True):</span>
+    <span class="c">#bs = bs.find(&#39;div&#39;, {&#39;class&#39;: &#39;body&#39;})</span>
+    <span class="c">#h1 = bs.find(&#39;h1&#39;)</span>
+    <span class="c">#h1.insert_after(bs4.BeautifulSoup().new_tag(&quot;div&quot;, thespot=&quot;???&quot;))</span>
+    <span class="c">#if strip_h1:</span>
+        <span class="c">#h1.extract()</span>
+        <span class="c">## TODO: replace with comment</span>
+    <span class="c">#p = bs.find(&#39;p&#39;)</span>
+    <span class="c">#if p.text == u&#39;Contents:&#39;:</span>
+        <span class="c">#p.extract()</span>
+    <span class="c">#else:</span>
+        <span class="c">#raise Exception(&quot;???&quot;)  # TODO</span>
+    <span class="c">#return unicode(bs).replace(</span>
+        <span class="c">#&#39;&#39;&#39;&lt;div thespot=&quot;???&quot;&gt;&lt;/div&gt;&#39;&#39;&#39;,</span>
+        <span class="c">#GOOGLE_SITES_TABLE_OF_CONTENTS)</span>
 
 </div>
 <span class="kn">import</span> <span class="nn">unittest</span>
+
 <div class="viewcode-block" id="Test_stripsinglehtml"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.stripsinglehtml.Test_stripsinglehtml">[docs]</a><span class="k">class</span> <span class="nc">Test_stripsinglehtml</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
 <div class="viewcode-block" id="Test_stripsinglehtml.test_stripsinglehtml"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.stripsinglehtml.Test_stripsinglehtml.test_stripsinglehtml">[docs]</a>    <span class="k">def</span> <span class="nf">test_stripsinglehtml</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">pass</span>
+        <span class="n">filename</span> <span class="o">=</span> <span class="s">&#39;./test/data/singlehtml.html&#39;</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="n">stripsinglehtml</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
 
 </div></div>
 <div class="viewcode-block" id="main"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.stripsinglehtml.main">[docs]</a><span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    :py:mod:`wrdrd.tools.stripsinglehtml` main method: print unicode</span>
+<span class="sd">    stripsinglehtml output to ``stdout``.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        args (list): list of commandline arguments</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        int: zero</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="kn">import</span> <span class="nn">logging</span>
     <span class="kn">import</span> <span class="nn">optparse</span>
     <span class="kn">import</span> <span class="nn">sys</span>
 
     <span class="n">prs</span> <span class="o">=</span> <span class="n">optparse</span><span class="o">.</span><span class="n">OptionParser</span><span class="p">(</span>
         <span class="n">usage</span><span class="o">=</span><span class="s">&quot;%prog &lt;path&gt;&quot;</span><span class="p">,</span>
-        <span class="n">description</span><span class="o">=</span><span class="s">&quot;Strip markup from sphinx singlehtml renders&quot;</span><span class="p">)</span>
+        <span class="n">description</span><span class="o">=</span><span class="s">&quot;Strip markup from a Sphinx singlehtml HTML page&quot;</span><span class="p">)</span>
 
-    <span class="n">prs</span><span class="o">.</span><span class="n">add_option</span><span class="p">(</span><span class="s">&#39;-g&#39;</span><span class="p">,</span> <span class="s">&#39;--google-sites&#39;</span><span class="p">,</span>
-                   <span class="n">dest</span><span class="o">=</span><span class="s">&#39;google_sites&#39;</span><span class="p">,</span>
-                   <span class="n">action</span><span class="o">=</span><span class="s">&#39;store_true&#39;</span><span class="p">)</span>
+    <span class="c">#prs.add_option(&#39;-g&#39;, &#39;--google-sites&#39;,</span>
+                   <span class="c">#dest=&#39;google_sites&#39;,</span>
+                   <span class="c">#action=&#39;store_true&#39;)</span>
 
     <span class="n">prs</span><span class="o">.</span><span class="n">add_option</span><span class="p">(</span><span class="s">&#39;-v&#39;</span><span class="p">,</span> <span class="s">&#39;--verbose&#39;</span><span class="p">,</span>
                     <span class="n">dest</span><span class="o">=</span><span class="s">&#39;verbose&#39;</span><span class="p">,</span>
@@ -229,10 +247,12 @@
 
     <span class="n">bs</span> <span class="o">=</span> <span class="n">stripsinglehtml</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
 
-    <span class="k">if</span> <span class="n">opts</span><span class="o">.</span><span class="n">google_sites</span><span class="p">:</span>
-        <span class="n">bs</span> <span class="o">=</span> <span class="n">format_for_google_sites</span><span class="p">(</span><span class="n">bs</span><span class="p">)</span>
+    <span class="c">#if opts.google_sites:</span>
+        <span class="c">#bs = format_for_google_sites(bs)</span>
 
     <span class="k">print</span><span class="p">(</span><span class="nb">unicode</span><span class="p">(</span><span class="n">bs</span><span class="p">))</span>
+
+    <span class="k">return</span> <span class="mi">0</span>
 
 </div>
 <span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">&quot;__main__&quot;</span><span class="p">:</span>
