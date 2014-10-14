@@ -278,6 +278,8 @@ https://en.wikipedia.org/wiki/Data_analysis
 
 https://en.wikipedia.org/wiki/Big_data
 
+https://en.wikipedia.org/wiki/Data_processing#Data_processing_functions
+
 
 .. index:: Data Learning
 .. _data-learning:   
