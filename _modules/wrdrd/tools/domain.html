@@ -193,10 +193,11 @@
 <span class="sd">    https://en.wikipedia.org/wiki/Sender_Policy_Framework</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">cmd</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">shell_format</span><span class="p">(</span>
-        <span class="s">&quot;dig {0} spf +cmd +nocomments +question +noidentify +nostats&quot;</span><span class="p">,</span>
+        <span class="s">&quot;dig {0} txt +cmd +nocomments +question +noidentify +nostats&quot;</span><span class="p">,</span>
         <span class="n">domain</span><span class="p">)</span>
     <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s">&#39;cmd&#39;</span><span class="p">,</span> <span class="n">cmd</span><span class="o">=</span><span class="n">cmd</span><span class="p">)</span>
     <span class="n">output</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">capture_both</span><span class="p">(</span><span class="n">cmd</span><span class="p">)</span>
+    <span class="c"># look for &quot;v=spf1&quot;</span>
     <span class="k">return</span> <span class="n">output</span>
 
 </div>
@@ -268,9 +269,11 @@
 </div>
 <div class="viewcode-block" id="check_google_dmarc"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.domain.check_google_dmarc">[docs]</a><span class="k">def</span> <span class="nf">check_google_dmarc</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    https://support.google.com/a/answer/178723?hl=en</span>
+<span class="sd">    https://support.google.com/a/answer/2466580</span>
+<span class="sd">    https://support.google.com/a/answer/2466563</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">cmd</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">shell_format</span><span class="p">(</span><span class="s">&quot;dig {0} txt +short&quot;</span><span class="p">,</span> <span class="n">domain</span><span class="p">)</span>
+    <span class="n">dmarc_domain</span> <span class="o">=</span> <span class="s">&quot;_dmarc.&quot;</span> <span class="o">+</span> <span class="n">domain</span>
+    <span class="n">cmd</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">shell_format</span><span class="p">(</span><span class="s">&quot;dig {0} txt +short&quot;</span><span class="p">,</span> <span class="n">dmarc_domain</span><span class="p">)</span>
     <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s">&#39;cmd&#39;</span><span class="p">,</span> <span class="n">op</span><span class="o">=</span><span class="s">&#39;check_google_dmarc&#39;</span><span class="p">,</span> <span class="n">cmd</span><span class="o">=</span><span class="n">cmd</span><span class="p">)</span>
     <span class="n">proc</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">capture_both</span><span class="p">(</span><span class="n">cmd</span><span class="p">)</span>
     <span class="n">output</span> <span class="o">=</span> <span class="n">proc</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">rstrip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
@@ -278,9 +281,36 @@
         <span class="n">log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s">&#39;TXT&#39;</span><span class="p">,</span> <span class="n">record</span><span class="o">=</span><span class="n">line</span><span class="p">)</span>
         <span class="n">expected</span> <span class="o">=</span> <span class="s">u&quot;</span><span class="se">\&quot;</span><span class="s">v=DMARC1&quot;</span>  <span class="c"># ... &quot;\; p=none\; rua=mailto:&quot;</span>
         <span class="k">if</span> <span class="n">line</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="n">expected</span><span class="p">):</span>
-            <span class="k">return</span> <span class="mi">0</span>
+            <span class="k">if</span> <span class="s">&#39;p=&#39;</span> <span class="ow">in</span> <span class="n">line</span><span class="p">:</span>
+                <span class="k">return</span> <span class="mi">0</span>
 
     <span class="n">errmsg</span> <span class="o">=</span> <span class="s">&quot;</span><span class="si">%r</span><span class="s"> != </span><span class="si">%r</span><span class="s">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">output</span><span class="p">,</span> <span class="n">expected</span><span class="p">)</span>
+    <span class="n">log</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s">&#39;err&#39;</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="n">errmsg</span><span class="p">)</span>
+    <span class="k">return</span> <span class="mi">1</span>
+</div>
+<span class="n">DEFAULT_GOOGLE_DKIM_PREFIX</span> <span class="o">=</span> <span class="s">&#39;google&#39;</span>
+
+<div class="viewcode-block" id="check_google_dkim"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.domain.check_google_dkim">[docs]</a><span class="k">def</span> <span class="nf">check_google_dkim</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="n">DEFAULT_GOOGLE_DKIM_PREFIX</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    https://support.google.com/a/answer/174126</span>
+<span class="sd">    https://admin.google.com/AdminHome?fral=1#AppDetails:service=email&amp;flyout=dkim</span>
+
+<span class="sd">    .. note:: This does not validate DKIM signatures and</span>
+<span class="sd">       defaults to the default ``google`` prefix</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">dkim_record_name</span> <span class="o">=</span> <span class="s">&quot;</span><span class="si">%s</span><span class="s">._domainkey.</span><span class="si">%s</span><span class="s">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">prefix</span><span class="p">,</span> <span class="n">domain</span><span class="p">)</span>
+    <span class="n">cmd</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">shell_format</span><span class="p">(</span><span class="s">&quot;dig {0} txt +short&quot;</span><span class="p">,</span> <span class="n">dkim_record_name</span><span class="p">)</span>
+    <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s">&#39;cmd&#39;</span><span class="p">,</span> <span class="n">op</span><span class="o">=</span><span class="s">&#39;check_google_dkim&#39;</span><span class="p">,</span> <span class="n">cmd</span><span class="o">=</span><span class="n">cmd</span><span class="p">)</span>
+    <span class="n">proc</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">capture_both</span><span class="p">(</span><span class="n">cmd</span><span class="p">)</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="n">proc</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">rstrip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">output</span><span class="p">:</span>
+        <span class="n">log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s">&#39;TXT&#39;</span><span class="p">,</span> <span class="n">record</span><span class="o">=</span><span class="n">line</span><span class="p">)</span>
+        <span class="n">expected</span> <span class="o">=</span> <span class="s">u&quot;</span><span class="se">\&quot;</span><span class="s">v=DKIM1&quot;</span>  <span class="c"># ... &quot;\; p=none\; rua=mailto:&quot;</span>
+        <span class="k">if</span> <span class="n">line</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="n">expected</span><span class="p">):</span>
+            <span class="k">if</span> <span class="s">&#39;k=&#39;</span> <span class="ow">in</span> <span class="n">line</span> <span class="ow">and</span> <span class="s">&#39;p=&#39;</span> <span class="ow">in</span> <span class="n">line</span><span class="p">:</span>
+                <span class="k">return</span> <span class="mi">0</span>
+
+    <span class="n">errmsg</span> <span class="o">=</span> <span class="s">&quot;</span><span class="si">%s</span><span class="s"> is not a valid DKIM record&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">output</span><span class="p">)</span>
     <span class="n">log</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s">&#39;err&#39;</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="n">errmsg</span><span class="p">)</span>
     <span class="k">return</span> <span class="mi">1</span>
 
@@ -325,7 +355,16 @@
     <span class="n">stderr</span> <span class="o">=</span> <span class="n">proc</span><span class="o">.</span><span class="n">stderr</span><span class="o">.</span><span class="n">text</span><span class="p">;</span> <span class="n">stderr</span> <span class="ow">and</span> <span class="k">print</span><span class="p">(</span><span class="n">stderr</span><span class="p">)</span>
     <span class="k">print</span><span class="p">(</span><span class="s">&#39;--&#39;</span><span class="p">)</span>
 
-    <span class="n">proc</span> <span class="o">=</span> <span class="n">dig_spf</span><span class="p">(</span><span class="n">domain</span><span class="p">)</span>
+    <span class="c">## See: dig_txt</span>
+    <span class="c">#proc = dig_spf(domain)</span>
+    <span class="c">#returncode += proc.returncode</span>
+    <span class="c">#print(proc.stdout.text)</span>
+    <span class="c">#print(&#39;-&#39;)</span>
+    <span class="c">#stderr = proc.stderr.text; stderr and print(stderr)</span>
+    <span class="c">#print(&#39;--&#39;)</span>
+
+    <span class="n">dmarc_domain</span> <span class="o">=</span> <span class="s">&quot;_dmarc.&quot;</span> <span class="o">+</span> <span class="n">domain</span>
+    <span class="n">proc</span> <span class="o">=</span> <span class="n">dig_txt</span><span class="p">(</span><span class="n">dmarc_domain</span><span class="p">)</span>
     <span class="n">returncode</span> <span class="o">+=</span> <span class="n">proc</span><span class="o">.</span><span class="n">returncode</span>
     <span class="k">print</span><span class="p">(</span><span class="n">proc</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
     <span class="k">print</span><span class="p">(</span><span class="s">&#39;-&#39;</span><span class="p">)</span>
@@ -342,11 +381,22 @@
     <span class="k">return</span> <span class="n">returncode</span>
 
 </div>
-<div class="viewcode-block" id="google_domain_tools"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.domain.google_domain_tools">[docs]</a><span class="k">def</span> <span class="nf">google_domain_tools</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
+<div class="viewcode-block" id="check_google_domain"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.domain.check_google_domain">[docs]</a><span class="k">def</span> <span class="nf">check_google_domain</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">dkim_prefix</span><span class="o">=</span><span class="n">DEFAULT_GOOGLE_DKIM_PREFIX</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    https://support.google.com/a/answer/2716802</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">mx</span> <span class="o">=</span> <span class="n">check_google_mx</span><span class="p">(</span><span class="n">domain</span><span class="p">)</span>
     <span class="n">spf</span> <span class="o">=</span> <span class="n">check_google_spf</span><span class="p">(</span><span class="n">domain</span><span class="p">)</span>
     <span class="n">dmarc</span> <span class="o">=</span> <span class="n">check_google_dmarc</span><span class="p">(</span><span class="n">domain</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">mx</span> <span class="o">+</span> <span class="n">spf</span> <span class="o">+</span> <span class="n">dmarc</span>
+    <span class="n">dkim</span> <span class="o">=</span> <span class="n">check_google_dkim</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="n">dkim_prefix</span><span class="p">)</span>
+
+    <span class="n">returncode</span> <span class="o">=</span> <span class="n">mx</span> <span class="o">+</span> <span class="n">spf</span> <span class="o">+</span> <span class="n">dmarc</span> <span class="o">+</span> <span class="n">dkim</span>
+    <span class="k">if</span> <span class="n">returncode</span><span class="p">:</span>
+        <span class="n">log</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s">&#39;err&#39;</span><span class="p">,</span> <span class="n">mx</span><span class="o">=</span><span class="n">mx</span><span class="p">,</span> <span class="n">spf</span><span class="o">=</span><span class="n">spf</span><span class="p">,</span> <span class="n">dmarc</span><span class="o">=</span><span class="n">dmarc</span><span class="p">,</span> <span class="n">dkim</span><span class="o">=</span><span class="n">dkim</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s">&#39;OK&#39;</span><span class="p">,</span> <span class="n">mx</span><span class="o">=</span><span class="n">mx</span><span class="p">,</span> <span class="n">spf</span><span class="o">=</span><span class="n">spf</span><span class="p">,</span> <span class="n">dmarc</span><span class="o">=</span><span class="n">dmarc</span><span class="p">,</span> <span class="n">dkim</span><span class="o">=</span><span class="n">dkim</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">returncode</span>
 
 
 <span class="c">#import unittest</span>
@@ -356,7 +406,6 @@
 
 </div>
 <div class="viewcode-block" id="main"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.domain.main">[docs]</a><span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
-    <span class="kn">import</span> <span class="nn">logging</span>
     <span class="kn">import</span> <span class="nn">optparse</span>
     <span class="kn">import</span> <span class="nn">sys</span>
 
@@ -365,10 +414,10 @@
         <span class="n">description</span><span class="o">=</span><span class="s">&quot;Collect DNS information with whois and dig&quot;</span>
     <span class="p">)</span>
 
-    <span class="n">prs</span><span class="o">.</span><span class="n">add_option</span><span class="p">(</span><span class="s">&#39;-g&#39;</span><span class="p">,</span> <span class="s">&#39;--google-domain-tools&#39;</span><span class="p">,</span>
-                    <span class="n">dest</span><span class="o">=</span><span class="s">&#39;google_domain_tools&#39;</span><span class="p">,</span>
+    <span class="n">prs</span><span class="o">.</span><span class="n">add_option</span><span class="p">(</span><span class="s">&#39;-g&#39;</span><span class="p">,</span> <span class="s">&#39;--check-google-domain&#39;</span><span class="p">,</span>
+                    <span class="n">dest</span><span class="o">=</span><span class="s">&#39;check_google_domain&#39;</span><span class="p">,</span>
                     <span class="n">action</span><span class="o">=</span><span class="s">&#39;store_true&#39;</span><span class="p">,</span>
-                    <span class="n">help</span><span class="o">=</span><span class="s">&quot;Check Google MX and TXT SPF records&quot;</span><span class="p">)</span>
+                    <span class="n">help</span><span class="o">=</span><span class="s">&quot;Check Google MX, SPF, DMARC records&quot;</span><span class="p">)</span>
 
     <span class="n">prs</span><span class="o">.</span><span class="n">add_option</span><span class="p">(</span><span class="s">&#39;-v&#39;</span><span class="p">,</span> <span class="s">&#39;--verbose&#39;</span><span class="p">,</span>
                     <span class="n">dest</span><span class="o">=</span><span class="s">&#39;verbose&#39;</span><span class="p">,</span>
@@ -403,11 +452,11 @@
     <span class="n">returncode</span> <span class="o">+=</span> <span class="n">domain_tools</span><span class="p">(</span><span class="n">domain</span><span class="p">)</span>
     <span class="k">print</span><span class="p">(</span><span class="s">&quot;domain_tools: </span><span class="si">%d</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">returncode</span><span class="p">)</span>
 
-    <span class="k">if</span> <span class="n">opts</span><span class="o">.</span><span class="n">google_domain_tools</span><span class="p">:</span>
-        <span class="k">print</span><span class="p">(</span><span class="s">&quot;## google_domain_tools: </span><span class="si">%r</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">domain</span><span class="p">)</span>
-        <span class="n">returncode</span> <span class="o">+=</span> <span class="n">google_domain_tools</span><span class="p">(</span><span class="n">domain</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">opts</span><span class="o">.</span><span class="n">check_google_domain</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">&quot;## check_google_domain: </span><span class="si">%r</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">domain</span><span class="p">)</span>
+        <span class="n">returncode</span> <span class="o">+=</span> <span class="n">check_google_domain</span><span class="p">(</span><span class="n">domain</span><span class="p">)</span>
 
-    <span class="k">print</span><span class="p">(</span><span class="s">&quot;google_domain_tools: </span><span class="si">%d</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">returncode</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;check_google_domain: </span><span class="si">%d</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">returncode</span><span class="p">)</span>
 
     <span class="k">return</span> <span class="n">returncode</span>
 
