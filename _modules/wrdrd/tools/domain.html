@@ -507,7 +507,15 @@
 </div>
 <div class="viewcode-block" id="check_google_domain"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.domain.check_google_domain">[docs]</a><span class="k">def</span> <span class="nf">check_google_domain</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">dkim_prefix</span><span class="o">=</span><span class="n">DEFAULT_GOOGLE_DKIM_PREFIX</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    https://support.google.com/a/answer/2716802</span>
+<span class="sd">    Check DNS MX, SPF, DMARC, and DKIM records for a Google Apps domain</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        domain (str): DNS domain</span>
+<span class="sd">        dkim_prefix (str): DKIM prefix (``&lt;prefix&gt;._domainkey``)</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        int: nonzero returncode on failure (sum of returncodes)</span>
+
+<span class="sd">    | https://support.google.com/a/answer/2716802</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">mx</span> <span class="o">=</span> <span class="n">check_google_mx</span><span class="p">(</span><span class="n">domain</span><span class="p">)</span>
     <span class="n">spf</span> <span class="o">=</span> <span class="n">check_google_spf</span><span class="p">(</span><span class="n">domain</span><span class="p">)</span>
@@ -531,7 +539,12 @@
 </div>
 <div class="viewcode-block" id="main"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.domain.main">[docs]</a><span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    wrdrd.tools.domain main method</span>
+<span class="sd">    :py:mod:`wrdrd.tools.domain` main method</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        args (list): commandline arguments</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        int: nonzero returncode on failure (sum of returncodes)</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="kn">import</span> <span class="nn">logging</span>
     <span class="kn">import</span> <span class="nn">optparse</span>
