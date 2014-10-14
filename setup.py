@@ -17,7 +17,10 @@ if sys.argv[-1] == 'publish':
 readme = open('README.rst').read()
 history = open('HISTORY.rst').read().replace('.. :changelog:', '')
 
-requires = ['sh']
+requires = [
+    'sarge',
+    'structlog',
+]
 
 setup(
     name='wrdrd',

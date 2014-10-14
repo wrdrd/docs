@@ -9,33 +9,51 @@ https://en.wikipedia.org/wiki/List_of_DNS_record_types
 """
 import logging
 
-import sh
+import sarge
+import structlog
 
-log = logging.getLogger()
+#log = logging.getLogger()
+log = structlog.get_logger()
 
 def nslookup(domain):
     if not domain.endswith('.'):
         domain = domain + '.'
-    output = sh.nslookup(domain)
+    cmd = sarge.shell_format('nslookup {0}', domain)
+    log.info('cmd', cmd=cmd)
+    output = sarge.capture_both(cmd)
     return output
 
 def whois(domain):
-    output = sh.whois(domain)
+    cmd = sarge.shell_format('whois {0}', domain)
+    log.info('cmd', cmd=cmd)
+    output = sarge.capture_both(cmd)
     return output
 
 
 def dig_all(domain):
-    output = sh.dig(domain, "+cmd", "+nocomments", "+question", "+noidentify","+nostats")
+    cmd = sarge.shell_format(
+        "dig {0} +cmd +nocomments +question +noidentify +nostats",
+        domain)
+    log.info('cmd', cmd=cmd)
+    output = sarge.capture_both(cmd)
     return output
 
 
 def dig_ns(domain):
-    output = sh.dig(domain, "ns", "+cmd", "+nocomments", "+question", "+noidentify","+nostats")
+    cmd = sarge.shell_format(
+        "dig {0} ns +cmd +nocomments +question +noidentify +nostats",
+        domain)
+    log.info('cmd', cmd=cmd)
+    output = sarge.capture_both(cmd)
     return output
 
 
 def dig_txt(domain):
-    output = sh.dig(domain, "txt", "+cmd", "+nocomments", "+question", "+noidentify","+nostats")
+    cmd = sarge.shell_format(
+        "dig {0} txt +cmd +nocomments +question +noidentify +nostats",
+        domain)
+    log.info('cmd', cmd=cmd)
+    output = sarge.capture_both(cmd)
     return output
 
 
@@ -43,7 +61,11 @@ def dig_spf(domain):
     """
     https://en.wikipedia.org/wiki/Sender_Policy_Framework
     """
-    output = sh.dig(domain, "spf", "+cmd", "+nocomments", "+question", "+noidentify","+nostats")
+    cmd = sarge.shell_format(
+        "dig {0} spf +cmd +nocomments +question +noidentify +nostats",
+        domain)
+    log.info('cmd', cmd=cmd)
+    output = sarge.capture_both(cmd)
     return output
 
 
@@ -51,12 +73,20 @@ def dig_mx(domain):
     """
     https://en.wikipedia.org/wiki/MX_record
     """
-    mx_output = sh.dig(domain, "mx", "+cmd", "+nocomments", "+question", "+noidentify","+nostats")
-    return mx_output
+    cmd = sarge.shell_format(
+        "dig {0} mx +cmd +nocomments +question +noidentify +nostats",
+        domain)
+    log.info('cmd', cmd=cmd)
+    output = sarge.capture_both(cmd)
+    return output
 
 
 def dig_dnskey(zone):
-    output = sh.dig('+dnssec', zone, 'dnskey', "+cmd", "+nocomments", "+question", "+noidentify","+nostats")
+    cmd = sarge.shell_format(
+        "dig {0} +dnssec dnskey +cmd +nocomments +question +noidentify +nostats",
+        zone)
+    log.info('cmd', cmd=cmd)
+    output = sarge.capture_both(cmd)
     return output
 
 
@@ -64,7 +94,9 @@ def check_google_mx(domain):
     """
     https://support.google.com/a/topic/2716885?hl=en&ref_topic=2426592
     """
-    output = sh.dig(domain, "mx", "+short").rstrip()
+    cmd = sarge.shell_format("dig {0} mx +short", domain)
+    log.info('cmd', cmd=cmd)
+    output = sarge.capture_both(cmd).stdout.text.rstrip()
     log.debug(output)
     result = None
     check_domain = "aspmx.l.google.com."
@@ -85,7 +117,10 @@ def check_google_spf(domain):
     """
     https://support.google.com/a/answer/178723?hl=en
     """
-    output = sh.dig(domain, "txt", "+short").rstrip()
+    cmd = sarge.shell_format("dig {0} txt +short", domain)
+    log.info('cmd', cmd=cmd)
+    proc = sarge.capture_both(cmd)
+    output = proc.stdout.text.rstrip()
     log.debug(output)
     expected = u"v=spf1 include:_spf.google.com ~all"
     if output == expected:
@@ -100,23 +135,57 @@ def domain_tools(domain):
     """
     mainfunc
     """
-    print("## whois: %r" % domain)
-    print(whois(domain))
+    returncode = 0
+    proc = whois(domain)
+    returncode += proc.returncode
+    print(proc.stdout.text)
+    print('-')
+    stderr = proc.stderr.text; stderr and print(stderr)
+    print('--')
 
-    print("## dig: %r" % domain)
-    print(dig_all(domain))
+    proc = dig_all(domain)
+    returncode += proc.returncode
+    print(proc.stdout.text)
+    print('-')
+    stderr = proc.stderr.text; stderr and print(stderr)
+    print('--')
 
-    print(dig_ns(domain))
+    proc = dig_ns(domain)
+    returncode += proc.returncode
+    print(proc.stdout.text)
+    print('-')
+    stderr = proc.stderr.text; stderr and print(stderr)
+    print('--')
 
-    print(dig_mx(domain))
+    proc = dig_mx(domain)
+    returncode += proc.returncode
+    print(proc.stdout.text)
+    print('-')
+    stderr = proc.stderr.text; stderr and print(stderr)
+    print('--')
 
-    print(dig_txt(domain))
+    proc = dig_txt(domain)
+    returncode += proc.returncode
+    print(proc.stdout.text)
+    print('-')
+    stderr = proc.stderr.text; stderr and print(stderr)
+    print('--')
 
-    print(dig_spf(domain))
+    proc = dig_spf(domain)
+    returncode += proc.returncode
+    print(proc.stdout.text)
+    print('-')
+    stderr = proc.stderr.text; stderr and print(stderr)
+    print('--')
 
-    print(dig_dnskey(domain.split(".")[-1])) # TODO: actual zone
+    proc = dig_dnskey(domain.split(".")[-1])  # TODO: actual zone
+    returncode += proc.returncode
+    print(proc.stdout.text)
+    print('-')
+    stderr = proc.stderr.text; stderr and print(stderr)
+    print('--')
 
-    return 0
+    return returncode
 
 
 def google_domain_tools(domain):
@@ -175,14 +244,17 @@ def main(*args):
         import unittest
         sys.exit(unittest.main())
 
-    retcode = 0
-    retcode = domain_tools(domain)
+    returncode = 0
+    returncode += domain_tools(domain)
+    print("domain_tools: %d" % returncode)
 
     if opts.google_domain_tools:
         print("## google_domain_tools: %r" % domain)
-        retcode = retcode + google_domain_tools(domain)
+        returncode += google_domain_tools(domain)
 
-    return retcode
+    print("google_domain_tools: %d" % returncode)
+
+    return returncode
 
 
 if __name__ == "__main__":

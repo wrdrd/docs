@@ -1,1 +1,2 @@
--e git+https://github.com/amoffat/sh#egg=sh
+-e hg+https://bitbucket.org/vinay.sajip/sarge#egg=sarge
+-e git+https://github.com/hynek/structlog#egg=structlog

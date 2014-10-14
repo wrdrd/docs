@@ -1,4 +1,5 @@
-sh
+sarge
+structlog
 requests
 beautifulsoup4
 URLObject
