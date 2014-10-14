@@ -13,15 +13,3 @@ Subpackages
 
     wrdrd.tools
 
-Submodules
-----------
-
-wrdrd.wrdrd module
-------------------
-
-.. automodule:: wrdrd.wrdrd
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-

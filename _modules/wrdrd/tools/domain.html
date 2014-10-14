@@ -54,7 +54,7 @@
 <script type="text/javascript">
   var DOCUMENTATION_OPTIONS = {
             URL_ROOT:    '../../../',
-            VERSION:     '0.1.0',
+            VERSION:     '0.2.0',
             COLLAPSE_INDEX: false,
             FILE_SUFFIX: '.html',
             HAS_SOURCE:  true
@@ -140,33 +140,51 @@
 <span class="sd">&quot;&quot;&quot;</span>
 <span class="kn">import</span> <span class="nn">logging</span>
 
-<span class="kn">import</span> <span class="nn">sh</span>
+<span class="kn">import</span> <span class="nn">sarge</span>
+<span class="kn">import</span> <span class="nn">structlog</span>
 
-<span class="n">log</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">()</span>
+<span class="c">#log = logging.getLogger()</span>
+<span class="n">log</span> <span class="o">=</span> <span class="n">structlog</span><span class="o">.</span><span class="n">get_logger</span><span class="p">()</span>
 
 <div class="viewcode-block" id="nslookup"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.domain.nslookup">[docs]</a><span class="k">def</span> <span class="nf">nslookup</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">domain</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s">&#39;.&#39;</span><span class="p">):</span>
         <span class="n">domain</span> <span class="o">=</span> <span class="n">domain</span> <span class="o">+</span> <span class="s">&#39;.&#39;</span>
-    <span class="n">output</span> <span class="o">=</span> <span class="n">sh</span><span class="o">.</span><span class="n">nslookup</span><span class="p">(</span><span class="n">domain</span><span class="p">)</span>
+    <span class="n">cmd</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">shell_format</span><span class="p">(</span><span class="s">&#39;nslookup {0}&#39;</span><span class="p">,</span> <span class="n">domain</span><span class="p">)</span>
+    <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s">&#39;cmd&#39;</span><span class="p">,</span> <span class="n">cmd</span><span class="o">=</span><span class="n">cmd</span><span class="p">)</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">capture_both</span><span class="p">(</span><span class="n">cmd</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">output</span>
 </div>
 <div class="viewcode-block" id="whois"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.domain.whois">[docs]</a><span class="k">def</span> <span class="nf">whois</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
-    <span class="n">output</span> <span class="o">=</span> <span class="n">sh</span><span class="o">.</span><span class="n">whois</span><span class="p">(</span><span class="n">domain</span><span class="p">)</span>
+    <span class="n">cmd</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">shell_format</span><span class="p">(</span><span class="s">&#39;whois {0}&#39;</span><span class="p">,</span> <span class="n">domain</span><span class="p">)</span>
+    <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s">&#39;cmd&#39;</span><span class="p">,</span> <span class="n">cmd</span><span class="o">=</span><span class="n">cmd</span><span class="p">)</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">capture_both</span><span class="p">(</span><span class="n">cmd</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">output</span>
 
 </div>
 <div class="viewcode-block" id="dig_all"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.domain.dig_all">[docs]</a><span class="k">def</span> <span class="nf">dig_all</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
-    <span class="n">output</span> <span class="o">=</span> <span class="n">sh</span><span class="o">.</span><span class="n">dig</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="s">&quot;+cmd&quot;</span><span class="p">,</span> <span class="s">&quot;+nocomments&quot;</span><span class="p">,</span> <span class="s">&quot;+question&quot;</span><span class="p">,</span> <span class="s">&quot;+noidentify&quot;</span><span class="p">,</span><span class="s">&quot;+nostats&quot;</span><span class="p">)</span>
+    <span class="n">cmd</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">shell_format</span><span class="p">(</span>
+        <span class="s">&quot;dig {0} +cmd +nocomments +question +noidentify +nostats&quot;</span><span class="p">,</span>
+        <span class="n">domain</span><span class="p">)</span>
+    <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s">&#39;cmd&#39;</span><span class="p">,</span> <span class="n">cmd</span><span class="o">=</span><span class="n">cmd</span><span class="p">)</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">capture_both</span><span class="p">(</span><span class="n">cmd</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">output</span>
 
 </div>
 <div class="viewcode-block" id="dig_ns"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.domain.dig_ns">[docs]</a><span class="k">def</span> <span class="nf">dig_ns</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
-    <span class="n">output</span> <span class="o">=</span> <span class="n">sh</span><span class="o">.</span><span class="n">dig</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="s">&quot;ns&quot;</span><span class="p">,</span> <span class="s">&quot;+cmd&quot;</span><span class="p">,</span> <span class="s">&quot;+nocomments&quot;</span><span class="p">,</span> <span class="s">&quot;+question&quot;</span><span class="p">,</span> <span class="s">&quot;+noidentify&quot;</span><span class="p">,</span><span class="s">&quot;+nostats&quot;</span><span class="p">)</span>
+    <span class="n">cmd</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">shell_format</span><span class="p">(</span>
+        <span class="s">&quot;dig {0} ns +cmd +nocomments +question +noidentify +nostats&quot;</span><span class="p">,</span>
+        <span class="n">domain</span><span class="p">)</span>
+    <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s">&#39;cmd&#39;</span><span class="p">,</span> <span class="n">cmd</span><span class="o">=</span><span class="n">cmd</span><span class="p">)</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">capture_both</span><span class="p">(</span><span class="n">cmd</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">output</span>
 
 </div>
 <div class="viewcode-block" id="dig_txt"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.domain.dig_txt">[docs]</a><span class="k">def</span> <span class="nf">dig_txt</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
-    <span class="n">output</span> <span class="o">=</span> <span class="n">sh</span><span class="o">.</span><span class="n">dig</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="s">&quot;txt&quot;</span><span class="p">,</span> <span class="s">&quot;+cmd&quot;</span><span class="p">,</span> <span class="s">&quot;+nocomments&quot;</span><span class="p">,</span> <span class="s">&quot;+question&quot;</span><span class="p">,</span> <span class="s">&quot;+noidentify&quot;</span><span class="p">,</span><span class="s">&quot;+nostats&quot;</span><span class="p">)</span>
+    <span class="n">cmd</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">shell_format</span><span class="p">(</span>
+        <span class="s">&quot;dig {0} txt +cmd +nocomments +question +noidentify +nostats&quot;</span><span class="p">,</span>
+        <span class="n">domain</span><span class="p">)</span>
+    <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s">&#39;cmd&#39;</span><span class="p">,</span> <span class="n">cmd</span><span class="o">=</span><span class="n">cmd</span><span class="p">)</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">capture_both</span><span class="p">(</span><span class="n">cmd</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">output</span>
 
 </div>
@@ -174,7 +192,11 @@
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    https://en.wikipedia.org/wiki/Sender_Policy_Framework</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">output</span> <span class="o">=</span> <span class="n">sh</span><span class="o">.</span><span class="n">dig</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="s">&quot;spf&quot;</span><span class="p">,</span> <span class="s">&quot;+cmd&quot;</span><span class="p">,</span> <span class="s">&quot;+nocomments&quot;</span><span class="p">,</span> <span class="s">&quot;+question&quot;</span><span class="p">,</span> <span class="s">&quot;+noidentify&quot;</span><span class="p">,</span><span class="s">&quot;+nostats&quot;</span><span class="p">)</span>
+    <span class="n">cmd</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">shell_format</span><span class="p">(</span>
+        <span class="s">&quot;dig {0} spf +cmd +nocomments +question +noidentify +nostats&quot;</span><span class="p">,</span>
+        <span class="n">domain</span><span class="p">)</span>
+    <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s">&#39;cmd&#39;</span><span class="p">,</span> <span class="n">cmd</span><span class="o">=</span><span class="n">cmd</span><span class="p">)</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">capture_both</span><span class="p">(</span><span class="n">cmd</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">output</span>
 
 </div>
@@ -182,12 +204,20 @@
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    https://en.wikipedia.org/wiki/MX_record</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">mx_output</span> <span class="o">=</span> <span class="n">sh</span><span class="o">.</span><span class="n">dig</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="s">&quot;mx&quot;</span><span class="p">,</span> <span class="s">&quot;+cmd&quot;</span><span class="p">,</span> <span class="s">&quot;+nocomments&quot;</span><span class="p">,</span> <span class="s">&quot;+question&quot;</span><span class="p">,</span> <span class="s">&quot;+noidentify&quot;</span><span class="p">,</span><span class="s">&quot;+nostats&quot;</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">mx_output</span>
+    <span class="n">cmd</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">shell_format</span><span class="p">(</span>
+        <span class="s">&quot;dig {0} mx +cmd +nocomments +question +noidentify +nostats&quot;</span><span class="p">,</span>
+        <span class="n">domain</span><span class="p">)</span>
+    <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s">&#39;cmd&#39;</span><span class="p">,</span> <span class="n">cmd</span><span class="o">=</span><span class="n">cmd</span><span class="p">)</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">capture_both</span><span class="p">(</span><span class="n">cmd</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">output</span>
 
 </div>
 <div class="viewcode-block" id="dig_dnskey"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.domain.dig_dnskey">[docs]</a><span class="k">def</span> <span class="nf">dig_dnskey</span><span class="p">(</span><span class="n">zone</span><span class="p">):</span>
-    <span class="n">output</span> <span class="o">=</span> <span class="n">sh</span><span class="o">.</span><span class="n">dig</span><span class="p">(</span><span class="s">&#39;+dnssec&#39;</span><span class="p">,</span> <span class="n">zone</span><span class="p">,</span> <span class="s">&#39;dnskey&#39;</span><span class="p">,</span> <span class="s">&quot;+cmd&quot;</span><span class="p">,</span> <span class="s">&quot;+nocomments&quot;</span><span class="p">,</span> <span class="s">&quot;+question&quot;</span><span class="p">,</span> <span class="s">&quot;+noidentify&quot;</span><span class="p">,</span><span class="s">&quot;+nostats&quot;</span><span class="p">)</span>
+    <span class="n">cmd</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">shell_format</span><span class="p">(</span>
+        <span class="s">&quot;dig {0} +dnssec dnskey +cmd +nocomments +question +noidentify +nostats&quot;</span><span class="p">,</span>
+        <span class="n">zone</span><span class="p">)</span>
+    <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s">&#39;cmd&#39;</span><span class="p">,</span> <span class="n">cmd</span><span class="o">=</span><span class="n">cmd</span><span class="p">)</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">capture_both</span><span class="p">(</span><span class="n">cmd</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">output</span>
 
 </div>
@@ -195,7 +225,9 @@
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    https://support.google.com/a/topic/2716885?hl=en&amp;ref_topic=2426592</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">output</span> <span class="o">=</span> <span class="n">sh</span><span class="o">.</span><span class="n">dig</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="s">&quot;mx&quot;</span><span class="p">,</span> <span class="s">&quot;+short&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">rstrip</span><span class="p">()</span>
+    <span class="n">cmd</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">shell_format</span><span class="p">(</span><span class="s">&quot;dig {0} mx +short&quot;</span><span class="p">,</span> <span class="n">domain</span><span class="p">)</span>
+    <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s">&#39;cmd&#39;</span><span class="p">,</span> <span class="n">cmd</span><span class="o">=</span><span class="n">cmd</span><span class="p">)</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">capture_both</span><span class="p">(</span><span class="n">cmd</span><span class="p">)</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">rstrip</span><span class="p">()</span>
     <span class="n">log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
     <span class="n">result</span> <span class="o">=</span> <span class="bp">None</span>
     <span class="n">check_domain</span> <span class="o">=</span> <span class="s">&quot;aspmx.l.google.com.&quot;</span>
@@ -216,7 +248,10 @@
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    https://support.google.com/a/answer/178723?hl=en</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">output</span> <span class="o">=</span> <span class="n">sh</span><span class="o">.</span><span class="n">dig</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="s">&quot;txt&quot;</span><span class="p">,</span> <span class="s">&quot;+short&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">rstrip</span><span class="p">()</span>
+    <span class="n">cmd</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">shell_format</span><span class="p">(</span><span class="s">&quot;dig {0} txt +short&quot;</span><span class="p">,</span> <span class="n">domain</span><span class="p">)</span>
+    <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s">&#39;cmd&#39;</span><span class="p">,</span> <span class="n">cmd</span><span class="o">=</span><span class="n">cmd</span><span class="p">)</span>
+    <span class="n">proc</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">capture_both</span><span class="p">(</span><span class="n">cmd</span><span class="p">)</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="n">proc</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">rstrip</span><span class="p">()</span>
     <span class="n">log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
     <span class="n">expected</span> <span class="o">=</span> <span class="s">u&quot;v=spf1 include:_spf.google.com ~all&quot;</span>
     <span class="k">if</span> <span class="n">output</span> <span class="o">==</span> <span class="n">expected</span><span class="p">:</span>
@@ -231,23 +266,57 @@
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    mainfunc</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">&quot;## whois: </span><span class="si">%r</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">domain</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">whois</span><span class="p">(</span><span class="n">domain</span><span class="p">))</span>
+    <span class="n">returncode</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">proc</span> <span class="o">=</span> <span class="n">whois</span><span class="p">(</span><span class="n">domain</span><span class="p">)</span>
+    <span class="n">returncode</span> <span class="o">+=</span> <span class="n">proc</span><span class="o">.</span><span class="n">returncode</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">proc</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&#39;-&#39;</span><span class="p">)</span>
+    <span class="n">stderr</span> <span class="o">=</span> <span class="n">proc</span><span class="o">.</span><span class="n">stderr</span><span class="o">.</span><span class="n">text</span><span class="p">;</span> <span class="n">stderr</span> <span class="ow">and</span> <span class="k">print</span><span class="p">(</span><span class="n">stderr</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&#39;--&#39;</span><span class="p">)</span>
 
-    <span class="k">print</span><span class="p">(</span><span class="s">&quot;## dig: </span><span class="si">%r</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">domain</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">dig_all</span><span class="p">(</span><span class="n">domain</span><span class="p">))</span>
+    <span class="n">proc</span> <span class="o">=</span> <span class="n">dig_all</span><span class="p">(</span><span class="n">domain</span><span class="p">)</span>
+    <span class="n">returncode</span> <span class="o">+=</span> <span class="n">proc</span><span class="o">.</span><span class="n">returncode</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">proc</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&#39;-&#39;</span><span class="p">)</span>
+    <span class="n">stderr</span> <span class="o">=</span> <span class="n">proc</span><span class="o">.</span><span class="n">stderr</span><span class="o">.</span><span class="n">text</span><span class="p">;</span> <span class="n">stderr</span> <span class="ow">and</span> <span class="k">print</span><span class="p">(</span><span class="n">stderr</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&#39;--&#39;</span><span class="p">)</span>
 
-    <span class="k">print</span><span class="p">(</span><span class="n">dig_ns</span><span class="p">(</span><span class="n">domain</span><span class="p">))</span>
+    <span class="n">proc</span> <span class="o">=</span> <span class="n">dig_ns</span><span class="p">(</span><span class="n">domain</span><span class="p">)</span>
+    <span class="n">returncode</span> <span class="o">+=</span> <span class="n">proc</span><span class="o">.</span><span class="n">returncode</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">proc</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&#39;-&#39;</span><span class="p">)</span>
+    <span class="n">stderr</span> <span class="o">=</span> <span class="n">proc</span><span class="o">.</span><span class="n">stderr</span><span class="o">.</span><span class="n">text</span><span class="p">;</span> <span class="n">stderr</span> <span class="ow">and</span> <span class="k">print</span><span class="p">(</span><span class="n">stderr</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&#39;--&#39;</span><span class="p">)</span>
 
-    <span class="k">print</span><span class="p">(</span><span class="n">dig_mx</span><span class="p">(</span><span class="n">domain</span><span class="p">))</span>
+    <span class="n">proc</span> <span class="o">=</span> <span class="n">dig_mx</span><span class="p">(</span><span class="n">domain</span><span class="p">)</span>
+    <span class="n">returncode</span> <span class="o">+=</span> <span class="n">proc</span><span class="o">.</span><span class="n">returncode</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">proc</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&#39;-&#39;</span><span class="p">)</span>
+    <span class="n">stderr</span> <span class="o">=</span> <span class="n">proc</span><span class="o">.</span><span class="n">stderr</span><span class="o">.</span><span class="n">text</span><span class="p">;</span> <span class="n">stderr</span> <span class="ow">and</span> <span class="k">print</span><span class="p">(</span><span class="n">stderr</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&#39;--&#39;</span><span class="p">)</span>
 
-    <span class="k">print</span><span class="p">(</span><span class="n">dig_txt</span><span class="p">(</span><span class="n">domain</span><span class="p">))</span>
+    <span class="n">proc</span> <span class="o">=</span> <span class="n">dig_txt</span><span class="p">(</span><span class="n">domain</span><span class="p">)</span>
+    <span class="n">returncode</span> <span class="o">+=</span> <span class="n">proc</span><span class="o">.</span><span class="n">returncode</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">proc</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&#39;-&#39;</span><span class="p">)</span>
+    <span class="n">stderr</span> <span class="o">=</span> <span class="n">proc</span><span class="o">.</span><span class="n">stderr</span><span class="o">.</span><span class="n">text</span><span class="p">;</span> <span class="n">stderr</span> <span class="ow">and</span> <span class="k">print</span><span class="p">(</span><span class="n">stderr</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&#39;--&#39;</span><span class="p">)</span>
 
-    <span class="k">print</span><span class="p">(</span><span class="n">dig_spf</span><span class="p">(</span><span class="n">domain</span><span class="p">))</span>
+    <span class="n">proc</span> <span class="o">=</span> <span class="n">dig_spf</span><span class="p">(</span><span class="n">domain</span><span class="p">)</span>
+    <span class="n">returncode</span> <span class="o">+=</span> <span class="n">proc</span><span class="o">.</span><span class="n">returncode</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">proc</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&#39;-&#39;</span><span class="p">)</span>
+    <span class="n">stderr</span> <span class="o">=</span> <span class="n">proc</span><span class="o">.</span><span class="n">stderr</span><span class="o">.</span><span class="n">text</span><span class="p">;</span> <span class="n">stderr</span> <span class="ow">and</span> <span class="k">print</span><span class="p">(</span><span class="n">stderr</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&#39;--&#39;</span><span class="p">)</span>
 
-    <span class="k">print</span><span class="p">(</span><span class="n">dig_dnskey</span><span class="p">(</span><span class="n">domain</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&quot;.&quot;</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span> <span class="c"># TODO: actual zone</span>
+    <span class="n">proc</span> <span class="o">=</span> <span class="n">dig_dnskey</span><span class="p">(</span><span class="n">domain</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&quot;.&quot;</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>  <span class="c"># TODO: actual zone</span>
+    <span class="n">returncode</span> <span class="o">+=</span> <span class="n">proc</span><span class="o">.</span><span class="n">returncode</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">proc</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&#39;-&#39;</span><span class="p">)</span>
+    <span class="n">stderr</span> <span class="o">=</span> <span class="n">proc</span><span class="o">.</span><span class="n">stderr</span><span class="o">.</span><span class="n">text</span><span class="p">;</span> <span class="n">stderr</span> <span class="ow">and</span> <span class="k">print</span><span class="p">(</span><span class="n">stderr</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&#39;--&#39;</span><span class="p">)</span>
 
-    <span class="k">return</span> <span class="mi">0</span>
+    <span class="k">return</span> <span class="n">returncode</span>
 
 </div>
 <div class="viewcode-block" id="google_domain_tools"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.domain.google_domain_tools">[docs]</a><span class="k">def</span> <span class="nf">google_domain_tools</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
@@ -306,14 +375,17 @@
         <span class="kn">import</span> <span class="nn">unittest</span>
         <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">())</span>
 
-    <span class="n">retcode</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">retcode</span> <span class="o">=</span> <span class="n">domain_tools</span><span class="p">(</span><span class="n">domain</span><span class="p">)</span>
+    <span class="n">returncode</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">returncode</span> <span class="o">+=</span> <span class="n">domain_tools</span><span class="p">(</span><span class="n">domain</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;domain_tools: </span><span class="si">%d</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">returncode</span><span class="p">)</span>
 
     <span class="k">if</span> <span class="n">opts</span><span class="o">.</span><span class="n">google_domain_tools</span><span class="p">:</span>
         <span class="k">print</span><span class="p">(</span><span class="s">&quot;## google_domain_tools: </span><span class="si">%r</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">domain</span><span class="p">)</span>
-        <span class="n">retcode</span> <span class="o">=</span> <span class="n">retcode</span> <span class="o">+</span> <span class="n">google_domain_tools</span><span class="p">(</span><span class="n">domain</span><span class="p">)</span>
+        <span class="n">returncode</span> <span class="o">+=</span> <span class="n">google_domain_tools</span><span class="p">(</span><span class="n">domain</span><span class="p">)</span>
 
-    <span class="k">return</span> <span class="n">retcode</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;google_domain_tools: </span><span class="si">%d</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">returncode</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">returncode</span>
 
 </div>
 <span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">&quot;__main__&quot;</span><span class="p">:</span>
