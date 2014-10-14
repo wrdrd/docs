@@ -42,7 +42,13 @@ crawl
     python -m nltk.downloader all
 
     # Crawl a website
-    crawl wrdrd.com
+    crawl -c http://www.wrdrd.com/
+
+    # Print HTML to stdout
+    crawl --html http://www.wrdrd.com/
+
+    # Print text to stdout
+    crawl --text http://www.wrdrd.com/
 
     # Print usage
     crawl --help
