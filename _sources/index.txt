@@ -30,6 +30,7 @@ Web Consulting
    consulting/team-building
    consulting/collaboration-plan
    consulting/authors
+   copyright
 
 
 wrdsbc
