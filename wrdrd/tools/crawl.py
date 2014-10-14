@@ -53,7 +53,8 @@ Link = namedtuple('Link', ('loc', 'href', 'name', 'target', 'text', 'parent_id')
 def extract_links(url, bs):
     links = bs.findAll('a')
     for l in links:
-        nearest_parent = l.find_parent(attrs={'id': lambda x: bool(x)}).get('id')
+        elem = l.find_parent(attrs={'id': lambda x: bool(x)})
+        nearest_parent = elem.get('id') if elem else None
         yield Link(
             url,
             l.get('href'),
