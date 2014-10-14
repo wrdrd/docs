@@ -15,7 +15,7 @@ At the command line::
 Usage
 ~~~~~~~~
 
-:py:mod:`wrdrd.tools` contains a number of command line utilities
+:py:mod:`wrdrd.tools` contains a number of command line utilities.
 
 .. contents::
    :local:
