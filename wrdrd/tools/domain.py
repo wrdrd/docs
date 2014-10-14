@@ -17,18 +17,19 @@ import structlog
 log = structlog.get_logger()
 
 
-def nslookup(domain):
+def nslookup(domain, nameserver=''):
     """
     Get nslookup information with nslookup (resolve a domainname to an IP)
 
     Args:
         domain (str): DNS domain
+        nameserver (str): DNS domain name server to query (default: ``''``)
     Returns:
         str: nslookup output
     """
     if not domain.endswith('.'):
         domain = domain + '.'
-    cmd = sarge.shell_format('nslookup {0}', domain)
+    cmd = sarge.shell_format('nslookup {0} {1}', domain, nameserver)
     log.info('cmd', cmd=cmd)
     output = sarge.capture_both(cmd)
     return output
