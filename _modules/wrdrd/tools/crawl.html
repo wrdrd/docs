@@ -168,9 +168,20 @@
     <span class="n">textblob</span> <span class="o">=</span> <span class="bp">None</span>
 
 <div class="viewcode-block" id="get_unicode_stdout"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.crawl.get_unicode_stdout">[docs]</a><span class="k">def</span> <span class="nf">get_unicode_stdout</span><span class="p">(</span><span class="n">stdout</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s">&#39;replace&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Wrap stdout as a utf-8 unicode writer</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        stdout (filelike): ``sys.stdout``</span>
+<span class="sd">        errors (str): what to do with errors</span>
+<span class="sd">        kwargs (dict): ``**kwargs``</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        filelike: output to ``.write()`` to</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="kn">import</span> <span class="nn">codecs</span>
     <span class="n">stdout</span> <span class="o">=</span> <span class="n">stdout</span> <span class="ow">or</span> <span class="n">sys</span><span class="o">.</span><span class="n">stdout</span>
-    <span class="k">return</span> <span class="n">codecs</span><span class="o">.</span><span class="n">getwriter</span><span class="p">(</span><span class="s">&#39;utf-8&#39;</span><span class="p">)(</span><span class="n">stdout</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="n">errors</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
+    <span class="k">return</span> <span class="n">codecs</span><span class="o">.</span><span class="n">getwriter</span><span class="p">(</span><span class="s">&#39;utf-8&#39;</span><span class="p">)(</span><span class="n">stdout</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="n">errors</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</div>
 <span class="n">sys</span><span class="o">.</span><span class="n">_stdout</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">stdout</span>
 <span class="n">sys</span><span class="o">.</span><span class="n">stdout</span> <span class="o">=</span> <span class="n">get_unicode_stdout</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="p">)</span>
 
