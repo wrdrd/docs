@@ -1,0 +1,27 @@
+{% extends "!layout.html" %}
+
+      <!-- footer -->
+      {%- block footer %}
+      <footer role="contentinfo">
+      {%- if show_copyright %}
+        {%- if hasdoc('copyright') %}
+          {% trans path=pathto('copyright'), copyright=copyright|e %}&copy; <a href="{{ path }}">Copyright</a> {{ copyright }}.{% endtrans %}
+        {%- else %}
+          {% trans copyright=copyright|e %}&copy; Copyright {{ copyright }}.{% endtrans %}
+        {%- endif %}
+      {%- endif %}
+
+      <br/>
+      <br/>
+      <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="{{ pathto('_static/img/cc-by-sa-4.0-88x31.png', 1) }}" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">WRD R&D Documentation</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+
+      {%- if last_updated %}
+        {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}
+      {%- endif %}
+      {%- if show_sphinx %}
+        {% trans sphinx_version=sphinx_version|e %}Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> {{ sphinx_version }}.{% endtrans %}
+      {%- endif %}
+      </footer>
+      {%- endblock %}
+      <!-- /footer -->
+
