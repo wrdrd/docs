@@ -44,9 +44,7 @@ coverage:
 docs-api:
 	rm -f docs/wrdrd/wrdrd.rst
 	rm -f docs/wrdrd/wrdrd.*.rst
-	rm -f docs/wrdrd/modules.rst
-	sphinx-apidoc -M -o docs/wrdrd/ wrdrd
-	rm -f docs/wrdrd/modules.rst
+	sphinx-apidoc -T -M -o docs/wrdrd/ wrdrd
 
 
 
