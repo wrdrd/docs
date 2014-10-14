@@ -184,7 +184,8 @@
 <div class="viewcode-block" id="extract_links"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.crawl.extract_links">[docs]</a><span class="k">def</span> <span class="nf">extract_links</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">bs</span><span class="p">):</span>
     <span class="n">links</span> <span class="o">=</span> <span class="n">bs</span><span class="o">.</span><span class="n">findAll</span><span class="p">(</span><span class="s">&#39;a&#39;</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="n">links</span><span class="p">:</span>
-        <span class="n">nearest_parent</span> <span class="o">=</span> <span class="n">l</span><span class="o">.</span><span class="n">find_parent</span><span class="p">(</span><span class="n">attrs</span><span class="o">=</span><span class="p">{</span><span class="s">&#39;id&#39;</span><span class="p">:</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">bool</span><span class="p">(</span><span class="n">x</span><span class="p">)})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">&#39;id&#39;</span><span class="p">)</span>
+        <span class="n">elem</span> <span class="o">=</span> <span class="n">l</span><span class="o">.</span><span class="n">find_parent</span><span class="p">(</span><span class="n">attrs</span><span class="o">=</span><span class="p">{</span><span class="s">&#39;id&#39;</span><span class="p">:</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">bool</span><span class="p">(</span><span class="n">x</span><span class="p">)})</span>
+        <span class="n">nearest_parent</span> <span class="o">=</span> <span class="n">elem</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">&#39;id&#39;</span><span class="p">)</span> <span class="k">if</span> <span class="n">elem</span> <span class="k">else</span> <span class="bp">None</span>
         <span class="k">yield</span> <span class="n">Link</span><span class="p">(</span>
             <span class="n">url</span><span class="p">,</span>
             <span class="n">l</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">&#39;href&#39;</span><span class="p">),</span>
@@ -699,7 +700,7 @@
     <span class="kn">import</span> <span class="nn">sys</span>
 
     <span class="n">prs</span> <span class="o">=</span> <span class="n">optparse</span><span class="o">.</span><span class="n">OptionParser</span><span class="p">(</span>
-        <span class="n">usage</span><span class="o">=</span><span class="s">&quot;%prog [-c|-t] &lt;url&gt;&quot;</span><span class="p">,</span>
+        <span class="n">usage</span><span class="o">=</span><span class="s">&quot;%prog [-c|-H|-s|-l] &lt;http://url&gt;&quot;</span><span class="p">,</span>
         <span class="n">description</span><span class="o">=</span><span class="s">&quot;Recursively crawl and parse a page or set of pages&quot;</span><span class="p">)</span>
 
     <span class="n">prs</span><span class="o">.</span><span class="n">add_option</span><span class="p">(</span><span class="s">&#39;-c&#39;</span><span class="p">,</span> <span class="s">&#39;--crawl&#39;</span><span class="p">,</span>
