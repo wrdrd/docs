@@ -20,31 +20,31 @@ history = open('HISTORY.rst').read().replace('.. :changelog:', '')
 requires = ['sh']
 
 setup(
-    name='wrdsbc',
+    name='wrdrd',
     version='0.1.0',
-    description='WRD Small Business Consulting Tools and Documentation',
+    description='WRD R&D Web Consulting Tools and Documentation',
     long_description=readme + '\n\n' + history,
     author='Wes Turner',
     author_email='wes@wrd.nu',
-    url='https://bitbucket.org/westurner/wrdsbc',
+    url='https://bitbucket.org/westurner/wrdrd',
     packages=[
-        'wrdsbc',
+        'wrdrd',
     ],
-    package_dir={'wrdsbc': 'wrdsbc'},
+    package_dir={'wrdrd': 'wrdrd'},
     include_package_data=True,
     install_requires=requires,
     license="",
     zip_safe=False,
-    keywords='wrdsbc',
+    keywords='wrdrd',
     classifiers=[
         'Natural Language :: English',
     ],
     test_suite='tests',
     entry_points={
         'console_scripts': [
-            'domaintool = wrdsbc.tools.domain:main',
-            'crawl = wrdsbc.tools.crawl:main',
-            'stripsinglehtml = wrdsbc.tools.stripsinglehtml:main',
+            'domaintool = wrdrd.tools.domain:main',
+            'crawl = wrdrd.tools.crawl:main',
+            'stripsinglehtml = wrdrd.tools.stripsinglehtml:main',
         ]
     }
 )

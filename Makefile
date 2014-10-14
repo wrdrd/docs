@@ -27,7 +27,7 @@ clean-docs:
 	rm -rf docs/_build/
 
 lint:
-	flake8 wrdsbc tests
+	flake8 wrdrd tests
 
 test:
 	python setup.py test
@@ -36,17 +36,17 @@ test-all:
 	tox
 
 coverage:
-	coverage run --source wrdsbc setup.py test
+	coverage run --source wrdrd setup.py test
 	coverage report -m
 	coverage html
 	open htmlcov/index.html
 
 docs-api:
-	rm -f docs/wrdsbc/wrdsbc.rst
-	rm -f docs/wrdsbc/wrdsbc.*.rst
-	rm -f docs/wrdsbc/modules.rst
-	sphinx-apidoc -M -o docs/wrdsbc/ wrdsbc
-	rm -f docs/wrdsbc/modules.rst
+	rm -f docs/wrdrd/wrdrd.rst
+	rm -f docs/wrdrd/wrdrd.*.rst
+	rm -f docs/wrdrd/modules.rst
+	sphinx-apidoc -M -o docs/wrdrd/ wrdrd
+	rm -f docs/wrdrd/modules.rst
 
 
 

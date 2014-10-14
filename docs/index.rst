@@ -20,6 +20,7 @@ Web Consulting
 .. toctree::
    :maxdepth: 3
 
+   consulting/readme
    consulting/small-business
    consulting/web-development
    consulting/software-development
@@ -33,18 +34,18 @@ Web Consulting
    copyright
 
 
-wrdsbc
+wrdrd
 --------
 
 .. toctree::
    :maxdepth: 3
 
-   wrdsbc/readme
-   wrdsbc/installation
-   wrdsbc/usage
-   wrdsbc/wrdsbc.tools
-   wrdsbc/authors
-   wrdsbc/history
+   wrdrd/readme
+   wrdrd/installation
+   wrdrd/usage
+   wrdrd/wrdrd.tools
+   wrdrd/authors
+   wrdrd/history
 
 
 Indices and tables
