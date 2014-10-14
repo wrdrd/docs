@@ -72,10 +72,9 @@
     <link rel="search" type="application/opensearchdescription+xml"
     title="Search within WRD R&amp;D Documentation"
     href="../_static/opensearch.xml"/>
-    <link rel="copyright" title="Copyright" href="../copyright.html" />
     <link rel="top" title="WRD R&amp;D Documentation" href="../index.html" />
-    <link rel="next" title="Installation" href="installation.html" />
-    <link rel="prev" title="Copyright" href="../copyright.html" /> 
+    <link rel="next" title="wrdrd.tools package" href="wrdrd.tools.html" />
+    <link rel="prev" title="License" href="../license.html" /> 
   </head>
   <body role="document">
     <div id="navbar-top" class="navbar navbar-fixed-top navbar-default" role="navigation" aria-label="top navigation">
@@ -91,10 +90,26 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown visible-xs">
+                <a role="button" id="localToc" data-toggle="dropdown" data-target="#" href="#">Table Of Contents <b class="caret"></b></a>
+                <ul class="dropdown-menu localtoc sp-localtoc" role="menu" aria-labelledby="localToc">
+                <ul>
+<li><a class="reference internal" href="#">wrdrd</a><ul>
+<li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#domaintool">domaintool</a></li>
+<li><a class="reference internal" href="#crawl">crawl</a></li>
+<li><a class="reference internal" href="#stripsinglehtml">stripsinglehtml</a></li>
+</ul>
+</li>
+</ul>
+
+                </ul>
+              </li>
 
             
-              <li><a href="../copyright.html" title="Copyright" accesskey="P">previous </a></li>
-              <li><a href="installation.html" title="Installation" accesskey="N">next </a></li>
+              <li><a href="../license.html" title="License" accesskey="P">previous </a></li>
+              <li><a href="wrdrd.tools.html" title="wrdrd.tools package" accesskey="N">next </a></li>
               <li><a href="../py-modindex.html" title="Python Module Index" >modules </a></li>
               <li><a href="../genindex.html" title="General Index" accesskey="I">index </a></li>
             
@@ -135,6 +150,53 @@
   <div class="section" id="wrdrd">
 <h1>wrdrd<a class="headerlink" href="#wrdrd" title="Permalink to this headline">¶</a></h1>
 <p>A Python package with a collection of scripts for web consulting.</p>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>At the command line:</p>
+<div class="highlight-python"><div class="highlight"><pre>pip install -e git+https://github.com/wrdrd/docs#egg=wrdrd
+</pre></div>
+</div>
+</div>
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="wrdrd.tools.html#module-wrdrd.tools" title="wrdrd.tools"><code class="xref py py-mod docutils literal"><span class="pre">wrdrd.tools</span></code></a> contains a number of command line utilities</p>
+</div>
+<div class="section" id="domaintool">
+<h2>domaintool<a class="headerlink" href="#domaintool" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre># Retrieve DNS and Whois information for a domain
+domaintool wrdrd.com
+
+# Print usage
+domaintool --help
+</pre></div>
+</div>
+</div>
+<div class="section" id="crawl">
+<h2>crawl<a class="headerlink" href="#crawl" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre># Install requirements
+pip install -r requirements.txt
+
+# Download NLTK libraries
+python -m nltk.downloader all
+
+# Crawl a website
+crawl wrdrd.com
+
+# Print usage
+crawl --help
+</pre></div>
+</div>
+</div>
+<div class="section" id="stripsinglehtml">
+<h2>stripsinglehtml<a class="headerlink" href="#stripsinglehtml" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre># Strip Sphinx (single) HTML markup
+stripsinglehtml ./_build/singlehtml/index.html &gt; __index.html
+
+# Print usage
+stripsinglehtml --help
+</pre></div>
+</div>
+</div>
 </div>
 
 
@@ -146,12 +208,24 @@
          
 <div class="col-md-5 hidden-xs">
   <div class="sidebar hidden-xs" role="navigation" aria-label="main navigation">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">wrdrd</a><ul>
+<li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#domaintool">domaintool</a></li>
+<li><a class="reference internal" href="#crawl">crawl</a></li>
+<li><a class="reference internal" href="#stripsinglehtml">stripsinglehtml</a></li>
+</ul>
+</li>
+</ul>
+
   <h4>Previous topic</h4>
-  <p class="topless"><a href="../copyright.html"
-                        title="previous chapter">Copyright</a></p>
+  <p class="topless"><a href="../license.html"
+                        title="previous chapter">License</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="installation.html"
-                        title="next chapter">Installation</a></p>
+  <p class="topless"><a href="wrdrd.tools.html"
+                        title="next chapter">wrdrd.tools package</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -189,8 +263,8 @@
     </ul>
     <ul class="nav navbar-nav pull-right hidden-xs hidden-sm">
       
-        <li><a href="../copyright.html" title="Copyright" >previous</a></li>
-        <li><a href="installation.html" title="Installation" >next</a></li>
+        <li><a href="../license.html" title="License" >previous</a></li>
+        <li><a href="wrdrd.tools.html" title="wrdrd.tools package" >next</a></li>
         <li><a href="../py-modindex.html" title="Python Module Index" >modules</a></li>
         <li><a href="../genindex.html" title="General Index" >index</a></li> 
       
@@ -201,7 +275,10 @@
 
       <!-- footer -->
       <footer role="contentinfo">
-          &copy; <a href="../copyright.html">Copyright</a> WRD R&amp;D 2014.
+          <a href="#">^top^</a>
+          <br/>
+          <br/>
+          &copy; <a href="../license.html">Copyright</a> WRD R&amp;D 2014.
 
       <br/>
       <br/>

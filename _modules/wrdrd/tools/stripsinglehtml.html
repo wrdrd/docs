@@ -72,7 +72,6 @@
     <link rel="search" type="application/opensearchdescription+xml"
     title="Search within WRD R&amp;D Documentation"
     href="../../../_static/opensearch.xml"/>
-    <link rel="copyright" title="Copyright" href="../../../copyright.html" />
     <link rel="top" title="WRD R&amp;D Documentation" href="../../../index.html" />
     <link rel="up" title="Module code" href="../../index.html" /> 
   </head>
@@ -152,8 +151,10 @@
     <span class="n">bs</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">&#39;body&#39;</span><span class="p">)</span>
     <span class="n">bs</span> <span class="o">=</span> <span class="n">bs</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">&#39;body&#39;</span><span class="p">)</span>
     <span class="p">[</span><span class="n">x</span><span class="o">.</span><span class="n">extract</span><span class="p">()</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">bs</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&#39;a&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s">&#39;class&#39;</span><span class="p">:</span><span class="s">&#39;headerlink&#39;</span><span class="p">})]</span>
-    <span class="n">bs</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">&#39;div&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s">&#39;class&#39;</span><span class="p">:</span><span class="s">&#39;sphinxsidebar&#39;</span><span class="p">})</span><span class="o">.</span><span class="n">extract</span><span class="p">()</span>
-    <span class="n">bs</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">&#39;div&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s">&#39;id&#39;</span><span class="p">:</span><span class="s">&#39;indices-and-tables&#39;</span><span class="p">})</span><span class="o">.</span><span class="n">extract</span><span class="p">()</span>
+    <span class="n">elem</span> <span class="o">=</span> <span class="n">bs</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">&#39;div&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s">&#39;class&#39;</span><span class="p">:</span><span class="s">&#39;sphinxsidebar&#39;</span><span class="p">})</span>
+    <span class="n">elem</span> <span class="ow">and</span> <span class="n">elem</span><span class="o">.</span><span class="n">extract</span><span class="p">()</span>
+    <span class="n">elem</span> <span class="o">=</span> <span class="n">bs</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">&#39;div&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s">&#39;id&#39;</span><span class="p">:</span><span class="s">&#39;indices-and-tables&#39;</span><span class="p">})</span>
+    <span class="n">elem</span> <span class="ow">and</span> <span class="n">elem</span><span class="o">.</span><span class="n">extract</span><span class="p">()</span>
     <span class="p">[</span><span class="n">x</span><span class="o">.</span><span class="n">extract</span><span class="p">()</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">bs</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&#39;div&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s">&#39;class&#39;</span><span class="p">:</span><span class="s">&#39;related&#39;</span><span class="p">})]</span>
 
     <span class="k">return</span> <span class="n">bs</span>
@@ -288,7 +289,10 @@
 
       <!-- footer -->
       <footer role="contentinfo">
-          &copy; <a href="../../../copyright.html">Copyright</a> WRD R&amp;D 2014.
+          <a href="#">^top^</a>
+          <br/>
+          <br/>
+          &copy; <a href="../../../license.html">Copyright</a> WRD R&amp;D 2014.
 
       <br/>
       <br/>
