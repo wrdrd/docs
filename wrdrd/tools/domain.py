@@ -300,67 +300,74 @@ def domain_tools(domain):
     returncode += proc.returncode
     print(proc.stdout.text)
     print('-')
-    stderr = proc.stderr.text; stderr and print(stderr)
+    stderr = proc.stderr.text
+    stderr and print(stderr)
     print('--')
 
     proc = dig_all(domain)
     returncode += proc.returncode
     print(proc.stdout.text)
     print('-')
-    stderr = proc.stderr.text; stderr and print(stderr)
+    stderr = proc.stderr.text
+    stderr and print(stderr)
     print('--')
 
     proc = dig_ns(domain)
     returncode += proc.returncode
     print(proc.stdout.text)
     print('-')
-    stderr = proc.stderr.text; stderr and print(stderr)
+    stderr = proc.stderr.text
+    stderr and print(stderr)
     print('--')
 
     proc = dig_mx(domain)
     returncode += proc.returncode
     print(proc.stdout.text)
     print('-')
-    stderr = proc.stderr.text; stderr and print(stderr)
+    stderr = proc.stderr.text
+    stderr and print(stderr)
     print('--')
 
     proc = dig_txt(domain)
     returncode += proc.returncode
     print(proc.stdout.text)
     print('-')
-    stderr = proc.stderr.text; stderr and print(stderr)
+    stderr = proc.stderr.text
+    stderr and print(stderr)
     print('--')
 
-    ## See: dig_txt
+    # See: dig_txt
     #proc = dig_spf(domain)
     #returncode += proc.returncode
-    #print(proc.stdout.text)
-    #print('-')
+    # print(proc.stdout.text)
+    # print('-')
     #stderr = proc.stderr.text; stderr and print(stderr)
-    #print('--')
+    # print('--')
 
     dmarc_domain = "_dmarc." + domain
     proc = dig_txt(dmarc_domain)
     returncode += proc.returncode
     print(proc.stdout.text)
     print('-')
-    stderr = proc.stderr.text; stderr and print(stderr)
+    stderr = proc.stderr.text
+    stderr and print(stderr)
     print('--')
 
-    ## Would need to specify a DKIM prefix (DKIM s= selector)
+    # Would need to specify a DKIM prefix (DKIM s= selector)
     #dkim_record_name = "%s._domainkey.%s" % (dkim_prefix, domain)
     #proc = dig_txt(dkim_record_name)
     #returncode += proc.returncode
-    #print(proc.stdout.text)
-    #print('-')
+    # print(proc.stdout.text)
+    # print('-')
     #stderr = proc.stderr.text; stderr and print(stderr)
-    #print('--')
+    # print('--')
 
     proc = dig_dnskey(domain.split(".")[-1])  # TODO: actual zone
     returncode += proc.returncode
     print(proc.stdout.text)
     print('-')
-    stderr = proc.stderr.text; stderr and print(stderr)
+    stderr = proc.stderr.text
+    stderr and print(stderr)
     print('--')
 
     return returncode
@@ -385,7 +392,7 @@ def check_google_domain(domain, dkim_prefix=DEFAULT_GOOGLE_DKIM_PREFIX):
 
 
 #import unittest
-#class Test_domain_tools(unittest.TestCase):
+# class Test_domain_tools(unittest.TestCase):
 #    def test_domain_tools(self):
 #        pass
 
@@ -404,19 +411,19 @@ def main(*args):
     )
 
     prs.add_option('-g', '--check-google-domain',
-                    dest='check_google_domain',
-                    action='store_true',
-                    help="Check Google MX, SPF, DMARC records")
+                   dest='check_google_domain',
+                   action='store_true',
+                   help="Check Google MX, SPF, DMARC records")
 
     prs.add_option('-v', '--verbose',
-                    dest='verbose',
-                    action='store_true',)
+                   dest='verbose',
+                   action='store_true',)
     prs.add_option('-q', '--quiet',
-                    dest='quiet',
-                    action='store_true',)
+                   dest='quiet',
+                   action='store_true',)
     prs.add_option('-t', '--test',
-                    dest='run_tests',
-                    action='store_true',)
+                   dest='run_tests',
+                   action='store_true',)
 
     args = args and list(args) or sys.argv[1:]
     (opts, args) = prs.parse_args()
