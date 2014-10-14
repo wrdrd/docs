@@ -569,7 +569,7 @@ def main(*args):
     import sys
 
     prs = optparse.OptionParser(
-        usage="%prog [-c|-t] <url>",
+        usage="%prog [-c|-H|-s|-l] <http://url>",
         description="Recursively crawl and parse a page or set of pages")
 
     prs.add_option('-c', '--crawl',
