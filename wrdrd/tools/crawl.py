@@ -51,6 +51,15 @@ urllib3log.setLevel(logging.ERROR)
 Link = namedtuple('Link', ('loc', 'href', 'name', 'target', 'text', 'parent_id'))
 
 def extract_links(url, bs):
+    """
+    Find ``<a>`` links in a given BeautifulSoup object
+
+    Args:
+        url (str): URL of the BeautifulSoup object
+        bs (bs4.BeautifulSoup): BeautifulSoup object
+    Yields:
+        Link: a :py:class:`Link`
+    """
     links = bs.findAll('a')
     for l in links:
         elem = l.find_parent(attrs={'id': lambda x: bool(x)})
@@ -67,6 +76,15 @@ def extract_links(url, bs):
 Image = namedtuple('Image', ('loc', 'src', 'alt', 'height', 'width', 'text'))
 
 def extract_images(url, bs):
+    """
+    Find ``<img>`` images in a given BeautifulSoup object
+
+    Args:
+        url (str): URL of the BeautifulSoup object
+        bs (bs4.BeautifulSoup): BeautifulSoup object
+    Yields:
+        Image: a :py:class:`Image`
+    """
     images = bs.findAll('img')
     for i in images:
         yield Image(
@@ -81,6 +99,15 @@ def extract_images(url, bs):
 CSS = namedtuple('CSS', ('loc', 'src'))
 
 def extract_css(url, bs):
+    """
+    Find CSS ``<link>`` links in a given BeautifulSoup object
+
+    Args:
+        url (str): URL of the BeautifulSoup object
+        bs (bs4.BeautifulSoup): BeautifulSoup object
+    Yields:
+        CSS: a :py:class:`CSS`
+    """
     csses = bs.findAll('link', {'rel':'stylesheet'})
     for c in csses:
         yield CSS(
@@ -91,6 +118,15 @@ def extract_css(url, bs):
 JS = namedtuple('JS', ('loc', 'src'))
 
 def extract_js(url, bs):
+    """
+    Find JS ``<script>`` links in a given BeautifulSoup object
+
+    Args:
+        url (str): URL of the BeautifulSoup object
+        bs (bs4.BeautifulSoup): BeautifulSoup object
+    Yields:
+        JS: a :py:class:`JS`
+    """
     jses = bs.findAll('script')
     for j in jses:
         type_ = j.get('type')
@@ -103,11 +139,25 @@ def extract_js(url, bs):
 
 
 def tokenize(text):
+    """
+    Tokenize the given text with textblob.tokenizers.word_tokenize
+
+    Args:
+        text (str): text to tokenize
+    Returns:
+        iterable: tokens
+    """
     return textblob.tokenizers.word_tokenize(text)
 
 
 STOP_WORDS = None
 def get_stop_words():
+    """
+    Get english stop words from NLTK with a few modifications
+
+    Returns:
+        dict: dictionary of stop words
+    """
     global STOP_WORDS
     if STOP_WORDS is None:
         STOP_WORDS = dict.fromkeys(nltk.corpus.stopwords.words('english'), 1)
@@ -117,10 +167,26 @@ def get_stop_words():
 
 
 def get_text_from_bs(bs):
+    """
+    Get text from a BeautifulSoup object
+
+    Args:
+        bs (bs4.BeautifulSoup): BeautifulSoup object
+    Returns:
+        unicode: newline-joined unicode string
+    """
     return u' '.join(x.replace('\n',' ') for x in bs.strings)
 
 
 def strip_script_styles_from_bs(bs):
+    """
+    Strip ``<script>`` and ``<style>`` tags from a BeautifulSoup object
+
+    Args:
+        bs (bs4.BeautifulSoup): BeautifulSoup object
+    Returns:
+        bs4.BeautifulSoup: BeautifulSoup object with tags removed
+    """
     #bs = bs.copy()
     for tag in ('script', 'style'):
         for elem in bs.find_all(tag):
@@ -129,6 +195,14 @@ def strip_script_styles_from_bs(bs):
 
 
 def extract_words_from_bs(bs):
+    """
+    Get just the text from an HTML page
+
+    Args:
+        bs (bs4.BeautifulSoup): BeautifulSoup object
+    Returns:
+        unicode: newline-joined unicode string
+    """
     body = bs.find('body')
     if not body:
         raise Exception(body)
@@ -139,6 +213,15 @@ def extract_words_from_bs(bs):
 KeywordFrequency = namedtuple('KeywordFrequency', ('url', 'frequencies'))
 
 def word_frequencies(url, keywords):
+    """
+    Get frequencies (counts) for a set of (non-stopword) keywords
+
+    Args:
+        url (str): URL from which keywords were derived
+        keywords (iterable): iterable of keywords
+    Returns:
+        KeywordFrequency: :py:class:`KeywordFrequency`
+    """
     words = (x.lower() for x in keywords)
     return KeywordFrequency(
         url,
@@ -146,33 +229,72 @@ def word_frequencies(url, keywords):
 
 
 def extract_keywords(url, bs):
+    """
+    Extract keyword frequencies from a given BeautifulSoup object
+
+    Args:
+        url (str): URL of the BeautifulSoup object
+        bs (bs4.BeautifulSoup): BeautifulSoup object
+    Returns:
+        KeywordFrequency: :py:class:`KeywordFrequency`
+    """
     return word_frequencies(url, tokenize(extract_words_from_bs(bs)))
 
 
 def current_datetime():
+    """
+    Get the current datetime in ISO format
+
+    Returns:
+        str: current datetime in ISO format
+    """
     return datetime.datetime.now().isoformat()
 
 
 CrawlRequest = namedtuple('CrawlRequest', ('src', 'url', 'datetime'))
 
 class URLCrawlQueue(object):
+    """
+    Queue of CrawlRequest URLs to crawl and their states
+    """
     NEW = 0
     OUT = 1
     DONE = 2
     ERROR = 3
     def __init__(self):
+        """
+        Initialize new URLCrawlQueue
+
+        Returns:
+            URLCrawlQueue: new URLCrawlQueue
+        """
         self.already = OrderedDict()
         self.q = []
 
     def __iter__(self):
+        """
+        Iterate over enqueued URLs to crawl
+
+        Returns:
+            iterable: Iterable of :py:class:`CrawlRequest`
+        """
         return self.q.__iter__()
 
     def pop(self):
+        """
+        Pop a CrawlRequest off the queue and mark it as ``URLCrawlQueue.OUT``
+
+        Returns:
+            CrawlRequest: :py:class:`CrawlRequest`
+        """
         item = self.q.pop(0)
         self.already[item.url] = URLCrawlQueue.OUT
         return item
 
     def push(self, item):
+        """
+        Push a CrawlRequest onto the queue and mark it as ``URLCrawlQueue.NEW``
+        """
         if item.url not in self.already:  # one shot
             self.already[item.url] = URLCrawlQueue.NEW
             self.q.append(item)
@@ -180,33 +302,87 @@ class URLCrawlQueue(object):
         #    log.debug("Skipping already enqueued: %s" % str(item))
 
     def done(self, item):
+        """
+        Mark a CrawlRequest as ``URLCrawlQueue.DONE``
+        """
         self.already[item.url] = URLCrawlQueue.DONE
 
     def error(self, item):
+        """
+        Mark a CrawlRequest as ``URLCrawlQueue.ERROR``
+        """
         self.already[item.url] = URLCrawlQueue.ERROR
 
     def count(self):
+        """
+        Get the count of ``URLCrawlQueue.NEW`` :py:class:`CrawlRequest` objects
+
+        Returns:
+            int: count of ``URLCrawlQueue.NEW`` :py:class:`CrawlRequest` objects
+        """
         return len(self.q)
 
 
 class ResultStore(object):
+    """
+    Result store interface
+    """
     def __init__(self):
+        """
+        Initialize a new :py:class:`ResultStore`
+        """
         self.db = OrderedDict()
 
     def __contains__(self, k):
+        """
+        Check whether the given key is in the :py:class:`ResultStore`
+
+        Args:
+            k (str): key
+        Returns:
+            bool: whether or not k is in ``self.db``
+        """
         return k in self.db
 
     def __iter__(self):
+        """
+        Get an iterable over the keys in ``self.db``
+
+        Returns:
+            iterable: an iterable over the keys in ``self.db``
+        """
         return self.db.__iter__()
 
     def __setitem__(self, k, v):
+        """
+        Set a (key, value) pair in ``self.db``
+
+        Args:
+            k (str): key
+            v (str): value
+        """
         return self.db.__setitem__(k, v)
 
     def itervalues(self):
+        """
+        Get an iterable over the values in ``self.db``
+
+        Returns:
+            iterable: an iterable over the values in ``self.db``
+        """
         return self.db.itervalues()
 
 
 def expand_link(_src, _url):
+    """
+    Expand a link given the containing document's URI
+
+    Args:
+        _src (str): containing document's URI
+        _url (str): link URI
+    Returns:
+        str: expanded URI
+    """
     src = urlobject.URLObject(_src)
     url = urlobject.URLObject(_url)
 
@@ -221,6 +397,14 @@ def expand_link(_src, _url):
 
 
 def strip_fragment(url):
+    """
+    Strip the #fragment portion from a URI
+
+    Args:
+        url (str): URI to strip #fragment from
+    Returns:
+        str: stripped URI (``/`` if otherwise empty)
+    """
     url = urlobject.URLObject(url)
     _url = url.without_fragment()
     if not(unicode(_url)):
@@ -229,13 +413,31 @@ def strip_fragment(url):
         return unicode(_url)
 
 
-def same_netloc(_url, _domain):
-    url = urlparse.urlsplit(_url)
-    dom = urlparse.urlsplit(_domain)
-    return url.netloc == dom.netloc
+def same_netloc(url1, url2):
+    """
+    Check whether two URIs have the same netloc
+
+    Args:
+        url1 (str): first URI
+        url2 (str): second URI
+    Returns:
+        bool: True if both URIs have the same netloc
+    """
+    _url1 = urlparse.urlsplit(url1)
+    _url2 = urlparse.urlsplit(url2)
+    return _url1.netloc == _url2.netloc
 
 
 def crawl_url(start_url, output=sys.stdout):
+    """
+    Crawl pages starting at ``start_url``
+
+    Args:
+        start_url (str): URL to start crawling from
+        output (filelike): file to ``.write()`` output to
+    Returns:
+        ResultStore: :py:class:`ResultStore` of (URL, crawl_status_dict) pairs
+    """
     queue = URLCrawlQueue()
 
     queue.push(
@@ -303,14 +505,31 @@ def crawl_url(start_url, output=sys.stdout):
 
 
 def sum_counters(iterable):
+    """
+    Sum the counts of an iterable
+
+    Args:
+        iterable (iterable): iterable of collections.Counter dicts
+    Returns:
+        defaultdict: dict of (key, count) pairs
+    """
     totals = defaultdict(lambda: 0)
     for counts in iterable:
-        for key,value in counts.iteritems():
+        for key, value in counts.iteritems():
             totals[key] += value
     return totals
 
 
 def frequency_table(counterdict, sort_by='count'):
+    """
+    Calculate and sort a frequency table from a collections.Counter dict
+
+    Args:
+        counterdict (dict): a collections.Counter dict of (key, count) pairs
+        sort_by (str): either ``count`` or ``name``
+    Yields:
+        tuple: (%, count, key)
+    """
     total = float(sum(counterdict.itervalues()))
     keyfunc = lambda x: x
     reverse = None
@@ -334,6 +553,13 @@ def frequency_table(counterdict, sort_by='count'):
 
 
 def print_frequency_table(frequencies, output=sys.stdout):
+    """
+    Print a formatted ASCII frequency table
+
+    Args:
+        frequencies (iterable): iterable of (%, count, word) tuples
+        output (filelike): output to ``print()`` to
+    """
     write = functools.partial(print, file=output)
     hdrfmt = "    %5s %6s  %s"
     rowfmt = u"    {:.2%} {:-6}  {}"
@@ -346,6 +572,14 @@ def print_frequency_table(frequencies, output=sys.stdout):
 
 
 def to_a_search_engine(url):
+    """
+    Get a list of words (e.g. as a classic search engine)
+
+    Args:
+        url (str): URL to ``HTTP GET`` with ``requests.get``
+    Returns:
+        iterable: iterable of tokens
+    """
     content = requests.get(url).content
     bs = bs4.BeautifulSoup(content)
     bs = strip_script_styles_from_bs(bs)
@@ -354,8 +588,17 @@ def to_a_search_engine(url):
             itertools.chain(*(x.split('\n') for x in lines)))
 
 
-def build_networkx_graph(url, links, label=None, output=sys.stdout):
-    #write = functools.partial(print, file=output)
+def build_networkx_graph(url, links, label=None):
+    """
+    Build a networkx.DiGraph from an iterable of links from a given URL
+
+    Args:
+        url (str): URL from which the given links are derived
+        links (iterable): iterable of :py:class:`Link` objects
+        label (str): label/title for graph
+    Returns:
+        networkx.DiGraph: directed graph of links
+    """
     import cgi
     def escape(var):
         return '"%s"' % cgi.escape(var, quote=True)
@@ -382,10 +625,24 @@ def build_networkx_graph(url, links, label=None, output=sys.stdout):
 
 
 def write_nxgraph_to_dot(g, output):
+    """
+    Write a networkx graph as DOT to the specified output
+
+    Args:
+        g (networkx.Graph): graph to write as DOT
+        output (filelike): output to write to
+    """
     return networkx.drawing.write_dot(g, output)
 
 
 def write_nxgraph_to_json(g, output):
+    """
+    Write a networkx graph as JSON to the specified output
+
+    Args:
+        g (networkx.Graph): graph to write as JSON
+        output (filelike): output to write to
+    """
     import json
     from networkx.readwrite import json_graph
     jsond = json_graph.node_link_data(g)
@@ -393,6 +650,15 @@ def write_nxgraph_to_json(g, output):
 
 
 def wrdcrawler(url, output=sys.stdout):
+    """
+    Fetch and generate a report from the given URL
+
+    Args:
+        url (str): URL to fetch
+        output (filelike): output to ``print()`` to
+    Returns:
+        filelike: output
+    """
     write = functools.partial(print, file=output)
 
     crawled = crawl_url(url)
@@ -564,6 +830,14 @@ class Test_wrdcrawler(unittest.TestCase):
 
 
 def main(*args):
+    """
+    :py:mod:`wrdrd.tools.crawl` main method: parse arguments and run commands
+
+    Args:
+        args (list): list of commandline arguments
+    Returns:
+        int: nonzero returncode on error
+    """
     import logging
     import optparse
     import sys
