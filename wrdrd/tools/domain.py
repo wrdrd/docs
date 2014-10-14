@@ -62,10 +62,11 @@ def dig_spf(domain):
     https://en.wikipedia.org/wiki/Sender_Policy_Framework
     """
     cmd = sarge.shell_format(
-        "dig {0} spf +cmd +nocomments +question +noidentify +nostats",
+        "dig {0} txt +cmd +nocomments +question +noidentify +nostats",
         domain)
     log.info('cmd', cmd=cmd)
     output = sarge.capture_both(cmd)
+    # look for "v=spf1"
     return output
 
 
@@ -97,19 +98,22 @@ def check_google_mx(domain):
     cmd = sarge.shell_format("dig {0} mx +short", domain)
     log.info('cmd', cmd=cmd)
     output = sarge.capture_both(cmd).stdout.text.rstrip()
-    log.debug(output)
-    result = None
-    check_domain = "aspmx.l.google.com."
+    log.debug('MX', record=output)
+    result = 0
+    check_domain1 = "aspmx.l.google.com."
+    check_domain2 = "googlemail.com."
     lines = output.split('\n')
     if not lines:
-        log.debug("No MX records found for %r" % domain)
-        result = False
+        log.error('err', msg="No MX records found for %r" % domain)
+        result += 1
     for l in lines:
-        if not l.endswith(check_domain):
-            result = False
-            log.debug("%r does not end with %r" % (l, check_domain))
+        l = l.lower()
+        if not (l.endswith(check_domain1) or l.endswith(check_domain2)):
+            result += 1
+            log.error('err', msg="%r does not end with %r or %r" %
+                      (l, check_domain1, check_domain2))
     if result is None:
-        result = True
+        result += 1
     return result
 
 
@@ -118,17 +122,40 @@ def check_google_spf(domain):
     https://support.google.com/a/answer/178723?hl=en
     """
     cmd = sarge.shell_format("dig {0} txt +short", domain)
-    log.info('cmd', cmd=cmd)
+    log.info('cmd', op='check_google_spf', cmd=cmd)
     proc = sarge.capture_both(cmd)
-    output = proc.stdout.text.rstrip()
-    log.debug(output)
-    expected = u"v=spf1 include:_spf.google.com ~all"
-    if output == expected:
-        return True
+    output = proc.stdout.text.rstrip().split('\n')
+    for line in output:
+        log.debug('TXT', record=line)
+        expected = u"\"v=spf1 include:_spf.google.com ~all\""
+        if line == expected:
+            return 0
 
     errmsg = "%r != %r" % (output, expected)
-    log.debug(errmsg)
-    return False
+    log.error('err', msg=errmsg)
+    return 1
+
+
+def check_google_dmarc(domain):
+    """
+    https://support.google.com/a/answer/2466580
+    https://support.google.com/a/answer/2466563
+    """
+    dmarc_domain = "_dmarc." + domain
+    cmd = sarge.shell_format("dig {0} txt +short", dmarc_domain)
+    log.info('cmd', op='check_google_dmarc', cmd=cmd)
+    proc = sarge.capture_both(cmd)
+    output = proc.stdout.text.rstrip().split('\n')
+    for line in output:
+        log.debug('TXT', record=line)
+        expected = u"\"v=DMARC1"  # ... "\; p=none\; rua=mailto:"
+        if line.startswith(expected):
+            if 'p=' in line:
+                return 0
+
+    errmsg = "%r != %r" % (output, expected)
+    log.error('err', msg=errmsg)
+    return 1
 
 
 def domain_tools(domain):
@@ -171,7 +198,16 @@ def domain_tools(domain):
     stderr = proc.stderr.text; stderr and print(stderr)
     print('--')
 
-    proc = dig_spf(domain)
+    ## See: dig_txt
+    #proc = dig_spf(domain)
+    #returncode += proc.returncode
+    #print(proc.stdout.text)
+    #print('-')
+    #stderr = proc.stderr.text; stderr and print(stderr)
+    #print('--')
+
+    dmarc_domain = "_dmarc." + domain
+    proc = dig_txt(dmarc_domain)
     returncode += proc.returncode
     print(proc.stdout.text)
     print('-')
@@ -188,10 +224,21 @@ def domain_tools(domain):
     return returncode
 
 
-def google_domain_tools(domain):
+def check_google_domain(domain):
+    """
+    https://support.google.com/a/answer/2716802
+    """
     mx = check_google_mx(domain)
     spf = check_google_spf(domain)
-    return int(not (mx and spf))
+    dmarc = check_google_dmarc(domain)
+
+    returncode = mx + spf + dmarc  # TODO: + dkim
+    if returncode:
+        log.error('err', mx=mx, spf=spf, dmarc=dmarc)
+    else:
+        log.info('OK', mx=mx, spf=spf, dmarc=dmarc)
+
+    return returncode
 
 
 #import unittest
@@ -201,7 +248,6 @@ def google_domain_tools(domain):
 
 
 def main(*args):
-    import logging
     import optparse
     import sys
 
@@ -210,10 +256,10 @@ def main(*args):
         description="Collect DNS information with whois and dig"
     )
 
-    prs.add_option('-g', '--google-domain-tools',
-                    dest='google_domain_tools',
+    prs.add_option('-g', '--check-google-domain',
+                    dest='check_google_domain',
                     action='store_true',
-                    help="Check Google MX and TXT SPF records")
+                    help="Check Google MX, SPF, DMARC records")
 
     prs.add_option('-v', '--verbose',
                     dest='verbose',
@@ -248,11 +294,11 @@ def main(*args):
     returncode += domain_tools(domain)
     print("domain_tools: %d" % returncode)
 
-    if opts.google_domain_tools:
-        print("## google_domain_tools: %r" % domain)
-        returncode += google_domain_tools(domain)
+    if opts.check_google_domain:
+        print("## check_google_domain: %r" % domain)
+        returncode += check_google_domain(domain)
 
-    print("google_domain_tools: %d" % returncode)
+    print("check_google_domain: %d" % returncode)
 
     return returncode
 
