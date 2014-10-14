@@ -2,24 +2,32 @@
 # -*- coding: utf-8 -*-
 
 """
-test_wrdsbc
+test_wrdrd
 ----------------------------------
 
-Tests for `wrdsbc` module.
+Tests for `wrdrd` module.
 """
 
 import unittest
 
-from wrdsbc import wrdsbc
+import wrdrd
+import wrdrd.tools
+import wrdrd.tools.domain
+import wrdrd.tools.crawl
+import wrdrd.tools.stripsinglehtml
 
 
-class TestWrdsbc(unittest.TestCase):
+class TestWrdrd(unittest.TestCase):
 
     def setUp(self):
         pass
 
-    def test_something(self):
-        pass
+    def test_imports(self):
+        assert wrdrd
+        assert wrdrd.tools
+        assert wrdrd.tools.domain
+        assert wrdrd.tools.crawl
+        assert wrdrd.tools.stripsinglehtml
 
     def tearDown(self):
         pass
