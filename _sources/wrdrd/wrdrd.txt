@@ -1,7 +1,7 @@
-wrdsbc package
-==============
+wrdrd package
+=============
 
-.. automodule:: wrdsbc
+.. automodule:: wrdrd
     :members:
     :undoc-members:
     :show-inheritance:
@@ -11,15 +11,15 @@ Subpackages
 
 .. toctree::
 
-    wrdsbc.tools
+    wrdrd.tools
 
 Submodules
 ----------
 
-wrdsbc.wrdsbc module
---------------------
+wrdrd.wrdrd module
+------------------
 
-.. automodule:: wrdsbc.wrdsbc
+.. automodule:: wrdrd.wrdrd
     :members:
     :undoc-members:
     :show-inheritance:

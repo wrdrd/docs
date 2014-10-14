@@ -4,9 +4,9 @@ Installation
 
 At the command line::
 
-    $ easy_install wrdsbc
+    $ easy_install wrdrd
 
 Or, if you have virtualenvwrapper installed::
 
-    $ mkvirtualenv wrdsbc
-    $ pip install wrdsbc
+    $ mkvirtualenv wrdrd
+    $ pip install wrdrd
