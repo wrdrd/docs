@@ -2,20 +2,30 @@
 # encoding: utf-8
 from __future__ import print_function
 """
-domain_tools
+wrdrd.tools.domain
 
-https://en.wikipedia.org/wiki/DNS
-https://en.wikipedia.org/wiki/List_of_DNS_record_types
+* nslookup, whois, and dig command wrappers
+* check_google_domain (_mx, _spf, _dkim, _dmarc)
+
+| https://en.wikipedia.org/wiki/DNS
+| https://en.wikipedia.org/wiki/List_of_DNS_record_types
 """
-import logging
 
 import sarge
 import structlog
 
-#log = logging.getLogger()
 log = structlog.get_logger()
 
+
 def nslookup(domain):
+    """
+    Get nslookup information with nslookup (resolve a domainname to an IP)
+
+    Args:
+        domain (str): DNS domain
+    Returns:
+        str: nslookup output
+    """
     if not domain.endswith('.'):
         domain = domain + '.'
     cmd = sarge.shell_format('nslookup {0}', domain)
@@ -23,7 +33,16 @@ def nslookup(domain):
     output = sarge.capture_both(cmd)
     return output
 
+
 def whois(domain):
+    """
+    Get whois information with whois
+
+    Args:
+        domain (str): DNS domain
+    Returns:
+        str: whois output
+    """
     cmd = sarge.shell_format('whois {0}', domain)
     log.info('cmd', cmd=cmd)
     output = sarge.capture_both(cmd)
@@ -31,6 +50,14 @@ def whois(domain):
 
 
 def dig_all(domain):
+    """
+    Get all DNS records with dig
+
+    Args:
+        domain (str): DNS domain
+    Returns:
+        str: dig output
+    """
     cmd = sarge.shell_format(
         "dig {0} +cmd +nocomments +question +noidentify +nostats",
         domain)
@@ -40,6 +67,14 @@ def dig_all(domain):
 
 
 def dig_ns(domain):
+    """
+    Get DNS NS records with dig
+
+    Args:
+        domain (str): DNS domain
+    Returns:
+        str: dig output
+    """
     cmd = sarge.shell_format(
         "dig {0} ns +cmd +nocomments +question +noidentify +nostats",
         domain)
@@ -49,6 +84,14 @@ def dig_ns(domain):
 
 
 def dig_txt(domain):
+    """
+    Get DNS TXT records with dig
+
+    Args:
+        domain (str): DNS domain
+    Returns:
+        str: dig output
+    """
     cmd = sarge.shell_format(
         "dig {0} txt +cmd +nocomments +question +noidentify +nostats",
         domain)
@@ -59,20 +102,30 @@ def dig_txt(domain):
 
 def dig_spf(domain):
     """
-    https://en.wikipedia.org/wiki/Sender_Policy_Framework
+    Get SPF DNS TXT records with dig
+
+    Args:
+        domain (str): DNS domain
+    Returns:
+        str: dig output
+
+    | https://en.wikipedia.org/wiki/Sender_Policy_Framework
     """
-    cmd = sarge.shell_format(
-        "dig {0} txt +cmd +nocomments +question +noidentify +nostats",
-        domain)
-    log.info('cmd', cmd=cmd)
-    output = sarge.capture_both(cmd)
-    # look for "v=spf1"
+    output = dig_txt(domain)
+    # TODO: look for "v=spf1"
     return output
 
 
 def dig_mx(domain):
     """
-    https://en.wikipedia.org/wiki/MX_record
+    Get MX DNS records with dig
+
+    Args:
+        domain (str): DNS domain
+    Returns:
+        str: dig output
+
+    | https://en.wikipedia.org/wiki/MX_record
     """
     cmd = sarge.shell_format(
         "dig {0} mx +cmd +nocomments +question +noidentify +nostats",
@@ -83,6 +136,14 @@ def dig_mx(domain):
 
 
 def dig_dnskey(zone):
+    """
+    Get DNSSEC DNS records with dig
+
+    Args:
+        zone (str): DNS zone
+    Returns:
+        str: dig output
+    """
     cmd = sarge.shell_format(
         "dig {0} +dnssec dnskey +cmd +nocomments +question +noidentify +nostats",
         zone)
@@ -93,7 +154,15 @@ def dig_dnskey(zone):
 
 def check_google_mx(domain):
     """
-    https://support.google.com/a/topic/2716885?hl=en&ref_topic=2426592
+    Check Google MX DNS records
+
+    Args:
+        domain (str): DNS domain name
+
+    Returns:
+        int: 0 if OK, 1 on error
+
+    | https://support.google.com/a/topic/2716885?hl=en&ref_topic=2426592
     """
     cmd = sarge.shell_format("dig {0} mx +short", domain)
     log.info('cmd', cmd=cmd)
@@ -119,7 +188,15 @@ def check_google_mx(domain):
 
 def check_google_spf(domain):
     """
-    https://support.google.com/a/answer/178723?hl=en
+    Check a Google SPF DNS TXT record
+
+    Args:
+        domain (str): DNS domain name
+
+    Returns:
+        int: 0 if OK, 1 on error
+
+    | https://support.google.com/a/answer/178723?hl=en
     """
     cmd = sarge.shell_format("dig {0} txt +short", domain)
     log.info('cmd', op='check_google_spf', cmd=cmd)
@@ -138,8 +215,16 @@ def check_google_spf(domain):
 
 def check_google_dmarc(domain):
     """
-    https://support.google.com/a/answer/2466580
-    https://support.google.com/a/answer/2466563
+    Check a Google DMARC DNS TXT record
+
+    Args:
+        domain (str): DNS domain name
+
+    Returns:
+        int: 0 if OK, 1 on error
+
+    | https://support.google.com/a/answer/2466580
+    | https://support.google.com/a/answer/2466563
     """
     dmarc_domain = "_dmarc." + domain
     cmd = sarge.shell_format("dig {0} txt +short", dmarc_domain)
@@ -157,15 +242,31 @@ def check_google_dmarc(domain):
     log.error('err', msg=errmsg)
     return 1
 
+
 DEFAULT_GOOGLE_DKIM_PREFIX = 'google'
+
 
 def check_google_dkim(domain, prefix=DEFAULT_GOOGLE_DKIM_PREFIX):
     """
-    https://support.google.com/a/answer/174126
-    https://admin.google.com/AdminHome?fral=1#AppDetails:service=email&flyout=dkim
+    Check a Google DKIM DNS TXT record
 
-    .. note:: This does not validate DKIM signatures and
-       defaults to the default ``google`` prefix
+    Args:
+        domain (str): DNS domain name
+        prefix (str): DKIM ``s=`` selector ('DKIM prefix')
+
+    Returns:
+        int: 0 if OK, 1 on error
+
+    | https://support.google.com/a/answer/174126
+    | https://admin.google.com/AdminHome?fral=1#AppDetails:service=email&flyout=dkim
+
+    .. note:: This check function only finds "v=DKIM1" TXT records;
+       it defaults to the default ``google`` prefix
+       and **does not validate DKIM signatures**.
+
+    | http://dkim.org/specs/rfc4871-dkimbase.html#rfc.section.3.6.2.1
+    | http://dkim.org/specs/rfc4871-dkimbase.html#rfc.section.A.3
+
     """
     dkim_record_name = "%s._domainkey.%s" % (prefix, domain)
     cmd = sarge.shell_format("dig {0} txt +short", dkim_record_name)
@@ -186,7 +287,13 @@ def check_google_dkim(domain, prefix=DEFAULT_GOOGLE_DKIM_PREFIX):
 
 def domain_tools(domain):
     """
-    mainfunc
+    Get whois and DNS information for a domain.
+
+    Args:
+        domain (str): DNS domain name
+
+    Returns:
+        int: nonzero returncode on failure (sum of returncodes)
     """
     returncode = 0
     proc = whois(domain)
@@ -240,6 +347,15 @@ def domain_tools(domain):
     stderr = proc.stderr.text; stderr and print(stderr)
     print('--')
 
+    ## Would need to specify a DKIM prefix (DKIM s= selector)
+    #dkim_record_name = "%s._domainkey.%s" % (dkim_prefix, domain)
+    #proc = dig_txt(dkim_record_name)
+    #returncode += proc.returncode
+    #print(proc.stdout.text)
+    #print('-')
+    #stderr = proc.stderr.text; stderr and print(stderr)
+    #print('--')
+
     proc = dig_dnskey(domain.split(".")[-1])  # TODO: actual zone
     returncode += proc.returncode
     print(proc.stdout.text)
@@ -275,6 +391,10 @@ def check_google_domain(domain, dkim_prefix=DEFAULT_GOOGLE_DKIM_PREFIX):
 
 
 def main(*args):
+    """
+    wrdrd.tools.domain main method
+    """
+    import logging
     import optparse
     import sys
 
