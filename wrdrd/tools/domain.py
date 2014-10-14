@@ -97,19 +97,22 @@ def check_google_mx(domain):
     cmd = sarge.shell_format("dig {0} mx +short", domain)
     log.info('cmd', cmd=cmd)
     output = sarge.capture_both(cmd).stdout.text.rstrip()
-    log.debug(output)
-    result = None
-    check_domain = "aspmx.l.google.com."
+    log.debug('MX', record=output)
+    result = 0
+    check_domain1 = "aspmx.l.google.com."
+    check_domain2 = "googlemail.com."
     lines = output.split('\n')
     if not lines:
-        log.debug("No MX records found for %r" % domain)
-        result = False
+        log.error('err', msg="No MX records found for %r" % domain)
+        result += 1
     for l in lines:
-        if not l.endswith(check_domain):
-            result = False
-            log.debug("%r does not end with %r" % (l, check_domain))
+        l = l.lower()
+        if not (l.endswith(check_domain1) or l.endswith(check_domain2)):
+            result += 1
+            log.error('err', msg="%r does not end with %r or %r" %
+                      (l, check_domain1, check_domain2))
     if result is None:
-        result = True
+        result += 1
     return result
 
 
@@ -118,17 +121,37 @@ def check_google_spf(domain):
     https://support.google.com/a/answer/178723?hl=en
     """
     cmd = sarge.shell_format("dig {0} txt +short", domain)
-    log.info('cmd', cmd=cmd)
+    log.info('cmd', op='check_google_spf', cmd=cmd)
     proc = sarge.capture_both(cmd)
-    output = proc.stdout.text.rstrip()
-    log.debug(output)
-    expected = u"v=spf1 include:_spf.google.com ~all"
-    if output == expected:
-        return True
+    output = proc.stdout.text.rstrip().split('\n')
+    for line in output:
+        log.debug('TXT', record=line)
+        expected = u"\"v=spf1 include:_spf.google.com ~all\""
+        if line == expected:
+            return 0
 
     errmsg = "%r != %r" % (output, expected)
-    log.debug(errmsg)
-    return False
+    log.error('err', msg=errmsg)
+    return 1
+
+
+def check_google_dmarc(domain):
+    """
+    https://support.google.com/a/answer/178723?hl=en
+    """
+    cmd = sarge.shell_format("dig {0} txt +short", domain)
+    log.info('cmd', op='check_google_dmarc', cmd=cmd)
+    proc = sarge.capture_both(cmd)
+    output = proc.stdout.text.rstrip().split('\n')
+    for line in output:
+        log.debug('TXT', record=line)
+        expected = u"\"v=DMARC1"  # ... "\; p=none\; rua=mailto:"
+        if line.startswith(expected):
+            return 0
+
+    errmsg = "%r != %r" % (output, expected)
+    log.error('err', msg=errmsg)
+    return 1
 
 
 def domain_tools(domain):
@@ -191,7 +214,8 @@ def domain_tools(domain):
 def google_domain_tools(domain):
     mx = check_google_mx(domain)
     spf = check_google_spf(domain)
-    return int(not (mx and spf))
+    dmarc = check_google_dmarc(domain)
+    return mx + spf + dmarc
 
 
 #import unittest
