@@ -133,28 +133,48 @@
 <span class="c"># encoding: utf-8</span>
 <span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span>
 <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">domain_tools</span>
+<span class="sd">wrdrd.tools.domain</span>
 
-<span class="sd">https://en.wikipedia.org/wiki/DNS</span>
-<span class="sd">https://en.wikipedia.org/wiki/List_of_DNS_record_types</span>
+<span class="sd">* nslookup, whois, and dig command wrappers</span>
+<span class="sd">* check_google_domain (_mx, _spf, _dkim, _dmarc)</span>
+
+<span class="sd">| https://en.wikipedia.org/wiki/DNS</span>
+<span class="sd">| https://en.wikipedia.org/wiki/List_of_DNS_record_types</span>
 <span class="sd">&quot;&quot;&quot;</span>
-<span class="kn">import</span> <span class="nn">logging</span>
 
 <span class="kn">import</span> <span class="nn">sarge</span>
 <span class="kn">import</span> <span class="nn">structlog</span>
 
-<span class="c">#log = logging.getLogger()</span>
 <span class="n">log</span> <span class="o">=</span> <span class="n">structlog</span><span class="o">.</span><span class="n">get_logger</span><span class="p">()</span>
 
-<div class="viewcode-block" id="nslookup"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.domain.nslookup">[docs]</a><span class="k">def</span> <span class="nf">nslookup</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
+
+<div class="viewcode-block" id="nslookup"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.domain.nslookup">[docs]</a><span class="k">def</span> <span class="nf">nslookup</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">nameserver</span><span class="o">=</span><span class="s">&#39;&#39;</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Get nslookup information with nslookup (resolve a domainname to an IP)</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        domain (str): DNS domain</span>
+<span class="sd">        nameserver (str): DNS domain name server to query (default: ``&#39;&#39;``)</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        str: nslookup output</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">domain</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s">&#39;.&#39;</span><span class="p">):</span>
         <span class="n">domain</span> <span class="o">=</span> <span class="n">domain</span> <span class="o">+</span> <span class="s">&#39;.&#39;</span>
-    <span class="n">cmd</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">shell_format</span><span class="p">(</span><span class="s">&#39;nslookup {0}&#39;</span><span class="p">,</span> <span class="n">domain</span><span class="p">)</span>
+    <span class="n">cmd</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">shell_format</span><span class="p">(</span><span class="s">&#39;nslookup {0} {1}&#39;</span><span class="p">,</span> <span class="n">domain</span><span class="p">,</span> <span class="n">nameserver</span><span class="p">)</span>
     <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s">&#39;cmd&#39;</span><span class="p">,</span> <span class="n">cmd</span><span class="o">=</span><span class="n">cmd</span><span class="p">)</span>
     <span class="n">output</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">capture_both</span><span class="p">(</span><span class="n">cmd</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">output</span>
+
 </div>
 <div class="viewcode-block" id="whois"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.domain.whois">[docs]</a><span class="k">def</span> <span class="nf">whois</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Get whois information with whois</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        domain (str): DNS domain</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        str: whois output</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">cmd</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">shell_format</span><span class="p">(</span><span class="s">&#39;whois {0}&#39;</span><span class="p">,</span> <span class="n">domain</span><span class="p">)</span>
     <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s">&#39;cmd&#39;</span><span class="p">,</span> <span class="n">cmd</span><span class="o">=</span><span class="n">cmd</span><span class="p">)</span>
     <span class="n">output</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">capture_both</span><span class="p">(</span><span class="n">cmd</span><span class="p">)</span>
@@ -162,6 +182,14 @@
 
 </div>
 <div class="viewcode-block" id="dig_all"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.domain.dig_all">[docs]</a><span class="k">def</span> <span class="nf">dig_all</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Get all DNS records with dig</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        domain (str): DNS domain</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        str: dig output</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">cmd</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">shell_format</span><span class="p">(</span>
         <span class="s">&quot;dig {0} +cmd +nocomments +question +noidentify +nostats&quot;</span><span class="p">,</span>
         <span class="n">domain</span><span class="p">)</span>
@@ -171,6 +199,14 @@
 
 </div>
 <div class="viewcode-block" id="dig_ns"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.domain.dig_ns">[docs]</a><span class="k">def</span> <span class="nf">dig_ns</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Get DNS NS records with dig</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        domain (str): DNS domain</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        str: dig output</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">cmd</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">shell_format</span><span class="p">(</span>
         <span class="s">&quot;dig {0} ns +cmd +nocomments +question +noidentify +nostats&quot;</span><span class="p">,</span>
         <span class="n">domain</span><span class="p">)</span>
@@ -180,6 +216,14 @@
 
 </div>
 <div class="viewcode-block" id="dig_txt"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.domain.dig_txt">[docs]</a><span class="k">def</span> <span class="nf">dig_txt</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Get DNS TXT records with dig</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        domain (str): DNS domain</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        str: dig output</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">cmd</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">shell_format</span><span class="p">(</span>
         <span class="s">&quot;dig {0} txt +cmd +nocomments +question +noidentify +nostats&quot;</span><span class="p">,</span>
         <span class="n">domain</span><span class="p">)</span>
@@ -190,20 +234,30 @@
 </div>
 <div class="viewcode-block" id="dig_spf"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.domain.dig_spf">[docs]</a><span class="k">def</span> <span class="nf">dig_spf</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    https://en.wikipedia.org/wiki/Sender_Policy_Framework</span>
+<span class="sd">    Get SPF DNS TXT records with dig</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        domain (str): DNS domain</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        str: dig output</span>
+
+<span class="sd">    | https://en.wikipedia.org/wiki/Sender_Policy_Framework</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">cmd</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">shell_format</span><span class="p">(</span>
-        <span class="s">&quot;dig {0} txt +cmd +nocomments +question +noidentify +nostats&quot;</span><span class="p">,</span>
-        <span class="n">domain</span><span class="p">)</span>
-    <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s">&#39;cmd&#39;</span><span class="p">,</span> <span class="n">cmd</span><span class="o">=</span><span class="n">cmd</span><span class="p">)</span>
-    <span class="n">output</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">capture_both</span><span class="p">(</span><span class="n">cmd</span><span class="p">)</span>
-    <span class="c"># look for &quot;v=spf1&quot;</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="n">dig_txt</span><span class="p">(</span><span class="n">domain</span><span class="p">)</span>
+    <span class="c"># TODO: look for &quot;v=spf1&quot;</span>
     <span class="k">return</span> <span class="n">output</span>
 
 </div>
 <div class="viewcode-block" id="dig_mx"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.domain.dig_mx">[docs]</a><span class="k">def</span> <span class="nf">dig_mx</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    https://en.wikipedia.org/wiki/MX_record</span>
+<span class="sd">    Get MX DNS records with dig</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        domain (str): DNS domain</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        str: dig output</span>
+
+<span class="sd">    | https://en.wikipedia.org/wiki/MX_record</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">cmd</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">shell_format</span><span class="p">(</span>
         <span class="s">&quot;dig {0} mx +cmd +nocomments +question +noidentify +nostats&quot;</span><span class="p">,</span>
@@ -214,6 +268,14 @@
 
 </div>
 <div class="viewcode-block" id="dig_dnskey"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.domain.dig_dnskey">[docs]</a><span class="k">def</span> <span class="nf">dig_dnskey</span><span class="p">(</span><span class="n">zone</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Get DNSSEC DNS records with dig</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        zone (str): DNS zone</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        str: dig output</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">cmd</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">shell_format</span><span class="p">(</span>
         <span class="s">&quot;dig {0} +dnssec dnskey +cmd +nocomments +question +noidentify +nostats&quot;</span><span class="p">,</span>
         <span class="n">zone</span><span class="p">)</span>
@@ -224,7 +286,15 @@
 </div>
 <div class="viewcode-block" id="check_google_mx"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.domain.check_google_mx">[docs]</a><span class="k">def</span> <span class="nf">check_google_mx</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    https://support.google.com/a/topic/2716885?hl=en&amp;ref_topic=2426592</span>
+<span class="sd">    Check Google MX DNS records</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        domain (str): DNS domain name</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        int: 0 if OK, 1 on error</span>
+
+<span class="sd">    | https://support.google.com/a/topic/2716885?hl=en&amp;ref_topic=2426592</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">cmd</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">shell_format</span><span class="p">(</span><span class="s">&quot;dig {0} mx +short&quot;</span><span class="p">,</span> <span class="n">domain</span><span class="p">)</span>
     <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s">&#39;cmd&#39;</span><span class="p">,</span> <span class="n">cmd</span><span class="o">=</span><span class="n">cmd</span><span class="p">)</span>
@@ -250,7 +320,15 @@
 </div>
 <div class="viewcode-block" id="check_google_spf"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.domain.check_google_spf">[docs]</a><span class="k">def</span> <span class="nf">check_google_spf</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    https://support.google.com/a/answer/178723?hl=en</span>
+<span class="sd">    Check a Google SPF DNS TXT record</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        domain (str): DNS domain name</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        int: 0 if OK, 1 on error</span>
+
+<span class="sd">    | https://support.google.com/a/answer/178723?hl=en</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">cmd</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">shell_format</span><span class="p">(</span><span class="s">&quot;dig {0} txt +short&quot;</span><span class="p">,</span> <span class="n">domain</span><span class="p">)</span>
     <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s">&#39;cmd&#39;</span><span class="p">,</span> <span class="n">op</span><span class="o">=</span><span class="s">&#39;check_google_spf&#39;</span><span class="p">,</span> <span class="n">cmd</span><span class="o">=</span><span class="n">cmd</span><span class="p">)</span>
@@ -269,8 +347,16 @@
 </div>
 <div class="viewcode-block" id="check_google_dmarc"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.domain.check_google_dmarc">[docs]</a><span class="k">def</span> <span class="nf">check_google_dmarc</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    https://support.google.com/a/answer/2466580</span>
-<span class="sd">    https://support.google.com/a/answer/2466563</span>
+<span class="sd">    Check a Google DMARC DNS TXT record</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        domain (str): DNS domain name</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        int: 0 if OK, 1 on error</span>
+
+<span class="sd">    | https://support.google.com/a/answer/2466580</span>
+<span class="sd">    | https://support.google.com/a/answer/2466563</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">dmarc_domain</span> <span class="o">=</span> <span class="s">&quot;_dmarc.&quot;</span> <span class="o">+</span> <span class="n">domain</span>
     <span class="n">cmd</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">shell_format</span><span class="p">(</span><span class="s">&quot;dig {0} txt +short&quot;</span><span class="p">,</span> <span class="n">dmarc_domain</span><span class="p">)</span>
@@ -287,16 +373,32 @@
     <span class="n">errmsg</span> <span class="o">=</span> <span class="s">&quot;</span><span class="si">%r</span><span class="s"> != </span><span class="si">%r</span><span class="s">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">output</span><span class="p">,</span> <span class="n">expected</span><span class="p">)</span>
     <span class="n">log</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s">&#39;err&#39;</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="n">errmsg</span><span class="p">)</span>
     <span class="k">return</span> <span class="mi">1</span>
+
 </div>
 <span class="n">DEFAULT_GOOGLE_DKIM_PREFIX</span> <span class="o">=</span> <span class="s">&#39;google&#39;</span>
 
+
 <div class="viewcode-block" id="check_google_dkim"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.domain.check_google_dkim">[docs]</a><span class="k">def</span> <span class="nf">check_google_dkim</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="n">DEFAULT_GOOGLE_DKIM_PREFIX</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    https://support.google.com/a/answer/174126</span>
-<span class="sd">    https://admin.google.com/AdminHome?fral=1#AppDetails:service=email&amp;flyout=dkim</span>
+<span class="sd">    Check a Google DKIM DNS TXT record</span>
 
-<span class="sd">    .. note:: This does not validate DKIM signatures and</span>
-<span class="sd">       defaults to the default ``google`` prefix</span>
+<span class="sd">    Args:</span>
+<span class="sd">        domain (str): DNS domain name</span>
+<span class="sd">        prefix (str): DKIM ``s=`` selector (&#39;DKIM prefix&#39;)</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        int: 0 if OK, 1 on error</span>
+
+<span class="sd">    | https://support.google.com/a/answer/174126</span>
+<span class="sd">    | https://admin.google.com/AdminHome?fral=1#AppDetails:service=email&amp;flyout=dkim</span>
+
+<span class="sd">    .. note:: This check function only finds &quot;v=DKIM1&quot; TXT records;</span>
+<span class="sd">       it defaults to the default ``google`` prefix</span>
+<span class="sd">       and **does not validate DKIM signatures**.</span>
+
+<span class="sd">    | http://dkim.org/specs/rfc4871-dkimbase.html#rfc.section.3.6.2.1</span>
+<span class="sd">    | http://dkim.org/specs/rfc4871-dkimbase.html#rfc.section.A.3</span>
+
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">dkim_record_name</span> <span class="o">=</span> <span class="s">&quot;</span><span class="si">%s</span><span class="s">._domainkey.</span><span class="si">%s</span><span class="s">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">prefix</span><span class="p">,</span> <span class="n">domain</span><span class="p">)</span>
     <span class="n">cmd</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">shell_format</span><span class="p">(</span><span class="s">&quot;dig {0} txt +short&quot;</span><span class="p">,</span> <span class="n">dkim_record_name</span><span class="p">)</span>
@@ -317,65 +419,87 @@
 </div>
 <div class="viewcode-block" id="domain_tools"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.domain.domain_tools">[docs]</a><span class="k">def</span> <span class="nf">domain_tools</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    mainfunc</span>
+<span class="sd">    Get whois and DNS information for a domain.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        domain (str): DNS domain name</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        int: nonzero returncode on failure (sum of returncodes)</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">returncode</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="n">proc</span> <span class="o">=</span> <span class="n">whois</span><span class="p">(</span><span class="n">domain</span><span class="p">)</span>
     <span class="n">returncode</span> <span class="o">+=</span> <span class="n">proc</span><span class="o">.</span><span class="n">returncode</span>
     <span class="k">print</span><span class="p">(</span><span class="n">proc</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
     <span class="k">print</span><span class="p">(</span><span class="s">&#39;-&#39;</span><span class="p">)</span>
-    <span class="n">stderr</span> <span class="o">=</span> <span class="n">proc</span><span class="o">.</span><span class="n">stderr</span><span class="o">.</span><span class="n">text</span><span class="p">;</span> <span class="n">stderr</span> <span class="ow">and</span> <span class="k">print</span><span class="p">(</span><span class="n">stderr</span><span class="p">)</span>
+    <span class="n">stderr</span> <span class="o">=</span> <span class="n">proc</span><span class="o">.</span><span class="n">stderr</span><span class="o">.</span><span class="n">text</span>
+    <span class="n">stderr</span> <span class="ow">and</span> <span class="k">print</span><span class="p">(</span><span class="n">stderr</span><span class="p">)</span>
     <span class="k">print</span><span class="p">(</span><span class="s">&#39;--&#39;</span><span class="p">)</span>
 
     <span class="n">proc</span> <span class="o">=</span> <span class="n">dig_all</span><span class="p">(</span><span class="n">domain</span><span class="p">)</span>
     <span class="n">returncode</span> <span class="o">+=</span> <span class="n">proc</span><span class="o">.</span><span class="n">returncode</span>
     <span class="k">print</span><span class="p">(</span><span class="n">proc</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
     <span class="k">print</span><span class="p">(</span><span class="s">&#39;-&#39;</span><span class="p">)</span>
-    <span class="n">stderr</span> <span class="o">=</span> <span class="n">proc</span><span class="o">.</span><span class="n">stderr</span><span class="o">.</span><span class="n">text</span><span class="p">;</span> <span class="n">stderr</span> <span class="ow">and</span> <span class="k">print</span><span class="p">(</span><span class="n">stderr</span><span class="p">)</span>
+    <span class="n">stderr</span> <span class="o">=</span> <span class="n">proc</span><span class="o">.</span><span class="n">stderr</span><span class="o">.</span><span class="n">text</span>
+    <span class="n">stderr</span> <span class="ow">and</span> <span class="k">print</span><span class="p">(</span><span class="n">stderr</span><span class="p">)</span>
     <span class="k">print</span><span class="p">(</span><span class="s">&#39;--&#39;</span><span class="p">)</span>
 
     <span class="n">proc</span> <span class="o">=</span> <span class="n">dig_ns</span><span class="p">(</span><span class="n">domain</span><span class="p">)</span>
     <span class="n">returncode</span> <span class="o">+=</span> <span class="n">proc</span><span class="o">.</span><span class="n">returncode</span>
     <span class="k">print</span><span class="p">(</span><span class="n">proc</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
     <span class="k">print</span><span class="p">(</span><span class="s">&#39;-&#39;</span><span class="p">)</span>
-    <span class="n">stderr</span> <span class="o">=</span> <span class="n">proc</span><span class="o">.</span><span class="n">stderr</span><span class="o">.</span><span class="n">text</span><span class="p">;</span> <span class="n">stderr</span> <span class="ow">and</span> <span class="k">print</span><span class="p">(</span><span class="n">stderr</span><span class="p">)</span>
+    <span class="n">stderr</span> <span class="o">=</span> <span class="n">proc</span><span class="o">.</span><span class="n">stderr</span><span class="o">.</span><span class="n">text</span>
+    <span class="n">stderr</span> <span class="ow">and</span> <span class="k">print</span><span class="p">(</span><span class="n">stderr</span><span class="p">)</span>
     <span class="k">print</span><span class="p">(</span><span class="s">&#39;--&#39;</span><span class="p">)</span>
 
     <span class="n">proc</span> <span class="o">=</span> <span class="n">dig_mx</span><span class="p">(</span><span class="n">domain</span><span class="p">)</span>
     <span class="n">returncode</span> <span class="o">+=</span> <span class="n">proc</span><span class="o">.</span><span class="n">returncode</span>
     <span class="k">print</span><span class="p">(</span><span class="n">proc</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
     <span class="k">print</span><span class="p">(</span><span class="s">&#39;-&#39;</span><span class="p">)</span>
-    <span class="n">stderr</span> <span class="o">=</span> <span class="n">proc</span><span class="o">.</span><span class="n">stderr</span><span class="o">.</span><span class="n">text</span><span class="p">;</span> <span class="n">stderr</span> <span class="ow">and</span> <span class="k">print</span><span class="p">(</span><span class="n">stderr</span><span class="p">)</span>
+    <span class="n">stderr</span> <span class="o">=</span> <span class="n">proc</span><span class="o">.</span><span class="n">stderr</span><span class="o">.</span><span class="n">text</span>
+    <span class="n">stderr</span> <span class="ow">and</span> <span class="k">print</span><span class="p">(</span><span class="n">stderr</span><span class="p">)</span>
     <span class="k">print</span><span class="p">(</span><span class="s">&#39;--&#39;</span><span class="p">)</span>
 
     <span class="n">proc</span> <span class="o">=</span> <span class="n">dig_txt</span><span class="p">(</span><span class="n">domain</span><span class="p">)</span>
     <span class="n">returncode</span> <span class="o">+=</span> <span class="n">proc</span><span class="o">.</span><span class="n">returncode</span>
     <span class="k">print</span><span class="p">(</span><span class="n">proc</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
     <span class="k">print</span><span class="p">(</span><span class="s">&#39;-&#39;</span><span class="p">)</span>
-    <span class="n">stderr</span> <span class="o">=</span> <span class="n">proc</span><span class="o">.</span><span class="n">stderr</span><span class="o">.</span><span class="n">text</span><span class="p">;</span> <span class="n">stderr</span> <span class="ow">and</span> <span class="k">print</span><span class="p">(</span><span class="n">stderr</span><span class="p">)</span>
+    <span class="n">stderr</span> <span class="o">=</span> <span class="n">proc</span><span class="o">.</span><span class="n">stderr</span><span class="o">.</span><span class="n">text</span>
+    <span class="n">stderr</span> <span class="ow">and</span> <span class="k">print</span><span class="p">(</span><span class="n">stderr</span><span class="p">)</span>
     <span class="k">print</span><span class="p">(</span><span class="s">&#39;--&#39;</span><span class="p">)</span>
 
-    <span class="c">## See: dig_txt</span>
+    <span class="c"># See: dig_txt</span>
     <span class="c">#proc = dig_spf(domain)</span>
     <span class="c">#returncode += proc.returncode</span>
-    <span class="c">#print(proc.stdout.text)</span>
-    <span class="c">#print(&#39;-&#39;)</span>
+    <span class="c"># print(proc.stdout.text)</span>
+    <span class="c"># print(&#39;-&#39;)</span>
     <span class="c">#stderr = proc.stderr.text; stderr and print(stderr)</span>
-    <span class="c">#print(&#39;--&#39;)</span>
+    <span class="c"># print(&#39;--&#39;)</span>
 
     <span class="n">dmarc_domain</span> <span class="o">=</span> <span class="s">&quot;_dmarc.&quot;</span> <span class="o">+</span> <span class="n">domain</span>
     <span class="n">proc</span> <span class="o">=</span> <span class="n">dig_txt</span><span class="p">(</span><span class="n">dmarc_domain</span><span class="p">)</span>
     <span class="n">returncode</span> <span class="o">+=</span> <span class="n">proc</span><span class="o">.</span><span class="n">returncode</span>
     <span class="k">print</span><span class="p">(</span><span class="n">proc</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
     <span class="k">print</span><span class="p">(</span><span class="s">&#39;-&#39;</span><span class="p">)</span>
-    <span class="n">stderr</span> <span class="o">=</span> <span class="n">proc</span><span class="o">.</span><span class="n">stderr</span><span class="o">.</span><span class="n">text</span><span class="p">;</span> <span class="n">stderr</span> <span class="ow">and</span> <span class="k">print</span><span class="p">(</span><span class="n">stderr</span><span class="p">)</span>
+    <span class="n">stderr</span> <span class="o">=</span> <span class="n">proc</span><span class="o">.</span><span class="n">stderr</span><span class="o">.</span><span class="n">text</span>
+    <span class="n">stderr</span> <span class="ow">and</span> <span class="k">print</span><span class="p">(</span><span class="n">stderr</span><span class="p">)</span>
     <span class="k">print</span><span class="p">(</span><span class="s">&#39;--&#39;</span><span class="p">)</span>
+
+    <span class="c"># Would need to specify a DKIM prefix (DKIM s= selector)</span>
+    <span class="c">#dkim_record_name = &quot;%s._domainkey.%s&quot; % (dkim_prefix, domain)</span>
+    <span class="c">#proc = dig_txt(dkim_record_name)</span>
+    <span class="c">#returncode += proc.returncode</span>
+    <span class="c"># print(proc.stdout.text)</span>
+    <span class="c"># print(&#39;-&#39;)</span>
+    <span class="c">#stderr = proc.stderr.text; stderr and print(stderr)</span>
+    <span class="c"># print(&#39;--&#39;)</span>
 
     <span class="n">proc</span> <span class="o">=</span> <span class="n">dig_dnskey</span><span class="p">(</span><span class="n">domain</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&quot;.&quot;</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>  <span class="c"># TODO: actual zone</span>
     <span class="n">returncode</span> <span class="o">+=</span> <span class="n">proc</span><span class="o">.</span><span class="n">returncode</span>
     <span class="k">print</span><span class="p">(</span><span class="n">proc</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
     <span class="k">print</span><span class="p">(</span><span class="s">&#39;-&#39;</span><span class="p">)</span>
-    <span class="n">stderr</span> <span class="o">=</span> <span class="n">proc</span><span class="o">.</span><span class="n">stderr</span><span class="o">.</span><span class="n">text</span><span class="p">;</span> <span class="n">stderr</span> <span class="ow">and</span> <span class="k">print</span><span class="p">(</span><span class="n">stderr</span><span class="p">)</span>
+    <span class="n">stderr</span> <span class="o">=</span> <span class="n">proc</span><span class="o">.</span><span class="n">stderr</span><span class="o">.</span><span class="n">text</span>
+    <span class="n">stderr</span> <span class="ow">and</span> <span class="k">print</span><span class="p">(</span><span class="n">stderr</span><span class="p">)</span>
     <span class="k">print</span><span class="p">(</span><span class="s">&#39;--&#39;</span><span class="p">)</span>
 
     <span class="k">return</span> <span class="n">returncode</span>
@@ -400,12 +524,16 @@
 
 
 <span class="c">#import unittest</span>
-<span class="c">#class Test_domain_tools(unittest.TestCase):</span>
+<span class="c"># class Test_domain_tools(unittest.TestCase):</span>
 <span class="c">#    def test_domain_tools(self):</span>
 <span class="c">#        pass</span>
 
 </div>
 <div class="viewcode-block" id="main"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.domain.main">[docs]</a><span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    wrdrd.tools.domain main method</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="kn">import</span> <span class="nn">logging</span>
     <span class="kn">import</span> <span class="nn">optparse</span>
     <span class="kn">import</span> <span class="nn">sys</span>
 
@@ -415,19 +543,19 @@
     <span class="p">)</span>
 
     <span class="n">prs</span><span class="o">.</span><span class="n">add_option</span><span class="p">(</span><span class="s">&#39;-g&#39;</span><span class="p">,</span> <span class="s">&#39;--check-google-domain&#39;</span><span class="p">,</span>
-                    <span class="n">dest</span><span class="o">=</span><span class="s">&#39;check_google_domain&#39;</span><span class="p">,</span>
-                    <span class="n">action</span><span class="o">=</span><span class="s">&#39;store_true&#39;</span><span class="p">,</span>
-                    <span class="n">help</span><span class="o">=</span><span class="s">&quot;Check Google MX, SPF, DMARC records&quot;</span><span class="p">)</span>
+                   <span class="n">dest</span><span class="o">=</span><span class="s">&#39;check_google_domain&#39;</span><span class="p">,</span>
+                   <span class="n">action</span><span class="o">=</span><span class="s">&#39;store_true&#39;</span><span class="p">,</span>
+                   <span class="n">help</span><span class="o">=</span><span class="s">&quot;Check Google MX, SPF, DMARC records&quot;</span><span class="p">)</span>
 
     <span class="n">prs</span><span class="o">.</span><span class="n">add_option</span><span class="p">(</span><span class="s">&#39;-v&#39;</span><span class="p">,</span> <span class="s">&#39;--verbose&#39;</span><span class="p">,</span>
-                    <span class="n">dest</span><span class="o">=</span><span class="s">&#39;verbose&#39;</span><span class="p">,</span>
-                    <span class="n">action</span><span class="o">=</span><span class="s">&#39;store_true&#39;</span><span class="p">,)</span>
+                   <span class="n">dest</span><span class="o">=</span><span class="s">&#39;verbose&#39;</span><span class="p">,</span>
+                   <span class="n">action</span><span class="o">=</span><span class="s">&#39;store_true&#39;</span><span class="p">,)</span>
     <span class="n">prs</span><span class="o">.</span><span class="n">add_option</span><span class="p">(</span><span class="s">&#39;-q&#39;</span><span class="p">,</span> <span class="s">&#39;--quiet&#39;</span><span class="p">,</span>
-                    <span class="n">dest</span><span class="o">=</span><span class="s">&#39;quiet&#39;</span><span class="p">,</span>
-                    <span class="n">action</span><span class="o">=</span><span class="s">&#39;store_true&#39;</span><span class="p">,)</span>
+                   <span class="n">dest</span><span class="o">=</span><span class="s">&#39;quiet&#39;</span><span class="p">,</span>
+                   <span class="n">action</span><span class="o">=</span><span class="s">&#39;store_true&#39;</span><span class="p">,)</span>
     <span class="n">prs</span><span class="o">.</span><span class="n">add_option</span><span class="p">(</span><span class="s">&#39;-t&#39;</span><span class="p">,</span> <span class="s">&#39;--test&#39;</span><span class="p">,</span>
-                    <span class="n">dest</span><span class="o">=</span><span class="s">&#39;run_tests&#39;</span><span class="p">,</span>
-                    <span class="n">action</span><span class="o">=</span><span class="s">&#39;store_true&#39;</span><span class="p">,)</span>
+                   <span class="n">dest</span><span class="o">=</span><span class="s">&#39;run_tests&#39;</span><span class="p">,</span>
+                   <span class="n">action</span><span class="o">=</span><span class="s">&#39;store_true&#39;</span><span class="p">,)</span>
 
     <span class="n">args</span> <span class="o">=</span> <span class="n">args</span> <span class="ow">and</span> <span class="nb">list</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="ow">or</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
     <span class="p">(</span><span class="n">opts</span><span class="p">,</span> <span class="n">args</span><span class="p">)</span> <span class="o">=</span> <span class="n">prs</span><span class="o">.</span><span class="n">parse_args</span><span class="p">()</span>
