@@ -228,19 +228,22 @@
     <span class="n">cmd</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">shell_format</span><span class="p">(</span><span class="s">&quot;dig {0} mx +short&quot;</span><span class="p">,</span> <span class="n">domain</span><span class="p">)</span>
     <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s">&#39;cmd&#39;</span><span class="p">,</span> <span class="n">cmd</span><span class="o">=</span><span class="n">cmd</span><span class="p">)</span>
     <span class="n">output</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">capture_both</span><span class="p">(</span><span class="n">cmd</span><span class="p">)</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">rstrip</span><span class="p">()</span>
-    <span class="n">log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
-    <span class="n">result</span> <span class="o">=</span> <span class="bp">None</span>
-    <span class="n">check_domain</span> <span class="o">=</span> <span class="s">&quot;aspmx.l.google.com.&quot;</span>
+    <span class="n">log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s">&#39;MX&#39;</span><span class="p">,</span> <span class="n">record</span><span class="o">=</span><span class="n">output</span><span class="p">)</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">check_domain1</span> <span class="o">=</span> <span class="s">&quot;aspmx.l.google.com.&quot;</span>
+    <span class="n">check_domain2</span> <span class="o">=</span> <span class="s">&quot;googlemail.com.&quot;</span>
     <span class="n">lines</span> <span class="o">=</span> <span class="n">output</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">lines</span><span class="p">:</span>
-        <span class="n">log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s">&quot;No MX records found for </span><span class="si">%r</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">domain</span><span class="p">)</span>
-        <span class="n">result</span> <span class="o">=</span> <span class="bp">False</span>
+        <span class="n">log</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s">&#39;err&#39;</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="s">&quot;No MX records found for </span><span class="si">%r</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">domain</span><span class="p">)</span>
+        <span class="n">result</span> <span class="o">+=</span> <span class="mi">1</span>
     <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
-        <span class="k">if</span> <span class="ow">not</span> <span class="n">l</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="n">check_domain</span><span class="p">):</span>
-            <span class="n">result</span> <span class="o">=</span> <span class="bp">False</span>
-            <span class="n">log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s">&quot;</span><span class="si">%r</span><span class="s"> does not end with </span><span class="si">%r</span><span class="s">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">check_domain</span><span class="p">))</span>
+        <span class="n">l</span> <span class="o">=</span> <span class="n">l</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="n">l</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="n">check_domain1</span><span class="p">)</span> <span class="ow">or</span> <span class="n">l</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="n">check_domain2</span><span class="p">)):</span>
+            <span class="n">result</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="n">log</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s">&#39;err&#39;</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="s">&quot;</span><span class="si">%r</span><span class="s"> does not end with </span><span class="si">%r</span><span class="s"> or </span><span class="si">%r</span><span class="s">&quot;</span> <span class="o">%</span>
+                      <span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">check_domain1</span><span class="p">,</span> <span class="n">check_domain2</span><span class="p">))</span>
     <span class="k">if</span> <span class="n">result</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
-        <span class="n">result</span> <span class="o">=</span> <span class="bp">True</span>
+        <span class="n">result</span> <span class="o">+=</span> <span class="mi">1</span>
     <span class="k">return</span> <span class="n">result</span>
 
 </div>
@@ -249,17 +252,37 @@
 <span class="sd">    https://support.google.com/a/answer/178723?hl=en</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">cmd</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">shell_format</span><span class="p">(</span><span class="s">&quot;dig {0} txt +short&quot;</span><span class="p">,</span> <span class="n">domain</span><span class="p">)</span>
-    <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s">&#39;cmd&#39;</span><span class="p">,</span> <span class="n">cmd</span><span class="o">=</span><span class="n">cmd</span><span class="p">)</span>
+    <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s">&#39;cmd&#39;</span><span class="p">,</span> <span class="n">op</span><span class="o">=</span><span class="s">&#39;check_google_spf&#39;</span><span class="p">,</span> <span class="n">cmd</span><span class="o">=</span><span class="n">cmd</span><span class="p">)</span>
     <span class="n">proc</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">capture_both</span><span class="p">(</span><span class="n">cmd</span><span class="p">)</span>
-    <span class="n">output</span> <span class="o">=</span> <span class="n">proc</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">rstrip</span><span class="p">()</span>
-    <span class="n">log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
-    <span class="n">expected</span> <span class="o">=</span> <span class="s">u&quot;v=spf1 include:_spf.google.com ~all&quot;</span>
-    <span class="k">if</span> <span class="n">output</span> <span class="o">==</span> <span class="n">expected</span><span class="p">:</span>
-        <span class="k">return</span> <span class="bp">True</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="n">proc</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">rstrip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">output</span><span class="p">:</span>
+        <span class="n">log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s">&#39;TXT&#39;</span><span class="p">,</span> <span class="n">record</span><span class="o">=</span><span class="n">line</span><span class="p">)</span>
+        <span class="n">expected</span> <span class="o">=</span> <span class="s">u&quot;</span><span class="se">\&quot;</span><span class="s">v=spf1 include:_spf.google.com ~all</span><span class="se">\&quot;</span><span class="s">&quot;</span>
+        <span class="k">if</span> <span class="n">line</span> <span class="o">==</span> <span class="n">expected</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mi">0</span>
 
     <span class="n">errmsg</span> <span class="o">=</span> <span class="s">&quot;</span><span class="si">%r</span><span class="s"> != </span><span class="si">%r</span><span class="s">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">output</span><span class="p">,</span> <span class="n">expected</span><span class="p">)</span>
-    <span class="n">log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="n">errmsg</span><span class="p">)</span>
-    <span class="k">return</span> <span class="bp">False</span>
+    <span class="n">log</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s">&#39;err&#39;</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="n">errmsg</span><span class="p">)</span>
+    <span class="k">return</span> <span class="mi">1</span>
+
+</div>
+<div class="viewcode-block" id="check_google_dmarc"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.domain.check_google_dmarc">[docs]</a><span class="k">def</span> <span class="nf">check_google_dmarc</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    https://support.google.com/a/answer/178723?hl=en</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">cmd</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">shell_format</span><span class="p">(</span><span class="s">&quot;dig {0} txt +short&quot;</span><span class="p">,</span> <span class="n">domain</span><span class="p">)</span>
+    <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s">&#39;cmd&#39;</span><span class="p">,</span> <span class="n">op</span><span class="o">=</span><span class="s">&#39;check_google_dmarc&#39;</span><span class="p">,</span> <span class="n">cmd</span><span class="o">=</span><span class="n">cmd</span><span class="p">)</span>
+    <span class="n">proc</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">capture_both</span><span class="p">(</span><span class="n">cmd</span><span class="p">)</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="n">proc</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">rstrip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">output</span><span class="p">:</span>
+        <span class="n">log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s">&#39;TXT&#39;</span><span class="p">,</span> <span class="n">record</span><span class="o">=</span><span class="n">line</span><span class="p">)</span>
+        <span class="n">expected</span> <span class="o">=</span> <span class="s">u&quot;</span><span class="se">\&quot;</span><span class="s">v=DMARC1&quot;</span>  <span class="c"># ... &quot;\; p=none\; rua=mailto:&quot;</span>
+        <span class="k">if</span> <span class="n">line</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="n">expected</span><span class="p">):</span>
+            <span class="k">return</span> <span class="mi">0</span>
+
+    <span class="n">errmsg</span> <span class="o">=</span> <span class="s">&quot;</span><span class="si">%r</span><span class="s"> != </span><span class="si">%r</span><span class="s">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">output</span><span class="p">,</span> <span class="n">expected</span><span class="p">)</span>
+    <span class="n">log</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s">&#39;err&#39;</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="n">errmsg</span><span class="p">)</span>
+    <span class="k">return</span> <span class="mi">1</span>
 
 </div>
 <div class="viewcode-block" id="domain_tools"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.domain.domain_tools">[docs]</a><span class="k">def</span> <span class="nf">domain_tools</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
@@ -322,7 +345,8 @@
 <div class="viewcode-block" id="google_domain_tools"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools.html#wrdrd.tools.domain.google_domain_tools">[docs]</a><span class="k">def</span> <span class="nf">google_domain_tools</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
     <span class="n">mx</span> <span class="o">=</span> <span class="n">check_google_mx</span><span class="p">(</span><span class="n">domain</span><span class="p">)</span>
     <span class="n">spf</span> <span class="o">=</span> <span class="n">check_google_spf</span><span class="p">(</span><span class="n">domain</span><span class="p">)</span>
-    <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="ow">not</span> <span class="p">(</span><span class="n">mx</span> <span class="ow">and</span> <span class="n">spf</span><span class="p">))</span>
+    <span class="n">dmarc</span> <span class="o">=</span> <span class="n">check_google_dmarc</span><span class="p">(</span><span class="n">domain</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">mx</span> <span class="o">+</span> <span class="n">spf</span> <span class="o">+</span> <span class="n">dmarc</span>
 
 
 <span class="c">#import unittest</span>
