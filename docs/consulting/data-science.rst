@@ -313,6 +313,8 @@ https://en.wikipedia.org/wiki/Validated_learning
 
 https://en.wikipedia.org/wiki/Organizational_learning
 
+See: :ref:`Knowledge Engineering <knowledge-engineering>`
+
 
 .. index:: Data Mining
 .. _data-mining:   
