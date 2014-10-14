@@ -345,6 +345,7 @@ https://en.wikipedia.org/wiki/Online_machine_learning
 
 Tools
 -------
+https://en.wikipedia.org/wiki/Scientific_workflow_system
 
 
 Techniques
@@ -354,10 +355,17 @@ Automated Workflows
 ++++++++++++++++++++
 Standard, Automated Workflows
 
+* :ref:`Scientific Method <scientific-method>`
+* https://en.wikipedia.org/wiki/Repeatability
 * https://en.wikipedia.org/wiki/Reproducibility
 * https://en.wikipedia.org/wiki/Occam%27s_razor
 
-* Is there confirmation bias in starting with e.g. simple regression analysis?
+.. pull-quote::
+
+   Q: Is there confirmation bias in starting with
+   e.g. simple regression analysis?
+
+   Q: Which factors did we know we were capturing?
 
 
 .. index:: Data Visualization
