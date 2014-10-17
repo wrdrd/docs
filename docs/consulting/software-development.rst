@@ -199,7 +199,7 @@ https://en.wikipedia.org/wiki/Distributed_revision_control
 Branching
 ~~~~~~~~~~~
 * https://datasift.github.io/gitflow/IntroducingGitFlow.html
-
+* http://www.infoq.com/articles/agile-version-control
 
 .. index:: Test Automation
 .. _test-automation:
