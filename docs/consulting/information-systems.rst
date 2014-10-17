@@ -323,7 +323,7 @@ See: :ref:`CRM <crm>`
 .. _crm:
 
 Customer Relationship Management (CRM)
-+++++++++++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 https://en.wikipedia.org/wiki/Customer_relationship_management
 
 * https://en.wikipedia.org/wiki/Contact_list
