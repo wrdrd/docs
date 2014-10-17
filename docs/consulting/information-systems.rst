@@ -314,7 +314,9 @@ Sales
 * https://en.wikipedia.org/wiki/Sales_process_engineering
 * https://en.wikipedia.org/wiki/Group_information_management  
 * https://en.wikipedia.org/wiki/Personal_information_management
-* https://en.wikipedia.org/wiki/Sales_pipeline  
+* https://en.wikipedia.org/wiki/Sales_pipeline
+* https://en.wikipedia.org/wiki/Sales_intelligence  
+* https://en.wikipedia.org/wiki/Sales_force_management_system
 
 See: :ref:`CRM <crm>`
 
@@ -325,10 +327,14 @@ Customer Relationship Management (CRM)
 https://en.wikipedia.org/wiki/Customer_relationship_management
 
 * https://en.wikipedia.org/wiki/Contact_list
-* https://en.wikipedia.org/wiki/Address_book  
+* https://en.wikipedia.org/wiki/Address_book
+* https://en.wikipedia.org/wiki/Contact_manager  
 * https://en.wikipedia.org/wiki/Opt-in_email
 * https://en.wikipedia.org/wiki/Mailing_list
 * https://en.wikipedia.org/wiki/Customer_service#See_also
+* https://en.wikipedia.org/wiki/Comparison_of_CRM_systems  
+* https://en.wikipedia.org/wiki/Customer_intelligence
+* https://en.wikipedia.org/wiki/Customer_experience
 
 
 Business Intelligence
