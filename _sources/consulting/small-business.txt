@@ -120,7 +120,7 @@ https://en.wikipedia.org/wiki/Tuckman%27s_stages_of_group_development
 
 Interactions: Cold, Warm, and Hot
 
-See :ref:`Customer Relationship Management (CRM) <crm>`
+See: :ref:`Customer Relationship Management (CRM) <crm>`
 
 
 .. index:: The Four Ps
@@ -351,7 +351,7 @@ Photography
 
 Layout Graphics
 ````````````````
-See :ref:`Web Layout <web-layout>`
+See: :ref:`Web Layout <web-layout>`
 
 # TODO:
 
