@@ -158,7 +158,7 @@ https://en.wikipedia.org/wiki/Business_continuity_planning
 
 https://en.wikipedia.org/wiki/Disaster_recovery
 
-See `Information Security`_ (`Availability`_)
+See: `Information Security`_ (`Availability`_)
 
 
 Backups
