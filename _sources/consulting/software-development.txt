@@ -196,12 +196,15 @@ https://en.wikipedia.org/wiki/Distributed_revision_control
 
 `<https://en.wikipedia.org/wiki/Bisection_(software_engineering)>`_
 
-Branching
-~~~~~~~~~~~
+Branching & Merging
+~~~~~~~~~~~~~~~~~~~~~
 `<https://en.wikipedia.org/wiki/Branching_(revision_control)>`_
 
 * https://datasift.github.io/gitflow/IntroducingGitFlow.html
 * http://www.infoq.com/articles/agile-version-control
+
+`<https://en.wikipedia.org/wiki/Merge_(revision_control)>`_
+
 
 .. index:: Test Automation
 .. _test-automation:
