@@ -333,6 +333,7 @@ https://en.wikipedia.org/wiki/Business_intelligence
 
 See: :ref:`Data Science <data-science>`
 
+See: :ref:`Knowledge Engineering <knowledge-engineering>`
 
 Strategy
 ++++++++
