@@ -311,9 +311,12 @@ https://en.wikipedia.org/wiki/Apple_Pay
 
 Sales
 ~~~~~~~
-* Central contacts database
-* Sales pipeline
+* https://en.wikipedia.org/wiki/Sales_process_engineering
+* https://en.wikipedia.org/wiki/Group_information_management  
+* https://en.wikipedia.org/wiki/Personal_information_management
+* https://en.wikipedia.org/wiki/Sales_pipeline  
 
+See: :ref:`CRM <crm>`
 
 .. _crm:
 
@@ -321,10 +324,11 @@ Customer Relationship Management (CRM)
 +++++++++++++++++++++++++++++++++++++++
 https://en.wikipedia.org/wiki/Customer_relationship_management
 
-  * 1. opt-in e-mailing list (mailchimp, ...)
-  * 2. contact information "rolodex"
-  * 3. "sales pipeline"
-
+* https://en.wikipedia.org/wiki/Contact_list
+* https://en.wikipedia.org/wiki/Address_book  
+* https://en.wikipedia.org/wiki/Opt-in_email
+* https://en.wikipedia.org/wiki/Mailing_list
+* https://en.wikipedia.org/wiki/Customer_service#See_also
 
 
 Business Intelligence
