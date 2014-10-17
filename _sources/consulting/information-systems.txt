@@ -331,6 +331,8 @@ Business Intelligence
 ~~~~~~~~~~~~~~~~~~~~~~
 https://en.wikipedia.org/wiki/Business_intelligence
 
+See: :ref:`Data Science <data-science>`
+
 
 Strategy
 ++++++++
