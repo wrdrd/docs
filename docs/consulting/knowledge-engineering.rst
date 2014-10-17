@@ -256,6 +256,7 @@ Object Relational Mapping
 +++++++++++++++++++++++++++
 https://en.wikipedia.org/wiki/Object-relational_mapping
 
+* https://en.wikipedia.org/wiki/Data_mapper_pattern
 * https://en.wikipedia.org/wiki/Active_record_pattern
 
 https://en.wikipedia.org/wiki/Object-relational_impedance_mismatch
