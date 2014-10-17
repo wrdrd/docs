@@ -4,7 +4,7 @@ WRD R&D Documentation
 =======================
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 4
 
    consulting/readme
    consulting/small-business
@@ -14,6 +14,7 @@ WRD R&D Documentation
    consulting/data-science
    consulting/knowledge-engineering
    consulting/entrepreneurship
+   consulting/education-technology
    consulting/team-building
    consulting/collaboration-plan
    consulting/authors
