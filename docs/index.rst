@@ -4,7 +4,7 @@ WRD R&D Documentation
 =======================
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 4
 
    consulting/readme
    consulting/small-business
