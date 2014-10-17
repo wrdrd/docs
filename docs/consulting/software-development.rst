@@ -198,6 +198,8 @@ https://en.wikipedia.org/wiki/Distributed_revision_control
 
 Branching
 ~~~~~~~~~~~
+`<https://en.wikipedia.org/wiki/Branching_(revision_control)>`_
+
 * https://datasift.github.io/gitflow/IntroducingGitFlow.html
 * http://www.infoq.com/articles/agile-version-control
 
