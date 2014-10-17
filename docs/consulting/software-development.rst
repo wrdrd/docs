@@ -196,6 +196,10 @@ https://en.wikipedia.org/wiki/Distributed_revision_control
 
 `<https://en.wikipedia.org/wiki/Bisection_(software_engineering)>`_
 
+Branching
+~~~~~~~~~~~
+* https://datasift.github.io/gitflow/IntroducingGitFlow.html
+
 
 .. index:: Test Automation
 .. _test-automation:
