@@ -15,4 +15,6 @@ https://en.wikipedia.org/wiki/Organization_development
 
 https://en.wikipedia.org/wiki/Industrial_and_organizational_psychology
 
+https://en.wikipedia.org/wiki/Tuckman%27s_stages_of_group_development
+
 https://en.wikipedia.org/wiki/Kaizen
