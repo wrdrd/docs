@@ -6,16 +6,112 @@ Data Science
 =============
 https://en.wikipedia.org/wiki/Data_science
 
-::
-
-    # Lead -> Gold
-    Data -> Information -> Knowledge -> Wisdom
-
 | "The Open Source Data Science Masters"
 | http://datasciencemasters.org/
 |
 | "Ten Simple Rules for Reproducible Computational Research"
   http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1003285
+
+
+Data, Information, Knowledge, and Wisdom
+------------------------------------------
+::
+
+    # Lead -> Gold
+    Data -> Information + Knowledge -> Wisdom
+
+
+Smoothies
++++++++++++
+
+**Data**
+
+Transactions (inputs and outputs)
+
+Revenue::
+
+   (Monday)
+   2014/01/01 1200   $80
+   2014/01/01 1210   $100
+   2014/01/01 1500   $20
+
+Expenses::
+
+   (Monday)
+   2014/01/01 wages     $8/hr * 8hrs * 4 people = $256
+   2014/01/01 utilities $100
+
+
+**Information**
+
+Aggregations, Tendencies
+
+Revenue (gross)::
+
+   (Monday)
+   2014/01/01  total: $200
+
+Expenses::
+
+   (Monday)
+   2014/01/01  total: $356
+
+Net::
+
+   (Monday)
+   2014/01/01  net:  -$156
+
+   #
+   2013/01/01  net:  -$200
+
+
+On Mondays, we usually (on (simple) average) make about $500.
+
+
+**Knowledge**
+
+Positive net revenue is good.
+
+One customer is worth the world to us.
+
+
+**Wisdom**
+
+We could save money by not being open on New Years Day,
+but, our loyal customers would not be happy about that.
+
+
+Body Temperature
+++++++++++++++++++
+
+**Data** ::
+
+   time, body temp, outdoor temp, indoors/outdoors
+   time, exercise type, intensity, duration
+
+
+**Information**
+
+Daily temperature variance is about n degrees
+
+
+**Knowledge**
+
+Walking outside when it is warm increases body temperature
+
+Walking outside when it is cold decreases body temperature
+
+Exercise increases body temperature
+
+
+**Wisdom**
+
+If it's 1745, and body temperature is n degrees above baseline,
+I'm probably walking outside and it is hot out.
+
+
+
+
 
 .. index:: Data Science Theory
 .. _data-science-theory:   
