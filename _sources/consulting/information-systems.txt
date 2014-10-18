@@ -70,7 +70,7 @@ Information Systems Glossary
 
    Web API
       An API for interacting with local (browser) or remote
-      (:ref:`HTTP <http>` ) components.
+      (:ref:`HTTP <http>`) components.
 
       https://en.wikipedia.org/wiki/Web_API
 
