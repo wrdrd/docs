@@ -197,6 +197,9 @@ Web Analytics
 Branding
 ~~~~~~~~~~
 
+.. index:: Concept
+.. _concept:
+
 Concept
 ++++++++
 
@@ -212,6 +215,8 @@ Concept
 
   * How do you want them to feel?
 
+
+.. index:: Copy
 .. index:: Copy (marketing)
 .. _marketing-copy:
 
@@ -220,6 +225,10 @@ Copy
 `<https://en.wikipedia.org/wiki/Copy_(written)>`_
 
 https://en.wikipedia.org/wiki/Copywriting
+
+https://en.wikipedia.org/wiki/Copy_editing
+
+https://en.wikipedia.org/wiki/Proofreading
 
 https://en.wikipedia.org/wiki/Copy_testing
 

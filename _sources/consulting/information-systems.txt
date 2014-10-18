@@ -1,10 +1,89 @@
 
+.. index:: Information Systems
+.. _information-systems:
+
 Information Systems
 ---------------------
 https://en.wikipedia.org/wiki/Information_systems#Types_of_information_systems
 
 https://en.wikipedia.org/wiki/List_of_collaborative_software
 
+
+.. index:: Information Systems Glossary
+.. _information-systems-glossary:
+
+Information Systems Glossary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. glossary::
+
+   System
+      An interconnected graph of nodes linked with edges through which
+      flow produces predictable and unpredictable behaviors.
+
+      https://en.wikipedia.org/wiki/System
+
+   Information System
+      A system with information inputs and outputs
+      designed to solve a problem.
+
+      https://en.wikipedia.org/wiki/Information_system
+
+   Information Technology
+      Hardware and software information systems for solving business problems.
+
+   Application
+      An application of technology for a particular domain.
+
+   App
+      See :term:`Application`
+
+   Operating System
+      Software for running applications and working with devices.
+
+      https://en.wikipedia.org/wiki/Operating_system
+
+   API
+      Advanced Programming Interface.
+
+      A specification for inputs and outputs provided by a system
+      component.
+
+      https://en.wikipedia.org/wiki/Application_programming_interface
+
+   Operating System API
+      An interface provided by an Operating System.
+
+      Examples:
+
+      * https://en.wikipedia.org/wiki/POSIX
+      * https://en.wikipedia.org/wiki/Windows_API
+
+   Language API
+      An API provided by one or more programming languages through
+      a *standard library* or a third-party component.
+
+      https://en.wikipedia.org/wiki/Application_programming_interface
+
+      https://en.wikipedia.org/wiki/Standard_library
+
+   Web API
+      An API for interacting with local (browser) or remote
+      (:ref:`HTTP <http>` ) components.
+
+      https://en.wikipedia.org/wiki/Web_API
+
+   RESTful API
+      Also REST API. An API that abides by best-practice guidelines
+      for interacting with *resources* through standard :ref:`HTTP`
+      methods like ``GET``, ``POST``, ``PUT``, ``DELETE``
+      (CRUD).
+
+      https://en.wikipedia.org/wiki/Representational_state_transfer
+
+      https://en.wikipedia.org/wiki/Create,_read,_update_and_delete
+
+
+.. _is-criteria:
 
 Criteria
 ~~~~~~~~~
@@ -29,9 +108,14 @@ https://en.wikipedia.org/wiki/Productivity
 
 See: :ref:`Business > ROI <business-roi>`
 
+
 Need / Want
 ++++++++++++
 Communication and collaboration are essential to success.
+
+
+.. index:: Maintainability
+.. _maintainability:
 
 Maintainability
 ++++++++++++++++
@@ -50,6 +134,9 @@ Choosing Components
   how it works?
 * Is there a *non-profit* software foundation behind this component?
 
+
+.. index:: Clouds
+.. _clouds:
 
 Clouds
 ~~~~~~~
@@ -70,9 +157,12 @@ Application layers:
 
 * Application
 * Platform (Database, APIs)
-  * # TODO: define API (OS API, Infrastructure API, Web API, Language API)
 * Infrastructure (Physical and Virtual Servers)
 
+
+.. index:: Software-as-a-Service
+.. index:: SaaS
+.. _SaaS:
 
 Software-as-a-Service
 +++++++++++++++++++++++
@@ -85,6 +175,10 @@ datacenter anywhere.
 https://en.wikipedia.org/wiki/Application_service_provider
 
 
+.. index:: Platform-as-a-Service
+.. index:: PaaS
+.. _PaaS:
+
 Platform-as-a-Service
 ++++++++++++++++++++++
 https://en.wikipedia.org/wiki/Platform_as_a_service
@@ -95,6 +189,10 @@ can be developed and hosted.
 
 Heroku, AppEngine and AppScale are examples of Platforms-as-a-Service.
 
+
+.. index:: Infrastructure-as-a-Service
+.. index:: IaaS
+.. _IaaS:
 
 Infrastructure-as-a-Service
 +++++++++++++++++++++++++++++++++++++
@@ -107,9 +205,12 @@ resources.
 Amazon Web Services (AWS), Rackspace, and Google Compute Engine
 are examples of
 Infrastructure-as-a-Service: they provide servers, networks, and
-redundant storage systems on top of which IT systems can be 
+redundant storage systems on top of which IT systems can be
 developed, tested, and deployed.
 
+
+.. index:: Configuration Management
+.. _configuration-management:
 
 Configuration Management
 ++++++++++++++++++++++++++
@@ -119,6 +220,9 @@ https://en.wikipedia.org/wiki/Software_configuration_management
 
 https://en.wikipedia.org/wiki/Comparison_of_open-source_configuration_management_software
 
+
+.. index:: Information Security
+.. _information-security:
 
 Information Security
 ~~~~~~~~~~~~~~~~~~~~~
@@ -133,15 +237,24 @@ Standards:
 * https://en.wikipedia.org/wiki/Cloud_computing_security
 
 
+.. index:: Confidentiality
+.. _confidentiality:
+
 Confidentiality
 ++++++++++++++++
 https://en.wikipedia.org/wiki/Confidentiality
 
 
+.. index:: Integrity
+.. _integrity:
+
 Integrity
 ++++++++++
 https://en.wikipedia.org/wiki/Data_integrity
 
+
+.. index:: Availability
+.. _availability:
 
 Availability
 +++++++++++++
@@ -149,6 +262,9 @@ https://en.wikipedia.org/wiki/Availability
 
 https://en.wikipedia.org/wiki/Service-level_agreement
 
+
+.. index:: Business Continuity
+.. _business-continuity:
 
 Business Continuity
 ~~~~~~~~~~~~~~~~~~~~
@@ -161,10 +277,16 @@ https://en.wikipedia.org/wiki/Disaster_recovery
 See: `Information Security`_ (`Availability`_)
 
 
+.. index:: Backups
+.. _backups:
+
 Backups
 ++++++++
 https://en.wikipedia.org/wiki/Backup
 
+
+.. index:: Reliability
+.. _reliability:
 
 Reliability
 +++++++++++
@@ -173,11 +295,16 @@ https://en.wikipedia.org/wiki/Reliability_engineering
 `<https://en.wikipedia.org/wiki/Redundancy_(engineering)>`_
 
 
+.. index:: Scenarios
+.. _scenarios:
+
 Scenarios
 +++++++++++
 https://en.wikipedia.org/wiki/Scenario_planning
 
 
+.. index:: Business Systems
+.. _business-systems:
 
 Business Systems
 ~~~~~~~~~~~~~~~~~
@@ -185,6 +312,9 @@ https://en.wikipedia.org/wiki/Online_office_suite
 
 https://en.wikipedia.org/wiki/Comparison_of_office_suites
 
+
+.. index:: Google Apps
+.. _google-apps:
 
 Google Apps
 +++++++++++++
@@ -213,8 +343,11 @@ Google Apps
 * http://google.com/a
 * http://learn.googleapps.com/
 
-* TODO: https://www.google.com/enterprise/marketplace/
+* https://www.google.com/enterprise/marketplace/
 
+.. index:: Handling Money
+.. index:: Transaction Processing
+.. _handling-money:
 
 Handling Money
 ~~~~~~~~~~~~~~~
@@ -222,6 +355,9 @@ https://en.wikipedia.org/wiki/Transaction_processing
 
 https://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard
 
+
+.. index:: Accounting
+.. _accounting:
 
 Accounting
 +++++++++++
@@ -236,6 +372,9 @@ https://en.wikipedia.org/wiki/Financial_statement
 https://en.wikipedia.org/wiki/Business_valuation
 
 
+.. index:: GNUCash
+.. _GNUCash:
+
 GNUCash
 `````````
 http://en.wikipedia.org/wiki/GnuCash
@@ -244,6 +383,9 @@ http://en.wikipedia.org/wiki/GnuCash
 * Personal Accounting
 * Small Business Accounting
 
+
+.. index:: Quicken
+.. _Quicken:
 
 Quicken
 `````````
@@ -254,6 +396,9 @@ https://en.wikipedia.org/wiki/Quicken
 * International Versions
 
 
+.. index:: QuickBookx
+.. _QuickBooks:
+
 QuickBooks
 ````````````
 https://en.wikipedia.org/wiki/QuickBooks
@@ -263,7 +408,10 @@ https://en.wikipedia.org/wiki/QuickBooks
 * http://www.google.com/enterprise/marketplace/search?query=quickbooks
 
 
-Freshbooks
+.. index:: FreshBooks
+.. _freshbooks:
+
+FreshBooks
 ````````````
 https://en.wikipedia.org/wiki/FreshBooks
 
@@ -271,26 +419,59 @@ https://en.wikipedia.org/wiki/FreshBooks
 * Online Invoicing, Accounting & Billing Software
 * Time Tracking
 * Export to QuickBooks
-* http://community.freshbooks.com/addons/  
+* http://community.freshbooks.com/addons/
 
+
+.. index:: Payments
+.. _payments:
 
 Payments
 ++++++++++
 
-Google 
-````````
-http://en.wikipedia.org/wiki/Google_Wallet
 
-http://en.wikipedia.org/wiki/Google_Checkout
+.. index:: Amazon Payments
+.. _amazon-payments:
+
+Amazon Payments
+`````````````````
+https://en.wikipedia.org/wiki/Amazon_Payments
+
+
+.. index:: Apple Pay
+.. _apple-pay:
+
+Apple
+``````
+https://en.wikipedia.org/wiki/Apple_Pay
+
+
+.. index:: Google Wallet
+.. index:: Google Checkout
+.. index:: Google Offers
+.. _google-wallet:
+
+Google Wallet
+``````````````
+https://en.wikipedia.org/wiki/Google_Wallet
+
+https://en.wikipedia.org/wiki/Google_Checkout
 
 * http://www.google.com/wallet/business/payments/
 * http://www.google.com/wallet/business/offers/index.html
 
   * similar to Groupon, LivingSocial
 
+
+.. index:: PayPal
+.. _paypal:
+
 PayPal
 ```````
 https://en.wikipedia.org/wiki/PayPal
+
+
+.. index:: Square
+.. _square:
 
 Square
 ````````
@@ -299,28 +480,24 @@ Square
 * Square Reader (plugs into headphone jack)
 * Square Register (app)
 
-Amazon
-```````
-https://en.wikipedia.org/wiki/Amazon_Payments
 
-Apple
-``````
-https://en.wikipedia.org/wiki/Apple_Pay
-
-
+.. index:: Sales Information Systems
 .. _sales-information-systems:
 
 Sales
 ~~~~~~~
 * https://en.wikipedia.org/wiki/Sales_process_engineering
-* https://en.wikipedia.org/wiki/Group_information_management  
+* https://en.wikipedia.org/wiki/Group_information_management
 * https://en.wikipedia.org/wiki/Personal_information_management
 * https://en.wikipedia.org/wiki/Sales_pipeline
-* https://en.wikipedia.org/wiki/Sales_intelligence  
+* https://en.wikipedia.org/wiki/Sales_intelligence
 * https://en.wikipedia.org/wiki/Sales_force_management_system
 
 See: :ref:`CRM <crm>`
 
+
+.. index:: Customer Relationship Managment
+.. index:: CRM
 .. _crm:
 
 Customer Relationship Management (CRM)
@@ -329,14 +506,18 @@ https://en.wikipedia.org/wiki/Customer_relationship_management
 
 * https://en.wikipedia.org/wiki/Contact_list
 * https://en.wikipedia.org/wiki/Address_book
-* https://en.wikipedia.org/wiki/Contact_manager  
+* https://en.wikipedia.org/wiki/Contact_manager
 * https://en.wikipedia.org/wiki/Opt-in_email
 * https://en.wikipedia.org/wiki/Mailing_list
 * https://en.wikipedia.org/wiki/Customer_service#See_also
-* https://en.wikipedia.org/wiki/Comparison_of_CRM_systems  
+* https://en.wikipedia.org/wiki/Comparison_of_CRM_systems
 * https://en.wikipedia.org/wiki/Customer_intelligence
 * https://en.wikipedia.org/wiki/Customer_experience
 
+
+.. index:: Business Intelligence
+.. index:: BI
+.. _business-intelligence:
 
 Business Intelligence
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -345,9 +526,3 @@ https://en.wikipedia.org/wiki/Business_intelligence
 See: :ref:`Data Science <data-science>`
 
 See: :ref:`Knowledge Engineering <knowledge-engineering>`
-
-Strategy
-++++++++
-https://en.wikipedia.org/wiki/Strategic_planning
-
-
