@@ -30,14 +30,12 @@ Inputs, Outputs
 
 Revenue::
 
-   (Monday)
    2014/01/01 1200   $80
    2014/01/01 1210   $100
    2014/01/01 1500   $20
 
 Expenses::
 
-   (Monday)
    2014/01/01 wages     $256 ($8/hr * 8hrs * 4 people)
    2014/01/01 utilities $100
 
@@ -48,21 +46,16 @@ Aggregations, Tendencies
 
 Revenue (gross)::
 
-   (Monday)
    2014/01/01  total: $200
 
 Expenses::
 
-   (Monday)
    2014/01/01  total: $356
 
 Net::
 
-   (Monday)
-   2014/01/01  net:  -$156
-
-   #
    2013/01/01  net:  -$200
+   2014/01/01  net:  -$156
 
 
 On Mondays, we usually (on (simple) average) make about $500.
@@ -70,9 +63,8 @@ On Mondays, we usually (on (simple) average) make about $500.
 
 **Knowledge**
 
-Positive net revenue is good.
-
-One customer is worth the world to us.
+* Positive net revenue is good.
+* One customer is worth the world to us.
 
 
 **Wisdom**
@@ -97,11 +89,9 @@ Daily temperature variance is about n degrees
 
 **Knowledge**
 
-Walking outside when it is warm increases body temperature
-
-Walking outside when it is cold decreases body temperature
-
-Exercise increases body temperature
+* Walking outside when it is warm increases body temperature
+* Walking outside when it is cold decreases body temperature
+* Exercise increases body temperature
 
 
 **Wisdom**
