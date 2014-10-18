@@ -31,6 +31,8 @@ Information Systems Glossary
    Information Technology
       Hardware and software information systems for solving business problems.
 
+      https://en.wikipedia.org/wiki/Information_technology
+
    Application
       An application of technology for a particular domain.
 
@@ -75,8 +77,7 @@ Information Systems Glossary
    RESTful API
       Also REST API. An API that abides by best-practice guidelines
       for interacting with *resources* through standard :ref:`HTTP`
-      methods like ``GET``, ``POST``, ``PUT``, ``DELETE``
-      (CRUD).
+      methods like ``PUT``/``POST``, ``GET``, ``POST``/``PUT``, ``DELETE``.
 
       https://en.wikipedia.org/wiki/Representational_state_transfer
 
