@@ -496,7 +496,7 @@ Sales
 See: :ref:`CRM <crm>`
 
 
-.. index:: Customer Relationship Managment
+.. index:: Customer Relationship Management
 .. index:: CRM
 .. _crm:
 
