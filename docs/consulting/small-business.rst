@@ -221,6 +221,10 @@ Copy
 
 https://en.wikipedia.org/wiki/Copywriting
 
+https://en.wikipedia.org/wiki/Copy_editing
+
+https://en.wikipedia.org/wiki/Proofreading
+
 https://en.wikipedia.org/wiki/Copy_testing
 
 * Keywords and phrases
