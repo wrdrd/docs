@@ -178,6 +178,8 @@ https://en.wikipedia.org/wiki/Performance_indicator
 
 https://en.wikipedia.org/wiki/Critical_success_factor
 
+See: :ref:`Data Science <data-science>`
+
 
 .. index:: Web Analytics
 .. _web-analytics:   
@@ -215,8 +217,14 @@ Concept
 
 Copy
 +++++
+`<https://en.wikipedia.org/wiki/Copy_(written)>`_
+
+https://en.wikipedia.org/wiki/Copywriting
+
+https://en.wikipedia.org/wiki/Copy_testing
 
 * Keywords and phrases
+* :ref:`Concept <concept>`  
 
 
 .. index:: Graphic Design
@@ -224,6 +232,7 @@ Copy
 
 Graphic Design
 +++++++++++++++
+https://en.wikipedia.org/wiki/Graphic_design
 
 .. index:: Color Scheme
 .. _color-scheme:   
