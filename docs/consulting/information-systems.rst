@@ -308,6 +308,7 @@ Apple
 https://en.wikipedia.org/wiki/Apple_Pay
 
 
+.. _sales-information-systems:
 
 Sales
 ~~~~~~~

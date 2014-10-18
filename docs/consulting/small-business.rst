@@ -120,7 +120,7 @@ https://en.wikipedia.org/wiki/Tuckman%27s_stages_of_group_development
 
 Interactions: Cold, Warm, and Hot
 
-See: :ref:`Customer Relationship Management (CRM) <crm>`
+See: :ref:`Information Systems > Customer Relationship Management (CRM) <crm>`
 
 
 .. index:: The Four Ps
@@ -160,6 +160,10 @@ https://en.wikipedia.org/wiki/Sales
 https://en.wikipedia.org/wiki/Sales_process_engineering
 
 https://en.wikipedia.org/wiki/Profit-based_sales_targets
+
+See: :ref:`Information Systems > Sales <sales-information-systems>`
+
+See: :ref:`Information Systems > CRM <crm>`
 
 
 .. index:: Metrics
@@ -351,7 +355,7 @@ Photography
 
 Layout Graphics
 ````````````````
-See: :ref:`Web Layout <web-layout>`
+See: :ref:`Web Development > Web Design > Web Layout <web-layout>`
 
 # TODO:
 
