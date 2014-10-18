@@ -26,7 +26,7 @@ Smoothies
 
 **Data**
 
-Transactions (inputs and outputs)
+Inputs, Outputs
 
 Revenue::
 
@@ -38,7 +38,7 @@ Revenue::
 Expenses::
 
    (Monday)
-   2014/01/01 wages     $8/hr * 8hrs * 4 people = $256
+   2014/01/01 wages     $256 ($8/hr * 8hrs * 4 people)
    2014/01/01 utilities $100
 
 
