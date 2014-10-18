@@ -3,7 +3,7 @@ Small Business Consulting
 
 
 .. index:: Business
-.. _business:   
+.. _business:
 
 Business
 ----------
@@ -15,7 +15,7 @@ https://en.wikipedia.org/wiki/Enterprise
 
 
 .. index:: Business Books
-.. _business-books:   
+.. _business-books:
 
 Books
 ~~~~~~
@@ -23,12 +23,12 @@ Books
 * http://personalmba.com/best-business-books/
 * https://www.quora.com/What-books-should-entrepreneurs-read
 * https://en.wikipedia.org/wiki/The_Five_Dysfunctions_of_a_Team
-* https://en.wikipedia.org/wiki/Getting_Things_Done  
+* https://en.wikipedia.org/wiki/Getting_Things_Done
 
 
 .. index:: Strategy (Business)
 .. index:: Business Strategy
-.. _business-strategy:   
+.. _business-strategy:
 
 Strategy
 -----------
@@ -50,7 +50,7 @@ https://en.wikipedia.org/wiki/Business_process
 
 
 .. index:: Business Modeling
-.. _business-modeling:   
+.. _business-modeling:
 
 Business Modeling
 --------------------
@@ -66,7 +66,7 @@ https://en.wikipedia.org/wiki/Risk
 
 
 .. index:: ROI
-.. index:: Business ROI   
+.. index:: Business ROI
 .. _business-roi:
 
 ROI
@@ -92,7 +92,7 @@ See: :ref:`Information Systems > ROI <is-roi>`
 
 
 .. index:: Marketing
-.. _marketing:   
+.. _marketing:
 
 Marketing
 ----------
@@ -104,7 +104,7 @@ https://en.wikipedia.org/wiki/Online_marketing
 
 
 .. index:: Business Relationships
-.. _business-relationships:   
+.. _business-relationships:
 
 Relationships
 ~~~~~~~~~~~~~~
@@ -124,7 +124,7 @@ See: :ref:`Information Systems > Customer Relationship Management (CRM) <crm>`
 
 
 .. index:: The Four Ps
-.. _the-four-ps:   
+.. _the-four-ps:
 
 The Four Ps
 ~~~~~~~~~~~~
@@ -151,7 +151,7 @@ Product
 
 
 .. index:: Sales
-.. _sales:   
+.. _sales:
 
 Sales
 ~~~~~~
@@ -168,7 +168,7 @@ See: :ref:`Information Systems > CRM <crm>`
 
 .. index:: Metrics
 .. index:: Business Metrics
-.. _business-metrics:   
+.. _business-metrics:
 
 Metrics
 ~~~~~~~~
@@ -182,7 +182,7 @@ See: :ref:`Data Science <data-science>`
 
 
 .. index:: Web Analytics
-.. _web-analytics:   
+.. _web-analytics:
 
 Web Analytics
 ++++++++++++++
@@ -213,7 +213,7 @@ Concept
   * How do you want them to feel?
 
 .. index:: Copy (marketing)
-.. _marketing-copy:   
+.. _marketing-copy:
 
 Copy
 +++++
@@ -224,18 +224,18 @@ https://en.wikipedia.org/wiki/Copywriting
 https://en.wikipedia.org/wiki/Copy_testing
 
 * Keywords and phrases
-* :ref:`Concept <concept>`  
+* :ref:`Concept <concept>`
 
 
 .. index:: Graphic Design
-.. _graphic-design:   
+.. _graphic-design:
 
 Graphic Design
 +++++++++++++++
 https://en.wikipedia.org/wiki/Graphic_design
 
 .. index:: Color Scheme
-.. _color-scheme:   
+.. _color-scheme:
 
 Color scheme
 `````````````
@@ -248,8 +248,8 @@ Pantone Codes
 
 .. index:: Typeface
 .. index:: Typography
-.. index:: Fonts   
-.. _types:   
+.. index:: Fonts
+.. _types:
 
 Types
 ```````
@@ -263,7 +263,7 @@ Web-compatible font names
 
 
 .. index:: Logo (graphical)
-.. _logo:   
+.. _logo:
 
 Logo
 `````
@@ -275,7 +275,7 @@ Logotype/Wordmark: Stylized Business Name
 
 
 .. index:: Favicon
-.. _favicon:   
+.. _favicon:
 
 Favicon
 ````````
@@ -288,7 +288,7 @@ https://en.wikipedia.org/wiki/Favicon
 
 
 .. index:: Social Media Images
-.. _social-media-images:   
+.. _social-media-images:
 
 Social Media Images
 ````````````````````
@@ -346,7 +346,7 @@ Sources:
 
 
 .. index:: Photography
-.. _photography:   
+.. _photography:
 
 Photography
 ````````````
@@ -360,7 +360,7 @@ Photography
 
 .. index:: Web Layout Graphics
 .. index:: Layout Graphics
-.. _layout-graphics:   
+.. _layout-graphics:
 
 Layout Graphics
 ````````````````
@@ -381,14 +381,14 @@ TODO: note regarding image layouts
 
 
 .. index:: Social Media
-.. _social-media:   
+.. _social-media:
 
 Social Media
 ~~~~~~~~~~~~~~
 
 
 .. index:: Location Based Services
-.. _location-based-services:   
+.. _location-based-services:
 
 Location Based Services
 ++++++++++++++++++++++++
@@ -409,7 +409,7 @@ Location Based Services
 
 * Bing Maps
 
-  * 
+  *
 
 * Foursquare
 
