@@ -215,13 +215,26 @@ designed to solve a problem.</p>
 <p class="last"><a class="reference external" href="https://en.wikipedia.org/wiki/Operating_system">https://en.wikipedia.org/wiki/Operating_system</a></p>
 </dd>
 <dt id="term-api">API</dt>
-<dd><p class="first">Advanced Programming Interface.</p>
-<p>A specification for inputs and outputs provided by a system
+<dd><p class="first">Advanced Programming Interface.
+A specification for inputs and outputs provided by a system
 component.</p>
-<p class="last"><a class="reference external" href="https://en.wikipedia.org/wiki/Application_programming_interface">https://en.wikipedia.org/wiki/Application_programming_interface</a></p>
+<p>An API specification is specified, versioned, updated, and
+deprecated.</p>
+<p>A reference implementation implements a model copy of an API.</p>
+<p>If a component utilizes an API
+it is said to be written against, with, or on top of said API.</p>
+<p>An API abstracts a lower-level in order to provide a higher-level
+API.</p>
+<p>One primary advantage of an API is that, ideally,
+system components are loosely coupled and thus interchangeable
+and incrementally upgradeable.</p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Application_programming_interface">https://en.wikipedia.org/wiki/Application_programming_interface</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Loose_coupling">https://en.wikipedia.org/wiki/Loose_coupling</a></p>
+<p class="last"><a class="reference external" href="https://en.wikipedia.org/wiki/Abstraction_(computer_science)">https://en.wikipedia.org/wiki/Abstraction_(computer_science)</a></p>
 </dd>
 <dt id="term-operating-system-api">Operating System API</dt>
-<dd><p class="first">An interface provided by an Operating System.</p>
+<dd><p class="first">An <a class="reference internal" href="#term-api"><em class="xref std std-term">API</em></a> provided by one or more
+<a class="reference internal" href="#term-operating-system"><em class="xref std std-term">Operating Systems</em></a>.</p>
 <p>Examples:</p>
 <ul class="last simple">
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/POSIX">https://en.wikipedia.org/wiki/POSIX</a></li>
@@ -229,20 +242,41 @@ component.</p>
 </ul>
 </dd>
 <dt id="term-language-api">Language API</dt>
-<dd><p class="first">An API provided by one or more programming languages through
-a <em>standard library</em> or a third-party component.</p>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/Application_programming_interface">https://en.wikipedia.org/wiki/Application_programming_interface</a></p>
+<dd><p class="first">An <a class="reference internal" href="#term-api"><em class="xref std std-term">API</em></a> provided by or for one or more programming languages
+through a <em>standard library</em> or a third-party component.</p>
+<p>Examples:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/WebGL">https://en.wikipedia.org/wiki/WebGL</a></li>
+</ul>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Public_interface">https://en.wikipedia.org/wiki/Public_interface</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Protocol_(object-oriented_programming)">https://en.wikipedia.org/wiki/Protocol_(object-oriented_programming)</a></p>
 <p class="last"><a class="reference external" href="https://en.wikipedia.org/wiki/Standard_library">https://en.wikipedia.org/wiki/Standard_library</a></p>
 </dd>
 <dt id="term-web-api">Web API</dt>
-<dd><p class="first">An API for interacting with local (browser) or remote
-(<a class="reference internal" href="knowledge-engineering.html#http"><em>HTTP</em></a>) components.</p>
+<dd><p class="first">An <a class="reference internal" href="#term-api"><em class="xref std std-term">API</em></a> for interacting with local (browser) or remote
+(e.g. <a class="reference internal" href="knowledge-engineering.html#http"><em>HTTP</em></a>) components.</p>
+<p>One primary advantage of a Web API is that <em>downstream components</em>
+do not need to know anything about the underlying
+<a class="reference internal" href="#term-operating-system-api"><em class="xref std std-term">Operating System APIs</em></a> and
+<a class="reference internal" href="#term-language-api"><em class="xref std std-term">Language APIs</em></a>.</p>
 <p class="last"><a class="reference external" href="https://en.wikipedia.org/wiki/Web_API">https://en.wikipedia.org/wiki/Web_API</a></p>
 </dd>
+<dt id="term-web-service">Web Service</dt>
+<dd><p class="first">A <a class="reference internal" href="#term-web-api"><em class="xref std std-term">Web API</em></a> with a formal specification.</p>
+<p>Generally provided over <a class="reference internal" href="knowledge-engineering.html#http"><em>HTTP</em></a>,
+traditionally (as in the <em>enterprisey</em> <code class="docutils literal"><span class="pre">WS-*</span></code> standards)
+with <a class="reference internal" href="knowledge-engineering.html#xml"><em>XML</em></a>, but, more recently, with <a class="reference internal" href="knowledge-engineering.html#json"><em>JSON</em></a>.</p>
+<p class="last"><a class="reference external" href="https://en.wikipedia.org/wiki/Web_service">https://en.wikipedia.org/wiki/Web_service</a></p>
+</dd>
 <dt id="term-restful-api">RESTful API</dt>
-<dd><p class="first">Also REST API. An API that abides by best-practice guidelines
+<dd><p class="first">Also REST API. A <a class="reference internal" href="#term-web-api"><em class="xref std std-term">Web API</em></a> that abides by best-practice guidelines
 for interacting with <em>resources</em> through standard <a class="reference internal" href="knowledge-engineering.html#http"><em>HTTP</em></a>
 methods like <code class="docutils literal"><span class="pre">PUT</span></code>/<code class="docutils literal"><span class="pre">POST</span></code>, <code class="docutils literal"><span class="pre">GET</span></code>, <code class="docutils literal"><span class="pre">POST</span></code>/<code class="docutils literal"><span class="pre">PUT</span></code>, <code class="docutils literal"><span class="pre">DELETE</span></code>.</p>
+<p>Many web developers prefer RESTful APIs because
+the standard methods and error messages
+specified by <a class="reference internal" href="knowledge-engineering.html#http"><em>HTTP</em></a> are already implemented
+by existing, well-tested libraries
+available for most languages.</p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Representational_state_transfer">https://en.wikipedia.org/wiki/Representational_state_transfer</a></p>
 <p class="last"><a class="reference external" href="https://en.wikipedia.org/wiki/Create,_read,_update_and_delete">https://en.wikipedia.org/wiki/Create,_read,_update_and_delete</a></p>
 </dd>

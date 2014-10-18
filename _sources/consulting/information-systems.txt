@@ -14,6 +14,10 @@ https://en.wikipedia.org/wiki/List_of_collaborative_software
 
 Information Systems Glossary
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. TODO: split this to software-development / web-development
+.. ... / computer-science
+
 .. glossary::
 
    System
@@ -46,14 +50,33 @@ Information Systems Glossary
 
    API
       Advanced Programming Interface.
-
       A specification for inputs and outputs provided by a system
       component.
 
+      An API specification is specified, versioned, updated, and
+      deprecated.
+
+      A reference implementation implements a model copy of an API.
+
+      If a component utilizes an API
+      it is said to be written against, with, or on top of said API.
+
+      An API abstracts a lower-level in order to provide a higher-level
+      API.
+
+      One primary advantage of an API is that, ideally,
+      system components are loosely coupled and thus interchangeable
+      and incrementally upgradeable.
+
       https://en.wikipedia.org/wiki/Application_programming_interface
 
+      https://en.wikipedia.org/wiki/Loose_coupling
+
+      `<https://en.wikipedia.org/wiki/Abstraction_(computer_science)>`__
+
    Operating System API
-      An interface provided by an Operating System.
+      An :term:`API` provided by one or more
+      :term:`Operating Systems <Operating System>`.
 
       Examples:
 
@@ -61,23 +84,49 @@ Information Systems Glossary
       * https://en.wikipedia.org/wiki/Windows_API
 
    Language API
-      An API provided by one or more programming languages through
-      a *standard library* or a third-party component.
+      An :term:`API` provided by or for one or more programming languages
+      through a *standard library* or a third-party component.
 
-      https://en.wikipedia.org/wiki/Application_programming_interface
+      Examples:
+
+      * https://en.wikipedia.org/wiki/WebGL
+
+      https://en.wikipedia.org/wiki/Public_interface
+
+      `<https://en.wikipedia.org/wiki/Protocol_(object-oriented_programming)>`__
 
       https://en.wikipedia.org/wiki/Standard_library
 
    Web API
-      An API for interacting with local (browser) or remote
-      (:ref:`HTTP <http>`) components.
+      An :term:`API` for interacting with local (browser) or remote
+      (e.g. :ref:`HTTP <http>`) components.
+
+      One primary advantage of a Web API is that *downstream components*
+      do not need to know anything about the underlying
+      :term:`Operating System APIs <Operating System API>` and
+      :term:`Language APIs <Language API>`.
 
       https://en.wikipedia.org/wiki/Web_API
 
+   Web Service
+      A :term:`Web API` with a formal specification.
+
+      Generally provided over :ref:`HTTP`,
+      traditionally (as in the *enterprisey* ``WS-*`` standards)
+      with :ref:`XML`, but, more recently, with :ref:`JSON`.
+
+      https://en.wikipedia.org/wiki/Web_service
+
    RESTful API
-      Also REST API. An API that abides by best-practice guidelines
+      Also REST API. A :term:`Web API` that abides by best-practice guidelines
       for interacting with *resources* through standard :ref:`HTTP`
       methods like ``PUT``/``POST``, ``GET``, ``POST``/``PUT``, ``DELETE``.
+
+      Many web developers prefer RESTful APIs because
+      the standard methods and error messages
+      specified by :ref:`HTTP` are already implemented
+      by existing, well-tested libraries
+      available for most languages.
 
       https://en.wikipedia.org/wiki/Representational_state_transfer
 
