@@ -13,7 +13,7 @@ https://en.wikipedia.org/wiki/Data_science
   http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1003285
 
 
-Data, Information, Knowledge, and Wisdom
+Data, Information, Knowledge, & Wisdom
 ------------------------------------------
 ::
 
@@ -26,19 +26,17 @@ Smoothies
 
 **Data**
 
-Transactions (inputs and outputs)
+Inputs, Outputs
 
 Revenue::
 
-   (Monday)
-   2014/01/01 1200   $80
-   2014/01/01 1210   $100
-   2014/01/01 1500   $20
+   2014/01/01 1200 CDT  $80
+   2014/01/01 1210 CDT  $100
+   2014/01/01 1500 CDT  $20
 
 Expenses::
 
-   (Monday)
-   2014/01/01 wages     $8/hr * 8hrs * 4 people = $256
+   2014/01/01 wages     $256 ($8/hr * 8hrs * 4 people)
    2014/01/01 utilities $100
 
 
@@ -48,21 +46,16 @@ Aggregations, Tendencies
 
 Revenue (gross)::
 
-   (Monday)
    2014/01/01  total: $200
 
 Expenses::
 
-   (Monday)
    2014/01/01  total: $356
 
 Net::
 
-   (Monday)
-   2014/01/01  net:  -$156
-
-   #
    2013/01/01  net:  -$200
+   2014/01/01  net:  -$156
 
 
 On Mondays, we usually (on (simple) average) make about $500.
@@ -70,9 +63,8 @@ On Mondays, we usually (on (simple) average) make about $500.
 
 **Knowledge**
 
-Positive net revenue is good.
-
-One customer is worth the world to us.
+* Positive net revenue is good.
+* One customer is worth the world to us.
 
 
 **Wisdom**
@@ -97,11 +89,9 @@ Daily temperature variance is about n degrees
 
 **Knowledge**
 
-Walking outside when it is warm increases body temperature
-
-Walking outside when it is cold decreases body temperature
-
-Exercise increases body temperature
+* Walking outside when it is warm increases body temperature
+* Walking outside when it is cold decreases body temperature
+* Exercise increases body temperature
 
 
 **Wisdom**
@@ -114,14 +104,14 @@ I'm probably walking outside and it is hot out.
 
 
 .. index:: Data Science Theory
-.. _data-science-theory:   
+.. _data-science-theory:
 
 Theory
 --------
 
 
 .. index:: Science
-.. _science:   
+.. _science:
 
 Science
 +++++++++
@@ -156,7 +146,7 @@ https://en.wikipedia.org/wiki/Critical_thinking
 
 
 .. index:: Open Science
-.. _open-science:   
+.. _open-science:
 
 Open Science
 ~~~~~~~~~~~~~~
@@ -175,7 +165,7 @@ https://en.wikipedia.org/wiki/Peer_review
 
 
 .. index:: Scientific Method
-.. _scientific-method:   
+.. _scientific-method:
 
 Scientific Method
 ~~~~~~~~~~~~~~~~~~
@@ -195,7 +185,7 @@ https://en.wikipedia.org/wiki/Hypothesis
 https://en.wikipedia.org/wiki/Design_of_experiments
 
 * https://en.wikipedia.org/wiki/Design_of_experiments#Discussion_topics_when_setting_up_an_experimental_design
-* https://en.wikipedia.org/wiki/Repeatability  
+* https://en.wikipedia.org/wiki/Repeatability
 * https://en.wikipedia.org/wiki/Reproducibility
 
 https://en.wikipedia.org/wiki/Meta-analysis
@@ -205,7 +195,7 @@ https://en.wikipedia.org/wiki/Systematic_review
 
 .. index:: Math
 .. index:: Mathematics
-.. _math:   
+.. _math:
 
 Math
 +++++
@@ -217,7 +207,7 @@ https://en.wikipedia.org/wiki/Outline_of_mathematics
 
 
 .. index:: Mathematical Notation
-.. _mathematical-notation:   
+.. _mathematical-notation:
 
 Mathematical Notation
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -228,7 +218,7 @@ Mathematical Notation
 
 
 .. index:: LaTeX
-.. _LaTeX:   
+.. _LaTeX:
 
 LaTeX
 ~~~~~~
@@ -245,7 +235,7 @@ Tools
 
 
 .. index:: Information Theory
-.. _information-theory:   
+.. _information-theory:
 
 Information Theory
 ~~~~~~~~~~~~~~~~~~~~
@@ -266,7 +256,7 @@ https://en.wikipedia.org/wiki/Probability_theory
 
 
 .. index:: Linear Algebra
-.. _linear-algebra:   
+.. _linear-algebra:
 
 Linear Algebra
 ~~~~~~~~~~~~~~~~
@@ -274,7 +264,7 @@ https://en.wikipedia.org/wiki/Linear_algebra
 
 
 .. index:: Calculus
-.. _calculus:   
+.. _calculus:
 
 Calculus
 ~~~~~~~~~~
@@ -282,7 +272,7 @@ https://en.wikipedia.org/wiki/Calculus
 
 
 .. index:: Statistics
-.. _statistics:   
+.. _statistics:
 
 Statistics
 ~~~~~~~~~~~
@@ -298,7 +288,7 @@ https://en.wikipedia.org/wiki/Category:Statistics
 
 
 .. index:: Parametric Statistics
-.. _parametric-statistics:   
+.. _parametric-statistics:
 
 Parametric Statistics
 ````````````````````````
@@ -319,7 +309,7 @@ https://en.wikipedia.org/wiki/Template:Regression_bar
 
 
 .. index:: Nonparametric Statistics
-.. _nonparametric-statistics:   
+.. _nonparametric-statistics:
 
 Nonparametric Statistics
 ```````````````````````````
@@ -327,7 +317,7 @@ https://en.wikipedia.org/wiki/Nonparametric_statistics
 
 
 .. index:: Descriptive Statistics
-.. _descriptive-statistics:   
+.. _descriptive-statistics:
 
 Descriptive Statistics
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -350,7 +340,7 @@ https://en.wikipedia.org/wiki/Statistical_inference
 
 
 .. index:: Causality
-.. _causality:   
+.. _causality:
 
 Causality
 ```````````
@@ -368,7 +358,7 @@ https://en.wikipedia.org/wiki/Post_hoc_ergo_propter_hoc
 
 
 .. index:: Data Analysis
-.. _data-analysis:   
+.. _data-analysis:
 
 Analysis
 ++++++++++
@@ -380,7 +370,7 @@ https://en.wikipedia.org/wiki/Data_processing#Data_processing_functions
 
 
 .. index:: Data Learning
-.. _data-learning:   
+.. _data-learning:
 
 Learning
 ~~~~~~~~~
@@ -417,7 +407,7 @@ See: :ref:`Knowledge Engineering <knowledge-engineering>`
 
 
 .. index:: Data Mining
-.. _data-mining:   
+.. _data-mining:
 
 Data Mining
 ~~~~~~~~~~~~~
@@ -429,7 +419,7 @@ https://en.wikipedia.org/wiki/Extract,_transform,_load
 
 
 .. index:: Machine Learning
-.. _machine-learning:   
+.. _machine-learning:
 
 Machine Learning
 ~~~~~~~~~~~~~~~~~~
@@ -467,7 +457,7 @@ Standard, Automated Workflows
 
 
 .. index:: Data Visualization
-.. _data-visualization:   
+.. _data-visualization:
 
 Data Visualization
 ++++++++++++++++++++
