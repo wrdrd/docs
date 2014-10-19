@@ -505,10 +505,19 @@ https://en.wikipedia.org/wiki/PayPal
 
 Square
 ````````
-`<https://en.wikipedia.org/wiki/Square,_Inc.>`_
+`<https://en.wikipedia.org/wiki/Square,_Inc.>`__
+
+https://squareup.com/
 
 * Square Reader (plugs into headphone jack)
-* Square Register (app)
+* Square Stand (point of sale)
+* Square Register (iOS & Android app)
+* Square Market (online store)
+* Square Appointments (online scheduling)
+* Square Feedback (customer feedback)
+* Square Analytics (sales reporting)
+* Square Capital (business funding)
+* Square Invoices (online invoicing)
 
 
 .. index:: Sales Information Systems
