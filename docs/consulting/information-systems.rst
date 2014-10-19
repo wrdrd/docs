@@ -458,20 +458,6 @@ https://en.wikipedia.org/wiki/QuickBooks
 * http://www.google.com/enterprise/marketplace/search?query=quickbooks
 
 
-.. index:: FreshBooks
-.. _freshbooks:
-
-FreshBooks
-````````````
-https://en.wikipedia.org/wiki/FreshBooks
-
-* Cloud accounting
-* Online Invoicing, Accounting & Billing Software
-* Time Tracking
-* Export to QuickBooks
-* http://community.freshbooks.com/addons/
-
-
 .. index:: Payments
 .. _payments:
 
@@ -497,7 +483,6 @@ https://en.wikipedia.org/wiki/Apple_Pay
 
 .. index:: Google Wallet
 .. index:: Google Checkout
-.. index:: Google Offers
 .. _google-wallet:
 
 Google Wallet
@@ -505,11 +490,6 @@ Google Wallet
 https://en.wikipedia.org/wiki/Google_Wallet
 
 https://en.wikipedia.org/wiki/Google_Checkout
-
-* http://www.google.com/wallet/business/payments/
-* http://www.google.com/wallet/business/offers/index.html
-
-  * similar to Groupon, LivingSocial
 
 
 .. index:: PayPal
