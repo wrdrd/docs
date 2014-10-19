@@ -501,7 +501,7 @@ https://en.wikipedia.org/wiki/Resource_Description_Framework
 
 N-Triples
 ~~~~~~~~~~~
-http://en.wikipedia.org/wiki/N-Triples
+https://en.wikipedia.org/wiki/N-Triples
 
 * http://www.w3.org/TR/n-triples/
 
@@ -531,7 +531,7 @@ TriX
 
 N3
 ~~~~
-http://en.wikipedia.org/wiki/Notation3
+https://en.wikipedia.org/wiki/Notation3
 
 * http://www.w3.org/TeamSubmission/n3/
 * ``=>`` implies
@@ -562,7 +562,7 @@ TriG
 
 RDFa
 ``````
-http://en.wikipedia.org/wiki/RDFa
+https://en.wikipedia.org/wiki/RDFa
 
 * http://www.w3.org/TR/rdfa-primer/
 * http://www.w3.org/TR/html-rdfa/ (HTML5, XHTML5)
@@ -573,7 +573,7 @@ http://en.wikipedia.org/wiki/RDFa
 
 JSON-LD
 ````````
-http://en.wikipedia.org/wiki/JSON-LD
+https://en.wikipedia.org/wiki/JSON-LD
 
 * http://www.w3.org/TR/json-ld/
 * http://json-ld.org/

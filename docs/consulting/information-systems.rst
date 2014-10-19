@@ -427,7 +427,7 @@ https://en.wikipedia.org/wiki/Business_valuation
 
 GNUCash
 `````````
-http://en.wikipedia.org/wiki/GnuCash
+https://en.wikipedia.org/wiki/GnuCash
 
 * Free and Open Source
 * Personal Accounting
@@ -525,7 +525,7 @@ https://en.wikipedia.org/wiki/PayPal
 
 Square
 ````````
-`<http://en.wikipedia.org/wiki/Square,_Inc.>`_
+`<https://en.wikipedia.org/wiki/Square,_Inc.>`_
 
 * Square Reader (plugs into headphone jack)
 * Square Register (app)
