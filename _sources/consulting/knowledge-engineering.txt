@@ -508,6 +508,18 @@ https://en.wikipedia.org/wiki/Tuple
 https://en.wikipedia.org/w/index.php?title=Eigenclass_model&oldid=592778140#In_RDF_Schema
 
 
+.. index:: XSD
+.. _XSD:
+
+XSD
+````
+
+
+* http://www.w3.org/TR/xmlschema11-2/
+
+| @prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
 .. index:: RDF
 .. _RDF:
 
@@ -515,9 +527,24 @@ RDF
 ````
 https://en.wikipedia.org/wiki/Resource_Description_Framework
 
-* http://www.w3.org/TR/rdf11-concepts/
-* http://www.w3.org/TR/rdf-primer/
 
+* http://www.w3.org/TR/rdf-primer/
+* http://www.w3.org/TR/rdf11-primer/
+* http://www.w3.org/TR/rdf11-primer/#section-Introduction
+* http://www.w3.org/TR/rdf11-primer/#section-vocabulary
+* http://www.w3.org/TR/rdf11-primer/#section-data-model
+
+* http://www.w3.org/TR/rdf-concepts/
+* http://www.w3.org/TR/rdf11-concepts/
+* http://www.w3.org/TR/rdf11-concepts/#data-model
+* http://www.w3.org/TR/rdf11-concepts/#change-over-time
+* http://www.w3.org/TR/rdf11-concepts/#entailment
+* http://www.w3.org/TR/rdf11-concepts/#section-blank-nodes
+* http://www.w3.org/TR/rdf11-concepts/#xsd-datatypes
+* http://www.w3.org/TR/rdf11-concepts/#section-html
+
+| @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+| LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_rdf.html
 
 .. index:: N-Triples
 .. _N-Triples:
@@ -611,6 +638,27 @@ https://en.wikipedia.org/wiki/RDF_Schema
 
 * http://www.w3.org/TR/rdf-schema/
 
+| @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+| LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_rdf.html
+
+
+.. index:: dcterms
+.. index:: dctypes
+.. index:: DCMI
+.. _DCMI:
+
+DCMI
+`````
+https://en.wikipedia.org/wiki/Dublin_Core
+
+https://en.wikipedia.org/wiki/Dublin_Core#DCMI_Metadata_Terms
+
+| @prefix dcterms: <http://purl.org/dc/terms> .
+| LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_dcterms.html
+
+| @prefix dctypes: <http://purl.org/dc/dcmitype/> .
+| LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_dctype.html
+
 
 .. index:: SKOS
 .. _SKOS:
@@ -620,6 +668,8 @@ SKOS
 https://en.wikipedia.org/wiki/Simple_Knowledge_Organization_System
 
 * `<http://www.w3.org/2004/02/skos/core#>`_
+* http://www.w3.org/TR/skos-reference/
+* http://www.w3.org/TR/skos-reference/skos.html
 
 
 .. index:: SPARQL
@@ -717,16 +767,24 @@ Schema.org
 https://en.wikipedia.org/wiki/Schema.org
 
 * http://schema.org/
+* http://schema.org/docs/schemas.html
+* http://schema.org/docs/releases.html
 * http://schema.org/docs/full.html
+* https://github.com/rvguha/schemaorg
 * http://www.w3.org/wiki/WebSchemas
 * http://www.w3.org/wiki/WebSchemas/SchemaDotOrgProposals
 
+
+.. index:: Schema.org RDF
+.. _schema.org-rdf:
+
 Schema.org RDF
 ````````````````
+* http://schema.rdfs.org/tools.html
 * http://schema.rdfs.org/all.json
 * http://schema.rdfs.org/all.rdf
 * http://schema.rdfs.org/all.nt
 * http://schema.rdfs.org/all.ttl *
 * http://schema.rdfs.org/all-classes.csv
 * http://schema.org/docs/schemaorg.owl
-
+* http://schema.rdfs.org/mappings.html (
