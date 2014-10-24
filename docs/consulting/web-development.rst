@@ -70,7 +70,7 @@ Web Glossary
 
         https://en.wikipedia.org/wiki/Domain_Name_System
 
-        See: :ref:`DNS Configuration`
+        See: :ref:`DNS Configuration <dns-configuration>`
 
     URL
         Uniform Resource Locator. A string of characters that identify
