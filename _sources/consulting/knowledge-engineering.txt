@@ -422,7 +422,7 @@ https://en.wikipedia.org/wiki/HTML
 .. _XSD:
 
 XSD
-````
+++++
 `<https://en.wikipedia.org/wiki/XML_Schema_(W3C)>`__
 
 * http://www.w3.org/TR/xmlschema11-2/
