@@ -45,20 +45,20 @@ https://en.wikipedia.org/wiki/Category:Logic
 https://en.wikipedia.org/wiki/List_of_logic_symbols
 
 
-.. index:: Boolean Algebra
-.. _boolean-algebra:
-
-Boolean Algebra
-````````````````
-https://en.wikipedia.org/wiki/Boolean_algebra
-
-
 .. index:: Set Theory
 .. _set-theory:
 
 Set Theory
 ````````````
 https://en.wikipedia.org/wiki/Set_theory
+
+
+.. index:: Boolean Algebra
+.. _boolean-algebra:
+
+Boolean Algebra
+````````````````
+https://en.wikipedia.org/wiki/Boolean_algebra
 
 
 .. index:: Many-valued Logic
@@ -74,7 +74,16 @@ https://en.wikipedia.org/wiki/Many-valued_logic
 
 Three-valued Logic
 ~~~~~~~~~~~~~~~~~~~~
-https://en.wikipedia.org/wiki/Three-valued_logic (True, False, Unknown)
+https://en.wikipedia.org/wiki/Three-valued_logic
+
+::
+
+    { True, False, Unknown }
+
+    { T, F, NULL }  # SQL
+    { T, F, None }  # Python
+    { T, F, nil }   # Ruby
+    { 1, 0, -1 }    #
 
 
 .. index:: Fuzzy Logic
@@ -273,18 +282,21 @@ https://en.wikipedia.org/wiki/Relational_database
 
 https://en.wikipedia.org/wiki/Relational_model
 
-https://en.wikipedia.org/wiki/Database_normalization
-
-* https://en.wikipedia.org/wiki/Natural_key
-* https://en.wikipedia.org/wiki/Surrogate_key
-* https://en.wikipedia.org/wiki/Foreign_key
-* https://en.wikipedia.org/wiki/Denormalization
-
 https://en.wikipedia.org/wiki/Relational_algebra
 
 * `<https://en.wikipedia.org/wiki/Projection_(relational_algebra)>`_
 * https://en.wikipedia.org/wiki/Relational_algebra#Joins_and_join-like_operators
 * https://en.wikipedia.org/wiki/Relational_algebra#Common_extensions
+
+https://en.wikipedia.org/wiki/Database_normalization
+
+* https://en.wikipedia.org/wiki/Referential_integrity
+* https://en.wikipedia.org/wiki/Functional_dependency
+* https://en.wikipedia.org/wiki/Dangling_pointer
+* https://en.wikipedia.org/wiki/Natural_key
+* https://en.wikipedia.org/wiki/Surrogate_key
+* https://en.wikipedia.org/wiki/Foreign_key
+* https://en.wikipedia.org/wiki/Denormalization
 
 https://en.wikipedia.org/wiki/Relational_database_management_system
 
@@ -308,7 +320,7 @@ https://en.wikipedia.org/wiki/SQL
 * https://en.wikipedia.org/wiki/SQL_injection
 * http://cwe.mitre.org/top25/#CWE-89 (#1)
 
-See: :ref:`orm`
+See: :ref:`Object Relational Modeling <orm>`
 
 
 .. index:: NoSQL Databases
@@ -325,7 +337,6 @@ https://en.wikipedia.org/wiki/NoSQL
 * `<https://en.wikipedia.org/wiki/Column_family>`_
 * `<https://en.wikipedia.org/wiki/Super_column>`_
 * https://en.wikipedia.org/wiki/Apache_Accumulo
-
 
 .. index:: Distributed Databases
 .. _distributed-databases:
@@ -366,9 +377,21 @@ Web Standards
 ---------------
 https://en.wikipedia.org/wiki/Web_standards
 
+W3C
+++++
 https://en.wikipedia.org/wiki/World_Wide_Web_Consortium#Standards
 
+http://w3.org/
+
+http://www.w3.org/TR/
+
+
+IETF
++++++
 https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force
+
+https://tools.ietf.org/html/
+
 
 
 .. index:: HTTP

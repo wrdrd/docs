@@ -89,8 +89,8 @@
 <li><a class="reference internal" href="#">Knowledge Engineering</a><ul>
 <li><a class="reference internal" href="#logic-reasoning-and-inference">Logic, Reasoning, and Inference</a><ul>
 <li><a class="reference internal" href="#logic">Logic</a><ul>
-<li><a class="reference internal" href="#boolean-algebra">Boolean Algebra</a></li>
 <li><a class="reference internal" href="#set-theory">Set Theory</a></li>
+<li><a class="reference internal" href="#boolean-algebra">Boolean Algebra</a></li>
 <li><a class="reference internal" href="#many-valued-logic">Many-valued Logic</a><ul>
 <li><a class="reference internal" href="#three-valued-logic">Three-valued Logic</a></li>
 <li><a class="reference internal" href="#fuzzy-logic">Fuzzy Logic</a></li>
@@ -132,6 +132,8 @@
 </li>
 <li><a class="reference internal" href="#data-grid">Data Grid</a></li>
 <li><a class="reference internal" href="#web-standards">Web Standards</a><ul>
+<li><a class="reference internal" href="#w3c">W3C</a></li>
+<li><a class="reference internal" href="#ietf">IETF</a></li>
 <li><a class="reference internal" href="#http">HTTP</a></li>
 <li><a class="reference internal" href="#html">HTML</a></li>
 <li><a class="reference internal" href="#xml">XML</a></li>
@@ -242,8 +244,8 @@
 <div class="contents local topic" id="contents">
 <ul class="simple">
 <li><a class="reference internal" href="#logic" id="id49">Logic</a><ul>
-<li><a class="reference internal" href="#boolean-algebra" id="id50">Boolean Algebra</a></li>
-<li><a class="reference internal" href="#set-theory" id="id51">Set Theory</a></li>
+<li><a class="reference internal" href="#set-theory" id="id50">Set Theory</a></li>
+<li><a class="reference internal" href="#boolean-algebra" id="id51">Boolean Algebra</a></li>
 <li><a class="reference internal" href="#many-valued-logic" id="id52">Many-valued Logic</a><ul>
 <li><a class="reference internal" href="#three-valued-logic" id="id53">Three-valued Logic</a></li>
 <li><a class="reference internal" href="#fuzzy-logic" id="id54">Fuzzy Logic</a></li>
@@ -269,20 +271,28 @@
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Logic">https://en.wikipedia.org/wiki/Logic</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Category:Logic">https://en.wikipedia.org/wiki/Category:Logic</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/List_of_logic_symbols">https://en.wikipedia.org/wiki/List_of_logic_symbols</a></p>
-<div class="section" id="boolean-algebra">
-<span id="index-2"></span><span id="id3"></span><h4><a class="toc-backref" href="#id50">Boolean Algebra</a><a class="headerlink" href="#boolean-algebra" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/Boolean_algebra">https://en.wikipedia.org/wiki/Boolean_algebra</a></p>
-</div>
 <div class="section" id="set-theory">
-<span id="index-3"></span><span id="id4"></span><h4><a class="toc-backref" href="#id51">Set Theory</a><a class="headerlink" href="#set-theory" title="Permalink to this headline">¶</a></h4>
+<span id="index-2"></span><span id="id3"></span><h4><a class="toc-backref" href="#id50">Set Theory</a><a class="headerlink" href="#set-theory" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Set_theory">https://en.wikipedia.org/wiki/Set_theory</a></p>
+</div>
+<div class="section" id="boolean-algebra">
+<span id="index-3"></span><span id="id4"></span><h4><a class="toc-backref" href="#id51">Boolean Algebra</a><a class="headerlink" href="#boolean-algebra" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Boolean_algebra">https://en.wikipedia.org/wiki/Boolean_algebra</a></p>
 </div>
 <div class="section" id="many-valued-logic">
 <span id="index-4"></span><span id="id5"></span><h4><a class="toc-backref" href="#id52">Many-valued Logic</a><a class="headerlink" href="#many-valued-logic" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Many-valued_logic">https://en.wikipedia.org/wiki/Many-valued_logic</a></p>
 <div class="section" id="three-valued-logic">
 <span id="index-5"></span><span id="id6"></span><h5><a class="toc-backref" href="#id53">Three-valued Logic</a><a class="headerlink" href="#three-valued-logic" title="Permalink to this headline">¶</a></h5>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/Three-valued_logic">https://en.wikipedia.org/wiki/Three-valued_logic</a> (True, False, Unknown)</p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Three-valued_logic">https://en.wikipedia.org/wiki/Three-valued_logic</a></p>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span> <span class="bp">True</span><span class="p">,</span> <span class="bp">False</span><span class="p">,</span> <span class="n">Unknown</span> <span class="p">}</span>
+
+<span class="p">{</span> <span class="n">T</span><span class="p">,</span> <span class="n">F</span><span class="p">,</span> <span class="n">NULL</span> <span class="p">}</span>  <span class="c"># SQL</span>
+<span class="p">{</span> <span class="n">T</span><span class="p">,</span> <span class="n">F</span><span class="p">,</span> <span class="bp">None</span> <span class="p">}</span>  <span class="c"># Python</span>
+<span class="p">{</span> <span class="n">T</span><span class="p">,</span> <span class="n">F</span><span class="p">,</span> <span class="n">nil</span> <span class="p">}</span>   <span class="c"># Ruby</span>
+<span class="p">{</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span> <span class="p">}</span>    <span class="c">#</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="fuzzy-logic">
 <span id="index-6"></span><span id="id7"></span><h5><a class="toc-backref" href="#id54">Fuzzy Logic</a><a class="headerlink" href="#fuzzy-logic" title="Permalink to this headline">¶</a></h5>
@@ -407,18 +417,21 @@
 <span id="index-24"></span><span id="id18"></span><h3>Relational Databases<a class="headerlink" href="#relational-databases" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Relational_database">https://en.wikipedia.org/wiki/Relational_database</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Relational_model">https://en.wikipedia.org/wiki/Relational_model</a></p>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/Database_normalization">https://en.wikipedia.org/wiki/Database_normalization</a></p>
-<ul class="simple">
-<li><a class="reference external" href="https://en.wikipedia.org/wiki/Natural_key">https://en.wikipedia.org/wiki/Natural_key</a></li>
-<li><a class="reference external" href="https://en.wikipedia.org/wiki/Surrogate_key">https://en.wikipedia.org/wiki/Surrogate_key</a></li>
-<li><a class="reference external" href="https://en.wikipedia.org/wiki/Foreign_key">https://en.wikipedia.org/wiki/Foreign_key</a></li>
-<li><a class="reference external" href="https://en.wikipedia.org/wiki/Denormalization">https://en.wikipedia.org/wiki/Denormalization</a></li>
-</ul>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Relational_algebra">https://en.wikipedia.org/wiki/Relational_algebra</a></p>
 <ul class="simple">
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Projection_(relational_algebra)">https://en.wikipedia.org/wiki/Projection_(relational_algebra)</a></li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Relational_algebra#Joins_and_join-like_operators">https://en.wikipedia.org/wiki/Relational_algebra#Joins_and_join-like_operators</a></li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Relational_algebra#Common_extensions">https://en.wikipedia.org/wiki/Relational_algebra#Common_extensions</a></li>
+</ul>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Database_normalization">https://en.wikipedia.org/wiki/Database_normalization</a></p>
+<ul class="simple">
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Referential_integrity">https://en.wikipedia.org/wiki/Referential_integrity</a></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Functional_dependency">https://en.wikipedia.org/wiki/Functional_dependency</a></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Dangling_pointer">https://en.wikipedia.org/wiki/Dangling_pointer</a></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Natural_key">https://en.wikipedia.org/wiki/Natural_key</a></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Surrogate_key">https://en.wikipedia.org/wiki/Surrogate_key</a></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Foreign_key">https://en.wikipedia.org/wiki/Foreign_key</a></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Denormalization">https://en.wikipedia.org/wiki/Denormalization</a></li>
 </ul>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Relational_database_management_system">https://en.wikipedia.org/wiki/Relational_database_management_system</a></p>
 <ul class="simple">
@@ -438,7 +451,7 @@
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/SQL_injection">https://en.wikipedia.org/wiki/SQL_injection</a></li>
 <li><a class="reference external" href="http://cwe.mitre.org/top25/#CWE-89">http://cwe.mitre.org/top25/#CWE-89</a> (#1)</li>
 </ul>
-<p>See: <a class="reference internal" href="#orm"><em>Object Relational Mapping</em></a></p>
+<p>See: <a class="reference internal" href="#orm"><em>Object Relational Modeling</em></a></p>
 </div>
 </div>
 <div class="section" id="nosql-databases">
@@ -478,8 +491,17 @@
 <div class="section" id="web-standards">
 <span id="index-29"></span><span id="id22"></span><h2>Web Standards<a class="headerlink" href="#web-standards" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Web_standards">https://en.wikipedia.org/wiki/Web_standards</a></p>
+<div class="section" id="w3c">
+<h3>W3C<a class="headerlink" href="#w3c" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/World_Wide_Web_Consortium#Standards">https://en.wikipedia.org/wiki/World_Wide_Web_Consortium#Standards</a></p>
+<p><a class="reference external" href="http://w3.org/">http://w3.org/</a></p>
+<p><a class="reference external" href="http://www.w3.org/TR/">http://www.w3.org/TR/</a></p>
+</div>
+<div class="section" id="ietf">
+<h3>IETF<a class="headerlink" href="#ietf" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force">https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force</a></p>
+<p><a class="reference external" href="https://tools.ietf.org/html/">https://tools.ietf.org/html/</a></p>
+</div>
 <div class="section" id="http">
 <span id="index-30"></span><span id="id23"></span><h3>HTTP<a class="headerlink" href="#http" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol</a></p>
@@ -745,8 +767,8 @@
 <li><a class="reference internal" href="#">Knowledge Engineering</a><ul>
 <li><a class="reference internal" href="#logic-reasoning-and-inference">Logic, Reasoning, and Inference</a><ul>
 <li><a class="reference internal" href="#logic">Logic</a><ul>
-<li><a class="reference internal" href="#boolean-algebra">Boolean Algebra</a></li>
 <li><a class="reference internal" href="#set-theory">Set Theory</a></li>
+<li><a class="reference internal" href="#boolean-algebra">Boolean Algebra</a></li>
 <li><a class="reference internal" href="#many-valued-logic">Many-valued Logic</a><ul>
 <li><a class="reference internal" href="#three-valued-logic">Three-valued Logic</a></li>
 <li><a class="reference internal" href="#fuzzy-logic">Fuzzy Logic</a></li>
@@ -788,6 +810,8 @@
 </li>
 <li><a class="reference internal" href="#data-grid">Data Grid</a></li>
 <li><a class="reference internal" href="#web-standards">Web Standards</a><ul>
+<li><a class="reference internal" href="#w3c">W3C</a></li>
+<li><a class="reference internal" href="#ietf">IETF</a></li>
 <li><a class="reference internal" href="#http">HTTP</a></li>
 <li><a class="reference internal" href="#html">HTML</a></li>
 <li><a class="reference internal" href="#xml">XML</a></li>
