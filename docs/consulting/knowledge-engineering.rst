@@ -377,6 +377,10 @@ Web Standards
 ---------------
 https://en.wikipedia.org/wiki/Web_standards
 
+
+.. index:: W3C
+.. _w3c:
+
 W3C
 ++++
 https://en.wikipedia.org/wiki/World_Wide_Web_Consortium#Standards
@@ -386,12 +390,61 @@ http://w3.org/
 http://www.w3.org/TR/
 
 
+.. index:: IETF
+.. _ietf:
+
 IETF
 +++++
 https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force
 
 https://tools.ietf.org/html/
 
+
+.. index:: ISO
+.. _iso:
+
+ISO
+++++
+https://en.wikipedia.org/wiki/International_Organization_for_Standardization
+
+http://www.iso.org/
+
+
+.. index:: ISO8601
+.. index:: iso8601
+.. _iso8601:
+
+ISO8601
++++++++++
+https://en.wikipedia.org/wiki/ISO_8601
+
+http://www.iso.org/iso/iso8601
+
+* http://www.w3.org/TR/NOTE-datetime
+
+::
+
+    2014
+    2014-10
+    2014-10-23
+    20141023
+    2014-10-23T20:59:30+Z       # UTC / Zulu
+    2014-10-23T20:59:30Z        # UTC / Zulu
+    2014-10-23T20:59:30-06:00   # CST
+    2014-10-23T20:59:30-06      # CST
+    2014-10-23T20:59:30-05:00   # CDT
+    2014-10-23T20:59:30-05      # CDT
+    20
+    20:59
+    2059
+    20:59:30
+    205930
+    2014-10-23T20:59:30Z/2014-10-23T21:00:00Z
+    2014-10-23T20:59:30-05:00/2014-10-23T21:00:00-06
+    PT1H
+    PT1M
+    P1M
+    P1Y1M1W1DT1H1M1S
 
 
 .. index:: HTTP
