@@ -418,6 +418,16 @@ https://en.wikipedia.org/wiki/HTML
 * http://www.w3.org/html/wg/drafts/html/master/
 
 
+.. index:: XML
+.. _XML:
+
+XML
+++++
+https://en.wikipedia.org/wiki/XML
+
+* http://www.w3.org/TR/xml/
+
+
 .. index:: XSD
 .. _XSD:
 
@@ -428,16 +438,6 @@ XSD
 * http://www.w3.org/TR/xmlschema11-2/
 
 | @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-
-.. index:: XML
-.. _XML:
-
-XML
-++++
-https://en.wikipedia.org/wiki/XML
-
-* http://www.w3.org/TR/xml/
 
 
 .. index:: JSON
