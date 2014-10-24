@@ -476,8 +476,8 @@ https://en.wikipedia.org/wiki/Amazon_Payments
 .. index:: Apple Pay
 .. _apple-pay:
 
-Apple
-``````
+Apple Pay
+``````````
 https://en.wikipedia.org/wiki/Apple_Pay
 
 
