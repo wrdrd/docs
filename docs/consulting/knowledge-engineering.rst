@@ -417,6 +417,19 @@ https://en.wikipedia.org/wiki/HTML
 * http://www.w3.org/TR/html5/
 * http://www.w3.org/html/wg/drafts/html/master/
 
+
+.. index:: XSD
+.. _XSD:
+
+XSD
+````
+`<https://en.wikipedia.org/wiki/XML_Schema_(W3C)>`__
+
+* http://www.w3.org/TR/xmlschema11-2/
+
+| @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
 .. index:: XML
 .. _XML:
 
@@ -506,18 +519,6 @@ https://en.wikipedia.org/wiki/Tuple
 `<https://en.wikipedia.org/wiki/Reification_(computer_science)#Reification_on_Semantic_Web>`_
 
 https://en.wikipedia.org/w/index.php?title=Eigenclass_model&oldid=592778140#In_RDF_Schema
-
-
-.. index:: XSD
-.. _XSD:
-
-XSD
-````
-
-
-* http://www.w3.org/TR/xmlschema11-2/
-
-| @prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 .. index:: RDF
