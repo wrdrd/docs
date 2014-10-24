@@ -181,21 +181,47 @@ https://en.wikipedia.org/wiki/Critical_success_factor
 See: :ref:`Data Science <data-science>`
 
 
+.. index:: Conversion Marketing
+.. index:: Conversion
+.. _conversion:
+
+Conversion
+++++++++++++
+https://en.wikipedia.org/wiki/Conversion_marketing
+
+* https://en.wikipedia.org/wiki/Conversion_marketing#Conversion_rate
+* https://en.wikipedia.org/wiki/Conversion_marketing#Common_Conversion_Marketing_Services
+
+https://en.wikipedia.org/wiki/Conversion_rate_optimization
+
+* https://en.wikipedia.org/wiki/Conversion_funnel
+* https://en.wikipedia.org/wiki/Purchase_funnel
+
+
 .. index:: Web Analytics
 .. _web-analytics:
 
 Web Analytics
 ++++++++++++++
+https://en.wikipedia.org/wiki/Web_analytics
 
-* https://en.wikipedia.org/wiki/Web_analytics
+* `<https://en.wikipedia.org/wiki/Impression_(online_media)>`__
 * https://en.wikipedia.org/wiki/Conversion_marketing#Conversion_rate
-* Acquire Analytics tracking codes
+* [ ] Get Analytics tracking id(s)
+* [ ] Add Analytics JS to page
+* [ ] Configure factors variables conditions
 
 
 .. index:: Branding
+.. index:: Brand
+.. _brand:
 
-Branding
-~~~~~~~~~~
+Brand
+~~~~~~~
+https://en.wikipedia.org/wiki/Brand
+
+* https://en.wikipedia.org/wiki/Brand#Branding_strategies
+
 
 .. index:: Concept
 .. _concept:
