@@ -378,24 +378,14 @@ Web Standards
 https://en.wikipedia.org/wiki/Web_standards
 
 
-.. index:: W3C
-.. _w3c:
-
-W3C
-++++
-https://en.wikipedia.org/wiki/World_Wide_Web_Consortium#Standards
-
-http://w3.org/
-
-http://www.w3.org/TR/
-
-
 .. index:: IETF
 .. _ietf:
 
 IETF
 +++++
 https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force
+
+https://www.ietf.org/
 
 https://tools.ietf.org/html/
 
@@ -408,6 +398,20 @@ ISO
 https://en.wikipedia.org/wiki/International_Organization_for_Standardization
 
 http://www.iso.org/
+
+http://www.iso.org/iso/home/standards.htm
+
+
+.. index:: W3C
+.. _w3c:
+
+W3C
+++++
+https://en.wikipedia.org/wiki/World_Wide_Web_Consortium#Standards
+
+http://www.w3.org/
+
+http://www.w3.org/TR/
 
 
 .. index:: ISO8601
