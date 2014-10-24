@@ -88,10 +88,7 @@
                 <ul>
 <li><a class="reference internal" href="#">Web Development</a><ul>
 <li><a class="reference internal" href="#web-glossary">Web Glossary</a></li>
-<li><a class="reference internal" href="#web-content">Web Content</a><ul>
-<li><a class="reference internal" href="#structured-data">Structured Data</a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#web-content">Web Content</a></li>
 <li><a class="reference internal" href="#index-1">Web Design</a><ul>
 <li><a class="reference internal" href="#index-2">Web Layout</a><ul>
 <li><a class="reference internal" href="#image-based-layouts">Image Based Layouts</a></li>
@@ -197,8 +194,8 @@ through the internet).</p>
 <p class="last"><a class="reference external" href="https://en.wikipedia.org/wiki/Domain_name">https://en.wikipedia.org/wiki/Domain_name</a></p>
 </dd>
 <dt id="term-dns">DNS</dt>
-<dd><p class="first">Domain Name System. Converts a domain name into an
-IP address (e.g. 127.0.0.1 (IPv4) or ::1 (IPv6)).</p>
+<dd><p class="first">Domain Name System. Converts a <a class="reference internal" href="#term-domain-name"><em class="xref std std-term">domain name</em></a> into an
+<a class="reference internal" href="#term-ip-address"><em class="xref std std-term">IP address</em></a> (e.g. <code class="docutils literal"><span class="pre">127.0.0.1</span></code> (IPv4) or <code class="docutils literal"><span class="pre">::1</span></code> (IPv6)).</p>
 <p>Initial DNS hosting costs are often covered by Web Hosts.</p>
 <p>There are DNS record types for different types of services.</p>
 <p>Surfing to a website in a browser
@@ -208,12 +205,15 @@ address of the web server.</p>
 and sender information for the mail host.</p>
 <p>Updates to DNS settings can take as long as 86400 seconds (one
 day) to propagate, depending upon the DNS TTL.</p>
-<p class="last"><a class="reference external" href="https://en.wikipedia.org/wiki/Domain_Name_System">https://en.wikipedia.org/wiki/Domain_Name_System</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Domain_Name_System">https://en.wikipedia.org/wiki/Domain_Name_System</a></p>
+<p class="last">See: <em class="xref std std-ref">DNS Configuration</em></p>
 </dd>
 <dt id="term-url">URL</dt>
 <dd><p class="first">Uniform Resource Locator. A string of characters that identify
-a particular (view of) a resource.</p>
-<div class="highlight-python"><div class="highlight"><pre>scheme://host:port/p/a/t/h?query#fragment
+a resource location.</p>
+<div class="highlight-python"><div class="highlight"><pre>scheme://host:port/p/a/t/h
+
+https://wrdrd.github.io/docs/
 </pre></div>
 </div>
 <p>Where <code class="docutils literal"><span class="pre">host</span></code> is an IP address, hostname, or domain name.</p>
@@ -221,80 +221,62 @@ a particular (view of) a resource.</p>
 <p>With an https scheme, the default port is 443.</p>
 <p class="last"><a class="reference external" href="https://en.wikipedia.org/wiki/Uniform_resource_locator">https://en.wikipedia.org/wiki/Uniform_resource_locator</a></p>
 </dd>
+<dt id="term-uri">URI</dt>
+<dd><p class="first">Uniform Resource Identifier. A string of characters that identify
+a resource.</p>
+<div class="highlight-python"><div class="highlight"><pre>scheme://host:port/p/a/t/h?query#fragment
+
+https://wrdrd.github.io/docs/#wrdrd
+</pre></div>
+</div>
+<p class="last"><a class="reference external" href="https://en.wikipedia.org/wiki/Uniform_resource_identifier">https://en.wikipedia.org/wiki/Uniform_resource_identifier</a></p>
+</dd>
+<dt id="term-urn">URN</dt>
+<dd><p class="first">Uniform Resource Name. A string of characters that identify a
+named resource <em>in a namespace</em>.</p>
+<div class="highlight-python"><div class="highlight"><pre>urn:namespace:key
+
+urn:isbn:0-486-27557-4
+urn:uuid:6e8bc430-9c3a-11d9-9669-0800200c9a66
+</pre></div>
+</div>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Uniform_resource_name">https://en.wikipedia.org/wiki/Uniform_resource_name</a></p>
+<p class="last"><a class="reference external" href="https://en.wikipedia.org/wiki/Magnet_URI_scheme">https://en.wikipedia.org/wiki/Magnet_URI_scheme</a></p>
+</dd>
 <dt id="term-web-browser">Web Browser</dt>
 <dd><p class="first">A software program which visually renders resources
 identified by a URL and interprets scripts.</p>
 <p>Examples: Internet Explorer, Mozilla Firefox, Google Chrome</p>
-<p>All web browsers support HTML.</p>
+<p>All web browsers support <a class="reference internal" href="knowledge-engineering.html#html"><em>HTML</em></a>.</p>
 <p>Many web browsers support images like GIF, JPEG, PNG, and SVG.</p>
 <p>Many web browsers support Javascript scripts.</p>
-<p>Web browsers work with a DOM (Document Object Model).</p>
+<p>Web browsers work with a <a class="reference internal" href="#term-dom"><em class="xref std std-term">DOM</em></a> (Document Object Model).</p>
 <p class="last"><a class="reference external" href="https://en.wikipedia.org/wiki/Web_browser">https://en.wikipedia.org/wiki/Web_browser</a></p>
 </dd>
 <dt id="term-dom">DOM</dt>
-<dd><p class="first">Document Object Model. Can be thought of as an outline of
+<dd><p class="first">Document Object Model. Can be thought of as a layout outline of
 the objects in a particular document
 (e.g. text, shapes, images, videos).</p>
 <p>Different web browsers interpret the DOM differently,
 depending on Web Standards and individual implementations.</p>
-<p class="last"><a class="reference external" href="https://en.wikipedia.org/wiki/Document_Object_Model">https://en.wikipedia.org/wiki/Document_Object_Model</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Document_Object_Model">https://en.wikipedia.org/wiki/Document_Object_Model</a></p>
+<p class="last">See: ref:<cite>Web Design &lt;web-design&gt;</cite></p>
 </dd>
 <dt id="term-web-standard">Web Standard</dt>
 <dd><p class="first">An agreed-upon standard specification for web things
 (e.g. HTTP, HTML, XHTML, HTML5, CSS, Javascript, SVG)</p>
-<p class="last"><a class="reference external" href="https://en.wikipedia.org/wiki/Web_standards">https://en.wikipedia.org/wiki/Web_standards</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Web_standards">https://en.wikipedia.org/wiki/Web_standards</a></p>
+<p>See: <a class="reference internal" href="knowledge-engineering.html#web-standards"><em>Web Standards</em></a></p>
+<p class="last">See: <a class="reference internal" href="knowledge-engineering.html#semantic-web-standards"><em>Semantic Web Standards</em></a></p>
 </dd>
 </dl>
 </div>
 <div class="section" id="web-content">
 <span id="index-0"></span><h2>Web Content<a class="headerlink" href="#web-content" title="Permalink to this headline">¶</a></h2>
-<p>Media Resources: Copy, Text, Photos, Images, Videos (things with URLs)</p>
-<div class="section" id="structured-data">
-<h3>Structured Data<a class="headerlink" href="#structured-data" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><a class="reference external" href="http://schema.org/docs/full.html">http://schema.org/docs/full.html</a></li>
-<li>Organization<ul>
-<li>name</li>
-<li>url</li>
-<li>address PostalAddress</li>
-<li>telephone</li>
-<li>email address(es)</li>
-<li>Description</li>
-<li>logo</li>
-<li>image(s)</li>
-<li>map URL</li>
-<li>sameAs (~= URL)</li>
-<li>legalName</li>
-<li>founder</li>
-<li>foundingDate</li>
-<li>taxID (TIN)</li>
-</ul>
-</li>
-<li>LocalBusiness (&gt; Category)<ul>
-<li>name</li>
-<li>url</li>
-<li>address PostalAddress</li>
-<li>telephone</li>
-<li>email address(es)</li>
-<li>Directions</li>
-<li>image(s)</li>
-<li>branchOf &lt;Organization&gt;</li>
-<li>openingHours</li>
-<li>currenciesAccepted</li>
-<li>paymentAccepted</li>
-<li>priceRange</li>
-<li>map URL</li>
-<li>FoodEstablishment (&gt; Category)<ul>
-<li>acceptsReservations Yes/No/URL</li>
-<li>menu text/URL</li>
-<li>servesCuisine text</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<p>Media Resources: Copy, Text, Photos, Images, Videos
+(things with <a class="reference internal" href="knowledge-engineering.html#http"><em>HTTP</em></a> URLs)</p>
+<p>See <a class="reference internal" href="knowledge-engineering.html#web-standards"><em>Web Standards</em></a></p>
 <span class="target" id="web-design"></span></div>
-</div>
 <div class="section" id="index-1">
 <span id="id1"></span><h2>Web Design<a class="headerlink" href="#index-1" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Web_design">https://en.wikipedia.org/wiki/Web_design</a></p>
@@ -408,6 +390,9 @@ and movies at various points in a testing workflow.</p>
 </ul>
 </li>
 <li>[ ] Add structured data markup to page<ul>
+<li><a class="reference external" href="http://schema.org/docs/full.html">http://schema.org/docs/full.html</a></li>
+<li>See: <a class="reference internal" href="knowledge-engineering.html#knowledge-engineering"><em>Knowledge Engineering</em></a> &gt;
+<a class="reference internal" href="knowledge-engineering.html#semantic-web-standards"><em>Semantic Web Standards</em></a></li>
 <li>[ ] Add standard header tags<ul>
 <li>[ ] <code class="docutils literal"><span class="pre">meta</span></code> tags: description</li>
 <li>[ ] <code class="docutils literal"><span class="pre">link</span> <span class="pre">rel=&quot;canonical&quot;</span></code></li>
@@ -424,36 +409,96 @@ and movies at various points in a testing workflow.</p>
 </li>
 </ul>
 </li>
-<li>[ ] Section: Navbar</li>
+<li>[ ] Section: Navbar<ul>
+<li>[ ] Choose top-level links</li>
+<li>[ ] Indicate current location</li>
+</ul>
+</li>
 <li>[ ] Section: Above the fold<ul>
-<li>Image</li>
-<li>Video</li>
+<li><code class="docutils literal"><span class="pre">schema:ImageObject</span></code></li>
+<li><code class="docutils literal"><span class="pre">schema:VideoObject</span></code></li>
+<li><code class="docutils literal"><span class="pre">schema:MusicVideoObject</span></code></li>
 <li>Text</li>
+<li>HTML/CSS/JS</li>
 </ul>
 </li>
 <li>[ ] Add an <code class="docutils literal"><span class="pre">&lt;h1&gt;</span></code> tag with a page title</li>
 <li>[ ] Section: About<ul>
-<li>[ ] Add textual escription</li>
-<li>[ ] Add structured data (e.g. <code class="docutils literal"><span class="pre">schema:Organization</span></code>)</li>
+<li>[ ] Add textual description</li>
+<li>[ ] Organization (<code class="docutils literal"><span class="pre">schema:Organization</span></code>)</li>
+<li>[ ] Business (<code class="docutils literal"><span class="pre">schema:Organization</span></code> &gt; <code class="docutils literal"><span class="pre">schema:LocalBusiness</span></code> &gt; {...})</li>
 </ul>
 </li>
-<li>[ ] Section: Products<ul>
-<li>[ ] Acquire product/menu/service offering information</li>
-<li>[ ] Format product/menu/service offering information as HTML</li>
-<li>[ ] Convert product/menu/service offering information to structured data</li>
+<li>[ ] Section: Products / Services<ul>
+<li>[ ] Acquire product/menu/service offering information<ul>
+<li>[ ] Products (<code class="docutils literal"><span class="pre">schema:Product</span></code>, <code class="docutils literal"><span class="pre">schema:ProductModel</span></code>)</li>
+<li>[ ] Services (<code class="docutils literal"><span class="pre">schema:Service</span></code> &lt; <code class="docutils literal"><span class="pre">schema:Intangible</span></code>)</li>
+</ul>
+</li>
+<li>[ ] Format product/menu/service offering information as HTML + RDFa</li>
 </ul>
 </li>
 <li>[ ] Section: Media / In the news<ul>
-<li>[ ] Research media profile</li>
-<li>[ ] Acquire news media assets</li>
+<li>[ ] Research media profile<ul>
+<li>[ ] Articles <code class="docutils literal"><span class="pre">schema:Article</span></code> &gt; <code class="docutils literal"><span class="pre">schema:NewsArticle</span></code></li>
+</ul>
+</li>
+<li>[ ] Acquire news media assets<ul>
+<li>[ ] Media Objects (<code class="docutils literal"><span class="pre">schema:MediaObject</span></code>)</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>[ ] Section: Contact<ul>
-<li>[ ] Name, Address, Telephone</li>
 <li>[ ] Email</li>
+<li>[ ] Name, Address, Telephone
+(<code class="docutils literal"><span class="pre">schema:LocalBusiness</span></code> &gt; <code class="docutils literal"><span class="pre">schema:Organization</span></code> &gt; <code class="docutils literal"><span class="pre">schema:Place</span></code>)</li>
 <li>[ ] Locations (<code class="docutils literal"><span class="pre">schema:LocalBusiness</span></code>)<ul>
 <li>[ ] Embed map thumbnail/widget</li>
 <li>[ ] Link to Directions</li>
+</ul>
+</li>
+<li><code class="docutils literal"><span class="pre">schema:Organization</span></code><ul>
+<li><code class="docutils literal"><span class="pre">name</span></code></li>
+<li><code class="docutils literal"><span class="pre">url</span></code></li>
+<li><code class="docutils literal"><span class="pre">address</span></code> &lt;<code class="docutils literal"><span class="pre">schema:PostalAddress</span></code>&gt;</li>
+<li><code class="docutils literal"><span class="pre">hasMap</span></code> (<code class="docutils literal"><span class="pre">map</span></code>) URL</li>
+<li>Directions</li>
+<li><code class="docutils literal"><span class="pre">telephone</span></code></li>
+<li><code class="docutils literal"><span class="pre">faxNumber</span></code></li>
+<li><code class="docutils literal"><span class="pre">email</span></code></li>
+<li><code class="docutils literal"><span class="pre">description</span></code></li>
+<li><code class="docutils literal"><span class="pre">logo</span></code></li>
+<li><code class="docutils literal"><span class="pre">image</span></code></li>
+<li><code class="docutils literal"><span class="pre">sameAs</span></code> (~= URL)</li>
+<li><code class="docutils literal"><span class="pre">legalName</span></code></li>
+<li><code class="docutils literal"><span class="pre">founder</span></code></li>
+<li><code class="docutils literal"><span class="pre">foundingDate</span></code></li>
+<li><code class="docutils literal"><span class="pre">taxID</span></code> (TIN)</li>
+<li><code class="docutils literal"><span class="pre">memberOf</span></code></li>
+</ul>
+</li>
+<li><code class="docutils literal"><span class="pre">schema:LocalBusiness</span></code> &lt; <code class="docutils literal"><span class="pre">schema:Organization</span></code><ul>
+<li><code class="docutils literal"><span class="pre">name</span></code></li>
+<li><code class="docutils literal"><span class="pre">url</span></code></li>
+<li><code class="docutils literal"><span class="pre">address</span></code> &lt;<code class="docutils literal"><span class="pre">schema:PostalAddress</span></code>&gt;</li>
+<li><code class="docutils literal"><span class="pre">hasMap</span></code> (<code class="docutils literal"><span class="pre">map</span></code>) URL</li>
+<li>Directions</li>
+<li><code class="docutils literal"><span class="pre">telephone</span></code></li>
+<li><code class="docutils literal"><span class="pre">faxNumber</span></code></li>
+<li><code class="docutils literal"><span class="pre">email</span></code></li>
+<li><code class="docutils literal"><span class="pre">image</span></code> (s)</li>
+<li><code class="docutils literal"><span class="pre">branchOf</span></code> &lt;<code class="docutils literal"><span class="pre">schema:Organization</span></code>&gt;</li>
+<li><code class="docutils literal"><span class="pre">openingHours</span></code></li>
+<li><code class="docutils literal"><span class="pre">currenciesAccepted</span></code></li>
+<li><code class="docutils literal"><span class="pre">paymentAccepted</span></code></li>
+<li><code class="docutils literal"><span class="pre">priceRange</span></code></li>
+<li><code class="docutils literal"><span class="pre">schema:FoodEstablishment</span></code> &lt; <code class="docutils literal"><span class="pre">schema:LocalBusiness</span></code><ul>
+<li><code class="docutils literal"><span class="pre">acceptsReservations</span></code> Yes/No/URL</li>
+<li><code class="docutils literal"><span class="pre">menu</span></code> text/URL</li>
+<li><code class="docutils literal"><span class="pre">servesCuisine</span></code> text</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>[ ] Social Media<ul>
@@ -511,12 +556,13 @@ whois $DOMAIN | egrep &#39;Registrar|Date|Domain Status|Registrant|Admin&#39;
 </pre></div>
 </div>
 </li>
-<li><p class="first">Online Whois</p>
+<li><p class="first">Online Whois Tools</p>
 <ul class="simple">
 <li><a class="reference external" href="http://whois.domaintools.com/$DOMAIN">http://whois.domaintools.com/$DOMAIN</a></li>
 </ul>
 </li>
 </ul>
+<p>See: <a class="reference internal" href="../wrdrd/wrdrd.tools.html#module-wrdrd.tools.domain" title="wrdrd.tools.domain"><code class="xref py py-mod docutils literal"><span class="pre">wrdrd.tools.domain</span></code></a></p>
 </div>
 <div class="section" id="web-hosting">
 <h3>Web Hosting<a class="headerlink" href="#web-hosting" title="Permalink to this headline">¶</a></h3>
@@ -528,13 +574,13 @@ whois $DOMAIN | egrep &#39;Registrar|Date|Domain Status|Registrant|Admin&#39;
 </ul>
 </li>
 </ul>
-<p>See: <code class="xref py py-mod docutils literal"><span class="pre">wrdsbc.tools.domain</span></code></p>
 </div>
 </div>
 <div class="section" id="requirements">
 <h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Requirements_analysis">https://en.wikipedia.org/wiki/Requirements_analysis</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/User_story">https://en.wikipedia.org/wiki/User_story</a></p>
+<p>See: <a class="reference internal" href="software-development.html#project-management"><em>Project Management</em></a></p>
 </div>
 </div>
 
@@ -551,10 +597,7 @@ whois $DOMAIN | egrep &#39;Registrar|Date|Domain Status|Registrant|Admin&#39;
   <ul>
 <li><a class="reference internal" href="#">Web Development</a><ul>
 <li><a class="reference internal" href="#web-glossary">Web Glossary</a></li>
-<li><a class="reference internal" href="#web-content">Web Content</a><ul>
-<li><a class="reference internal" href="#structured-data">Structured Data</a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#web-content">Web Content</a></li>
 <li><a class="reference internal" href="#index-1">Web Design</a><ul>
 <li><a class="reference internal" href="#index-2">Web Layout</a><ul>
 <li><a class="reference internal" href="#image-based-layouts">Image Based Layouts</a></li>
