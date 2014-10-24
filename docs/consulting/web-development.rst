@@ -51,8 +51,8 @@ Web Glossary
         https://en.wikipedia.org/wiki/Domain_name
 
     DNS
-        Domain Name System. Converts a domain name into an
-        IP address (e.g. 127.0.0.1 (IPv4) or ::1 (IPv6)).
+        Domain Name System. Converts a :term:`domain name` into an
+        :term:`IP address` (e.g. ``127.0.0.1`` (IPv4) or ``::1`` (IPv6)).
 
         Initial DNS hosting costs are often covered by Web Hosts.
 
@@ -70,13 +70,17 @@ Web Glossary
 
         https://en.wikipedia.org/wiki/Domain_Name_System
 
+        See: :ref:`DNS Configuration`
+
     URL
         Uniform Resource Locator. A string of characters that identify
-        a particular (view of) a resource.
+        a resource location.
 
         ::
 
-            scheme://host:port/p/a/t/h?query#fragment
+            scheme://host:port/p/a/t/h
+
+            https://wrdrd.github.io/docs/
 
         Where ``host`` is an IP address, hostname, or domain name.
 
@@ -86,24 +90,51 @@ Web Glossary
 
         https://en.wikipedia.org/wiki/Uniform_resource_locator
 
+    URI
+        Uniform Resource Identifier. A string of characters that identify
+        a resource.
+
+        ::
+
+            scheme://host:port/p/a/t/h?query#fragment
+
+            https://wrdrd.github.io/docs/#wrdrd
+
+        https://en.wikipedia.org/wiki/Uniform_resource_identifier
+
+    URN
+        Uniform Resource Name. A string of characters that identify a
+        named resource *in a namespace*.
+
+        ::
+
+            urn:namespace:key
+
+            urn:isbn:0-486-27557-4
+            urn:uuid:6e8bc430-9c3a-11d9-9669-0800200c9a66
+
+        https://en.wikipedia.org/wiki/Uniform_resource_name
+
+        https://en.wikipedia.org/wiki/Magnet_URI_scheme
+
     Web Browser
         A software program which visually renders resources
         identified by a URL and interprets scripts.
 
         Examples: Internet Explorer, Mozilla Firefox, Google Chrome
 
-        All web browsers support HTML.
+        All web browsers support :ref:`HTML`.
 
         Many web browsers support images like GIF, JPEG, PNG, and SVG.
 
         Many web browsers support Javascript scripts.
 
-        Web browsers work with a DOM (Document Object Model).
+        Web browsers work with a :term:`DOM` (Document Object Model).
 
         https://en.wikipedia.org/wiki/Web_browser
 
     DOM
-        Document Object Model. Can be thought of as an outline of
+        Document Object Model. Can be thought of as a layout outline of
         the objects in a particular document
         (e.g. text, shapes, images, videos).
 
@@ -112,60 +143,29 @@ Web Glossary
 
         https://en.wikipedia.org/wiki/Document_Object_Model
 
+        See: ref:`Web Design <web-design>`
+
     Web Standard
         An agreed-upon standard specification for web things
         (e.g. HTTP, HTML, XHTML, HTML5, CSS, Javascript, SVG)
 
         https://en.wikipedia.org/wiki/Web_standards
 
+        See: :ref:`Web Standards <web-standards>`
+
+        See: :ref:`Semantic Web Standards <semantic-web-standards>`
+
+
 .. index:: Web Content
 
 Web Content
 ~~~~~~~~~~~~~
 
-Media Resources: Copy, Text, Photos, Images, Videos (things with URLs)
+Media Resources: Copy, Text, Photos, Images, Videos
+(things with :ref:`HTTP` URLs)
 
+See :ref:`Web Standards <web-standards>`
 
-Structured Data
-++++++++++++++++++
-* http://schema.org/docs/full.html
-* Organization
-
-  * name
-  * url
-  * address PostalAddress
-  * telephone
-  * email address(es)
-  * Description
-  * logo
-  * image(s)
-  * map URL
-  * sameAs (~= URL)
-  * legalName
-  * founder
-  * foundingDate
-  * taxID (TIN)
-
-* LocalBusiness (> Category)
-
-  * name
-  * url
-  * address PostalAddress
-  * telephone
-  * email address(es)
-  * Directions
-  * image(s)
-  * branchOf <Organization>
-  * openingHours
-  * currenciesAccepted
-  * paymentAccepted
-  * priceRange
-  * map URL
-  * FoodEstablishment (> Category)
-
-    * acceptsReservations Yes/No/URL
-    * menu text/URL
-    * servesCuisine text
 
 
 .. _web-design:
@@ -303,6 +303,11 @@ See also: `<http://webdevchecklist.com/>`_
 
 * [ ] Add structured data markup to page
 
+  * http://schema.org/docs/full.html
+  * See: :ref:`Knowledge Engineering <knowledge-engineering>` >
+    :ref:`Semantic Web Standards <semantic-web-standards>`
+
+
   * [ ] Add standard header tags
 
     * [ ] ``meta`` tags: description
@@ -319,42 +324,100 @@ See also: `<http://webdevchecklist.com/>`_
 
 * [ ] Section: Navbar
 
+  * [ ] Choose top-level links
+  * [ ] Indicate current location
+
 * [ ] Section: Above the fold
 
-  * Image
-  * Video
+  * ``schema:ImageObject``
+  * ``schema:VideoObject``
+  * ``schema:MusicVideoObject``
   * Text
-
+  * HTML/CSS/JS
 
 * [ ] Add an ``<h1>`` tag with a page title
 
 * [ ] Section: About
 
-  * [ ] Add textual escription
-  * [ ] Add structured data (e.g. ``schema:Organization``)
+  * [ ] Add textual description
+  * [ ] Organization (``schema:Organization``)
+  * [ ] Business (``schema:Organization`` > ``schema:LocalBusiness`` > {...})
 
-
-* [ ] Section: Products
+* [ ] Section: Products / Services
 
   * [ ] Acquire product/menu/service offering information
-  * [ ] Format product/menu/service offering information as HTML
-  * [ ] Convert product/menu/service offering information to structured data
 
+    + [ ] Products (``schema:Product``, ``schema:ProductModel``)
+    + [ ] Services (``schema:Service`` < ``schema:Intangible``)
+
+  * [ ] Format product/menu/service offering information as HTML + RDFa
 
 * [ ] Section: Media / In the news
 
   * [ ] Research media profile
+
+    + [ ] Articles ``schema:Article`` > ``schema:NewsArticle``
+
   * [ ] Acquire news media assets
+
+    + [ ] Media Objects (``schema:MediaObject``)
 
 
 * [ ] Section: Contact
 
-  * [ ] Name, Address, Telephone
   * [ ] Email
+  * [ ] Name, Address, Telephone
+    (``schema:LocalBusiness`` > ``schema:Organization`` > ``schema:Place``)
   * [ ] Locations (``schema:LocalBusiness``)
 
     * [ ] Embed map thumbnail/widget
     * [ ] Link to Directions
+
+
+  * ``schema:Organization``
+
+    * ``name``
+    * ``url``
+    * ``address`` <``schema:PostalAddress``>
+    * ``hasMap`` (``map``) URL
+    * Directions
+    * ``telephone``
+    * ``faxNumber``
+    * ``email``
+    * ``description``
+    * ``logo``
+    * ``image``
+    * ``sameAs`` (~= URL)
+    * ``legalName``
+    * ``founder``
+    * ``foundingDate``
+    * ``taxID`` (TIN)
+    * ``memberOf``
+
+  * ``schema:LocalBusiness`` < ``schema:Organization``
+
+    * ``name``
+    * ``url``
+    * ``address`` <``schema:PostalAddress``>
+    * ``hasMap`` (``map``) URL
+    * Directions
+    * ``telephone``
+    * ``faxNumber``
+    * ``email``
+    * ``image`` (s)
+
+    * ``branchOf`` <``schema:Organization``>
+    * ``openingHours``
+    * ``currenciesAccepted``
+    * ``paymentAccepted``
+    * ``priceRange``
+
+    * ``schema:FoodEstablishment`` < ``schema:LocalBusiness``
+
+      * ``acceptsReservations`` Yes/No/URL
+      * ``menu`` text/URL
+      * ``servesCuisine`` text
+
 
   * [ ] Social Media
 
@@ -378,7 +441,6 @@ See also: `<http://webdevchecklist.com/>`_
 
   * [ ] JS libraries
   * [ ] Analytics loaders
-
 
 
 Hosting / DNS
@@ -411,9 +473,12 @@ DNS Configuration
     whois $DOMAIN
     whois $DOMAIN | egrep 'Registrar|Date|Domain Status|Registrant|Admin'
 
-* Online Whois
+* Online Whois Tools
 
   * http://whois.domaintools.com/$DOMAIN
+
+See: :py:mod:`wrdrd.tools.domain`
+
 
 Web Hosting
 +++++++++++++
@@ -424,7 +489,6 @@ Web Hosting
 
   * http://reverseip.domaintools.com/search/?q=$IP
 
-See: :py:mod:`wrdsbc.tools.domain`
 
 
 Requirements
@@ -433,4 +497,4 @@ https://en.wikipedia.org/wiki/Requirements_analysis
 
 https://en.wikipedia.org/wiki/User_story
 
-
+See: :ref:`Project Management <project-management>`
