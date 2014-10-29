@@ -41,12 +41,6 @@ coverage:
 	coverage html
 	open htmlcov/index.html
 
-docs-api:
-	rm -f docs/wrdrd/wrdrd.rst
-	rm -f docs/wrdrd/wrdrd.*.rst
-	sphinx-apidoc -T -M -o docs/wrdrd/ wrdrd
-
-
 
 STATIC:="./docs/_static"
 LOCALJS="$(STATIC)/js/local.js"
@@ -55,6 +49,11 @@ localjs:
 	echo '' > $(LOCALJS)
 	cat $(STATIC)/js/ga.js >> $(LOCALJS)
 	cat $(STATIC)/js/newtab.js >> $(LOCALJS)
+
+docs-api:
+	rm -f docs/wrdrd/wrdrd.rst
+	rm -f docs/wrdrd/wrdrd.*.rst
+	sphinx-apidoc -T -M -o docs/wrdrd/ wrdrd
 
 docs: clean-docs docs-api localjs
 	$(MAKE) -C docs html
