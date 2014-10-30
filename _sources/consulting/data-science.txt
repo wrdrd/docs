@@ -1,32 +1,28 @@
 
+.. index:: Data Science
+.. _data-science:
 
-.. index:: Information Science
-.. _information-science:
+Data Science
+=============
+https://en.wikipedia.org/wiki/Data_science
 
-#####################
-Information Science
-#####################
-https://en.wikipedia.org/wiki/Information_science
-
-https://en.wikipedia.org/wiki/Category:Information_science
-
-https://en.wikipedia.org/wiki/Template:Information_science
-
-| https://en.wikipedia.org/wiki/Category:Technology_and_applied_science_templates
+| "The Open Source Data Science Masters"
+| http://datasciencemasters.org/
+|
+| "Ten Simple Rules for Reproducible Computational Research"
+  http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1003285
 
 
 Data, Information, Knowledge, & Wisdom
-==========================================
+------------------------------------------
 ::
 
-    #             Lead -> Gold              #
-
+    # Lead -> Gold
     Data -> Information + Knowledge -> Wisdom
 
 
-
-Smoothies Example
-+++++++++++++++++++
+Smoothies
++++++++++++
 
 **Data**
 
@@ -76,11 +72,9 @@ On Mondays, we usually (on (simple) average) make about $500.
 We could save money by not being open on New Years Day,
 but, our loyal customers would not be happy about that.
 
-See: :ref:`Business > Business ROI <business-roi>`
 
-
-Body Temperature Example
-++++++++++++++++++++++++++
+Body Temperature
+++++++++++++++++++
 
 **Data** ::
 
@@ -106,32 +100,21 @@ If it's 1745, and body temperature is n degrees above baseline,
 I'm probably walking outside and it is hot out.
 
 
-See: :ref:`Cognitive Biases <cognitive-bias>`
+
 
 
 .. index:: Data Science Theory
 .. _data-science-theory:
 
-.. index:: Data Science
-.. _data-science:
-
-Data Science
-=============
-https://en.wikipedia.org/wiki/Data_science
-
-| "The Open Source Data Science Masters"
-| http://datasciencemasters.org/
-|
-| "Ten Simple Rules for Reproducible Computational Research"
-| http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1003285
-
+Theory
+--------
 
 
 .. index:: Science
 .. _science:
 
 Science
-=========
++++++++++
 https://en.wikipedia.org/wiki/Science
 
 https://en.wikipedia.org/wiki/Outline_of_science
@@ -143,7 +126,7 @@ https://en.wikipedia.org/wiki/Category:Science
 .. _cognitive-bias:
 
 Cognitive Biases
-++++++++++++++++++
+~~~~~~~~~~~~~~~~~~
 https://en.wikipedia.org/wiki/Cognitive_bias
 
 https://en.wikipedia.org/wiki/Heuristics_in_judgment_and_decision-making
@@ -166,7 +149,7 @@ https://en.wikipedia.org/wiki/Critical_thinking
 .. _open-science:
 
 Open Science
-++++++++++++++
+~~~~~~~~~~~~~~
 https://en.wikipedia.org/wiki/Open_science
 
 * https://en.wikipedia.org/wiki/Open_source
@@ -185,7 +168,7 @@ https://en.wikipedia.org/wiki/Peer_review
 .. _scientific-method:
 
 Scientific Method
-++++++++++++++++++
+~~~~~~~~~~~~~~~~~~
 https://en.wikipedia.org/wiki/Scientific_method
 
 https://en.wikipedia.org/wiki/Argument
@@ -215,7 +198,7 @@ https://en.wikipedia.org/wiki/Systematic_review
 .. _math:
 
 Math
-=====
++++++
 https://en.wikipedia.org/wiki/Mathematics
 
 https://en.wikipedia.org/wiki/Outline_of_mathematics
@@ -227,7 +210,7 @@ https://en.wikipedia.org/wiki/Outline_of_mathematics
 .. _mathematical-notation:
 
 Mathematical Notation
-+++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~
 * https://en.wikipedia.org/wiki/Outline_of_mathematics#Mathematical_notation
 * https://en.wikipedia.org/wiki/List_of_mathematical_symbols
 * https://en.wikipedia.org/wiki/Greek_letters_used_in_mathematics,_science,_and_engineering
@@ -238,7 +221,7 @@ Mathematical Notation
 .. _LaTeX:
 
 LaTeX
-++++++
+~~~~~~
 https://en.wikipedia.org/wiki/LaTeX
 
 * https://en.wikipedia.org/wiki/LaTeX#Examples
@@ -255,7 +238,7 @@ Tools
 .. _information-theory:
 
 Information Theory
-++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~
 https://en.wikipedia.org/wiki/Information_theory
 
 `<https://en.wikipedia.org/wiki/Entropy_(information_theory)>`_
@@ -276,7 +259,7 @@ https://en.wikipedia.org/wiki/Probability_theory
 .. _linear-algebra:
 
 Linear Algebra
-++++++++++++++++
+~~~~~~~~~~~~~~~~
 https://en.wikipedia.org/wiki/Linear_algebra
 
 
@@ -284,7 +267,7 @@ https://en.wikipedia.org/wiki/Linear_algebra
 .. _calculus:
 
 Calculus
-++++++++++
+~~~~~~~~~~
 https://en.wikipedia.org/wiki/Calculus
 
 
@@ -292,7 +275,7 @@ https://en.wikipedia.org/wiki/Calculus
 .. _statistics:
 
 Statistics
-+++++++++++
+~~~~~~~~~~~
 https://en.wikipedia.org/wiki/Statistics
 
 https://en.wikipedia.org/wiki/Outline_of_statistics
@@ -374,13 +357,23 @@ https://en.wikipedia.org/wiki/Receiver_operating_characteristic
 https://en.wikipedia.org/wiki/Post_hoc_ergo_propter_hoc
 
 
+.. index:: Data Analysis
+.. _data-analysis:
+
+Analysis
+++++++++++
+https://en.wikipedia.org/wiki/Data_analysis
+
+https://en.wikipedia.org/wiki/Big_data
+
+https://en.wikipedia.org/wiki/Data_processing#Data_processing_functions
 
 
 .. index:: Data Learning
 .. _data-learning:
 
 Learning
-=========
+~~~~~~~~~
 https://en.wikipedia.org/wiki/Learning
 
 * http://plato.stanford.edu/entries/learning-formal/
@@ -413,36 +406,11 @@ https://en.wikipedia.org/wiki/Organizational_learning
 See: :ref:`Knowledge Engineering <knowledge-engineering>`
 
 
-.. index:: Data Analysis
-.. _data-analysis:
-
-Data Analysis
-+++++++++++++++
-https://en.wikipedia.org/wiki/Analysis
-
-https://en.wikipedia.org/wiki/Data_analysis
-
-https://en.wikipedia.org/wiki/Data_processing#Data_processing_functions
-
-https://en.wikipedia.org/wiki/Exploratory_data_analysis
-
-* https://en.wikipedia.org/wiki/Exploratory_data_analysis#Techniques
-
-
-
-.. index:: Big data
-.. _big-data:
-
-Big Data
-+++++++++++
-https://en.wikipedia.org/wiki/Big_data
-
-
 .. index:: Data Mining
 .. _data-mining:
 
 Data Mining
-+++++++++++++
+~~~~~~~~~~~~~
 https://en.wikipedia.org/wiki/Data_mining
 
 https://en.wikipedia.org/wiki/Knowledge_extraction
@@ -454,7 +422,7 @@ https://en.wikipedia.org/wiki/Extract,_transform,_load
 .. _machine-learning:
 
 Machine Learning
-++++++++++++++++++
+~~~~~~~~~~~~~~~~~~
 https://en.wikipedia.org/wiki/Machine_learning
 
 https://en.wikipedia.org/wiki/Online_machine_learning
@@ -463,10 +431,15 @@ https://en.wikipedia.org/wiki/Online_machine_learning
 * https://en.wikipedia.org/wiki/Unsupervised_learning
 
 
-Techniques
-==============
+Tools
+-------
+https://en.wikipedia.org/wiki/Scientific_workflow_system
 
-Automate Workflows
+
+Techniques
+--------------
+
+Automated Workflows
 ++++++++++++++++++++
 Standard, Automated Workflows
 
@@ -483,7 +456,6 @@ Standard, Automated Workflows
    Q: Which factors did we know we were capturing?
 
 
-
 .. index:: Data Visualization
 .. _data-visualization:
 
@@ -491,20 +463,11 @@ Data Visualization
 ++++++++++++++++++++
 https://en.wikipedia.org/wiki/Data_visualization
 
-| "THE DATA SCIENCE VENN DIAGRAM"
-| http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram
-|
-| "The Fourth Bubble in the Data Science Venn Diagram: Social Sciences"
-| http://datascienceassn.org/content/fourth-bubble-data-science-venn-diagram-social-sciences
-
-
-Tools
-=======
-https://en.wikipedia.org/wiki/Scientific_workflow_system
+* http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram
 
 
 Data Visualization Tools
-++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 https://en.wikipedia.org/wiki/Matplotlib
@@ -544,4 +507,5 @@ https://en.wikipedia.org/wiki/D3.js
 https://en.wikipedia.org/wiki/Three.js
 
 * http://threejs.org/
+
 
