@@ -205,7 +205,8 @@ which work across browsers, devices, and various screen sizes.
 * https://en.wikipedia.org/wiki/Web_design#Page_layout
 * https://en.wikipedia.org/wiki/CSS_frameworks
 * https://en.wikipedia.org/wiki/Responsive_Web_Design
-* https://en.wikipedia.org/wiki/List_of_displays_by_pixel_density
+
+.. https://en.wikipedia.org/wiki/List_of_displays_by_pixel_density
 
 
 Image Based Layouts
