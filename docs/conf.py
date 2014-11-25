@@ -181,12 +181,15 @@ html_sidebars = {
         'localtoc.html',
         'relations.html',
         'sourcelink.html',
-        'searchbox.html'],
+        'searchbox.html',
+        'links.html',],
+
     'index': [
         'globaltoc.html',
         'relations.html',
         'sourcelink.html',
-        'searchbox.html'],
+        'searchbox.html',
+        'links.html',],
 }
 
 # Additional templates that should be rendered to pages, maps page names to
