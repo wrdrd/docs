@@ -206,6 +206,54 @@ https://en.wikipedia.org/wiki/Outline_of_mathematics
 * http://www.iflscience.com/brain/math-gifs-will-help-you-understand-these-concepts-better-your-teacher-ever-did
 
 
+.. index:: Math Courses
+.. _math courses:
+
+Courses
+~~~~~~~
+* https://www.khanacademy.org/math/arithmetic
+* https://www.khanacademy.org/math/pre-algebra
+* https://www.khanacademy.org/math/algebra-basics
+* https://www.khanacademy.org/math/algebra
+* https://www.khanacademy.org/math/basic-geo
+* https://www.khanacademy.org/math/geometry
+* https://www.khanacademy.org/math/algebra2
+* https://www.khanacademy.org/math/trigonometry
+* https://www.khanacademy.org/math/probability
+* https://www.khanacademy.org/math/precalculus
+* https://www.khanacademy.org/math/differential-calculus
+* https://www.khanacademy.org/math/integral-calculus
+* https://www.khanacademy.org/math/multivariable-calculus
+* https://www.khanacademy.org/math/differential-equations
+* https://www.khanacademy.org/math/linear-algebra
+* https://www.khanacademy.org/math/recreational-math
+* https://www.khanacademy.org/math/competition-math
+* https://www.class-central.com/subject/maths
+* https://en.wikipedia.org/wiki/Kaggle#How_Kaggle_competitions_work
+
+
+.. index:: Project Euler
+.. _project euler:
+
+Project Euler
+~~~~~~~~~~~~~~
+https://en.wikipedia.org/wiki/Project_Euler
+
+https://projecteuler.net/
+
+Math Algorithm Problems
+
+
+.. index:: Rosalind
+.. _rosalind:
+
+Rosalind
+~~~~~~~~~~
+http://rosalind.info/
+
+Bioinformatics and Science Algorithm Problems
+
+
 .. index:: Mathematical Notation
 .. _mathematical-notation:
 
