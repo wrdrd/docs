@@ -232,6 +232,7 @@ Tools
 
 * http://docs.mathjax.org/en/latest/tex.html
 * http://ipython.org/ipython-doc/dev/install/install.html#mathjax
+* http://nbviewer.ipython.org/gist/rpmuller/5920182
 
 
 .. index:: Information Theory
