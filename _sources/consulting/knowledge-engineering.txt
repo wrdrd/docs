@@ -729,6 +729,8 @@ https://en.wikipedia.org/wiki/Simple_Knowledge_Organization_System
 * http://www.w3.org/TR/skos-reference/
 * http://www.w3.org/TR/skos-reference/skos.html
 
+| @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+| LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_skos.html
 
 .. index:: SPARQL
 .. _SPARQL:
@@ -741,6 +743,7 @@ https://en.wikipedia.org/wiki/SPARQL
 * http://www.w3.org/TR/sparql11-query/
 * http://www.w3.org/TR/sparql11-update/
 * http://www.w3.org/TR/sparql11-entailment/
+* http://www.w3.org/TR/sparql11-federated-query/
 * http://www.w3.org/wiki/SparqlImplementations
 * http://www.w3.org/2009/sparql/implementations/#sparql11-entailment
 
@@ -757,6 +760,8 @@ https://en.wikipedia.org/wiki/Web_Ontology_Language
 * http://www.w3.org/TR/owl2-quick-reference/
 * http://www.w3.org/TR/owl2-profiles/
 
+| @prefix owl: <http://www.w3.org/2002/07/owl#> .
+| LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_owl.html
 
 .. index:: PROV
 .. _PROV:
@@ -771,7 +776,11 @@ http://www.w3.org/2011/prov/wiki/Main_Page
 * http://www.w3.org/TR/prov-primer/
 * http://www.w3.org/TR/prov-o/
 
+| @prefix prov: <http://www.w3.org/ns/prov#> .
+| LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_prov.html
+
 https://en.wikipedia.org/wiki/Provenance#Data_provenance
+
 
 
 .. index:: OA
@@ -785,6 +794,9 @@ http://www.openannotation.org/
 * http://www.openannotation.org/spec/core/
 * http://prefix.cc/oa
 * http://lov.okfn.org/dataset/lov/details/vocabulary_oa.html
+
+| @prefix oa: <http://www.w3.org/ns/oa#> .
+| LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_oa.html
 
 https://en.wikipedia.org/wiki/Web_annotation
 
