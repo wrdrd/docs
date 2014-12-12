@@ -552,6 +552,7 @@ https://en.wikipedia.org/wiki/Category:Semantic_Web
 `<https://en.wikipedia.org/wiki/Semantics_(computer_science)>`_
 
 * http://www.w3.org/2001/sw/wiki/Books
+* http://www.w3.org/2001/sw/wiki/Tools
 
 
 .. index:: Semantic Web Standards
@@ -811,6 +812,8 @@ RDFJS
 ``````
 http://www.w3.org/community/rdfjs/
 
+http://www.w3.org/community/rdfjs/wiki/Comparison_of_RDFJS_libraries
+
 
 .. index:: RDFLib
 .. _RDFLib:
@@ -819,6 +822,7 @@ RDFLib
 ```````
 https://en.wikipedia.org/wiki/RDFLib
 
+* https://github.com/RDFLib
 * https://rdflib.readthedocs.org/en/latest/intro_to_creating_rdf.html
 
 
@@ -856,5 +860,5 @@ Schema.org RDF
 * http://schema.rdfs.org/all.nt
 * http://schema.rdfs.org/all.ttl *
 * http://schema.rdfs.org/all-classes.csv
-* http://schema.org/docs/schemaorg.owl
-* http://schema.rdfs.org/mappings.html (
+* http://schema.org/docs/schemaorg.owl (currently incomplete)
+* http://schema.rdfs.org/mappings.html (infrequently updated)
