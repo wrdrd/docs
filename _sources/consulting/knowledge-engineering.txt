@@ -854,11 +854,15 @@ https://en.wikipedia.org/wiki/Schema.org
 
 Schema.org RDF
 ````````````````
+Schema.org is not maintained as RDF.
+
+These mappings are incomplete and out-of-date:
+
 * http://schema.rdfs.org/tools.html
 * http://schema.rdfs.org/all.json
 * http://schema.rdfs.org/all.rdf
 * http://schema.rdfs.org/all.nt
 * http://schema.rdfs.org/all.ttl *
 * http://schema.rdfs.org/all-classes.csv
-* http://schema.org/docs/schemaorg.owl (currently incomplete)
-* http://schema.rdfs.org/mappings.html (infrequently updated)
+* http://schema.org/docs/schemaorg.owl
+* http://schema.rdfs.org/mappings.html
