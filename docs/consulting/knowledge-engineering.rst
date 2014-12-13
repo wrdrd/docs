@@ -854,15 +854,18 @@ https://en.wikipedia.org/wiki/Schema.org
 
 Schema.org RDF
 ````````````````
-Schema.org is not maintained as RDF.
+Schema.org is maintained as RDFa.
 
-These mappings are incomplete and out-of-date:
+TopBraid maintains RDF/OWL transformations of schema.org:
 
+* http://topbraid.org/schema/
+* http://topbraid.org/schema/schema.rdf
+* http://topbraid.org/schema/schema.ttl
+* http://topbraid.org/schema/schema-single-range.ttl
+
+Tools and Mappings
+
+* https://github.com/mhausenblas/schema-org-rdf
 * http://schema.rdfs.org/tools.html
-* http://schema.rdfs.org/all.json
-* http://schema.rdfs.org/all.rdf
-* http://schema.rdfs.org/all.nt
-* http://schema.rdfs.org/all.ttl *
-* http://schema.rdfs.org/all-classes.csv
-* http://schema.org/docs/schemaorg.owl
 * http://schema.rdfs.org/mappings.html
+
