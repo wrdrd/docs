@@ -143,7 +143,7 @@ Web Glossary
 
         https://en.wikipedia.org/wiki/Document_Object_Model
 
-        See: ref:`Web Design <web-design>`
+        See: :ref:`Web Design <web-design>`
 
     Web Standard
         An agreed-upon standard specification for web things
@@ -212,13 +212,13 @@ Image Based Layouts
 ````````````````````
 At first glance, it may seem that an image-based layout with fixed
 dimensions (as might be developed in a traditional graphic design program)
-would be simpler as easier. However:
+would be simpler and easier; however:
 
 * an 800px wide image layout is hardly usable on a mobile device
 * search engines and screen readers are unable to read text embedded
-  within images; necessitating `alt` attributes on `<img>` tags and `title`
-  attributes on `<a>` tags
-* When scaled (by zooming in), raster images like JPEG, PNG, and GIF
+  within images; necessitating ``alt=`` attributes on ``<img>`` tags
+  and ``title=`` attributes on ``<a>`` tags
+* when scaled (by zooming in), raster images like JPEG, PNG, and GIF
   look blocky and pixelated
 
 Practically, it is not possible to develop a responsive web layout which
