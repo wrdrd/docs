@@ -208,6 +208,8 @@ which work across browsers, devices, and various screen sizes.
 * https://en.wikipedia.org/wiki/List_of_displays_by_pixel_density
 
 
+.. _image-based-layouts:
+
 Image Based Layouts
 ````````````````````
 At first glance, it may seem that an image-based layout with fixed
@@ -271,11 +273,6 @@ Bootstrap
     * https://wrapbootstrap.com/theme/deusone-responsive-one-page-template-WB0271X52
     * http://themeforest.net/search?utf8=%E2%9C%93&term=bootstrap
 
-  * Image-heavy templates
-
-    * Difficult to modify (without the PSD source and Photoshop)
-    * Slower to load on a phone or tablet
-
 
 .. index:: Web Page Checklist
 
@@ -288,7 +285,7 @@ See also: `<http://webdevchecklist.com/>`_
 
   * [ ] Create or acquire static template
 
-    * Helps if it already contains CSS framework
+    * Helps if it already includes a CSS framework
 
   * [ ] Create or acquire dynamic template
 
