@@ -554,13 +554,14 @@ CSVW
 `````
 https://w3c.github.io/csvw/
 
+* https://w3c.github.io/csvw/ns/
 * :ref:`CSV` -> :ref:`JSON` ( -> :ref:`JSON-LD` -> :ref:`RDF` )
 * :ref:`CSV` -> :ref:`RDF`
 
 Features:
 
 * URIs for datatypes (:ref:`XSD`, ...)
-* URIs for columns (:ref:`RDF`, :ref:`Schema.org RDF`)
+* URIs for columns (:ref:`RDF` ``@prefix name <url>[#] .``)
 * Document Metadata
 
 
@@ -924,7 +925,7 @@ https://en.wikipedia.org/wiki/Semantically-Interlinked_Online_Communities
 .. _OA:
 
 OA
-````
+++++
 http://www.openannotation.org/
 
 * http://www.openannotation.org/spec/core/
