@@ -462,6 +462,21 @@ https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
 * https://www.mnot.net/blog/2014/06/07/rfc2616_is_dead
 * http://tools.ietf.org/html/rfc7230#page-5
 
+.. index:: HTTP in RDF
+.. _httprdf:
+
+HTTP in RDF
+`````````````
+http://www.w3.org/TR/HTTP-in-RDF10/
+
+* http://www.w3.org/TR/HTTP-in-RDF10/
+
+| xmlns: ``@prefix http <http://www.w3.org/2011/http#>``
+| xmlns: ``@prefix http-headers <http://www.w3.org/2011/http-headers>``
+| xmlns: ``@prefix http-methods <http://www.w3.org/2011/http-methods>``
+| xmlns: ``@prefix http-statusCodes <http://www.w3.org/2011/http-statusCodes>``
+| LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_http.html
+
 
 .. index:: HTTP/2
 .. index:: HTTP2
