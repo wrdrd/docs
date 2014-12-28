@@ -466,14 +466,16 @@ https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
 .. _httprdf:
 
 HTTP in RDF
-+++++++++++++
+`````````````
 http://www.w3.org/TR/HTTP-in-RDF10/
 
 * http://www.w3.org/TR/HTTP-in-RDF10/
 
 | xmlns: ``@prefix http <http://www.w3.org/2011/http#>``
+| xmlns: ``@prefix http-headers <http://www.w3.org/2011/http-headers>``
+| xmlns: ``@prefix http-methods <http://www.w3.org/2011/http-methods>``
+| xmlns: ``@prefix http-statusCodes <http://www.w3.org/2011/http-statusCodes>``
 | LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_http.html
-
 
 
 .. index:: HTTP/2
