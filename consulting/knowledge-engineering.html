@@ -138,16 +138,20 @@
 <li><a class="reference internal" href="#w3c">W3C</a></li>
 <li><a class="reference internal" href="#iso8601">ISO8601</a></li>
 <li><a class="reference internal" href="#http">HTTP</a></li>
+<li><a class="reference internal" href="#http-2">HTTP/2</a></li>
 <li><a class="reference internal" href="#html">HTML</a></li>
 <li><a class="reference internal" href="#xml">XML</a></li>
 <li><a class="reference internal" href="#xsd">XSD</a></li>
 <li><a class="reference internal" href="#json">JSON</a></li>
-<li><a class="reference internal" href="#csv">CSV</a></li>
+<li><a class="reference internal" href="#csv">CSV</a><ul>
+<li><a class="reference internal" href="#csvw">CSVW</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#resource-description-framework-rdf">Resource Description Framework (RDF)</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#linked-data">Linked Data</a></li>
-<li><a class="reference internal" href="#semantic-web">Semantic Web</a><ul>
+<li><a class="reference internal" href="#semantic-web">Semantic Web</a></li>
 <li><a class="reference internal" href="#semantic-web-standards">Semantic Web Standards</a><ul>
 <li><a class="reference internal" href="#rdf">RDF</a><ul>
 <li><a class="reference internal" href="#n-triples">N-Triples</a></li>
@@ -156,17 +160,22 @@
 <li><a class="reference internal" href="#n3">N3</a></li>
 <li><a class="reference internal" href="#turtle">Turtle</a></li>
 <li><a class="reference internal" href="#trig">TriG</a></li>
-</ul>
-</li>
 <li><a class="reference internal" href="#rdfa">RDFa</a></li>
 <li><a class="reference internal" href="#json-ld">JSON-LD</a></li>
-<li><a class="reference internal" href="#rdfs">RDFS</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#rdfs">RDFS</a><ul>
 <li><a class="reference internal" href="#dcmi">DCMI</a></li>
 <li><a class="reference internal" href="#skos">SKOS</a></li>
 <li><a class="reference internal" href="#sparql">SPARQL</a></li>
-<li><a class="reference internal" href="#owl">OWL</a></li>
+<li><a class="reference internal" href="#ldp">LDP</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#owl">OWL</a><ul>
 <li><a class="reference internal" href="#prov">PROV</a></li>
 <li><a class="reference internal" href="#oa">OA</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a class="reference internal" href="#semantic-web-tools">Semantic Web Tools</a><ul>
@@ -174,11 +183,13 @@
 <li><a class="reference internal" href="#rdflib">RDFLib</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#web-schema-resources">Web Schema Resources</a></li>
-<li><a class="reference internal" href="#schema-org">Schema.org</a><ul>
-<li><a class="reference internal" href="#schema-org-rdf">Schema.org RDF</a></li>
+<li><a class="reference internal" href="#semantic-web-schema-resources">Semantic Web Schema Resources</a><ul>
+<li><a class="reference internal" href="#foaf">FOAF</a></li>
+<li><a class="reference internal" href="#sioc">SIOC</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#schema-org">Schema.org</a><ul>
+<li><a class="reference internal" href="#schema-org-rdf">Schema.org RDF</a></li>
 </ul>
 </li>
 </ul>
@@ -248,23 +259,23 @@
 </ul>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><a class="reference internal" href="#logic" id="id56">Logic</a><ul>
-<li><a class="reference internal" href="#set-theory" id="id57">Set Theory</a></li>
-<li><a class="reference internal" href="#boolean-algebra" id="id58">Boolean Algebra</a></li>
-<li><a class="reference internal" href="#many-valued-logic" id="id59">Many-valued Logic</a><ul>
-<li><a class="reference internal" href="#three-valued-logic" id="id60">Three-valued Logic</a></li>
-<li><a class="reference internal" href="#fuzzy-logic" id="id61">Fuzzy Logic</a></li>
-<li><a class="reference internal" href="#probabilistic-logic" id="id62">Probabilistic Logic</a></li>
+<li><a class="reference internal" href="#logic" id="id58">Logic</a><ul>
+<li><a class="reference internal" href="#set-theory" id="id59">Set Theory</a></li>
+<li><a class="reference internal" href="#boolean-algebra" id="id60">Boolean Algebra</a></li>
+<li><a class="reference internal" href="#many-valued-logic" id="id61">Many-valued Logic</a><ul>
+<li><a class="reference internal" href="#three-valued-logic" id="id62">Three-valued Logic</a></li>
+<li><a class="reference internal" href="#fuzzy-logic" id="id63">Fuzzy Logic</a></li>
+<li><a class="reference internal" href="#probabilistic-logic" id="id64">Probabilistic Logic</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#propositional-logic" id="id63">Propositional Logic</a></li>
-<li><a class="reference internal" href="#first-order-logic" id="id64">First-order Logic</a></li>
-<li><a class="reference internal" href="#description-logic" id="id65">Description Logic</a></li>
+<li><a class="reference internal" href="#propositional-logic" id="id65">Propositional Logic</a></li>
+<li><a class="reference internal" href="#first-order-logic" id="id66">First-order Logic</a></li>
+<li><a class="reference internal" href="#description-logic" id="id67">Description Logic</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#reasoning" id="id66">Reasoning</a><ul>
-<li><a class="reference internal" href="#inference" id="id67">Inference</a><ul>
-<li><a class="reference internal" href="#entailment" id="id68">Entailment</a></li>
+<li><a class="reference internal" href="#reasoning" id="id68">Reasoning</a><ul>
+<li><a class="reference internal" href="#inference" id="id69">Inference</a><ul>
+<li><a class="reference internal" href="#entailment" id="id70">Entailment</a></li>
 </ul>
 </li>
 </ul>
@@ -272,23 +283,23 @@
 </ul>
 </div>
 <div class="section" id="logic">
-<span id="index-1"></span><span id="id2"></span><h3><a class="toc-backref" href="#id56">Logic</a><a class="headerlink" href="#logic" title="Permalink to this headline">¶</a></h3>
+<span id="index-1"></span><span id="id2"></span><h3><a class="toc-backref" href="#id58">Logic</a><a class="headerlink" href="#logic" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Logic">https://en.wikipedia.org/wiki/Logic</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Category:Logic">https://en.wikipedia.org/wiki/Category:Logic</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/List_of_logic_symbols">https://en.wikipedia.org/wiki/List_of_logic_symbols</a></p>
 <div class="section" id="set-theory">
-<span id="index-2"></span><span id="id3"></span><h4><a class="toc-backref" href="#id57">Set Theory</a><a class="headerlink" href="#set-theory" title="Permalink to this headline">¶</a></h4>
+<span id="index-2"></span><span id="id3"></span><h4><a class="toc-backref" href="#id59">Set Theory</a><a class="headerlink" href="#set-theory" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Set_theory">https://en.wikipedia.org/wiki/Set_theory</a></p>
 </div>
 <div class="section" id="boolean-algebra">
-<span id="index-3"></span><span id="id4"></span><h4><a class="toc-backref" href="#id58">Boolean Algebra</a><a class="headerlink" href="#boolean-algebra" title="Permalink to this headline">¶</a></h4>
+<span id="index-3"></span><span id="id4"></span><h4><a class="toc-backref" href="#id60">Boolean Algebra</a><a class="headerlink" href="#boolean-algebra" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Boolean_algebra">https://en.wikipedia.org/wiki/Boolean_algebra</a></p>
 </div>
 <div class="section" id="many-valued-logic">
-<span id="index-4"></span><span id="id5"></span><h4><a class="toc-backref" href="#id59">Many-valued Logic</a><a class="headerlink" href="#many-valued-logic" title="Permalink to this headline">¶</a></h4>
+<span id="index-4"></span><span id="id5"></span><h4><a class="toc-backref" href="#id61">Many-valued Logic</a><a class="headerlink" href="#many-valued-logic" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Many-valued_logic">https://en.wikipedia.org/wiki/Many-valued_logic</a></p>
 <div class="section" id="three-valued-logic">
-<span id="index-5"></span><span id="id6"></span><h5><a class="toc-backref" href="#id60">Three-valued Logic</a><a class="headerlink" href="#three-valued-logic" title="Permalink to this headline">¶</a></h5>
+<span id="index-5"></span><span id="id6"></span><h5><a class="toc-backref" href="#id62">Three-valued Logic</a><a class="headerlink" href="#three-valued-logic" title="Permalink to this headline">¶</a></h5>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Three-valued_logic">https://en.wikipedia.org/wiki/Three-valued_logic</a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="p">{</span> <span class="bp">True</span><span class="p">,</span> <span class="bp">False</span><span class="p">,</span> <span class="n">Unknown</span> <span class="p">}</span>
 
@@ -300,24 +311,24 @@
 </div>
 </div>
 <div class="section" id="fuzzy-logic">
-<span id="index-6"></span><span id="id7"></span><h5><a class="toc-backref" href="#id61">Fuzzy Logic</a><a class="headerlink" href="#fuzzy-logic" title="Permalink to this headline">¶</a></h5>
+<span id="index-6"></span><span id="id7"></span><h5><a class="toc-backref" href="#id63">Fuzzy Logic</a><a class="headerlink" href="#fuzzy-logic" title="Permalink to this headline">¶</a></h5>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Fuzzy_logic">https://en.wikipedia.org/wiki/Fuzzy_logic</a></p>
 </div>
 <div class="section" id="probabilistic-logic">
-<span id="index-7"></span><span id="id8"></span><h5><a class="toc-backref" href="#id62">Probabilistic Logic</a><a class="headerlink" href="#probabilistic-logic" title="Permalink to this headline">¶</a></h5>
+<span id="index-7"></span><span id="id8"></span><h5><a class="toc-backref" href="#id64">Probabilistic Logic</a><a class="headerlink" href="#probabilistic-logic" title="Permalink to this headline">¶</a></h5>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Probabilistic_logic">https://en.wikipedia.org/wiki/Probabilistic_logic</a></p>
 </div>
 </div>
 <div class="section" id="propositional-logic">
-<span id="propsitional-logic"></span><span id="index-8"></span><h4><a class="toc-backref" href="#id63">Propositional Logic</a><a class="headerlink" href="#propositional-logic" title="Permalink to this headline">¶</a></h4>
+<span id="propsitional-logic"></span><span id="index-8"></span><h4><a class="toc-backref" href="#id65">Propositional Logic</a><a class="headerlink" href="#propositional-logic" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Propositional_logic">https://en.wikipedia.org/wiki/Propositional_logic</a></p>
 <span class="target" id="index-9"></span></div>
 <div class="section" id="first-order-logic">
-<span id="fol"></span><span id="index-10"></span><h4><a class="toc-backref" href="#id64">First-order Logic</a><a class="headerlink" href="#first-order-logic" title="Permalink to this headline">¶</a></h4>
+<span id="fol"></span><span id="index-10"></span><h4><a class="toc-backref" href="#id66">First-order Logic</a><a class="headerlink" href="#first-order-logic" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/First-order_logic">https://en.wikipedia.org/wiki/First-order_logic</a> (FOL)</p>
 <span class="target" id="index-11"></span></div>
 <div class="section" id="description-logic">
-<span id="dl"></span><span id="index-12"></span><h4><a class="toc-backref" href="#id65">Description Logic</a><a class="headerlink" href="#description-logic" title="Permalink to this headline">¶</a></h4>
+<span id="dl"></span><span id="index-12"></span><h4><a class="toc-backref" href="#id67">Description Logic</a><a class="headerlink" href="#description-logic" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Description_logic">https://en.wikipedia.org/wiki/Description_logic</a> (DL; DLP (Description Logic Programming))</p>
 <ul class="simple">
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Description_logic#Notation">https://en.wikipedia.org/wiki/Description_logic#Notation</a></li>
@@ -328,19 +339,19 @@
 </div>
 </div>
 <div class="section" id="reasoning">
-<span id="index-13"></span><span id="id9"></span><h3><a class="toc-backref" href="#id66">Reasoning</a><a class="headerlink" href="#reasoning" title="Permalink to this headline">¶</a></h3>
+<span id="index-13"></span><span id="id9"></span><h3><a class="toc-backref" href="#id68">Reasoning</a><a class="headerlink" href="#reasoning" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Deductive_reasoning">https://en.wikipedia.org/wiki/Deductive_reasoning</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Category:Reasoning">https://en.wikipedia.org/wiki/Category:Reasoning</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Semantic_reasoner">https://en.wikipedia.org/wiki/Semantic_reasoner</a></p>
 <div class="section" id="inference">
-<span id="index-14"></span><span id="id10"></span><h4><a class="toc-backref" href="#id67">Inference</a><a class="headerlink" href="#inference" title="Permalink to this headline">¶</a></h4>
+<span id="index-14"></span><span id="id10"></span><h4><a class="toc-backref" href="#id69">Inference</a><a class="headerlink" href="#inference" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Inference">https://en.wikipedia.org/wiki/Inference</a></li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Rule_of_inference">https://en.wikipedia.org/wiki/Rule_of_inference</a> (Logic)</li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Category:Statistical_inference">https://en.wikipedia.org/wiki/Category:Statistical_inference</a> (Logic + Math)</li>
 </ul>
 <div class="section" id="entailment">
-<span id="index-15"></span><span id="id11"></span><h5><a class="toc-backref" href="#id68">Entailment</a><a class="headerlink" href="#entailment" title="Permalink to this headline">¶</a></h5>
+<span id="index-15"></span><span id="id11"></span><h5><a class="toc-backref" href="#id70">Entailment</a><a class="headerlink" href="#entailment" title="Permalink to this headline">¶</a></h5>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Entailment">https://en.wikipedia.org/wiki/Entailment</a></p>
 <ul class="simple">
 <li><a class="reference external" href="http://www.w3.org/TR/owl2-profiles/#Introduction">http://www.w3.org/TR/owl2-profiles/#Introduction</a></li>
@@ -553,9 +564,19 @@ P1Y1M1W1DT1H1M1S
 <li><a class="reference external" href="https://www.mnot.net/blog/2014/06/07/rfc2616_is_dead">https://www.mnot.net/blog/2014/06/07/rfc2616_is_dead</a></li>
 <li><a class="reference external" href="http://tools.ietf.org/html/rfc7230#page-5">http://tools.ietf.org/html/rfc7230#page-5</a></li>
 </ul>
+<span class="target" id="index-36"></span><span class="target" id="index-37"></span></div>
+<div class="section" id="http-2">
+<span id="http2"></span><span id="index-38"></span><h3>HTTP/2<a class="headerlink" href="#http-2" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/HTTP/2">https://en.wikipedia.org/wiki/HTTP/2</a></p>
+<ul class="simple">
+<li><a class="reference external" href="https://http2.github.io/">https://http2.github.io/</a></li>
+<li><a class="reference external" href="https://http2.github.io/http2-spec/index.html">https://http2.github.io/http2-spec/index.html</a></li>
+<li><a class="reference external" href="https://http2.github.io/http2-spec/compression.html">https://http2.github.io/http2-spec/compression.html</a></li>
+<li><a class="reference external" href="https://github.com/http2/http2-spec/wiki/Implementations">https://github.com/http2/http2-spec/wiki/Implementations</a></li>
+</ul>
 </div>
 <div class="section" id="html">
-<span id="index-36"></span><span id="id28"></span><h3>HTML<a class="headerlink" href="#html" title="Permalink to this headline">¶</a></h3>
+<span id="index-39"></span><span id="id28"></span><h3>HTML<a class="headerlink" href="#html" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/HTML">https://en.wikipedia.org/wiki/HTML</a></p>
 <ul class="simple">
 <li><a class="reference external" href="http://www.w3.org/TR/html4/">http://www.w3.org/TR/html4/</a></li>
@@ -564,24 +585,25 @@ P1Y1M1W1DT1H1M1S
 </ul>
 </div>
 <div class="section" id="xml">
-<span id="index-37"></span><span id="id29"></span><h3>XML<a class="headerlink" href="#xml" title="Permalink to this headline">¶</a></h3>
+<span id="index-40"></span><span id="id29"></span><h3>XML<a class="headerlink" href="#xml" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/XML">https://en.wikipedia.org/wiki/XML</a></p>
 <ul class="simple">
 <li><a class="reference external" href="http://www.w3.org/TR/xml/">http://www.w3.org/TR/xml/</a></li>
 </ul>
 </div>
 <div class="section" id="xsd">
-<span id="index-38"></span><span id="id30"></span><h3>XSD<a class="headerlink" href="#xsd" title="Permalink to this headline">¶</a></h3>
+<span id="index-41"></span><span id="id30"></span><h3>XSD<a class="headerlink" href="#xsd" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/XML_Schema_(W3C)">https://en.wikipedia.org/wiki/XML_Schema_(W3C)</a></p>
 <ul class="simple">
 <li><a class="reference external" href="http://www.w3.org/TR/xmlschema11-2/">http://www.w3.org/TR/xmlschema11-2/</a></li>
 </ul>
 <div class="line-block">
-<div class="line">&#64;prefix xsd: &lt;<a class="reference external" href="http://www.w3.org/2001">http://www.w3.org/2001</a>/XMLSchema#&gt; .</div>
+<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">xsd:</span> <span class="pre">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span> <span class="pre">.</span></code></div>
+<div class="line">LOVLink: <a class="reference external" href="http://lov.okfn.org/dataset/lov/details/vocabulary_xsd.html">http://lov.okfn.org/dataset/lov/details/vocabulary_xsd.html</a></div>
 </div>
 </div>
 <div class="section" id="json">
-<span id="index-39"></span><span id="id31"></span><h3>JSON<a class="headerlink" href="#json" title="Permalink to this headline">¶</a></h3>
+<span id="index-42"></span><span id="id31"></span><h3>JSON<a class="headerlink" href="#json" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/JSON">https://en.wikipedia.org/wiki/JSON</a></p>
 <ul class="simple">
 <li><a class="reference external" href="https://tools.ietf.org/html/rfc7159">https://tools.ietf.org/html/rfc7159</a></li>
@@ -589,11 +611,25 @@ P1Y1M1W1DT1H1M1S
 </ul>
 </div>
 <div class="section" id="csv">
-<span id="index-40"></span><span id="id32"></span><h3>CSV<a class="headerlink" href="#csv" title="Permalink to this headline">¶</a></h3>
+<span id="index-43"></span><span id="id32"></span><h3>CSV<a class="headerlink" href="#csv" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Comma-separated_values">https://en.wikipedia.org/wiki/Comma-separated_values</a></p>
 <ul class="simple">
 <li><a class="reference external" href="https://tools.ietf.org/html/rfc4180">https://tools.ietf.org/html/rfc4180</a></li>
 </ul>
+<div class="section" id="csvw">
+<h4>CSVW<a class="headerlink" href="#csvw" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://w3c.github.io/csvw/">https://w3c.github.io/csvw/</a></p>
+<ul class="simple">
+<li><a class="reference internal" href="#csv"><em>CSV</em></a> -&gt; <a class="reference internal" href="#json"><em>JSON</em></a> ( -&gt; <a class="reference internal" href="#json-ld"><em>JSON-LD</em></a> -&gt; <a class="reference internal" href="#rdf"><em>RDF</em></a> )</li>
+<li><a class="reference internal" href="#csv"><em>CSV</em></a> -&gt; <a class="reference internal" href="#rdf"><em>RDF</em></a></li>
+</ul>
+<p>Features:</p>
+<ul class="simple">
+<li>URIs for datatypes (<a class="reference internal" href="#xsd"><em>XSD</em></a>, ...)</li>
+<li>URIs for columns (<a class="reference internal" href="#rdf"><em>RDF</em></a>, <em class="xref std std-ref">Schema.org RDF</em>)</li>
+<li>Document Metadata</li>
+</ul>
+</div>
 </div>
 <div class="section" id="resource-description-framework-rdf">
 <h3>Resource Description Framework (RDF)<a class="headerlink" href="#resource-description-framework-rdf" title="Permalink to this headline">¶</a></h3>
@@ -601,7 +637,7 @@ P1Y1M1W1DT1H1M1S
 </div>
 </div>
 <div class="section" id="linked-data">
-<span id="index-41"></span><span id="id33"></span><h2>Linked Data<a class="headerlink" href="#linked-data" title="Permalink to this headline">¶</a></h2>
+<span id="index-44"></span><span id="id33"></span><h2>Linked Data<a class="headerlink" href="#linked-data" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Linked_data">https://en.wikipedia.org/wiki/Linked_data</a></p>
 <ul class="simple">
 <li><a class="reference external" href="http://www.w3.org/DesignIssues/LinkedData.html">http://www.w3.org/DesignIssues/LinkedData.html</a></li>
@@ -611,7 +647,7 @@ P1Y1M1W1DT1H1M1S
 <p>See: <a class="reference internal" href="#semantic-web"><em>Semantic Web</em></a></p>
 </div>
 <div class="section" id="semantic-web">
-<span id="index-42"></span><span id="id34"></span><h2>Semantic Web<a class="headerlink" href="#semantic-web" title="Permalink to this headline">¶</a></h2>
+<span id="index-45"></span><span id="id34"></span><h2>Semantic Web<a class="headerlink" href="#semantic-web" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Semantic_Web">https://en.wikipedia.org/wiki/Semantic_Web</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Template:Semantic_Web">https://en.wikipedia.org/wiki/Template:Semantic_Web</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Category:Semantic_Web">https://en.wikipedia.org/wiki/Category:Semantic_Web</a></p>
@@ -620,8 +656,9 @@ P1Y1M1W1DT1H1M1S
 <li><a class="reference external" href="http://www.w3.org/2001/sw/wiki/Books">http://www.w3.org/2001/sw/wiki/Books</a></li>
 <li><a class="reference external" href="http://www.w3.org/2001/sw/wiki/Tools">http://www.w3.org/2001/sw/wiki/Tools</a></li>
 </ul>
+</div>
 <div class="section" id="semantic-web-standards">
-<span id="index-43"></span><span id="id35"></span><h3>Semantic Web Standards<a class="headerlink" href="#semantic-web-standards" title="Permalink to this headline">¶</a></h3>
+<span id="index-46"></span><span id="id35"></span><h2>Semantic Web Standards<a class="headerlink" href="#semantic-web-standards" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Statement_(computer_science)">https://en.wikipedia.org/wiki/Statement_(computer_science)</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Resource_(computing)">https://en.wikipedia.org/wiki/Resource_(computing)</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Entity-attribute-value_model">https://en.wikipedia.org/wiki/Entity-attribute-value_model</a></p>
@@ -635,7 +672,7 @@ P1Y1M1W1DT1H1M1S
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Reification_(computer_science)#Reification_on_Semantic_Web">https://en.wikipedia.org/wiki/Reification_(computer_science)#Reification_on_Semantic_Web</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/w/index.php?title=Eigenclass_model&amp;oldid=592778140#In_RDF_Schema">https://en.wikipedia.org/w/index.php?title=Eigenclass_model&amp;oldid=592778140#In_RDF_Schema</a></p>
 <div class="section" id="rdf">
-<span id="index-44"></span><span id="id36"></span><h4>RDF<a class="headerlink" href="#rdf" title="Permalink to this headline">¶</a></h4>
+<span id="index-47"></span><span id="id36"></span><h3>RDF<a class="headerlink" href="#rdf" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Resource_Description_Framework">https://en.wikipedia.org/wiki/Resource_Description_Framework</a></p>
 <ul class="simple">
 <li><a class="reference external" href="http://www.w3.org/TR/rdf-primer/">http://www.w3.org/TR/rdf-primer/</a></li>
@@ -653,32 +690,32 @@ P1Y1M1W1DT1H1M1S
 <li><a class="reference external" href="http://www.w3.org/TR/rdf11-concepts/#section-html">http://www.w3.org/TR/rdf11-concepts/#section-html</a></li>
 </ul>
 <div class="line-block">
-<div class="line">&#64;prefix rdf: &lt;<a class="reference external" href="http://www.w3.org/1999/02/22-rdf-syntax">http://www.w3.org/1999/02/22-rdf-syntax</a>-ns#&gt; .</div>
+<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">rdf:</span> <span class="pre">&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span> <span class="pre">.</span></code></div>
 <div class="line">LOVLink: <a class="reference external" href="http://lov.okfn.org/dataset/lov/details/vocabulary_rdf.html">http://lov.okfn.org/dataset/lov/details/vocabulary_rdf.html</a></div>
 </div>
 <div class="section" id="n-triples">
-<span id="index-45"></span><span id="id37"></span><h5>N-Triples<a class="headerlink" href="#n-triples" title="Permalink to this headline">¶</a></h5>
+<span id="index-48"></span><span id="id37"></span><h4>N-Triples<a class="headerlink" href="#n-triples" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/N-Triples">https://en.wikipedia.org/wiki/N-Triples</a></p>
 <ul class="simple">
 <li><a class="reference external" href="http://www.w3.org/TR/n-triples/">http://www.w3.org/TR/n-triples/</a></li>
 </ul>
 </div>
 <div class="section" id="rdf-xml">
-<span id="index-46"></span><span id="id38"></span><h5>RDF/XML<a class="headerlink" href="#rdf-xml" title="Permalink to this headline">¶</a></h5>
+<span id="index-49"></span><span id="id38"></span><h4>RDF/XML<a class="headerlink" href="#rdf-xml" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/RDF/XML">https://en.wikipedia.org/wiki/RDF/XML</a></p>
 <ul class="simple">
 <li><a class="reference external" href="http://www.w3.org/TR/rdf-syntax-grammar/">http://www.w3.org/TR/rdf-syntax-grammar/</a></li>
 </ul>
 </div>
 <div class="section" id="trix">
-<span id="index-47"></span><span id="id39"></span><h5>TriX<a class="headerlink" href="#trix" title="Permalink to this headline">¶</a></h5>
+<span id="index-50"></span><span id="id39"></span><h4>TriX<a class="headerlink" href="#trix" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/TriX_(syntax)">https://en.wikipedia.org/wiki/TriX_(syntax)</a></p>
 <ul class="simple">
 <li><a class="reference external" href="http://www.w3.org/2004/03/trix/rdfg-1/">http://www.w3.org/2004/03/trix/rdfg-1/</a></li>
 </ul>
-<span class="target" id="index-48"></span></div>
+<span class="target" id="index-51"></span></div>
 <div class="section" id="n3">
-<span id="index-49"></span><span id="id40"></span><h5>N3<a class="headerlink" href="#n3" title="Permalink to this headline">¶</a></h5>
+<span id="index-52"></span><span id="id40"></span><h4>N3<a class="headerlink" href="#n3" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Notation3">https://en.wikipedia.org/wiki/Notation3</a></p>
 <ul class="simple">
 <li><a class="reference external" href="http://www.w3.org/TeamSubmission/n3/">http://www.w3.org/TeamSubmission/n3/</a></li>
@@ -686,22 +723,21 @@ P1Y1M1W1DT1H1M1S
 </ul>
 </div>
 <div class="section" id="turtle">
-<span id="index-50"></span><span id="id41"></span><h5>Turtle<a class="headerlink" href="#turtle" title="Permalink to this headline">¶</a></h5>
+<span id="index-53"></span><span id="id41"></span><h4>Turtle<a class="headerlink" href="#turtle" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Turtle_(syntax)">https://en.wikipedia.org/wiki/Turtle_(syntax)</a></p>
 <ul class="simple">
 <li><a class="reference external" href="http://www.w3.org/TR/turtle/">http://www.w3.org/TR/turtle/</a></li>
 </ul>
 </div>
 <div class="section" id="trig">
-<span id="index-51"></span><span id="id42"></span><h5>TriG<a class="headerlink" href="#trig" title="Permalink to this headline">¶</a></h5>
+<span id="index-54"></span><span id="id42"></span><h4>TriG<a class="headerlink" href="#trig" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/TriG_(syntax)">https://en.wikipedia.org/wiki/TriG_(syntax)</a></p>
 <ul class="simple">
 <li><a class="reference external" href="http://www.w3.org/TR/trig/">http://www.w3.org/TR/trig/</a></li>
 </ul>
 </div>
-</div>
 <div class="section" id="rdfa">
-<span id="index-52"></span><span id="id43"></span><h4>RDFa<a class="headerlink" href="#rdfa" title="Permalink to this headline">¶</a></h4>
+<span id="index-55"></span><span id="id43"></span><h4>RDFa<a class="headerlink" href="#rdfa" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/RDFa">https://en.wikipedia.org/wiki/RDFa</a></p>
 <ul class="simple">
 <li><a class="reference external" href="http://www.w3.org/TR/rdfa-primer/">http://www.w3.org/TR/rdfa-primer/</a></li>
@@ -709,7 +745,7 @@ P1Y1M1W1DT1H1M1S
 </ul>
 </div>
 <div class="section" id="json-ld">
-<span id="index-53"></span><span id="id44"></span><h4>JSON-LD<a class="headerlink" href="#json-ld" title="Permalink to this headline">¶</a></h4>
+<span id="index-56"></span><span id="id44"></span><h4>JSON-LD<a class="headerlink" href="#json-ld" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/JSON-LD">https://en.wikipedia.org/wiki/JSON-LD</a></p>
 <ul class="simple">
 <li><a class="reference external" href="http://www.w3.org/TR/json-ld/">http://www.w3.org/TR/json-ld/</a></li>
@@ -717,32 +753,32 @@ P1Y1M1W1DT1H1M1S
 <li><a class="reference external" href="http://json-ld.org/playground/">http://json-ld.org/playground/</a></li>
 </ul>
 </div>
+</div>
 <div class="section" id="rdfs">
-<span id="index-54"></span><span id="id45"></span><h4>RDFS<a class="headerlink" href="#rdfs" title="Permalink to this headline">¶</a></h4>
+<span id="index-57"></span><span id="id45"></span><h3>RDFS<a class="headerlink" href="#rdfs" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/RDF_Schema">https://en.wikipedia.org/wiki/RDF_Schema</a></p>
 <ul class="simple">
 <li><a class="reference external" href="http://www.w3.org/TR/rdf-schema/">http://www.w3.org/TR/rdf-schema/</a></li>
 </ul>
 <div class="line-block">
-<div class="line">&#64;prefix rdfs: &lt;<a class="reference external" href="http://www.w3.org/2000/01/rdf">http://www.w3.org/2000/01/rdf</a>-schema#&gt; .</div>
+<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">rdfs:</span> <span class="pre">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span> <span class="pre">.</span></code></div>
 <div class="line">LOVLink: <a class="reference external" href="http://lov.okfn.org/dataset/lov/details/vocabulary_rdf.html">http://lov.okfn.org/dataset/lov/details/vocabulary_rdf.html</a></div>
 </div>
-<span class="target" id="index-55"></span><span class="target" id="index-56"></span></div>
-<div class="section" id="dcmi">
-<span id="index-57"></span><span id="id46"></span><h4>DCMI<a class="headerlink" href="#dcmi" title="Permalink to this headline">¶</a></h4>
+<span class="target" id="index-58"></span><span class="target" id="index-59"></span><div class="section" id="dcmi">
+<span id="index-60"></span><span id="id46"></span><h4>DCMI<a class="headerlink" href="#dcmi" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Dublin_Core">https://en.wikipedia.org/wiki/Dublin_Core</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Dublin_Core#DCMI_Metadata_Terms">https://en.wikipedia.org/wiki/Dublin_Core#DCMI_Metadata_Terms</a></p>
 <div class="line-block">
-<div class="line">&#64;prefix dcterms: &lt;<a class="reference external" href="http://purl.org/dc/terms">http://purl.org/dc/terms</a>&gt; .</div>
+<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">dcterms:</span> <span class="pre">&lt;http://purl.org/dc/terms&gt;</span> <span class="pre">.</span></code></div>
 <div class="line">LOVLink: <a class="reference external" href="http://lov.okfn.org/dataset/lov/details/vocabulary_dcterms.html">http://lov.okfn.org/dataset/lov/details/vocabulary_dcterms.html</a></div>
 </div>
 <div class="line-block">
-<div class="line">&#64;prefix dctypes: &lt;<a class="reference external" href="http://purl.org/dc/dcmitype/">http://purl.org/dc/dcmitype/</a>&gt; .</div>
+<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">dctypes:</span> <span class="pre">&lt;http://purl.org/dc/dcmitype/&gt;</span> <span class="pre">.</span></code></div>
 <div class="line">LOVLink: <a class="reference external" href="http://lov.okfn.org/dataset/lov/details/vocabulary_dctype.html">http://lov.okfn.org/dataset/lov/details/vocabulary_dctype.html</a></div>
 </div>
 </div>
 <div class="section" id="skos">
-<span id="index-58"></span><span id="id47"></span><h4>SKOS<a class="headerlink" href="#skos" title="Permalink to this headline">¶</a></h4>
+<span id="index-61"></span><span id="id47"></span><h4>SKOS<a class="headerlink" href="#skos" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Simple_Knowledge_Organization_System">https://en.wikipedia.org/wiki/Simple_Knowledge_Organization_System</a></p>
 <ul class="simple">
 <li><a class="reference external" href="http://www.w3.org/2004/02/skos/core#">http://www.w3.org/2004/02/skos/core#</a></li>
@@ -750,12 +786,12 @@ P1Y1M1W1DT1H1M1S
 <li><a class="reference external" href="http://www.w3.org/TR/skos-reference/skos.html">http://www.w3.org/TR/skos-reference/skos.html</a></li>
 </ul>
 <div class="line-block">
-<div class="line">&#64;prefix skos: &lt;<a class="reference external" href="http://www.w3.org/2004/02/skos">http://www.w3.org/2004/02/skos</a>/core#&gt; .</div>
+<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">skos:</span> <span class="pre">&lt;http://www.w3.org/2004/02/skos/core#&gt;</span> <span class="pre">.</span></code></div>
 <div class="line">LOVLink: <a class="reference external" href="http://lov.okfn.org/dataset/lov/details/vocabulary_skos.html">http://lov.okfn.org/dataset/lov/details/vocabulary_skos.html</a></div>
 </div>
 </div>
 <div class="section" id="sparql">
-<span id="index-59"></span><span id="id48"></span><h4>SPARQL<a class="headerlink" href="#sparql" title="Permalink to this headline">¶</a></h4>
+<span id="index-62"></span><span id="id48"></span><h4>SPARQL<a class="headerlink" href="#sparql" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/SPARQL">https://en.wikipedia.org/wiki/SPARQL</a></p>
 <ul class="simple">
 <li><a class="reference external" href="http://www.w3.org/TR/sparql11-overview/">http://www.w3.org/TR/sparql11-overview/</a></li>
@@ -766,9 +802,39 @@ P1Y1M1W1DT1H1M1S
 <li><a class="reference external" href="http://www.w3.org/wiki/SparqlImplementations">http://www.w3.org/wiki/SparqlImplementations</a></li>
 <li><a class="reference external" href="http://www.w3.org/2009/sparql/implementations/#sparql11-entailment">http://www.w3.org/2009/sparql/implementations/#sparql11-entailment</a></li>
 </ul>
+<p>Challenges:</p>
+<ul class="simple">
+<li>SPARQL query requests and responses are over HTTP;
+however, it&#8217;s best &#8211; and often required &#8211;
+to build SPARQL queries with a server application,
+on behalf of clients.</li>
+<li>SPARQL default <code class="docutils literal"><span class="pre">LIMIT</span></code> clauses and paging windows
+could allow for more efficient caching</li>
+<li>See: <a class="reference internal" href="#ldp"><em>LDP</em></a> for more of a resource-based RESTful API
+that can be implemented on top of
+the graph pattery queries supported by SPARQL.</li>
+</ul>
+<span class="target" id="index-63"></span></div>
+<div class="section" id="ldp">
+<span id="index-64"></span><span id="id49"></span><h4>LDP<a class="headerlink" href="#ldp" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="http://www.w3.org/TR/ldp/">http://www.w3.org/TR/ldp/</a></p>
+<ul class="simple">
+<li><a class="reference external" href="http://www.w3.org/TR/ldp/#terms">http://www.w3.org/TR/ldp/#terms</a></li>
+</ul>
+<div class="line-block">
+<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">ldp:</span> <span class="pre">&lt;http://www.w3.org/ns/ldp#&gt;</span> <span class="pre">.</span></code></div>
+<div class="line">LOVLink: <a class="reference external" href="http://lov.okfn.org/dataset/lov/details/vocabulary_ldp.html">http://lov.okfn.org/dataset/lov/details/vocabulary_ldp.html</a></div>
+</div>
+<p>Features:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#http"><em>HTTP</em></a> REST API for <em>Linked Data Platform Containers</em> (LDPC)
+containing Linked Data Plaform <strong>Resources</strong> (LDPR)</li>
+<li>Server-side <em>Paging</em></li>
+</ul>
+</div>
 </div>
 <div class="section" id="owl">
-<span id="index-60"></span><span id="id49"></span><h4>OWL<a class="headerlink" href="#owl" title="Permalink to this headline">¶</a></h4>
+<span id="index-65"></span><span id="id50"></span><h3>OWL<a class="headerlink" href="#owl" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Web_Ontology_Language">https://en.wikipedia.org/wiki/Web_Ontology_Language</a></p>
 <ul class="simple">
 <li><a class="reference external" href="http://www.w3.org/TR/owl2-overview/">http://www.w3.org/TR/owl2-overview/</a></li>
@@ -777,12 +843,11 @@ P1Y1M1W1DT1H1M1S
 <li><a class="reference external" href="http://www.w3.org/TR/owl2-profiles/">http://www.w3.org/TR/owl2-profiles/</a></li>
 </ul>
 <div class="line-block">
-<div class="line">&#64;prefix owl: &lt;<a class="reference external" href="http://www.w3.org/2002/07">http://www.w3.org/2002/07</a>/owl#&gt; .</div>
+<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">owl:</span> <span class="pre">&lt;http://www.w3.org/2002/07/owl#&gt;</span> <span class="pre">.</span></code></div>
 <div class="line">LOVLink: <a class="reference external" href="http://lov.okfn.org/dataset/lov/details/vocabulary_owl.html">http://lov.okfn.org/dataset/lov/details/vocabulary_owl.html</a></div>
 </div>
-</div>
 <div class="section" id="prov">
-<span id="index-61"></span><span id="id50"></span><h4>PROV<a class="headerlink" href="#prov" title="Permalink to this headline">¶</a></h4>
+<span id="index-66"></span><span id="id51"></span><h4>PROV<a class="headerlink" href="#prov" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="http://www.w3.org/2011/prov/wiki/Main_Page">http://www.w3.org/2011/prov/wiki/Main_Page</a></p>
 <ul class="simple">
 <li><a class="reference external" href="http://www.w3.org/ns/prov#">http://www.w3.org/ns/prov#</a></li>
@@ -792,13 +857,13 @@ P1Y1M1W1DT1H1M1S
 <li><a class="reference external" href="http://www.w3.org/TR/prov-o/">http://www.w3.org/TR/prov-o/</a></li>
 </ul>
 <div class="line-block">
-<div class="line">&#64;prefix prov: &lt;<a class="reference external" href="http://www.w3.org/ns">http://www.w3.org/ns</a>/prov#&gt; .</div>
+<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">prov:</span> <span class="pre">&lt;http://www.w3.org/ns/prov#&gt;</span> <span class="pre">.</span></code></div>
 <div class="line">LOVLink: <a class="reference external" href="http://lov.okfn.org/dataset/lov/details/vocabulary_prov.html">http://lov.okfn.org/dataset/lov/details/vocabulary_prov.html</a></div>
 </div>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Provenance#Data_provenance">https://en.wikipedia.org/wiki/Provenance#Data_provenance</a></p>
-<span class="target" id="index-62"></span></div>
+<span class="target" id="index-67"></span></div>
 <div class="section" id="oa">
-<span id="index-63"></span><span id="id51"></span><h4>OA<a class="headerlink" href="#oa" title="Permalink to this headline">¶</a></h4>
+<span id="index-68"></span><span id="id52"></span><h4>OA<a class="headerlink" href="#oa" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="http://www.openannotation.org/">http://www.openannotation.org/</a></p>
 <ul class="simple">
 <li><a class="reference external" href="http://www.openannotation.org/spec/core/">http://www.openannotation.org/spec/core/</a></li>
@@ -806,21 +871,22 @@ P1Y1M1W1DT1H1M1S
 <li><a class="reference external" href="http://lov.okfn.org/dataset/lov/details/vocabulary_oa.html">http://lov.okfn.org/dataset/lov/details/vocabulary_oa.html</a></li>
 </ul>
 <div class="line-block">
-<div class="line">&#64;prefix oa: &lt;<a class="reference external" href="http://www.w3.org/ns">http://www.w3.org/ns</a>/oa#&gt; .</div>
+<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">oa:</span> <span class="pre">&lt;http://www.w3.org/ns/oa#&gt;</span> <span class="pre">.</span></code></div>
 <div class="line">LOVLink: <a class="reference external" href="http://lov.okfn.org/dataset/lov/details/vocabulary_oa.html">http://lov.okfn.org/dataset/lov/details/vocabulary_oa.html</a></div>
 </div>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Web_annotation">https://en.wikipedia.org/wiki/Web_annotation</a></p>
 </div>
 </div>
+</div>
 <div class="section" id="semantic-web-tools">
-<h3>Semantic Web Tools<a class="headerlink" href="#semantic-web-tools" title="Permalink to this headline">¶</a></h3>
+<h2>Semantic Web Tools<a class="headerlink" href="#semantic-web-tools" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="rdfjs">
-<span id="index-64"></span><span id="id52"></span><h4>RDFJS<a class="headerlink" href="#rdfjs" title="Permalink to this headline">¶</a></h4>
+<span id="index-69"></span><span id="id53"></span><h3>RDFJS<a class="headerlink" href="#rdfjs" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="http://www.w3.org/community/rdfjs/">http://www.w3.org/community/rdfjs/</a></p>
 <p><a class="reference external" href="http://www.w3.org/community/rdfjs/wiki/Comparison_of_RDFJS_libraries">http://www.w3.org/community/rdfjs/wiki/Comparison_of_RDFJS_libraries</a></p>
 </div>
 <div class="section" id="rdflib">
-<span id="index-65"></span><span id="id53"></span><h4>RDFLib<a class="headerlink" href="#rdflib" title="Permalink to this headline">¶</a></h4>
+<span id="index-70"></span><span id="id54"></span><h3>RDFLib<a class="headerlink" href="#rdflib" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/RDFLib">https://en.wikipedia.org/wiki/RDFLib</a></p>
 <ul class="simple">
 <li><a class="reference external" href="https://github.com/RDFLib">https://github.com/RDFLib</a></li>
@@ -828,16 +894,40 @@ P1Y1M1W1DT1H1M1S
 </ul>
 </div>
 </div>
-<div class="section" id="web-schema-resources">
-<h3>Web Schema Resources<a class="headerlink" href="#web-schema-resources" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="semantic-web-schema-resources">
+<h2>Semantic Web Schema Resources<a class="headerlink" href="#semantic-web-schema-resources" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><a class="reference external" href="http://prefix.cc">http://prefix.cc</a></li>
 <li><a class="reference external" href="http://lov.okfn.org/dataset/lov/">http://lov.okfn.org/dataset/lov/</a></li>
 <li><a class="reference external" href="http://lod-cloud.net/">http://lod-cloud.net/</a></li>
 </ul>
+<span class="target" id="index-71"></span><div class="section" id="foaf">
+<span id="index-72"></span><span id="id55"></span><h3>FOAF<a class="headerlink" href="#foaf" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/FOAF_(ontology)">https://en.wikipedia.org/wiki/FOAF_(ontology)</a></p>
+<ul class="simple">
+<li><a class="reference external" href="http://www.foaf-project.org/">http://www.foaf-project.org/</a></li>
+<li><a class="reference external" href="http://xmlns.com/foaf/spec/">http://xmlns.com/foaf/spec/</a></li>
+</ul>
+<div class="line-block">
+<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">foaf:</span> <span class="pre">&lt;http://xmlns.com/foaf/0.1/&gt;</span> <span class="pre">.</span></code></div>
+<div class="line">LOVLink: <a class="reference external" href="http://lov.okfn.org/dataset/lov/details/vocabulary_foaf.html">http://lov.okfn.org/dataset/lov/details/vocabulary_foaf.html</a></div>
+</div>
+</div>
+<div class="section" id="sioc">
+<h3>SIOC<a class="headerlink" href="#sioc" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Semantically-Interlinked_Online_Communities">https://en.wikipedia.org/wiki/Semantically-Interlinked_Online_Communities</a></p>
+<ul class="simple">
+<li><a class="reference external" href="http://www.sioc-project.org/">http://www.sioc-project.org/</a></li>
+<li><a class="reference external" href="http://rdfs.org/sioc">http://rdfs.org/sioc</a>/ns#</li>
+</ul>
+<div class="line-block">
+<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">&lt;http://rdfs.org/sioc/ns#&gt;</span> <span class="pre">.</span></code></div>
+<div class="line">LOVLink: <a class="reference external" href="http://lov.okfn.org/dataset/lov/details/vocabulary_sioc.html">http://lov.okfn.org/dataset/lov/details/vocabulary_sioc.html</a></div>
+</div>
+</div>
 </div>
 <div class="section" id="schema-org">
-<span id="index-66"></span><span id="id54"></span><h3>Schema.org<a class="headerlink" href="#schema-org" title="Permalink to this headline">¶</a></h3>
+<span id="index-73"></span><span id="id56"></span><h2>Schema.org<a class="headerlink" href="#schema-org" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Schema.org">https://en.wikipedia.org/wiki/Schema.org</a></p>
 <ul class="simple">
 <li><a class="reference external" href="http://schema.org/">http://schema.org/</a></li>
@@ -849,7 +939,7 @@ P1Y1M1W1DT1H1M1S
 <li><a class="reference external" href="http://www.w3.org/wiki/WebSchemas/SchemaDotOrgProposals">http://www.w3.org/wiki/WebSchemas/SchemaDotOrgProposals</a></li>
 </ul>
 <div class="section" id="schema-org-rdf">
-<span id="index-67"></span><span id="id55"></span><h4>Schema.org RDF<a class="headerlink" href="#schema-org-rdf" title="Permalink to this headline">¶</a></h4>
+<span id="index-74"></span><span id="id57"></span><h3>Schema.org RDF<a class="headerlink" href="#schema-org-rdf" title="Permalink to this headline">¶</a></h3>
 <p>Schema.org is maintained as RDFa.</p>
 <p>TopBraid maintains RDF/OWL transformations of schema.org:</p>
 <ul class="simple">
@@ -864,6 +954,9 @@ P1Y1M1W1DT1H1M1S
 <li><a class="reference external" href="http://schema.rdfs.org/tools.html">http://schema.rdfs.org/tools.html</a></li>
 <li><a class="reference external" href="http://schema.rdfs.org/mappings.html">http://schema.rdfs.org/mappings.html</a></li>
 </ul>
+<div class="line-block">
+<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">schema</span> <span class="pre">&lt;http://schema.org/&gt;</span> <span class="pre">.</span></code></div>
+<div class="line">LOVLink: <a class="reference external" href="http://lov.okfn.org/dataset/lov/details/vocabulary_schema.html">http://lov.okfn.org/dataset/lov/details/vocabulary_schema.html</a></div>
 </div>
 </div>
 </div>
@@ -931,16 +1024,20 @@ P1Y1M1W1DT1H1M1S
 <li><a class="reference internal" href="#w3c">W3C</a></li>
 <li><a class="reference internal" href="#iso8601">ISO8601</a></li>
 <li><a class="reference internal" href="#http">HTTP</a></li>
+<li><a class="reference internal" href="#http-2">HTTP/2</a></li>
 <li><a class="reference internal" href="#html">HTML</a></li>
 <li><a class="reference internal" href="#xml">XML</a></li>
 <li><a class="reference internal" href="#xsd">XSD</a></li>
 <li><a class="reference internal" href="#json">JSON</a></li>
-<li><a class="reference internal" href="#csv">CSV</a></li>
+<li><a class="reference internal" href="#csv">CSV</a><ul>
+<li><a class="reference internal" href="#csvw">CSVW</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#resource-description-framework-rdf">Resource Description Framework (RDF)</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#linked-data">Linked Data</a></li>
-<li><a class="reference internal" href="#semantic-web">Semantic Web</a><ul>
+<li><a class="reference internal" href="#semantic-web">Semantic Web</a></li>
 <li><a class="reference internal" href="#semantic-web-standards">Semantic Web Standards</a><ul>
 <li><a class="reference internal" href="#rdf">RDF</a><ul>
 <li><a class="reference internal" href="#n-triples">N-Triples</a></li>
@@ -949,17 +1046,22 @@ P1Y1M1W1DT1H1M1S
 <li><a class="reference internal" href="#n3">N3</a></li>
 <li><a class="reference internal" href="#turtle">Turtle</a></li>
 <li><a class="reference internal" href="#trig">TriG</a></li>
-</ul>
-</li>
 <li><a class="reference internal" href="#rdfa">RDFa</a></li>
 <li><a class="reference internal" href="#json-ld">JSON-LD</a></li>
-<li><a class="reference internal" href="#rdfs">RDFS</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#rdfs">RDFS</a><ul>
 <li><a class="reference internal" href="#dcmi">DCMI</a></li>
 <li><a class="reference internal" href="#skos">SKOS</a></li>
 <li><a class="reference internal" href="#sparql">SPARQL</a></li>
-<li><a class="reference internal" href="#owl">OWL</a></li>
+<li><a class="reference internal" href="#ldp">LDP</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#owl">OWL</a><ul>
 <li><a class="reference internal" href="#prov">PROV</a></li>
 <li><a class="reference internal" href="#oa">OA</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a class="reference internal" href="#semantic-web-tools">Semantic Web Tools</a><ul>
@@ -967,11 +1069,13 @@ P1Y1M1W1DT1H1M1S
 <li><a class="reference internal" href="#rdflib">RDFLib</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#web-schema-resources">Web Schema Resources</a></li>
-<li><a class="reference internal" href="#schema-org">Schema.org</a><ul>
-<li><a class="reference internal" href="#schema-org-rdf">Schema.org RDF</a></li>
+<li><a class="reference internal" href="#semantic-web-schema-resources">Semantic Web Schema Resources</a><ul>
+<li><a class="reference internal" href="#foaf">FOAF</a></li>
+<li><a class="reference internal" href="#sioc">SIOC</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#schema-org">Schema.org</a><ul>
+<li><a class="reference internal" href="#schema-org-rdf">Schema.org RDF</a></li>
 </ul>
 </li>
 </ul>

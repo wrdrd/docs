@@ -463,6 +463,21 @@ https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
 * http://tools.ietf.org/html/rfc7230#page-5
 
 
+.. index:: HTTP/2
+.. index:: HTTP2
+.. index:: HTTP2.0
+.. _http2:
+
+HTTP/2
+++++++
+https://en.wikipedia.org/wiki/HTTP/2
+
+* https://http2.github.io/
+* https://http2.github.io/http2-spec/index.html
+* https://http2.github.io/http2-spec/compression.html
+* https://github.com/http2/http2-spec/wiki/Implementations
+
+
 .. index:: HTML
 .. _HTML:
 
@@ -494,7 +509,8 @@ XSD
 
 * http://www.w3.org/TR/xmlschema11-2/
 
-| @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+| xmlns: ``@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .``
+| LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_xsd.html
 
 
 .. index:: JSON
@@ -517,6 +533,20 @@ CSV
 https://en.wikipedia.org/wiki/Comma-separated_values
 
 * https://tools.ietf.org/html/rfc4180
+
+
+CSVW
+`````
+https://w3c.github.io/csvw/
+
+* :ref:`CSV` -> :ref:`JSON` ( -> :ref:`JSON-LD` -> :ref:`RDF` )
+* :ref:`CSV` -> :ref:`RDF`
+
+Features:
+
+* URIs for datatypes (:ref:`XSD`, ...)
+* URIs for columns (:ref:`RDF`, :ref:`Schema.org RDF`)
+* Document Metadata
 
 
 Resource Description Framework (RDF)
@@ -559,7 +589,7 @@ https://en.wikipedia.org/wiki/Category:Semantic_Web
 .. _semantic-web-standards:
 
 Semantic Web Standards
-+++++++++++++++++++++++
+-----------------------
 
 `<https://en.wikipedia.org/wiki/Statement_(computer_science)>`_
 
@@ -583,7 +613,7 @@ https://en.wikipedia.org/w/index.php?title=Eigenclass_model&oldid=592778140#In_R
 .. _RDF:
 
 RDF
-````
+++++
 https://en.wikipedia.org/wiki/Resource_Description_Framework
 
 
@@ -602,14 +632,14 @@ https://en.wikipedia.org/wiki/Resource_Description_Framework
 * http://www.w3.org/TR/rdf11-concepts/#xsd-datatypes
 * http://www.w3.org/TR/rdf11-concepts/#section-html
 
-| @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+| xmlns: ``@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .``
 | LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_rdf.html
 
 .. index:: N-Triples
 .. _N-Triples:
 
 N-Triples
-~~~~~~~~~~~
+```````````
 https://en.wikipedia.org/wiki/N-Triples
 
 * http://www.w3.org/TR/n-triples/
@@ -619,7 +649,7 @@ https://en.wikipedia.org/wiki/N-Triples
 .. _RDF/XML:
 
 RDF/XML
-~~~~~~~~
+````````
 https://en.wikipedia.org/wiki/RDF/XML
 
 * http://www.w3.org/TR/rdf-syntax-grammar/
@@ -629,7 +659,7 @@ https://en.wikipedia.org/wiki/RDF/XML
 .. _TriX:
 
 TriX
-~~~~~
+`````
 `<https://en.wikipedia.org/wiki/TriX_(syntax)>`_
 
 * http://www.w3.org/2004/03/trix/rdfg-1/
@@ -639,7 +669,7 @@ TriX
 .. _n3:
 
 N3
-~~~~
+````
 https://en.wikipedia.org/wiki/Notation3
 
 * http://www.w3.org/TeamSubmission/n3/
@@ -650,7 +680,7 @@ https://en.wikipedia.org/wiki/Notation3
 .. _turtle:
 
 Turtle
-~~~~~~~~
+````````
 `<https://en.wikipedia.org/wiki/Turtle_(syntax)>`_
 
 * http://www.w3.org/TR/turtle/
@@ -660,7 +690,7 @@ Turtle
 .. _TriG:
 
 TriG
-~~~~~
+`````
 `<https://en.wikipedia.org/wiki/TriG_(syntax)>`_
 
 * http://www.w3.org/TR/trig/
@@ -692,12 +722,12 @@ https://en.wikipedia.org/wiki/JSON-LD
 .. _RDFS:
 
 RDFS
-`````
++++++
 https://en.wikipedia.org/wiki/RDF_Schema
 
 * http://www.w3.org/TR/rdf-schema/
 
-| @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+| xmlns: ``@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .``
 | LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_rdf.html
 
 
@@ -712,10 +742,10 @@ https://en.wikipedia.org/wiki/Dublin_Core
 
 https://en.wikipedia.org/wiki/Dublin_Core#DCMI_Metadata_Terms
 
-| @prefix dcterms: <http://purl.org/dc/terms> .
+| xmlns: ``@prefix dcterms: <http://purl.org/dc/terms> .``
 | LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_dcterms.html
 
-| @prefix dctypes: <http://purl.org/dc/dcmitype/> .
+| xmlns: ``@prefix dctypes: <http://purl.org/dc/dcmitype/> .``
 | LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_dctype.html
 
 
@@ -730,7 +760,7 @@ https://en.wikipedia.org/wiki/Simple_Knowledge_Organization_System
 * http://www.w3.org/TR/skos-reference/
 * http://www.w3.org/TR/skos-reference/skos.html
 
-| @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+| xmlns: ``@prefix skos: <http://www.w3.org/2004/02/skos/core#> .``
 | LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_skos.html
 
 .. index:: SPARQL
@@ -748,12 +778,45 @@ https://en.wikipedia.org/wiki/SPARQL
 * http://www.w3.org/wiki/SparqlImplementations
 * http://www.w3.org/2009/sparql/implementations/#sparql11-entailment
 
+Challenges:
+
+* SPARQL query requests and responses are over HTTP;
+  however, it's best -- and often required --
+  to build SPARQL queries with a server application,
+  on behalf of clients.
+* SPARQL default ``LIMIT`` clauses and paging windows
+  could allow for more efficient caching
+* See: :ref:`LDP` for more of a resource-based RESTful API
+  that can be implemented on top of
+  the graph pattery queries supported by SPARQL.
+  
+
+.. index:: Linked Data Platform
+.. index:: LDP
+.. _LDP:
+
+LDP
+````
+http://www.w3.org/TR/ldp/
+
+* http://www.w3.org/TR/ldp/#terms
+
+| xmlns: ``@prefix ldp: <http://www.w3.org/ns/ldp#> .``
+| LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_ldp.html
+
+Features:
+
+* :ref:`HTTP` REST API for *Linked Data Platform Containers* (LDPC)
+  containing Linked Data Plaform **Resources** (LDPR)
+* Server-side *Paging*
+
+
 
 .. index:: OWL
 .. _OWL:
 
 OWL
-`````
++++++
 https://en.wikipedia.org/wiki/Web_Ontology_Language
 
 * http://www.w3.org/TR/owl2-overview/
@@ -761,7 +824,7 @@ https://en.wikipedia.org/wiki/Web_Ontology_Language
 * http://www.w3.org/TR/owl2-quick-reference/
 * http://www.w3.org/TR/owl2-profiles/
 
-| @prefix owl: <http://www.w3.org/2002/07/owl#> .
+| xmlns: ``@prefix owl: <http://www.w3.org/2002/07/owl#> .``
 | LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_owl.html
 
 .. index:: PROV
@@ -777,7 +840,7 @@ http://www.w3.org/2011/prov/wiki/Main_Page
 * http://www.w3.org/TR/prov-primer/
 * http://www.w3.org/TR/prov-o/
 
-| @prefix prov: <http://www.w3.org/ns/prov#> .
+| xmlns: ``@prefix prov: <http://www.w3.org/ns/prov#> .``
 | LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_prov.html
 
 https://en.wikipedia.org/wiki/Provenance#Data_provenance
@@ -796,20 +859,20 @@ http://www.openannotation.org/
 * http://prefix.cc/oa
 * http://lov.okfn.org/dataset/lov/details/vocabulary_oa.html
 
-| @prefix oa: <http://www.w3.org/ns/oa#> .
+| xmlns: ``@prefix oa: <http://www.w3.org/ns/oa#> .``
 | LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_oa.html
 
 https://en.wikipedia.org/wiki/Web_annotation
 
 
 Semantic Web Tools
-+++++++++++++++++++++
+---------------------
 
 .. index:: RDFJS
 .. _RDFJS:
 
 RDFJS
-``````
+++++++
 http://www.w3.org/community/rdfjs/
 
 http://www.w3.org/community/rdfjs/wiki/Comparison_of_RDFJS_libraries
@@ -819,25 +882,53 @@ http://www.w3.org/community/rdfjs/wiki/Comparison_of_RDFJS_libraries
 .. _RDFLib:
 
 RDFLib
-```````
++++++++
 https://en.wikipedia.org/wiki/RDFLib
 
 * https://github.com/RDFLib
 * https://rdflib.readthedocs.org/en/latest/intro_to_creating_rdf.html
 
 
-Web Schema Resources
-+++++++++++++++++++++
+Semantic Web Schema Resources
+-------------------------------
 * http://prefix.cc
 * http://lov.okfn.org/dataset/lov/
 * http://lod-cloud.net/
+
+
+.. index:: FOAF
+.. index:: Friend of a Friend vocabulary
+.. _FOAF:
+
+FOAF
++++++
+`<https://en.wikipedia.org/wiki/FOAF_(ontology)>`__
+
+* http://www.foaf-project.org/
+* http://xmlns.com/foaf/spec/
+
+| xmlns: ``@prefix foaf: <http://xmlns.com/foaf/0.1/> .``
+| LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_foaf.html
+
+
+SIOC
+++++++
+https://en.wikipedia.org/wiki/Semantically-Interlinked_Online_Communities
+
+* http://www.sioc-project.org/
+* http://rdfs.org/sioc/ns#
+
+| xmlns: ``@prefix <http://rdfs.org/sioc/ns#> .``
+| LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_sioc.html
+
+
 
 
 .. index:: Schema.org
 .. _Schema.org:
 
 Schema.org
-+++++++++++
+-----------
 https://en.wikipedia.org/wiki/Schema.org
 
 * http://schema.org/
@@ -853,7 +944,7 @@ https://en.wikipedia.org/wiki/Schema.org
 .. _schema.org-rdf:
 
 Schema.org RDF
-````````````````
+++++++++++++++++
 Schema.org is maintained as RDFa.
 
 TopBraid maintains RDF/OWL transformations of schema.org:
@@ -869,3 +960,5 @@ Tools and Mappings
 * http://schema.rdfs.org/tools.html
 * http://schema.rdfs.org/mappings.html
 
+| xmlns: ``@prefix schema <http://schema.org/> .``
+| LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_schema.html
