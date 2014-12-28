@@ -847,24 +847,6 @@ https://en.wikipedia.org/wiki/Provenance#Data_provenance
 
 
 
-.. index:: OA
-.. index:: OpenAnnotation
-.. _OA:
-
-OA
-````
-http://www.openannotation.org/
-
-* http://www.openannotation.org/spec/core/
-* http://prefix.cc/oa
-* http://lov.okfn.org/dataset/lov/details/vocabulary_oa.html
-
-| xmlns: ``@prefix oa: <http://www.w3.org/ns/oa#> .``
-| LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_oa.html
-
-https://en.wikipedia.org/wiki/Web_annotation
-
-
 Semantic Web Tools
 ---------------------
 
@@ -922,6 +904,30 @@ https://en.wikipedia.org/wiki/Semantically-Interlinked_Online_Communities
 | LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_sioc.html
 
 
+.. index:: OA
+.. index:: OpenAnnotation
+.. _OA:
+
+OA
+````
+http://www.openannotation.org/
+
+* http://www.openannotation.org/spec/core/
+
+| xmlns: ``@prefix oa: <http://www.w3.org/ns/oa#> .``
+| LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_oa.html
+
+Features:
+
+* https://en.wikipedia.org/wiki/Web_annotation
+* Comment, in an RDF-structured way, on a resource with a (stable) URI
+* Comment on text fragments
+* Comment on SVG items
+
+Implementations:
+
+* https://github.com/hypothesis/h (Python, Pyramid)
+* https://github.com/openannotation/annotator (http://annotatorjs.org/)
 
 
 .. index:: Schema.org
