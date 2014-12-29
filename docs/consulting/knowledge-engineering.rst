@@ -656,9 +656,19 @@ http://www.openannotation.org/
 
 https://en.wikipedia.org/wiki/Web_annotation
 
+.. index:: Semantic Web Tools
+.. _semantic-web-tools:
 
 Semantic Web Tools
 +++++++++++++++++++++
+
+http://www.w3.org/2001/sw/wiki/Tools
+
+* http://www.w3.org/2001/sw/wiki/Java
+* http://www.w3.org/2001/sw/wiki/Python
+* http://www.w3.org/2001/sw/wiki/Ruby
+* :ref:`RDFJS` Javascript RDF Libraries
+
 
 .. index:: RDFJS
 .. _RDFJS:
@@ -666,6 +676,20 @@ Semantic Web Tools
 RDFJS
 ``````
 http://www.w3.org/community/rdfjs/
+
+* http://www.w3.org/community/rdfjs/2013/10/02/whats-the-best-way-to-parameterize-sparql-queries/
+
+> http://www.reddit.com/r/semanticweb/comments/1e3fq0/whats_the_best_way_to_parameterize_sparql_queries/
+>
+> The gist: as a tokenized query protocol, it is not ‘safe’ to build SPARQL queries by concatenating strings which may contain user-supplied input.
+> 
+> In SQL, this is called “SQL Injection”:
+> 
+> CWE-89: Improper Neutralization of special elements used in an SQL command (‘SQL Injection’)
+>
+> http://cwe.mitre.org/top25/#CWE-89
+>
+> It may be tempting to suggest that this is not an issue for read-only SPARQL queries, but resource exhaustion can also be a very real concern; especially with RDF JavaScript Libraries which are used to prepare queries.
 
 
 .. index:: RDFLib
@@ -676,6 +700,8 @@ RDFLib
 https://en.wikipedia.org/wiki/RDFLib
 
 * https://rdflib.readthedocs.org/en/latest/intro_to_creating_rdf.html
+
+
 
 
 Web Schema Resources
@@ -694,8 +720,19 @@ https://en.wikipedia.org/wiki/Schema.org
 
 * http://schema.org/
 * http://schema.org/docs/full.html
+
+Schema.org Proposal Workflows
+````````````````````````````````````
+Classic: Wiki, Mailing List, Attachments
+
 * http://www.w3.org/wiki/WebSchemas
 * http://www.w3.org/wiki/WebSchemas/SchemaDotOrgProposals
+
+New Way: Tagged GitHub Issues with Workflow
+
+* https://github.com/schema.org/rvguha/schemaorg
+* docs in monospace
+
 
 Schema.org RDF
 ````````````````
