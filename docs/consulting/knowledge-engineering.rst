@@ -471,10 +471,10 @@ http://www.w3.org/TR/HTTP-in-RDF10/
 
 * http://www.w3.org/TR/HTTP-in-RDF10/
 
-| xmlns: ``@prefix http <http://www.w3.org/2011/http#>``
-| xmlns: ``@prefix http-headers <http://www.w3.org/2011/http-headers>``
-| xmlns: ``@prefix http-methods <http://www.w3.org/2011/http-methods>``
-| xmlns: ``@prefix http-statusCodes <http://www.w3.org/2011/http-statusCodes>``
+| xmlns: ``@prefix http: <http://www.w3.org/2011/http#> .``
+| xmlns: ``@prefix http-headers: <http://www.w3.org/2011/http-headers> .``
+| xmlns: ``@prefix http-methods: <http://www.w3.org/2011/http-methods> .``
+| xmlns: ``@prefix http-statusCodes: <http://www.w3.org/2011/http-statusCodes> .``
 | LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_http.html
 
 
@@ -561,7 +561,7 @@ https://w3c.github.io/csvw/
 Features:
 
 * URIs for datatypes (:ref:`XSD`, ...)
-* URIs for columns (:ref:`RDF` ``@prefix name <url>[#] .``)
+* URIs for columns (:ref:`RDF` ``@prefix name: <url>[#] .``)
 * Document Metadata
 
 
@@ -916,7 +916,7 @@ https://en.wikipedia.org/wiki/Semantically-Interlinked_Online_Communities
 * http://www.sioc-project.org/
 * http://rdfs.org/sioc/ns#
 
-| xmlns: ``@prefix <http://rdfs.org/sioc/ns#> .``
+| xmlns: ``@prefix sioc: <http://rdfs.org/sioc/ns#> .``
 | LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_sioc.html
 
 
@@ -982,5 +982,5 @@ Tools and Mappings
 * http://schema.rdfs.org/tools.html
 * http://schema.rdfs.org/mappings.html
 
-| xmlns: ``@prefix schema <http://schema.org/> .``
+| xmlns: ``@prefix schema: <http://schema.org/> .``
 | LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_schema.html
