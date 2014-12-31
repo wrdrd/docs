@@ -804,7 +804,7 @@ Challenges:
   could allow for more efficient caching
 * See: :ref:`LDP` for more of a resource-based RESTful API
   that can be implemented on top of
-  the graph pattery queries supported by SPARQL.
+  the graph pattern queries supported by SPARQL.
   
 
 .. index:: Linked Data Platform
