@@ -42,6 +42,7 @@ extensions = [
     'sphinx.ext.napoleon',
     'sphinx.ext.viewcode',
     'sphinxjp.themes.basicstrap',
+    'sphinxcontrib.srclinks',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -59,6 +60,10 @@ master_doc = 'index'
 # General information about the project.
 project = u'WRD R&D Documentation'
 copyright = u'WRD R&D 2014'
+
+srclink_project = 'https://github.com/wrdrd/docs'
+srclink_branch = 'master'
+srclink_src_path = 'docs/'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -181,15 +186,15 @@ html_sidebars = {
     '**': [
         'localtoc.html',
         'relations.html',
-        'sourcelink.html',
         'searchbox.html',
+        'srclinks.html',
         'links.html',],
 
     'index': [
         'globaltoc.html',
         'relations.html',
-        'sourcelink.html',
         'searchbox.html',
+        'srclinks.html',
         'links.html',],
 }
 
