@@ -370,6 +370,67 @@ Data Grid
 https://en.wikipedia.org/wiki/Data_grid
 
 
+.. index:: Linked Data
+.. _linked-data:
+
+Linked Data
+-------------
+https://en.wikipedia.org/wiki/Linked_data
+
+* http://www.w3.org/DesignIssues/LinkedData.html
+* http://www.w3.org/TR/ld-glossary/#x5-star-linked-open-data
+* http://5stardata.info/
+
+See: :ref:`Semantic Web <semantic-web>`
+
+
+.. index:: Semantic Web
+.. _semantic-web:
+
+Semantic Web
+-------------
+https://en.wikipedia.org/wiki/Semantic_Web
+
+https://en.wikipedia.org/wiki/Template:Semantic_Web
+
+https://en.wikipedia.org/wiki/Category:Semantic_Web
+
+`<https://en.wikipedia.org/wiki/Semantics_(computer_science)>`_
+
+* http://www.w3.org/2001/sw/wiki/Books
+* http://www.w3.org/2001/sw/wiki/Tools
+
+
+.. index:: Semantic Web Standards
+.. _semantic-web-standards:
+
+Semantic Web Standards
+-----------------------
+
+`<https://en.wikipedia.org/wiki/Statement_(computer_science)>`_
+
+`<https://en.wikipedia.org/wiki/Resource_(computing)>`_
+
+https://en.wikipedia.org/wiki/Entity-attribute-value_model
+
+https://en.wikipedia.org/wiki/Tuple
+
+* `<https://en.wikipedia.org/wiki/Triple_(mathematics)>`_
+* `<https://en.wikipedia.org/wiki/3-tuple>`_
+* `<https://en.wikipedia.org/wiki/Quad_(mathematics)>`_
+* `<https://en.wikipedia.org/wiki/4-tuple>`_
+
+`<https://en.wikipedia.org/wiki/Reification_(computer_science)#Reification_on_Semantic_Web>`_
+
+https://en.wikipedia.org/w/index.php?title=Eigenclass_model&oldid=592778140#In_RDF_Schema
+
+* :ref:`RDF`: :ref:`N-Triples`, :ref:`RDF/XML`, :ref:`TriX`, :ref:`N3`,
+:ref:`Turtle`, :ref:`TriG`, :ref:`RDFa`, :ref:`JSON-LD`
+
+* :ref:`RDFS`: :ref:`DCMI` (dctypes), :ref:`SKOS`, :ref:`SPARQL`,
+  :ref:`LDP`
+* :ref:`OWL`: :ref:`PROV`
+
 .. index:: Web Standards
 .. _web-standards:
 
@@ -493,6 +554,12 @@ https://en.wikipedia.org/wiki/HTTP/2
 * https://github.com/http2/http2-spec/wiki/Implementations
 
 
+* http://asyncio.org 
+  
+  Asynchronous Python HTTP Implementations
+  that could be useful for fast HTTP2 Applications
+
+
 .. index:: HTML
 .. _HTML:
 
@@ -561,68 +628,10 @@ https://w3c.github.io/csvw/
 Features:
 
 * URIs for datatypes (:ref:`XSD`, ...)
-* URIs for columns (:ref:`RDF` ``@prefix name: <url>[#] .``)
+* URIs for columns (:ref:`RDF` ``@prefix name: <uri> .``)
 * Document Metadata
 
 
-Resource Description Framework (RDF)
-++++++++++++++++++++++++++++++++++++++
-See: :ref:`RDF`
-
-
-.. index:: Linked Data
-.. _linked-data:
-
-Linked Data
--------------
-https://en.wikipedia.org/wiki/Linked_data
-
-* http://www.w3.org/DesignIssues/LinkedData.html
-* http://www.w3.org/TR/ld-glossary/#x5-star-linked-open-data
-* http://5stardata.info/
-
-See: :ref:`Semantic Web <semantic-web>`
-
-
-.. index:: Semantic Web
-.. _semantic-web:
-
-Semantic Web
--------------
-https://en.wikipedia.org/wiki/Semantic_Web
-
-https://en.wikipedia.org/wiki/Template:Semantic_Web
-
-https://en.wikipedia.org/wiki/Category:Semantic_Web
-
-`<https://en.wikipedia.org/wiki/Semantics_(computer_science)>`_
-
-* http://www.w3.org/2001/sw/wiki/Books
-* http://www.w3.org/2001/sw/wiki/Tools
-
-
-.. index:: Semantic Web Standards
-.. _semantic-web-standards:
-
-Semantic Web Standards
------------------------
-
-`<https://en.wikipedia.org/wiki/Statement_(computer_science)>`_
-
-`<https://en.wikipedia.org/wiki/Resource_(computing)>`_
-
-https://en.wikipedia.org/wiki/Entity-attribute-value_model
-
-https://en.wikipedia.org/wiki/Tuple
-
-* `<https://en.wikipedia.org/wiki/Triple_(mathematics)>`_
-* `<https://en.wikipedia.org/wiki/3-tuple>`_
-* `<https://en.wikipedia.org/wiki/Quad_(mathematics)>`_
-* `<https://en.wikipedia.org/wiki/4-tuple>`_
-
-`<https://en.wikipedia.org/wiki/Reification_(computer_science)#Reification_on_Semantic_Web>`_
-
-https://en.wikipedia.org/w/index.php?title=Eigenclass_model&oldid=592778140#In_RDF_Schema
 
 
 .. index:: RDF
@@ -632,6 +641,7 @@ RDF
 ++++
 https://en.wikipedia.org/wiki/Resource_Description_Framework
 
+Resource Description Framework (:ref:`RDF`)
 
 * http://www.w3.org/TR/rdf-primer/
 * http://www.w3.org/TR/rdf11-primer/
@@ -779,11 +789,104 @@ https://en.wikipedia.org/wiki/Simple_Knowledge_Organization_System
 | xmlns: ``@prefix skos: <http://www.w3.org/2004/02/skos/core#> .``
 | LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_skos.html
 
+
+.. index:: FOAF
+.. index:: Friend of a Friend vocabulary
+.. _FOAF:
+
+FOAF
+`````
+`<https://en.wikipedia.org/wiki/FOAF_(ontology)>`__
+
+* http://www.foaf-project.org/
+* http://xmlns.com/foaf/spec/
+
+| xmlns: ``@prefix foaf: <http://xmlns.com/foaf/0.1/> .``
+| LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_foaf.html
+
+
+SIOC
+``````
+https://en.wikipedia.org/wiki/Semantically-Interlinked_Online_Communities
+
+* http://www.sioc-project.org/
+* http://rdfs.org/sioc/ns#
+
+| xmlns: ``@prefix sioc: <http://rdfs.org/sioc/ns#> .``
+| LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_sioc.html
+
+
+.. index:: OA
+.. index:: OpenAnnotation
+.. _OA:
+
+OA
+````
+http://www.openannotation.org/
+
+* http://www.openannotation.org/spec/core/
+
+| xmlns: ``@prefix oa: <http://www.w3.org/ns/oa#> .``
+| LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_oa.html
+
+Features:
+
+* https://en.wikipedia.org/wiki/Web_annotation
+* Comment, in an RDF-structured way, on a resource with a (stable) URI
+* Comment on text fragments
+* Comment on SVG items
+
+Implementations:
+
+* https://github.com/hypothesis/h (Python, Pyramid)
+* https://github.com/openannotation/annotator (http://annotatorjs.org/)
+
+
+.. index:: Schema.org
+.. _Schema.org:
+
+Schema.org
++++++++++++
+https://en.wikipedia.org/wiki/Schema.org
+
+* http://schema.org/
+* http://schema.org/docs/schemas.html
+* http://schema.org/docs/releases.html
+* http://schema.org/docs/full.html
+* https://github.com/rvguha/schemaorg
+* http://www.w3.org/wiki/WebSchemas
+* http://www.w3.org/wiki/WebSchemas/SchemaDotOrgProposals
+
+
+.. index:: Schema.org RDF
+.. _schema.org-rdf:
+
+Schema.org RDF
+````````````````
+Schema.org is maintained as RDFa.
+
+TopBraid maintains RDF/OWL transformations of schema.org:
+
+* http://topbraid.org/schema/
+* http://topbraid.org/schema/schema.rdf
+* http://topbraid.org/schema/schema.ttl
+* http://topbraid.org/schema/schema-single-range.ttl
+
+Tools and Mappings
+
+* https://github.com/mhausenblas/schema-org-rdf
+* http://schema.rdfs.org/tools.html
+* http://schema.rdfs.org/mappings.html
+
+| xmlns: ``@prefix schema: <http://schema.org/> .``
+| LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_schema.html
+
+
 .. index:: SPARQL
 .. _SPARQL:
 
 SPARQL
-```````
++++++++
 https://en.wikipedia.org/wiki/SPARQL
 
 * http://www.w3.org/TR/sparql11-overview/
@@ -812,7 +915,7 @@ Challenges:
 .. _LDP:
 
 LDP
-````
+++++
 http://www.w3.org/TR/ldp/
 
 * http://www.w3.org/TR/ldp/#terms
@@ -825,6 +928,7 @@ Features:
 * :ref:`HTTP` REST API for *Linked Data Platform Containers* (LDPC)
   containing Linked Data Plaform **Resources** (LDPR)
 * Server-side *Paging*
+
 
 
 
@@ -863,6 +967,7 @@ https://en.wikipedia.org/wiki/Provenance#Data_provenance
 
 
 
+
 Semantic Web Tools
 ---------------------
 
@@ -894,93 +999,3 @@ Semantic Web Schema Resources
 * http://lod-cloud.net/
 
 
-.. index:: FOAF
-.. index:: Friend of a Friend vocabulary
-.. _FOAF:
-
-FOAF
-+++++
-`<https://en.wikipedia.org/wiki/FOAF_(ontology)>`__
-
-* http://www.foaf-project.org/
-* http://xmlns.com/foaf/spec/
-
-| xmlns: ``@prefix foaf: <http://xmlns.com/foaf/0.1/> .``
-| LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_foaf.html
-
-
-SIOC
-++++++
-https://en.wikipedia.org/wiki/Semantically-Interlinked_Online_Communities
-
-* http://www.sioc-project.org/
-* http://rdfs.org/sioc/ns#
-
-| xmlns: ``@prefix sioc: <http://rdfs.org/sioc/ns#> .``
-| LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_sioc.html
-
-
-.. index:: OA
-.. index:: OpenAnnotation
-.. _OA:
-
-OA
-++++
-http://www.openannotation.org/
-
-* http://www.openannotation.org/spec/core/
-
-| xmlns: ``@prefix oa: <http://www.w3.org/ns/oa#> .``
-| LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_oa.html
-
-Features:
-
-* https://en.wikipedia.org/wiki/Web_annotation
-* Comment, in an RDF-structured way, on a resource with a (stable) URI
-* Comment on text fragments
-* Comment on SVG items
-
-Implementations:
-
-* https://github.com/hypothesis/h (Python, Pyramid)
-* https://github.com/openannotation/annotator (http://annotatorjs.org/)
-
-
-.. index:: Schema.org
-.. _Schema.org:
-
-Schema.org
------------
-https://en.wikipedia.org/wiki/Schema.org
-
-* http://schema.org/
-* http://schema.org/docs/schemas.html
-* http://schema.org/docs/releases.html
-* http://schema.org/docs/full.html
-* https://github.com/rvguha/schemaorg
-* http://www.w3.org/wiki/WebSchemas
-* http://www.w3.org/wiki/WebSchemas/SchemaDotOrgProposals
-
-
-.. index:: Schema.org RDF
-.. _schema.org-rdf:
-
-Schema.org RDF
-++++++++++++++++
-Schema.org is maintained as RDFa.
-
-TopBraid maintains RDF/OWL transformations of schema.org:
-
-* http://topbraid.org/schema/
-* http://topbraid.org/schema/schema.rdf
-* http://topbraid.org/schema/schema.ttl
-* http://topbraid.org/schema/schema-single-range.ttl
-
-Tools and Mappings
-
-* https://github.com/mhausenblas/schema-org-rdf
-* http://schema.rdfs.org/tools.html
-* http://schema.rdfs.org/mappings.html
-
-| xmlns: ``@prefix schema: <http://schema.org/> .``
-| LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_schema.html
