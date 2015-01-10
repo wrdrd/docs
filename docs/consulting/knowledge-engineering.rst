@@ -425,8 +425,7 @@ https://en.wikipedia.org/wiki/Tuple
 https://en.wikipedia.org/w/index.php?title=Eigenclass_model&oldid=592778140#In_RDF_Schema
 
 * :ref:`RDF`: :ref:`N-Triples`, :ref:`RDF/XML`, :ref:`TriX`, :ref:`N3`,
-:ref:`Turtle`, :ref:`TriG`, :ref:`RDFa`, :ref:`JSON-LD`
-
+  :ref:`Turtle`, :ref:`TriG`, :ref:`RDFa`, :ref:`JSON-LD`
 * :ref:`RDFS`: :ref:`DCMI` (dctypes), :ref:`SKOS`, :ref:`SPARQL`,
   :ref:`LDP`
 * :ref:`OWL`: :ref:`PROV`
@@ -645,7 +644,7 @@ Resource Description Framework (:ref:`RDF`)
 
 * http://www.w3.org/TR/rdf-primer/
 * http://www.w3.org/TR/rdf11-primer/
-* http://www.w3.org/TR/rdf11-primer/#section-Introduction
+* **http://www.w3.org/TR/rdf11-primer/#section-Introduction**
 * http://www.w3.org/TR/rdf11-primer/#section-vocabulary
 * http://www.w3.org/TR/rdf11-primer/#section-data-model
 
