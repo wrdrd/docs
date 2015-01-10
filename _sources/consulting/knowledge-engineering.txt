@@ -644,7 +644,7 @@ Resource Description Framework (:ref:`RDF`)
 
 * http://www.w3.org/TR/rdf-primer/
 * http://www.w3.org/TR/rdf11-primer/
-* **http://www.w3.org/TR/rdf11-primer/#section-Introduction**
+* ** `<http://www.w3.org/TR/rdf11-primer/#section-Introduction>`__ **
 * http://www.w3.org/TR/rdf11-primer/#section-vocabulary
 * http://www.w3.org/TR/rdf11-primer/#section-data-model
 
