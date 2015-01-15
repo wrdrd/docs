@@ -535,7 +535,7 @@ http://www.w3.org/TR/HTTP-in-RDF10/
 | xmlns: ``@prefix http-headers: <http://www.w3.org/2011/http-headers> .``
 | xmlns: ``@prefix http-methods: <http://www.w3.org/2011/http-methods> .``
 | xmlns: ``@prefix http-statusCodes: <http://www.w3.org/2011/http-statusCodes> .``
-| LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_http.html
+| LOVLink: http://lov.okfn.org/dataset/lov/vocabs/http
 
 
 .. index:: HTTP/2
@@ -591,7 +591,7 @@ XSD
 * http://www.w3.org/TR/xmlschema11-2/
 
 | xmlns: ``@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .``
-| LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_xsd.html
+| LOVLink: http://lov.okfn.org/dataset/lov/vocabs/xsd
 
 
 .. index:: JSON
@@ -658,7 +658,7 @@ Resource Description Framework (:ref:`RDF`)
 * http://www.w3.org/TR/rdf11-concepts/#section-html
 
 | xmlns: ``@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .``
-| LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_rdf.html
+| LOVLink: http://lov.okfn.org/dataset/lov/vocabs/rdf
 
 .. index:: N-Triples
 .. _N-Triples:
@@ -753,7 +753,7 @@ https://en.wikipedia.org/wiki/RDF_Schema
 * http://www.w3.org/TR/rdf-schema/
 
 | xmlns: ``@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .``
-| LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_rdf.html
+| LOVLink: http://lov.okfn.org/dataset/lov/vocabs/rdf
 
 
 .. index:: dcterms
@@ -768,10 +768,10 @@ https://en.wikipedia.org/wiki/Dublin_Core
 https://en.wikipedia.org/wiki/Dublin_Core#DCMI_Metadata_Terms
 
 | xmlns: ``@prefix dcterms: <http://purl.org/dc/terms> .``
-| LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_dcterms.html
+| LOVLink: http://lov.okfn.org/dataset/lov/vocabs/dcterms
 
 | xmlns: ``@prefix dctypes: <http://purl.org/dc/dcmitype/> .``
-| LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_dctype.html
+| LOVLink: http://lov.okfn.org/dataset/lov/vocabs/dctype
 
 
 .. index:: SKOS
@@ -786,7 +786,7 @@ https://en.wikipedia.org/wiki/Simple_Knowledge_Organization_System
 * http://www.w3.org/TR/skos-reference/skos.html
 
 | xmlns: ``@prefix skos: <http://www.w3.org/2004/02/skos/core#> .``
-| LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_skos.html
+| LOVLink: http://lov.okfn.org/dataset/lov/vocabs/skos
 
 
 .. index:: FOAF
@@ -801,7 +801,7 @@ FOAF
 * http://xmlns.com/foaf/spec/
 
 | xmlns: ``@prefix foaf: <http://xmlns.com/foaf/0.1/> .``
-| LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_foaf.html
+| LOVLink: http://lov.okfn.org/dataset/lov/vocabs/foaf
 
 
 SIOC
@@ -812,7 +812,7 @@ https://en.wikipedia.org/wiki/Semantically-Interlinked_Online_Communities
 * http://rdfs.org/sioc/ns#
 
 | xmlns: ``@prefix sioc: <http://rdfs.org/sioc/ns#> .``
-| LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_sioc.html
+| LOVLink: http://lov.okfn.org/dataset/lov/vocabs/sioc
 
 
 .. index:: OA
@@ -826,7 +826,7 @@ http://www.openannotation.org/
 * http://www.openannotation.org/spec/core/
 
 | xmlns: ``@prefix oa: <http://www.w3.org/ns/oa#> .``
-| LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_oa.html
+| LOVLink: http://lov.okfn.org/dataset/lov/vocabs/oa
 
 Features:
 
@@ -878,7 +878,7 @@ Tools and Mappings
 * http://schema.rdfs.org/mappings.html
 
 | xmlns: ``@prefix schema: <http://schema.org/> .``
-| LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_schema.html
+| LOVLink: http://lov.okfn.org/dataset/lov/vocabs/schema
 
 
 .. index:: SPARQL
@@ -920,7 +920,7 @@ http://www.w3.org/TR/ldp/
 * http://www.w3.org/TR/ldp/#terms
 
 | xmlns: ``@prefix ldp: <http://www.w3.org/ns/ldp#> .``
-| LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_ldp.html
+| LOVLink: http://lov.okfn.org/dataset/lov/vocabs/ldp
 
 Features:
 
@@ -944,7 +944,7 @@ https://en.wikipedia.org/wiki/Web_Ontology_Language
 * http://www.w3.org/TR/owl2-profiles/
 
 | xmlns: ``@prefix owl: <http://www.w3.org/2002/07/owl#> .``
-| LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_owl.html
+| LOVLink: http://lov.okfn.org/dataset/lov/vocabs/owl
 
 .. index:: PROV
 .. _PROV:
@@ -960,7 +960,7 @@ http://www.w3.org/2011/prov/wiki/Main_Page
 * http://www.w3.org/TR/prov-o/
 
 | xmlns: ``@prefix prov: <http://www.w3.org/ns/prov#> .``
-| LOVLink: http://lov.okfn.org/dataset/lov/details/vocabulary_prov.html
+| LOVLink: http://lov.okfn.org/dataset/lov/vocabs/prov
 
 https://en.wikipedia.org/wiki/Provenance#Data_provenance
 
