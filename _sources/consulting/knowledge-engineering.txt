@@ -384,7 +384,7 @@ Graph Queries
 
 * https://en.wikipedia.org/wiki/Graph_database#APIs_and_Graph_Query.2FProgramming_Languages
 * https://en.wikipedia.org/wiki/SPARQL
-* `https://en.wikipedia.org/wiki/Gremlin_(programming_language)`__
+* `<https://en.wikipedia.org/wiki/Gremlin_(programming_language)>`__
 * https://en.wikipedia.org/wiki/Apache_Spark GraphX
 
 
@@ -400,24 +400,24 @@ https://en.wikipedia.org/wiki/List_of_subject-predicate-object_databases
 
 * http://db-engines.com/en/ranking/rdf+store
 * https://en.wikipedia.org/wiki/Virtuoso_Universal_Server
-* `https://en.wikipedia.org/wiki/Sesame_(framework)`__
-* `https://en.wikipedia.org/wiki/Jena_(framework)`__
+* `<https://en.wikipedia.org/wiki/Sesame_(framework)>`__
+* `<https://en.wikipedia.org/wiki/Jena_(framework)>`__
 
 Graph Pattern Queries
 
 * :ref:`SPARQL`
 * https://en.wikipedia.org/wiki/Redland_RDF_Application_Framework
-* `https://en.wikipedia.org/wiki/Jena_(framework)`__
+* `<https://en.wikipedia.org/wiki/Jena_(framework)>`__
 * SAIL (Storage and Inferencing Layer) API
 * https://en.wikipedia.org/wiki/CubicWeb
 * :ref:`RDFLib`
 
 ``rdfs:seeAlso``
 
-* :ref:`Linked Data`
-* :ref:`Semantic Web`
-* :ref:`Semantic Web Standards`
-* :ref:`Semantic Web Tools`
+* :ref:`Linked Data <linked-data>`
+* :ref:`Semantic Web <semantic-web>`
+* :ref:`Semantic Web Standards <semantic-web-standards>`
+* :ref:`Semantic Web Tools <semantic-web-tools>`
 * :ref:`LDP`
 
 
@@ -1024,7 +1024,8 @@ http://www.w3.org/2011/prov/wiki/Main_Page
 https://en.wikipedia.org/wiki/Provenance#Data_provenance
 
 
-
+.. index:: Semantic Web Tools
+.. _semantic-web-tools:
 
 Semantic Web Tools
 ---------------------

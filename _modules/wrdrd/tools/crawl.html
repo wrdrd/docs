@@ -131,7 +131,13 @@
 <span class="sd">Given a starting page link,</span>
 <span class="sd">crawl pages (up to a specified depth).</span>
 
-<span class="sd">pip install requests beautifulsoup4</span>
+<span class="sd">Installation Requirements:</span>
+
+<span class="sd">.. code:: bash</span>
+
+<span class="sd">   pip install -r requirements.txt</span>
+<span class="sd">   # pip install requests beautifulsoup4 urlobject networkx # nltk textblob</span>
+
 
 <span class="sd">&quot;&quot;&quot;</span>
 
@@ -308,7 +314,7 @@
 <span class="sd">    Args:</span>
 <span class="sd">        bs (bs4.BeautifulSoup): BeautifulSoup object</span>
 <span class="sd">    Returns:</span>
-<span class="sd">        unicode: newline-joined unicode string</span>
+<span class="sd">        unicode: space-joined unicode string with newlines replaced by spaces</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="s">u&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">,</span><span class="s">&#39; &#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">bs</span><span class="o">.</span><span class="n">strings</span><span class="p">)</span>
 
