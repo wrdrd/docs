@@ -1022,6 +1022,13 @@ http://www.w3.org/2011/prov/wiki/Main_Page
 https://en.wikipedia.org/wiki/Provenance#Data_provenance
 
 
+DBpedia
+``````````
+http://wiki.dbpedia.org/Ontology
+
+| xmlns: ``@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .``
+| LOVLink: http://dbpedia.org/ontology/
+
 .. index:: Semantic Web Tools
 .. _semantic-web-tools:
 
