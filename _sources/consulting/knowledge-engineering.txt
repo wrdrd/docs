@@ -588,8 +588,6 @@ HTTP in RDF
 `````````````
 http://www.w3.org/TR/HTTP-in-RDF10/
 
-* http://www.w3.org/TR/HTTP-in-RDF10/
-
 | xmlns: ``@prefix http: <http://www.w3.org/2011/http#> .``
 | xmlns: ``@prefix http-headers: <http://www.w3.org/2011/http-headers> .``
 | xmlns: ``@prefix http-methods: <http://www.w3.org/2011/http-methods> .``
