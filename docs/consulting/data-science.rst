@@ -30,14 +30,14 @@ Inputs, Outputs
 
 Revenue::
 
-   2014/01/01 1200 CDT  $80
-   2014/01/01 1210 CDT  $100
-   2014/01/01 1500 CDT  $20
+   2014-01-01 1200 CDT  $80
+   2014-01-01 1210 CDT  $100
+   2014-01-01 1500 CDT  $20
 
 Expenses::
 
-   2014/01/01 wages     $256 ($8/hr * 8hrs * 4 people)
-   2014/01/01 utilities $100
+   2014-01-01 wages     $256 ($8/hr * 8hrs * 4 people)
+   2014-01-01 utilities $100
 
 
 **Information**
@@ -46,16 +46,16 @@ Aggregations, Tendencies
 
 Revenue (gross)::
 
-   2014/01/01  total: $200
+   2014-01-01  total: $200
 
 Expenses::
 
-   2014/01/01  total: $356
+   2014-01-01  total: $356
 
 Net::
 
-   2013/01/01  net:  -$200
-   2014/01/01  net:  -$156
+   2013-01-01  net:  -$200
+   2014-01-01  net:  -$156
 
 
 On Mondays, we usually (on (simple) average) make about $500.
@@ -558,3 +558,4 @@ https://en.wikipedia.org/wiki/Three.js
 * http://threejs.org/
 
 
+See: :ref:`Semantic Web Tools`
