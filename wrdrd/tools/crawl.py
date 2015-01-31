@@ -7,7 +7,13 @@ wrdcrawler
 Given a starting page link,
 crawl pages (up to a specified depth).
 
-pip install requests beautifulsoup4
+Installation Requirements:
+
+.. code:: bash
+
+   pip install -r requirements.txt
+   # pip install requests beautifulsoup4 urlobject networkx # nltk textblob
+
 
 """
 
@@ -184,7 +190,7 @@ def get_text_from_bs(bs):
     Args:
         bs (bs4.BeautifulSoup): BeautifulSoup object
     Returns:
-        unicode: newline-joined unicode string
+        unicode: space-joined unicode string with newlines replaced by spaces
     """
     return u' '.join(x.replace('\n',' ') for x in bs.strings)
 
