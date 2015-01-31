@@ -1035,6 +1035,19 @@ http://wiki.dbpedia.org/Ontology
 Semantic Web Tools
 ---------------------
 
+.. index: Protégé
+.. _protege:
+
+Protégé
++++++++++
+
+`<https://en.wikipedia.org/wiki/Prot%C3%A9g%C3%A9_(software)>`__
+
+http://protege.stanford.edu/
+
+http://webprotege.stanford.edu/
+
+
 .. index:: RDFJS
 .. _RDFJS:
 
@@ -1043,6 +1056,18 @@ RDFJS
 http://www.w3.org/community/rdfjs/
 
 http://www.w3.org/community/rdfjs/wiki/Comparison_of_RDFJS_libraries
+
+
+.. index:: RDFHDT
+.. _RDFHDT:
+
+RDFHDT
+++++++++
+http://www.rdfhdt.org/
+
+https://code.google.com/p/hdt-it/
+
+* https://www.youtube.com/watch?v=HMPkc725sMY
 
 
 .. index:: RDFLib
