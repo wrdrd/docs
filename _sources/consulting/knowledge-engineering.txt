@@ -301,6 +301,7 @@ https://en.wikipedia.org/wiki/Database_normalization
 https://en.wikipedia.org/wiki/Relational_database_management_system
 
 * https://en.wikipedia.org/wiki/Comparison_of_relational_database_management_systems
+* http://db-engines.com/en/ranking/relational+dbms
 * https://en.wikipedia.org/wiki/SQLite
 * https://en.wikipedia.org/wiki/MySQL
 * https://en.wikipedia.org/wiki/PostgreSQL
@@ -318,7 +319,8 @@ https://en.wikipedia.org/wiki/SQL
 * `<https://en.wikipedia.org/wiki/Null_(SQL)#Comparisons_with_NULL_and_the_three-valued_logic_.283VL.29>`_
 * `<https://en.wikipedia.org/wiki/Join_(SQL)>`_
 * https://en.wikipedia.org/wiki/SQL_injection
-* http://cwe.mitre.org/top25/#CWE-89 (#1)
+* http://cwe.mitre.org/top25/#CWE-89 (#1 Most Prevalent Dangerous
+  Security Error (2011))
 
 See: :ref:`Object Relational Modeling <orm>`
 
@@ -337,6 +339,7 @@ https://en.wikipedia.org/wiki/NoSQL
 * `<https://en.wikipedia.org/wiki/Column_family>`_
 * `<https://en.wikipedia.org/wiki/Super_column>`_
 * https://en.wikipedia.org/wiki/Apache_Accumulo
+
 
 .. index:: Distributed Databases
 .. _distributed-databases:
@@ -360,6 +363,62 @@ https://en.wikipedia.org/wiki/Category:Distributed_computing_problems
 https://en.wikipedia.org/wiki/Category:Distributed_algorithms
 
 * `<https://en.wikipedia.org/wiki/Paxos_(computer_science)>`_
+
+
+.. index:: Graph Databases
+.. _graph-databases:
+
+Graph Databases
+++++++++++++++++++
+https://en.wikipedia.org/wiki/Graph_database
+
+https://en.wikipedia.org/wiki/Graph_database#Graph_database_projects
+
+* http://db-engines.com/en/ranking/graph+dbms
+* https://en.wikipedia.org/wiki/Virtuoso_Universal_Server
+* https://en.wikipedia.org/wiki/AllegroGraph
+* https://en.wikipedia.org/wiki/Sqrrl
+* https://en.wikipedia.org/wiki/Neo4j
+
+Graph Queries
+
+* https://en.wikipedia.org/wiki/Graph_database#APIs_and_Graph_Query.2FProgramming_Languages
+* https://en.wikipedia.org/wiki/SPARQL
+* `https://en.wikipedia.org/wiki/Gremlin_(programming_language)`__
+* https://en.wikipedia.org/wiki/Apache_Spark GraphX
+
+
+.. index:: RDF Triplestores
+.. index:: Triplestores
+.. _triplestores:
+
+RDF Triplestores
++++++++++++++++++
+https://en.wikipedia.org/wiki/Triplestore
+
+https://en.wikipedia.org/wiki/List_of_subject-predicate-object_databases
+
+* http://db-engines.com/en/ranking/rdf+store
+* https://en.wikipedia.org/wiki/Virtuoso_Universal_Server
+* `https://en.wikipedia.org/wiki/Sesame_(framework)`__
+* `https://en.wikipedia.org/wiki/Jena_(framework)`__
+
+Graph Pattern Queries
+
+* :ref:`SPARQL`
+* https://en.wikipedia.org/wiki/Redland_RDF_Application_Framework
+* `https://en.wikipedia.org/wiki/Jena_(framework)`__
+* SAIL (Storage and Inferencing Layer) API
+* https://en.wikipedia.org/wiki/CubicWeb
+* :ref:`RDFLib`
+
+``rdfs:seeAlso``
+
+* :ref:`Linked Data`
+* :ref:`Semantic Web`
+* :ref:`Semantic Web Standards`
+* :ref:`Semantic Web Tools`
+* :ref:`LDP`
 
 
 .. index:: Data Grid
