@@ -557,5 +557,6 @@ https://en.wikipedia.org/wiki/Three.js
 
 * http://threejs.org/
 
+http://sigmajs.org/
 
 See: :ref:`Semantic Web Tools <semantic-web-tools>`
