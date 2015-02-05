@@ -113,6 +113,8 @@ Test-driven Development
 ~~~~~~~~~~~~~~~~~~~~~~~~
 https://en.wikipedia.org/wiki/Test-driven_development (TDD)
 
+* https://westurner.github.io/wiki/awesome-python-testing
+
 
 .. index:: Extreme Programming
 .. index:: XP
