@@ -505,6 +505,62 @@ Standard, Automated Workflows
    Q: Which factors did we know we were capturing?
 
 
+.. index:: 5 Star Open Data
+.. index:: 5 Star Linked Open Data
+.. _fivestardata:
+
+5 ★ Linked Open Data
++++++++++++++++++++++++++
+http://www.w3.org/TR/ld-glossary/#x5-star-linked-open-data
+
+.. epigraph::
+
+   ☆
+
+   Publish data on the Web in any format (e.g., PDF, JPEG)
+   accompanied by an explicit
+   `Open License <https://en.wikipedia.org/wiki/Open_content#Licenses>`_
+   (expression of rights).
+
+   ☆☆
+
+   Publish `structured data
+   <https://en.wikipedia.org/wiki/Structured_data>`_
+   on the Web in a machine-readable format
+   (e.g. :ref:`XML`).
+
+   ☆☆☆
+
+   Publish structured data on the Web in a documented,
+   `non-proprietary data format <https://en.wikipedia.org/wiki/Open_format>`_
+   (e.g.
+   :ref:`CSV`,
+   `KML <https://en.wikipedia.org/wiki/Keyhole_Markup_Language>`_).
+
+   ☆☆☆☆
+
+   Publish structured data on the Web as RDF
+   (e.g.
+   :ref:`Turtle`,
+   :ref:`RDFa`,
+   :ref:`JSON-LD`,
+   :ref:`SPARQL`.)
+
+   ☆☆☆☆☆
+
+   In your :ref:`RDF`,
+   have the
+   `identifiers <https://en.wikipedia.org/wiki/Uniform_resource_identifier>`_
+   be links
+   (`URLs <https://en.wikipedia.org/wiki/Uniform_resource_locator>`_)
+   to useful `data <https://en.wikipedia.org/wiki/Data>`_ sources.
+
+   -- http://5stardata.info/
+
+
+See: :ref:`Knowledge Engineering <knowledge-engineering>`.
+
+
 .. index:: Data Visualization
 .. _data-visualization:
 
