@@ -13,7 +13,7 @@ https://en.wikipedia.org/wiki/Organization_development
 
 https://en.wikipedia.org/wiki/Tuckman%27s_stages_of_group_development
 
-"From Comfort Zone to Performance Management"
+"From Comfort Zone to Performance Management" White (2008)
 http://www.academia.edu/460313/From_Comfort_Zone_to_Performance_Management
 
 https://en.wikipedia.org/wiki/Kaizen
