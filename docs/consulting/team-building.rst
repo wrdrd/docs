@@ -20,7 +20,7 @@ https://en.wikipedia.org/wiki/Kaizen
 
 
 Personal Development
------------------------
+----------------------
 https://en.wikipedia.org/wiki/Personal_development
 
 
@@ -29,6 +29,15 @@ Emotional Intelligence
 https://en.wikipedia.org/wiki/Emotional_intelligence
 
 https://en.wikipedia.org/wiki/Industrial_and_organizational_psychology
+
+https://en.wikipedia.org/wiki/Motivation
+
+* https://en.wikipedia.org/wiki/Theory_X_and_Theory_Y
+* https://en.wikipedia.org/wiki/Theory_Z
+
+https://en.wikipedia.org/wiki/Psychological_manipulation
+
+https://en.wikipedia.org/wiki/The_Five_Dysfunctions_of_a_Team
 
 
 Collaboration Engineering
