@@ -39,6 +39,10 @@ https://en.wikipedia.org/wiki/Psychological_manipulation
 
 https://en.wikipedia.org/wiki/The_Five_Dysfunctions_of_a_Team
 
+`<https://en.wikipedia.org/wiki/Coping_(psychology)>`__
+
+`<https://en.wikipedia.org/wiki/Defence_mechanisms#Level_4:_Mature>`__
+
 
 Collaboration Engineering
 ---------------------------
