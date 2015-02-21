@@ -77,5 +77,10 @@ https://en.wikipedia.org/wiki/List_of_collaborative_software
 
 "ThinkLets: Achieving Predictable, Repeatable Patterns of
 Group Interaction with Group Support Systems (GSS)"
-http://www.academia.edu/259943/ThinkLets_Achieving_Predictable_Repeatable_Patterns_of_Group_Interaction_With_Group_Support_Systems_GSS_
+`<http://www.academia.edu/259943/ThinkLets_Achieving_Predictable_Repeatable_Patterns_of_Group_Interaction_With_Group_Support_Systems_GSS_>`__
+
+See also: :ref:`Software Engineering > Digital Stand Up Meeting
+<digital-stand-up-meeting>`
+
+
 
