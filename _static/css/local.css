@@ -10,3 +10,12 @@
     margin-top: -1px;
     padding-top: 4px;
 }
+
+div.sidebar ul ul {
+    padding-left: 20px;
+}
+
+div.sidebar pre {
+    font-size: 9px;
+}
+
