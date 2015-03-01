@@ -1191,13 +1191,13 @@ OA
 | xmlns: ``@prefix oa: <http://www.w3.org/ns/oa#> .``
 | LOVLink: http://lov.okfn.org/dataset/lov/vocabs/oa
 
-OA (**Open Annotation**) is an :ref:`RDF` standard for
+OA (*Open Annotation*) is an :ref:`RDF` standard for
 commenting on anything with a URI.
 
 Features:
 
-* https://en.wikipedia.org/wiki/Web_annotation
-* Comment, in an RDF-structured way, on a resource with a (stable) URI
+* Web Annotation: https://en.wikipedia.org/wiki/Web_annotation
+* Comment on any resource with a (stable) URI
 * Comment on text fragments
 * Comment on SVG items
 
@@ -1219,7 +1219,7 @@ Schema.org
 Schema.org is a vocabulary for expressing structured data on the web.
 
 Schema.org can be expressed as microdata, :ref:`RDF`, :ref:`RDFa`,
-and :rdf:`JSON-LD`.
+and :ref:`JSON-LD`.
 
 * http://schema.org/docs/full.html
 * http://schema.org/docs/schemas.html
