@@ -1125,8 +1125,6 @@ SKOS
 SKOS (*Simple Knowledge Organization System*) is an :ref:`RDF` standard
 for linking concepts.
 
-* ``skos:broader``
-* ``skos:narrower``
 
 .. index:: XKOS
 .. _XKOS:
@@ -1142,6 +1140,7 @@ XKOS
 
 XKOS (*Extended Knowledge Organization System*) extends :ref:`SKOS`
 for linking concepts and statistical measures.
+
 
 .. index:: FOAF
 .. index:: Friend of a Friend vocabulary
