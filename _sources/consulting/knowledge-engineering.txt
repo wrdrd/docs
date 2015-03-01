@@ -1339,7 +1339,7 @@ PROV
 | xmlns: ``@prefix prov: <http://www.w3.org/ns/prov#> .``
 | LOVLink: http://lov.okfn.org/dataset/lov/vocabs/prov
 
-W3C PROV (*Provenance*) ontology is an :ref:`OWL` :ref:`RDF` standard
+PROV (*Provenance*) ontology is an :ref:`OWL` :ref:`RDF` standard
 for expressing data provenance (who, what, when, and how, to a certain
 extent).
 
