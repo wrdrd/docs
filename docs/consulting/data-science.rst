@@ -505,9 +505,7 @@ Standard, Automated Workflows
    Q: Which factors did we know we were capturing?
 
 
-.. index:: 5 Star Open Data
-.. index:: 5 Star Linked Open Data
-.. _fivestardata:
+.. _fivestardata2:
 
 5 ★ Linked Open Data
 +++++++++++++++++++++++++

@@ -443,8 +443,8 @@ https://en.wikipedia.org/wiki/Linked_data
 .. index:: 5 Star Linked Open Data
 .. _fivestardata:
 
-5 ★ Linked Open Data
-+++++++++++++++++++++++++
+5 ★ Linked Data
+++++++++++++++++++
 http://www.w3.org/TR/ld-glossary/#x5-star-linked-open-data
 
 .. epigraph::
@@ -554,11 +554,12 @@ https://en.wikipedia.org/wiki/Web_standards
 
 IETF
 +++++
-https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force
+| Wikipedia: https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force
+| Homepage: https://www.ietf.org/
 
-https://www.ietf.org/
+IETF (*Internet Engineering Task Force*) is a standards body.
 
-https://tools.ietf.org/html/
+List of IETF standards: https://tools.ietf.org/html/
 
 
 .. index:: ISO
@@ -566,11 +567,13 @@ https://tools.ietf.org/html/
 
 ISO
 ++++
-https://en.wikipedia.org/wiki/International_Organization_for_Standardization
+| Wikipedia: https://en.wikipedia.org/wiki/International_Organization_for_Standardization
+| Homepage: http://www.iso.org/
 
-http://www.iso.org/
+ISO (*International Organization for Standardization*) is a standards
+body.
 
-http://www.iso.org/iso/home/standards.htm
+List of ISO standards: http://www.iso.org/iso/home/standards.htm
 
 
 .. index:: W3C
@@ -578,11 +581,12 @@ http://www.iso.org/iso/home/standards.htm
 
 W3C
 ++++
-https://en.wikipedia.org/wiki/World_Wide_Web_Consortium#Standards
+| Wikipedia: https://en.wikipedia.org/wiki/World_Wide_Web_Consortium
+| Homepage: http://www.w3.org/
 
-http://www.w3.org/
+W3C (*World Wide Web Consortium*) is a standards body.
 
-http://www.w3.org/TR/
+List of W3C standards: http://www.w3.org/TR/
 
 
 .. index:: ISO8601
@@ -591,11 +595,20 @@ http://www.w3.org/TR/
 
 ISO8601
 +++++++++
-https://en.wikipedia.org/wiki/ISO_8601
+| Wikipedia: https://en.wikipedia.org/wiki/ISO_8601
+| Standard: http://www.iso.org/iso/iso8601
 
-http://www.iso.org/iso/iso8601
+ISO8601 is a standard for specifying Gregorian
+dates, times, datetime intervals, durations, and recurring datetimes.
+
+An ISO8601 datetime is specified as:
+year, month, day, hour, 'T' or space, minute, second, timezone.
+
+A ``Z`` timezone specifies Universal Coordinated (or "Zulu") time.
 
 * http://www.w3.org/TR/NOTE-datetime
+
+Examples of ISO8601:
 
 ::
 
@@ -622,29 +635,43 @@ http://www.iso.org/iso/iso8601
     P1Y1M1W1DT1H1M1S
 
 
+.. note::
+    AFAIU, ISO8601 does not specify standards for
+    milliseconds, microseconds, nanoseconds, picoseconds, femtoseconds,
+    or attoseconds.
+
+
 .. index:: HTTP
 .. _HTTP:
 
 HTTP
 +++++
-https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
+| Wikipedia: https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
+| Standard: https://tools.ietf.org/html/rfc2616
+| Standard: http://tools.ietf.org/html/rfc7230#page-5
 
-* https://tools.ietf.org/html/rfc2616
+HTTP (*HyperText Transfer Protocol*) is a text-based request-response
+TCP/IP protocol for data interchange.
+
+HTTPS (*Secure HTTP*) wraps HTTP in SSL/TLS to secure HTTP.
+
 * https://www.mnot.net/blog/2014/06/07/rfc2616_is_dead
-* http://tools.ietf.org/html/rfc7230#page-5
+
 
 .. index:: HTTP in RDF
 .. _httprdf:
 
 HTTP in RDF
 `````````````
-http://www.w3.org/TR/HTTP-in-RDF10/
-
+| Standard: http://www.w3.org/TR/HTTP-in-RDF10/
+| Namespace: `<http://www.w3.org/2011/http#>`__
 | xmlns: ``@prefix http: <http://www.w3.org/2011/http#> .``
 | xmlns: ``@prefix http-headers: <http://www.w3.org/2011/http-headers> .``
 | xmlns: ``@prefix http-methods: <http://www.w3.org/2011/http-methods> .``
 | xmlns: ``@prefix http-statusCodes: <http://www.w3.org/2011/http-statusCodes> .``
 | LOVLink: http://lov.okfn.org/dataset/lov/vocabs/http
+
+HTTP-in-RDF is a standard for representing HTTP as :ref:`RDF`.
 
 
 .. index:: HTTP/2
@@ -654,18 +681,17 @@ http://www.w3.org/TR/HTTP-in-RDF10/
 
 HTTP/2
 ++++++
-https://en.wikipedia.org/wiki/HTTP/2
+| Wikipedia: https://en.wikipedia.org/wiki/HTTP/2
+| Homepage: https://http2.github.io/
+| Standard: https://http2.github.io/http2-spec/
+| Standard: https://http2.github.io/http2-spec/compression.html
+| Standard: https://tools.ietf.org/html/draft-ietf-httpbis-http2
 
-* https://http2.github.io/
-* https://http2.github.io/http2-spec/index.html
-* https://http2.github.io/http2-spec/compression.html
+HTTP/2 (*HTTP 2.0*) is the newest standard for :ref:`HTTP`.
+
+HTTP/2 is largely derived from the SPDY protocol.
+
 * https://github.com/http2/http2-spec/wiki/Implementations
-
-
-* http://asyncio.org 
-  
-  Asynchronous Python HTTP Implementations
-  that could be useful for fast HTTP2 Applications
 
 
 .. index:: HTML
@@ -673,10 +699,70 @@ https://en.wikipedia.org/wiki/HTTP/2
 
 HTML
 +++++
-https://en.wikipedia.org/wiki/HTML
+| Wikipedia: https://en.wikipedia.org/wiki/HTML
 
-* http://www.w3.org/TR/html4/
-* http://www.w3.org/TR/html5/
+HTML (*Hypertext Markup Language*) is a standard for representing
+documents with tags, attributes, and **hyperlinks**.
+
+Recent HTML standards include :ref:`HTML4`, :ref:`XHTML`, and :ref:`HTML5`.
+
+
+.. index:: HTML4
+.. _HTML4:
+
+HTML4
+```````
+| Standard: http://www.w3.org/TR/html4/
+
+HTML4 is the fourth generation :ref:`HTML` standard.
+
+
+.. index:: XHTML
+.. _XHTML:
+
+XHTML
+``````
+| Standard:
+
+XHTML is an :ref:`XML`-conforming :ref:`HTML` standard
+which is being superseded by :ref:`HTML5`.
+
+Compared to :ref:`HTML4`,
+XHTML requires closing tags, suports additional namespace declarations,
+and expects things to be wrapped in ``CDATA`` blocks,
+among a few other notable differences.
+
+XHTML has not gained the widespread adoption of :ref:`HTML4`,
+and is being largely superseded by :ref:`HTML5`.
+
+
+.. index:: HTML5
+.. _HTML5:
+
+HTML5
+``````
+| Standard: http://www.w3.org/TR/html5/
+
+HTML5 is the fifth generation :ref:`HTML` standard
+with many new (and removed) features.
+
+Like its predecessors, HTML5 is not case sensitive,
+but it is recommended to use lowercased tags and attributes.
+
+**Differences Between HTML4 and HTML5**
+
+https://html-differences.whatwg.org/
+
+* HTML5 does not require closing tags
+  (many browsers had already implemented routines for auto-closing broken
+  markup).
+* Frames have been removed
+* Presentational attributes have been removed (in favor of CSS)
+
+**HTML 5.1**
+
+HTML 5.1 is in the works:
+
 * http://www.w3.org/html/wg/drafts/html/master/
 
 
@@ -685,9 +771,13 @@ https://en.wikipedia.org/wiki/HTML
 
 XML
 ++++
-https://en.wikipedia.org/wiki/XML
+| Wikipedia: https://en.wikipedia.org/wiki/XML
+| Standard: http://www.w3.org/TR/xml/
 
-* http://www.w3.org/TR/xml/
+XML (*Extensible Markup Language*) is a standard for representing data
+with tags and attributes.
+
+Like PDF, XML is derived from SGML.
 
 
 .. index:: XSD
@@ -695,12 +785,14 @@ https://en.wikipedia.org/wiki/XML
 
 XSD
 ++++
-`<https://en.wikipedia.org/wiki/XML_Schema_(W3C)>`__
-
-* http://www.w3.org/TR/xmlschema11-2/
-
+| Wikipedia: `<https://en.wikipedia.org/wiki/XML_Schema_(W3C)>`__
+| Standard: http://www.w3.org/TR/xmlschema11-2/
+| Namespace: `<http://www.w3.org/2001/XMLSchema#>`__
 | xmlns: ``@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .``
 | LOVLink: http://lov.okfn.org/dataset/lov/vocabs/xsd
+
+XSD (*XML Schema Datatypes*) are standard datatypes for things like
+strings, integers, floats, and dates for :ref:`XML` and also :ref:`RDF`.
 
 
 .. index:: JSON
@@ -708,38 +800,59 @@ XSD
 
 JSON
 +++++
-https://en.wikipedia.org/wiki/JSON
+| Wikipedia: https://en.wikipedia.org/wiki/JSON
+| Standard: https://tools.ietf.org/html/rfc7159
+| Homepage: http://json.org/
 
-* https://tools.ietf.org/html/rfc7159
-* http://json.org/
+JSON (*JavaScript Object Notation*) is a standard for representing
+data in a JavaScript compatible way; with a restricted set of
+data types.
+
+Conforming JSON does not contain JavaScript code, only data.
+It is not safe to ``eval`` JSON, because it could contain code.
+
+There are many parsers for JSON.
+
+:ref:`JSON-LD` adds Linked Data support to JSON.
 
 
 .. index:: CSV
 .. _CSV:
 
-
 CSV
 ++++
-https://en.wikipedia.org/wiki/Comma-separated_values
+| Wikipedia: https://en.wikipedia.org/wiki/Comma-separated_values
+| Standard: https://tools.ietf.org/html/rfc4180
+| Extension: ``.csv``
+| MIME Type: ``text/csv``
 
-* https://tools.ietf.org/html/rfc4180
+CSV (*Comma Separated Values*) as a flat file representation
+for columnar data with rows and columns.
 
+Most spreadsheet tools can export (raw and computed) data
+from a sheet into a CSV file, for use with many other tools.
 
 CSVW
 `````
-https://w3c.github.io/csvw/
+| Homepage: https://w3c.github.io/csvw/
+| Standard: http://www.w3.org/TR/tabular-data-model/
+| Standard: http://www.w3.org/TR/tabular-metadata/
+| Standard: http://www.w3.org/TR/csv2json/
+| Standard: http://www.w3.org/TR/csv2rdf/
+| Namespace: `<http://www.w3.org/ns/csvw#>`__
+| xmlns: ``@prefix csvw: <http://www.w3.org/ns/csvw#> .``
+| @context: http://www.w3.org/ns/csvw.jsonld
 
-* https://w3c.github.io/csvw/ns/
-* :ref:`CSV` -> :ref:`JSON` ( -> :ref:`JSON-LD` -> :ref:`RDF` )
-* :ref:`CSV` -> :ref:`RDF`
-
-Features:
+CSVW (*CSV on the Web*) is a set of relatively new standards
+for representing :ref:`CSV` rows and columns
+as :ref:`RDF` (and :ref:`JSON` / :ref:`JSON-LD`)
+along with *metadata*.
 
 * URIs for datatypes (:ref:`XSD`, ...)
 * URIs for columns (:ref:`RDF` ``@prefix name: <uri> .``)
 * Document Metadata
-
-
+* :ref:`CSV` -> :ref:`JSON` ( -> :ref:`JSON-LD` -> :ref:`RDF` )
+* :ref:`CSV` -> :ref:`RDF`
 
 
 .. index:: RDF
@@ -747,15 +860,22 @@ Features:
 
 RDF
 ++++
-https://en.wikipedia.org/wiki/Resource_Description_Framework
+| Wikipedia: https://en.wikipedia.org/wiki/Resource_Description_Framework
+| xmlns: ``@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .``
+| LOVLink: http://lov.okfn.org/dataset/lov/vocabs/rdf
 
-Resource Description Framework (:ref:`RDF`)
+RDF (*Resource Description Framework*) is a standard data model
+for representing data as triples.
+
+**Primer**
 
 * http://www.w3.org/TR/rdf-primer/
 * http://www.w3.org/TR/rdf11-primer/
 * ** `<http://www.w3.org/TR/rdf11-primer/#section-Introduction>`__ **
 * http://www.w3.org/TR/rdf11-primer/#section-vocabulary
 * http://www.w3.org/TR/rdf11-primer/#section-data-model
+
+**Concepts**
 
 * http://www.w3.org/TR/rdf-concepts/
 * http://www.w3.org/TR/rdf11-concepts/
@@ -766,17 +886,25 @@ Resource Description Framework (:ref:`RDF`)
 * http://www.w3.org/TR/rdf11-concepts/#xsd-datatypes
 * http://www.w3.org/TR/rdf11-concepts/#section-html
 
-| xmlns: ``@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .``
-| LOVLink: http://lov.okfn.org/dataset/lov/vocabs/rdf
+**Useful Resources**
+
+* "Linked Data Patterns: 
+  A pattern catalogue for modelling, publishing, and 
+  consuming Linked Data"
+  http://patterns.dataincubator.org/book/
+
 
 .. index:: N-Triples
 .. _N-Triples:
 
 N-Triples
 ```````````
-https://en.wikipedia.org/wiki/N-Triples
+| Wikipedia: https://en.wikipedia.org/wiki/N-Triples
+| Standard: http://www.w3.org/TR/n-triples/
+| Extension: ``.nt``
+| MIME Type: ``application/n-triples``
 
-* http://www.w3.org/TR/n-triples/
+N-Triples is a standard for serializing :ref:`RDF` triples to text.
 
 
 .. index:: RDF/XML
@@ -784,9 +912,12 @@ https://en.wikipedia.org/wiki/N-Triples
 
 RDF/XML
 ````````
-https://en.wikipedia.org/wiki/RDF/XML
+| Wikipedia: https://en.wikipedia.org/wiki/RDF/XML
+| Standard: http://www.w3.org/TR/rdf-syntax-grammar/
+| Extension: ``.rdf``
+| MIME Type: ``application/rdf+xml``
 
-* http://www.w3.org/TR/rdf-syntax-grammar/
+RDF/XML is a standard for serializing :ref:`RDF` as :ref:`XML`.
 
 
 .. index:: TriX
@@ -794,9 +925,13 @@ https://en.wikipedia.org/wiki/RDF/XML
 
 TriX
 `````
-`<https://en.wikipedia.org/wiki/TriX_(syntax)>`_
+| Wikipedia: `<https://en.wikipedia.org/wiki/TriX_(syntax)>`_
 
 * http://www.w3.org/2004/03/trix/rdfg-1/
+
+TriX is a standard which extends
+the :ref:`RDF/XML` :ref:`RDF` serialization standard
+with named graphs.
 
 .. index:: N3
 .. index:: Notation3
@@ -804,10 +939,16 @@ TriX
 
 N3
 ````
-https://en.wikipedia.org/wiki/Notation3
+| Wikipedia: https://en.wikipedia.org/wiki/Notation3
+| Standard: http://www.w3.org/TeamSubmission/n3/
+| Extension: ``.n3``
+| MIME Type: ``text/n3``
 
-* http://www.w3.org/TeamSubmission/n3/
-* ``=>`` implies
+N3 (*Notation3*) is a standard which extends
+the :ref:`Turtle` :ref:`RDF` serialization standard
+with a few extra features.
+
+* ``=>`` implies (useful for specifying production rules)
 
 
 .. index:: Turtle
@@ -815,19 +956,30 @@ https://en.wikipedia.org/wiki/Notation3
 
 Turtle
 ````````
-`<https://en.wikipedia.org/wiki/Turtle_(syntax)>`_
+| Wikipedia: `<https://en.wikipedia.org/wiki/Turtle_(syntax)>`_
+| Standard: http://www.w3.org/TR/turtle/
+| Extension: ``.ttl``
+| MIME type: ``text/turtle``
 
-* http://www.w3.org/TR/turtle/
-
+Turtle is a standard for serializing :ref:`RDF` triples
+into human-readable text.
 
 .. index:: TriG
 .. _TriG:
 
 TriG
 `````
-`<https://en.wikipedia.org/wiki/TriG_(syntax)>`_
+| Wikipedia: `<https://en.wikipedia.org/wiki/TriG_(syntax)>`_
+| Standard: http://www.w3.org/TR/trig/
+| Extension: ``.trig``
+| MIME Type: ``application/trig``
 
-* http://www.w3.org/TR/trig/
+TriG (...) extends the :ref:`Turtle` :ref:`RDF` standard
+to allow multiple named graphs to be expressed in one file
+(as triples with a named graph IRI ("quads")).
+
+Triples without a specified named graph are, by default,
+part of the "Default Graph".
 
 
 .. index:: RDFa
@@ -835,10 +987,18 @@ TriG
 
 RDFa
 ``````
-https://en.wikipedia.org/wiki/RDFa
+| Wikipedia: https://en.wikipedia.org/wiki/RDFa
+| Homepage: http://www.w3.org/2001/sw/wiki/RDFa
+| Standard: http://www.w3.org/TR/rdfa-core/
+| Standard: http://www.w3.org/TR/rdfa-lite/
+| Standard: http://www.w3.org/TR/html-rdfa/
+| Docs: http://www.w3.org/TR/rdfa-primer/
 
-* http://www.w3.org/TR/rdfa-primer/
-* http://www.w3.org/TR/html-rdfa/ (HTML5, XHTML5)
+RDFa (*RDF in attributes*) is a standard for storing
+structured data (:ref:`RDF` triples) in HTML (XHTML, HTML5) attributes.
+
+:ref:`Schema.org` structured data can be included in an HTML page as
+RDFa.
 
 
 .. index:: JSON-LD
@@ -846,24 +1006,50 @@ https://en.wikipedia.org/wiki/RDFa
 
 JSON-LD
 ````````
-https://en.wikipedia.org/wiki/JSON-LD
+| Wikipedia: https://en.wikipedia.org/wiki/JSON-LD
+| Homepage: http://json-ld.org/
+| Standard: http://www.w3.org/TR/json-ld/
 
-* http://www.w3.org/TR/json-ld/
-* http://json-ld.org/
+JSON-LD (*JSON Linked Data*) is a standard for expressing
+:ref:`RDF` :ref:`Linked Data <linked-data>` as :ref:`JSON`.
+
+JSON-LD specifies a ``@context`` for regular JSON documents
+which maps JSON attributes to URIs with datatypes and languages.
+
 * http://json-ld.org/playground/
+
 
 .. index:: RDFS
 .. _RDFS:
 
 RDFS
 +++++
-https://en.wikipedia.org/wiki/RDF_Schema
-
-* http://www.w3.org/TR/rdf-schema/
-
+| Wikipedia: https://en.wikipedia.org/wiki/RDF_Schema
+| Standard: http://www.w3.org/TR/rdf-schema/
+| Namespace: `<http://www.w3.org/2000/01/rdf-schema#>`__
 | xmlns: ``@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .``
 | LOVLink: http://lov.okfn.org/dataset/lov/vocabs/rdf
 
+RDFS (*RDF Schema*) is an :ref:`RDF` standard for basic classes
+and properties.
+
+A few notable RDFS classes:
+
+* ``rdfs:Resource`` (everything in RDF)
+* ``rdfs:Literal`` (strings, integers)
+* ``rdfs:Class``
+
+A few notable / frequently used properties:
+
+* ``rdfs:label``
+* ``rdfs:comment``
+* ``rdfs:seeAlso``
+
+* ``rdfs:domain``
+* ``rdfs:range``
+* ``rdfs:subPropertyOf``
+
+:ref:`OWL` builds upon many RDFS concepts.
 
 .. index:: dcterms
 .. index:: dctypes
@@ -872,15 +1058,18 @@ https://en.wikipedia.org/wiki/RDF_Schema
 
 DCMI
 `````
-https://en.wikipedia.org/wiki/Dublin_Core
-
-https://en.wikipedia.org/wiki/Dublin_Core#DCMI_Metadata_Terms
-
+| Wikipedia: https://en.wikipedia.org/wiki/Dublin_Core
+| Wikipedia: https://en.wikipedia.org/wiki/Dublin_Core#DCMI_Metadata_Terms
+| Namespace: http://purl.org/dc/terms
 | xmlns: ``@prefix dcterms: <http://purl.org/dc/terms> .``
 | LOVLink: http://lov.okfn.org/dataset/lov/vocabs/dcterms
-
+| Namespace: http://purl.org/dc/dcmitype/
 | xmlns: ``@prefix dctypes: <http://purl.org/dc/dcmitype/> .``
 | LOVLink: http://lov.okfn.org/dataset/lov/vocabs/dctype
+
+DCTYPES (*Dublin Core Types*) and DCTERMS (*Dublin Core Terms*)
+are standards for common types, classes, and properties
+that have been mapped to :ref:`XML` and :ref:`RDF`.
 
 
 .. index:: SKOS
@@ -888,14 +1077,17 @@ https://en.wikipedia.org/wiki/Dublin_Core#DCMI_Metadata_Terms
 
 SKOS
 `````
-https://en.wikipedia.org/wiki/Simple_Knowledge_Organization_System
-
-* `<http://www.w3.org/2004/02/skos/core#>`_
-* http://www.w3.org/TR/skos-reference/
-* http://www.w3.org/TR/skos-reference/skos.html
-
+| Wikipedia: https://en.wikipedia.org/wiki/Simple_Knowledge_Organization_System
+| Standard: http://www.w3.org/TR/skos-reference/
+| Standard: http://www.w3.org/TR/skos-reference/skos.html
+| Namespace: `<http://www.w3.org/2004/02/skos/core#>`_
 | xmlns: ``@prefix skos: <http://www.w3.org/2004/02/skos/core#> .``
 | LOVLink: http://lov.okfn.org/dataset/lov/vocabs/skos
+
+SKOS (*Simple Knowledge Organization System*) is an :ref:`RDF` standard
+for linking vocabulary concepts.
+
+``rdfs:seeAlso`` XKOS.
 
 
 .. index:: FOAF
@@ -904,25 +1096,27 @@ https://en.wikipedia.org/wiki/Simple_Knowledge_Organization_System
 
 FOAF
 `````
-`<https://en.wikipedia.org/wiki/FOAF_(ontology)>`__
-
-* http://www.foaf-project.org/
-* http://xmlns.com/foaf/spec/
-
+| Wikipedia: `<https://en.wikipedia.org/wiki/FOAF_(ontology)>`__
+| Homepage: http://www.foaf-project.org/
+| Standard: http://xmlns.com/foaf/spec/
+| Namespace: `<http://xmlns.com/foaf/0.1/>`__
 | xmlns: ``@prefix foaf: <http://xmlns.com/foaf/0.1/> .``
 | LOVLink: http://lov.okfn.org/dataset/lov/vocabs/foaf
 
+FOAF (*Friend of a Friend*) vocabulary is an :ref:`RDF` standard for
+expressing social networks and contact information.
 
 SIOC
 ``````
-https://en.wikipedia.org/wiki/Semantically-Interlinked_Online_Communities
-
-* http://www.sioc-project.org/
-* http://rdfs.org/sioc/ns#
-
+| Wikipedia: https://en.wikipedia.org/wiki/Semantically-Interlinked_Online_Communities
+| Homepage: http://www.sioc-project.org/
+| Namespace: `<http://rdfs.org/sioc/ns#>`__
 | xmlns: ``@prefix sioc: <http://rdfs.org/sioc/ns#> .``
 | LOVLink: http://lov.okfn.org/dataset/lov/vocabs/sioc
 
+SIOC (*Semantically Interlinked Online Communities*) is an :ref:`RDF`
+standard for online social networks and resources
+like blog, forum, and mailing list posts.
 
 .. index:: OA
 .. index:: OpenAnnotation
@@ -930,10 +1124,9 @@ https://en.wikipedia.org/wiki/Semantically-Interlinked_Online_Communities
 
 OA
 ````
-http://www.openannotation.org/
-
-* http://www.openannotation.org/spec/core/
-
+| Homepage: http://www.openannotation.org/
+| Standard: http://www.openannotation.org/spec/core/
+| Namespace: `<http://www.w3.org/ns/oa#>`__
 | xmlns: ``@prefix oa: <http://www.w3.org/ns/oa#> .``
 | LOVLink: http://lov.okfn.org/dataset/lov/vocabs/oa
 
@@ -955,13 +1148,13 @@ Implementations:
 
 Schema.org
 +++++++++++
-https://en.wikipedia.org/wiki/Schema.org
+| Wikipedia: https://en.wikipedia.org/wiki/Schema.org
+| Homepage: http://schema.org/
+| Source: https://github.com/rvguha/schemaorg
 
-* http://schema.org/
 * http://schema.org/docs/schemas.html
 * http://schema.org/docs/releases.html
 * http://schema.org/docs/full.html
-* https://github.com/rvguha/schemaorg
 * http://www.w3.org/wiki/WebSchemas
 * http://www.w3.org/wiki/WebSchemas/SchemaDotOrgProposals
 
@@ -995,13 +1188,16 @@ Tools and Mappings
 
 SPARQL
 +++++++
-https://en.wikipedia.org/wiki/SPARQL
+| Wikipedia: https://en.wikipedia.org/wiki/SPARQL
+| Standard: http://www.w3.org/TR/sparql11-overview/
+| Standard: http://www.w3.org/TR/sparql11-query/
+| Standard: http://www.w3.org/TR/sparql11-update/
+| Standard: http://www.w3.org/TR/sparql11-entailment/
+| Standard: http://www.w3.org/TR/sparql11-federated-query/
 
-* http://www.w3.org/TR/sparql11-overview/
-* http://www.w3.org/TR/sparql11-query/
-* http://www.w3.org/TR/sparql11-update/
-* http://www.w3.org/TR/sparql11-entailment/
-* http://www.w3.org/TR/sparql11-federated-query/
+SPARQL is a text-based query and update language
+for :ref:`RDF` triples (and quads).
+
 * http://www.w3.org/wiki/SparqlImplementations
 * http://www.w3.org/2009/sparql/implementations/#sparql11-entailment
 
@@ -1024,12 +1220,14 @@ Challenges:
 
 LDP
 ++++
-http://www.w3.org/TR/ldp/
-
-* http://www.w3.org/TR/ldp/#terms
-
+| Spec http://www.w3.org/TR/ldp/
 | xmlns: ``@prefix ldp: <http://www.w3.org/ns/ldp#> .``
 | LOVLink: http://lov.okfn.org/dataset/lov/vocabs/ldp
+
+LDP (*Linked Data Platform*) is a standard for building :ref:`HTTP` REST APIs
+for :ref:`RDF` :ref:`Linked Data <linked-data>`.
+
+* http://www.w3.org/TR/ldp/#terms
 
 Features:
 
@@ -1045,13 +1243,11 @@ Features:
 
 OWL
 +++++
-https://en.wikipedia.org/wiki/Web_Ontology_Language
-
-* http://www.w3.org/TR/owl2-overview/
-* http://www.w3.org/TR/owl2-primer/
-* http://www.w3.org/TR/owl2-quick-reference/
-* http://www.w3.org/TR/owl2-profiles/
-
+| Wikipedia: https://en.wikipedia.org/wiki/Web_Ontology_Language
+| Standard: http://www.w3.org/TR/owl2-overview/
+| Standard: http://www.w3.org/TR/owl2-primer/
+| Standard: http://www.w3.org/TR/owl2-quick-reference/
+| Standard: http://www.w3.org/TR/owl2-profiles/
 | xmlns: ``@prefix owl: <http://www.w3.org/2002/07/owl#> .``
 | LOVLink: http://lov.okfn.org/dataset/lov/vocabs/owl
 
@@ -1060,24 +1256,22 @@ https://en.wikipedia.org/wiki/Web_Ontology_Language
 
 PROV
 ```````
-http://www.w3.org/2011/prov/wiki/Main_Page
-
-* `<http://www.w3.org/ns/prov#>`_
-* http://www.w3.org/ns/prov.owl
-* http://www.w3.org/TR/prov-overview/
-* http://www.w3.org/TR/prov-primer/
-* http://www.w3.org/TR/prov-o/
-
+| Homepage: http://www.w3.org/2011/prov/wiki/Main_Page
+| Standard: http://www.w3.org/ns/prov.owl
+| Standard: http://www.w3.org/TR/prov-overview/
+| Standard: http://www.w3.org/TR/prov-primer/
+| Standard: http://www.w3.org/TR/prov-o/
+| Namespace: `<http://www.w3.org/ns/prov#>`_
 | xmlns: ``@prefix prov: <http://www.w3.org/ns/prov#> .``
 | LOVLink: http://lov.okfn.org/dataset/lov/vocabs/prov
 
-https://en.wikipedia.org/wiki/Provenance#Data_provenance
+* https://en.wikipedia.org/wiki/Provenance#Data_provenance
 
 
 DBpedia
 ``````````
-http://wiki.dbpedia.org/Ontology
-
+| Homepage: http://wiki.dbpedia.org/Ontology
+| Namespace: http://dbpedia.org/ontology/ 
 | xmlns: ``@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .``
 | LOVLink: http://dbpedia.org/ontology/
 
