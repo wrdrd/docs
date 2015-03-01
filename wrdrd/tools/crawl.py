@@ -33,7 +33,9 @@ import bs4
 import requests
 import urlobject
 
-import networkx
+# import networkx  # import in functions
+# docs build lags on:
+# "Couldn't import dot_parser, loading of dot files will not be possible."
 
 try:
     import nltk
@@ -621,6 +623,7 @@ def build_networkx_graph(url, links, label=None):
         return '"%s"' % cgi.escape(var, quote=True)
 
     label = label or url
+    import networkx
     g = networkx.DiGraph(label=label, ratio='compress')
     for link in links:
         a = escape(link.loc)
@@ -649,6 +652,7 @@ def write_nxgraph_to_dot(g, output):
         g (networkx.Graph): graph to write as DOT
         output (filelike): output to write to
     """
+    import networkx
     return networkx.drawing.write_dot(g, output)
 
 
@@ -841,6 +845,7 @@ class Test_wrdcrawler(unittest.TestCase):
             f.write(output.read())
 
         import matplotlib.pyplot as plt
+        import networkx
         networkx.draw_circular(g)
         plt.savefig("awesome.svg")
         #plt.show()
