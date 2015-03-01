@@ -1051,6 +1051,7 @@ A few notable / frequently used properties:
 
 :ref:`OWL` builds upon many RDFS concepts.
 
+
 .. index:: dcterms
 .. index:: dctypes
 .. index:: DCMI
@@ -1070,6 +1071,23 @@ DCMI
 DCTYPES (*Dublin Core Types*) and DCTERMS (*Dublin Core Terms*)
 are standards for common types, classes, and properties
 that have been mapped to :ref:`XML` and :ref:`RDF`.
+
+
+.. index:: QUDT
+.. _QUDT:
+
+QUDT
+``````
+| Homepage: http://www.linkedmodel.org/doc/qudt/1.1/
+| Namespace: `<http://qudt.org/schema/qudt#>`__
+| xmlns: ``@prefix qudt: <http://qudt.org/schema/qudt#> .``
+| LOVLink: http://lov.okfn.org/dataset/lov/vocabs/qudt
+
+QUDT (*Quantities, Units, Dimensions, and Types*) is a standard
+ontology for representing physical units.
+
+* QUDT is composed of a number of sub-ontologies
+* QUDT maintains conversion factors for Metric and Imperial Units
 
 
 .. index:: SKOS
