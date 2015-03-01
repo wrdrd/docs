@@ -42,13 +42,14 @@ coverage:
 	open htmlcov/index.html
 
 
-STATIC:="./docs/_static"
-LOCALJS="$(STATIC)/js/local.js"
+STATIC:=./docs/_static
+LOCALJS=$(STATIC)/js/local.js
 
 localjs:
 	echo '' > $(LOCALJS)
 	cat $(STATIC)/js/ga.js >> $(LOCALJS)
 	cat $(STATIC)/js/newtab.js >> $(LOCALJS)
+	cat $(STATIC)/js/affix-sidenav.js >> $(LOCALJS)
 
 docs-api:
 	rm -f docs/wrdrd/wrdrd.rst
