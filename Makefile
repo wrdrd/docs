@@ -51,12 +51,17 @@ localjs:
 	cat $(STATIC)/js/newtab.js >> $(LOCALJS)
 	cat $(STATIC)/js/affix-sidenav.js >> $(LOCALJS)
 
+LOCALCSS=$(STATIC)/css/local.css
+localcss:
+	echo '' > $(LOCALCSS)
+	cat $(STATIC)/css/custom.css >> $(LOCALCSS)
+
 docs-api:
 	rm -f docs/wrdrd/wrdrd.rst
 	rm -f docs/wrdrd/wrdrd.*.rst
 	sphinx-apidoc -T -M -o docs/wrdrd/ wrdrd
 
-docs: clean-docs docs-api localjs
+docs: clean-docs docs-api localjs localcss
 	$(MAKE) -C docs html
 	#$(MAKE) -C docs singlehtml
 
