@@ -70,24 +70,9 @@ footer {
     opacity: 0.7;
 }
 
-body > div.container-fluid > div:nth-child(1) > div.col-md-9 {
+#content-wrapper {
     background: white;
     border: 1px solid #e7e7e7;
     margin-top: -1px;
 }
-/* TODO: responsive break */
-@media (min-width: 767px) {
-    body > div.container-fluid > div:nth-child(1) > div.col-md-9 {
-        left: 25%;
-    }
-
-    #navbar-related, footer {
-        padding-left: 25%;
-    }
-
-    footer {
-        width: inherit;
-    }
-}
-
 
