@@ -1084,7 +1084,7 @@ QUDT
 | xmlns: ``@prefix qudt: <http://qudt.org/schema/qudt#> .``
 | LOVLink: http://lov.okfn.org/dataset/lov/vocabs/qudt
 
-QUDT (*Quantities, Units, Dimensions, and Types*) is a standard
+QUDT (*Quantities, Units, Dimensions, and Types*) is an :ref:`RDF` standard
 vocabulary for representing physical units.
 
 * QUDT is composed of a number of sub-vocabularies
@@ -1102,7 +1102,7 @@ RDF Data Cubes
 | xmlns: ``@prefix qb: <http://purl.org/linked-data/cube#> .``
 | LOVLink: http://lov.okfn.org/dataset/lov/vocabs/qb
 
-RDF Data Cubes vocabulary is a standard for expressing
+RDF Data Cubes vocabulary is an :ref:`RDF` standard vocabulary for expressing
 linked multi-dimensional statistical data and aggregations.
 
 * Data Cubes have dimensions, attributes, and measures
@@ -1111,6 +1111,7 @@ linked multi-dimensional statistical data and aggregations.
 
 
 .. index:: SKOS
+.. index:: Simple Knowledge Organization System
 .. _SKOS:
 
 SKOS
@@ -1123,10 +1124,11 @@ SKOS
 | LOVLink: http://lov.okfn.org/dataset/lov/vocabs/skos
 
 SKOS (*Simple Knowledge Organization System*) is an :ref:`RDF` standard
-for linking concepts.
+vocabulary for linking concepts and vocabulary terms.
 
 
 .. index:: XKOS
+.. index:: Extended Knowledge Organization System
 .. _XKOS:
 
 XKOS
@@ -1138,12 +1140,13 @@ XKOS
 | xmlns: ``@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .``
 | LOVLink: http://lov.okfn.org/dataset/lov/vocabs/xkos
 
-XKOS (*Extended Knowledge Organization System*) extends :ref:`SKOS`
+XKOS (*Extended Knowledge Organization System*) is an :ref:`RDF`
+standard which extends :ref:`SKOS`
 for linking concepts and statistical measures.
 
 
 .. index:: FOAF
-.. index:: Friend of a Friend vocabulary
+.. index:: Friend of a Friend
 .. _FOAF:
 
 FOAF
@@ -1155,8 +1158,13 @@ FOAF
 | xmlns: ``@prefix foaf: <http://xmlns.com/foaf/0.1/> .``
 | LOVLink: http://lov.okfn.org/dataset/lov/vocabs/foaf
 
-FOAF (*Friend of a Friend*) vocabulary is an :ref:`RDF` standard for
+FOAF (*Friend of a Friend*) is an :ref:`RDF` standard vocabulary for
 expressing social networks and contact information.
+
+
+.. index:: SIOC
+.. index:: Semantically Interlinked Online Communities
+.. _SIOC:
 
 SIOC
 ``````
@@ -1170,6 +1178,7 @@ SIOC (*Semantically Interlinked Online Communities*) is an :ref:`RDF`
 standard for online social networks and resources
 like blog, forum, and mailing list posts.
 
+
 .. index:: OA
 .. index:: OpenAnnotation
 .. _OA:
@@ -1181,6 +1190,9 @@ OA
 | Namespace: `<http://www.w3.org/ns/oa#>`__
 | xmlns: ``@prefix oa: <http://www.w3.org/ns/oa#> .``
 | LOVLink: http://lov.okfn.org/dataset/lov/vocabs/oa
+
+OA (**Open Annotation**) is an :ref:`RDF` standard for
+commenting on anything with a URI.
 
 Features:
 
@@ -1204,9 +1216,14 @@ Schema.org
 | Homepage: http://schema.org/
 | Source: https://github.com/rvguha/schemaorg
 
+Schema.org is a vocabulary for expressing structured data on the web.
+
+Schema.org can be expressed as microdata, :ref:`RDF`, :ref:`RDFa`,
+and :rdf:`JSON-LD`.
+
+* http://schema.org/docs/full.html
 * http://schema.org/docs/schemas.html
 * http://schema.org/docs/releases.html
-* http://schema.org/docs/full.html
 * http://www.w3.org/wiki/WebSchemas
 * http://www.w3.org/wiki/WebSchemas/SchemaDotOrgProposals
 
@@ -1216,9 +1233,11 @@ Schema.org
 
 Schema.org RDF
 ````````````````
-Schema.org is maintained as RDFa.
+| xmlns: ``@prefix schema: <http://schema.org/> .``
+| LOVLink: http://lov.okfn.org/dataset/lov/vocabs/schema
 
-TopBraid maintains RDF/OWL transformations of schema.org:
+TopBraid maintains more complete :ref:`OWL` :ref:`RDF`
+transformations of :ref:`Schema.org`.
 
 * http://topbraid.org/schema/
 * http://topbraid.org/schema/schema.rdf
@@ -1231,8 +1250,6 @@ Tools and Mappings
 * http://schema.rdfs.org/tools.html
 * http://schema.rdfs.org/mappings.html
 
-| xmlns: ``@prefix schema: <http://schema.org/> .``
-| LOVLink: http://lov.okfn.org/dataset/lov/vocabs/schema
 
 
 .. index:: SPARQL
@@ -1291,6 +1308,7 @@ Features:
 
 
 .. index:: OWL
+.. index:: Web Ontology Language
 .. _OWL:
 
 OWL
@@ -1302,6 +1320,10 @@ OWL
 | Standard: http://www.w3.org/TR/owl2-profiles/
 | xmlns: ``@prefix owl: <http://www.w3.org/2002/07/owl#> .``
 | LOVLink: http://lov.okfn.org/dataset/lov/vocabs/owl
+
+OWL (*Web Ontology Language*) adds semantics, reasoning, inference,
+and entailment capabilities to :ref:`RDF`.
+
 
 .. index:: PROV
 .. _PROV:
@@ -1317,8 +1339,15 @@ PROV
 | xmlns: ``@prefix prov: <http://www.w3.org/ns/prov#> .``
 | LOVLink: http://lov.okfn.org/dataset/lov/vocabs/prov
 
+PROV (*Provenance*) ontology is an :ref:`OWL` :ref:`RDF` standard
+for expressing data provenance (who, what, when, and how, to a certain
+extent).
+
 * https://en.wikipedia.org/wiki/Provenance#Data_provenance
 
+
+.. index:: DBpedia
+.. _dbpedia:
 
 DBpedia
 ``````````
@@ -1326,6 +1355,20 @@ DBpedia
 | Namespace: http://dbpedia.org/ontology/ 
 | xmlns: ``@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .``
 | LOVLink: http://dbpedia.org/ontology/
+
+DBpedia is an :ref:`OWL` :ref:`RDF` vocabulary for expressing
+structured data from Wikipedia sidebar infoboxes.
+
+DBpedia is currently the most central (most linked to and from)
+:ref:`RDF` vocabulary. (see: http://lod-cloud.net)
+
+Example:
+
+* http://dbpedia.org/page/DBpedia
+* http://en.wikipedia.org/wiki/DBpedia
+
+DBpedia is generated by batch extraction on a regular basis.
+
 
 .. index:: Semantic Web Tools
 .. _semantic-web-tools:
@@ -1338,12 +1381,17 @@ Semantic Web Tools
 
 Protégé
 +++++++++
+| Wikipedia: `<https://en.wikipedia.org/wiki/Protégé_(software)>`__
+| Homepage: http://protege.stanford.edu/
+| Homepage: http://webprotege.stanford.edu/
 
-`<https://en.wikipedia.org/wiki/Prot%C3%A9g%C3%A9_(software)>`__
+Protégé is a knowledge management software application with support for
+:ref:`RDF`, :ref:`OWL` and a few different reasoners.
 
-http://protege.stanford.edu/
+Web Protégé is a web-based version of Protégé with many similar
+features.
 
-http://webprotege.stanford.edu/
+Protégé is a Free and Open Source software tool.
 
 
 .. index:: RDFJS
@@ -1351,7 +1399,11 @@ http://webprotege.stanford.edu/
 
 RDFJS
 ++++++
-http://www.w3.org/community/rdfjs/
+| Homepage: http://www.w3.org/community/rdfjs/
+
+RDFJS (:ref:`RDF` Javascript) is an acronym for referring to
+tools for working with :ref:`RDF` in the Javascript programming
+language.
 
 http://www.w3.org/community/rdfjs/wiki/Comparison_of_RDFJS_libraries
 
@@ -1361,10 +1413,15 @@ http://www.w3.org/community/rdfjs/wiki/Comparison_of_RDFJS_libraries
 
 RDFHDT
 ++++++++
-http://www.rdfhdt.org/
+| Homepage: http://www.rdfhdt.org/
 
-https://code.google.com/p/hdt-it/
+RDFHDT (:ref:`RDF` Header Dictionary Triples) is an optimized binary
+format for storing and working with very many triples in highly compressed
+form.
 
+HDT-IT is a software application for working with with RDFHDT datasets
+
+* https://code.google.com/p/hdt-it/
 * https://www.youtube.com/watch?v=HMPkc725sMY
 
 
@@ -1373,16 +1430,24 @@ https://code.google.com/p/hdt-it/
 
 RDFLib
 +++++++
-https://en.wikipedia.org/wiki/RDFLib
+| Wikipedia: https://en.wikipedia.org/wiki/RDFLib
+| Homepage: https://github.com/RDFLib
+| Docs: https://rdflib.readthedocs.org/en/latest/
 
-* https://github.com/RDFLib
+RDFLib is a library (and a collection of companion libraries)
+for working with :ref:`RDF` in the Python programming language.
+
 * https://rdflib.readthedocs.org/en/latest/intro_to_creating_rdf.html
 
 
+.. index:: Semantic Web Schema Resources
+.. _semantic-web-schema-resources:
+
 Semantic Web Schema Resources
 -------------------------------
-* http://prefix.cc
-* http://lov.okfn.org/dataset/lov/
-* http://lod-cloud.net/
+* http://prefix.cc -- Lookup :ref:`RDF` vocabularies, classes, and properties
+* http://lov.okfn.org/dataset/lov/ -- View metadata of and links
+  between vocabularies
+* http://lod-cloud.net/ -- Visualize the *Linked Open Data Cloud*
 
 
