@@ -1079,15 +1079,35 @@ that have been mapped to :ref:`XML` and :ref:`RDF`.
 QUDT
 ``````
 | Homepage: http://www.linkedmodel.org/doc/qudt/1.1/
+| Standard: http://qudt.org/
 | Namespace: `<http://qudt.org/schema/qudt#>`__
 | xmlns: ``@prefix qudt: <http://qudt.org/schema/qudt#> .``
 | LOVLink: http://lov.okfn.org/dataset/lov/vocabs/qudt
 
 QUDT (*Quantities, Units, Dimensions, and Types*) is a standard
-ontology for representing physical units.
+vocabulary for representing physical units.
 
-* QUDT is composed of a number of sub-ontologies
+* QUDT is composed of a number of sub-vocabularies
 * QUDT maintains conversion factors for Metric and Imperial Units
+
+
+.. index:: RDF Data Cube
+.. index:: QB
+.. _QB:
+
+RDF Data Cubes
+```````````````
+| Standard: http://www.w3.org/TR/vocab-data-cube/
+| Namespace: `<http://purl.org/linked-data/cube#>`__
+| xmlns: ``@prefix qb: <http://purl.org/linked-data/cube#> .``
+| LOVLink: http://lov.okfn.org/dataset/lov/vocabs/qb
+
+RDF Data Cubes vocabulary is a standard for expressing
+linked multi-dimensional statistical data and aggregations.
+
+* Data Cubes have dimensions, attributes, and measures
+* Pivot tables and crosstabulations can be expressed with
+  RDF Data Cubes vocabulary
 
 
 .. index:: SKOS
@@ -1103,10 +1123,25 @@ SKOS
 | LOVLink: http://lov.okfn.org/dataset/lov/vocabs/skos
 
 SKOS (*Simple Knowledge Organization System*) is an :ref:`RDF` standard
-for linking vocabulary concepts.
+for linking concepts.
 
-``rdfs:seeAlso`` XKOS.
+* ``skos:broader``
+* ``skos:narrower``
 
+.. index:: XKOS
+.. _XKOS:
+
+XKOS
+``````
+| Homepage: http://www.ddialliance.org/Specification/RDF/XKOS
+| Standard: http://rdf-vocabulary.ddialliance.org/xkos.html
+| Source: https://github.com/linked-statistics/xkos
+| Namespace: `<http://rdf-vocabulary.ddialliance.org/xkos#>`__
+| xmlns: ``@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .``
+| LOVLink: http://lov.okfn.org/dataset/lov/vocabs/xkos
+
+XKOS (*Extended Knowledge Organization System*) extends :ref:`SKOS`
+for linking concepts and statistical measures.
 
 .. index:: FOAF
 .. index:: Friend of a Friend vocabulary
