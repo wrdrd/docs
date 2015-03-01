@@ -55,6 +55,7 @@ LOCALCSS=$(STATIC)/css/local.css
 localcss:
 	echo '' > $(LOCALCSS)
 	cat $(STATIC)/css/custom.css >> $(LOCALCSS)
+	cat $(STATIC)/css/leftnavbar.css >> $(LOCALCSS)
 
 docs-api:
 	rm -f docs/wrdrd/wrdrd.rst
