@@ -701,7 +701,7 @@ HTML
 +++++
 | Wikipedia: https://en.wikipedia.org/wiki/HTML
 
-HTML (*Hypertext Markup Language*) is a standard for representing
+HTML (*HyperText Markup Language*) is a standard for representing
 documents with tags, attributes, and **hyperlinks**.
 
 Recent HTML standards include :ref:`HTML4`, :ref:`XHTML`, and :ref:`HTML5`.
@@ -722,7 +722,8 @@ HTML4 is the fourth generation :ref:`HTML` standard.
 
 XHTML
 ``````
-| Standard:
+| Wikipedia: https://en.wikipedia.org/wiki/XHTML
+| Standard: http://www.w3.org/TR/xhtml2/
 
 XHTML is an :ref:`XML`-conforming :ref:`HTML` standard
 which is being superseded by :ref:`HTML5`.
@@ -849,7 +850,7 @@ as :ref:`RDF` (and :ref:`JSON` / :ref:`JSON-LD`)
 along with *metadata*.
 
 * URIs for datatypes (:ref:`XSD`, ...)
-* URIs for columns (:ref:`RDF` ``@prefix name: <uri> .``)
+* URIs for columns (:ref:`RDF`)
 * Document Metadata
 * :ref:`CSV` -> :ref:`JSON` ( -> :ref:`JSON-LD` -> :ref:`RDF` )
 * :ref:`CSV` -> :ref:`RDF`
@@ -995,7 +996,8 @@ RDFa
 | Docs: http://www.w3.org/TR/rdfa-primer/
 
 RDFa (*RDF in attributes*) is a standard for storing
-structured data (:ref:`RDF` triples) in HTML (XHTML, HTML5) attributes.
+structured data (:ref:`RDF` triples) in :ref:`HTML`,
+(:ref:`XHTML`, :ref:`HTML5`) attributes.
 
 :ref:`Schema.org` structured data can be included in an HTML page as
 RDFa.
@@ -1014,12 +1016,13 @@ JSON-LD (*JSON Linked Data*) is a standard for expressing
 :ref:`RDF` :ref:`Linked Data <linked-data>` as :ref:`JSON`.
 
 JSON-LD specifies a ``@context`` for regular JSON documents
-which maps JSON attributes to URIs with datatypes and languages.
+which maps JSON attributes to URIs with datatypes and, optionally, languages.
 
 * http://json-ld.org/playground/
 
 
 .. index:: RDFS
+.. index:: RDF Schema
 .. _RDFS:
 
 RDFS
@@ -1030,7 +1033,7 @@ RDFS
 | xmlns: ``@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .``
 | LOVLink: http://lov.okfn.org/dataset/lov/vocabs/rdf
 
-RDFS (*RDF Schema*) is an :ref:`RDF` standard for basic classes
+RDFS (*RDF Schema*) is an :ref:`RDF` standard for classes
 and properties.
 
 A few notable RDFS classes:
@@ -1386,7 +1389,7 @@ Protégé
 | Homepage: http://webprotege.stanford.edu/
 
 Protégé is a knowledge management software application with support for
-:ref:`RDF`, :ref:`OWL` and a few different reasoners.
+:ref:`RDF`, :ref:`OWL`, and a few different reasoners.
 
 Web Protégé is a web-based version of Protégé with many similar
 features.
@@ -1419,7 +1422,7 @@ RDFHDT (:ref:`RDF` Header Dictionary Triples) is an optimized binary
 format for storing and working with very many triples in highly compressed
 form.
 
-HDT-IT is a software application for working with with RDFHDT datasets
+HDT-IT is a software application for working with RDFHDT datasets:
 
 * https://code.google.com/p/hdt-it/
 * https://www.youtube.com/watch?v=HMPkc725sMY
@@ -1432,6 +1435,7 @@ RDFLib
 +++++++
 | Wikipedia: https://en.wikipedia.org/wiki/RDFLib
 | Homepage: https://github.com/RDFLib
+| Source: https://github.com/RDFLib/rdflib
 | Docs: https://rdflib.readthedocs.org/en/latest/
 
 RDFLib is a library (and a collection of companion libraries)
