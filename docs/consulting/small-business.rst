@@ -106,6 +106,7 @@ https://en.wikipedia.org/wiki/Business_plan
 
 * Data (see: :ref:`Data Science <data-science>`)
 * Projections: Pessimistic, Realistic, Optimistic
+* Version Number: (wiki; see http://semver.org)
 
 
 .. index:: Marketing
