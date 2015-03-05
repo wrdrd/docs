@@ -149,6 +149,14 @@ See: :ref:`Team Building <team-building>`
 
 The Four Ps
 ~~~~~~~~~~~~
+https://en.wikipedia.org/wiki/Marketing_mix
+
+
+.. index:: Product
+
+Product
+++++++++
+
 
 .. index:: Price
 
@@ -160,15 +168,11 @@ Price
 Promotion
 ++++++++++
 
-.. index:: Positioning
+.. index:: Place
 
-Positioning
+Place
 ++++++++++++
 
-.. index:: Product
-
-Product
-++++++++
 
 
 .. index:: Sales
