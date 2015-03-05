@@ -108,6 +108,7 @@ https://en.wikipedia.org/wiki/Business_plan
 * Projections: Pessimistic, Realistic, Optimistic
 * Version Number: (wiki; see http://semver.org)
 
+  -- https://westurner.github.io/pages/resume ([RST], HTML, PDF)
 
 .. index:: Marketing
 .. _marketing:
