@@ -106,9 +106,14 @@ https://en.wikipedia.org/wiki/Business_plan
 
 * Data (see: :ref:`Data Science <data-science>`)
 * Projections: Pessimistic, Realistic, Optimistic
-* Version Number: (wiki; see http://semver.org)
+* Version Number: (see http://semver.org)
+* Collaborative Document: (it will change)
 
-  --- https://westurner.github.io/pages/resume ([RST], HTML, PDF)
+  * Wiki
+  * Live Doc
+  * Publish to HTML and PDF (e.g. 
+    https://westurner.github.io/pages/resume (RST))
+
 
 .. index:: Marketing
 .. _marketing:
@@ -143,36 +148,24 @@ See: :ref:`Information Systems > Customer Relationship Management (CRM) <crm>`
 
 See: :ref:`Team Building <team-building>`
 
+.. index:: Marketing Mix
+.. _marketing-mix:
+
+Marketing Mix
+~~~~~~~~~~~~~~~
+https://en.wikipedia.org/wiki/Marketing_mix
+
 
 .. index:: The Four Ps
 .. _the-four-ps:
 
 The Four Ps
-~~~~~~~~~~~~
-https://en.wikipedia.org/wiki/Marketing_mix
-
-
-.. index:: Product
-
-Product
-++++++++
-
-
-.. index:: Price
-
-Price
-++++++
-
-.. index:: Promotion
-
-Promotion
-++++++++++
-
-.. index:: Place
-
-Place
 ++++++++++++
 
+* Product
+* Price
+* Promotion
+* Place
 
 
 .. index:: Sales
