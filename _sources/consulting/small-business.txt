@@ -91,6 +91,18 @@ What do we want to happen when our message reaches people?
 See: :ref:`Information Systems > ROI <is-roi>`
 
 
+.. index:: Business Plans
+.. _business-plans:
+
+Business Plans
+---------------
+https://en.wikipedia.org/wiki/Business_plan
+
+* https://en.wikipedia.org/wiki/Business_plan#Content
+* https://www.sba.gov/writing-business-plan
+* https://en.wikipedia.org/wiki/Open_business#Main_ideas
+
+
 .. index:: Marketing
 .. _marketing:
 
