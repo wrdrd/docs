@@ -135,11 +135,13 @@ https://en.wikipedia.org/wiki/Enterprise_relationship_management
 
 https://en.wikipedia.org/wiki/Interpersonal_relationship
 
-https://en.wikipedia.org/wiki/Tuckman%27s_stages_of_group_development
+`<https://en.wikipedia.org/wiki/Tuckman's_stages_of_group_development>`__
 
 Interactions: Cold, Warm, and Hot
 
 See: :ref:`Information Systems > Customer Relationship Management (CRM) <crm>`
+
+See: :ref:`Team Building <team-building>`
 
 
 .. index:: The Four Ps

@@ -11,7 +11,7 @@ https://en.wikipedia.org/wiki/Leadership_development
 
 https://en.wikipedia.org/wiki/Organization_development
 
-https://en.wikipedia.org/wiki/Tuckman%27s_stages_of_group_development
+`<https://en.wikipedia.org/wiki/Tuckman's_stages_of_group_development>`__
 
 "From Comfort Zone to Performance Management" White (2008)
 http://www.academia.edu/460313/From_Comfort_Zone_to_Performance_Management
