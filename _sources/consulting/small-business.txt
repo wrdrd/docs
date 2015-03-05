@@ -104,7 +104,7 @@ https://en.wikipedia.org/wiki/Business_plan
 
 "How to make your business plan stand out?"
 
-* Data (see: :ref:`Data Science`)
+* Data (see: :ref:`Data Science <data-science>`)
 * Projections: Pessimistic, Realistic, Optimistic
 
 
