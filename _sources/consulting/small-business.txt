@@ -163,6 +163,7 @@ https://en.wikipedia.org/wiki/Marketing_mix
 
 The Four Ps
 ++++++++++++
+https://en.wikipedia.org/wiki/Marketing_mix#McCarthy.27s_four_Ps
 
 * Product
 * Price
