@@ -102,6 +102,11 @@ https://en.wikipedia.org/wiki/Business_plan
 * https://www.sba.gov/writing-business-plan
 * https://en.wikipedia.org/wiki/Open_business#Main_ideas
 
+"How to make your business plan stand out?"
+
+* Data (see: :ref:`Data Science`)
+* Projections: Pessimistic, Realistic, Optimistic
+
 
 .. index:: Marketing
 .. _marketing:
