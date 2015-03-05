@@ -111,8 +111,10 @@ https://en.wikipedia.org/wiki/Business_plan
 
   * Wiki
   * Live Doc
-  * Publish to HTML and PDF (e.g. 
-    https://westurner.github.io/pages/resume (RST))
+  * Publish to HTML and PDF:
+
+    * https://github.com/westurner/wiki/blob/master/Makefile
+    * https://westurner.github.io/pages/resume (RST)
 
 
 .. index:: Marketing
