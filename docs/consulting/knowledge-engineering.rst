@@ -1441,7 +1441,9 @@ RDFLib
 RDFLib is a library (and a collection of companion libraries)
 for working with :ref:`RDF` in the Python programming language.
 
-* https://rdflib.readthedocs.org/en/latest/intro_to_creating_rdf.html
+* https://rdflib.readthedocs.org/en/latest/gettingstarted.html
+* https://rdflib.readthedocs.org/en/latest/apidocs/examples.html
+* https://rdflib.readthedocs.org/en/latest/apidocs/rdflib.html#module-rdflib.resource
 
 
 .. index:: Semantic Web Schema Resources
