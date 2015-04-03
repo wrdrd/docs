@@ -130,8 +130,16 @@ https://en.wikipedia.org/wiki/Description_logic (DL; DLP (Description Logic Prog
 * https://en.wikipedia.org/wiki/Description_logic#Notation
 * https://en.wikipedia.org/wiki/Description_logic#Relationship_with_other_logics
 
+Knowledge Base = TBox + ABox 
+
 * https://en.wikipedia.org/wiki/TBox (Schema: Class/Property Ontology)
 * https://en.wikipedia.org/wiki/ABox (Facts / Instances)
+
+See:
+
+* :ref:`OWL`, :ref:`entailment`
+* :ref:`Semantic-web`
+* :ref:`N3` for ``=>`` implies
 
 .. index:: Reasoning
 .. _reasoning:
@@ -144,6 +152,7 @@ https://en.wikipedia.org/wiki/Category:Reasoning
 
 https://en.wikipedia.org/wiki/Semantic_reasoner
 
+See: :ref:`DL`
 
 .. index:: Inference
 .. _inference:
@@ -535,11 +544,31 @@ https://en.wikipedia.org/wiki/Tuple
 
 https://en.wikipedia.org/w/index.php?title=Eigenclass_model&oldid=592778140#In_RDF_Schema
 
+Representations / Serializations
+
 * :ref:`RDF`: :ref:`N-Triples`, :ref:`RDF/XML`, :ref:`TriX`, :ref:`N3`,
   :ref:`Turtle`, :ref:`TriG`, :ref:`RDFa`, :ref:`JSON-LD`
-* :ref:`RDFS`: :ref:`DCMI` (dctypes), :ref:`SKOS`, :ref:`SPARQL`,
-  :ref:`LDP`
-* :ref:`OWL`: :ref:`PROV`
+
+Vocabularies
+
+* :ref:`RDFS`: :ref:`DCMI`, :ref:`SKOS`
+  
+Query APIS
+
+* :ref:`SPARQL`, :ref:`LDP`
+
+Ontologies
+
+* :ref:`OWL`: :ref:`PROV`, :ref:`OA`
+
+Reasoners
+
+* See:
+  
+  * :ref:`DL`
+  * :ref:`OWL` 2 Profiles
+  * :ref:`entailment`
+
 
 .. index:: Web Standards
 .. _web-standards:
