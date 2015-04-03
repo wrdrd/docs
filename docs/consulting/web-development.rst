@@ -80,7 +80,7 @@ Web Glossary
 
             scheme://host:port/p/a/t/h
 
-            https://wrdrd.github.io/docs/
+            https://wrdrd.com/docs/
 
         Where ``host`` is an IP address, hostname, or domain name.
 
@@ -98,7 +98,7 @@ Web Glossary
 
             scheme://host:port/p/a/t/h?query#fragment
 
-            https://wrdrd.github.io/docs/#wrdrd
+            https://wrdrd.com/docs/#wrdrd
 
         https://en.wikipedia.org/wiki/Uniform_resource_identifier
 

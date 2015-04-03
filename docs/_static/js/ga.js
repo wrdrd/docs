@@ -5,7 +5,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 
 var keymap = {
     "www.wrdrd.com": 'UA-55346955-1',
-    "wrdrd.github.io": 'UA-55346955-2'
+    "wrdrd.com": 'UA-55346955-2'
 };
 
 if (document.location.hostname in keymap) {
