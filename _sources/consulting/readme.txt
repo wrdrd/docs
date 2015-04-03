@@ -6,7 +6,7 @@ WRD R&D Documentation
 Source
 =======
 The latest HTML version of WRD R&D Documentation
-is available at `<https://wrdrd.github.io/docs/>`__.
+is available at `<https://wrdrd.com/docs/>`__.
 
 The `Sphinx`_ `ReStructuredText`_ sources of
 WRD R&D Documentation are available at:
