@@ -63,7 +63,7 @@ docs-api:
 	sphinx-apidoc -T -M -o docs/wrdrd/ wrdrd
 
 docs: clean-docs docs-api localjs localcss
-	$(MAKE) -C docs html
+	SPHINX_HTML_LINK_SUFFIX='' $(MAKE) -C docs html
 	#$(MAKE) -C docs singlehtml
 
 docs-open: docs open
