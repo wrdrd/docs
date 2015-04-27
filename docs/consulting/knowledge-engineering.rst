@@ -201,6 +201,9 @@ https://en.wikipedia.org/wiki/List_of_data_structures
 
 * http://rosettacode.org/wiki/Category:Programming_Tasks
 
+  * http://rosettacode.org/wiki/Greatest_common_divisor
+  * http://rosettacode.org/wiki/Go_Fish
+
 
 .. index:: Arrays
 .. _arrays:
