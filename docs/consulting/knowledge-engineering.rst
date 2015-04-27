@@ -415,10 +415,13 @@ https://en.wikipedia.org/wiki/List_of_subject-predicate-object_databases
 * `<https://en.wikipedia.org/wiki/Sesame_(framework)>`__
 * `<https://en.wikipedia.org/wiki/Jena_(framework)>`__
 
-Graph Pattern Queries
+Graph Pattern Query Results
 
 * :ref:`SPARQL`
 * https://en.wikipedia.org/wiki/Redland_RDF_Application_Framework
+
+  * http://librdf.org/notes/contexts.html
+
 * `<https://en.wikipedia.org/wiki/Jena_(framework)>`__
 * SAIL (Storage and Inferencing Layer) API
 * https://en.wikipedia.org/wiki/CubicWeb
