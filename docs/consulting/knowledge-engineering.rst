@@ -1272,6 +1272,7 @@ and :ref:`JSON-LD`.
 Schema.org RDF
 ````````````````
 | xmlns: ``@prefix schema: <http://schema.org/> .``
+| xmlns: ``@prefix schemax: <http://topbraid.org/schemax/> .``
 | LOVLink: http://lov.okfn.org/dataset/lov/vocabs/schema
 
 TopBraid maintains more complete :ref:`OWL` :ref:`RDF`
