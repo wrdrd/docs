@@ -1432,11 +1432,12 @@ Examples:
 
   .. code:: n3
 
-      @prefix qudt:    <http://qudt.org/schema/qudt#> .
-      @prefix qudt-1.1:  <http://qudt.org/1.1/schema/qudt#> .
-      @prefix qudt-dimension:  <http://qudt.org/vocab/dimension#> .
+      @prefix qudt:           <http://qudt.org/schema/qudt#> .
+      @prefix qudt-1.1:       <http://qudt.org/1.1/schema/qudt#> .
+      @prefix qudt-dimension: <http://qudt.org/vocab/dimension#> .
       @prefix qudt-quantity:  <http://qudt.org/vocab/quantity#> .
       @prefix qudt-unit-1.1:  <http://qudt.org/1.1/vocab/unit#> .
+      @prefix unit:           <http://qudt.org/vocab/unit#> .
 
 This diagram explains how each of the vocabularies are linked and derived:
 http://www.linkedmodel.org/catalog/qudt/1.1/
