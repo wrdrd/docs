@@ -69,7 +69,7 @@ docs: clean-docs docs-api localjs localcss
 docs-open: docs open
 
 open:
-	open docs/_build/html/index.html
+	web docs/_build/html/index.html
 	#open docs/_build/singlehtml/index.html
 
 release: clean
@@ -90,3 +90,18 @@ pull:
 push:
 	git push
 
+install_dev:
+	# Install pgs
+	pip install pgs
+
+pgs:
+	# Serve locally built HTML over HTTP (with try_files $1.html)
+	pgs -p ./docs/_build/html -P 8082
+
+pgs-gh-pages:
+	# Serve gh-pages branch over HTTP (with try_files $1.html)
+	pgs -g . -r gh-pages -P 8083
+
+serve: pgs
+
+serve-gh-pages: pgs-gh-pages
