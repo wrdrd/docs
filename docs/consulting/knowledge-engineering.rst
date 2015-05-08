@@ -1112,7 +1112,7 @@ that have been mapped to :ref:`XML` and :ref:`RDF`.
 
 
 .. index:: QUDT
-.. _QUDT:
+.. _qudt:
 
 QUDT
 ``````
@@ -1120,7 +1120,9 @@ QUDT
 | Standard: http://qudt.org/
 | Docs: http://www.linkedmodel.org/catalog/qudt/1.1/
 | Namespace: `<http://qudt.org/schema/qudt#>`__
+| Namespace: `<http://qudt.org/1.1/schema/qudt#>`__
 | xmlns: ``@prefix qudt: <http://qudt.org/schema/qudt#> .``
+| xmlns: ``@prefix qudt-1.1:  <http://qudt.org/1.1/schema/qudt#> .``
 | LOVLink: http://lov.okfn.org/dataset/lov/vocabs/qudt
 
 QUDT (*Quantities, Units, Dimensions, and Types*) is an :ref:`RDF` standard
@@ -1129,11 +1131,38 @@ vocabulary for representing physical units.
 * QUDT is composed of a number of sub-vocabularies
 * QUDT maintains conversion factors for Metric and Imperial Units
 
+Examples:
+
+* ``qudt:SpaceAndTimeUnit``
+
+   .. code:: n3
+
+      qudt:SpaceAndTimeUnit
+         rdf:type owl:Class ;
+         rdfs:label "Space And Time Unit"^^xsd:string ;
+         rdfs:subClassOf qudt:PhysicalUnit ;
+         rdfs:subClassOf
+                 [ rdf:type owl:Restriction ;
+                   owl:hasValue "UST"^^xsd:string ;
+                   owl:onProperty qudt:typePrefix
+                 ] .
+
+* QUDT Namespaces:
+
+  .. code:: n3
+
+      @prefix qudt:    <http://qudt.org/schema/qudt#> .
+      @prefix qudt-1.1:  <http://qudt.org/1.1/schema/qudt#> .
+      @prefix qudt-dimension:  <http://qudt.org/vocab/dimension#> .
+      @prefix qudt-quantity:  <http://qudt.org/vocab/quantity#> .
+      @prefix qudt-unit-1.1:  <http://qudt.org/1.1/vocab/unit#> .
+
 This diagram explains how each of the vocabularies are linked and derived:
 http://www.linkedmodel.org/catalog/qudt/1.1/
 
-.. index:: Quantities
-.. _Quantities:
+
+.. index:: QUDT Quantities
+.. _qudt-quantities:
 
 QUDT Quantities
 ``````````````````
@@ -1181,14 +1210,15 @@ Examples from http://qudt.org/1.1/vocab/OVG_quantities-qudt-(v1.1).ttl :
           qudt:quantityKind qudt-quantity:AreaTimeTemperature .
 
 
-.. index:: Units
-.. _Units:
+.. index:: QUDT Units
+.. _qudt-units:
 
 QUDT Units
 ````````````
 | Standard: http://qudt.org/1.1/vocab/unit
 | Namespace: `<http://qudt.org/1.1/vocab/unit#>`_
-| xmlns: ``@prefix unit: <http://data.nasa.gov/qudt/owl/unit#> .``
+| xmlns: ``@prefix unit: <http://qudt.org/1.1/vocab/unit> .``
+| xmlns: ``@prefix qudt-unit-1.1:  <http://qudt.org/1.1/vocab/unit#> .``
 | Turtle: http://qudt.org/1.1/vocab/OVG_units-qudt-(v1.1).ttl
 
 The :ref:`QUDT` Units Ontology is an :ref:`RDF` vocabulary
