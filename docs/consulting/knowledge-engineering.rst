@@ -1111,172 +1111,6 @@ are standards for common types, classes, and properties
 that have been mapped to :ref:`XML` and :ref:`RDF`.
 
 
-.. index:: QUDT
-.. _qudt:
-
-QUDT
-``````
-| Homepage: http://www.linkedmodel.org/doc/qudt/1.1/
-| Standard: http://qudt.org/
-| Docs: http://www.linkedmodel.org/catalog/qudt/1.1/
-| Namespace: `<http://qudt.org/schema/qudt#>`__
-| Namespace: `<http://qudt.org/1.1/schema/qudt#>`__
-| xmlns: ``@prefix qudt: <http://qudt.org/schema/qudt#> .``
-| xmlns: ``@prefix qudt-1.1:  <http://qudt.org/1.1/schema/qudt#> .``
-| LOVLink: http://lov.okfn.org/dataset/lov/vocabs/qudt
-
-QUDT (*Quantities, Units, Dimensions, and Types*) is an :ref:`RDF` standard
-vocabulary for representing physical units.
-
-* QUDT is composed of a number of sub-vocabularies
-* QUDT maintains conversion factors for Metric and Imperial Units
-
-Examples:
-
-* ``qudt:SpaceAndTimeUnit``
-
-   .. code:: n3
-
-      qudt:SpaceAndTimeUnit
-         rdf:type owl:Class ;
-         rdfs:label "Space And Time Unit"^^xsd:string ;
-         rdfs:subClassOf qudt:PhysicalUnit ;
-         rdfs:subClassOf
-                 [ rdf:type owl:Restriction ;
-                   owl:hasValue "UST"^^xsd:string ;
-                   owl:onProperty qudt:typePrefix
-                 ] .
-
-* QUDT Namespaces:
-
-  .. code:: n3
-
-      @prefix qudt:    <http://qudt.org/schema/qudt#> .
-      @prefix qudt-1.1:  <http://qudt.org/1.1/schema/qudt#> .
-      @prefix qudt-dimension:  <http://qudt.org/vocab/dimension#> .
-      @prefix qudt-quantity:  <http://qudt.org/vocab/quantity#> .
-      @prefix qudt-unit-1.1:  <http://qudt.org/1.1/vocab/unit#> .
-
-This diagram explains how each of the vocabularies are linked and derived:
-http://www.linkedmodel.org/catalog/qudt/1.1/
-
-
-.. index:: QUDT Quantities
-.. _qudt-quantities:
-
-QUDT Quantities
-``````````````````
-Schema
-
-| Standard: http://qudt.org/1.1/schema/quantity 
-| Namespace: `<http://qudt.org/1.1/schema/quantity#>`__
-| xmlns: ``@prefix quantity: <http://data.nasa.gov/qudt/owl/quantity#> .``
-| Turtle: http://qudt.org/1.1/schema/OSG_quantity-(v1.1).ttl
-
-Vocabulary
-
-| xmlns: ``@prefix qudt-quantity: <http://qudt.org/1.1/vocab/quantity#> .``
-| Namespace: `<http://qudt.org/1.1/vocab/quantity#>`__
-| Turtle: http://qudt.org/1.1/vocab/OVG_quantities-qudt-(v1.1).ttl
-
-:ref:`QUDT` Quantities is an :ref:`RDF` schema and vocabulary for describing
-physical quantities.
-
-Examples from http://qudt.org/1.1/vocab/OVG_quantities-qudt-(v1.1).ttl :
-
-* ``quantity:Time``
-
-  .. code:: n3
-
-      qudt-quantity:Time
-          rdf:type qudt:SpaceAndTimeQuantityKind ;
-          rdfs:label "Time"^^xsd:string ;
-          qudt:description "Time is a basic component of the measuring system used to sequence events, to compare the durations of events and the intervals between them, and to quantify the motions of objects."^^xsd:string ;
-          qudt:symbol "T"^^xsd:string ;
-          skos:exactMatch <http://dbpedia.org/resource/Time> .
-      # ...
-      unit:SecondTime
-          qudt:quantityKind qudt-quantity:Time .
-
-* ``quantity:AreaTimeTemperature``
-
-  .. code:: n3
-
-      qudt-quantity:AreaTimeTemperature
-          rdf:type qudt:ThermodynamicsQuantityKind ;
-          rdfs:label "Area Time Temperature"^^xsd:string .
-      # ...
-      unit:SquareFootSecondDegreeFahrenheit
-          qudt:quantityKind qudt-quantity:AreaTimeTemperature .
-
-
-.. index:: QUDT Units
-.. _qudt-units:
-
-QUDT Units
-````````````
-| Standard: http://qudt.org/1.1/vocab/unit
-| Namespace: `<http://qudt.org/1.1/vocab/unit#>`_
-| xmlns: ``@prefix unit: <http://qudt.org/1.1/vocab/unit> .``
-| xmlns: ``@prefix qudt-unit-1.1:  <http://qudt.org/1.1/vocab/unit#> .``
-| Turtle: http://qudt.org/1.1/vocab/OVG_units-qudt-(v1.1).ttl
-
-The :ref:`QUDT` Units Ontology is an :ref:`RDF` vocabulary
-defining many units of measure.
-
-Examples:
-
-* ``unit:SecondTime``
-
-  .. code:: n3
-
-      unit:SecondTime
-            rdf:type qudt:SIBaseUnit , qudt:TimeUnit ;
-            rdfs:label "Second"^^xsd:string ;
-            qudt:abbreviation "s"^^xsd:string ;
-            qudt:code "1615"^^xsd:string ;
-            qudt:conversionMultiplier
-                    "1"^^xsd:double ;
-            qudt:conversionOffset
-                    "0.0"^^xsd:double ;
-            qudt:symbol "s"^^xsd:string ;
-            skos:exactMatch <http://dbpedia.org/resource/Second> .
-      # ...  
-  
-  http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#SecondTime
-
-* ``unit:HorsepowerElectric``
-
-  http://qudt.org/1.1/vocab/OVG_units-qudt-(v1.1).ttl
-
-  .. code:: n3
-
-      unit:HorsepowerElectric
-          rdf:type qudt:NotUsedWithSIUnit , qudt:PowerUnit ;
-          rdfs:label "Horsepower Electric"^^xsd:string ;
-          qudt:abbreviation "hp/V"^^xsd:string ;
-          qudt:code "0815"^^xsd:string ;
-          qudt:symbol "hp/V"^^xsd:string .
-
-* ``unit:SystemOfUnits_SI``
-
-  http://qudt.org/1.1/vocab/OVG_units-qudt-(v1.1).ttl
-
-  .. code:: n3
-
-      unit:SystemOfUnits_SI
-            rdf:type qudt:SystemOfUnits ;
-            rdfs:label "International System of Units"^^xsd:string ;
-            qudt:abbreviation "SI"^^xsd:string ;
-            qudt:systemAllowedUnit
-                    unit:ArcMinute , unit:Day , unit:MinuteTime , unit:DegreeAngle , unit:ArcSecond , unit:ElectronVolt , unit:RevolutionPerHour , unit:Femtometer , unit:DegreePerSecond , unit:DegreeCelsius , unit:Liter , unit:MicroFarad , unit:AmperePerDegree , unit:RevolutionPerMinute , unit:MicroHenry , unit:Kilometer , unit:Revolution , unit:Hour , unit:PicoFarad , unit:Gram , unit:DegreePerSecondSquared , unit:MetricTon , unit:CubicCentimeter , unit:SquareCentimeter , unit:CubicMeterPerHour , unit:KiloPascal , unit:DegreePerHour , unit:UnifiedAtomicMassUnit , unit:MilliHenry , unit:KilogramPerHour , unit:KiloPascalAbsolute , unit:NanoFarad , unit:RadianPerMinute , unit:RevolutionPerSecond ;
-            qudt:systemBaseUnit unit:Kilogram , unit:Unitless , unit:Kelvin , unit:Meter , unit:SecondTime , unit:Mole , unit:Candela , unit:Ampere ;
-            qudt:systemCoherentDerivedUnit
-                    unit:PerCubicMeter , unit:WattPerSquareMeter , unit:Volt , unit:WattPerMeterKelvin , unit:CoulombPerCubicMeter , unit:Becquerel , unit:WattPerSquareMeterSteradian , unit:KelvinPerSecond , unit:Gray , unit:RadianPerSecond , unit:VoltPerMeter , unit:HenryPerMeter , unit:WattPerSteradian , unit:JouleMeterPerMole , unit:CoulombMeter , unit:PerTeslaMeter , unit:Pascal , unit:LumenPerWatt , unit:KilogramMeterPerSecond , unit:SquareMeterKelvin , unit:MoleKelvin , unit:MeterKelvinPerWatt , unit:Steradian , unit:AmperePerMeter , unit:SquareMeterKelvinPerWatt , unit:JouleSecond , unit:MeterPerFarad , unit:KilogramPerSecond , unit:HertzPerTesla , unit:KilogramMeterSquared , unit:WattPerSquareMeterQuarticKelvin , unit:PerMeterKelvin , unit:JoulePerCubicMeterKelvin , unit:JoulePerSquareTesla , unit:JoulePerCubicMeter , unit:MeterPerKelvin , unit:AmperePerSquareMeter , unit:CubicCoulombMeterPerSquareJoule , unit:CoulombPerMeter , unit:Katal , unit:CubicMeter , unit:LumenSecond , unit:Coulomb , unit:MolePerKilogram , unit:CubicMeterPerKilogramSecondSquared , unit:PerMeter , unit:AmperePerRadian , unit:CoulombPerKilogram , unit:QuarticCoulombMeterPerCubicEnergy , unit:Tesla , unit:JoulePerKilogram , unit:MeterKelvin , unit:MeterPerSecond , unit:NewtonMeter , unit:CandelaPerSquareMeter , unit:Siemens , unit:CoulombSquareMeter , unit:KilogramPerCubicMeter , unit:KilogramSecondSquared , unit:Watt , unit:AmperePerJoule , unit:VoltPerSecond , unit:JoulePerKilogramKelvinPerCubicMeter , unit:PascalPerSecond , unit:CubicMeterPerMole , unit:KilogramPerMeter , unit:PascalSecond , unit:Joule , unit:HertzPerVolt , unit:KilogramPerSquareMeter , unit:PerTeslaSecond , unit:MolePerCubicMeter , unit:PerSecond , unit:JoulePerKelvin , unit:RadianPerSecondSquared , unit:Newton , unit:CubicMeterPerKelvin , unit:GrayPerSecond , unit:SquareMeterPerSecond , unit:CubicMeterPerKilogram , unit:KilogramPerMole , unit:SquareMeterPerKelvin , unit:SquareMeterSteradian , unit:TeslaSecond , unit:Ohm , unit:KelvinPerWatt , unit:JoulePerKilogramKelvinPerPascal , unit:WattSquareMeter , unit:MeterKilogram , unit:WattSquareMeterPerSteradian , unit:Hertz , unit:VoltPerSquareMeter , unit:CubicMeterPerSecond , unit:JoulePerMoleKelvin , unit:TeslaMeter , unit:JoulePerMole , unit:Lux , unit:FaradPerMeter , unit:PerMole , unit:JouleSecondPerMole , unit:AmpereTurnPerMeter , unit:VoltMeter , unit:SecondTimeSquared , unit:AmpereTurn , unit:JoulePerKilogramKelvin , unit:CoulombPerSquareMeter , unit:NewtonPerKilogram , unit:JoulePerSquareMeter , unit:Weber , unit:Henry , unit:MeterPerSecondSquared , unit:KilogramKelvin , unit:Sievert , unit:NewtonPerMeter , unit:WattPerSquareMeterKelvin , unit:SquareCoulombMeterPerJoule , unit:Lumen , unit:Farad , unit:HertzPerKelvin , unit:SquareMeter , unit:JoulePerTesla , unit:Radian , unit:KelvinPerTesla , unit:NewtonPerCoulomb , unit:CoulombPerMole ;
-            qudt:systemPrefixUnit
-                    unit:Hecto , unit:Nano , unit:Tera , unit:Atto , unit:Kilo , unit:Yocto , unit:Yotta , unit:Deci , unit:Zepto , unit:Pico , unit:Femto , unit:Milli , unit:Micro , unit:Zetta , unit:Mega , unit:Centi , unit:Giga , unit:Peta , unit:Deca , unit:Exa ;
-            skos:exactMatch <http://dbpedia.org/resource/International_System_of_Units> .
-  
 
 .. index:: RDF Data Cube
 .. index:: QB
@@ -1557,6 +1391,173 @@ Example:
 
 DBpedia is generated by batch extraction on a regular basis.
 
+
+.. index:: QUDT
+.. _qudt:
+
+QUDT
+``````
+| Homepage: http://www.linkedmodel.org/doc/qudt/1.1/
+| Standard: http://qudt.org/
+| Docs: http://www.linkedmodel.org/catalog/qudt/1.1/
+| Namespace: `<http://qudt.org/schema/qudt#>`__
+| Namespace: `<http://qudt.org/1.1/schema/qudt#>`__
+| xmlns: ``@prefix qudt: <http://qudt.org/schema/qudt#> .``
+| xmlns: ``@prefix qudt-1.1:  <http://qudt.org/1.1/schema/qudt#> .``
+| LOVLink: http://lov.okfn.org/dataset/lov/vocabs/qudt
+
+QUDT (*Quantities, Units, Dimensions, and Types*) is an :ref:`RDF` standard
+vocabulary for representing physical units.
+
+* QUDT is composed of a number of sub-vocabularies
+* QUDT maintains conversion factors for Metric and Imperial Units
+
+Examples:
+
+* ``qudt:SpaceAndTimeUnit``
+
+   .. code:: n3
+
+      qudt:SpaceAndTimeUnit
+         rdf:type owl:Class ;
+         rdfs:label "Space And Time Unit"^^xsd:string ;
+         rdfs:subClassOf qudt:PhysicalUnit ;
+         rdfs:subClassOf
+                 [ rdf:type owl:Restriction ;
+                   owl:hasValue "UST"^^xsd:string ;
+                   owl:onProperty qudt:typePrefix
+                 ] .
+
+* QUDT Namespaces:
+
+  .. code:: n3
+
+      @prefix qudt:    <http://qudt.org/schema/qudt#> .
+      @prefix qudt-1.1:  <http://qudt.org/1.1/schema/qudt#> .
+      @prefix qudt-dimension:  <http://qudt.org/vocab/dimension#> .
+      @prefix qudt-quantity:  <http://qudt.org/vocab/quantity#> .
+      @prefix qudt-unit-1.1:  <http://qudt.org/1.1/vocab/unit#> .
+
+This diagram explains how each of the vocabularies are linked and derived:
+http://www.linkedmodel.org/catalog/qudt/1.1/
+
+
+.. index:: QUDT Quantities
+.. _qudt-quantities:
+
+QUDT Quantities
+``````````````````
+Schema
+
+| Standard: http://qudt.org/1.1/schema/quantity 
+| Namespace: `<http://qudt.org/1.1/schema/quantity#>`__
+| xmlns: ``@prefix quantity: <http://data.nasa.gov/qudt/owl/quantity#> .``
+| Turtle: http://qudt.org/1.1/schema/OSG_quantity-(v1.1).ttl
+
+Vocabulary
+
+| xmlns: ``@prefix qudt-quantity: <http://qudt.org/1.1/vocab/quantity#> .``
+| Namespace: `<http://qudt.org/1.1/vocab/quantity#>`__
+| Turtle: http://qudt.org/1.1/vocab/OVG_quantities-qudt-(v1.1).ttl
+
+:ref:`QUDT` Quantities is an :ref:`RDF` schema and vocabulary for describing
+physical quantities.
+
+Examples from http://qudt.org/1.1/vocab/OVG_quantities-qudt-(v1.1).ttl :
+
+* ``quantity:Time``
+
+  .. code:: n3
+
+      qudt-quantity:Time
+          rdf:type qudt:SpaceAndTimeQuantityKind ;
+          rdfs:label "Time"^^xsd:string ;
+          qudt:description "Time is a basic component of the measuring system used to sequence events, to compare the durations of events and the intervals between them, and to quantify the motions of objects."^^xsd:string ;
+          qudt:symbol "T"^^xsd:string ;
+          skos:exactMatch <http://dbpedia.org/resource/Time> .
+      # ...
+      unit:SecondTime
+          qudt:quantityKind qudt-quantity:Time .
+
+* ``quantity:AreaTimeTemperature``
+
+  .. code:: n3
+
+      qudt-quantity:AreaTimeTemperature
+          rdf:type qudt:ThermodynamicsQuantityKind ;
+          rdfs:label "Area Time Temperature"^^xsd:string .
+      # ...
+      unit:SquareFootSecondDegreeFahrenheit
+          qudt:quantityKind qudt-quantity:AreaTimeTemperature .
+
+
+.. index:: QUDT Units
+.. _qudt-units:
+
+QUDT Units
+````````````
+| Standard: http://qudt.org/1.1/vocab/unit
+| Namespace: `<http://qudt.org/1.1/vocab/unit#>`_
+| xmlns: ``@prefix unit: <http://qudt.org/1.1/vocab/unit> .``
+| xmlns: ``@prefix qudt-unit-1.1:  <http://qudt.org/1.1/vocab/unit#> .``
+| Turtle: http://qudt.org/1.1/vocab/OVG_units-qudt-(v1.1).ttl
+
+The :ref:`QUDT` Units Ontology is an :ref:`RDF` vocabulary
+defining many units of measure.
+
+Examples:
+
+* ``unit:SecondTime``
+
+  .. code:: n3
+
+      unit:SecondTime
+            rdf:type qudt:SIBaseUnit , qudt:TimeUnit ;
+            rdfs:label "Second"^^xsd:string ;
+            qudt:abbreviation "s"^^xsd:string ;
+            qudt:code "1615"^^xsd:string ;
+            qudt:conversionMultiplier
+                    "1"^^xsd:double ;
+            qudt:conversionOffset
+                    "0.0"^^xsd:double ;
+            qudt:symbol "s"^^xsd:string ;
+            skos:exactMatch <http://dbpedia.org/resource/Second> .
+      # ...  
+  
+  http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#SecondTime
+
+* ``unit:HorsepowerElectric``
+
+  http://qudt.org/1.1/vocab/OVG_units-qudt-(v1.1).ttl
+
+  .. code:: n3
+
+      unit:HorsepowerElectric
+          rdf:type qudt:NotUsedWithSIUnit , qudt:PowerUnit ;
+          rdfs:label "Horsepower Electric"^^xsd:string ;
+          qudt:abbreviation "hp/V"^^xsd:string ;
+          qudt:code "0815"^^xsd:string ;
+          qudt:symbol "hp/V"^^xsd:string .
+
+* ``unit:SystemOfUnits_SI``
+
+  http://qudt.org/1.1/vocab/OVG_units-qudt-(v1.1).ttl
+
+  .. code:: n3
+
+      unit:SystemOfUnits_SI
+            rdf:type qudt:SystemOfUnits ;
+            rdfs:label "International System of Units"^^xsd:string ;
+            qudt:abbreviation "SI"^^xsd:string ;
+            qudt:systemAllowedUnit
+                    unit:ArcMinute , unit:Day , unit:MinuteTime , unit:DegreeAngle , unit:ArcSecond , unit:ElectronVolt , unit:RevolutionPerHour , unit:Femtometer , unit:DegreePerSecond , unit:DegreeCelsius , unit:Liter , unit:MicroFarad , unit:AmperePerDegree , unit:RevolutionPerMinute , unit:MicroHenry , unit:Kilometer , unit:Revolution , unit:Hour , unit:PicoFarad , unit:Gram , unit:DegreePerSecondSquared , unit:MetricTon , unit:CubicCentimeter , unit:SquareCentimeter , unit:CubicMeterPerHour , unit:KiloPascal , unit:DegreePerHour , unit:UnifiedAtomicMassUnit , unit:MilliHenry , unit:KilogramPerHour , unit:KiloPascalAbsolute , unit:NanoFarad , unit:RadianPerMinute , unit:RevolutionPerSecond ;
+            qudt:systemBaseUnit unit:Kilogram , unit:Unitless , unit:Kelvin , unit:Meter , unit:SecondTime , unit:Mole , unit:Candela , unit:Ampere ;
+            qudt:systemCoherentDerivedUnit
+                    unit:PerCubicMeter , unit:WattPerSquareMeter , unit:Volt , unit:WattPerMeterKelvin , unit:CoulombPerCubicMeter , unit:Becquerel , unit:WattPerSquareMeterSteradian , unit:KelvinPerSecond , unit:Gray , unit:RadianPerSecond , unit:VoltPerMeter , unit:HenryPerMeter , unit:WattPerSteradian , unit:JouleMeterPerMole , unit:CoulombMeter , unit:PerTeslaMeter , unit:Pascal , unit:LumenPerWatt , unit:KilogramMeterPerSecond , unit:SquareMeterKelvin , unit:MoleKelvin , unit:MeterKelvinPerWatt , unit:Steradian , unit:AmperePerMeter , unit:SquareMeterKelvinPerWatt , unit:JouleSecond , unit:MeterPerFarad , unit:KilogramPerSecond , unit:HertzPerTesla , unit:KilogramMeterSquared , unit:WattPerSquareMeterQuarticKelvin , unit:PerMeterKelvin , unit:JoulePerCubicMeterKelvin , unit:JoulePerSquareTesla , unit:JoulePerCubicMeter , unit:MeterPerKelvin , unit:AmperePerSquareMeter , unit:CubicCoulombMeterPerSquareJoule , unit:CoulombPerMeter , unit:Katal , unit:CubicMeter , unit:LumenSecond , unit:Coulomb , unit:MolePerKilogram , unit:CubicMeterPerKilogramSecondSquared , unit:PerMeter , unit:AmperePerRadian , unit:CoulombPerKilogram , unit:QuarticCoulombMeterPerCubicEnergy , unit:Tesla , unit:JoulePerKilogram , unit:MeterKelvin , unit:MeterPerSecond , unit:NewtonMeter , unit:CandelaPerSquareMeter , unit:Siemens , unit:CoulombSquareMeter , unit:KilogramPerCubicMeter , unit:KilogramSecondSquared , unit:Watt , unit:AmperePerJoule , unit:VoltPerSecond , unit:JoulePerKilogramKelvinPerCubicMeter , unit:PascalPerSecond , unit:CubicMeterPerMole , unit:KilogramPerMeter , unit:PascalSecond , unit:Joule , unit:HertzPerVolt , unit:KilogramPerSquareMeter , unit:PerTeslaSecond , unit:MolePerCubicMeter , unit:PerSecond , unit:JoulePerKelvin , unit:RadianPerSecondSquared , unit:Newton , unit:CubicMeterPerKelvin , unit:GrayPerSecond , unit:SquareMeterPerSecond , unit:CubicMeterPerKilogram , unit:KilogramPerMole , unit:SquareMeterPerKelvin , unit:SquareMeterSteradian , unit:TeslaSecond , unit:Ohm , unit:KelvinPerWatt , unit:JoulePerKilogramKelvinPerPascal , unit:WattSquareMeter , unit:MeterKilogram , unit:WattSquareMeterPerSteradian , unit:Hertz , unit:VoltPerSquareMeter , unit:CubicMeterPerSecond , unit:JoulePerMoleKelvin , unit:TeslaMeter , unit:JoulePerMole , unit:Lux , unit:FaradPerMeter , unit:PerMole , unit:JouleSecondPerMole , unit:AmpereTurnPerMeter , unit:VoltMeter , unit:SecondTimeSquared , unit:AmpereTurn , unit:JoulePerKilogramKelvin , unit:CoulombPerSquareMeter , unit:NewtonPerKilogram , unit:JoulePerSquareMeter , unit:Weber , unit:Henry , unit:MeterPerSecondSquared , unit:KilogramKelvin , unit:Sievert , unit:NewtonPerMeter , unit:WattPerSquareMeterKelvin , unit:SquareCoulombMeterPerJoule , unit:Lumen , unit:Farad , unit:HertzPerKelvin , unit:SquareMeter , unit:JoulePerTesla , unit:Radian , unit:KelvinPerTesla , unit:NewtonPerCoulomb , unit:CoulombPerMole ;
+            qudt:systemPrefixUnit
+                    unit:Hecto , unit:Nano , unit:Tera , unit:Atto , unit:Kilo , unit:Yocto , unit:Yotta , unit:Deci , unit:Zepto , unit:Pico , unit:Femto , unit:Milli , unit:Micro , unit:Zetta , unit:Mega , unit:Centi , unit:Giga , unit:Peta , unit:Deca , unit:Exa ;
+            skos:exactMatch <http://dbpedia.org/resource/International_System_of_Units> .
+  
 
 .. index:: Semantic Web Tools
 .. _semantic-web-tools:
