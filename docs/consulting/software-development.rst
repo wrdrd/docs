@@ -227,17 +227,3 @@ Continuous Integration
 https://en.wikipedia.org/wiki/Continuous_integration
 
 
-.. index:: Open Source
-.. _open-source:
-
-Open Source
--------------
-https://en.wikipedia.org/wiki/Open_source
-
-https://en.wikipedia.org/wiki/Open-source_software
-
-https://en.wikipedia.org/wiki/Open-source_software_security#The_debate
-
-https://en.wikipedia.org/wiki/Comparison_of_open-source_software_hosting_facilities
-
-https://en.wikipedia.org/wiki/Network_effect

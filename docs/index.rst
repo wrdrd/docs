@@ -13,6 +13,7 @@ WRD R&D Documentation
    consulting/information-systems
    consulting/data-science
    consulting/knowledge-engineering
+   consulting/open-source
    consulting/entrepreneurship
    consulting/education-technology
    consulting/team-building
