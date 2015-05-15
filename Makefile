@@ -69,7 +69,7 @@ docs: clean-docs docs-api localjs localcss
 docs-open: docs open
 
 open:
-	web docs/_build/html/index.html
+	web ./docs/_build/html/index.html
 	#open docs/_build/singlehtml/index.html
 
 release: clean
