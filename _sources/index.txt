@@ -1,12 +1,19 @@
 
 
+.. index:: WRD R&D Documentation
+.. _wrdrd-docs:
+
 WRD R&D Documentation
 =======================
+| Docs: https://wrdrd.com/docs/
+| Docs: https://wrdrd.github.io/docs/
+| Src: https://github.com/wrdrd/docs
 
 .. toctree::
    :maxdepth: 4
 
-   consulting/readme
+   consulting/index
+   consulting/open-source
    consulting/small-business
    consulting/web-development
    consulting/software-development
@@ -17,7 +24,8 @@ WRD R&D Documentation
    consulting/education-technology
    consulting/team-building
    consulting/collaboration-plan
-   consulting/authors
+   tools/index
+   authors
    license
 
 

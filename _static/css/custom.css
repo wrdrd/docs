@@ -35,6 +35,9 @@ div.body h1 {
     padding-bottom: 10px;
 }
 
+div.body a {
+    word-wrap: break;
+}
 
 #sidebar-wrapper {
     overflow-y: auto;
