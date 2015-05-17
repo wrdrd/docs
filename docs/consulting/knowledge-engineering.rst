@@ -557,7 +557,7 @@ Representations / Serializations
 
 Vocabularies
 
-* :ref:`RDFS`: :ref:`DCMI`, :ref:`SKOS`
+* :ref:`RDFS`: :ref:`DCMI`, :ref:`SKOS`, :ref:`Schema.org`
   
 Query APIS
 
@@ -565,7 +565,7 @@ Query APIS
 
 Ontologies
 
-* :ref:`OWL`: :ref:`PROV`, :ref:`OA`
+* :ref:`OWL`: :ref:`PROV`, :ref:`OA`, :ref:`QUDT`
 
 Reasoners
 
@@ -706,7 +706,7 @@ HTTP in RDF
 | xmlns: ``@prefix http-statusCodes: <http://www.w3.org/2011/http-statusCodes> .``
 | LOVLink: http://lov.okfn.org/dataset/lov/vocabs/http
 
-HTTP-in-RDF is a standard for representing HTTP as :ref:`RDF`.
+HTTP-in-RDF is a standard for representing :ref:`HTTP` as :ref:`RDF`.
 
 
 .. index:: HTTP/2
@@ -1066,7 +1066,7 @@ RDFS
 | Standard: http://www.w3.org/TR/rdf-schema/
 | Namespace: `<http://www.w3.org/2000/01/rdf-schema#>`__
 | xmlns: ``@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .``
-| LOVLink: http://lov.okfn.org/dataset/lov/vocabs/rdf
+| LOVLink: http://lov.okfn.org/dataset/lov/vocabs/rdfs
 
 RDFS (*RDF Schema*) is an :ref:`RDF` standard for classes
 and properties.
