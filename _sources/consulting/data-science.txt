@@ -33,7 +33,7 @@ https://en.wikipedia.org/wiki/Wisdom
 * Raw data is not knowledge
 * Wisdom compares knowledges
 
-Mathematical Optimization
+Optimization
 +++++++++++++++++++++++++++
 https://en.wikipedia.org/wiki/Mathematical_optimization
 
@@ -61,6 +61,7 @@ limited by resource constraints.
              (0.5,  0),
              (0, -0.5)]
 
+* `<https://en.wikipedia.org/wiki/Optimization_(disambiguation)>`__
 * https://en.wikipedia.org/wiki/Metaheuristic
 
   + https://en.wikipedia.org/wiki/Receiver_operating_characteristic
