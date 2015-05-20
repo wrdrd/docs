@@ -528,10 +528,11 @@ https://en.wikipedia.org/wiki/Online_machine_learning
 * https://en.wikipedia.org/wiki/Supervised_learning
 * https://en.wikipedia.org/wiki/Unsupervised_learning
 
-
 Tools
 -------
 https://en.wikipedia.org/wiki/Scientific_workflow_system
+
+https://github.com/josephmisiti/awesome-machine-learning
 
 
 Techniques
