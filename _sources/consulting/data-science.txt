@@ -20,7 +20,7 @@ https://en.wikipedia.org/wiki/Data
 https://en.wikipedia.org/wiki/Information
 
 https://en.wikipedia.org/wiki/Knowledge
-(see: :ref:`<knowledge-engineering>`)
+(see: :ref:`knowledge-engineering`)
 
 https://en.wikipedia.org/wiki/Wisdom
 
