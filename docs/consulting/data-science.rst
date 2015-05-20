@@ -24,6 +24,7 @@ https://en.wikipedia.org/wiki/Wisdom
 
 * https://en.wikipedia.org/wiki/Metaheuristic
 
+  + https://en.wikipedia.org/wiki/Receiver_operating_characteristic
   + http://rayli.net/blog/data/top-10-data-mining-algorithms-in-plain-english/
   + http://scikit-learn.org/stable/tutorial/machine_learning_map/
   + https://en.wikipedia.org/wiki/Firefly_algorithm
