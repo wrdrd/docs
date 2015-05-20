@@ -15,12 +15,51 @@ https://en.wikipedia.org/wiki/Data_science
 
 Data, Information, Knowledge, & Wisdom
 ------------------------------------------
+https://en.wikipedia.org/wiki/Data
+
+https://en.wikipedia.org/wiki/Information
+
+https://en.wikipedia.org/wiki/Knowledge
+(see: :ref:`<knowledge-engineering>`)
+
 https://en.wikipedia.org/wiki/Wisdom
 
 ::
 
     # Lead -> Gold
-    Data -> Information + Knowledge -> Wisdom
+
+* Data is information
+* Information is data
+* Raw data is not knowledge
+* Wisdom compares knowledges
+
+Mathematical Optimization
++++++++++++++++++++++++++++
+https://en.wikipedia.org/wiki/Mathematical_optimization
+
+Find local and global optima (maxima and minima)
+within an n-dimensional field which may be
+limited by resource constraints.
+
+.. code:: python
+
+   # Global optima of a 1-dimensional list
+   points = [10, 20, 100, 20, 10]
+   global_max, global_min = max(points), min(points)
+   assert global_max == 100
+   assert global_min == 10
+
+   # Local optima of a 1-dimensional list
+   sample = points[:1]
+   local_max, local_min = max(sample), min(sample)
+   assert local_max == 20
+   assert local_min == 10
+
+   # A 2-dimensional list ...
+   points = [(-0.5, 0),
+             (0,  0.5),
+             (0.5,  0),
+             (0, -0.5)]
 
 * https://en.wikipedia.org/wiki/Metaheuristic
 

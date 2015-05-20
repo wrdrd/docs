@@ -89,6 +89,7 @@
                 <ul>
 <li><a class="reference internal" href="#">Data Science</a><ul>
 <li><a class="reference internal" href="#data-information-knowledge-wisdom">Data, Information, Knowledge, &amp; Wisdom</a><ul>
+<li><a class="reference internal" href="#mathematical-optimization">Mathematical Optimization</a></li>
 <li><a class="reference internal" href="#smoothies">Smoothies</a></li>
 <li><a class="reference internal" href="#body-temperature">Body Temperature</a></li>
 </ul>
@@ -191,6 +192,7 @@
   <ul>
 <li><a class="reference internal" href="#">Data Science</a><ul>
 <li><a class="reference internal" href="#data-information-knowledge-wisdom">Data, Information, Knowledge, &amp; Wisdom</a><ul>
+<li><a class="reference internal" href="#mathematical-optimization">Mathematical Optimization</a></li>
 <li><a class="reference internal" href="#smoothies">Smoothies</a></li>
 <li><a class="reference internal" href="#body-temperature">Body Temperature</a></li>
 </ul>
@@ -333,9 +335,43 @@
 </div>
 <div class="section" id="data-information-knowledge-wisdom">
 <h2>Data, Information, Knowledge, &amp; Wisdom<a class="headerlink" href="#data-information-knowledge-wisdom" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Data">https://en.wikipedia.org/wiki/Data</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Information">https://en.wikipedia.org/wiki/Information</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Knowledge">https://en.wikipedia.org/wiki/Knowledge</a>
+(see: <em class="xref std std-ref">&lt;knowledge-engineering&gt;</em>)</p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Wisdom">https://en.wikipedia.org/wiki/Wisdom</a></p>
-<div class="highlight-python"><div class="highlight"><pre># Lead -&gt; Gold
-Data -&gt; Information + Knowledge -&gt; Wisdom
+<div class="highlight-python"><div class="highlight"><pre><span class="c"># Lead -&gt; Gold</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>Data is information</li>
+<li>Information is data</li>
+<li>Raw data is not knowledge</li>
+<li>Wisdom compares knowledges</li>
+</ul>
+<div class="section" id="mathematical-optimization">
+<h3>Mathematical Optimization<a class="headerlink" href="#mathematical-optimization" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Mathematical_optimization">https://en.wikipedia.org/wiki/Mathematical_optimization</a></p>
+<p>Find local and global optima (maxima and minima)
+within an n-dimensional field which may be
+limited by resource constraints.</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="c"># Global optima of a 1-dimensional list</span>
+<span class="n">points</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+<span class="n">global_max</span><span class="p">,</span> <span class="n">global_min</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">points</span><span class="p">),</span> <span class="nb">min</span><span class="p">(</span><span class="n">points</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">global_max</span> <span class="o">==</span> <span class="mi">100</span>
+<span class="k">assert</span> <span class="n">global_min</span> <span class="o">==</span> <span class="mi">10</span>
+
+<span class="c"># Local optima of a 1-dimensional list</span>
+<span class="n">sample</span> <span class="o">=</span> <span class="n">points</span><span class="p">[:</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">local_max</span><span class="p">,</span> <span class="n">local_min</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">sample</span><span class="p">),</span> <span class="nb">min</span><span class="p">(</span><span class="n">sample</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">local_max</span> <span class="o">==</span> <span class="mi">20</span>
+<span class="k">assert</span> <span class="n">local_min</span> <span class="o">==</span> <span class="mi">10</span>
+
+<span class="c"># A 2-dimensional list ...</span>
+<span class="n">points</span> <span class="o">=</span> <span class="p">[(</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+          <span class="p">(</span><span class="mi">0</span><span class="p">,</span>  <span class="mf">0.5</span><span class="p">),</span>
+          <span class="p">(</span><span class="mf">0.5</span><span class="p">,</span>  <span class="mi">0</span><span class="p">),</span>
+          <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.5</span><span class="p">)]</span>
 </pre></div>
 </div>
 <ul class="simple">
@@ -347,6 +383,7 @@ Data -&gt; Information + Knowledge -&gt; Wisdom
 </ul>
 </li>
 </ul>
+</div>
 <div class="section" id="smoothies">
 <h3>Smoothies<a class="headerlink" href="#smoothies" title="Permalink to this headline">¶</a></h3>
 <p><strong>Data</strong></p>
@@ -698,7 +735,7 @@ on the Web in a machine-readable format
 (e.g.
 <a class="reference internal" href="knowledge-engineering#turtle"><em>Turtle</em></a>,
 <a class="reference internal" href="knowledge-engineering#rdfa"><em>RDFa</em></a>,
-<a class="reference internal" href="../tools/tools#json-ld"><em>JSON-LD</em></a>,
+<a class="reference internal" href="../tools/index#json-ld"><em>JSON-LD</em></a>,
 <a class="reference internal" href="knowledge-engineering#sparql"><em>SPARQL</em></a>.)</p>
 <p>☆☆☆☆☆</p>
 <p>In your <a class="reference internal" href="knowledge-engineering#rdf"><em>RDF</em></a>,
