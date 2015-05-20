@@ -10,15 +10,22 @@ https://en.wikipedia.org/wiki/Data_science
 | http://datasciencemasters.org/
 |
 | "Ten Simple Rules for Reproducible Computational Research"
-  http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1003285
+| http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1003285
 
 
 Data, Information, Knowledge, & Wisdom
 ------------------------------------------
+https://en.wikipedia.org/wiki/Wisdom
+
 ::
 
     # Lead -> Gold
     Data -> Information + Knowledge -> Wisdom
+
+* https://en.wikipedia.org/wiki/Metaheuristic
+
+  + http://rayli.net/blog/data/top-10-data-mining-algorithms-in-plain-english/
+  + https://en.wikipedia.org/wiki/Firefly_algorithm
 
 
 Smoothies
@@ -612,5 +619,7 @@ https://en.wikipedia.org/wiki/Three.js
 * http://threejs.org/
 
 http://sigmajs.org/
+
+https://github.com/josephmisiti/awesome-machine-learning
 
 See: :ref:`Semantic Web Tools <semantic-web-tools>`
