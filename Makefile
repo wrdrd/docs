@@ -63,7 +63,7 @@ docs-api:
 	sphinx-apidoc -T -M -o docs/wrdrd/ wrdrd
 
 docs: clean-docs docs-api localjs localcss
-	SPHINX_HTML_LINK_SUFFIX='' $(MAKE) -C docs html
+	SPHINX_HTML_LINK_SUFFIX='' $(MAKE) -C docs html singlehtml
 	#$(MAKE) -C docs singlehtml
 
 docs-open: docs open
@@ -79,7 +79,12 @@ sdist: clean
 	python setup.py sdist
 	ls -l dist
 
-gh-pages:
+_build/html/singlehtml:
+	test -d _build/singlehtml && ( \
+	mv _build/singlehtml _build/html/singlehtml && \
+	ln -s _build/html/singlehtml _build/singlehtml;)  || echo true
+
+gh-pages: _build/html/singlehtml
 	# Push docs to gh-pages branch with a .nojekyll file
 	ghp-import -n -p ./docs/_build/html/
 	#ghp-import -n -p ./docs/_build/singlehtml/
