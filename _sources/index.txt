@@ -10,7 +10,7 @@ WRD R&D Documentation
 | Src: https://github.com/wrdrd/docs
 
 .. toctree::
-   :maxdepth: 4
+   :maxdepth: 7
 
    consulting/index
    consulting/open-source
