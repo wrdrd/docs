@@ -157,6 +157,8 @@ Web Glossary
 
 
 .. index:: Web Content
+.. index:: Content
+.. _web content:
 
 Web Content
 ~~~~~~~~~~~~~
