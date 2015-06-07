@@ -79,12 +79,12 @@ sdist: clean
 	python setup.py sdist
 	ls -l dist
 
-_build/html/singlehtml:
-	test -d _build/singlehtml && ( \
-	mv _build/singlehtml _build/html/singlehtml && \
-	ln -s _build/html/singlehtml _build/singlehtml;)  || echo true
+docs/_build/html/singlehtml:
+	test -d docs/_build/singlehtml && ( \
+	mv docs/_build/singlehtml docs/_build/html/singlehtml && \
+	ln -s docs/_build/html/singlehtml docs/_build/singlehtml;)  || echo true
 
-gh-pages: _build/html/singlehtml
+gh-pages: docs/_build/html/singlehtml
 	# Push docs to gh-pages branch with a .nojekyll file
 	ghp-import -n -p ./docs/_build/html/
 	#ghp-import -n -p ./docs/_build/singlehtml/
