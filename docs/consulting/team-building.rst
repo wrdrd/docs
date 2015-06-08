@@ -92,6 +92,10 @@ https://en.wikipedia.org/wiki/Electronic_meeting_system
 
 https://en.wikipedia.org/wiki/List_of_collaborative_software
 
+* https://en.wikipedia.org/wiki/Etherpad#Etherpad_Lite
+
+  * https://en.wikipedia.org/wiki/Operational_transformation
+
 "ThinkLets: Achieving Predictable, Repeatable Patterns of
 Group Interaction with Group Support Systems (GSS)"
 `<http://www.academia.edu/259943/ThinkLets_Achieving_Predictable_Repeatable_Patterns_of_Group_Interaction_With_Group_Support_Systems_GSS_>`__
