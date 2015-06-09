@@ -37,7 +37,8 @@ See: :ref:`Knowledge Engineering <knowledge-engineering>`
 
 Linked Curricula Graphs
 -----------------------------------------
-* https://westurner.org/self-directed-learning/slides.html#knowledge-graph
+* https://westurner.org/self-directed-learning/slides.html#knowledge-graph (2012)
+* https://westurner.org/redditlog/#comment/ci3c1o3 (2014)
 
 * [ ] Link each component of the curriculum to a concept URI
   (e.g. Wikipedia (-> DBpedia RDF <- http://lod-cloud.net/))
