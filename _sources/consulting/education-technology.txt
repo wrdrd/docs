@@ -55,3 +55,27 @@ Linked Curricula Graphs
     * https://wrdrd.com/docs/consulting/education-technology
 
 
+.. index:: OpenBadges
+.. _openbadges:
+
+OpenBadges
+------------
+| Homepage: http://openbadges.org/
+| Wikipedia: https://en.wikipedia.org/wiki/Mozilla_Open_Badges
+| Standard: https://github.com/openbadges/openbadges-specification
+| Docs: https://wiki.mozilla.org/Badges
+| Twitter: https://twitter.com/openbadges
+
+* [ ] OpenBadges :ref:`JSON` Web Signatures and :ref:`Schema.org`
+  (:ref:`RDFa`, :ref:`JSON-LD`):
+
+  https://github.com/openbadges/openbadges-specification/issues/9
+
+.. index:: OpenBadges Backpack
+.. _openbadges-backpack:
+
+OpenBadges Backpack
+-----------------------
+| Homepage: https://backpack.openbadges.org/backpack/
+| Source: https://github.com/mozilla/openbadges-backpack
+
