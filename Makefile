@@ -49,12 +49,16 @@ localjs:
 	echo '' > $(LOCALJS)
 	cat $(STATIC)/js/ga.js >> $(LOCALJS)
 	cat $(STATIC)/js/newtab.js >> $(LOCALJS)
-	cat $(STATIC)/js/affix-sidenav.js >> $(LOCALJS)
+	cat $(STATIC)/js/sidenav-affix.js >> $(LOCALJS)
+	cat $(STATIC)/js/jquery.scrollTo.js >> $(LOCALJS)
+	cat $(STATIC)/js/jquery.isonscreen.js >> $(LOCALJS)
+	cat $(STATIC)/js/sidenav-scrollto.js >> $(LOCALJS)
 
 LOCALCSS=$(STATIC)/css/local.css
 localcss:
 	echo '' > $(LOCALCSS)
 	cat $(STATIC)/css/custom.css >> $(LOCALCSS)
+	cat $(STATIC)/css/sidenav-scrollto.css >> $(LOCALCSS)
 	cat $(STATIC)/css/leftnavbar.css >> $(LOCALCSS)
 
 docs-api:
