@@ -196,7 +196,7 @@ Collaboration Checklist
         + criteria:x = 400
         + criteria:y = 100
         + criteria:z = 5
-        * A = {x, y}, B = {y,z}, C = {x,y,z}
+        + A = {x, y}, B = {y,z}, C = {x,y,z}
         + A = 500, B = 105, C = 505
 
 
@@ -213,6 +213,6 @@ Text Templates
 See also:
 
 * :ref:`Software Engineering > Digital Stand Up Meeting
-<digital-stand-up-meeting>`
+  <digital-stand-up-meeting>`
 * :ref:`Collaboration Plan <collaboration-plan>`
 
