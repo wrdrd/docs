@@ -57,6 +57,13 @@ https://en.wikipedia.org/wiki/Collaboration
 http://aisel.aisnet.org/jais/vol10/iss3/7/
 
 
+    Collaboration Engineering focuses on mission-critical collaborative tasks.
+    A mission-critical task is one that creates substantial value, or that 
+    reduces the risk of a substantial loss of value for organizational
+    stakeholders. Collaboration Engineering further focuses on processes
+    for mission-critical tasks
+    that are recurring and must be executed frequently.
+
 Seven Layer Model of Collaboration
 ++++++++++++++++++++++++++++++++++++
 "A Seven-Layer Model of Collaboration:
@@ -86,6 +93,8 @@ http://aisel.aisnet.org/amcis2006/17/
 * Build Consensus
 
 
+
+
 Group Support Systems
 ++++++++++++++++++++++
 https://en.wikipedia.org/wiki/Electronic_meeting_system
@@ -107,6 +116,8 @@ ThinkLets
 Group Interaction with Group Support Systems (GSS)"
 `<http://www.academia.edu/259943/ThinkLets_Achieving_Predictable_Repeatable_Patterns_of_Group_Interaction_With_Group_Support_Systems_GSS_>`__
 
+https://scholar.google.com/scholar?q=thinklets
+
 
 .. index:: The same page
 .. _the-same-page:
@@ -123,7 +134,11 @@ The same page
 * `<https://www.bing.com/search?q="on+the+same+page">`__
 * `<https://search.yahoo.com/search?p="on+the+same+page">`__
 * https://wrdrd.com/docs/consulting/team-building#the-same-page
+  (:ref:`Sphinx`, :ref:`Git`
+  
+  * Source, Edit, History, Annotate sidebar links
 
+    https://pypi.python.org/pypi/sphinxcontrib-srclinks
 
 
 .. index:: Collaboration Checklist
