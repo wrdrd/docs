@@ -6684,12 +6684,21 @@ to partition process workloads all running under one kernel.</p>
 <li>A Dockerfile can subclass another Dockerfile (to add, remove, or
 change configuration)</li>
 <li>Dockerfiles support a limited number of commands</li>
-<li>Docker is not a <em class="xref std std-ref">configuration management system</em></li>
+<li>Docker is not intended to be a
+complete <a class="reference internal" href="index.html#configuration-management"><em>configuration management system</em></a></li>
 <li>Ideally, a Docker images requires minimal configuration once built</li>
 <li>Docker images can be hosted by <a class="reference external" href="https://hub.docker.com/">https://hub.docker.com/</a></li>
+<li><code class="docutils literal"><span class="pre">docker</span> <span class="pre">run</span> <span class="pre">-it</span> <span class="pre">ubuntu/15.04</span></code> downloads the image
+from <a class="reference external" href="https://registry.hub.docker.com/_/ubuntu/">https://registry.hub.docker.com/_/ubuntu/</a>,
+creates a new instance (<code class="docutils literal"><span class="pre">docker</span> <span class="pre">ps</span></code>),
+and spawns a root <a class="reference internal" href="#shells"><em>Shell</em></a> with
+a UUID name (by default).</li>
+<li>&#8220;Scheduling&#8221; [redundant] persistent containers that launch on boot
+is not in scope for <a class="reference internal" href="#docker"><em>Docker</em></a></li>
 </ul>
-<p><a class="reference internal" href="#kubernetes"><em>Kubernetes</em></a> is one project which uses Docker to script <a class="reference internal" href="#lxc"><em>LXC</em></a>.</p>
-<p><a class="reference internal" href="#salt"><em>Salt</em></a> can install and manage docker images and containers:</p>
+<p><a class="reference internal" href="#kubernetes"><em>Kubernetes</em></a> is one project which uses Docker to
+schedule redundant <a class="reference internal" href="#lxc"><em>LXC</em></a> containers (in &#8220;Pods&#8221;).</p>
+<p><a class="reference internal" href="#salt"><em>Salt</em></a> can install and manage docker, docker images and containers:</p>
 <ul class="simple">
 <li><a class="reference external" href="https://github.com/saltstack-formulas/docker-formula">https://github.com/saltstack-formulas/docker-formula</a></li>
 <li><a class="reference external" href="https://docs.saltstack.com/en/latest/ref/states/all/salt.states.dockerio.html">https://docs.saltstack.com/en/latest/ref/states/all/salt.states.dockerio.html</a></li>
@@ -9108,7 +9117,7 @@ stripsinglehtml --help
 
 <dl class="function">
 <dt id="wrdrd.tools.crawl.crawl_url">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">crawl_url</code><span class="sig-paren">(</span><em>start_url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x105d92150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#crawl_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.crawl_url" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">crawl_url</code><span class="sig-paren">(</span><em>start_url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x108078150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#crawl_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.crawl_url" title="Permalink to this definition">¶</a></dt>
 <dd><p>Crawl pages starting at <code class="docutils literal"><span class="pre">start_url</span></code></p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -9401,7 +9410,7 @@ a <a class="reference internal" href="#wrdrd.tools.crawl.Link" title="wrdrd.tool
 
 <dl class="function">
 <dt id="wrdrd.tools.crawl.print_frequency_table">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">print_frequency_table</code><span class="sig-paren">(</span><em>frequencies</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x105d92150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#print_frequency_table"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.print_frequency_table" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">print_frequency_table</code><span class="sig-paren">(</span><em>frequencies</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x108078150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#print_frequency_table"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.print_frequency_table" title="Permalink to this definition">¶</a></dt>
 <dd><p>Print a formatted ASCII frequency table</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -9555,7 +9564,7 @@ a <a class="reference internal" href="#wrdrd.tools.crawl.Link" title="wrdrd.tool
 
 <dl class="function">
 <dt id="wrdrd.tools.crawl.wrdcrawler">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">wrdcrawler</code><span class="sig-paren">(</span><em>url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x105d92150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#wrdcrawler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.wrdcrawler" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">wrdcrawler</code><span class="sig-paren">(</span><em>url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x108078150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#wrdcrawler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.wrdcrawler" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fetch and generate a report from the given URL</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
