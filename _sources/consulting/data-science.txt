@@ -258,8 +258,8 @@ https://en.wikipedia.org/wiki/Outline_of_mathematics
 .. index:: Math Courses
 .. _math courses:
 
-Courses
-~~~~~~~
+Math Courses
+~~~~~~~~~~~~~~
 * https://www.khanacademy.org/math/arithmetic
 * https://www.khanacademy.org/math/pre-algebra
 * https://www.khanacademy.org/math/algebra-basics
@@ -269,7 +269,9 @@ Courses
 * https://www.khanacademy.org/math/algebra2
 * https://www.khanacademy.org/math/trigonometry
 * https://www.khanacademy.org/math/probability
-* https://www.khanacademy.org/math/linear-algebra
+* :ref:`Linear Algebra <linear-algebra>`
+* :ref:`Calculus`
+* :ref:`Information Theory <information-theory>`
 * https://www.khanacademy.org/math/recreational-math
 * https://www.khanacademy.org/math/competition-math
 * https://www.class-central.com/subject/maths
@@ -354,6 +356,10 @@ https://en.wikipedia.org/wiki/Probability_theory
 Linear Algebra
 ~~~~~~~~~~~~~~~~
 https://en.wikipedia.org/wiki/Linear_algebra
+
+* https://www.khanacademy.org/math/linear-algebra
+* http://www.ulaff.net/
+* https://github.com/ULAFF/notebooks/ (:ref:`IPython` notebooks)
 
 
 .. index:: Calculus
