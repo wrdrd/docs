@@ -663,6 +663,8 @@ https://en.wikipedia.org/wiki/Three.js
 
 http://sigmajs.org/
 
+http://www.pyqtgraph.org/ (OpenGL)
+
 https://github.com/josephmisiti/awesome-machine-learning
 
 See: :ref:`Semantic Web Tools <semantic-web-tools>`
