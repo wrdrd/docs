@@ -269,11 +269,6 @@ Courses
 * https://www.khanacademy.org/math/algebra2
 * https://www.khanacademy.org/math/trigonometry
 * https://www.khanacademy.org/math/probability
-* https://www.khanacademy.org/math/precalculus
-* https://www.khanacademy.org/math/differential-calculus
-* https://www.khanacademy.org/math/integral-calculus
-* https://www.khanacademy.org/math/multivariable-calculus
-* https://www.khanacademy.org/math/differential-equations
 * https://www.khanacademy.org/math/linear-algebra
 * https://www.khanacademy.org/math/recreational-math
 * https://www.khanacademy.org/math/competition-math
@@ -367,6 +362,18 @@ https://en.wikipedia.org/wiki/Linear_algebra
 Calculus
 ~~~~~~~~~~
 https://en.wikipedia.org/wiki/Calculus
+
+* https://www.khanacademy.org/math/precalculus
+* https://www.khanacademy.org/math/differential-calculus
+* https://www.khanacademy.org/math/integral-calculus
+* https://www.khanacademy.org/math/multivariable-calculus
+* https://www.khanacademy.org/math/differential-equations
+* https://en.wikipedia.org/wiki/AP_Calculus
+* http://apcentral.collegeboard.com/apc/public/courses/teachers_corner/2178.html
+* http://www.sagemath.org/calctut/
+* http://nbviewer.ipython.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-5-Sympy.ipynb
+* http://scipy-lectures.github.io/advanced/sympy.html#calculus
+* https://www.class-central.com/subject/basic-math-and-calculus
 
 
 .. index:: Statistics
