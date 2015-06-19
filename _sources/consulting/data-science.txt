@@ -641,7 +641,11 @@ https://en.wikipedia.org/wiki/MayaVi
 
 http://bokeh.pydata.org/
 
+* https://github.com/bokeh/bokeh
+
 http://vispy.org/ (OpenGL)
+
+* https://github.com/vispy/vispy
 
 http://nbviewer.ipython.org/github/jakevdp/OpenVisConf2014/blob/master/PythonVis.ipynb
 
@@ -665,6 +669,13 @@ https://en.wikipedia.org/wiki/Three.js
 http://sigmajs.org/
 
 http://www.pyqtgraph.org/ (OpenGL)
+
+http://pandas.pydata.org/pandas-docs/stable/ecosystem.html#visualization
+
+https://github.com/quantopian/qgrid (SlickGrid w/ IPython Notebook (
+Jupyter Notebook))
+
+https://westurner.org/tools/
 
 https://github.com/josephmisiti/awesome-machine-learning
 
