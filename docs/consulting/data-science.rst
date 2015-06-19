@@ -617,6 +617,7 @@ Data Visualization
 https://en.wikipedia.org/wiki/Data_visualization
 
 * http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram
+* http://datascienceassn.org/content/fourth-bubble-data-science-venn-diagram-social-sciences
 
 
 Data Visualization Tools
