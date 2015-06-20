@@ -379,7 +379,7 @@ https://en.wikipedia.org/wiki/Calculus
 * http://www.sagemath.org/calctut/
 * http://nbviewer.ipython.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-5-Sympy.ipynb
 * http://scipy-lectures.github.io/advanced/sympy.html#calculus
-* https://www.class-central.com/subject/basic-math-and-calculus
+* https://www.class-central.com/subject/calculus-and-mathematical-analysis
 
 
 .. index:: Statistics

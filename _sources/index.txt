@@ -22,6 +22,7 @@ WRD R&D Documentation
    consulting/knowledge-engineering
    consulting/entrepreneurship
    consulting/education-technology
+   consulting/art-design
    consulting/team-building
    consulting/collaboration-plan
    tools/index
