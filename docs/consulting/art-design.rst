@@ -49,28 +49,29 @@ See: :ref:`Web Design <web-design>`
 .. _gimp:
 
 GIMP
-*****
+~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/GIMP
 | Homepage: http://www.gimp.org/
 | Download: http://www.gimp.org/downloads/
-| Source: 
+| Source: http://www.gimp.org/source/
+| Source: git git://git.gnome.org/gimp
 | Docs: http://www.gimp.org/docs/
 | Docs: http://docs.gimp.org/2.8/en/
 | Docs: http://wiki.gimp.org/wiki/Main_Page
 | Docs: http://wiki.gimp.org/wiki/Hacking:Developer_FAQ
 
-* http://registry.gimp.org/popular
-
 GIMP (GNU Image Manipulation Program) is an
-extensible :ref:`Open Source`
+extensible :ref:`Open Source <open-source>`
 raster image editor (PNG, JPG, GIF, GIMP ``.xcf``).
+
+* GIMP plugins are shared at http://registry.gimp.org/popular
 
 
 .. index:: Inkscape
 .. _inkscape:
 
 Inkscape
-*********
+~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/Inkscape
 | Homepage: https://inkscape.org/en/
 | Source: https://launchpad.net/~inkscape.dev
@@ -81,8 +82,12 @@ Inkscape
 | Docs: https://inkscape.org/en/doc/keys091.html
 | Docs: https://inkscape.org/en/doc/inkscape-man.html
 
-Inkscape is an :ref:`Open Source` vector graphics (:ref:`SVG`
+Inkscape is an :ref:`Open Source <open-source>` vector graphics (:ref:`SVG`
 :ref:`XML`) editor.
+
+:ref:`SVG` graphics can scale to very large and very small
+resolutions (e.g. 1080P, 4K, 8K, HD, 1920px, poster-size)
+and remain smooth.
 
 * https://en.wikipedia.org/wiki/Scalable_Vector_Graphics
 * http://wiki.inkscape.org/wiki/index.php/Extension_repository
@@ -113,7 +118,7 @@ Blender
 | Docs: https://www.blender.org/manual/
 | Docs: https://www.blender.org/api/250PythonDoc/
 
-Blender is an :ref:`Open Source` 3D computer graphics software
+Blender is an :ref:`Open Source <open-source>` 3D computer graphics software
 for movies, apps, and games
 written in :ref:`C`, :ref:`C++`, and :ref:`Python`.
 
@@ -196,8 +201,91 @@ Video Production
 
 * https://en.wikipedia.org/wiki/Video_editing_software
 * https://en.wikipedia.org/wiki/Comparison_of_video_editing_software
+* https://en.wikipedia.org/wiki/Category:Video_editing_software
+* https://en.wikipedia.org/wiki/Category:Free_video_software
 
 See: :ref:`visual composition`, :ref:`screen captures`
+
+
+.. index:: Cinelerra
+.. _cinelerra:
+
+Cinelerra
+~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Cinelerra
+| Homepage: http://cinelerra.org/
+| Source: git git://git.cinelerra-cv.org/CinelerraCV.git 
+| Docs: http://cinelerra-cv.org/docs.php
+| Docs: http://cinelerra-cv.org/docs/cinelerra_cv_manual_en.html
+
+
+
+.. index:: CinePaint
+.. _cinepaint:
+
+CinePaint
+~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/CinePaint
+| Homepage: http://www.cinepaint.org/
+| Homepage: http://sourceforge.net/projects/cinepaint/
+| Source: http://sourceforge.net/p/cinepaint/code/
+
+CinePaint is a Free and :ref:`Open Source <open-source>` tool
+for hand-painting video frames.
+
+
+.. index:: FFmpeg
+.. _ffmpeg:
+
+FFmpeg
+~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/FFmpeg
+| Homepage: https://www.ffmpeg.org/
+| Download: https://www.ffmpeg.org/download.html
+| Source: git git://source.ffmpeg.org/ffmpeg.git
+| Docs: https://www.ffmpeg.org/documentation.html
+| Docs: http://www.itbroadcastanddigitalcinema.com/ffmpeg_howto.html
+
+FFmpeg is an audio/video transcoding library
+with support for very many codecs
+and a great command line interface (``ffmpeg``).
+
+* FFmpeg can be used to rescale audio/video to a different resolution
+* FFmpeg can be used to (re-)encode audio/video
+
+
+.. index:: HandBrake
+.. _handbrake:
+
+HandBrake
+~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/HandBrake
+| Homepage: https://handbrake.fr/
+| Download: https://handbrake.fr/downloads.php
+
+HandBrake is an offline batch GUI audio/video transcoding tool.
+
+* HandBrake can use :ref:`FFmpeg` for transcoding
+* HandBrake helps with rescaling a video for
+  e.g. mobile devices with limited bandwidth
+  ahead-of-time
+
+
+.. index:: Lightworks
+.. _lightworks:
+
+Lightworks
+~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Lightworks
+| Homepage: http://www.lwks.com/
+| Download: http://www.lwks.com/index.php?option=com_lwks&view=download&Itemid=206
+| Source: 
+| Docs: http://www.lwks.com/index.php?option=com_lwks&view=download&Itemid=206&tab=4
+| Docs: http://www.lwks.com/index.php?option=com_content&view=article&id=162&Itemid=246
+
+Lightworks is a professional video editing software tool.
+
+* Lightworks is included in :ref:`DreamStudio`
 
 
 .. index:: Screenwriting
@@ -213,6 +301,24 @@ Screenwriting
 See: :ref:`Small Business > Concept <concept>`
 
 
+.. index:: Fountain.io
+.. _fountain.io:
+
+Fountain.io
+~~~~~~~~~~~~~
+| Homepage: http://fountain.io/
+| Docs: http://fountain.io/faq
+| Docs: http://fountain.io/syntax
+| Docs: http://fountain.io/howto
+| Source: git https://github.com/nyousefi/Fountain
+
+Fountain.io is a Lightweight Markup Language similar to
+:ref:`Markdown` with extensions for writing
+formatted screenplays with e.g. 
+Scene Headings, Characters, Action (scene description; cues), Dialogue.
+
+ 
+
 .. index:: Songwriting
 .. _songwriting:
 
@@ -222,30 +328,28 @@ Songwriting
 | https://en.wikipedia.org/wiki/Lyrics
 
 
+.. index:: Poetry
+.. _poetry:
+
+Poetry
+~~~~~~~
+| https://en.wikipedia.org/wiki/Poetry
+
+* `<https://en.wikipedia.org/wiki/Rhythm>`__
+* `<https://en.wikipedia.org/wiki/Metre_(poetry)>`__
+* https://en.wikipedia.org/wiki/Consonance_and_dissonance
+
 
 .. index:: Musical Composition
 .. _musical composition:
 
 Musical Composition
 ********************
+| https://en.wikipedia.org/wiki/Musical_composition
+| https://en.wikipedia.org/wiki/Orchestration
 | https://en.wikipedia.org/wiki/Composer
-| https://en.wikipedia.org/wiki/Hook_(music)
-
-.. index:: Sound Production
-.. _sound production:
-
-Sound Production
-*****************
-| https://en.wikipedia.org/wiki/Sound
-| https://en.wikipedia.org/wiki/Acoustical_engineering
-| https://en.wikipedia.org/wiki/Sound_recording_and_reproduction
-
-
-.. index:: Media Tools
-.. _media tools:
-
-Media Tools
-*************
+| https://en.wikipedia.org/wiki/Music_theory
+| `<https://en.wikipedia.org/wiki/Hook_(music)>`__
 
 
 .. index:: Hookpad
@@ -263,6 +367,104 @@ Hookpad is a web-based tool for :ref:`Musical Composition`
 * http://www.hooktheory.com/hookpad/new
 
 
+.. index:: Hydrogen
+.. _hydrogen:
+
+Hydrogen
+~~~~~~~~~
+| Wikipedia: `<https://en.wikipedia.org/wiki/Hydrogen_(software)>`__
+| Homepage: http://hydrogen-music.org/hcms/
+| Source: git https://github.com/hydrogen-music/hydrogen
+| Docs: http://hydrogen-music.org/hcms/node/393
+| Docs: http://hydrogen-music.org/hcms/node/5
+
+Hydrogen is an :ref:`Open Source <open-source>` drum machine
+software with support for JACK, ALSA, MIDI, and drumkits.
+
+* Hydogen is included in :ref:`DreamStudio`.
+
+
+.. index:: Rosegarden
+.. _rosegarden:
+
+Rosegarden
+~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Rosegarden
+| Homepage: http://www.rosegardenmusic.com/
+
+Rosegarden is a Free and :ref:`Open Source <open-source>`
+digital audio workstation for score composition.
+
+    - MIDI and Hydrogen file import
+    - MIDI, Csound, LilyPond and MusicXML file export
+      (including PostScript and PDF output file generation of score)
+
+
+.. index:: Sound Production
+.. _sound production:
+
+Sound Production
+*****************
+| https://en.wikipedia.org/wiki/Sound
+| https://en.wikipedia.org/wiki/Acoustical_engineering
+| https://en.wikipedia.org/wiki/Sound_recording_and_reproduction
+
+https://en.wikipedia.org/wiki/Comparison_of_free_software_for_audio
+
+https://en.wikipedia.org/wiki/List_of_Linux_audio_software
+
+https://en.wikipedia.org/wiki/Comparison_of_digital_audio_editors
+
+
+
+
+.. index:: Ardour
+.. _ardour:
+
+Ardour
+~~~~~~~
+| Wikipedia: `<https://en.wikipedia.org/wiki/Ardour_(software)>`__
+| Homepage: https://ardour.org/
+| 
+
+Ardour is a Free and :ref:`Open Source <open-source>`
+Digital Audio Workstation (DAW) for multi-track recording,
+editing, and mixing.
+
+* Ardour supports JACK, MIDI sequencing (drum machines), LADSPA, and LV2 
+* Ardour is included in :ref:`Ubuntu Studio`.
+
+
+.. index:: Audacity
+.. _audacity:
+
+Audacity
+~~~~~~~~~~
+| Wikipedia: `<https://en.wikipedia.org/wiki/Audacity_(audio_editor)>`__
+| Homepage: http://audacityteam.org/
+| Download: http://audacityteam.org/download/
+| Download: http://audacityteam.org/download/plugins
+| Source: git https://github.com/audacity/audacity
+| Docs: http://audacityteam.org/help/documentation
+| Docs: http://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page
+| Docs: http://wiki.audacityteam.org/wiki/Plugins
+| Docs: http://wiki.audacityteam.org/wiki/Creating_your_own_Plug-in 
+| Docs: http://wiki.audacityteam.org/wiki/Category:Tutorial
+
+Audacity is a Free and :ref:`Open Source <open-source>`
+sound recording and editing software tool.
+
+* Audacity supports LADSPA, and LV2
+* Audacity is included in :ref:`DreamStudio`, :ref:`Ubuntu Studio`
+
+
+.. index:: Media Tools
+.. _media tools:
+
+Media Tools
+*************
+http://distrowatch.com/search.php?category=Multimedia
+
 .. index:: DreamStudio
 .. index:: Celeum DreamStudio
 .. _dreamstudio:
@@ -271,6 +473,7 @@ DreamStudio
 ~~~~~~~~~~~~~
 | Homepage: http://www.celeum.com/dreamstudio/
 | Source: http://sourceforge.net/projects/dreamstudio/
+| Download: http://sourceforge.net/projects/dreamstudio/files/Celeum_DreamStudio_2015/
 | Download: http://sourceforge.net/projects/dreamstudio/files/latest/download
 | DistroWatch: http://distrowatch.com/table.php?distribution=dreamstudio
 
@@ -292,12 +495,17 @@ Ubuntu Studio
 | Download: https://ubuntustudio.org/download/
 | DistroWatch: http://distrowatch.com/table.php?distribution=ubuntustudio
 | Docs: https://help.ubuntu.com/community/UbuntuStudio
+| Docs: https://ubuntustudio.org/tour/audio/
+| Docs: https://ubuntustudio.org/tour/graphics/
+| Docs: https://ubuntustudio.org/tour/video/
+| Docs: https://ubuntustudio.org/tour/photography/
+| Docs: https://ubuntustudio.org/tour/publishing/
 
 Ubuntu Studio is a distribution of :ref:`Ubuntu` :ref:`Linux`
 with lots of great :ref:`packages`
 and a kernel tuned for media production.
 
-* DreamStudio includes software with a diverse set of
+* Ubuntu Studio includes software with a diverse set of
   all Free and :ref:`Open Source <open-source>` software licenses.
 
 
