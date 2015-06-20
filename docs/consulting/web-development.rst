@@ -170,16 +170,16 @@ See :ref:`Web Standards <web-standards>`
 
 
 
-.. _web-design:
 .. index:: Web Design
+.. _web-design:
 
 Web Design
 ~~~~~~~~~~~
 https://en.wikipedia.org/wiki/Web_design
 
 
-.. _web-layout:
 .. index:: Web Layout
+.. _web-layout:
 
 Web Layout
 +++++++++++
@@ -231,6 +231,8 @@ design tools. It is far more consistent and reproducible to start with
 an HTML web page and a CSS framework and then develop a template from
 there.
 
+.. index:: Screen Captures
+.. _screen captures:
 
 Screen Captures
 ++++++++++++++++
@@ -243,8 +245,18 @@ Features to look for:
 * Capturing the whole page
 * Setting the browser resolution
 
-Some Javascript testing tools and services support taking screen captures
-and movies at various points in a testing workflow.
+Ways to collect screen captures
+and movies at various points in a testing workflow:
+
+* Browser: :ref:`Web Browser <browsers>` 
+  testing tools (e.g. :ref:`Javascript`) 
+* Browser: :ref:`browser extensions`
+* Web Service: multi-platform browser testing grid services
+* Build Script: record the [:ref:`X <X11>`] buffer with the test sequence
+* Local Recording:
+  :ref:`ffmpeg`, :ref:`VLC`, :ref:`CamStudio`
+
+See: :ref:`Video Production`
 
 
 .. index:: Bootstrap
