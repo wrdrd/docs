@@ -71,13 +71,13 @@ Separation of Concerns for Designers of
 Collaboration Systems" Briggs (2009)
 http://aisel.aisnet.org/icis2009/26/
 
-1. Goals
-2. Products
-3. Activities
-4. Patterns of Collaboration
-5. Techniques
-6. Tools
-7. Scripts
+    1. Goals
+    2. Products
+    3. Activities
+    4. Patterns of Collaboration
+    5. Techniques
+    6. Tools
+    7. Scripts
 
 Six Patterns of Collaboration
 +++++++++++++++++++++++++++++++
@@ -85,25 +85,12 @@ Six Patterns of Collaboration
 Collaboration Engineering" Briggs (2006)
 http://aisel.aisnet.org/amcis2006/17/
 
-* Generate
-* Reduce
-* Clarify
-* Organize
-* Evaluate
-* Build Consensus
-
-
-
-
-Group Support Systems
-++++++++++++++++++++++
-https://en.wikipedia.org/wiki/Electronic_meeting_system
-
-https://en.wikipedia.org/wiki/List_of_collaborative_software
-
-* https://en.wikipedia.org/wiki/Etherpad#Etherpad_Lite
-
-  * https://en.wikipedia.org/wiki/Operational_transformation
+    - Generate
+    - Reduce
+    - Clarify
+    - Organize
+    - Evaluate
+    - Build Consensus
 
 
 .. index:: ThinkLets
@@ -117,6 +104,56 @@ Group Interaction with Group Support Systems (GSS)"
 `<http://www.academia.edu/259943/ThinkLets_Achieving_Predictable_Repeatable_Patterns_of_Group_Interaction_With_Group_Support_Systems_GSS_>`__
 
 https://scholar.google.com/scholar?q=thinklets
+
+
+.. index:: Collaborative Software
+.. _collaborative-software:
+
+Collaborative Software
+------------------------
+| https://en.wikipedia.org/wiki/Collaborative_software
+| https://en.wikipedia.org/wiki/Collaborative_software#Classification
+
+Classifying Collaborative Software
+
+    + Core capabilities
+    + Data contributions
+    + Data relationships
+    + Data limits
+    + Data persistence
+    + Actions
+    + Synchronicity
+    + Identifiability
+    + Access Controls
+    + Roles
+    + Awareness indicators
+    + Interruption alerts
+    + Instructions
+
+* "Toward a Taxonomy of Groupware Technologies" (2008)
+
+  https://books.google.com/books?id=ONRsCQAAQBAJ&pg=PA309
+
+  https://www.worldcat.org/title/groupware-design-implementation-and-use-14th-international-workshop-criwg-2008-omaha-ne-usa-september-14-18-2008-revised-selected-papers/oclc/760695691
+
+  
+* "Classification of Collaboration Technology" (2013)
+
+  https://books.google.com/books?id=gTR0AgAAQBAJ&pg=PA44
+
+  https://www.worldcat.org/title/collaboration-systems-concept-value-and-use/oclc/867930692
+
+See also:
+
+* :ref:`Schema.org` 
+
+  * http://schema.org/Action
+  * http://schema.org/ReactAction
+  * http://schema.org/comment -> http://schema.org/Comment
+  * http://schema.org/review -> http://schema.org/Review
+  * http://schema.org/InteractionCounter
+  * http://schema.org/docs/full.html
+
 
 
 .. index:: The same page
@@ -141,11 +178,35 @@ The same page
     https://pypi.python.org/pypi/sphinxcontrib-srclinks
 
 
+
+
+Group Support Systems
+++++++++++++++++++++++
+https://en.wikipedia.org/wiki/Electronic_meeting_system
+
+https://en.wikipedia.org/wiki/List_of_collaborative_software
+
+* https://en.wikipedia.org/wiki/Etherpad#Etherpad_Lite
+
+  * https://en.wikipedia.org/wiki/Operational_transformation
+
+
+.. index:: Text Templates
+.. _text-templates:
+
+Text Templates
++++++++++++++++++
+* [ ] Collaboration with Etherpad Lite and Thinklets:
+  "As ____, we need to ____ because _____"
+  (copy from the *Prompts* at the top)
+
+
+
 .. index:: Collaboration Checklist
 .. _collaboration-checklist:
 
 Collaboration Checklist
-+++++++++++++++++++++++++
+-------------------------
 
 * [X] Read https://wrdrd.com/docs/consulting/team-building
 * [ ] Collaboration Plan (`Seven Layer Model of Collaboration`_)
@@ -198,16 +259,6 @@ Collaboration Checklist
         + criteria:z = 5
         + A = {x, y}, B = {y,z}, C = {x,y,z}
         + A = 500, B = 105, C = 505
-
-
-.. index:: Text Templates
-.. _text-templates:
-
-Text Templates
-+++++++++++++++++
-* [ ] Collaboration with Etherpad Lite and Thinklets:
-  "As ____, we need to ____ because _____"
-  (copy from the *Prompts* at the top)
 
 
 See also:
