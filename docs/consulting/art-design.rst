@@ -1266,10 +1266,11 @@ CDN Services:
 
 * Akamai (OpenStack)
 * Amazon CloudFront (AWS)
-* Fastly: GitHub Pages, :ref:`PyPI`
 * CDNJS (free): https://cdnjs.com/libraries
 * CloudFlare (free plan)
-* Rackspace CloudFiles
+* Fastly: GitHub Pages, :ref:`PyPI`
+* Google: https://developers.google.com/speed/libraries/
+* Rackspace CloudFiles (:ref:`OpenStack` Swift)
 
 CDN APIs
 
