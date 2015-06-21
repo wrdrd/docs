@@ -58,9 +58,22 @@ Jupyter and Education
 
   https://github.com/jupyter/jupyter-drive
 
+* Jupyter notebooks are great for taking notes
+
+  https://github.com/notablemind/notablemind
+
 * Per-student, per-class, per-project :ref:`Docker` containers (and folders)
 
-See: :ref:`Python`, :ref:`awesome-python-testing`
+  https://github.com/ipython/ipython/wiki/Install:-Docker
+
+  https://github.com/jupyter/jupyterhub/wiki/Spawners
+
+
+See: :ref:`Computer Science <computer-science>`,
+:ref:`Data Science <data-science>`,
+:ref:`Software Development <software-development>`,
+:ref:`Python`,
+:ref:`awesome-python-testing`
 
 
 Knowledge Engineering
