@@ -1438,7 +1438,7 @@ which enables integration and reuse with a number of media players.</p>
 <p>ProjectM is an <a class="reference internal" href="open-source#open-source"><em>Open Source</em></a> implementation
 of <a class="reference internal" href="#milkdrop"><em>MilkDrop</em></a> with <a class="reference internal" href="#opengl"><em>OpenGL</em></a>.</p>
 <ul class="simple">
-<li><em class="xref std std-ref">MilkDrop Presets</em> work with ProjectM</li>
+<li><a class="reference internal" href="#milkdrop-presets"><em>MilkDrop Presets</em></a> work with ProjectM</li>
 <li>ProjectM is available for <a class="reference internal" href="../tools/index#linux"><em>Linux</em></a>, Unix</li>
 <li>ProjectM is available for <a class="reference internal" href="../tools/index#ios"><em>iOS</em></a> and <a class="reference internal" href="../tools/index#android"><em>Android</em></a></li>
 </ul>
@@ -1513,7 +1513,7 @@ generally under a key, URN, or URI:</p>
 <div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/New_media">https://en.wikipedia.org/wiki/New_media</a></div>
 </div>
 <ul class="simple">
-<li>New Web <a class="reference internal" href="#media"><em>Media</em></a> (<em class="xref std std-ref">Web Content</em>)
+<li>New Web <a class="reference internal" href="#media"><em>Media</em></a> (<a class="reference internal" href="web-development#web-content"><em>Web Content</em></a>)
 are shared through <a class="reference internal" href="knowledge-engineering#web-standards"><em>web standards</em></a>
 like TCP/IP, <a class="reference internal" href="knowledge-engineering#http"><em>HTTP</em></a>, <a class="reference internal" href="knowledge-engineering#html"><em>HTML</em></a>, and <a class="reference internal" href="#webrtc"><em>WebRTC</em></a></li>
 <li>Streaming a video with seek and rewind is a bit different
@@ -1527,17 +1527,17 @@ in <code class="docutils literal"><span class="pre">GET</span></code> requests</
 </li>
 <li>Web scale audio / video requires less bandwidth
 when efficiently distributed:<ul>
-<li>Through geodistributed caching with a <em class="xref std std-ref">CDN</em></li>
-<li>Through a file / stream distribution network:<ul>
+<li>Through geodistributed caching with a <a class="reference internal" href="#cdn"><em>CDN</em></a></li>
+<li>Through a file / stream distribution / caching / archiving network:<ul>
 <li><a class="reference internal" href="#bittorrent"><em>BitTorrent</em></a></li>
-<li><em class="xref std std-ref">SDN</em></li>
+<li><em class="xref std std-ref">NDN</em></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 <span class="target" id="index-81"></span><div class="section" id="cdn">
-<span id="index-82"></span><h3>CDN<a class="headerlink" href="#cdn" title="Permalink to this headline">¶</a></h3>
+<span id="index-82"></span><span id="id74"></span><h3>CDN<a class="headerlink" href="#cdn" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Content_delivery_network">https://en.wikipedia.org/wiki/Content_delivery_network</a></div>
 <div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/Content_delivery_network#Notable_content_delivery_service_providers">https://en.wikipedia.org/wiki/Content_delivery_network#Notable_content_delivery_service_providers</a></div>
@@ -1546,9 +1546,28 @@ when efficiently distributed:<ul>
 <p>A CDN (&#8220;Content Delivery Network&#8221;) is a service and infrastructure
 designed to serve content to large numbers of people,
 often from many different place.</p>
+<p>CDN Services:</p>
+<ul class="simple">
+<li>Akamai (OpenStack)</li>
+<li>Amazon CloudFront (AWS)</li>
+<li>Fastly: GitHub Pages, <a class="reference internal" href="../tools/index#pypi"><em>PyPI</em></a></li>
+<li>CDNJS (free): <a class="reference external" href="https://cdnjs.com/libraries">https://cdnjs.com/libraries</a></li>
+<li>CloudFlare (free plan)</li>
+<li>Rackspace CloudFiles</li>
+</ul>
+<p>CDN APIs</p>
+<ul>
+<li><p class="first"><a class="reference internal" href="../tools/index#libcloud"><em>Libcloud</em></a> Object Storage API: <a class="reference external" href="http://libcloud.readthedocs.org/en/latest/supported_providers.html#object-storage">http://libcloud.readthedocs.org/en/latest/supported_providers.html#object-storage</a></p>
+</li>
+<li><p class="first"><a class="reference internal" href="../tools/index#openstack"><em>OpenStack</em></a> Poppy (CDN API): <a class="reference external" href="https://wiki.openstack.org/wiki/Poppy">https://wiki.openstack.org/wiki/Poppy</a></p>
+</li>
+<li><p class="first">Ceph Object Gateway: Amazon S3 API and <a class="reference internal" href="../tools/index#openstack"><em>OpenStack</em></a> Swift API</p>
+<p><a class="reference external" href="http://ceph.com/docs/next/radosgw/">http://ceph.com/docs/next/radosgw/</a></p>
+</li>
+</ul>
 </div>
 <div class="section" id="bittorrent">
-<span id="index-83"></span><span id="id74"></span><h3>BitTorrent<a class="headerlink" href="#bittorrent" title="Permalink to this headline">¶</a></h3>
+<span id="index-83"></span><span id="id75"></span><h3>BitTorrent<a class="headerlink" href="#bittorrent" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/BitTorrent">https://en.wikipedia.org/wiki/BitTorrent</a></div>
 <div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/Comparison_of_BitTorrent_tracker_software">https://en.wikipedia.org/wiki/Comparison_of_BitTorrent_tracker_software</a></div>
@@ -1614,7 +1633,7 @@ when no-one is online).</p>
 can be shared over BitTorrent all the same.</p>
 </div>
 <div class="section" id="debtorrent">
-<span id="index-84"></span><span id="id75"></span><h4>Debtorrent<a class="headerlink" href="#debtorrent" title="Permalink to this headline">¶</a></h4>
+<span id="index-84"></span><span id="id76"></span><h4>Debtorrent<a class="headerlink" href="#debtorrent" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="https://wiki.debian.org/DebTorrent">https://wiki.debian.org/DebTorrent</a></div>
 <div class="line">Standard: <a class="reference external" href="https://wiki.debian.org/DebTorrent/Protocol">https://wiki.debian.org/DebTorrent/Protocol</a></div>
@@ -1633,14 +1652,14 @@ echo &#39;deb debtorrent://localhost:9988/foo distro main&#39; | \
 </div>
 </div>
 <div class="section" id="named-data-networking">
-<span id="id76"></span><h3>Named Data Networking<a class="headerlink" href="#named-data-networking" title="Permalink to this headline">¶</a></h3>
+<span id="id77"></span><h3>Named Data Networking<a class="headerlink" href="#named-data-networking" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Named_data_networking">https://en.wikipedia.org/wiki/Named_data_networking</a></div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="steam">
-<span id="index-85"></span><span id="id77"></span><h3>Steam<a class="headerlink" href="#steam" title="Permalink to this headline">¶</a></h3>
+<span id="index-85"></span><span id="id78"></span><h3>Steam<a class="headerlink" href="#steam" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Steam_(software)">https://en.wikipedia.org/wiki/Steam_(software)</a></div>
 </div>
@@ -1654,7 +1673,7 @@ more local peers
 (e.g. everyone at the LAN party purchases the game)</li>
 </ul>
 <div class="section" id="kerbal-space-program">
-<span id="index-86"></span><span id="id78"></span><h4>Kerbal Space Program<a class="headerlink" href="#kerbal-space-program" title="Permalink to this headline">¶</a></h4>
+<span id="index-86"></span><span id="id79"></span><h4>Kerbal Space Program<a class="headerlink" href="#kerbal-space-program" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Kerbal_Space_Program">https://en.wikipedia.org/wiki/Kerbal_Space_Program</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://kerbalspaceprogram.com/">https://kerbalspaceprogram.com/</a></div>
@@ -1682,7 +1701,7 @@ and will affect the way a ship flies (or doesn&#8217;t).</p>
 </div>
 </div>
 <div class="section" id="tube-sites">
-<span id="index-87"></span><span id="id79"></span><h3>Tube Sites<a class="headerlink" href="#tube-sites" title="Permalink to this headline">¶</a></h3>
+<span id="index-87"></span><span id="id80"></span><h3>Tube Sites<a class="headerlink" href="#tube-sites" title="Permalink to this headline">¶</a></h3>
 <p>Fueled by the dramatic growth of YouTube,
 the term &#8220;Tube Site&#8221; refers to any of a number of sites
 serving (seekable) video;
@@ -1704,7 +1723,7 @@ and <a class="reference internal" href="#mpeg-dash"><em>MPEG-DASH</em></a>.</p>
 </ul>
 <span class="target" id="index-88"></span></div>
 <div class="section" id="http-live-streaming">
-<span id="index-89"></span><span id="id80"></span><h3>HTTP Live Streaming<a class="headerlink" href="#http-live-streaming" title="Permalink to this headline">¶</a></h3>
+<span id="index-89"></span><span id="id81"></span><h3>HTTP Live Streaming<a class="headerlink" href="#http-live-streaming" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/HTTP_Live_Streaming">https://en.wikipedia.org/wiki/HTTP_Live_Streaming</a></div>
 <div class="line">Standard: <a class="reference external" href="http://tools.ietf.org/html/draft-pantos-http-live-streaming">http://tools.ietf.org/html/draft-pantos-http-live-streaming</a></div>
@@ -1727,7 +1746,7 @@ over <a class="reference internal" href="knowledge-engineering#http"><em>HTTP</e
 </ul>
 </div>
 <div class="section" id="mpeg-dash">
-<span id="index-90"></span><span id="id81"></span><h3>MPEG-DASH<a class="headerlink" href="#mpeg-dash" title="Permalink to this headline">¶</a></h3>
+<span id="index-90"></span><span id="id82"></span><h3>MPEG-DASH<a class="headerlink" href="#mpeg-dash" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP">https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP</a></div>
 <div class="line">Standard: <a class="reference external" href="http://www.iso.org/iso/home/store/catalogue_ics/catalogue_detail_ics.htm?csnumber=65274">http://www.iso.org/iso/home/store/catalogue_ics/catalogue_detail_ics.htm?csnumber=65274</a></div>
@@ -1751,7 +1770,7 @@ which is not necessary to enjoy MPEG-DASH adaptability.</li>
 </ul>
 </div>
 <div class="section" id="nginx-rtmp-module">
-<span id="index-91"></span><span id="id82"></span><h3>nginx-rtmp-module<a class="headerlink" href="#nginx-rtmp-module" title="Permalink to this headline">¶</a></h3>
+<span id="index-91"></span><span id="id83"></span><h3>nginx-rtmp-module<a class="headerlink" href="#nginx-rtmp-module" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Nginx-rtmp-module">https://en.wikipedia.org/wiki/Nginx-rtmp-module</a></div>
 <div class="line">Source: git <a class="reference external" href="https://github.com/arut/nginx-rtmp-module">https://github.com/arut/nginx-rtmp-module</a></div>
@@ -1772,7 +1791,7 @@ audio / video compression / decompression codecs</li>
 </ul>
 </div>
 <div class="section" id="rtmp">
-<span id="index-92"></span><span id="id83"></span><h3>RTMP<a class="headerlink" href="#rtmp" title="Permalink to this headline">¶</a></h3>
+<span id="index-92"></span><span id="id84"></span><h3>RTMP<a class="headerlink" href="#rtmp" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Real_Time_Messaging_Protocol">https://en.wikipedia.org/wiki/Real_Time_Messaging_Protocol</a></div>
 </div>
@@ -1781,7 +1800,7 @@ originally for Flash; now open source.</p>
 <p><a class="reference internal" href="#webrtc"><em>WebRTC</em></a> solves for all of the RTMP use cases.</p>
 </div>
 <div class="section" id="webrtc">
-<span id="index-93"></span><span id="id84"></span><h3>WebRTC<a class="headerlink" href="#webrtc" title="Permalink to this headline">¶</a></h3>
+<span id="index-93"></span><span id="id85"></span><h3>WebRTC<a class="headerlink" href="#webrtc" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/WebRTC">https://en.wikipedia.org/wiki/WebRTC</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://www.webrtc.org/">http://www.webrtc.org/</a></div>
@@ -1803,10 +1822,10 @@ a plugin to handle <a class="reference internal" href="#webrtc"><em>WebRTC</em><
 </div>
 </div>
 <div class="section" id="media-tools">
-<span id="index-94"></span><span id="id85"></span><h2>Media Tools<a class="headerlink" href="#media-tools" title="Permalink to this headline">¶</a></h2>
+<span id="index-94"></span><span id="id86"></span><h2>Media Tools<a class="headerlink" href="#media-tools" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="http://distrowatch.com/search.php?category=Multimedia">http://distrowatch.com/search.php?category=Multimedia</a></p>
 <span class="target" id="index-95"></span><div class="section" id="dreamstudio">
-<span id="index-96"></span><span id="id86"></span><h3>DreamStudio<a class="headerlink" href="#dreamstudio" title="Permalink to this headline">¶</a></h3>
+<span id="index-96"></span><span id="id87"></span><h3>DreamStudio<a class="headerlink" href="#dreamstudio" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="http://www.celeum.com/dreamstudio/">http://www.celeum.com/dreamstudio/</a></div>
 <div class="line">Source: <a class="reference external" href="http://sourceforge.net/projects/dreamstudio/">http://sourceforge.net/projects/dreamstudio/</a></div>
@@ -1823,7 +1842,7 @@ software licenses.</li>
 </ul>
 </div>
 <div class="section" id="ubuntu-studio">
-<span id="index-97"></span><span id="id87"></span><h3>Ubuntu Studio<a class="headerlink" href="#ubuntu-studio" title="Permalink to this headline">¶</a></h3>
+<span id="index-97"></span><span id="id88"></span><h3>Ubuntu Studio<a class="headerlink" href="#ubuntu-studio" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Ubuntu_Studio">https://en.wikipedia.org/wiki/Ubuntu_Studio</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://ubuntustudio.org/">http://ubuntustudio.org/</a></div>
@@ -1845,7 +1864,7 @@ all Free and <a class="reference internal" href="open-source#open-source"><em>Op
 </ul>
 </div>
 <div class="section" id="vlc">
-<span id="index-98"></span><span id="id88"></span><h3>VLC<a class="headerlink" href="#vlc" title="Permalink to this headline">¶</a></h3>
+<span id="index-98"></span><span id="id89"></span><h3>VLC<a class="headerlink" href="#vlc" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/VLC_media_player">https://en.wikipedia.org/wiki/VLC_media_player</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://www.videolan.org/vlc/">https://www.videolan.org/vlc/</a></div>
