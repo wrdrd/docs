@@ -1287,13 +1287,14 @@ CDN APIs
 BitTorrent
 ~~~~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/BitTorrent
+| https://en.wikipedia.org/wiki/Comparison_of_BitTorrent_clients
 | https://en.wikipedia.org/wiki/Comparison_of_BitTorrent_tracker_software
-|
 
 BitTorrent is a file distribution protocol built on top of :ref:`HTTP`.
 
-* BitTorrent downloads pieces of files over :ref:`HTTP` from **peers**
-  discovered through a tracker or another peer discovery protocol
+* A BitTorrent client downloads pieces of files over :ref:`HTTP`
+  from **peers** discovered through a tracker
+  or another peer discovery protocol (such as a DHT).
 * BitTorrent magnet URIs open in an installed BitTorrent downloading
   program (e.g. BitTorrent, uTorrent,
   Transmission (:ref:`Gnome`),
