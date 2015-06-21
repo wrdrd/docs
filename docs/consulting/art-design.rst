@@ -1320,6 +1320,9 @@ Use Cases:
 * http://academictorrents.com/
 * http://torrent.ubuntu.com:6969
 * https://torrent.fedoraproject.org/
+* ``apt-get install apt-transport-bittorrent``
+
+
 * https://en.wikipedia.org/wiki/Jaydiohead (Jay-Z + Radiohead)
 * http://www.digitaltrends.com/music/thom-yorke-bittorent/
 * https://bundles.bittorrent.com/
@@ -1328,6 +1331,30 @@ Use Cases:
    (which may not just work when I just copy the file to my other device)
    can be shared over BitTorrent all the same.
 
+
+.. index:: Debtorrent
+.. _debtorrent:
+
+------------
+Debtorrent
+------------
+| Homepage: https://wiki.debian.org/DebTorrent
+| Standard: https://wiki.debian.org/DebTorrent/Protocol
+| Source: svn svn://svn.debian.org/debtorrent/debtorrent/trunk
+
+Debtorrent downloads :ref:`Ubuntu` and/or :ref:`Debian` :ref:`DEB`
+:ref:`packages` with :ref:`APT` using :ref:`BitTorrent`.
+
+::
+
+    sudo apt-get install debtorrent
+    echo 'deb debtorrent://localhost:9988/foo distro main' | \
+        sudo tee -a /etc/apt/sources.list
+
+* https://github.com/saltstack-formulas/apt-formula/blob/master/apt/transports/debtorrent.sls
+
+
+.. _named data networking:
 
 Named Data Networking
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1510,7 +1537,7 @@ WebRTC
 | Standard: http://tools.ietf.org/wg/rtcweb/
 | Docs: https://webrtc.github.io/samples/
 
-WebRTC is a :ref:`web standard <web-standards>` for 
+WebRTC is a :ref:`web standard <web-standards>` for
 decentralized or centralized
 streaming of audio, video, and data
 in :ref:`browser <browsers>`,
