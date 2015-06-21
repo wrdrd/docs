@@ -1138,6 +1138,7 @@ ProjectM
 ProjectM is an :ref:`Open Source <open-source>` implementation
 of :ref:`MilkDrop` with :ref:`OpenGL`.
 
+* :ref:`MilkDrop Presets` work with ProjectM
 * ProjectM is available for :ref:`Linux`, Unix
 * ProjectM is available for :ref:`iOS` and :ref:`Android`
 
@@ -1156,7 +1157,7 @@ Resolume
 Resolume Arena and Avenue are realtime DVJ audiovisual production tools
 for live visuals.
 
-* Resolume Arena is designed for multi-projector setups
+* Resolume Arena is designed for **multi-projector setups**
   ("projection mapping", "projection blending")
 
 
