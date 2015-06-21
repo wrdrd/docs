@@ -1,11 +1,11 @@
 
-.. index:: Art/Design
+.. index:: Art & Design
 .. index:: A&D
 .. _a&d:
 
 
 =============
-Art / Design
+Art & Design
 =============
 | https://en.wikipedia.org/wiki/Art
 | https://en.wikipedia.org/wiki/Design
