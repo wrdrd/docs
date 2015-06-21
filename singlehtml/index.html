@@ -5535,13 +5535,13 @@ but &#8220;now accounts for only 6.3% of total traffic in North America&#8221;.<
 <dl class="glossary docutils">
 <dt id="term-bittorrent-torrent-file">BitTorrent Torrent File</dt>
 <dd><p class="first">A BitTorrent <code class="docutils literal"><span class="pre">.torrent</span></code> file includes:</p>
-<ul class="last simple">
+<ul class="simple">
 <li>SHA-1 checksum hashes of all the pieces of all the files</li>
 <li>(optional) a DHT key (for trackerless peer discovery)</li>
 <li>(optional) a list of HTTP <a class="reference internal" href="#term-bittorrent-tracker"><em class="xref std std-term">BitTorrent Tracker</em></a> URLs</li>
-<li>(optional) a list of HTTP <a class="reference internal" href="#term-web-seeding"><em class="xref std std-term">Web Seeds</em></a>.
-<a class="reference external" href="https://en.wikipedia.org/wiki/Torrent_file">https://en.wikipedia.org/wiki/Torrent_file</a></li>
+<li>(optional) a list of HTTP <a class="reference internal" href="#term-web-seeding"><em class="xref std std-term">Web Seeds</em></a>.</li>
 </ul>
+<p class="last"><a class="reference external" href="https://en.wikipedia.org/wiki/Torrent_file">https://en.wikipedia.org/wiki/Torrent_file</a></p>
 </dd>
 <dt id="term-bittorrent-tracker">BitTorrent Tracker</dt>
 <dd>A BitTorrent Tracker maintains a list of recently connected
@@ -5574,7 +5574,7 @@ when no-one is online).</p>
 <li><a class="reference external" href="http://academictorrents.com/">http://academictorrents.com/</a></li>
 <li><a class="reference external" href="http://torrent.ubuntu.com:6969">http://torrent.ubuntu.com:6969</a></li>
 <li><a class="reference external" href="https://torrent.fedoraproject.org/">https://torrent.fedoraproject.org/</a></li>
-<li><code class="docutils literal"><span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">apt-transport-bittorrent</span></code></li>
+<li><a class="reference internal" href="#debtorrent"><em>Debtorrent</em></a></li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Jaydiohead">https://en.wikipedia.org/wiki/Jaydiohead</a> (Jay-Z + Radiohead)</li>
 <li><a class="reference external" href="http://www.digitaltrends.com/music/thom-yorke-bittorent/">http://www.digitaltrends.com/music/thom-yorke-bittorent/</a></li>
 <li><a class="reference external" href="https://bundles.bittorrent.com/">https://bundles.bittorrent.com/</a></li>
@@ -5582,7 +5582,8 @@ when no-one is online).</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">&#8220;Scrambled&#8221; DRM content
-(which may not just work when I just copy the file to my other device)
+(which may or may not just work
+when I just copy the file to my other device)
 can be shared over BitTorrent all the same.</p>
 </div>
 <div class="section" id="debtorrent">
@@ -5592,8 +5593,12 @@ can be shared over BitTorrent all the same.</p>
 <div class="line">Standard: <a class="reference external" href="https://wiki.debian.org/DebTorrent/Protocol">https://wiki.debian.org/DebTorrent/Protocol</a></div>
 <div class="line">Source: svn svn://svn.debian.org/debtorrent/debtorrent/trunk</div>
 </div>
-<p>Debtorrent downloads <a class="reference internal" href="index.html#ubuntu"><em>Ubuntu</em></a> and/or <a class="reference internal" href="index.html#debian"><em>Debian</em></a> <a class="reference internal" href="index.html#deb"><em>DEB</em></a>
-<a class="reference internal" href="index.html#packages"><em>Packages</em></a> with <a class="reference internal" href="index.html#apt"><em>APT</em></a> using <a class="reference internal" href="#bittorrent"><em>BitTorrent</em></a>.</p>
+<p>Debtorrent downloads <a class="reference internal" href="index.html#ubuntu"><em>Ubuntu</em></a> and/or <a class="reference internal" href="index.html#debian"><em>Debian</em></a> <a class="reference internal" href="index.html#apt"><em>APT</em></a>
+<a class="reference internal" href="index.html#deb"><em>DEB</em></a> <a class="reference internal" href="index.html#packages"><em>Packages</em></a> with <a class="reference internal" href="#bittorrent"><em>BitTorrent</em></a>.</p>
+<ul class="simple">
+<li>Debtorrent can efficiently transfer packages to many local
+or remote machines</li>
+</ul>
 <div class="highlight-python"><div class="highlight"><pre>sudo apt-get install debtorrent
 echo &#39;deb debtorrent://localhost:9988/foo distro main&#39; | \
     sudo tee -a /etc/apt/sources.list
@@ -11063,7 +11068,7 @@ stripsinglehtml --help
 
 <dl class="function">
 <dt id="wrdrd.tools.crawl.crawl_url">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">crawl_url</code><span class="sig-paren">(</span><em>start_url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x101544150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#crawl_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.crawl_url" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">crawl_url</code><span class="sig-paren">(</span><em>start_url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10c406150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#crawl_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.crawl_url" title="Permalink to this definition">¶</a></dt>
 <dd><p>Crawl pages starting at <code class="docutils literal"><span class="pre">start_url</span></code></p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -11356,7 +11361,7 @@ a <a class="reference internal" href="#wrdrd.tools.crawl.Link" title="wrdrd.tool
 
 <dl class="function">
 <dt id="wrdrd.tools.crawl.print_frequency_table">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">print_frequency_table</code><span class="sig-paren">(</span><em>frequencies</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x101544150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#print_frequency_table"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.print_frequency_table" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">print_frequency_table</code><span class="sig-paren">(</span><em>frequencies</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10c406150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#print_frequency_table"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.print_frequency_table" title="Permalink to this definition">¶</a></dt>
 <dd><p>Print a formatted ASCII frequency table</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -11510,7 +11515,7 @@ a <a class="reference internal" href="#wrdrd.tools.crawl.Link" title="wrdrd.tool
 
 <dl class="function">
 <dt id="wrdrd.tools.crawl.wrdcrawler">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">wrdcrawler</code><span class="sig-paren">(</span><em>url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x101544150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#wrdcrawler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.wrdcrawler" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">wrdcrawler</code><span class="sig-paren">(</span><em>url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10c406150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#wrdcrawler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.wrdcrawler" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fetch and generate a report from the given URL</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
