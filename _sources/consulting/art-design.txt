@@ -399,14 +399,71 @@ with support for
 written in :ref:`C`, Scheme, and :ref:`Python`
 
 
+.. index:: MuseScore
+.. _musescore:
+
+MuseScore
+~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/MuseScore
+| Homepage:
+
+MuseScore is a Free and :ref:`Open Source <open-source>`
+software tool for writing and engraving
+musical score compositions
+with support for
+:ref:`MIDI`,
+:ref:`MusicXML`
+written in :ref:`C++` and :ref:`Qt`.
+
+* MuseScore can read/write to :ref:`MusicXML`, :ref:`MIDI`, GuitarPro
+* MuseScore can write to PDF, SVG, PNG, PostScript
+* MuseScore can save audio to WAV, FLAC, MP3, OGG
+
+
+.. index:: Musical Notation
+.. _musical notation:
+
+Musical Notation
+~~~~~~~~~~~~~~~~~
+| https://en.wikipedia.org/wiki/Musical_notation
+| https://en.wikipedia.org/wiki/List_of_musical_symbols
+| https://simple.wikipedia.org/wiki/Sheet_music
+| https://en.wikipedia.org/wiki/Sheet_music
+| https://en.wikipedia.org/wiki/Lead_sheet
+| https://en.wikipedia.org/wiki/Chord_chart
+
+
 .. index:: MusicXML
 .. _musicxml:
 
+----------
 MusicXML
-~~~~~~~~~~
+----------
 | Wikipedia: https://en.wikipedia.org/wiki/MusicXML
 | File Extension: ``.xml``, ``.mxl``
-|
+| Homepage: http://www.musicxml.com/
+| Standard: http://www.musicxml.com/for-developers/
+| Standard: http://www.musicxml.com/for-developers/musicxml-dtd/
+| Standard: http://www.musicxml.com/for-developers/musicxml-xsd/
+
+MusicXML is an :ref:`XML` standard for :ref:`musical notation`.
+
+* :ref:`MIDI` can be represented in :ref:`MusicXML`.
+
+
+.. index:: Tablature
+.. _tablature::
+
+----------
+Tablature
+----------
+| Wikipedia: https://en.wikipedia.org/wiki/Tablature
+
+Tablature is :ref:`Musical Notation` mapped onto
+instrument positions (e.g. guitar frets)
+and spaced.
+
+There are many tab formats; ASCII chord diagrams being the most classic.
 
 
 .. index:: Rosegarden
@@ -421,8 +478,25 @@ Rosegarden is a Free and :ref:`Open Source <open-source>`
 digital audio workstation for score composition.
 
     - :ref:`MIDI` and Hydrogen file import
-    - :ref:`MIDI`, Csound, LilyPond and MusicXML file export
+    - :ref:`MIDI`, :ref:`Csound`, :ref:`LilyPond` and :ref:`MusicXML`
+      file export
       (including PostScript and PDF output file generation of score)
+
+
+.. index:: TablEdit
+.. _tabledit:
+
+TablEdit
+~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/TablEdit_Tablature_Editor
+| Homepage: http://www.tabledit.com/
+| Download: http://www.tabledit.com/download/
+| Docs: http://el-kay.com/tabledit/
+| Docs: http://www.tabledit.com/faq/
+| Videos: https://www.youtube.com/user/TablatureEditor
+
+TablEdit is a musical :ref:`tablature` ("tab") :ref:`musical composition`
+tool with support for :ref:`MusicXML`, :ref:`LilyPond`, :ref:`MIDI`.
 
 
 .. index:: Musical Composition
