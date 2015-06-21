@@ -1386,8 +1386,11 @@ Debtorrent
 | Standard: https://wiki.debian.org/DebTorrent/Protocol
 | Source: svn svn://svn.debian.org/debtorrent/debtorrent/trunk
 
-Debtorrent downloads :ref:`Ubuntu` and/or :ref:`Debian` :ref:`DEB`
-:ref:`packages` with :ref:`APT` using :ref:`BitTorrent`.
+Debtorrent downloads :ref:`Ubuntu` and/or :ref:`Debian` :ref:`APT`
+:ref:`DEB` :ref:`packages` with :ref:`BitTorrent`.
+
+* Debtorrent can efficiently transfer packages to many local
+  or remote machines
 
 ::
 
