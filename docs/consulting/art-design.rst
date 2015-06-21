@@ -123,7 +123,7 @@ for movies, apps, and games
 written in :ref:`C`, :ref:`C++`, and :ref:`Python`.
 
 * Blender has a scene graph over time *t*
-* Blender has multi-camera tracking 
+* Blender has multi-camera tracking
 * Blender has a :ref:`Python` API
 
 
@@ -182,7 +182,7 @@ Videography
 ************
 | https://en.wikipedia.org/wiki/Videography
 | https://en.wikipedia.org/wiki/Cinematography
- 
+
 See: :ref:`Visual Composition`
 
 
@@ -214,7 +214,7 @@ Cinelerra
 ~~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/Cinelerra
 | Homepage: http://cinelerra.org/
-| Source: git git://git.cinelerra-cv.org/CinelerraCV.git 
+| Source: git git://git.cinelerra-cv.org/CinelerraCV.git
 | Docs: http://cinelerra-cv.org/docs.php
 | Docs: http://cinelerra-cv.org/docs/cinelerra_cv_manual_en.html
 
@@ -279,13 +279,39 @@ Lightworks
 | Wikipedia: https://en.wikipedia.org/wiki/Lightworks
 | Homepage: http://www.lwks.com/
 | Download: http://www.lwks.com/index.php?option=com_lwks&view=download&Itemid=206
-| Source: 
+| Source:
 | Docs: http://www.lwks.com/index.php?option=com_lwks&view=download&Itemid=206&tab=4
 | Docs: http://www.lwks.com/index.php?option=com_content&view=article&id=162&Itemid=246
 
 Lightworks is a professional video editing software tool.
 
 * Lightworks is included in :ref:`DreamStudio`
+
+
+.. index:: LiVES
+.. _lives:
+
+LiVES
+~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/LiVES
+| Homepage: http://lives-video.com/
+| Download: http://lives-video.com/index.php?do=downloads
+| Download: http://lives-video.com/index.php?do=addons
+| Project: http://sourceforge.net/projects/lives/
+| Source: svn http://svn.code.sf.net/p/lives/code/trunk
+| Docs: http://lives-video.com/index.php?do=documentation
+| Docs: http://lives-video.com/manual/LiVES_manual.html
+| Docs: http://lives-video.com/index.php?do=tutorial-wiki
+| Docs: http://lives-video.com/doxygen/LiVES/files.html
+| Video: http://sourceforge.net/projects/lives/
+
+LiVES is a Free and :ref:`Open Source <open-source>`
+video editing and realtime :ref:`VJing <vj>` software tool
+written in :ref:`C`, :ref:`Perl`, and :ref:`Python`.
+
+* LiVES has full undo and redo ("nondestructive editing")
+* LiVES has strong native support for networked streaming
+* LiVES has support for :ref:`LADSPA`, :ref:`JACK`, :ref:`MIDI`
 
 
 .. index:: Screenwriting
@@ -307,17 +333,19 @@ See: :ref:`Small Business > Concept <concept>`
 Fountain.io
 ~~~~~~~~~~~~~
 | Homepage: http://fountain.io/
+| Source: git https://github.com/nyousefi/Fountain
 | Docs: http://fountain.io/faq
 | Docs: http://fountain.io/syntax
 | Docs: http://fountain.io/howto
-| Source: git https://github.com/nyousefi/Fountain
+| Docs: http://fountain.io/apps
 
 Fountain.io is a Lightweight Markup Language similar to
 :ref:`Markdown` with extensions for writing
-formatted screenplays with e.g. 
+formatted screenplays with e.g.
 Scene Headings, Characters, Action (scene description; cues), Dialogue.
 
- 
+* http://fountain.io/apps lists application plugins and integrations
+
 
 .. index:: Songwriting
 .. _songwriting:
@@ -338,6 +366,63 @@ Poetry
 * `<https://en.wikipedia.org/wiki/Rhythm>`__
 * `<https://en.wikipedia.org/wiki/Metre_(poetry)>`__
 * https://en.wikipedia.org/wiki/Consonance_and_dissonance
+
+
+.. index:: Scorewriting
+.. _scorewriting:
+
+Scorewriting
+***************
+| https://en.wikipedia.org/wiki/Scorewriter
+| https://en.wikipedia.org/wiki/Sheet_music
+| https://en.wikipedia.org/wiki/Comparison_of_scorewriters
+
+
+.. index:: LilyPond
+.. _lilypond:
+
+LilyPond
+~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/LilyPond
+| Homepage: http://www.lilypond.org/
+| Download: http://www.lilypond.org/download.html
+| Source: http://download.linuxaudio.org/lilypond/source/?C=N;O=D
+| Source: git http://git.savannah.gnu.org/r/lilypond.git
+| Docs: http://www.lilypond.org/manuals.html
+| Docs: http://www.lilypond.org/doc/v2.19/Documentation/contributor-big-page.html
+
+LilyPond is a Free and :ref:`Open Source <open-source>`
+software tool for writing and engraving musical score compositions
+with support for
+:ref:`MIDI`,
+:ref:`MusicXML`
+written in :ref:`C`, Scheme, and :ref:`Python`
+
+
+.. index:: MusicXML
+.. _musicxml:
+
+MusicXML
+~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/MusicXML
+| File Extension: ``.xml``, ``.mxl``
+|
+
+
+.. index:: Rosegarden
+.. _rosegarden:
+
+Rosegarden
+~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Rosegarden
+| Homepage: http://www.rosegardenmusic.com/
+
+Rosegarden is a Free and :ref:`Open Source <open-source>`
+digital audio workstation for score composition.
+
+    - :ref:`MIDI` and Hydrogen file import
+    - :ref:`MIDI`, Csound, LilyPond and MusicXML file export
+      (including PostScript and PDF output file generation of score)
 
 
 .. index:: Musical Composition
@@ -379,25 +464,21 @@ Hydrogen
 | Docs: http://hydrogen-music.org/hcms/node/5
 
 Hydrogen is an :ref:`Open Source <open-source>` drum machine
-software with support for JACK, ALSA, MIDI, and drumkits.
+software with support for :ref:`JACK`, ALSA, :ref:`MIDI`, and drumkits.
 
 * Hydogen is included in :ref:`DreamStudio`.
 
 
-.. index:: Rosegarden
-.. _rosegarden:
+.. index:: MIDI
+.. _midi:
 
-Rosegarden
-~~~~~~~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/Rosegarden
-| Homepage: http://www.rosegardenmusic.com/
+MIDI
+~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/MIDI
+| https://en.wikipedia.org/wiki/MIDI_controller
+| https://en.wikipedia.org/wiki/DJ_digital_controller
 
-Rosegarden is a Free and :ref:`Open Source <open-source>`
-digital audio workstation for score composition.
 
-    - MIDI and Hydrogen file import
-    - MIDI, Csound, LilyPond and MusicXML file export
-      (including PostScript and PDF output file generation of score)
 
 
 .. index:: Sound Production
@@ -416,6 +497,30 @@ https://en.wikipedia.org/wiki/List_of_Linux_audio_software
 https://en.wikipedia.org/wiki/Comparison_of_digital_audio_editors
 
 
+.. index:: DJ
+.. _dj:
+
+DJ
+~~~
+| https://en.wikipedia.org/wiki/Disc_jockey
+
+
+.. index:: LADSPA
+.. _ladspa:
+
+LADSPA
+~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/LADSPA
+| Homepage: http://www.ladspa.org/
+
+LADSPA ("Linux Audio Developer's Simple Plugin API") is
+a Free and :ref:`Open Source <open-source>`
+standard for audio filters and effects
+written in :ref:`C`.
+
+* :ref:`Ardour`, :ref:`Audacity`, :ref:`LiVES`,
+  and :ref:`Rosegarden`
+  all support LADSPA
 
 
 .. index:: Ardour
@@ -425,13 +530,13 @@ Ardour
 ~~~~~~~
 | Wikipedia: `<https://en.wikipedia.org/wiki/Ardour_(software)>`__
 | Homepage: https://ardour.org/
-| 
+|
 
 Ardour is a Free and :ref:`Open Source <open-source>`
 Digital Audio Workstation (DAW) for multi-track recording,
 editing, and mixing.
 
-* Ardour supports JACK, MIDI sequencing (drum machines), LADSPA, and LV2 
+* Ardour supports JACK, MIDI sequencing (drum machines), LADSPA, and LV2
 * Ardour is included in :ref:`Ubuntu Studio`.
 
 
@@ -448,7 +553,7 @@ Audacity
 | Docs: http://audacityteam.org/help/documentation
 | Docs: http://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page
 | Docs: http://wiki.audacityteam.org/wiki/Plugins
-| Docs: http://wiki.audacityteam.org/wiki/Creating_your_own_Plug-in 
+| Docs: http://wiki.audacityteam.org/wiki/Creating_your_own_Plug-in
 | Docs: http://wiki.audacityteam.org/wiki/Category:Tutorial
 
 Audacity is a Free and :ref:`Open Source <open-source>`
@@ -456,6 +561,226 @@ sound recording and editing software tool.
 
 * Audacity supports LADSPA, and LV2
 * Audacity is included in :ref:`DreamStudio`, :ref:`Ubuntu Studio`
+
+
+.. index:: JACK
+.. _jack:
+
+JACK
+~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/JACK_Audio_Connection_Kit
+| Homepage: http://jackaudio.org/
+| Download: http://jackaudio.org/downloads/
+| Docs: https://github.com/jackaudio/jackaudio.github.com/wiki
+| Docs: http://jackaudio.org/api/
+
+JACK is a low-latency ("realtime") sound server for :ref:`POSIX`
+operating sytems (:ref:`Linux`, :ref:`OSX`, :ref:`Windows`)
+written in :ref:`C` and :ref:`C++`.
+
+* List of JACK-supporting applications:
+  http://jackaudio.org/applications/
+
+  * :ref:`Ardour`
+  * :ref:`Audacity`
+  * :ref:`LiVES`
+  * :ref:`Mixxx`
+  * :ref:`Blender`
+  * :ref:`VLC`
+
+.. index:: Mixxx
+.. _mixxx:
+
+Mixxx
+~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Mixxx
+| Homepage: http://mixxx.org/
+| Source: git https://github.com/mixxxdj/mixxx
+| Download: http://mixxx.org/download/
+| Download: http://mixxx.org/download/#stable
+| Docs: http://mixxx.org/manual/latest/
+| Docs: http://mixxx.org/wiki/doku.php/
+| Docs: http://mixxx.org/wiki/doku.php/hardware_compatibility#sound_cards
+| Docs: http://mixxx.org/wiki/doku.php/hardware_compatibility#controller_mappings
+
+Mixxx is a Free and :ref:`Open Source <open-source>`
+sound recording, mixing, editing, beatmatching, and production
+software tool
+with :ref:`MIDI` and HID :ref:`DJ` controller support
+(for use with keyboards, analog turntables, CD players)
+written in :ref:`C++`, :ref:`Qt`, :ref:`XML`, and :ref:`Javascript`.
+
+* Mixx has dual and quad decks with scratchable waveforms
+  and beatmatching indicators ("cue points"),
+  time stretching, beat looping, EQ, crossfading
+* Mixx supports timecoded vinyl and CDs
+
+
+.. index:: Audio/Visual Production
+.. _avproduction:
+
+Audio/Visual Production
+*************************
+| https://en.wikipedia.org/wiki/Audiovisual_art
+| `<https://en.wikipedia.org/wiki/Mashup_(video)>`__
+| https://en.wikipedia.org/wiki/Remix_culture
+
+* https://en.wikipedia.org/wiki/Compression_artifact#Artistic_use
+
+
+.. index:: VJ
+.. _vj:
+
+VJ
+~~~
+| https://en.wikipedia.org/wiki/VJing
+| https://en.wikipedia.org/wiki/DVJ
+| https://en.wikipedia.org/wiki/Video_synthesizer
+| https://en.wikipedia.org/wiki/Music_visualization
+| https://en.wikipedia.org/wiki/VJing#Common_technical_setups
+
+
+.. index:: Advanced Visualization Studio
+.. _advanced-visualization-studio:
+
+Advanced Visualization Studio
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Advanced_Visualization_Studio
+| Homepage: http://www.1014.org/code/nullsoft/avs/
+| Source: http://www.1014.org/code/nullsoft/avs/avs_src.zip
+
+Winamp :ref:`Advanced Visualization Studio` is a GUI
+tool for developing music visualization presets.
+
+
+.. index:: Geiss
+.. _geiss:
+
+Geiss
+~~~~~
+| Homepage: http://www.geisswerks.com/geiss/
+| Docs: http://www.geisswerks.com/geiss/shots.html
+
+Geiss is a Winamp plugin for music visualization.
+
+    Windows 95/98/ME/2000/XP/Vista, DirectX 3.0 or later,
+    and a 200 MHz or faster processor.
+    You can also run Geiss on Linux, using Wine.
+
+    To use the plugin, you must have Winamp...
+    if you don't already use Winamp,
+    just download the screensaver version of Geiss.
+
+
+.. index:: libvisual
+.. _libvisual:
+
+libvisual
+~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Libvisual
+| Homepage: http://libvisual.org/
+| Source: git https://github.com/Libvisual/libvisual
+| Docs: http://libvisual.org/docs/
+| Docs: http://libvisual.org/docs/annotated.html
+| Docs: https://github.com/Libvisual/libvisual/wiki
+| Docs: https://github.com/Libvisual/libvisual/wiki/Documentation
+| Docs: https://github.com/Libvisual/libvisual/wiki/Hacking-guide
+
+libvisual is a :ref:`C` API for music visualizations
+which enables integration and reuse with a number of media players.
+
+* https://github.com/Libvisual/libvisual/tree/master/libvisual-plugins/plugins/actor
+* https://github.com/Libvisual/libvisual/tree/master/libvisual-plugins/plugins/input
+* https://github.com/Libvisual/libvisual/tree/master/libvisual-plugins/plugins/morph
+
+
+.. index:: Milkdrop
+.. _milkdrop:
+
+MilkDrop
+~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/MilkDrop
+| Homepage: http://www.geisswerks.com/milkdrop/
+| Source: http://sourceforge.net/projects/milkdrop2/
+| File Extension: ``.milk``
+| Docs: http://www.geisswerks.com/about_milkdrop.html
+| Docs: http://www.geisswerks.com/milkdrop/milkdrop.html
+| Docs: http://www.geisswerks.com/milkdrop/milkdrop_preset_authoring.html
+
+MilkDrop is a visualization tool which runs *MilkDrop presets*
+
+* https://en.wikipedia.org/wiki/MilkDrop
+
+.. index:: MilkDrop Presets
+.. _milkdrop-presets:
+
+-----------------
+MilkDrop Presets
+-----------------
+| Docs: http://www.geisswerks.com/milkdrop/milkdrop_preset_authoring.html
+
+* https://github.com/xbmc/xbmc/tree/master/addons/visualization.milkdrop/presets
+* http://www.theisozone.com/downloads/xbox/homebrew-apps/xbmc-visualizations/
+  (2007, ~9000 presets)
+
+  http://forum.kodi.tv/showthread.php?tid=24616
+
+* http://ghostco.de/milkdrop_pack/
+* http://www.milkdrop.tk/
+* http://forums.winamp.com/forumdisplay.php?f=84
+
+
+.. index:: ProjectM
+.. _projectm:
+
+ProjectM
+~~~~~~~~
+| Homepage: http://projectm.sourceforge.net/
+| Project: http://sourceforge.net/projects/projectm/
+| Source: git git://git.code.sf.net/p/projectm/code
+
+
+ProjectM is an :ref:`Open Source <open-source>` implementation
+of :ref:`MilkDrop` with :ref:`OpenGL`.
+
+* ProjectM is available for Linux, Unix
+* ProjectM is available for iOS and Android
+
+
+.. index:: Resolume
+.. _resolume:
+
+Resolume
+~~~~~~~~
+| Homepage: http://resolume.com
+| Download: http://resolume.com/download/
+| Docs: http://resolume.com/download/
+| Docs: http://resolume.com/software/tutorials
+| Docs: http://resolume.com/manual/en/r4/start
+
+Resolume Arena and Avenue are realtime DVJ audiovisual production tools
+for live visuals.
+
+* Resolume Arena is designed for multi-projector setups
+  ("projection mapping", "projection blending")
+
+
+.. index:: vvvs
+.. _vvvs:
+
+vvvs
+~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Vvvv
+| Homepage: http://vvvv.org/
+| Download: http://vvvv.org/downloads
+| Docs: http://vvvv.org/documentation/documentation
+| Docs: http://vvvv.org/documentation/devvvveloping
+
+vvvv ("v4") is a realtime audiovisual production tool
+for :ref:`Windows` written in Delphi and C# .NET.
+
+
+
 
 
 .. index:: Media Tools
