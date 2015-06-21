@@ -437,6 +437,81 @@ Musical Composition
 | `<https://en.wikipedia.org/wiki/Hook_(music)>`__
 
 
+.. index:: Audio Synthesis
+.. _audio synthesis:
+
+Audio Synthesis
+~~~~~~~~~~~~~~~~~
+| https://en.wikipedia.org/wiki/Audio_synthesis
+| https://en.wikipedia.org/wiki/Synthesizer
+| https://en.wikipedia.org/wiki/Synth
+
+https://en.wikipedia.org/wiki/Comparison_of_audio_synthesis_environments
+
+* https://en.wikipedia.org/wiki/Electronic_musical_instrument
+* https://en.wikipedia.org/wiki/Musical_keyboard
+* https://en.wikipedia.org/wiki/Electric_piano
+* https://en.wikipedia.org/wiki/Digital_piano
+* https://en.wikipedia.org/wiki/Effects_unit ("effects pedal")
+
+
+.. index:: ChucK
+.. _chuck:
+
+ChucK
+~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/ChucK
+| Homepage: http://chuck.cs.princeton.edu/
+| Homepage: http://chuck.stanford.edu/
+| Download: http://chuck.cs.princeton.edu/release/
+| Source: http://chuck.cs.princeton.edu/release/files/
+| Standard: http://chuck.cs.princeton.edu/doc/language/
+| Docs: http://chuck.cs.princeton.edu/doc/
+| Docs: http://chuck.cs.princeton.edu/doc/program/
+| Docs: http://chuck.cs.princeton.edu/doc/program/otfp.html
+
+Chuck is a Free and :ref:`Open Source <open-source>`
+realtime, concurrent :ref:`musical composition` :ref:`audio synthesis`
+programming language.
+
+* ChucK supports "On the Fly Programming":
+  code and loops can be changed while
+  the ChucK program is running
+* ChucK supports :ref:`JACK`
+* ChucK works with :ref:`STK` Synthesis Toolkit
+
+
+.. index:: Csound
+.. _csound:
+
+Csound
+~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Csound
+| Homepage: http://csound.github.io/
+| Project: http://sourceforge.net/projects/csound/
+| Source: git https://github.com/csound/csound
+| Docs: http://csound.github.io/documentation.html
+| Docs: http://csound.github.io/docs/manual/index.html
+| Docs: http://booki.flossmanuals.net/csound/introduction/
+
+Csound is a Free and :ref:`Open Source <open-source>`
+:ref:`musical composition` :ref:`audio synthesis`
+programming library API.
+
+* Csound works on :ref:`Linux`, :ref:`OSX`, :ref:`Windows`,
+  :ref:`Browsers` (emscripten (:ref:`Javascript`)),
+  Chrome Native Client (PNaCl),
+  :ref:`iOS`, and :ref:`Android`
+* Csound supports :ref:`MIDI`
+* Csound ships with the OLPC XO laptops
+
+.. epigraph::
+
+   Csound is simultaneously both 'old school' and 'new school'.
+
+   --- http://booki.flossmanuals.net/csound/introduction/
+
+
 .. index:: Hookpad
 .. _hookpad:
 
@@ -479,6 +554,45 @@ MIDI
 | https://en.wikipedia.org/wiki/DJ_digital_controller
 
 
+.. index:: STK
+.. _stk:
+
+STK
+~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Synthesis_Toolkit
+| Homepage: https://ccrma.stanford.edu/software/stk/
+| Download: https://ccrma.stanford.edu/software/stk/download.html
+| Source: git https://github.com/thestk/stk/
+| Docs: https://ccrma.stanford.edu/software/stk/information.html
+| Docs: https://ccrma.stanford.edu/software/stk/classes.html
+| Docs: https://ccrma.stanford.edu/software/stk/tutorial.html
+
+STK is a realtime audio synthesis
+:ref:`C++` library API
+for simulating physical and synthesized sounds.
+
+* :ref:`ChucK` works with :ref:`STK`
+
+
+.. index:: VST
+.. index:: Virtual Studio Technology
+.. _vst:
+
+VST
+~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Virtual_Studio_Technology
+| Homepage:
+
+VST is a reusable audio transform API for :ref:`Audio Synthesis`
+and :ref:`Sound Production` tools.
+
+* A VST plugin is a :ref:`packaged <packages>` module
+  of instruments, effects, and/or :ref:`MIDI` code
+* A VST host is a program which can run VST plugins
+
+  * :ref:`Ardour`
+  * :ref:`Audacity`
+  * ACID, Adobe Premiere, Cakewalk, FL Studio, Sound Forge, Vegas
 
 
 .. index:: Sound Production
