@@ -130,7 +130,7 @@ https://en.wikipedia.org/wiki/Description_logic (DL; DLP (Description Logic Prog
 * https://en.wikipedia.org/wiki/Description_logic#Notation
 * https://en.wikipedia.org/wiki/Description_logic#Relationship_with_other_logics
 
-Knowledge Base = TBox + ABox 
+Knowledge Base = TBox + ABox
 
 * https://en.wikipedia.org/wiki/TBox (Schema: Class/Property Ontology)
 * https://en.wikipedia.org/wiki/ABox (Facts / Instances)
@@ -558,7 +558,7 @@ Representations / Serializations
 Vocabularies
 
 * :ref:`RDFS`: :ref:`DCMI`, :ref:`SKOS`, :ref:`Schema.org`
-  
+
 Query APIS
 
 * :ref:`SPARQL`, :ref:`LDP`
@@ -570,7 +570,7 @@ Ontologies
 Reasoners
 
 * See:
-  
+
   * :ref:`DL`
   * :ref:`OWL` 2 Profiles
   * :ref:`entailment`
@@ -582,6 +582,19 @@ Reasoners
 Web Standards
 ---------------
 https://en.wikipedia.org/wiki/Web_standards
+
+
+.. index:: IEC
+.. _iec:
+
+IEC
++++++
+| Wikipedia: https://en.wikipedia.org/wiki/International_Electrotechnical_Commission
+| http://www.iec.ch/
+
+IEC ("International Electrotechnical Commission") is a standards body.
+
+List of IEC standards: https://en.wikipedia.org/wiki/List_of_IEC_standards
 
 
 .. index:: IETF
@@ -924,8 +937,8 @@ for representing data as triples.
 
 **Useful Resources**
 
-* "Linked Data Patterns: 
-  A pattern catalogue for modelling, publishing, and 
+* "Linked Data Patterns:
+  A pattern catalogue for modelling, publishing, and
   consuming Linked Data"
   http://patterns.dataincubator.org/book/
 
@@ -1303,7 +1316,7 @@ Challenges:
 * See: :ref:`LDP` for more of a resource-based RESTful API
   that can be implemented on top of
   the graph pattern queries supported by SPARQL.
-  
+
 
 .. index:: Linked Data Platform
 .. index:: LDP
@@ -1374,7 +1387,7 @@ extent).
 DBpedia
 ``````````
 | Homepage: http://wiki.dbpedia.org/Ontology
-| Namespace: http://dbpedia.org/ontology/ 
+| Namespace: http://dbpedia.org/ontology/
 | xmlns: ``@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .``
 | LOVLink: http://dbpedia.org/ontology/
 
@@ -1450,7 +1463,7 @@ QUDT Quantities
 ``````````````````
 Schema
 
-| Standard: http://qudt.org/1.1/schema/quantity 
+| Standard: http://qudt.org/1.1/schema/quantity
 | Namespace: `<http://qudt.org/1.1/schema/quantity#>`__
 | xmlns: ``@prefix quantity: <http://data.nasa.gov/qudt/owl/quantity#> .``
 | Turtle: http://qudt.org/1.1/schema/OSG_quantity-(v1.1).ttl
@@ -1523,8 +1536,8 @@ Examples:
                     "0.0"^^xsd:double ;
             qudt:symbol "s"^^xsd:string ;
             skos:exactMatch <http://dbpedia.org/resource/Second> .
-      # ...  
-  
+      # ...
+
   http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#SecondTime
 
 * ``unit:HorsepowerElectric``
@@ -1558,7 +1571,7 @@ Examples:
             qudt:systemPrefixUnit
                     unit:Hecto , unit:Nano , unit:Tera , unit:Atto , unit:Kilo , unit:Yocto , unit:Yotta , unit:Deci , unit:Zepto , unit:Pico , unit:Femto , unit:Milli , unit:Micro , unit:Zetta , unit:Mega , unit:Centi , unit:Giga , unit:Peta , unit:Deca , unit:Exa ;
             skos:exactMatch <http://dbpedia.org/resource/International_System_of_Units> .
-  
+
 
 .. index:: Semantic Web Tools
 .. _semantic-web-tools:

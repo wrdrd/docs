@@ -633,6 +633,9 @@ https://en.wikipedia.org/wiki/Data_visualization
 * http://datascienceassn.org/content/fourth-bubble-data-science-venn-diagram-social-sciences
 
 
+.. index:: Data Visualization Tools
+.. _data-visualization-tools:
+
 Data Visualization Tools
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -692,4 +695,5 @@ https://westurner.org/tools/
 
 https://github.com/josephmisiti/awesome-machine-learning
 
-See: :ref:`Semantic Web Tools <semantic-web-tools>`
+See: :ref:`Semantic Web Tools <semantic-web-tools>`,
+:ref:`Art & Design <art-design>`
