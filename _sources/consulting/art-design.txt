@@ -319,7 +319,7 @@ CinePaint
 | Homepage: http://sourceforge.net/projects/cinepaint/
 | Source: http://sourceforge.net/p/cinepaint/code/
 
-CinePaint is a Free and :ref:`Open Source <open-source>` tool
+CinePaint is an :ref:`Open Source <open-source>` tool
 for hand-painting video frames.
 
 
@@ -429,7 +429,7 @@ LiVES
 | Docs: http://lives-video.com/doxygen/LiVES/files.html
 | Video: http://sourceforge.net/projects/lives/
 
-LiVES is a Free and :ref:`Open Source <open-source>`
+LiVES is an :ref:`Open Source <open-source>`
 video editing and realtime :ref:`VJing <vj>` software tool
 written in :ref:`C`, :ref:`Perl`, and :ref:`Python`.
 
@@ -542,7 +542,7 @@ LilyPond
 | Docs: http://www.lilypond.org/manuals.html
 | Docs: http://www.lilypond.org/doc/v2.19/Documentation/contributor-big-page.html
 
-LilyPond is a Free and :ref:`Open Source <open-source>`
+LilyPond is an :ref:`Open Source <open-source>`
 software tool for writing and engraving musical score compositions
 with support for
 :ref:`MIDI`,
@@ -562,7 +562,7 @@ MuseScore
 | Docs: https://musescore.org/en/handbook
 | Docs: https://musescore.org/en/development
 
-MuseScore is a Free and :ref:`Open Source <open-source>`
+MuseScore is an :ref:`Open Source <open-source>`
 software tool for writing and engraving
 musical score compositions
 with support for
@@ -634,7 +634,7 @@ Rosegarden
 | Wikipedia: https://en.wikipedia.org/wiki/Rosegarden
 | Homepage: http://www.rosegardenmusic.com/
 
-Rosegarden is a Free and :ref:`Open Source <open-source>`
+Rosegarden is an :ref:`Open Source <open-source>`
 digital audio workstation for score composition.
 
     - :ref:`MIDI` and Hydrogen file import
@@ -704,7 +704,7 @@ ChucK
 | Docs: http://chuck.cs.princeton.edu/doc/program/
 | Docs: http://chuck.cs.princeton.edu/doc/program/otfp.html
 
-Chuck is a Free and :ref:`Open Source <open-source>`
+Chuck is an :ref:`Open Source <open-source>`
 realtime, concurrent :ref:`musical composition` :ref:`audio synthesis`
 programming language.
 
@@ -728,7 +728,7 @@ Csound
 | Docs: http://csound.github.io/docs/manual/index.html
 | Docs: http://booki.flossmanuals.net/csound/introduction/
 
-Csound is a Free and :ref:`Open Source <open-source>`
+Csound is an :ref:`Open Source <open-source>`
 :ref:`musical composition` :ref:`audio synthesis`
 programming library API.
 
@@ -877,7 +877,7 @@ LADSPA
 | Homepage: http://www.ladspa.org/
 
 LADSPA ("Linux Audio Developer's Simple Plugin API") is
-a Free and :ref:`Open Source <open-source>`
+an :ref:`Open Source <open-source>`
 standard for audio filters and effects
 written in :ref:`C`.
 
@@ -913,7 +913,7 @@ Ardour
 | Homepage: https://ardour.org/
 |
 
-Ardour is a Free and :ref:`Open Source <open-source>`
+Ardour is an :ref:`Open Source <open-source>`
 Digital Audio Workstation (DAW) for multi-track recording,
 editing, and mixing.
 
@@ -937,7 +937,7 @@ Audacity
 | Docs: http://wiki.audacityteam.org/wiki/Creating_your_own_Plug-in
 | Docs: http://wiki.audacityteam.org/wiki/Category:Tutorial
 
-Audacity is a Free and :ref:`Open Source <open-source>`
+Audacity is an :ref:`Open Source <open-source>`
 sound recording and editing software tool.
 
 * Audacity supports LADSPA, and LV2
@@ -984,7 +984,7 @@ Mixxx
 | Docs: http://mixxx.org/wiki/doku.php/hardware_compatibility#sound_cards
 | Docs: http://mixxx.org/wiki/doku.php/hardware_compatibility#controller_mappings
 
-Mixxx is a Free and :ref:`Open Source <open-source>`
+Mixxx is an :ref:`Open Source <open-source>`
 sound recording, mixing, editing, beatmatching, and production
 software tool
 with :ref:`MIDI` and HID :ref:`DJ` controller support
@@ -1135,12 +1135,12 @@ ProjectM
 | Project: http://sourceforge.net/projects/projectm/
 | Source: git git://git.code.sf.net/p/projectm/code
 
-
 ProjectM is an :ref:`Open Source <open-source>` implementation
 of :ref:`MilkDrop` with :ref:`OpenGL`.
 
-* ProjectM is available for Linux, Unix
-* ProjectM is available for iOS and Android
+* :ref:`MilkDrop Presets` work with ProjectM
+* ProjectM is available for :ref:`Linux`, Unix
+* ProjectM is available for :ref:`iOS` and :ref:`Android`
 
 
 .. index:: Resolume
@@ -1157,14 +1157,14 @@ Resolume
 Resolume Arena and Avenue are realtime DVJ audiovisual production tools
 for live visuals.
 
-* Resolume Arena is designed for multi-projector setups
+* Resolume Arena is designed for **multi-projector setups**
   ("projection mapping", "projection blending")
 
 
 .. index:: vvvs
 .. _vvvs:
 
-vvvs
+vvvv
 ~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/Vvvv
 | Homepage: http://vvvv.org/
@@ -1190,7 +1190,7 @@ Popcorn Maker
 ~~~~~~~~~~~~~~
 | Homepage: https://popcorn.webmaker.org/
 
-Popcorn Maker is a Free and :ref:`Open Source <open-source>`
+Popcorn Maker is an :ref:`Open Source <open-source>`
 tool for creating multitrack web media presentations.
 
 * Popcorn Maker is a Mozilla Webmaker tool: https://webmaker.org/en-US/tools
@@ -1209,15 +1209,14 @@ other tools support commenting on points or ranges of timecodes
 * SoundCloud, MixCloud
 
 Comments must then be stored on a central server,
-generally under a URN (e.g. a shorturl string key)
-or a URI (URL like https://youtube.com/ ).
+generally under a key, URN, or URI:
 
- * Key: yA-NYmO8dDk
- * URN: urn:x-youtubevideo:yA-NYmO8dDk
- * URL: https://www.youtube.com/watch?v=yA-NYmO8dDk
- * URL: https://www.youtube.com/watch?v=yA-NYmO8dDk&list=PLt_DvKGJ_QLbqVMAiFRzts--Y9xZvxLDG&index=2
- * URL: https://youtu.be/yA-NYmO8dDk
- * ShortURL: https://goo.gl/J4NJXs
+* Key: yA-NYmO8dDk
+* URN: urn:x-youtubevideo:yA-NYmO8dDk
+* URL: https://www.youtube.com/watch?v=yA-NYmO8dDk
+* URL: https://www.youtube.com/watch?v=yA-NYmO8dDk&list=PLt_DvKGJ_QLbqVMAiFRzts--Y9xZvxLDG&index=2
+* URL: https://youtu.be/yA-NYmO8dDk
+* ShortURL: https://goo.gl/J4NJXs
 
 
 .. index:: Web Distribution
@@ -1225,24 +1224,43 @@ or a URI (URL like https://youtube.com/ ).
 
 Web Distribution
 *****************
-| https://en.wikipedia.org/wiki/Content_delivery_network
 | https://en.wikipedia.org/wiki/Streaming_media
+| https://en.wikipedia.org/wiki/New_media
 
-* Web :ref:`Media` are shared through :ref:`web standards <web-standards>`
+* New Web :ref:`Media` (:ref:`Web Content <web-content>`)
+  are shared through :ref:`web standards <web-standards>`
   like TCP/IP, :ref:`HTTP`, :ref:`HTML`, and :ref:`WebRTC`
 * Streaming a video with seek and rewind is a bit different
   than downloading / streaming / buffering a file from beginning to end
+
+  + :ref:`BitTorrent`,
+    :ref:`HTTP Live Streaming`,
+    and :ref:`MPEG-DASH` download segments
+    of files over :ref:`HTTP` by specifying the ``Content-Range:`` header
+    in ``GET`` requests
+
 * Web scale audio / video requires less bandwidth
-  when efficiently distributed
+  when efficiently distributed:
 
-  * Through geodistributed caching with a Content Delivery Network (CDN)
-  * Through a file / stream distribution protocll (e.g. BitTorrent, SDN)
+  * Through geodistributed caching with a :ref:`CDN`
+  * Through a file / stream distribution network:
 
-* :ref:`BitTorrent`,
-  :ref:`HTTP Live Streaming`,
-  and :ref:`MPEG-DASH` download segments
-  of files over :ref:`HTTP` by specifying the ``Content-Range:`` header
-  in ``GET`` requests
+    * :ref:`BitTorrent`
+    * :ref:`SDN`
+
+
+.. index:: CDN
+.. index:: Content Delivery Network
+
+CDN
+~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Content_delivery_network
+| https://en.wikipedia.org/wiki/Content_delivery_network#Notable_content_delivery_service_providers
+| https://en.wikipedia.org/wiki/Cache#Computing
+
+A CDN ("Content Delivery Network") is a service and infrastructure
+designed to serve content to large numbers of people,
+often from many different place.
 
 
 .. index:: BitTorrent
@@ -1254,7 +1272,23 @@ BitTorrent
 | https://en.wikipedia.org/wiki/Comparison_of_BitTorrent_tracker_software
 |
 
-BitTorrent is a file distribution protocol on top of :ref:`HTTP`.
+BitTorrent is a file distribution protocol built on top of :ref:`HTTP`.
+
+* BitTorrent downloads pieces of files over :ref:`HTTP` from **peers**
+  discovered through a tracker or another peer discovery protocol
+* BitTorrent magnet URIs open in an installed BitTorrent downloading
+  program (e.g. BitTorrent, uTorrent,
+  Transmission (:ref:`Gnome`),
+  Deluge (:ref:`Gnome`))
+* There are programs to retrieve the latest ``.torrent`` files
+  from RSS and Atom feeds (e.g. a released [episode] of a series or topic)
+* BitTorrent can be run headlessly (as a server daemon) e.g.
+  with an HTTP API, SMTP pattern, web interface, or SSH
+  for enqueuing torrents to download to a central location.
+* For a time, BitTorrent accounted for the largest slice of web traffic;
+  but "now accounts for only 6.3% of total traffic in North America".
+
+  https://www.sandvine.com/trends/global-internet-phenomena/
 
 .. glossary::
 
@@ -1287,6 +1321,9 @@ Use Cases:
 * http://academictorrents.com/
 * http://torrent.ubuntu.com:6969
 * https://torrent.fedoraproject.org/
+* ``apt-get install apt-transport-bittorrent``
+
+
 * https://en.wikipedia.org/wiki/Jaydiohead (Jay-Z + Radiohead)
 * http://www.digitaltrends.com/music/thom-yorke-bittorent/
 * https://bundles.bittorrent.com/
@@ -1295,6 +1332,30 @@ Use Cases:
    (which may not just work when I just copy the file to my other device)
    can be shared over BitTorrent all the same.
 
+
+.. index:: Debtorrent
+.. _debtorrent:
+
+------------
+Debtorrent
+------------
+| Homepage: https://wiki.debian.org/DebTorrent
+| Standard: https://wiki.debian.org/DebTorrent/Protocol
+| Source: svn svn://svn.debian.org/debtorrent/debtorrent/trunk
+
+Debtorrent downloads :ref:`Ubuntu` and/or :ref:`Debian` :ref:`DEB`
+:ref:`packages` with :ref:`APT` using :ref:`BitTorrent`.
+
+::
+
+    sudo apt-get install debtorrent
+    echo 'deb debtorrent://localhost:9988/foo distro main' | \
+        sudo tee -a /etc/apt/sources.list
+
+* https://github.com/saltstack-formulas/apt-formula/blob/master/apt/transports/debtorrent.sls
+
+
+.. _named data networking:
 
 Named Data Networking
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1441,7 +1502,7 @@ nginx-rtmp-module
 | Docs: https://github.com/arut/nginx-rtmp-module/wiki
 | Docs: https://github.com/arut/nginx-rtmp-module/wiki/Installing-on-Ubuntu-using-PPAs
 
-nginx-rtmp-module is a Free and :ref:`Open Source <open-source>`
+nginx-rtmp-module is an :ref:`Open Source <open-source>`
 module for the :ref:`nginx` web server
 which implements :ref:`RTMP`, :ref:`HTTP Live Streaming`, and :ref:`MPEG-DASH`
 for hosting streaming audio and video
@@ -1477,7 +1538,7 @@ WebRTC
 | Standard: http://tools.ietf.org/wg/rtcweb/
 | Docs: https://webrtc.github.io/samples/
 
-WebRTC is a :ref:`web standard <web-standards>` for 
+WebRTC is a :ref:`web standard <web-standards>` for
 decentralized or centralized
 streaming of audio, video, and data
 in :ref:`browser <browsers>`,
