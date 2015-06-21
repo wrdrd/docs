@@ -70,7 +70,13 @@ docs: clean-docs docs-api localjs localcss
 	SPHINX_HTML_LINK_SUFFIX='' $(MAKE) -C docs html singlehtml
 	#$(MAKE) -C docs singlehtml
 
+pull-tools:
+	git -C docs/tools/ pull origin master
+
+docs-tools: pull-tools docs
+
 docs-open: docs open
+
 
 open:
 	web ./docs/_build/html/index.html
