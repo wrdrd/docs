@@ -31,6 +31,32 @@ https://en.wikipedia.org/wiki/Publishing
 * :ref:`Sphinx`: https://westurner.org/tools/#sphinx
 
 
+.. index:: Jupyter and Education
+.. _jupyter and education:
+
+Jupyter and Education
+=======================
+:ref:`Jupyter` Project is great for education
+
+* :ref:`Jupyter Notebook` (:ref:`IPython Notebook`)
+* :ref:`ScipyStack` (see: :ref:`Anaconda`)
+* Jupyter Notebook supports over 43 languages other than :ref:`Python`
+* Jupyter notebooks can be published as HTML, PDF, ePub, MOBI
+* Jupyter notebooks can be published as reveal.js HTML slide presentations
+* Jupyter notebooks can be published to and served directly from GitHub repos
+* Jupyter notebooks can be published as edX courses
+
+  * http://mail.scipy.org/pipermail/ipython-dev/2015-February/015911.html
+  * https://github.com/topocm/topocm_content/
+  * edX is also mostly written in :ref:`Python`
+
+* Jupyter notebooks can be submitted and centrally graded with nbgrader:
+
+  https://github.com/jupyter/nbgrader
+
+* Per-student, per-class, per-project :ref:`Docker` containers
+
+
 Knowledge Engineering
 =======================
 See: :ref:`Knowledge Engineering <knowledge-engineering>`
@@ -79,3 +105,5 @@ OpenBadges Backpack
 | Homepage: https://backpack.openbadges.org/backpack/
 | Source: https://github.com/mozilla/openbadges-backpack
 
+
+See also: :ref:`Team Building <team-building>`, :ref:`Jupyter`

@@ -1336,7 +1336,7 @@ BitTorrent is a file distribution protocol built on top of :ref:`HTTP`.
   BitTorrent Client
     A BitTorrent Client
     opens a :term:`BitTorrent Torrent File`,
-    registers with the given :term:`BitTorrent Trackers <bittorren tracker>`,
+    registers with the given :term:`BitTorrent Trackers <bittorrent tracker>`,
     looks for peers in a DHT,
     downloads the pieces of the files listed
     by choosing faster (more efficient, less costly, ~more local) peers
@@ -1353,7 +1353,7 @@ BitTorrent is a file distribution protocol built on top of :ref:`HTTP`.
   Web Seeding
 
     Web Seeding is when one or more
-    :ref:`HTTP` servers serve default standby :term:`seeds <bittorrent seeds>`
+    :ref:`HTTP` servers serve default standby :term:`seeds <bittorrent seed>`
     (thus ensuring :ref:`Availability`
     when no-one is online).
 
