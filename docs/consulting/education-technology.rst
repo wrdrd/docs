@@ -39,7 +39,7 @@ Jupyter and Education
 :ref:`Jupyter` Project is great for education
 
 * :ref:`Jupyter Notebook` (:ref:`IPython Notebook`)
-* :ref:`ScipyStack` (see: :ref:`Anaconda`)
+* :ref:`ScipyStack` (see: :ref:`Pip`, :ref:`conda`, :ref:`Anaconda`)
 * Jupyter Notebook supports over 43 languages other than :ref:`Python`
 * Jupyter notebooks can be published as HTML, PDF, ePub, MOBI
 * Jupyter notebooks can be published as reveal.js HTML slide presentations
