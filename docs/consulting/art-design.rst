@@ -1240,13 +1240,12 @@ Web Distribution
     in ``GET`` requests
 
 * Web scale audio / video requires less bandwidth
-  when efficiently distributed:
+  when efficiently distributed
+  through a file / stream distribution / caching / archiving network:
 
-  * Through geodistributed caching with a :ref:`CDN`
-  * Through a file / stream distribution / caching / archiving network:
-
+    * :ref:`CDN`
     * :ref:`BitTorrent`
-    * :ref:`NDN`
+    * :ref:`Named Data Networking`
 
 
 .. index:: CDN
@@ -1373,6 +1372,7 @@ Debtorrent downloads :ref:`Ubuntu` and/or :ref:`Debian` :ref:`DEB`
 * https://github.com/saltstack-formulas/apt-formula/blob/master/apt/transports/debtorrent.sls
 
 
+.. index:: Named Data Networking
 .. _named data networking:
 
 Named Data Networking
