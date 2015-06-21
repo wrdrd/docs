@@ -405,7 +405,11 @@ written in :ref:`C`, Scheme, and :ref:`Python`
 MuseScore
 ~~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/MuseScore
-| Homepage:
+| Homepage: https://musescore.org/
+| Download: https://musescore.org/en/download
+| Source: git https://github.com/musescore/MuseScore
+| Docs: https://musescore.org/en/handbook
+| Docs: https://musescore.org/en/development
 
 MuseScore is a Free and :ref:`Open Source <open-source>`
 software tool for writing and engraving
@@ -418,6 +422,11 @@ written in :ref:`C++` and :ref:`Qt`.
 * MuseScore can read/write to :ref:`MusicXML`, :ref:`MIDI`, GuitarPro
 * MuseScore can write to PDF, SVG, PNG, PostScript
 * MuseScore can save audio to WAV, FLAC, MP3, OGG
+* There are MuseScore apps for
+  :ref:`iOS` and :ref:`Android`
+* MuseScore.com hosts sheet music: https://musescore.com/sheetmusic
+
+  * https://musescore.com/sheetmusic?instruments=7 (#guitar)
 
 
 .. index:: Musical Notation
