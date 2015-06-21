@@ -1326,7 +1326,8 @@ BitTorrent is a file distribution protocol built on top of :ref:`HTTP`.
     * (optional) a DHT key (for trackerless peer discovery)
     * (optional) a list of HTTP :term:`BitTorrent Tracker` URLs
     * (optional) a list of HTTP :term:`Web Seeds <web seeding>`.
-      https://en.wikipedia.org/wiki/Torrent_file
+
+    https://en.wikipedia.org/wiki/Torrent_file
 
   BitTorrent Tracker
     A BitTorrent Tracker maintains a list of recently connected
@@ -1364,15 +1365,14 @@ Use Cases:
 * http://academictorrents.com/
 * http://torrent.ubuntu.com:6969
 * https://torrent.fedoraproject.org/
-* ``apt-get install apt-transport-bittorrent``
-
-
+* :ref:`Debtorrent`
 * https://en.wikipedia.org/wiki/Jaydiohead (Jay-Z + Radiohead)
 * http://www.digitaltrends.com/music/thom-yorke-bittorent/
 * https://bundles.bittorrent.com/
 
 .. note:: "Scrambled" DRM content
-   (which may not just work when I just copy the file to my other device)
+   (which may or may not just work
+   when I just copy the file to my other device)
    can be shared over BitTorrent all the same.
 
 
