@@ -1108,7 +1108,7 @@ MilkDrop is a visualization tool which runs *MilkDrop presets*
 * https://en.wikipedia.org/wiki/MilkDrop
 
 .. index:: MilkDrop Presets
-.. _milkdrop-presets:
+.. _milkdrop presets:
 
 -----------------
 MilkDrop Presets
@@ -1227,7 +1227,7 @@ Web Distribution
 | https://en.wikipedia.org/wiki/Streaming_media
 | https://en.wikipedia.org/wiki/New_media
 
-* New Web :ref:`Media` (:ref:`Web Content <web-content>`)
+* New Web :ref:`Media` (:ref:`Web Content <web content>`)
   are shared through :ref:`web standards <web-standards>`
   like TCP/IP, :ref:`HTTP`, :ref:`HTML`, and :ref:`WebRTC`
 * Streaming a video with seek and rewind is a bit different
@@ -1243,14 +1243,15 @@ Web Distribution
   when efficiently distributed:
 
   * Through geodistributed caching with a :ref:`CDN`
-  * Through a file / stream distribution network:
+  * Through a file / stream distribution / caching / archiving network:
 
     * :ref:`BitTorrent`
-    * :ref:`SDN`
+    * :ref:`NDN`
 
 
 .. index:: CDN
 .. index:: Content Delivery Network
+.. _cdn:
 
 CDN
 ~~~~
@@ -1261,6 +1262,23 @@ CDN
 A CDN ("Content Delivery Network") is a service and infrastructure
 designed to serve content to large numbers of people,
 often from many different place.
+
+CDN Services:
+
+* Akamai (OpenStack)
+* Amazon CloudFront (AWS)
+* Fastly: GitHub Pages, :ref:`PyPI`
+* CDNJS (free): https://cdnjs.com/libraries
+* CloudFlare (free plan)
+* Rackspace CloudFiles
+
+CDN APIs
+
+* :ref:`libcloud` Object Storage API: http://libcloud.readthedocs.org/en/latest/supported_providers.html#object-storage
+* :ref:`OpenStack` Poppy (CDN API): https://wiki.openstack.org/wiki/Poppy
+* Ceph Object Gateway: Amazon S3 API and :ref:`OpenStack` Swift API
+
+  http://ceph.com/docs/next/radosgw/
 
 
 .. index:: BitTorrent
