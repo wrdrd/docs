@@ -79,3 +79,5 @@ OpenBadges Backpack
 | Homepage: https://backpack.openbadges.org/backpack/
 | Source: https://github.com/mozilla/openbadges-backpack
 
+
+See also: :ref:`Team Building <team-building>`, :ref:`Jupyter`
