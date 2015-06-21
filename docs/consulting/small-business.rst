@@ -401,17 +401,29 @@ Sources:
 * http://help.linkedin.com/app/answers/detail/a_id/32617
 
 
-.. index:: Photography
-.. _photography:
+.. index:: Photography Checklist
+.. _photography checklist:
 
-Photography
-````````````
-* Storefronts
-* Stock photos
-* Product photos
+Photography Checklist
+```````````````````````
+* [ ] Photography Guidelines 
 
+  + [ ] Lighting: Event Time of day, sources, colors, shine
+  + [ ] Perspective: Closeups, Angles
+  + [ ] Balance: exposure, color balance, contrast, brightness, gamma filters
+  + [ ] Location: Building, Storefront, Hallway
+  + [ ] People: Stock photos, smiles, grimaces ("what's (s)he saying?")
+  + [ ] Things: Products, Services, Outcomes
 
-.. TODO: photography guidelines (closeups, angles, exposure)
++ [ ] Source Rights
++ [ ] Offsite Backups (CD/DVD, USB Drive)
++ [ ] Photo Gallery; Hosting
+
+  + [ ] Thumbnails
+  + [ ] Next/Previous
+  + [ ] Multitouch Zoom ("pinch to zoom")
+  + [ ] Album Browser
+  + [ ] Carousel API
 
 
 .. index:: Web Layout Graphics

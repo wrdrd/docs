@@ -1,7 +1,7 @@
 
 .. index:: Art & Design
 .. index:: A&D
-.. _a&d:
+.. _art-design:
 
 
 =============
@@ -42,7 +42,19 @@ Graphic Design
 ****************
 | https://en.wikipedia.org/wiki/Graphic_design
 
+
+Web Design
+~~~~~~~~~~~
 See: :ref:`Web Design <web-design>`
+
+
+.. index:: BMP
+.. _bmp:
+
+BMP
+~~~~
+| https://en.wikipedia.org/wiki/BMP_file_format
+| File Extension: ``.bmp``
 
 
 .. index:: GIMP
@@ -65,6 +77,35 @@ extensible :ref:`Open Source <open-source>`
 raster image editor (PNG, JPG, GIF, GIMP ``.xcf``).
 
 * GIMP plugins are shared at http://registry.gimp.org/popular
+
+
+.. index:: GIF
+.. _gif:
+
+GIF
+~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/GIF
+
+GIF is a file format for sequences of images ("animations").
+
+GIFs appear to load quickly because there is no
+media player or codec initialization time,
+but are actually less eficient than compressed video (e.g. :ref:`H.264`)
+because GIFs are not compressed
+and contain every frame of the animation.
+
+Video codecs compress the changes between frames,
+in order to avoid basically GIF.
+
+* https://en.wikipedia.org/wiki/Hampster_Dance (1990s)
+
+  ` * <https://en.wikipedia.org/wiki/Category:Under-construction_templates>`__
+
+* https://en.wikipedia.org/wiki/Dancing_baby (1990s)
+* https://en.wikipedia.org/wiki/Real_Ultimate_Power (2002; should've had GIFs)
+* https://en.wikipedia.org/wiki/Dramatic_Chipmunk
+  (2007; YouTube :ref:`tube site <tube sites>`)
+* 2015: Google+, Twitter, Facebook add support for GIFs
 
 
 .. index:: Inkscape
@@ -91,6 +132,33 @@ and remain smooth.
 
 * https://en.wikipedia.org/wiki/Scalable_Vector_Graphics
 * http://wiki.inkscape.org/wiki/index.php/Extension_repository
+
+
+.. index:: JPEG
+.. _jpeg:
+
+JPEG
+~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/JPEG
+| File Extension: ``.jpg``, ``.jpeg``
+
+
+.. index:: PNG
+.. _png:
+
+PNG
+~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/PNG
+| File Extension: ``.png``, ``.png``
+
+
+.. index:: SVG
+.. _svg:
+
+SVG
+~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/SVG
+| File Extension: ``.svg``
 
 
 .. index:: 3D Modeling
@@ -135,6 +203,14 @@ NURBS
 | `<https://en.wikipedia.org/wiki/Non-uniform_rational_B-spline>`__
 
 
+.. index:: OpenGL
+.. _opengl:
+
+OpenGL
+~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/OpenGL
+
+
 .. index:: Rhinocerous 3D
 .. _rhinocerous 3d:
 
@@ -154,7 +230,20 @@ SketchUp
 | Download: http://www.sketchup.com/download
 | Docs: http://www.sketchup.com/learn
 
-* http://extensions.sketchup.com/
+* SketchUp extensions can be shared at http://extensions.sketchup.com/
+
+
+.. index:: WebGL
+.. _webgl:
+
+WebGL
+~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/WebGL
+
+WebGL is an implementation of :ref:`OpenGL`
+for :ref:`Web Browsers <browsers>`.
+
+See: :ref:`Data Science > Data Visualization Tools <data-visualization-tools>`
 
 
 .. index:: Photography
@@ -254,6 +343,22 @@ and a great command line interface (``ffmpeg``).
 * FFmpeg can be used to (re-)encode audio/video
 
 
+.. index:: FLV
+.. _flv:
+
+FLV
+~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Flash_Video
+
+FLV ("Flash Video") is a media file container format
+for sharing media; especially over :ref:`HTTP`.
+
+* FLV can be downloaded in segments (is "seekable")
+* FLV contains :ref:`MPEG`-4 encoded content
+* FLV supports :ref:`H.264` :ref:`MPEG`-4 video
+* Most :ref:`Tube Sites` (natively) support FLV
+
+
 .. index:: HandBrake
 .. _handbrake:
 
@@ -269,6 +374,25 @@ HandBrake is an offline batch GUI audio/video transcoding tool.
 * HandBrake helps with rescaling a video for
   e.g. mobile devices with limited bandwidth
   ahead-of-time
+
+
+.. index:: H.264
+.. _h.264:
+
+H.264
+~~~~~~
+| Wikipedia: en.wikipedia.org/wiki/H.264/MPEG-4_AVC
+
+H.264 (or :ref:`MPEG`-4 AVC) is a widely implemented video
+compression codec.
+
+* Blu-ray discs are encoded with H.264
+* HDTV, digital cable, and digital satellite are encoded with H.264
+* Hulu, iTunes, Vimeo, VEVO, and YouTube all encode video with H.264
+
+.. note:: Some mobile devices include hardware support for H.264 decoding,
+   which can save CPU time and battery,
+   resulting in smoother playback.
 
 
 .. index:: Lightworks
@@ -312,6 +436,33 @@ written in :ref:`C`, :ref:`Perl`, and :ref:`Python`.
 * LiVES has full undo and redo ("nondestructive editing")
 * LiVES has strong native support for networked streaming
 * LiVES has support for :ref:`LADSPA`, :ref:`JACK`, :ref:`MIDI`
+
+
+.. index:: MPEG
+.. _mpeg:
+
+MPEG
+~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Moving_Picture_Experts_Group
+| Homepage: http://mpeg.chiariglione.org/
+
+MPEG is a standards body formed by :ref:`ISO` and :ref:`IEC`.
+
+.. _mpeg-1:
+.. _mpeg-2:
+.. _mpeg-3:
+.. _mpeg-4:
+.. _mp4:
+
+* https://en.wikipedia.org/wiki/MPEG-1 (MP3)
+* https://en.wikipedia.org/wiki/MPEG-2 (MP3, DVD, Digital Cable/Satellite)
+* https://en.wikipedia.org/wiki/MPEG-3
+* https://en.wikipedia.org/wiki/MPEG-4
+
+  * https://en.wikipedia.org/wiki/MPEG-4_Part_14 (MP4, ``.mp4``, ``.m4a``)
+  * https://en.wikipedia.org/wiki/H.264/MPEG-4_AVC (:ref:`H.264`)
+
+* :ref:`MPEG-DASH` (Adaptive bitrate streaming)
 
 
 .. index:: Screenwriting
@@ -461,7 +612,7 @@ MusicXML is an :ref:`XML` standard for :ref:`musical notation`.
 
 
 .. index:: Tablature
-.. _tablature::
+.. _tablature:
 
 ----------
 Tablature
@@ -702,6 +853,21 @@ DJ
 | https://en.wikipedia.org/wiki/Disc_jockey
 
 
+.. index:: AAC
+.. _aac:
+
+AAC
+~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Advanced_Audio_Coding
+
+AAC is an audio compression standard designed to replace :ref:`MP3`.
+
+AAC is a component of :ref:`MPEG`-4 audio ("MP4").
+
+* AAC is a *lossy* audio compression algorithm
+* iTunes files are in AAC format (MPEG-4 Audio, MP4, M4a)
+
+
 .. index:: LADSPA
 .. _ladspa:
 
@@ -718,6 +884,24 @@ written in :ref:`C`.
 * :ref:`Ardour`, :ref:`Audacity`, :ref:`LiVES`,
   and :ref:`Rosegarden`
   all support LADSPA
+
+
+.. index:: MP3
+.. _mp3:
+
+MP3
+~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/MP3
+
+MP3 refers to one of two :ref:`MPEG` audio codecs.
+
+* MP3 can be around a tenth the size of a raw :ref:`WAV` file
+* MP3 can be CBR ("Constant Bitrate") or VBR ("Variable Bitrate")
+  depending on the encoding parameters
+* MP3 is a *lossy* audio compression algorithm
+* Amazon Music (Amazon MP3) files are in MP3 format
+
+See also: :ref:`AAC`, FLAC, Ogg, SHN
 
 
 .. index:: Ardour
@@ -813,6 +997,20 @@ written in :ref:`C++`, :ref:`Qt`, :ref:`XML`, and :ref:`Javascript`.
 * Mixx supports timecoded vinyl and CDs
 
 
+.. index:: WAV
+.. _wav:
+
+WAV
+~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/WAV
+
+WAV ("Waveform Audio Format") is a file format
+for storing an uncompressed audio bitstream.
+
+* Like WAV, Audio CDs are encoded with PCM; but unlike WAV,
+  Audio CDs are encoded with PCM and *Red Book audio*
+
+
 .. index:: Audio/Visual Production
 .. _avproduction:
 
@@ -838,7 +1036,7 @@ VJ
 
 
 .. index:: Advanced Visualization Studio
-.. _advanced-visualization-studio:
+.. _advanced visualization-studio:
 
 Advanced Visualization Studio
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -846,8 +1044,9 @@ Advanced Visualization Studio
 | Homepage: http://www.1014.org/code/nullsoft/avs/
 | Source: http://www.1014.org/code/nullsoft/avs/avs_src.zip
 
-Winamp :ref:`Advanced Visualization Studio` is a GUI
-tool for developing music visualization presets.
+Advanced Visualization Studio is a GUI
+tool for developing music visualization presets
+for the Winamp media player.
 
 
 .. index:: Geiss
@@ -977,7 +1176,319 @@ vvvv ("v4") is a realtime audiovisual production tool
 for :ref:`Windows` written in Delphi and C# .NET.
 
 
+.. index:: Web Production
+.. _web production:
 
+Web Production
+*****************
+
+
+.. index:: Popcorn Maker
+.. _popcorn maker:
+
+Popcorn Maker
+~~~~~~~~~~~~~~
+| Homepage: https://popcorn.webmaker.org/
+
+Popcorn Maker is a Free and :ref:`Open Source <open-source>`
+tool for creating multitrack web media presentations.
+
+* Popcorn Maker is a Mozilla Webmaker tool: https://webmaker.org/en-US/tools
+
+
+.. index:: Stream Annotation
+.. _stream annotation:
+
+Stream Annotation
+~~~~~~~~~~~~~~~~~~~
+Media codecs do not solve for commenting,
+other tools support commenting on points or ranges of timecodes
+(e.g. "this part is great!" or "who is that?")
+
+* :ref:`OpenAnnotation <OA>` RDF (:ref:`Hypothesis`)
+* SoundCloud, MixCloud
+
+Comments must then be stored on a central server,
+generally under a URN (e.g. a shorturl string key)
+or a URI (URL like https://youtube.com/ ).
+
+ * Key: yA-NYmO8dDk
+ * URN: urn:x-youtubevideo:yA-NYmO8dDk
+ * URL: https://www.youtube.com/watch?v=yA-NYmO8dDk
+ * URL: https://www.youtube.com/watch?v=yA-NYmO8dDk&list=PLt_DvKGJ_QLbqVMAiFRzts--Y9xZvxLDG&index=2
+ * URL: https://youtu.be/yA-NYmO8dDk
+ * ShortURL: https://goo.gl/J4NJXs
+
+
+.. index:: Web Distribution
+.. _web distribution:
+
+Web Distribution
+*****************
+| https://en.wikipedia.org/wiki/Content_delivery_network
+| https://en.wikipedia.org/wiki/Streaming_media
+
+* Web :ref:`Media` are shared through :ref:`web standards <web-standards>`
+  like TCP/IP, :ref:`HTTP`, :ref:`HTML`, and :ref:`WebRTC`
+* Streaming a video with seek and rewind is a bit different
+  than downloading / streaming / buffering a file from beginning to end
+* Web scale audio / video requires less bandwidth
+  when efficiently distributed
+
+  * Through geodistributed caching with a Content Delivery Network (CDN)
+  * Through a file / stream distribution protocll (e.g. BitTorrent, SDN)
+
+* :ref:`BitTorrent`,
+  :ref:`HTTP Live Streaming`,
+  and :ref:`MPEG-DASH` download segments
+  of files over :ref:`HTTP` by specifying the ``Content-Range:`` header
+  in ``GET`` requests
+
+
+.. index:: BitTorrent
+.. _bittorrent:
+
+BitTorrent
+~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/BitTorrent
+| https://en.wikipedia.org/wiki/Comparison_of_BitTorrent_tracker_software
+|
+
+BitTorrent is a file distribution protocol on top of :ref:`HTTP`.
+
+.. glossary::
+
+  BitTorrent Torrent File
+    A BitTorrent ``.torrent`` file includes
+    a checksum hash of the file manifest
+    and (optionally) a list of servers where
+    clients can register and discover
+    more local (more efficient) sources
+    to download from.
+
+  BitTorrent Seed
+    A BitTorrent Seed is a complete,
+    checksummed copy of all of the files
+    in a manifest
+    which other clients can download from.
+
+  Web Seeding
+
+    Web Seeding is when one or more
+    :ref:`HTTP` servers serve default standby seeds
+    (thus ensuring :ref:`Availability`
+    when no-one is online).
+
+    https://en.wikipedia.org/wiki/BitTorrent#Web_seeding
+
+
+Use Cases:
+
+* http://academictorrents.com/
+* http://torrent.ubuntu.com:6969
+* https://torrent.fedoraproject.org/
+* https://en.wikipedia.org/wiki/Jaydiohead (Jay-Z + Radiohead)
+* http://www.digitaltrends.com/music/thom-yorke-bittorent/
+* https://bundles.bittorrent.com/
+
+.. note:: "Scrambled" DRM content
+   (which may not just work when I just copy the file to my other device)
+   can be shared over BitTorrent all the same.
+
+
+Named Data Networking
+~~~~~~~~~~~~~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Named_data_networking
+|
+
+
+.. index:: Steam
+.. _steam:
+
+Steam
+~~~~~~~
+| Wikipedia: `<https://en.wikipedia.org/wiki/Steam_(software)>`__
+
+Steam is a game and game content distribution system.
+
+* Steam is part of :ref:`SteamOS`
+* Steam registers DRM licenses with Steam
+  for downloading files
+* Steam does not yet download files from
+  more local peers
+  (e.g. everyone at the LAN party purchases the game)
+
+
+.. index:: Kerbal Space Program
+.. _kerbal space program:
+
+----------------------
+Kerbal Space Program
+----------------------
+| Wikipedia: https://en.wikipedia.org/wiki/Kerbal_Space_Program
+| Homepage: https://kerbalspaceprogram.com/
+| Download: http://store.steampowered.com/app/220200/
+| Docs: http://wiki.kerbalspaceprogram.com/wiki/
+| Docs: http://wiki.kerbalspaceprogram.com/wiki/Version_history
+
+Kerbel Space Program is a space flight simulator game.
+
+  KERBAL SPACE PROGRAM IS A MULTI-GENRE GAME
+  WHERE THE PLAYERS CREATE THEIR OWN SPACE PROGRAM.
+
+  In KSP, you must build a space-worthy craft,
+  capable of flying its crew out into space,
+  without killing them.
+  At your disposal is a collection of parts,
+  which must be assembled to create a functional ship.
+  Each part has its own function
+  and will affect the way a ship flies (or doesn't).
+
+
+* Kerbal Space Program is distributed over the :ref:`Steam` network
+* Kerbal Space Program has many cool **mods**:
+  http://www.curse.com/ksp-mods/kerbal
+
+
+.. index:: Tube Sites
+.. _tube sites:
+
+Tube Sites
+~~~~~~~~~~~~
+Fueled by the dramatic growth of YouTube,
+the term "Tube Site" refers to any of a number of sites
+serving (seekable) video;
+initially with Flash Video :ref:`FLV`
+and now with :ref:`HTML5`
+and :ref:`HTTP Live Streaming`
+and :ref:`MPEG-DASH`.
+
+Features
+
+* GIF thumbnails
+* seekable thumbnails
+* download links
+* download for my device links
+* threaded comments, reviews, upvotes, downvotes
+* :ref:`Stream Annotation`
+* playlists this item is contained in
+* featured playlists
+* related content
+
+
+
+.. index:: HTTP Live Streaming
+.. index:: HLS
+.. _http live streaming:
+
+HTTP Live Streaming
+~~~~~~~~~~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/HTTP_Live_Streaming
+| Standard: http://tools.ietf.org/html/draft-pantos-http-live-streaming
+| File Extension: ``.m3u8``
+| Homepage: https://developer.apple.com/streaming/
+| Docs: https://developer.apple.com/library/ios/documentation/NetworkingInternet/Conceptual/StreamingMediaGuide/Introduction/Introduction.html
+
+HTTP Live Streaming (HLS) is a draft :ref:`IETF` standard for streaming
+playlists of audio and video
+at various resolutions
+over :ref:`HTTP`.
+
+* https://en.wikipedia.org/wiki/HTTP_Live_Streaming#Supported_players_and_servers
+
+* HLS downloads and buffers file segments.
+* HLS specifies optional AES Digital Rights Management ("scrambling")
+* :ref:`nginx-rtmp-module` can host :ref:`HLS <http live streaming>` streams.
+* :ref:`VLC` can play :ref:`HLS <http live streaming>` streams.
+* :ref:`Safari` and :ref:`OSX` and :ref:`iOS` have native support for
+  :ref:`HTML5` HLS.
+
+
+.. index:: MPEG-DASH
+.. _mpeg-dash:
+
+MPEG-DASH
+~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP
+| Standard: http://www.iso.org/iso/home/store/catalogue_ics/catalogue_detail_ics.htm?csnumber=65274
+| Standard: http://webstore.ansi.org/RecordDetail.aspx?sku=ISO/IEC+23009-1:2014
+
+MPEG-DASH is an :ref:`ISO` standard for streaming audio and video content
+with adaptive bitrates over :ref:`HTTP`.
+
+* MPEG-DASH downloads and buffers file segments.
+* MPEG-DASH selects from a number of possible resolutions
+  according to available bandwidth and processing capacity.
+* MPEG-DASH specifies optional :ref:`HTML5`
+  *Encrypted Media Extensions* DRM
+* MPEG-DASH segments may contain MPEG-2 files in an MP4 container
+  or other combinations of codecs and containers
+* It currently costs $265 USD to download the MPEG-DASH standard,
+  which is not necessary to enjoy MPEG-DASH adaptability.
+
+* :ref:`nginx-rtmp-module` can host :ref:`MPEG-DASH` streams.
+* :ref:`VLC` can play :ref:`MPEG-DASH` streams.
+* Chromecast, YouTube, NetFlix support :ref:`HTML5` :ref:`MPEG-DASH`
+
+
+.. index:: nginx-rtmp-module
+.. _nginx-rtmp-module:
+
+nginx-rtmp-module
+~~~~~~~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Nginx-rtmp-module
+| Source: git https://github.com/arut/nginx-rtmp-module
+| Docs: https://github.com/arut/nginx-rtmp-module/wiki
+| Docs: https://github.com/arut/nginx-rtmp-module/wiki/Installing-on-Ubuntu-using-PPAs
+
+nginx-rtmp-module is a Free and :ref:`Open Source <open-source>`
+module for the :ref:`nginx` web server
+which implements :ref:`RTMP`, :ref:`HTTP Live Streaming`, and :ref:`MPEG-DASH`
+for hosting streaming audio and video
+written in :ref:`C`.
+
+* nginx-rtmp-module uses :ref:`FFmpeg` for online audio/video transcoding
+* nginx-rtmp-module can record streams to seekable
+  Flash Video :ref:`FLV` files
+* nginx-rtmp-module works with :ref:`H.264`, :ref:`AAC`, :ref:`MPEG-DASH`
+  audio / video compression / decompression codecs
+
+
+.. index:: RTMP
+.. _rtmp:
+
+RTMP
+~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Real_Time_Messaging_Protocol
+
+RTMP is a protocol for streaming audio, video, and data
+originally for Flash; now open source.
+
+:ref:`WebRTC` solves for all of the RTMP use cases.
+
+
+.. index:: WebRTC
+.. _webrtc:
+
+WebRTC
+~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/WebRTC
+| Homepage: http://www.webrtc.org/
+| Standard: http://tools.ietf.org/wg/rtcweb/
+| Docs: https://webrtc.github.io/samples/
+
+WebRTC is a :ref:`web standard <web-standards>` for 
+decentralized or centralized
+streaming of audio, video, and data
+in :ref:`browser <browsers>`,
+without having to download any plugins.
+
+
+.. note:: WebRTC is supported by a growing number of browsers:
+   http://iswebrtcreadyyet.com/
+
+   Notably, :ref:`Internet Explorer` and :ref:`Safari` still require
+   a plugin to handle :ref:`WebRTC`.
 
 
 .. index:: Media Tools

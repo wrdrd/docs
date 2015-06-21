@@ -166,7 +166,7 @@ Web Content
 Media Resources: Copy, Text, Photos, Images, Videos
 (things with :ref:`HTTP` URLs)
 
-See :ref:`Web Standards <web-standards>`
+See :ref:`Web Standards <web-standards>`, :ref:`Art & Design <art-design>`
 
 
 
@@ -254,7 +254,7 @@ and movies at various points in a testing workflow:
 * Web Service: multi-platform browser testing grid services
 * Build Script: record the [:ref:`X <X11>`] buffer with the test sequence
 * Local Recording:
-  :ref:`ffmpeg`, :ref:`VLC`, :ref:`CamStudio`
+  :ref:`ffmpeg`, :ref:`VLC`, CamStudio
 
 See: :ref:`Video Production`
 
