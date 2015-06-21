@@ -1274,8 +1274,14 @@ CDN Services:
 
 CDN APIs
 
-* :ref:`libcloud` Object Storage API: http://libcloud.readthedocs.org/en/latest/supported_providers.html#object-storage
-* :ref:`OpenStack` Poppy (CDN API): https://wiki.openstack.org/wiki/Poppy
+* :ref:`libcloud` Object Storage API:
+
+  http://libcloud.readthedocs.org/en/latest/supported_providers.html#object-storage
+
+* :ref:`OpenStack` Poppy (CDN API):
+
+  https://wiki.openstack.org/wiki/Poppy
+
 * Ceph Object Gateway: Amazon S3 API and :ref:`OpenStack` Swift API
 
   http://ceph.com/docs/next/radosgw/
@@ -1304,6 +1310,8 @@ BitTorrent is a file distribution protocol built on top of :ref:`HTTP`.
 * BitTorrent can be run headlessly (as a server daemon) e.g.
   with an HTTP API, SMTP pattern, web interface, or SSH
   for enqueuing torrents to download to a central location.
+* BitTorrent does not preserve file permissions or extended attributes,
+  but archives can.
 * For a time, BitTorrent accounted for the largest slice of web traffic;
   but "now accounts for only 6.3% of total traffic in North America".
 
@@ -1312,23 +1320,39 @@ BitTorrent is a file distribution protocol built on top of :ref:`HTTP`.
 .. glossary::
 
   BitTorrent Torrent File
-    A BitTorrent ``.torrent`` file includes
-    a checksum hash of the file manifest
-    and (optionally) a list of servers where
-    clients can register and discover
-    more local (more efficient) sources
-    to download from.
+    A BitTorrent ``.torrent`` file includes:
+
+    * SHA-1 checksum hashes of all the pieces of all the files
+    * (optional) a DHT key (for trackerless peer discovery)
+    * (optional) a list of HTTP :term:`BitTorrent Tracker` URLs
+    * (optional) a list of HTTP :term:`Web Seeds <web seeding>`.
+      https://en.wikipedia.org/wiki/Torrent_file
+
+  BitTorrent Tracker
+    A BitTorrent Tracker maintains a list of recently connected
+    peers from which matching pieces can be downloaded.
+
+  BitTorrent Client
+    A BitTorrent Client
+    opens a :term:`BitTorrent Torrent File`,
+    registers with the given :term:`BitTorrent Trackers <bittorren tracker>`,
+    looks for peers in a DHT,
+    downloads the pieces of the files listed
+    by choosing faster (more efficient, less costly, ~more local) peers
+    to download from,
+    and, according to the configuration, uploads pieces to other peers.
 
   BitTorrent Seed
     A BitTorrent Seed is a complete,
-    checksummed copy of all of the files
-    in a manifest
-    which other clients can download from.
+    checksummed copy of all of the pieces of all the files
+    in a :term:`BitTorrent Torrent File`
+    which a peer is sharing through a :term:`BitTorrent tracker`
+    or a DHT.
 
   Web Seeding
 
     Web Seeding is when one or more
-    :ref:`HTTP` servers serve default standby seeds
+    :ref:`HTTP` servers serve default standby :term:`seeds <bittorrent seeds>`
     (thus ensuring :ref:`Availability`
     when no-one is online).
 
