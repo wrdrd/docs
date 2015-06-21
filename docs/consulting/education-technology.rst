@@ -54,7 +54,13 @@ Jupyter and Education
 
   https://github.com/jupyter/nbgrader
 
-* Per-student, per-class, per-project :ref:`Docker` containers
+* Jupyter notebooks can be saved to and read from Google Drive
+
+  https://github.com/jupyter/jupyter-drive
+
+* Per-student, per-class, per-project :ref:`Docker` containers (and folders)
+
+See: :ref:`Python`, :ref:`awesome-python-testing`
 
 
 Knowledge Engineering
