@@ -1274,8 +1274,14 @@ CDN Services:
 
 CDN APIs
 
-* :ref:`libcloud` Object Storage API: http://libcloud.readthedocs.org/en/latest/supported_providers.html#object-storage
-* :ref:`OpenStack` Poppy (CDN API): https://wiki.openstack.org/wiki/Poppy
+* :ref:`libcloud` Object Storage API:
+
+  http://libcloud.readthedocs.org/en/latest/supported_providers.html#object-storage
+
+* :ref:`OpenStack` Poppy (CDN API):
+
+  https://wiki.openstack.org/wiki/Poppy
+
 * Ceph Object Gateway: Amazon S3 API and :ref:`OpenStack` Swift API
 
   http://ceph.com/docs/next/radosgw/
