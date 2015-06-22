@@ -35,9 +35,9 @@ https://en.wikipedia.org/wiki/Publishing
   * Artifacts: built packages, reports, PDFs, data files
 
 * **DOI**-granting repositories ("getting a citable identifier
-  which resolves to a :ref:`URL`" (~like a shorturl)):
+  which resolves to a :term:`URL`" (~like a shorturl)):
 
-  * https://en.wikipedia.org/wiki/Digital_object_identifier (:ref:`URN`)
+  * https://en.wikipedia.org/wiki/Digital_object_identifier (:term:`URN`)
   * https://guides.github.com/activities/citable-code/
   * https://figshare.com
   * https://zenodo.org/
@@ -47,13 +47,13 @@ https://en.wikipedia.org/wiki/Publishing
   * HTTP Object Storage (private/public :ref:`CDN`)
   * :ref:`BitTorrent`
 
-    * BitTorrent + :ref:`HTTP` :term:`Web Seeds <web seed>`
+    * BitTorrent + :ref:`HTTP` :term:`Web Seeds <web seeding>`
 
   * **It is faster to run the code next to the data.**
 
     * HDFS (Hadoop, Hive, Cassandra, Spark, :ref:`Mesos`), DDFS (Disco)
     * :ref:`SQL` (:ref:`Relational Database <relational-databases>`)
-    * :ref:`SPARQL` (:ref:`Linked Data`)
+    * :ref:`SPARQL` (:ref:`Linked Data <linked-data>`)
 
 * Publishing Tools
 
@@ -71,8 +71,8 @@ Online Courses
 
   * :ref:`Class Central`
 
-* :ref:`Linked Curricula Graphs` (:rdf:`RDF`, :ref:`RDFa`,
-  :ref:`schema.org/Course`)
+* :ref:`Linked Curricula Graphs` (:ref:`RDF`, :ref:`RDFa`,
+  :ref:`schema.org`/Course)
 
 
 .. index:: Class Central
@@ -167,7 +167,7 @@ Jupyter and Learning
 =======================
 :ref:`Jupyter` Project is great for learning and education.
 
-* :ref:`Jupyter Notebook`, :ref:`JupyterHub`
+* :ref:`Jupyter Notebook`, :ref:`JupyterHub <jupyter>`
 * Jupyter Notebook supports over 42 languages other than :ref:`Python`.
 * Jupyter notebooks can be published as HTML, PDF, ePub, MOBI.
 * Jupyter notebooks can be published as reveal.js HTML slide presentations.
@@ -189,13 +189,13 @@ Jupyter and Learning
 * Jupyter notebooks should specify package dependencies
   (see: `Jupyter and Reproducibility`)
 
-* :ref:`JupyterHub Servers` host Jupyter Notebook servers
+* :ref:`JupyterHub <jupyter>` servers host :ref:`Jupyter Notebook` servers
   for one or more users; with authentication
   and optional Docker integration.
 
 
 See: :ref:`Computer Science <computer-science>`,
-:ref:`Data Science > Data Learning <data-learning>`
+:ref:`Data Science > Data Learning <data-learning>`,
 :ref:`Software Development <software-development>`,
 :ref:`Python`,
 :ref:`awesome-python-testing`
@@ -204,8 +204,9 @@ See: :ref:`Computer Science <computer-science>`,
 Jupyter and Reproducibility
 *****************************
 
-:ref:`Jupyter notebooks`, :ref:`Open Science <open-science>`,
-:ref:`Reproducibility`, and Repeatability
+:ref:`Jupyter notebook <jupyter notebook>`,
+:ref:`Open Science <open-science>`,
+and `Reproducibility`.
 
 | "Ten Simple Rules for Reproducible Computational Research"
 | http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003285#s4
@@ -218,8 +219,8 @@ Jupyter and Reproducibility
 
     https://github.com/rasbt/watermark
 
-  * version_information: OS, :ref:`python package <python-packages>`
-    versions
+  * version_information: Python interpreter
+    and :ref:`python package <python packages>` versions
 
     https://github.com/jrjohansson/version_information
 
@@ -230,7 +231,7 @@ Jupyter and Reproducibility
   * :ref:`Dpkg`: ``dpkg-query -l``, ``dpkg --get-selections``,
     ``wajig list-installed``
 
-* [ ] List reference and other maybe supported :ref:`OS <operating-systems>`
+* [ ] List reference and other maybe supported :ref:`OS <operating systems>`
 
   * :ref:`OSX`, :ref:`Linux`: ``uname -a``
   * :ref:`Windows`: ``systeminfo``
@@ -278,30 +279,6 @@ Jupyter and TDD
   and :ref:`Python` tools
 
 
-.. index:: ipython_nose
-.. _ipython_nose:
-
-ipython_nose
-~~~~~~~~~~~~~~
-| Source: git https://github.com/taavi/ipython_nose
-
-
-ipython_nose is an extension for :ref:`IPython Notebook`
-(and likely :ref:`Jupyter Notebook`)
-for discovering and running test functions
-starting with ``test_``
-(and ``unittest.TestCase`` test classes with names containing ``Test``)
-with :ref:`Nose`.
-
-* ipython_nose is not (yet?) uploaded to PyPI
-* to install ipython_nose from GitHub (with :ref:`Pip` and :ref:`Git`):
-
-.. code:: bash
-
-   pip install -e git+https://github.com/taavi/ipython_nose#egg=ipython_nose
-
-
-
 .. index:: nbgrader
 .. _nbgrader:
 
@@ -314,8 +291,8 @@ can be submitted and centrally graded with nbgrader.
 
 .. note:: While it's possible to run tests of all code cells
    in a Jupyter notebook programmatically with runipy,
-   *it's usually preferable to factor
-   testable code into a module and a package*
+   **it's usually preferable to factor
+   testable code into a module and a package**
    (e.g. :ref:`Python Package <python packages>`, :ref:`Conda package <conda>`)
    and then reference those tested functions from within
    :ref:`Jupyter Notebook`.
@@ -323,66 +300,6 @@ can be submitted and centrally graded with nbgrader.
    * :ref:`ipython_nose` is one way to collect and run test functions
      contained in a Jupyter notebook.
 
-
-
-.. index:: runipy
-.. _runipy:
-
-runipy
-~~~~~~~
-| Source: git https://github.com/paulgb/runipy
-| PyPI: https://pypi.python.org/pypi/runipy
-
-runipy runs :ref:`Jupyter notebooks <jupyter notebook>`
-from a :ref:`Shell <shells>` commandline, generates
-:ref:`HTML` reports,
-and can write errors to stderr.
-
-:ref:`Jupyter notebook <Jupyter Notebook>` *manual* test review process:
-
-.. code:: python
-
-    # - run Jupyter Notebook server
-    !jupyter notebook
-    # - Browser
-    #     - navigate to / upload / drag and drop the notebook
-            !web http://localhost:8888   # or https://
-    #     - (optional) click 'Cell' > 'All Output' > 'Clear'
-    #     - click 'Cell' > 'Run All'
-    #     - [wait] <Jupyter Kernel runs noteook>
-    #     - visually seek for the first erroring cell (scroll)
-    #     - review the notebook
-            for (i, o) in notebook_cells:
-                human.manually_review((i, o))
-    # - Compare the files on disk with the most recent commit (HEAD)
-    !git status && git diff
-    !git diff mynotebook.ipynb
-    # - Commit the changes
-    !git-add-commit "TST: mynotebook: tests for #123" ./mynotebook.ipynb
-
-
-:ref:`Jupyter notebook <Jupyter Notebook>` runipy review process:
-
-.. code:: python
-
-    # - runipy the Jupyter notebook
-    !runipy mynotebook.ipynb
-    # - review stdout and stderr from runipy
-    # - review in browser (optional; recommended)
-    #     - navigate to the converted HTML
-            !web ./mynotebook.ipynb.html
-    #     - visually seek for the first erroring cell (scroll)
-    #     - review the notebook
-            for (i, o) in notebook_cells:
-                human.manually_review((i, o))
-    # - Compare the files on disk with the most recent commit (HEAD)
-    !git status && git diff
-    !git diff mynotebook.ipynb*
-    # - Commit the changes
-    !git-add-commit "TST: mynotebook: tests for #123" ./mynotebook.ipynb*
-
-* An example of runipy usage in a :ref:`Makefile <Make>`:
-  https://github.com/westurner/notebooks/blob/gh-pages/Makefile
 
 
 .. index:: JupyterHub Servers
@@ -402,18 +319,18 @@ JupyterHub Servers
   https://en.wikipedia.org/wiki/Principle_of_least_privilege
 
 * There are :ref:`Docker` containers for :ref:`IPython Notebook`,
-  :ref:`Jupyter Notebook`, :ref:`JupyterHub`
+  :ref:`Jupyter Notebook`, :ref:`JupyterHub <jupyter>`
   and supporting services.
 
   * https://github.com/ipython/ipython/wiki/Install:-Docker
 
-* :ref:`JupyterHub` servers spawn and proxy to
+* :ref:`JupyterHub <jupyter>` servers spawn and proxy to
   separate instances of :ref:`Jupyter Notebook`;
   which run on different ports, IPs, and/or containers.
 
   * https://github.com/jupyter/jupyterhub/wiki/Spawners
 
-* :ref:`JupyterHub` servers authenticate users from a number
+* :ref:`JupyterHub <jupyter>` servers authenticate users from a number
   of sources (local, OAuth, GitHub)
 
   * https://github.com/jupyter/jupyterhub/wiki/Authenticators
@@ -431,19 +348,21 @@ Linked Curricula Graphs
 * https://westurner.org/self-directed-learning/slides.html#knowledge-graph (2012)
 * https://westurner.org/redditlog/#comment/ci3c1o3 (2014)
 
+* [ ] Add :ref:`RDFa` to Course Catalog / Index HTML pages
+
+  * [ ] schema.org/Course: https://github.com/schemaorg/schemaorg/issues/195
+
 * [ ] Link each component of the curriculum to a concept URI
-  (e.g. Wikipedia (-> DBpedia RDF <- http://lod-cloud.net/))
 
-  * RDFa in Course Catalog / Index HTML pages would be helpful
+  * ref:`Knowledge Engineering` lists a number of Wikipedia Concept URIs
 
-    * "RDFa": https://wrdrd.com/docs/consulting/knowledge-engineering#rdfa
-    * schema.org/Course: https://github.com/schemaorg/schemaorg/issues/195
+    (e.g. Wikipedia (-> DBpedia RDF <- http://lod-cloud.net/))
+  * A more local/structured vocabulary (with #permalink identifiers)
+    could also defined mappings from local concept URIs to
+    one or more Wikipedia URIs
 
-  * Wikipedia Concept URIs:
-
-    * https://wrdrd.com/docs/consulting/data-science
-    * https://wrdrd.com/docs/consulting/knowledge-engineering
-    * https://wrdrd.com/docs/consulting/education-technology
+* [ ] Write tools to discover curriculum resources
+  relevant to one or more concept URIs (or tag URNs)
 
 
 .. index:: OpenBadges

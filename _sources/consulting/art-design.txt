@@ -868,42 +868,6 @@ AAC is a component of :ref:`MPEG`-4 audio ("MP4").
 * iTunes files are in AAC format (MPEG-4 Audio, MP4, M4a)
 
 
-.. index:: LADSPA
-.. _ladspa:
-
-LADSPA
-~~~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/LADSPA
-| Homepage: http://www.ladspa.org/
-
-LADSPA ("Linux Audio Developer's Simple Plugin API") is
-an :ref:`Open Source <open-source>`
-standard for audio filters and effects
-written in :ref:`C`.
-
-* :ref:`Ardour`, :ref:`Audacity`, :ref:`LiVES`,
-  and :ref:`Rosegarden`
-  all support LADSPA
-
-
-.. index:: MP3
-.. _mp3:
-
-MP3
-~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/MP3
-
-MP3 refers to one of two :ref:`MPEG` audio codecs.
-
-* MP3 can be around a tenth the size of a raw :ref:`WAV` file
-* MP3 can be CBR ("Constant Bitrate") or VBR ("Variable Bitrate")
-  depending on the encoding parameters
-* MP3 is a *lossy* audio compression algorithm
-* Amazon Music (Amazon MP3) files are in MP3 format
-
-See also: :ref:`AAC`, FLAC, Ogg, SHN
-
-
 .. index:: Ardour
 .. _ardour:
 
@@ -969,6 +933,25 @@ written in :ref:`C` and :ref:`C++`.
   * :ref:`Blender`
   * :ref:`VLC`
 
+
+.. index:: LADSPA
+.. _ladspa:
+
+LADSPA
+~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/LADSPA
+| Homepage: http://www.ladspa.org/
+
+LADSPA ("Linux Audio Developer's Simple Plugin API") is
+an :ref:`Open Source <open-source>`
+standard for audio filters and effects
+written in :ref:`C`.
+
+* :ref:`Ardour`, :ref:`Audacity`, :ref:`LiVES`,
+  and :ref:`Rosegarden`
+  all support LADSPA
+
+
 .. index:: Mixxx
 .. _mixxx:
 
@@ -995,6 +978,24 @@ written in :ref:`C++`, :ref:`Qt`, :ref:`XML`, and :ref:`Javascript`.
   and beatmatching indicators ("cue points"),
   time stretching, beat looping, EQ, crossfading
 * Mixx supports timecoded vinyl and CDs
+
+
+.. index:: MP3
+.. _mp3:
+
+MP3
+~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/MP3
+
+MP3 refers to one of two :ref:`MPEG` audio codecs.
+
+* MP3 can be around a tenth the size of a raw :ref:`WAV` file
+* MP3 can be CBR ("Constant Bitrate") or VBR ("Variable Bitrate")
+  depending on the encoding parameters
+* MP3 is a *lossy* audio compression algorithm
+* Amazon Music (Amazon MP3) files are in MP3 format
+
+See also: :ref:`AAC`, FLAC, Ogg, SHN
 
 
 .. index:: WAV
@@ -1351,7 +1352,6 @@ BitTorrent is a file distribution protocol built on top of :ref:`HTTP`.
     or a DHT.
 
   Web Seeding
-
     Web Seeding is when one or more
     :ref:`HTTP` servers serve default standby :term:`seeds <bittorrent seed>`
     (thus ensuring :ref:`Availability`
@@ -1363,11 +1363,10 @@ BitTorrent is a file distribution protocol built on top of :ref:`HTTP`.
 Use Cases:
 
 * http://academictorrents.com/
+* https://tug.org/mactex/MacTeX.pkg.torrent
 * http://torrent.ubuntu.com:6969
 * https://torrent.fedoraproject.org/
 * :ref:`Debtorrent`
-* https://en.wikipedia.org/wiki/Jaydiohead (Jay-Z + Radiohead)
-* http://www.digitaltrends.com/music/thom-yorke-bittorent/
 * https://bundles.bittorrent.com/
 
 .. note:: "Scrambled" DRM content
