@@ -131,10 +131,10 @@ edX is an :ref:`Open Source <open-source>` platform for :ref:`Online Courses`
 written mostly in :ref:`Python` and :ref:`Javascript`.
 
 
-.. index:: Jupyter and EdX
+.. index:: Jupyter and edX
 .. _jupyter and edx:
 
-Jupyter and EdX
+Jupyter and edX
 ~~~~~~~~~~~~~~~~~~
 
 * :ref:`Jupyter Notebook` and :ref:`edX` are mostly written in :ref:`Python`
@@ -172,7 +172,8 @@ Jupyter and Learning
 * Jupyter notebooks can be published as HTML, PDF, ePub, MOBI.
 * Jupyter notebooks can be published as reveal.js HTML slide presentations.
 * Jupyter notebooks can be published to and served directly from GitHub repos.
-* Jupyter notebooks can be published as edX courses.
+* Jupyter notebooks can be published as :ref:`edX` courses
+  (:ref:`Jupyter and edX`)
 * Jupyter notebooks can be structured into
   per-user, per-class, per-project :ref:`Docker` containers
   (and folders)
@@ -184,21 +185,23 @@ Jupyter and Learning
 
   https://github.com/notablemind/notablemind
 
-* Jupyter notebooks can use :ref:`ScipyStack` :ref:`packages`
-  (e.g. :ref:`Pip`, :ref:`conda`, :ref:`Anaconda`)
 * Jupyter notebooks should specify package dependencies
   (see: `Jupyter and Reproducibility`)
+
+  + Jupyter notebooks can utilize code from :ref:`ScipyStack` :ref:`packages`
+    (e.g. :ref:`Pip` :ref:`python packages`, :ref:`conda`, :ref:`Anaconda`)
 
 * :ref:`JupyterHub <jupyter>` servers host :ref:`Jupyter Notebook` servers
   for one or more users; with authentication
   and optional Docker integration.
 
+Learning Topics:
 
-See: :ref:`Computer Science <computer-science>`,
-:ref:`Data Science > Data Learning <data-learning>`,
-:ref:`Software Development <software-development>`,
-:ref:`Python`,
-:ref:`awesome-python-testing`
+* :ref:`Computer Science <computer-science>`
+* :ref:`Data Science > Data Learning <data-learning>`
+* :ref:`Software Development <software-development>`
+* :ref:`Python`
+* :ref:`awesome-python-testing`
 
 
 Jupyter and Reproducibility
@@ -348,17 +351,29 @@ Linked Curricula Graphs
 
   * [ ] schema.org/Course: https://github.com/schemaorg/schemaorg/issues/195
 
-* [ ] Link each component of the curriculum to a concept URI
+* [ ] Link each component of the curriculum to a **Concept URI**
 
-  * ref:`Knowledge Engineering` lists a number of Wikipedia Concept URIs
+  * :ref:`Knowledge Engineering <knowledge-engineering>`
+    lists a number of **Wikipedia Concept URIs**
 
-    (e.g. Wikipedia (-> DBpedia RDF <- http://lod-cloud.net/))
-  * A more local/structured vocabulary (with #permalink identifiers)
-    could also defined mappings from local concept URIs to
-    one or more Wikipedia URIs
+    Wikipedia (-> DBpedia RDF <- http://lod-cloud.net/))
+
+    * https://en.wikipedia.org/wiki/DBpedia -- Wikipedia page for "DBpedia"
+    * https://dbpedia.org/page/DBpedia -- DBpedia page for "DBpedia"
+    * https://www.wikidata.org/wiki/Q465 -- Wikidata page for DBpedia ("Q465")
+
+  * A more local/structured vocabulary (with #permalink :term:`URIs <uri>`)
+    could also defined mppings from local `Concept URIs` to
+    one or more `Wikipedia Concept URIs`
+
+    * `Common Core`
+    * `LRMI`
 
 * [ ] Write tools to discover curriculum resources
-  relevant to one or more concept URIs (or tag URNs)
+  relevant to one or more concept :term:`URIs <uri>`.
+* [ ] Write tools to sequence curriculum resources
+
+  * :ref:`Art & Design > Web Production <web production>`
 
 
 .. index:: OpenBadges
