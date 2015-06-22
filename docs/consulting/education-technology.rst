@@ -295,11 +295,7 @@ can be submitted and centrally graded with nbgrader.
    testable code into a module and a package**
    (e.g. :ref:`Python Package <python packages>`, :ref:`Conda package <conda>`)
    and then reference those tested functions from within
-   :ref:`Jupyter Notebook`.
-
-   * :ref:`ipython_nose` is one way to collect and run test functions
-     contained in a Jupyter notebook.
-
+   a :ref:`Jupyter notebook <jupyter notebook>`.
 
 
 .. index:: JupyterHub Servers
