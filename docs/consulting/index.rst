@@ -24,4 +24,4 @@ WRD R&D Documentation are at:
 The WRD R&D Documentation includes the
 `<https://github.com/westurner/tools>`__
 :ref:`Tools` :ref:`Sphinx` documentation set as a :ref:`Git`
-subrepository as well .
+subrepository as well.
