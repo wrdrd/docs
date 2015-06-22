@@ -105,15 +105,17 @@ Digital Stand-up Meeting
 * Chat (IM, Voice, Video)
 
 
-.. index:: Test-driven Development
+.. index:: Test Driven Development
 .. index:: TDD
-.. _TDD:
+.. _tdd:
 
-Test-driven Development
+Test Driven Development
 ~~~~~~~~~~~~~~~~~~~~~~~~
-https://en.wikipedia.org/wiki/Test-driven_development (TDD)
+| Wikipedia https://en.wikipedia.org/wiki/Test-driven_development
 
-* https://westurner.github.io/wiki/awesome-python-testing
+* https://westurner.org/wiki/awesome-python-testing
+* https://westurner.org/wiki/awesome-python-testing#workflow-evolution
+* https://westurner.org/wiki/awesome-python-testing#test-driven-development-tdd
 
 
 .. index:: Extreme Programming
@@ -122,7 +124,7 @@ https://en.wikipedia.org/wiki/Test-driven_development (TDD)
 
 Extreme Programming
 ~~~~~~~~~~~~~~~~~~~~
-https://en.wikipedia.org/wiki/Extreme_programming (XP)
+| Wikipedia: https://en.wikipedia.org/wiki/Extreme_programming
 
 * http://epf.eclipse.org/wikis/xp/
 
@@ -165,9 +167,14 @@ https://en.wikipedia.org/wiki/Software_development_effort_estimation
 
 Kanban
 ~~~~~~~
-https://en.wikipedia.org/wiki/Kanban (Kanban)
+| Wikipedia: https://en.wikipedia.org/wiki/Kanban
 
 `<https://en.wikipedia.org/wiki/Kanban_(development)>`_
+
+* GitHub and Kanban:
+
+  * https://waffle.io
+  * https://taiga.io (https://github.com/taigaio)
 
 
 .. index:: Continuous Delivery
@@ -176,9 +183,8 @@ https://en.wikipedia.org/wiki/Kanban (Kanban)
 
 Continuous Delivery
 ---------------------
-https://en.wikipedia.org/wiki/Continuous_delivery
-
-https://en.wikipedia.org/wiki/Application_lifecycle_management
+| Wikipedia: https://en.wikipedia.org/wiki/Continuous_delivery
+| https://en.wikipedia.org/wiki/Application_lifecycle_management
 
 
 .. index:: Revision Control
@@ -213,9 +219,9 @@ Branching & Merging
 
 Test Automation
 +++++++++++++++++
-https://en.wikipedia.org/wiki/Test_automation
+| Wikipedia: https://en.wikipedia.org/wiki/Test_automation
 
-https://en.wikipedia.org/wiki/Test-driven_development
+* :ref:`Test Driven Development <TDD>`
 
 
 .. index:: Continuous Integration
@@ -224,6 +230,6 @@ https://en.wikipedia.org/wiki/Test-driven_development
 
 Continuous Integration
 ++++++++++++++++++++++++
-https://en.wikipedia.org/wiki/Continuous_integration
+| Wikipedia: https://en.wikipedia.org/wiki/Continuous_integration
 
 
