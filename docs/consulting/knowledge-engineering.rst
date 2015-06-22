@@ -286,6 +286,7 @@ https://en.wikipedia.org/wiki/List_of_object-relational_mapping_software
 
 
 .. index:: Relational Databases
+.. index:: SQL Databases
 .. _relational-databases:
 
 Relational Databases
@@ -322,7 +323,7 @@ https://en.wikipedia.org/wiki/Relational_database_management_system
 
 
 .. index:: SQL
-.. _sql-databases:
+.. _sql:
 
 SQL
 ````
@@ -337,8 +338,9 @@ https://en.wikipedia.org/wiki/SQL
 See: :ref:`Object Relational Modeling <orm>`
 
 
+.. index:: NoSQL
 .. index:: NoSQL Databases
-.. _nosql-databases:
+.. _nosql:
 
 NoSQL Databases
 +++++++++++++++++
