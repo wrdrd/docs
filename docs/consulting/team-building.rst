@@ -19,10 +19,16 @@ http://www.academia.edu/460313/From_Comfort_Zone_to_Performance_Management
 https://en.wikipedia.org/wiki/Kaizen
 
 
+.. index:: Personal Development
+.. _personal development:
+
 Personal Development
 ----------------------
 https://en.wikipedia.org/wiki/Personal_development
 
+
+.. index:: Emotional Intelligence
+.. _emotional intelligence:
 
 Emotional Intelligence
 ++++++++++++++++++++++++
@@ -48,6 +54,9 @@ https://en.wikipedia.org/wiki/Positive_psychology#Broad_theories
 https://en.wikipedia.org/wiki/Happiness#Research_results
 
 
+.. index:: Collaboration Engineering
+.. _collaboration engineering:
+
 Collaboration Engineering
 ---------------------------
 https://en.wikipedia.org/wiki/Collaboration
@@ -64,6 +73,10 @@ http://aisel.aisnet.org/jais/vol10/iss3/7/
     for mission-critical tasks
     that are recurring and must be executed frequently.
 
+
+.. index:: Seven Layer Model of Collaboration
+.. _seven layer model of collaboration:
+
 Seven Layer Model of Collaboration
 ++++++++++++++++++++++++++++++++++++
 "A Seven-Layer Model of Collaboration:
@@ -78,6 +91,10 @@ http://aisel.aisnet.org/icis2009/26/
     5. Techniques
     6. Tools
     7. Scripts
+
+
+.. index:: Six Patterns of Collaboration
+.. _six patterns of collaboration:
 
 Six Patterns of Collaboration
 +++++++++++++++++++++++++++++++
@@ -107,7 +124,7 @@ https://scholar.google.com/scholar?q=thinklets
 
 
 .. index:: Collaborative Software
-.. _collaborative-software:
+.. _collaborative software:
 
 Collaborative Software
 ------------------------
@@ -157,7 +174,7 @@ See also:
 
 
 .. index:: The same page
-.. _the-same-page:
+.. _the same page:
 
 The same page
 +++++++++++++++
@@ -264,6 +281,6 @@ Collaboration Checklist
 See also:
 
 * :ref:`Software Engineering > Digital Stand Up Meeting
-  <digital-stand-up-meeting>`
+  <digital stand up meeting>`
 * :ref:`Collaboration Plan <collaboration-plan>`
 

@@ -1707,8 +1707,15 @@ URIs for Units
 
 LODCloud
 +++++++++
-| Homepage: http://lod-cloud.net/
+| Homepage: http://lod-cloud.net
+| Source: git https://github.com/lod-cloud/datahub2void
+| Datasets: http://datahub.io/group/lodcloud
+| Download: http://lod-cloud.net/data/void.ttl
 
-Visualize the *Linked Open Data Cloud*
+The LOD ("Linking Open Data") cloud diagram visualizes
+the nodes and edges of the *Linked Open Data Cloud*
+
+* http://lod-cloud.net/#history
+* http://lod-cloud.net/versions/2014-08-30/lod-cloud.svg
 
 
