@@ -219,7 +219,7 @@ Unified Process
 | EPFWiki: http://epf.eclipse.org/wikis/openup/
 
 * "Rational Unified Process" (RUP)
-* OpenUP is an :ref:`Open Source` Unified Process
+* OpenUP is an :ref:`Open Source <open-source>` Unified Process
 
 
 .. index:: Scrum

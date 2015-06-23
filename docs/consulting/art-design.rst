@@ -74,7 +74,14 @@ GIMP
 
 GIMP (GNU Image Manipulation Program) is an
 extensible :ref:`Open Source <open-source>`
-raster image editor (PNG, JPG, GIF, GIMP ``.xcf``).
+raster image editor
+(:ref:`BMP`,
+:ref:`PNG`,
+:ref:`JPEG`,
+:ref:`GIF`,
+`ICO`,
+...,
+GIMP ``.xcf``).
 
 * GIMP plugins are shared at http://registry.gimp.org/popular
 
@@ -202,6 +209,12 @@ NURBS
 ~~~~~~~
 | `<https://en.wikipedia.org/wiki/Non-uniform_rational_B-spline>`__
 
+NURBS ("Non-rational Uniform B-Splines") are scale-invariant
+n-dimensional models.
+
+* NURBS curves are sort of like :ref:`SVG` for :ref:`3D modeling`:
+  they scale losslessly from the very small to the very large.
+
 
 .. index:: OpenGL
 .. _opengl:
@@ -209,6 +222,10 @@ NURBS
 OpenGL
 ~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/OpenGL
+
+OpenGL is an API for 2D and 3D graphics
+on any platform
+which is implemented by all modern GPUs.
 
 
 .. index:: Rhinocerous 3D
@@ -218,6 +235,9 @@ Rhinocerous 3D
 ~~~~~~~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/Rhinoceros_3D
 | Homepage: http://www.rhino3d.com/
+
+Rhinocerous 3D is a commercial :ref:`NURBS` :ref:`3d modeling` tool
+for :ref:`Windows` and :ref:`OSX`.
 
 
 .. index:: SketchUp
@@ -237,13 +257,16 @@ SketchUp
 .. _webgl:
 
 WebGL
-~~~~~~
+~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/WebGL
+| Homepage: https://www.khronos.org/webgl/
+| Standard: https://www.khronos.org/registry/webgl/specs/1.0/
 
-WebGL is an implementation of :ref:`OpenGL`
-for :ref:`Web Browsers <browsers>`.
+WebGL allows :ref:`Web Browsers <browsers>`
+to run :ref:`OpenGL` programs
+with :ref:`HTML5` and :ref:`Javascript`.
 
-See: :ref:`Data Science > Data Visualization Tools <data-visualization-tools>`
+See: :ref:`data-visualization-tools`
 
 
 .. index:: Photography
