@@ -122,8 +122,29 @@ Three Questions
 
 Digital Stand Up Meeting
 ```````````````````````````
-* Live docs and team chat logs are easier to remember,
+
+Pros:
+
+* Live docs, team chat logs, and issue/ticket comment threads
+  have URIs, are easier to remember,
   and more to the point.
+* Easier to prepare for
+* More time to read, think, and respond
+* More comfortable
+* Easier to get up to date with
+
+Cons:
+
+- It's not everyone in the same room
+- "Shouldn't this all be in the issue tracker?"
+
+  * Bugs, User Stories -> Issue Tracker
+  * Daily Stand Up Meeting log ->
+
+    *
+
+Digital Stand Up Meeting Process Checklist:
+
 - [ ] Create a collaboratively edited document ("live doc", "doc")
 
   * Realtime collaborative editors: Etherpad Lite, Google Docs
