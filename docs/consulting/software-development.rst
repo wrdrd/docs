@@ -129,23 +129,23 @@ Digital Stand Up Meeting
   * Realtime collaborative editors: Etherpad Lite, Google Docs
 
   * An example of :ref:`Three Questions` for stand up meetings
-  (in :ref:`Markdown`, with :term:`URIs <uri>`, for GitHub, BitBucket):
+    (in :ref:`Markdown`, with :term:`URIs <uri>`, for GitHub, BitBucket):
   
-  .. code:: markdown
+    .. code::
 
-      # team-name/project-name Daily Stand Up Log
+       # team-name/project-name Daily Stand Up Log
 
-      ## 2015-01-01
+       ## 2015-01-01
 
-      ### @username1
-      1. yesterday:
-      2. today:
-      3. obstacles:
+       ### @username1
+       1. yesterday:
+       2. today:
+       3. obstacles:
 
-      ### @username2
-      1. yesterday:
-      2. today:
-      3. obstacles:
+       ### @username2
+       1. yesterday:
+       2. today:
+       3. obstacles:
 
 - [ ] Share the link to the live doc with the team
 
