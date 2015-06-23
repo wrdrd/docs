@@ -165,9 +165,9 @@
 <li class="toctree-l2"><a class="reference internal" href="index.html#project-management">Project Management</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="index.html#waterfall">Waterfall</a></li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#agile">Agile</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="index.html#stand-up-meeting">Stand-up Meeting</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="index.html#stand-up-meeting">Stand Up Meeting</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="index.html#three-questions">Three Questions</a></li>
-<li class="toctree-l5"><a class="reference internal" href="index.html#digital-stand-up-meeting">Digital Stand-up Meeting</a></li>
+<li class="toctree-l5"><a class="reference internal" href="index.html#digital-stand-up-meeting">Digital Stand Up Meeting</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="index.html#test-driven-development">Test Driven Development</a></li>
@@ -175,13 +175,16 @@
 <li class="toctree-l4"><a class="reference internal" href="index.html#unified-process">Unified Process</a></li>
 <li class="toctree-l4"><a class="reference internal" href="index.html#scrum">Scrum</a></li>
 <li class="toctree-l4"><a class="reference internal" href="index.html#effort-estimation">Effort Estimation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index.html#planning-poker">Planning Poker</a></li>
 <li class="toctree-l4"><a class="reference internal" href="index.html#kanban">Kanban</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#continuous-delivery">Continuous Delivery</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="index.html#revision-control">Revision Control</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="index.html#revision-control">Revision Control</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#distributed-version-control">Distributed Version Control</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="index.html#bisection">Bisection</a></li>
 <li class="toctree-l4"><a class="reference internal" href="index.html#branching-merging">Branching &amp; Merging</a></li>
 </ul>
 </li>
@@ -2045,12 +2048,17 @@ whois $DOMAIN | egrep &#39;Registrar|Date|Domain Status|Registrant|Admin&#39;
 <li><a class="reference external" href="http://epf.eclipse.org/wikis/epfpractices/">http://epf.eclipse.org/wikis/epfpractices/</a></li>
 </ul>
 <div class="section" id="stand-up-meeting">
-<span id="index-6"></span><span id="id6"></span><h5>Stand-up Meeting<a class="headerlink" href="#stand-up-meeting" title="Permalink to this headline">¶</a></h5>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/Stand-up_meeting">https://en.wikipedia.org/wiki/Stand-up_meeting</a></p>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/Scrum_(software_development)#Daily_scrum_meeting">https://en.wikipedia.org/wiki/Scrum_(software_development)#Daily_scrum_meeting</a></p>
+<span id="index-6"></span><span id="id6"></span><h5>Stand Up Meeting<a class="headerlink" href="#stand-up-meeting" title="Permalink to this headline">¶</a></h5>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Stand-up_meeting">https://en.wikipedia.org/wiki/Stand-up_meeting</a></div>
+</div>
+<ul class="simple">
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Scrum_(software_development)#Daily_scrum_meeting">https://en.wikipedia.org/wiki/Scrum_(software_development)#Daily_scrum_meeting</a></li>
+</ul>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Meeting participants need not actually stand.</p>
+<p class="last">Meeting participants need not actually stand;
+as in a <a class="reference internal" href="#digital-stand-up-meeting"><em>Digital Stand Up Meeting</em></a>.</p>
 </div>
 <div class="section" id="three-questions">
 <span id="index-7"></span><span id="id7"></span><h6>Three Questions<a class="headerlink" href="#three-questions" title="Permalink to this headline">¶</a></h6>
@@ -2063,11 +2071,41 @@ whois $DOMAIN | egrep &#39;Registrar|Date|Domain Status|Registrant|Admin&#39;
 </div></blockquote>
 </div>
 <div class="section" id="digital-stand-up-meeting">
-<span id="index-8"></span><span id="id8"></span><h6>Digital Stand-up Meeting<a class="headerlink" href="#digital-stand-up-meeting" title="Permalink to this headline">¶</a></h6>
+<span id="index-8"></span><span id="id8"></span><h6>Digital Stand Up Meeting<a class="headerlink" href="#digital-stand-up-meeting" title="Permalink to this headline">¶</a></h6>
+<ul>
+<li><p class="first">Live docs and team chat logs are easier to remember,
+and more to the point.</p>
+</li>
+<li><p class="first">&#8220;Live doc&#8221;: collaboratively edited document</p>
 <ul class="simple">
-<li>Collaboratively edited (running) document</li>
-<li>Chat (IM, Voice, Video)</li>
+<li>Realtime collaborative editors: Etherpad Lite, Google Docs</li>
 </ul>
+<p>An example of <a class="reference internal" href="#three-questions"><em>Three Questions</em></a> for stand up meetings
+(in <a class="reference internal" href="index.html#markdown"><em>Markdown</em></a>, with <a class="reference internal" href="index.html#term-uri"><em class="xref std std-term">URIs</em></a>, for GitHub, BitBucket):</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="c"># team-name/project-name Daily Stand Up Log</span>
+</pre></div>
+</div>
+<p>## 2015-01-01</p>
+<p>### &#64;username1
+1. yesterday:
+2. today:
+3. obstacles:</p>
+<p>### &#64;username2
+1. yesterday:
+2. today:
+3. obstacles:</p>
+</li>
+<li><p class="first">Chat (Text, Voice, Video)</p>
+<ul class="simple">
+<li>Text: XMPP, HipChat, Gitter, Slack, IRC</li>
+<li>Voice/Video (cross-platform): Google Hangouts, Skype, Cisco WebEx,
+<a class="reference internal" href="index.html#webrtc"><em>WebRTC</em></a></li>
+</ul>
+</li>
+</ul>
+<p>See: <a class="reference internal" href="index.html#team-building"><em>Team Building</em></a> (
+<a class="reference internal" href="index.html#the-same-page"><em>The same page</em></a>,
+<a class="reference internal" href="index.html#collaborative-software"><em>Collaborative Software</em></a>)</p>
 <span class="target" id="index-9"></span></div>
 </div>
 <div class="section" id="test-driven-development">
@@ -2085,39 +2123,46 @@ whois $DOMAIN | egrep &#39;Registrar|Date|Domain Status|Registrant|Admin&#39;
 <span id="xp"></span><span id="index-12"></span><h5>Extreme Programming<a class="headerlink" href="#extreme-programming" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Extreme_programming">https://en.wikipedia.org/wiki/Extreme_programming</a></div>
+<div class="line">EPFWiki: <a class="reference external" href="http://epf.eclipse.org/wikis/xp/">http://epf.eclipse.org/wikis/xp/</a></div>
 </div>
-<ul class="simple">
-<li><a class="reference external" href="http://epf.eclipse.org/wikis/xp/">http://epf.eclipse.org/wikis/xp/</a></li>
-</ul>
 <span class="target" id="index-13"></span></div>
 <div class="section" id="unified-process">
 <span id="index-14"></span><span id="id9"></span><h5>Unified Process<a class="headerlink" href="#unified-process" title="Permalink to this headline">¶</a></h5>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/Unified_Process">https://en.wikipedia.org/wiki/Unified_Process</a> (UP, OpenUP)</p>
-<ul class="simple">
-<li><a class="reference external" href="http://epf.eclipse.org/wikis/openup/">http://epf.eclipse.org/wikis/openup/</a></li>
-</ul>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Unified_Process">https://en.wikipedia.org/wiki/Unified_Process</a> (UP, OpenUP)</div>
+<div class="line">EPFWiki: <a class="reference external" href="http://epf.eclipse.org/wikis/openup/">http://epf.eclipse.org/wikis/openup/</a></div>
+</div>
 </div>
 <div class="section" id="scrum">
 <span id="index-15"></span><span id="id10"></span><h5>Scrum<a class="headerlink" href="#scrum" title="Permalink to this headline">¶</a></h5>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/Scrum_(software_development)">https://en.wikipedia.org/wiki/Scrum_(software_development)</a> (Scrum)</p>
-<ul class="simple">
-<li><a class="reference external" href="http://epf.eclipse.org/wikis/scrum/">http://epf.eclipse.org/wikis/scrum/</a></li>
-<li><a class="reference external" href="http://epf.eclipse.org/wikis/scrum/Scrum/tasks/the_daily_scrum_C8FB7908.html">http://epf.eclipse.org/wikis/scrum/Scrum/tasks/the_daily_scrum_C8FB7908.html</a></li>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Scrum_(software_development)">https://en.wikipedia.org/wiki/Scrum_(software_development)</a></div>
+<div class="line">EPFWiki: <a class="reference external" href="http://epf.eclipse.org/wikis/scrum/">http://epf.eclipse.org/wikis/scrum/</a></div>
+</div>
+<ul>
+<li><p class="first">The Daily Scrum (EPF Wiki Entry)</p>
+<p><a class="reference external" href="http://epf.eclipse.org/wikis/scrum/Scrum/tasks/the_daily_scrum_C8FB7908.html">http://epf.eclipse.org/wikis/scrum/Scrum/tasks/the_daily_scrum_C8FB7908.html</a></p>
+</li>
 </ul>
-<span class="target" id="index-16"></span></div>
+<span class="target" id="index-16"></span><span class="target" id="index-17"></span></div>
 <div class="section" id="effort-estimation">
-<span id="index-17"></span><span id="id11"></span><h5>Effort Estimation<a class="headerlink" href="#effort-estimation" title="Permalink to this headline">¶</a></h5>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/Software_development_effort_estimation">https://en.wikipedia.org/wiki/Software_development_effort_estimation</a></p>
-<ul class="simple">
-<li><a class="reference external" href="https://en.wikipedia.org/wiki/Planning_poker">https://en.wikipedia.org/wiki/Planning_poker</a></li>
-</ul>
+<span id="index-18"></span><span id="id11"></span><h5>Effort Estimation<a class="headerlink" href="#effort-estimation" title="Permalink to this headline">¶</a></h5>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Software_development_effort_estimation">https://en.wikipedia.org/wiki/Software_development_effort_estimation</a></div>
+</div>
+</div>
+<div class="section" id="planning-poker">
+<span id="index-19"></span><span id="id12"></span><h5>Planning Poker<a class="headerlink" href="#planning-poker" title="Permalink to this headline">¶</a></h5>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Planning_poker">https://en.wikipedia.org/wiki/Planning_poker</a></div>
+</div>
 </div>
 <div class="section" id="kanban">
-<span id="index-18"></span><span id="id12"></span><h5>Kanban<a class="headerlink" href="#kanban" title="Permalink to this headline">¶</a></h5>
+<span id="index-20"></span><span id="id13"></span><h5>Kanban<a class="headerlink" href="#kanban" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Kanban">https://en.wikipedia.org/wiki/Kanban</a></div>
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Kanban_(development)">https://en.wikipedia.org/wiki/Kanban_(development)</a></div>
 </div>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/Kanban_(development)">https://en.wikipedia.org/wiki/Kanban_(development)</a></p>
 <ul class="simple">
 <li>GitHub and Kanban:<ul>
 <li><a class="reference external" href="https://waffle.io">https://waffle.io</a></li>
@@ -2125,45 +2170,111 @@ whois $DOMAIN | egrep &#39;Registrar|Date|Domain Status|Registrant|Admin&#39;
 </ul>
 </li>
 </ul>
-<span class="target" id="index-19"></span></div>
+<span class="target" id="index-21"></span></div>
 </div>
 </div>
 <div class="section" id="continuous-delivery">
-<span id="index-20"></span><span id="id13"></span><h3>Continuous Delivery<a class="headerlink" href="#continuous-delivery" title="Permalink to this headline">¶</a></h3>
+<span id="index-22"></span><span id="id14"></span><h3>Continuous Delivery<a class="headerlink" href="#continuous-delivery" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Continuous_delivery">https://en.wikipedia.org/wiki/Continuous_delivery</a></div>
-<div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/Application_lifecycle_management">https://en.wikipedia.org/wiki/Application_lifecycle_management</a></div>
 </div>
-<span class="target" id="index-21"></span><span class="target" id="index-22"></span><span class="target" id="index-23"></span><div class="section" id="revision-control">
-<span id="index-24"></span><span id="id14"></span><h4>Revision Control<a class="headerlink" href="#revision-control" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/Revision_control">https://en.wikipedia.org/wiki/Revision_control</a></p>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/Distributed_revision_control">https://en.wikipedia.org/wiki/Distributed_revision_control</a></p>
+<ul>
+<li><p class="first"><a class="reference external" href="https://en.wikipedia.org/wiki/Application_lifecycle_management">https://en.wikipedia.org/wiki/Application_lifecycle_management</a></p>
+</li>
+<li><p class="first">US Digital Services Playbook</p>
+<p><a class="reference external" href="https://playbook.cio.gov/">https://playbook.cio.gov/</a></p>
 <ul class="simple">
-<li><a class="reference external" href="https://en.wikipedia.org/wiki/Git_(software)">https://en.wikipedia.org/wiki/Git_(software)</a></li>
-<li><a class="reference external" href="https://en.wikipedia.org/wiki/Mercurial">https://en.wikipedia.org/wiki/Mercurial</a></li>
+<li><a class="reference external" href="https://westurner.org/opengov/us/us-digital-services-playbook">https://westurner.org/opengov/us/us-digital-services-playbook</a></li>
 </ul>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/Bisection_(software_engineering)">https://en.wikipedia.org/wiki/Bisection_(software_engineering)</a></p>
+</li>
+</ul>
+<span class="target" id="index-23"></span><span class="target" id="index-24"></span><span class="target" id="index-25"></span><div class="section" id="revision-control">
+<span id="index-26"></span><span id="id15"></span><h4>Revision Control<a class="headerlink" href="#revision-control" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Revision_control">https://en.wikipedia.org/wiki/Revision_control</a></div>
+</div>
+<p>Revision control is a change management strategy for a project
+repository.</p>
+<ul class="simple">
+<li>There is a better way than emailing which version
+of what the attachment was named
+before the re: subject line changed.<ul>
+<li>folders</li>
+<li>file versions</li>
+<li>usernames, change logs, signatures</li>
+</ul>
+</li>
+<li>&#8220;Revision control&#8221; is synonomous with &#8220;<a class="reference internal" href="index.html#vcs"><em>Version Control</em></a>&#8221;.</li>
+<li>Centralized <a class="reference internal" href="#revision-control"><em>Revision Control Systems</em></a>:
+<a class="reference internal" href="index.html#cvs"><em>CVS</em></a>, <a class="reference internal" href="index.html#subversion"><em>SVN</em></a></li>
+<li><a class="reference internal" href="#dvcs"><em>Distributed Revision Control Systems</em></a>:
+<a class="reference internal" href="index.html#git"><em>Git</em></a>, <a class="reference internal" href="index.html#mercurial"><em>Mercurial</em></a>, <a class="reference internal" href="index.html#bazaar"><em>Bazaar</em></a></li>
+</ul>
+<span class="target" id="index-27"></span></div>
+<div class="section" id="distributed-version-control">
+<span id="dvcs"></span><span id="index-28"></span><h4>Distributed Version Control<a class="headerlink" href="#distributed-version-control" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Distributed_revision_control">https://en.wikipedia.org/wiki/Distributed_revision_control</a></div>
+</div>
+<p>Distributed Revision Control Systems (&#8220;DVCS&#8221;) are
+<a class="reference internal" href="index.html#vcs"><em>version control</em></a> systems designed
+for backup redundancy and collaboration.</p>
+<ul class="simple">
+<li><a class="reference external" href="http://betterexplained.com/articles/intro-to-distributed-version-control-illustrated/">http://betterexplained.com/articles/intro-to-distributed-version-control-illustrated/</a></li>
+<li><a class="reference internal" href="index.html#git"><em>Git</em></a>, <a class="reference internal" href="index.html#mercurial"><em>Mercurial</em></a>, <a class="reference internal" href="index.html#bazaar"><em>Bazaar</em></a></li>
+<li><a class="reference internal" href="index.html#vcs"><em>Version Control Systems</em></a> (<a class="reference internal" href="index.html#git"><em>Git</em></a>, <a class="reference internal" href="index.html#hubflow"><em>HubFlow</em></a>, <a class="reference internal" href="index.html#mercurial"><em>Mercurial</em></a>)</li>
+</ul>
+<div class="section" id="bisection">
+<span id="index-29"></span><span id="id16"></span><h5>Bisection<a class="headerlink" href="#bisection" title="Permalink to this headline">¶</a></h5>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Bisection_(software_engineering)">https://en.wikipedia.org/wiki/Bisection_(software_engineering)</a></div>
+</div>
+<p>Bisection is a method for determining which change causes a fault
+(or a specific test to change from passing to failing or vice-versa).</p>
+<p>Many bisection algorithms take a start and end (&#8220;between here and here&#8221;)
+and do a binary search (&#8220;this half or that half&#8221;);
+checking out each revision and running a script that
+should return <code class="docutils literal"><span class="pre">0</span></code> for OK, or non-zero.</p>
+<p>Code bisection with <a class="reference internal" href="index.html#git"><em>Git</em></a>:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://www.kernel.org/pub/software/scm/git/docs/git-bisect.html">https://www.kernel.org/pub/software/scm/git/docs/git-bisect.html</a></li>
+<li><a class="reference external" href="https://www.kernel.org/pub/software/scm/git/docs/git-blame.html">https://www.kernel.org/pub/software/scm/git/docs/git-blame.html</a></li>
+<li><a class="reference external" href="http://git-scm.com/book/en/Git-Tools-Debugging-with-Git">http://git-scm.com/book/en/Git-Tools-Debugging-with-Git</a></li>
+</ul>
+<p>Code bisection with <a class="reference internal" href="index.html#mercurial"><em>Mercurial</em></a>:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://www.selenic.com/mercurial/hg.1.html#bisect">http://www.selenic.com/mercurial/hg.1.html#bisect</a></li>
+<li><a class="reference external" href="http://www.selenic.com/mercurial/hg.1.html#annotate">http://www.selenic.com/mercurial/hg.1.html#annotate</a></li>
+<li><a class="reference external" href="http://hgbook.red-bean.com/read/finding-and-fixing-mistakes.html#sec:undo:bisect">http://hgbook.red-bean.com/read/finding-and-fixing-mistakes.html#sec:undo:bisect</a></li>
+</ul>
+</div>
 <div class="section" id="branching-merging">
-<h5>Branching &amp; Merging<a class="headerlink" href="#branching-merging" title="Permalink to this headline">¶</a></h5>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/Branching_(revision_control)">https://en.wikipedia.org/wiki/Branching_(revision_control)</a></p>
+<span id="branching-and-merging"></span><span id="index-30"></span><h5>Branching &amp; Merging<a class="headerlink" href="#branching-merging" title="Permalink to this headline">¶</a></h5>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Branching_(revision_control)">https://en.wikipedia.org/wiki/Branching_(revision_control)</a></div>
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Merge_(revision_control)">https://en.wikipedia.org/wiki/Merge_(revision_control)</a></div>
+</div>
 <ul class="simple">
-<li><a class="reference external" href="https://datasift.github.io/gitflow/IntroducingGitFlow.html">https://datasift.github.io/gitflow/IntroducingGitFlow.html</a></li>
 <li><a class="reference external" href="http://www.infoq.com/articles/agile-version-control">http://www.infoq.com/articles/agile-version-control</a></li>
+<li><a class="reference internal" href="index.html#hubflow"><em>HubFlow</em></a> &#8211; a <a class="reference internal" href="index.html#git"><em>Git</em></a> release workflow
+for GitHub and <em>Pull Requests</em> with always-stable
+(&#8220;firm&#8221;) <code class="docutils literal"><span class="pre">master</span></code> and <code class="docutils literal"><span class="pre">develop</span></code> branches,
+and <code class="docutils literal"><span class="pre">hotfix/</span></code>, <code class="docutils literal"><span class="pre">feature/</span></code>, and <code class="docutils literal"><span class="pre">release/</span></code> branches;
+consistently woven.</li>
 </ul>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/Merge_(revision_control)">https://en.wikipedia.org/wiki/Merge_(revision_control)</a></p>
 </div>
 </div>
 <div class="section" id="test-automation">
-<span id="index-25"></span><span id="id15"></span><h4>Test Automation<a class="headerlink" href="#test-automation" title="Permalink to this headline">¶</a></h4>
+<span id="index-31"></span><span id="id17"></span><h4>Test Automation<a class="headerlink" href="#test-automation" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Test_automation">https://en.wikipedia.org/wiki/Test_automation</a></div>
 </div>
 <ul class="simple">
 <li><a class="reference internal" href="#tdd"><em>Test Driven Development</em></a></li>
 </ul>
-<span class="target" id="index-26"></span></div>
+<span class="target" id="index-32"></span></div>
 <div class="section" id="continuous-integration">
-<span id="index-27"></span><span id="id16"></span><h4>Continuous Integration<a class="headerlink" href="#continuous-integration" title="Permalink to this headline">¶</a></h4>
+<span id="index-33"></span><span id="id18"></span><h4>Continuous Integration<a class="headerlink" href="#continuous-integration" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Continuous_integration">https://en.wikipedia.org/wiki/Continuous_integration</a></div>
 </div>
@@ -4447,9 +4558,17 @@ can also be searched or looked up from <a class="reference internal" href="#pref
 <div class="section" id="lodcloud">
 <span id="index-107"></span><span id="id77"></span><h4>LODCloud<a class="headerlink" href="#lodcloud" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
-<div class="line">Homepage: <a class="reference external" href="http://lod-cloud.net/">http://lod-cloud.net/</a></div>
+<div class="line">Homepage: <a class="reference external" href="http://lod-cloud.net">http://lod-cloud.net</a></div>
+<div class="line">Source: git <a class="reference external" href="https://github.com/lod-cloud/datahub2void">https://github.com/lod-cloud/datahub2void</a></div>
+<div class="line">Datasets: <a class="reference external" href="http://datahub.io/group/lodcloud">http://datahub.io/group/lodcloud</a></div>
+<div class="line">Download: <a class="reference external" href="http://lod-cloud.net/data/void.ttl">http://lod-cloud.net/data/void.ttl</a></div>
 </div>
-<p>Visualize the <em>Linked Open Data Cloud</em></p>
+<p>The LOD (&#8220;Linking Open Data&#8221;) cloud diagram visualizes
+the nodes and edges of the <em>Linked Open Data Cloud</em></p>
+<ul class="simple">
+<li><a class="reference external" href="http://lod-cloud.net/#history">http://lod-cloud.net/#history</a></li>
+<li><a class="reference external" href="http://lod-cloud.net/versions/2014-08-30/lod-cloud.svg">http://lod-cloud.net/versions/2014-08-30/lod-cloud.svg</a></li>
+</ul>
 </div>
 </div>
 </div>
@@ -6346,10 +6465,10 @@ all Free and <a class="reference internal" href="index.html#open-source"><em>Ope
 <a class="reference external" href="http://www.academia.edu/460313/From_Comfort_Zone_to_Performance_Management">http://www.academia.edu/460313/From_Comfort_Zone_to_Performance_Management</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Kaizen">https://en.wikipedia.org/wiki/Kaizen</a></p>
 <div class="section" id="personal-development">
-<h3>Personal Development<a class="headerlink" href="#personal-development" title="Permalink to this headline">¶</a></h3>
+<span id="index-1"></span><span id="id2"></span><h3>Personal Development<a class="headerlink" href="#personal-development" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Personal_development">https://en.wikipedia.org/wiki/Personal_development</a></p>
 <div class="section" id="emotional-intelligence">
-<h4>Emotional Intelligence<a class="headerlink" href="#emotional-intelligence" title="Permalink to this headline">¶</a></h4>
+<span id="index-2"></span><span id="id3"></span><h4>Emotional Intelligence<a class="headerlink" href="#emotional-intelligence" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Emotional_intelligence">https://en.wikipedia.org/wiki/Emotional_intelligence</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Industrial_and_organizational_psychology">https://en.wikipedia.org/wiki/Industrial_and_organizational_psychology</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Motivation">https://en.wikipedia.org/wiki/Motivation</a></p>
@@ -6366,7 +6485,7 @@ all Free and <a class="reference internal" href="index.html#open-source"><em>Ope
 </div>
 </div>
 <div class="section" id="collaboration-engineering">
-<h3>Collaboration Engineering<a class="headerlink" href="#collaboration-engineering" title="Permalink to this headline">¶</a></h3>
+<span id="index-3"></span><span id="id4"></span><h3>Collaboration Engineering<a class="headerlink" href="#collaboration-engineering" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Collaboration">https://en.wikipedia.org/wiki/Collaboration</a></p>
 <p>&#8220;Collaboration Engineering: Foundations and Opportunities&#8221; de Vreede
 (2009)
@@ -6379,7 +6498,7 @@ stakeholders. Collaboration Engineering further focuses on processes
 for mission-critical tasks
 that are recurring and must be executed frequently.</div></blockquote>
 <div class="section" id="seven-layer-model-of-collaboration">
-<h4>Seven Layer Model of Collaboration<a class="headerlink" href="#seven-layer-model-of-collaboration" title="Permalink to this headline">¶</a></h4>
+<span id="index-4"></span><span id="id5"></span><h4>Seven Layer Model of Collaboration<a class="headerlink" href="#seven-layer-model-of-collaboration" title="Permalink to this headline">¶</a></h4>
 <p>&#8220;A Seven-Layer Model of Collaboration:
 Separation of Concerns for Designers of
 Collaboration Systems&#8221; Briggs (2009)
@@ -6397,7 +6516,7 @@ Collaboration Systems&#8221; Briggs (2009)
 </div></blockquote>
 </div>
 <div class="section" id="six-patterns-of-collaboration">
-<h4>Six Patterns of Collaboration<a class="headerlink" href="#six-patterns-of-collaboration" title="Permalink to this headline">¶</a></h4>
+<span id="index-5"></span><span id="id6"></span><h4>Six Patterns of Collaboration<a class="headerlink" href="#six-patterns-of-collaboration" title="Permalink to this headline">¶</a></h4>
 <p>&#8220;Defining Key Concepts for
 Collaboration Engineering&#8221; Briggs (2006)
 <a class="reference external" href="http://aisel.aisnet.org/amcis2006/17/">http://aisel.aisnet.org/amcis2006/17/</a></p>
@@ -6413,7 +6532,7 @@ Collaboration Engineering&#8221; Briggs (2006)
 </div></blockquote>
 </div>
 <div class="section" id="thinklets">
-<span id="index-1"></span><span id="id2"></span><h4>ThinkLets<a class="headerlink" href="#thinklets" title="Permalink to this headline">¶</a></h4>
+<span id="index-6"></span><span id="id7"></span><h4>ThinkLets<a class="headerlink" href="#thinklets" title="Permalink to this headline">¶</a></h4>
 <p>&#8220;ThinkLets: Achieving Predictable, Repeatable Patterns of
 Group Interaction with Group Support Systems (GSS)&#8221;
 <a class="reference external" href="http://www.academia.edu/259943/ThinkLets_Achieving_Predictable_Repeatable_Patterns_of_Group_Interaction_With_Group_Support_Systems_GSS_">http://www.academia.edu/259943/ThinkLets_Achieving_Predictable_Repeatable_Patterns_of_Group_Interaction_With_Group_Support_Systems_GSS_</a></p>
@@ -6421,7 +6540,7 @@ Group Interaction with Group Support Systems (GSS)&#8221;
 </div>
 </div>
 <div class="section" id="collaborative-software">
-<span id="index-2"></span><span id="id3"></span><h3>Collaborative Software<a class="headerlink" href="#collaborative-software" title="Permalink to this headline">¶</a></h3>
+<span id="index-7"></span><span id="id8"></span><h3>Collaborative Software<a class="headerlink" href="#collaborative-software" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/Collaborative_software">https://en.wikipedia.org/wiki/Collaborative_software</a></div>
 <div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/Collaborative_software#Classification">https://en.wikipedia.org/wiki/Collaborative_software#Classification</a></div>
@@ -6467,7 +6586,7 @@ Group Interaction with Group Support Systems (GSS)&#8221;
 </li>
 </ul>
 <div class="section" id="the-same-page">
-<span id="index-3"></span><span id="id4"></span><h4>The same page<a class="headerlink" href="#the-same-page" title="Permalink to this headline">¶</a></h4>
+<span id="index-8"></span><span id="id9"></span><h4>The same page<a class="headerlink" href="#the-same-page" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wiktionary: <a class="reference external" href="https://en.wiktionary.org/wiki/on_the_same_page">https://en.wiktionary.org/wiki/on_the_same_page</a></div>
 </div>
@@ -6502,7 +6621,7 @@ Group Interaction with Group Support Systems (GSS)&#8221;
 </ul>
 </div>
 <div class="section" id="text-templates">
-<span id="index-4"></span><span id="id5"></span><h4>Text Templates<a class="headerlink" href="#text-templates" title="Permalink to this headline">¶</a></h4>
+<span id="index-9"></span><span id="id10"></span><h4>Text Templates<a class="headerlink" href="#text-templates" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li>[ ] Collaboration with Etherpad Lite and Thinklets:
 &#8220;As ____, we need to ____ because _____&#8221;
@@ -6511,7 +6630,7 @@ Group Interaction with Group Support Systems (GSS)&#8221;
 </div>
 </div>
 <div class="section" id="collaboration-checklist">
-<span id="index-5"></span><span id="id6"></span><h3>Collaboration Checklist<a class="headerlink" href="#collaboration-checklist" title="Permalink to this headline">¶</a></h3>
+<span id="index-10"></span><span id="id11"></span><h3>Collaboration Checklist<a class="headerlink" href="#collaboration-checklist" title="Permalink to this headline">¶</a></h3>
 <ul>
 <li><p class="first">[X] Read <a class="reference external" href="https://wrdrd.com/docs/consulting/team-building">https://wrdrd.com/docs/consulting/team-building</a></p>
 </li>
@@ -11737,7 +11856,7 @@ stripsinglehtml --help
 
 <dl class="function">
 <dt id="wrdrd.tools.crawl.crawl_url">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">crawl_url</code><span class="sig-paren">(</span><em>start_url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10e683150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#crawl_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.crawl_url" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">crawl_url</code><span class="sig-paren">(</span><em>start_url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10b00e150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#crawl_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.crawl_url" title="Permalink to this definition">¶</a></dt>
 <dd><p>Crawl pages starting at <code class="docutils literal"><span class="pre">start_url</span></code></p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -12030,7 +12149,7 @@ a <a class="reference internal" href="#wrdrd.tools.crawl.Link" title="wrdrd.tool
 
 <dl class="function">
 <dt id="wrdrd.tools.crawl.print_frequency_table">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">print_frequency_table</code><span class="sig-paren">(</span><em>frequencies</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10e683150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#print_frequency_table"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.print_frequency_table" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">print_frequency_table</code><span class="sig-paren">(</span><em>frequencies</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10b00e150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#print_frequency_table"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.print_frequency_table" title="Permalink to this definition">¶</a></dt>
 <dd><p>Print a formatted ASCII frequency table</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -12184,7 +12303,7 @@ a <a class="reference internal" href="#wrdrd.tools.crawl.Link" title="wrdrd.tool
 
 <dl class="function">
 <dt id="wrdrd.tools.crawl.wrdcrawler">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">wrdcrawler</code><span class="sig-paren">(</span><em>url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10e683150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#wrdcrawler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.wrdcrawler" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">wrdcrawler</code><span class="sig-paren">(</span><em>url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10b00e150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#wrdcrawler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.wrdcrawler" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fetch and generate a report from the given URL</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />

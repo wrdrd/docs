@@ -96,17 +96,18 @@ https://en.wikipedia.org/wiki/Lean_software_development
 .. index:: Stand-up Meeting
 .. _stand-up-meeting:
 
-Stand-up Meeting
+Stand Up Meeting
 ~~~~~~~~~~~~~~~~~
-https://en.wikipedia.org/wiki/Stand-up_meeting
+| Wikipedia: https://en.wikipedia.org/wiki/Stand-up_meeting
 
-`<https://en.wikipedia.org/wiki/Scrum_(software_development)#Daily_scrum_meeting>`_
+* `<https://en.wikipedia.org/wiki/Scrum_(software_development)#Daily_scrum_meeting>`_
 
-.. note:: Meeting participants need not actually stand.
+.. note:: Meeting participants need not actually stand;
+   as in a :ref:`Digital Stand Up Meeting`.
 
 
 .. index:: Three Questions
-.. _three-questions:
+.. _three questions:
 
 Three Questions
 `````````````````
@@ -117,12 +118,43 @@ Three Questions
 
 
 .. index:: Digital Stand-up Meeting
-.. _digital-stand-up-meeting:
+.. _digital stand up meeting:
 
-Digital Stand-up Meeting
+Digital Stand Up Meeting
 ```````````````````````````
-* Collaboratively edited (running) document
-* Chat (IM, Voice, Video)
+* Live docs and team chat logs are easier to remember,
+  and more to the point.
+* "Live doc": collaboratively edited document
+
+  * Realtime collaborative editors: Etherpad Lite, Google Docs
+
+  An example of :ref:`Three Questions` for stand up meetings
+  (in :ref:`Markdown`, with :term:`URIs <uri>`, for GitHub, BitBucket)::
+
+  # team-name/project-name Daily Stand Up Log
+
+  ## 2015-01-01
+
+  ### @username1
+  1. yesterday:
+  2. today:
+  3. obstacles:
+
+  ### @username2
+  1. yesterday:
+  2. today:
+  3. obstacles:
+
+* Chat (Text, Voice, Video)
+
+  * Text: XMPP, HipChat, Gitter, Slack, IRC
+  * Voice/Video (cross-platform): Google Hangouts, Skype, Cisco WebEx,
+    :ref:`WebRTC`
+
+
+See: :ref:`Team Building <team-building>` (
+:ref:`The same page`,
+:ref:`Collaborative software`)
 
 
 .. index:: Test Driven Development
@@ -145,8 +177,7 @@ Test Driven Development
 Extreme Programming
 ~~~~~~~~~~~~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/Extreme_programming
-
-* http://epf.eclipse.org/wikis/xp/
+| EPFWiki: http://epf.eclipse.org/wikis/xp/
 
 
 .. index:: Unified Process
@@ -155,9 +186,8 @@ Extreme Programming
 
 Unified Process
 ~~~~~~~~~~~~~~~~~
-https://en.wikipedia.org/wiki/Unified_Process (UP, OpenUP)
-
-* http://epf.eclipse.org/wikis/openup/
+| Wikipedia: https://en.wikipedia.org/wiki/Unified_Process (UP, OpenUP)
+| EPFWiki: http://epf.eclipse.org/wikis/openup/
 
 
 .. index:: Scrum
@@ -165,21 +195,31 @@ https://en.wikipedia.org/wiki/Unified_Process (UP, OpenUP)
 
 Scrum
 ~~~~~~~
-`<https://en.wikipedia.org/wiki/Scrum_(software_development)>`_ (Scrum)
-
-* http://epf.eclipse.org/wikis/scrum/
-* http://epf.eclipse.org/wikis/scrum/Scrum/tasks/the_daily_scrum_C8FB7908.html
+| Wikipedia: `<https://en.wikipedia.org/wiki/Scrum_(software_development)>`_
+| EPFWiki: http://epf.eclipse.org/wikis/scrum/
 
 
+* The Daily Scrum (EPF Wiki Entry)
+
+  http://epf.eclipse.org/wikis/scrum/Scrum/tasks/the_daily_scrum_C8FB7908.html
+
+
+.. index:: Software Development Effort Estimation
 .. index:: Effort Estimation
 .. index:: Planning Poker
 .. _effort-estimation:
 
 Effort Estimation
 ~~~~~~~~~~~~~~~~~~~
-https://en.wikipedia.org/wiki/Software_development_effort_estimation
+| Wikipedia: https://en.wikipedia.org/wiki/Software_development_effort_estimation
 
-* https://en.wikipedia.org/wiki/Planning_poker
+
+.. index:: Planning Poker
+.. _planning poker:
+
+Planning Poker
+~~~~~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Planning_poker
 
 
 .. index:: Kanban
@@ -188,8 +228,7 @@ https://en.wikipedia.org/wiki/Software_development_effort_estimation
 Kanban
 ~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/Kanban
-
-`<https://en.wikipedia.org/wiki/Kanban_(development)>`_
+| Wikipedia: `<https://en.wikipedia.org/wiki/Kanban_(development)>`_
 
 * GitHub and Kanban:
 
@@ -204,7 +243,13 @@ Kanban
 Continuous Delivery
 ---------------------
 | Wikipedia: https://en.wikipedia.org/wiki/Continuous_delivery
-| https://en.wikipedia.org/wiki/Application_lifecycle_management
+
+* https://en.wikipedia.org/wiki/Application_lifecycle_management
+* US Digital Services Playbook
+
+  https://playbook.cio.gov/
+
+  * https://westurner.org/opengov/us/us-digital-services-playbook
 
 
 .. index:: Revision Control
@@ -215,23 +260,86 @@ Continuous Delivery
 
 Revision Control
 ++++++++++++++++++
-https://en.wikipedia.org/wiki/Revision_control
+| Wikipedia: https://en.wikipedia.org/wiki/Revision_control
 
-https://en.wikipedia.org/wiki/Distributed_revision_control
+Revision control is a change management strategy for a project
+repository.
 
-* `<https://en.wikipedia.org/wiki/Git_(software)>`_
-* https://en.wikipedia.org/wiki/Mercurial
+* There is a better way than emailing which version
+  of what the attachment was named
+  before the re: subject line changed.
 
-`<https://en.wikipedia.org/wiki/Bisection_(software_engineering)>`_
+  * folders
+  * file versions
+  * usernames, change logs, signatures
+
+* "Revision control" is synonomous with ":ref:`Version Control <vcs>`".
+* Centralized :ref:`Revision Control Systems <revision-control>`:
+  :ref:`CVS`, :ref:`SVN <subversion>`
+* :ref:`Distributed Revision Control Systems <dvcs>`: 
+  :ref:`Git`, :ref:`Mercurial`, :ref:`Bazaar`
+
+
+.. index:: Distributed Revision Control
+.. index:: DVCS
+.. _dvcs:
+
+Distributed Version Control
+++++++++++++++++++++++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/Distributed_revision_control
+
+Distributed Revision Control Systems ("DVCS") are
+:ref:`version control <vcs>` systems designed
+for backup redundancy and collaboration.
+
+* http://betterexplained.com/articles/intro-to-distributed-version-control-illustrated/
+* :ref:`Git`, :ref:`Mercurial`, :ref:`Bazaar`
+* :ref:`vcs` (:ref:`Git`, :ref:`HubFlow`, :ref:`Mercurial`)
+
+
+.. index:: Bisection
+.. _bisection:
+
+Bisection
+~~~~~~~~~~~
+| Wikipedia: `<https://en.wikipedia.org/wiki/Bisection_(software_engineering)>`_
+
+Bisection is a method for determining which change causes a fault
+(or a specific test to change from passing to failing or vice-versa).
+
+Many bisection algorithms take a start and end ("between here and here")
+and do a binary search ("this half or that half");
+checking out each revision and running a script that
+should return ``0`` for OK, or non-zero.
+
+Code bisection with :ref:`git`:
+
+* https://www.kernel.org/pub/software/scm/git/docs/git-bisect.html
+* https://www.kernel.org/pub/software/scm/git/docs/git-blame.html
+* http://git-scm.com/book/en/Git-Tools-Debugging-with-Git
+
+Code bisection with :ref:`mercurial`:
+
+* http://www.selenic.com/mercurial/hg.1.html#bisect
+* http://www.selenic.com/mercurial/hg.1.html#annotate
+* http://hgbook.red-bean.com/read/finding-and-fixing-mistakes.html#sec:undo:bisect
+
+
+.. index:: Branching & Merging
+.. _branching and merging:
 
 Branching & Merging
 ~~~~~~~~~~~~~~~~~~~~~
-`<https://en.wikipedia.org/wiki/Branching_(revision_control)>`_
+| Wikipedia: `<https://en.wikipedia.org/wiki/Branching_(revision_control)>`_
+| Wikipedia: `<https://en.wikipedia.org/wiki/Merge_(revision_control)>`_
 
-* https://datasift.github.io/gitflow/IntroducingGitFlow.html
 * http://www.infoq.com/articles/agile-version-control
+* :ref:`HubFlow` -- a :ref:`Git` release workflow
+  for GitHub and *Pull Requests* with always-stable
+  ("firm") ``master`` and ``develop`` branches,
+  and ``hotfix/``, ``feature/``, and ``release/`` branches;
+  consistently woven.
 
-`<https://en.wikipedia.org/wiki/Merge_(revision_control)>`_
 
 
 .. index:: Test Automation
