@@ -211,6 +211,7 @@ https://en.wikipedia.org/wiki/Peer_review
 
 * https://en.wikipedia.org/wiki/Repeatability
 * https://en.wikipedia.org/wiki/Reproducibility
+* :ref:`Reproducibility`
 
 
 .. index:: Scientific Method
@@ -242,6 +243,8 @@ https://en.wikipedia.org/wiki/Design_of_experiments
 * https://en.wikipedia.org/wiki/Design_of_experiments#Discussion_topics_when_setting_up_an_experimental_design
 * https://en.wikipedia.org/wiki/Repeatability
 * https://en.wikipedia.org/wiki/Reproducibility
+
+See: :ref:`Jupyter and Reproducibility`
 
 
 .. index:: Systematic Review
