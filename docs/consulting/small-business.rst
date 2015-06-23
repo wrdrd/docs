@@ -114,7 +114,9 @@ https://en.wikipedia.org/wiki/Business_plan
   * Publish to HTML and PDF:
 
     * https://github.com/westurner/wiki/blob/master/Makefile
-    * https://westurner.github.io/pages/resume (RST)
+      (:ref:`Make`, :ref:`Sphinx`)
+    * https://westurner.github.io/pages/resume
+      (:ref:`ReStructuredText`)
 
 
 .. index:: Marketing
@@ -228,6 +230,7 @@ https://en.wikipedia.org/wiki/Web_analytics
 
 * `<https://en.wikipedia.org/wiki/Impression_(online_media)>`__
 * https://en.wikipedia.org/wiki/Conversion_marketing#Conversion_rate
+* Total Time Reading (TTR)
 * [ ] Get Analytics tracking id(s)
 * [ ] Add Analytics JS to page
 * [ ] Configure factors variables conditions
@@ -282,6 +285,8 @@ https://en.wikipedia.org/wiki/Copy_testing
 * Keywords and phrases
 * :ref:`Concept <concept>`
 
+See also: :ref:`Art & Design > Screenwriting <screenwriting>`
+
 
 .. index:: Graphic Design
 .. _graphic-design:
@@ -290,6 +295,9 @@ Graphic Design
 +++++++++++++++
 https://en.wikipedia.org/wiki/Graphic_design
 
+See: :ref:`Art & Design > Graphic Design`
+
+
 .. index:: Color Scheme
 .. _color-scheme:
 
@@ -297,9 +305,12 @@ Color scheme
 `````````````
 https://en.wikipedia.org/wiki/Color_scheme
 
-Hex Codes
+* https://en.wikipedia.org/wiki/Color_chart
+* Web: https://en.wikipedia.org/wiki/Web_colors
 
-Pantone Codes
+  * [ ] Style guide: What are our :ref:`branding` hexadecimal color codes?
+
+* Print, Manufacturing: https://en.wikipedia.org/wiki/Pantone
 
 
 .. index:: Typeface
@@ -315,7 +326,7 @@ https://en.wikipedia.org/wiki/Web_typography
 
 http://www.google.com/fonts
 
-Web-compatible font names
+* Web-compatible font names: ``serif``, ``sans-serif``, ``monospace``
 
 
 .. index:: Logo (graphical)
@@ -325,9 +336,17 @@ Logo
 `````
 https://en.wikipedia.org/wiki/Logo#Internet-compatible_logos
 
-Logo: Graphic Image
 
-Logotype/Wordmark: Stylized Business Name
+.. glossary::
+
+    Logo
+        Graphic image
+
+    Logotype:
+        Stylized business name
+
+    Wordmark:
+        See: :term:`logotype`
 
 
 .. index:: Favicon
@@ -395,7 +414,7 @@ Pinterest
 
 Sources:
 
-* Google Chrome Developer Tools (Inspect Element)
+* :ref:`Chrome DevTools` (Inspect Element)
 * http://www.prosar.com/inbound_marketing_blog/bid/181457/Cheat-Sheet-Image-Sizes-for-Twitter-Facebook-Pinterest-Google-LinkedIn
 * http://thefinancialbrand.com/30777/facebook-twitter-youtube-linkedin-profile-image-sizes/
 * http://help.linkedin.com/app/answers/detail/a_id/32617
@@ -406,7 +425,7 @@ Sources:
 
 Photography Checklist
 ```````````````````````
-* [ ] Photography Guidelines 
+* [ ] :ref:`Photography` Guidelines
 
   + [ ] Lighting: Event Time of day, sources, colors, shine
   + [ ] Perspective: Closeups, Angles
@@ -426,6 +445,7 @@ Photography Checklist
   + [ ] Carousel API
 
 
+
 .. index:: Web Layout Graphics
 .. index:: Layout Graphics
 .. _layout-graphics:
@@ -434,18 +454,19 @@ Layout Graphics
 ````````````````
 See: :ref:`Web Development > Web Design > Web Layout <web-layout>`
 
-# TODO:
 
-  * From embedded image layout:
+* [ ] Acquire :ref:`Web Content` from :ref:`Photographer`, Logo
+  Designer, site maintainer
 
-    * Contact Original Designer
-    * Crop from image layout
+  * :ref:`SVG` vector images are often more rescalable and reusable
+  * Which font is the / best matches the :term:`wordmark`?
 
-* Acquire content images
+* Legacy websites tend to have embedded image layouts
+  (because style)
 
-TODO: note regarding SVG vector images
+  * [ ] Contact Original Designer / Copyright Owner
+  * [ ] Crop images (e.g. :ref:`Logo`, :term:`workmark`) from image layout
 
-TODO: note regarding image layouts
 
 
 .. index:: Social Media
@@ -453,6 +474,29 @@ TODO: note regarding image layouts
 
 Social Media
 ~~~~~~~~~~~~~~
+https://en.wikipedia.org/wiki/Social_media
+
+https://en.wikipedia.org/wiki/Social_technology
+
+https://en.wikipedia.org/wiki/Social_networking_service
+
+https://en.wikipedia.org/wiki/List_of_social_networking_websites
+
+    "I want to favorite/like/share/upvote this but it's not I can't
+    just copy the URL I want to click"
+
+
+.. index:: Twitter
+
+.. _twitter:
+
+Twitter
++++++++++
+- [ ] Are you ``@tweetable``?
+- [ ] Can we enqueue these for followup?
+
+  * SalesForce :ref:`CRM` TwitterForce
+  * Zapier (Twitter -> ______): https://zapier.com/zapbook/twitter/
 
 
 .. index:: Location Based Services
@@ -460,52 +504,105 @@ Social Media
 
 Location Based Services
 ++++++++++++++++++++++++
+https://en.wikipedia.org/wiki/Location-based_service
 
+* https://en.wikipedia.org/wiki/Location-based_service#Location_Based_Marketing_Best_Practices
 
 * Google Maps
 
-  * Directions Link
-  * Static Images
+  * [ ] Directions Link
+  * [ ] Static Map / Directions Images
 
-    * https://developers.google.com/maps/documentation/imageapis/
+    https://developers.google.com/maps/documentation/imageapis/
+
     * Map Image
     * Street View Image
 
-  * Google MapMaker
+  * [ ] Maps Widget
 
-    * https://www.google.com/mapmaker/
+    https://developers.google.com/maps/documentation/embed/start
+
+  * [ ] Check the directions
+
+    https://www.google.com/mapmaker/
+
+  * [ ] "Get your business on Google"
+
+    * https://www.google.com/business/
 
 * Bing Maps
 
-  *
+  * [ ] Directions Link
+  * [ ] Static Map / Directions Images
 
-* Foursquare
+    https://www.bing.com/maps/embed/Customize.aspx
 
-  *
+    * Map Image
+
+  * [ ] Maps Widget
+
+    https://www.bing.com/maps/embed/Customize.aspx
+
+  * [ ] Check the directions
+
+    https://www.bing.com/maps/ > "Feedback"
+
+  * [ ] "Add your business to Bing in 3 easy steps"
+
+    * https://www.bingplaces.com/
 
 * Facebook
 
-  *
+  * [ ] Check in to the page with location services on
+  * [ ] Check in to the page with location services off
+
+* Foursquare
+
+  * [ ] Badge into the mayorship
 
 
 Restaurant
 ++++++++++++
 
-* Content
+* :ref:`Web Content`
 
-  * Foodie photos are normally close-ups at an angle
+  * :ref:`Photography Guidelines`:
+    Foodie photos are normally close-ups at an angle
 
     * Top-down / bird's eye photos are not as appealing
 
 * Online Reviews
 
-  * Zagat
-
-  * Yelp
-
-    * Photos
+  * http://schema.org/review
 
   * UrbanSpoon
 
     * Photos
 
+  * Yelp
+
+    * Photos
+
+  * Zagat
+
+
+
+
+.. index:: Voice Searches to Test
+.. _voice searches to test:
+
+Voice Searches to Test
+~~~~~~~~~~~~~~~~~~~~~~~
+
+- [ ] "Directions to ________ [in <city>, <state>]"
+
+  * :ref:`Schema.org`: https://schema.org/location
+
+- [ ] "What time does _____ open/close?"
+
+  * :ref:`Schema.org`: https://schema.org/openingHours
+
+- [ ] "Where can I find _____ in <city>, <state>?"
+
+
+See: :ref:`Web Development Checklist <web-development-checklist>`
