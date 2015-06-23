@@ -357,9 +357,9 @@ Favicon
 ````````
 https://en.wikipedia.org/wiki/Favicon
 
-* PNG: 16x16, 32x32, 64x64, 128x128, 256x256, 512x512
-* Apple Touch: 57x57, 72x72, 114x114, 144x144
-* `<https://en.wikipedia.org/wiki/ICO_(file_format)>`_
+* :ref:`SVG` -> :ref:`ICO`, :ref:`PNG`
+* [ ] PNG: 16x16, 32x32, 64x64, 128x128, 256x256, 512x512
+* [ ] Apple Touch: 57x57, 72x72, 114x114, 144x144
 * Transparent backgrounds work well
 
 
