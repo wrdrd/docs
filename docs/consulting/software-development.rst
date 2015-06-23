@@ -124,13 +124,12 @@ Digital Stand Up Meeting
 ```````````````````````````
 * Live docs and team chat logs are easier to remember,
   and more to the point.
-- [ ] Create "Live doc" collaboratively edited document
+- [ ] Create a collaboratively edited document ("live doc", "doc")
 
   * Realtime collaborative editors: Etherpad Lite, Google Docs
-
   * An example of :ref:`Three Questions` for stand up meetings
     (in :ref:`Markdown`, with :term:`URIs <uri>`, for GitHub, BitBucket):
-  
+
     .. code::
 
        # team-name/project-name Daily Stand Up Log
@@ -138,14 +137,14 @@ Digital Stand Up Meeting
        ## 2015-01-01
 
        ### @username1
-       1. yesterday:
-       2. today:
-       3. obstacles:
+       1. yesterday: #1, #2, http://
+       2. today: #2
+       3. obstacles: -
 
        ### @username2
-       1. yesterday:
-       2. today:
-       3. obstacles:
+       1. yesterday: #3, #2, https://
+       2. today: #2
+       3. obstacles: -
 
 - [ ] Share the link to the live doc with the team
 
@@ -159,8 +158,8 @@ Digital Stand Up Meeting
     :ref:`WebRTC`
 
 
-See: :ref:`Team Building <team-building>` (
-:ref:`The same page`,
+See: :ref:`Team Building <team-building>`
+(:ref:`The same page`,
 :ref:`Collaborative software`)
 
 
@@ -288,7 +287,7 @@ repository.
 * "Revision control" is synonomous with ":ref:`Version Control <vcs>`".
 * Centralized :ref:`Revision Control Systems <revision-control>`:
   :ref:`CVS`, :ref:`SVN <subversion>`
-* :ref:`Distributed Revision Control Systems <dvcs>`: 
+* :ref:`Distributed Revision Control Systems <dvcs>`:
   :ref:`Git`, :ref:`Mercurial`, :ref:`Bazaar`
 
 
