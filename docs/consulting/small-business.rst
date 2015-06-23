@@ -466,7 +466,7 @@ See: :ref:`Web Development > Web Design > Web Layout <web-layout>`
   (because style)
 
   * [ ] Contact Original Designer / Copyright Owner
-  * [ ] Crop images (e.g. :ref:`Logo`, :term:`workmark`) from image layout
+  * [ ] Crop images (e.g. :ref:`Logo`, :term:`wordmark`) from image layout
   * [ ] Match :ref:`Types` and :ref:`Color scheme`
 
 
