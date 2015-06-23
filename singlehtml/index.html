@@ -2072,19 +2072,44 @@ as in a <a class="reference internal" href="#digital-stand-up-meeting"><em>Digit
 </div>
 <div class="section" id="digital-stand-up-meeting">
 <span id="index-8"></span><span id="id8"></span><h6>Digital Stand Up Meeting<a class="headerlink" href="#digital-stand-up-meeting" title="Permalink to this headline">¶</a></h6>
-<ul>
-<li><p class="first">Live docs and team chat logs are easier to remember,
-and more to the point.</p>
-</li>
-<li><p class="first">&#8220;Live doc&#8221;: collaboratively edited document</p>
 <ul class="simple">
-<li>Realtime collaborative editors: Etherpad Lite, Google Docs</li>
+<li>Live docs and team chat logs are easier to remember,
+and more to the point.</li>
 </ul>
-<p>An example of <a class="reference internal" href="#three-questions"><em>Three Questions</em></a> for stand up meetings
-(in <a class="reference internal" href="index.html#markdown"><em>Markdown</em></a>, with <a class="reference internal" href="index.html#term-uri"><em class="xref std std-term">URIs</em></a>, for GitHub, BitBucket)</p>
+<ul>
+<li><p class="first">[ ] Create &#8220;Live doc&#8221; collaboratively edited document</p>
+<ul>
+<li><p class="first">Realtime collaborative editors: Etherpad Lite, Google Docs</p>
 </li>
-<li><p class="first">Chat (Text, Voice, Video)</p>
+<li><p class="first">An example of <a class="reference internal" href="#three-questions"><em>Three Questions</em></a> for stand up meetings
+(in <a class="reference internal" href="index.html#markdown"><em>Markdown</em></a>, with <a class="reference internal" href="index.html#term-uri"><em class="xref std std-term">URIs</em></a>, for GitHub, BitBucket):</p>
+<div class="code highlight-python"><div class="highlight"><pre># team-name/project-name Daily Stand Up Log
+
+## 2015-01-01
+
+### @username1
+1. yesterday:
+2. today:
+3. obstacles:
+
+### @username2
+1. yesterday:
+2. today:
+3. obstacles:
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+<li><p class="first">[ ] Share the link to the live doc with the team</p>
 <ul class="simple">
+<li>[ ] Email, Text Chat</li>
+<li>[ ] Meeting/event invitations (iCal)</li>
+</ul>
+</li>
+</ul>
+<ul class="simple">
+<li>[ ] Chat (Text, Voice, Video)<ul>
 <li>Text: XMPP, HipChat, Gitter, Slack, IRC</li>
 <li>Voice/Video (cross-platform): Google Hangouts, Skype, Cisco WebEx,
 <a class="reference internal" href="index.html#webrtc"><em>WebRTC</em></a></li>
@@ -11848,7 +11873,7 @@ stripsinglehtml --help
 
 <dl class="function">
 <dt id="wrdrd.tools.crawl.crawl_url">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">crawl_url</code><span class="sig-paren">(</span><em>start_url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10f4ff150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#crawl_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.crawl_url" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">crawl_url</code><span class="sig-paren">(</span><em>start_url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10c916150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#crawl_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.crawl_url" title="Permalink to this definition">¶</a></dt>
 <dd><p>Crawl pages starting at <code class="docutils literal"><span class="pre">start_url</span></code></p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -12141,7 +12166,7 @@ a <a class="reference internal" href="#wrdrd.tools.crawl.Link" title="wrdrd.tool
 
 <dl class="function">
 <dt id="wrdrd.tools.crawl.print_frequency_table">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">print_frequency_table</code><span class="sig-paren">(</span><em>frequencies</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10f4ff150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#print_frequency_table"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.print_frequency_table" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">print_frequency_table</code><span class="sig-paren">(</span><em>frequencies</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10c916150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#print_frequency_table"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.print_frequency_table" title="Permalink to this definition">¶</a></dt>
 <dd><p>Print a formatted ASCII frequency table</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -12295,7 +12320,7 @@ a <a class="reference internal" href="#wrdrd.tools.crawl.Link" title="wrdrd.tool
 
 <dl class="function">
 <dt id="wrdrd.tools.crawl.wrdcrawler">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">wrdcrawler</code><span class="sig-paren">(</span><em>url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10f4ff150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#wrdcrawler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.wrdcrawler" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">wrdcrawler</code><span class="sig-paren">(</span><em>url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10c916150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#wrdcrawler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.wrdcrawler" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fetch and generate a report from the given URL</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
