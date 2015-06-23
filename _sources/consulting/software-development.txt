@@ -129,21 +129,23 @@ Digital Stand Up Meeting
   * Realtime collaborative editors: Etherpad Lite, Google Docs
 
   An example of :ref:`Three Questions` for stand up meetings
-  (in :ref:`Markdown`, with :term:`URIs <uri>`, for GitHub, BitBucket)::
+  (in :ref:`Markdown`, with :term:`URIs <uri>`, for GitHub, BitBucket)
+  
+  .. code:: markdown
 
-  # team-name/project-name Daily Stand Up Log
+      # team-name/project-name Daily Stand Up Log
 
-  ## 2015-01-01
+      ## 2015-01-01
 
-  ### @username1
-  1. yesterday:
-  2. today:
-  3. obstacles:
+      ### @username1
+      1. yesterday:
+      2. today:
+      3. obstacles:
 
-  ### @username2
-  1. yesterday:
-  2. today:
-  3. obstacles:
+      ### @username2
+      1. yesterday:
+      2. today:
+      3. obstacles:
 
 * Chat (Text, Voice, Video)
 
@@ -181,13 +183,18 @@ Extreme Programming
 
 
 .. index:: Unified Process
+.. index:: RUP
+.. index:: OpenUp
 .. index:: UP
 .. _unified-process:
 
 Unified Process
 ~~~~~~~~~~~~~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/Unified_Process (UP, OpenUP)
+| Wikipedia: https://en.wikipedia.org/wiki/Unified_Process
 | EPFWiki: http://epf.eclipse.org/wikis/openup/
+
+* "Rational Unified Process" (RUP)
+* OpenUP is an :ref:`Open Source` Unified Process
 
 
 .. index:: Scrum
