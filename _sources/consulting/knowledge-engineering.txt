@@ -191,7 +191,7 @@ https://en.wikipedia.org/wiki/Index#Computer_science
 
 
 .. index:: Data Structures
-.. _data-structures:
+.. _data structures:
 
 Data Structures
 ++++++++++++++++
@@ -1653,9 +1653,62 @@ for working with :ref:`RDF` in the Python programming language.
 
 Semantic Web Schema Resources
 -------------------------------
-* http://prefix.cc -- Lookup :ref:`RDF` vocabularies, classes, and properties
-* http://lov.okfn.org/dataset/lov/ -- View metadata of and links
-  between vocabularies
-* http://lod-cloud.net/ -- Visualize the *Linked Open Data Cloud*
+
+.. index:: prefix.cc
+.. _prefix.cc:
+
+prefix.cc
+++++++++++++
+| Homepage: http://prefix.cc
+| Docs:
+
+Lookup :ref:`RDF` vocabularies, classes, and properties
+
+
+.. index:: Linked Open Vocabularies
+.. index:: LOV
+.. _lov:
+
+LOV
+++++
+| Homepage: http://lov.okfn.org/
+| Source: git https://github.com/pyvandenbussche/lov
+| SPARQL: http://lov.okfn.org/dataset/lov/sparql
+| Docs: http://lov.okfn.org/dataset/lov/api
+
+LOV ("Linked Open Vocabularies") is a web application
+for cataloging and viewing metadata of and links between
+vocabularies (:ref:`RDF`, :ref:`RDFS`, :ref:`OWL`)
+
+* All of the vocabularies stored in LOV as a bubble chart:
+
+  http://lov.okfn.org/dataset/lov/
+
+* LOV has a "suggest a vocabulary" feature
+* Many of the vocabularies stored in LOV
+  can also be searched or looked up from :ref:`prefix.cc`.
+
+
+.. index:: URIs for Units
+.. _uris for units:
+
+URIs for Units
++++++++++++++++++++
+
+* https://lists.w3.org/Archives/Public/public-vocabs/2014Jan/0157.html
+
+  * https://lists.w3.org/Archives/Public/public-vocabs/2015May/
+  * https://lists.w3.org/Archives/Public/public-vocabs/2015May/thread.html
+
+
+
+.. index:: LODCloud
+.. _lodcloud:
+
+LODCloud
++++++++++
+| Homepage: http://lod-cloud.net/
+
+Visualize the *Linked Open Data Cloud*
 
 

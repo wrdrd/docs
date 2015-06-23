@@ -23,6 +23,8 @@ Self Directed Learning
 | ePub: http://media.readthedocs.org/epub/self-directed-learning/latest/self-directed-learning.epub
 
 
+.. index:: Publishing
+.. _publishing:
 
 Publishing
 ============
@@ -204,12 +206,19 @@ Learning Topics:
 * :ref:`awesome-python-testing`
 
 
+.. index:: Jupyter and Reproducibility
+.. _jupyter and reproducibility:
+
 Jupyter and Reproducibility
 *****************************
 
 :ref:`Jupyter notebook <jupyter notebook>`,
 :ref:`Open Science <open-science>`,
 and `Reproducibility`.
+
+| Lecture notes (in :ref:`IPython Notebook` format) on
+| Reproducible Science And Modern Scientific Software
+| https://github.com/fperez/reprosw
 
 | "Ten Simple Rules for Reproducible Computational Research"
 | http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003285#s4
