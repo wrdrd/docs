@@ -124,12 +124,12 @@ Digital Stand Up Meeting
 ```````````````````````````
 * Live docs and team chat logs are easier to remember,
   and more to the point.
-* "Live doc": collaboratively edited document
+- [ ] Create "Live doc" collaboratively edited document
 
   * Realtime collaborative editors: Etherpad Lite, Google Docs
 
-  An example of :ref:`Three Questions` for stand up meetings
-  (in :ref:`Markdown`, with :term:`URIs <uri>`, for GitHub, BitBucket)
+  * An example of :ref:`Three Questions` for stand up meetings
+  (in :ref:`Markdown`, with :term:`URIs <uri>`, for GitHub, BitBucket):
   
   .. code:: markdown
 
@@ -147,7 +147,12 @@ Digital Stand Up Meeting
       2. today:
       3. obstacles:
 
-* Chat (Text, Voice, Video)
+- [ ] Share the link to the live doc with the team
+
+  - [ ] Email, Text Chat
+  - [ ] Meeting/event invitations (iCal)
+
+* [ ] Chat (Text, Voice, Video)
 
   * Text: XMPP, HipChat, Gitter, Slack, IRC
   * Voice/Video (cross-platform): Google Hangouts, Skype, Cisco WebEx,
