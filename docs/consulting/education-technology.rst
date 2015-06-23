@@ -269,7 +269,7 @@ and `Reproducibility`.
     * `clonezilla` (backup and restore partitions from
       CD/DVD, LAN, HTTP, SSH, PXE)
     * `bup` (:ref:`git`-like backups for very many and very large files)
-    * `rsync`, `ssnapshot`, `rdiff`
+    * `rsync`, `rsnapshot`, `rdiff`
 
   * :ref:`Virtualization` Machine Imaging Tools
 
@@ -365,7 +365,7 @@ Linked Curricula Graphs
   * :ref:`Knowledge Engineering <knowledge-engineering>`
     lists a number of **Wikipedia Concept URIs**
 
-    Wikipedia (-> DBpedia RDF <- http://lod-cloud.net/))
+    Wikipedia (-> DBpedia RDF <- :ref:`LODCloud`))
 
     * https://en.wikipedia.org/wiki/DBpedia -- Wikipedia page for "DBpedia"
     * https://dbpedia.org/page/DBpedia -- DBpedia page for "DBpedia"
@@ -379,8 +379,9 @@ Linked Curricula Graphs
     * `LRMI`
 
 * [ ] Write tools to discover curriculum resources
-  relevant to one or more concept :term:`URIs <uri>`.
-* [ ] Write tools to sequence curriculum resources
+  relevant to one or more concept :term:`URIs <uri>`
+* [ ] Write tools to sequence curriculum resources which have
+  :term:`URIs <uri>`
 
   * :ref:`Art & Design > Web Production <web production>`
 
