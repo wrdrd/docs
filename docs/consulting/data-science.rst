@@ -710,7 +710,7 @@ http://bokeh.pydata.org/
 
 * https://github.com/bokeh/bokeh
 
-http://vispy.org/ (OpenGL)
+http://vispy.org/ (:ref:`OpenGL`)
 
 * https://github.com/vispy/vispy
 
@@ -731,11 +731,11 @@ https://en.wikipedia.org/wiki/D3.js
 
 https://en.wikipedia.org/wiki/Three.js
 
-* http://threejs.org/
+* http://threejs.org/ (:ref:`WebGL`)
 
 http://sigmajs.org/
 
-http://www.pyqtgraph.org/ (OpenGL)
+http://www.pyqtgraph.org/ (:ref:`OpenGL`)
 
 http://pandas.pydata.org/pandas-docs/stable/ecosystem.html#visualization
 

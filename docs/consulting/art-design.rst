@@ -261,10 +261,23 @@ WebGL
 | Wikipedia: https://en.wikipedia.org/wiki/WebGL
 | Homepage: https://www.khronos.org/webgl/
 | Standard: https://www.khronos.org/registry/webgl/specs/1.0/
+| Docs: https://www.khronos.org/developers/reference-cards/
+| Docs: https://www.khronos.org/webgl/wiki/
+| Docs: http://caniuse.com/#search=webgl
 
 WebGL allows :ref:`Web Browsers <browsers>`
 to run :ref:`OpenGL` programs
 with :ref:`HTML5` and :ref:`Javascript`.
+
+* Lists of WebGL implementations:
+
+  https://www.khronos.org/webgl/wiki/User_Contributions
+
+  https://en.wikipedia.org/wiki/Category:WebGL
+
+* WebGL Chrome Experiments:
+
+  https://www.chromeexperiments.com/webgl
 
 See: :ref:`data-visualization-tools`
 
