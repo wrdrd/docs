@@ -231,12 +231,24 @@ https://en.wikipedia.org/wiki/Hypothesis
 * https://en.wikipedia.org/wiki/Alternative_hypothesis
 * https://en.wikipedia.org/wiki/Dependent_and_independent_variables
 
+
+.. index:: Reproducibility
+.. _reproducibility:
+
+Reproducibility
+``````````````````
 https://en.wikipedia.org/wiki/Design_of_experiments
 
 * https://en.wikipedia.org/wiki/Design_of_experiments#Discussion_topics_when_setting_up_an_experimental_design
 * https://en.wikipedia.org/wiki/Repeatability
 * https://en.wikipedia.org/wiki/Reproducibility
 
+
+.. index:: Systematic Review
+.. index:: Meta-analysis
+
+Systematic Review
+```````````````````
 https://en.wikipedia.org/wiki/Meta-analysis
 
 https://en.wikipedia.org/wiki/Systematic_review
@@ -251,6 +263,8 @@ Math
 https://en.wikipedia.org/wiki/Mathematics
 
 https://en.wikipedia.org/wiki/Outline_of_mathematics
+
+https://en.wikipedia.org/wiki/Mathematics_education#Methods
 
 * http://www.iflscience.com/brain/math-gifs-will-help-you-understand-these-concepts-better-your-teacher-ever-did
 
@@ -272,6 +286,9 @@ Math Courses
 * :ref:`Linear Algebra <linear-algebra>`
 * :ref:`Calculus`
 * :ref:`Information Theory <information-theory>`
+* "Mathematics for Computer Science" (CC-BY-SA 3.0)
+
+  http://courses.csail.mit.edu/6.042/spring14/mcs.pdf
 * https://www.khanacademy.org/math/recreational-math
 * https://www.khanacademy.org/math/competition-math
 * https://www.class-central.com/subject/maths
@@ -359,7 +376,8 @@ https://en.wikipedia.org/wiki/Linear_algebra
 
 * https://www.khanacademy.org/math/linear-algebra
 * http://www.ulaff.net/
-* https://github.com/ULAFF/notebooks/ (:ref:`IPython` notebooks)
+* https://github.com/ULAFF/notebooks/
+  (:ref:`Jupyter Notebooks <jupyter notebook>`)
 
 
 .. index:: Calculus
@@ -377,6 +395,7 @@ https://en.wikipedia.org/wiki/Calculus
 * https://en.wikipedia.org/wiki/AP_Calculus
 * http://apcentral.collegeboard.com/apc/public/courses/teachers_corner/2178.html
 * http://www.sagemath.org/calctut/
+* http://boxen.math.washington.edu/home/wdj/teaching/calc1-sage/
 * http://nbviewer.ipython.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-5-Sympy.ipynb
 * http://scipy-lectures.github.io/advanced/sympy.html#calculus
 * https://www.class-central.com/subject/calculus-and-mathematical-analysis
@@ -541,11 +560,25 @@ https://en.wikipedia.org/wiki/Online_machine_learning
 * https://en.wikipedia.org/wiki/Supervised_learning
 * https://en.wikipedia.org/wiki/Unsupervised_learning
 
+
+.. index:: Deep Learning
+.. _deep learning:
+
+Deep Learning
+~~~~~~~~~~~~~~
+https://en.wikipedia.org/wiki/Deep_learning
+
+
+
 Tools
 -------
 https://en.wikipedia.org/wiki/Scientific_workflow_system
 
 https://github.com/josephmisiti/awesome-machine-learning
+
+See: :ref:`Tools`,
+:ref:`Jupyter and Reproducibility`,
+:ref:`Publishing`
 
 
 Techniques
@@ -556,9 +589,8 @@ Automated Workflows
 Standard, Automated Workflows
 
 * :ref:`Scientific Method <scientific-method>`
-* https://en.wikipedia.org/wiki/Repeatability
-* https://en.wikipedia.org/wiki/Reproducibility
-* https://en.wikipedia.org/wiki/Occam%27s_razor
+* :ref:`Reproducibility`
+* `<https://en.wikipedia.org/wiki/Occam's_razor>`__
 
 .. pull-quote::
 
@@ -619,7 +651,8 @@ http://www.w3.org/TR/ld-glossary/#x5-star-linked-open-data
    -- http://5stardata.info/
 
 
-See: :ref:`Knowledge Engineering <knowledge-engineering>`.
+See: :ref:`Knowledge Engineering <knowledge-engineering>`,
+:ref:`Semantic Web Standards <semantic-web-standards>`
 
 
 .. index:: Data Visualization
@@ -629,8 +662,23 @@ Data Visualization
 ++++++++++++++++++++
 https://en.wikipedia.org/wiki/Data_visualization
 
+
+.. index:: Visualizing Data Science
+.. _visualizing data science:
+
+Visualizing Data Science
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The Data Science Venn Diagram
+
 * http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram
 * http://datascienceassn.org/content/fourth-bubble-data-science-venn-diagram-social-sciences
+
+Field representations
+
++ https://github.com/josephmisiti/awesome-machine-learning
++ http://scikit-learn.org/stable/tutorial/machine_learning_map/
++ :ref:`LODCloud`
 
 
 .. index:: Data Visualization Tools
@@ -688,12 +736,11 @@ http://www.pyqtgraph.org/ (OpenGL)
 
 http://pandas.pydata.org/pandas-docs/stable/ecosystem.html#visualization
 
-https://github.com/quantopian/qgrid (SlickGrid w/ IPython Notebook (
-Jupyter Notebook))
-
-https://westurner.org/tools/
+https://github.com/quantopian/qgrid (SlickGrid w/
+:ref:`IPython Notebook`
+(:ref:`Jupyter Notebook`))
 
 https://github.com/josephmisiti/awesome-machine-learning
 
-See: :ref:`Semantic Web Tools <semantic-web-tools>`,
+See: :ref:`Tools`, :ref:`Semantic Web Tools <semantic-web-tools>`,
 :ref:`Art & Design <art-design>`

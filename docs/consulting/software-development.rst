@@ -17,6 +17,7 @@ https://en.wikipedia.org/wiki/Category:Software_design_patterns
 https://en.wikipedia.org/wiki/Software_engineering
 
 
+.. index:: CS
 .. index:: Computer Science
 .. _computer-science:
 
@@ -24,15 +25,34 @@ Computer Science
 -----------------
 https://en.wikipedia.org/wiki/Computer_science#Applied_computer_science
 
-`<https://en.wikipedia.org/wiki/Abstraction_(computer_science)>`_
+https://en.wikipedia.org/wiki/Outline_of_computer_science
 
-https://en.wikipedia.org/wiki/Category:Algorithms
+https://en.wikipedia.org/wiki/Category:Computer_science
+
+Topics:
+
+* `<https://en.wikipedia.org/wiki/Abstraction_(computer_science)>`_
+* https://en.wikipedia.org/wiki/Computer_engineering
+* https://en.wikipedia.org/wiki/Category:Algorithms
+* :ref:`Data Structures`
+* :ref:`Operating Systems`
+* :ref:`Software Development <software-development>` (*applied CS*)
+* :ref:`Data Science <data-science>` (*applied CS*)
+* :ref:`Knowledge Engineering <knowledge-engineering>` (*applied CS*)
+* :ref:`Science` (*applied CS* with/for/on behalf of a domain)
+
+Exercises, Problems
 
 * http://rosettacode.org/wiki/Category:Programming_Tasks
 * https://projecteuler.net/problems
 * https://rosalind.info
 
-https://en.wikipedia.org/wiki/Computer_engineering
+Computer Science courses and :ref:`Online Courses`:
+
+* http://www.acm.org/education/curricula/ComputerScience2008.pdf
+* https://www.khanacademy.org/cs
+* https://www.class-central.com/subject/cs
+
 
 
 .. index:: Project Management
