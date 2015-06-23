@@ -115,6 +115,19 @@ in order to avoid basically GIF.
 * 2015: Google+, Twitter, Facebook add support for GIFs
 
 
+.. index:: ICO
+.. _ico:
+
+ICO
+~~~~~
+| Wikipedia: `<https://en.wikipedia.org/wiki/ICO_(file_format)>`__
+
+ICO is a computer graphics file format for icons.
+
+* ICO files store multiple resolutions in one file.
+* :ref:`GIMP` can work with ICO files
+
+
 .. index:: Inkscape
 .. _inkscape:
 
