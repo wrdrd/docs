@@ -181,13 +181,18 @@ Extreme Programming
 
 
 .. index:: Unified Process
+.. index:: RUP
+.. index:: OpenUp
 .. index:: UP
 .. _unified-process:
 
 Unified Process
 ~~~~~~~~~~~~~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/Unified_Process (UP, OpenUP)
+| Wikipedia: https://en.wikipedia.org/wiki/Unified_Process
 | EPFWiki: http://epf.eclipse.org/wikis/openup/
+
+* "Rational Unified Process" (RUP)
+* OpenUP is an :ref:`Open Source` Unified Process
 
 
 .. index:: Scrum
