@@ -212,7 +212,7 @@ Learning Topics:
 Jupyter and Reproducibility
 *****************************
 
-:ref:`Jupyter notebook <jupyter notebook>`,
+:ref:`Jupyter Notebook <jupyter notebook>`,
 :ref:`Open Science <open-science>`,
 and `Reproducibility`.
 
@@ -231,12 +231,12 @@ and `Reproducibility`.
 
     https://github.com/rasbt/watermark
 
-  * version_information: Python interpreter
-    and :ref:`python package <python packages>` versions
+  * version_information: Python interpreter,
+    and :ref:`Python Package <python packages>` versions
 
     https://github.com/jrjohansson/version_information
 
-* [ ] List instaleld :ref:`packages` and extensions
+* [ ] List *instaleld* :ref:`packages` and extensions
 
   * :ref:`Pip`: ``pip freeze``
   * :ref:`Conda`: ``conda env export``
