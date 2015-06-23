@@ -295,20 +295,21 @@ Graphic Design
 +++++++++++++++
 https://en.wikipedia.org/wiki/Graphic_design
 
-See: :ref:`Art & Design > Graphic Design`
+See: :ref:`Art & Design > Graphic Design <graphic-design>`
 
 
 .. index:: Color Scheme
-.. _color-scheme:
+.. _color scheme:
 
-Color scheme
+Color Scheme
 `````````````
 https://en.wikipedia.org/wiki/Color_scheme
 
 * https://en.wikipedia.org/wiki/Color_chart
 * Web: https://en.wikipedia.org/wiki/Web_colors
 
-  * [ ] Style guide: What are our :ref:`branding` hexadecimal color codes?
+  * [ ] Style guide: What are our current
+    :ref:`brand` hexadecimal color codes?
 
 * Print, Manufacturing: https://en.wikipedia.org/wiki/Pantone
 
@@ -342,10 +343,10 @@ https://en.wikipedia.org/wiki/Logo#Internet-compatible_logos
     Logo
         Graphic image
 
-    Logotype:
+    Logotype
         Stylized business name
 
-    Wordmark:
+    Wordmark
         See: :term:`logotype`
 
 
@@ -414,7 +415,7 @@ Pinterest
 
 Sources:
 
-* :ref:`Chrome DevTools` (Inspect Element)
+* :ref:`Chrome DevTools <chrome-devtools>` (Inspect Element)
 * http://www.prosar.com/inbound_marketing_blog/bid/181457/Cheat-Sheet-Image-Sizes-for-Twitter-Facebook-Pinterest-Google-LinkedIn
 * http://thefinancialbrand.com/30777/facebook-twitter-youtube-linkedin-profile-image-sizes/
 * http://help.linkedin.com/app/answers/detail/a_id/32617
@@ -455,8 +456,8 @@ Layout Graphics
 See: :ref:`Web Development > Web Design > Web Layout <web-layout>`
 
 
-* [ ] Acquire :ref:`Web Content` from :ref:`Photographer`, Logo
-  Designer, site maintainer
+* [ ] Acquire :ref:`Web Content` from Photographer, Logo
+  Designer, Web Developer/Maintainer
 
   * :ref:`SVG` vector images are often more rescalable and reusable
   * Which font is the / best matches the :term:`wordmark`?
@@ -466,6 +467,7 @@ See: :ref:`Web Development > Web Design > Web Layout <web-layout>`
 
   * [ ] Contact Original Designer / Copyright Owner
   * [ ] Crop images (e.g. :ref:`Logo`, :term:`workmark`) from image layout
+  * [ ] Match :ref:`Types` and :ref:`Color scheme`
 
 
 
@@ -566,7 +568,7 @@ Restaurant
 
 * :ref:`Web Content`
 
-  * :ref:`Photography Guidelines`:
+  * :ref:`Photography Checklist`:
     Foodie photos are normally close-ups at an angle
 
     * Top-down / bird's eye photos are not as appealing
@@ -605,4 +607,4 @@ Voice Searches to Test
 - [ ] "Where can I find _____ in <city>, <state>?"
 
 
-See: :ref:`Web Development Checklist <web-development-checklist>`
+See: :ref:`Web Development Checklist`

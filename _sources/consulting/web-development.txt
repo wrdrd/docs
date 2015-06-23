@@ -288,7 +288,8 @@ Bootstrap
     * http://themeforest.net/search?utf8=%E2%9C%93&term=bootstrap
 
 
-.. index:: Web Page Checklist
+.. index:: Web Development Checklist
+.. _web development checklist:
 
 Web Development Checklist
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -316,8 +317,8 @@ See also: `<http://webdevchecklist.com/>`_
 
   * http://schema.org/docs/full.html
   * See: :ref:`Knowledge Engineering <knowledge-engineering>` >
-    :ref:`Semantic Web Standards <semantic-web-standards>`
-
+    :ref:`Semantic Web Standards <semantic-web-standards>`,
+    :ref:`Schema.org`
 
   * [ ] Add standard header tags
 
@@ -452,6 +453,7 @@ See also: `<http://webdevchecklist.com/>`_
 
   * [ ] JS libraries
   * [ ] Analytics loaders
+  * [ ] A/B optimization
 
 
 Hosting / DNS
