@@ -214,7 +214,7 @@ Jupyter and Reproducibility
 
 :ref:`Jupyter Notebook <jupyter notebook>`,
 :ref:`Open Science <open-science>`,
-and `Reproducibility`.
+and :ref:`Reproducibility`.
 
 | Lecture notes (in :ref:`IPython Notebook` format) on
 | Reproducible Science And Modern Scientific Software
