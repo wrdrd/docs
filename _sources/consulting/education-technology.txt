@@ -221,7 +221,7 @@ and :ref:`Reproducibility`.
 | https://github.com/fperez/reprosw
 
 | "Ten Simple Rules for Reproducible Computational Research"
-| http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003285#s4
+| http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003285
 
     Rule 3: Archive the Exact Versions of All External Programs Used
 
