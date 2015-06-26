@@ -602,6 +602,32 @@ https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 * :ref:`iso8601`
 
 
+.. index:: Unix Time
+.. _unix time:
+
+Unix Time
+```````````
+https://en.wikipedia.org/wiki/Unix_time
+
+     Defined as the number of seconds that have elapsed
+     since 00:00:00 Coordinated Universal Time (UTC),
+     Thursday, 1 January 1970, not counting leap seconds
+
+Unix time is the delta in seconds since
+``1970-01-01T00:00:00Z``, not counting leap seconds:
+
+.. code::
+
+    0                       # Unix time
+    1970-01-01T00:00:00Z    # ISO8601 timestamp
+
+    1435255816              # Unix time
+    2015-06-25T18:10:16Z    # ISO8601 timestamp
+
+.. note:: Unix time does not count leap seconds.
+
+   https://en.wikipedia.org/wiki/Unix_time#Leap_seconds
+
 
 .. index:: US Time Zones
 .. _us time zones:
@@ -613,6 +639,7 @@ https://en.wikipedia.org/wiki/Time_in_the_United_States
 https://en.wikipedia.org/wiki/Time_in_the_United_States#Standard_time_and_daylight_saving_time
 
 https://en.wikipedia.org/wiki/History_of_time_in_the_United_States
+
 
 .. index:: US Daylight Savings Time
 .. index:: Daylight Savings Time
