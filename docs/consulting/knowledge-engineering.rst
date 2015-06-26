@@ -586,6 +586,7 @@ Web Standards
 https://en.wikipedia.org/wiki/Web_standards
 
 
+
 .. index:: Time Zones
 .. _time zones:
 
@@ -600,6 +601,19 @@ https://en.wikipedia.org/wiki/List_of_UTC_time_offsets
 https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 * :ref:`iso8601`
+
+
+.. index:: Long Now Dates
+.. _long now dates:
+
+Long Now Dates
+````````````````
+https://en.wikipedia.org/wiki/Long_Now_Foundation
+
+::
+
+     2015    # ISO8601 date
+    02015    # Long Now Date
 
 
 .. index:: Unix Time
