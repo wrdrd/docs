@@ -586,6 +586,162 @@ Web Standards
 https://en.wikipedia.org/wiki/Web_standards
 
 
+.. index:: Time Zones
+.. _time zones:
+
+Time Zones
+++++++++++++
+https://en.wikipedia.org/wiki/Time_zone
+
+https://en.wikipedia.org/wiki/Daylight_saving_time
+
+https://en.wikipedia.org/wiki/List_of_UTC_time_offsets
+
+https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+* :ref:`iso8601`
+
+
+
+.. index:: US Time Zones
+.. _us time zones:
+
+US Time Zones
+`````````````````
+https://en.wikipedia.org/wiki/Time_in_the_United_States
+
+https://en.wikipedia.org/wiki/Time_in_the_United_States#Standard_time_and_daylight_saving_time
+
+https://en.wikipedia.org/wiki/History_of_time_in_the_United_States
+
+.. index:: US Daylight Savings Time
+.. index:: Daylight Savings Time
+.. _daylight savings time:
+
+US Daylight Savings Time
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+https://en.wikipedia.org/wiki/Daylight_saving_time_in_the_United_States
+
+    Currently, daylight saving time
+    **starts on the second Sunday in March**
+    and **ends on the first Sunday in November**,
+    with the time changes taking place **at 2:00 a.m. local time**.
+
+    With a mnemonic word play referring to seasons,
+    clocks *"spring forward and fall back"* — that is,
+    in spring (technically late winter) the clocks are
+    moved forward from 2:00 a.m. to 3:00 a.m.,
+    and in fall they are
+    moved back from 2:00 am to 1:00 am.
+
+
+Daylight Savings Time Starts and Ends on the following dates
+(from https://en.wikipedia.org/wiki/Time_in_the_United_States#Daylight_saving_time):
+
++----------+--------------------+------------------+
+| **Year** | **DST start date** | **DST end date** |
++----------+--------------------+------------------+
+| 2015     | 2015-03-08 02:00   | 2015-11-01 02:00 |
++----------+--------------------+------------------+
+| 2016     | 2016-03-13 02:00   | 2016-11-06 02:00 |
++----------+--------------------+------------------+
+| 2017     | 2017-03-12 02:00   | 2017-11-05 02:00 |
++----------+--------------------+------------------+
+| 2018     | 2018-03-11 02:00   | 2018-11-04 02:00 |
++----------+--------------------+------------------+
+| 2019     | 2019-03-10 02:00   | 2019-11-03 02:00 |
++----------+--------------------+------------------+
+| 2020     | 2020-03-08 02:00   | 2020-11-01 02:00 |
++----------+--------------------+------------------+
+
+Time Zone names, URIs, and :ref:`iso8601` UTC offsets:
+
++---------------------------------------------------------+----------------+--------------------+
+| **Time zone names, URNs, URIs**                         | **UTC Offset** | **UTC DST Offset** |
++---------------------------------------------------------+----------------+--------------------+
+| https://en.wikipedia.org/wiki/Atlantic_Time_Zone        | -0000 Z        | +0000 Z            |
+|                                                         |                |                    |
+| Coordinated Universal Time, UTC, ~GMT, Zulu             |                |                    |
++---------------------------------------------------------+----------------+--------------------+
+| https://en.wikipedia.org/wiki/America/Halifax           |                |                    |
+|                                                         |                |                    |
+| Atlantic, Antarctica (Palmer), AST, ADT                 | -0400 AST      | -0300 ADT          |
+|                                                         |                |                    |
+| America/Halifax                                         |                |                    |
++---------------------------------------------------------+----------------+--------------------+
+| https://en.wikipedia.org/wiki/America/St_Thomas         |                |                    |
+|                                                         |                |                    |
+| America/St_Thomas, America/Virgin                       | -0400          | -0400              |
++---------------------------------------------------------+----------------+--------------------+
+| https://en.wikipedia.org/wiki/Eastern_Time_Zone         |                |                    |
+|                                                         |                |                    |
+| https://en.wikipedia.org/wiki/EST5EDT                   |                |                    |
+|                                                         |                |                    |
+| Eastern, EST, EDT                                       | -0500 EST      | -0400 EDT          |
+|                                                         |                |                    |
+| America/New_York                                        |                |                    |
++---------------------------------------------------------+----------------+--------------------+
+| https://en.wikipedia.org/wiki/Central_Time_Zone         |                |                    |
+|                                                         |                |                    |
+| https://en.wikipedia.org/wiki/CST6CDT                   |                |                    |
+|                                                         |                |                    |
+| Central, CST, CDT                                       | -0600 CST      | -0500 CDT          |
+|                                                         |                |                    |
+| America/Chicago                                         |                |                    |
++---------------------------------------------------------+----------------+--------------------+
+| https://en.wikipedia.org/wiki/Mountain_Time_Zone        |                |                    |
+|                                                         |                |                    |
+| https://en.wikipedia.org/wiki/MST7MDT                   |                |                    |
+|                                                         |                |                    |
+| Mountain, MST, MDT                                      | -0700 MST      | -0600 MDT          |
+|                                                         |                |                    |
+| America/Denver                                          |                |                    |
++---------------------------------------------------------+----------------+--------------------+
+| https://en.wikipedia.org/wiki/Pacific_Time_Zone         |                |                    |
+|                                                         |                |                    |
+| https://en.wikipedia.org/wiki/PST8PDT                   |                |                    |
+|                                                         |                |                    |
+| Pacific, PST, PDT                                       | -0800 PST      | -0700 PDT          |
+|                                                         |                |                    |
+| America/Los_Angeles                                     |                |                    |
++---------------------------------------------------------+----------------+--------------------+
+| https://en.wikipedia.org/wiki/Alaska_Time_Zone          |                |                    |
+|                                                         |                |                    |
+| AKST9AKDT                                               |                |                    |
+|                                                         |                |                    |
+| Alaska, AKST, AKDT                                      | -0900 AKST     | -0800 AKDT         |
+|                                                         |                |                    |
+| America/Juneau                                          |                |                    |
++---------------------------------------------------------+----------------+--------------------+
+| https://en.wikipedia.org/wiki/Hawaii-Aleutian_Time_Zone |                |                    |
+|                                                         |                |                    |
+| HAST10HADT                                              |                |                    |
+|                                                         |                |                    |
+| Hawaii Aleutian, HAST, HADT                             | -1000 HAST     | -0900 HADT         |
+|                                                         |                |                    |
+| Pacific/Honolulu                                        |                |                    |
++---------------------------------------------------------+----------------+--------------------+
+| https://en.wikipedia.org/wiki/Samoa_Time_Zone           |                |                    |
+|                                                         |                |                    |
+| Samoa Time Zone, SST                                    | -1100 SST      | -1100 SST          |
+|                                                         |                |                    |
+| Pacific/Samoa                                           |                |                    |
++---------------------------------------------------------+----------------+--------------------+
+| https://en.wikipedia.org/wiki/Chamorro_Time_Zone        |                |                    |
+|                                                         |                |                    |
+| Chamorro, Guam                                          | +1000          | +1000              |
+|                                                         |                |                    |
+| Pacific/Guam                                            |                |                    |
++---------------------------------------------------------+----------------+--------------------+
+| https://en.wikipedia.org/wiki/Time_in_Antarctica        |                |                    |
+|                                                         |                |                    |
+| Antarctica (Amundsen, McMurdo), South Pole              | +1200          | +1300              |
+|                                                         |                |                    |
+| Antarctica/South_Pole                                   |                |                    |
++---------------------------------------------------------+----------------+--------------------+
+
+
 .. index:: IEC
 .. _iec:
 
