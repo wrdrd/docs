@@ -88,10 +88,13 @@ docs: clean-docs docs-api localjs localcss
 	SPHINX_HTML_LINK_SUFFIX='' $(MAKE) -C docs html singlehtml
 	#$(MAKE) -C docs singlehtml
 
-pull-tools:
+docs_tools_submodule:
 	git -C docs/tools/ pull origin master
 
-docs-tools: pull-tools docs
+docs_tools_submodule_upgrade: docs_tools_submodule
+	git commit docs/tools -m "DOC: docs/tools: pull latest: $(shell git -C docs/tools rev-parse --short HEAD)"
+
+docs-tools: docs_tools_submodule_upgrade docs
 
 docs-open: docs open
 
