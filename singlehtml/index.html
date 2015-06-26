@@ -11310,10 +11310,10 @@ or from the local filesystem.</p>
 <ul>
 <li><p class="first">pgs is written with the one-file Bottle web framework</p>
 </li>
-<li><p class="first">compared to <code class="docutils literal"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">SimpleHTTPServer</span> <span class="pre">localhost:8000</span></code>,
-(<code class="docutils literal"><span class="pre">python3</span> <span class="pre">-m</span> <span class="pre">http.server</span> <span class="pre">localhost:8000</span></code>)
+<li><p class="first">compared to <code class="docutils literal"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">SimpleHTTPServer</span> <span class="pre">localhost:8000</span></code> /
+<code class="docutils literal"><span class="pre">python3</span> <span class="pre">-m</span> <span class="pre">http.server</span> <span class="pre">localhost:8000</span></code>
 pgs has WSGI,
-the ability to read from a git branch
+the ability to read from a Git branch
 without real <a class="reference internal" href="#git"><em>Git</em></a> bindings,
 and caching HTTP headers based on
 Git or filesystem mtimes.</p>
@@ -11322,8 +11322,21 @@ Git or filesystem mtimes.</p>
 <ul>
 <li><p class="first"><a class="reference external" href="https://westurner.org/tools/index">https://westurner.org/tools/index</a></p>
 <p><a class="reference external" href="https://westurner.org/tools/index.html">https://westurner.org/tools/index.html</a></p>
-<ul class="simple">
-<li><a class="reference internal" href="#sphinx"><em>Sphinx</em></a> can also generate links without <code class="docutils literal"><span class="pre">.html</span></code> extensions:</li>
+<ul>
+<li><p class="first"><a class="reference internal" href="#sphinx"><em>Sphinx</em></a> can also generate links without <code class="docutils literal"><span class="pre">.html</span></code> extensions
+with the <code class="docutils literal"><span class="pre">html_link_suffix</span></code> <code class="docutils literal"><span class="pre">conf.py</span></code> configuration setting.</p>
+<p><a class="reference external" href="https://github.com/westurner/tools/blob/master/conf.py">https://github.com/westurner/tools/blob/master/conf.py</a> :</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="c"># Suffix for generated links to HTML files.</span>
+<span class="c"># The default is whatever html_file_suffix is set to;</span>
+<span class="c"># it can be set differently (e.g. to support different web server setups).</span>
+<span class="n">html_link_suffix</span> <span class="o">=</span> <span class="s">&#39;&#39;</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Many web analytics tools support rules for deduplicating
+<code class="docutils literal"><span class="pre">&lt;name&gt;.html</span></code> and <code class="docutils literal"><span class="pre">&lt;name&gt;</span></code> (which GitHub Pages always
+supports).</p>
+</li>
 </ul>
 </li>
 </ul>
@@ -12202,7 +12215,7 @@ stripsinglehtml --help
 
 <dl class="function">
 <dt id="wrdrd.tools.crawl.crawl_url">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">crawl_url</code><span class="sig-paren">(</span><em>start_url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x105853150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#crawl_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.crawl_url" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">crawl_url</code><span class="sig-paren">(</span><em>start_url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x103ceb150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#crawl_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.crawl_url" title="Permalink to this definition">¶</a></dt>
 <dd><p>Crawl pages starting at <code class="docutils literal"><span class="pre">start_url</span></code></p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -12495,7 +12508,7 @@ a <a class="reference internal" href="#wrdrd.tools.crawl.Link" title="wrdrd.tool
 
 <dl class="function">
 <dt id="wrdrd.tools.crawl.print_frequency_table">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">print_frequency_table</code><span class="sig-paren">(</span><em>frequencies</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x105853150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#print_frequency_table"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.print_frequency_table" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">print_frequency_table</code><span class="sig-paren">(</span><em>frequencies</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x103ceb150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#print_frequency_table"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.print_frequency_table" title="Permalink to this definition">¶</a></dt>
 <dd><p>Print a formatted ASCII frequency table</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -12649,7 +12662,7 @@ a <a class="reference internal" href="#wrdrd.tools.crawl.Link" title="wrdrd.tool
 
 <dl class="function">
 <dt id="wrdrd.tools.crawl.wrdcrawler">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">wrdcrawler</code><span class="sig-paren">(</span><em>url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x105853150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#wrdcrawler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.wrdcrawler" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">wrdcrawler</code><span class="sig-paren">(</span><em>url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x103ceb150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#wrdcrawler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.wrdcrawler" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fetch and generate a report from the given URL</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
