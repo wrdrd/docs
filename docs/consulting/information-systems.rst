@@ -129,6 +129,22 @@ Information Systems Glossary
 
       https://en.wikipedia.org/wiki/Web_service
 
+   Webhook
+      A webhook is an HTTP message for an event.
+
+      :term:`web services <web service>` and :term:`applications
+      <application>` can send webhooks when e.g. a change occurs.
+
+      For example, when GitHub, ReadTheDocs, and Travis-CI
+      are configured (with webhooks) a change pushed to a
+      GitHub repository branch or pull request
+      enqueues a build at e.g. ReadTheDocs and/or Travis-CI
+      (and GitHub can show the build status as a linked icon).
+
+      In terms of :term:`web services <web service>`,
+      a webhook is usually just a :ref:`JSON` ``POST``
+      to a :term:`URL`; with an access token.
+
    RESTful API
       A RESTful API (*REST API*) is a
       :term:`Web API` that abides by best-practice guidelines
@@ -144,6 +160,7 @@ Information Systems Glossary
       https://en.wikipedia.org/wiki/Representational_state_transfer
 
       https://en.wikipedia.org/wiki/Create,_read,_update_and_delete
+
 
 
 .. _is-criteria:
@@ -225,8 +242,13 @@ Cloud Application Layers
 ++++++++++++++++++++++++++
 
 * :term:`Applications <application>`
+
+  * https://github.com/wrdrd/wrd/blob/master/app.yaml
+    (AppEngine/AppScale)
+
 * Platform (Database, APIs)
 
+  * :ref:`AppEngine` / :ref:`AppScale` / :ref:`Heroku` APIs
   * :ref:`Databases`
     (:ref:`relational-databases`,
     :ref:`sql`,
@@ -257,18 +279,23 @@ Cloud Application Layers
     * :ref:`Mesos` schedulers (Aurora, Chronos, Marathon)
 
   * Search Indexing (:ref:`JSON`, :ref:`json-ld-`)
-    
+
     * ElasticSearch (Lucene), Solr
     * AppEngine/AppScale Search API
 
+  * Distributed Object Storage and data local iterators (*Big Data*):
+
+    * HDFS, Hadoop (Spark, GraphX, Pregel, Cassandra, Accumulo, :ref:`Mesos`)
+    * DDFS, Disco
+
   * HTTP Object Storage (:ref:`libcloud`)
-    
+
     * https://libcloud.readthedocs.org/en/latest/storage/
     * :ref:`OpenStack` Swift (Swift, S3 APIs)
     * :ref:`Linux` Ceph RADOS gateway (Swift, S3 APIs)
 
 * (Data Center) Infrastructure
-  
+
   * Resource Pool
 
     * :ref:`Cobbler` (libvirt :ref:`virtualization`)
@@ -316,49 +343,317 @@ Cloud Application Layers
 .. index:: SaaS
 .. _SaaS:
 
-Software-as-a-Service
+SaaS
 +++++++++++++++++++++++
 https://en.wikipedia.org/wiki/Software_as_a_service
 
-Example: GMail is software hosted as a service on Google's
-infrastructure; there's no need to internally pay for and manage servers in a
-datacenter anywhere.
-
 https://en.wikipedia.org/wiki/Application_service_provider
+
+SaaS (*Software-as-a-Service*) is a service provision,
+application lifecycle,
+and recurring billing model
+for providing hosted applications.
+
+Examples of SaaS:
+
+* ReadTheDocs is a :ref:`SaaS` which can integrate with
+  GitHub through :term:`WebHooks <webhook>`:
+
+  https://read-the-docs.readthedocs.org/en/latest/
+
+* Travis-CI is a :ref:`SaaS` :ref:`continuous-integration` service
+  which pulls and builds from a
+  GitHub repository upon receipt of a :term:`Webhook`,
+  that is free for :ref:`Open Source <open-source>` projects
+
+  https://en.wikipedia.org/wiki/Travis_CI
+
+* Google Gmail is a :ref:`SaaS` webmail service:
+
+  https://en.wikipedia.org/wiki/Gmail
+
+* Many :ref:`CRM` software applications are offered as
+  :ref:`SaaS` subscription services
+
+* See: :ref:`business-modeling`
+
+  :ref:`SaaS` is distinct from e.g. subscription software licensing;
+  because :ref:`SaaS` applications are usually
+  *hosted* by the service provider
 
 
 .. index:: Platform-as-a-Service
 .. index:: PaaS
 .. _PaaS:
 
-Platform-as-a-Service
+PaaS
 ++++++++++++++++++++++
 https://en.wikipedia.org/wiki/Platform_as_a_service
 
-Platform-as-a-Service providers abstract a bit further in that they
-provide an implementation of platform APIs on top of which applications
-can be developed and hosted.
+Platform-as-a-Service (*PaaS*) providers
+offer platform APIs
+on top of which applications
+can be developed and marginally scaled
+if architected for concurrency and asynchronicity.
 
-Heroku, AppEngine and AppScale are examples of Platforms-as-a-Service.
+Examples of Paas Platforms:
+
+* :ref:`Heroku`
+* :ref:`AppEngine`
+* :ref:`AppScale`
+
+
+.. index:: AppEngine
+.. _appengine:
+
+AppEngine
+```````````
+| Wikipedia: https://en.wikipedia.org/wiki/Google_App_Engine
+| Homepage: https://cloud.google.com/appengine/
+| Twitter: https://twitter.com/googlecloud
+| Project: https://code.google.com/p/googleappengine/
+| Source: svn http://googleappengine.googlecode.com/svn/trunk/python appengine
+| Source: svn http://googleappengine.googlecode.com/svn/trunk/java appenginejava
+| Source: hg https://code.google.com/p/appengine-go/
+| Source: git https://github.com/GoogleCloudPlatform/appengine-php
+| Docs: https://developers.google.com/appengine/
+| Docs: https://cloud.google.com/appengine/docs
+| Docs: https://cloud.google.com/appengine/docs/python/
+| Docs: https://cloud.google.com/appengine/docs/java/
+| Docs: https://cloud.google.com/appengine/docs/go
+| Docs: https://cloud.google.com/appengine/docs/php
+| Docs: https://code.google.com/p/googleappengine/issues/list
+| Docs: https://cloud.google.com/nodejs/
+| Docs: https://cloud.google.com/docs/
+
+Google AppEngine is an :ref:`PaaS` platform
+for developing and scaling web applications written in
+:ref:`Python`, :ref:`Java`, :ref:`Go`, and `PHP`.
+
+* AppEngine applications can interface with
+  Google Cloud Platform :term:`Web APIs <Web API>`
+
+
+.. index:: AppScale
+.. _appscale:
+
+AppScale
+``````````
+| Wikipedia: https://en.wikipedia.org/wiki/AppScale
+| Homepage: http://www.appscale.com/
+| Twitter: https://twitter.com/appscalecloud
+| Download: https://github.com/AppScale/appscale/releases
+| Source: git https://github.com/AppScale/appscale
+| Source: https://github.com/AppScale/appscale/tree/master/AppDB/cassandra
+| Docs: https://github.com/appscale/appscale/wiki
+| Docs: https://github.com/AppScale/appscale/wiki/Installing-AppScale-from-source-on-GitHub
+| Docs: https://github.com/AppScale/appscale/wiki/AppScale-on-Google-Compute-Engine
+| Docs: https://github.com/AppScale/appscale/wiki/AppScale-on-Amazon-EC2
+| Docs: https://github.com/AppScale/appscale/wiki/AppScale-on-Eucalyptus
+| Docs: https://github.com/AppScale/appscale/wiki/AppScale-on-Eucalyptus
+| Docs: https://github.com/AppScale/appscale/wiki/AppScale-on-VirtualBox
+| Docs: https://github.com/AppScale/appscale/wiki/AppScale-on-KVM
+| Docs: https://github.com/AppScale/appscale/wiki/Virtualized-Cluster
+| Docs: https://github.com/AppScale/appscale/wiki/Autoscaling-Triggers
+| Docs: https://github.com/AppScale/appscale/wiki/Adding-Support-for-a-New-Database
+| Docs: https://github.com/AppScale/appscale/wiki/Search-API-in-AppScale
+| Docs: https://github.com/AppScale/appscale/wiki/Logging-in-AppScale
+| Docs: https://github.com/AppScale/appscale/wiki/Managing-Users
+
+AppScale is a completely :ref:`Open Source <open-source>`
+:ref:`PaaS` platform for developing and scaling web applications
+written in
+:ref:`Python`, :ref:`Java`, :ref:`Go`, and `PHP`.
+
+* AppScale Python apps deploy applications from ``app.yaml`` :ref:`YAML`
+  files; just like :ref:`AppEngine`
+* AppScale development supporters include Google and NSF:
+  http://googlecloudplatform.blogspot.com/2015/05/AppScale-and-App-Engine-Work-Together-to-Provide-Infrastructure-Flexibility.html
+
+* AppScale applications can interface with
+  AppScale implementations of :ref:`AppEngine`
+  Google Cloud Platform :term:`Web APIs <Web API>`
+
+.. table:: adapted from https://github.com/AppScale/appscale/wiki/How-AppScale-implements-the-Google-App-Engine-APIs
+
+
+   +----------------------+-----------------------------------------------+
+   | :ref:`AppEngine` API | :ref:`AppScale` implementation                |
+   +----------------------+-----------------------------------------------+
+   | Datastore            | AppDB { Cassandra, Thrift, Protocol Buffers } |
+   +----------------------+-----------------------------------------------+
+   | Memcache             | memcached                                     |
+   +----------------------+-----------------------------------------------+
+   | URL Fetch            | urllib2                                       |
+   +----------------------+-----------------------------------------------+
+   | Blobstore API        | custom server built on Tornado                |
+   +----------------------+-----------------------------------------------+
+   | XMPP                 | ejabberd                                      |
+   +----------------------+-----------------------------------------------+
+   | Channel API          | ejabberd and strophejs                        |
+   +----------------------+-----------------------------------------------+
+   | Mail                 | sendmail                                      |
+   +----------------------+-----------------------------------------------+
+   | Images               | Python Imaging Library (PIL)                  |
+   +----------------------+-----------------------------------------------+
+   | Task Queue           | RabbitMQ                                      |
+   +----------------------+-----------------------------------------------+
+   | Cron                 | Vixie Cron                                    |
+   +----------------------+-----------------------------------------------+
+   | Search               | SOLR                                          |
+   +----------------------+-----------------------------------------------+
+   | CloudSQL             | MySQL                                         |
+   +----------------------+-----------------------------------------------+
+   | Users                | AppScale Dashboard                            |
+   +----------------------+-----------------------------------------------+
+
+
+
+.. index:: Heroku
+.. _heroku:
+
+Heroku
+````````
+| Wikipedia: https://en.wikipedia.org/wiki/Heroku
+| Homepage: https://www.heroku.com/
+| Source: https://github.com/heroku
+| Twitter: https://twitter.com/heroku
+
+Heroku is a :ref:`PaaS` Platform.
 
 
 .. index:: Infrastructure-as-a-Service
 .. index:: IaaS
 .. _IaaS:
 
-Infrastructure-as-a-Service
+IaaS
 +++++++++++++++++++++++++++++++++++++
 https://en.wikipedia.org/wiki/Category:Cloud_infrastructure
 
 Infrastructure-as-a-Service providers provide a bit more than regular
 hosting services in that they offer something like virtual datacenter
-resources.
-
-Amazon Web Services (AWS), Rackspace, and Google Compute Engine
-are examples of
-Infrastructure-as-a-Service: they provide servers, networks, and
+resource pools: servers, networks, and
 redundant storage systems on top of which IT systems can be
 developed, tested, and deployed.
+
+Examples of IaaS:
+
+* :ref:`Amazon AWS <aws>`
+* :ref:`Google Cloud`
+* :ref:`Rackspace Cloud`
+* :ref:`libcloud` implements a :ref:`Python` :term:`language api`
+  over very many :ref:`IaaS` and :ref:`PaaS` clouds:
+  https://libcloud.readthedocs.org/en/latest/supported_providers.html
+
+
+.. index:: AWS
+.. _aws:
+
+Amazon AWS
+`````````````
+| Wikipedia: https://en.wikipedia.org/wiki/Amazon_Web_Services
+| Wikipedia: https://en.wikipedia.org/wiki/Amazon_Elastic_Compute_Cloud
+| Wikipedia: https://en.wikipedia.org/wiki/Amazon_Elastic_Block_Store
+| Wikipedia: https://en.wikipedia.org/wiki/Amazon_S3
+| Wikipedia: https://en.wikipedia.org/wiki/Amazon_Relational_Database_Service
+| Wikipedia: https://en.wikipedia.org/wiki/Amazon_CloudFront
+| Homepage: https://aws.amazon.com/
+| Twitter: https://twitter.com/awscloud
+| Docs: https://aws.amazon.com/products/
+| Docs: https://aws.amazon.com/ec2/pricing/
+| Docs: https://aws.amazon.com/ebs/pricing/
+| Docs: https://aws.amazon.com/s3/pricing/
+| Docs: https://aws.amazon.com/rds/pricing/
+| Docs: https://aws.amazon.com/cloudfront/pricing/
+| Docs: https://aws.amazon.com/cloudformation/
+
+* EC2 -- Elastic Compute Cloud (CPU/GPU/RAM instances)
+* EBS -- Elastic Block Store (persistent block storage)
+* S3 -- Simple Storage Service (HTTP object storage)
+* SQS -- Simple Queue Server
+* CloudFormation -- EC2 [auto-]scaling
+* CloudFront -- CDN
+* RDS: Managed MySQL, Oracle, SQL Server, PostgreSQL
+* DynamoDB: :ref:`nosql` supercolumn cloud datastore
+
+:ref:`Python` and AWS
+
+* boto, :ref:`libcloud`
+
+
+.. index:: Google Cloud
+.. _google cloud:
+
+Google Cloud
+```````````````
+| Wikipedia: https://en.wikipedia.org/wiki/Google_Cloud_Platform
+| Wikipedia: https://en.wikipedia.org/wiki/Google_Compute_Engine
+| Wikipedia: https://en.wikipedia.org/wiki/Google_Cloud_Messaging
+| Homepage: https://cloud.google.com/
+| Twitter: https://twitter.com/googlecloud
+| Docs: https://cloud.google.com/products/
+| Docs: https://cloud.google.com/compute/
+| Docs: https://cloud.google.com/container-engine/
+| Docs: https://cloud.google.com/dns/
+| Docs: https://cloud.google.com/datastore/
+| Docs: https://cloud.google.com/storage/
+| Docs: https://cloud.google.com/sql/
+| Docs: https://cloud.google.com/bigquery/
+| Docs: https://cloud.google.com/dataflow/
+
+Google Cloud Platform (GCP) is an :ref:`Iaas` cloud platform.
+
+* :ref:`AppEngine` -- :ref:`PaaS`
+* Compute Engine (GCE) -- :ref:`IaaS`
+
+  * :ref:`KVM`, SDN
+
+* Container Engine (GCE)  -- :ref:`IaaS`
+
+  * :ref:`kubernetes`, :ref:`docker`
+
+* CloudSQL (MySQL)
+
+:ref:`Python` and Google Cloud
+
+* :ref:`libcloud`
+* https://cloud.google.com/compute/docs/tutorials/python-guide
+* https://github.com/westurner/dotfiles/blob/master/etc/bash/08-bashrc.gcloud.sh
+
+
+.. index:: Rackspace Cloud
+.. _rackspace cloud:
+
+Rackspace Cloud
+````````````````
+| Wikipedia: https://en.wikipedia.org/wiki/Rackspace_Cloud
+| Homepage: https://www.rackspace.com/cloud
+| Twitter: https://twitter.com/Rackspace
+| Docs: http://docs.rackspace.com/
+
+Rackspace Cloud is an :ref:`IaaS` cloud platform
+built with :ref:`OpenStack`.
+
+* Rackspace CloudFiles is now :ref:`OpenStack` Swift.
+* Rackspace Cloud is powered by :ref:`OpenStack`.
+* Cloud Servers -- :ref:`OpenStack` Compute
+* Cloud Load Balancers
+* Cloud DNS
+* Cloud Networks
+* Cloud Block Storage -- :ref:`OpenStack` Cinder
+* Cloud Files -- :ref:`OpenStack` Swift
+* CDN
+* Cloud Databases (MySQL)
+* Cloud Big Data (Hadoop)
+* Cloud Queues
+* Rackspace Auto Scale
+* Rackspace Private Cloud v4, v9, v10 (:ref:`OpenStack`)
+
+Python and Rackspace Cloud
+
+* :ref:`libcloud`
+* https://developer.rackspace.com/sdks/python/
+* https://github.com/rackspace/pyrax
 
 
 .. index:: Configuration Management
