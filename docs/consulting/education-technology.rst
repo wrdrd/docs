@@ -3,24 +3,41 @@
 .. index:: EdTech
 .. _education-technology:
 
-######################
+**********************
 Education Technology
-######################
+**********************
 | Wikipedia: https://en.wikipedia.org/wiki/Educational_technology
 
-Self Directed Learning
-========================
-| "Self-Directed Learning with Online Resources:
-|  An independent study of challenges, opportunities and
-|  strategies for encouraging feedback
-|  between tools and resources in online learning systems" (2012)
-|
-| Source: https://github.com/westurner/self-directed-learning
-| HTML: https://westurner.org/self-directed-learning/
-| HTML: http://self-directed-learning.readthedocs.org/
-| HTML (zip): http://media.readthedocs.org/htmlzip/self-directed-learning/self-directed-learning.zip
-| PDF: http://media.readthedocs.org/pdf/self-directed-learning/latest/self-directed-learning.pdf
-| ePub: http://media.readthedocs.org/epub/self-directed-learning/latest/self-directed-learning.epub
+
+.. index:: STEM
+.. index:: STEAM
+.. _stem:
+
+STEM
+======
+STEM (*Science, Technology, Engineering, and Mathematics*)
+is a broad field of R&D fields.
+
+* Science (:ref:`Science`, :ref:`data-science`)
+* Technology (:ref:`computer-science`, :ref:`information-systems`,
+  :ref:`art-design`, :ref:`education-technology`)
+* Engineering (:ref:`knowledge-engineering`,
+  :ref:`software-development`,
+  :ref:`project-management`)
+* :ref:`Mathematics <math>` (:ref:`data-science`)
+
+Why STEM?
+
+* STEM combines fields for holism
+* STEM combines fields for allocation efficiency
+* **STEAM** includes :ref:`art-design`
+
+Why CS?
+
+* :ref:`CS <computer-science>` tools are foundational to
+  :ref:`data-science`,
+  which is foundational to :ref:`STEM`,
+  which is foundational to :term:`infrastructure`.
 
 
 .. index:: Publishing
@@ -59,9 +76,98 @@ https://en.wikipedia.org/wiki/Publishing
 
 * Publishing Tools
 
+  + :ref:`GitHub Pages`
+  + :ref:`ReadTheDocs`
   + :ref:`Sphinx`
-  + :ref:`IPython Notebook` / :ref:`Jupyter Notebook`:
-    :ref:`nbformat` JSON -> HTML, HTML slides, LaTeX, PDF, ePub, MOBI
+  + :ref:`Jupyter Notebook`
+    
+    * :ref:`nbformat` JSON -> HTML, HTML slides, LaTeX, PDF, ePub, MOBI
+    * :ref:`nbviewer`
+  
+  + :ref:`documentation-tools`
+
+
+.. index:: GitHub Pages
+.. _github pages:
+
+GitHub Pages
+**************
+| Homepage:
+
+GitHub Pages serves webpages from :ref:`git` branches.
+
+* GitHub Pages serves from the ``gh-pages`` branch of project repositories
+* GitHub Pages serves from the ``master`` branch of user and organization
+  repos
+* GitHub Pages is backed by a :ref:`CDN`
+* GitHub Pages get URLs like: https://wrdrd.github.io/
+* GitHub Pages can have URLs like: https://wrdrd.com/
+  
+  * Adding a ``./CNAME`` file to a repo causes GitHub Pages
+    to redirect URLs to the CNAME (e.g. https://wrdrd.com/)
+  * If the :term:`DNS` :term:`domain name` does not resolve,
+    GitHub Pages still redirects to the address in the ``./CNAME`` file
+
+* :ref:`pgs` can also serve webpages from :ref:`git` branches
+  like ``gh-pages`` and ``master``
+
+
+.. index:: ReadTheDocs
+.. _readthedocs:
+
+ReadTheDocs
+*************
+| Homepage: https://readthedocs.org/
+| Source: git https://github.com/rtfd/readthedocs.org
+| Docs: https://read-the-docs.readthedocs.org/en/latest/
+
+ReadTheDocs is a free and :ref:`Open Source <open-source>`
+web service for publishing :ref:`Sphinx` documentation sets
+which functions like a :ref:`continuous-integration` build server
+and artifact publisher.
+
+* ReadTheDocs can rebuild HTML, PDF, and ePub from
+  :ref:`Sphinx` :ref:`ReStructuredText`
+  every time a commit is made to a e.g. GitHub or BitBucket
+  repository: https://read-the-docs.readthedocs.org/en/latest/webhooks.html
+* ReadTheDocs can build and serve localized versions
+  for one or more languages: https://read-the-docs.readthedocs.org/en/latest/localization.html
+* ReadTheDocs can build and serve multiple versions or :ref:`vcs`
+  revisions. By default, ReadTheDocs will try appending ``/en/latest/``,
+  so these links all redirect to the first link
+
+  * https://read-the-docs.readthedocs.org/en/latest/
+  * https://read-the-docs.readthedocs.org/
+  * https://read-the-docs.rtfd.org/
+
+
+
+
+Self Directed Learning
+************************
+| "Self-Directed Learning with Online Resources:
+|  An independent study of challenges, opportunities and
+|  strategies for encouraging feedback
+|  between tools and resources in online learning systems" (2012)
+|
+| Source: git https://github.com/westurner/self-directed-learning
+| HTML: https://westurner.org/self-directed-learning/
+| HTML: http://self-directed-learning.readthedocs.org/
+| HTML (zip): http://media.readthedocs.org/htmlzip/self-directed-learning/self-directed-learning.zip
+| PDF: http://media.readthedocs.org/pdf/self-directed-learning/latest/self-directed-learning.pdf
+| ePub: http://media.readthedocs.org/epub/self-directed-learning/latest/self-directed-learning.epub
+
+Report Process:
+
+* [X] Goals: overbroad scope
+* [X] Generate: 1 ream of paper; 1 pack of pens
+* [o] Generate, Reduce, Clarify: Bookmarks, Zotero
+* [X] Reduce, Clarify: match, cluster, re-sequence sheets (2D)
+* [X] Products: transcribe handwritten sheets of paper as slides
+* [o] Products: glossary
+* [ ] Products: essay form
+* [o] Tools: :ref:`Sphinx`, :ref:`ReStructuredText`, :ref:`ReadTheDocs`
+* [o] https://westurner.org/self-directed-learning/process.html
 
 
 .. index:: Online Courses
