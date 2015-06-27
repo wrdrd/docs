@@ -207,9 +207,19 @@
 <li class="toctree-l2"><a class="reference internal" href="index.html#clouds">Clouds</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="index.html#cloud-questions">Cloud Questions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#cloud-application-layers">Cloud Application Layers</a></li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#software-as-a-service">Software-as-a-Service</a></li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#platform-as-a-service">Platform-as-a-Service</a></li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#infrastructure-as-a-service">Infrastructure-as-a-Service</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#saas">SaaS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#paas">PaaS</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="index.html#appengine">AppEngine</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index.html#appscale">AppScale</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index.html#heroku">Heroku</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#iaas">IaaS</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="index.html#amazon-aws">Amazon AWS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index.html#google-cloud">Google Cloud</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index.html#rackspace-cloud">Rackspace Cloud</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#configuration-management">Configuration Management</a></li>
@@ -2520,6 +2530,18 @@ traditionally (as in the <em>enterprisey</em> <code class="docutils literal"><sp
 with <a class="reference internal" href="index.html#xml"><em>XML</em></a>, but, more recently, with <a class="reference internal" href="index.html#json"><em>JSON</em></a>.</p>
 <p class="last"><a class="reference external" href="https://en.wikipedia.org/wiki/Web_service">https://en.wikipedia.org/wiki/Web_service</a></p>
 </dd>
+<dt id="term-webhook">Webhook</dt>
+<dd><p class="first">A webhook is an HTTP message for an event.</p>
+<p><a class="reference internal" href="#term-web-service"><em class="xref std std-term">web services</em></a> and <a class="reference internal" href="#term-application"><em class="xref std std-term">applications</em></a> can send webhooks when e.g. a change occurs.</p>
+<p>For example, when GitHub, ReadTheDocs, and Travis-CI
+are configured (with webhooks) a change pushed to a
+GitHub repository branch or pull request
+enqueues a build at e.g. ReadTheDocs and/or Travis-CI
+(and GitHub can show the build status as a linked icon).</p>
+<p class="last">In terms of <a class="reference internal" href="#term-web-service"><em class="xref std std-term">web services</em></a>,
+a webhook is usually just a <a class="reference internal" href="index.html#json"><em>JSON</em></a> <code class="docutils literal"><span class="pre">POST</span></code>
+to a <a class="reference internal" href="index.html#term-url"><em class="xref std std-term">URL</em></a>; with an access token.</p>
+</dd>
 <dt id="term-restful-api">RESTful API</dt>
 <dd><p class="first">A RESTful API (<em>REST API</em>) is a
 <a class="reference internal" href="#term-web-api"><em class="xref std std-term">Web API</em></a> that abides by best-practice guidelines
@@ -2592,8 +2614,13 @@ business systems?</li>
 <div class="section" id="cloud-application-layers">
 <span id="index-4"></span><span id="id5"></span><h4>Cloud Application Layers<a class="headerlink" href="#cloud-application-layers" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
-<li><a class="reference internal" href="#term-application"><em class="xref std std-term">Applications</em></a></li>
+<li><a class="reference internal" href="#term-application"><em class="xref std std-term">Applications</em></a><ul>
+<li><a class="reference external" href="https://github.com/wrdrd/wrd/blob/master/app.yaml">https://github.com/wrdrd/wrd/blob/master/app.yaml</a>
+(AppEngine/AppScale)</li>
+</ul>
+</li>
 <li>Platform (Database, APIs)<ul>
+<li><a class="reference internal" href="#appengine"><em>AppEngine</em></a> / <a class="reference internal" href="#appscale"><em>AppScale</em></a> / <a class="reference internal" href="#heroku"><em>Heroku</em></a> APIs</li>
 <li><a class="reference internal" href="index.html#databases"><em>Databases</em></a>
 (<a class="reference internal" href="index.html#relational-databases"><em>Relational Databases</em></a>,
 <a class="reference internal" href="index.html#sql"><em>SQL</em></a>,
@@ -2626,6 +2653,11 @@ business systems?</li>
 <li>Search Indexing (<a class="reference internal" href="index.html#json"><em>JSON</em></a>, <a class="reference internal" href="index.html#json-ld"><em>JSON-LD</em></a>)<ul>
 <li>ElasticSearch (Lucene), Solr</li>
 <li>AppEngine/AppScale Search API</li>
+</ul>
+</li>
+<li>Distributed Object Storage and data local iterators (<em>Big Data</em>):<ul>
+<li>HDFS, Hadoop (Spark, GraphX, Pregel, Cassandra, Accumulo, <a class="reference internal" href="index.html#mesos"><em>Mesos</em></a>)</li>
+<li>DDFS, Disco</li>
 </ul>
 </li>
 <li>HTTP Object Storage (<a class="reference internal" href="index.html#libcloud"><em>Libcloud</em></a>)<ul>
@@ -2683,44 +2715,315 @@ business systems?</li>
 </li>
 </ul>
 <span class="target" id="index-5"></span></div>
-<div class="section" id="software-as-a-service">
-<span id="saas"></span><span id="index-6"></span><h4>Software-as-a-Service<a class="headerlink" href="#software-as-a-service" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="saas">
+<span id="index-6"></span><span id="id6"></span><h4>SaaS<a class="headerlink" href="#saas" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Software_as_a_service">https://en.wikipedia.org/wiki/Software_as_a_service</a></p>
-<p>Example: GMail is software hosted as a service on Google&#8217;s
-infrastructure; there&#8217;s no need to internally pay for and manage servers in a
-datacenter anywhere.</p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Application_service_provider">https://en.wikipedia.org/wiki/Application_service_provider</a></p>
+<p>SaaS (<em>Software-as-a-Service</em>) is a service provision,
+application lifecycle,
+and recurring billing model
+for providing hosted applications.</p>
+<p>Examples of SaaS:</p>
+<ul>
+<li><p class="first">ReadTheDocs is a <a class="reference internal" href="#saas"><em>SaaS</em></a> which can integrate with
+GitHub through <a class="reference internal" href="#term-webhook"><em class="xref std std-term">WebHooks</em></a>:</p>
+<p><a class="reference external" href="https://read-the-docs.readthedocs.org/en/latest/">https://read-the-docs.readthedocs.org/en/latest/</a></p>
+</li>
+<li><p class="first">Travis-CI is a <a class="reference internal" href="#saas"><em>SaaS</em></a> <a class="reference internal" href="index.html#continuous-integration"><em>Continuous Integration</em></a> service
+which pulls and builds from a
+GitHub repository upon receipt of a <a class="reference internal" href="#term-webhook"><em class="xref std std-term">Webhook</em></a>,
+that is free for <a class="reference internal" href="index.html#open-source"><em>Open Source</em></a> projects</p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Travis_CI">https://en.wikipedia.org/wiki/Travis_CI</a></p>
+</li>
+<li><p class="first">Google Gmail is a <a class="reference internal" href="#saas"><em>SaaS</em></a> webmail service:</p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Gmail">https://en.wikipedia.org/wiki/Gmail</a></p>
+</li>
+<li><p class="first">Many <a class="reference internal" href="#crm"><em>Customer Relationship Management (CRM)</em></a> software applications are offered as
+<a class="reference internal" href="#saas"><em>SaaS</em></a> subscription services</p>
+</li>
+<li><p class="first">See: <a class="reference internal" href="index.html#business-modeling"><em>Business Modeling</em></a></p>
+<p><a class="reference internal" href="#saas"><em>SaaS</em></a> is distinct from e.g. subscription software licensing;
+because <a class="reference internal" href="#saas"><em>SaaS</em></a> applications are usually
+<em>hosted</em> by the service provider</p>
+</li>
+</ul>
 <span class="target" id="index-7"></span></div>
-<div class="section" id="platform-as-a-service">
-<span id="paas"></span><span id="index-8"></span><h4>Platform-as-a-Service<a class="headerlink" href="#platform-as-a-service" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="paas">
+<span id="index-8"></span><span id="id7"></span><h4>PaaS<a class="headerlink" href="#paas" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Platform_as_a_service">https://en.wikipedia.org/wiki/Platform_as_a_service</a></p>
-<p>Platform-as-a-Service providers abstract a bit further in that they
-provide an implementation of platform APIs on top of which applications
-can be developed and hosted.</p>
-<p>Heroku, AppEngine and AppScale are examples of Platforms-as-a-Service.</p>
-<span class="target" id="index-9"></span></div>
-<div class="section" id="infrastructure-as-a-service">
-<span id="iaas"></span><span id="index-10"></span><h4>Infrastructure-as-a-Service<a class="headerlink" href="#infrastructure-as-a-service" title="Permalink to this headline">¶</a></h4>
+<p>Platform-as-a-Service (<em>PaaS</em>) providers
+offer platform APIs
+on top of which applications
+can be developed and marginally scaled
+if architected for concurrency and asynchronicity.</p>
+<p>Examples of Paas Platforms:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#heroku"><em>Heroku</em></a></li>
+<li><a class="reference internal" href="#appengine"><em>AppEngine</em></a></li>
+<li><a class="reference internal" href="#appscale"><em>AppScale</em></a></li>
+</ul>
+<div class="section" id="appengine">
+<span id="index-9"></span><span id="id8"></span><h5>AppEngine<a class="headerlink" href="#appengine" title="Permalink to this headline">¶</a></h5>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Google_App_Engine">https://en.wikipedia.org/wiki/Google_App_Engine</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://cloud.google.com/appengine/">https://cloud.google.com/appengine/</a></div>
+<div class="line">Twitter: <a class="reference external" href="https://twitter.com/googlecloud">https://twitter.com/googlecloud</a></div>
+<div class="line">Project: <a class="reference external" href="https://code.google.com/p/googleappengine/">https://code.google.com/p/googleappengine/</a></div>
+<div class="line">Source: svn <a class="reference external" href="http://googleappengine.googlecode.com/svn/trunk/python">http://googleappengine.googlecode.com/svn/trunk/python</a> appengine</div>
+<div class="line">Source: svn <a class="reference external" href="http://googleappengine.googlecode.com/svn/trunk/java">http://googleappengine.googlecode.com/svn/trunk/java</a> appenginejava</div>
+<div class="line">Source: hg <a class="reference external" href="https://code.google.com/p/appengine-go/">https://code.google.com/p/appengine-go/</a></div>
+<div class="line">Source: git <a class="reference external" href="https://github.com/GoogleCloudPlatform/appengine-php">https://github.com/GoogleCloudPlatform/appengine-php</a></div>
+<div class="line">Docs: <a class="reference external" href="https://developers.google.com/appengine/">https://developers.google.com/appengine/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://cloud.google.com/appengine/docs">https://cloud.google.com/appengine/docs</a></div>
+<div class="line">Docs: <a class="reference external" href="https://cloud.google.com/appengine/docs/python/">https://cloud.google.com/appengine/docs/python/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://cloud.google.com/appengine/docs/java/">https://cloud.google.com/appengine/docs/java/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://cloud.google.com/appengine/docs/go">https://cloud.google.com/appengine/docs/go</a></div>
+<div class="line">Docs: <a class="reference external" href="https://cloud.google.com/appengine/docs/php">https://cloud.google.com/appengine/docs/php</a></div>
+<div class="line">Docs: <a class="reference external" href="https://code.google.com/p/googleappengine/issues/list">https://code.google.com/p/googleappengine/issues/list</a></div>
+<div class="line">Docs: <a class="reference external" href="https://cloud.google.com/nodejs/">https://cloud.google.com/nodejs/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://cloud.google.com/docs/">https://cloud.google.com/docs/</a></div>
+</div>
+<p>Google AppEngine is an <a class="reference internal" href="#paas"><em>PaaS</em></a> platform
+for developing and scaling web applications written in
+<a class="reference internal" href="index.html#python"><em>Python</em></a>, <a class="reference internal" href="index.html#java"><em>Java</em></a>, <a class="reference internal" href="index.html#go"><em>Go</em></a>, and <cite>PHP</cite>.</p>
+<ul class="simple">
+<li>AppEngine applications can interface with
+Google Cloud Platform <a class="reference internal" href="#term-web-api"><em class="xref std std-term">Web APIs</em></a></li>
+</ul>
+</div>
+<div class="section" id="appscale">
+<span id="index-10"></span><span id="id9"></span><h5>AppScale<a class="headerlink" href="#appscale" title="Permalink to this headline">¶</a></h5>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/AppScale">https://en.wikipedia.org/wiki/AppScale</a></div>
+<div class="line">Homepage: <a class="reference external" href="http://www.appscale.com/">http://www.appscale.com/</a></div>
+<div class="line">Twitter: <a class="reference external" href="https://twitter.com/appscalecloud">https://twitter.com/appscalecloud</a></div>
+<div class="line">Download: <a class="reference external" href="https://github.com/AppScale/appscale/releases">https://github.com/AppScale/appscale/releases</a></div>
+<div class="line">Source: git <a class="reference external" href="https://github.com/AppScale/appscale">https://github.com/AppScale/appscale</a></div>
+<div class="line">Source: <a class="reference external" href="https://github.com/AppScale/appscale/tree/master/AppDB/cassandra">https://github.com/AppScale/appscale/tree/master/AppDB/cassandra</a></div>
+<div class="line">Docs: <a class="reference external" href="https://github.com/appscale/appscale/wiki">https://github.com/appscale/appscale/wiki</a></div>
+<div class="line">Docs: <a class="reference external" href="https://github.com/AppScale/appscale/wiki/Installing-AppScale-from-source-on-GitHub">https://github.com/AppScale/appscale/wiki/Installing-AppScale-from-source-on-GitHub</a></div>
+<div class="line">Docs: <a class="reference external" href="https://github.com/AppScale/appscale/wiki/AppScale-on-Google-Compute-Engine">https://github.com/AppScale/appscale/wiki/AppScale-on-Google-Compute-Engine</a></div>
+<div class="line">Docs: <a class="reference external" href="https://github.com/AppScale/appscale/wiki/AppScale-on-Amazon-EC2">https://github.com/AppScale/appscale/wiki/AppScale-on-Amazon-EC2</a></div>
+<div class="line">Docs: <a class="reference external" href="https://github.com/AppScale/appscale/wiki/AppScale-on-Eucalyptus">https://github.com/AppScale/appscale/wiki/AppScale-on-Eucalyptus</a></div>
+<div class="line">Docs: <a class="reference external" href="https://github.com/AppScale/appscale/wiki/AppScale-on-Eucalyptus">https://github.com/AppScale/appscale/wiki/AppScale-on-Eucalyptus</a></div>
+<div class="line">Docs: <a class="reference external" href="https://github.com/AppScale/appscale/wiki/AppScale-on-VirtualBox">https://github.com/AppScale/appscale/wiki/AppScale-on-VirtualBox</a></div>
+<div class="line">Docs: <a class="reference external" href="https://github.com/AppScale/appscale/wiki/AppScale-on-KVM">https://github.com/AppScale/appscale/wiki/AppScale-on-KVM</a></div>
+<div class="line">Docs: <a class="reference external" href="https://github.com/AppScale/appscale/wiki/Virtualized-Cluster">https://github.com/AppScale/appscale/wiki/Virtualized-Cluster</a></div>
+<div class="line">Docs: <a class="reference external" href="https://github.com/AppScale/appscale/wiki/Autoscaling-Triggers">https://github.com/AppScale/appscale/wiki/Autoscaling-Triggers</a></div>
+<div class="line">Docs: <a class="reference external" href="https://github.com/AppScale/appscale/wiki/Adding-Support-for-a-New-Database">https://github.com/AppScale/appscale/wiki/Adding-Support-for-a-New-Database</a></div>
+<div class="line">Docs: <a class="reference external" href="https://github.com/AppScale/appscale/wiki/Search-API-in-AppScale">https://github.com/AppScale/appscale/wiki/Search-API-in-AppScale</a></div>
+<div class="line">Docs: <a class="reference external" href="https://github.com/AppScale/appscale/wiki/Logging-in-AppScale">https://github.com/AppScale/appscale/wiki/Logging-in-AppScale</a></div>
+<div class="line">Docs: <a class="reference external" href="https://github.com/AppScale/appscale/wiki/Managing-Users">https://github.com/AppScale/appscale/wiki/Managing-Users</a></div>
+</div>
+<p>AppScale is a completely <a class="reference internal" href="index.html#open-source"><em>Open Source</em></a>
+<a class="reference internal" href="#paas"><em>PaaS</em></a> platform for developing and scaling web applications
+written in
+<a class="reference internal" href="index.html#python"><em>Python</em></a>, <a class="reference internal" href="index.html#java"><em>Java</em></a>, <a class="reference internal" href="index.html#go"><em>Go</em></a>, and <cite>PHP</cite>.</p>
+<ul class="simple">
+<li>AppScale Python apps deploy applications from <code class="docutils literal"><span class="pre">app.yaml</span></code> <a class="reference internal" href="index.html#yaml"><em>YAML</em></a>
+files; just like <a class="reference internal" href="#appengine"><em>AppEngine</em></a></li>
+<li>AppScale development supporters include Google and NSF:
+<a class="reference external" href="http://googlecloudplatform.blogspot.com/2015/05/AppScale-and-App-Engine-Work-Together-to-Provide-Infrastructure-Flexibility.html">http://googlecloudplatform.blogspot.com/2015/05/AppScale-and-App-Engine-Work-Together-to-Provide-Infrastructure-Flexibility.html</a></li>
+<li>AppScale applications can interface with
+AppScale implementations of <a class="reference internal" href="#appengine"><em>AppEngine</em></a>
+Google Cloud Platform <a class="reference internal" href="#term-web-api"><em class="xref std std-term">Web APIs</em></a></li>
+</ul>
+<table border="1" class="docutils" id="id37">
+<caption><span class="caption-text">adapted from <a class="reference external" href="https://github.com/AppScale/appscale/wiki/How-AppScale-implements-the-Google-App-Engine-APIs">https://github.com/AppScale/appscale/wiki/How-AppScale-implements-the-Google-App-Engine-APIs</a></span><a class="headerlink" href="#id37" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="32%" />
+<col width="68%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#appengine"><em>AppEngine</em></a> API</td>
+<td><a class="reference internal" href="#appscale"><em>AppScale</em></a> implementation</td>
+</tr>
+<tr class="row-even"><td>Datastore</td>
+<td>AppDB { Cassandra, Thrift, Protocol Buffers }</td>
+</tr>
+<tr class="row-odd"><td>Memcache</td>
+<td>memcached</td>
+</tr>
+<tr class="row-even"><td>URL Fetch</td>
+<td>urllib2</td>
+</tr>
+<tr class="row-odd"><td>Blobstore API</td>
+<td>custom server built on Tornado</td>
+</tr>
+<tr class="row-even"><td>XMPP</td>
+<td>ejabberd</td>
+</tr>
+<tr class="row-odd"><td>Channel API</td>
+<td>ejabberd and strophejs</td>
+</tr>
+<tr class="row-even"><td>Mail</td>
+<td>sendmail</td>
+</tr>
+<tr class="row-odd"><td>Images</td>
+<td>Python Imaging Library (PIL)</td>
+</tr>
+<tr class="row-even"><td>Task Queue</td>
+<td>RabbitMQ</td>
+</tr>
+<tr class="row-odd"><td>Cron</td>
+<td>Vixie Cron</td>
+</tr>
+<tr class="row-even"><td>Search</td>
+<td>SOLR</td>
+</tr>
+<tr class="row-odd"><td>CloudSQL</td>
+<td>MySQL</td>
+</tr>
+<tr class="row-even"><td>Users</td>
+<td>AppScale Dashboard</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="heroku">
+<span id="index-11"></span><span id="id10"></span><h5>Heroku<a class="headerlink" href="#heroku" title="Permalink to this headline">¶</a></h5>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Heroku">https://en.wikipedia.org/wiki/Heroku</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://www.heroku.com/">https://www.heroku.com/</a></div>
+<div class="line">Source: <a class="reference external" href="https://github.com/heroku">https://github.com/heroku</a></div>
+<div class="line">Twitter: <a class="reference external" href="https://twitter.com/heroku">https://twitter.com/heroku</a></div>
+</div>
+<p>Heroku is a <a class="reference internal" href="#paas"><em>PaaS</em></a> Platform.</p>
+<span class="target" id="index-12"></span></div>
+</div>
+<div class="section" id="iaas">
+<span id="index-13"></span><span id="id11"></span><h4>IaaS<a class="headerlink" href="#iaas" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Category:Cloud_infrastructure">https://en.wikipedia.org/wiki/Category:Cloud_infrastructure</a></p>
 <p>Infrastructure-as-a-Service providers provide a bit more than regular
 hosting services in that they offer something like virtual datacenter
-resources.</p>
-<p>Amazon Web Services (AWS), Rackspace, and Google Compute Engine
-are examples of
-Infrastructure-as-a-Service: they provide servers, networks, and
+resource pools: servers, networks, and
 redundant storage systems on top of which IT systems can be
 developed, tested, and deployed.</p>
+<p>Examples of IaaS:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#aws"><em>Amazon AWS</em></a></li>
+<li><a class="reference internal" href="#google-cloud"><em>Google Cloud</em></a></li>
+<li><a class="reference internal" href="#rackspace-cloud"><em>Rackspace Cloud</em></a></li>
+<li><a class="reference internal" href="index.html#libcloud"><em>Libcloud</em></a> implements a <a class="reference internal" href="index.html#python"><em>Python</em></a> <a class="reference internal" href="#term-language-api"><em class="xref std std-term">language api</em></a>
+over very many <a class="reference internal" href="#iaas"><em>IaaS</em></a> and <a class="reference internal" href="#paas"><em>PaaS</em></a> clouds:
+<a class="reference external" href="https://libcloud.readthedocs.org/en/latest/supported_providers.html">https://libcloud.readthedocs.org/en/latest/supported_providers.html</a></li>
+</ul>
+<div class="section" id="amazon-aws">
+<span id="aws"></span><span id="index-14"></span><h5>Amazon AWS<a class="headerlink" href="#amazon-aws" title="Permalink to this headline">¶</a></h5>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Amazon_Web_Services">https://en.wikipedia.org/wiki/Amazon_Web_Services</a></div>
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Amazon_Elastic_Compute_Cloud">https://en.wikipedia.org/wiki/Amazon_Elastic_Compute_Cloud</a></div>
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Amazon_Elastic_Block_Store">https://en.wikipedia.org/wiki/Amazon_Elastic_Block_Store</a></div>
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Amazon_S3">https://en.wikipedia.org/wiki/Amazon_S3</a></div>
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Amazon_Relational_Database_Service">https://en.wikipedia.org/wiki/Amazon_Relational_Database_Service</a></div>
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Amazon_CloudFront">https://en.wikipedia.org/wiki/Amazon_CloudFront</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://aws.amazon.com/">https://aws.amazon.com/</a></div>
+<div class="line">Twitter: <a class="reference external" href="https://twitter.com/awscloud">https://twitter.com/awscloud</a></div>
+<div class="line">Docs: <a class="reference external" href="https://aws.amazon.com/products/">https://aws.amazon.com/products/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://aws.amazon.com/ec2/pricing/">https://aws.amazon.com/ec2/pricing/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://aws.amazon.com/ebs/pricing/">https://aws.amazon.com/ebs/pricing/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://aws.amazon.com/s3/pricing/">https://aws.amazon.com/s3/pricing/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://aws.amazon.com/rds/pricing/">https://aws.amazon.com/rds/pricing/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://aws.amazon.com/cloudfront/pricing/">https://aws.amazon.com/cloudfront/pricing/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://aws.amazon.com/cloudformation/">https://aws.amazon.com/cloudformation/</a></div>
+</div>
+<ul class="simple">
+<li>EC2 &#8211; Elastic Compute Cloud (CPU/GPU/RAM instances)</li>
+<li>EBS &#8211; Elastic Block Store (persistent block storage)</li>
+<li>S3 &#8211; Simple Storage Service (HTTP object storage)</li>
+<li>SQS &#8211; Simple Queue Server</li>
+<li>CloudFormation &#8211; EC2 [auto-]scaling</li>
+<li>CloudFront &#8211; CDN</li>
+<li>RDS: Managed MySQL, Oracle, SQL Server, PostgreSQL</li>
+<li>DynamoDB: <a class="reference internal" href="index.html#nosql"><em>NoSQL Databases</em></a> supercolumn cloud datastore</li>
+</ul>
+<p><a class="reference internal" href="index.html#python"><em>Python</em></a> and AWS</p>
+<ul class="simple">
+<li>boto, <a class="reference internal" href="index.html#libcloud"><em>Libcloud</em></a></li>
+</ul>
+</div>
+<div class="section" id="google-cloud">
+<span id="index-15"></span><span id="id12"></span><h5>Google Cloud<a class="headerlink" href="#google-cloud" title="Permalink to this headline">¶</a></h5>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Google_Cloud_Platform">https://en.wikipedia.org/wiki/Google_Cloud_Platform</a></div>
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Google_Compute_Engine">https://en.wikipedia.org/wiki/Google_Compute_Engine</a></div>
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Google_Cloud_Messaging">https://en.wikipedia.org/wiki/Google_Cloud_Messaging</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://cloud.google.com/">https://cloud.google.com/</a></div>
+<div class="line">Twitter: <a class="reference external" href="https://twitter.com/googlecloud">https://twitter.com/googlecloud</a></div>
+<div class="line">Docs: <a class="reference external" href="https://cloud.google.com/products/">https://cloud.google.com/products/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://cloud.google.com/compute/">https://cloud.google.com/compute/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://cloud.google.com/container-engine/">https://cloud.google.com/container-engine/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://cloud.google.com/dns/">https://cloud.google.com/dns/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://cloud.google.com/datastore/">https://cloud.google.com/datastore/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://cloud.google.com/storage/">https://cloud.google.com/storage/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://cloud.google.com/sql/">https://cloud.google.com/sql/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://cloud.google.com/bigquery/">https://cloud.google.com/bigquery/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://cloud.google.com/dataflow/">https://cloud.google.com/dataflow/</a></div>
+</div>
+<p>Google Cloud Platform (GCP) is an <a class="reference internal" href="#iaas"><em>IaaS</em></a> cloud platform.</p>
+<ul class="simple">
+<li><a class="reference internal" href="#appengine"><em>AppEngine</em></a> &#8211; <a class="reference internal" href="#paas"><em>PaaS</em></a></li>
+<li>Compute Engine (GCE) &#8211; <a class="reference internal" href="#iaas"><em>IaaS</em></a><ul>
+<li><a class="reference internal" href="index.html#kvm"><em>KVM</em></a>, SDN</li>
+</ul>
+</li>
+<li>Container Engine (GCE)  &#8211; <a class="reference internal" href="#iaas"><em>IaaS</em></a><ul>
+<li><a class="reference internal" href="index.html#kubernetes"><em>Kubernetes</em></a>, <a class="reference internal" href="index.html#docker"><em>Docker</em></a></li>
+</ul>
+</li>
+<li>CloudSQL (MySQL)</li>
+</ul>
+<p><a class="reference internal" href="index.html#python"><em>Python</em></a> and Google Cloud</p>
+<ul class="simple">
+<li><a class="reference internal" href="index.html#libcloud"><em>Libcloud</em></a></li>
+<li><a class="reference external" href="https://cloud.google.com/compute/docs/tutorials/python-guide">https://cloud.google.com/compute/docs/tutorials/python-guide</a></li>
+<li><a class="reference external" href="https://github.com/westurner/dotfiles/blob/master/etc/bash/08-bashrc.gcloud.sh">https://github.com/westurner/dotfiles/blob/master/etc/bash/08-bashrc.gcloud.sh</a></li>
+</ul>
+</div>
+<div class="section" id="rackspace-cloud">
+<span id="index-16"></span><span id="id13"></span><h5>Rackspace Cloud<a class="headerlink" href="#rackspace-cloud" title="Permalink to this headline">¶</a></h5>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Rackspace_Cloud">https://en.wikipedia.org/wiki/Rackspace_Cloud</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://www.rackspace.com/cloud">https://www.rackspace.com/cloud</a></div>
+<div class="line">Twitter: <a class="reference external" href="https://twitter.com/Rackspace">https://twitter.com/Rackspace</a></div>
+<div class="line">Docs: <a class="reference external" href="http://docs.rackspace.com/">http://docs.rackspace.com/</a></div>
+</div>
+<p>Rackspace Cloud is an <a class="reference internal" href="#iaas"><em>IaaS</em></a> cloud platform
+built with <a class="reference internal" href="index.html#openstack"><em>OpenStack</em></a>.</p>
+<ul class="simple">
+<li>Rackspace CloudFiles is now <a class="reference internal" href="index.html#openstack"><em>OpenStack</em></a> Swift.</li>
+<li>Rackspace Cloud is powered by <a class="reference internal" href="index.html#openstack"><em>OpenStack</em></a>.</li>
+<li>Cloud Servers &#8211; <a class="reference internal" href="index.html#openstack"><em>OpenStack</em></a> Compute</li>
+<li>Cloud Load Balancers</li>
+<li>Cloud DNS</li>
+<li>Cloud Networks</li>
+<li>Cloud Block Storage &#8211; <a class="reference internal" href="index.html#openstack"><em>OpenStack</em></a> Cinder</li>
+<li>Cloud Files &#8211; <a class="reference internal" href="index.html#openstack"><em>OpenStack</em></a> Swift</li>
+<li>CDN</li>
+<li>Cloud Databases (MySQL)</li>
+<li>Cloud Big Data (Hadoop)</li>
+<li>Cloud Queues</li>
+<li>Rackspace Auto Scale</li>
+<li>Rackspace Private Cloud v4, v9, v10 (<a class="reference internal" href="index.html#openstack"><em>OpenStack</em></a>)</li>
+</ul>
+<p>Python and Rackspace Cloud</p>
+<ul class="simple">
+<li><a class="reference internal" href="index.html#libcloud"><em>Libcloud</em></a></li>
+<li><a class="reference external" href="https://developer.rackspace.com/sdks/python/">https://developer.rackspace.com/sdks/python/</a></li>
+<li><a class="reference external" href="https://github.com/rackspace/pyrax">https://github.com/rackspace/pyrax</a></li>
+</ul>
+</div>
 </div>
 </div>
 <div class="section" id="configuration-management">
-<span id="index-11"></span><span id="id6"></span><h3>Configuration Management<a class="headerlink" href="#configuration-management" title="Permalink to this headline">¶</a></h3>
+<span id="index-17"></span><span id="id14"></span><h3>Configuration Management<a class="headerlink" href="#configuration-management" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Configuration_management#Software">https://en.wikipedia.org/wiki/Configuration_management#Software</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Software_configuration_management">https://en.wikipedia.org/wiki/Software_configuration_management</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Comparison_of_open-source_configuration_management_software">https://en.wikipedia.org/wiki/Comparison_of_open-source_configuration_management_software</a></p>
 <p>See: <a class="reference internal" href="index.html#configuration-management"><em>Tools &gt; Configuration Managment</em></a></p>
 </div>
 <div class="section" id="information-security">
-<span id="index-12"></span><span id="id7"></span><h3>Information Security<a class="headerlink" href="#information-security" title="Permalink to this headline">¶</a></h3>
+<span id="index-18"></span><span id="id15"></span><h3>Information Security<a class="headerlink" href="#information-security" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Information_security">https://en.wikipedia.org/wiki/Information_security</a></p>
 <p>Managing risk and uncertainty.</p>
 <p>Standards:</p>
@@ -2730,45 +3033,45 @@ developed, tested, and deployed.</p>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Cloud_computing_security">https://en.wikipedia.org/wiki/Cloud_computing_security</a></li>
 </ul>
 <div class="section" id="confidentiality">
-<span id="index-13"></span><span id="id8"></span><h4>Confidentiality<a class="headerlink" href="#confidentiality" title="Permalink to this headline">¶</a></h4>
+<span id="index-19"></span><span id="id16"></span><h4>Confidentiality<a class="headerlink" href="#confidentiality" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Confidentiality">https://en.wikipedia.org/wiki/Confidentiality</a></p>
 </div>
 <div class="section" id="integrity">
-<span id="index-14"></span><span id="id9"></span><h4>Integrity<a class="headerlink" href="#integrity" title="Permalink to this headline">¶</a></h4>
+<span id="index-20"></span><span id="id17"></span><h4>Integrity<a class="headerlink" href="#integrity" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Data_integrity">https://en.wikipedia.org/wiki/Data_integrity</a></p>
 </div>
 <div class="section" id="availability">
-<span id="index-15"></span><span id="id10"></span><h4>Availability<a class="headerlink" href="#availability" title="Permalink to this headline">¶</a></h4>
+<span id="index-21"></span><span id="id18"></span><h4>Availability<a class="headerlink" href="#availability" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Availability">https://en.wikipedia.org/wiki/Availability</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Service-level_agreement">https://en.wikipedia.org/wiki/Service-level_agreement</a></p>
 </div>
 </div>
 <div class="section" id="business-continuity">
-<span id="index-16"></span><span id="id11"></span><h3>Business Continuity<a class="headerlink" href="#business-continuity" title="Permalink to this headline">¶</a></h3>
+<span id="index-22"></span><span id="id19"></span><h3>Business Continuity<a class="headerlink" href="#business-continuity" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Business_continuity">https://en.wikipedia.org/wiki/Business_continuity</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Business_continuity_planning">https://en.wikipedia.org/wiki/Business_continuity_planning</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Disaster_recovery">https://en.wikipedia.org/wiki/Disaster_recovery</a></p>
-<p>See: <a class="reference internal" href="#id7">Information Security</a> (<a class="reference internal" href="#availability">Availability</a>)</p>
+<p>See: <a class="reference internal" href="#id15">Information Security</a> (<a class="reference internal" href="#availability">Availability</a>)</p>
 <div class="section" id="backups">
-<span id="index-17"></span><span id="id12"></span><h4>Backups<a class="headerlink" href="#backups" title="Permalink to this headline">¶</a></h4>
+<span id="index-23"></span><span id="id20"></span><h4>Backups<a class="headerlink" href="#backups" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Backup">https://en.wikipedia.org/wiki/Backup</a></p>
 </div>
 <div class="section" id="reliability">
-<span id="index-18"></span><span id="id13"></span><h4>Reliability<a class="headerlink" href="#reliability" title="Permalink to this headline">¶</a></h4>
+<span id="index-24"></span><span id="id21"></span><h4>Reliability<a class="headerlink" href="#reliability" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Reliability_engineering">https://en.wikipedia.org/wiki/Reliability_engineering</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Redundancy_(engineering)">https://en.wikipedia.org/wiki/Redundancy_(engineering)</a></p>
 </div>
 <div class="section" id="scenarios">
-<span id="index-19"></span><span id="id14"></span><h4>Scenarios<a class="headerlink" href="#scenarios" title="Permalink to this headline">¶</a></h4>
+<span id="index-25"></span><span id="id22"></span><h4>Scenarios<a class="headerlink" href="#scenarios" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Scenario_planning">https://en.wikipedia.org/wiki/Scenario_planning</a></p>
 </div>
 </div>
 <div class="section" id="business-systems">
-<span id="index-20"></span><span id="id15"></span><h3>Business Systems<a class="headerlink" href="#business-systems" title="Permalink to this headline">¶</a></h3>
+<span id="index-26"></span><span id="id23"></span><h3>Business Systems<a class="headerlink" href="#business-systems" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Online_office_suite">https://en.wikipedia.org/wiki/Online_office_suite</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Comparison_of_office_suites">https://en.wikipedia.org/wiki/Comparison_of_office_suites</a></p>
 <div class="section" id="google-apps">
-<span id="index-21"></span><span id="id16"></span><h4>Google Apps<a class="headerlink" href="#google-apps" title="Permalink to this headline">¶</a></h4>
+<span id="index-27"></span><span id="id24"></span><h4>Google Apps<a class="headerlink" href="#google-apps" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li>$5/user/month // $50/user/year</li>
 <li>gmail (e.g. <a class="reference external" href="mailto:username&#37;&#52;&#48;example&#46;org">username<span>&#64;</span>example<span>&#46;</span>org</a>)<ul>
@@ -2796,21 +3099,21 @@ own email addresses (everything gets relayed)</li>
 <li><a class="reference external" href="http://learn.googleapps.com/">http://learn.googleapps.com/</a></li>
 <li><a class="reference external" href="https://www.google.com/enterprise/marketplace/">https://www.google.com/enterprise/marketplace/</a></li>
 </ul>
-<span class="target" id="index-22"></span></div>
+<span class="target" id="index-28"></span></div>
 </div>
 <div class="section" id="handling-money">
-<span id="index-23"></span><span id="id17"></span><h3>Handling Money<a class="headerlink" href="#handling-money" title="Permalink to this headline">¶</a></h3>
+<span id="index-29"></span><span id="id25"></span><h3>Handling Money<a class="headerlink" href="#handling-money" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Transaction_processing">https://en.wikipedia.org/wiki/Transaction_processing</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard">https://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard</a></p>
 <div class="section" id="accounting">
-<span id="index-24"></span><span id="id18"></span><h4>Accounting<a class="headerlink" href="#accounting" title="Permalink to this headline">¶</a></h4>
+<span id="index-30"></span><span id="id26"></span><h4>Accounting<a class="headerlink" href="#accounting" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Accounting">https://en.wikipedia.org/wiki/Accounting</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Double-entry_bookkeeping_system">https://en.wikipedia.org/wiki/Double-entry_bookkeeping_system</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Accountant">https://en.wikipedia.org/wiki/Accountant</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Financial_statement">https://en.wikipedia.org/wiki/Financial_statement</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Business_valuation">https://en.wikipedia.org/wiki/Business_valuation</a></p>
 <div class="section" id="gnucash">
-<span id="index-25"></span><span id="id19"></span><h5>GNUCash<a class="headerlink" href="#gnucash" title="Permalink to this headline">¶</a></h5>
+<span id="index-31"></span><span id="id27"></span><h5>GNUCash<a class="headerlink" href="#gnucash" title="Permalink to this headline">¶</a></h5>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/GnuCash">https://en.wikipedia.org/wiki/GnuCash</a></p>
 <ul class="simple">
 <li>Free and Open Source</li>
@@ -2819,7 +3122,7 @@ own email addresses (everything gets relayed)</li>
 </ul>
 </div>
 <div class="section" id="quicken">
-<span id="index-26"></span><span id="id20"></span><h5>Quicken<a class="headerlink" href="#quicken" title="Permalink to this headline">¶</a></h5>
+<span id="index-32"></span><span id="id28"></span><h5>Quicken<a class="headerlink" href="#quicken" title="Permalink to this headline">¶</a></h5>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Quicken">https://en.wikipedia.org/wiki/Quicken</a></p>
 <ul class="simple">
 <li>Personal Accounting</li>
@@ -2828,7 +3131,7 @@ own email addresses (everything gets relayed)</li>
 </ul>
 </div>
 <div class="section" id="quickbooks">
-<span id="index-27"></span><span id="id21"></span><h5>QuickBooks<a class="headerlink" href="#quickbooks" title="Permalink to this headline">¶</a></h5>
+<span id="index-33"></span><span id="id29"></span><h5>QuickBooks<a class="headerlink" href="#quickbooks" title="Permalink to this headline">¶</a></h5>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/QuickBooks">https://en.wikipedia.org/wiki/QuickBooks</a></p>
 <ul class="simple">
 <li>Small Business Accounting</li>
@@ -2838,26 +3141,26 @@ own email addresses (everything gets relayed)</li>
 </div>
 </div>
 <div class="section" id="payments">
-<span id="index-28"></span><span id="id22"></span><h4>Payments<a class="headerlink" href="#payments" title="Permalink to this headline">¶</a></h4>
+<span id="index-34"></span><span id="id30"></span><h4>Payments<a class="headerlink" href="#payments" title="Permalink to this headline">¶</a></h4>
 <div class="section" id="amazon-payments">
-<span id="index-29"></span><span id="id23"></span><h5>Amazon Payments<a class="headerlink" href="#amazon-payments" title="Permalink to this headline">¶</a></h5>
+<span id="index-35"></span><span id="id31"></span><h5>Amazon Payments<a class="headerlink" href="#amazon-payments" title="Permalink to this headline">¶</a></h5>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Amazon_Payments">https://en.wikipedia.org/wiki/Amazon_Payments</a></p>
 </div>
 <div class="section" id="apple-pay">
-<span id="index-30"></span><span id="id24"></span><h5>Apple Pay<a class="headerlink" href="#apple-pay" title="Permalink to this headline">¶</a></h5>
+<span id="index-36"></span><span id="id32"></span><h5>Apple Pay<a class="headerlink" href="#apple-pay" title="Permalink to this headline">¶</a></h5>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Apple_Pay">https://en.wikipedia.org/wiki/Apple_Pay</a></p>
-<span class="target" id="index-31"></span></div>
+<span class="target" id="index-37"></span></div>
 <div class="section" id="google-wallet">
-<span id="index-32"></span><span id="id25"></span><h5>Google Wallet<a class="headerlink" href="#google-wallet" title="Permalink to this headline">¶</a></h5>
+<span id="index-38"></span><span id="id33"></span><h5>Google Wallet<a class="headerlink" href="#google-wallet" title="Permalink to this headline">¶</a></h5>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Google_Wallet">https://en.wikipedia.org/wiki/Google_Wallet</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Google_Checkout">https://en.wikipedia.org/wiki/Google_Checkout</a></p>
 </div>
 <div class="section" id="paypal">
-<span id="index-33"></span><span id="id26"></span><h5>PayPal<a class="headerlink" href="#paypal" title="Permalink to this headline">¶</a></h5>
+<span id="index-39"></span><span id="id34"></span><h5>PayPal<a class="headerlink" href="#paypal" title="Permalink to this headline">¶</a></h5>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/PayPal">https://en.wikipedia.org/wiki/PayPal</a></p>
 </div>
 <div class="section" id="square">
-<span id="index-34"></span><span id="id27"></span><h5>Square<a class="headerlink" href="#square" title="Permalink to this headline">¶</a></h5>
+<span id="index-40"></span><span id="id35"></span><h5>Square<a class="headerlink" href="#square" title="Permalink to this headline">¶</a></h5>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Square,_Inc.">https://en.wikipedia.org/wiki/Square,_Inc.</a></p>
 <p><a class="reference external" href="https://squareup.com/">https://squareup.com/</a></p>
 <ul class="simple">
@@ -2875,7 +3178,7 @@ own email addresses (everything gets relayed)</li>
 </div>
 </div>
 <div class="section" id="sales">
-<span id="sales-information-systems"></span><span id="index-35"></span><h3>Sales<a class="headerlink" href="#sales" title="Permalink to this headline">¶</a></h3>
+<span id="sales-information-systems"></span><span id="index-41"></span><h3>Sales<a class="headerlink" href="#sales" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Sales_process_engineering">https://en.wikipedia.org/wiki/Sales_process_engineering</a></li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Group_information_management">https://en.wikipedia.org/wiki/Group_information_management</a></li>
@@ -2885,9 +3188,9 @@ own email addresses (everything gets relayed)</li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Sales_force_management_system">https://en.wikipedia.org/wiki/Sales_force_management_system</a></li>
 </ul>
 <p>See: <a class="reference internal" href="#crm"><em>CRM</em></a></p>
-<span class="target" id="index-36"></span></div>
+<span class="target" id="index-42"></span></div>
 <div class="section" id="customer-relationship-management-crm">
-<span id="crm"></span><span id="index-37"></span><h3>Customer Relationship Management (CRM)<a class="headerlink" href="#customer-relationship-management-crm" title="Permalink to this headline">¶</a></h3>
+<span id="crm"></span><span id="index-43"></span><h3>Customer Relationship Management (CRM)<a class="headerlink" href="#customer-relationship-management-crm" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Customer_relationship_management">https://en.wikipedia.org/wiki/Customer_relationship_management</a></p>
 <ul class="simple">
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Contact_list">https://en.wikipedia.org/wiki/Contact_list</a></li>
@@ -2900,9 +3203,9 @@ own email addresses (everything gets relayed)</li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Customer_intelligence">https://en.wikipedia.org/wiki/Customer_intelligence</a></li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Customer_experience">https://en.wikipedia.org/wiki/Customer_experience</a></li>
 </ul>
-<span class="target" id="index-38"></span></div>
+<span class="target" id="index-44"></span></div>
 <div class="section" id="business-intelligence">
-<span id="index-39"></span><span id="id28"></span><h3>Business Intelligence<a class="headerlink" href="#business-intelligence" title="Permalink to this headline">¶</a></h3>
+<span id="index-45"></span><span id="id36"></span><h3>Business Intelligence<a class="headerlink" href="#business-intelligence" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Business_intelligence">https://en.wikipedia.org/wiki/Business_intelligence</a></p>
 <p>See: <a class="reference internal" href="index.html#data-science"><em>Data Science</em></a></p>
 <p>See: <a class="reference internal" href="index.html#knowledge-engineering"><em>Knowledge Engineering</em></a></p>
@@ -12574,7 +12877,7 @@ stripsinglehtml --help
 
 <dl class="function">
 <dt id="wrdrd.tools.crawl.crawl_url">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">crawl_url</code><span class="sig-paren">(</span><em>start_url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x1057da150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#crawl_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.crawl_url" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">crawl_url</code><span class="sig-paren">(</span><em>start_url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10e0ff150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#crawl_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.crawl_url" title="Permalink to this definition">¶</a></dt>
 <dd><p>Crawl pages starting at <code class="docutils literal"><span class="pre">start_url</span></code></p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -12867,7 +13170,7 @@ a <a class="reference internal" href="#wrdrd.tools.crawl.Link" title="wrdrd.tool
 
 <dl class="function">
 <dt id="wrdrd.tools.crawl.print_frequency_table">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">print_frequency_table</code><span class="sig-paren">(</span><em>frequencies</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x1057da150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#print_frequency_table"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.print_frequency_table" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">print_frequency_table</code><span class="sig-paren">(</span><em>frequencies</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10e0ff150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#print_frequency_table"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.print_frequency_table" title="Permalink to this definition">¶</a></dt>
 <dd><p>Print a formatted ASCII frequency table</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -13021,7 +13324,7 @@ a <a class="reference internal" href="#wrdrd.tools.crawl.Link" title="wrdrd.tool
 
 <dl class="function">
 <dt id="wrdrd.tools.crawl.wrdcrawler">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">wrdcrawler</code><span class="sig-paren">(</span><em>url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x1057da150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#wrdcrawler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.wrdcrawler" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">wrdcrawler</code><span class="sig-paren">(</span><em>url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10e0ff150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#wrdcrawler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.wrdcrawler" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fetch and generate a report from the given URL</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
