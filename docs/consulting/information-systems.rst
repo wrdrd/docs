@@ -252,6 +252,7 @@ Cloud application layers
 
     * Celery: https://celery.readthedocs.org/en/latest/getting-started/brokers/
     * AppEngine/AppScale Tasks API
+    * :ref:`Mesos` schedulers (Aurora, Chronos, Marathon)
 
   * Search Indexing (:ref:`JSON`, :ref:`json-ld-`)
     
@@ -267,7 +268,14 @@ Cloud application layers
 * (Data Center) Infrastructure
   
   * Resource Pool
-  * Inventory / Monitoring
+
+    * :ref:`Cobbler` (libvirt :ref:`virtualization`)
+    * :ref:`OpenStack`
+    * :ref:`kubernetes`, :ref:`kubernetes-mesos`
+    * :ref:`Mesos` schedulers (Aurora, Chronos, Marathon)
+    * :ref:`Docker` Swarm
+
+  * Provisioning / Inventory / Monitoring
 
     * :ref:`Cobbler` Dashboard <-->
       {:ref:`Ansible`, :ref:`Puppet`, :ref:`Salt`}
@@ -276,6 +284,7 @@ Cloud application layers
     * Syslog, LogStash, Heka (logtailers)
     * Kibana, Grafana, Graphite, RRD (:ref:`data-visualization-tools`)
     * http://www.brendangregg.com/linuxperf.html
+    * https://www.opsschool.org/en/latest/
 
   * Physical and Virtual Servers
 
@@ -284,9 +293,21 @@ Cloud application layers
     * :ref:`configuration-management`
 
   * Physical and Software Networks
-  * Physical storage: SAN "Storage Area Network"
-  * Virtual storage: persistent block devices (LVM, BTRFS, iSCSI)
-  * Virtual storage: distributed file storage (ceph)
+
+    + Router = Gateway + Switch
+    + :ref:`Vagrant` networking
+    + :ref:`Docker` networking
+    + VLANs, IPv6 6to4 Tunnels
+    + SDN (:ref:`OpenStack` Neutron)
+    + DNS (BIND, dnsmasq, :ref:`Cobbler`, :ref:`OpenStack`,
+      :ref:`Vagrant`, :ref:`Docker`)
+
+  * Physical and Virtual Storage
+
+    + Virtual storage: central file storage (NFS, CIFS, WebDAV)
+    + Virtual storage: distributed file storage (Ceph)
+    + Virtual storage: persistent block devices (LVM, BTRFS)
+    + Physical storage: SAN "Storage Area Network" (iSCSI)
 
 
 .. index:: Software-as-a-Service
@@ -342,7 +363,7 @@ developed, tested, and deployed.
 .. _configuration-management:
 
 Configuration Management
-++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 https://en.wikipedia.org/wiki/Configuration_management#Software
 
 https://en.wikipedia.org/wiki/Software_configuration_management
