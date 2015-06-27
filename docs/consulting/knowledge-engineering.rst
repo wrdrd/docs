@@ -1605,8 +1605,8 @@ Example:
 * https://en.wikipedia.org/wiki/DBpedia
 * https://en.wikipedia.org/wiki/dbpedia
 * https://es.wikipedia.org/wiki/DBpedia
-* http://ja.dbpedia.org/resource/DBペディア
-* https://ja.wikipedia.org/wiki/DBペディア
+* `<http://ja.dbpedia.org/resource/DBペディア>`__
+* `<https://ja.wikipedia.org/wiki/DBペディア>`__
 * https://www.wikidata.org/wiki/Q465
 * http://sw.cyc.com/concept/Mx4r7PXDuWpqTcmfojZNIu56eQ
 
