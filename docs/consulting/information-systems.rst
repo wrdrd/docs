@@ -26,14 +26,25 @@ Information Systems Glossary
 
       https://en.wikipedia.org/wiki/System
 
+   Infrastructure
+      Core :term:`system` components.
+
+   Information
+      Not noise.
+
+      See: :ref:`data-science` > :ref:`information-theory`,
+      :ref:`knowledge-engineering`
+
    Information System
-      A system with information inputs and outputs
+      A :term:`system` with :term:`information` inputs and outputs
       designed to solve a problem.
 
       https://en.wikipedia.org/wiki/Information_system
 
    Information Technology
-      Hardware and software information systems for solving business problems.
+      Hardware and software :term:`information systems <information
+      system>`
+      for solving business problems.
 
       https://en.wikipedia.org/wiki/Information_technology
 
@@ -44,7 +55,8 @@ Information Systems Glossary
       See :term:`Application`
 
    Operating System
-      Software for running applications and working with devices.
+      Software for running :term:`applications <application>`
+      and working with devices.
 
       https://en.wikipedia.org/wiki/Operating_system
 
@@ -99,7 +111,7 @@ Information Systems Glossary
 
    Web API
       An :term:`API` for interacting with local (browser) or remote
-      (e.g. :ref:`HTTP <http>`) components.
+      (e.g. :ref:`HTTP`) components.
 
       One primary advantage of a Web API is that *downstream components*
       do not need to know anything about the underlying
@@ -118,7 +130,8 @@ Information Systems Glossary
       https://en.wikipedia.org/wiki/Web_service
 
    RESTful API
-      Also REST API. A :term:`Web API` that abides by best-practice guidelines
+      A RESTful API (*REST API*) is a
+      :term:`Web API` that abides by best-practice guidelines
       for interacting with *resources* through standard :ref:`HTTP`
       methods like ``PUT``/``POST``, ``GET``, ``POST``/``PUT``, ``DELETE``.
 
@@ -152,7 +165,7 @@ Productivity / Efficiency::
 
     output / input
 
-Hours, Units, Dollars
+Units: Hours, Units, Dollars (see: :ref:`qudt`)
 
 https://en.wikipedia.org/wiki/Productivity
 
@@ -194,20 +207,86 @@ https://en.wikipedia.org/wiki/Cloud_computing
 
 https://en.wikipedia.org/wiki/Cloud_computing#Service_models
 
-Why would I want to run my business "in the cloud"?
 
-What are our core competencies?
+Cloud Questions
+++++++++++++++++
 
-Do we need/want to run this all ourselves?
+* Why would I want to run my business "in the cloud"?
+* What are our core competencies?
+* Do we need/want to run this all ourselves?
+* Would it be more safe/secure to outsource the management of these
+  business systems?
 
-Would it be more safe/secure to outsource the management of these
-business systems?
 
-Application layers:
+.. index:: Cloud application layers
+.. _cloud application layers:
 
-* Application
+Cloud application layers
+++++++++++++++++++++++++++
+
+* :term:`Applications <application>`
 * Platform (Database, APIs)
-* Infrastructure (Physical and Virtual Servers)
+
+  * :ref:`Databases`
+    (:ref:`relational-databases`,
+    :ref:`sql`,
+    :ref:`nosql`,
+    :ref:`graph-databases`,
+    :ref:`sparql`)
+  * Authz: Authentication, Authorization
+    (WebID, SSO, SAML, OAuth + ACL strings)
+
+    * :ref:`OpenStack` Keystone
+
+  * Email
+
+    * AppEngine/AppScale Email API
+
+  * Logging / Monitoring
+
+    * AppEngine/AppScale Logging
+    * Sentry, Raven (POST JSON)
+    * :ref:`FireLogger`
+
+  * Message Queue (Tasks, Channels, AMQP, WebSockets, Workers)
+
+    * Celery: https://celery.readthedocs.org/en/latest/getting-started/brokers/
+    * AppEngine/AppScale Tasks API
+
+  * Search Indexing (:ref:`JSON`, :ref:`json-ld-`)
+    
+    * ElasticSearch (Solr), Lucene
+    * AppEngine/AppScale Search API
+
+  * HTTP Object Storage (:ref:`libcloud`)
+    
+    * https://libcloud.readthedocs.org/en/latest/storage/
+    * :ref:`OpenStack` Swift (Swift, S3 APIs)
+    * :ref:`Linux` Ceph RADOS gateway (Swift, S3 APIs)
+
+* (Data Center) Infrastructure
+  
+  * Resource Pool
+  * Inventory / Monitoring
+
+    * :ref:`Cobbler` Dashboard <-->
+      {:ref:`Ansible`, :ref:`Puppet`, :ref:`Salt`}
+    * :ref:`OpenStack` Horizon Dashboard
+    * Nagios, Shinken, Icinga
+    * Syslog, LogStash, Heka (logtailers)
+    * Kibana, Grafana, Graphite, RRD (:ref:`data-visualization-tools`)
+    * http://www.brendangregg.com/linuxperf.html
+
+  * Physical and Virtual Servers
+
+    * :ref:`Operating Systems`
+    * :ref:`Virtualization`
+    * :ref:`configuration-management`
+
+  * Physical and Software Networks
+  * Physical storage: SAN "Storage Area Network"
+  * Virtual storage: persistent block devices (LVM, BTRFS, iSCSI)
+  * Virtual storage: distributed file storage (ceph)
 
 
 .. index:: Software-as-a-Service
@@ -269,6 +348,8 @@ https://en.wikipedia.org/wiki/Configuration_management#Software
 https://en.wikipedia.org/wiki/Software_configuration_management
 
 https://en.wikipedia.org/wiki/Comparison_of_open-source_configuration_management_software
+
+See: :ref:`Tools > Configuration Managment <configuration management>`
 
 
 .. index:: Information Security
