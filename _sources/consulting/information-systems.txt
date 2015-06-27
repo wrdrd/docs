@@ -218,10 +218,10 @@ Cloud Questions
   business systems?
 
 
-.. index:: Cloud application layers
+.. index:: Cloud Application Layers
 .. _cloud application layers:
 
-Cloud application layers
+Cloud Application Layers
 ++++++++++++++++++++++++++
 
 * :term:`Applications <application>`
@@ -234,9 +234,11 @@ Cloud application layers
     :ref:`graph-databases`,
     :ref:`sparql`)
   * Authz: Authentication, Authorization
-    (WebID, SSO, SAML, OAuth + ACL strings)
+    (WebID, SSO, LDAP, SASL, SAML, OAuth + ACL strings)
 
     * :ref:`OpenStack` Keystone
+    * OpenLDAP, 389, FreeIPA, ActiveDirectory, Samba4
+    * OAuth, WebID
 
   * Email
 
@@ -256,7 +258,7 @@ Cloud application layers
 
   * Search Indexing (:ref:`JSON`, :ref:`json-ld-`)
     
-    * ElasticSearch (Solr), Lucene
+    * ElasticSearch (Lucene), Solr
     * AppEngine/AppScale Search API
 
   * HTTP Object Storage (:ref:`libcloud`)
