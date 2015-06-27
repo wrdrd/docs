@@ -205,12 +205,14 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#clouds">Clouds</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="index.html#cloud-questions">Cloud Questions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#cloud-application-layers">Cloud application layers</a></li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#software-as-a-service">Software-as-a-Service</a></li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#platform-as-a-service">Platform-as-a-Service</a></li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#infrastructure-as-a-service">Infrastructure-as-a-Service</a></li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#configuration-management">Configuration Management</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#configuration-management">Configuration Management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#information-security">Information Security</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="index.html#confidentiality">Confidentiality</a></li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#integrity">Integrity</a></li>
@@ -2438,13 +2440,21 @@ consistently woven.</li>
 flow produces predictable and unpredictable behaviors.</p>
 <p class="last"><a class="reference external" href="https://en.wikipedia.org/wiki/System">https://en.wikipedia.org/wiki/System</a></p>
 </dd>
+<dt id="term-infrastructure">Infrastructure</dt>
+<dd>Core <a class="reference internal" href="#term-system"><em class="xref std std-term">system</em></a> components.</dd>
+<dt id="term-information">Information</dt>
+<dd><p class="first">Not noise.</p>
+<p class="last">See: <a class="reference internal" href="index.html#data-science"><em>Data Science</em></a> &gt; <a class="reference internal" href="index.html#information-theory"><em>Information Theory</em></a>,
+<a class="reference internal" href="index.html#knowledge-engineering"><em>Knowledge Engineering</em></a></p>
+</dd>
 <dt id="term-information-system">Information System</dt>
-<dd><p class="first">A system with information inputs and outputs
+<dd><p class="first">A <a class="reference internal" href="#term-system"><em class="xref std std-term">system</em></a> with <a class="reference internal" href="#term-information"><em class="xref std std-term">information</em></a> inputs and outputs
 designed to solve a problem.</p>
 <p class="last"><a class="reference external" href="https://en.wikipedia.org/wiki/Information_system">https://en.wikipedia.org/wiki/Information_system</a></p>
 </dd>
 <dt id="term-information-technology">Information Technology</dt>
-<dd><p class="first">Hardware and software information systems for solving business problems.</p>
+<dd><p class="first">Hardware and software <a class="reference internal" href="#term-information-system"><em class="xref std std-term">information systems</em></a>
+for solving business problems.</p>
 <p class="last"><a class="reference external" href="https://en.wikipedia.org/wiki/Information_technology">https://en.wikipedia.org/wiki/Information_technology</a></p>
 </dd>
 <dt id="term-application">Application</dt>
@@ -2452,7 +2462,8 @@ designed to solve a problem.</p>
 <dt id="term-app">App</dt>
 <dd>See <a class="reference internal" href="#term-application"><em class="xref std std-term">Application</em></a></dd>
 <dt id="term-operating-system">Operating System</dt>
-<dd><p class="first">Software for running applications and working with devices.</p>
+<dd><p class="first">Software for running <a class="reference internal" href="#term-application"><em class="xref std std-term">applications</em></a>
+and working with devices.</p>
 <p class="last"><a class="reference external" href="https://en.wikipedia.org/wiki/Operating_system">https://en.wikipedia.org/wiki/Operating_system</a></p>
 </dd>
 <dt id="term-api">API</dt>
@@ -2510,7 +2521,8 @@ with <a class="reference internal" href="index.html#xml"><em>XML</em></a>, but, 
 <p class="last"><a class="reference external" href="https://en.wikipedia.org/wiki/Web_service">https://en.wikipedia.org/wiki/Web_service</a></p>
 </dd>
 <dt id="term-restful-api">RESTful API</dt>
-<dd><p class="first">Also REST API. A <a class="reference internal" href="#term-web-api"><em class="xref std std-term">Web API</em></a> that abides by best-practice guidelines
+<dd><p class="first">A RESTful API (<em>REST API</em>) is a
+<a class="reference internal" href="#term-web-api"><em class="xref std std-term">Web API</em></a> that abides by best-practice guidelines
 for interacting with <em>resources</em> through standard <a class="reference internal" href="index.html#http"><em>HTTP</em></a>
 methods like <code class="docutils literal"><span class="pre">PUT</span></code>/<code class="docutils literal"><span class="pre">POST</span></code>, <code class="docutils literal"><span class="pre">GET</span></code>, <code class="docutils literal"><span class="pre">POST</span></code>/<code class="docutils literal"><span class="pre">PUT</span></code>, <code class="docutils literal"><span class="pre">DELETE</span></code>.</p>
 <p>Many web developers prefer RESTful APIs because
@@ -2537,7 +2549,7 @@ available for most languages.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">output</span> <span class="o">/</span> <span class="nb">input</span>
 </pre></div>
 </div>
-<p>Hours, Units, Dollars</p>
+<p>Units: Hours, Units, Dollars (see: <a class="reference internal" href="index.html#qudt"><em>QUDT</em></a>)</p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Productivity">https://en.wikipedia.org/wiki/Productivity</a></p>
 <p>See: <a class="reference internal" href="index.html#business-roi"><em>Business &gt; ROI</em></a></p>
 </div>
@@ -2567,35 +2579,126 @@ how it works?</li>
 <span id="index-3"></span><span id="id4"></span><h3>Clouds<a class="headerlink" href="#clouds" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Cloud_computing">https://en.wikipedia.org/wiki/Cloud_computing</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Cloud_computing#Service_models">https://en.wikipedia.org/wiki/Cloud_computing#Service_models</a></p>
-<p>Why would I want to run my business &#8220;in the cloud&#8221;?</p>
-<p>What are our core competencies?</p>
-<p>Do we need/want to run this all ourselves?</p>
-<p>Would it be more safe/secure to outsource the management of these
-business systems?</p>
-<p>Application layers:</p>
+<div class="section" id="cloud-questions">
+<h4>Cloud Questions<a class="headerlink" href="#cloud-questions" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
-<li>Application</li>
-<li>Platform (Database, APIs)</li>
-<li>Infrastructure (Physical and Virtual Servers)</li>
+<li>Why would I want to run my business &#8220;in the cloud&#8221;?</li>
+<li>What are our core competencies?</li>
+<li>Do we need/want to run this all ourselves?</li>
+<li>Would it be more safe/secure to outsource the management of these
+business systems?</li>
 </ul>
-<span class="target" id="index-4"></span><div class="section" id="software-as-a-service">
-<span id="saas"></span><span id="index-5"></span><h4>Software-as-a-Service<a class="headerlink" href="#software-as-a-service" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="cloud-application-layers">
+<span id="index-4"></span><span id="id5"></span><h4>Cloud application layers<a class="headerlink" href="#cloud-application-layers" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><a class="reference internal" href="#term-application"><em class="xref std std-term">Applications</em></a></li>
+<li>Platform (Database, APIs)<ul>
+<li><a class="reference internal" href="index.html#databases"><em>Databases</em></a>
+(<a class="reference internal" href="index.html#relational-databases"><em>Relational Databases</em></a>,
+<a class="reference internal" href="index.html#sql"><em>SQL</em></a>,
+<a class="reference internal" href="index.html#nosql"><em>NoSQL Databases</em></a>,
+<a class="reference internal" href="index.html#graph-databases"><em>Graph Databases</em></a>,
+<a class="reference internal" href="index.html#sparql"><em>SPARQL</em></a>)</li>
+<li>Authz: Authentication, Authorization
+(WebID, SSO, SAML, OAuth + ACL strings)<ul>
+<li><a class="reference internal" href="index.html#openstack"><em>OpenStack</em></a> Keystone</li>
+</ul>
+</li>
+<li>Email<ul>
+<li>AppEngine/AppScale Email API</li>
+</ul>
+</li>
+<li>Logging / Monitoring<ul>
+<li>AppEngine/AppScale Logging</li>
+<li>Sentry, Raven (POST JSON)</li>
+<li><a class="reference internal" href="index.html#firelogger"><em>FireLogger</em></a></li>
+</ul>
+</li>
+<li>Message Queue (Tasks, Channels, AMQP, WebSockets, Workers)<ul>
+<li>Celery: <a class="reference external" href="https://celery.readthedocs.org/en/latest/getting-started/brokers/">https://celery.readthedocs.org/en/latest/getting-started/brokers/</a></li>
+<li>AppEngine/AppScale Tasks API</li>
+<li><a class="reference internal" href="index.html#mesos"><em>Mesos</em></a> schedulers (Aurora, Chronos, Marathon)</li>
+</ul>
+</li>
+<li>Search Indexing (<a class="reference internal" href="index.html#json"><em>JSON</em></a>, <a class="reference internal" href="index.html#json-ld"><em>JSON-LD</em></a>)<ul>
+<li>ElasticSearch (Solr), Lucene</li>
+<li>AppEngine/AppScale Search API</li>
+</ul>
+</li>
+<li>HTTP Object Storage (<a class="reference internal" href="index.html#libcloud"><em>Libcloud</em></a>)<ul>
+<li><a class="reference external" href="https://libcloud.readthedocs.org/en/latest/storage/">https://libcloud.readthedocs.org/en/latest/storage/</a></li>
+<li><a class="reference internal" href="index.html#openstack"><em>OpenStack</em></a> Swift (Swift, S3 APIs)</li>
+<li><a class="reference internal" href="index.html#linux"><em>Linux</em></a> Ceph RADOS gateway (Swift, S3 APIs)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>(Data Center) Infrastructure<ul>
+<li>Resource Pool<ul>
+<li><a class="reference internal" href="index.html#cobbler"><em>Cobbler</em></a> (libvirt <a class="reference internal" href="index.html#virtualization"><em>Virtualization</em></a>)</li>
+<li><a class="reference internal" href="index.html#openstack"><em>OpenStack</em></a></li>
+<li><a class="reference internal" href="index.html#kubernetes"><em>Kubernetes</em></a>, <a class="reference internal" href="index.html#kubernetes-mesos"><em>Kubernetes-Mesos</em></a></li>
+<li><a class="reference internal" href="index.html#mesos"><em>Mesos</em></a> schedulers (Aurora, Chronos, Marathon)</li>
+<li><a class="reference internal" href="index.html#docker"><em>Docker</em></a> Swarm</li>
+</ul>
+</li>
+<li>Provisioning / Inventory / Monitoring<ul>
+<li><a class="reference internal" href="index.html#cobbler"><em>Cobbler</em></a> Dashboard &lt;&#8211;&gt;
+{<a class="reference internal" href="index.html#ansible"><em>Ansible</em></a>, <a class="reference internal" href="index.html#puppet"><em>Puppet</em></a>, <a class="reference internal" href="index.html#salt"><em>Salt</em></a>}</li>
+<li><a class="reference internal" href="index.html#openstack"><em>OpenStack</em></a> Horizon Dashboard</li>
+<li>Nagios, Shinken, Icinga</li>
+<li>Syslog, LogStash, Heka (logtailers)</li>
+<li>Kibana, Grafana, Graphite, RRD (<a class="reference internal" href="index.html#data-visualization-tools"><em>Data Visualization Tools</em></a>)</li>
+<li><a class="reference external" href="http://www.brendangregg.com/linuxperf.html">http://www.brendangregg.com/linuxperf.html</a></li>
+<li><a class="reference external" href="https://www.opsschool.org/en/latest/">https://www.opsschool.org/en/latest/</a></li>
+</ul>
+</li>
+<li>Physical and Virtual Servers<ul>
+<li><a class="reference internal" href="index.html#operating-systems"><em>Operating Systems</em></a></li>
+<li><a class="reference internal" href="index.html#virtualization"><em>Virtualization</em></a></li>
+<li><a class="reference internal" href="#configuration-management"><em>Configuration Management</em></a></li>
+</ul>
+</li>
+<li>Physical and Software Networks<ul>
+<li>Router = Gateway + Switch</li>
+<li><a class="reference internal" href="index.html#vagrant"><em>Vagrant</em></a> networking</li>
+<li><a class="reference internal" href="index.html#docker"><em>Docker</em></a> networking</li>
+<li>VLANs, IPv6 6to4 Tunnels</li>
+<li>SDN (<a class="reference internal" href="index.html#openstack"><em>OpenStack</em></a> Neutron)</li>
+<li>DNS (BIND, dnsmasq, <a class="reference internal" href="index.html#cobbler"><em>Cobbler</em></a>, <a class="reference internal" href="index.html#openstack"><em>OpenStack</em></a>,
+<a class="reference internal" href="index.html#vagrant"><em>Vagrant</em></a>, <a class="reference internal" href="index.html#docker"><em>Docker</em></a>)</li>
+</ul>
+</li>
+<li>Physical and Virtual Storage<ul>
+<li>Virtual storage: central file storage (NFS, CIFS, WebDAV)</li>
+<li>Virtual storage: distributed file storage (Ceph)</li>
+<li>Virtual storage: persistent block devices (LVM, BTRFS)</li>
+<li>Physical storage: SAN &#8220;Storage Area Network&#8221; (iSCSI)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<span class="target" id="index-5"></span></div>
+<div class="section" id="software-as-a-service">
+<span id="saas"></span><span id="index-6"></span><h4>Software-as-a-Service<a class="headerlink" href="#software-as-a-service" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Software_as_a_service">https://en.wikipedia.org/wiki/Software_as_a_service</a></p>
 <p>Example: GMail is software hosted as a service on Google&#8217;s
 infrastructure; there&#8217;s no need to internally pay for and manage servers in a
 datacenter anywhere.</p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Application_service_provider">https://en.wikipedia.org/wiki/Application_service_provider</a></p>
-<span class="target" id="index-6"></span></div>
+<span class="target" id="index-7"></span></div>
 <div class="section" id="platform-as-a-service">
-<span id="paas"></span><span id="index-7"></span><h4>Platform-as-a-Service<a class="headerlink" href="#platform-as-a-service" title="Permalink to this headline">¶</a></h4>
+<span id="paas"></span><span id="index-8"></span><h4>Platform-as-a-Service<a class="headerlink" href="#platform-as-a-service" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Platform_as_a_service">https://en.wikipedia.org/wiki/Platform_as_a_service</a></p>
 <p>Platform-as-a-Service providers abstract a bit further in that they
 provide an implementation of platform APIs on top of which applications
 can be developed and hosted.</p>
 <p>Heroku, AppEngine and AppScale are examples of Platforms-as-a-Service.</p>
-<span class="target" id="index-8"></span></div>
+<span class="target" id="index-9"></span></div>
 <div class="section" id="infrastructure-as-a-service">
-<span id="iaas"></span><span id="index-9"></span><h4>Infrastructure-as-a-Service<a class="headerlink" href="#infrastructure-as-a-service" title="Permalink to this headline">¶</a></h4>
+<span id="iaas"></span><span id="index-10"></span><h4>Infrastructure-as-a-Service<a class="headerlink" href="#infrastructure-as-a-service" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Category:Cloud_infrastructure">https://en.wikipedia.org/wiki/Category:Cloud_infrastructure</a></p>
 <p>Infrastructure-as-a-Service providers provide a bit more than regular
 hosting services in that they offer something like virtual datacenter
@@ -2606,15 +2709,16 @@ Infrastructure-as-a-Service: they provide servers, networks, and
 redundant storage systems on top of which IT systems can be
 developed, tested, and deployed.</p>
 </div>
+</div>
 <div class="section" id="configuration-management">
-<span id="index-10"></span><span id="id5"></span><h4>Configuration Management<a class="headerlink" href="#configuration-management" title="Permalink to this headline">¶</a></h4>
+<span id="index-11"></span><span id="id6"></span><h3>Configuration Management<a class="headerlink" href="#configuration-management" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Configuration_management#Software">https://en.wikipedia.org/wiki/Configuration_management#Software</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Software_configuration_management">https://en.wikipedia.org/wiki/Software_configuration_management</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Comparison_of_open-source_configuration_management_software">https://en.wikipedia.org/wiki/Comparison_of_open-source_configuration_management_software</a></p>
-</div>
+<p>See: <a class="reference internal" href="index.html#configuration-management"><em>Tools &gt; Configuration Managment</em></a></p>
 </div>
 <div class="section" id="information-security">
-<span id="index-11"></span><span id="id6"></span><h3>Information Security<a class="headerlink" href="#information-security" title="Permalink to this headline">¶</a></h3>
+<span id="index-12"></span><span id="id7"></span><h3>Information Security<a class="headerlink" href="#information-security" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Information_security">https://en.wikipedia.org/wiki/Information_security</a></p>
 <p>Managing risk and uncertainty.</p>
 <p>Standards:</p>
@@ -2624,45 +2728,45 @@ developed, tested, and deployed.</p>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Cloud_computing_security">https://en.wikipedia.org/wiki/Cloud_computing_security</a></li>
 </ul>
 <div class="section" id="confidentiality">
-<span id="index-12"></span><span id="id7"></span><h4>Confidentiality<a class="headerlink" href="#confidentiality" title="Permalink to this headline">¶</a></h4>
+<span id="index-13"></span><span id="id8"></span><h4>Confidentiality<a class="headerlink" href="#confidentiality" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Confidentiality">https://en.wikipedia.org/wiki/Confidentiality</a></p>
 </div>
 <div class="section" id="integrity">
-<span id="index-13"></span><span id="id8"></span><h4>Integrity<a class="headerlink" href="#integrity" title="Permalink to this headline">¶</a></h4>
+<span id="index-14"></span><span id="id9"></span><h4>Integrity<a class="headerlink" href="#integrity" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Data_integrity">https://en.wikipedia.org/wiki/Data_integrity</a></p>
 </div>
 <div class="section" id="availability">
-<span id="index-14"></span><span id="id9"></span><h4>Availability<a class="headerlink" href="#availability" title="Permalink to this headline">¶</a></h4>
+<span id="index-15"></span><span id="id10"></span><h4>Availability<a class="headerlink" href="#availability" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Availability">https://en.wikipedia.org/wiki/Availability</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Service-level_agreement">https://en.wikipedia.org/wiki/Service-level_agreement</a></p>
 </div>
 </div>
 <div class="section" id="business-continuity">
-<span id="index-15"></span><span id="id10"></span><h3>Business Continuity<a class="headerlink" href="#business-continuity" title="Permalink to this headline">¶</a></h3>
+<span id="index-16"></span><span id="id11"></span><h3>Business Continuity<a class="headerlink" href="#business-continuity" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Business_continuity">https://en.wikipedia.org/wiki/Business_continuity</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Business_continuity_planning">https://en.wikipedia.org/wiki/Business_continuity_planning</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Disaster_recovery">https://en.wikipedia.org/wiki/Disaster_recovery</a></p>
-<p>See: <a class="reference internal" href="#id6">Information Security</a> (<a class="reference internal" href="#availability">Availability</a>)</p>
+<p>See: <a class="reference internal" href="#id7">Information Security</a> (<a class="reference internal" href="#availability">Availability</a>)</p>
 <div class="section" id="backups">
-<span id="index-16"></span><span id="id11"></span><h4>Backups<a class="headerlink" href="#backups" title="Permalink to this headline">¶</a></h4>
+<span id="index-17"></span><span id="id12"></span><h4>Backups<a class="headerlink" href="#backups" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Backup">https://en.wikipedia.org/wiki/Backup</a></p>
 </div>
 <div class="section" id="reliability">
-<span id="index-17"></span><span id="id12"></span><h4>Reliability<a class="headerlink" href="#reliability" title="Permalink to this headline">¶</a></h4>
+<span id="index-18"></span><span id="id13"></span><h4>Reliability<a class="headerlink" href="#reliability" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Reliability_engineering">https://en.wikipedia.org/wiki/Reliability_engineering</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Redundancy_(engineering)">https://en.wikipedia.org/wiki/Redundancy_(engineering)</a></p>
 </div>
 <div class="section" id="scenarios">
-<span id="index-18"></span><span id="id13"></span><h4>Scenarios<a class="headerlink" href="#scenarios" title="Permalink to this headline">¶</a></h4>
+<span id="index-19"></span><span id="id14"></span><h4>Scenarios<a class="headerlink" href="#scenarios" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Scenario_planning">https://en.wikipedia.org/wiki/Scenario_planning</a></p>
 </div>
 </div>
 <div class="section" id="business-systems">
-<span id="index-19"></span><span id="id14"></span><h3>Business Systems<a class="headerlink" href="#business-systems" title="Permalink to this headline">¶</a></h3>
+<span id="index-20"></span><span id="id15"></span><h3>Business Systems<a class="headerlink" href="#business-systems" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Online_office_suite">https://en.wikipedia.org/wiki/Online_office_suite</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Comparison_of_office_suites">https://en.wikipedia.org/wiki/Comparison_of_office_suites</a></p>
 <div class="section" id="google-apps">
-<span id="index-20"></span><span id="id15"></span><h4>Google Apps<a class="headerlink" href="#google-apps" title="Permalink to this headline">¶</a></h4>
+<span id="index-21"></span><span id="id16"></span><h4>Google Apps<a class="headerlink" href="#google-apps" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li>$5/user/month // $50/user/year</li>
 <li>gmail (e.g. <a class="reference external" href="mailto:username&#37;&#52;&#48;example&#46;org">username<span>&#64;</span>example<span>&#46;</span>org</a>)<ul>
@@ -2690,21 +2794,21 @@ own email addresses (everything gets relayed)</li>
 <li><a class="reference external" href="http://learn.googleapps.com/">http://learn.googleapps.com/</a></li>
 <li><a class="reference external" href="https://www.google.com/enterprise/marketplace/">https://www.google.com/enterprise/marketplace/</a></li>
 </ul>
-<span class="target" id="index-21"></span></div>
+<span class="target" id="index-22"></span></div>
 </div>
 <div class="section" id="handling-money">
-<span id="index-22"></span><span id="id16"></span><h3>Handling Money<a class="headerlink" href="#handling-money" title="Permalink to this headline">¶</a></h3>
+<span id="index-23"></span><span id="id17"></span><h3>Handling Money<a class="headerlink" href="#handling-money" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Transaction_processing">https://en.wikipedia.org/wiki/Transaction_processing</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard">https://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard</a></p>
 <div class="section" id="accounting">
-<span id="index-23"></span><span id="id17"></span><h4>Accounting<a class="headerlink" href="#accounting" title="Permalink to this headline">¶</a></h4>
+<span id="index-24"></span><span id="id18"></span><h4>Accounting<a class="headerlink" href="#accounting" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Accounting">https://en.wikipedia.org/wiki/Accounting</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Double-entry_bookkeeping_system">https://en.wikipedia.org/wiki/Double-entry_bookkeeping_system</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Accountant">https://en.wikipedia.org/wiki/Accountant</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Financial_statement">https://en.wikipedia.org/wiki/Financial_statement</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Business_valuation">https://en.wikipedia.org/wiki/Business_valuation</a></p>
 <div class="section" id="gnucash">
-<span id="index-24"></span><span id="id18"></span><h5>GNUCash<a class="headerlink" href="#gnucash" title="Permalink to this headline">¶</a></h5>
+<span id="index-25"></span><span id="id19"></span><h5>GNUCash<a class="headerlink" href="#gnucash" title="Permalink to this headline">¶</a></h5>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/GnuCash">https://en.wikipedia.org/wiki/GnuCash</a></p>
 <ul class="simple">
 <li>Free and Open Source</li>
@@ -2713,7 +2817,7 @@ own email addresses (everything gets relayed)</li>
 </ul>
 </div>
 <div class="section" id="quicken">
-<span id="index-25"></span><span id="id19"></span><h5>Quicken<a class="headerlink" href="#quicken" title="Permalink to this headline">¶</a></h5>
+<span id="index-26"></span><span id="id20"></span><h5>Quicken<a class="headerlink" href="#quicken" title="Permalink to this headline">¶</a></h5>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Quicken">https://en.wikipedia.org/wiki/Quicken</a></p>
 <ul class="simple">
 <li>Personal Accounting</li>
@@ -2722,7 +2826,7 @@ own email addresses (everything gets relayed)</li>
 </ul>
 </div>
 <div class="section" id="quickbooks">
-<span id="index-26"></span><span id="id20"></span><h5>QuickBooks<a class="headerlink" href="#quickbooks" title="Permalink to this headline">¶</a></h5>
+<span id="index-27"></span><span id="id21"></span><h5>QuickBooks<a class="headerlink" href="#quickbooks" title="Permalink to this headline">¶</a></h5>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/QuickBooks">https://en.wikipedia.org/wiki/QuickBooks</a></p>
 <ul class="simple">
 <li>Small Business Accounting</li>
@@ -2732,26 +2836,26 @@ own email addresses (everything gets relayed)</li>
 </div>
 </div>
 <div class="section" id="payments">
-<span id="index-27"></span><span id="id21"></span><h4>Payments<a class="headerlink" href="#payments" title="Permalink to this headline">¶</a></h4>
+<span id="index-28"></span><span id="id22"></span><h4>Payments<a class="headerlink" href="#payments" title="Permalink to this headline">¶</a></h4>
 <div class="section" id="amazon-payments">
-<span id="index-28"></span><span id="id22"></span><h5>Amazon Payments<a class="headerlink" href="#amazon-payments" title="Permalink to this headline">¶</a></h5>
+<span id="index-29"></span><span id="id23"></span><h5>Amazon Payments<a class="headerlink" href="#amazon-payments" title="Permalink to this headline">¶</a></h5>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Amazon_Payments">https://en.wikipedia.org/wiki/Amazon_Payments</a></p>
 </div>
 <div class="section" id="apple-pay">
-<span id="index-29"></span><span id="id23"></span><h5>Apple Pay<a class="headerlink" href="#apple-pay" title="Permalink to this headline">¶</a></h5>
+<span id="index-30"></span><span id="id24"></span><h5>Apple Pay<a class="headerlink" href="#apple-pay" title="Permalink to this headline">¶</a></h5>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Apple_Pay">https://en.wikipedia.org/wiki/Apple_Pay</a></p>
-<span class="target" id="index-30"></span></div>
+<span class="target" id="index-31"></span></div>
 <div class="section" id="google-wallet">
-<span id="index-31"></span><span id="id24"></span><h5>Google Wallet<a class="headerlink" href="#google-wallet" title="Permalink to this headline">¶</a></h5>
+<span id="index-32"></span><span id="id25"></span><h5>Google Wallet<a class="headerlink" href="#google-wallet" title="Permalink to this headline">¶</a></h5>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Google_Wallet">https://en.wikipedia.org/wiki/Google_Wallet</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Google_Checkout">https://en.wikipedia.org/wiki/Google_Checkout</a></p>
 </div>
 <div class="section" id="paypal">
-<span id="index-32"></span><span id="id25"></span><h5>PayPal<a class="headerlink" href="#paypal" title="Permalink to this headline">¶</a></h5>
+<span id="index-33"></span><span id="id26"></span><h5>PayPal<a class="headerlink" href="#paypal" title="Permalink to this headline">¶</a></h5>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/PayPal">https://en.wikipedia.org/wiki/PayPal</a></p>
 </div>
 <div class="section" id="square">
-<span id="index-33"></span><span id="id26"></span><h5>Square<a class="headerlink" href="#square" title="Permalink to this headline">¶</a></h5>
+<span id="index-34"></span><span id="id27"></span><h5>Square<a class="headerlink" href="#square" title="Permalink to this headline">¶</a></h5>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Square,_Inc.">https://en.wikipedia.org/wiki/Square,_Inc.</a></p>
 <p><a class="reference external" href="https://squareup.com/">https://squareup.com/</a></p>
 <ul class="simple">
@@ -2769,7 +2873,7 @@ own email addresses (everything gets relayed)</li>
 </div>
 </div>
 <div class="section" id="sales">
-<span id="sales-information-systems"></span><span id="index-34"></span><h3>Sales<a class="headerlink" href="#sales" title="Permalink to this headline">¶</a></h3>
+<span id="sales-information-systems"></span><span id="index-35"></span><h3>Sales<a class="headerlink" href="#sales" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Sales_process_engineering">https://en.wikipedia.org/wiki/Sales_process_engineering</a></li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Group_information_management">https://en.wikipedia.org/wiki/Group_information_management</a></li>
@@ -2779,9 +2883,9 @@ own email addresses (everything gets relayed)</li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Sales_force_management_system">https://en.wikipedia.org/wiki/Sales_force_management_system</a></li>
 </ul>
 <p>See: <a class="reference internal" href="#crm"><em>CRM</em></a></p>
-<span class="target" id="index-35"></span></div>
+<span class="target" id="index-36"></span></div>
 <div class="section" id="customer-relationship-management-crm">
-<span id="crm"></span><span id="index-36"></span><h3>Customer Relationship Management (CRM)<a class="headerlink" href="#customer-relationship-management-crm" title="Permalink to this headline">¶</a></h3>
+<span id="crm"></span><span id="index-37"></span><h3>Customer Relationship Management (CRM)<a class="headerlink" href="#customer-relationship-management-crm" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Customer_relationship_management">https://en.wikipedia.org/wiki/Customer_relationship_management</a></p>
 <ul class="simple">
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Contact_list">https://en.wikipedia.org/wiki/Contact_list</a></li>
@@ -2794,9 +2898,9 @@ own email addresses (everything gets relayed)</li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Customer_intelligence">https://en.wikipedia.org/wiki/Customer_intelligence</a></li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Customer_experience">https://en.wikipedia.org/wiki/Customer_experience</a></li>
 </ul>
-<span class="target" id="index-37"></span></div>
+<span class="target" id="index-38"></span></div>
 <div class="section" id="business-intelligence">
-<span id="index-38"></span><span id="id27"></span><h3>Business Intelligence<a class="headerlink" href="#business-intelligence" title="Permalink to this headline">¶</a></h3>
+<span id="index-39"></span><span id="id28"></span><h3>Business Intelligence<a class="headerlink" href="#business-intelligence" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Business_intelligence">https://en.wikipedia.org/wiki/Business_intelligence</a></p>
 <p>See: <a class="reference internal" href="index.html#data-science"><em>Data Science</em></a></p>
 <p>See: <a class="reference internal" href="index.html#knowledge-engineering"><em>Knowledge Engineering</em></a></p>
@@ -12461,7 +12565,7 @@ stripsinglehtml --help
 
 <dl class="function">
 <dt id="wrdrd.tools.crawl.crawl_url">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">crawl_url</code><span class="sig-paren">(</span><em>start_url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x101cdf150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#crawl_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.crawl_url" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">crawl_url</code><span class="sig-paren">(</span><em>start_url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x105523150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#crawl_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.crawl_url" title="Permalink to this definition">¶</a></dt>
 <dd><p>Crawl pages starting at <code class="docutils literal"><span class="pre">start_url</span></code></p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -12754,7 +12858,7 @@ a <a class="reference internal" href="#wrdrd.tools.crawl.Link" title="wrdrd.tool
 
 <dl class="function">
 <dt id="wrdrd.tools.crawl.print_frequency_table">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">print_frequency_table</code><span class="sig-paren">(</span><em>frequencies</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x101cdf150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#print_frequency_table"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.print_frequency_table" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">print_frequency_table</code><span class="sig-paren">(</span><em>frequencies</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x105523150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#print_frequency_table"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.print_frequency_table" title="Permalink to this definition">¶</a></dt>
 <dd><p>Print a formatted ASCII frequency table</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -12908,7 +13012,7 @@ a <a class="reference internal" href="#wrdrd.tools.crawl.Link" title="wrdrd.tool
 
 <dl class="function">
 <dt id="wrdrd.tools.crawl.wrdcrawler">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">wrdcrawler</code><span class="sig-paren">(</span><em>url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x101cdf150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#wrdcrawler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.wrdcrawler" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">wrdcrawler</code><span class="sig-paren">(</span><em>url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x105523150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#wrdcrawler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.wrdcrawler" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fetch and generate a report from the given URL</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
