@@ -427,6 +427,7 @@
 <li class="toctree-l4"><a class="reference internal" href="consulting/data-science#scientific-method">Scientific Method</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="consulting/data-science#reproducibility">Reproducibility</a></li>
 <li class="toctree-l5"><a class="reference internal" href="consulting/data-science#systematic-review">Systematic Review</a></li>
+<li class="toctree-l5"><a class="reference internal" href="consulting/data-science#linked-reproducibility">Linked Reproducibility</a></li>
 </ul>
 </li>
 </ul>
@@ -502,13 +503,19 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="consulting/knowledge-engineering#file-structures">File Structures</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="consulting/knowledge-engineering#data-structures">Data Structures</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="consulting/knowledge-engineering#arrays">Arrays</a></li>
-<li class="toctree-l4"><a class="reference internal" href="consulting/knowledge-engineering#lists">Lists</a></li>
-<li class="toctree-l4"><a class="reference internal" href="consulting/knowledge-engineering#trees">Trees</a></li>
+<li class="toctree-l2"><a class="reference internal" href="consulting/knowledge-engineering#file-structures">File Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="consulting/knowledge-engineering#file-systems">File Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="consulting/knowledge-engineering#compression-algorithms">Compression Algorithms</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="consulting/knowledge-engineering#bzip2">bzip2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="consulting/knowledge-engineering#gzip">gzip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="consulting/knowledge-engineering#tar">tar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="consulting/knowledge-engineering#zip">zip</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="consulting/knowledge-engineering#data-structures">Data Structures</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="consulting/knowledge-engineering#arrays">Arrays</a></li>
+<li class="toctree-l3"><a class="reference internal" href="consulting/knowledge-engineering#lists">Lists</a></li>
+<li class="toctree-l3"><a class="reference internal" href="consulting/knowledge-engineering#trees">Trees</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="consulting/knowledge-engineering#databases">Databases</a><ul>
@@ -519,6 +526,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="consulting/knowledge-engineering#nosql-databases">NoSQL Databases</a></li>
 <li class="toctree-l3"><a class="reference internal" href="consulting/knowledge-engineering#distributed-databases">Distributed Databases</a></li>
+<li class="toctree-l3"><a class="reference internal" href="consulting/knowledge-engineering#distributed-hash-table">Distributed Hash Table</a></li>
 <li class="toctree-l3"><a class="reference internal" href="consulting/knowledge-engineering#graph-databases">Graph Databases</a></li>
 <li class="toctree-l3"><a class="reference internal" href="consulting/knowledge-engineering#rdf-triplestores">RDF Triplestores</a></li>
 </ul>
@@ -540,6 +548,7 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="consulting/knowledge-engineering#web-names">Web Names</a></li>
 <li class="toctree-l3"><a class="reference internal" href="consulting/knowledge-engineering#iec">IEC</a></li>
 <li class="toctree-l3"><a class="reference internal" href="consulting/knowledge-engineering#ietf">IETF</a></li>
 <li class="toctree-l3"><a class="reference internal" href="consulting/knowledge-engineering#iso">ISO</a></li>
@@ -549,6 +558,9 @@
 <li class="toctree-l4"><a class="reference internal" href="consulting/knowledge-engineering#http-in-rdf">HTTP in RDF</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="consulting/knowledge-engineering#rtmp">RTMP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="consulting/knowledge-engineering#websocket">WebSocket</a></li>
+<li class="toctree-l3"><a class="reference internal" href="consulting/knowledge-engineering#webrtc">WebRTC</a></li>
 <li class="toctree-l3"><a class="reference internal" href="consulting/knowledge-engineering#http-2">HTTP/2</a></li>
 <li class="toctree-l3"><a class="reference internal" href="consulting/knowledge-engineering#html">HTML</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="consulting/knowledge-engineering#html4">HTML4</a></li>
@@ -758,7 +770,8 @@
 <li class="toctree-l2"><a class="reference internal" href="consulting/art-design#web-distribution">Web Distribution</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="consulting/art-design#cdn">CDN</a></li>
 <li class="toctree-l3"><a class="reference internal" href="consulting/art-design#bittorrent">BitTorrent</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="consulting/art-design#debtorrent">Debtorrent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="consulting/art-design#debtorrent">debtorrent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="consulting/art-design#webtorrent">webtorrent</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="consulting/art-design#named-data-networking">Named Data Networking</a></li>
@@ -770,10 +783,9 @@
 <li class="toctree-l3"><a class="reference internal" href="consulting/art-design#http-live-streaming">HTTP Live Streaming</a></li>
 <li class="toctree-l3"><a class="reference internal" href="consulting/art-design#mpeg-dash">MPEG-DASH</a></li>
 <li class="toctree-l3"><a class="reference internal" href="consulting/art-design#nginx-rtmp-module">nginx-rtmp-module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="consulting/art-design#rtmp">RTMP</a></li>
-<li class="toctree-l3"><a class="reference internal" href="consulting/art-design#webrtc">WebRTC</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="consulting/art-design#video-chat">Video Chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="consulting/art-design#media-tools">Media Tools</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="consulting/art-design#dreamstudio">DreamStudio</a></li>
 <li class="toctree-l3"><a class="reference internal" href="consulting/art-design#ubuntu-studio">Ubuntu Studio</a></li>

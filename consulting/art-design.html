@@ -190,7 +190,8 @@
 <li><a class="reference internal" href="#web-distribution">Web Distribution</a><ul>
 <li><a class="reference internal" href="#cdn">CDN</a></li>
 <li><a class="reference internal" href="#bittorrent">BitTorrent</a><ul>
-<li><a class="reference internal" href="#debtorrent">Debtorrent</a></li>
+<li><a class="reference internal" href="#debtorrent">debtorrent</a></li>
+<li><a class="reference internal" href="#webtorrent">webtorrent</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#named-data-networking">Named Data Networking</a></li>
@@ -202,10 +203,9 @@
 <li><a class="reference internal" href="#http-live-streaming">HTTP Live Streaming</a></li>
 <li><a class="reference internal" href="#mpeg-dash">MPEG-DASH</a></li>
 <li><a class="reference internal" href="#nginx-rtmp-module">nginx-rtmp-module</a></li>
-<li><a class="reference internal" href="#rtmp">RTMP</a></li>
-<li><a class="reference internal" href="#webrtc">WebRTC</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#video-chat">Video Chat</a></li>
 <li><a class="reference internal" href="#media-tools">Media Tools</a><ul>
 <li><a class="reference internal" href="#dreamstudio">DreamStudio</a></li>
 <li><a class="reference internal" href="#ubuntu-studio">Ubuntu Studio</a></li>
@@ -362,7 +362,8 @@
 <li><a class="reference internal" href="#web-distribution">Web Distribution</a><ul>
 <li><a class="reference internal" href="#cdn">CDN</a></li>
 <li><a class="reference internal" href="#bittorrent">BitTorrent</a><ul>
-<li><a class="reference internal" href="#debtorrent">Debtorrent</a></li>
+<li><a class="reference internal" href="#debtorrent">debtorrent</a></li>
+<li><a class="reference internal" href="#webtorrent">webtorrent</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#named-data-networking">Named Data Networking</a></li>
@@ -374,10 +375,9 @@
 <li><a class="reference internal" href="#http-live-streaming">HTTP Live Streaming</a></li>
 <li><a class="reference internal" href="#mpeg-dash">MPEG-DASH</a></li>
 <li><a class="reference internal" href="#nginx-rtmp-module">nginx-rtmp-module</a></li>
-<li><a class="reference internal" href="#rtmp">RTMP</a></li>
-<li><a class="reference internal" href="#webrtc">WebRTC</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#video-chat">Video Chat</a></li>
 <li><a class="reference internal" href="#media-tools">Media Tools</a><ul>
 <li><a class="reference internal" href="#dreamstudio">DreamStudio</a></li>
 <li><a class="reference internal" href="#ubuntu-studio">Ubuntu Studio</a></li>
@@ -1561,7 +1561,7 @@ generally under a key, URN, or URI:</p>
 <ul>
 <li><p class="first">New Web <a class="reference internal" href="#media"><em>Media</em></a> (<a class="reference internal" href="web-development#web-content"><em>Web Content</em></a>)
 are shared through <a class="reference internal" href="knowledge-engineering#web-standards"><em>web standards</em></a>
-like TCP/IP, <a class="reference internal" href="knowledge-engineering#http"><em>HTTP</em></a>, <a class="reference internal" href="knowledge-engineering#html"><em>HTML</em></a>, and <a class="reference internal" href="#webrtc"><em>WebRTC</em></a></p>
+like TCP/IP, <a class="reference internal" href="knowledge-engineering#http"><em>HTTP</em></a>, <a class="reference internal" href="knowledge-engineering#html"><em>HTML</em></a>, and <a class="reference internal" href="knowledge-engineering#webrtc"><em>WebRTC</em></a></p>
 </li>
 <li><p class="first">Streaming a video with seek and rewind is a bit different
 than downloading / streaming / buffering a file from beginning to end</p>
@@ -1694,7 +1694,7 @@ when no-one is online).</p>
 <li><a class="reference external" href="https://tug.org/mactex/MacTeX.pkg.torrent">https://tug.org/mactex/MacTeX.pkg.torrent</a></li>
 <li><a class="reference external" href="http://torrent.ubuntu.com:6969">http://torrent.ubuntu.com:6969</a></li>
 <li><a class="reference external" href="https://torrent.fedoraproject.org/">https://torrent.fedoraproject.org/</a></li>
-<li><a class="reference internal" href="#debtorrent"><em>Debtorrent</em></a></li>
+<li><a class="reference internal" href="#debtorrent"><em>debtorrent</em></a></li>
 <li><a class="reference external" href="https://bundles.bittorrent.com/">https://bundles.bittorrent.com/</a></li>
 </ul>
 <div class="admonition note">
@@ -1705,17 +1705,20 @@ when I just copy the file to my other device)
 can be shared over BitTorrent all the same.</p>
 </div>
 <div class="section" id="debtorrent">
-<span id="index-85"></span><span id="id77"></span><h4>Debtorrent<a class="headerlink" href="#debtorrent" title="Permalink to this headline">¶</a></h4>
+<span id="index-85"></span><span id="id77"></span><h4>debtorrent<a class="headerlink" href="#debtorrent" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="https://wiki.debian.org/DebTorrent">https://wiki.debian.org/DebTorrent</a></div>
 <div class="line">Standard: <a class="reference external" href="https://wiki.debian.org/DebTorrent/Protocol">https://wiki.debian.org/DebTorrent/Protocol</a></div>
 <div class="line">Source: svn svn://svn.debian.org/debtorrent/debtorrent/trunk</div>
 </div>
-<p>Debtorrent downloads <a class="reference internal" href="../tools/index#ubuntu"><em>Ubuntu</em></a> and/or <a class="reference internal" href="../tools/index#debian"><em>Debian</em></a> <a class="reference internal" href="../tools/index#apt"><em>APT</em></a>
-<a class="reference internal" href="../tools/index#deb"><em>DEB</em></a> <a class="reference internal" href="../tools/index#packages"><em>Packages</em></a> with <a class="reference internal" href="#bittorrent"><em>BitTorrent</em></a>.</p>
+<p>debtorrent downloads
+<a class="reference internal" href="../tools/index#apt"><em>APT</em></a> <a class="reference internal" href="../tools/index#deb"><em>DEB</em></a> <a class="reference internal" href="../tools/index#packages"><em>Packages</em></a> with <a class="reference internal" href="#bittorrent"><em>BitTorrent</em></a>
+for <a class="reference internal" href="../tools/index#linux"><em>Linux</em></a> distrubtions like
+<a class="reference internal" href="../tools/index#ubuntu"><em>Ubuntu</em></a> and/or <a class="reference internal" href="../tools/index#debian"><em>Debian</em></a>.</p>
 <ul class="simple">
-<li>Debtorrent can efficiently transfer packages to many local
-or remote machines</li>
+<li>debtorrent can efficiently transfer packages to many local
+or remote machines (instead of downloading the same file
+from the other side of the network multiple times)</li>
 </ul>
 <div class="highlight-python"><div class="highlight"><pre>sudo apt-get install debtorrent
 echo &#39;deb debtorrent://localhost:9988/foo distro main&#39; | \
@@ -1726,16 +1729,30 @@ echo &#39;deb debtorrent://localhost:9988/foo distro main&#39; | \
 <li><a class="reference external" href="https://github.com/saltstack-formulas/apt-formula/blob/master/apt/transports/debtorrent.sls">https://github.com/saltstack-formulas/apt-formula/blob/master/apt/transports/debtorrent.sls</a></li>
 </ul>
 </div>
+<div class="section" id="webtorrent">
+<span id="index-86"></span><span id="id78"></span><h4>webtorrent<a class="headerlink" href="#webtorrent" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Source: git <a class="reference external" href="https://github.com/feross/webtorrent">https://github.com/feross/webtorrent</a></div>
+</div>
+<p>webtorrent is a <a class="reference internal" href="#bittorrent"><em>BitTorrent</em></a> client
+written in <a class="reference internal" href="../tools/index#javascript"><em>JavaScript</em></a>
+that can run in <a class="reference internal" href="../tools/index#browsers"><em>Browsers</em></a> with <a class="reference internal" href="knowledge-engineering#webrtc"><em>WebRTC</em></a> support
+or <a class="reference internal" href="../tools/index#node-js"><em>Node.js</em></a>.</p>
+<ul class="simple">
+<li>With nodejs, webtorrent can stream to AirPlay, Chromecast, <a class="reference internal" href="#vlc"><em>VLC</em></a></li>
+<li>webtorrent can work with <a class="reference internal" href="knowledge-engineering#html5"><em>HTML5</em></a> <code class="docutils literal"><span class="pre">&lt;video&gt;</span></code> tags</li>
+</ul>
+</div>
 </div>
 <div class="section" id="named-data-networking">
-<span id="index-86"></span><span id="id78"></span><h3>Named Data Networking<a class="headerlink" href="#named-data-networking" title="Permalink to this headline">¶</a></h3>
+<span id="index-87"></span><span id="id79"></span><h3>Named Data Networking<a class="headerlink" href="#named-data-networking" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Named_data_networking">https://en.wikipedia.org/wiki/Named_data_networking</a></div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="steam">
-<span id="index-87"></span><span id="id79"></span><h3>Steam<a class="headerlink" href="#steam" title="Permalink to this headline">¶</a></h3>
+<span id="index-88"></span><span id="id80"></span><h3>Steam<a class="headerlink" href="#steam" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Steam_(software)">https://en.wikipedia.org/wiki/Steam_(software)</a></div>
 </div>
@@ -1749,7 +1766,7 @@ more local peers
 (e.g. everyone at the LAN party purchases the game)</li>
 </ul>
 <div class="section" id="kerbal-space-program">
-<span id="index-88"></span><span id="id80"></span><h4>Kerbal Space Program<a class="headerlink" href="#kerbal-space-program" title="Permalink to this headline">¶</a></h4>
+<span id="index-89"></span><span id="id81"></span><h4>Kerbal Space Program<a class="headerlink" href="#kerbal-space-program" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Kerbal_Space_Program">https://en.wikipedia.org/wiki/Kerbal_Space_Program</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://kerbalspaceprogram.com/">https://kerbalspaceprogram.com/</a></div>
@@ -1777,7 +1794,7 @@ and will affect the way a ship flies (or doesn&#8217;t).</p>
 </div>
 </div>
 <div class="section" id="tube-sites">
-<span id="index-89"></span><span id="id81"></span><h3>Tube Sites<a class="headerlink" href="#tube-sites" title="Permalink to this headline">¶</a></h3>
+<span id="index-90"></span><span id="id82"></span><h3>Tube Sites<a class="headerlink" href="#tube-sites" title="Permalink to this headline">¶</a></h3>
 <p>Fueled by the dramatic growth of YouTube,
 the term &#8220;Tube Site&#8221; refers to any of a number of sites
 serving (seekable) video;
@@ -1797,9 +1814,9 @@ and <a class="reference internal" href="#mpeg-dash"><em>MPEG-DASH</em></a>.</p>
 <li>featured playlists</li>
 <li>related content</li>
 </ul>
-<span class="target" id="index-90"></span></div>
+<span class="target" id="index-91"></span></div>
 <div class="section" id="http-live-streaming">
-<span id="index-91"></span><span id="id82"></span><h3>HTTP Live Streaming<a class="headerlink" href="#http-live-streaming" title="Permalink to this headline">¶</a></h3>
+<span id="index-92"></span><span id="id83"></span><h3>HTTP Live Streaming<a class="headerlink" href="#http-live-streaming" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/HTTP_Live_Streaming">https://en.wikipedia.org/wiki/HTTP_Live_Streaming</a></div>
 <div class="line">Standard: <a class="reference external" href="http://tools.ietf.org/html/draft-pantos-http-live-streaming">http://tools.ietf.org/html/draft-pantos-http-live-streaming</a></div>
@@ -1822,7 +1839,7 @@ over <a class="reference internal" href="knowledge-engineering#http"><em>HTTP</e
 </ul>
 </div>
 <div class="section" id="mpeg-dash">
-<span id="index-92"></span><span id="id83"></span><h3>MPEG-DASH<a class="headerlink" href="#mpeg-dash" title="Permalink to this headline">¶</a></h3>
+<span id="index-93"></span><span id="id84"></span><h3>MPEG-DASH<a class="headerlink" href="#mpeg-dash" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP">https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP</a></div>
 <div class="line">Standard: <a class="reference external" href="http://www.iso.org/iso/home/store/catalogue_ics/catalogue_detail_ics.htm?csnumber=65274">http://www.iso.org/iso/home/store/catalogue_ics/catalogue_detail_ics.htm?csnumber=65274</a></div>
@@ -1846,7 +1863,7 @@ which is not necessary to enjoy MPEG-DASH adaptability.</li>
 </ul>
 </div>
 <div class="section" id="nginx-rtmp-module">
-<span id="index-93"></span><span id="id84"></span><h3>nginx-rtmp-module<a class="headerlink" href="#nginx-rtmp-module" title="Permalink to this headline">¶</a></h3>
+<span id="index-94"></span><span id="id85"></span><h3>nginx-rtmp-module<a class="headerlink" href="#nginx-rtmp-module" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Nginx-rtmp-module">https://en.wikipedia.org/wiki/Nginx-rtmp-module</a></div>
 <div class="line">Source: git <a class="reference external" href="https://github.com/arut/nginx-rtmp-module">https://github.com/arut/nginx-rtmp-module</a></div>
@@ -1855,7 +1872,7 @@ which is not necessary to enjoy MPEG-DASH adaptability.</li>
 </div>
 <p>nginx-rtmp-module is an <a class="reference internal" href="open-source#open-source"><em>Open Source</em></a>
 module for the <a class="reference internal" href="../tools/index#nginx"><em>Nginx</em></a> web server
-which implements <a class="reference internal" href="#rtmp"><em>RTMP</em></a>, <a class="reference internal" href="#http-live-streaming"><em>HTTP Live Streaming</em></a>, and <a class="reference internal" href="#mpeg-dash"><em>MPEG-DASH</em></a>
+which implements <a class="reference internal" href="knowledge-engineering#rtmp"><em>RTMP</em></a>, <a class="reference internal" href="#http-live-streaming"><em>HTTP Live Streaming</em></a>, and <a class="reference internal" href="#mpeg-dash"><em>MPEG-DASH</em></a>
 for hosting streaming audio and video
 written in <a class="reference internal" href="../tools/index#c"><em>C</em></a>.</p>
 <ul class="simple">
@@ -1866,36 +1883,40 @@ Flash Video <a class="reference internal" href="#flv"><em>FLV</em></a> files</li
 audio / video compression / decompression codecs</li>
 </ul>
 </div>
-<div class="section" id="rtmp">
-<span id="index-94"></span><span id="id85"></span><h3>RTMP<a class="headerlink" href="#rtmp" title="Permalink to this headline">¶</a></h3>
-<div class="line-block">
-<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Real_Time_Messaging_Protocol">https://en.wikipedia.org/wiki/Real_Time_Messaging_Protocol</a></div>
 </div>
-<p>RTMP is a protocol for streaming audio, video, and data
-originally for Flash; now open source.</p>
-<p><a class="reference internal" href="#webrtc"><em>WebRTC</em></a> solves for all of the RTMP use cases.</p>
-</div>
-<div class="section" id="webrtc">
-<span id="index-95"></span><span id="id86"></span><h3>WebRTC<a class="headerlink" href="#webrtc" title="Permalink to this headline">¶</a></h3>
-<div class="line-block">
-<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/WebRTC">https://en.wikipedia.org/wiki/WebRTC</a></div>
-<div class="line">Homepage: <a class="reference external" href="http://www.webrtc.org/">http://www.webrtc.org/</a></div>
-<div class="line">Standard: <a class="reference external" href="http://tools.ietf.org/wg/rtcweb/">http://tools.ietf.org/wg/rtcweb/</a></div>
-<div class="line">Docs: <a class="reference external" href="https://webrtc.github.io/samples/">https://webrtc.github.io/samples/</a></div>
-</div>
-<p>WebRTC is a <a class="reference internal" href="knowledge-engineering#web-standards"><em>web standard</em></a> for
-decentralized or centralized
-streaming of audio, video, and data
-in <a class="reference internal" href="../tools/index#browsers"><em>browser</em></a>,
-without having to download any plugins.</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p>WebRTC is supported by a growing number of browsers:
-<a class="reference external" href="http://iswebrtcreadyyet.com/">http://iswebrtcreadyyet.com/</a></p>
-<p class="last">Notably, <a class="reference internal" href="../tools/index#internet-explorer"><em>Internet Explorer</em></a> and <a class="reference internal" href="../tools/index#safari"><em>Safari</em></a> still require
-a plugin to handle <a class="reference internal" href="#webrtc"><em>WebRTC</em></a>.</p>
-</div>
-</div>
+<div class="section" id="video-chat">
+<span id="index-95"></span><span id="id86"></span><h2>Video Chat<a class="headerlink" href="#video-chat" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Videoconferencing">https://en.wikipedia.org/wiki/Videoconferencing</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Videotelephony">https://en.wikipedia.org/wiki/Videotelephony</a></p>
+<p>Video chat: what might&#8217;ve been an exercise in
+<a class="reference internal" href="team-building#collaboration-engineering"><em>Collaboration Engineering</em></a>:</p>
+<ul class="simple">
+<li>Goals, Patterns:<ul>
+<li><a class="reference internal" href="team-building#seven-layer-model-of-collaboration"><em>Seven Layer Model of Collaboration</em></a>,
+(Goals, Patterns, Activities, Products, Techniques, Tools, Scripts)</li>
+<li><a class="reference internal" href="team-building#six-patterns-of-collaboration"><em>Six Patterns of Collaboration</em></a>
+(Generate, Reduce, Clarify, Organize, Evaluate, Build Consensus)</li>
+<li><a class="reference internal" href="team-building#thinklets"><em>ThinkLets</em></a> (Patterns, Techniques, Scripts)</li>
+</ul>
+</li>
+<li>Goals: <a class="reference internal" href="software-development#digital-stand-up-meeting"><em>Digital Stand Up Meeting</em></a> (Pattern: <a class="reference internal" href="software-development#three-questions"><em>Three Questions</em></a>)</li>
+<li>Tools: <a class="reference internal" href="knowledge-engineering#rtmp"><em>RTMP</em></a> (Flash conferencing tools)</li>
+<li>Tools: <a class="reference internal" href="knowledge-engineering#webrtc"><em>WebRTC</em></a> (newer Browsers with WebRTC support or WebRTC plugins)</li>
+</ul>
+<p>Models for interactive video chat:</p>
+<ul class="simple">
+<li>Video Relay Server (<a class="reference internal" href="knowledge-engineering#rtmp"><em>RTMP</em></a>, <a class="reference internal" href="#nginx-rtmp-module"><em>nginx-rtmp-module</em></a>)<ul>
+<li>Clients capture, encode, and push video to server</li>
+<li>Server [re]encodes stream and pushes video to other client(s)</li>
+</ul>
+</li>
+<li>Browser-to-Browser (<a class="reference internal" href="knowledge-engineering#webrtc"><em>WebRTC</em></a>)<ul>
+<li>Clients connect in a mesh and relay data streams</li>
+<li>Clients can be browsers or hosted applications (e.g. <a class="reference internal" href="information-systems#saas"><em>SaaS</em></a>)</li>
+<li><a class="reference internal" href="knowledge-engineering#webrtc"><em>WebRTC</em></a> is also useful for centralized <a class="reference internal" href="#web-distribution"><em>Web Distribution</em></a></li>
+</ul>
+</li>
+</ul>
 </div>
 <div class="section" id="media-tools">
 <span id="index-96"></span><span id="id87"></span><h2>Media Tools<a class="headerlink" href="#media-tools" title="Permalink to this headline">¶</a></h2>
