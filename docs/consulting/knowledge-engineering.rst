@@ -177,7 +177,7 @@ See: :ref:`Data Science <data-science>`
 
 
 .. index:: File Structures
-.. _file-structures:
+.. _file structures:
 
 File Structures
 -----------------
@@ -189,12 +189,105 @@ https://en.wikipedia.org/wiki/File_format
 
 https://en.wikipedia.org/wiki/Index#Computer_science
 
+* :ref:`tar` and :ref:`zip` are file structures
+  that have a *manifest* and a *payload*
+
+  * :ref:`file systems` often have redundant manifests
+    (and/or deduplication according to a hash table manifest
+    with an interface like a :ref:`dht`)
+
+
+.. index:: File Systems
+.. _file systems:
+
+File Systems
+--------------
+| Wikipedia:
+
+
+.. index:: Compression Algorithms
+.. _compression algorithms:
+
+Compression Algorithms
+-------------------------
+
+.. index:: bzip2
+.. _bzip2:
+
+bzip2
++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/Bzip2
+| File Extension: ``.bz2``
+| Homepage: http://bzip.org/
+
+bzip2 is an :ref:`Open Source <open-source>` lossless compression algorithm
+based upon the ``Burrows-Wheeler`` algorithm.
+
+* bzip2 is usually slower than :ref:`gzip` or :ref:`zip`,
+  but more space efficient
+
+
+.. index:: gzip
+.. _gzip:
+
+gzip
+++++++
+| Wikipedia: https://en.wikipedia.org/wiki/Gzip
+| Homepage: https://www.gnu.org/software/gzip/
+| File Extension: ``.gz``
+| Source: http://ftp.gnu.org/gnu/gzip/
+| Docs: https://www.gnu.org/software/gzip/manual/
+| Docs: https://www.gnu.org/software/gzip/manual/gzip.html
+
+gzip is a compression algorithm
+based on ``DEFLATE`` and ``LZ77``.
+
+* gzip is similar to :ref:`Zip`, in that both are based upon
+  ``DEFLATE``
+
+
+.. index:: tar
+.. _tar:
+
+tar
+++++
+| Wikipedia: `<https://en.wikipedia.org/wiki/Tar_(computing)>`__
+| File Extension: ``.tar``
+
+:ref:`tar` is a file archiving format
+for storing a manifest of records of
+a set of files with paths and attributes
+at the beginning of the actual files
+all concatenated into one file.
+
+* TAR = ( table of contents + data stream )
+* ``.tar.gz`` is :ref:`tar` + :ref:`gzip`
+* ``.tar.bz2`` is :ref:`tar` + :ref:`bzip2`
+
+TAR and :ref:`gzip` or :ref:`bzip2` can be streamed over SSH::
+
+    # https://unix.stackexchange.com/a/95994
+    tar czf - . | ssh remote "( cd ~/ ; cat > file.tar.gz )"
+    tar bzf - . | ssh remote "( cd ~/ ; cat > file.tar.bz2 )"
+
+See also: :ref:`zip` (:ref:`windows`)
+
+
+.. index:: ZIP
+.. _zip:
+
+zip
+++++
+| Wikipedia: `<https://en.wikipedia.org/wiki/Zip_(file_format)>`__
+
+zip is a lossless file archive compression
+
 
 .. index:: Data Structures
 .. _data structures:
 
 Data Structures
-++++++++++++++++
+----------------
 https://en.wikipedia.org/wiki/Data_structure
 
 https://en.wikipedia.org/wiki/List_of_data_structures
@@ -209,7 +302,7 @@ https://en.wikipedia.org/wiki/List_of_data_structures
 .. _arrays:
 
 Arrays
-````````
+++++++++
 https://en.wikipedia.org/wiki/Array_data_structure
 
 * https://en.wikipedia.org/wiki/List_of_data_structures#Arrays
@@ -220,7 +313,7 @@ https://en.wikipedia.org/wiki/Array_data_structure
 .. _lists:
 
 Lists
-```````
++++++++
 https://en.wikipedia.org/wiki/Linked_list
 
 * https://en.wikipedia.org/wiki/List_of_data_structures#Lists
@@ -230,7 +323,7 @@ https://en.wikipedia.org/wiki/Linked_list
 .. _trees:
 
 Trees
-```````
++++++++
 https://en.wikipedia.org/wiki/Tree_data_structure
 
 * https://en.wikipedia.org/wiki/List_of_data_structures#Trees
@@ -377,6 +470,35 @@ https://en.wikipedia.org/wiki/Category:Distributed_computing_problems
 https://en.wikipedia.org/wiki/Category:Distributed_algorithms
 
 * `<https://en.wikipedia.org/wiki/Paxos_(computer_science)>`_
+
+.. index:: Distributed Hash Table
+.. index:: DHT
+.. _dht:
+
+Distributed Hash Table
+++++++++++++++++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/Distributed_hash_table
+
+A Distributed Hash Table (*DHT*) is a distributed structure
+for storing things based upon a consistent file hash.
+
+* At an API level, a DHT is a key/value store.
+* :term:`DNS` is basically a DHT
+* :ref:`distributed-databases` all implement some form of
+  a structure simiar to a DHT (a replicated *keystore*);
+  often for things like bloom filters (for fast search)
+* :ref:`browsers` that maintain a local cache could
+  implement a DHT (e.g. with :ref:`websockets` or :ref:`webrtc`)
+
+  * https://github.com/feross/webtorrent
+    (:ref:`Javascript`, :ref:`WebRTC`)
+
+* :ref:`BitTorrent` :term:`magnet URIs <magnet uri>` (:term:`URNs <urn>`)
+  contain a key,
+  which is a checksum of a manifest,
+  which can be retrieved from the DHT
+  (e.g. with ``dht = DHT(); value = dht.get(urn)``)
+
 
 
 .. index:: Graph Databases
@@ -784,6 +906,17 @@ Time Zone names, URIs, and :ref:`iso8601` UTC offsets:
 | Antarctica/South_Pole                                    |                |                    |
 +----------------------------------------------------------+----------------+--------------------+
 
+.. index:: Web Names
+.. _web names:
+
+Web Names
++++++++++++
+
+* :term:`URL`
+* :term:`URI`
+* :term:`URN`
+* :term:`Magnet URI`
+
 
 .. index:: IEC
 .. _iec:
@@ -921,6 +1054,88 @@ HTTP in RDF
 | LOVLink: http://lov.okfn.org/dataset/lov/vocabs/http
 
 HTTP-in-RDF is a standard for representing :ref:`HTTP` as :ref:`RDF`.
+
+
+.. index:: RTMP
+.. _rtmp:
+
+RTMP
++++++
+| Wikipedia: https://en.wikipedia.org/wiki/Real_Time_Messaging_Protocol
+
+RTMP is a TCP/IP protocol for streaming audio, video, and data
+originally for Flash which is now :ref:`Open Source <open-source>`.
+
+* https://en.wikipedia.org/wiki/Real_Time_Messaging_Protocol#Client_software
+
+  * Adobe Flash Player
+  * :ref:`VLC`
+
+* https://en.wikipedia.org/wiki/Real_Time_Messaging_Protocol#Server_software
+
+  * Adobe Flash Live Media Server
+  * :ref:`AWS` S3 HTTP Object Storage, CloudFront :ref:`CDN`
+  * Helix Universal Media Server
+  * Red5 (:ref:`Open Source <open-source>`)
+  * :ref:`ffmpeg` (:ref:`Open Source <open-source>`)
+  * :ref:`nginx-rtmp-module` (:ref:`Open Source <open-source>`)
+  * FreeSwitch (:ref:`OpenSource <open-source>`, VoIP, SIP, :ref:`Video Chat`)
+
+* :ref:`WebRTC` solves for all of the RTMP use cases,
+  and is becoming as or more widely deployed than Flash Player
+  (especially with mobile devices).
+
+
+.. index:: WebSocket
+.. _websockets:
+
+WebSocket
++++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/WebSocket
+| URI Scheme: ``ws://``
+
+WebSocket is a full-duplex (two-way) TCP/IP protocol
+for audio, video, and data
+which can interoperate with :ref:`HTTP` :ref:`Web Servers`.
+
+* WebSockets are often more efficient than other methods
+  for realtime HTTP like HTTP Streaming and long polling.
+* WebSockets work with many/most HTTP proxies
+* WebSockets
+
+https://en.wikipedia.org/wiki/Comparison_of_WebSocket_implementations
+
+* :ref:`Python`: pypi:gevent-websocket,
+  pypi:websockets (:ref:`python3` asyncio),
+  pypi:autobahn (:ref:`Python 2 <python>` pypi:twisted,
+  :ref:`python3` asyncio)
+
+See also: https://en.wikipedia.org/wiki/Push_technology, :ref:`WebRTC`
+
+
+
+.. index:: WebRTC
+.. _webrtc:
+
+WebRTC
+++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/WebRTC
+| Homepage: http://www.webrtc.org/
+| Standard: http://tools.ietf.org/wg/rtcweb/
+| Docs: https://webrtc.github.io/samples/
+
+WebRTC is a :ref:`web standard <web-standards>` for
+decentralized or centralized
+streaming of audio, video, and data
+in :ref:`browser <browsers>`,
+without having to download any plugins.
+
+
+.. note:: WebRTC is supported by a growing number of browsers:
+   http://iswebrtcreadyyet.com/
+
+   Notably, :ref:`Internet Explorer` and :ref:`Safari` still require
+   a plugin to handle :ref:`WebRTC`.
 
 
 .. index:: HTTP/2
@@ -1063,7 +1278,8 @@ It is not safe to ``eval`` JSON, because it could contain code.
 
 There are many parsers for JSON.
 
-:ref:`JSON-LD` adds Linked Data support to JSON.
+:ref:`JSON-LD` adds :ref:`RDF` Linked Data support to JSON
+with ``@context``.
 
 
 .. index:: CSV

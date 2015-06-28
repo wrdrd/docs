@@ -115,6 +115,13 @@ Web Glossary
 
         https://en.wikipedia.org/wiki/Uniform_resource_name
 
+    Magnet URI
+        A Magnet URI is a URN containing an key to retrieve
+        from a network (such as a :ref:`DHT`)
+
+        :term:`Web browsers <web browser>` can be configured
+        to open Magnet URIs with other programs
+
         https://en.wikipedia.org/wiki/Magnet_URI_scheme
 
     Web Browser
@@ -293,6 +300,10 @@ Bootstrap
 
 Web Development Checklist
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
+A checklist for building a modern website
+with structured data; for search,
+social web, sharing.
+
 See also: `<http://webdevchecklist.com/>`_
 
 * [ ] Pick a CSS framework
@@ -451,9 +462,12 @@ See also: `<http://webdevchecklist.com/>`_
 
 * [ ] Section: Post-load JS scripts
 
-  * [ ] JS libraries
-  * [ ] Analytics loaders
-  * [ ] A/B optimization
+  * [ ] JS libraries (:ref:`CDN`, cdnjs, jQuery, :ref:`Bootstrap`,
+    underscore, Backbone, Angular, React)
+  * [ ] JS Analytics loaders (:ref:`data-science`
+    > :ref:`repro:ObservationalStudy <linked reproducibility>`)
+  * [ ] JS Optimization loaders (:ref:`machine-learning`
+    > :ref:`repro:ControlledTrial <linked reproducibility>`)
 
 
 Hosting / DNS

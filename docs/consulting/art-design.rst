@@ -1279,7 +1279,7 @@ Web Distribution
 
 * New Web :ref:`Media` (:ref:`Web Content <web content>`)
   are shared through :ref:`web standards <web-standards>`
-  like TCP/IP, :ref:`HTTP`, :ref:`HTML`, and :ref:`WebRTC`
+  like TCP/IP, :ref:`HTTP`, :ref:`HTML`, and :ref:`webrtc`
 * Streaming a video with seek and rewind is a bit different
   than downloading / streaming / buffering a file from beginning to end
 
@@ -1424,21 +1424,24 @@ Use Cases:
    can be shared over BitTorrent all the same.
 
 
-.. index:: Debtorrent
+.. index:: debtorrent
 .. _debtorrent:
 
 ------------
-Debtorrent
+debtorrent
 ------------
 | Homepage: https://wiki.debian.org/DebTorrent
 | Standard: https://wiki.debian.org/DebTorrent/Protocol
 | Source: svn svn://svn.debian.org/debtorrent/debtorrent/trunk
 
-Debtorrent downloads :ref:`Ubuntu` and/or :ref:`Debian` :ref:`APT`
-:ref:`DEB` :ref:`packages` with :ref:`BitTorrent`.
+debtorrent downloads
+:ref:`APT` :ref:`DEB` :ref:`packages` with :ref:`BitTorrent`
+for :ref:`Linux` distrubtions like
+:ref:`Ubuntu` and/or :ref:`Debian`.
 
-* Debtorrent can efficiently transfer packages to many local
-  or remote machines
+* debtorrent can efficiently transfer packages to many local
+  or remote machines (instead of downloading the same file
+  from the other side of the network multiple times)
 
 ::
 
@@ -1447,6 +1450,23 @@ Debtorrent downloads :ref:`Ubuntu` and/or :ref:`Debian` :ref:`APT`
         sudo tee -a /etc/apt/sources.list
 
 * https://github.com/saltstack-formulas/apt-formula/blob/master/apt/transports/debtorrent.sls
+
+
+.. index:: webtorrent
+.. _webtorrent:
+
+------------
+webtorrent
+------------
+| Source: git https://github.com/feross/webtorrent
+
+webtorrent is a :ref:`bittorrent` client
+written in :ref:`Javascript`
+that can run in :ref:`browsers` with :ref:`webrtc` support
+or :ref:`node.js`.
+
+* With nodejs, webtorrent can stream to AirPlay, Chromecast, :ref:`VLC`
+* webtorrent can work with :ref:`HTML5` ``<video>`` tags
 
 
 .. index:: Named Data Networking
@@ -1610,41 +1630,42 @@ written in :ref:`C`.
   audio / video compression / decompression codecs
 
 
-.. index:: RTMP
-.. _rtmp:
+.. index:: Video Chat
+.. _video chat:
 
-RTMP
-~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/Real_Time_Messaging_Protocol
+Video Chat
+************
+https://en.wikipedia.org/wiki/Videoconferencing
 
-RTMP is a protocol for streaming audio, video, and data
-originally for Flash; now open source.
+https://en.wikipedia.org/wiki/Videotelephony
 
-:ref:`WebRTC` solves for all of the RTMP use cases.
+Video chat: what might've been an exercise in
+:ref:`collaboration engineering`:
 
+* Goals, Patterns:
 
-.. index:: WebRTC
-.. _webrtc:
+  * :ref:`Seven Layer Model of Collaboration`,
+    (Goals, Patterns, Activities, Products, Techniques, Tools, Scripts)
+  * :ref:`Six Patterns of Collaboration`
+    (Generate, Reduce, Clarify, Organize, Evaluate, Build Consensus)
+  * :ref:`Thinklets` (Patterns, Techniques, Scripts)
 
-WebRTC
-~~~~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/WebRTC
-| Homepage: http://www.webrtc.org/
-| Standard: http://tools.ietf.org/wg/rtcweb/
-| Docs: https://webrtc.github.io/samples/
+* Goals: :ref:`Digital Stand Up Meeting` (Pattern: :ref:`Three Questions`)
+* Tools: :ref:`RTMP` (Flash conferencing tools)
+* Tools: :ref:`webrtc` (newer Browsers with WebRTC support or WebRTC plugins)
 
-WebRTC is a :ref:`web standard <web-standards>` for
-decentralized or centralized
-streaming of audio, video, and data
-in :ref:`browser <browsers>`,
-without having to download any plugins.
+Models for interactive video chat:
 
+* Video Relay Server (:ref:`RTMP`, :ref:`nginx-rtmp-module`)
 
-.. note:: WebRTC is supported by a growing number of browsers:
-   http://iswebrtcreadyyet.com/
+  * Clients capture, encode, and push video to server
+  * Server [re]encodes stream and pushes video to other client(s)
 
-   Notably, :ref:`Internet Explorer` and :ref:`Safari` still require
-   a plugin to handle :ref:`WebRTC`.
+* Browser-to-Browser (:ref:`webrtc`)
+
+  * Clients connect in a mesh and relay data streams
+  * Clients can be browsers or hosted applications (e.g. :ref:`SaaS`)
+  * :ref:`webrtc` is also useful for centralized :ref:`Web Distribution`
 
 
 .. index:: Media Tools

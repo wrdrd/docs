@@ -257,6 +257,83 @@ https://en.wikipedia.org/wiki/Meta-analysis
 https://en.wikipedia.org/wiki/Systematic_review
 
 
+.. index:: Linked Reproducibility
+.. _linked reproducibility:
+
+Linked Reproducibility
+`````````````````````````
+:ref:`linked-data` + :ref:`Reproducibility` => :ref:`Linked Reproducibility`
+
+::
+
+    Reproducibility ---\___  Linked Reproducibility
+    Linked Data     ---/
+
+
+In :ref:`turtle` :ref:`rdf` syntax:
+::
+
+    :LinkedData rdf:type skos:Concept ;
+        rdfs:label "Linked Data"@en ;
+        schema:name "Linked Data"@en ;
+        owl:sameAs <https://en.wikipedia.org/wiki/Linked_data> ;
+        owl:sameAs <http://dbpedia.org/page/Linked_data> ;
+
+        owl:sameAs <http://ja.dbpedia.org/resource/Linked_data>
+        owl:sameAs <http://es.dbpedia.org/resource/Datos_enlazados> ;
+        owl:sameAs <http://fr.dbpedia.org/resource/Web_des_donn%C3%A9es> ;
+        owl:sameAs <http://nl.dbpedia.org/resource/Linked_data>
+        owl:sameAs <http://ko.dbpedia.org/resource/링크드_데이터> ;
+        owl:sameAs <http://wikidata.org/entity/Q515701> ;
+        .
+
+    :Reproducibility a skos:Concept ;
+        rdfs:label "Reproducibility"@en ;
+        schema:name "Reproducibility"@en ;
+        owl:sameAs <https://en.wikipedia.org/wiki/Reproducibility> ;
+        owl:sameAs <http://dbpedia.org/page/Reproducibility> ;
+        .
+
+    :LinkedReproducibility a skos:Concept ;
+        rdfs:label "Linked Reproducibility"@en ;
+        schema:name "Linked Reproducibility"@en ;
+        skos:related [ :LinkedData, :Reproducibility ] ;
+        .
+
+Further Objectives:
+
+* Develop best practices guidelines and
+  and/or an :ref:`RDF` schema and vocabulary ("``repro:``)
+  for linking between studies, their supporting data,
+  and their collection methods with URIs.
+
+  * developing vocabularies:
+
+    + :ref:`semantic-web-tools`
+    + :ref:`Git`, :ref:`GitHub Pages`
+    + [ ] :ref:`schema.org` extension vocabularies
+
+  * linked reproduciblity edges:
+
+    + similarTo
+    + concursWith
+    + discordantWith
+    + intendedToReproduce
+    + reproduces
+
+  * linked reproducibility classes and properties:
+
+    * [x] schema.org/MedicalStudy, MedicalObservationalStudy, MedicalTrial
+
+      * [ ] @schemed
+
+    * [ ] Study, ObservationalStudy, RandomizedControlledTrial, RCT
+    * [ ] StudyProtocol
+    * [ ] StudyGroup (design, admin, participant, stats)
+    * [ ] StudyGroup.masked <bool>, StudyProtocol.url
+    * See: https://westurner.org/opengov/us/#personal-health-agenda
+
+
 .. index:: Math
 .. index:: Mathematics
 .. _math:
