@@ -547,7 +547,7 @@ written in :ref:`Python` and :ref:`Go`.
 * Apps are deployed to Deis with :ref:`git` (``git push``) or
   the ``deis`` CLI client.
 
-* :ref:`configuration-managment` is useful but not necessary
+* :ref:`configuration management` is useful but not necessary
   for provisioning Deis
   (e.g. creating and managing custom deis images and containers
   with extra libraries and configuration).
