@@ -1031,8 +1031,11 @@ HTTP
 | Wikipedia: https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
 | Standard: https://tools.ietf.org/html/rfc2616
 | Standard: http://tools.ietf.org/html/rfc7230#page-5
+| URI Scheme: ``http://``
+| URI Scheme: ``https://``
 
-HTTP (*HyperText Transfer Protocol*) is a text-based request-response
+HTTP (*HyperText Transfer Protocol*) is an :ref:`Open Source <open-source>`
+text-based request-response
 TCP/IP protocol for data interchange.
 
 HTTPS (*Secure HTTP*) wraps HTTP in SSL/TLS to secure HTTP.
@@ -1165,7 +1168,8 @@ HTML
 +++++
 | Wikipedia: https://en.wikipedia.org/wiki/HTML
 
-HTML (*HyperText Markup Language*) is a standard for representing
+HTML (*HyperText Markup Language*) is a :ref:`Open Source <open-source>`
+standard for representing
 documents with tags, attributes, and **hyperlinks**.
 
 Recent HTML standards include :ref:`HTML4`, :ref:`XHTML`, and :ref:`HTML5`.
