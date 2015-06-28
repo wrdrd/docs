@@ -241,14 +241,14 @@ Cloud Questions
 Cloud Application Layers
 ++++++++++++++++++++++++++
 
-* :term:`Applications <application>`
+* :term:`Applications <application>` Layer
 
   * https://github.com/wrdrd/wrd/blob/master/app.yaml
     (AppEngine/AppScale)
 
-* Platform (Database, APIs)
+* Platform Layer
 
-  * :ref:`AppEngine` / :ref:`AppScale` / :ref:`Heroku` APIs
+  * :ref:`PaaS` APIs (:ref:`AppEngine`, :ref:`AppScale`, :ref:`Heroku`)
   * :ref:`Databases`
     (:ref:`relational-databases`,
     :ref:`sql`,
@@ -256,11 +256,10 @@ Cloud Application Layers
     :ref:`graph-databases`,
     :ref:`sparql`)
   * Authz: Authentication, Authorization
-    (WebID, SSO, LDAP, SASL, SAML, OAuth + ACL strings)
 
-    * :ref:`OpenStack` Keystone
-    * OpenLDAP, 389, FreeIPA, ActiveDirectory, Samba4
-    * OAuth, WebID
+    * Servers: OpenLDAP, 389, FreeIPA, ActiveDirectory, Samba4
+    * Standards: WebID, OAuth, SASL, SAML, LDAP
+    * Infrastructure Layer: :ref:`OpenStack` Keystone
 
   * Email
 
@@ -278,12 +277,12 @@ Cloud Application Layers
     * AppEngine/AppScale Tasks API
     * :ref:`Mesos` schedulers (Aurora, Chronos, Marathon)
 
-  * Search Indexing (:ref:`JSON`, :ref:`json-ld-`)
+  * Search Indexing (:ref:`JSON`, :ref:`json-ld-`, :ref:`json-ld`)
 
     * ElasticSearch (Lucene), Solr
     * AppEngine/AppScale Search API
 
-  * Distributed Object Storage and data local iterators (*Big Data*):
+  * Big Data storage and data local iterators:
 
     * HDFS, Hadoop (Spark, GraphX, Pregel, Cassandra, Accumulo, :ref:`Mesos`)
     * DDFS, Disco
@@ -294,7 +293,7 @@ Cloud Application Layers
     * :ref:`OpenStack` Swift (Swift, S3 APIs)
     * :ref:`Linux` Ceph RADOS gateway (Swift, S3 APIs)
 
-* (Data Center) Infrastructure
+* Infrastructure Layer
 
   * Resource Pool
 
@@ -388,17 +387,28 @@ PaaS
 ++++++++++++++++++++++
 https://en.wikipedia.org/wiki/Platform_as_a_service
 
-Platform-as-a-Service (*PaaS*) providers
+PaaS (*Platform-as-a-Service*) platforms
 offer platform APIs
 on top of which applications
 can be developed and marginally scaled
-if architected for concurrency and asynchronicity.
+if designed and developed for concurrency and asynchronicity.
 
-Examples of Paas Platforms:
+Examples of PaaS Platforms:
 
-* :ref:`Heroku`
 * :ref:`AppEngine`
 * :ref:`AppScale`
+* :ref:`Deis`
+* https://github.com/progrium/dokku
+  -- dokku is an extremely minimal (no firewall, etc.)
+  ":ref:`Docker` powered mini-Heroku in around 100 lines of :ref:`Bash`"
+  (see also: bashreduce)
+
+  * https://news.ycombinator.com/item?id=9054503
+    -- The original dokku developer now works with :ref:`Deis`
+  * https://github.com/dokku-alt/dokku-alt -- dokku-alt is a fork of dokku
+
+* https://github.com/flynn/flynn
+* :ref:`Heroku`
 
 
 .. index:: AppEngine
@@ -473,7 +483,7 @@ written in
   Google Cloud Platform :term:`Web APIs <Web API>`
 
 .. table:: adapted from https://github.com/AppScale/appscale/wiki/How-AppScale-implements-the-Google-App-Engine-APIs
-
+   :class: table-striped
 
    +----------------------+-----------------------------------------------+
    | :ref:`AppEngine` API | :ref:`AppScale` implementation                |
@@ -506,6 +516,65 @@ written in
    +----------------------+-----------------------------------------------+
 
 
+.. index:: Deis
+.. _deis:
+
+Deis
+`````
+| Homepage: http://deis.io/
+| Source: git https://github.com/deis/deis
+| Source: https://github.com/deis/deis/blob/master/Makefile
+| Source: https://github.com/deis/deis/blob/master/Vagrantfile
+| Docs: http://docs.deis.io/en/latest/
+| Docs: http://docs.deis.io/en/latest/toctree/#toctree
+| Docs: http://docs.deis.io/en/latest/installing_deis/
+| Docs: http://docs.deis.io/en/latest/installing_deis/aws/
+| Docs: http://docs.deis.io/en/latest/installing_deis/baremetal/
+| Docs: http://docs.deis.io/en/latest/installing_deis/gce/
+| Docs: http://docs.deis.io/en/latest/installing_deis/openstack/
+| Docs: http://docs.deis.io/en/latest/installing_deis/rackspace/
+| Docs: http://docs.deis.io/en/latest/installing_deis/vagrant/
+| Docs: http://docs.deis.io/en/latest/understanding_deis/concepts/
+| Docs: http://docs.deis.io/en/latest/understanding_deis/architecture/
+| Docs: http://docs.deis.io/en/latest/understanding_deis/components/
+| Docs: http://docs.deis.io/en/latest/using_deis/deploy-application/
+| Docs: http://docs.deis.io/en/latest/using_deis/using-buildpacks/
+
+Deis is an :ref:`Open Source <open-source>` :ref:`PaaS`
+platform built on :ref:`Docker` and :ref:`CoreOS`
+written in :ref:`Python` and :ref:`Go`.
+
+* Apps are deployed to Deis with :ref:`git` (``git push``) or
+  the ``deis`` CLI client.
+
+* :ref:`configuration management` is useful but not necessary
+  for provisioning Deis
+  (e.g. creating and managing custom deis images and containers
+  with extra libraries and configuration).
+* Deis builds with :ref:`Make`, :ref:`Docker`
+  :term:`Dockerfiles <dockerfile>`, and :ref:`CoreOS`.
+
+  * https://github.com/deis/deis/blob/master/controller/Dockerfile
+  * https://github.com/deis/deis/blob/master/controller/requirements.txt
+  * https://github.com/deis/deis/blob/master/database/Dockerfile
+  * https://github.com/deis/deis/blob/master/store/Makefile
+  * https://github.com/deis/deis/tree/master/tests
+
+* Deis can work with the :ref:`Linux` Ceph filesystem.
+
+  * Deis supports :ref:`Heroku` Buildpacks:
+    http://docs.deis.io/en/latest/using_deis/using-buildpacks/#included-buildpacks
+
+    + :ref:`Ruby`, :ref:`Node.js`, :ref:`java`, Gradle, Grails, Play,
+      :ref:`Python`, PHP, Clojure, :ref:`Scala`, :ref:`Go`
+    + buildpacks are composable: https://github.com/heroku/heroku-buildpack-multi
+
+* Deis can scale to ``n`` instance of containers per process (e.g. ``web``)::
+
+    deis scale web=3
+
+See also: :ref:`Heroku`, :ref:`Kubernetes`, :ref:`Kubernetes-Mesos`
+
 
 .. index:: Heroku
 .. _heroku:
@@ -514,10 +583,13 @@ Heroku
 ````````
 | Wikipedia: https://en.wikipedia.org/wiki/Heroku
 | Homepage: https://www.heroku.com/
-| Source: https://github.com/heroku
 | Twitter: https://twitter.com/heroku
+| Source: https://github.com/heroku
+| Docs: https://devcenter.heroku.com/articles/git
 
 Heroku is a :ref:`PaaS` Platform.
+
+:ref:`Deis` supports :ref:`Heroku` Buildpacks.
 
 
 .. index:: Infrastructure-as-a-Service
