@@ -1104,7 +1104,6 @@ which can interoperate with :ref:`HTTP` :ref:`Web Servers`.
 * WebSockets are often more efficient than other methods
   for realtime HTTP like HTTP Streaming and long polling.
 * WebSockets work with many/most HTTP proxies
-* WebSockets
 
 https://en.wikipedia.org/wiki/Comparison_of_WebSocket_implementations
 
