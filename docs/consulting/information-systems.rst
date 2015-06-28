@@ -388,17 +388,28 @@ PaaS
 ++++++++++++++++++++++
 https://en.wikipedia.org/wiki/Platform_as_a_service
 
-Platform-as-a-Service (*PaaS*) providers
+PaaS (*Platform-as-a-Service*) platforms
 offer platform APIs
 on top of which applications
 can be developed and marginally scaled
-if architected for concurrency and asynchronicity.
+if designed and developed for concurrency and asynchronicity.
 
-Examples of Paas Platforms:
+Examples of PaaS Platforms:
 
-* :ref:`Heroku`
 * :ref:`AppEngine`
 * :ref:`AppScale`
+* :ref:`Deis`
+* https://github.com/progrium/dokku
+  -- dokku is an extremely minimal (no firewall, etc.)
+  ":ref:`Docker` powered mini-Heroku in around 100 lines of :ref:`Bash`"
+  (see also: bashreduce)
+
+  * https://news.ycombinator.com/item?id=9054503
+    -- The original dokku developer now works with :ref:`Deis`
+  * https://github.com/dokku-alt/dokku-alt -- dokku-alt is a fork of dokku
+
+* https://github.com/flynn/flynn
+* :ref:`Heroku`
 
 
 .. index:: AppEngine
@@ -473,7 +484,7 @@ written in
   Google Cloud Platform :term:`Web APIs <Web API>`
 
 .. table:: adapted from https://github.com/AppScale/appscale/wiki/How-AppScale-implements-the-Google-App-Engine-APIs
-
+   :class: table-striped
 
    +----------------------+-----------------------------------------------+
    | :ref:`AppEngine` API | :ref:`AppScale` implementation                |
@@ -505,6 +516,63 @@ written in
    | Users                | AppScale Dashboard                            |
    +----------------------+-----------------------------------------------+
 
+.. index:: Deis
+.. _deis:
+
+Deis
+`````
+| Homepage: http://deis.io/
+| Source: git https://github.com/deis/deis
+| Source: https://github.com/deis/deis/blob/master/Makefile
+| Source: https://github.com/deis/deis/blob/master/Vagrantfile
+| Docs: http://docs.deis.io/en/latest/
+| Docs: http://docs.deis.io/en/latest/toctree/#toctree
+| Docs: http://docs.deis.io/en/latest/installing_deis/
+| Docs: http://docs.deis.io/en/latest/installing_deis/aws/
+| Docs: http://docs.deis.io/en/latest/installing_deis/baremetal/
+| Docs: http://docs.deis.io/en/latest/installing_deis/gce/
+| Docs: http://docs.deis.io/en/latest/installing_deis/openstack/
+| Docs: http://docs.deis.io/en/latest/installing_deis/rackspace/
+| Docs: http://docs.deis.io/en/latest/installing_deis/vagrant/
+| Docs: http://docs.deis.io/en/latest/understanding_deis/concepts/
+| Docs: http://docs.deis.io/en/latest/understanding_deis/architecture/
+| Docs: http://docs.deis.io/en/latest/understanding_deis/components/
+| Docs: http://docs.deis.io/en/latest/using_deis/deploy-application/
+| Docs: http://docs.deis.io/en/latest/using_deis/using-buildpacks/
+
+Deis is an :ref:`Open Source <open-source>` :ref:`PaaS`
+platform built on :ref:`Docker` and :ref:`CoreOS`
+written in :ref:`Python` and :ref:`Go`.
+
+* Apps are deployed to Deis with :ref:`git` (``git push``) or
+  the ``deis`` CLI client
+
+Deis and :ref:`configuration management`:
+
+* :ref:`configuration managment` is useful for provisioning
+  a Deis installation
+  (e.g. creating and managing custom deis images and containers
+  with extra libraries and configuration)
+* Deis works with :ref:`Docker` :term:`Dockerfiles` (:ref:`CoreOS`, Deis)
+
+  * https://github.com/deis/deis/blob/master/controller/Dockerfile
+  * https://github.com/deis/deis/blob/master/controller/requirements.txt
+  * https://github.com/deis/deis/blob/master/database/Dockerfile
+  * https://github.com/deis/deis/blob/master/store/Makefile
+  * https://github.com/deis/deis/tree/master/tests
+
+Deis supports :ref:`Heroku` Buildpacks:
+http://docs.deis.io/en/latest/using_deis/using-buildpacks/#included-buildpacks
+
+* :ref:`Ruby`, :ref:`Node.js`, :ref:`java`, Gradle, Grails, Play,
+  :ref:`Python`, PHP, Clojure, :ref:`Scala`, :ref:`Go`
+* buildpacks are composable: https://github.com/heroku/heroku-buildpack-multi
+
+Deis can scale to ``n`` instance of containers per process (e.g. ``web``)::
+
+  deis scale web=3
+
+See also: :ref:`Heroku`, :ref:`Kubernetes`, :ref:`Kubernetes-Mesos`
 
 
 .. index:: Heroku
@@ -514,10 +582,13 @@ Heroku
 ````````
 | Wikipedia: https://en.wikipedia.org/wiki/Heroku
 | Homepage: https://www.heroku.com/
-| Source: https://github.com/heroku
 | Twitter: https://twitter.com/heroku
+| Source: https://github.com/heroku
+| Docs: https://devcenter.heroku.com/articles/git
 
 Heroku is a :ref:`PaaS` Platform.
+
+:ref:`Deis` supports :ref:`Heroku` Buildpacks.
 
 
 .. index:: Infrastructure-as-a-Service
