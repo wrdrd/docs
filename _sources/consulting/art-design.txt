@@ -1434,9 +1434,9 @@ debtorrent
 | Standard: https://wiki.debian.org/DebTorrent/Protocol
 | Source: svn svn://svn.debian.org/debtorrent/debtorrent/trunk
 
-debtorrent downloads 
+debtorrent downloads
 :ref:`APT` :ref:`DEB` :ref:`packages` with :ref:`BitTorrent`
-for :ref:`Linux` distrubtions like 
+for :ref:`Linux` distrubtions like
 :ref:`Ubuntu` and/or :ref:`Debian`.
 
 * debtorrent can efficiently transfer packages to many local
@@ -1460,7 +1460,7 @@ webtorrent
 ------------
 | Source: git https://github.com/feross/webtorrent
 
-webtorrent is a :ref:`bittorrent` client 
+webtorrent is a :ref:`bittorrent` client
 written in :ref:`Javascript`
 that can run in :ref:`browsers` with :ref:`webrtc` support
 or :ref:`node.js`.

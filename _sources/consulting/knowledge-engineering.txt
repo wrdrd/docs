@@ -202,8 +202,8 @@ https://en.wikipedia.org/wiki/Index#Computer_science
 
 File Systems
 --------------
-| Wikipedia: 
-    
+| Wikipedia:
+
 
 .. index:: Compression Algorithms
 .. _compression algorithms:
@@ -237,7 +237,7 @@ gzip
 | File Extension: ``.gz``
 | Source: http://ftp.gnu.org/gnu/gzip/
 | Docs: https://www.gnu.org/software/gzip/manual/
-| Docs: https://www.gnu.org/software/gzip/manual/gzip.html 
+| Docs: https://www.gnu.org/software/gzip/manual/gzip.html
 
 gzip is a compression algorithm
 based on ``DEFLATE`` and ``LZ77``.
@@ -247,7 +247,7 @@ based on ``DEFLATE`` and ``LZ77``.
 
 
 .. index:: tar
-.. _tar: 
+.. _tar:
 
 tar
 ++++
@@ -280,7 +280,7 @@ zip
 ++++
 | Wikipedia: `<https://en.wikipedia.org/wiki/Zip_(file_format)>`__
 
-zip is a lossless file archive compression 
+zip is a lossless file archive compression
 
 
 .. index:: Data Structures
@@ -483,7 +483,7 @@ A Distributed Hash Table (*DHT*) is a distributed structure
 for storing things based upon a consistent file hash.
 
 * At an API level, a DHT is a key/value store.
-* :ref:`DNS` is basically a DHT
+* :term:`DNS` is basically a DHT
 * :ref:`distributed-databases` all implement some form of
   a structure simiar to a DHT (a replicated *keystore*);
   often for things like bloom filters (for fast search)
@@ -1074,15 +1074,16 @@ originally for Flash which is now :ref:`Open Source <open-source>`.
 * https://en.wikipedia.org/wiki/Real_Time_Messaging_Protocol#Server_software
 
   * Adobe Flash Live Media Server
-  * Amazon :ref:`AWS` S3 HTTP Object Storage, CloudFront :ref:`CDN`
+  * :ref:`AWS` S3 HTTP Object Storage, CloudFront :ref:`CDN`
   * Helix Universal Media Server
   * Red5 (:ref:`Open Source <open-source>`)
   * :ref:`ffmpeg` (:ref:`Open Source <open-source>`)
   * :ref:`nginx-rtmp-module` (:ref:`Open Source <open-source>`)
   * FreeSwitch (:ref:`OpenSource <open-source>`, VoIP, SIP, :ref:`Video Chat`)
 
-* :ref:`WebRTC` solves for all of the RTMP use cases, 
-  but is not 
+* :ref:`WebRTC` solves for all of the RTMP use cases,
+  and is becoming as or more widely deployed than Flash Player
+  (especially with mobile devices).
 
 
 .. index:: WebSocket
