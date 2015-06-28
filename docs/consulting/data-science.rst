@@ -648,7 +648,23 @@ Deep Learning
 ~~~~~~~~~~~~~~
 https://en.wikipedia.org/wiki/Deep_learning
 
+* https://en.wikipedia.org/wiki/Biological_neural_network
+* https://en.wikipedia.org/wiki/Artificial_neural_network
+* https://en.wikipedia.org/wiki/Recurrent_neural_network
+* http://www.scholarpedia.org/article/Recurrent_neural_networks
+* https://en.wikipedia.org/wiki/Feedforward_neural_network
+* https://en.wikipedia.org/wiki/Perceptron
+* https://en.wikipedia.org/wiki/Reservoir_computing
+* http://deeplearning.net/
 
+  * http://deeplearning.net/deep-learning-research-groups-and-labs/
+  * http://deeplearning.net/datasets/
+  * http://deeplearning.net/software_links/
+
+
+
+.. index:: Data Science Tools
+.. _data science tools:
 
 Tools
 -------
@@ -660,6 +676,9 @@ See: :ref:`Tools`,
 :ref:`Jupyter and Reproducibility`,
 :ref:`Publishing`
 
+
+.. index:: Data Science Techniques
+.. _data science techniques:
 
 Techniques
 --------------

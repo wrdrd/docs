@@ -271,7 +271,8 @@ Cloud Application Layers
     * Sentry, Raven (POST JSON)
     * :ref:`FireLogger`
 
-  * Message Queue (Tasks, Channels, AMQP, WebSockets, Workers)
+  * Message Queue (Task Queue, Channels, :ref:`WebSockets <websockets>`, AMQP,
+    Worker Pools)
 
     * Celery: https://celery.readthedocs.org/en/latest/getting-started/brokers/
     * AppEngine/AppScale Tasks API
@@ -284,6 +285,7 @@ Cloud Application Layers
 
   * Big Data storage and data local iterators:
 
+    * :ref:`MapReduce`, :ref:`Bulk Synchronous Parallel`, Pregel, GraphX
     * HDFS, Hadoop (Spark, GraphX, Pregel, Cassandra, Accumulo, :ref:`Mesos`)
     * DDFS, Disco
 
@@ -291,7 +293,8 @@ Cloud Application Layers
 
     * https://libcloud.readthedocs.org/en/latest/storage/
     * :ref:`OpenStack` Swift (Swift, S3 APIs)
-    * :ref:`Linux` Ceph RADOS gateway (Swift, S3 APIs)
+    * :ref:`Linux` :ref:`Ceph` RADOS gateway (Swift, S3 APIs)
+    * :ref:`Linux`, :ref:`OSX`, :ref:`POSIX`:  :ref:`GlusterFS` (Swift, S3 APIs)
 
 * Infrastructure Layer
 
@@ -325,17 +328,26 @@ Cloud Application Layers
     + Router = Gateway + Switch
     + :ref:`Vagrant` networking
     + :ref:`Docker` networking
-    + VLANs, IPv6 6to4 Tunnels
+    + VLANs, IPv6 6to4 tunnels
     + SDN (:ref:`OpenStack` Neutron)
-    + DNS (BIND, dnsmasq, :ref:`Cobbler`, :ref:`OpenStack`,
+    + :term:`DNS` (BIND, dnsmasq, :ref:`Cobbler`, :ref:`OpenStack`,
       :ref:`Vagrant`, :ref:`Docker`)
 
   * Physical and Virtual Storage
 
-    + Virtual storage: central file storage (NFS, CIFS, WebDAV)
-    + Virtual storage: distributed file storage (Ceph)
-    + Virtual storage: persistent block devices (LVM, BTRFS)
-    + Physical storage: SAN "Storage Area Network" (iSCSI)
+    + Virtual storage:
+
+      - central file storage (NFS, CIFS, WebDAV)
+      - distributed file storage (:ref:`Ceph`, :ref:`GlusterFS`)
+      - persistent block storage (:ref:`AWS` S3, :ref:`OpenStack` Cinder
+      - on-disk filesystems: ref:`ext4 <ext>`, :ref:`LVM`, :ref:`BTRFS`
+
+    + Physical storage
+
+      - SAN -- Storage Area Network (iSCSI)
+      - NAS -- Network Attached Storage
+      - :ref:`USB`, :ref:`SATA`, :ref:`SCSI`, :ref:`IDE`, :ref:`ATA`
+
 
 
 .. index:: Software-as-a-Service
