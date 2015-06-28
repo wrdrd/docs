@@ -1108,9 +1108,8 @@ which can interoperate with :ref:`HTTP` :ref:`Web Servers`.
 https://en.wikipedia.org/wiki/Comparison_of_WebSocket_implementations
 
 * :ref:`Python`: pypi:gevent-websocket,
-  pypi:websockets (:ref:`python3` asyncio),
-  pypi:autobahn (:ref:`Python 2 <python>` pypi:twisted,
-  :ref:`python3` asyncio)
+  pypi:websockets (asyncio),
+  pypi:autobahn (pypi:twisted, asyncio)
 
 See also: https://en.wikipedia.org/wiki/Push_technology, :ref:`WebRTC`
 
