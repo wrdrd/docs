@@ -67,7 +67,7 @@
     href="../_static/opensearch.xml"/>
     <link rel="top" title="WRD R&amp;D Documentation" href="../index" />
     <link rel="next" title="Data Science" href="data-science" />
-    <link rel="prev" title="Software Development" href="software-development" /> 
+    <link rel="prev" title="Computer Engineering" href="computer-engineering" /> 
   </head>
   <body role="document">
     <div id="navbar-top" class="navbar navbar-default" role="navigation" aria-label="top navigation">
@@ -159,7 +159,7 @@
               </li>
 
             
-              <li><a href="software-development" title="Software Development" accesskey="P">previous </a></li>
+              <li><a href="computer-engineering" title="Computer Engineering" accesskey="P">previous </a></li>
               <li><a href="data-science" title="Data Science" accesskey="N">next </a></li>
               <li><a href="../py-modindex" title="Python Module Index" >modules </a></li>
               <li><a href="../genindex" title="General Index" accesskey="I">index </a></li>
@@ -267,8 +267,8 @@
 </ul>
 
   <h4>Previous topic</h4>
-  <p class="topless"><a href="software-development"
-                        title="previous chapter">Software Development</a></p>
+  <p class="topless"><a href="computer-engineering"
+                        title="previous chapter">Computer Engineering</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="data-science"
                         title="next chapter">Data Science</a></p>
@@ -544,7 +544,8 @@ business systems?</li>
 <li><a class="reference internal" href="../tools/index#firelogger"><em>FireLogger</em></a></li>
 </ul>
 </li>
-<li>Message Queue (Tasks, Channels, AMQP, WebSockets, Workers)<ul>
+<li>Message Queue (Task Queue, Channels, <a class="reference internal" href="knowledge-engineering#websockets"><em>WebSockets</em></a>, AMQP,
+Worker Pools)<ul>
 <li>Celery: <a class="reference external" href="https://celery.readthedocs.org/en/latest/getting-started/brokers/">https://celery.readthedocs.org/en/latest/getting-started/brokers/</a></li>
 <li>AppEngine/AppScale Tasks API</li>
 <li><a class="reference internal" href="../tools/index#mesos"><em>Mesos</em></a> schedulers (Aurora, Chronos, Marathon)</li>
@@ -556,6 +557,7 @@ business systems?</li>
 </ul>
 </li>
 <li>Big Data storage and data local iterators:<ul>
+<li><em class="xref std std-ref">MapReduce</em>, <em class="xref std std-ref">Bulk Synchronous Parallel</em>, Pregel, GraphX</li>
 <li>HDFS, Hadoop (Spark, GraphX, Pregel, Cassandra, Accumulo, <a class="reference internal" href="../tools/index#mesos"><em>Mesos</em></a>)</li>
 <li>DDFS, Disco</li>
 </ul>
@@ -563,7 +565,8 @@ business systems?</li>
 <li>HTTP Object Storage (<a class="reference internal" href="../tools/index#libcloud"><em>Libcloud</em></a>)<ul>
 <li><a class="reference external" href="https://libcloud.readthedocs.org/en/latest/storage/">https://libcloud.readthedocs.org/en/latest/storage/</a></li>
 <li><a class="reference internal" href="../tools/index#openstack"><em>OpenStack</em></a> Swift (Swift, S3 APIs)</li>
-<li><a class="reference internal" href="../tools/index#linux"><em>Linux</em></a> Ceph RADOS gateway (Swift, S3 APIs)</li>
+<li><a class="reference internal" href="../tools/index#linux"><em>Linux</em></a> <em class="xref std std-ref">Ceph</em> RADOS gateway (Swift, S3 APIs)</li>
+<li><a class="reference internal" href="../tools/index#linux"><em>Linux</em></a>, <a class="reference internal" href="../tools/index#osx"><em>OS X</em></a>, <a class="reference internal" href="../tools/index#posix"><em>POSIX</em></a>:  <em class="xref std std-ref">GlusterFS</em> (Swift, S3 APIs)</li>
 </ul>
 </li>
 </ul>
@@ -598,17 +601,26 @@ business systems?</li>
 <li>Router = Gateway + Switch</li>
 <li><a class="reference internal" href="../tools/index#vagrant"><em>Vagrant</em></a> networking</li>
 <li><a class="reference internal" href="../tools/index#docker"><em>Docker</em></a> networking</li>
-<li>VLANs, IPv6 6to4 Tunnels</li>
+<li>VLANs, IPv6 6to4 tunnels</li>
 <li>SDN (<a class="reference internal" href="../tools/index#openstack"><em>OpenStack</em></a> Neutron)</li>
-<li>DNS (BIND, dnsmasq, <a class="reference internal" href="../tools/index#cobbler"><em>Cobbler</em></a>, <a class="reference internal" href="../tools/index#openstack"><em>OpenStack</em></a>,
+<li><a class="reference internal" href="web-development#term-dns"><em class="xref std std-term">DNS</em></a> (BIND, dnsmasq, <a class="reference internal" href="../tools/index#cobbler"><em>Cobbler</em></a>, <a class="reference internal" href="../tools/index#openstack"><em>OpenStack</em></a>,
 <a class="reference internal" href="../tools/index#vagrant"><em>Vagrant</em></a>, <a class="reference internal" href="../tools/index#docker"><em>Docker</em></a>)</li>
 </ul>
 </li>
 <li>Physical and Virtual Storage<ul>
-<li>Virtual storage: central file storage (NFS, CIFS, WebDAV)</li>
-<li>Virtual storage: distributed file storage (Ceph)</li>
-<li>Virtual storage: persistent block devices (LVM, BTRFS)</li>
-<li>Physical storage: SAN &#8220;Storage Area Network&#8221; (iSCSI)</li>
+<li>Virtual storage:<ul>
+<li>central file storage (NFS, CIFS, WebDAV)</li>
+<li>distributed file storage (<em class="xref std std-ref">Ceph</em>, <em class="xref std std-ref">GlusterFS</em>)</li>
+<li>persistent block storage (<a class="reference internal" href="#aws"><em>Amazon AWS</em></a> S3, <a class="reference internal" href="../tools/index#openstack"><em>OpenStack</em></a> Cinder</li>
+<li>on-disk filesystems: ref:<cite>ext4 &lt;ext&gt;</cite>, <em class="xref std std-ref">LVM</em>, <em class="xref std std-ref">BTRFS</em></li>
+</ul>
+</li>
+<li>Physical storage<ul>
+<li>SAN &#8211; Storage Area Network (iSCSI)</li>
+<li>NAS &#8211; Network Attached Storage</li>
+<li><a class="reference internal" href="computer-engineering#usb"><em>USB</em></a>, <a class="reference internal" href="computer-engineering#sata"><em>SATA</em></a>, <a class="reference internal" href="computer-engineering#scsi"><em>SCSI</em></a>, <em class="xref std std-ref">IDE</em>, <em class="xref std std-ref">ATA</em></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -1206,7 +1218,7 @@ own email addresses (everything gets relayed)</li>
     </ul>
 <ul class="nav navbar-nav text-center">
       
-        <li><a href="software-development" title="Software Development" >previous</a></li>
+        <li><a href="computer-engineering" title="Computer Engineering" >previous</a></li>
         <li><a href="data-science" title="Data Science" >next</a></li>
         <li><a href="../py-modindex" title="Python Module Index" >modules</a></li>
         <li><a href="../genindex" title="General Index" >index</a></li>

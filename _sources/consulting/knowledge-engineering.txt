@@ -202,7 +202,137 @@ https://en.wikipedia.org/wiki/Index#Computer_science
 
 File Systems
 --------------
-| Wikipedia:
+| Wikipedia: https://en.wikipedia.org/wiki/File_system
+
+File systems determine how files are represented in a persistent
+physical medium.
+
+* On-disk file systems determine where and how redundantly data is stored
+* On-disk file systems: :ref:`ext`, :ref:`btrfs`
+* Networked file systems link disk storage pools with other resources
+* Networked file systems: :ref:`Ceph`, :ref:`GlusterFS`, :ref:`Bittorrent`
+
+
+.. index:: btrfs
+.. _btrfs:
+
+btrfs
+~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Btrfs
+| Homepage: https://btrfs.wiki.kernel.org/index.php/Main_Page
+| Source: https://btrfs.wiki.kernel.org/index.php/Btrfs_source_repositories
+| Source: git git://git.kernel.org/pub/scm/linux/kernel/git/mason/btrfs-progs.git
+| Docs: https://btrfs.wiki.kernel.org/index.php/Getting_started#Basic_Filesystem_Commands
+| Docs: https://btrfs.wiki.kernel.org/index.php/Problem_FAQ
+| Docs: https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Storage_Administration_Guide/ch-btrfs.html
+| Docs: https://wiki.archlinux.org/index.php/Btrfs
+| Docs: https://help.ubuntu.com/community/btrfs
+
+btrfs (:ref:`B-tree <trees>` *file system*) is an
+:ref:`Open Source <open-source>` pooling, snapshotting,
+checksumming, deduplicating, union mounting
+copy-on-write on-disk :ref:`Linux` filesystem.
+
+
+.. index:: Ceph
+.. _ceph:
+
+Ceph
+~~~~~
+| Wikipedia: `<https://en.wikipedia.org/wiki/Ceph_(software)>`__
+| Homepage: http://ceph.com/
+| Download: http://ceph.com/resources/downloads/
+| Source: git https://github.com/ceph/ceph
+| Docs: http://ceph.com/docs/master/
+| Docs: http://ceph.com/docs/master/rados/
+| Docs: http://ceph.com/docs/master/radosgw/
+| Docs: http://ceph.com/docs/master/radosgw/s3/
+| Docs: http://ceph.com/docs/master/radosgw/swift/
+| Docs: http://ceph.com/docs/master/radosgw/keystone/
+| Docs: http://ceph.com/docs/master/rbd/rbd-openstack/
+
+Ceph is an :ref:`Open Source <open-source>` network file system
+(a :ref:`distributed database`
+for files with attributes like owner, group, permissions)
+which runs over top of an on-disk file system
+written in :ref:`C++` and :ref:`Perl`.
+
+* Ceph Object Gateway (*radosgw*) -- :term:`RESTful API`,
+  :ref:`AWS` S3 API, :ref:`OpenStack` Swift API,
+  :ref:`OpenStack` Keystone authentication
+* Ceph Block Device (*rbd*) -- striping, caching, snapshots, copy-on-write,
+  :ref:`kvm`, :ref:`libvirt`, :ref:`OpenStack` Cinder block storage
+* Ceph Filesystem (*cephfs*) -- :ref:`POSIX`
+  :ref:`file system <file systems>` with
+  FUSE, NFS, CIFS, and Hadoop HDFS APIs
+
+
+.. index:: ext2
+.. index:: ext3
+.. index:: ext4
+.. _ext:
+
+ext
+~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Ext2
+| Wikipedia: https://en.wikipedia.org/wiki/Ext3
+| Wikipedia: https://en.wikipedia.org/wiki/Ext4
+
+ext2, ext3, and ext4 are the ext (*extended filesystem*)
+:ref:`Open Source <open-source>`
+on-disk filesystems.
+
+* ext filesystems are the default filesystems of many
+  :ref:`Linux` distributions
+
+
+.. index:: GlusterFS
+.. _glusterfs:
+
+GlusterFS
+~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/GlusterFS
+| Homepage: http://www.gluster.org/
+| Project: https://forge.gluster.org/glusterfs-core
+| Source: git https://git.forge.gluster.org/glusterfs-core/glusterfs.git
+| Docs: https://gluster.readthedocs.org/en/latest/
+| Docs: https://gluster.readthedocs.org/en/latest/Quick-Start-Guide/Quickstart/
+| Docs: https://gluster.readthedocs.org/en/latest/Install-Guide/Setup_virt/
+| Docs: https://gluster.readthedocs.org/en/latest/Install-Guide/Setup_Bare_metal/
+| Docs: https://gluster.readthedocs.org/en/latest/Install-Guide/Setup_aws/
+| Docs: https://gluster.readthedocs.org/en/latest/Administrator%20Guide/GlusterFS%20Cinder/
+| Tcp ports: 111, 24007, 24008, 24009, 24010, 24011, 38465:38469
+
+GlusterFS is an :ref:`Open Source <open-source>` network file system
+(a :ref:`distributed database`
+for files with attributes like owner, group, permissions)
+which runs over top of an on-disk file system.
+
+* GlusterFS can serve volumes for :ref:`OpenStack` Cinder block storage
+
+
+.. index:: LVM
+.. index:: Logical Volume Manager
+.. _lvm:
+
+LVM
+~~~~~~~~~~~~~~~~~~~~~~
+| Wikipedia: `<https://en.wikipedia.org/wiki/Logical_Volume_Manager_(Linux)>`__
+| Homepage: https://www.sourceware.org/lvm2/
+| Source: ftp://sources.redhat.com/pub/lvm2/
+| Docs: https://www.sourceware.org/dm/
+| Docs: http://www.tldp.org/HOWTO/LVM-HOWTO/index.html
+| Docs: 
+
+LVM (*Logical Volume Manager*) is an :ref:`Open Source <open-source>`
+software disk abstraction layer with snapshotting, copy-on-write,
+online resize and allocation
+
+* In LVM, *Volume Groups* (VG) contain
+  *Physical Volumes* (PV) contain *Logical Volumes* (LV) 
+* LVM can do striping and high-availability sofware RAID
+* LVM (and ``device-mapper`` are part of all recent mainline
+  :ref:`Linux` builds)
 
 
 .. index:: Compression Algorithms
@@ -471,6 +601,15 @@ https://en.wikipedia.org/wiki/Category:Distributed_algorithms
 
 * `<https://en.wikipedia.org/wiki/Paxos_(computer_science)>`_
 
+
+.. index:: BSP
+.. index:: Bulk Synchronous Parallel
+
+Bulk Synchronous Parallel
+++++++++++++++++++++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/Bulk_synchronous_parallel
+
+
 .. index:: Distributed Hash Table
 .. index:: DHT
 .. _dht:
@@ -479,25 +618,32 @@ Distributed Hash Table
 ++++++++++++++++++++++++
 | Wikipedia: https://en.wikipedia.org/wiki/Distributed_hash_table
 
-A Distributed Hash Table (*DHT*) is a distributed structure
-for storing things based upon a consistent file hash.
+A Distributed Hash Table (*:ref:`DHT <dht>`*) is a distributed key value store
+for storing values under a consistent file checksum hash which can be
+looked up with an exact string match.
 
 * At an API level, a DHT is a key/value store.
 * :term:`DNS` is basically a DHT
 * :ref:`distributed-databases` all implement some form of
   a structure simiar to a DHT (a replicated *keystore*);
   often for things like bloom filters (for fast search)
+
+  * Apache Cassandra, :ref:`Ceph`, :ref:`GlusterFS`
+
 * :ref:`browsers` that maintain a local cache could
   implement a DHT (e.g. with :ref:`websockets` or :ref:`webrtc`)
 
-  * https://github.com/feross/webtorrent
-    (:ref:`Javascript`, :ref:`WebRTC`)
+  * :ref:`webtorrent` (:ref:`Javascript`, :ref:`Node.js`, :ref:`WebRTC`)
 
 * :ref:`BitTorrent` :term:`magnet URIs <magnet uri>` (:term:`URNs <urn>`)
-  contain a key,
-  which is a checksum of a manifest,
-  which can be retrieved from the DHT
-  (e.g. with ``dht = DHT(); value = dht.get(urn)``)
+  contain a *key*,
+  which is a *checksum* of a manifest,
+  which can be retrieved from a :ref:`DHT`::
+
+    # https://tug.org/mactex/MacTeX.pkg.torrent
+    
+
+    dht = DHT(); value = dht.get(key_uri)
 
 
 

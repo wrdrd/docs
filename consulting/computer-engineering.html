@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- OpenGraph metadata: ogp.me -->
+    <meta property="og:title" content="Computer Engineering" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="WRD R&D" />
+    <!--
+    <meta property="og:description" content="" />
+    -->
+    <meta property="og:image" content="http://www.wrdrd.com/static/png/drawing-7.09-v0.1.1--_desk.svg-470x242.png" />
+    <meta property="og:image:width" content="470" />
+    <meta property="og:image:height" content="242" />
+    <!--
+    <meta property="og:image:secure_url" content="./_static/img/logo.png" />
+    -->
+    <!-- Twitter metadata -->
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:title" content="Computer Engineering" />
+    <meta property="twitter:description" content="" />
+    <meta property="twitter:site" content="wrdrd" />
+    <meta property="twitter:creator" content="wrdrd" />
+    
+    <title>Computer Engineering &mdash; WRD R&amp;D Documentation</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    
+
+<link rel="stylesheet" href="../_static/css/basicstrap-base.css" type="text/css" />
+<link rel="stylesheet" id="current-theme" href="../_static/css/bootstrap3/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" id="current-adjust-theme" type="text/css" />
+
+<link rel="stylesheet" href="../_static/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="../_static/css/basicstrap.css" type="text/css" />
+<link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+<link rel="stylesheet" href="../_static/css/local.css" type="text/css" />
+    
+<script type="text/javascript">
+  var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:    '../',
+            VERSION:     '0.2.0',
+            COLLAPSE_INDEX: false,
+            FILE_SUFFIX: '.html',
+            HAS_SOURCE:  true
+  };
+</script>
+    <script type="text/javascript" src="../_static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/local.js"></script>
+    <script type="text/javascript" src="../_static/js/bootstrap3.min.js"></script>
+<script type="text/javascript" src="../_static/js/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="../_static/js/basicstrap.js"></script>
+<script type="text/javascript">
+</script>
+    <link rel="search" type="application/opensearchdescription+xml"
+    title="Search within WRD R&amp;D Documentation"
+    href="../_static/opensearch.xml"/>
+    <link rel="top" title="WRD R&amp;D Documentation" href="../index" />
+    <link rel="next" title="Information Systems" href="information-systems" />
+    <link rel="prev" title="Software Development" href="software-development" /> 
+  </head>
+  <body role="document">
+    <div id="navbar-top" class="navbar navbar-default" role="navigation" aria-label="top navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index">WRD R&amp;D Documentation</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown visible-xs">
+                <a role="button" id="localToc" data-toggle="dropdown" data-target="#" href="#">Table Of Contents <b class="caret"></b></a>
+                <ul class="dropdown-menu localtoc sp-localtoc" role="menu" aria-labelledby="localToc">
+                <ul>
+<li><a class="reference internal" href="#">Computer Engineering</a><ul>
+<li><a class="reference internal" href="#processor">Processor</a><ul>
+<li><a class="reference internal" href="#cpu">CPU</a><ul>
+<li><a class="reference internal" href="#arm">ARM</a></li>
+<li><a class="reference internal" href="#ppc">PPC</a></li>
+<li><a class="reference internal" href="#x86">x86</a></li>
+<li><a class="reference internal" href="#x86-64">x86_64</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#gpu">GPU</a><ul>
+<li><a class="reference internal" href="#cuda">CUDA</a></li>
+<li><a class="reference internal" href="#physx">PhysX</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#memory">Memory</a><ul>
+<li><a class="reference internal" href="#ram">RAM</a></li>
+<li><a class="reference internal" href="#persistent-storage">Persistent Storage</a><ul>
+<li><a class="reference internal" href="#hard-drives">Hard Drives</a></li>
+<li><a class="reference internal" href="#ssd">SSD</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#data-device-bus">Data Device Bus</a><ul>
+<li><a class="reference internal" href="#usb">USB</a><ul>
+<li><a class="reference internal" href="#usb-type-c">USB Type-C</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sata">SATA</a><ul>
+<li><a class="reference internal" href="#esata">eSATA</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#scsi">SCSI</a></li>
+<li><a class="reference internal" href="#ide-drive">IDE</a></li>
+<li><a class="reference internal" href="#pata">PATA</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#system-bus">System Bus</a><ul>
+<li><a class="reference internal" href="#isa">ISA</a></li>
+<li><a class="reference internal" href="#agp">AGP</a></li>
+<li><a class="reference internal" href="#pci">PCI</a></li>
+<li><a class="reference internal" href="#pci-e">PCI-e</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#video-card">Video Card</a></li>
+</ul>
+</li>
+</ul>
+
+                </ul>
+              </li>
+
+            
+              <li><a href="software-development" title="Software Development" accesskey="P">previous </a></li>
+              <li><a href="information-systems" title="Information Systems" accesskey="N">next </a></li>
+              <li><a href="../py-modindex" title="Python Module Index" >modules </a></li>
+              <li><a href="../genindex" title="General Index" accesskey="I">index </a></li>
+            
+            <li class="visible-xs"><a href="../_sources/consulting/computer-engineering.txt" rel="nofollow">Show Source</a></li>
+
+            <li class="visible-xs">
+                <form class="search form-search form-inline navbar-form navbar-right sp-searchbox" action="../search" method="get">
+                  <div class="input-append input-group">
+                    <input type="text" class="search-query form-control" name="q" placeholder="Search...">
+                    <span class="input-group-btn">
+                    <input type="submit" class="btn" value="Go" />
+                    </span>
+                  </div>
+                  <input type="hidden" name="check_keywords" value="yes" />
+                  <input type="hidden" name="area" value="default" />
+                </form>
+            </li>
+
+            
+
+          </ul>
+
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- container -->
+    <div class="container-fluid">
+
+      <!-- row -->
+      <div class="row">
+         
+<div class="col-md-3 hidden-xs" id="sidebar-wrapper">
+  <div class="sidebar hidden-xs" role="navigation" aria-label="main navigation">
+  <h3><a href="../index">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Computer Engineering</a><ul>
+<li><a class="reference internal" href="#processor">Processor</a><ul>
+<li><a class="reference internal" href="#cpu">CPU</a><ul>
+<li><a class="reference internal" href="#arm">ARM</a></li>
+<li><a class="reference internal" href="#ppc">PPC</a></li>
+<li><a class="reference internal" href="#x86">x86</a></li>
+<li><a class="reference internal" href="#x86-64">x86_64</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#gpu">GPU</a><ul>
+<li><a class="reference internal" href="#cuda">CUDA</a></li>
+<li><a class="reference internal" href="#physx">PhysX</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#memory">Memory</a><ul>
+<li><a class="reference internal" href="#ram">RAM</a></li>
+<li><a class="reference internal" href="#persistent-storage">Persistent Storage</a><ul>
+<li><a class="reference internal" href="#hard-drives">Hard Drives</a></li>
+<li><a class="reference internal" href="#ssd">SSD</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#data-device-bus">Data Device Bus</a><ul>
+<li><a class="reference internal" href="#usb">USB</a><ul>
+<li><a class="reference internal" href="#usb-type-c">USB Type-C</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sata">SATA</a><ul>
+<li><a class="reference internal" href="#esata">eSATA</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#scsi">SCSI</a></li>
+<li><a class="reference internal" href="#ide-drive">IDE</a></li>
+<li><a class="reference internal" href="#pata">PATA</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#system-bus">System Bus</a><ul>
+<li><a class="reference internal" href="#isa">ISA</a></li>
+<li><a class="reference internal" href="#agp">AGP</a></li>
+<li><a class="reference internal" href="#pci">PCI</a></li>
+<li><a class="reference internal" href="#pci-e">PCI-e</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#video-card">Video Card</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="software-development"
+                        title="previous chapter">Software Development</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="information-systems"
+                        title="next chapter">Information Systems</a></p>
+<div id="searchbox" role="search">
+  <h3>Quick search</h3>
+  <form class="search form-inline" action="../search" method="get">
+      <div class="input-append input-group">
+        <input type="text" class="search-query form-control" name="q" placeholder="Search...">
+        <span class="input-group-btn">
+        <input type="submit" class="btn" value="Go" />
+        </span>
+      </div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/consulting/computer-engineering.txt"
+            rel="nofollow"
+            target="_blank">Source RST</a></li>
+    <li><a href="https://github.com/wrdrd/docs/blob/master/docs/consulting/computer-engineering.rst"
+            rel="nofollow"
+            target="_blank">Source</a></li>
+    <li><a href="https://github.com/wrdrd/docs/edit/master/docs/consulting/computer-engineering.rst"
+            rel="nofollow"
+            target="_blank">Edit</a></li>
+     <li><a href="https://github.com/wrdrd/docs/commits/master/docs/consulting/computer-engineering.rst"
+             rel="nofollow"
+             target="_blank">History</a></li>
+     <li><a href="https://github.com/wrdrd/docs/blame/master/docs/consulting/computer-engineering.rst"
+             rel="nofollow"
+             target="_blank">Annotate</a></li>
+  </ul>
+  <h3>Source</h3>
+  <h5><a href="https://github.com/wrdrd/docs">github.com/wrdrd/docs</a>
+      / <a href="https://github.com/wrdrd/docs/tree/master"
+                rel="nofollow"
+                target="_blank"
+                font="monospace">master</a>
+  </h5>
+
+  <ul>
+    <li><pre>git clone https://github.com/wrdrd/docs</pre></li>
+    <li><pre>git clone ssh://git@github.com/wrdrd/docs</pre></li>
+    <li><pre>git clone git://github.com/wrdrd/docs</pre></li>
+  </ul><div class="widget">
+    <h3><a href="https://wrdrd.com/">wrdrd.com</a></h3>
+    <ul>
+        <li><a href="https://wrdrd.com/">wrdrd.com/</a></li>
+        <li><a href="https://wrdrd.com/docs/">wrdrd.com/docs/</a></li>
+        <li><a href="https://wrdrd.com/wiki/">wrdrd.com/wiki/</a></li>
+        <li><a href="https://github.com/wrdrd">github.com/wrdrd</a></li>
+        <li><a href="https://google.com/+Wrdrdrd">+Wrdrdrd</a></li>
+        <li><a href="https://twitter.com/wrdrd">@wrdrd</a></li>
+    </ul>
+</div>
+  </div>
+</div> 
+        
+
+        <div class="col-md-9" id="content-wrapper">
+          <div class="document" role="main">
+            <div class="documentwrapper">
+              <div class="bodywrapper">
+                <div class="body">
+                  
+  <div class="section" id="computer-engineering">
+<span id="index-0"></span><span id="id1"></span><h1>Computer Engineering<a class="headerlink" href="#computer-engineering" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Computer_engineering">https://en.wikipedia.org/wiki/Computer_engineering</a></div>
+</div>
+<p>Computer engineering combines, traditionally, eletrical engineering
+and <a class="reference internal" href="software-development#computer-science"><em>Computer Science</em></a>.</p>
+<ul class="simple">
+<li>Computers are made of components with inputs, outputs, and logic tables</li>
+<li>Computer programs may or may not verified using formal methods</li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/List_of_emerging_technologies#Electronics">https://en.wikipedia.org/wiki/List_of_emerging_technologies#Electronics</a></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/List_of_emerging_technologies#IT_and_communications">https://en.wikipedia.org/wiki/List_of_emerging_technologies#IT_and_communications</a></li>
+</ul>
+<div class="section" id="processor">
+<h2>Processor<a class="headerlink" href="#processor" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="cpu">
+<span id="index-1"></span><span id="id2"></span><h3>CPU<a class="headerlink" href="#cpu" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Central_processing_unit">https://en.wikipedia.org/wiki/Central_processing_unit</a></div>
+</div>
+<p>A CPU (<em>Central Processing Unit</em>) &#8212; or <strong>processor</strong> &#8212;
+does variable logic according to
+a set of gates
+and input instructions.</p>
+<ul class="simple">
+<li>A computer has one or more CPUs.</li>
+<li>A CPU has one or more cores.</li>
+<li>A CPU has one or more internal (<em>L1</em>, <em>on-die</em>) or external (L2) caches.</li>
+<li>A CPU cache buffers addressed memory for CPU instructions.</li>
+<li>A CPU supports an instruction set.</li>
+<li>A CPU may be programmable with microcode.</li>
+<li>A CPU evaluates a stream of instructions (e.g. a <em>Turing Machine</em>).</li>
+</ul>
+<div class="section" id="arm">
+<span id="index-2"></span><span id="id3"></span><h4>ARM<a class="headerlink" href="#arm" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/ARM_architecture">https://en.wikipedia.org/wiki/ARM_architecture</a></div>
+</div>
+<ul class="simple">
+<li>Routers</li>
+<li>Smartphones</li>
+<li>Notebooks<ul>
+<li>Chromebooks</li>
+</ul>
+</li>
+<li>Routers</li>
+<li>Servers</li>
+</ul>
+</div>
+<div class="section" id="ppc">
+<span id="index-3"></span><span id="id4"></span><h4>PPC<a class="headerlink" href="#ppc" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia:  <a class="reference external" href="https://en.wikipedia.org/wiki/PowerPC">https://en.wikipedia.org/wiki/PowerPC</a></div>
+</div>
+<ul class="simple">
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/PowerPC#Operating_systems">https://en.wikipedia.org/wiki/PowerPC#Operating_systems</a></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Apple's_transition_to_Intel_processors">https://en.wikipedia.org/wiki/Apple&#8217;s_transition_to_Intel_processors</a>
+(2006)</li>
+</ul>
+</div>
+<div class="section" id="x86">
+<span id="index-4"></span><span id="id5"></span><h4>x86<a class="headerlink" href="#x86" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/X86">https://en.wikipedia.org/wiki/X86</a></div>
+</div>
+<p>x86 is 32-bit <a class="reference internal" href="#cpu"><em>CPU</em></a> architecture.</p>
+<ul class="simple">
+<li>A <strong>PC</strong> by a number of definitions<ul>
+<li>A PC is a computer with a
+ref:<cite>CPU</cite> that runs <a class="reference internal" href="#x86"><em>x86</em></a> or <a class="reference internal" href="#x86-64"><em>x86_64</em></a> instructions.</li>
+<li>A PC is a computer running <a class="reference internal" href="../tools/index#windows"><em>Windows</em></a><ul>
+<li>e.g. &#8220;Mac or PC? PC or Mac?&#8221;; where Mac = <a class="reference internal" href="../tools/index#osx"><em>OS X</em></a> on <a class="reference internal" href="#x86-64"><em>x86_64</em></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="x86-64">
+<span id="index-5"></span><span id="id6"></span><h4>x86_64<a class="headerlink" href="#x86-64" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/X86-64">https://en.wikipedia.org/wiki/X86-64</a></div>
+</div>
+<p>x86_64 (<em>x64</em>, <em>AMD64</em>) is a 64-bit <a class="reference internal" href="#cpu"><em>CPU</em></a> architecture.</p>
+<ul class="simple">
+<li>amd64 is <a class="reference internal" href="#x86-64"><em>x86_64</em></a>.</li>
+<li>In 2015, most new computers are either <a class="reference internal" href="#x86-64"><em>x86_64</em></a> or <a class="reference internal" href="#arm"><em>ARM</em></a>.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="gpu">
+<span id="index-6"></span><span id="id7"></span><h3>GPU<a class="headerlink" href="#gpu" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Graphics_processing_unit">https://en.wikipedia.org/wiki/Graphics_processing_unit</a></div>
+</div>
+<p>A GPU (<em>Graphics Processing Unit</em>)
+does variable logic according to
+a set of gates
+and input instructions;
+with massive parallelism.</p>
+<ul class="simple">
+<li>A computer has zero or more GPUs.</li>
+<li>A GPU is designed for parallel computation.</li>
+<li>GPUs were designed, in particular, for realtime <a class="reference internal" href="art-design#d-modeling"><em>3D Modeling</em></a>
+(vertex pixel shading, physics)</li>
+<li>A GPU operates on</li>
+<li>GPUs have driven demand for faster <em class="xref std std-ref">system bus standards</em>.</li>
+</ul>
+<div class="section" id="cuda">
+<span id="index-7"></span><span id="id8"></span><h4>CUDA<a class="headerlink" href="#cuda" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/CUDA">https://en.wikipedia.org/wiki/CUDA</a></div>
+<div class="line">Homepage: <a class="reference external" href="http://www.nvidia.com/object/cuda_home_new.html">http://www.nvidia.com/object/cuda_home_new.html</a></div>
+</div>
+<p>CUDA (<em>Compute Unified Device Architecture</em>) is an API for
+<a class="reference internal" href="#gpu"><em>GPUs</em></a></p>
+<ul class="simple">
+<li><a class="reference internal" href="data-science#data-science"><em>Data Science</em></a> &gt; <a class="reference internal" href="data-science#machine-learning"><em>Machine Learning</em></a><ul>
+<li>Numba</li>
+<li>Torch</li>
+<li>deeplearning.net: vectors, matroids, <em>tensors</em></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="physx">
+<span id="index-8"></span><span id="id9"></span><h4>PhysX<a class="headerlink" href="#physx" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/PhysX">https://en.wikipedia.org/wiki/PhysX</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://developer.nvidia.com/gameworks-physx-overview">https://developer.nvidia.com/gameworks-physx-overview</a></div>
+</div>
+<p>Physics is a realtime physics engine for <a class="reference internal" href="#gpu"><em>GPUs</em></a> by Nvidia.</p>
+</div>
+</div>
+</div>
+<div class="section" id="memory">
+<span id="index-9"></span><span id="id10"></span><h2>Memory<a class="headerlink" href="#memory" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Computer_memory">https://en.wikipedia.org/wiki/Computer_memory</a></div>
+</div>
+<ul class="simple">
+<li><a class="reference internal" href="#ram"><em>RAM</em></a> &#8211; live working area (&#8220;desktop&#8221;, &#8220;workspace&#8221;)</li>
+<li><a class="reference internal" href="#persistent-storage"><em>Persistent Storage</em></a> &#8211; Hard Drive, CD/DVD, USB drive,
+SSD (&#8220;file cabinet&#8221;)</li>
+</ul>
+<div class="section" id="ram">
+<span id="index-10"></span><span id="id11"></span><h3>RAM<a class="headerlink" href="#ram" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Random-access_memory">https://en.wikipedia.org/wiki/Random-access_memory</a></div>
+</div>
+<p>RAM (<em>Random Access Memory</em>) is a category of
+volatile storage technologies
+which require voltage to remain applied in order to maintain state.</p>
+<ul class="simple">
+<li>RAM is hundreds of times faster than many/most other <em class="xref std std-ref">Storage</em>
+methods.</li>
+<li>It takes seconds for the voltage from RAM to discharge.</li>
+<li>A <em>cold boot</em> or <em>cold reboot</em> is when the RAM gets a few seconds
+(sometimes 30 or more) to discharge. (<strong>&#8220;the magic touch&#8221;</strong>)</li>
+</ul>
+</div>
+<div class="section" id="persistent-storage">
+<span id="index-11"></span><span id="id12"></span><h3>Persistent Storage<a class="headerlink" href="#persistent-storage" title="Permalink to this headline">¶</a></h3>
+<p>Slowest -&gt; Fastest:</p>
+<ul class="simple">
+<li>Punch cards</li>
+<li>Tape drives</li>
+<li>Disk drives (<em>floppy</em>: 8&#8221;, 5.25&#8221;, 3.5&#8221;)</li>
+<li>Hard drives (<em>HD</em>)</li>
+<li>Disc drives (<em>CD</em>, MiniDisc, <em>DVD</em>, <em>Blu-ray</em>, [3D-] optical storage)</li>
+<li>Solid State Drives (<em>SSD</em>)</li>
+</ul>
+<div class="section" id="hard-drives">
+<span id="index-12"></span><span id="id13"></span><h4>Hard Drives<a class="headerlink" href="#hard-drives" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>5400 RPM &#8211; notebook (energy savings; see also <a class="reference internal" href="#ssd"><em>SSD</em></a>)</li>
+<li>7200 RPM &#8211; desktop, notebook</li>
+<li>10000 RPM &#8211; high end <a class="reference internal" href="#scsi"><em>SCSI</em></a> drives</li>
+</ul>
+</div>
+<div class="section" id="ssd">
+<span id="index-13"></span><span id="id14"></span><h4>SSD<a class="headerlink" href="#ssd" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Solid-state_drive">https://en.wikipedia.org/wiki/Solid-state_drive</a></div>
+</div>
+<p>An SSD (<em>Solid-State Drive</em>) is a binary data storage device
+based on an integrated circuit that does
+not require voltage to be applied to maintain state.</p>
+<ul class="simple">
+<li>SSDs are faster and (currently) more expensive than <a class="reference internal" href="#hard-drives"><em>Hard Drives</em></a>.</li>
+<li>SSDs are more energy efficient than <a class="reference internal" href="#hard-drives"><em>Hard Drives</em></a>.</li>
+<li>Notebooks and netbooks may include or be upgraded with an SSD.</li>
+<li>Servers benefit from SSDs for caching, fast reads, and fast writes.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="data-device-bus">
+<span id="index-14"></span><span id="id15"></span><h2>Data Device Bus<a class="headerlink" href="#data-device-bus" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Bus_(computing)">https://en.wikipedia.org/wiki/Bus_(computing)</a></p>
+<div class="section" id="usb">
+<span id="index-15"></span><span id="id16"></span><h3>USB<a class="headerlink" href="#usb" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/USB">https://en.wikipedia.org/wiki/USB</a></div>
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/USB_2.0">https://en.wikipedia.org/wiki/USB_2.0</a></div>
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/USB_3.0">https://en.wikipedia.org/wiki/USB_3.0</a></div>
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/USB_Type-C">https://en.wikipedia.org/wiki/USB_Type-C</a></div>
+</div>
+<p>USB (<em>Universal Serial Bus</em>) is a group of standards
+for device interaction and one-way and two-way power and data transfer.</p>
+<ul class="simple">
+<li>Serial Bus &#8211; a routed/bridged tree of connected devices</li>
+<li>USB Hub &#8211; n-way splitter with two or more ports</li>
+<li>Powered USB Hub &#8211; USB Hub which must be plugged in; can charge many devices
+(see also: USB Type-C)</li>
+<li></li>
+</ul>
+<p>USB Connectors</p>
+<ul class="simple">
+<li>USB Type A &#8211; classic rectangular USB with pins on one side</li>
+<li>USB Type B &#8211; square USB (e.g. some printers)</li>
+<li>Mini-USB &#8211; now deprecated (see: Micro-USB)</li>
+<li>USB Mini-A &#8211; (deprecated)</li>
+<li>USB Mini-B &#8211; (deprecated)</li>
+<li>Micro-USB &#8211; industry standard OMTP (2007), ITU (2009), EU (2010)<ul>
+<li>USB Micro-A &#8211; rectangular</li>
+<li>USB Micro-B &#8211; trapezoidal</li>
+<li>USB Micro-AB &#8211; supports both Micro-A and Micro-B</li>
+<li>USB OTG (<em>on-the-go</em>) &#8211; (mobile) support for charging and hub</li>
+<li>USB 3.0 Micro-B &#8211; Micro-USB-B + <em>5 pins</em>
+(USB Micro-A cables work with USB 3.0 Micro-B connectors,
+but USB 3.0 Micro-B cables
+do not work with USB Micro-B connectors)</li>
+</ul>
+</li>
+<li>USB 3.0 Type A &#8211; classic rectangular USB with pins on one side
+(works with USB Type A)</li>
+<li>USB 3.0 Type B &#8211;</li>
+<li>USB Type-C &#8211; <em>two-way charging</em>)</li>
+</ul>
+<p>USB Buses</p>
+<ul class="simple">
+<li>USB &#8211; mbps</li>
+<li>USB 2.0 &#8211; mbps</li>
+<li>USB 3.0 &#8211; mbps</li>
+<li>USB Type-C (two-way charge + data) &#8211; mbps</li>
+</ul>
+<div class="section" id="usb-type-c">
+<span id="index-16"></span><span id="id17"></span><h4>USB Type-C<a class="headerlink" href="#usb-type-c" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/USB_Type-C">https://en.wikipedia.org/wiki/USB_Type-C</a></div>
+</div>
+<ul class="simple">
+<li><a class="reference internal" href="../tools/index#operating-systems"><em>Operating Systems</em></a>: Windows 10, OSX 10, Android M</li>
+<li>Adapters: DisplayPort, Thunderbolt, MHL</li>
+<li>USB Type-C as the primary charging interface:<ul>
+<li>Post-2015 MacBooks, Chromebook Pixel 2+</li>
+</ul>
+</li>
+<li>Vendors with portable storage drives with USB Type-C connectors (2015):<ul>
+<li>LaCie, SanDisk</li>
+</ul>
+</li>
+</ul>
+<span class="target" id="index-17"></span></div>
+</div>
+<div class="section" id="sata">
+<span id="index-18"></span><span id="id18"></span><h3>SATA<a class="headerlink" href="#sata" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Serial_ATA">https://en.wikipedia.org/wiki/Serial_ATA</a></div>
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Serial_ATA#eSATA">https://en.wikipedia.org/wiki/Serial_ATA#eSATA</a></div>
+</div>
+<p>SATA (<em>Serial</em> <em class="xref std std-ref">ATA</em>) is a data device bus standard.</p>
+<ul class="simple">
+<li>SATA is faster than (1.5, 3.0, 6.0, 16 Gbit/s)
+all current <a class="reference internal" href="#usb"><em>USB</em></a> standards
+(USB 2.0, USB 3.0. USB 3.1 (<a class="reference internal" href="#usb-type-c"><em>USB Type-C</em></a>)),
+<em class="xref std std-ref">IDE</em>, and <em class="xref std std-ref">ATA</em></li>
+</ul>
+<div class="section" id="esata">
+<span id="index-19"></span><span id="id19"></span><h4>eSATA<a class="headerlink" href="#esata" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Serial_ATA#eSATA">https://en.wikipedia.org/wiki/Serial_ATA#eSATA</a></div>
+</div>
+<p>eSATA (<em>External</em> <a class="reference internal" href="#sata"><em>SATA</em></a>) works with
+(powered, unpowered, portable) external drives.</p>
+</div>
+</div>
+<div class="section" id="scsi">
+<span id="index-20"></span><span id="id20"></span><h3>SCSI<a class="headerlink" href="#scsi" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/SCSI">https://en.wikipedia.org/wiki/SCSI</a></div>
+<div class="line">DevPrefix: <code class="docutils literal"><span class="pre">/dev/sg</span></code> (CD/DVD)</div>
+<div class="line">DevPrefix: <code class="docutils literal"><span class="pre">/dev/sd</span></code> (hardrive, USB)</div>
+<div class="line">DevFS: <code class="docutils literal"><span class="pre">/dev/scsi</span></code></div>
+</div>
+<p>SCSI (<em>Small Computer System Interface</em>) is a set of standards
+for device interaction and data interchange.</p>
+<ul class="simple">
+<li>Drives faster than 7200 RPM are often either <a class="reference internal" href="#scsi"><em>SCSI</em></a>
+or, now, <a class="reference internal" href="#sata"><em>SATA</em></a> drives</li>
+<li>Some CD/DVD devices are <a class="reference internal" href="#scsi"><em>SCSI</em></a> devices</li>
+<li><a class="reference internal" href="#sata"><em>SATA</em></a> and <a class="reference internal" href="#esata"><em>eSATA</em></a> devices
+register as SCSI devices
+with newer <a class="reference internal" href="../tools/index#linux"><em>Linux</em></a> kernels and distributions.</li>
+</ul>
+</div>
+<div class="section" id="ide-drive">
+<span id="index-21"></span><span id="ide"></span><h3>IDE<a class="headerlink" href="#ide-drive" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Parallel_ATA#IDE_and_ATA-1">https://en.wikipedia.org/wiki/Parallel_ATA#IDE_and_ATA-1</a></div>
+</div>
+<p>IDE (<em>Integrated Drive Electronics</em>) is a cable connector
+and drive interface standard which predates
+(and is now part of) the <em class="xref std std-ref">Parallel ATA</em> standards.</p>
+<ul class="simple">
+<li>Older storage devices may have an <em class="xref std std-ref">IDE</em> connector<ul>
+<li>Newer drives have <a class="reference internal" href="#usb"><em>USB</em></a>, <a class="reference internal" href="#sata"><em>SATA</em></a>, or <a class="reference internal" href="#esata"><em>eSATA</em></a>
+connectors
+(which, like IDE, all also require the drive to handle its own)</li>
+</ul>
+</li>
+</ul>
+<span class="target" id="index-22"></span><span class="target" id="index-23"></span></div>
+<div class="section" id="pata">
+<span id="index-24"></span><h3>PATA<a class="headerlink" href="#pata" title="Permalink to this headline">¶</a></h3>
+<p>PATA, ATA (<em>Parallel ATA</em> (<em>AT Attachment</em>)) is a drive interface standard
+based on ATA and ATAPI.</p>
+<ul class="simple">
+<li>Older storage devices may have an <em class="xref std std-ref">ATA</em> (<em class="xref std std-ref">PATA</em>,
+ATAPI) connector.<ul>
+<li>Newer drives have <a class="reference internal" href="#usb"><em>USB</em></a>, <a class="reference internal" href="#sata"><em>SATA</em></a>, or <a class="reference internal" href="#esata"><em>eSATA</em></a> connectors</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sata"><em>SATA</em></a> (<em>Serial ATA</em>) is derived from <em class="xref std std-ref">PATA</em> (<em>Parallel ATA</em>).</li>
+</ul>
+</div>
+</div>
+<div class="section" id="system-bus">
+<span id="index-25"></span><span id="id21"></span><h2>System Bus<a class="headerlink" href="#system-bus" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Bus_(computing)">https://en.wikipedia.org/wiki/Bus_(computing)</a></p>
+<div class="section" id="isa">
+<h3>ISA<a class="headerlink" href="#isa" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Industry_Standard_Architecture">https://en.wikipedia.org/wiki/Industry_Standard_Architecture</a></div>
+</div>
+</div>
+<div class="section" id="agp">
+<h3>AGP<a class="headerlink" href="#agp" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Accelerated_Graphics_Port">https://en.wikipedia.org/wiki/Accelerated_Graphics_Port</a></div>
+</div>
+</div>
+<div class="section" id="pci">
+<h3>PCI<a class="headerlink" href="#pci" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Conventional_PCI">https://en.wikipedia.org/wiki/Conventional_PCI</a></div>
+</div>
+</div>
+<div class="section" id="pci-e">
+<h3>PCI-e<a class="headerlink" href="#pci-e" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/PCI_Express">https://en.wikipedia.org/wiki/PCI_Express</a></div>
+</div>
+</div>
+</div>
+<div class="section" id="video-card">
+<h2>Video Card<a class="headerlink" href="#video-card" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Video_card">https://en.wikipedia.org/wiki/Video_card</a></div>
+</div>
+<p>See: <a class="reference internal" href="#gpu"><em>GPU</em></a></p>
+</div>
+</div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div><!-- /row -->
+
+      <!-- row -->
+      <div class="row footer-relbar">
+<div id="navbar-related" class=" related navbar navbar-default" role="navigation" aria-label="related navigation">
+  <div class="navbar-inner">
+    <ul class="nav navbar-nav text-center">
+        <li><a href="../index">WRD R&amp;D Documentation</a></li>
+    </ul>
+<ul class="nav navbar-nav text-center">
+      
+        <li><a href="software-development" title="Software Development" >previous</a></li>
+        <li><a href="information-systems" title="Information Systems" >next</a></li>
+        <li><a href="../py-modindex" title="Python Module Index" >modules</a></li>
+        <li><a href="../genindex" title="General Index" >index</a></li>
+        <li><a href="#">top</a></li> 
+      
+    </ul>
+  </div>
+</div>
+      </div><!-- /row -->
+
+      <!-- footer -->
+      <footer role="contentinfo">
+          &copy; <a href="../license">Copyright</a> WRD R&amp;D 2014 - 2015.
+
+      <br/>
+      <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+        <img alt="Creative Commons License"
+        style="border-width:0; padding:12px"
+        src="../_static/img/cc-by-sa-4.0-88x31.png" /></a>
+      <br />
+      <span xmlns:dct="http://purl.org/dc/terms/"
+        property="dct:title">WRD R&amp;D Documentation</span> is licensed under a 
+      <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"
+        >Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+      </footer>
+      <!-- /footer -->
+
+    </div>
+    <!-- /container -->
+
+  </body>
+</html>
