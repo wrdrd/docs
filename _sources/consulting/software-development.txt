@@ -41,18 +41,145 @@ Topics:
 * :ref:`Knowledge Engineering <knowledge-engineering>` (*applied CS*)
 * :ref:`Science` (*applied CS* with/for/on behalf of a domain)
 
-Exercises, Problems
 
-* http://rosettacode.org/wiki/Category:Programming_Tasks
-* https://projecteuler.net/problems
-* https://rosalind.info
+.. index:: Computer Science Curricula
+.. _computer science curricula:
 
-Computer Science courses and :ref:`Online Courses`:
+Computer Science Curricula
++++++++++++++++++++++++++++
 
-* http://www.acm.org/education/curricula/ComputerScience2008.pdf
+.. glossary::
+
+    Curricula
+
+      + https://en.wikipedia.org/wiki/Curriculum
+      + https://en.wikipedia.org/wiki/Open-source_curriculum
+      + https://en.wikipedia.org/wiki/Open-source_curriculum#Resources
+
+    Criteria
+
+      + https://en.wikipedia.org/wiki/Criterion
+      + `<https://en.wikipedia.org/wiki/Criterion_(disambiguation)#Science_and_mathematics>`__
+      + https://en.wikipedia.org/wiki/Information_criterion
+      + "Common Criteria" -- :ref:`information-security` platform specification
+      + "Common Core" -- US education standard:
+        https://en.wikipedia.org/wiki/Common_Core_State_Standards_Initiative
+      + :ref:`business-roi`, :ref:`is-roi`
+
+    Rubric
+
+      + `<https://en.wikipedia.org/wiki/Rubric_(academic)>`__
+      + :ref:`matrix <array>` :ref:`data structure <data-structures>`
+
+
+Computer Science criteria, guidelines, and curricula:
+
+* ACM Computer Science Curricula 2013:
+  Curriculum Guidelines for
+  Undergraduate Degree Programs
+  in Computer Science (December 20, 2013)
+
+  https://www.acm.org/education/CS2013-final-report.pdf
+
+  * AL -- Algorithms and Complexity (p.55)
+  * AR -- Architecture and Organization (p.62)
+  * CN -- Computational Science (p.68)
+  * DS -- Discrete Structures (p.76)
+  * GV -- Graphics and Visualization (p.82)
+  * HCI -- Human-Computer Interaction (p.89)
+  * IAS -- Information Assurance and Security (p.97)
+  * IM -- Information Management (p.112)
+  * IS -- Intelligent Systems (p.121)
+  * NC -- Networking and Communication (p.130)
+  * OS -- Operating Systems (p.135)
+  * PBD -- Platform-Based Development (p.142)
+  * PL -- Programming Languages (p.155)
+  * SDF -- Software Development Fundamentals (p.167)
+  * SE -- Software Engineering (p.172)
+  * SF -- Systems Fundamentals (p.186)
+  * SP -- Social Issues and Professional Practice (p.192)
+
+* ACM Computer Science Curriculum 2008:
+  An Interim Revision of CS 2001
+
+  http://www.acm.org/education/curricula/ComputerScience2008.pdf
+
+* Programmer Competency Matrix
+
+  http://sijinjoseph.com/programmer-competency-matrix/
+
+  https://competency-checklist.appspot.com/
+
+  https://github.com/hltbra/programmer-competency-checklist
+
+  * computer science
+
+    + data structures
+    + algorithms
+    + systems programming
+
+  * software engineering
+
+    + source code and version control
+    + build automation
+    + automated testing
+
+  * programming
+
+    + problem decomposition
+    + systems decomposition
+    + communication
+    + code organization within a file
+    + source tree organization
+    + code readability
+    + defensive coding
+    + error handling
+    + IDE
+    + API
+    + frameworks
+    + requirements
+    + scripting
+    + database
+
+  * knowledge
+
+    + tool knowledge
+    + languages exposed to
+    + codebase knowledge
+    + knowledge of upcoming technologies
+    + platform internals
+    + books
+    + blogs
+
+  * experience
+
+    + languages with professional experience
+    + platforms with professional experience
+    + years of professional experience
+    + domain knowledge
+
+
+.. index:: Computer Science Courses
+.. _computer science courses:
+
+Computer Science Courses
+++++++++++++++++++++++++
+
+* :ref:`education-technology` > :ref:`Online Courses`
 * https://www.khanacademy.org/cs
 * https://www.class-central.com/subject/cs
 
+
+.. index:: Computer Science Exercises
+.. _computer science exercises:
+
+Computer Science Exercises
++++++++++++++++++++++++++++
+Exercises, Problems
+
+* http://rosettacode.org/wiki/Category:Programming_Tasks
+* :ref:`project euler`
+* :ref:`rosalind`
 
 
 .. index:: Project Management

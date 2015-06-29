@@ -217,7 +217,7 @@ physical medium.
 .. _btrfs:
 
 btrfs
-~~~~~~~
++++++++
 | Wikipedia: https://en.wikipedia.org/wiki/Btrfs
 | Homepage: https://btrfs.wiki.kernel.org/index.php/Main_Page
 | Source: https://btrfs.wiki.kernel.org/index.php/Btrfs_source_repositories
@@ -238,7 +238,7 @@ copy-on-write on-disk :ref:`Linux` filesystem.
 .. _ceph:
 
 Ceph
-~~~~~
++++++
 | Wikipedia: `<https://en.wikipedia.org/wiki/Ceph_(software)>`__
 | Homepage: http://ceph.com/
 | Download: http://ceph.com/resources/downloads/
@@ -252,10 +252,10 @@ Ceph
 | Docs: http://ceph.com/docs/master/rbd/rbd-openstack/
 
 Ceph is an :ref:`Open Source <open-source>` network file system
-(a :ref:`distributed database`
+(a :ref:`distributed-database`
 for files with attributes like owner, group, permissions)
-which runs over top of an on-disk file system
-written in :ref:`C++` and :ref:`Perl`.
+written in :ref:`C++` and :ref:`Perl`
+which runs over top of one or more on-disk file systems.
 
 * Ceph Object Gateway (*radosgw*) -- :term:`RESTful API`,
   :ref:`AWS` S3 API, :ref:`OpenStack` Swift API,
@@ -273,7 +273,7 @@ written in :ref:`C++` and :ref:`Perl`.
 .. _ext:
 
 ext
-~~~~
+++++
 | Wikipedia: https://en.wikipedia.org/wiki/Ext2
 | Wikipedia: https://en.wikipedia.org/wiki/Ext3
 | Wikipedia: https://en.wikipedia.org/wiki/Ext4
@@ -290,7 +290,7 @@ on-disk filesystems.
 .. _glusterfs:
 
 GlusterFS
-~~~~~~~~~~~
++++++++++++
 | Wikipedia: https://en.wikipedia.org/wiki/GlusterFS
 | Homepage: http://www.gluster.org/
 | Project: https://forge.gluster.org/glusterfs-core
@@ -304,9 +304,9 @@ GlusterFS
 | Tcp ports: 111, 24007, 24008, 24009, 24010, 24011, 38465:38469
 
 GlusterFS is an :ref:`Open Source <open-source>` network file system
-(a :ref:`distributed database`
+(a :ref:`distributed-database`
 for files with attributes like owner, group, permissions)
-which runs over top of an on-disk file system.
+which runs over top of one or more on-disk file systems.
 
 * GlusterFS can serve volumes for :ref:`OpenStack` Cinder block storage
 
@@ -316,7 +316,7 @@ which runs over top of an on-disk file system.
 .. _lvm:
 
 LVM
-~~~~~~~~~~~~~~~~~~~~~~
+++++++++++++++++++++++
 | Wikipedia: `<https://en.wikipedia.org/wiki/Logical_Volume_Manager_(Linux)>`__
 | Homepage: https://www.sourceware.org/lvm2/
 | Source: ftp://sources.redhat.com/pub/lvm2/
@@ -436,7 +436,24 @@ Arrays
 https://en.wikipedia.org/wiki/Array_data_structure
 
 * https://en.wikipedia.org/wiki/List_of_data_structures#Arrays
-* `<https://en.wikipedia.org/wiki/Matrix_(computer_science)>`_
+
+An array is a data structure for unidimensional data.
+
+* ? A multidimensional array is said to be a :ref:`<matrix> matrix`.
+* Arrays must be resized when data grows beyond the initial
+  shape of the array.
+
+
+.. indes:: Matrix
+.. index:: Matrices
+.. _matrix:
+
+Matrices
+++++++++++
+| `<https://en.wikipedia.org/wiki/Matrix_(computer_science)>`_
+
+A matrix is a data structure for multidimensional data;
+a multidimensional :ref:`array <arrays>`.
 
 
 .. index:: Lists
@@ -448,13 +465,120 @@ https://en.wikipedia.org/wiki/Linked_list
 
 * https://en.wikipedia.org/wiki/List_of_data_structures#Lists
 
+A list is a data structure with nodes that link to 
+a next and/or previous node.
+
+
+.. index:: Graphs
+.. _graphs:
+
+Graphs
+++++++++
+| `<https://en.wikipedia.org/wiki/Graph_(abstract_data_type)>`__
+| `<https://en.wikipedia.org/wiki/Graph_(mathematics)>`__
+| `<https://en.wikipedia.org/wiki/Graph_theory>`__
+
+A graph is a :term:`system` of nodes connected by edges;
+an abstract data type for which there are a number of
+suitable data structures.
+
+* A node has edges.
+* An edge connects nodes.
+
+* Edges of **directed graphs** flow in only one direction;
+  and so require two edges with separate attributes
+  (e.g. 'magnitude', 'scale'
+
+  https://en.wikipedia.org/wiki/Directed_graph
+
+* Edges of an **undirected graph** connect nodes
+  in both directions (with the same attributes).
+
+  `<https://en.wikipedia.org/wiki/Graph_(mathematics)#Undirected_graph>`__
+
+* There are many :ref:`data structure <data structures>`
+  representatations for :ref:`graphs`:
+
+  * :ref:`RDF` is a :ref:`linked-data` format for :ref:`graphs`.
+
+* Graphs and :ref:`trees` are **traversed** (or *walked*);
+  according to a given algorithm (e.g. :ref:`DFS`, :ref:`BFS`).
+
+* Graph nodes can be listed in many different *orders*:
+
+  * Preoder
+  * Inorder
+  * Postorder
+  * Level-order 
+
+* A cartesian product has an interesting graph representation.
+
+
+.. index:: DFS
+.. index:: Depth-first search
+.. _dfs: 
+
+DFS
+`````
+| https://en.wikipedia.org/wiki/Depth-first_search
+
+DFS (*Depth-first search*) is a :ref:`graph <graphs>` traversal algorithm.
+
+::
+
+    # Given a tree:
+    1
+      1.1
+      1.2
+    2
+      2.1
+      2.2
+
+    # BFS:
+    [1, 1.1, 1.2, 2, 2.1, 2.2
+
+See also: :ref:`BSP`, Firefly Algorithm
+
+
+.. index:: BFS
+.. index:: Breadth-first search
+.. _bfs:
+
+BFS
+````
+| https://en.wikipedia.org/wiki/Breadth-first_search
+
+BFS (*Breadth-first search*) is a :ref:`graph <graphs>` traversal agorithm.
+
+::
+
+    # Given a tree:
+    1
+      1.1
+      1.2
+    2
+      2.1
+      2.2
+
+    # BFS:
+    1, 2, 1.1, 1.2, 2.1, 2.2
+
+* [ ] BFS and :ref:`BSP`
+
 
 .. index:: Trees
 .. _trees:
 
 Trees
 +++++++
-https://en.wikipedia.org/wiki/Tree_data_structure
+| https://en.wikipedia.org/wiki/Tree_data_structure
+| http://rosettacode.org/wiki/Tree_traversal
+
+A tree is a directed :ref:`graph <graphs>`.
+
+* A tree is said to have branches and leaves; or just nodes.
+
+There are many types of and applications for trees:
 
 * https://en.wikipedia.org/wiki/List_of_data_structures#Trees
 * https://en.wikipedia.org/wiki/B-tree
@@ -464,6 +588,7 @@ https://en.wikipedia.org/wiki/Tree_data_structure
 * https://en.wikipedia.org/wiki/Decision_tree
 * https://en.wikipedia.org/wiki/Minmax
 * https://en.wikipedia.org/wiki/Database_index
+* Search: Indexing, Lookup
 
 
 .. index:: Databases
