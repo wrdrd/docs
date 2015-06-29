@@ -285,7 +285,7 @@ Cloud Application Layers
 
   * Big Data storage and data local iterators:
 
-    * :ref:`MapReduce`, :ref:`Bulk Synchronous Parallel`, Pregel, GraphX
+    * :ref:`MapReduce`, :ref:`BSP`
     * HDFS, Hadoop (Spark, GraphX, Pregel, Cassandra, Accumulo, :ref:`Mesos`)
     * DDFS, Disco
 
@@ -337,16 +337,18 @@ Cloud Application Layers
 
     + Virtual storage:
 
-      - central file storage (NFS, CIFS, WebDAV)
+      - Central file storage (NFS, CIFS, WebDAV)
       - distributed file storage (:ref:`Ceph`, :ref:`GlusterFS`)
       - persistent block storage (:ref:`AWS` S3, :ref:`OpenStack` Cinder
-      - on-disk filesystems: ref:`ext4 <ext>`, :ref:`LVM`, :ref:`BTRFS`
+      - on-disk filesystems (ref:`ext4 <ext>`, :ref:`LVM`, :ref:`BTRFS`,
+        :ref:`NTFS`, :ref:`FAT`, :ref:`HFS+`)
 
     + Physical storage
 
       - SAN -- Storage Area Network (iSCSI)
-      - NAS -- Network Attached Storage
-      - :ref:`USB`, :ref:`SATA`, :ref:`SCSI`, :ref:`IDE`, :ref:`ATA`
+      - NAS -- Network Attached Storage (FreeNAS, Synology)
+      - :ref:`USB`, :ref:`SATA`, :ref:`SCSI`, :ref:`IDE <ide drive>`,
+        :ref:`ATA <PATA>` :ref:`hard drives`
 
 
 

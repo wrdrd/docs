@@ -1,6 +1,6 @@
 
 .. index:: Computer Engineering
-.. _computer engineering:
+.. _computer-engineering:
 
 *********************
 Computer Engineering
@@ -82,10 +82,12 @@ x86 is 32-bit :ref:`CPU` architecture.
 * A **PC** by a number of definitions
 
   * A PC is a computer with a
-    ref:`CPU` that runs :ref:`x86` or :ref:`x86_64` instructions.
+    :ref:`CPU` that runs :ref:`x86` or :ref:`x86_64` instructions.
   * A PC is a computer running :ref:`windows`
 
     * e.g. "Mac or PC? PC or Mac?"; where Mac = :ref:`OSX` on :ref:`x86_64`
+      and PC = :ref:`Windows` on :ref:`x86` or :ref:`x86_64`;
+      and :ref:`Linux` runs on anything.
 
 
 .. index:: x86_64
@@ -116,11 +118,15 @@ and input instructions;
 with massive parallelism.
 
 * A computer has zero or more GPUs.
+* A GPU may have internal :ref:`RAM`;
+  or may use a portion of the system ram (as with many notebooks)
 * A GPU is designed for parallel computation.
 * GPUs were designed, in particular, for realtime :ref:`3d modeling`
   (vertex pixel shading, physics)
-* A GPU operates on
-* GPUs have driven demand for faster :ref:`system bus standards`.
+* GPUs have driven demand for faster :ref:`system bus standards <system bus>`.
+* GPU-accelerated code is code that has been adapted for
+  or just runs faster on a GPU.
+* Many GPUs support GPU-accelerated :ref:`OpenGL`.
 
 
 .. index:: CUDA
@@ -134,11 +140,14 @@ CUDA
 CUDA (*Compute Unified Device Architecture*) is an API for
 :ref:`GPUs <gpu>`
 
-* :ref:`data-science` > :ref:`machine-learning`
+CUDA-accelerated libraries for
+:ref:`data-science`, :ref:`machine-learning`, :ref:`deep learning`:
 
-  + Numba
+  + Pylearn2 (Theano), Numba
   + Torch
-  + deeplearning.net: vectors, matroids, *tensors*
+  + cuBLAS (BLAS + CUDA = faster than Intel MKL)
+
+    https://developer.nvidia.com/cuBLAS
 
 
 .. index:: PhysX
@@ -176,8 +185,8 @@ RAM (*Random Access Memory*) is a category of
 volatile storage technologies
 which require voltage to remain applied in order to maintain state.
 
-* RAM is hundreds of times faster than many/most other :ref:`Storage`
-  methods.
+* RAM is hundreds of times faster than many/most other
+  :ref:`Persistent Storage` methods.
 * It takes seconds for the voltage from RAM to discharge.
 * A *cold boot* or *cold reboot* is when the RAM gets a few seconds
   (sometimes 30 or more) to discharge. (**"the magic touch"**)
@@ -193,12 +202,12 @@ Slowest -> Fastest:
 * Punch cards
 * Tape drives
 * Disk drives (*floppy*: 8", 5.25", 3.5")
-* Hard drives (*HD*)
-* Disc drives (*CD*, MiniDisc, *DVD*, *Blu-ray*, [3D-] optical storage)
-* Solid State Drives (*SSD*)
+* :ref:`Disc drives` (*CD*, MiniDisc, *DVD*, *Blu-ray*, [3D-] optical storage)
+* :ref:`Hard drives` (*HD*)
+* :ref:`SSDs <SSD>`
 
 
-.. index:: Hard Drives
+.. index:: Hard drives
 .. _hard drives:
 
 Hard Drives
@@ -223,6 +232,18 @@ not require voltage to be applied to maintain state.
 * SSDs are more energy efficient than :ref:`hard drives`.
 * Notebooks and netbooks may include or be upgraded with an SSD.
 * Servers benefit from SSDs for caching, fast reads, and fast writes.
+
+
+.. index:: Disc Drives
+.. _disc drives:
+
+Disc Drives
+~~~~~~~~~~~~
+* *CD*
+* *DVD*
+* *Blu-ray*
+* [3D-] optical storage
+
 
 
 .. index:: Data Device Bus
@@ -310,13 +331,13 @@ SATA
 | Wikipedia: https://en.wikipedia.org/wiki/Serial_ATA
 | Wikipedia: https://en.wikipedia.org/wiki/Serial_ATA#eSATA
 
-SATA (*Serial* :ref:`ATA`) is a data device bus standard.
+SATA (*Serial* :ref:`ATA <pata>`) is a data device bus standard.
 
-* SATA is faster than (1.5, 3.0, 6.0, 16 Gbit/s)
+* SATA (1.5, 3.0, 6.0, 16 Gbit/s) is faster than 
   all current :ref:`USB` standards
   (USB 2.0, USB 3.0. USB 3.1 (:ref:`USB Type-C`)),
-  :ref:`IDE`, and :ref:`ATA`
-
+  :ref:`IDE <ide drive>`, and :ref:`ATA (PATA) <pata>`
+* :ref:`eSATA` is SATA for external drives.
 
 .. index:: eSATA
 .. _esata:
@@ -361,24 +382,26 @@ IDE (*Integrated Drive Electronics*) is a cable connector
 and drive interface standard which predates
 (and is now part of) the :ref:`Parallel ATA <pata>` standards.
 
-* Older storage devices may have an :ref:`IDE` connector
+* Older storage devices may have a 40-pin :ref:`IDE <ide drive>` connector
 
   * Newer drives have :ref:`USB`, :ref:`SATA`, or :ref:`eSATA`
     connectors
-    (which, like IDE, all also require the drive to handle its own)
+    (which, like IDE, all also require the drive to handle its own
+    storage logic)
 
 
 .. index:: ATA
 .. index:: PATA
 .. index:: Parallel ATA
+.. _pata:
 
 PATA
 ----
 PATA, ATA (*Parallel ATA* (*AT Attachment*)) is a drive interface standard
 based on ATA and ATAPI.
 
-* Older storage devices may have an :ref:`ATA <ata>` (:ref:`PATA <pata>`,
-  ATAPI) connector.
+* Older storage devices may have a 40-pin :ref:`IDE <ide drive>`
+:ref:`ATA (PATA) <pata>` connector.
 
   * Newer drives have :ref:`USB`, :ref:`SATA`, or :ref:`eSATA` connectors
 

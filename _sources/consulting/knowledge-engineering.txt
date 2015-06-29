@@ -197,6 +197,22 @@ https://en.wikipedia.org/wiki/Index#Computer_science
     with an interface like a :ref:`dht`)
 
 
+.. index:: Git File Structures
+.. _git file structures:
+
+Git File Structures
+++++++++++++++++++++++
+:ref:`Git` specifies a number of file structures (see also: *bup*):
+
+* Git Objects: https://git-scm.com/book/en/v2/Git-Internals-Git-Objects
+* Git References: https://git-scm.com/book/en/v2/Git-Internals-Git-References
+* Git Packfiles: https://git-scm.com/book/en/v2/Git-Internals-Packfiles
+
+  "Git is a content-addressable :ref:`filesystem <file systems>`"
+
+  See also: **bup**
+
+
 .. index:: File Systems
 .. _file systems:
 
@@ -252,7 +268,7 @@ Ceph
 | Docs: http://ceph.com/docs/master/rbd/rbd-openstack/
 
 Ceph is an :ref:`Open Source <open-source>` network file system
-(a :ref:`distributed-database`
+(a :ref:`distributed database <distributed-databases>`
 for files with attributes like owner, group, permissions)
 written in :ref:`C++` and :ref:`Perl`
 which runs over top of one or more on-disk file systems.
@@ -283,7 +299,32 @@ ext2, ext3, and ext4 are the ext (*extended filesystem*)
 on-disk filesystems.
 
 * ext filesystems are the default filesystems of many
-  :ref:`Linux` distributions
+  :ref:`Linux` distributions.
+* :ref:`windows` machines can access ext2, ext3, and ext4 filesystems
+  with ext2explore and ext2fsd.
+* :ref:`OSX` machines can access ext2, ext3, and ext4 filesystems
+  with OSXFuse and FUSE-EXT2.
+
+
+.. index:: FAT
+.. index:: FAT12
+.. index:: FAT16
+.. index:: FAT32
+.. _fat:
+
+FAT
++++++
+| Wikipedia: https://en.wikipedia.org/wiki/File_Allocation_Table
+
+FAT is a group of on-disk filesystem standards.
+
+* FAT is used on cross-platform USB drives.
+* FAT is found on older :ref:`Windows` and DOS machines.
+* FAT12, FAT16, and FAT32 are all FAT filesystem standards.
+* FAT32 has a maximum filesize of 4GB and a maximum volume size of 2 TB.
+* :ref:`Windows` machines can read and write FAT partitions.
+* :ref:`OSX` machines can read and write FAT partitions.
+* :ref:`Linux` machines can read and write FAT partitions.
 
 
 .. index:: GlusterFS
@@ -304,11 +345,35 @@ GlusterFS
 | Tcp ports: 111, 24007, 24008, 24009, 24010, 24011, 38465:38469
 
 GlusterFS is an :ref:`Open Source <open-source>` network file system
-(a :ref:`distributed-database`
+(a :ref:`distributed database <distributed-databases>`
 for files with attributes like owner, group, permissions)
 which runs over top of one or more on-disk file systems.
 
 * GlusterFS can serve volumes for :ref:`OpenStack` Cinder block storage
+
+
+.. index:: HFS+
+.. _hfs+:
+
+HFS+
++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/HFS_Plus
+
+HFS+ (*Hierarchical Filesystem*) or *Mac OS Extended*,
+is the file system for Mac OS 8.1+ and :ref:`OSX`.
+
+* HFS+ is required for :ref:`OSX` and Time Machine.
+
+  http://www.cnet.com/how-to/the-best-ways-to-format-an-external-drive-for-windows-and-mac/
+
+* :ref:`Windows` machines can access HFS+ partitions with:
+  HFSExplorer (free, :ref:`Java`), Paragon HFS+ for Windows,
+  or MacDrive 
+
+  http://www.makeuseof.com/tag/4-ways-read-mac-formatted-drive-windows/
+
+* :ref:`Linux` machines can access HFS+ partitions with
+  ``hfsprogs`` (``apt-get install hfsprogs``, ``yum install hfsprogs``).
 
 
 .. index:: LVM
@@ -331,8 +396,27 @@ online resize and allocation
 * In LVM, *Volume Groups* (VG) contain
   *Physical Volumes* (PV) contain *Logical Volumes* (LV) 
 * LVM can do striping and high-availability sofware RAID
-* LVM (and ``device-mapper`` are part of all recent mainline
-  :ref:`Linux` builds)
+* LVM and ``device-mapper`` are now part of the :ref:`Linux`
+  kernel tree
+  (the LVM linux kernel modules are built and included
+  with most distributions' default kernel build)
+* There is feature overlap between :ref:`lvm` and :ref:`btrfs`
+  (pooling, snapshotting, copy-on-write).
+
+
+.. index:: NTFS
+.. _ntfs:
+
+NTFS
++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/NTFS
+
+NTFS is a proprietary journaling filesytem.
+
+* Windows machines since Windows NT 3.1 and Windows XP
+  default to NTFS filesystems.
+* Non-windows machines can access NTFS partitions through
+  NTFS-3G: https://en.wikipedia.org/wiki/NTFS-3G
 
 
 .. index:: Compression Algorithms
@@ -439,12 +523,13 @@ https://en.wikipedia.org/wiki/Array_data_structure
 
 An array is a data structure for unidimensional data.
 
-* ? A multidimensional array is said to be a :ref:`<matrix> matrix`.
 * Arrays must be resized when data grows beyond the initial
   shape of the array.
+* Sparse arrays are sparsely allocated.
+* A multidimensional array is said to be a :ref:`matrix <matrix>`.
 
 
-.. indes:: Matrix
+.. index:: Matrix
 .. index:: Matrices
 .. _matrix:
 
@@ -727,12 +812,33 @@ https://en.wikipedia.org/wiki/Category:Distributed_algorithms
 * `<https://en.wikipedia.org/wiki/Paxos_(computer_science)>`_
 
 
+.. index:: MapReduce
+.. _mapreduce:
+
+MapReduce
+++++++++++++
+| Wikipedia:  https://en.wikipedia.org/wiki/MapReduce
+
+MapReduce is an algorithm for distributed computation.
+
+* BigTable, Hadoop, HDFS, Disco, DDFS are built on the :ref:`mapreduce`
+  model
+
+
 .. index:: BSP
 .. index:: Bulk Synchronous Parallel
+.. _bsp:
 
 Bulk Synchronous Parallel
 ++++++++++++++++++++++++++++
 | Wikipedia: https://en.wikipedia.org/wiki/Bulk_synchronous_parallel
+
+Bulk Synchronous Parallel (*BSP*) is an algorithm for distributed computation.
+
+* Google Pregel, Apache Giraph, and Apache Spark are built for
+  a :ref:`bsp` model
+* :ref:`mapreduce` can be expressed very concisely in terms of
+  :ref:`BSP`.
 
 
 .. index:: Distributed Hash Table

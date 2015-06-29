@@ -108,6 +108,7 @@
 <li><a class="reference internal" href="#persistent-storage">Persistent Storage</a><ul>
 <li><a class="reference internal" href="#hard-drives">Hard Drives</a></li>
 <li><a class="reference internal" href="#ssd">SSD</a></li>
+<li><a class="reference internal" href="#disc-drives">Disc Drives</a></li>
 </ul>
 </li>
 </ul>
@@ -202,6 +203,7 @@
 <li><a class="reference internal" href="#persistent-storage">Persistent Storage</a><ul>
 <li><a class="reference internal" href="#hard-drives">Hard Drives</a></li>
 <li><a class="reference internal" href="#ssd">SSD</a></li>
+<li><a class="reference internal" href="#disc-drives">Disc Drives</a></li>
 </ul>
 </li>
 </ul>
@@ -374,9 +376,11 @@ and input instructions.</p>
 <ul class="simple">
 <li>A <strong>PC</strong> by a number of definitions<ul>
 <li>A PC is a computer with a
-ref:<cite>CPU</cite> that runs <a class="reference internal" href="#x86"><em>x86</em></a> or <a class="reference internal" href="#x86-64"><em>x86_64</em></a> instructions.</li>
+<a class="reference internal" href="#cpu"><em>CPU</em></a> that runs <a class="reference internal" href="#x86"><em>x86</em></a> or <a class="reference internal" href="#x86-64"><em>x86_64</em></a> instructions.</li>
 <li>A PC is a computer running <a class="reference internal" href="../tools/index#windows"><em>Windows</em></a><ul>
-<li>e.g. &#8220;Mac or PC? PC or Mac?&#8221;; where Mac = <a class="reference internal" href="../tools/index#osx"><em>OS X</em></a> on <a class="reference internal" href="#x86-64"><em>x86_64</em></a></li>
+<li>e.g. &#8220;Mac or PC? PC or Mac?&#8221;; where Mac = <a class="reference internal" href="../tools/index#osx"><em>OS X</em></a> on <a class="reference internal" href="#x86-64"><em>x86_64</em></a>
+and PC = <a class="reference internal" href="../tools/index#windows"><em>Windows</em></a> on <a class="reference internal" href="#x86"><em>x86</em></a> or <a class="reference internal" href="#x86-64"><em>x86_64</em></a>;
+and <a class="reference internal" href="../tools/index#linux"><em>Linux</em></a> runs on anything.</li>
 </ul>
 </li>
 </ul>
@@ -407,11 +411,15 @@ and input instructions;
 with massive parallelism.</p>
 <ul class="simple">
 <li>A computer has zero or more GPUs.</li>
+<li>A GPU may have internal <a class="reference internal" href="#ram"><em>RAM</em></a>;
+or may use a portion of the system ram (as with many notebooks)</li>
 <li>A GPU is designed for parallel computation.</li>
 <li>GPUs were designed, in particular, for realtime <a class="reference internal" href="art-design#d-modeling"><em>3D Modeling</em></a>
 (vertex pixel shading, physics)</li>
-<li>A GPU operates on</li>
-<li>GPUs have driven demand for faster <em class="xref std std-ref">system bus standards</em>.</li>
+<li>GPUs have driven demand for faster <a class="reference internal" href="#system-bus"><em>system bus standards</em></a>.</li>
+<li>GPU-accelerated code is code that has been adapted for
+or just runs faster on a GPU.</li>
+<li>Many GPUs support GPU-accelerated <a class="reference internal" href="art-design#opengl"><em>OpenGL</em></a>.</li>
 </ul>
 <div class="section" id="cuda">
 <span id="index-7"></span><span id="id8"></span><h4>CUDA<a class="headerlink" href="#cuda" title="Permalink to this headline">¶</a></h4>
@@ -421,14 +429,19 @@ with massive parallelism.</p>
 </div>
 <p>CUDA (<em>Compute Unified Device Architecture</em>) is an API for
 <a class="reference internal" href="#gpu"><em>GPUs</em></a></p>
-<ul class="simple">
-<li><a class="reference internal" href="data-science#data-science"><em>Data Science</em></a> &gt; <a class="reference internal" href="data-science#machine-learning"><em>Machine Learning</em></a><ul>
-<li>Numba</li>
-<li>Torch</li>
-<li>deeplearning.net: vectors, matroids, <em>tensors</em></li>
-</ul>
+<p>CUDA-accelerated libraries for
+<a class="reference internal" href="data-science#data-science"><em>Data Science</em></a>, <a class="reference internal" href="data-science#machine-learning"><em>Machine Learning</em></a>, <a class="reference internal" href="data-science#deep-learning"><em>Deep Learning</em></a>:</p>
+<blockquote>
+<div><ul>
+<li><p class="first">Pylearn2 (Theano), Numba</p>
+</li>
+<li><p class="first">Torch</p>
+</li>
+<li><p class="first">cuBLAS (BLAS + CUDA = faster than Intel MKL)</p>
+<p><a class="reference external" href="https://developer.nvidia.com/cuBLAS">https://developer.nvidia.com/cuBLAS</a></p>
 </li>
 </ul>
+</div></blockquote>
 </div>
 <div class="section" id="physx">
 <span id="index-8"></span><span id="id9"></span><h4>PhysX<a class="headerlink" href="#physx" title="Permalink to this headline">¶</a></h4>
@@ -459,8 +472,8 @@ SSD (&#8220;file cabinet&#8221;)</li>
 volatile storage technologies
 which require voltage to remain applied in order to maintain state.</p>
 <ul class="simple">
-<li>RAM is hundreds of times faster than many/most other <em class="xref std std-ref">Storage</em>
-methods.</li>
+<li>RAM is hundreds of times faster than many/most other
+<a class="reference internal" href="#persistent-storage"><em>Persistent Storage</em></a> methods.</li>
 <li>It takes seconds for the voltage from RAM to discharge.</li>
 <li>A <em>cold boot</em> or <em>cold reboot</em> is when the RAM gets a few seconds
 (sometimes 30 or more) to discharge. (<strong>&#8220;the magic touch&#8221;</strong>)</li>
@@ -473,9 +486,9 @@ methods.</li>
 <li>Punch cards</li>
 <li>Tape drives</li>
 <li>Disk drives (<em>floppy</em>: 8&#8221;, 5.25&#8221;, 3.5&#8221;)</li>
-<li>Hard drives (<em>HD</em>)</li>
-<li>Disc drives (<em>CD</em>, MiniDisc, <em>DVD</em>, <em>Blu-ray</em>, [3D-] optical storage)</li>
-<li>Solid State Drives (<em>SSD</em>)</li>
+<li><a class="reference internal" href="#disc-drives"><em>Disc Drives</em></a> (<em>CD</em>, MiniDisc, <em>DVD</em>, <em>Blu-ray</em>, [3D-] optical storage)</li>
+<li><a class="reference internal" href="#hard-drives"><em>Hard Drives</em></a> (<em>HD</em>)</li>
+<li><a class="reference internal" href="#ssd"><em>SSDs</em></a></li>
 </ul>
 <div class="section" id="hard-drives">
 <span id="index-12"></span><span id="id13"></span><h4>Hard Drives<a class="headerlink" href="#hard-drives" title="Permalink to this headline">¶</a></h4>
@@ -500,13 +513,22 @@ not require voltage to be applied to maintain state.</p>
 <li>Servers benefit from SSDs for caching, fast reads, and fast writes.</li>
 </ul>
 </div>
+<div class="section" id="disc-drives">
+<span id="index-14"></span><span id="id15"></span><h4>Disc Drives<a class="headerlink" href="#disc-drives" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><em>CD</em></li>
+<li><em>DVD</em></li>
+<li><em>Blu-ray</em></li>
+<li>[3D-] optical storage</li>
+</ul>
+</div>
 </div>
 </div>
 <div class="section" id="data-device-bus">
-<span id="index-14"></span><span id="id15"></span><h2>Data Device Bus<a class="headerlink" href="#data-device-bus" title="Permalink to this headline">¶</a></h2>
+<span id="index-15"></span><span id="id16"></span><h2>Data Device Bus<a class="headerlink" href="#data-device-bus" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Bus_(computing)">https://en.wikipedia.org/wiki/Bus_(computing)</a></p>
 <div class="section" id="usb">
-<span id="index-15"></span><span id="id16"></span><h3>USB<a class="headerlink" href="#usb" title="Permalink to this headline">¶</a></h3>
+<span id="index-16"></span><span id="id17"></span><h3>USB<a class="headerlink" href="#usb" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/USB">https://en.wikipedia.org/wiki/USB</a></div>
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/USB_2.0">https://en.wikipedia.org/wiki/USB_2.0</a></div>
@@ -553,7 +575,7 @@ do not work with USB Micro-B connectors)</li>
 <li>USB Type-C (two-way charge + data) &#8211; mbps</li>
 </ul>
 <div class="section" id="usb-type-c">
-<span id="index-16"></span><span id="id17"></span><h4>USB Type-C<a class="headerlink" href="#usb-type-c" title="Permalink to this headline">¶</a></h4>
+<span id="index-17"></span><span id="id18"></span><h4>USB Type-C<a class="headerlink" href="#usb-type-c" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/USB_Type-C">https://en.wikipedia.org/wiki/USB_Type-C</a></div>
 </div>
@@ -569,23 +591,24 @@ do not work with USB Micro-B connectors)</li>
 </ul>
 </li>
 </ul>
-<span class="target" id="index-17"></span></div>
+<span class="target" id="index-18"></span></div>
 </div>
 <div class="section" id="sata">
-<span id="index-18"></span><span id="id18"></span><h3>SATA<a class="headerlink" href="#sata" title="Permalink to this headline">¶</a></h3>
+<span id="index-19"></span><span id="id19"></span><h3>SATA<a class="headerlink" href="#sata" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Serial_ATA">https://en.wikipedia.org/wiki/Serial_ATA</a></div>
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Serial_ATA#eSATA">https://en.wikipedia.org/wiki/Serial_ATA#eSATA</a></div>
 </div>
-<p>SATA (<em>Serial</em> <em class="xref std std-ref">ATA</em>) is a data device bus standard.</p>
+<p>SATA (<em>Serial</em> <a class="reference internal" href="#pata"><em>ATA</em></a>) is a data device bus standard.</p>
 <ul class="simple">
-<li>SATA is faster than (1.5, 3.0, 6.0, 16 Gbit/s)
+<li>SATA (1.5, 3.0, 6.0, 16 Gbit/s) is faster than
 all current <a class="reference internal" href="#usb"><em>USB</em></a> standards
 (USB 2.0, USB 3.0. USB 3.1 (<a class="reference internal" href="#usb-type-c"><em>USB Type-C</em></a>)),
-<em class="xref std std-ref">IDE</em>, and <em class="xref std std-ref">ATA</em></li>
+<a class="reference internal" href="#ide-drive"><em>IDE</em></a>, and <a class="reference internal" href="#pata"><em>ATA (PATA)</em></a></li>
+<li><a class="reference internal" href="#esata"><em>eSATA</em></a> is SATA for external drives.</li>
 </ul>
 <div class="section" id="esata">
-<span id="index-19"></span><span id="id19"></span><h4>eSATA<a class="headerlink" href="#esata" title="Permalink to this headline">¶</a></h4>
+<span id="index-20"></span><span id="id20"></span><h4>eSATA<a class="headerlink" href="#esata" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Serial_ATA#eSATA">https://en.wikipedia.org/wiki/Serial_ATA#eSATA</a></div>
 </div>
@@ -594,7 +617,7 @@ all current <a class="reference internal" href="#usb"><em>USB</em></a> standards
 </div>
 </div>
 <div class="section" id="scsi">
-<span id="index-20"></span><span id="id20"></span><h3>SCSI<a class="headerlink" href="#scsi" title="Permalink to this headline">¶</a></h3>
+<span id="index-21"></span><span id="id21"></span><h3>SCSI<a class="headerlink" href="#scsi" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/SCSI">https://en.wikipedia.org/wiki/SCSI</a></div>
 <div class="line">DevPrefix: <code class="docutils literal"><span class="pre">/dev/sg</span></code> (CD/DVD)</div>
@@ -613,38 +636,43 @@ with newer <a class="reference internal" href="../tools/index#linux"><em>Linux</
 </ul>
 </div>
 <div class="section" id="ide-drive">
-<span id="index-21"></span><span id="ide"></span><h3>IDE<a class="headerlink" href="#ide-drive" title="Permalink to this headline">¶</a></h3>
+<span id="index-22"></span><span id="ide"></span><h3>IDE<a class="headerlink" href="#ide-drive" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Parallel_ATA#IDE_and_ATA-1">https://en.wikipedia.org/wiki/Parallel_ATA#IDE_and_ATA-1</a></div>
 </div>
 <p>IDE (<em>Integrated Drive Electronics</em>) is a cable connector
 and drive interface standard which predates
-(and is now part of) the <em class="xref std std-ref">Parallel ATA</em> standards.</p>
+(and is now part of) the <a class="reference internal" href="#pata"><em>Parallel ATA</em></a> standards.</p>
 <ul class="simple">
-<li>Older storage devices may have an <em class="xref std std-ref">IDE</em> connector<ul>
+<li>Older storage devices may have a 40-pin <a class="reference internal" href="#ide-drive"><em>IDE</em></a> connector<ul>
 <li>Newer drives have <a class="reference internal" href="#usb"><em>USB</em></a>, <a class="reference internal" href="#sata"><em>SATA</em></a>, or <a class="reference internal" href="#esata"><em>eSATA</em></a>
 connectors
-(which, like IDE, all also require the drive to handle its own)</li>
+(which, like IDE, all also require the drive to handle its own
+storage logic)</li>
 </ul>
 </li>
 </ul>
-<span class="target" id="index-22"></span><span class="target" id="index-23"></span></div>
+<span class="target" id="index-23"></span><span class="target" id="index-24"></span></div>
 <div class="section" id="pata">
-<span id="index-24"></span><h3>PATA<a class="headerlink" href="#pata" title="Permalink to this headline">¶</a></h3>
+<span id="index-25"></span><span id="id22"></span><h3>PATA<a class="headerlink" href="#pata" title="Permalink to this headline">¶</a></h3>
 <p>PATA, ATA (<em>Parallel ATA</em> (<em>AT Attachment</em>)) is a drive interface standard
 based on ATA and ATAPI.</p>
 <ul class="simple">
-<li>Older storage devices may have an <em class="xref std std-ref">ATA</em> (<em class="xref std std-ref">PATA</em>,
-ATAPI) connector.<ul>
+<li>Older storage devices may have a 40-pin <a class="reference internal" href="#ide-drive"><em>IDE</em></a></li>
+</ul>
+<p><a class="reference internal" href="#pata"><em>ATA (PATA)</em></a> connector.</p>
+<blockquote>
+<div><ul class="simple">
 <li>Newer drives have <a class="reference internal" href="#usb"><em>USB</em></a>, <a class="reference internal" href="#sata"><em>SATA</em></a>, or <a class="reference internal" href="#esata"><em>eSATA</em></a> connectors</li>
 </ul>
-</li>
-<li><a class="reference internal" href="#sata"><em>SATA</em></a> (<em>Serial ATA</em>) is derived from <em class="xref std std-ref">PATA</em> (<em>Parallel ATA</em>).</li>
+</div></blockquote>
+<ul class="simple">
+<li><a class="reference internal" href="#sata"><em>SATA</em></a> (<em>Serial ATA</em>) is derived from <a class="reference internal" href="#pata"><em>PATA</em></a> (<em>Parallel ATA</em>).</li>
 </ul>
 </div>
 </div>
 <div class="section" id="system-bus">
-<span id="index-25"></span><span id="id21"></span><h2>System Bus<a class="headerlink" href="#system-bus" title="Permalink to this headline">¶</a></h2>
+<span id="index-26"></span><span id="id23"></span><h2>System Bus<a class="headerlink" href="#system-bus" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Bus_(computing)">https://en.wikipedia.org/wiki/Bus_(computing)</a></p>
 <div class="section" id="isa">
 <h3>ISA<a class="headerlink" href="#isa" title="Permalink to this headline">¶</a></h3>
