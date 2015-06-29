@@ -32,8 +32,8 @@ https://en.wikipedia.org/wiki/Category:Computer_science
 Topics:
 
 * `<https://en.wikipedia.org/wiki/Abstraction_(computer_science)>`_
-* https://en.wikipedia.org/wiki/Computer_engineering
 * https://en.wikipedia.org/wiki/Category:Algorithms
+* :ref:`Computer Engineering <computer-engineering>`
 * :ref:`Data Structures`
 * :ref:`Operating Systems`
 * :ref:`Software Development <software-development>` (*applied CS*)
@@ -46,7 +46,7 @@ Topics:
 .. _computer science curricula:
 
 Computer Science Curricula
----------------------------
++++++++++++++++++++++++++++
 
 .. glossary::
 
@@ -69,7 +69,9 @@ Computer Science Curricula
     Rubric
 
       + `<https://en.wikipedia.org/wiki/Rubric_(academic)>`__
-      + :ref:`matrix <array>` :ref:`data structure <data-structures>`
+      + A rubric can be expressed with a
+        :ref:`matrix` :ref:`data structure <data structures>`
+      + A rubric can be expressed as :ref:`RDF` :ref:`Graphs`.
 
 
 Computer Science criteria, guidelines, and curricula:
@@ -163,7 +165,7 @@ Computer Science criteria, guidelines, and curricula:
 .. _computer science courses:
 
 Computer Science Courses
-~~~~~~~~~~~~~~~~~~~~~~~~
+++++++++++++++++++++++++
 
 * :ref:`education-technology` > :ref:`Online Courses`
 * https://www.khanacademy.org/cs
@@ -174,7 +176,7 @@ Computer Science Courses
 .. _computer science exercises:
 
 Computer Science Exercises
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
++++++++++++++++++++++++++++
 Exercises, Problems
 
 * http://rosettacode.org/wiki/Category:Programming_Tasks

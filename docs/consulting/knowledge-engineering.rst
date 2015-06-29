@@ -197,6 +197,22 @@ https://en.wikipedia.org/wiki/Index#Computer_science
     with an interface like a :ref:`dht`)
 
 
+.. index:: Git File Structures
+.. _git file structures:
+
+Git File Structures
+++++++++++++++++++++++
+:ref:`Git` specifies a number of file structures (see also: *bup*):
+
+* Git Objects: https://git-scm.com/book/en/v2/Git-Internals-Git-Objects
+* Git References: https://git-scm.com/book/en/v2/Git-Internals-Git-References
+* Git Packfiles: https://git-scm.com/book/en/v2/Git-Internals-Packfiles
+
+  "Git is a content-addressable :ref:`filesystem <file systems>`"
+
+  See also: **bup**
+
+
 .. index:: File Systems
 .. _file systems:
 
@@ -217,7 +233,7 @@ physical medium.
 .. _btrfs:
 
 btrfs
-~~~~~~~
++++++++
 | Wikipedia: https://en.wikipedia.org/wiki/Btrfs
 | Homepage: https://btrfs.wiki.kernel.org/index.php/Main_Page
 | Source: https://btrfs.wiki.kernel.org/index.php/Btrfs_source_repositories
@@ -238,7 +254,7 @@ copy-on-write on-disk :ref:`Linux` filesystem.
 .. _ceph:
 
 Ceph
-~~~~~
++++++
 | Wikipedia: `<https://en.wikipedia.org/wiki/Ceph_(software)>`__
 | Homepage: http://ceph.com/
 | Download: http://ceph.com/resources/downloads/
@@ -252,10 +268,10 @@ Ceph
 | Docs: http://ceph.com/docs/master/rbd/rbd-openstack/
 
 Ceph is an :ref:`Open Source <open-source>` network file system
-(a :ref:`distributed database`
+(a :ref:`distributed database <distributed-databases>`
 for files with attributes like owner, group, permissions)
-which runs over top of an on-disk file system
-written in :ref:`C++` and :ref:`Perl`.
+written in :ref:`C++` and :ref:`Perl`
+which runs over top of one or more on-disk file systems.
 
 * Ceph Object Gateway (*radosgw*) -- :term:`RESTful API`,
   :ref:`AWS` S3 API, :ref:`OpenStack` Swift API,
@@ -273,7 +289,7 @@ written in :ref:`C++` and :ref:`Perl`.
 .. _ext:
 
 ext
-~~~~
+++++
 | Wikipedia: https://en.wikipedia.org/wiki/Ext2
 | Wikipedia: https://en.wikipedia.org/wiki/Ext3
 | Wikipedia: https://en.wikipedia.org/wiki/Ext4
@@ -283,14 +299,39 @@ ext2, ext3, and ext4 are the ext (*extended filesystem*)
 on-disk filesystems.
 
 * ext filesystems are the default filesystems of many
-  :ref:`Linux` distributions
+  :ref:`Linux` distributions.
+* :ref:`windows` machines can access ext2, ext3, and ext4 filesystems
+  with ext2explore and ext2fsd.
+* :ref:`OSX` machines can access ext2, ext3, and ext4 filesystems
+  with OSXFuse and FUSE-EXT2.
+
+
+.. index:: FAT
+.. index:: FAT12
+.. index:: FAT16
+.. index:: FAT32
+.. _fat:
+
+FAT
++++++
+| Wikipedia: https://en.wikipedia.org/wiki/File_Allocation_Table
+
+FAT is a group of on-disk filesystem standards.
+
+* FAT is used on cross-platform USB drives.
+* FAT is found on older :ref:`Windows` and DOS machines.
+* FAT12, FAT16, and FAT32 are all FAT filesystem standards.
+* FAT32 has a maximum filesize of 4GB and a maximum volume size of 2 TB.
+* :ref:`Windows` machines can read and write FAT partitions.
+* :ref:`OSX` machines can read and write FAT partitions.
+* :ref:`Linux` machines can read and write FAT partitions.
 
 
 .. index:: GlusterFS
 .. _glusterfs:
 
 GlusterFS
-~~~~~~~~~~~
++++++++++++
 | Wikipedia: https://en.wikipedia.org/wiki/GlusterFS
 | Homepage: http://www.gluster.org/
 | Project: https://forge.gluster.org/glusterfs-core
@@ -304,11 +345,35 @@ GlusterFS
 | Tcp ports: 111, 24007, 24008, 24009, 24010, 24011, 38465:38469
 
 GlusterFS is an :ref:`Open Source <open-source>` network file system
-(a :ref:`distributed database`
+(a :ref:`distributed database <distributed-databases>`
 for files with attributes like owner, group, permissions)
-which runs over top of an on-disk file system.
+which runs over top of one or more on-disk file systems.
 
 * GlusterFS can serve volumes for :ref:`OpenStack` Cinder block storage
+
+
+.. index:: HFS+
+.. _hfs+:
+
+HFS+
++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/HFS_Plus
+
+HFS+ (*Hierarchical Filesystem*) or *Mac OS Extended*,
+is the file system for Mac OS 8.1+ and :ref:`OSX`.
+
+* HFS+ is required for :ref:`OSX` and Time Machine.
+
+  http://www.cnet.com/how-to/the-best-ways-to-format-an-external-drive-for-windows-and-mac/
+
+* :ref:`Windows` machines can access HFS+ partitions with:
+  HFSExplorer (free, :ref:`Java`), Paragon HFS+ for Windows,
+  or MacDrive 
+
+  http://www.makeuseof.com/tag/4-ways-read-mac-formatted-drive-windows/
+
+* :ref:`Linux` machines can access HFS+ partitions with
+  ``hfsprogs`` (``apt-get install hfsprogs``, ``yum install hfsprogs``).
 
 
 .. index:: LVM
@@ -316,7 +381,7 @@ which runs over top of an on-disk file system.
 .. _lvm:
 
 LVM
-~~~~~~~~~~~~~~~~~~~~~~
+++++++++++++++++++++++
 | Wikipedia: `<https://en.wikipedia.org/wiki/Logical_Volume_Manager_(Linux)>`__
 | Homepage: https://www.sourceware.org/lvm2/
 | Source: ftp://sources.redhat.com/pub/lvm2/
@@ -331,8 +396,27 @@ online resize and allocation
 * In LVM, *Volume Groups* (VG) contain
   *Physical Volumes* (PV) contain *Logical Volumes* (LV) 
 * LVM can do striping and high-availability sofware RAID
-* LVM (and ``device-mapper`` are part of all recent mainline
-  :ref:`Linux` builds)
+* LVM and ``device-mapper`` are now part of the :ref:`Linux`
+  kernel tree
+  (the LVM linux kernel modules are built and included
+  with most distributions' default kernel build)
+* There is feature overlap between :ref:`lvm` and :ref:`btrfs`
+  (pooling, snapshotting, copy-on-write).
+
+
+.. index:: NTFS
+.. _ntfs:
+
+NTFS
++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/NTFS
+
+NTFS is a proprietary journaling filesytem.
+
+* Windows machines since Windows NT 3.1 and Windows XP
+  default to NTFS filesystems.
+* Non-windows machines can access NTFS partitions through
+  NTFS-3G: https://en.wikipedia.org/wiki/NTFS-3G
 
 
 .. index:: Compression Algorithms
@@ -436,7 +520,25 @@ Arrays
 https://en.wikipedia.org/wiki/Array_data_structure
 
 * https://en.wikipedia.org/wiki/List_of_data_structures#Arrays
-* `<https://en.wikipedia.org/wiki/Matrix_(computer_science)>`_
+
+An array is a data structure for unidimensional data.
+
+* Arrays must be resized when data grows beyond the initial
+  shape of the array.
+* Sparse arrays are sparsely allocated.
+* A multidimensional array is said to be a :ref:`matrix <matrix>`.
+
+
+.. index:: Matrix
+.. index:: Matrices
+.. _matrix:
+
+Matrices
+++++++++++
+| `<https://en.wikipedia.org/wiki/Matrix_(computer_science)>`_
+
+A matrix is a data structure for multidimensional data;
+a multidimensional :ref:`array <arrays>`.
 
 
 .. index:: Lists
@@ -448,13 +550,120 @@ https://en.wikipedia.org/wiki/Linked_list
 
 * https://en.wikipedia.org/wiki/List_of_data_structures#Lists
 
+A list is a data structure with nodes that link to 
+a next and/or previous node.
+
+
+.. index:: Graphs
+.. _graphs:
+
+Graphs
+++++++++
+| `<https://en.wikipedia.org/wiki/Graph_(abstract_data_type)>`__
+| `<https://en.wikipedia.org/wiki/Graph_(mathematics)>`__
+| `<https://en.wikipedia.org/wiki/Graph_theory>`__
+
+A graph is a :term:`system` of nodes connected by edges;
+an abstract data type for which there are a number of
+suitable data structures.
+
+* A node has edges.
+* An edge connects nodes.
+
+* Edges of **directed graphs** flow in only one direction;
+  and so require two edges with separate attributes
+  (e.g. 'magnitude', 'scale'
+
+  https://en.wikipedia.org/wiki/Directed_graph
+
+* Edges of an **undirected graph** connect nodes
+  in both directions (with the same attributes).
+
+  `<https://en.wikipedia.org/wiki/Graph_(mathematics)#Undirected_graph>`__
+
+* There are many :ref:`data structure <data structures>`
+  representatations for :ref:`graphs`:
+
+  * :ref:`RDF` is a :ref:`linked-data` format for :ref:`graphs`.
+
+* Graphs and :ref:`trees` are **traversed** (or *walked*);
+  according to a given algorithm (e.g. :ref:`DFS`, :ref:`BFS`).
+
+* Graph nodes can be listed in many different *orders*:
+
+  * Preoder
+  * Inorder
+  * Postorder
+  * Level-order 
+
+* A cartesian product has an interesting graph representation.
+
+
+.. index:: DFS
+.. index:: Depth-first search
+.. _dfs: 
+
+DFS
+`````
+| https://en.wikipedia.org/wiki/Depth-first_search
+
+DFS (*Depth-first search*) is a :ref:`graph <graphs>` traversal algorithm.
+
+::
+
+    # Given a tree:
+    1
+      1.1
+      1.2
+    2
+      2.1
+      2.2
+
+    # BFS:
+    [1, 1.1, 1.2, 2, 2.1, 2.2
+
+See also: :ref:`BSP`, Firefly Algorithm
+
+
+.. index:: BFS
+.. index:: Breadth-first search
+.. _bfs:
+
+BFS
+````
+| https://en.wikipedia.org/wiki/Breadth-first_search
+
+BFS (*Breadth-first search*) is a :ref:`graph <graphs>` traversal agorithm.
+
+::
+
+    # Given a tree:
+    1
+      1.1
+      1.2
+    2
+      2.1
+      2.2
+
+    # BFS:
+    1, 2, 1.1, 1.2, 2.1, 2.2
+
+* [ ] BFS and :ref:`BSP`
+
 
 .. index:: Trees
 .. _trees:
 
 Trees
 +++++++
-https://en.wikipedia.org/wiki/Tree_data_structure
+| https://en.wikipedia.org/wiki/Tree_data_structure
+| http://rosettacode.org/wiki/Tree_traversal
+
+A tree is a directed :ref:`graph <graphs>`.
+
+* A tree is said to have branches and leaves; or just nodes.
+
+There are many types of and applications for trees:
 
 * https://en.wikipedia.org/wiki/List_of_data_structures#Trees
 * https://en.wikipedia.org/wiki/B-tree
@@ -464,6 +673,7 @@ https://en.wikipedia.org/wiki/Tree_data_structure
 * https://en.wikipedia.org/wiki/Decision_tree
 * https://en.wikipedia.org/wiki/Minmax
 * https://en.wikipedia.org/wiki/Database_index
+* Search: Indexing, Lookup
 
 
 .. index:: Databases
@@ -602,12 +812,33 @@ https://en.wikipedia.org/wiki/Category:Distributed_algorithms
 * `<https://en.wikipedia.org/wiki/Paxos_(computer_science)>`_
 
 
+.. index:: MapReduce
+.. _mapreduce:
+
+MapReduce
+++++++++++++
+| Wikipedia:  https://en.wikipedia.org/wiki/MapReduce
+
+MapReduce is an algorithm for distributed computation.
+
+* BigTable, Hadoop, HDFS, Disco, DDFS are built on the :ref:`mapreduce`
+  model
+
+
 .. index:: BSP
 .. index:: Bulk Synchronous Parallel
+.. _bsp:
 
 Bulk Synchronous Parallel
 ++++++++++++++++++++++++++++
 | Wikipedia: https://en.wikipedia.org/wiki/Bulk_synchronous_parallel
+
+Bulk Synchronous Parallel (*BSP*) is an algorithm for distributed computation.
+
+* Google Pregel, Apache Giraph, and Apache Spark are built for
+  a :ref:`bsp` model
+* :ref:`mapreduce` can be expressed very concisely in terms of
+  :ref:`BSP`.
 
 
 .. index:: Distributed Hash Table
