@@ -341,8 +341,7 @@ for device interaction and one-way and two-way power and data transfer.
 * Serial Bus -- a routed/bridged tree of connected devices
 * USB Hub -- n-way splitter with two or more ports
 * Powered USB Hub -- USB Hub which must be plugged in; can charge many devices
-  (see also: USB Type-C)
-*
+  (see :ref:`USB Type-C`)
 
 USB Connectors
 
@@ -364,15 +363,16 @@ USB Connectors
 
 * USB 3.0 Type A -- classic rectangular USB with pins on one side
   (works with USB Type A)
-* USB 3.0 Type B --
-* USB Type-C -- *two-way charging*)
+* USB 3.0 Type B -- USB 3.0 Type A + extra block of pins on the top 
+* :ref:`USB Type-C`
 
 USB Buses
 
-* USB -- mbps
-* USB 2.0 -- mbps
-* USB 3.0 -- mbps
-* USB Type-C (two-way charge + data) -- mbps
+* USB -- 12 mbps
+* USB 2.0 -- 480 Mbps
+* USB 3.0 -- 5000 Mbps (5 Gbps) (5 :ref:`gigabit`)
+* USB 3.1 -- 10000 Mbps (10 Gbps) (10 :ref:`gigabit`)
+* :ref:`USB Type-C` (USB 3.1; 10 GBps)
 
 
 .. index:: USB Type-C
