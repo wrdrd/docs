@@ -449,16 +449,14 @@ IDE
 ----
 | Wikipedia: https://en.wikipedia.org/wiki/Parallel_ATA#IDE_and_ATA-1
 
-IDE (*Integrated Drive Electronics*) is a cable connector
+IDE (*Integrated Drive Electronics*) is a 40-pin cable connector
 and drive interface standard which predates
 (and is now part of) the :ref:`Parallel ATA <pata>` standards.
 
-* Older storage devices may have a 40-pin :ref:`IDE <ide drive>` connector
-
-  * Newer drives have :ref:`USB`, :ref:`SATA`, or :ref:`eSATA`
-    connectors
-    (which, like IDE, all also require the drive to handle its own
-    storage logic)
+* Newer drives have :ref:`USB`, :ref:`SATA`, or :ref:`eSATA`
+  connectors
+  (which, like IDE, all also require the drive to handle its own
+  storage logic)
 
 
 .. index:: ATA
@@ -468,15 +466,13 @@ and drive interface standard which predates
 
 PATA
 ----
-PATA, ATA (*Parallel ATA* (*AT Attachment*)) is a drive interface standard
-based on ATA and ATAPI.
-
-* Older storage devices may have a 40-pin :ref:`IDE <ide drive>`
-:ref:`ATA (PATA) <pata>` connector.
-
-  * Newer drives have :ref:`USB`, :ref:`SATA`, or :ref:`eSATA` connectors
+PATA, ATA (*Parallel ATA* (*AT Attachment*)) is a 40-pin
+drive interface standard
+based on :ref:`IDE <ide drive>`, ATA and ATAPI.
 
 * :ref:`SATA` (*Serial ATA*) is derived from :ref:`PATA` (*Parallel ATA*).
+* Newer drives have :ref:`USB`, :ref:`SATA`, or :ref:`eSATA` connectors
+
 
 
 .. index:: System Bus
