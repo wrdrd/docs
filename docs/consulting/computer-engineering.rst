@@ -468,7 +468,7 @@ PATA
 ----
 PATA, ATA (*Parallel ATA* (*AT Attachment*)) is a 40-pin
 drive interface standard
-based on :ref:`IDE`, ATA and ATAPI.
+based on :ref:`IDE <ide drive>`, ATA and ATAPI.
 
 * :ref:`SATA` (*Serial ATA*) is derived from :ref:`PATA` (*Parallel ATA*).
 * Newer drives have :ref:`USB`, :ref:`SATA`, or :ref:`eSATA` connectors
