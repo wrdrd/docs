@@ -468,7 +468,7 @@ PATA
 ----
 PATA, ATA (*Parallel ATA* (*AT Attachment*)) is a 40-pin
 drive interface standard
-based on :ref:`IDE <ide drive>`, ATA and ATAPI.
+based on :ref:`IDE <ide drive>`, ATA, and ATAPI.
 
 * :ref:`SATA` (*Serial ATA*) is derived from :ref:`PATA` (*Parallel ATA*).
 * Newer drives have :ref:`USB`, :ref:`SATA`, or :ref:`eSATA` connectors
@@ -491,28 +491,12 @@ ISA
 | Wikipedia: https://en.wikipedia.org/wiki/Industry_Standard_Architecture
 
 
-.. index:: AGP
-.. _agp:
-
-AGP
-----
-| Wikipedia: https://en.wikipedia.org/wiki/Accelerated_Graphics_Port
-
-
 .. index:: PCI
 .. _pci:
 
 PCI
 ----
 | Wikipedia: https://en.wikipedia.org/wiki/Conventional_PCI
-
-
-.. index:: PCI-e
-.. _pci-e:
-
-PCI-e
--------
-| Wikipedia: https://en.wikipedia.org/wiki/PCI_Express
 
 
 .. index:: PCMCIA
@@ -529,6 +513,14 @@ PCMCIA is a standard for smaller-form-factor expansion cards.
 * There are PCI to PCMCIA adapter cards.
 
 
+.. index:: AGP
+.. _agp:
+
+AGP
+----
+| Wikipedia: https://en.wikipedia.org/wiki/Accelerated_Graphics_Port
+
+
 .. index:: ExpressCard
 .. _expresscard:
 
@@ -539,6 +531,15 @@ ExpressCard
 * Some laptops have ExpressCard slots.
 * ExpressCard supersedes the :ref:`PCMCIA` (PC Card, CardBus)
   standards for smaller-form-factor expansion cards.
+
+.. index:: PCI-e
+.. _pci-e:
+
+PCI-e
+-------
+| Wikipedia: https://en.wikipedia.org/wiki/PCI_Express
+
+
 
 
 .. index:: Network interfaces
