@@ -140,7 +140,7 @@ CUDA
 | Homepage: http://www.nvidia.com/object/cuda_home_new.html
 
 CUDA (*Compute Unified Device Architecture*) is an API for
-:ref:`GPUs <gpu>`
+:ref:`GPUs <gpu>`.
 
 CUDA-accelerated libraries for
 :ref:`data-science`, :ref:`machine-learning`, :ref:`deep learning`:
@@ -160,14 +160,14 @@ PhysX
 | Wikipedia: https://en.wikipedia.org/wiki/PhysX
 | Homepage: https://developer.nvidia.com/gameworks-physx-overview
 
-Physics is a realtime physics engine for :ref:`GPUs <gpu>` by Nvidia.
+PhysX is a realtime physics engine for :ref:`GPUs <gpu>` by Nvidia.
 
 
 Video Card
 =============
 | Wikipedia: https://en.wikipedia.org/wiki/Video_card
 
-A video card connects a :ref:`sytem bus` with a monitor
+A video card connects a :ref:`system bus` with a monitor
 through one or more display connectors
 and does computer graphics processing.
 
@@ -341,8 +341,7 @@ for device interaction and one-way and two-way power and data transfer.
 * Serial Bus -- a routed/bridged tree of connected devices
 * USB Hub -- n-way splitter with two or more ports
 * Powered USB Hub -- USB Hub which must be plugged in; can charge many devices
-  (see also: USB Type-C)
-*
+  (see :ref:`USB Type-C`)
 
 USB Connectors
 
@@ -364,15 +363,16 @@ USB Connectors
 
 * USB 3.0 Type A -- classic rectangular USB with pins on one side
   (works with USB Type A)
-* USB 3.0 Type B --
-* USB Type-C -- *two-way charging*)
+* USB 3.0 Type B -- USB 3.0 Type A + extra block of pins on the top 
+* :ref:`USB Type-C`
 
 USB Buses
 
-* USB -- mbps
-* USB 2.0 -- mbps
-* USB 3.0 -- mbps
-* USB Type-C (two-way charge + data) -- mbps
+* USB -- 12 mbps
+* USB 2.0 -- 480 Mbps
+* USB 3.0 -- 5000 Mbps (5 Gbps) (5 :ref:`gigabit`)
+* USB 3.1 -- 10000 Mbps (10 Gbps) (10 :ref:`gigabit`)
+* :ref:`USB Type-C` (USB 3.1; 10 GBps)
 
 
 .. index:: USB Type-C
