@@ -468,15 +468,13 @@ and drive interface standard which predates
 
 PATA
 ----
-PATA, ATA (*Parallel ATA* (*AT Attachment*)) is a drive interface standard
-based on ATA and ATAPI.
-
-* Older storage devices may have a 40-pin :ref:`IDE <ide drive>`
-:ref:`ATA (PATA) <pata>` connector.
-
-  * Newer drives have :ref:`USB`, :ref:`SATA`, or :ref:`eSATA` connectors
+PATA, ATA (*Parallel ATA* (*AT Attachment*)) is a 40-pin
+drive interface standard
+based on :ref:`IDE`, ATA and ATAPI.
 
 * :ref:`SATA` (*Serial ATA*) is derived from :ref:`PATA` (*Parallel ATA*).
+* Newer drives have :ref:`USB`, :ref:`SATA`, or :ref:`eSATA` connectors
+
 
 
 .. index:: System Bus
