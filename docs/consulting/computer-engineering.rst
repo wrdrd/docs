@@ -127,6 +127,8 @@ with massive parallelism.
 * GPU-accelerated code is code that has been adapted for
   or just runs faster on a GPU.
 * Many GPUs support GPU-accelerated :ref:`OpenGL`.
+* Some GPUs support :ref:`CUDA`.
+* Some GPUs support :ref:`PhysX`.
 
 
 .. index:: CUDA
@@ -159,6 +161,75 @@ PhysX
 | Homepage: https://developer.nvidia.com/gameworks-physx-overview
 
 Physics is a realtime physics engine for :ref:`GPUs <gpu>` by Nvidia.
+
+
+Video Card
+=============
+| Wikipedia: https://en.wikipedia.org/wiki/Video_card
+
+A video card connects a :ref:`sytem bus` with a monitor
+through one or more display connectors
+and does computer graphics processing.
+
+* A computer may have zero or more video cards.
+* A video card contains a :ref:`gpu`.
+
+
+.. index:: VGA
+.. _vga:
+
+VGA
+----
+| Wikipedia: https://en.wikipedia.org/wiki/Video_graphics_array
+| Wikipedia: https://en.wikipedia.org/wiki/VGA_connector
+
+VGA (*Video Graphics Array*) is a video display interface.
+
+* VGA connectors are often *blue*.
+* VGA connectors are 15-pin and trapezoidal
+* VGA predates :ref:`DVI` and :ref:`HDMI`
+* There are :ref:`VGA` to :ref:`DVI` and/or :ref:`HDMI` adapters.
+
+
+.. index:: DVI
+.. _dvi:
+
+DVI
+-----
+| Wikipedia: https://en.wikipedia.org/wiki/Digital_Visual_Interface
+| Wikipedia: https://en.wikipedia.org/wiki/Digital_Visual_Interface#Connector
+
+DVI is a video display interface.
+
+* DVI connectors are often *white*.
+* There are a number of different DVI connectors;
+  as well as Mini-DVI and Micro-DVI connectors.
+
+
+.. index:: HDMI
+.. _hdmi:
+
+HDMI
+-----
+| Wikipedia: https://en.wikipedia.org/wiki/HDMI
+| Wikipedia: https://en.wikipedia.org/wiki/HDMI#Connectors
+
+HDMI (*High-Definition Multimedia Interface*) is an audio/visual 
+interface standard.
+
+* HDMI cables carry audio and video over the same cable.
+* There are 5 types of HDMI connectors:
+
+  * Type A -- classic 19-pin HDMI
+  * Type B -- 29-pin HDMI
+  * Type C -- "Mini HDMI"  (mini- HDMI Type A)
+  * Type D -- "Micro HDMI" (looks like micro-:ref:`USB`)
+  * Type E -- automotive locking tab
+
+* HDMI can also carry :ref:`ethernet` signals.
+
+
+
 
 
 
@@ -416,25 +487,340 @@ System Bus
 
 `<https://en.wikipedia.org/wiki/Bus_(computing)>`__
 
+.. index:: ISA
+.. _isa:
+
 ISA
 ----
 | Wikipedia: https://en.wikipedia.org/wiki/Industry_Standard_Architecture
+
+
+.. index:: AGP
+.. _agp:
 
 AGP
 ----
 | Wikipedia: https://en.wikipedia.org/wiki/Accelerated_Graphics_Port
 
+
+.. index:: PCI
+.. _pci:
+
 PCI
 ----
 | Wikipedia: https://en.wikipedia.org/wiki/Conventional_PCI
+
+
+.. index:: PCI-e
+.. _pci-e:
 
 PCI-e
 -------
 | Wikipedia: https://en.wikipedia.org/wiki/PCI_Express
 
 
-Video Card
-=============
-| Wikipedia: https://en.wikipedia.org/wiki/Video_card
+.. index:: PCMCIA
+.. _pcmcia:
 
-See: :ref:`gpu`
+PCMCIA
+--------
+| Wikipedia: https://en.wikipedia.org/wiki/PC_Card
+
+PCMCIA is a standard for smaller-form-factor expansion cards.
+
+* PCMCIA is now known as "PC Card" and "CardBus".
+* Some laptops have PCMCIA slots.
+* There are PCI to PCMCIA adapter cards.
+
+
+.. index:: ExpressCard
+.. _expresscard:
+
+ExpressCard
+-------------
+| Wikipedia: https://en.wikipedia.org/wiki/ExpressCard
+
+* Some laptops have ExpressCard slots.
+* ExpressCard supersedes the :ref:`PCMCIA` (PC Card, CardBus)
+  standards for smaller-form-factor expansion cards.
+
+
+.. index:: Network interfaces
+.. _network interfaces:
+
+Network Interfaces
+====================
+
+.. index:: Gigabit
+.. _gigabit:
+
+Gigabit
+---------
+A gigabit is 1000 Mbps (1000 megabits per second).
+
+* :ref:`1000BASE-T`, :ref:`10GBASE-T`, and :ref:`40GBASE-T`
+  can all handle gigabit speeds.
+* Wireless routers before :ref:`802.11ac <802.11>` 
+  are not fast enough to handle gigabit speeds.
+
+
+.. index:: NIC
+.. nic:
+
+NIC
+-----
+A NIC (*Network Interface Card*) is a card
+that plugs into a :ref:`system bus`
+which interfaces with a wired network.
+
+
+
+.. index:: Ethernet
+.. _ethernet:
+
+Ethernet
+----------
+| Wikipedia: https://en.wikipedia.org/wiki/Ethernet_over_twisted_pair
+
+
+.. index:: CAT-5
+.. index:: CAT-5e
+.. _cat-5:
+
+CAT-5
+~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Category_5_cable
+
+A CAT-5 (*Category 5*) cable is an :ref:`ethernet` cable.
+
+* CAT-5 can carry :ref:`10base-t`, :ref:`100base-t`,
+  or :ref:`1000base-t`
+* CAT-5e is the newer CAT-5 standard.
+* A cable installer uses a *crimper tool* to *crimp*
+  connectors ("*terminators*")
+  to the end of a :ref:`CAT-5` or :ref:`CAT-6` cable.
+
+
+.. index:: CAT-6
+.. _cat-6:
+
+CAT-6
+~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Category_6_cable
+
+A CAT-6 (*Category 6*) cable is an :ref:`ethernet` cable
+
+* CAT-5 can carry :ref:`10base-t`, :ref:`100base-t`,
+  :ref:`1000base-t`, :ref:`10gbase-t`, 
+
+
+.. index:: 10BASE-T
+.. _10base-t:
+
+10BASE-T
+~~~~~~~~~~
+10Base-T is a 10 Mbps :ref:`ethernet` standard.
+
+
+.. index:: 100Base-T
+.. _100base-t:
+
+100BASE-T
+~~~~~~~~~~~~~~
+100BASE-T is a 100 Mbps :ref:`ethernet` standard.
+
+* 100BASE-T is backward-compatible with 10BASE-T
+  (some cards will say 10/100, or 10/100/1000)
+
+.. index:: 1000BASE-T
+.. _1000base-t:
+
+1000BASE-T
+~~~~~~~~~~~
+1000BASE-T is a 1000 Mbps (1 Gbps; 1 **gigabit**) :ref:`ethernet` standard.
+
+* 100BASE-T is backward-compatible with 10BASE-T
+  (some cards will say 10/100, or 10/100/1000)
+
+
+.. index:: 10GBASE-T
+.. _10gbase-t:
+
+10GBASE-T
+~~~~~~~~~~~
+10GBASE-T is a 10000 Mbps (10 Gbps) :ref:`ethernet` standard.
+
+
+.. index:: 40GBASE-T
+.. _40gbase-t:
+
+40GBASE-T
+~~~~~~~~~~~~~~~~~~~~~
+10GBASE-T is a 40000 Mbps (40 Gbps) :ref:`ethernet` standard.
+
+
+.. index:: Wireless
+.. _wireless:
+
+Wireless
+----------
+
+.. index:: 802.11
+.. _802.11:
+
+802.11
+~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/IEEE_802.11
+
+IEEE 802.11 is a group of standards for wireless networking.
+
+  IEEE 802.11 is a set of media access control (MAC)
+  and physical layer (PHY) specifications for
+  implementing wireless local area network (WLAN)
+  computer communication in the 2.4, 3.6, 5, and 60 GHz frequency bands.
+
+802.11 "WiFi" standards:
+
+* 802.11b -- 2.4 GHz -- 11 Mbps
+* 802.11g -- 2.4 GHz -- 54 Mbps
+* 802.11a -- 5 GHz -- 54 Mbp/s
+* 802.11n -- 2.4 GHz, 5 GHz -- 600 Mbps (MIMO)
+* 802.11ac -- 2.4 GHz, 5 GHz -- 1300 Mbps (MIMO)
+* 802.11ad -- 60 GHz -- 7000 Mbps ("WiGig")
+* 802.11ax -- 2.4 GHZ, 5 GHZ -- ~4x 802.11ac [ Draft ]
+* 802.11ay -- 60 Ghz -- 100000 Mbps (100 Gbps) [ Draft ]
+
+802.11 standards:
+
+* 802.11s -- wireless mesh networking
+
+
+.. index:: Mesh Wireless
+.. index:: Wireless mesh network
+.. _wireless mesh network:
+
+Wireless mesh network
+~~~~~~~~~~~~~~~~~~~~~~
+| https://en.wikipedia.org/wiki/Wireless_mesh_network
+
+Wireless mesh networks route connections between nodes.
+
+* Wireless mesh networks do not require APs.
+* Wireless mesh networks are designed to be resilient to and tolerant of
+  network failure.
+* Wireless mesh networks require ingress and egress points
+  in order to route with the wider internet.
+
+Mesh Wireless Approaches:
+
+* OLPC (*One-laptop per child*) laptops support IEEE 802.11s 
+  mesh networking with standard 802.11b/g wireless cards.
+
+  http://wiki.laptop.org/go/Mesh_Network_Details
+
+* Redstone Technologies LLC (:ref:`gigabit` wireless mesh networks)
+
+  http://redstone.us.com/simplified-wireless-architecture/
+
+
+.. index:: Mobile Broadband
+.. _mobile broadband:
+
+Mobile Broadband
+-----------------
+| https://en.wikipedia.org/wiki/Mobile_broadband
+
+
+.. index:: 3G
+.. _3g:
+
+3G
+~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/3G
+
+
+.. index:: 4G
+.. _4g:
+
+4G
+~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/4G
+
+* :ref:`LTE` is a :ref:`4G` wireless standard.
+
+
+.. index:: 5G
+.. _5g:
+
+5G
+~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/5G
+
+
+.. index:: CDMA
+.. _cdma:
+
+CDMA
+~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Code_division_multiple_access
+
+* W-CDMA (*WCDMA*) is a :ref:`3G` wireless standard.
+
+
+.. index:: GSM
+.. _gsm:
+
+GSM
+~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/GSM 
+
+
+.. index:: LTE
+.. _lte:
+
+LTE
+~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/LTE_(telecommunication)
+
+* Artemis pCell pWave LTE: http://www.artemis.com/pcell
+
+
+.. index:: Fiber
+.. _fiber:
+
+Fiber
+-------
+| https://en.wikipedia.org/wiki/Fiber-optic_communication
+| https://en.wikipedia.org/wiki/Optical_fiber
+
+Optical fiber can carry photons near the speed of light.
+
+
+.. index:: Fiber to the x
+.. _fiber to the x:
+
+Fiber to the x
+~~~~~~~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Fiber_to_the_x
+
+The various fiber deployment strategies are somewhat undescriptively
+all called "fiber to the x (*FTTX*)". 
+
+* Fiber to the neighborhood
+* Fiber to the premises
+* Fiber to the home
+
+Fiber is the way forward in *wireline* broadband networks:
+
+* https://en.wikipedia.org/wiki/Fiber_to_the_premises_by_country
+* https://en.wikipedia.org/wiki/Fiber_to_the_premises_in_the_United_States
+
+
+.. index:: Fibre Channel
+.. _fibre channel:
+
+Fibre Channel
+~~~~~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Fibre_Channel
+
+Fibre channel is an optical fiber networking technology.
