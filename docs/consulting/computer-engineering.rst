@@ -160,7 +160,7 @@ PhysX
 | Wikipedia: https://en.wikipedia.org/wiki/PhysX
 | Homepage: https://developer.nvidia.com/gameworks-physx-overview
 
-Physics is a realtime physics engine for :ref:`GPUs <gpu>` by Nvidia.
+PhysX is a realtime physics engine for :ref:`GPUs <gpu>` by Nvidia.
 
 
 Video Card
