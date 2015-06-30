@@ -140,7 +140,7 @@ CUDA
 | Homepage: http://www.nvidia.com/object/cuda_home_new.html
 
 CUDA (*Compute Unified Device Architecture*) is an API for
-:ref:`GPUs <gpu>`
+:ref:`GPUs <gpu>`.
 
 CUDA-accelerated libraries for
 :ref:`data-science`, :ref:`machine-learning`, :ref:`deep learning`:
@@ -167,7 +167,7 @@ Video Card
 =============
 | Wikipedia: https://en.wikipedia.org/wiki/Video_card
 
-A video card connects a :ref:`sytem bus` with a monitor
+A video card connects a :ref:`system bus` with a monitor
 through one or more display connectors
 and does computer graphics processing.
 
