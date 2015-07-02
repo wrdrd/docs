@@ -957,6 +957,24 @@ sound recording and editing software tool.
 * Audacity is included in :ref:`DreamStudio`, :ref:`Ubuntu Studio`
 
 
+.. index:: FLAC
+.. _flac:
+
+FLAC
+~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/FLAC
+| Homepage: https://xiph.org/flac/
+| Download: https://xiph.org/flac/download.html
+| Source: git https://git.xiph.org/flac.git
+| Docs: https://xiph.org/flac/documentation.html
+
+FLAC is an :ref:`Open Source <open-source>` lossless audio codec.
+
+* :ref:`FLAC` files are, on average, like 10x (TODO ?) the
+  file size of e.g. :ref:`MP3`, because they encode the full spectrum.
+
+
+
 .. index:: JACK
 .. _jack:
 
@@ -1233,6 +1251,37 @@ Web Production
 *****************
 
 
+.. index:: M3U
+.. _m3u:
+
+M3U
+~~~~~
+| Wikipedia: https://git.xiph.org/flac.git
+
+M3U is an audio playlist format.
+
+* An M3U file includes unqualified file :term:`URLs <url>`
+  (e.g. ``C:/music/file.mp3`` or ``/srv/music/file.mp3``)
+* An M3U file incldues HTTP :term:`URLs <url>`
+  (e.g. ``
+
+* :ref:`VLC` can playback (read) :ref:`M3U` playlists.
+
+
+.. index:: PLS
+.. _pls:
+
+PLS
+~~~~
+| Wikipedia: `<https://en.wikipedia.org/wiki/PLS_(file_format)>`__
+
+PLS is an audio playlist format.
+
+* ShoutCAST / IceCAST streams are shared in :ref:`PLS` format.
+
+* :ref:`VLC` can playback (read) :ref:`PLS` playlists.
+
+
 .. index:: Popcorn Maker
 .. _popcorn maker:
 
@@ -1255,10 +1304,21 @@ Media codecs do not solve for commenting,
 other tools support commenting on points or ranges of timecodes
 (e.g. "this part is great!" or "who is that?")
 
-* :ref:`OpenAnnotation <OA>` RDF (:ref:`Hypothesis`)
+* :ref:`OpenAnnotation`
 * SoundCloud, MixCloud
 
-Comments must then be stored on a central server,
+.. index:: OpenAnnotation
+.. _openannotation:
+
+---------------------
+OpenAnnotation
+---------------------
+:ref:`OpenAnnotation <OA>` is an :ref:`Open Source <open-source>`
+:ref:`RDF` standard for commenting
+on things with URLs and URIs.
+
+OpenAnnotation *annotations* (comments with metadata)
+can be stored on (*synced with*) a central server,
 generally under a key, URN, or URI:
 
 * Key: yA-NYmO8dDk
@@ -1267,6 +1327,61 @@ generally under a key, URN, or URI:
 * URL: https://www.youtube.com/watch?v=yA-NYmO8dDk&list=PLt_DvKGJ_QLbqVMAiFRzts--Y9xZvxLDG&index=2
 * URL: https://youtu.be/yA-NYmO8dDk
 * ShortURL: https://goo.gl/J4NJXs
+
+* :ref:`Hypothesis` is one implementation
+  of an :ref:`OpenAnnotation <OA>` RDF server API (:ref:`Python`, Pyramid)
+* There's a :ref:`Javascript` sidebar bookmarklet for :ref:`Hypothesis`
+  threaded :ref:`oa` comments.
+* There's a :ref:`Firefox` sidebar extension for :ref:`Hypothesis`
+  threaded :ref:`oa` comments.
+
+``owl:sameAs``: :ref:`Knowledge Engineering > Web Standards > OA <oa>`
+
+
+.. index:: XSPF
+.. _xspf:
+
+XSPF
+~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/XML_Shareable_Playlist_Format
+| Homepage: http://xspf.org/
+| Standard: http://xspf.org/xspf-v1.html
+| Docs: http://xspf.org/applications/
+
+XSPF (*XML Shareable Playlist Format*) is an :ref:`Open Source <open-source>` 
+media playlist format for files with :term:`URIs <uri>`, :term:`URNs <urn>`,
+and :term:`URLs <url>`.
+
+* XSPF understands ``file://``-schema-prefixed local paths.
+* XSPF understands ``http://``-prefixed remote paths.
+* XSPF is designed to be utilized with a **content resolver**;
+  which CAN or COULD lookup alternate representations
+  of resources from a given set of resource collections.
+* "What a playlist is not" http://xspf.org/xspf-v1.html#rfc.section.3.2
+* XSPF solves for all of the use cases of :ref:`m3u` and :ref:`pls`.
+* :ref:`VLC` can playback (read) :ref:`XSPF` playlists.
+
+What cannot be done with XSPF?
+
+* Cue points, crossfading, gap times
+* HTML content schema.org/description _HTML
+* schema.org/CreativeWork
+
+
+.. index:: JSPF
+.. _jspf:
+
+------
+JSPF
+------
+| Homepage: http://xspf.org/jspf/
+
+JSPF (*:ref:`JSON` Shareable Playlist Format*) is an :ref:`Open Source <open-source>`
+media playlist format for files with :term:`URIs <uri>`, :term:`URNs <urn>`,
+and :term:`URLs <url>`.
+
+- [ ] Find/create :ref:`JSON-LD` ``@context`` for :ref:`JSPF`.
+
 
 
 .. index:: Web Distribution
