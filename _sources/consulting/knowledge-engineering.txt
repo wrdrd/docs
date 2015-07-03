@@ -368,7 +368,7 @@ is the file system for Mac OS 8.1+ and :ref:`OSX`.
 
 * :ref:`Windows` machines can access HFS+ partitions with:
   HFSExplorer (free, :ref:`Java`), Paragon HFS+ for Windows,
-  or MacDrive 
+  or MacDrive
 
   http://www.makeuseof.com/tag/4-ways-read-mac-formatted-drive-windows/
 
@@ -387,14 +387,14 @@ LVM
 | Source: ftp://sources.redhat.com/pub/lvm2/
 | Docs: https://www.sourceware.org/dm/
 | Docs: http://www.tldp.org/HOWTO/LVM-HOWTO/index.html
-| Docs: 
+| Docs:
 
 LVM (*Logical Volume Manager*) is an :ref:`Open Source <open-source>`
 software disk abstraction layer with snapshotting, copy-on-write,
 online resize and allocation
 
 * In LVM, *Volume Groups* (VG) contain
-  *Physical Volumes* (PV) contain *Logical Volumes* (LV) 
+  *Physical Volumes* (PV) contain *Logical Volumes* (LV)
 * LVM can do striping and high-availability sofware RAID
 * LVM and ``device-mapper`` are now part of the :ref:`Linux`
   kernel tree
@@ -550,7 +550,7 @@ https://en.wikipedia.org/wiki/Linked_list
 
 * https://en.wikipedia.org/wiki/List_of_data_structures#Lists
 
-A list is a data structure with nodes that link to 
+A list is a data structure with nodes that link to
 a next and/or previous node.
 
 
@@ -594,14 +594,14 @@ suitable data structures.
   * Preoder
   * Inorder
   * Postorder
-  * Level-order 
+  * Level-order
 
 * A cartesian product has an interesting graph representation.
 
 
 .. index:: DFS
 .. index:: Depth-first search
-.. _dfs: 
+.. _dfs:
 
 DFS
 `````
@@ -872,7 +872,7 @@ looked up with an exact string match.
   which can be retrieved from a :ref:`DHT`::
 
     # https://tug.org/mactex/MacTeX.pkg.torrent
-    
+
 
     dht = DHT(); value = dht.get(key_uri)
 
@@ -1737,6 +1737,87 @@ for representing data as triples.
   A pattern catalogue for modelling, publishing, and
   consuming Linked Data"
   http://patterns.dataincubator.org/book/
+
+See also: :ref:`triplestores`
+
+
+.. index:: RDF Interfaces
+.. _rdf interfaces:
+
+RDF Interfaces
+````````````````
+| Standard: http://www.w3.org/TR/rdf-interfaces/
+| Docs: http://www.w3.org/TR/rdf-interfaces/#high-level-api
+
+RDF Interfaces is an :ref:`Open Source <open-source>` standard
+for :ref:`RDF` APIs (e.g. as implemented by RDF libraries
+and :ref:`triplestores`.
+
+* ``createBlankNode`` --> ``BlankNode``
+* ``createNamedNode`` --> ``NamedNode``
+* ``createLiteral`` --> ``Literal``
+* ``createTriple`` --> ``Triple``
+  (``RDFNode`` s, ``RDFNode`` p, ``RDFNode``, o)
+* ``createGraph`` --> ``[]Triple``
+* ``createAction`` --> ``TripleAction`` (``TripleFilter``, ``TripleCallback``)
+* ``createProfile`` --> ``Profile``
+* ``createTermMap`` --> ``TermMap``
+* ``createPrefixMap`` --> ``PrefixMap``
+
+Implementations of RDF Interfaces:
+
+* :ref:`Javascript` and/or :ref:`Node.js` implementations of RDF Interfaces:
+
+  http://www.w3.org/community/rdfjs/wiki/Comparison_of_RDFJS_libraries
+
+  + https://github.com/Acubed/node-rdf
+  + https://github.com/antoniogarrote/rdfstore-js
+  + https://github.com/bergos/rdf-ext
+
+* :ref:`rdflib` (:ref:`python`) mappings to RDF Interfaces:
+
+  + ``BlankNode`` -> ``rdflib.term.BNode``
+  + ``NamedNode`` -> ``rdflib.term.URIRef``, ``rdflib.term.Variable`` ? TODO
+  + ``Literal`` -> ``rdflib.term.Literal``
+  + ``Triple`` ->  ``tuple()``
+  + ``Graph`` -> ``rdflib.graph.Graph``,
+    ``rdflib.graph.ConjunctiveGraph``,
+    ``rdflib.graph.QuotedGraph``, ``list()``
+  + ``Action`` -> _____ TODO
+  + ``TripleFilter`` / ``TripleCallback`` ->
+    ``rdflib.store.TripleAddedEvent`,
+    ``rdflib.store.TripleRemovedEvent``
+  + https://rdflib.readthedocs.org/en/latest/apidocs/rdflib.html#rdflib.term.Node
+  + ``Profile`` -> ______ TODO
+  + ``TermMap`` ->  ____ TODO
+  + ``PrefixMap`` -> ``rdflib.namespace.NamespaceManager``
+    https://rdflib.readthedocs.org/en/latest/apidocs/rdflib.html#rdflib.namespace.NamespaceManager
+
+  .. note:: rdflib is not order-preserving at this time,
+     because internally it's ``dict``s and not yet
+     ``collections.OrderedDict``;
+     so output may not be in the same sequence as input
+     even when there are no changes made to the graph.
+
+     * It would be preferable to maintain the input source order
+       (though, especially for large distributed queries
+       which merge triples into one context,
+       sorted / source order is not a good assumption to make).
+     * ``rdf:List`` are ordered.
+
+       * ``rdf:List`` with :ref:`Turtle` / :ref:`N3`:
+         ``:examplePredicate [ "uno"@es, "one"@en ] ;``)
+
+          * http://www.w3.org/TR/rdf-schema/#ch_list
+          * ``rdf:first``, ``rdf:rest``, ``rdf:nil``:
+            "RDFS does not require that there be only one first element of a list-like structure, or even that a list-like structure have a first element."
+
+       * ``rdf:List`` with :ref:`JSON-LD` ``@context``:
+
+         * http://www.w3.org/TR/json-ld/#lists-and-sets
+         * http://www.w3.org/TR/json-ld/#sets-and-lists
+         * ``{"@context": {"attr": {"@container": "@list"}}}``
+         * ``{"attr": {"@list": ["one", "uno"]}}``
 
 
 .. index:: N-Triples
