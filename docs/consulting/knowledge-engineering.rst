@@ -1787,6 +1787,7 @@ Implementations of RDF Interfaces:
   + ``TripleFilter`` / ``TripleCallback`` ->
     ``rdflib.store.TripleAddedEvent`,
     ``rdflib.store.TripleRemovedEvent``
+
   + https://rdflib.readthedocs.org/en/latest/apidocs/rdflib.html#rdflib.term.Node
   + ``Profile`` -> ______ TODO
   + ``TermMap`` ->  ____ TODO
@@ -1794,9 +1795,11 @@ Implementations of RDF Interfaces:
     https://rdflib.readthedocs.org/en/latest/apidocs/rdflib.html#rdflib.namespace.NamespaceManager
 
   .. note:: rdflib is not order-preserving at this time,
-     because internally it's ``dict``s and not yet
-     ``collections.OrderedDict``;
+     because internally Graphs are represented as ``dict`` and not yet
+     ``collections.OrderedDict`` (for which there is a now C-implementation
+     in the Python 3.5 standard library);
      so output may not be in the same sequence as input
+     (or a ``rdflib.store.Store``, even)
      even when there are no changes made to the graph.
 
      * It would be preferable to maintain the input source order
