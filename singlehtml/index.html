@@ -6405,9 +6405,11 @@ and <a class="reference internal" href="#triplestores"><em>RDF Triplestores</em>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p>rdflib is not order-preserving at this time,
-because internally it&#8217;s <code class="docutils literal"><span class="pre">dict``s</span> <span class="pre">and</span> <span class="pre">not</span> <span class="pre">yet</span>
-<span class="pre">``collections.OrderedDict</span></code>;
+because internally Graphs are represented as <code class="docutils literal"><span class="pre">dict</span></code> and not yet
+<code class="docutils literal"><span class="pre">collections.OrderedDict</span></code> (for which there is a now C-implementation
+in the Python 3.5 standard library);
 so output may not be in the same sequence as input
+(or a <code class="docutils literal"><span class="pre">rdflib.store.Store</span></code>, even)
 even when there are no changes made to the graph.</p>
 <ul class="last">
 <li><p class="first">It would be preferable to maintain the input source order
@@ -14848,7 +14850,7 @@ stripsinglehtml --help
 
 <dl class="function">
 <dt id="wrdrd.tools.crawl.crawl_url">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">crawl_url</code><span class="sig-paren">(</span><em>start_url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10108f150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#crawl_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.crawl_url" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">crawl_url</code><span class="sig-paren">(</span><em>start_url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10ac57150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#crawl_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.crawl_url" title="Permalink to this definition">¶</a></dt>
 <dd><p>Crawl pages starting at <code class="docutils literal"><span class="pre">start_url</span></code></p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -15141,7 +15143,7 @@ a <a class="reference internal" href="#wrdrd.tools.crawl.Link" title="wrdrd.tool
 
 <dl class="function">
 <dt id="wrdrd.tools.crawl.print_frequency_table">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">print_frequency_table</code><span class="sig-paren">(</span><em>frequencies</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10108f150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#print_frequency_table"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.print_frequency_table" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">print_frequency_table</code><span class="sig-paren">(</span><em>frequencies</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10ac57150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#print_frequency_table"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.print_frequency_table" title="Permalink to this definition">¶</a></dt>
 <dd><p>Print a formatted ASCII frequency table</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -15295,7 +15297,7 @@ a <a class="reference internal" href="#wrdrd.tools.crawl.Link" title="wrdrd.tool
 
 <dl class="function">
 <dt id="wrdrd.tools.crawl.wrdcrawler">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">wrdcrawler</code><span class="sig-paren">(</span><em>url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10108f150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#wrdcrawler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.wrdcrawler" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">wrdcrawler</code><span class="sig-paren">(</span><em>url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10ac57150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#wrdcrawler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.wrdcrawler" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fetch and generate a report from the given URL</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
