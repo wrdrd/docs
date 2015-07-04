@@ -884,14 +884,26 @@ and :ref:`Sound Production` tools.
 Sound Production
 *****************
 | https://en.wikipedia.org/wiki/Sound
-| https://en.wikipedia.org/wiki/Acoustical_engineering
 | https://en.wikipedia.org/wiki/Sound_recording_and_reproduction
+| https://en.wikipedia.org/wiki/Audio_engineer
+
+* https://en.wikipedia.org/wiki/Mixing_console
 
 https://en.wikipedia.org/wiki/Comparison_of_free_software_for_audio
 
 https://en.wikipedia.org/wiki/List_of_Linux_audio_software
 
 https://en.wikipedia.org/wiki/Comparison_of_digital_audio_editors
+
+https://en.wikipedia.org/wiki/Recording_studio
+
+
+.. index:: Acoustical Engineering
+.. _acoustical engineering:
+
+Acoustical Engineering
+~~~~~~~~~~~~~~~~~~~~~~~~
+| https://en.wikipedia.org/wiki/Acoustical_engineering
 
 
 .. index:: DJ
@@ -930,7 +942,11 @@ Ardour is an :ref:`Open Source <open-source>`
 Digital Audio Workstation (DAW) for multi-track recording,
 editing, and mixing.
 
-* Ardour supports JACK, MIDI sequencing (drum machines), LADSPA, and LV2
+* Ardour supports :ref:`JACK`, :ref:`MIDI` sequencing (drum machines),
+  AudioUnit, :ref:`LADSPA`, LV2, Mackie control protocol, OSC
+* Ardour can sync one video in the timeline.
+* Ardour integrates with external control surfaces
+  (soundboard, mixing console, audio production surface).
 * Ardour is included in :ref:`Ubuntu Studio`.
 
 
