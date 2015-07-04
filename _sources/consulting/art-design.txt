@@ -1521,30 +1521,30 @@ CDN
 | https://en.wikipedia.org/wiki/Cache#Computing
 
 A CDN ("Content Delivery Network") is a service and infrastructure
-designed to serve content to large numbers of people,
-often from many different place.
+designed for serving :ref:`web content` efficiently
+and geodistributedly.
 
 CDN Services:
 
-* Akamai (OpenStack)
-* Amazon CloudFront (AWS)
+* Akamai (:ref:`OpenStack`)
+* :ref:`AWS` CloudFront
 * CDNJS (free): https://cdnjs.com/libraries
-* CloudFlare (free plan)
-* Fastly: GitHub Pages, :ref:`PyPI`
+* CloudFlare (free plan; optional DNS HTTPS static file compression)
+* Fastly: :ref:`GitHub Pages`, :ref:`PyPI`
 * Google: https://developers.google.com/speed/libraries/
-* Rackspace CloudFiles (:ref:`OpenStack` Swift)
+* Rackspace CDN (:ref:`OpenStack` Swift)
 
 CDN APIs
+
+* :ref:`OpenStack` Poppy CDN API (+ :ref:`OpenStack` Swift)
+
+  https://wiki.openstack.org/wiki/Poppy
 
 * :ref:`libcloud` Object Storage API:
 
   http://libcloud.readthedocs.org/en/latest/supported_providers.html#object-storage
 
-* :ref:`OpenStack` Poppy (CDN API):
-
-  https://wiki.openstack.org/wiki/Poppy
-
-* Ceph Object Gateway: Amazon S3 API and :ref:`OpenStack` Swift API
+* :ref:`Ceph` Object Gateway: :ref:`aws` S3 API and :ref:`OpenStack` Swift API
 
   http://ceph.com/docs/next/radosgw/
 
