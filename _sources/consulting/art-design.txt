@@ -1081,6 +1081,87 @@ MP3 refers to one of two :ref:`MPEG` audio codecs.
 See also: :ref:`AAC`, FLAC, Ogg, SHN
 
 
+.. index:: PulseAudio
+.. _pulseaudio:
+
+PulseAudio
+~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/PulseAudio
+| Homepage: http://www.freedesktop.org/wiki/Software/PulseAudio/
+| Source: git git://anongit.freedesktop.org/pulseaudio/pulseaudio
+| Source: http://cgit.freedesktop.org/pulseaudio/pulseaudio/
+| Download: http://www.freedesktop.org/wiki/Software/PulseAudio/Download/
+| Docs: http://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/
+| Docs: http://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/
+| Docs: http://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/Modules/
+| Docs: http://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/Network/
+| Docs: http://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/SystemWide/
+| Docs: http://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/Developer/
+| Docs: http://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/Developer/ModuleAPI/
+| Docs: http://freedesktop.org/software/pulseaudio/doxygen/
+| Docs: https://wiki.ubuntu.com/PulseAudio
+| Docs: https://wiki.archlinux.org/index.php/PulseAudio
+| Docs: https://wiki.debian.org/PulseAudio
+| Docs: https://wiki.gentoo.org/wiki/PulseAudio
+| Docs: http://mpd.wikia.com/wiki/PulseAudio
+
+PulseAudio is an :ref:`Open Source <open-source>` realtime sound server.
+
+  * How can I use PulseAudio to stream music from my main PC to my LAN with multiple PCs with speakers?
+  * How can I use PulseAudio to share a single LINE-IN/MIC jack on the entire LAN?
+  * How can I use PulseAudio as an RTP based N:N multicast conferencing solution for the LAN?
+
+* PulseAudio runs on FreeBSD, NetBSD, OpenBSD, :ref:`Linux`,
+  Solaris, :ref:`OSX`, and :ref:`Windows`
+* There are many PulseAudio modules for the PulseAudio ModuleAPI
+  http://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/Modules/
+
+  * module-native-protocol-unix, module-native-protocol-tcp --
+    PulseAudio native protocol
+  * module-rtp-send, module-rtp-recv -- RTP
+  * module-raop-discover, module-raop-sink -- AirPlay
+  * module-jack-sink, module-jack-source, module-jackdbus-detect --
+    :ref:`JACK`
+  * module-loopback, module-echo-cancel, module-equalizer-sink,
+    module-ladspa-sink :ref:`LADSPA`,
+    module-switch-on-connect, module-rescue-streams,
+    module-device-restore,
+    module-stream-restore,
+    module-card-restore -- sink, source, filters
+  * module-pipe-sink, module-pipe-source, module-always-sink,
+    module-null-sink
+  * module-zeroconf-publish, module-zeroconf-discover -- ZeroConf /
+    Bonjour peer discovery (local multicast LAN/WLAN segment)
+  * module-bluetooth-discover, module-bluetooth-policy,
+    module-bluetooth-proximity -- Bluetooth A2DP audio peer discovery
+  * module-lirc -- Infrared remote volume control
+  * module-cli -- ``pactl`` commandline interface
+
+* There are a number of volume control and mixer apps for PulseAudio.
+* ``pactl`` -- PulseAudio control CLI utility
+* ``pacmd`` -- PulseAudio runtime reconfiguration utility
+* ``pacat`` -- ``cat`` for PulseAudio servers (play (un)encoded audio)
+* ``pavucontrol`` -- PulseAudio taskbar widget (:ref:`Gnome`)
+* ``paprefs`` -- PulseAudio preferences config GUI (:ref:`Gnome`)
+* ``pax11publish`` -- PulseAudio / :ref:`X11` GUI synchronization
+
+.. code:: bash
+
+   man pulse-cli-syntax
+   man pactl
+   pactl info
+   pactl list
+   pactl load-module module-native-protocol-tcp
+   pacmd load-module module-native-protocol-tcp
+
+A :ref:`Bash` script to supports pushing all system audio
+from one machine to another (e.g. speakers
+connected to a PC or a Pi on the other side of the room):
+
+* https://github.com/westurner/dotfiles/blob/master/scripts/pulse.sh
+
+
+
 .. index:: WAV
 .. _wav:
 

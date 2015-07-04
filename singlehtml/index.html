@@ -714,6 +714,7 @@
 <li class="toctree-l3"><a class="reference internal" href="index.html#ladspa">LADSPA</a></li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#mixxx">Mixxx</a></li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#mp3">MP3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#pulseaudio">PulseAudio</a></li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#wav">WAV</a></li>
 </ul>
 </li>
@@ -8554,8 +8555,88 @@ depending on the encoding parameters</li>
 </ul>
 <p>See also: <a class="reference internal" href="#aac"><em>AAC</em></a>, FLAC, Ogg, SHN</p>
 </div>
+<div class="section" id="pulseaudio">
+<span id="index-69"></span><span id="id64"></span><h4>PulseAudio<a class="headerlink" href="#pulseaudio" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/PulseAudio">https://en.wikipedia.org/wiki/PulseAudio</a></div>
+<div class="line">Homepage: <a class="reference external" href="http://www.freedesktop.org/wiki/Software/PulseAudio/">http://www.freedesktop.org/wiki/Software/PulseAudio/</a></div>
+<div class="line">Source: git git://anongit.freedesktop.org/pulseaudio/pulseaudio</div>
+<div class="line">Source: <a class="reference external" href="http://cgit.freedesktop.org/pulseaudio/pulseaudio/">http://cgit.freedesktop.org/pulseaudio/pulseaudio/</a></div>
+<div class="line">Download: <a class="reference external" href="http://www.freedesktop.org/wiki/Software/PulseAudio/Download/">http://www.freedesktop.org/wiki/Software/PulseAudio/Download/</a></div>
+<div class="line">Docs: <a class="reference external" href="http://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/">http://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/</a></div>
+<div class="line">Docs: <a class="reference external" href="http://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/">http://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/</a></div>
+<div class="line">Docs: <a class="reference external" href="http://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/Modules/">http://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/Modules/</a></div>
+<div class="line">Docs: <a class="reference external" href="http://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/Network/">http://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/Network/</a></div>
+<div class="line">Docs: <a class="reference external" href="http://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/SystemWide/">http://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/SystemWide/</a></div>
+<div class="line">Docs: <a class="reference external" href="http://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/Developer/">http://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/Developer/</a></div>
+<div class="line">Docs: <a class="reference external" href="http://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/Developer/ModuleAPI/">http://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/Developer/ModuleAPI/</a></div>
+<div class="line">Docs: <a class="reference external" href="http://freedesktop.org/software/pulseaudio/doxygen/">http://freedesktop.org/software/pulseaudio/doxygen/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://wiki.ubuntu.com/PulseAudio">https://wiki.ubuntu.com/PulseAudio</a></div>
+<div class="line">Docs: <a class="reference external" href="https://wiki.archlinux.org/index.php/PulseAudio">https://wiki.archlinux.org/index.php/PulseAudio</a></div>
+<div class="line">Docs: <a class="reference external" href="https://wiki.debian.org/PulseAudio">https://wiki.debian.org/PulseAudio</a></div>
+<div class="line">Docs: <a class="reference external" href="https://wiki.gentoo.org/wiki/PulseAudio">https://wiki.gentoo.org/wiki/PulseAudio</a></div>
+<div class="line">Docs: <a class="reference external" href="http://mpd.wikia.com/wiki/PulseAudio">http://mpd.wikia.com/wiki/PulseAudio</a></div>
+</div>
+<p>PulseAudio is an <a class="reference internal" href="index.html#open-source"><em>Open Source</em></a> realtime sound server.</p>
+<blockquote>
+<div><ul class="simple">
+<li>How can I use PulseAudio to stream music from my main PC to my LAN with multiple PCs with speakers?</li>
+<li>How can I use PulseAudio to share a single LINE-IN/MIC jack on the entire LAN?</li>
+<li>How can I use PulseAudio as an RTP based N:N multicast conferencing solution for the LAN?</li>
+</ul>
+</div></blockquote>
+<ul class="simple">
+<li>PulseAudio runs on FreeBSD, NetBSD, OpenBSD, <a class="reference internal" href="index.html#linux"><em>Linux</em></a>,
+Solaris, <a class="reference internal" href="index.html#osx"><em>OS X</em></a>, and <a class="reference internal" href="index.html#windows"><em>Windows</em></a></li>
+<li>There are many PulseAudio modules for the PulseAudio ModuleAPI
+<a class="reference external" href="http://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/Modules/">http://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/Modules/</a><ul>
+<li>module-native-protocol-unix, module-native-protocol-tcp &#8211;
+PulseAudio native protocol</li>
+<li>module-rtp-send, module-rtp-recv &#8211; RTP</li>
+<li>module-raop-discover, module-raop-sink &#8211; AirPlay</li>
+<li>module-jack-sink, module-jack-source, module-jackdbus-detect &#8211;
+<a class="reference internal" href="#jack"><em>JACK</em></a></li>
+<li>module-loopback, module-echo-cancel, module-equalizer-sink,
+module-ladspa-sink <a class="reference internal" href="#ladspa"><em>LADSPA</em></a>,
+module-switch-on-connect, module-rescue-streams,
+module-device-restore,
+module-stream-restore,
+module-card-restore &#8211; sink, source, filters</li>
+<li>module-pipe-sink, module-pipe-source, module-always-sink,
+module-null-sink</li>
+<li>module-zeroconf-publish, module-zeroconf-discover &#8211; ZeroConf /
+Bonjour peer discovery (local multicast LAN/WLAN segment)</li>
+<li>module-bluetooth-discover, module-bluetooth-policy,
+module-bluetooth-proximity &#8211; Bluetooth A2DP audio peer discovery</li>
+<li>module-lirc &#8211; Infrared remote volume control</li>
+<li>module-cli &#8211; <code class="docutils literal"><span class="pre">pactl</span></code> commandline interface</li>
+</ul>
+</li>
+<li>There are a number of volume control and mixer apps for PulseAudio.</li>
+<li><code class="docutils literal"><span class="pre">pactl</span></code> &#8211; PulseAudio control CLI utility</li>
+<li><code class="docutils literal"><span class="pre">pacmd</span></code> &#8211; PulseAudio runtime reconfiguration utility</li>
+<li><code class="docutils literal"><span class="pre">pacat</span></code> &#8211; <code class="docutils literal"><span class="pre">cat</span></code> for PulseAudio servers (play (un)encoded audio)</li>
+<li><code class="docutils literal"><span class="pre">pavucontrol</span></code> &#8211; PulseAudio taskbar widget (<a class="reference internal" href="index.html#gnome"><em>Gnome</em></a>)</li>
+<li><code class="docutils literal"><span class="pre">paprefs</span></code> &#8211; PulseAudio preferences config GUI (<a class="reference internal" href="index.html#gnome"><em>Gnome</em></a>)</li>
+<li><code class="docutils literal"><span class="pre">pax11publish</span></code> &#8211; PulseAudio / <a class="reference internal" href="index.html#x11"><em>X11</em></a> GUI synchronization</li>
+</ul>
+<div class="code bash highlight-python"><div class="highlight"><pre>man pulse-cli-syntax
+man pactl
+pactl info
+pactl list
+pactl load-module module-native-protocol-tcp
+pacmd load-module module-native-protocol-tcp
+</pre></div>
+</div>
+<p>A <a class="reference internal" href="index.html#bash"><em>Bash</em></a> script to supports pushing all system audio
+from one machine to another (e.g. speakers
+connected to a PC or a Pi on the other side of the room):</p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/westurner/dotfiles/blob/master/scripts/pulse.sh">https://github.com/westurner/dotfiles/blob/master/scripts/pulse.sh</a></li>
+</ul>
+</div>
 <div class="section" id="wav">
-<span id="index-69"></span><span id="id64"></span><h4>WAV<a class="headerlink" href="#wav" title="Permalink to this headline">¶</a></h4>
+<span id="index-70"></span><span id="id65"></span><h4>WAV<a class="headerlink" href="#wav" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/WAV">https://en.wikipedia.org/wiki/WAV</a></div>
 </div>
@@ -8568,7 +8649,7 @@ Audio CDs are encoded with PCM and <em>Red Book audio</em></li>
 </div>
 </div>
 <div class="section" id="audio-visual-production">
-<span id="avproduction"></span><span id="index-70"></span><h3>Audio/Visual Production<a class="headerlink" href="#audio-visual-production" title="Permalink to this headline">¶</a></h3>
+<span id="avproduction"></span><span id="index-71"></span><h3>Audio/Visual Production<a class="headerlink" href="#audio-visual-production" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/Audiovisual_art">https://en.wikipedia.org/wiki/Audiovisual_art</a></div>
 <div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/Mashup_(video)">https://en.wikipedia.org/wiki/Mashup_(video)</a></div>
@@ -8578,7 +8659,7 @@ Audio CDs are encoded with PCM and <em>Red Book audio</em></li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Compression_artifact#Artistic_use">https://en.wikipedia.org/wiki/Compression_artifact#Artistic_use</a></li>
 </ul>
 <div class="section" id="vj">
-<span id="index-71"></span><span id="id65"></span><h4>VJ<a class="headerlink" href="#vj" title="Permalink to this headline">¶</a></h4>
+<span id="index-72"></span><span id="id66"></span><h4>VJ<a class="headerlink" href="#vj" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/VJing">https://en.wikipedia.org/wiki/VJing</a></div>
 <div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/DVJ">https://en.wikipedia.org/wiki/DVJ</a></div>
@@ -8588,7 +8669,7 @@ Audio CDs are encoded with PCM and <em>Red Book audio</em></li>
 </div>
 </div>
 <div class="section" id="advanced-visualization-studio">
-<span id="index-72"></span><span id="id66"></span><h4>Advanced Visualization Studio<a class="headerlink" href="#advanced-visualization-studio" title="Permalink to this headline">¶</a></h4>
+<span id="index-73"></span><span id="id67"></span><h4>Advanced Visualization Studio<a class="headerlink" href="#advanced-visualization-studio" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Advanced_Visualization_Studio">https://en.wikipedia.org/wiki/Advanced_Visualization_Studio</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://www.1014.org/code/nullsoft/avs/">http://www.1014.org/code/nullsoft/avs/</a></div>
@@ -8599,7 +8680,7 @@ tool for developing music visualization presets
 for the Winamp media player.</p>
 </div>
 <div class="section" id="geiss">
-<span id="index-73"></span><span id="id67"></span><h4>Geiss<a class="headerlink" href="#geiss" title="Permalink to this headline">¶</a></h4>
+<span id="index-74"></span><span id="id68"></span><h4>Geiss<a class="headerlink" href="#geiss" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="http://www.geisswerks.com/geiss/">http://www.geisswerks.com/geiss/</a></div>
 <div class="line">Docs: <a class="reference external" href="http://www.geisswerks.com/geiss/shots.html">http://www.geisswerks.com/geiss/shots.html</a></div>
@@ -8615,7 +8696,7 @@ just download the screensaver version of Geiss.</p>
 </div></blockquote>
 </div>
 <div class="section" id="libvisual">
-<span id="index-74"></span><span id="id68"></span><h4>libvisual<a class="headerlink" href="#libvisual" title="Permalink to this headline">¶</a></h4>
+<span id="index-75"></span><span id="id69"></span><h4>libvisual<a class="headerlink" href="#libvisual" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Libvisual">https://en.wikipedia.org/wiki/Libvisual</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://libvisual.org/">http://libvisual.org/</a></div>
@@ -8635,7 +8716,7 @@ which enables integration and reuse with a number of media players.</p>
 </ul>
 </div>
 <div class="section" id="milkdrop">
-<span id="index-75"></span><span id="id69"></span><h4>MilkDrop<a class="headerlink" href="#milkdrop" title="Permalink to this headline">¶</a></h4>
+<span id="index-76"></span><span id="id70"></span><h4>MilkDrop<a class="headerlink" href="#milkdrop" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/MilkDrop">https://en.wikipedia.org/wiki/MilkDrop</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://www.geisswerks.com/milkdrop/">http://www.geisswerks.com/milkdrop/</a></div>
@@ -8650,7 +8731,7 @@ which enables integration and reuse with a number of media players.</p>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/MilkDrop">https://en.wikipedia.org/wiki/MilkDrop</a></li>
 </ul>
 <div class="section" id="milkdrop-presets">
-<span id="index-76"></span><span id="id70"></span><h5>MilkDrop Presets<a class="headerlink" href="#milkdrop-presets" title="Permalink to this headline">¶</a></h5>
+<span id="index-77"></span><span id="id71"></span><h5>MilkDrop Presets<a class="headerlink" href="#milkdrop-presets" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Docs: <a class="reference external" href="http://www.geisswerks.com/milkdrop/milkdrop_preset_authoring.html">http://www.geisswerks.com/milkdrop/milkdrop_preset_authoring.html</a></div>
 </div>
@@ -8671,7 +8752,7 @@ which enables integration and reuse with a number of media players.</p>
 </div>
 </div>
 <div class="section" id="projectm">
-<span id="index-77"></span><span id="id71"></span><h4>ProjectM<a class="headerlink" href="#projectm" title="Permalink to this headline">¶</a></h4>
+<span id="index-78"></span><span id="id72"></span><h4>ProjectM<a class="headerlink" href="#projectm" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="http://projectm.sourceforge.net/">http://projectm.sourceforge.net/</a></div>
 <div class="line">Project: <a class="reference external" href="http://sourceforge.net/projects/projectm/">http://sourceforge.net/projects/projectm/</a></div>
@@ -8686,7 +8767,7 @@ of <a class="reference internal" href="#milkdrop"><em>MilkDrop</em></a> with <a 
 </ul>
 </div>
 <div class="section" id="resolume">
-<span id="index-78"></span><span id="id72"></span><h4>Resolume<a class="headerlink" href="#resolume" title="Permalink to this headline">¶</a></h4>
+<span id="index-79"></span><span id="id73"></span><h4>Resolume<a class="headerlink" href="#resolume" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="http://resolume.com">http://resolume.com</a></div>
 <div class="line">Download: <a class="reference external" href="http://resolume.com/download/">http://resolume.com/download/</a></div>
@@ -8702,7 +8783,7 @@ for live visuals.</p>
 </ul>
 </div>
 <div class="section" id="vvvv">
-<span id="vvvs"></span><span id="index-79"></span><h4>vvvv<a class="headerlink" href="#vvvv" title="Permalink to this headline">¶</a></h4>
+<span id="vvvs"></span><span id="index-80"></span><h4>vvvv<a class="headerlink" href="#vvvv" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Vvvv">https://en.wikipedia.org/wiki/Vvvv</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://vvvv.org/">http://vvvv.org/</a></div>
@@ -8715,9 +8796,9 @@ for <a class="reference internal" href="index.html#windows"><em>Windows</em></a>
 </div>
 </div>
 <div class="section" id="web-production">
-<span id="index-80"></span><span id="id73"></span><h3>Web Production<a class="headerlink" href="#web-production" title="Permalink to this headline">¶</a></h3>
+<span id="index-81"></span><span id="id74"></span><h3>Web Production<a class="headerlink" href="#web-production" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="m3u">
-<span id="index-81"></span><span id="id74"></span><h4>M3U<a class="headerlink" href="#m3u" title="Permalink to this headline">¶</a></h4>
+<span id="index-82"></span><span id="id75"></span><h4>M3U<a class="headerlink" href="#m3u" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://git.xiph.org/flac.git">https://git.xiph.org/flac.git</a></div>
 </div>
@@ -8731,7 +8812,7 @@ for <a class="reference internal" href="index.html#windows"><em>Windows</em></a>
 </ul>
 </div>
 <div class="section" id="pls">
-<span id="index-82"></span><span id="id75"></span><h4>PLS<a class="headerlink" href="#pls" title="Permalink to this headline">¶</a></h4>
+<span id="index-83"></span><span id="id76"></span><h4>PLS<a class="headerlink" href="#pls" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/PLS_(file_format)">https://en.wikipedia.org/wiki/PLS_(file_format)</a></div>
 </div>
@@ -8742,7 +8823,7 @@ for <a class="reference internal" href="index.html#windows"><em>Windows</em></a>
 </ul>
 </div>
 <div class="section" id="popcorn-maker">
-<span id="index-83"></span><span id="id76"></span><h4>Popcorn Maker<a class="headerlink" href="#popcorn-maker" title="Permalink to this headline">¶</a></h4>
+<span id="index-84"></span><span id="id77"></span><h4>Popcorn Maker<a class="headerlink" href="#popcorn-maker" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="https://popcorn.webmaker.org/">https://popcorn.webmaker.org/</a></div>
 </div>
@@ -8753,7 +8834,7 @@ tool for creating multitrack web media presentations.</p>
 </ul>
 </div>
 <div class="section" id="stream-annotation">
-<span id="index-84"></span><span id="id77"></span><h4>Stream Annotation<a class="headerlink" href="#stream-annotation" title="Permalink to this headline">¶</a></h4>
+<span id="index-85"></span><span id="id78"></span><h4>Stream Annotation<a class="headerlink" href="#stream-annotation" title="Permalink to this headline">¶</a></h4>
 <p>Media codecs do not solve for commenting,
 other tools support commenting on points or ranges of timecodes
 (e.g. &#8220;this part is great!&#8221; or &#8220;who is that?&#8221;)</p>
@@ -8762,7 +8843,7 @@ other tools support commenting on points or ranges of timecodes
 <li>SoundCloud, MixCloud</li>
 </ul>
 <div class="section" id="openannotation">
-<span id="index-85"></span><span id="id78"></span><h5>OpenAnnotation<a class="headerlink" href="#openannotation" title="Permalink to this headline">¶</a></h5>
+<span id="index-86"></span><span id="id79"></span><h5>OpenAnnotation<a class="headerlink" href="#openannotation" title="Permalink to this headline">¶</a></h5>
 <p><a class="reference internal" href="index.html#oa"><em>OpenAnnotation</em></a> is an <a class="reference internal" href="index.html#open-source"><em>Open Source</em></a>
 <a class="reference internal" href="index.html#rdf"><em>RDF</em></a> standard for commenting
 on things with URLs and URIs.</p>
@@ -8787,7 +8868,7 @@ threaded <a class="reference internal" href="index.html#oa"><em>OA</em></a> comm
 </div>
 </div>
 <div class="section" id="xspf">
-<span id="index-86"></span><span id="id79"></span><h4>XSPF<a class="headerlink" href="#xspf" title="Permalink to this headline">¶</a></h4>
+<span id="index-87"></span><span id="id80"></span><h4>XSPF<a class="headerlink" href="#xspf" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/XML_Shareable_Playlist_Format">https://en.wikipedia.org/wiki/XML_Shareable_Playlist_Format</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://xspf.org/">http://xspf.org/</a></div>
@@ -8814,7 +8895,7 @@ of resources from a given set of resource collections.</li>
 <li>schema.org/CreativeWork</li>
 </ul>
 <div class="section" id="jspf">
-<span id="index-87"></span><span id="id80"></span><h5>JSPF<a class="headerlink" href="#jspf" title="Permalink to this headline">¶</a></h5>
+<span id="index-88"></span><span id="id81"></span><h5>JSPF<a class="headerlink" href="#jspf" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="http://xspf.org/jspf/">http://xspf.org/jspf/</a></div>
 </div>
@@ -8828,7 +8909,7 @@ and <a class="reference internal" href="index.html#term-url"><em class="xref std
 </div>
 </div>
 <div class="section" id="web-distribution">
-<span id="index-88"></span><span id="id81"></span><h3>Web Distribution<a class="headerlink" href="#web-distribution" title="Permalink to this headline">¶</a></h3>
+<span id="index-89"></span><span id="id82"></span><h3>Web Distribution<a class="headerlink" href="#web-distribution" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/Streaming_media">https://en.wikipedia.org/wiki/Streaming_media</a></div>
 <div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/New_media">https://en.wikipedia.org/wiki/New_media</a></div>
@@ -8860,8 +8941,8 @@ through a file / stream distribution / caching / archiving network:</p>
 </div></blockquote>
 </li>
 </ul>
-<span class="target" id="index-89"></span><div class="section" id="cdn">
-<span id="index-90"></span><span id="id82"></span><h4>CDN<a class="headerlink" href="#cdn" title="Permalink to this headline">¶</a></h4>
+<span class="target" id="index-90"></span><div class="section" id="cdn">
+<span id="index-91"></span><span id="id83"></span><h4>CDN<a class="headerlink" href="#cdn" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Content_delivery_network">https://en.wikipedia.org/wiki/Content_delivery_network</a></div>
 <div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/Content_delivery_network#Notable_content_delivery_service_providers">https://en.wikipedia.org/wiki/Content_delivery_network#Notable_content_delivery_service_providers</a></div>
@@ -8894,7 +8975,7 @@ often from many different place.</p>
 </ul>
 </div>
 <div class="section" id="bittorrent">
-<span id="index-91"></span><span id="id83"></span><h4>BitTorrent<a class="headerlink" href="#bittorrent" title="Permalink to this headline">¶</a></h4>
+<span id="index-92"></span><span id="id84"></span><h4>BitTorrent<a class="headerlink" href="#bittorrent" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/BitTorrent">https://en.wikipedia.org/wiki/BitTorrent</a></div>
 <div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/Comparison_of_BitTorrent_clients">https://en.wikipedia.org/wiki/Comparison_of_BitTorrent_clients</a></div>
@@ -8980,7 +9061,7 @@ when I just copy the file to my other device)
 can be shared over BitTorrent all the same.</p>
 </div>
 <div class="section" id="debtorrent">
-<span id="index-92"></span><span id="id84"></span><h5>debtorrent<a class="headerlink" href="#debtorrent" title="Permalink to this headline">¶</a></h5>
+<span id="index-93"></span><span id="id85"></span><h5>debtorrent<a class="headerlink" href="#debtorrent" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="https://wiki.debian.org/DebTorrent">https://wiki.debian.org/DebTorrent</a></div>
 <div class="line">Standard: <a class="reference external" href="https://wiki.debian.org/DebTorrent/Protocol">https://wiki.debian.org/DebTorrent/Protocol</a></div>
@@ -9005,7 +9086,7 @@ echo &#39;deb debtorrent://localhost:9988/foo distro main&#39; | \
 </ul>
 </div>
 <div class="section" id="webtorrent">
-<span id="index-93"></span><span id="id85"></span><h5>webtorrent<a class="headerlink" href="#webtorrent" title="Permalink to this headline">¶</a></h5>
+<span id="index-94"></span><span id="id86"></span><h5>webtorrent<a class="headerlink" href="#webtorrent" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Source: git <a class="reference external" href="https://github.com/feross/webtorrent">https://github.com/feross/webtorrent</a></div>
 </div>
@@ -9020,14 +9101,14 @@ or <a class="reference internal" href="index.html#node-js"><em>Node.js</em></a>.
 </div>
 </div>
 <div class="section" id="named-data-networking">
-<span id="index-94"></span><span id="id86"></span><h4>Named Data Networking<a class="headerlink" href="#named-data-networking" title="Permalink to this headline">¶</a></h4>
+<span id="index-95"></span><span id="id87"></span><h4>Named Data Networking<a class="headerlink" href="#named-data-networking" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Named_data_networking">https://en.wikipedia.org/wiki/Named_data_networking</a></div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="steam">
-<span id="index-95"></span><span id="id87"></span><h4>Steam<a class="headerlink" href="#steam" title="Permalink to this headline">¶</a></h4>
+<span id="index-96"></span><span id="id88"></span><h4>Steam<a class="headerlink" href="#steam" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Steam_(software)">https://en.wikipedia.org/wiki/Steam_(software)</a></div>
 </div>
@@ -9041,7 +9122,7 @@ more local peers
 (e.g. everyone at the LAN party purchases the game)</li>
 </ul>
 <div class="section" id="kerbal-space-program">
-<span id="index-96"></span><span id="id88"></span><h5>Kerbal Space Program<a class="headerlink" href="#kerbal-space-program" title="Permalink to this headline">¶</a></h5>
+<span id="index-97"></span><span id="id89"></span><h5>Kerbal Space Program<a class="headerlink" href="#kerbal-space-program" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Kerbal_Space_Program">https://en.wikipedia.org/wiki/Kerbal_Space_Program</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://kerbalspaceprogram.com/">https://kerbalspaceprogram.com/</a></div>
@@ -9069,7 +9150,7 @@ and will affect the way a ship flies (or doesn&#8217;t).</p>
 </div>
 </div>
 <div class="section" id="tube-sites">
-<span id="index-97"></span><span id="id89"></span><h4>Tube Sites<a class="headerlink" href="#tube-sites" title="Permalink to this headline">¶</a></h4>
+<span id="index-98"></span><span id="id90"></span><h4>Tube Sites<a class="headerlink" href="#tube-sites" title="Permalink to this headline">¶</a></h4>
 <p>Fueled by the dramatic growth of YouTube,
 the term &#8220;Tube Site&#8221; refers to any of a number of sites
 serving (seekable) video;
@@ -9089,9 +9170,9 @@ and <a class="reference internal" href="#mpeg-dash"><em>MPEG-DASH</em></a>.</p>
 <li>featured playlists</li>
 <li>related content</li>
 </ul>
-<span class="target" id="index-98"></span></div>
+<span class="target" id="index-99"></span></div>
 <div class="section" id="http-live-streaming">
-<span id="index-99"></span><span id="id90"></span><h4>HTTP Live Streaming<a class="headerlink" href="#http-live-streaming" title="Permalink to this headline">¶</a></h4>
+<span id="index-100"></span><span id="id91"></span><h4>HTTP Live Streaming<a class="headerlink" href="#http-live-streaming" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/HTTP_Live_Streaming">https://en.wikipedia.org/wiki/HTTP_Live_Streaming</a></div>
 <div class="line">Standard: <a class="reference external" href="http://tools.ietf.org/html/draft-pantos-http-live-streaming">http://tools.ietf.org/html/draft-pantos-http-live-streaming</a></div>
@@ -9114,7 +9195,7 @@ over <a class="reference internal" href="index.html#http"><em>HTTP</em></a>.</p>
 </ul>
 </div>
 <div class="section" id="mpeg-dash">
-<span id="index-100"></span><span id="id91"></span><h4>MPEG-DASH<a class="headerlink" href="#mpeg-dash" title="Permalink to this headline">¶</a></h4>
+<span id="index-101"></span><span id="id92"></span><h4>MPEG-DASH<a class="headerlink" href="#mpeg-dash" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP">https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP</a></div>
 <div class="line">Standard: <a class="reference external" href="http://www.iso.org/iso/home/store/catalogue_ics/catalogue_detail_ics.htm?csnumber=65274">http://www.iso.org/iso/home/store/catalogue_ics/catalogue_detail_ics.htm?csnumber=65274</a></div>
@@ -9138,7 +9219,7 @@ which is not necessary to enjoy MPEG-DASH adaptability.</li>
 </ul>
 </div>
 <div class="section" id="nginx-rtmp-module">
-<span id="index-101"></span><span id="id92"></span><h4>nginx-rtmp-module<a class="headerlink" href="#nginx-rtmp-module" title="Permalink to this headline">¶</a></h4>
+<span id="index-102"></span><span id="id93"></span><h4>nginx-rtmp-module<a class="headerlink" href="#nginx-rtmp-module" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Nginx-rtmp-module">https://en.wikipedia.org/wiki/Nginx-rtmp-module</a></div>
 <div class="line">Source: git <a class="reference external" href="https://github.com/arut/nginx-rtmp-module">https://github.com/arut/nginx-rtmp-module</a></div>
@@ -9160,7 +9241,7 @@ audio / video compression / decompression codecs</li>
 </div>
 </div>
 <div class="section" id="video-chat">
-<span id="index-102"></span><span id="id93"></span><h3>Video Chat<a class="headerlink" href="#video-chat" title="Permalink to this headline">¶</a></h3>
+<span id="index-103"></span><span id="id94"></span><h3>Video Chat<a class="headerlink" href="#video-chat" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Videoconferencing">https://en.wikipedia.org/wiki/Videoconferencing</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Videotelephony">https://en.wikipedia.org/wiki/Videotelephony</a></p>
 <p>Video chat: what might&#8217;ve been an exercise in
@@ -9194,10 +9275,10 @@ audio / video compression / decompression codecs</li>
 </ul>
 </div>
 <div class="section" id="media-tools">
-<span id="index-103"></span><span id="id94"></span><h3>Media Tools<a class="headerlink" href="#media-tools" title="Permalink to this headline">¶</a></h3>
+<span id="index-104"></span><span id="id95"></span><h3>Media Tools<a class="headerlink" href="#media-tools" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="http://distrowatch.com/search.php?category=Multimedia">http://distrowatch.com/search.php?category=Multimedia</a></p>
-<span class="target" id="index-104"></span><div class="section" id="dreamstudio">
-<span id="index-105"></span><span id="id95"></span><h4>DreamStudio<a class="headerlink" href="#dreamstudio" title="Permalink to this headline">¶</a></h4>
+<span class="target" id="index-105"></span><div class="section" id="dreamstudio">
+<span id="index-106"></span><span id="id96"></span><h4>DreamStudio<a class="headerlink" href="#dreamstudio" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="http://www.celeum.com/dreamstudio/">http://www.celeum.com/dreamstudio/</a></div>
 <div class="line">Source: <a class="reference external" href="http://sourceforge.net/projects/dreamstudio/">http://sourceforge.net/projects/dreamstudio/</a></div>
@@ -9214,7 +9295,7 @@ software licenses.</li>
 </ul>
 </div>
 <div class="section" id="ubuntu-studio">
-<span id="index-106"></span><span id="id96"></span><h4>Ubuntu Studio<a class="headerlink" href="#ubuntu-studio" title="Permalink to this headline">¶</a></h4>
+<span id="index-107"></span><span id="id97"></span><h4>Ubuntu Studio<a class="headerlink" href="#ubuntu-studio" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Ubuntu_Studio">https://en.wikipedia.org/wiki/Ubuntu_Studio</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://ubuntustudio.org/">http://ubuntustudio.org/</a></div>
@@ -9236,7 +9317,7 @@ all Free and <a class="reference internal" href="index.html#open-source"><em>Ope
 </ul>
 </div>
 <div class="section" id="vlc">
-<span id="index-107"></span><span id="id97"></span><h4>VLC<a class="headerlink" href="#vlc" title="Permalink to this headline">¶</a></h4>
+<span id="index-108"></span><span id="id98"></span><h4>VLC<a class="headerlink" href="#vlc" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/VLC_media_player">https://en.wikipedia.org/wiki/VLC_media_player</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://www.videolan.org/vlc/">https://www.videolan.org/vlc/</a></div>
@@ -14909,7 +14990,7 @@ stripsinglehtml --help
 
 <dl class="function">
 <dt id="wrdrd.tools.crawl.crawl_url">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">crawl_url</code><span class="sig-paren">(</span><em>start_url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x1010ae150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#crawl_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.crawl_url" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">crawl_url</code><span class="sig-paren">(</span><em>start_url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10477b150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#crawl_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.crawl_url" title="Permalink to this definition">¶</a></dt>
 <dd><p>Crawl pages starting at <code class="docutils literal"><span class="pre">start_url</span></code></p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -15202,7 +15283,7 @@ a <a class="reference internal" href="#wrdrd.tools.crawl.Link" title="wrdrd.tool
 
 <dl class="function">
 <dt id="wrdrd.tools.crawl.print_frequency_table">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">print_frequency_table</code><span class="sig-paren">(</span><em>frequencies</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x1010ae150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#print_frequency_table"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.print_frequency_table" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">print_frequency_table</code><span class="sig-paren">(</span><em>frequencies</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10477b150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#print_frequency_table"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.print_frequency_table" title="Permalink to this definition">¶</a></dt>
 <dd><p>Print a formatted ASCII frequency table</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -15356,7 +15437,7 @@ a <a class="reference internal" href="#wrdrd.tools.crawl.Link" title="wrdrd.tool
 
 <dl class="function">
 <dt id="wrdrd.tools.crawl.wrdcrawler">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">wrdcrawler</code><span class="sig-paren">(</span><em>url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x1010ae150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#wrdcrawler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.wrdcrawler" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">wrdcrawler</code><span class="sig-paren">(</span><em>url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10477b150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#wrdcrawler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.wrdcrawler" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fetch and generate a report from the given URL</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
