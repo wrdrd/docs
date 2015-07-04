@@ -1481,7 +1481,7 @@ BitTorrent is a file distribution protocol built on top of :ref:`HTTP`.
 
 * A BitTorrent client downloads pieces of files over :ref:`HTTP`
   from **peers** discovered through a tracker
-  or another peer discovery protocol (such as a DHT).
+  or another peer discovery protocol (such as a :ref:`DHT`).
 * BitTorrent magnet URIs open in an installed BitTorrent downloading
   program (e.g. BitTorrent, uTorrent,
   Transmission (:ref:`Gnome`),
@@ -1504,7 +1504,7 @@ BitTorrent is a file distribution protocol built on top of :ref:`HTTP`.
     A BitTorrent ``.torrent`` file includes:
 
     * SHA-1 checksum hashes of all the pieces of all the files
-    * (optional) a DHT key (for trackerless peer discovery)
+    * (optional) a :ref:`DHT` key (for trackerless peer discovery)
     * (optional) a list of HTTP :term:`BitTorrent Tracker` URLs
     * (optional) a list of HTTP :term:`Web Seeds <web seeding>`.
 
@@ -1518,7 +1518,7 @@ BitTorrent is a file distribution protocol built on top of :ref:`HTTP`.
     A BitTorrent Client
     opens a :term:`BitTorrent Torrent File`,
     registers with the given :term:`BitTorrent Trackers <bittorrent tracker>`,
-    looks for peers in a DHT,
+    looks for peers in a :ref:`DHT`,
     downloads the pieces of the files listed
     by choosing faster (more efficient, less costly, ~more local) peers
     to download from,
@@ -1529,7 +1529,7 @@ BitTorrent is a file distribution protocol built on top of :ref:`HTTP`.
     checksummed copy of all of the pieces of all the files
     in a :term:`BitTorrent Torrent File`
     which a peer is sharing through a :term:`BitTorrent tracker`
-    or a DHT.
+    or a :ref:`DHT`.
 
   Web Seeding
     Web Seeding is when one or more
