@@ -1147,30 +1147,66 @@ Unix time is the delta in seconds since
 .. _year zero:
 
 Year Zero
-----------
+++++++++++
 `<https://en.wikipedia.org/wiki/0_(year)>`__
 
-* The Gregorian Calendar (e.g. :ref:`Common Era`) does not include a year zero.
+* The Gregorian Calendar (e.g. :ref:`Common Era`) does not include
+  a :ref:`year zero`;
   (1 BCE is followed by 1 CE)
+* :ref:`Astronomical year numbering` includes a :ref:`year zero`.
+* :ref:`Before Present` dates do not specify a :ref:`year zero`
+  (because they are relative to the current (or *published*) date).
+
+
+.. index:: Astronomical year numbering
+.. _astronomical year numbering:
+
+Astronomical year numbering
+++++++++++++++++++++++++++++
+https://en.wikipedia.org/wiki/Astronomical_year_numbering
 
 * Astronomical year numbering includes a year zero:
 
-  https://en.wikipedia.org/wiki/Astronomical_year_numbering
+Tools with support for :ref:`astronomical year numbering`:
+
+* AstroPy is a :ref:`Python` library that supports astronomical year numbering:
+
+  https://astropy.readthedocs.org/en/latest/time/
+
+
+
+.. index:: Before Present
+.. index:: BP
+.. _bp:
+
+Before Present
+++++++++++++++++
+https://en.wikipedia.org/wiki/Before_Present
+
+Before Present (*BP*) dates are relative to the current date
+(or *date of publication*); e.g. "2.6 million years ago".
 
 
 .. index:: Common Era
 .. _common era:
 
 Common Era
-------------
+++++++++++++
 | https://en.wikipedia.org/wiki/Common_Era
 | https://en.wikipedia.org/wiki/Pax_Romana
 | :ref:`Year Zero`
 
-* BCE (*Before Common Era*) == **BC** (
+* BCE (*Before Common Era*) == BC
+
+  * https://en.wiktionary.org/wiki/BCE
+  * https://en.wiktionary.org/wiki/BC
+
 * CE (*Common Era*) == **AD** (*Anno Domini*)
 
-::
+  * https://en.wiktionary.org/wiki/CE
+  * https://en.wiktionary.org/wiki/AD
+
+Common Era and :ref:`Year Zero`::
 
        5000 BCE == -5000 CE
           1 BCE ==    -1 CE
@@ -1179,7 +1215,9 @@ Common Era
           1  CE ==     1 CE
        2015  CE ==  2015 CE
 
-::
+Common Era and :ref:`Python` datetime calculations:
+
+.. code:: python
 
     # Paleolithic Era (2.6m years ago -> 12000 years ago)
     # "2.6m years ago" = (2.6m - (2015)) BCE = 2597985 BCE = -2597985 CE
@@ -1207,6 +1245,7 @@ Common Era
     ### https://astropy.readthedocs.org/en/latest/time/
     >>> !conda install astropy
     >>> import astropy.time
+    >>> # TimeJulianEpoch (Julian date (jd) ~= Common Era (CE))
     >>> astropy.time.Time(-2.6e6, format='jd', scale='utc')
     <Time object: scale='utc' format='jd' value=-2600000.0>
 
