@@ -1142,6 +1142,75 @@ Unix time is the delta in seconds since
    https://en.wikipedia.org/wiki/Unix_time#Leap_seconds
 
 
+.. index:: Year Zero
+.. index:: 0 (Year)
+.. _year zero:
+
+Year Zero
+----------
+`<https://en.wikipedia.org/wiki/0_(year)>`__
+
+* The Gregorian Calendar (e.g. :ref:`Common Era`) does not include a year zero.
+  (1 BCE is followed by 1 CE)
+
+* Astronomical year numbering includes a year zero:
+
+  https://en.wikipedia.org/wiki/Astronomical_year_numbering
+
+
+.. index:: Common Era
+.. _common era:
+
+Common Era
+------------
+| https://en.wikipedia.org/wiki/Common_Era
+| https://en.wikipedia.org/wiki/Pax_Romana
+| :ref:`Year Zero`
+
+* BCE (*Before Common Era*) == **BC** (
+* CE (*Common Era*) == **AD** (*Anno Domini*)
+
+::
+
+       5000 BCE == -5000 CE
+          1 BCE ==    -1 CE
+          0 BCE ==     0 CE
+          0  CE ==     0 BCE
+          1  CE ==     1 CE
+       2015  CE ==  2015 CE
+
+::
+
+    # Paleolithic Era (2.6m years ago -> 12000 years ago)
+    # "2.6m years ago" = (2.6m - (2015)) BCE = 2597985 BCE = -2597985 CE
+
+    2597985 BCE == -2597985 CE
+
+    ### Python datetime w/ scientific notation string formatter
+    >>> import datetime
+    >>> year = datetime.datetime.now().year
+    >>> '{:.6e}'.format(2.6e6 - year)
+    '2.597985e+06'
+
+    ### Python datetime supports (dates >= 1 BCE).
+    >>> datetime.date(1, 1, 1)
+    datetime.date(1, 1, 1)
+    >>> datetime.datetime(1, 1, 1)
+    >>> datetime.datetime(1, 1, 1, 0, 0)
+
+    ### Python pypi:arrow supports (dates >= 1 BCE).
+    >>> !pip install arrow
+    >>> arrow.get(1, 1, 1)
+    <Arrow [0001-01-01T00:00:00+00:00]>
+
+    ### astropy.time.Time supports (1 BCE <= dates >= 1 CE) and/or *Year Zero*
+    ### https://astropy.readthedocs.org/en/latest/time/
+    >>> !conda install astropy
+    >>> import astropy.time
+    >>> astropy.time.Time(-2.6e6, format='jd', scale='utc')
+    <Time object: scale='utc' format='jd' value=-2600000.0>
+
+
 .. index:: US Time Zones
 .. _us time zones:
 
