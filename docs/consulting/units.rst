@@ -6,19 +6,61 @@
 ********
 Units
 ********
-| https://en.wikipedia.org/wiki/Units_of_measurement
-| https://en.wikipedia.org/wiki/System_of_measurement
+| Wikipedia: https://en.wikipedia.org/wiki/Units_of_measurement
+| Wikipedia: https://en.wikipedia.org/wiki/System_of_measurement
 
 
-.. index:: RDF units
-.. _rdf units:
+.. index:: RDF and Units
+.. _rdf and units:
 
-RDF Units
-************
+RDF and Units
+**************
 Units of measurement can be expressed with :ref:`RDF`,
 :ref:`RDFS`, and :ref:`OWL`.
 
-* :ref:`QUDT` can express base and derived units of measurement.
+* :ref:`QUDT` defines :ref:`SI Units` and :ref:`Imperial Units`
+  with :ref:`RDF` and :ref:`OWL`.
+
+
+.. index:: CSVW and Units
+.. _csvw and units:
+
+CSVW and Units
+++++++++++++++++
+See: :ref:`CSVW`, :ref:`Tool Support for Units`
+
+
+.. index:: Tool Support for Units
+.. _tool support for units:
+
+Tool Support for Units
+***************************
+
+Unit and/or precision-aware calculations:
+
+* pypi:pint - #TODO pint.rtfd.org (NumPy ufuncs)
+
+ Spreadsheet tools:
+ 
+ * Specify units in each column heading
+   (e.g. ``"time [[s]]","speed [[m/s]]"``)
+ * Extra column per column for units
+   (e.g. ``"time","time unit","speed","speed unit"``)
+ * :ref:`CSVW`: Columns have URIs, which are objects
+   that can have subjects and predicates
+   (for :ref:`XSD` types; metadata (author, date,
+   ``rdfs:label "time"@en"``),
+   and possibly units of measure)
+
+Storage formats:
+
+* [ ] Spreadsheet formats do not have unit of measure support.
+* :ref:`CSV` does not have unit of measure support.
+* :ref:`JSON` does not have unit of measure support.
+* :ref:`RDF` vocabularies support units of measure:
+
+  * :ref:`CSVW` supports units of measure.
+  * :ref:`JSON-LD` supports units of measure.
 
 
 .. index:: Binary Prefixes
@@ -27,7 +69,8 @@ Units of measurement can be expressed with :ref:`RDF`,
 Binary Prefixes
 ******************
 
-.. table:: Table of Binary Prefixes
+.. table:: Table of Binary Prefixes (adapted from:
+       https://en.wikipedia.org/wiki/Binary_prefix)
    :class: table-striped table-responsive
 
    +----------+------------+---------------------------+------------------------+-----------------------+
@@ -58,8 +101,8 @@ See also: :ref:`SI Prefixes`
 
 Metric System
 *************
-| https://en.wikipedia.org/wiki/Metric_system
-| https://en.wikipedia.org/wiki/Outline_of_the_metric_system
+| Wikipedia: https://en.wikipedia.org/wiki/Metric_system
+| Wikipedia: https://en.wikipedia.org/wiki/Outline_of_the_metric_system
 
 
 .. index:: SI Units
@@ -67,9 +110,9 @@ Metric System
 
 SI Units
 ++++++++++
-| https://en.wikipedia.org/wiki/International_System_of_Units
-| https://en.wikipedia.org/wiki/SI_base_unit
-| https://en.wikipedia.org/wiki/SI_derived_unit
+| Wikipedia: https://en.wikipedia.org/wiki/International_System_of_Units
+| Wikipedia: https://en.wikipedia.org/wiki/SI_base_unit
+| Wikipedia: https://en.wikipedia.org/wiki/SI_derived_unit
 
 SI Units (*International System of Units*) are the
 standard units of measurement for almost every
@@ -81,20 +124,21 @@ country on Earth.
 * :ref:`US Customary Units` do not yet specify :ref:`SI Units`
   because the USA has not yet converted to the :ref:`Metric system`.
 
+
 .. index:: SI Base Units
 .. _si base units:
 
 SI Base Units
 ++++++++++++++++
-| https://en.wikipedia.org/wiki/International_System_of_Units#Base_units
+| Wikipedia: https://en.wikipedia.org/wiki/International_System_of_Units#Base_units
 
 * :ref:`metre`
 * :ref:`kilogram`
 * :ref:`second`
 * :ref:`ampere`
 * :ref:`kelvin`
-* `mole`
-* `candela`
+* :ref:`mole`
+* :ref:`candela`
 
 .. index:: SI Prefixes
 .. index:: Metric Prefixes
@@ -102,41 +146,54 @@ SI Base Units
 
 SI Prefixes
 +++++++++++++++++
-| https://en.wikipedia.org/wiki/Metric_prefix
+| Wikipedia: https://en.wikipedia.org/wiki/Metric_prefix
 
-.. table:: SI Prefixes [ adapted from:
-        https://en.wikipedia.org/wiki/Template:Common_metric_prefixes ]
+.. table:: Table of SI Prefixes
+       (adapted from:
+        https://en.wikipedia.org/wiki/Template:Common_metric_prefixes
+        and https://en.wikipedia.org/wiki/Binary_prefix)
     :class: table-striped table-responsive
 
-    +----------+------------+--------------------+------------------------+
-    | **Text** | **Symbol** | **Scaling Factor** | **Scaling Factor (e)** |
-    +----------+------------+--------------------+------------------------+
-    | pico     | p          | 0.000000000001     | 1e-12                  |
-    +----------+------------+--------------------+------------------------+
-    | nano     | n          | 0.000000001        | 1e-9                   |
-    +----------+------------+--------------------+------------------------+
-    | micro    | μ          | 0.000001           | 1e-6                   |
-    +----------+------------+--------------------+------------------------+
-    | milli    | m          | 0.001              | 1e-3                   |
-    +----------+------------+--------------------+------------------------+
-    | centi    | c          | 0.01               | 1e-2                   |
-    +----------+------------+--------------------+------------------------+
-    | deci     | d          | 0.1                | 1e-1                   |
-    +----------+------------+--------------------+------------------------+
-    | (none)   | (none)     | 1                  | 1e0                    |
-    +----------+------------+--------------------+------------------------+
-    | deca     | da         | 10                 | 1e1                    |
-    +----------+------------+--------------------+------------------------+
-    | hecto    | h          | 100                | 1e2                    |
-    +----------+------------+--------------------+------------------------+
-    | kilo     | k          | 1000               | 1e3                    |
-    +----------+------------+--------------------+------------------------+
-    | mega     | M          | 1000000            | 1e6                    |
-    +----------+------------+--------------------+------------------------+
-    | giga     | G          | 1000000000         | 1e9                    |
-    +----------+------------+--------------------+------------------------+
-    | tera     | T          | 1000000000000      | 1e12                   |
-    +----------+------------+--------------------+------------------------+
+    +----------+------------+---------------------------+------------------------+
+    | **Text** | **Symbol** | **Scaling Factor**        | **Scaling Factor (e)** |
+    +----------+------------+---------------------------+------------------------+
+    | pico     | p          | 0.000000000001            | 1e-12                  |
+    +----------+------------+---------------------------+------------------------+
+    | nano     | n          | 0.000000001               | 1e-9                   |
+    +----------+------------+---------------------------+------------------------+
+    | micro    | μ          | 0.000001                  | 1e-6                   |
+    +----------+------------+---------------------------+------------------------+
+    | milli    | m          | 0.001                     | 1e-3                   |
+    +----------+------------+---------------------------+------------------------+
+    | centi    | c          | 0.01                      | 1e-2                   |
+    +----------+------------+---------------------------+------------------------+
+    | deci     | d          | 0.1                       | 1e-1                   |
+    +----------+------------+---------------------------+------------------------+
+    | (none)   | (none)     | 1                         | 1e0                    |
+    +----------+------------+---------------------------+------------------------+
+    | deca     | da         | 10                        | 1e1                    |
+    +----------+------------+---------------------------+------------------------+
+    | hecto    | h          | 100                       | 1e2                    |
+    +----------+------------+---------------------------+------------------------+
+    | kilo     | k          | 1000                      | 1e3                    |
+    +----------+------------+---------------------------+------------------------+
+    | mega     | M          | 1000000                   | 1e6                    |
+    +----------+------------+---------------------------+------------------------+
+    | giga     | G          | 1000000000                | 1e9                    |
+    +----------+------------+---------------------------+------------------------+
+    | tera     | T          | 1000000000000             | 1e12                   |
+    +----------+------------+---------------------------+------------------------+
+    | peta     | P          | 1000000000000000          | 1e15                   |
+    +----------+------------+---------------------------+------------------------+
+    | exa      | E          | 1000000000000000000       | 1e18                   |
+    +----------+------------+---------------------------+------------------------+
+    | zetta    | Z          | 1000000000000000000000    | 1e21                   |
+    +----------+------------+---------------------------+------------------------+
+    | yotta    | Y          | 1000000000000000000000000 | 1e24                   |
+    +----------+------------+---------------------------+------------------------+
+
+
+See also: :ref:`Binary Prefixes`
 
 
 .. index:: SI Distance Units
@@ -152,8 +209,9 @@ SI Distance Units
 
 metre
 ````````
-| https://en.wikipedia.org/wiki/Metre
-| https://en.wikipedia.org/wiki/Meter
+| Wikipedia: https://en.wikipedia.org/wiki/Metre
+| Wikipedia: https://en.wikipedia.org/wiki/Meter
+| Abbr: ``m``
 
     The metre is the length of the path travelled by light in vacuum
     during a time interval of 1/299792458 of a second
@@ -165,18 +223,18 @@ metre
 SI Volume Units
 ++++++++++++++++++++++++
 
-.. index:: SI Liter
+.. index:: SI Litre
 .. index:: Liter
 .. index:: Litre
-.. _l:
+.. _litre:
 
 litre
 ``````
 | Wikipedia: https://en.wikipedia.org/wiki/Litre
+| Abbr: ``L``
 
-* Abbrev: ``L``
-* Conversion: 1 :ref:`l` == ``10e−3 m**3`` (:ref:`metres <metre>` cubed)
-* Conversion: 1 :ref:`l` == 0.2641720523 US :ref:`gallon` (~ 1/4)
+* Conversion: 1 :ref:`litre` == ``10e−3 m**3`` (:ref:`metres <metre>` cubed)
+* Conversion: 1 :ref:`litre` == 0.2641720523 US :ref:`gallon` (~ 1/4)
 
 
 .. index:: SI Mass Units
@@ -191,7 +249,7 @@ SI Mass Units
 
 kilogram
 ```````````
-| https://en.wikipedia.org/wiki/Kilogram
+| Wikipedia: https://en.wikipedia.org/wiki/Kilogram
 
 * A :ref:`kilogram` is the mass of TODO
 * :ref:`gram` is defined in terms of a :ref:`kilogram`
@@ -204,9 +262,9 @@ kilogram
 ======
 gram
 ======
-| https://en.wikipedia.org/wiki/Gram
+| Wikipedia: https://en.wikipedia.org/wiki/Gram
+| Abbr: ``g``
 
-* Abbrev: ``g``
 * Conversion: 1 :ref:`g` == 1/28 :ref:`oz`
 * Conversion: 1 :ref:`g` == 1/1000 kilo- :ref:`gram`
 
@@ -223,8 +281,10 @@ SI Time Units
 
 second
 ````````
-* Abbrev: ``sec``
-* Abbrev: ``s``
+| Wikipedia: https://en.wikipedia.org/wiki/Second #TODO
+| Abbr: ``sec``
+| Abbr: ``s``
+
 
 
 .. index:: Microsecond
@@ -233,7 +293,9 @@ second
 =============
 microsecond
 =============
-* Abbrev: TODO
+| Wikipedia: https://en.wikipedia.org/wiki/Microsecond #TODO
+| Abbr: TODO
+
 * Conversion: 1 :ref:`microsecond` == 1/100000 TODO of a :ref:`second`
 * Conversion: 1 :ref:`microsecond` == 1e-1000 TODO :ref:`seconds <second>`
 
@@ -244,7 +306,9 @@ microsecond
 =============
 millisecond
 =============
-* Abbrev: ``ms``
+| Wikipedia: https://en.wikipedia.org/wiki/Millisecond #TODO
+| Abbr: ``ms``
+
 * Conversion: 1 :ref:`millisecond` == 1/1000 of a :ref:`second`
 * Conversion: 1 :ref:`millisecond` == 1e-3 :ref:`seconds <second>`
 
@@ -256,8 +320,9 @@ millisecond
 ========
 minute
 ========
-* Abbrev: ``min``
-* Abbrev: ``m``
+| Wikipedia: https://en.wikipedia.org/wiki/Minute
+| Abbr: ``min``
+| Abbr: ``m``
 * Conversion: 1 :ref:`minute` == 60 :ref:`seconds <second>`
 
 
@@ -267,9 +332,11 @@ minute
 ======
 hour
 ======
-* Abbrev: ``hrs``
-* Abbrev: ``hr``
-* Abbrev: ``h``
+| Wikipedia: https://en.wikipedia.org/wiki/Hour
+| Abbr: ``hr``
+| Abbr: ``hrs``
+| Abbr: ``h``
+
 * Conversion: 1 :ref:`hour` == 60 :ref:`minutes <minute>`
 * Conversion: 1 :ref:`hour` == 3600 :ref:`seconds <second>`
 
@@ -280,7 +347,9 @@ hour
 =====
 day
 =====
-* Abbrev: ``d``
+| Wikipedia: https://en.wikipedia.org/wiki/Day
+| Abbr: ``d``
+
 * Conversion: 1 :ref:`day` == 24 :ref:`hours <hour>`
 * Conversion: 1 :ref:`day` == 1440 :ref:`minutes <minute>`
 * Conversion: 1 :ref:`day` == 86400 :ref:`seconds <second>`
@@ -293,11 +362,16 @@ day
 ======
 week
 ======
-* Abbrev: ``w``
+| Wikipedia: https://en.wikipedia.org/wiki/Week
+| Abbr: ``wk``
+| Abbr: ``wks``
+| Abbr: ``w``
+
 * Conversion: 1 :ref:`week` == 7 :ref:`days <day>`
 * Conversion: 1 :ref:`week` == 168 :ref:`hours <hour>`
 * Conversion: 1 :ref:`week` == 10080 :ref:`minutes <minute>`
 * Conversion: 1 :ref:`week` == 604800 :ref:`seconds <second>`
+
 
 .. index:: month
 .. _month:
@@ -305,9 +379,12 @@ week
 =======
 month
 =======
-* Abbrev: ``m``
+| Wikipedia: https://en.wikipedia.org/wiki/Month
+| Abbr: ``mon``
+| Abbr: ``mons``
+| Abbr: ``m``
 * A month contains either 28 (Feb; 29 on a leap year),
-  30, or 31 :ref:`days`.
+  30, or 31 :ref:`days <day>`.
 * https://en.wikipedia.org/wiki/Thirty_days_hath_September
 * Two hands of knuckles with peaks and valleys together:
 
@@ -322,9 +399,11 @@ month
 ======
 year
 ======
-* Abbrev: ``y``
-* Abbrev: ``yr``
-* Abbrev: ``yrs``
+| Wikipedia: https://en.wikipedia.org/wiki/Year
+| Abbr: ``yr``
+| Abbr: ``yrs``
+| Abbr: ``y``
+
 * Conversion: 1 :ref:`year` == 365.25 :ref:`days <day>` (*1 leap day*/4.0)
 * Conversion: 1 :ref:`year` == 365 :ref:`days <day>`
 * Conversion: 1 :ref:`year` == 8760 :ref:`hours <hour>`
@@ -346,7 +425,8 @@ SI Frequency Units
 
 hertz
 ``````
-| https://en.wikipedia.org/wiki/Hertz
+| Wikipedia: https://en.wikipedia.org/wiki/Hertz
+| Abbr: ``Hz``
 
 * TODO: cycles per time
 * TODO: em.py
@@ -364,17 +444,23 @@ SI Electric Current Units
 
 ampere
 ````````
-| https://en.wikipedia.org/wiki/Ampere
+| Wikipedia: https://en.wikipedia.org/wiki/Ampere
+| Abbr: ``A``  # TODO
+| Abbr: ``amp``
 
+# TODO
 
 .. index:: Volt
 .. _volt:
 
 volt
 `````
-| https://en.wikipedia.org/wiki/Volt
+| Wikipedia: https://en.wikipedia.org/wiki/Volt
 
-# TODO
+| Abbr: ``V``  # TODO
+
+# TODO frequency / current relation
+
 
 .. index:: SI Temperature Units
 .. _si temperature units:
@@ -387,14 +473,22 @@ SI Temperature Units
 
 celsius
 `````````
+| Wikipedia: https://en.wikipedia.org/wiki/Celsius
+
+| Abbr: ``C``
+* Water (H2O) freezes at 0 degrees :ref:`celsius`.
+* Water (H20) boils at 100 degrees :ref:`celsius`.
+* #TODO celsius / kevin relation
 
 .. index:: Kelvin
 .. _kelvin:
 
 kelvin
 ````````
-| https://en.wikipedia.org/wiki/Kelvin
+| Wikipedia: https://en.wikipedia.org/wiki/Kelvin
+| Abbr: ``K``
 
+# TODO
 
 .. index:: SI Amount Units
 .. _si amount units:
@@ -408,8 +502,10 @@ SI Amount Units
 
 mole
 `````
-| `<https://en.wikipedia.org/wiki/Mole_(unit)>`__
+| Wikipedia: `<https://en.wikipedia.org/wiki/Mole_(unit)>`__
+| Abbr: ``mol``
 
+#TODO
 
 .. index:: SI Luminous Intensity Units
 .. _si luminous intensity units:
@@ -422,7 +518,8 @@ SI Luminous Intensity Units
 
 candela
 `````````
-| https://en.wikipedia.org/wiki/Candela
+| Wikipedia: https://en.wikipedia.org/wiki/Candela
+| Abbr: #TODO
 
 
 .. index:: SI Data Units
@@ -437,22 +534,27 @@ SI Data Units
 
 bit
 `````
+| Wikipedia: https://en.wikipedia.org/wiki/Bit
+| Abbr: ``b``
+
 A bit can be ``1`` or ``0``.
 
 * A bit may indicate *set containment* (e.g. ``True`` or ``False``,
-  ``Black`` or ``White``) [:ref:`set theory`]
+  ``Black`` or ``White``) [:ref:`set-theory`]
 * A bit may be part of an ordered set of bits
   which ascribe left-to-right (*little endian*)
   or right-to-left (*big endian*)
-  place values to each binary digit::
+  place values to each binary digit:
 
-  1 2 4 8   # little endian
-  0 1 0 1   # == 0 + 2 + 0 + 8 = 9
+  ::
 
-  8 4 2 1   # big endian
-  0 1 0 1   # == 0 + 4 + 0 + 1 = 5
+      1 2 4 8   # little endian
+      0 1 0 1   # == 0 + 2 + 0 + 8 == 9 (base 10)
 
-* See also: :ref:`information theory` > Shannon bit (*entropy*)
+      8 4 2 1   # big endian
+      0 1 0 1   # == 0 + 4 + 0 + 1 == 5 (base 10)
+
+* See also: :ref:`information-theory` > Shannon bit (*Shannon entropy*)
 
 
 .. index:: SI Byte
@@ -461,6 +563,9 @@ A bit can be ``1`` or ``0``.
 
 byte
 ``````
+| Wikipedia: https://en.wikipedia.org/wiki/Byte
+| Abbr: ``B``
+
 * Conversion: 1 :ref:`byte` == 8 :ref:`bits <bit>`
 * Storage vendors use *powers of ten*
   (e.g. MB, GB, TB) to describe storage capacity;
@@ -472,8 +577,6 @@ byte
   the file content because of file allocation tables,
   redundancy, block size and allocation;
   but may be smaller after compression/deduplication.
-
-* In practice
 
 .. table:: Table of Bytes and Binary Prefixes
     :class: table-striped table-responsive
@@ -487,7 +590,8 @@ byte
     +----------------+---------------+----------------------------------------+
     | octet          | 2**3 bits     | 8 bits                                 |
     +----------------+---------------+----------------------------------------+
-    | word           | :ref:`CPU`    | 8+, 16, 24,32 (:ref:`x86`), 64 bits    |
+    | word size      | :ref:`CPU`    | 8+, 16, 24, 32, 64 bits                |
+    |                |               |                                        |
     |                | register      |                                        |
     |                | width         | 32 bits (:ref:`x86`, :ref:`ARM`)       |
     |                |               |                                        |
@@ -564,8 +668,8 @@ byte
 
 Imperial units
 ****************
-| https://en.wikipedia.org/wiki/Imperial_units
-| https://en.wikipedia.org/wiki/English_units
+| Wikipedia: https://en.wikipedia.org/wiki/Imperial_units
+| Wikipedia: https://en.wikipedia.org/wiki/English_units
 
 Imperial units may refer to either *English units* (ended in 1824)
 or :ref:`US customary units` (e.g. gram, ounce, gallon, pound, foot, mile).
@@ -591,23 +695,47 @@ Imperial Distance Units
 
 inch
 `````
+| Wikipedia: https://en.wikipedia.org/wiki/Inch
+| Abbr: ``in``
 
-* Conversion: 1 :ref:`inch` == 2.54 :ref:`centimeters`
+* Conversion: 1 :ref:`inch` ~== 2.54 `cm` (centi- :ref:`meters <metre>`)
 
 
 .. index:: Foot
 .. _foot:
 
+=====
 foot
-`````
+=====
+| Wikipedia: https://en.wikipedia.org/wiki/Foot
+| Abbr: ``ft``
+
 * Conversion: 1 :ref:`foot` == 12 :ref:`inches <inch>`
+
+
+.. index:: Yard
+.. _yard:
+
+======
+yard
+======
+| Wikipedia: https://en.wikipedia.org/wiki/Foot
+| Abbr: ``yd``
+
+* Conversion: 1 :ref:`yard` == 3 :ref:`feet <foot>`
 
 
 .. index:: Mile
 .. _mile:
 
+======
 mile
-``````
+======
+| Wikipedia: https://en.wikipedia.org/wiki/Mile
+| Abbr: ``mi``
+| Abbr: ``m``
+
+* Conversion 1 :ref:`mile` == 1760 :ref:`yards <yard>`
 * Conversion: 1 :ref:`mile` == 5280 :ref:`feet <foot>`
 * Conversion: 1 :ref:`mile` == 63360 :ref:`inches <inch>`
 
@@ -623,13 +751,15 @@ Imperial Volume Units
 
 teaspoon
 ``````````
-* Abbrev: ``t``
-* Abbref: ``tsp.``
-* Conversion: 1 US :ref:`teaspoon` == 1/3 :ref:`tablespoon`
+| Wikipedia: https://en.wikipedia.org/wiki/Teaspoon
+| Abbr: ``t``
+| Abbr: ``tsp.``
+
+* Conversion: 1 US :ref:`teaspoon` == 1/3 of a US :ref:`tablespoon`
 * Conversion: 1 US :ref:`teaspoon` == 1/6 US :ref:`fl oz`
+* Conversion: 1 US :ref:`teaspoon` == 1 1/3 US :ref:`drams <dram>`
 * Conversion: 1 US :ref:`teaspoon` == 4.92892159375 mL
   (milli- :ref:`Litres <litre>`)
-* Conversion: 1 US :ref:`teaspoon` == 1 1/3 US :ref:`drams <dram>`
 
 
 .. index:: dram
@@ -637,7 +767,7 @@ teaspoon
 
 dram
 ``````
-| `<https://en.wikipedia.org/wiki/Dram_(unit)>`__
+| Wikipedia: `<https://en.wikipedia.org/wiki/Dram_(unit)>`__
 
 * Conversion: 1 US :ref:`dram` == 1/8 US :ref:`fl oz`
 * Conversion: 1 US :ref:`dram` == 3/4 US :ref:`teaspoon`
@@ -648,8 +778,10 @@ dram
 
 tablespoon
 ``````````
-* Abbrev: ``T``
-* Abbref: ``Tbsp.``
+| Wikipedia: https://en.wikipedia.org/wiki/Tablespoon
+| Abbr: ``T``
+| Abbr: ``Tbsp.``
+
 * Conversion: 1 US :ref:`tablespoon` == 1/6 US :ref:`fl oz`
 
 
@@ -658,16 +790,24 @@ tablespoon
 
 cup
 ````
-| `<https://en.wikipedia.org/wiki/Cup_(unit)#Metric_cup>`__
-| `<https://en.wikipedia.org/wiki/Cup_(unit)#United_States_customary_cup>`__
-| `<https://en.wikipedia.org/wiki/Cup_(unit)#United_States_.22legal.22_cup>`__
-| `<https://en.wikipedia.org/wiki/Cup_(unit)#United_States>`__
-| `<https://en.wikipedia.org/wiki/Cup_(unit)#UK_cup>`__
-| `<https://en.wikipedia.org/wiki/Cup_(unit)#Japanese_cup>`__
-| `<https://en.wikipedia.org/wiki/Cup_(unit)#Gō>`__
+| Wikipedia: `<https://en.wikipedia.org/wiki/Cup_(unit)>`__
+| Abbr: ``c``
 
-* Conversion: 1 US *customary* :ref:`cup` == 8 US :ref:`fl oz`
-* Conversion: 1 US *legal* (serving size) :ref:`cup` == 8.12 US :ref:`fl oz`
+* Metric cup:
+  `<https://en.wikipedia.org/wiki/Cup_(unit)#Metric_cup>`__
+* US customary cup:
+  `<https://en.wikipedia.org/wiki/Cup_(unit)#United_States_customary_cup>`__
+* US legal cup (*serving size*):
+  `<https://en.wikipedia.org/wiki/Cup_(unit)#United_States_.22legal.22_cup>`__
+* UK cup:
+  `<https://en.wikipedia.org/wiki/Cup_(unit)#UK_cup>`__
+* Ja cup:
+  `<https://en.wikipedia.org/wiki/Cup_(unit)#Japanese_cup>`__
+* Gō cup:
+  `<https://en.wikipedia.org/wiki/Cup_(unit)#Gō>`__
+
+* Conversion: 1 US customary :ref:`cup` == 8 US :ref:`fl oz`
+* Conversion: 1 US legal :ref:`cup` == 8.12 US :ref:`fl oz`
 * Conversion: 1 Metric :ref:`cup` == 8.45 US :ref:`fl oz`
 
 
@@ -676,10 +816,12 @@ cup
 
 fluid ounce
 ```````````
-* Abbrev: ``fl/oz``
-* Abbrev: ``fl oz``
-* Abbrev: ``oz``
-* Serving size: 1 can of e.g. soda == 12oz
+| Wikipedia: https://en.wikipedia.org/wiki/Fluid_ounce
+| Abbr: ``fl oz``
+| Abbr: ``oz``
+
+* Serving size: 1 US can of e.g. soda == 12 US :ref:`fl oz`
+* Conversion: 1 :ref:`fl oz` == 29.573 mL
 
 
 
@@ -688,9 +830,12 @@ fluid ounce
 
 pint
 ``````
+| Wikipedia: https://en.wikipedia.org/wiki/Pint
+| Abbr: ``pt``
 
-* Conversion: 1 :ref:`pint` == 16 :ref:`oz <fl oz>`
-* Example: 1 plastic bottle of soda
+* Conversion: 1 US :ref:`pint` == 16 US :ref:`fl oz`
+* Conversion: 1 Imperial :ref:`pint` == 1.2009499255 US :ref:`pints <pint>`
+* Conversion: 1 US :ref:`pint` = 0.85936700738 Imperial :ref:`pints <pint>`
 
 
 .. index:: Quart
@@ -698,7 +843,8 @@ pint
 
 quart
 ```````
-| https://en.wikipedia.org/wiki/Quart
+| Wikipedia: https://en.wikipedia.org/wiki/Quart
+| Abbr: ``qt``
 
 * Conversion: 1 US liquid :ref:`quart` == 32 :ref:`fl oz`
 * Conversion: 1 :ref:`quart` == 4 :ref:`cups <cup>`
@@ -712,6 +858,9 @@ quart
 
 gallon
 ```````
+| Wikipedia: https://en.wikipedia.org/wiki/Gallon
+| Abbr: ``gal``
+
 * Conversion: 1 :ref:`gallon` == 128 :ref:`oz <fl oz>`
 * Conversion: 1 :ref:`gallon` == 8 :ref:`pints <pint>`
 
@@ -721,6 +870,8 @@ gallon
 
 keg
 `````
+| Wikipedia: https://en.wikipedia.org/wiki/Keg
+
 * Conversion: 1 :ref:`keg` == 124 US :ref:`pints <pint>`
 * Conversion: 1 :ref:`keg` == 1984 US :ref:`fl oz`
 
@@ -736,7 +887,8 @@ Imperial Mass Units
 
 gram
 ``````
-* Abbrev: ``g``
+| Wikipedia: https://en.wikipedia.org/wiki/Gram
+| Abbr: ``g``
 
 
 .. index:: Ounce
@@ -744,7 +896,8 @@ gram
 
 ounce
 ```````
-* Abbrev: ``oz``
+| Wikipedia: https://en.wikipedia.org/wiki/Ounce # TODO
+| Abbr: ``oz``
 
 
 .. index:: Pound
@@ -752,8 +905,13 @@ ounce
 
 pound
 ```````
-* Abbrev: ``lb``
-* Conversion: 1 :ref:`pound` = 16 :ref:`ounces (oz) <oz>`)
+| Wikipedia: https://en.wikipedia.org/wiki/Pound
+| Abbr: ``lb``
+| Abbr: ``lbm``
+
+* Conversion: 1 :ref:`lb` == 16 :ref:`ounces <ounce>`
+* Conversion: 1 :ref:`lb` == 448 :ref:`grams <gram>`
+* Conversion: 1 :ref:`lb` == 0.45359237 kg (kilo- :ref:`grams <gram>`)
 
 
 .. index:: Ton
@@ -761,12 +919,16 @@ pound
 
 ton
 `````
-* Abbrev:
+| Wikipedia: https://en.wikipedia.org/wiki/Ton
+
 * Conversion: 1 :ref:`ton` == 2000 :ref:`pounds <lb>`
 * Conversion: 1 kilo- :ref:`ton` == 1000 :ref:`tons <ton>`
 * Colloqial: *half ton truck* refers to a
-  minimum towing or hauling capacity; not the curb weight of
-  a vehicle.
+  minimum towing or hauling capacity;
+  not the curb weight of a vehicle.
+* Conversion: 1 *tonne* (*metric ton*) == 1000 kg == 2204 :ref:`lb`
+* Conversion: 1 *long ton* == 2240 :ref:`lb`
+* Conversion: 1 *short ton* == 2000 :ref:`lb`
 
 
 .. index:: US customary units
@@ -774,7 +936,7 @@ ton
 
 US customary units
 ********************
-https://en.wikipedia.org/wiki/United_States_customary_units
+| Wikipedia: https://en.wikipedia.org/wiki/United_States_customary_units
 
 Common US Fluid Conversions:
 
@@ -792,10 +954,12 @@ Industry Units
 
 Freight
 ++++++++
-* US: :ref:`lb`, :ref:`ton`
-* World: :ref:`g`
+* US: :ref:`lb`, :ref:`ton`, cubic :ref:`inches <inch>`, :ref:`mile`,
+  :ref:`second`
+* World: :ref:`g`, cubic :ref:`metres <metre>` (:ref:`litre`),
+  :ref:`metre`, :ref:`second`
 
 Fuel
 +++++
 * US: :ref:`gallon`
-* World: :ref:`l`
+* World: :ref:`litre`
