@@ -212,7 +212,6 @@ Git File Structures
 
   See also: **bup**
 
-
 .. index:: File Systems
 .. _file systems:
 
@@ -227,6 +226,68 @@ physical medium.
 * On-disk file systems: :ref:`ext`, :ref:`btrfs`
 * Networked file systems link disk storage pools with other resources
 * Networked file systems: :ref:`Ceph`, :ref:`GlusterFS`, :ref:`Bittorrent`
+
+.. index:: MBR
+.. _mbr:
+
+MBR
++++++
+| Wikipedia: https://en.wikipedia.org/wiki/Master_boot_record
+
+MBR (*Master Boot Record*) is a
+boot record format and a
+file partition scheme.
+
+* :ref:`DOS` and :ref:`Windows` use MBR partition tables.
+* Many/most UNIX variants support MBR partition tables.
+* :ref:`Linux` supports MBR partition tables.
+* Most PCs since 1983 boot from MBR partition tables.
+
+
+.. index:: GPT
+.. _gpt:
+
+GPT
++++++
+| Wikipedia: https://en.wikipedia.org/wiki/GUID_Partition_Table
+
+GPT (*GUID Partition Table*) is a
+boot record format and a
+file partition scheme
+wherein partitions are assigned GUIDs (*Globally Unique Identifiers*).
+
+* :ref:`OSX` uses GPT partition tables.
+* :ref:`Linux` supports GPT partition tables.
+* https://en.wikipedia.org/wiki/GUID_Partition_Table#UNIX_and_Unix-like_operating_systems
+
+
+.. index:: LVM
+.. index:: Logical Volume Manager
+.. _lvm:
+
+LVM
+++++++++++++++++++++++
+| Wikipedia: `<https://en.wikipedia.org/wiki/Logical_Volume_Manager_(Linux)>`__
+| Homepage: https://www.sourceware.org/lvm2/
+| Source: ftp://sources.redhat.com/pub/lvm2/
+| Docs: https://www.sourceware.org/dm/
+| Docs: http://www.tldp.org/HOWTO/LVM-HOWTO/index.html
+| Docs:
+
+LVM (*Logical Volume Manager*) is an :ref:`Open Source <open-source>`
+software disk abstraction layer with snapshotting, copy-on-write,
+online resize and allocation
+
+* In LVM, *Volume Groups* (VG) contain
+  *Physical Volumes* (PV) contain *Logical Volumes* (LV)
+* LVM can do striping and high-availability sofware RAID
+* LVM and ``device-mapper`` are now part of the :ref:`Linux`
+  kernel tree
+  (the LVM linux kernel modules are built and included
+  with most distributions' default kernel build)
+* There is feature overlap between :ref:`lvm` and :ref:`btrfs`
+  (pooling, snapshotting, copy-on-write).
+
 
 
 .. index:: btrfs
@@ -248,39 +309,6 @@ btrfs (:ref:`B-tree <trees>` *file system*) is an
 :ref:`Open Source <open-source>` pooling, snapshotting,
 checksumming, deduplicating, union mounting
 copy-on-write on-disk :ref:`Linux` filesystem.
-
-
-.. index:: Ceph
-.. _ceph:
-
-Ceph
-+++++
-| Wikipedia: `<https://en.wikipedia.org/wiki/Ceph_(software)>`__
-| Homepage: http://ceph.com/
-| Download: http://ceph.com/resources/downloads/
-| Source: git https://github.com/ceph/ceph
-| Docs: http://ceph.com/docs/master/
-| Docs: http://ceph.com/docs/master/rados/
-| Docs: http://ceph.com/docs/master/radosgw/
-| Docs: http://ceph.com/docs/master/radosgw/s3/
-| Docs: http://ceph.com/docs/master/radosgw/swift/
-| Docs: http://ceph.com/docs/master/radosgw/keystone/
-| Docs: http://ceph.com/docs/master/rbd/rbd-openstack/
-
-Ceph is an :ref:`Open Source <open-source>` network file system
-(a :ref:`distributed database <distributed-databases>`
-for files with attributes like owner, group, permissions)
-written in :ref:`C++` and :ref:`Perl`
-which runs over top of one or more on-disk file systems.
-
-* Ceph Object Gateway (*radosgw*) -- :term:`RESTful API`,
-  :ref:`AWS` S3 API, :ref:`OpenStack` Swift API,
-  :ref:`OpenStack` Keystone authentication
-* Ceph Block Device (*rbd*) -- striping, caching, snapshots, copy-on-write,
-  :ref:`kvm`, :ref:`libvirt`, :ref:`OpenStack` Cinder block storage
-* Ceph Filesystem (*cephfs*) -- :ref:`POSIX`
-  :ref:`file system <file systems>` with
-  FUSE, NFS, CIFS, and Hadoop HDFS APIs
 
 
 .. index:: ext2
@@ -327,6 +355,97 @@ FAT is a group of on-disk filesystem standards.
 * :ref:`Linux` machines can read and write FAT partitions.
 
 
+.. index:: HFS+
+.. _hfs+:
+
+HFS+
++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/HFS_Plus
+
+HFS+ (*Hierarchical Filesystem*) or *Mac OS Extended*,
+is the file system for Mac OS 8.1+ and :ref:`OSX`.
+
+* HFS+ is required for :ref:`OSX` and Time Machine.
+
+  http://www.cnet.com/how-to/the-best-ways-to-format-an-external-drive-for-windows-and-mac/
+
+* :ref:`Windows` machines can access HFS+ partitions with:
+  HFSExplorer (free, :ref:`Java`), Paragon HFS+ for Windows,
+  or MacDrive
+
+  http://www.makeuseof.com/tag/4-ways-read-mac-formatted-drive-windows/
+
+* :ref:`Linux` machines can access HFS+ partitions with
+  ``hfsprogs`` (``apt-get install hfsprogs``, ``yum install hfsprogs``).
+
+
+.. index:: NTFS
+.. _ntfs:
+
+NTFS
++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/NTFS
+
+NTFS is a proprietary journaling filesytem.
+
+* Windows machines since Windows NT 3.1 and Windows XP
+  default to NTFS filesystems.
+* Non-windows machines can access NTFS partitions through
+  NTFS-3G: https://en.wikipedia.org/wiki/NTFS-3G
+
+
+
+
+.. index:: Network Filesystems
+.. _network filesystems:
+
+Network Filesystems
+---------------------
+
+
+.. index:: Ceph
+.. _ceph:
+
+Ceph
++++++
+| Wikipedia: `<https://en.wikipedia.org/wiki/Ceph_(software)>`__
+| Homepage: http://ceph.com/
+| Download: http://ceph.com/resources/downloads/
+| Source: git https://github.com/ceph/ceph
+| Docs: http://ceph.com/docs/master/
+| Docs: http://ceph.com/docs/master/rados/
+| Docs: http://ceph.com/docs/master/radosgw/
+| Docs: http://ceph.com/docs/master/radosgw/s3/
+| Docs: http://ceph.com/docs/master/radosgw/swift/
+| Docs: http://ceph.com/docs/master/radosgw/keystone/
+| Docs: http://ceph.com/docs/master/rbd/rbd-openstack/
+
+Ceph is an :ref:`Open Source <open-source>` network file system
+(a :ref:`distributed database <distributed-databases>`
+for files with attributes like owner, group, permissions)
+written in :ref:`C++` and :ref:`Perl`
+which runs over top of one or more on-disk file systems.
+
+* Ceph Object Gateway (*radosgw*) -- :term:`RESTful API`,
+  :ref:`AWS` S3 API, :ref:`OpenStack` Swift API,
+  :ref:`OpenStack` Keystone authentication
+* Ceph Block Device (*rbd*) -- striping, caching, snapshots, copy-on-write,
+  :ref:`kvm`, :ref:`libvirt`, :ref:`OpenStack` Cinder block storage
+* Ceph Filesystem (*cephfs*) -- :ref:`POSIX`
+  :ref:`file system <file systems>` with
+  FUSE, NFS, CIFS, and Hadoop HDFS APIs
+
+
+.. index:: CIFS
+.. _cifs:
+
+CIFS
+++++++
+CIFS (*#TODO filesystem*) is a centralized network filesystem.
+
+* Samba ``smbd`` is one implementation of a :ref:`CIFS` network file server.
+ 
+
 .. index:: GlusterFS
 .. _glusterfs:
 
@@ -352,72 +471,87 @@ which runs over top of one or more on-disk file systems.
 * GlusterFS can serve volumes for :ref:`OpenStack` Cinder block storage
 
 
-.. index:: HFS+
-.. _hfs+:
+.. index:: NFS
+.. _nfs:
 
-HFS+
-+++++++++
-| Wikipedia: https://en.wikipedia.org/wiki/HFS_Plus
+NFS
+++++++
+| Wikipedia: https://en.wikipedia.org/wiki/NFS
 
-HFS+ (*Hierarchical Filesystem*) or *Mac OS Extended*,
-is the file system for Mac OS 8.1+ and :ref:`OSX`.
-
-* HFS+ is required for :ref:`OSX` and Time Machine.
-
-  http://www.cnet.com/how-to/the-best-ways-to-format-an-external-drive-for-windows-and-mac/
-
-* :ref:`Windows` machines can access HFS+ partitions with:
-  HFSExplorer (free, :ref:`Java`), Paragon HFS+ for Windows,
-  or MacDrive
-
-  http://www.makeuseof.com/tag/4-ways-read-mac-formatted-drive-windows/
-
-* :ref:`Linux` machines can access HFS+ partitions with
-  ``hfsprogs`` (``apt-get install hfsprogs``, ``yum install hfsprogs``).
+NFS (*Network File System* #TODO) is an :ref:`Open Source <open-source>`
+centralized network filesystem.
 
 
-.. index:: LVM
-.. index:: Logical Volume Manager
-.. _lvm:
+.. index:: SMBFS
+.. _smbfs:
 
-LVM
-++++++++++++++++++++++
-| Wikipedia: `<https://en.wikipedia.org/wiki/Logical_Volume_Manager_(Linux)>`__
-| Homepage: https://www.sourceware.org/lvm2/
-| Source: ftp://sources.redhat.com/pub/lvm2/
-| Docs: https://www.sourceware.org/dm/
-| Docs: http://www.tldp.org/HOWTO/LVM-HOWTO/index.html
-| Docs:
-
-LVM (*Logical Volume Manager*) is an :ref:`Open Source <open-source>`
-software disk abstraction layer with snapshotting, copy-on-write,
-online resize and allocation
-
-* In LVM, *Volume Groups* (VG) contain
-  *Physical Volumes* (PV) contain *Logical Volumes* (LV)
-* LVM can do striping and high-availability sofware RAID
-* LVM and ``device-mapper`` are now part of the :ref:`Linux`
-  kernel tree
-  (the LVM linux kernel modules are built and included
-  with most distributions' default kernel build)
-* There is feature overlap between :ref:`lvm` and :ref:`btrfs`
-  (pooling, snapshotting, copy-on-write).
-
-
-.. index:: NTFS
-.. _ntfs:
-
-NTFS
+SMBFS
 +++++++
-| Wikipedia: https://en.wikipedia.org/wiki/NTFS
+| Wikipedia: https://en.wikipedia.org/wiki/Server_Message_Block
 
-NTFS is a proprietary journaling filesytem.
+SMBFS (*Samba filesystem*) is a centralized network filesystem.
 
-* Windows machines since Windows NT 3.1 and Windows XP
-  default to NTFS filesystems.
-* Non-windows machines can access NTFS partitions through
-  NTFS-3G: https://en.wikipedia.org/wiki/NTFS-3G
+* SMBFS has been superseded by :ref:`CIFS`.
 
+
+.. index:: WebDAV
+.. _webdav:
+
+WebDAV
+++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/WebDAV
+| Standard: https://tools.ietf.org/html/rfc2518
+| Standard: https://tools.ietf.org/html/rfc4918
+
+WebDAV (*Web Distributed Authoring and Versioning*) 
+is a network filesystem protocol built with :ref:`HTTP`.
+
+* WebDAV specifies a number of unique :ref:`HTTP` methods:
+  
+  * ``PROPFIND`` (``ls``, ``stat``, ``getfacl``),
+  * ``PROPPATCH`` (``touch``, ``setfacl``)
+  * ``MKCOL`` (``mkdir``)
+  * ``COPY`` (``cp``)
+  * ``MOVE`` (``mv``)
+  * ``LOCK`` (:ref:`file locking`)
+  * ``UNLOCK`` ()
+
+
+.. index:: File Locking
+.. _file locking:
+
+File Locking
+--------------
+| Wikipedia: https://en.wikipedia.org/wiki/File_locking
+
+File locking is one strategy for synchronization
+with concurrency and parallelism.
+
+* An auxilliary ``<filename>.lock`` file
+  is still susceptible to *race conditions*
+* :ref:`C` file locking functions: ``fcntl``, ``lockf``, ``flock``
+* :ref:`Python` file locking functions: ``fcntl.fcntl``, ``fcntl.lockf``,
+  ``fcntl.flock``: 
+  https://docs.python.org/2/library/fcntl.html
+* To lock a file for all processes with :ref:`Linux` requires
+  a *mandatory file locking* mount option (`mount -o mand``) and
+  per-file setgid and noexec bits (``chmod g+s,g-s``).
+* To lock a file (or a range / record of a file) for all processes with
+  :ref:`Windows` requires no additional work beyond
+  ``win32con.LOCKFILE_EXCLUSIVE_LOCK``,
+  ``win32file.LockFileEx``, and ``win32file.UnlockFileEx``.
++ CWE-667: Improper Locking:
+  https://cwe.mitre.org/data/definitions/667.html#Relationships
+
+  + https://en.wikipedia.org/wiki/File_locking#Problems
+  + https://en.wikipedia.org/wiki/Race_condition
+  + CWE-833: Deadlock
+
+    https://cwe.mitre.org/data/definitions/833.html
+
+    https://en.wikipedia.org/wiki/Deadlock
+
+  
 
 .. index:: Compression Algorithms
 .. _compression algorithms:
@@ -1892,6 +2026,10 @@ for columnar data with rows and columns.
 
 Most spreadsheet tools can export (raw and computed) data
 from a sheet into a CSV file, for use with many other tools.
+
+
+.. index:: CSVW
+.. _csvw:
 
 CSVW
 `````

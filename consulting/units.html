@@ -86,48 +86,109 @@
                 <ul class="dropdown-menu localtoc sp-localtoc" role="menu" aria-labelledby="localToc">
                 <ul>
 <li><a class="reference internal" href="#">Units</a><ul>
-<li><a class="reference internal" href="#si-units">SI Units</a><ul>
+<li><a class="reference internal" href="#rdf-and-units">RDF and Units</a><ul>
+<li><a class="reference internal" href="#csvw-and-units">CSVW and Units</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tool-support-for-units">Tool Support for Units</a></li>
+<li><a class="reference internal" href="#binary-prefixes">Binary Prefixes</a></li>
+<li><a class="reference internal" href="#metric-system">Metric System</a><ul>
+<li><a class="reference internal" href="#si-units">SI Units</a></li>
+<li><a class="reference internal" href="#si-base-units">SI Base Units</a></li>
 <li><a class="reference internal" href="#si-prefixes">SI Prefixes</a></li>
-<li><a class="reference internal" href="#metric-distance-units">Metric Distance Units</a><ul>
-<li><a class="reference internal" href="#meter">Meter</a></li>
+<li><a class="reference internal" href="#si-distance-units">SI Distance Units</a><ul>
+<li><a class="reference internal" href="#metre">metre</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#metric-fluid-units">Metric Fluid Units</a><ul>
-<li><a class="reference internal" href="#liter">Liter</a></li>
+<li><a class="reference internal" href="#si-volume-units">SI Volume Units</a><ul>
+<li><a class="reference internal" href="#litre">litre</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#metric-mass-units">Metric Mass Units</a><ul>
-<li><a class="reference internal" href="#gram">Gram</a></li>
+<li><a class="reference internal" href="#si-mass-units">SI Mass Units</a><ul>
+<li><a class="reference internal" href="#kilogram">kilogram</a><ul>
+<li><a class="reference internal" href="#gram">gram</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#imperial-units">Imperial Units</a><ul>
+<li><a class="reference internal" href="#si-time-units">SI Time Units</a><ul>
+<li><a class="reference internal" href="#second">second</a><ul>
+<li><a class="reference internal" href="#microsecond">microsecond</a></li>
+<li><a class="reference internal" href="#millisecond">millisecond</a></li>
+<li><a class="reference internal" href="#minute">minute</a></li>
+<li><a class="reference internal" href="#hour">hour</a></li>
+<li><a class="reference internal" href="#day">day</a></li>
+<li><a class="reference internal" href="#week">week</a></li>
+<li><a class="reference internal" href="#month">month</a></li>
+<li><a class="reference internal" href="#year">year</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#si-frequency-units">SI Frequency Units</a><ul>
+<li><a class="reference internal" href="#hertz">hertz</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#si-electric-current-units">SI Electric Current Units</a><ul>
+<li><a class="reference internal" href="#ampere">ampere</a></li>
+<li><a class="reference internal" href="#volt">volt</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#si-temperature-units">SI Temperature Units</a><ul>
+<li><a class="reference internal" href="#celsius">celsius</a></li>
+<li><a class="reference internal" href="#kelvin">kelvin</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#si-amount-units">SI Amount Units</a><ul>
+<li><a class="reference internal" href="#mole">mole</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#si-luminous-intensity-units">SI Luminous Intensity Units</a><ul>
+<li><a class="reference internal" href="#candela">candela</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#si-data-units">SI Data Units</a><ul>
+<li><a class="reference internal" href="#bit">bit</a></li>
+<li><a class="reference internal" href="#byte">byte</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#imperial-units">Imperial units</a><ul>
 <li><a class="reference internal" href="#imperial-distance-units">Imperial Distance Units</a><ul>
-<li><a class="reference internal" href="#inch">Inch</a></li>
-<li><a class="reference internal" href="#foot">Foot</a></li>
-<li><a class="reference internal" href="#mile">Mile</a></li>
+<li><a class="reference internal" href="#inch">inch</a><ul>
+<li><a class="reference internal" href="#foot">foot</a></li>
+<li><a class="reference internal" href="#yard">yard</a></li>
+<li><a class="reference internal" href="#mile">mile</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#imperial-fluid-units">Imperial Fluid Units</a><ul>
-<li><a class="reference internal" href="#fluid-ounce">Fluid Ounce</a></li>
-<li><a class="reference internal" href="#pint">Pint</a></li>
-<li><a class="reference internal" href="#gallon">Gallon</a></li>
-<li><a class="reference internal" href="#keg">Keg</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#imperial-volume-units">Imperial Volume Units</a><ul>
+<li><a class="reference internal" href="#teaspoon">teaspoon</a></li>
+<li><a class="reference internal" href="#dram">dram</a></li>
+<li><a class="reference internal" href="#tablespoon">tablespoon</a></li>
+<li><a class="reference internal" href="#cup">cup</a></li>
+<li><a class="reference internal" href="#fluid-ounce">fluid ounce</a></li>
+<li><a class="reference internal" href="#pint">pint</a></li>
+<li><a class="reference internal" href="#quart">quart</a></li>
+<li><a class="reference internal" href="#gallon">gallon</a></li>
+<li><a class="reference internal" href="#keg">keg</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#imperial-mass-units">Imperial Mass Units</a><ul>
-<li><a class="reference internal" href="#id16">Gram</a></li>
-<li><a class="reference internal" href="#ounce">Ounce</a></li>
-<li><a class="reference internal" href="#pound">Pound</a></li>
-<li><a class="reference internal" href="#ton">Ton</a></li>
+<li><a class="reference internal" href="#id55">gram</a></li>
+<li><a class="reference internal" href="#ounce">ounce</a></li>
+<li><a class="reference internal" href="#pound">pound</a></li>
+<li><a class="reference internal" href="#ton">ton</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#us-customary-units">US Customary Units</a></li>
-<li><a class="reference internal" href="#common-conversions">Common Conversions</a><ul>
-<li><a class="reference internal" href="#fluid-conversions">Fluid Conversions</a></li>
+<li><a class="reference internal" href="#us-customary-units">US customary units</a></li>
+<li><a class="reference internal" href="#industry-units">Industry Units</a><ul>
+<li><a class="reference internal" href="#freight">Freight</a></li>
+<li><a class="reference internal" href="#fuel">Fuel</a></li>
 </ul>
 </li>
 </ul>
@@ -176,48 +237,109 @@
   <h3><a href="../index">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Units</a><ul>
-<li><a class="reference internal" href="#si-units">SI Units</a><ul>
+<li><a class="reference internal" href="#rdf-and-units">RDF and Units</a><ul>
+<li><a class="reference internal" href="#csvw-and-units">CSVW and Units</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tool-support-for-units">Tool Support for Units</a></li>
+<li><a class="reference internal" href="#binary-prefixes">Binary Prefixes</a></li>
+<li><a class="reference internal" href="#metric-system">Metric System</a><ul>
+<li><a class="reference internal" href="#si-units">SI Units</a></li>
+<li><a class="reference internal" href="#si-base-units">SI Base Units</a></li>
 <li><a class="reference internal" href="#si-prefixes">SI Prefixes</a></li>
-<li><a class="reference internal" href="#metric-distance-units">Metric Distance Units</a><ul>
-<li><a class="reference internal" href="#meter">Meter</a></li>
+<li><a class="reference internal" href="#si-distance-units">SI Distance Units</a><ul>
+<li><a class="reference internal" href="#metre">metre</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#metric-fluid-units">Metric Fluid Units</a><ul>
-<li><a class="reference internal" href="#liter">Liter</a></li>
+<li><a class="reference internal" href="#si-volume-units">SI Volume Units</a><ul>
+<li><a class="reference internal" href="#litre">litre</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#metric-mass-units">Metric Mass Units</a><ul>
-<li><a class="reference internal" href="#gram">Gram</a></li>
+<li><a class="reference internal" href="#si-mass-units">SI Mass Units</a><ul>
+<li><a class="reference internal" href="#kilogram">kilogram</a><ul>
+<li><a class="reference internal" href="#gram">gram</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#imperial-units">Imperial Units</a><ul>
+<li><a class="reference internal" href="#si-time-units">SI Time Units</a><ul>
+<li><a class="reference internal" href="#second">second</a><ul>
+<li><a class="reference internal" href="#microsecond">microsecond</a></li>
+<li><a class="reference internal" href="#millisecond">millisecond</a></li>
+<li><a class="reference internal" href="#minute">minute</a></li>
+<li><a class="reference internal" href="#hour">hour</a></li>
+<li><a class="reference internal" href="#day">day</a></li>
+<li><a class="reference internal" href="#week">week</a></li>
+<li><a class="reference internal" href="#month">month</a></li>
+<li><a class="reference internal" href="#year">year</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#si-frequency-units">SI Frequency Units</a><ul>
+<li><a class="reference internal" href="#hertz">hertz</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#si-electric-current-units">SI Electric Current Units</a><ul>
+<li><a class="reference internal" href="#ampere">ampere</a></li>
+<li><a class="reference internal" href="#volt">volt</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#si-temperature-units">SI Temperature Units</a><ul>
+<li><a class="reference internal" href="#celsius">celsius</a></li>
+<li><a class="reference internal" href="#kelvin">kelvin</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#si-amount-units">SI Amount Units</a><ul>
+<li><a class="reference internal" href="#mole">mole</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#si-luminous-intensity-units">SI Luminous Intensity Units</a><ul>
+<li><a class="reference internal" href="#candela">candela</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#si-data-units">SI Data Units</a><ul>
+<li><a class="reference internal" href="#bit">bit</a></li>
+<li><a class="reference internal" href="#byte">byte</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#imperial-units">Imperial units</a><ul>
 <li><a class="reference internal" href="#imperial-distance-units">Imperial Distance Units</a><ul>
-<li><a class="reference internal" href="#inch">Inch</a></li>
-<li><a class="reference internal" href="#foot">Foot</a></li>
-<li><a class="reference internal" href="#mile">Mile</a></li>
+<li><a class="reference internal" href="#inch">inch</a><ul>
+<li><a class="reference internal" href="#foot">foot</a></li>
+<li><a class="reference internal" href="#yard">yard</a></li>
+<li><a class="reference internal" href="#mile">mile</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#imperial-fluid-units">Imperial Fluid Units</a><ul>
-<li><a class="reference internal" href="#fluid-ounce">Fluid Ounce</a></li>
-<li><a class="reference internal" href="#pint">Pint</a></li>
-<li><a class="reference internal" href="#gallon">Gallon</a></li>
-<li><a class="reference internal" href="#keg">Keg</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#imperial-volume-units">Imperial Volume Units</a><ul>
+<li><a class="reference internal" href="#teaspoon">teaspoon</a></li>
+<li><a class="reference internal" href="#dram">dram</a></li>
+<li><a class="reference internal" href="#tablespoon">tablespoon</a></li>
+<li><a class="reference internal" href="#cup">cup</a></li>
+<li><a class="reference internal" href="#fluid-ounce">fluid ounce</a></li>
+<li><a class="reference internal" href="#pint">pint</a></li>
+<li><a class="reference internal" href="#quart">quart</a></li>
+<li><a class="reference internal" href="#gallon">gallon</a></li>
+<li><a class="reference internal" href="#keg">keg</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#imperial-mass-units">Imperial Mass Units</a><ul>
-<li><a class="reference internal" href="#id16">Gram</a></li>
-<li><a class="reference internal" href="#ounce">Ounce</a></li>
-<li><a class="reference internal" href="#pound">Pound</a></li>
-<li><a class="reference internal" href="#ton">Ton</a></li>
+<li><a class="reference internal" href="#id55">gram</a></li>
+<li><a class="reference internal" href="#ounce">ounce</a></li>
+<li><a class="reference internal" href="#pound">pound</a></li>
+<li><a class="reference internal" href="#ton">ton</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#us-customary-units">US Customary Units</a></li>
-<li><a class="reference internal" href="#common-conversions">Common Conversions</a><ul>
-<li><a class="reference internal" href="#fluid-conversions">Fluid Conversions</a></li>
+<li><a class="reference internal" href="#us-customary-units">US customary units</a></li>
+<li><a class="reference internal" href="#industry-units">Industry Units</a><ul>
+<li><a class="reference internal" href="#freight">Freight</a></li>
+<li><a class="reference internal" href="#fuel">Fuel</a></li>
 </ul>
 </li>
 </ul>
@@ -293,160 +415,980 @@
                   
   <div class="section" id="units">
 <span id="index-0"></span><span id="id1"></span><h1>Units<a class="headerlink" href="#units" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="si-units">
-<span id="index-1"></span><span id="id2"></span><h2>SI Units<a class="headerlink" href="#si-units" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/International_System_of_Units">https://en.wikipedia.org/wiki/International_System_of_Units</a></div>
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Units_of_measurement">https://en.wikipedia.org/wiki/Units_of_measurement</a></div>
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/System_of_measurement">https://en.wikipedia.org/wiki/System_of_measurement</a></div>
 </div>
-<p>Metric Units</p>
+<div class="section" id="rdf-and-units">
+<span id="index-1"></span><span id="id2"></span><h2>RDF and Units<a class="headerlink" href="#rdf-and-units" title="Permalink to this headline">¶</a></h2>
+<p>Units of measurement can be expressed with <a class="reference internal" href="knowledge-engineering#rdf"><em>RDF</em></a>,
+<a class="reference internal" href="knowledge-engineering#rdfs"><em>RDFS</em></a>, and <a class="reference internal" href="knowledge-engineering#owl"><em>OWL</em></a>.</p>
+<ul class="simple">
+<li><a class="reference internal" href="knowledge-engineering#qudt"><em>QUDT</em></a> defines <a class="reference internal" href="#si-units"><em>SI Units</em></a> and <a class="reference internal" href="#imperial-units"><em>Imperial units</em></a>
+with <a class="reference internal" href="knowledge-engineering#rdf"><em>RDF</em></a> and <a class="reference internal" href="knowledge-engineering#owl"><em>OWL</em></a>.</li>
+</ul>
+<div class="section" id="csvw-and-units">
+<span id="index-2"></span><span id="id3"></span><h3>CSVW and Units<a class="headerlink" href="#csvw-and-units" title="Permalink to this headline">¶</a></h3>
+<p>See: <a class="reference internal" href="knowledge-engineering#csvw"><em>CSVW</em></a>, <a class="reference internal" href="#tool-support-for-units"><em>Tool Support for Units</em></a></p>
+</div>
+</div>
+<div class="section" id="tool-support-for-units">
+<span id="index-3"></span><span id="id4"></span><h2>Tool Support for Units<a class="headerlink" href="#tool-support-for-units" title="Permalink to this headline">¶</a></h2>
+<p>Spreadsheet tools:</p>
+<ul class="simple">
+<li>Specify units in each column heading
+(e.g. <code class="docutils literal"><span class="pre">&quot;time</span> <span class="pre">[[s]]&quot;,&quot;speed</span> <span class="pre">[[m/s]]&quot;</span></code>)</li>
+<li>Extra column per column for units
+(e.g. <code class="docutils literal"><span class="pre">&quot;time&quot;,&quot;time</span> <span class="pre">unit&quot;,&quot;speed&quot;,&quot;speed</span> <span class="pre">unit&quot;</span></code>)</li>
+<li><a class="reference internal" href="knowledge-engineering#csvw"><em>CSVW</em></a>: Columns have URIs, which are objects
+that can have subjects and predicates
+(for <a class="reference internal" href="knowledge-engineering#xsd"><em>XSD</em></a> types; metadata (author, date,
+<code class="docutils literal"><span class="pre">rdfs:label</span> <span class="pre">&quot;time&quot;&#64;en&quot;</span></code>),
+and possibly units of measure)</li>
+</ul>
+<p>Unit and/or precision-aware calculations:</p>
+<ul>
+<li><p class="first">pypi:pint is a <a class="reference internal" href="../tools/index#python"><em>Python</em></a> library for physical quantities
+which supports but does not require <cite>NumPy</cite>.</p>
+<div class="line-block">
+<div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/pint">https://pypi.python.org/pypi/pint</a></div>
+<div class="line">Src:  <a class="reference external" href="https://github.com/hgrecco/pint">https://github.com/hgrecco/pint</a></div>
+<div class="line">Docs: <a class="reference external" href="https://pint.readthedocs.org/en/latest/">https://pint.readthedocs.org/en/latest/</a></div>
+</div>
+</li>
+</ul>
+<p>Storage formats:</p>
+<ul class="simple">
+<li>[ ] Spreadsheet formats do not have unit of measure support.</li>
+<li><a class="reference internal" href="knowledge-engineering#csv"><em>CSV</em></a> does not have unit of measure support.</li>
+<li><a class="reference internal" href="knowledge-engineering#json"><em>JSON</em></a> does not have unit of measure support.</li>
+<li><a class="reference internal" href="knowledge-engineering#rdf"><em>RDF</em></a> vocabularies support units of measure:<ul>
+<li><a class="reference internal" href="knowledge-engineering#csvw"><em>CSVW</em></a> supports units of measure.</li>
+<li><a class="reference internal" href="knowledge-engineering#json-ld"><em>JSON-LD</em></a> supports units of measure.</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="binary-prefixes">
+<span id="index-4"></span><span id="id5"></span><h2>Binary Prefixes<a class="headerlink" href="#binary-prefixes" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="table-striped table-responsive docutils" id="id60">
+<caption><span class="caption-text">Table of Binary Prefixes (adapted from:
+    <a class="reference external" href="https://en.wikipedia.org/wiki/Binary_prefix">https://en.wikipedia.org/wiki/Binary_prefix</a>)</span><a class="headerlink" href="#id60" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="10%" />
+<col width="13%" />
+<col width="28%" />
+<col width="25%" />
+<col width="24%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Text</strong></td>
+<td><strong>Symbol</strong></td>
+<td><strong>Scalar (base 10)</strong></td>
+<td><strong>Scalar (base 1000)</strong></td>
+<td><strong>Scalar (base 1e1)</strong></td>
+</tr>
+<tr class="row-even"><td>kilo</td>
+<td>k</td>
+<td>1000</td>
+<td>1000**1</td>
+<td>1e3</td>
+</tr>
+<tr class="row-odd"><td>mega</td>
+<td>M</td>
+<td>1000000</td>
+<td>1000**2</td>
+<td>1e6</td>
+</tr>
+<tr class="row-even"><td>giga</td>
+<td>G</td>
+<td>1000000000</td>
+<td>1000**3</td>
+<td>1e9</td>
+</tr>
+<tr class="row-odd"><td>tera</td>
+<td>T</td>
+<td>1000000000000</td>
+<td>1000**4</td>
+<td>1e12</td>
+</tr>
+<tr class="row-even"><td>peta</td>
+<td>P</td>
+<td>1000000000000000</td>
+<td>1000**5</td>
+<td>1e15</td>
+</tr>
+<tr class="row-odd"><td>exa</td>
+<td>E</td>
+<td>1000000000000000000</td>
+<td>1000**6</td>
+<td>1e18</td>
+</tr>
+<tr class="row-even"><td>zetta</td>
+<td>Z</td>
+<td>1000000000000000000000</td>
+<td>1000**7</td>
+<td>1e21</td>
+</tr>
+<tr class="row-odd"><td>yotta</td>
+<td>Y</td>
+<td>1000000000000000000000000</td>
+<td>1000**8</td>
+<td>1e24</td>
+</tr>
+</tbody>
+</table>
+<p>See also: <a class="reference internal" href="#si-prefixes"><em>SI Prefixes</em></a></p>
+</div>
+<div class="section" id="metric-system">
+<span id="index-5"></span><span id="id6"></span><h2>Metric System<a class="headerlink" href="#metric-system" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Metric_system">https://en.wikipedia.org/wiki/Metric_system</a></div>
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Outline_of_the_metric_system">https://en.wikipedia.org/wiki/Outline_of_the_metric_system</a></div>
+</div>
+<div class="section" id="si-units">
+<span id="index-6"></span><span id="id7"></span><h3>SI Units<a class="headerlink" href="#si-units" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/International_System_of_Units">https://en.wikipedia.org/wiki/International_System_of_Units</a></div>
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/SI_base_unit">https://en.wikipedia.org/wiki/SI_base_unit</a></div>
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/SI_derived_unit">https://en.wikipedia.org/wiki/SI_derived_unit</a></div>
+</div>
+<p>SI Units (<em>International System of Units</em>) are the
+standard units of measurement for almost every
+country on Earth.</p>
+<ul class="simple">
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/SI_derived_unit#Derived_units_with_special_names">https://en.wikipedia.org/wiki/SI_derived_unit#Derived_units_with_special_names</a></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/SI_derived_unit#Examples_of_derived_quantities_and_units">https://en.wikipedia.org/wiki/SI_derived_unit#Examples_of_derived_quantities_and_units</a></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Non-SI_units_mentioned_in_the_SI">https://en.wikipedia.org/wiki/Non-SI_units_mentioned_in_the_SI</a></li>
+<li><a class="reference internal" href="#us-customary-units"><em>US customary units</em></a> do not yet specify <a class="reference internal" href="#si-units"><em>SI Units</em></a>
+because the USA has not yet converted to the <a class="reference internal" href="#metric-system"><em>Metric System</em></a>.</li>
+</ul>
+</div>
+<div class="section" id="si-base-units">
+<span id="index-7"></span><span id="id8"></span><h3>SI Base Units<a class="headerlink" href="#si-base-units" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/International_System_of_Units#Base_units">https://en.wikipedia.org/wiki/International_System_of_Units#Base_units</a></div>
+</div>
+<ul class="simple">
+<li><a class="reference internal" href="#metre"><em>metre</em></a></li>
+<li><a class="reference internal" href="#kilogram"><em>kilogram</em></a></li>
+<li><a class="reference internal" href="#second"><em>second</em></a></li>
+<li><a class="reference internal" href="#ampere"><em>ampere</em></a></li>
+<li><a class="reference internal" href="#kelvin"><em>kelvin</em></a></li>
+<li><a class="reference internal" href="#mole"><em>mole</em></a></li>
+<li><a class="reference internal" href="#candela"><em>candela</em></a></li>
+</ul>
+<span class="target" id="index-8"></span></div>
 <div class="section" id="si-prefixes">
-<span id="index-2"></span><span id="id3"></span><h3>SI Prefixes<a class="headerlink" href="#si-prefixes" title="Permalink to this headline">¶</a></h3>
+<span id="index-9"></span><span id="id9"></span><h3>SI Prefixes<a class="headerlink" href="#si-prefixes" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Metric_prefix">https://en.wikipedia.org/wiki/Metric_prefix</a></div>
+</div>
+<table border="1" class="table-striped table-responsive docutils" id="id61">
+<caption><span class="caption-text">Table of SI Prefixes
+   (adapted from:
+    <a class="reference external" href="https://en.wikipedia.org/wiki/Template:Common_metric_prefixes">https://en.wikipedia.org/wiki/Template:Common_metric_prefixes</a>
+    and <a class="reference external" href="https://en.wikipedia.org/wiki/Binary_prefix">https://en.wikipedia.org/wiki/Binary_prefix</a>)</span><a class="headerlink" href="#id61" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="14%" />
+<col width="16%" />
+<col width="37%" />
+<col width="33%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Text</strong></td>
+<td><strong>Symbol</strong></td>
+<td><strong>Scaling Factor</strong></td>
+<td><strong>Scaling Factor (e)</strong></td>
+</tr>
+<tr class="row-even"><td>pico</td>
+<td>p</td>
+<td>0.000000000001</td>
+<td>1e-12</td>
+</tr>
+<tr class="row-odd"><td>nano</td>
+<td>n</td>
+<td>0.000000001</td>
+<td>1e-9</td>
+</tr>
+<tr class="row-even"><td>micro</td>
+<td>μ</td>
+<td>0.000001</td>
+<td>1e-6</td>
+</tr>
+<tr class="row-odd"><td>milli</td>
+<td>m</td>
+<td>0.001</td>
+<td>1e-3</td>
+</tr>
+<tr class="row-even"><td>centi</td>
+<td>c</td>
+<td>0.01</td>
+<td>1e-2</td>
+</tr>
+<tr class="row-odd"><td>deci</td>
+<td>d</td>
+<td>0.1</td>
+<td>1e-1</td>
+</tr>
+<tr class="row-even"><td>(none)</td>
+<td>(none)</td>
+<td>1</td>
+<td>1e0</td>
+</tr>
+<tr class="row-odd"><td>deca</td>
+<td>da</td>
+<td>10</td>
+<td>1e1</td>
+</tr>
+<tr class="row-even"><td>hecto</td>
+<td>h</td>
+<td>100</td>
+<td>1e2</td>
+</tr>
+<tr class="row-odd"><td>kilo</td>
+<td>k</td>
+<td>1000</td>
+<td>1e3</td>
+</tr>
+<tr class="row-even"><td>mega</td>
+<td>M</td>
+<td>1000000</td>
+<td>1e6</td>
+</tr>
+<tr class="row-odd"><td>giga</td>
+<td>G</td>
+<td>1000000000</td>
+<td>1e9</td>
+</tr>
+<tr class="row-even"><td>tera</td>
+<td>T</td>
+<td>1000000000000</td>
+<td>1e12</td>
+</tr>
+<tr class="row-odd"><td>peta</td>
+<td>P</td>
+<td>1000000000000000</td>
+<td>1e15</td>
+</tr>
+<tr class="row-even"><td>exa</td>
+<td>E</td>
+<td>1000000000000000000</td>
+<td>1e18</td>
+</tr>
+<tr class="row-odd"><td>zetta</td>
+<td>Z</td>
+<td>1000000000000000000000</td>
+<td>1e21</td>
+</tr>
+<tr class="row-even"><td>yotta</td>
+<td>Y</td>
+<td>1000000000000000000000000</td>
+<td>1e24</td>
+</tr>
+</tbody>
+</table>
+<p>See also: <a class="reference internal" href="#binary-prefixes"><em>Binary Prefixes</em></a></p>
+</div>
+<div class="section" id="si-distance-units">
+<span id="index-10"></span><span id="id10"></span><h3>SI Distance Units<a class="headerlink" href="#si-distance-units" title="Permalink to this headline">¶</a></h3>
+<span class="target" id="index-11"></span><span class="target" id="index-12"></span><div class="section" id="metre">
+<span id="index-13"></span><span id="id11"></span><h4>metre<a class="headerlink" href="#metre" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Metre">https://en.wikipedia.org/wiki/Metre</a></div>
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Meter">https://en.wikipedia.org/wiki/Meter</a></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">m</span></code></div>
+</div>
+<blockquote>
+<div>The metre is the length of the path travelled by light in vacuum
+during a time interval of 1/299792458 of a second</div></blockquote>
+</div>
+</div>
+<div class="section" id="si-volume-units">
+<span id="si-fluid-units"></span><span id="index-14"></span><h3>SI Volume Units<a class="headerlink" href="#si-volume-units" title="Permalink to this headline">¶</a></h3>
+<span class="target" id="index-15"></span><span class="target" id="index-16"></span><div class="section" id="litre">
+<span id="index-17"></span><span id="id12"></span><h4>litre<a class="headerlink" href="#litre" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Litre">https://en.wikipedia.org/wiki/Litre</a></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">L</span></code></div>
+</div>
 <ul class="simple">
-<li>centi = 1/100</li>
-<li>milli = 1/1000</li>
-<li>deci = 100  TODO ? [ ]</li>
-<li>kilo = 1000</li>
+<li>Conversion: 1 <a class="reference internal" href="#litre"><em>litre</em></a> == <code class="docutils literal"><span class="pre">10e−3</span> <span class="pre">m**3</span></code> (<a class="reference internal" href="#metre"><em>metres</em></a> cubed)</li>
+<li>Conversion: 1 <a class="reference internal" href="#litre"><em>litre</em></a> == 0.2641720523 US <a class="reference internal" href="#gallon"><em>gallon</em></a> (~ 1/4)</li>
 </ul>
 </div>
-<div class="section" id="metric-distance-units">
-<span id="index-3"></span><span id="id4"></span><h3>Metric Distance Units<a class="headerlink" href="#metric-distance-units" title="Permalink to this headline">¶</a></h3>
-<span class="target" id="index-4"></span><div class="section" id="meter">
-<span id="index-5"></span><span id="id5"></span><h4>Meter<a class="headerlink" href="#meter" title="Permalink to this headline">¶</a></h4>
 </div>
+<div class="section" id="si-mass-units">
+<span id="index-18"></span><span id="id13"></span><h3>SI Mass Units<a class="headerlink" href="#si-mass-units" title="Permalink to this headline">¶</a></h3>
+<span class="target" id="index-19"></span><div class="section" id="kilogram">
+<span id="index-20"></span><span id="id14"></span><h4>kilogram<a class="headerlink" href="#kilogram" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Kilogram">https://en.wikipedia.org/wiki/Kilogram</a></div>
 </div>
-<div class="section" id="metric-fluid-units">
-<span id="index-6"></span><span id="id6"></span><h3>Metric Fluid Units<a class="headerlink" href="#metric-fluid-units" title="Permalink to this headline">¶</a></h3>
-<span class="target" id="index-7"></span><div class="section" id="liter">
-<span id="l"></span><span id="index-8"></span><h4>Liter<a class="headerlink" href="#liter" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
-<li>Abbrev: <code class="docutils literal"><span class="pre">L</span></code></li>
+<li>A <a class="reference internal" href="#kilogram"><em>kilogram</em></a> is the mass of TODO</li>
+<li><a class="reference internal" href="#id55"><em>gram</em></a> is defined in terms of a <a class="reference internal" href="#kilogram"><em>kilogram</em></a></li>
+</ul>
+<span class="target" id="index-21"></span><div class="section" id="gram">
+<span id="g"></span><span id="index-22"></span><h5>gram<a class="headerlink" href="#gram" title="Permalink to this headline">¶</a></h5>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Gram">https://en.wikipedia.org/wiki/Gram</a></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">g</span></code></div>
+</div>
+<ul class="simple">
+<li>Conversion: 1 <a class="reference internal" href="#g"><em>gram</em></a> == 1/28 <a class="reference internal" href="#oz"><em>ounce</em></a></li>
+<li>Conversion: 1 <a class="reference internal" href="#g"><em>gram</em></a> == 1/1000 kilo- <a class="reference internal" href="#id55"><em>gram</em></a></li>
 </ul>
 </div>
 </div>
-<div class="section" id="metric-mass-units">
-<span id="index-9"></span><span id="id7"></span><h3>Metric Mass Units<a class="headerlink" href="#metric-mass-units" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="gram">
-<span id="g"></span><span id="index-10"></span><h4>Gram<a class="headerlink" href="#gram" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="si-time-units">
+<span id="index-23"></span><span id="id15"></span><h3>SI Time Units<a class="headerlink" href="#si-time-units" title="Permalink to this headline">¶</a></h3>
+<span class="target" id="index-24"></span><div class="section" id="second">
+<span id="index-25"></span><span id="id16"></span><h4>second<a class="headerlink" href="#second" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Second">https://en.wikipedia.org/wiki/Second</a> #TODO</div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">sec</span></code></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">s</span></code></div>
+</div>
+<div class="section" id="microsecond">
+<span id="index-26"></span><span id="id17"></span><h5>microsecond<a class="headerlink" href="#microsecond" title="Permalink to this headline">¶</a></h5>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Microsecond">https://en.wikipedia.org/wiki/Microsecond</a> #TODO</div>
+<div class="line">Abbr: TODO</div>
+</div>
 <ul class="simple">
-<li>Abbrev: <code class="docutils literal"><span class="pre">g</span></code></li>
+<li>Conversion: 1 <a class="reference internal" href="#microsecond"><em>microsecond</em></a> == 1/100000 TODO of a <a class="reference internal" href="#second"><em>second</em></a></li>
+<li>Conversion: 1 <a class="reference internal" href="#microsecond"><em>microsecond</em></a> == 1e-1000 TODO <a class="reference internal" href="#second"><em>seconds</em></a></li>
 </ul>
+</div>
+<div class="section" id="millisecond">
+<span id="index-27"></span><span id="id18"></span><h5>millisecond<a class="headerlink" href="#millisecond" title="Permalink to this headline">¶</a></h5>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Millisecond">https://en.wikipedia.org/wiki/Millisecond</a> #TODO</div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">ms</span></code></div>
+</div>
+<ul class="simple">
+<li>Conversion: 1 <a class="reference internal" href="#millisecond"><em>millisecond</em></a> == 1/1000 of a <a class="reference internal" href="#second"><em>second</em></a></li>
+<li>Conversion: 1 <a class="reference internal" href="#millisecond"><em>millisecond</em></a> == 1e-3 <a class="reference internal" href="#second"><em>seconds</em></a></li>
+</ul>
+<span class="target" id="index-28"></span></div>
+<div class="section" id="minute">
+<span id="index-29"></span><span id="id19"></span><h5>minute<a class="headerlink" href="#minute" title="Permalink to this headline">¶</a></h5>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Minute">https://en.wikipedia.org/wiki/Minute</a></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">min</span></code></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">m</span></code></div>
+</div>
+<ul class="simple">
+<li>Conversion: 1 <a class="reference internal" href="#minute"><em>minute</em></a> == 60 <a class="reference internal" href="#second"><em>seconds</em></a></li>
+</ul>
+</div>
+<div class="section" id="hour">
+<span id="index-30"></span><span id="id20"></span><h5>hour<a class="headerlink" href="#hour" title="Permalink to this headline">¶</a></h5>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Hour">https://en.wikipedia.org/wiki/Hour</a></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">hr</span></code></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">hrs</span></code></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">h</span></code></div>
+</div>
+<ul class="simple">
+<li>Conversion: 1 <a class="reference internal" href="#hour"><em>hour</em></a> == 60 <a class="reference internal" href="#minute"><em>minutes</em></a></li>
+<li>Conversion: 1 <a class="reference internal" href="#hour"><em>hour</em></a> == 3600 <a class="reference internal" href="#second"><em>seconds</em></a></li>
+</ul>
+</div>
+<div class="section" id="day">
+<span id="index-31"></span><span id="id21"></span><h5>day<a class="headerlink" href="#day" title="Permalink to this headline">¶</a></h5>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Day">https://en.wikipedia.org/wiki/Day</a></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">d</span></code></div>
+</div>
+<ul class="simple">
+<li>Conversion: 1 <a class="reference internal" href="#day"><em>day</em></a> == 24 <a class="reference internal" href="#hour"><em>hours</em></a></li>
+<li>Conversion: 1 <a class="reference internal" href="#day"><em>day</em></a> == 1440 <a class="reference internal" href="#minute"><em>minutes</em></a></li>
+<li>Conversion: 1 <a class="reference internal" href="#day"><em>day</em></a> == 86400 <a class="reference internal" href="#second"><em>seconds</em></a></li>
+<li>Rotational definition: 1 <a class="reference internal" href="#day"><em>day</em></a> == one complete planetary rotation</li>
+</ul>
+</div>
+<div class="section" id="week">
+<span id="index-32"></span><span id="id22"></span><h5>week<a class="headerlink" href="#week" title="Permalink to this headline">¶</a></h5>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Week">https://en.wikipedia.org/wiki/Week</a></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">wk</span></code></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">wks</span></code></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">w</span></code></div>
+</div>
+<ul class="simple">
+<li>Conversion: 1 <a class="reference internal" href="#week"><em>week</em></a> == 7 <a class="reference internal" href="#day"><em>days</em></a></li>
+<li>Conversion: 1 <a class="reference internal" href="#week"><em>week</em></a> == 168 <a class="reference internal" href="#hour"><em>hours</em></a></li>
+<li>Conversion: 1 <a class="reference internal" href="#week"><em>week</em></a> == 10080 <a class="reference internal" href="#minute"><em>minutes</em></a></li>
+<li>Conversion: 1 <a class="reference internal" href="#week"><em>week</em></a> == 604800 <a class="reference internal" href="#second"><em>seconds</em></a></li>
+</ul>
+</div>
+<div class="section" id="month">
+<span id="index-33"></span><span id="id23"></span><h5>month<a class="headerlink" href="#month" title="Permalink to this headline">¶</a></h5>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Month">https://en.wikipedia.org/wiki/Month</a></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">mon</span></code></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">mons</span></code></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">m</span></code></div>
+</div>
+<ul class="simple">
+<li>A month contains either 28 (Feb; 29 on a leap year),
+30, or 31 <a class="reference internal" href="#day"><em>days</em></a>.</li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Thirty_days_hath_September">https://en.wikipedia.org/wiki/Thirty_days_hath_September</a></li>
+<li>Two hands of knuckles with peaks and valleys together:<ul>
+<li>start with an outside knuckle</li>
+<li>up (peak; knuckle) &#8211; 31 days</li>
+<li>down (peak; knuckle) &#8211; 30 day (except for February, which has 28/29)</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="year">
+<span id="index-34"></span><span id="id24"></span><h5>year<a class="headerlink" href="#year" title="Permalink to this headline">¶</a></h5>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Year">https://en.wikipedia.org/wiki/Year</a></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">yr</span></code></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">yrs</span></code></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">y</span></code></div>
+</div>
+<ul class="simple">
+<li>Conversion: 1 <a class="reference internal" href="#year"><em>year</em></a> == 365.25 <a class="reference internal" href="#day"><em>days</em></a> (<em>1 leap day</em>/4.0)</li>
+<li>Conversion: 1 <a class="reference internal" href="#year"><em>year</em></a> == 365 <a class="reference internal" href="#day"><em>days</em></a></li>
+<li>Conversion: 1 <a class="reference internal" href="#year"><em>year</em></a> == 8760 <a class="reference internal" href="#hour"><em>hours</em></a></li>
+<li>Conversion: 1 <a class="reference internal" href="#year"><em>year</em></a> == 525600 <a class="reference internal" href="#minute"><em>minutes</em></a></li>
+<li>Conversion: 1 <a class="reference internal" href="#year"><em>year</em></a> == 31536000 <a class="reference internal" href="#second"><em>seconds</em></a></li>
+<li>Rotational definition: 1 <a class="reference internal" href="#year"><em>year</em></a> == 1 complete revolution around
+our singular planetary star: <em>the sun</em>.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="si-frequency-units">
+<span id="index-35"></span><span id="id25"></span><h3>SI Frequency Units<a class="headerlink" href="#si-frequency-units" title="Permalink to this headline">¶</a></h3>
+<span class="target" id="index-36"></span><div class="section" id="hertz">
+<span id="hz"></span><span id="index-37"></span><h4>hertz<a class="headerlink" href="#hertz" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Hertz">https://en.wikipedia.org/wiki/Hertz</a></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">Hz</span></code></div>
+</div>
+<ul class="simple">
+<li>TODO: cycles per time</li>
+<li>TODO: em.py</li>
+</ul>
+</div>
+</div>
+<div class="section" id="si-electric-current-units">
+<span id="index-38"></span><span id="id26"></span><h3>SI Electric Current Units<a class="headerlink" href="#si-electric-current-units" title="Permalink to this headline">¶</a></h3>
+<span class="target" id="index-39"></span><div class="section" id="ampere">
+<span id="index-40"></span><span id="id27"></span><h4>ampere<a class="headerlink" href="#ampere" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Ampere">https://en.wikipedia.org/wiki/Ampere</a></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">A</span></code>  # TODO</div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">amp</span></code></div>
+</div>
+<p># TODO</p>
+</div>
+<div class="section" id="volt">
+<span id="index-41"></span><span id="id28"></span><h4>volt<a class="headerlink" href="#volt" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Volt">https://en.wikipedia.org/wiki/Volt</a></div>
+</div>
+<div class="line-block">
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">V</span></code>  # TODO</div>
+</div>
+<p># TODO frequency / current relation</p>
+</div>
+</div>
+<div class="section" id="si-temperature-units">
+<span id="index-42"></span><span id="id29"></span><h3>SI Temperature Units<a class="headerlink" href="#si-temperature-units" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="celsius">
+<span id="index-43"></span><span id="id30"></span><h4>celsius<a class="headerlink" href="#celsius" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Celsius">https://en.wikipedia.org/wiki/Celsius</a></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">C</span></code></div>
+</div>
+<ul class="simple">
+<li>Water (H2O) freezes at 0 degrees <a class="reference internal" href="#celsius"><em>celsius</em></a>.</li>
+<li>Water (H20) boils at 100 degrees <a class="reference internal" href="#celsius"><em>celsius</em></a>.</li>
+<li>[ ] celsius / <a class="reference internal" href="#kelvin"><em>kelvin</em></a> relation</li>
+</ul>
+</div>
+<div class="section" id="kelvin">
+<span id="index-44"></span><span id="id31"></span><h4>kelvin<a class="headerlink" href="#kelvin" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Kelvin">https://en.wikipedia.org/wiki/Kelvin</a></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">K</span></code></div>
+</div>
+</div>
+</div>
+<div class="section" id="si-amount-units">
+<span id="index-45"></span><span id="id32"></span><h3>SI Amount Units<a class="headerlink" href="#si-amount-units" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="mole">
+<span id="index-46"></span><span id="id33"></span><h4>mole<a class="headerlink" href="#mole" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Mole_(unit)">https://en.wikipedia.org/wiki/Mole_(unit)</a></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">mol</span></code></div>
+</div>
+</div>
+</div>
+<div class="section" id="si-luminous-intensity-units">
+<span id="index-47"></span><span id="id34"></span><h3>SI Luminous Intensity Units<a class="headerlink" href="#si-luminous-intensity-units" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="candela">
+<span id="index-48"></span><span id="id35"></span><h4>candela<a class="headerlink" href="#candela" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Candela">https://en.wikipedia.org/wiki/Candela</a></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">cd</span></code></div>
+</div>
+</div>
+</div>
+<div class="section" id="si-data-units">
+<span id="index-49"></span><span id="id36"></span><h3>SI Data Units<a class="headerlink" href="#si-data-units" title="Permalink to this headline">¶</a></h3>
+<span class="target" id="index-50"></span><div class="section" id="bit">
+<span id="index-51"></span><span id="id37"></span><h4>bit<a class="headerlink" href="#bit" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Bit">https://en.wikipedia.org/wiki/Bit</a></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">b</span></code></div>
+</div>
+<p>A bit can be <code class="docutils literal"><span class="pre">1</span></code> or <code class="docutils literal"><span class="pre">0</span></code>.</p>
+<ul>
+<li><p class="first">A bit may indicate <em>set containment</em> (e.g. <code class="docutils literal"><span class="pre">True</span></code> or <code class="docutils literal"><span class="pre">False</span></code>,
+<code class="docutils literal"><span class="pre">Black</span></code> or <code class="docutils literal"><span class="pre">White</span></code>) [<a class="reference internal" href="knowledge-engineering#set-theory"><em>Set Theory</em></a>]</p>
+</li>
+<li><p class="first">A bit may be part of an ordered set of bits
+which ascribe left-to-right (<em>little endian</em>)
+or right-to-left (<em>big endian</em>)
+place values to each binary digit:</p>
+<div class="highlight-python"><div class="highlight"><pre>1 2 4 8   # little endian
+0 1 0 1   # == 0 + 2 + 0 + 8 == 9 (base 10)
+
+8 4 2 1   # big endian
+0 1 0 1   # == 0 + 4 + 0 + 1 == 5 (base 10)
+</pre></div>
+</div>
+</li>
+<li><p class="first">See also: <a class="reference internal" href="data-science#information-theory"><em>Information Theory</em></a> &gt; Shannon bit (<em>Shannon entropy</em>)</p>
+</li>
+</ul>
+<span class="target" id="index-52"></span></div>
+<div class="section" id="byte">
+<span id="index-53"></span><span id="id38"></span><h4>byte<a class="headerlink" href="#byte" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Byte">https://en.wikipedia.org/wiki/Byte</a></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">B</span></code></div>
+</div>
+<ul class="simple">
+<li>Conversion: 1 <a class="reference internal" href="#byte"><em>byte</em></a> == 8 <a class="reference internal" href="#bit"><em>bits</em></a></li>
+<li>Storage vendors use <em>powers of ten</em>
+(e.g. MB, GB, TB) to describe storage capacity;
+and also binary prefixes (kilo, mega, giga, tera, peta, exa, zetta).</li>
+<li>Many/most software programs use <em>powers of two</em>
+and binary prefixes
+(e.g. MiB, GiB, TiB) to describe e.g. partition and file sizes.</li>
+<li>On-disk file sizes are often larger than
+the file content because of file allocation tables,
+redundancy, block size and allocation;
+but may be smaller after compression/deduplication.</li>
+</ul>
+<table border="1" class="table-striped table-responsive docutils" id="id62">
+<caption><span class="caption-text">Table of Bytes and Binary Prefixes</span><a class="headerlink" href="#id62" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="23%" />
+<col width="21%" />
+<col width="56%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>unit</td>
+<td>derivation</td>
+<td>value</td>
+</tr>
+<tr class="row-even"><td>nibble</td>
+<td>2**2 bits</td>
+<td>4 bits</td>
+</tr>
+<tr class="row-odd"><td>byte</td>
+<td>2**3 bits</td>
+<td>8 bits</td>
+</tr>
+<tr class="row-even"><td>octet</td>
+<td>2**3 bits</td>
+<td>8 bits</td>
+</tr>
+<tr class="row-odd"><td>word size</td>
+<td><p class="first"><a class="reference internal" href="computer-engineering#cpu"><em>CPU</em></a></p>
+<p>register
+width</p>
+<p class="last">(in bits)</p>
+</td>
+<td><p class="first">8+, 16, 24, 32, 64 bits</p>
+<p>32 bits (<a class="reference internal" href="computer-engineering#x86"><em>x86</em></a>, <a class="reference internal" href="computer-engineering#arm"><em>ARM</em></a>)</p>
+<p class="last">64 bits (<a class="reference internal" href="computer-engineering#x86-64"><em>x86_64</em></a>, <a class="reference internal" href="computer-engineering#arm"><em>ARM</em></a> 64)</p>
+</td>
+</tr>
+<tr class="row-even"><td>kibibyte (KiB)</td>
+<td><p class="first">2**10 bytes</p>
+<p class="last">1024**1 bytes</p>
+</td>
+<td>1024 bytes</td>
+</tr>
+<tr class="row-odd"><td>kiloyte (KB)</td>
+<td><p class="first">1e3 bytes</p>
+<p class="last">1000**1 bytes</p>
+</td>
+<td>1000 bytes</td>
+</tr>
+<tr class="row-even"><td>mebibyte (MiB)</td>
+<td><p class="first">2**20 bytes</p>
+<p class="last">1024**2 bytes</p>
+</td>
+<td>1048576 bytes</td>
+</tr>
+<tr class="row-odd"><td>megabyte (MB)</td>
+<td><p class="first">1e6 bytes</p>
+<p class="last">1000**2 bytes</p>
+</td>
+<td>1000000 bytes</td>
+</tr>
+<tr class="row-even"><td>gibibyte (GiB)</td>
+<td><p class="first">2**30 bytes</p>
+<p class="last">1024**3 bytes</p>
+</td>
+<td>1073741824 bytes</td>
+</tr>
+<tr class="row-odd"><td>gigabyte (GB)</td>
+<td><p class="first">1e9 bytes</p>
+<p class="last">1000**3 bytes</p>
+</td>
+<td>1000000000 bytes</td>
+</tr>
+<tr class="row-even"><td>tebibyte (TiB)</td>
+<td><p class="first">2**40 bytes</p>
+<p class="last">1024**4 bytes</p>
+</td>
+<td>1099511627776 bytes</td>
+</tr>
+<tr class="row-odd"><td>terabyte (TB)</td>
+<td><p class="first">1e12 bytes</p>
+<p class="last">1000**4 bytes</p>
+</td>
+<td>1000000000000 bytes</td>
+</tr>
+<tr class="row-even"><td>pebibyte (PiB)</td>
+<td><p class="first">2**50 bytes</p>
+<p class="last">1024**5 bytes</p>
+</td>
+<td>1125899906842624 bytes</td>
+</tr>
+<tr class="row-odd"><td>petabyte (PB)</td>
+<td><p class="first">1e15 bytes</p>
+<p class="last">1000**5 bytes</p>
+</td>
+<td>1000000000000000 bytes</td>
+</tr>
+<tr class="row-even"><td>exbibyte (EiB)</td>
+<td><p class="first">2**60 bytes</p>
+<p class="last">1024**6 bytes</p>
+</td>
+<td>1152921504606846976 bytes</td>
+</tr>
+<tr class="row-odd"><td>exabyte (EB)</td>
+<td><p class="first">1e18 bytes</p>
+<p class="last">1000**6 bytes</p>
+</td>
+<td>1000000000000000000 bytes</td>
+</tr>
+<tr class="row-even"><td>zebibyte (ZiB)</td>
+<td><p class="first">2**70 bytes</p>
+<p class="last">1024**7 bytes</p>
+</td>
+<td>1180591620717411303424 bytes</td>
+</tr>
+<tr class="row-odd"><td>zettabyte (ZB)</td>
+<td><p class="first">1e21 bytes</p>
+<p class="last">1000**7 bytes</p>
+</td>
+<td>1000000000000000000000 bytes</td>
+</tr>
+<tr class="row-even"><td>yobibyte (YiB)</td>
+<td><p class="first">2**80 bytes</p>
+<p class="last">1024**8 bytes</p>
+</td>
+<td>1208925819614629174706176 bytes</td>
+</tr>
+<tr class="row-odd"><td>yottabyte (YB)</td>
+<td><p class="first">1e21 bytes</p>
+<p class="last">1000**8 bytes</p>
+</td>
+<td>1000000000000000000000000 bytes</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
 <div class="section" id="imperial-units">
-<span id="index-11"></span><span id="id8"></span><h2>Imperial Units<a class="headerlink" href="#imperial-units" title="Permalink to this headline">¶</a></h2>
+<span id="index-54"></span><span id="id39"></span><h2>Imperial units<a class="headerlink" href="#imperial-units" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/Imperial_units">https://en.wikipedia.org/wiki/Imperial_units</a></div>
-<div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/English_units">https://en.wikipedia.org/wiki/English_units</a></div>
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Imperial_units">https://en.wikipedia.org/wiki/Imperial_units</a></div>
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/English_units">https://en.wikipedia.org/wiki/English_units</a></div>
 </div>
-<p>Imperial Units may refer to either <em>English Units</em> (ended in 1824)
-or <a class="reference internal" href="#us-customary-units"><em>US Customary Units</em></a> (e.g. gram, ounce, gallon, pound, foot, mile).</p>
+<p>Imperial units may refer to either <em>English units</em> (ended in 1824)
+or <a class="reference internal" href="#us-customary-units"><em>US customary units</em></a> (e.g. gram, ounce, gallon, pound, foot, mile).</p>
 <ul class="simple">
 <li>The UK (<em>United Kingdom</em>) (of which England is a part)
-now specifies <em class="xref std std-ref">Metric Units</em>.</li>
+now specifies the <a class="reference internal" href="#metric-system"><em>Metric System</em></a> of <a class="reference internal" href="#si-units"><em>SI Units</em></a>.</li>
 <li>The USA (<em>United States of America</em>)
-<a class="reference internal" href="#us-customary-units"><em>US Customary Units</em></a> still include
-many <a class="reference internal" href="#imperial-units"><em>Imperial Units</em></a>.</li>
+<a class="reference internal" href="#us-customary-units"><em>US customary units</em></a> still include
+many <a class="reference internal" href="#imperial-units"><em>Imperial units</em></a>;
+though <a class="reference internal" href="data-science#science"><em>Science</em></a> disciplines outside of
+food, transportation, and weather
+do now specify the <a class="reference internal" href="#metric-system"><em>Metric System</em></a> of <a class="reference internal" href="#si-units"><em>SI Units</em></a>.</li>
 </ul>
 <div class="section" id="imperial-distance-units">
-<h3>Imperial Distance Units<a class="headerlink" href="#imperial-distance-units" title="Permalink to this headline">¶</a></h3>
+<span id="index-55"></span><span id="id40"></span><h3>Imperial Distance Units<a class="headerlink" href="#imperial-distance-units" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="inch">
-<span id="index-12"></span><span id="id9"></span><h4>Inch<a class="headerlink" href="#inch" title="Permalink to this headline">¶</a></h4>
+<span id="index-56"></span><span id="id41"></span><h4>inch<a class="headerlink" href="#inch" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Inch">https://en.wikipedia.org/wiki/Inch</a></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">in</span></code></div>
+</div>
 <ul class="simple">
-<li>Conversion: 1 <a class="reference internal" href="#inch"><em>Inch</em></a> == 2.54 <em class="xref std std-ref">centimeters</em></li>
+<li>Conversion: 1 <a class="reference internal" href="#inch"><em>inch</em></a> ~== 2.54 <cite>cm</cite> (centi- <a class="reference internal" href="#metre"><em>meters</em></a>)</li>
+</ul>
+<div class="section" id="foot">
+<span id="index-57"></span><span id="id42"></span><h5>foot<a class="headerlink" href="#foot" title="Permalink to this headline">¶</a></h5>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Foot">https://en.wikipedia.org/wiki/Foot</a></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">ft</span></code></div>
+</div>
+<ul class="simple">
+<li>Conversion: 1 <a class="reference internal" href="#foot"><em>foot</em></a> == 12 <a class="reference internal" href="#inch"><em>inches</em></a></li>
 </ul>
 </div>
-<div class="section" id="foot">
-<span id="index-13"></span><span id="id10"></span><h4>Foot<a class="headerlink" href="#foot" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="yard">
+<span id="index-58"></span><span id="id43"></span><h5>yard<a class="headerlink" href="#yard" title="Permalink to this headline">¶</a></h5>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Foot">https://en.wikipedia.org/wiki/Foot</a></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">yd</span></code></div>
+</div>
 <ul class="simple">
-<li>Conversion: 1 <a class="reference internal" href="#foot"><em>Foot</em></a> == 12 <a class="reference internal" href="#inch"><em>inches</em></a></li>
+<li>Conversion: 1 <a class="reference internal" href="#yard"><em>yard</em></a> == 3 <a class="reference internal" href="#foot"><em>feet</em></a></li>
 </ul>
 </div>
 <div class="section" id="mile">
-<span id="index-14"></span><span id="id11"></span><h4>Mile<a class="headerlink" href="#mile" title="Permalink to this headline">¶</a></h4>
+<span id="index-59"></span><span id="id44"></span><h5>mile<a class="headerlink" href="#mile" title="Permalink to this headline">¶</a></h5>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Mile">https://en.wikipedia.org/wiki/Mile</a></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">mi</span></code></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">m</span></code></div>
+</div>
 <ul class="simple">
-<li>Conversion: 1 <a class="reference internal" href="#mile"><em>Mile</em></a> == 5280 <a class="reference internal" href="#foot"><em>feet</em></a></li>
-<li>Conversion: 1 <a class="reference internal" href="#mile"><em>Mile</em></a> == 63360 <a class="reference internal" href="#inch"><em>inches</em></a></li>
+<li>Conversion 1 <a class="reference internal" href="#mile"><em>mile</em></a> == 1760 <a class="reference internal" href="#yard"><em>yards</em></a></li>
+<li>Conversion: 1 <a class="reference internal" href="#mile"><em>mile</em></a> == 5280 <a class="reference internal" href="#foot"><em>feet</em></a></li>
+<li>Conversion: 1 <a class="reference internal" href="#mile"><em>mile</em></a> == 63360 <a class="reference internal" href="#inch"><em>inches</em></a></li>
 </ul>
 </div>
 </div>
-<div class="section" id="imperial-fluid-units">
-<span id="fluid"></span><span id="index-15"></span><h3>Imperial Fluid Units<a class="headerlink" href="#imperial-fluid-units" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="fluid-ounce">
-<span id="fluid-oz"></span><span id="index-16"></span><h4>Fluid Ounce<a class="headerlink" href="#fluid-ounce" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="imperial-volume-units">
+<span id="index-60"></span><span id="id45"></span><h3>Imperial Volume Units<a class="headerlink" href="#imperial-volume-units" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="teaspoon">
+<span id="index-61"></span><span id="id46"></span><h4>teaspoon<a class="headerlink" href="#teaspoon" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Teaspoon">https://en.wikipedia.org/wiki/Teaspoon</a></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">t</span></code></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">tsp.</span></code></div>
+</div>
 <ul class="simple">
-<li><a class="reference internal" href="#fluid-oz"><em>Fluid Ounce</em></a>  (<em>Fluid Ounce</em>)</li>
-<li>Abbrev: <code class="docutils literal"><span class="pre">fl/oz</span></code></li>
-<li>Abbrev: <code class="docutils literal"><span class="pre">oz</span></code></li>
-<li>Serving size: 1 US fluid serving == 8 <a class="reference internal" href="#fluid-oz"><em>oz</em></a></li>
-<li>Serving size: 1 can of e.g. soda == 12oz (== 1.5 US fluid serving)</li>
+<li>Conversion: 1 US <a class="reference internal" href="#teaspoon"><em>teaspoon</em></a> == 1/3 of a US <a class="reference internal" href="#tablespoon"><em>tablespoon</em></a></li>
+<li>Conversion: 1 US <a class="reference internal" href="#teaspoon"><em>teaspoon</em></a> == 1/6 US <a class="reference internal" href="#fl-oz"><em>fluid ounce</em></a></li>
+<li>Conversion: 1 US <a class="reference internal" href="#teaspoon"><em>teaspoon</em></a> == 1 1/3 US <a class="reference internal" href="#dram"><em>drams</em></a></li>
+<li>Conversion: 1 US <a class="reference internal" href="#teaspoon"><em>teaspoon</em></a> == 4.92892159375 mL
+(milli- <a class="reference internal" href="#litre"><em>Litres</em></a>)</li>
+</ul>
+</div>
+<div class="section" id="dram">
+<span id="index-62"></span><span id="id47"></span><h4>dram<a class="headerlink" href="#dram" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Dram_(unit)">https://en.wikipedia.org/wiki/Dram_(unit)</a></div>
+</div>
+<ul class="simple">
+<li>Conversion: 1 US <a class="reference internal" href="#dram"><em>dram</em></a> == 1/8 US <a class="reference internal" href="#fl-oz"><em>fluid ounce</em></a></li>
+<li>Conversion: 1 US <a class="reference internal" href="#dram"><em>dram</em></a> == 3/4 US <a class="reference internal" href="#teaspoon"><em>teaspoon</em></a></li>
+</ul>
+</div>
+<div class="section" id="tablespoon">
+<span id="index-63"></span><span id="id48"></span><h4>tablespoon<a class="headerlink" href="#tablespoon" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Tablespoon">https://en.wikipedia.org/wiki/Tablespoon</a></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">T</span></code></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">Tbsp.</span></code></div>
+</div>
+<ul class="simple">
+<li>Conversion: 1 US <a class="reference internal" href="#tablespoon"><em>tablespoon</em></a> == 1/6 US <a class="reference internal" href="#fl-oz"><em>fluid ounce</em></a></li>
+</ul>
+</div>
+<div class="section" id="cup">
+<span id="index-64"></span><span id="id49"></span><h4>cup<a class="headerlink" href="#cup" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Cup_(unit)">https://en.wikipedia.org/wiki/Cup_(unit)</a></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">c</span></code></div>
+</div>
+<ul class="simple">
+<li>Metric cup:
+<a class="reference external" href="https://en.wikipedia.org/wiki/Cup_(unit)#Metric_cup">https://en.wikipedia.org/wiki/Cup_(unit)#Metric_cup</a></li>
+<li>US customary cup:
+<a class="reference external" href="https://en.wikipedia.org/wiki/Cup_(unit)#United_States_customary_cup">https://en.wikipedia.org/wiki/Cup_(unit)#United_States_customary_cup</a></li>
+<li>US legal cup (<em>serving size</em>):
+<a class="reference external" href="https://en.wikipedia.org/wiki/Cup_(unit)#United_States_.22legal.22_cup">https://en.wikipedia.org/wiki/Cup_(unit)#United_States_.22legal.22_cup</a></li>
+<li>UK cup:
+<a class="reference external" href="https://en.wikipedia.org/wiki/Cup_(unit)#UK_cup">https://en.wikipedia.org/wiki/Cup_(unit)#UK_cup</a></li>
+<li>Ja cup:
+<a class="reference external" href="https://en.wikipedia.org/wiki/Cup_(unit)#Japanese_cup">https://en.wikipedia.org/wiki/Cup_(unit)#Japanese_cup</a></li>
+<li>Gō cup:
+<a class="reference external" href="https://en.wikipedia.org/wiki/Cup_(unit)#Gō">https://en.wikipedia.org/wiki/Cup_(unit)#Gō</a></li>
+<li>Conversion: 1 US customary <a class="reference internal" href="#cup"><em>cup</em></a> == 8 US <a class="reference internal" href="#fl-oz"><em>fluid ounce</em></a></li>
+<li>Conversion: 1 US legal <a class="reference internal" href="#cup"><em>cup</em></a> == 8.12 US <a class="reference internal" href="#fl-oz"><em>fluid ounce</em></a></li>
+<li>Conversion: 1 Metric <a class="reference internal" href="#cup"><em>cup</em></a> == 8.45 US <a class="reference internal" href="#fl-oz"><em>fluid ounce</em></a></li>
+</ul>
+</div>
+<div class="section" id="fluid-ounce">
+<span id="fl-oz"></span><span id="index-65"></span><h4>fluid ounce<a class="headerlink" href="#fluid-ounce" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Fluid_ounce">https://en.wikipedia.org/wiki/Fluid_ounce</a></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">fl</span> <span class="pre">oz</span></code></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">oz</span></code></div>
+</div>
+<ul class="simple">
+<li>Serving size: 1 US can of e.g. soda == 12 US <a class="reference internal" href="#fl-oz"><em>fluid ounce</em></a></li>
+<li>Conversion: 1 <a class="reference internal" href="#fl-oz"><em>fluid ounce</em></a> == 29.573 mL</li>
 </ul>
 </div>
 <div class="section" id="pint">
-<span id="index-17"></span><span id="id12"></span><h4>Pint<a class="headerlink" href="#pint" title="Permalink to this headline">¶</a></h4>
+<span id="index-66"></span><span id="id50"></span><h4>pint<a class="headerlink" href="#pint" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Pint">https://en.wikipedia.org/wiki/Pint</a></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">pt</span></code></div>
+</div>
 <ul class="simple">
-<li>Conversion: 1 <a class="reference internal" href="#pint"><em>Pint</em></a> == 16 <a class="reference internal" href="#fluid-oz"><em>oz</em></a></li>
-<li>Example: 1 plastic bottle of soda</li>
+<li>Conversion: 1 US <a class="reference internal" href="#pint"><em>pint</em></a> == 16 US <a class="reference internal" href="#fl-oz"><em>fluid ounce</em></a></li>
+<li>Conversion: 1 Imperial <a class="reference internal" href="#pint"><em>pint</em></a> == 1.2009499255 US <a class="reference internal" href="#pint"><em>pints</em></a></li>
+<li>Conversion: 1 US <a class="reference internal" href="#pint"><em>pint</em></a> = 0.85936700738 Imperial <a class="reference internal" href="#pint"><em>pints</em></a></li>
+</ul>
+</div>
+<div class="section" id="quart">
+<span id="index-67"></span><span id="id51"></span><h4>quart<a class="headerlink" href="#quart" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Quart">https://en.wikipedia.org/wiki/Quart</a></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">qt</span></code></div>
+</div>
+<ul class="simple">
+<li>Conversion: 1 US liquid <a class="reference internal" href="#quart"><em>quart</em></a> == 32 <a class="reference internal" href="#fl-oz"><em>fluid ounce</em></a></li>
+<li>Conversion: 1 <a class="reference internal" href="#quart"><em>quart</em></a> == 4 <a class="reference internal" href="#cup"><em>cups</em></a></li>
+<li>Conversion: 1 <a class="reference internal" href="#quart"><em>quart</em></a> == 2 <a class="reference internal" href="#pint"><em>pints</em></a></li>
+<li>Conversion: 1 <a class="reference internal" href="#quart"><em>quart</em></a> == 1/4 <a class="reference internal" href="#gallon"><em>gallon</em></a></li>
+<li>Conversion: 1 US liquid quart == 0.946352946 <a class="reference internal" href="#litre"><em>litres</em></a></li>
 </ul>
 </div>
 <div class="section" id="gallon">
-<span id="index-18"></span><span id="id13"></span><h4>Gallon<a class="headerlink" href="#gallon" title="Permalink to this headline">¶</a></h4>
+<span id="index-68"></span><span id="id52"></span><h4>gallon<a class="headerlink" href="#gallon" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Gallon">https://en.wikipedia.org/wiki/Gallon</a></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">gal</span></code></div>
+</div>
 <ul class="simple">
-<li>Conversion: 1 <a class="reference internal" href="#gallon"><em>Gallon</em></a> == 128 <a class="reference internal" href="#fluid-oz"><em>oz</em></a></li>
-<li>Conversion: 1 <a class="reference internal" href="#gallon"><em>Gallon</em></a> == 8 <a class="reference internal" href="#pint"><em>pints</em></a></li>
+<li>Conversion: 1 <a class="reference internal" href="#gallon"><em>gallon</em></a> == 128 <a class="reference internal" href="#fl-oz"><em>oz</em></a></li>
+<li>Conversion: 1 <a class="reference internal" href="#gallon"><em>gallon</em></a> == 8 <a class="reference internal" href="#pint"><em>pints</em></a></li>
 </ul>
 </div>
 <div class="section" id="keg">
-<span id="index-19"></span><span id="id14"></span><h4>Keg<a class="headerlink" href="#keg" title="Permalink to this headline">¶</a></h4>
+<span id="index-69"></span><span id="id53"></span><h4>keg<a class="headerlink" href="#keg" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Keg">https://en.wikipedia.org/wiki/Keg</a></div>
+</div>
 <ul class="simple">
-<li>Conversion: 1 <a class="reference internal" href="#keg"><em>Keg</em></a> == 124 US <a class="reference internal" href="#pint"><em>pints</em></a></li>
-<li>Conversion: 1 <a class="reference internal" href="#keg"><em>Keg</em></a> == 1984 <a class="reference internal" href="#fluid-oz"><em>oz</em></a></li>
+<li>Conversion: 1 <a class="reference internal" href="#keg"><em>keg</em></a> == 124 US <a class="reference internal" href="#pint"><em>pints</em></a></li>
+<li>Conversion: 1 <a class="reference internal" href="#keg"><em>keg</em></a> == 1984 US <a class="reference internal" href="#fl-oz"><em>fluid ounce</em></a></li>
 </ul>
 </div>
 </div>
 <div class="section" id="imperial-mass-units">
-<span id="index-20"></span><span id="id15"></span><h3>Imperial Mass Units<a class="headerlink" href="#imperial-mass-units" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="id16">
-<span id="id17"></span><h4>Gram<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h4>
-<ul class="simple">
-<li>Abbrev: <code class="docutils literal"><span class="pre">g</span></code></li>
-</ul>
+<span id="index-70"></span><span id="id54"></span><h3>Imperial Mass Units<a class="headerlink" href="#imperial-mass-units" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id55">
+<span id="id56"></span><h4>gram<a class="headerlink" href="#id55" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Gram">https://en.wikipedia.org/wiki/Gram</a></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">g</span></code></div>
+</div>
 </div>
 <div class="section" id="ounce">
-<span id="oz"></span><span id="index-22"></span><h4>Ounce<a class="headerlink" href="#ounce" title="Permalink to this headline">¶</a></h4>
-<ul class="simple">
-<li>Abbrev: <code class="docutils literal"><span class="pre">oz</span></code></li>
-</ul>
+<span id="oz"></span><span id="index-72"></span><h4>ounce<a class="headerlink" href="#ounce" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Ounce">https://en.wikipedia.org/wiki/Ounce</a></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">oz</span></code></div>
+</div>
 </div>
 <div class="section" id="pound">
-<span id="lb"></span><span id="index-23"></span><h4>Pound<a class="headerlink" href="#pound" title="Permalink to this headline">¶</a></h4>
+<span id="lb"></span><span id="index-73"></span><h4>pound<a class="headerlink" href="#pound" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Pound">https://en.wikipedia.org/wiki/Pound</a></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">lb</span></code></div>
+<div class="line">Abbr: <code class="docutils literal"><span class="pre">lbm</span></code></div>
+</div>
 <ul class="simple">
-<li>Abbrev: <code class="docutils literal"><span class="pre">lb</span></code></li>
-<li>Conversion: 1 <em class="xref std std-ref">pound</em> = 16 <a class="reference internal" href="#oz"><em>ounces (oz)</em></a>)</li>
+<li>Conversion: 1 <a class="reference internal" href="#lb"><em>pound</em></a> == 16 <em class="xref std std-ref">ounces</em></li>
+<li>Conversion: 1 <a class="reference internal" href="#lb"><em>pound</em></a> == 448 <a class="reference internal" href="#id55"><em>grams</em></a></li>
+<li>Conversion: 1 <a class="reference internal" href="#lb"><em>pound</em></a> == 0.45359237 kg (kilo- <a class="reference internal" href="#id55"><em>grams</em></a>)</li>
 </ul>
 </div>
 <div class="section" id="ton">
-<span id="index-24"></span><span id="id18"></span><h4>Ton<a class="headerlink" href="#ton" title="Permalink to this headline">¶</a></h4>
+<span id="index-74"></span><span id="id57"></span><h4>ton<a class="headerlink" href="#ton" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Ton">https://en.wikipedia.org/wiki/Ton</a></div>
+</div>
 <ul class="simple">
-<li>Abbrev:</li>
-<li>Conversion: 1 <a class="reference internal" href="#ton"><em>Ton</em></a> == 2000 <a class="reference internal" href="#lb"><em>pounds</em></a></li>
+<li>Conversion: 1 <a class="reference internal" href="#ton"><em>ton</em></a> == 2000 <a class="reference internal" href="#lb"><em>pounds</em></a></li>
+<li>Conversion: 1 kilo- <a class="reference internal" href="#ton"><em>ton</em></a> == 1000 <a class="reference internal" href="#ton"><em>tons</em></a></li>
+<li>Colloqial: <em>half ton truck</em> refers to a
+minimum towing or hauling capacity;
+not the curb weight of a vehicle.</li>
+<li>Conversion: 1 <em>tonne</em> (<em>metric ton</em>) == 1000 kg == 2204 <a class="reference internal" href="#lb"><em>pound</em></a></li>
+<li>Conversion: 1 <em>long ton</em> == 2240 <a class="reference internal" href="#lb"><em>pound</em></a></li>
+<li>Conversion: 1 <em>short ton</em> == 2000 <a class="reference internal" href="#lb"><em>pound</em></a></li>
 </ul>
 </div>
 </div>
 </div>
 <div class="section" id="us-customary-units">
-<span id="index-25"></span><span id="id19"></span><h2>US Customary Units<a class="headerlink" href="#us-customary-units" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/United_States_customary_units">https://en.wikipedia.org/wiki/United_States_customary_units</a></p>
+<span id="index-75"></span><span id="id58"></span><h2>US customary units<a class="headerlink" href="#us-customary-units" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/United_States_customary_units">https://en.wikipedia.org/wiki/United_States_customary_units</a></div>
 </div>
-<div class="section" id="common-conversions">
-<h2>Common Conversions<a class="headerlink" href="#common-conversions" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="fluid-conversions">
-<h3>Fluid Conversions<a class="headerlink" href="#fluid-conversions" title="Permalink to this headline">¶</a></h3>
+<p>Common US Fluid Conversions:</p>
 <ul class="simple">
-<li>Fluid serving size: 8oz</li>
-<li>1 pint = 16oz</li>
-<li>1 gallon = 128fl oz</li>
-<li>1 keg = 124 US pints</li>
+<li>Fluid serving size: 8 <a class="reference internal" href="#fl-oz"><em>fluid ounce</em></a></li>
+<li>1 <a class="reference internal" href="#pint"><em>pint</em></a> = 16 <a class="reference internal" href="#fl-oz"><em>fluid ounce</em></a></li>
+<li>1 <a class="reference internal" href="#gallon"><em>gallon</em></a> = 128 <a class="reference internal" href="#fl-oz"><em>fluid ounce</em></a></li>
+<li>1 <a class="reference internal" href="#keg"><em>keg</em></a> = 124 US <a class="reference internal" href="#pint"><em>pints</em></a></li>
+</ul>
+</div>
+<div class="section" id="industry-units">
+<span id="index-76"></span><span id="id59"></span><h2>Industry Units<a class="headerlink" href="#industry-units" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="freight">
+<h3>Freight<a class="headerlink" href="#freight" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>US: <a class="reference internal" href="#lb"><em>pound</em></a>, <a class="reference internal" href="#ton"><em>ton</em></a>, cubic <a class="reference internal" href="#inch"><em>inches</em></a>, <a class="reference internal" href="#mile"><em>mile</em></a>,
+<a class="reference internal" href="#second"><em>second</em></a></li>
+<li>World: <a class="reference internal" href="#g"><em>gram</em></a>, cubic <a class="reference internal" href="#metre"><em>metres</em></a> (<a class="reference internal" href="#litre"><em>litre</em></a>),
+<a class="reference internal" href="#metre"><em>metre</em></a>, <a class="reference internal" href="#second"><em>second</em></a></li>
+</ul>
+</div>
+<div class="section" id="fuel">
+<h3>Fuel<a class="headerlink" href="#fuel" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>US: <a class="reference internal" href="#gallon"><em>gallon</em></a></li>
+<li>World: <a class="reference internal" href="#litre"><em>litre</em></a></li>
 </ul>
 </div>
 </div>
