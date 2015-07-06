@@ -482,16 +482,16 @@ NFS (*Network File System* #TODO) is an :ref:`Open Source <open-source>`
 centralized network filesystem.
 
 
-.. index:: SMBFS
-.. _smbfs:
+.. index:: SMB
+.. _smb:
 
-SMBFS
+SMB
 +++++++
 | Wikipedia: https://en.wikipedia.org/wiki/Server_Message_Block
 
-SMBFS (*Samba filesystem*) is a centralized network filesystem.
+SMB (*Server Message Block*) is a centralized network filesystem.
 
-* SMBFS has been superseded by :ref:`CIFS`.
+* SMB has been superseded by :ref:`CIFS`.
 
 
 .. index:: WebDAV
