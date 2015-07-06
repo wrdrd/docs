@@ -36,21 +36,28 @@ See: :ref:`CSVW`, :ref:`Tool Support for Units`
 Tool Support for Units
 ***************************
 
+Spreadsheet tools:
+
+* Specify units in each column heading
+  (e.g. ``"time [[s]]","speed [[m/s]]"``)
+* Extra column per column for units
+  (e.g. ``"time","time unit","speed","speed unit"``)
+* :ref:`CSVW`: Columns have URIs, which are objects
+  that can have subjects and predicates
+  (for :ref:`XSD` types; metadata (author, date,
+  ``rdfs:label "time"@en"``),
+  and possibly units of measure)
+
+
 Unit and/or precision-aware calculations:
 
-* pypi:pint - #TODO pint.rtfd.org (NumPy ufuncs)
+* pypi:pint is a :ref:`Python` library for physical quantities
+  which supports but does not require `NumPy`.
 
- Spreadsheet tools:
- 
- * Specify units in each column heading
-   (e.g. ``"time [[s]]","speed [[m/s]]"``)
- * Extra column per column for units
-   (e.g. ``"time","time unit","speed","speed unit"``)
- * :ref:`CSVW`: Columns have URIs, which are objects
-   that can have subjects and predicates
-   (for :ref:`XSD` types; metadata (author, date,
-   ``rdfs:label "time"@en"``),
-   and possibly units of measure)
+  | PyPI: https://pypi.python.org/pypi/pint
+  | Src:  https://github.com/hgrecco/pint
+  | Docs: https://pint.readthedocs.org/en/latest/
+
 
 Storage formats:
 
@@ -323,6 +330,7 @@ minute
 | Wikipedia: https://en.wikipedia.org/wiki/Minute
 | Abbr: ``min``
 | Abbr: ``m``
+
 * Conversion: 1 :ref:`minute` == 60 :ref:`seconds <second>`
 
 
@@ -383,6 +391,7 @@ month
 | Abbr: ``mon``
 | Abbr: ``mons``
 | Abbr: ``m``
+
 * A month contains either 28 (Feb; 29 on a leap year),
   30, or 31 :ref:`days <day>`.
 * https://en.wikipedia.org/wiki/Thirty_days_hath_September
@@ -474,11 +483,12 @@ SI Temperature Units
 celsius
 `````````
 | Wikipedia: https://en.wikipedia.org/wiki/Celsius
-
 | Abbr: ``C``
+
 * Water (H2O) freezes at 0 degrees :ref:`celsius`.
 * Water (H20) boils at 100 degrees :ref:`celsius`.
-* #TODO celsius / kevin relation
+* [ ] celsius / :ref:`kelvin` relation
+
 
 .. index:: Kelvin
 .. _kelvin:
@@ -488,7 +498,6 @@ kelvin
 | Wikipedia: https://en.wikipedia.org/wiki/Kelvin
 | Abbr: ``K``
 
-# TODO
 
 .. index:: SI Amount Units
 .. _si amount units:
@@ -505,7 +514,6 @@ mole
 | Wikipedia: `<https://en.wikipedia.org/wiki/Mole_(unit)>`__
 | Abbr: ``mol``
 
-#TODO
 
 .. index:: SI Luminous Intensity Units
 .. _si luminous intensity units:
@@ -519,7 +527,7 @@ SI Luminous Intensity Units
 candela
 `````````
 | Wikipedia: https://en.wikipedia.org/wiki/Candela
-| Abbr: #TODO
+| Abbr: ``cd``
 
 
 .. index:: SI Data Units
@@ -896,7 +904,7 @@ gram
 
 ounce
 ```````
-| Wikipedia: https://en.wikipedia.org/wiki/Ounce # TODO
+| Wikipedia: https://en.wikipedia.org/wiki/Ounce
 | Abbr: ``oz``
 
 

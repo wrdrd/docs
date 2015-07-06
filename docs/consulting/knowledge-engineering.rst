@@ -487,7 +487,7 @@ centralized network filesystem.
 
 SMBFS
 +++++++
-| Wikipedia: https://en.wikipedia.org/wiki/SMBFS #TODO
+| Wikipedia: https://en.wikipedia.org/wiki/Server_Message_Block
 
 SMBFS (*Samba filesystem*) is a centralized network filesystem.
 
@@ -2026,6 +2026,10 @@ for columnar data with rows and columns.
 
 Most spreadsheet tools can export (raw and computed) data
 from a sheet into a CSV file, for use with many other tools.
+
+
+.. index:: CSVW
+.. _csvw:
 
 CSVW
 `````
