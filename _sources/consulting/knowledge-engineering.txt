@@ -945,168 +945,22 @@ Data Grid
 https://en.wikipedia.org/wiki/Data_grid
 
 
-.. index:: Linked Data
-.. _linked-data:
-
-Linked Data
--------------
-https://en.wikipedia.org/wiki/Linked_data
-
-* http://www.w3.org/DesignIssues/LinkedData.html
-
-
-.. index:: 5 Star Open Data
-.. index:: 5 Star Linked Open Data
-.. _fivestardata:
-
-5 ★ Linked Data
-++++++++++++++++++
-http://www.w3.org/TR/ld-glossary/#x5-star-linked-open-data
-
-.. epigraph::
-
-   ☆
-
-   Publish data on the Web in any format (e.g., PDF, JPEG)
-   accompanied by an explicit
-   `Open License <https://en.wikipedia.org/wiki/Open_content#Licenses>`_
-   (expression of rights).
-
-   ☆☆
-
-   Publish `structured data
-   <https://en.wikipedia.org/wiki/Structured_data>`_
-   on the Web in a machine-readable format
-   (e.g. :ref:`XML`).
-
-   ☆☆☆
-
-   Publish structured data on the Web in a documented,
-   `non-proprietary data format <https://en.wikipedia.org/wiki/Open_format>`_
-   (e.g.
-   :ref:`CSV`,
-   `KML <https://en.wikipedia.org/wiki/Keyhole_Markup_Language>`_).
-
-   ☆☆☆☆
-
-   Publish structured data on the Web as RDF
-   (e.g.
-   :ref:`Turtle`,
-   :ref:`RDFa`,
-   :ref:`JSON-LD`,
-   :ref:`SPARQL`.)
-
-   ☆☆☆☆☆
-
-   In your :ref:`RDF`,
-   have the
-   `identifiers <https://en.wikipedia.org/wiki/Uniform_resource_identifier>`_
-   be links
-   (`URLs <https://en.wikipedia.org/wiki/Uniform_resource_locator>`_)
-   to useful `data <https://en.wikipedia.org/wiki/Data>`_ sources.
-
-   -- http://5stardata.info/
-
-
-See: :ref:`Semantic Web <semantic-web>`
-
-
-.. index:: Semantic Web
-.. _semantic-web:
-
-Semantic Web
--------------
-https://en.wikipedia.org/wiki/Semantic_Web
-
-https://en.wikipedia.org/wiki/Template:Semantic_Web
-
-https://en.wikipedia.org/wiki/Category:Semantic_Web
-
-`<https://en.wikipedia.org/wiki/Semantics_(computer_science)>`_
-
-* http://www.w3.org/2001/sw/wiki/Books
-* http://www.w3.org/2001/sw/wiki/Tools
-
-
-.. index:: Semantic Web Standards
-.. _semantic-web-standards:
-
-Semantic Web Standards
------------------------
-
-`<https://en.wikipedia.org/wiki/Statement_(computer_science)>`_
-
-`<https://en.wikipedia.org/wiki/Resource_(computing)>`_
-
-https://en.wikipedia.org/wiki/Entity-attribute-value_model
-
-https://en.wikipedia.org/wiki/Tuple
-
-* `<https://en.wikipedia.org/wiki/Triple_(mathematics)>`_
-* `<https://en.wikipedia.org/wiki/3-tuple>`_
-* `<https://en.wikipedia.org/wiki/Quad_(mathematics)>`_
-* `<https://en.wikipedia.org/wiki/4-tuple>`_
-
-`<https://en.wikipedia.org/wiki/Reification_(computer_science)#Reification_on_Semantic_Web>`_
-
-https://en.wikipedia.org/w/index.php?title=Eigenclass_model&oldid=592778140#In_RDF_Schema
-
-Representations / Serializations
-
-* :ref:`RDF`: :ref:`N-Triples`, :ref:`RDF/XML`, :ref:`TriX`, :ref:`N3`,
-  :ref:`Turtle`, :ref:`TriG`, :ref:`RDFa`, :ref:`JSON-LD`
-
-Vocabularies
-
-* :ref:`RDFS`: :ref:`DCMI`, :ref:`SKOS`, :ref:`Schema.org`
-
-Query APIS
-
-* :ref:`SPARQL`, :ref:`LDP`
-
-Ontologies
-
-* :ref:`OWL`: :ref:`PROV`, :ref:`OA`, :ref:`QUDT`
-
-Reasoners
-
-* See:
-
-  * :ref:`DL`
-  * :ref:`OWL` 2 Profiles
-  * :ref:`entailment`
-
-
-.. index:: Web Standards
-.. _web-standards:
-
-Web Standards
----------------
-https://en.wikipedia.org/wiki/Web_standards
 
 
 
-.. index:: Time Zones
-.. _time zones:
+.. index:: Time Standards
+.. _time standards:
 
-Time Zones
-++++++++++++
-https://en.wikipedia.org/wiki/Time_zone
+Time Standards
+-----------------
 
-https://en.wikipedia.org/wiki/Daylight_saving_time
-
-https://en.wikipedia.org/wiki/List_of_UTC_time_offsets
-
-https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
-* :ref:`iso8601`
 
 
 .. index:: Long Now Dates
 .. _long now dates:
 
 Long Now Dates
-````````````````
+++++++++++++++++
 https://en.wikipedia.org/wiki/Long_Now_Foundation
 
 ::
@@ -1119,7 +973,7 @@ https://en.wikipedia.org/wiki/Long_Now_Foundation
 .. _unix time:
 
 Unix Time
-```````````
++++++++++++
 https://en.wikipedia.org/wiki/Unix_time
 
      Defined as the number of seconds that have elapsed
@@ -1248,6 +1102,22 @@ Common Era and :ref:`Python` datetime calculations:
     >>> # TimeJulianEpoch (Julian date (jd) ~= Common Era (CE))
     >>> astropy.time.Time(-2.6e6, format='jd', scale='utc')
     <Time object: scale='utc' format='jd' value=-2600000.0>
+
+
+.. index:: Time Zones
+.. _time zones:
+
+Time Zones
+++++++++++++
+https://en.wikipedia.org/wiki/Time_zone
+
+https://en.wikipedia.org/wiki/Daylight_saving_time
+
+https://en.wikipedia.org/wiki/List_of_UTC_time_offsets
+
+https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+* :ref:`iso8601`
 
 
 .. index:: US Time Zones
@@ -1391,16 +1261,249 @@ Time Zone names, URIs, and :ref:`iso8601` UTC offsets:
 | Antarctica/South_Pole                                    |                |                    |
 +----------------------------------------------------------+----------------+--------------------+
 
+
+.. index:: ISO8601
+.. index:: iso8601
+.. _iso8601:
+
+ISO8601
++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/ISO_8601
+| Standard: http://www.iso.org/iso/iso8601
+
+ISO8601 is an :ref:`ISO` standard for specifying Gregorian
+dates, times, datetime intervals, durations, and recurring datetimes.
+
+* Roughly, an ISO8601 datetime is specified as:
+  year,
+  dash
+  month,
+  dash
+  day,
+  (``T`` or space),
+  hour,
+  colon,
+  minute,
+  colon,
+  second,
+  (``Z`` (for UTC)) or (plus/minus :ref:`time zone` offset));
+  where the dashes and colons are optional.
+
+* ISO8601 specifies a standard for absolute time durations:
+  start date, forward-slash, end date.
+
+* ISO8601 specifies a standard for relative time durations:
+  number of years ``Y``, months ``M``, days ``D``,
+  hours ``H``, minutes ``M``, and seconds ``S``.
+
+* A ``Z`` timezone specifies **UTC** (*Universal Coordinated Time*)
+  (or "Zulu") time.
+
+* Many/most :ref:`W3C` standards (such as :ref:`XSD`)
+  specify :ref:`ISO8601` time formats:
+  http://www.w3.org/TR/NOTE-datetime
+
+A few examples of ISO8601:
+
+::
+
+    2014
+    2014-10
+    2014-10-23
+    20141023
+    2014-10-23T20:59:30+Z       # UTC / Zulu
+    2014-10-23T20:59:30Z        # UTC / Zulu
+    2014-10-23T20:59:30-06:00   # CST
+    2014-10-23T20:59:30-06      # CST
+    2014-10-23T20:59:30-05:00   # CDT
+    2014-10-23T20:59:30-05      # CDT
+    20
+    20:59
+    2059
+    20:59:30
+    205930
+    2014-10-23T20:59:30Z/2014-10-23T21:00:00Z
+    2014-10-23T20:59:30-05:00/2014-10-23T21:00:00-06
+    PT1H
+    PT1M
+    P1M
+    P1Y1M1W1DT1H1M1S
+
+
+.. note::
+    AFAIU, ISO8601 does not specify standards for
+    milliseconds, microseconds, nanoseconds, picoseconds, femtoseconds,
+    or attoseconds.
+
+
+
+.. index:: Linked Data
+.. _linked-data:
+
+Linked Data
+-------------
+https://en.wikipedia.org/wiki/Linked_data
+
+* http://www.w3.org/DesignIssues/LinkedData.html
+
+
+.. index:: 5 Star Open Data
+.. index:: 5 Star Linked Open Data
+.. _fivestardata:
+
+5 ★ Linked Data
+++++++++++++++++++
+http://www.w3.org/TR/ld-glossary/#x5-star-linked-open-data
+
+.. epigraph::
+
+   ☆
+
+   Publish data on the Web in any format (e.g., PDF, JPEG)
+   accompanied by an explicit
+   `Open License <https://en.wikipedia.org/wiki/Open_content#Licenses>`_
+   (expression of rights).
+
+   ☆☆
+
+   Publish `structured data
+   <https://en.wikipedia.org/wiki/Structured_data>`_
+   on the Web in a machine-readable format
+   (e.g. :ref:`XML`).
+
+   ☆☆☆
+
+   Publish structured data on the Web in a documented,
+   `non-proprietary data format <https://en.wikipedia.org/wiki/Open_format>`_
+   (e.g.
+   :ref:`CSV`,
+   `KML <https://en.wikipedia.org/wiki/Keyhole_Markup_Language>`_).
+
+   ☆☆☆☆
+
+   Publish structured data on the Web as RDF
+   (e.g.
+   :ref:`Turtle`,
+   :ref:`RDFa`,
+   :ref:`JSON-LD`,
+   :ref:`SPARQL`.)
+
+   ☆☆☆☆☆
+
+   In your :ref:`RDF`,
+   have the
+   `identifiers <https://en.wikipedia.org/wiki/Uniform_resource_identifier>`_
+   be links
+   (`URLs <https://en.wikipedia.org/wiki/Uniform_resource_locator>`_)
+   to useful `data <https://en.wikipedia.org/wiki/Data>`_ sources.
+
+   -- http://5stardata.info/
+
+
+See: :ref:`Semantic Web <semantic-web>`
+
+
+.. index:: Semantic Web
+.. _semantic-web:
+
+Semantic Web
+-------------
+https://en.wikipedia.org/wiki/Semantic_Web
+
+https://en.wikipedia.org/wiki/Template:Semantic_Web
+
+https://en.wikipedia.org/wiki/Category:Semantic_Web
+
+`<https://en.wikipedia.org/wiki/Semantics_(computer_science)>`_
+
+* http://www.w3.org/2001/sw/wiki/Books
+* http://www.w3.org/2001/sw/wiki/Tools
+
+
+.. index:: Semantic Web Standards
+.. _semantic-web-standards:
+
+Semantic Web Standards
+-----------------------
+
+`<https://en.wikipedia.org/wiki/Statement_(computer_science)>`_
+
+`<https://en.wikipedia.org/wiki/Resource_(computing)>`_
+
+https://en.wikipedia.org/wiki/Entity-attribute-value_model
+
+https://en.wikipedia.org/wiki/Tuple
+
+* `<https://en.wikipedia.org/wiki/Triple_(mathematics)>`_
+* `<https://en.wikipedia.org/wiki/3-tuple>`_
+* `<https://en.wikipedia.org/wiki/Quad_(mathematics)>`_
+* `<https://en.wikipedia.org/wiki/4-tuple>`_
+
+`<https://en.wikipedia.org/wiki/Reification_(computer_science)#Reification_on_Semantic_Web>`_
+
+https://en.wikipedia.org/w/index.php?title=Eigenclass_model&oldid=592778140#In_RDF_Schema
+
+Representations / Serializations
+
+* :ref:`RDF`: :ref:`N-Triples`, :ref:`RDF/XML`, :ref:`TriX`, :ref:`N3`,
+  :ref:`Turtle`, :ref:`TriG`, :ref:`RDFa`, :ref:`JSON-LD`
+
+Vocabularies
+
+* :ref:`RDFS`: :ref:`DCMI`, :ref:`SKOS`, :ref:`Schema.org`
+
+Query APIS
+
+* :ref:`SPARQL`, :ref:`LDP`
+
+Ontologies
+
+* :ref:`OWL`: :ref:`PROV`, :ref:`OA`, :ref:`QUDT`
+
+Reasoners
+
+* See:
+
+  * :ref:`DL`
+  * :ref:`OWL` 2 Profiles
+  * :ref:`entailment`
+
+
+.. index:: Web Standards
+.. _web-standards:
+
+Web Standards
+---------------
+https://en.wikipedia.org/wiki/Web_standards
+
 .. index:: Web Names
 .. _web names:
 
 Web Names
 +++++++++++
 
+.. index:: URL
+.. _url:
+
+URL
+`````
 * :term:`URL`
+
+
+.. index:: URI
+.. _uri:
+
+URI
+`````
 * :term:`URI`
-* :term:`URN`
 * :term:`Magnet URI`
+
+.. index:: URN
+.. _urn:
+
+URN
+````
+* :term:`URN`
 
 
 .. index:: IEC
@@ -1454,58 +1557,6 @@ W3C
 W3C (*World Wide Web Consortium*) is a standards body.
 
 List of W3C standards: http://www.w3.org/TR/
-
-
-.. index:: ISO8601
-.. index:: iso8601
-.. _iso8601:
-
-ISO8601
-+++++++++
-| Wikipedia: https://en.wikipedia.org/wiki/ISO_8601
-| Standard: http://www.iso.org/iso/iso8601
-
-ISO8601 is a standard for specifying Gregorian
-dates, times, datetime intervals, durations, and recurring datetimes.
-
-An ISO8601 datetime is specified as:
-year, month, day, hour, 'T' or space, minute, second, timezone.
-
-A ``Z`` timezone specifies Universal Coordinated (or "Zulu") time.
-
-* http://www.w3.org/TR/NOTE-datetime
-
-Examples of ISO8601:
-
-::
-
-    2014
-    2014-10
-    2014-10-23
-    20141023
-    2014-10-23T20:59:30+Z       # UTC / Zulu
-    2014-10-23T20:59:30Z        # UTC / Zulu
-    2014-10-23T20:59:30-06:00   # CST
-    2014-10-23T20:59:30-06      # CST
-    2014-10-23T20:59:30-05:00   # CDT
-    2014-10-23T20:59:30-05      # CDT
-    20
-    20:59
-    2059
-    20:59:30
-    205930
-    2014-10-23T20:59:30Z/2014-10-23T21:00:00Z
-    2014-10-23T20:59:30-05:00/2014-10-23T21:00:00-06
-    PT1H
-    PT1M
-    P1M
-    P1Y1M1W1DT1H1M1S
-
-
-.. note::
-    AFAIU, ISO8601 does not specify standards for
-    milliseconds, microseconds, nanoseconds, picoseconds, femtoseconds,
-    or attoseconds.
 
 
 .. index:: HTTP
