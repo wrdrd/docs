@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- OpenGraph metadata: ogp.me -->
+    <meta property="og:title" content="Units" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="WRD R&D" />
+    <!--
+    <meta property="og:description" content="" />
+    -->
+    <meta property="og:image" content="http://www.wrdrd.com/static/png/drawing-7.09-v0.1.1--_desk.svg-470x242.png" />
+    <meta property="og:image:width" content="470" />
+    <meta property="og:image:height" content="242" />
+    <!--
+    <meta property="og:image:secure_url" content="./_static/img/logo.png" />
+    -->
+    <!-- Twitter metadata -->
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:title" content="Units" />
+    <meta property="twitter:description" content="" />
+    <meta property="twitter:site" content="wrdrd" />
+    <meta property="twitter:creator" content="wrdrd" />
+    
+    <title>Units &mdash; WRD R&amp;D Documentation</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    
+
+<link rel="stylesheet" href="../_static/css/basicstrap-base.css" type="text/css" />
+<link rel="stylesheet" id="current-theme" href="../_static/css/bootstrap3/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" id="current-adjust-theme" type="text/css" />
+
+<link rel="stylesheet" href="../_static/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="../_static/css/basicstrap.css" type="text/css" />
+<link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+<link rel="stylesheet" href="../_static/css/local.css" type="text/css" />
+    
+<script type="text/javascript">
+  var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:    '../',
+            VERSION:     '0.2.0',
+            COLLAPSE_INDEX: false,
+            FILE_SUFFIX: '.html',
+            HAS_SOURCE:  true
+  };
+</script>
+    <script type="text/javascript" src="../_static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/local.js"></script>
+    <script type="text/javascript" src="../_static/js/bootstrap3.min.js"></script>
+<script type="text/javascript" src="../_static/js/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="../_static/js/basicstrap.js"></script>
+<script type="text/javascript">
+</script>
+    <link rel="search" type="application/opensearchdescription+xml"
+    title="Search within WRD R&amp;D Documentation"
+    href="../_static/opensearch.xml"/>
+    <link rel="top" title="WRD R&amp;D Documentation" href="../index" /> 
+  </head>
+  <body role="document">
+    <div id="navbar-top" class="navbar navbar-default" role="navigation" aria-label="top navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index">WRD R&amp;D Documentation</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown visible-xs">
+                <a role="button" id="localToc" data-toggle="dropdown" data-target="#" href="#">Table Of Contents <b class="caret"></b></a>
+                <ul class="dropdown-menu localtoc sp-localtoc" role="menu" aria-labelledby="localToc">
+                <ul>
+<li><a class="reference internal" href="#">Units</a><ul>
+<li><a class="reference internal" href="#si-units">SI Units</a><ul>
+<li><a class="reference internal" href="#si-prefixes">SI Prefixes</a></li>
+<li><a class="reference internal" href="#metric-distance-units">Metric Distance Units</a><ul>
+<li><a class="reference internal" href="#meter">Meter</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#metric-fluid-units">Metric Fluid Units</a><ul>
+<li><a class="reference internal" href="#liter">Liter</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#metric-mass-units">Metric Mass Units</a><ul>
+<li><a class="reference internal" href="#gram">Gram</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#imperial-units">Imperial Units</a><ul>
+<li><a class="reference internal" href="#imperial-distance-units">Imperial Distance Units</a><ul>
+<li><a class="reference internal" href="#inch">Inch</a></li>
+<li><a class="reference internal" href="#foot">Foot</a></li>
+<li><a class="reference internal" href="#mile">Mile</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#imperial-fluid-units">Imperial Fluid Units</a><ul>
+<li><a class="reference internal" href="#fluid-ounce">Fluid Ounce</a></li>
+<li><a class="reference internal" href="#pint">Pint</a></li>
+<li><a class="reference internal" href="#gallon">Gallon</a></li>
+<li><a class="reference internal" href="#keg">Keg</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#imperial-mass-units">Imperial Mass Units</a><ul>
+<li><a class="reference internal" href="#id16">Gram</a></li>
+<li><a class="reference internal" href="#ounce">Ounce</a></li>
+<li><a class="reference internal" href="#pound">Pound</a></li>
+<li><a class="reference internal" href="#ton">Ton</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#us-customary-units">US Customary Units</a></li>
+<li><a class="reference internal" href="#common-conversions">Common Conversions</a><ul>
+<li><a class="reference internal" href="#fluid-conversions">Fluid Conversions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+                </ul>
+              </li>
+
+            
+              <li><a href="../py-modindex" title="Python Module Index" >modules </a></li>
+              <li><a href="../genindex" title="General Index" accesskey="I">index </a></li>
+            
+            <li class="visible-xs"><a href="../_sources/consulting/units.txt" rel="nofollow">Show Source</a></li>
+
+            <li class="visible-xs">
+                <form class="search form-search form-inline navbar-form navbar-right sp-searchbox" action="../search" method="get">
+                  <div class="input-append input-group">
+                    <input type="text" class="search-query form-control" name="q" placeholder="Search...">
+                    <span class="input-group-btn">
+                    <input type="submit" class="btn" value="Go" />
+                    </span>
+                  </div>
+                  <input type="hidden" name="check_keywords" value="yes" />
+                  <input type="hidden" name="area" value="default" />
+                </form>
+            </li>
+
+            
+
+          </ul>
+
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- container -->
+    <div class="container-fluid">
+
+      <!-- row -->
+      <div class="row">
+         
+<div class="col-md-3 hidden-xs" id="sidebar-wrapper">
+  <div class="sidebar hidden-xs" role="navigation" aria-label="main navigation">
+  <h3><a href="../index">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Units</a><ul>
+<li><a class="reference internal" href="#si-units">SI Units</a><ul>
+<li><a class="reference internal" href="#si-prefixes">SI Prefixes</a></li>
+<li><a class="reference internal" href="#metric-distance-units">Metric Distance Units</a><ul>
+<li><a class="reference internal" href="#meter">Meter</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#metric-fluid-units">Metric Fluid Units</a><ul>
+<li><a class="reference internal" href="#liter">Liter</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#metric-mass-units">Metric Mass Units</a><ul>
+<li><a class="reference internal" href="#gram">Gram</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#imperial-units">Imperial Units</a><ul>
+<li><a class="reference internal" href="#imperial-distance-units">Imperial Distance Units</a><ul>
+<li><a class="reference internal" href="#inch">Inch</a></li>
+<li><a class="reference internal" href="#foot">Foot</a></li>
+<li><a class="reference internal" href="#mile">Mile</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#imperial-fluid-units">Imperial Fluid Units</a><ul>
+<li><a class="reference internal" href="#fluid-ounce">Fluid Ounce</a></li>
+<li><a class="reference internal" href="#pint">Pint</a></li>
+<li><a class="reference internal" href="#gallon">Gallon</a></li>
+<li><a class="reference internal" href="#keg">Keg</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#imperial-mass-units">Imperial Mass Units</a><ul>
+<li><a class="reference internal" href="#id16">Gram</a></li>
+<li><a class="reference internal" href="#ounce">Ounce</a></li>
+<li><a class="reference internal" href="#pound">Pound</a></li>
+<li><a class="reference internal" href="#ton">Ton</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#us-customary-units">US Customary Units</a></li>
+<li><a class="reference internal" href="#common-conversions">Common Conversions</a><ul>
+<li><a class="reference internal" href="#fluid-conversions">Fluid Conversions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+<div id="searchbox" role="search">
+  <h3>Quick search</h3>
+  <form class="search form-inline" action="../search" method="get">
+      <div class="input-append input-group">
+        <input type="text" class="search-query form-control" name="q" placeholder="Search...">
+        <span class="input-group-btn">
+        <input type="submit" class="btn" value="Go" />
+        </span>
+      </div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/consulting/units.txt"
+            rel="nofollow"
+            target="_blank">Source RST</a></li>
+    <li><a href="https://github.com/wrdrd/docs/blob/master/docs/consulting/units.rst"
+            rel="nofollow"
+            target="_blank">Source</a></li>
+    <li><a href="https://github.com/wrdrd/docs/edit/master/docs/consulting/units.rst"
+            rel="nofollow"
+            target="_blank">Edit</a></li>
+     <li><a href="https://github.com/wrdrd/docs/commits/master/docs/consulting/units.rst"
+             rel="nofollow"
+             target="_blank">History</a></li>
+     <li><a href="https://github.com/wrdrd/docs/blame/master/docs/consulting/units.rst"
+             rel="nofollow"
+             target="_blank">Annotate</a></li>
+  </ul>
+  <h3>Source</h3>
+  <h5><a href="https://github.com/wrdrd/docs">github.com/wrdrd/docs</a>
+      / <a href="https://github.com/wrdrd/docs/tree/master"
+                rel="nofollow"
+                target="_blank"
+                font="monospace">master</a>
+  </h5>
+
+  <ul>
+    <li><pre>git clone https://github.com/wrdrd/docs</pre></li>
+    <li><pre>git clone ssh://git@github.com/wrdrd/docs</pre></li>
+    <li><pre>git clone git://github.com/wrdrd/docs</pre></li>
+  </ul><div class="widget">
+    <h3><a href="https://wrdrd.com/">wrdrd.com</a></h3>
+    <ul>
+        <li><a href="https://wrdrd.com/">wrdrd.com/</a></li>
+        <li><a href="https://wrdrd.com/docs/">wrdrd.com/docs/</a></li>
+        <li><a href="https://wrdrd.com/wiki/">wrdrd.com/wiki/</a></li>
+        <li><a href="https://github.com/wrdrd">github.com/wrdrd</a></li>
+        <li><a href="https://google.com/+Wrdrdrd">+Wrdrdrd</a></li>
+        <li><a href="https://twitter.com/wrdrd">@wrdrd</a></li>
+    </ul>
+</div>
+  </div>
+</div> 
+        
+
+        <div class="col-md-9" id="content-wrapper">
+          <div class="document" role="main">
+            <div class="documentwrapper">
+              <div class="bodywrapper">
+                <div class="body">
+                  
+  <div class="section" id="units">
+<span id="index-0"></span><span id="id1"></span><h1>Units<a class="headerlink" href="#units" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="si-units">
+<span id="index-1"></span><span id="id2"></span><h2>SI Units<a class="headerlink" href="#si-units" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/International_System_of_Units">https://en.wikipedia.org/wiki/International_System_of_Units</a></div>
+</div>
+<p>Metric Units</p>
+<div class="section" id="si-prefixes">
+<span id="index-2"></span><span id="id3"></span><h3>SI Prefixes<a class="headerlink" href="#si-prefixes" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>centi = 1/100</li>
+<li>milli = 1/1000</li>
+<li>deci = 100  TODO ? [ ]</li>
+<li>kilo = 1000</li>
+</ul>
+</div>
+<div class="section" id="metric-distance-units">
+<span id="index-3"></span><span id="id4"></span><h3>Metric Distance Units<a class="headerlink" href="#metric-distance-units" title="Permalink to this headline">¶</a></h3>
+<span class="target" id="index-4"></span><div class="section" id="meter">
+<span id="index-5"></span><span id="id5"></span><h4>Meter<a class="headerlink" href="#meter" title="Permalink to this headline">¶</a></h4>
+</div>
+</div>
+<div class="section" id="metric-fluid-units">
+<span id="index-6"></span><span id="id6"></span><h3>Metric Fluid Units<a class="headerlink" href="#metric-fluid-units" title="Permalink to this headline">¶</a></h3>
+<span class="target" id="index-7"></span><div class="section" id="liter">
+<span id="l"></span><span id="index-8"></span><h4>Liter<a class="headerlink" href="#liter" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>Abbrev: <code class="docutils literal"><span class="pre">L</span></code></li>
+</ul>
+</div>
+</div>
+<div class="section" id="metric-mass-units">
+<span id="index-9"></span><span id="id7"></span><h3>Metric Mass Units<a class="headerlink" href="#metric-mass-units" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="gram">
+<span id="g"></span><span id="index-10"></span><h4>Gram<a class="headerlink" href="#gram" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>Abbrev: <code class="docutils literal"><span class="pre">g</span></code></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="imperial-units">
+<span id="index-11"></span><span id="id8"></span><h2>Imperial Units<a class="headerlink" href="#imperial-units" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/Imperial_units">https://en.wikipedia.org/wiki/Imperial_units</a></div>
+<div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/English_units">https://en.wikipedia.org/wiki/English_units</a></div>
+</div>
+<p>Imperial Units may refer to either <em>English Units</em> (ended in 1824)
+or <a class="reference internal" href="#us-customary-units"><em>US Customary Units</em></a> (e.g. gram, ounce, gallon, pound, foot, mile).</p>
+<ul class="simple">
+<li>The UK (<em>United Kingdom</em>) (of which England is a part)
+now specifies <em class="xref std std-ref">Metric Units</em>.</li>
+<li>The USA (<em>United States of America</em>)
+<a class="reference internal" href="#us-customary-units"><em>US Customary Units</em></a> still include
+many <a class="reference internal" href="#imperial-units"><em>Imperial Units</em></a>.</li>
+</ul>
+<div class="section" id="imperial-distance-units">
+<h3>Imperial Distance Units<a class="headerlink" href="#imperial-distance-units" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="inch">
+<span id="index-12"></span><span id="id9"></span><h4>Inch<a class="headerlink" href="#inch" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>Conversion: 1 <a class="reference internal" href="#inch"><em>Inch</em></a> == 2.54 <em class="xref std std-ref">centimeters</em></li>
+</ul>
+</div>
+<div class="section" id="foot">
+<span id="index-13"></span><span id="id10"></span><h4>Foot<a class="headerlink" href="#foot" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>Conversion: 1 <a class="reference internal" href="#foot"><em>Foot</em></a> == 12 <a class="reference internal" href="#inch"><em>inches</em></a></li>
+</ul>
+</div>
+<div class="section" id="mile">
+<span id="index-14"></span><span id="id11"></span><h4>Mile<a class="headerlink" href="#mile" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>Conversion: 1 <a class="reference internal" href="#mile"><em>Mile</em></a> == 5280 <a class="reference internal" href="#foot"><em>feet</em></a></li>
+<li>Conversion: 1 <a class="reference internal" href="#mile"><em>Mile</em></a> == 63360 <a class="reference internal" href="#inch"><em>inches</em></a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="imperial-fluid-units">
+<span id="fluid"></span><span id="index-15"></span><h3>Imperial Fluid Units<a class="headerlink" href="#imperial-fluid-units" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="fluid-ounce">
+<span id="fluid-oz"></span><span id="index-16"></span><h4>Fluid Ounce<a class="headerlink" href="#fluid-ounce" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><a class="reference internal" href="#fluid-oz"><em>Fluid Ounce</em></a>  (<em>Fluid Ounce</em>)</li>
+<li>Abbrev: <code class="docutils literal"><span class="pre">fl/oz</span></code></li>
+<li>Abbrev: <code class="docutils literal"><span class="pre">oz</span></code></li>
+<li>Serving size: 1 US fluid serving == 8 <a class="reference internal" href="#fluid-oz"><em>oz</em></a></li>
+<li>Serving size: 1 can of e.g. soda == 12oz (== 1.5 US fluid serving)</li>
+</ul>
+</div>
+<div class="section" id="pint">
+<span id="index-17"></span><span id="id12"></span><h4>Pint<a class="headerlink" href="#pint" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>Conversion: 1 <a class="reference internal" href="#pint"><em>Pint</em></a> == 16 <a class="reference internal" href="#fluid-oz"><em>oz</em></a></li>
+<li>Example: 1 plastic bottle of soda</li>
+</ul>
+</div>
+<div class="section" id="gallon">
+<span id="index-18"></span><span id="id13"></span><h4>Gallon<a class="headerlink" href="#gallon" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>Conversion: 1 <a class="reference internal" href="#gallon"><em>Gallon</em></a> == 128 <a class="reference internal" href="#fluid-oz"><em>oz</em></a></li>
+<li>Conversion: 1 <a class="reference internal" href="#gallon"><em>Gallon</em></a> == 8 <a class="reference internal" href="#pint"><em>pints</em></a></li>
+</ul>
+</div>
+<div class="section" id="keg">
+<span id="index-19"></span><span id="id14"></span><h4>Keg<a class="headerlink" href="#keg" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>Conversion: 1 <a class="reference internal" href="#keg"><em>Keg</em></a> == 124 US <a class="reference internal" href="#pint"><em>pints</em></a></li>
+<li>Conversion: 1 <a class="reference internal" href="#keg"><em>Keg</em></a> == 1984 <a class="reference internal" href="#fluid-oz"><em>oz</em></a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="imperial-mass-units">
+<span id="index-20"></span><span id="id15"></span><h3>Imperial Mass Units<a class="headerlink" href="#imperial-mass-units" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id16">
+<span id="id17"></span><h4>Gram<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>Abbrev: <code class="docutils literal"><span class="pre">g</span></code></li>
+</ul>
+</div>
+<div class="section" id="ounce">
+<span id="oz"></span><span id="index-22"></span><h4>Ounce<a class="headerlink" href="#ounce" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>Abbrev: <code class="docutils literal"><span class="pre">oz</span></code></li>
+</ul>
+</div>
+<div class="section" id="pound">
+<span id="lb"></span><span id="index-23"></span><h4>Pound<a class="headerlink" href="#pound" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>Abbrev: <code class="docutils literal"><span class="pre">lb</span></code></li>
+<li>Conversion: 1 <em class="xref std std-ref">pound</em> = 16 <a class="reference internal" href="#oz"><em>ounces (oz)</em></a>)</li>
+</ul>
+</div>
+<div class="section" id="ton">
+<span id="index-24"></span><span id="id18"></span><h4>Ton<a class="headerlink" href="#ton" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>Abbrev:</li>
+<li>Conversion: 1 <a class="reference internal" href="#ton"><em>Ton</em></a> == 2000 <a class="reference internal" href="#lb"><em>pounds</em></a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="us-customary-units">
+<span id="index-25"></span><span id="id19"></span><h2>US Customary Units<a class="headerlink" href="#us-customary-units" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/United_States_customary_units">https://en.wikipedia.org/wiki/United_States_customary_units</a></p>
+</div>
+<div class="section" id="common-conversions">
+<h2>Common Conversions<a class="headerlink" href="#common-conversions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="fluid-conversions">
+<h3>Fluid Conversions<a class="headerlink" href="#fluid-conversions" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Fluid serving size: 8oz</li>
+<li>1 pint = 16oz</li>
+<li>1 gallon = 128fl oz</li>
+<li>1 keg = 124 US pints</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div><!-- /row -->
+
+      <!-- row -->
+      <div class="row footer-relbar">
+<div id="navbar-related" class=" related navbar navbar-default" role="navigation" aria-label="related navigation">
+  <div class="navbar-inner">
+    <ul class="nav navbar-nav text-center">
+        <li><a href="../index">WRD R&amp;D Documentation</a></li>
+    </ul>
+<ul class="nav navbar-nav text-center">
+      
+        <li><a href="../py-modindex" title="Python Module Index" >modules</a></li>
+        <li><a href="../genindex" title="General Index" >index</a></li>
+        <li><a href="#">top</a></li> 
+      
+    </ul>
+  </div>
+</div>
+      </div><!-- /row -->
+
+      <!-- footer -->
+      <footer role="contentinfo">
+          &copy; <a href="../license">Copyright</a> WRD R&amp;D 2014 - 2015.
+
+      <br/>
+      <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+        <img alt="Creative Commons License"
+        style="border-width:0; padding:12px"
+        src="../_static/img/cc-by-sa-4.0-88x31.png" /></a>
+      <br />
+      <span xmlns:dct="http://purl.org/dc/terms/"
+        property="dct:title">WRD R&amp;D Documentation</span> is licensed under a 
+      <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"
+        >Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+      </footer>
+      <!-- /footer -->
+
+    </div>
+    <!-- /container -->
+
+  </body>
+</html>
