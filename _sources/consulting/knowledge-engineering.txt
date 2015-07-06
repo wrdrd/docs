@@ -955,6 +955,20 @@ Time Standards
 -----------------
 
 
+.. index:: International Atomic Time
+.. _iat:
+
+International Atomic Time (IAT)
+++++++++++++++++++++++++++++++++
+https://en.wikipedia.org/wiki/International_Atomic_Time
+
+International Atomic Time (*IAT*)
+is an international standard for
+extremely precise
+time keeping; which is the basis
+for :ref:`UTC` Earth time
+and for `Terrestrial Time` (Earth and Space).
+
 
 .. index:: Long Now Dates
 .. _long now dates:
@@ -968,6 +982,19 @@ https://en.wikipedia.org/wiki/Long_Now_Foundation
      2015    # ISO8601 date
     02015    # Long Now Date
 
+
+.. index:: Decimal Time
+.. _decimal time:
+
+Decimal Time
+++++++++++++++
+https://en.wikipedia.org/wiki/Decimal_time
+
+* https://en.wikipedia.org/wiki/Decimal_time#Conversions
+* https://en.wikipedia.org/wiki/Decimal_time#Fractional_days
+* https://en.wikipedia.org/wiki/Leap_year (~365.25 days/yr)
+* https://en.wikipedia.org/wiki/Leap_second (rotation time ~= atomic
+  time)
 
 .. index:: Unix Time
 .. _unix time:
@@ -995,6 +1022,7 @@ Unix time is the delta in seconds since
 
    https://en.wikipedia.org/wiki/Unix_time#Leap_seconds
 
+See also: `Swatch Internet Time` (`Beat Time`)
 
 .. index:: Year Zero
 .. index:: 0 (Year)
@@ -1004,11 +1032,12 @@ Year Zero
 ++++++++++
 `<https://en.wikipedia.org/wiki/0_(year)>`__
 
-* The Gregorian Calendar (e.g. :ref:`Common Era`) does not include
-  a :ref:`year zero`;
-  (1 BCE is followed by 1 CE)
-* :ref:`Astronomical year numbering` includes a :ref:`year zero`.
-* :ref:`Before Present` dates do not specify a :ref:`year zero`
+* The Gregorian Calendar
+  (e.g. :ref:`Common Era <ce>`, `Julian Calendar`)
+  does not include a `year zero`;
+  (1 BCE is followed by 1 CE).
+* :ref:`Astronomical year numbering` includes a `year zero`.
+* :ref:`Before Present <bp>` dates do not specify a `year zero`.
   (because they are relative to the current (or *published*) date).
 
 
@@ -1033,8 +1062,8 @@ Tools with support for :ref:`astronomical year numbering`:
 .. index:: BP
 .. _bp:
 
-Before Present
-++++++++++++++++
+Before Present (BP)
+++++++++++++++++++++
 https://en.wikipedia.org/wiki/Before_Present
 
 Before Present (*BP*) dates are relative to the current date
@@ -1042,10 +1071,10 @@ Before Present (*BP*) dates are relative to the current date
 
 
 .. index:: Common Era
-.. _common era:
+.. _ce:
 
-Common Era
-++++++++++++
+Common Era (CE)
++++++++++++++++++
 | https://en.wikipedia.org/wiki/Common_Era
 | https://en.wikipedia.org/wiki/Pax_Romana
 | :ref:`Year Zero`
@@ -1120,6 +1149,33 @@ https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 * :ref:`iso8601`
 
 
+.. index:: UTC
+.. index:: Coordinated Universal Time
+.. _utc:
+
+UTC
+`````
+https://en.wikipedia.org/wiki/Coordinated_Universal_Time
+
+UTC (*Coordinated Universal Time*) is
+the primary terrestrial Earth-based clock time.
+
+* Earth :ref:`time zones` are specified as
+  offsets from `UTC`.
+* UTC time is set determined by :ref:`iat`;
+  with occasional leap seconds
+  to account for the difference between
+  Earth's rotational time and
+  the actual passage of time
+  according to the decay rate of cesium atoms
+  (an `SI Unit` calibrated with an *atomic clock*;
+  see :ref:`QUDT`).
+* Many/most computer systems work with UTC,
+  but are not
+  exactly synchronized with :ref:`iat`
+  (see also: `RTC`, `NTP` and `time drift`).
+
+
 .. index:: US Time Zones
 .. _us time zones:
 
@@ -1132,11 +1188,11 @@ https://en.wikipedia.org/wiki/Time_in_the_United_States#Standard_time_and_daylig
 https://en.wikipedia.org/wiki/History_of_time_in_the_United_States
 
 
-.. index:: US Daylight Savings Time
-.. index:: Daylight Savings Time
-.. _daylight savings time:
+.. index:: US Daylight Saving Time
+.. index:: Daylight Saving Time
+.. _daylight saving time:
 
-US Daylight Savings Time
+US Daylight Saving Time
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 https://en.wikipedia.org/wiki/Daylight_saving_time_in_the_United_States
@@ -1286,7 +1342,8 @@ dates, times, datetime intervals, durations, and recurring datetimes.
   minute,
   colon,
   second,
-  (``Z`` (for UTC)) or (plus/minus :ref:`time zone` offset));
+  (``Z`` (for UTC)) or (plus/minus
+  :ref:`time zone <time zones>` offset));
   where the dashes and colons are optional.
 
 * ISO8601 specifies a standard for absolute time durations:
