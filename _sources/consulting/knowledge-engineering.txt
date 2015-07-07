@@ -232,15 +232,77 @@ https://en.wikipedia.org/wiki/Index#Computer_science
 
 Git File Structures
 ``````````````````````
-:ref:`Git` specifies a number of file structures (see also: *bup*):
+:ref:`Git` specifies a number of file structures:
+:ref:`Git Objects`, :ref:`Git References`, :ref:`Git Packfiles`.
 
-* Git Objects: https://git-scm.com/book/en/v2/Git-Internals-Git-Objects
-* Git References: https://git-scm.com/book/en/v2/Git-Internals-Git-References
-* Git Packfiles: https://git-scm.com/book/en/v2/Git-Internals-Packfiles
+Git implements something like **on-disk** *shared snapshot objects*
+with commits, branching, merging, and multi-protocol push/pull
+semantics: https://en.wikipedia.org/wiki/Shared_snapshot_objects
+
+
+.. index:: Git Object
+.. _git object:
+
+Git Object
+~~~~~~~~~~~~~
+| Docs: https://git-scm.com/book/en/v2/Git-Internals-Git-Objects
+
+
+.. index:: Git Reference
+.. _git reference:
+
+Git Reference
+~~~~~~~~~~~~~~~~
+| Docs: https://git-scm.com/book/en/v2/Git-Internals-Git-References
+
+
+.. index:: Git Packfile
+.. _git packfile:
+
+Git Packfile
+~~~~~~~~~~~~~~~~
+| Docs: https://git-scm.com/book/en/v2/Git-Internals-Packfiles
 
   "Git is a content-addressable :ref:`filesystem <filesystems>`"
 
-  See also: **bup**
+
+.. index:: Bup
+.. _bup:
+
+==========
+bup
+==========
+| Homepage: https://bup.github.io/
+| Source: git https://github.com/bup/bup
+| Docs: https://github.com/bup/bup/blob/master/README.md
+| Docs: https://bup.github.io/man.html
+| Docs: https://github.com/bup/bup/blob/master/DESIGN
+
+Bup (*backup*) is a backup system based on :ref:`git packfiles <git packfile>`
+and rolling checksums.
+
+    [:ref:`Bup` is a very] efficient backup system
+    based on the :ref:`git packfile` format,
+    providing fast incremental saves
+    and global deduplication
+    (among and within files, including virtual machine images).
+
+
+
+.. index:: Torrent file structure
+.. _torrent file structure:
+
+Torrent file structure
+```````````````````````
+A :term:`bittorrent torrent file` is an encoded manifest
+of tracker, :ref:`DHT`, and :term:`web seed` :term:`URIs <URI>`;
+and segment checksum hashes.
+
+* Like :ref:`MPEG-DASH` and :ref:`HTTP Live Streaming`,
+  :ref:`bittorrent` downloads file segments
+  over :ref:`http`.
+
+See: :ref:`bittorrent`, :ref:`ndn`, :ref:`web distribution`
 
 
 .. index:: File Locking
@@ -285,9 +347,9 @@ with concurrency and parallelism.
 
 Data Structures
 ++++++++++++++++
-https://en.wikipedia.org/wiki/Data_structure
-
-https://en.wikipedia.org/wiki/List_of_data_structures
+| Wikipedia: https://en.wikipedia.org/wiki/Data_structure
+| WikipediaCategory: https://en.wikipedia.org/wiki/Category:Data_structures
+| Docs: https://en.wikipedia.org/wiki/List_of_data_structures
 
 * http://rosettacode.org/wiki/Category:Programming_Tasks
 
@@ -300,9 +362,8 @@ https://en.wikipedia.org/wiki/List_of_data_structures
 
 Arrays
 ````````
-https://en.wikipedia.org/wiki/Array_data_structure
-
-* https://en.wikipedia.org/wiki/List_of_data_structures#Arrays
+| Wikipedia: https://en.wikipedia.org/wiki/Array_data_structure
+| Docs: https://en.wikipedia.org/wiki/List_of_data_structures#Arrays
 
 An array is a data structure for unidimensional data.
 
@@ -318,7 +379,7 @@ An array is a data structure for unidimensional data.
 
 Matrices
 ``````````
-| `<https://en.wikipedia.org/wiki/Matrix_(computer_science)>`_
+| Wikipedia: `<https://en.wikipedia.org/wiki/Matrix_(computer_science)>`_
 
 A matrix is a data structure for multidimensional data;
 a multidimensional :ref:`array <arrays>`.
@@ -329,9 +390,8 @@ a multidimensional :ref:`array <arrays>`.
 
 Lists
 ```````
-https://en.wikipedia.org/wiki/Linked_list
-
-* https://en.wikipedia.org/wiki/List_of_data_structures#Lists
+| Wikipedia: https://en.wikipedia.org/wiki/Linked_list
+| Docs: https://en.wikipedia.org/wiki/List_of_data_structures#Lists
 
 A list is a data structure with nodes that link to
 a next and/or previous node.
@@ -342,9 +402,13 @@ a next and/or previous node.
 
 Graphs
 ````````
-| `<https://en.wikipedia.org/wiki/Graph_(abstract_data_type)>`__
-| `<https://en.wikipedia.org/wiki/Graph_(mathematics)>`__
-| `<https://en.wikipedia.org/wiki/Graph_theory>`__
+| Wikipedia: `<https://en.wikipedia.org/wiki/Graph_(abstract_data_type)>`__
+| Wikipedia: `<https://en.wikipedia.org/wiki/Graph_(mathematics)>`__
+| Wikipedia: `<https://en.wikipedia.org/wiki/Graph_theory>`__
+| Docs: https://en.wikipedia.org/wiki/Conceptual_graph
+| WikipediaCategory: `<https://en.wikipedia.org/wiki/Category:Graphs>`__
+| WikipediaCategory: `<https://en.wikipedia.org/wiki/Category:Graph_data_structures>`__
+| WikipediaCategory: `<https://en.wikipedia.org/wiki/Category:Graph_theory>`__
 
 A graph is a :term:`system` of nodes connected by edges;
 an abstract data type for which there are a number of
@@ -357,12 +421,12 @@ suitable data structures.
   and so require two edges with separate attributes
   (e.g. 'magnitude', 'scale'
 
-  https://en.wikipedia.org/wiki/Directed_graph
+  | Wikipedia: https://en.wikipedia.org/wiki/Directed_graph
 
 * Edges of an **undirected graph** connect nodes
   in both directions (with the same attributes).
 
-  `<https://en.wikipedia.org/wiki/Graph_(mathematics)#Undirected_graph>`__
+  | Wikipedia: `<https://en.wikipedia.org/wiki/Graph_(mathematics)#Undirected_graph>`__
 
 * There are many :ref:`data structure <data structures>`
   representatations for :ref:`graphs`:
@@ -388,7 +452,7 @@ suitable data structures.
 
 DFS
 ~~~~~
-| https://en.wikipedia.org/wiki/Depth-first_search
+| Wikipedia: https://en.wikipedia.org/wiki/Depth-first_search
 
 DFS (*Depth-first search*) is a :ref:`graph <graphs>` traversal algorithm.
 
@@ -414,7 +478,7 @@ See also: :ref:`BSP`, Firefly Algorithm
 
 BFS
 ~~~~
-| https://en.wikipedia.org/wiki/Breadth-first_search
+| Wikipedia: https://en.wikipedia.org/wiki/Breadth-first_search
 
 BFS (*Breadth-first search*) is a :ref:`graph <graphs>` traversal agorithm.
 
@@ -439,8 +503,8 @@ BFS (*Breadth-first search*) is a :ref:`graph <graphs>` traversal agorithm.
 
 Trees
 ```````
-| https://en.wikipedia.org/wiki/Tree_data_structure
-| http://rosettacode.org/wiki/Tree_traversal
+| Wikipedia: https://en.wikipedia.org/wiki/Tree_data_structure
+| Docs: http://rosettacode.org/wiki/Tree_traversal
 
 A tree is a directed :ref:`graph <graphs>`.
 
@@ -680,6 +744,40 @@ FAT is a group of on-disk filesystem standards.
 * :ref:`Windows` machines can read and write FAT partitions.
 * :ref:`OSX` machines can read and write FAT partitions.
 * :ref:`Linux` machines can read and write FAT partitions.
+
+
+.. index:: ISO9660
+.. _iso9660:
+
+ISO9660
+`````````
+| Wikipedia: https://en.wikipedia.org/wiki/ISO_9660
+| FileExt: ``.iso``
+
+ISO9660 is an :ref:`ISO` standard for :ref:`disc drive` images
+which specifies a standard for booting from a filesystem image.
+
+* Many :ref:`Operating System` distributions are distributed
+  as :ref:`ISO9660` ``.iso`` files.
+* ISO9660 and :ref:`Linux`:
+
+  + An ISO9660 ISO can be *loop mounted*::
+
+    mount -o loop,ro -t iso9660 ./path/to/file.iso /mnt/cdrom
+
+  + An ISO8660 CD can be *mounted*::
+
+    mount -o ro -t iso9660 /dev/cdrom /mnt/cdrom
+
+* Most CD/DVD burning utilities support ISO9660 ``.iso``
+  files.
+* ISO9660 is useful in that it specifies how to encode
+  the boot sector (*El Torito*) and partition layout.
+* Nowadays, ISO9660 ``.iso`` files are often
+  converted to raw drive images and written to
+  bootable :ref:`USB` Mass Storage devices
+  (e.g. to write a install / recovery disq
+  for :ref:`Debian`, :ref:`Ubuntu`, :ref:`Fedora`, :ref:`Windows`)
 
 
 .. index:: HFS+
@@ -1085,72 +1183,6 @@ https://en.wikipedia.org/wiki/Category:Distributed_algorithms
 * `<https://en.wikipedia.org/wiki/Paxos_(computer_science)>`_
 
 
-.. index:: MapReduce
-.. _mapreduce:
-
-MapReduce
-````````````
-| Wikipedia:  https://en.wikipedia.org/wiki/MapReduce
-
-MapReduce is an algorithm for distributed computation.
-
-* BigTable, Hadoop, HDFS, Disco, DDFS are built on the :ref:`mapreduce`
-  model
-
-
-.. index:: BSP
-.. index:: Bulk Synchronous Parallel
-.. _bsp:
-
-Bulk Synchronous Parallel
-````````````````````````````
-| Wikipedia: https://en.wikipedia.org/wiki/Bulk_synchronous_parallel
-
-Bulk Synchronous Parallel (*BSP*) is an algorithm for distributed computation.
-
-* Google Pregel, Apache Giraph, and Apache Spark are built for
-  a :ref:`bsp` model
-* :ref:`mapreduce` can be expressed very concisely in terms of
-  :ref:`BSP`.
-
-
-.. index:: Distributed Hash Table
-.. index:: DHT
-.. _dht:
-
-Distributed Hash Table
-````````````````````````
-| Wikipedia: https://en.wikipedia.org/wiki/Distributed_hash_table
-
-A Distributed Hash Table (*:ref:`DHT <dht>`*) is a distributed key value store
-for storing values under a consistent file checksum hash which can be
-looked up with an exact string match.
-
-* At an API level, a DHT is a key/value store.
-* :term:`DNS` is basically a DHT
-* :ref:`distributed-databases` all implement some form of
-  a structure simiar to a DHT (a replicated *keystore*);
-  often for things like bloom filters (for fast search)
-
-  * Apache Cassandra, :ref:`Ceph`, :ref:`GlusterFS`
-
-* :ref:`browsers` that maintain a local cache could
-  implement a DHT (e.g. with :ref:`websockets` or :ref:`webrtc`)
-
-  * :ref:`webtorrent` (:ref:`Javascript`, :ref:`Node.js`, :ref:`WebRTC`)
-
-* :ref:`BitTorrent` :term:`magnet URIs <magnet uri>` (:term:`URNs <urn>`)
-  contain a *key*,
-  which is a *checksum* of a manifest,
-  which can be retrieved from a :ref:`DHT`::
-
-    # https://tug.org/mactex/MacTeX.pkg.torrent
-
-
-    dht = DHT(); value = dht.get(key_uri)
-
-
-
 .. index:: Graph Databases
 .. _graph-databases:
 
@@ -1210,6 +1242,95 @@ Graph Pattern Query Results
 * :ref:`LDP`
 
 
+.. index:: Distributed Algorithms
+.. _distributed algorithms:
+
+Distributed Algorithms
+++++++++++++++++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/Distributed_algorithm
+| WikipediaCategory: https://en.wikipedia.org/wiki/Category:Distributed_algorithms
+
+:ref:`Distributed Databases` and distributed :ref:`information systems`
+implement :ref:`Distributed Algorithms` designed to solve for
+:ref:`confidentiality`, :ref:`integrity`, and :ref:`availability`.
+
+As separate records / statements to be ``yield``-ed or emitted:
+
+* :ref:`Distributed Databases`
+    implement :ref:`Distributed Algorithms`.
+* Distributed :ref:`information systems`
+    implement :ref:`Distributed Algorithms`.
+
+
+.. index:: Distributed Hash Table
+.. index:: DHT
+.. _dht:
+
+DHT
+```
+| Wikipedia: https://en.wikipedia.org/wiki/Distributed_hash_table
+
+A DHT (Distributed Hash Table*) is a distributed key value store
+for storing values under a consistent file checksum hash which can be
+looked up with e.g. an exact string match.
+
+* At an API level, a DHT is a key/value store.
+* :term:`DNS` is basically a DHT
+* :ref:`distributed databases` all implement some form of
+  a structure simiar to a DHT (a replicated *keystore*);
+  often for things like bloom filters (for fast search)
+
+  * :ref:`Cassandra`, :ref:`Ceph`, :ref:`GlusterFS`
+
+* :ref:`browsers` that maintain a local cache could
+  implement a DHT (e.g. with :ref:`websockets` or :ref:`webrtc`)
+
+  * :ref:`webtorrent` (:ref:`Javascript`, :ref:`Node.js`, :ref:`WebRTC`)
+
+* :ref:`BitTorrent` :term:`magnet URIs <magnet uri>` (:term:`URNs <urn>`)
+  contain a *key*,
+  which is a *checksum* of a manifest,
+  which can be retrieved from a :ref:`DHT`::
+
+    # https://tug.org/mactex/MacTeX.pkg.torrent
+
+
+    dht = DHT(); value = dht.get(key_uri)
+
+
+
+
+.. index:: MapReduce
+.. _mapreduce:
+
+MapReduce
+````````````
+| Wikipedia:  https://en.wikipedia.org/wiki/MapReduce
+
+MapReduce is an algorithm for distributed computation.
+
+* BigTable, Hadoop, HDFS, Disco, DDFS are built on the :ref:`mapreduce`
+  model
+
+
+.. index:: BSP
+.. index:: Bulk Synchronous Parallel
+.. _bsp:
+
+Bulk Synchronous Parallel
+````````````````````````````
+| Wikipedia: https://en.wikipedia.org/wiki/Bulk_synchronous_parallel
+
+Bulk Synchronous Parallel (*BSP*) is an algorithm for distributed computation.
+
+* Google Pregel, Apache Giraph, and Apache Spark are built for
+  a :ref:`bsp` model
+* :ref:`mapreduce` can be expressed very concisely in terms of
+  :ref:`BSP`.
+
+
+
+
 .. index:: Data Grid
 .. _data-grid:
 
@@ -1248,12 +1369,13 @@ and for `Terrestrial Time` (Earth and Space).
 
 Long Now Dates
 ++++++++++++++++
-https://en.wikipedia.org/wiki/Long_Now_Foundation
+| Homepage: https://en.wikipedia.org/wiki/Long_Now_Foundation
+| Docs: https://en.wikipedia.org/wiki/Year_10,000_problem
 
 ::
 
      2015    # ISO8601 date
-    02015    # Long Now Date
+    02015    # 5-digit Y10K date
 
 
 .. index:: Decimal Time
@@ -1349,8 +1471,8 @@ Before Present (*BP*) dates are relative to the current date
 Common Era (CE)
 +++++++++++++++++
 | Wikipedia: https://en.wikipedia.org/wiki/Common_Era
-| https://en.wikipedia.org/wiki/Pax_Romana
-| :ref:`Year Zero`
+| Docs: https://en.wikipedia.org/wiki/Pax_Romana
+| Docs: :ref:`Year Zero`
 
 * BCE (*Before Common Era*) == BC
 
@@ -1843,11 +1965,11 @@ URN
 IEC
 +++++
 | Wikipedia: https://en.wikipedia.org/wiki/International_Electrotechnical_Commission
-| http://www.iec.ch/
+| Homepage: http://www.iec.ch/
 
-IEC ("International Electrotechnical Commission") is a standards body.
+IEC (*International Electrotechnical Commission*) is a standards body.
 
-List of IEC standards: https://en.wikipedia.org/wiki/List_of_IEC_standards
+* List of IEC standards: https://en.wikipedia.org/wiki/List_of_IEC_standards
 
 
 .. index:: IETF
@@ -1860,7 +1982,7 @@ IETF
 
 IETF (*Internet Engineering Task Force*) is a standards body.
 
-List of IETF standards: https://tools.ietf.org/html/
+* List of IETF standards: https://tools.ietf.org/html/
 
 
 .. index:: ISO
@@ -1874,7 +1996,7 @@ ISO
 ISO (*International Organization for Standardization*) is a standards
 body.
 
-List of ISO standards: http://www.iso.org/iso/home/standards.htm
+* List of ISO standards: http://www.iso.org/iso/home/standards.htm
 
 
 .. index:: W3C
@@ -1887,7 +2009,7 @@ W3C
 
 W3C (*World Wide Web Consortium*) is a standards body.
 
-List of W3C standards: http://www.w3.org/TR/
+* List of W3C standards: http://www.w3.org/TR/
 
 
 .. index:: HTTP

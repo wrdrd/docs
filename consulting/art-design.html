@@ -1841,7 +1841,7 @@ and geodistributedly.</p>
 <ul>
 <li><p class="first">A BitTorrent client downloads pieces of files over <a class="reference internal" href="knowledge-engineering#http"><em>HTTP</em></a>
 from <strong>peers</strong> discovered through a tracker
-or another peer discovery protocol (such as a <a class="reference internal" href="knowledge-engineering#dht"><em>Distributed Hash Table</em></a>).</p>
+or another peer discovery protocol (such as a <a class="reference internal" href="knowledge-engineering#dht"><em>DHT</em></a>).</p>
 </li>
 <li><p class="first">BitTorrent magnet URIs open in an installed BitTorrent downloading
 program (e.g. BitTorrent, uTorrent,
@@ -1868,7 +1868,7 @@ but &#8220;now accounts for only 6.3% of total traffic in North America&#8221;.<
 <dd><p class="first">A BitTorrent <code class="docutils literal"><span class="pre">.torrent</span></code> file includes:</p>
 <ul class="simple">
 <li>SHA-1 checksum hashes of all the pieces of all the files</li>
-<li>(optional) a <a class="reference internal" href="knowledge-engineering#dht"><em>Distributed Hash Table</em></a> key (for trackerless peer discovery)</li>
+<li>(optional) a <a class="reference internal" href="knowledge-engineering#dht"><em>DHT</em></a> key (for trackerless peer discovery)</li>
 <li>(optional) a list of HTTP <a class="reference internal" href="#term-bittorrent-tracker"><em class="xref std std-term">BitTorrent Tracker</em></a> URLs</li>
 <li>(optional) a list of HTTP <a class="reference internal" href="#term-web-seeding"><em class="xref std std-term">Web Seeds</em></a>.</li>
 </ul>
@@ -1881,7 +1881,7 @@ peers from which matching pieces can be downloaded.</dd>
 <dd>A BitTorrent Client
 opens a <a class="reference internal" href="#term-bittorrent-torrent-file"><em class="xref std std-term">BitTorrent Torrent File</em></a>,
 registers with the given <a class="reference internal" href="#term-bittorrent-tracker"><em class="xref std std-term">BitTorrent Trackers</em></a>,
-looks for peers in a <a class="reference internal" href="knowledge-engineering#dht"><em>Distributed Hash Table</em></a>,
+looks for peers in a <a class="reference internal" href="knowledge-engineering#dht"><em>DHT</em></a>,
 downloads the pieces of the files listed
 by choosing faster (more efficient, less costly, ~more local) peers
 to download from,
@@ -1891,7 +1891,7 @@ and, according to the configuration, uploads pieces to other peers.</dd>
 checksummed copy of all of the pieces of all the files
 in a <a class="reference internal" href="#term-bittorrent-torrent-file"><em class="xref std std-term">BitTorrent Torrent File</em></a>
 which a peer is sharing through a <a class="reference internal" href="#term-bittorrent-tracker"><em class="xref std std-term">BitTorrent tracker</em></a>
-or a <a class="reference internal" href="knowledge-engineering#dht"><em>Distributed Hash Table</em></a>.</dd>
+or a <a class="reference internal" href="knowledge-engineering#dht"><em>DHT</em></a>.</dd>
 <dt id="term-web-seeding">Web Seeding</dt>
 <dd><p class="first">Web Seeding is when one or more
 <a class="reference internal" href="knowledge-engineering#http"><em>HTTP</em></a> servers serve default standby <a class="reference internal" href="#term-bittorrent-seed"><em class="xref std std-term">seeds</em></a>
