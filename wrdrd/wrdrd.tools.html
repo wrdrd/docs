@@ -747,7 +747,7 @@
 
 <dl class="function">
 <dt id="wrdrd.tools.crawl.crawl_url">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">crawl_url</code><span class="sig-paren">(</span><em>start_url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x106ce3150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdrd/tools/crawl#crawl_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.crawl_url" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">crawl_url</code><span class="sig-paren">(</span><em>start_url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10fd45150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdrd/tools/crawl#crawl_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.crawl_url" title="Permalink to this definition">¶</a></dt>
 <dd><p>Crawl pages starting at <code class="docutils literal"><span class="pre">start_url</span></code></p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -922,6 +922,28 @@ a <a class="reference internal" href="#wrdrd.tools.crawl.Link" title="wrdrd.tool
 </dd></dl>
 
 <dl class="function">
+<dt id="wrdrd.tools.crawl.extract_links_sphinx_almost_rdf">
+<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">extract_links_sphinx_almost_rdf</code><span class="sig-paren">(</span><em>url</em>, <em>bs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdrd/tools/crawl#extract_links_sphinx_almost_rdf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.extract_links_sphinx_almost_rdf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Walk through headings and extract internal and external links</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>url</strong> (<em>str</em>) &#8211; URL of the BeautifulSoup object</li>
+<li><strong>bs</strong> (<em>bs4.BeautifulSoup</em>) &#8211; BeautifulSoup object</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Yields:</th><td class="field-body"><p class="first last"><em>Thing</em> &#8211;
+a <code class="xref py py-class docutils literal"><span class="pre">Thing</span></code></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
 <dt id="wrdrd.tools.crawl.extract_words_from_bs">
 <code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">extract_words_from_bs</code><span class="sig-paren">(</span><em>bs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdrd/tools/crawl#extract_words_from_bs"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.extract_words_from_bs" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get just the text from an HTML page</p>
@@ -1040,7 +1062,7 @@ a <a class="reference internal" href="#wrdrd.tools.crawl.Link" title="wrdrd.tool
 
 <dl class="function">
 <dt id="wrdrd.tools.crawl.print_frequency_table">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">print_frequency_table</code><span class="sig-paren">(</span><em>frequencies</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x106ce3150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdrd/tools/crawl#print_frequency_table"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.print_frequency_table" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">print_frequency_table</code><span class="sig-paren">(</span><em>frequencies</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10fd45150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdrd/tools/crawl#print_frequency_table"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.print_frequency_table" title="Permalink to this definition">¶</a></dt>
 <dd><p>Print a formatted ASCII frequency table</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -1194,7 +1216,7 @@ a <a class="reference internal" href="#wrdrd.tools.crawl.Link" title="wrdrd.tool
 
 <dl class="function">
 <dt id="wrdrd.tools.crawl.wrdcrawler">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">wrdcrawler</code><span class="sig-paren">(</span><em>url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x106ce3150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdrd/tools/crawl#wrdcrawler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.wrdcrawler" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">wrdcrawler</code><span class="sig-paren">(</span><em>url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10fd45150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdrd/tools/crawl#wrdcrawler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.wrdcrawler" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fetch and generate a report from the given URL</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />

@@ -20,6 +20,7 @@ WRD R&D Documentation
    consulting/computer-engineering
    consulting/information-systems
    consulting/data-science
+   consulting/units
    consulting/knowledge-engineering
    consulting/entrepreneurship
    consulting/education-technology

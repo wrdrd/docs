@@ -1,0 +1,735 @@
+
+
+.. index:: Data Engineering
+.. _data engineering:
+
+Data Engineering
+=================
+
+
+.. index:: File Structures
+.. _file structures:
+
+File Structures
+-----------------
+https://en.wikipedia.org/wiki/File_format
+
+`<https://en.wikipedia.org/wiki/Record_(computer_science)>`_
+
+`<https://en.wikipedia.org/wiki/Field_(computer_science)>`_
+
+https://en.wikipedia.org/wiki/Index#Computer_science
+
+* :ref:`tar` and :ref:`zip` are file structures
+  that have a *manifest* and a *payload*
+
+  * :ref:`filesystems` often have redundant manifests
+    (and/or deduplication according to a hash table manifest
+    with an interface like a :ref:`dht`)
+
+* :ref:`web standards` and :ref:`semantic web standards` which define
+  file structures (and stream protocols):
+
+  * :ref:`XML`
+  * :ref:`RDF` (:ref:`RDFXML`, :ref:`Turtle`, :ref:`n3`, :ref:`rdfa`,
+    :ref:`json-ld`)
+  * :ref:`JSON` (:ref:
+  * :ref:`HTTP`
+
+.. index:: Git File Structures
+.. _git file structures:
+
+Git File Structures
+~~~~~~~~~~~~~~~~~~~~~~
+:ref:`Git` specifies a number of file structures (see also: *bup*):
+
+* Git Objects: https://git-scm.com/book/en/v2/Git-Internals-Git-Objects
+* Git References: https://git-scm.com/book/en/v2/Git-Internals-Git-References
+* Git Packfiles: https://git-scm.com/book/en/v2/Git-Internals-Packfiles
+
+  "Git is a content-addressable :ref:`filesystem <filesystems>`"
+
+  See also: **bup**
+
+
+.. index:: File Locking
+.. _file locking:
+
+File Locking
+~~~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/File_locking
+
+File locking is one strategy for synchronization
+with concurrency and parallelism.
+
+* An auxilliary ``<filename>.lock`` file
+  is still susceptible to *race conditions*
+* :ref:`C` file locking functions: ``fcntl``, ``lockf``, ``flock``
+* :ref:`Python` file locking functions: ``fcntl.fcntl``, ``fcntl.lockf``,
+  ``fcntl.flock``: 
+  https://docs.python.org/2/library/fcntl.html
+* To lock a file for all processes with :ref:`Linux` requires
+  a *mandatory file locking* mount option (`mount -o mand``) and
+  per-file setgid and noexec bits (``chmod g+s,g-s``).
+* To lock a file (or a range / record of a file) for all processes with
+  :ref:`Windows` requires no additional work beyond
+  ``win32con.LOCKFILE_EXCLUSIVE_LOCK``,
+  ``win32file.LockFileEx``, and ``win32file.UnlockFileEx``.
++ CWE-667: Improper Locking:
+  https://cwe.mitre.org/data/definitions/667.html#Relationships
+
+  + https://en.wikipedia.org/wiki/File_locking#Problems
+  + https://en.wikipedia.org/wiki/Race_condition
+  + CWE-833: Deadlock
+
+    https://cwe.mitre.org/data/definitions/833.html
+
+    https://en.wikipedia.org/wiki/Deadlock
+
+  
+
+
+.. index:: Data Structures
+.. _data structures:
+
+Data Structures
+----------------
+https://en.wikipedia.org/wiki/Data_structure
+
+https://en.wikipedia.org/wiki/List_of_data_structures
+
+* http://rosettacode.org/wiki/Category:Programming_Tasks
+
+  * http://rosettacode.org/wiki/Greatest_common_divisor
+  * http://rosettacode.org/wiki/Go_Fish
+
+
+.. index:: Arrays
+.. _arrays:
+
+Arrays
+~~~~~~~~
+https://en.wikipedia.org/wiki/Array_data_structure
+
+* https://en.wikipedia.org/wiki/List_of_data_structures#Arrays
+
+An array is a data structure for unidimensional data.
+
+* Arrays must be resized when data grows beyond the initial
+  shape of the array.
+* Sparse arrays are sparsely allocated.
+* A multidimensional array is said to be a :ref:`matrix <matrix>`.
+
+
+.. index:: Matrix
+.. index:: Matrices
+.. _matrix:
+
+Matrices
+~~~~~~~~~~
+| `<https://en.wikipedia.org/wiki/Matrix_(computer_science)>`_
+
+A matrix is a data structure for multidimensional data;
+a multidimensional :ref:`array <arrays>`.
+
+
+.. index:: Lists
+.. _lists:
+
+Lists
+~~~~~~~
+https://en.wikipedia.org/wiki/Linked_list
+
+* https://en.wikipedia.org/wiki/List_of_data_structures#Lists
+
+A list is a data structure with nodes that link to
+a next and/or previous node.
+
+
+.. index:: Graphs
+.. _graphs:
+
+Graphs
+~~~~~~~~
+| `<https://en.wikipedia.org/wiki/Graph_(abstract_data_type)>`__
+| `<https://en.wikipedia.org/wiki/Graph_(mathematics)>`__
+| `<https://en.wikipedia.org/wiki/Graph_theory>`__
+
+A graph is a :term:`system` of nodes connected by edges;
+an abstract data type for which there are a number of
+suitable data structures.
+
+* A node has edges.
+* An edge connects nodes.
+
+* Edges of **directed graphs** flow in only one direction;
+  and so require two edges with separate attributes
+  (e.g. 'magnitude', 'scale'
+
+  https://en.wikipedia.org/wiki/Directed_graph
+
+* Edges of an **undirected graph** connect nodes
+  in both directions (with the same attributes).
+
+  `<https://en.wikipedia.org/wiki/Graph_(mathematics)#Undirected_graph>`__
+
+* There are many :ref:`data structure <data structures>`
+  representatations for :ref:`graphs`:
+
+  * :ref:`RDF` is a :ref:`linked-data` format for :ref:`graphs`.
+
+* Graphs and :ref:`trees` are **traversed** (or *walked*);
+  according to a given algorithm (e.g. :ref:`DFS`, :ref:`BFS`).
+
+* Graph nodes can be listed in many different *orders*:
+
+  * Preoder
+  * Inorder
+  * Postorder
+  * Level-order
+
+* A cartesian product has an interesting graph representation.
+
+
+.. index:: DFS
+.. index:: Depth-first search
+.. _dfs:
+
+=====
+DFS
+=====
+| https://en.wikipedia.org/wiki/Depth-first_search
+
+DFS (*Depth-first search*) is a :ref:`graph <graphs>` traversal algorithm.
+
+::
+
+    # Given a tree:
+    1
+      1.1
+      1.2
+    2
+      2.1
+      2.2
+
+    # BFS:
+    [1, 1.1, 1.2, 2, 2.1, 2.2
+
+See also: :ref:`BSP`, Firefly Algorithm
+
+
+.. index:: BFS
+.. index:: Breadth-first search
+.. _bfs:
+
+====
+BFS
+====
+| https://en.wikipedia.org/wiki/Breadth-first_search
+
+BFS (*Breadth-first search*) is a :ref:`graph <graphs>` traversal agorithm.
+
+::
+
+    # Given a tree:
+    1
+      1.1
+      1.2
+    2
+      2.1
+      2.2
+
+    # BFS:
+    1, 2, 1.1, 1.2, 2.1, 2.2
+
+* [ ] BFS and :ref:`BSP`
+
+
+.. index:: Trees
+.. _trees:
+
+Trees
+~~~~~~~
+| https://en.wikipedia.org/wiki/Tree_data_structure
+| http://rosettacode.org/wiki/Tree_traversal
+
+A tree is a directed :ref:`graph <graphs>`.
+
+* A tree is said to have branches and leaves; or just nodes.
+
+There are many types of and applications for trees:
+
+* https://en.wikipedia.org/wiki/List_of_data_structures#Trees
+* https://en.wikipedia.org/wiki/B-tree
+* https://en.wikipedia.org/wiki/Trie
+* https://en.wikipedia.org/wiki/Abstract_syntax_tree
+* https://en.wikipedia.org/wiki/Parse_tree
+* https://en.wikipedia.org/wiki/Decision_tree
+* https://en.wikipedia.org/wiki/Minmax
+* https://en.wikipedia.org/wiki/Database_index
+* Search: Indexing, Lookup
+
+
+.. index:: Compression Algorithms
+.. _compression algorithms:
+
+Compression Algorithms
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. index:: bzip2
+.. _bzip2:
+
+=======
+bzip2
+=======
+| Wikipedia: https://en.wikipedia.org/wiki/Bzip2
+| File Extension: ``.bz2``
+| Homepage: http://bzip.org/
+
+bzip2 is an :ref:`Open Source <open-source>` lossless compression algorithm
+based upon the ``Burrows-Wheeler`` algorithm.
+
+* bzip2 is usually slower than :ref:`gzip` or :ref:`zip`,
+  but more space efficient
+
+
+.. index:: gzip
+.. _gzip:
+
+======
+gzip
+======
+| Wikipedia: https://en.wikipedia.org/wiki/Gzip
+| Homepage: https://www.gnu.org/software/gzip/
+| File Extension: ``.gz``
+| Source: http://ftp.gnu.org/gnu/gzip/
+| Docs: https://www.gnu.org/software/gzip/manual/
+| Docs: https://www.gnu.org/software/gzip/manual/gzip.html
+
+gzip is a compression algorithm
+based on ``DEFLATE`` and ``LZ77``.
+
+* gzip is similar to :ref:`Zip`, in that both are based upon
+  ``DEFLATE``
+
+
+.. index:: tar
+.. _tar:
+
+====
+tar
+====
+| Wikipedia: `<https://en.wikipedia.org/wiki/Tar_(computing)>`__
+| File Extension: ``.tar``
+
+:ref:`tar` is a file archiving format
+for storing a manifest of records of
+a set of files with paths and attributes
+at the beginning of the actual files
+all concatenated into one file.
+
+* TAR = ( table of contents + data stream )
+* ``.tar.gz`` is :ref:`tar` + :ref:`gzip`
+* ``.tar.bz2`` is :ref:`tar` + :ref:`bzip2`
+
+TAR and :ref:`gzip` or :ref:`bzip2` can be streamed over SSH::
+
+    # https://unix.stackexchange.com/a/95994
+    tar czf - . | ssh remote "( cd ~/ ; cat > file.tar.gz )"
+    tar bzf - . | ssh remote "( cd ~/ ; cat > file.tar.bz2 )"
+
+See also: :ref:`zip` (:ref:`windows`)
+
+
+.. index:: ZIP
+.. _zip:
+
+====
+zip
+====
+| Wikipedia: `<https://en.wikipedia.org/wiki/Zip_(file_format)>`__
+
+zip is a lossless file archive compression
+
+
+
+.. index:: Filesystems
+.. index:: File Systems
+.. _filesystems:
+
+Filesystems
+--------------
+| Wikipedia: https://en.wikipedia.org/wiki/File_system
+
+File systems determine how files are represented in a persistent
+physical medium.
+
+* On-disk filesystems determine where and how redundantly data is stored
+* On-disk filesystems: :ref:`ext`, :ref:`btrfs`
+* Networked filesystems link disk storage pools with other resources
+* Networked filesystems: :ref:`Ceph`, :ref:`GlusterFS`, :ref:`Bittorrent`
+
+.. index:: MBR
+.. _mbr:
+
+MBR
+~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Master_boot_record
+
+MBR (*Master Boot Record*) is a
+boot record format and a
+file partition scheme.
+
+* :ref:`DOS` and :ref:`Windows` use MBR partition tables.
+* Many/most UNIX variants support MBR partition tables.
+* :ref:`Linux` supports MBR partition tables.
+* Most PCs since 1983 boot from MBR partition tables.
+
+
+.. index:: GPT
+.. _gpt:
+
+GPT
+~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/GUID_Partition_Table
+
+GPT (*GUID Partition Table*) is a
+boot record format and a
+file partition scheme
+wherein partitions are assigned GUIDs (*Globally Unique Identifiers*).
+
+* :ref:`OSX` uses GPT partition tables.
+* :ref:`Linux` supports GPT partition tables.
+* https://en.wikipedia.org/wiki/GUID_Partition_Table#UNIX_and_Unix-like_operating_systems
+
+
+.. index:: LVM
+.. index:: Logical Volume Manager
+.. _lvm:
+
+LVM
+~~~~~~~~~~~~~~~~~~~~~~
+| Wikipedia: `<https://en.wikipedia.org/wiki/Logical_Volume_Manager_(Linux)>`__
+| Homepage: https://www.sourceware.org/lvm2/
+| Source: ftp://sources.redhat.com/pub/lvm2/
+| Docs: https://www.sourceware.org/dm/
+| Docs: http://www.tldp.org/HOWTO/LVM-HOWTO/index.html
+| Docs:
+
+LVM (*Logical Volume Manager*) is an :ref:`Open Source <open-source>`
+software disk abstraction layer with snapshotting, copy-on-write,
+online resize and allocation
+
+* In LVM, *Volume Groups* (VG) contain
+  *Physical Volumes* (PV) contain *Logical Volumes* (LV)
+* LVM can do striping and high-availability sofware RAID
+* LVM and ``device-mapper`` are now part of the :ref:`Linux`
+  kernel tree
+  (the LVM linux kernel modules are built and included
+  with most distributions' default kernel build)
+* There is feature overlap between :ref:`lvm` and :ref:`btrfs`
+  (pooling, snapshotting, copy-on-write).
+
+
+
+.. index:: btrfs
+.. _btrfs:
+
+btrfs
+~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Btrfs
+| Homepage: https://btrfs.wiki.kernel.org/index.php/Main_Page
+| Source: https://btrfs.wiki.kernel.org/index.php/Btrfs_source_repositories
+| Source: git git://git.kernel.org/pub/scm/linux/kernel/git/mason/btrfs-progs.git
+| Docs: https://btrfs.wiki.kernel.org/index.php/Getting_started#Basic_Filesystem_Commands
+| Docs: https://btrfs.wiki.kernel.org/index.php/Problem_FAQ
+| Docs: https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Storage_Administration_Guide/ch-btrfs.html
+| Docs: https://wiki.archlinux.org/index.php/Btrfs
+| Docs: https://help.ubuntu.com/community/btrfs
+
+btrfs (:ref:`B-tree <trees>` *filesystem*) is an
+:ref:`Open Source <open-source>` pooling, snapshotting,
+checksumming, deduplicating, union mounting
+copy-on-write on-disk :ref:`Linux` filesystem.
+
+
+.. index:: ext2
+.. index:: ext3
+.. index:: ext4
+.. _ext:
+
+ext
+~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Ext2
+| Wikipedia: https://en.wikipedia.org/wiki/Ext3
+| Wikipedia: https://en.wikipedia.org/wiki/Ext4
+
+ext2, ext3, and ext4 are the ext (*extended filesystem*)
+:ref:`Open Source <open-source>`
+on-disk filesystems.
+
+* ext filesystems are the default filesystems of many
+  :ref:`Linux` distributions.
+* :ref:`windows` machines can access ext2, ext3, and ext4 filesystems
+  with ext2explore and ext2fsd.
+* :ref:`OSX` machines can access ext2, ext3, and ext4 filesystems
+  with OSXFuse and FUSE-EXT2.
+
+
+.. index:: FAT
+.. index:: FAT12
+.. index:: FAT16
+.. index:: FAT32
+.. _fat:
+
+FAT
+~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/File_Allocation_Table
+
+FAT is a group of on-disk filesystem standards.
+
+* FAT is used on cross-platform USB drives.
+* FAT is found on older :ref:`Windows` and DOS machines.
+* FAT12, FAT16, and FAT32 are all FAT filesystem standards.
+* FAT32 has a maximum filesize of 4GB and a maximum volume size of 2 TB.
+* :ref:`Windows` machines can read and write FAT partitions.
+* :ref:`OSX` machines can read and write FAT partitions.
+* :ref:`Linux` machines can read and write FAT partitions.
+
+
+.. index:: HFS+
+.. _hfs+:
+
+HFS+
+~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/HFS_Plus
+
+HFS+ (*Hierarchical Filesystem*) or *Mac OS Extended*,
+is the filesystem for Mac OS 8.1+ and :ref:`OSX`.
+
+* HFS+ is required for :ref:`OSX` and Time Machine.
+
+  http://www.cnet.com/how-to/the-best-ways-to-format-an-external-drive-for-windows-and-mac/
+
+* :ref:`Windows` machines can access HFS+ partitions with:
+  HFSExplorer (free, :ref:`Java`), Paragon HFS+ for Windows,
+  or MacDrive
+
+  http://www.makeuseof.com/tag/4-ways-read-mac-formatted-drive-windows/
+
+* :ref:`Linux` machines can access HFS+ partitions with
+  ``hfsprogs`` (``apt-get install hfsprogs``, ``yum install hfsprogs``).
+
+
+.. index:: NTFS
+.. _ntfs:
+
+NTFS
+~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/NTFS
+
+NTFS is a proprietary journaling filesytem.
+
+* Windows machines since Windows NT 3.1 and Windows XP
+  default to NTFS filesystems.
+* Non-windows machines can access NTFS partitions through
+  NTFS-3G: https://en.wikipedia.org/wiki/NTFS-3G
+
+
+
+
+.. index:: Network Filesystems
+.. index:: Network File Systems
+.. _network filesystems:
+
+Network Filesystems
+---------------------
+
+
+.. index:: Ceph
+.. _ceph:
+
+Ceph
+~~~~~
+| Wikipedia: `<https://en.wikipedia.org/wiki/Ceph_(software)>`__
+| Homepage: http://ceph.com/
+| Download: http://ceph.com/resources/downloads/
+| Source: git https://github.com/ceph/ceph
+| Docs: http://ceph.com/docs/master/
+| Docs: http://ceph.com/docs/master/rados/
+| Docs: http://ceph.com/docs/master/radosgw/
+| Docs: http://ceph.com/docs/master/radosgw/s3/
+| Docs: http://ceph.com/docs/master/radosgw/swift/
+| Docs: http://ceph.com/docs/master/radosgw/keystone/
+| Docs: http://ceph.com/docs/master/rbd/rbd-openstack/
+
+Ceph is an :ref:`Open Source <open-source>` network filesystem
+(a :ref:`distributed database <distributed-databases>`
+for files with attributes like owner, group, permissions)
+written in :ref:`C++` and :ref:`Perl`
+which runs over top of one or more on-disk filesystems.
+
+* Ceph Object Gateway (*radosgw*) -- :term:`RESTful API`,
+  :ref:`AWS` S3 API, :ref:`OpenStack` Swift API,
+  :ref:`OpenStack` Keystone authentication
+* Ceph Block Device (*rbd*) -- striping, caching, snapshots, copy-on-write,
+  :ref:`kvm`, :ref:`libvirt`, :ref:`OpenStack` Cinder block storage
+* Ceph Filesystem (*cephfs*) -- :ref:`POSIX`
+  :ref:`filesystem <filesystems>` with
+  FUSE, NFS, CIFS, and Hadoop HDFS APIs
+
+
+.. index:: CIFS
+.. _cifs:
+
+CIFS
+~~~~~~
+CIFS (*Common Internet File System*) is a centralized network filesystem
+protocol.
+
+* Samba ``smbd`` is one implementation of a :ref:`CIFS` network file server.
+ 
+
+.. index:: DDFS
+.. _ddfs:
+
+DDFS
+~~~~~~
+| 
+
+DDFS (*Disco Distributed File System*) is a
+distributed network filesystem
+written in :ref:`Python` and :ref:`C`.
+
+* DDFS is like a :ref:`python` implementation of :ref:`HDFS`
+  (which is written in :ref:`Java`).
+
+
+
+.. index:: GlusterFS
+.. _glusterfs:
+
+GlusterFS
+~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/GlusterFS
+| Homepage: http://www.gluster.org/
+| Project: https://forge.gluster.org/glusterfs-core
+| Source: git https://git.forge.gluster.org/glusterfs-core/glusterfs.git
+| Docs: https://gluster.readthedocs.org/en/latest/
+| Docs: https://gluster.readthedocs.org/en/latest/Quick-Start-Guide/Quickstart/
+| Docs: https://gluster.readthedocs.org/en/latest/Install-Guide/Setup_virt/
+| Docs: https://gluster.readthedocs.org/en/latest/Install-Guide/Setup_Bare_metal/
+| Docs: https://gluster.readthedocs.org/en/latest/Install-Guide/Setup_aws/
+| Docs: https://gluster.readthedocs.org/en/latest/Administrator%20Guide/GlusterFS%20Cinder/
+| Tcp ports: 111, 24007, 24008, 24009, 24010, 24011, 38465:38469
+
+GlusterFS is an :ref:`Open Source <open-source>` network filesystem
+(a :ref:`distributed database <distributed-databases>`
+for files with attributes like owner, group, permissions)
+which runs over top of one or more on-disk filesystems.
+
+* GlusterFS can serve volumes for :ref:`OpenStack` Cinder block storage
+
+
+.. index:: Hadoop distributed filesystem
+.. index:: HDFS
+.. _hdfs:
+
+HDFS
+~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Apache_Hadoop#HDFS
+
+HDFS (*Hadoop Distributed File System*) is
+an :ref:`Open Source <open-source>`
+distributed network filesystem.
+
+* HDFS runs code next to data;
+  rather than streaming data through code across the network.
+* HDFS is especially suitable for :ref:`MapReduce`-style
+  distributed computation.
+* Apache `Hadoop` works with files stored over HDFS, FTP, :ref:`S3`,
+  WASB (Azure)
+* There are HDFS :term:`language apis <language api>` for
+  many languages:
+  :ref:`Java`, :ref:`Scala`, :ref:`Go`, :ref:`Python`,
+  :ref:`Ruby`, :ref:`Perl`, :ref:`Haskell`, :ref:`C++`
+* :ref:`Mesos` can manage distributed HDFS grids.
+* :ref:`ElasticSearch`
+* It's possible to configure a :ref:`Jenkins` cluster
+  as :ref:`Hadoop` cluster.
+* Many databases support storage over HDFS
+  (:ref:`HBase`, :ref:`Cassandra`, :ref:`Accumulo`, :ref:`Spark`)
+* :ref:`Ceph` can now serve files over :ref:`HDFS`.
+* HDFS can be mounted as a :ref:`FUSE` filesystem (e.g. with :ref:`Linux`).
+* HDFS can be accessed from the commandline (e.g. #TODO list, get, put, stat)
+* HDFS can be browsed with HDFS-UI (HTTP :term:`web api`).
+
+
+.. index:: NFS
+.. _nfs:
+
+NFS
+~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/NFS
+
+NFS (*Network File System* #TODO) is an :ref:`Open Source <open-source>`
+centralized network filesystem.
+
+
+.. index:: S3
+.. _s3:
+
+S3 
+~~~~~~~~~~~~~~
+
+* :ref:`AWS` S3
+* :ref:`OpenStack` Swift
+* :ref:`Ceph`
+* :ref:`GlusterFS`
+
+
+.. index:: Swift
+.. _swift:
+
+Swift
+~~~~~~~
+
+* :ref:`OpenStack` Swift
+* :ref:`Ceph`
+* :ref:`GlusterFS`
+
+
+.. index:: SMB
+.. _smb:
+
+SMB
+~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Server_Message_Block
+
+SMB (*Server Message Block*) is a centralized network filesystem.
+
+* SMB has been superseded by :ref:`CIFS`.
+
+
+.. index:: WebDAV
+.. _webdav:
+
+WebDAV
+~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/WebDAV
+| Standard: https://tools.ietf.org/html/rfc2518
+| Standard: https://tools.ietf.org/html/rfc4918
+
+WebDAV (*Web Distributed Authoring and Versioning*) 
+is a network filesystem protocol built with :ref:`HTTP`.
+
+* WebDAV specifies a number of unique :ref:`HTTP` methods:
+  
+  * ``PROPFIND`` (``ls``, ``stat``, ``getfacl``),
+  * ``PROPPATCH`` (``touch``, ``setfacl``)
+  * ``MKCOL`` (``mkdir``)
+  * ``COPY`` (``cp``)
+  * ``MOVE`` (``mv``)
+  * ``LOCK`` (:ref:`file locking`)
+  * ``UNLOCK`` ()
+

@@ -16,15 +16,50 @@ and :ref:`computer-science`.
 * https://en.wikipedia.org/wiki/List_of_emerging_technologies#IT_and_communications
 
 
-Processor
+.. index:: Monitor
+.. _monitor:
+
+Monitor
 ==========
+* Serial
+* CRT
+* LCD
+* OLED
+* Quantum Dots
+* [ ] list of emerging technologies # ~display 
+
+todo: grep for todo,fixme,[ ]
+
+
+.. index:: Northbridge
+.. _northbridge:
+
+Northbridge
+=================
+| Wikipedia: `<https://en.wikipedia.org/wiki/Northbridge_(computing)>`__
+
+* Many/most desktops, laptops, and servers have a northbridge
+  which connects many core system components.
+* A :ref:`CPU` is connected to a northbridge.
+* A :ref:`CPU` may be connected to a northbridge
+  through a motherboard *processor socket*.
+* A northbridge connects to :ref:`RAM`.
+* A northbridge connects to a :ref:`System Bus` (e.g. :ref:`PCI-e`)
+* A :ref:`southbridge` connects to a :ref:`northbridge`.
+
+
+.. index:: Processor
+.. _processor:
+
+Processor
+----------
 
 
 .. index:: CPU
 .. _cpu:
 
 CPU
------
+~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/Central_processing_unit
 
 A CPU (*Central Processing Unit*) --- or **processor** ---
@@ -44,8 +79,9 @@ and input instructions.
 .. index:: ARM
 .. _arm:
 
+=====
 ARM
-~~~~~
+=====
 | Wikipedia: https://en.wikipedia.org/wiki/ARM_architecture
 
 * Routers
@@ -61,8 +97,9 @@ ARM
 .. index:: PPC
 .. _ppc:
 
+=====
 PPC
-~~~~~
+=====
 | Wikipedia:  https://en.wikipedia.org/wiki/PowerPC
 
 * https://en.wikipedia.org/wiki/PowerPC#Operating_systems
@@ -73,8 +110,9 @@ PPC
 .. index:: x86
 .. _x86:
 
+=====
 x86
-~~~~~
+=====
 | https://en.wikipedia.org/wiki/X86
 
 x86 is 32-bit :ref:`CPU` architecture.
@@ -93,8 +131,9 @@ x86 is 32-bit :ref:`CPU` architecture.
 .. index:: x86_64
 .. _x86_64:
 
+========
 x86_64
-~~~~~~~~
+========
 | Wikipedia: https://en.wikipedia.org/wiki/X86-64
 
 x86_64 (*x64*, *AMD64*) is a 64-bit :ref:`CPU` architecture.
@@ -104,11 +143,170 @@ x86_64 (*x64*, *AMD64*) is a 64-bit :ref:`CPU` architecture.
 
 
 
+
+.. index:: Memory
+.. _memory:
+
+Memory
+--------
+| Wikipedia: https://en.wikipedia.org/wiki/Computer_memory
+
+* :ref:`RAM` -- live working area ("desktop", "workspace")
+* :ref:`Persistent Storage` -- Hard Drive, CD/DVD, USB drive,
+  SSD ("file cabinet")
+
+
+.. index:: RAM
+.. _ram:
+
+RAM
+~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Random-access_memory
+
+RAM (*Random Access Memory*) is a category of
+volatile storage technologies
+which require voltage to remain applied in order to maintain state.
+
+* RAM is hundreds of times faster than many/most other
+  :ref:`Persistent Storage` methods.
+* It takes seconds for the voltage from RAM to discharge.
+* A *cold boot* or *cold reboot* is when the RAM gets a few seconds
+  (sometimes 30 or more) to discharge. (**"the magic touch"**)
+
+
+.. index:: System Bus
+.. _system bus:
+
+System Bus
+------------
+
+`<https://en.wikipedia.org/wiki/Bus_(computing)>`__
+
+.. index:: ISA
+.. _isa:
+
+ISA
+~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Industry_Standard_Architecture
+
+
+.. index:: PCI
+.. _pci:
+
+PCI
+~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Conventional_PCI
+
+
+.. index:: PCMCIA
+.. _pcmcia:
+
+PCMCIA
+~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/PC_Card
+
+PCMCIA is a standard for smaller-form-factor expansion cards.
+
+* PCMCIA is now known as "PC Card" and "CardBus".
+* Some laptops have PCMCIA slots.
+* There are PCI to PCMCIA adapter cards.
+
+
+.. index:: AGP
+.. _agp:
+
+AGP
+~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Accelerated_Graphics_Port
+
+
+.. index:: ExpressCard
+.. _expresscard:
+
+ExpressCard
+~~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/ExpressCard
+
+* Some laptops have ExpressCard slots.
+* ExpressCard supersedes the :ref:`PCMCIA` (PC Card, CardBus)
+  standards for smaller-form-factor expansion cards.
+
+.. index:: PCI-e
+.. _pci-e:
+
+PCI-e
+~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/PCI_Express
+
+
+
+
+Video Card
+-------------
+| Wikipedia: https://en.wikipedia.org/wiki/Video_card
+
+A video card connects a :ref:`system bus` with a monitor
+through one or more display connectors
+and does computer graphics processing.
+
+* A computer may have zero or more video cards.
+* A video card contains a :ref:`gpu`.
+* Many/most video cards connect to the :ref:`system bus`
+  (e.g. :ref:`AGP`, :ref:`PCI-e`).
+* Some video cards connect over :ref:`USB`
+  (e.g. for adding monitors to a notebook).
+
+
+.. index:: Multiheaded Display
+.. _multiheaded display:
+
+Multiheaded Display
+~~~~~~~~~~~~~~~~~~~~~~
+| Docs: https://wiki.archlinux.org/index.php/Multihead
+| Docs: https://wiki.ubuntu.com/X/Config/Multihead/
+
+.. epigraph::
+
+   Q: Why would I need more than one monitor?
+
+   A: To multitask.
+
+   A: For presentations. For presentations with
+   multiple projectors and something like :ref:`Resolume`.
+
+Per :ref:`video card <video cards>` multi-headed display configurations:
+
+* Synchronized, Mirroring --- Same output on multiple monitors
+* Teamed, Seamed, Tiled --- One framebuffer which spans multiple monitors
+* Multi-seat --- separate display/keyboard/mouse
+  ("multi-user console server", *thin client server*, LTSP)
+
+Challenges
+
+* Window placement
+
+  * Split screen
+  * Tabbed
+  * Stacked
+  * Floating
+
+* Keyboard shortcuts
+
+  * move window_x to monitor 2
+  * move window_x and ancillary floating windows to desktop 6
+  * set monitor 2 to desktop 6
+  * move this whole workspace to the monitor on the side
+  * show window_x in fullscreen across other windows
+  * toggle floating and always-on-top for window_x
+
+See: :ref:`i3wm`
+
+
 .. index:: GPU
 .. _gpu:
 
 GPU
-----
+~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/Graphics_processing_unit
 
 A GPU (*Graphics Processing Unit*)
@@ -134,8 +332,9 @@ with massive parallelism.
 .. index:: CUDA
 .. _cuda:
 
+=====
 CUDA
-~~~~~
+=====
 | Wikipedia: https://en.wikipedia.org/wiki/CUDA
 | Homepage: http://www.nvidia.com/object/cuda_home_new.html
 
@@ -155,31 +354,21 @@ CUDA-accelerated libraries for
 .. index:: PhysX
 .. _physx:
 
+========
 PhysX
-~~~~~~~~
+========
 | Wikipedia: https://en.wikipedia.org/wiki/PhysX
 | Homepage: https://developer.nvidia.com/gameworks-physx-overview
 
 PhysX is a realtime physics engine for :ref:`GPUs <gpu>` by Nvidia.
 
 
-Video Card
-=============
-| Wikipedia: https://en.wikipedia.org/wiki/Video_card
-
-A video card connects a :ref:`system bus` with a monitor
-through one or more display connectors
-and does computer graphics processing.
-
-* A computer may have zero or more video cards.
-* A video card contains a :ref:`gpu`.
-
 
 .. index:: VGA
 .. _vga:
 
 VGA
-----
+~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/Video_graphics_array
 | Wikipedia: https://en.wikipedia.org/wiki/VGA_connector
 
@@ -195,7 +384,7 @@ VGA (*Video Graphics Array*) is a video display interface.
 .. _dvi:
 
 DVI
------
+~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/Digital_Visual_Interface
 | Wikipedia: https://en.wikipedia.org/wiki/Digital_Visual_Interface#Connector
 
@@ -210,7 +399,7 @@ DVI is a video display interface.
 .. _hdmi:
 
 HDMI
------
+~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/HDMI
 | Wikipedia: https://en.wikipedia.org/wiki/HDMI#Connectors
 
@@ -229,317 +418,36 @@ interface standard.
 * HDMI can also carry :ref:`ethernet` signals.
 
 
+.. index:: Mini HDMI
+.. _mini hdmi:
 
-
-
-
-.. index:: Memory
-.. _memory:
-
-Memory
-========
-| Wikipedia: https://en.wikipedia.org/wiki/Computer_memory
-
-* :ref:`RAM` -- live working area ("desktop", "workspace")
-* :ref:`Persistent Storage` -- Hard Drive, CD/DVD, USB drive,
-  SSD ("file cabinet")
-
-
-.. index:: RAM
-.. _ram:
-
-RAM
-----
-| Wikipedia: https://en.wikipedia.org/wiki/Random-access_memory
-
-RAM (*Random Access Memory*) is a category of
-volatile storage technologies
-which require voltage to remain applied in order to maintain state.
-
-* RAM is hundreds of times faster than many/most other
-  :ref:`Persistent Storage` methods.
-* It takes seconds for the voltage from RAM to discharge.
-* A *cold boot* or *cold reboot* is when the RAM gets a few seconds
-  (sometimes 30 or more) to discharge. (**"the magic touch"**)
-
-
-.. index:: Persistent Storage
-.. _persistent storage:
-
-Persistent Storage
------------------------
-Slowest -> Fastest:
-
-* Punch cards
-* Tape drives
-* Disk drives (*floppy*: 8", 5.25", 3.5")
-* :ref:`Disc drives` (*CD*, MiniDisc, *DVD*, *Blu-ray*, [3D-] optical storage)
-* :ref:`Hard drives` (*HD*)
-* :ref:`SSDs <SSD>`
-
-
-.. index:: Hard drives
-.. _hard drives:
-
-Hard Drives
-~~~~~~~~~~~~~
-* 5400 RPM -- notebook (energy savings; see also :ref:`SSD`)
-* 7200 RPM -- desktop, notebook
-* 10000 RPM -- high end :ref:`SCSI` drives
-
-
-.. index:: SSD
-.. _ssd:
-
-SSD
-~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/Solid-state_drive
-
-An SSD (*Solid-State Drive*) is a binary data storage device
-based on an integrated circuit that does
-not require voltage to be applied to maintain state.
-
-* SSDs are faster and (currently) more expensive than :ref:`hard drives`.
-* SSDs are more energy efficient than :ref:`hard drives`.
-* Notebooks and netbooks may include or be upgraded with an SSD.
-* Servers benefit from SSDs for caching, fast reads, and fast writes.
-
-
-.. index:: Disc Drives
-.. _disc drives:
-
-Disc Drives
-~~~~~~~~~~~~
-* *CD*
-* *DVD*
-* *Blu-ray*
-* [3D-] optical storage
-
-
-
-.. index:: Data Device Bus
-.. _data device bus:
-
-Data Device Bus
-=================
-
-`<https://en.wikipedia.org/wiki/Bus_(computing)>`__
-
-.. index:: USB
-.. _usb:
-
-USB
------
-| Wikipedia: https://en.wikipedia.org/wiki/USB
-| Wikipedia: https://en.wikipedia.org/wiki/USB_2.0
-| Wikipedia: https://en.wikipedia.org/wiki/USB_3.0
-| Wikipedia: https://en.wikipedia.org/wiki/USB_Type-C
-
-USB (*Universal Serial Bus*) is a group of standards
-for device interaction and one-way and two-way power and data transfer.
-
-* Serial Bus -- a routed/bridged tree of connected devices
-* USB Hub -- n-way splitter with two or more ports
-* Powered USB Hub -- USB Hub which must be plugged in; can charge many devices
-  (see :ref:`USB Type-C`)
-
-USB Connectors
-
-* USB Type A -- classic rectangular USB with pins on one side
-* USB Type B -- square USB (e.g. some printers)
-* Mini-USB -- now deprecated (see: Micro-USB)
-* USB Mini-A -- (deprecated)
-* USB Mini-B -- (deprecated)
-* Micro-USB -- industry standard OMTP (2007), ITU (2009), EU (2010)
-
-  * USB Micro-A -- rectangular
-  * USB Micro-B -- trapezoidal
-  * USB Micro-AB -- supports both Micro-A and Micro-B
-  * USB OTG (*on-the-go*) -- (mobile) support for charging and hub
-  * USB 3.0 Micro-B -- Micro-USB-B + *5 pins*
-    (USB Micro-A cables work with USB 3.0 Micro-B connectors,
-    but USB 3.0 Micro-B cables
-    do not work with USB Micro-B connectors)
-
-* USB 3.0 Type A -- classic rectangular USB with pins on one side
-  (works with USB Type A)
-* USB 3.0 Type B -- USB 3.0 Type A + extra block of pins on the top 
-* :ref:`USB Type-C`
-
-USB Buses
-
-* USB -- 12 mbps
-* USB 2.0 -- 480 Mbps
-* USB 3.0 -- 5000 Mbps (5 Gbps) (5 :ref:`gigabit`)
-* USB 3.1 -- 10000 Mbps (10 Gbps) (10 :ref:`gigabit`)
-* :ref:`USB Type-C` (USB 3.1; 10 GBps)
-
-
-.. index:: USB Type-C
-.. _usb type-c:
-
-USB Type-C
-~~~~~~~~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/USB_Type-C
-
-* :ref:`Operating Systems`: Windows 10, OSX 10, Android M
-* Adapters: DisplayPort, Thunderbolt, MHL
-* USB Type-C as the primary charging interface:
-
-  * Post-2015 MacBooks, Chromebook Pixel 2+
-
-* Vendors with portable storage drives with USB Type-C connectors (2015):
-
-  * LaCie, SanDisk
-
-
-.. index:: Serial ATA
-.. index:: SATA
-.. _sata:
-
-SATA
-------
-| Wikipedia: https://en.wikipedia.org/wiki/Serial_ATA
-| Wikipedia: https://en.wikipedia.org/wiki/Serial_ATA#eSATA
-
-SATA (*Serial* :ref:`ATA <pata>`) is a data device bus standard.
-
-* SATA (1.5, 3.0, 6.0, 16 Gbit/s) is faster than 
-  all current :ref:`USB` standards
-  (USB 2.0, USB 3.0. USB 3.1 (:ref:`USB Type-C`)),
-  :ref:`IDE <ide drive>`, and :ref:`ATA (PATA) <pata>`
-* :ref:`eSATA` is SATA for external drives.
-
-.. index:: eSATA
-.. _esata:
-
-eSATA
-~~~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/Serial_ATA#eSATA
-
-eSATA (*External* :ref:`SATA`) works with
-(powered, unpowered, portable) external drives.
-
-
-.. index:: SCSI
-.. _scsi:
-
-SCSI
--------
-| Wikipedia: https://en.wikipedia.org/wiki/SCSI
-| DevPrefix: ``/dev/sg`` (CD/DVD)
-| DevPrefix: ``/dev/sd`` (hardrive, USB)
-| DevFS: ``/dev/scsi``
-
-SCSI (*Small Computer System Interface*) is a set of standards
-for device interaction and data interchange.
-
-* Drives faster than 7200 RPM are often either :ref:`SCSI`
-  or, now, :ref:`SATA` drives
-* Some CD/DVD devices are :ref:`SCSI` devices
-* :ref:`SATA` and :ref:`eSATA` devices
-  register as SCSI devices
-  with newer :ref:`Linux` kernels and distributions.
-
-
-.. index:: IDE (drive interface)
-.. _ide drive:
-
-IDE
-----
-| Wikipedia: https://en.wikipedia.org/wiki/Parallel_ATA#IDE_and_ATA-1
-
-IDE (*Integrated Drive Electronics*) is a 40-pin cable connector
-and drive interface standard which predates
-(and is now part of) the :ref:`Parallel ATA <pata>` standards.
-
-* Newer drives have :ref:`USB`, :ref:`SATA`, or :ref:`eSATA`
-  connectors
-  (which, like IDE, all also require the drive to handle its own
-  storage logic)
-
-
-.. index:: ATA
-.. index:: PATA
-.. index:: Parallel ATA
-.. _pata:
-
-PATA
-----
-PATA, ATA (*Parallel ATA* (*AT Attachment*)) is a 40-pin
-drive interface standard
-based on :ref:`IDE <ide drive>`, ATA, and ATAPI.
-
-* :ref:`SATA` (*Serial ATA*) is derived from :ref:`PATA` (*Parallel ATA*).
-* Newer drives have :ref:`USB`, :ref:`SATA`, or :ref:`eSATA` connectors
-
-
-
-.. index:: System Bus
-.. _system bus:
-
-System Bus
 ============
+Mini HDMI
+============
+Mini HDMI is an :ref:`HDMI` Type C ("Mini HDMI Type A") connector.
 
-`<https://en.wikipedia.org/wiki/Bus_(computing)>`__
+* Mini HDMI connectors are often found on older mobile devices.
+* :ref:`Micro HDMI` supersedes Mini HDMI.
 
-.. index:: ISA
-.. _isa:
-
-ISA
-----
-| Wikipedia: https://en.wikipedia.org/wiki/Industry_Standard_Architecture
-
-
-.. index:: PCI
-.. _pci:
-
-PCI
-----
-| Wikipedia: https://en.wikipedia.org/wiki/Conventional_PCI
+.. note:: An adapter is required to connect :ref:`Mini HDMI`
+   and/or :ref:`Micro HDMI` connectors
+   to e.g. a standard HDMI Type A connector on a TV.
 
 
-.. index:: PCMCIA
-.. _pcmcia:
+.. index:: Micro HDMI
+.. _micro hdmi:
 
-PCMCIA
---------
-| Wikipedia: https://en.wikipedia.org/wiki/PC_Card
+============
+Micro HDMI
+============
+Micro HDMI is an :ref:`HDMI` Type E connector.
 
-PCMCIA is a standard for smaller-form-factor expansion cards.
+* Micro HDMI connectors are often found on newer mobile devices.
+* :ref:`Micro HDMI` supersedes :ref:`Mini HDMI`.
 
-* PCMCIA is now known as "PC Card" and "CardBus".
-* Some laptops have PCMCIA slots.
-* There are PCI to PCMCIA adapter cards.
-
-
-.. index:: AGP
-.. _agp:
-
-AGP
-----
-| Wikipedia: https://en.wikipedia.org/wiki/Accelerated_Graphics_Port
-
-
-.. index:: ExpressCard
-.. _expresscard:
-
-ExpressCard
--------------
-| Wikipedia: https://en.wikipedia.org/wiki/ExpressCard
-
-* Some laptops have ExpressCard slots.
-* ExpressCard supersedes the :ref:`PCMCIA` (PC Card, CardBus)
-  standards for smaller-form-factor expansion cards.
-
-.. index:: PCI-e
-.. _pci-e:
-
-PCI-e
--------
-| Wikipedia: https://en.wikipedia.org/wiki/PCI_Express
-
-
+.. note:: An adapter is required to connect :ref:`Mini HDMI`
+   and/or :ref:`Micro HDMI` connectors
+   to e.g. a standard HDMI Type A connector on a TV.
 
 
 .. index:: Network interfaces
@@ -821,3 +729,250 @@ Fibre Channel
 | Wikipedia: https://en.wikipedia.org/wiki/Fibre_Channel
 
 Fibre channel is an optical fiber networking technology.
+
+
+
+
+.. index:: Data Device Bus
+.. _data device bus:
+
+Data Device Bus
+=================
+
+`<https://en.wikipedia.org/wiki/Bus_(computing)>`__
+
+.. index:: USB
+.. _usb:
+
+USB
+-----
+| Wikipedia: https://en.wikipedia.org/wiki/USB
+| Wikipedia: https://en.wikipedia.org/wiki/USB_2.0
+| Wikipedia: https://en.wikipedia.org/wiki/USB_3.0
+| Wikipedia: https://en.wikipedia.org/wiki/USB_Type-C
+
+USB (*Universal Serial Bus*) is a group of standards
+for device interaction and one-way and two-way power and data transfer.
+
+USB bus speeds:
+
+* USB -- 12 mbps
+* USB 2.0 -- 480 Mbps
+* USB 3.0 -- 5000 Mbps (5 Gbps) (5 :ref:`gigabit`)
+* USB 3.1 -- 10000 Mbps (10 Gbps) (10 :ref:`gigabit`)
+* :ref:`USB Type-C` (USB 3.1; 10 GBps)
+
+USB connectors:
+
+* USB Type A -- classic rectangular USB with pins on one side
+* USB Type B -- square USB (e.g. some printers)
+* Mini-USB -- now deprecated (see: Micro-USB)
+* USB Mini-A -- (deprecated)
+* USB Mini-B -- (deprecated)
+* Micro-USB -- industry standard OMTP (2007), ITU (2009), EU (2010)
+
+  * USB Micro-A -- rectangular
+  * USB Micro-B -- trapezoidal
+  * USB Micro-AB -- supports both Micro-A and Micro-B
+  * USB OTG (*on-the-go*) -- (mobile) support for charging and hub
+  * USB 3.0 Micro-B -- Micro-USB-B + *5 pins*
+    (USB Micro-A cables work with USB 3.0 Micro-B connectors,
+    but USB 3.0 Micro-B cables
+    do not work with USB Micro-B connectors)
+
+* USB 3.0 Type A -- classic rectangular USB with pins on one side
+  (works with USB Type A)
+* USB 3.0 Type B -- USB 3.0 Type A + extra block of pins on the top 
+
+* Each USB device can draw 5 :ref:`v <volt>` 500 :ref:`mA <ampere>`
+  of current (2.5 :ref:`watts <watt>`).
+
+  * :ref:`USB Type-C` devices support 5 :ref:`v <volt>` 1.5 :ref:`A <ampere>`,
+    3.0 :ref:`A <ampere>` + 900 :ref:`mA <ampere>`
+    (e.g. for charging and powering one laptop or mobile device from another).
+
+
+.. index:: USB Hub
+.. _usb hub:
+
+USB Hub
+~~~~~~~~~~
+A :ref:`USB` Hub is an n-way splitter with two or more 
+USB connectors.
+
+* A *powered USB Hub* is a USB Hub which must be connected
+  to an external power source;
+  and can charge many devices
+
+  * :ref:`USB Type-C` essentially functions as a powered USB Hub
+    (in either direction, as power is available)
+
+
+.. index:: USB Keyboard
+.. _usb keyboard:
+
+=============
+USB Keyboard
+=============
+
+
+.. index:: USB Mouse
+.. _usb mouse:
+
+===========
+USB Mouse
+===========
+
+.. index:: USB Type-C
+.. _usb type-c:
+
+USB Type-C
+~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/USB_Type-C
+
+* :ref:`Operating Systems`: Windows 10, OSX 10, Android M
+* Adapters: DisplayPort, Thunderbolt, MHL
+* USB Type-C as the primary charging interface:
+
+  * Post-2015 MacBooks, Chromebook Pixel 2+
+
+* Vendors with portable storage drives with USB Type-C connectors (2015):
+
+  * LaCie, SanDisk
+
+
+.. index:: Serial ATA
+.. index:: SATA
+.. _sata:
+
+SATA
+------
+| Wikipedia: https://en.wikipedia.org/wiki/Serial_ATA
+| Wikipedia: https://en.wikipedia.org/wiki/Serial_ATA#eSATA
+
+SATA (*Serial* :ref:`ATA <pata>`) is a data device bus standard.
+
+* SATA (1.5, 3.0, 6.0, 16 Gbit/s) is faster than 
+  all current :ref:`USB` standards
+  (USB 2.0, USB 3.0. USB 3.1 (:ref:`USB Type-C`)),
+  :ref:`IDE <ide drive>`, and :ref:`ATA (PATA) <pata>`
+* :ref:`eSATA` is SATA for external drives.
+
+.. index:: eSATA
+.. _esata:
+
+eSATA
+~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Serial_ATA#eSATA
+
+eSATA (*External* :ref:`SATA`) works with
+(powered, unpowered, portable) external drives.
+
+
+.. index:: SCSI
+.. _scsi:
+
+SCSI
+-------
+| Wikipedia: https://en.wikipedia.org/wiki/SCSI
+| DevPrefix: ``/dev/sg`` (CD/DVD)
+| DevPrefix: ``/dev/sd`` (hardrive, USB)
+| DevFS: ``/dev/scsi``
+
+SCSI (*Small Computer System Interface*) is a set of standards
+for device interaction and data interchange.
+
+* Drives faster than 7200 RPM are often either :ref:`SCSI`
+  or, now, :ref:`SATA` drives
+* Some CD/DVD devices are :ref:`SCSI` devices
+* :ref:`SATA` and :ref:`eSATA` devices
+  register as SCSI devices
+  with newer :ref:`Linux` kernels and distributions.
+
+
+.. index:: IDE (drive interface)
+.. _ide drive:
+
+IDE
+----
+| Wikipedia: https://en.wikipedia.org/wiki/Parallel_ATA#IDE_and_ATA-1
+
+IDE (*Integrated Drive Electronics*) is a 40-pin cable connector
+and drive interface standard which predates
+(and is now part of) the :ref:`Parallel ATA <pata>` standards.
+
+* Newer drives have :ref:`USB`, :ref:`SATA`, or :ref:`eSATA`
+  connectors
+  (which, like IDE, all also require the drive to handle its own
+  storage logic)
+
+
+.. index:: ATA
+.. index:: PATA
+.. index:: Parallel ATA
+.. _pata:
+
+PATA
+----
+PATA, ATA (*Parallel ATA* (*AT Attachment*)) is a 40-pin
+drive interface standard
+based on :ref:`IDE <ide drive>`, ATA, and ATAPI.
+
+* :ref:`SATA` (*Serial ATA*) is derived from :ref:`PATA` (*Parallel ATA*).
+* Newer drives have :ref:`USB`, :ref:`SATA`, or :ref:`eSATA` connectors
+
+
+.. index:: Persistent Storage
+.. _persistent storage:
+
+Persistent Storage
+-----------------------
+Slowest -> Fastest:
+
+* Punch cards
+* Tape drives
+* Disk drives (*floppy*: 8", 5.25", 3.5")
+* :ref:`Disc drives` (*CD*, MiniDisc, *DVD*, *Blu-ray*, [3D-] optical storage)
+* :ref:`Hard drives` (*HD*)
+* :ref:`SSDs <SSD>`
+
+
+.. index:: Hard drives
+.. _hard drives:
+
+Hard Drives
+~~~~~~~~~~~~~
+* 5400 RPM -- notebook (energy savings; see also :ref:`SSD`)
+* 7200 RPM -- desktop, notebook
+* 10000 RPM -- high end :ref:`SCSI` drives
+
+
+.. index:: SSD
+.. _ssd:
+
+SSD
+~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Solid-state_drive
+
+An SSD (*Solid-State Drive*) is a binary data storage device
+based on an integrated circuit that does
+not require voltage to be applied to maintain state.
+
+* SSDs are faster and (currently) more expensive than :ref:`hard drives`.
+* SSDs are more energy efficient than :ref:`hard drives`.
+* Notebooks and netbooks may include or be upgraded with an SSD.
+* Servers benefit from SSDs for caching, fast reads, and fast writes.
+
+
+.. index:: Disc Drives
+.. _disc drives:
+
+Disc Drives
+~~~~~~~~~~~~
+* *CD*
+* *DVD*
+* *Blu-ray*
+* [3D-] optical storage
+
+See: :ref:`data engineering`
+

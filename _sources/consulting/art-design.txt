@@ -430,7 +430,7 @@ HandBrake is an offline batch GUI audio/video transcoding tool.
 
 H.264
 ~~~~~~
-| Wikipedia: en.wikipedia.org/wiki/H.264/MPEG-4_AVC
+| Wikipedia: https://en.wikipedia.org/wiki/H.264/MPEG-4_AVC
 
 H.264 (or :ref:`MPEG`-4 AVC) is a widely implemented video
 compression codec.
