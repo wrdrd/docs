@@ -4,21 +4,18 @@
 
 Knowledge Engineering
 ========================
-https://en.wikipedia.org/wiki/Knowledge_engineering
+| Wikipedia: https://en.wikipedia.org/wiki/Knowledge_engineering
+| Wikipedia: https://en.wikipedia.org/wiki/Knowledge_representation_and_reasoning
+| WikipediaCategory: https://en.wikipedia.org/wiki/Category:Knowledge
+| WikipediaCategory: https://en.wikipedia.org/wiki/Category:Graph_theory
+| WikipediaCategory: https://en.wikipedia.org/wiki/Category:Ontology
+| WikipediaCategory: `<https://en.wikipedia.org/wiki/Category:Ontology_(information_science)>`_
 
-https://en.wikipedia.org/wiki/Knowledge_representation_and_reasoning
 
-https://en.wikipedia.org/wiki/Knowledge#Communicating_knowledge
+* https://en.wikipedia.org/wiki/Knowledge#Communicating_knowledge
 
-https://en.wikipedia.org/wiki/Category:Knowledge
+* https://en.wikipedia.org/wiki/Schema
 
-https://en.wikipedia.org/wiki/Category:Graph_theory
-
-https://en.wikipedia.org/wiki/Schema
-
-https://en.wikipedia.org/wiki/Category:Ontology
-
-`<https://en.wikipedia.org/wiki/Category:Ontology_(information_science)>`_
 
 
 Logic, Reasoning, and Inference
@@ -38,9 +35,8 @@ https://en.wikipedia.org/wiki/Epistemology
 
 Logic
 +++++++
-https://en.wikipedia.org/wiki/Logic
-
-https://en.wikipedia.org/wiki/Category:Logic
+| Wikipedia: https://en.wikipedia.org/wiki/Logic
+| WikipediaCategory: https://en.wikipedia.org/wiki/Category:Logic
 
 https://en.wikipedia.org/wiki/List_of_logic_symbols
 
@@ -50,7 +46,7 @@ https://en.wikipedia.org/wiki/List_of_logic_symbols
 
 Set Theory
 ````````````
-https://en.wikipedia.org/wiki/Set_theory
+| Wikpedia: https://en.wikipedia.org/wiki/Set_theory
 
 
 .. index:: Boolean Algebra
@@ -58,7 +54,7 @@ https://en.wikipedia.org/wiki/Set_theory
 
 Boolean Algebra
 ````````````````
-https://en.wikipedia.org/wiki/Boolean_algebra
+| Wikipedia: https://en.wikipedia.org/wiki/Boolean_algebra
 
 
 .. index:: Many-valued Logic
@@ -66,7 +62,7 @@ https://en.wikipedia.org/wiki/Boolean_algebra
 
 Many-valued Logic
 ````````````````````
-https://en.wikipedia.org/wiki/Many-valued_logic
+| Wikipedia: https://en.wikipedia.org/wiki/Many-valued_logic
 
 
 .. index:: Three-valued Logic
@@ -74,7 +70,7 @@ https://en.wikipedia.org/wiki/Many-valued_logic
 
 Three-valued Logic
 ~~~~~~~~~~~~~~~~~~~~
-https://en.wikipedia.org/wiki/Three-valued_logic
+| Wikipedia: https://en.wikipedia.org/wiki/Three-valued_logic
 
 ::
 
@@ -91,7 +87,7 @@ https://en.wikipedia.org/wiki/Three-valued_logic
 
 Fuzzy Logic
 ~~~~~~~~~~~~~
-https://en.wikipedia.org/wiki/Fuzzy_logic
+| Wikipedia: https://en.wikipedia.org/wiki/Fuzzy_logic
 
 
 .. index:: Probabilistic Logic
@@ -99,7 +95,7 @@ https://en.wikipedia.org/wiki/Fuzzy_logic
 
 Probabilistic Logic
 ~~~~~~~~~~~~~~~~~~~~~
-https://en.wikipedia.org/wiki/Probabilistic_logic
+| Wikipedia: https://en.wikipedia.org/wiki/Probabilistic_logic
 
 
 .. index:: Propositional Logic
@@ -107,7 +103,7 @@ https://en.wikipedia.org/wiki/Probabilistic_logic
 
 Propositional Logic
 `````````````````````
-https://en.wikipedia.org/wiki/Propositional_logic
+| Wikipedia: https://en.wikipedia.org/wiki/Propositional_logic
 
 
 .. index:: First-order Logic
@@ -116,7 +112,9 @@ https://en.wikipedia.org/wiki/Propositional_logic
 
 First-order Logic
 ```````````````````
-https://en.wikipedia.org/wiki/First-order_logic (FOL)
+| Wikipedia: https://en.wikipedia.org/wiki/First-order_logic
+
+First-order (*FOL*)
 
 
 .. index:: Description Logic
@@ -125,7 +123,9 @@ https://en.wikipedia.org/wiki/First-order_logic (FOL)
 
 Description Logic
 ```````````````````
-https://en.wikipedia.org/wiki/Description_logic (DL; DLP (Description Logic Programming))
+| Wikipedia: https://en.wikipedia.org/wiki/Description_logic
+
+Description Logic (*DL*; DLP (Description Logic Programming))
 
 * https://en.wikipedia.org/wiki/Description_logic#Notation
 * https://en.wikipedia.org/wiki/Description_logic#Relationship_with_other_logics
@@ -159,7 +159,8 @@ See: :ref:`DL`
 
 Inference
 ```````````
-* https://en.wikipedia.org/wiki/Inference
+| Inference: https://en.wikipedia.org/wiki/Inference
+
 * https://en.wikipedia.org/wiki/Rule_of_inference (Logic)
 * https://en.wikipedia.org/wiki/Category:Statistical_inference (Logic + Math)
 
@@ -169,18 +170,39 @@ Inference
 
 Entailment
 ~~~~~~~~~~~~
-https://en.wikipedia.org/wiki/Entailment
+| Wikipedia: https://en.wikipedia.org/wiki/Entailment
 
 * http://www.w3.org/TR/owl2-profiles/#Introduction
 
 See: :ref:`Data Science <data-science>`
 
 
+.. index:: Data Engineering
+.. _data engineering:
+
+Data Engineering
+-----------------
+
+Data Engineering is about the 5 Ws (who, what, when, where, why)
+and **how** data are stored.
+
+| Who:   schema:author         ``@westurner`` ;
+| What:  schema:name           "WRD R&D Documentation"@en ;
+| When:  schema:codeRepository <`<https://github.com/wrdrd/docs/commits/master>`__> ;
+| Where: schema:codeRepository <`<https://github.com/wrdrd/docs>`__> ;
+| Why:   schema:description    "Documentation purposes"@en ;
+| How:   schema:programmingLanguage :ReStructuredText ;
+| How:   schema:runtimePlatform [ :Python, :CPython, :Sphinx ] ;
+
+.. contents::
+   :local:
+
+
 .. index:: File Structures
 .. _file structures:
 
 File Structures
------------------
++++++++++++++++++
 https://en.wikipedia.org/wiki/File_format
 
 `<https://en.wikipedia.org/wiki/Record_(computer_science)>`_
@@ -192,336 +214,40 @@ https://en.wikipedia.org/wiki/Index#Computer_science
 * :ref:`tar` and :ref:`zip` are file structures
   that have a *manifest* and a *payload*
 
-  * :ref:`file systems` often have redundant manifests
+  * :ref:`filesystems` often have redundant manifests
     (and/or deduplication according to a hash table manifest
     with an interface like a :ref:`dht`)
 
+* :ref:`web standards` and :ref:`semantic web standards` which define
+  file structures (and stream protocols):
+
+  * :ref:`XML`
+  * :ref:`RDF` (:ref:`RDFXML`, :ref:`Turtle`, :ref:`n3`, :ref:`rdfa`,
+    :ref:`json-ld`)
+  * :ref:`JSON` (:ref:
+  * :ref:`HTTP`
 
 .. index:: Git File Structures
 .. _git file structures:
 
 Git File Structures
-++++++++++++++++++++++
+``````````````````````
 :ref:`Git` specifies a number of file structures (see also: *bup*):
 
 * Git Objects: https://git-scm.com/book/en/v2/Git-Internals-Git-Objects
 * Git References: https://git-scm.com/book/en/v2/Git-Internals-Git-References
 * Git Packfiles: https://git-scm.com/book/en/v2/Git-Internals-Packfiles
 
-  "Git is a content-addressable :ref:`filesystem <file systems>`"
+  "Git is a content-addressable :ref:`filesystem <filesystems>`"
 
   See also: **bup**
-
-.. index:: File Systems
-.. _file systems:
-
-File Systems
---------------
-| Wikipedia: https://en.wikipedia.org/wiki/File_system
-
-File systems determine how files are represented in a persistent
-physical medium.
-
-* On-disk file systems determine where and how redundantly data is stored
-* On-disk file systems: :ref:`ext`, :ref:`btrfs`
-* Networked file systems link disk storage pools with other resources
-* Networked file systems: :ref:`Ceph`, :ref:`GlusterFS`, :ref:`Bittorrent`
-
-.. index:: MBR
-.. _mbr:
-
-MBR
-+++++
-| Wikipedia: https://en.wikipedia.org/wiki/Master_boot_record
-
-MBR (*Master Boot Record*) is a
-boot record format and a
-file partition scheme.
-
-* :ref:`DOS` and :ref:`Windows` use MBR partition tables.
-* Many/most UNIX variants support MBR partition tables.
-* :ref:`Linux` supports MBR partition tables.
-* Most PCs since 1983 boot from MBR partition tables.
-
-
-.. index:: GPT
-.. _gpt:
-
-GPT
-+++++
-| Wikipedia: https://en.wikipedia.org/wiki/GUID_Partition_Table
-
-GPT (*GUID Partition Table*) is a
-boot record format and a
-file partition scheme
-wherein partitions are assigned GUIDs (*Globally Unique Identifiers*).
-
-* :ref:`OSX` uses GPT partition tables.
-* :ref:`Linux` supports GPT partition tables.
-* https://en.wikipedia.org/wiki/GUID_Partition_Table#UNIX_and_Unix-like_operating_systems
-
-
-.. index:: LVM
-.. index:: Logical Volume Manager
-.. _lvm:
-
-LVM
-++++++++++++++++++++++
-| Wikipedia: `<https://en.wikipedia.org/wiki/Logical_Volume_Manager_(Linux)>`__
-| Homepage: https://www.sourceware.org/lvm2/
-| Source: ftp://sources.redhat.com/pub/lvm2/
-| Docs: https://www.sourceware.org/dm/
-| Docs: http://www.tldp.org/HOWTO/LVM-HOWTO/index.html
-| Docs:
-
-LVM (*Logical Volume Manager*) is an :ref:`Open Source <open-source>`
-software disk abstraction layer with snapshotting, copy-on-write,
-online resize and allocation
-
-* In LVM, *Volume Groups* (VG) contain
-  *Physical Volumes* (PV) contain *Logical Volumes* (LV)
-* LVM can do striping and high-availability sofware RAID
-* LVM and ``device-mapper`` are now part of the :ref:`Linux`
-  kernel tree
-  (the LVM linux kernel modules are built and included
-  with most distributions' default kernel build)
-* There is feature overlap between :ref:`lvm` and :ref:`btrfs`
-  (pooling, snapshotting, copy-on-write).
-
-
-
-.. index:: btrfs
-.. _btrfs:
-
-btrfs
-+++++++
-| Wikipedia: https://en.wikipedia.org/wiki/Btrfs
-| Homepage: https://btrfs.wiki.kernel.org/index.php/Main_Page
-| Source: https://btrfs.wiki.kernel.org/index.php/Btrfs_source_repositories
-| Source: git git://git.kernel.org/pub/scm/linux/kernel/git/mason/btrfs-progs.git
-| Docs: https://btrfs.wiki.kernel.org/index.php/Getting_started#Basic_Filesystem_Commands
-| Docs: https://btrfs.wiki.kernel.org/index.php/Problem_FAQ
-| Docs: https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Storage_Administration_Guide/ch-btrfs.html
-| Docs: https://wiki.archlinux.org/index.php/Btrfs
-| Docs: https://help.ubuntu.com/community/btrfs
-
-btrfs (:ref:`B-tree <trees>` *file system*) is an
-:ref:`Open Source <open-source>` pooling, snapshotting,
-checksumming, deduplicating, union mounting
-copy-on-write on-disk :ref:`Linux` filesystem.
-
-
-.. index:: ext2
-.. index:: ext3
-.. index:: ext4
-.. _ext:
-
-ext
-++++
-| Wikipedia: https://en.wikipedia.org/wiki/Ext2
-| Wikipedia: https://en.wikipedia.org/wiki/Ext3
-| Wikipedia: https://en.wikipedia.org/wiki/Ext4
-
-ext2, ext3, and ext4 are the ext (*extended filesystem*)
-:ref:`Open Source <open-source>`
-on-disk filesystems.
-
-* ext filesystems are the default filesystems of many
-  :ref:`Linux` distributions.
-* :ref:`windows` machines can access ext2, ext3, and ext4 filesystems
-  with ext2explore and ext2fsd.
-* :ref:`OSX` machines can access ext2, ext3, and ext4 filesystems
-  with OSXFuse and FUSE-EXT2.
-
-
-.. index:: FAT
-.. index:: FAT12
-.. index:: FAT16
-.. index:: FAT32
-.. _fat:
-
-FAT
-+++++
-| Wikipedia: https://en.wikipedia.org/wiki/File_Allocation_Table
-
-FAT is a group of on-disk filesystem standards.
-
-* FAT is used on cross-platform USB drives.
-* FAT is found on older :ref:`Windows` and DOS machines.
-* FAT12, FAT16, and FAT32 are all FAT filesystem standards.
-* FAT32 has a maximum filesize of 4GB and a maximum volume size of 2 TB.
-* :ref:`Windows` machines can read and write FAT partitions.
-* :ref:`OSX` machines can read and write FAT partitions.
-* :ref:`Linux` machines can read and write FAT partitions.
-
-
-.. index:: HFS+
-.. _hfs+:
-
-HFS+
-+++++++++
-| Wikipedia: https://en.wikipedia.org/wiki/HFS_Plus
-
-HFS+ (*Hierarchical Filesystem*) or *Mac OS Extended*,
-is the file system for Mac OS 8.1+ and :ref:`OSX`.
-
-* HFS+ is required for :ref:`OSX` and Time Machine.
-
-  http://www.cnet.com/how-to/the-best-ways-to-format-an-external-drive-for-windows-and-mac/
-
-* :ref:`Windows` machines can access HFS+ partitions with:
-  HFSExplorer (free, :ref:`Java`), Paragon HFS+ for Windows,
-  or MacDrive
-
-  http://www.makeuseof.com/tag/4-ways-read-mac-formatted-drive-windows/
-
-* :ref:`Linux` machines can access HFS+ partitions with
-  ``hfsprogs`` (``apt-get install hfsprogs``, ``yum install hfsprogs``).
-
-
-.. index:: NTFS
-.. _ntfs:
-
-NTFS
-+++++++
-| Wikipedia: https://en.wikipedia.org/wiki/NTFS
-
-NTFS is a proprietary journaling filesytem.
-
-* Windows machines since Windows NT 3.1 and Windows XP
-  default to NTFS filesystems.
-* Non-windows machines can access NTFS partitions through
-  NTFS-3G: https://en.wikipedia.org/wiki/NTFS-3G
-
-
-
-
-.. index:: Network Filesystems
-.. _network filesystems:
-
-Network Filesystems
----------------------
-
-
-.. index:: Ceph
-.. _ceph:
-
-Ceph
-+++++
-| Wikipedia: `<https://en.wikipedia.org/wiki/Ceph_(software)>`__
-| Homepage: http://ceph.com/
-| Download: http://ceph.com/resources/downloads/
-| Source: git https://github.com/ceph/ceph
-| Docs: http://ceph.com/docs/master/
-| Docs: http://ceph.com/docs/master/rados/
-| Docs: http://ceph.com/docs/master/radosgw/
-| Docs: http://ceph.com/docs/master/radosgw/s3/
-| Docs: http://ceph.com/docs/master/radosgw/swift/
-| Docs: http://ceph.com/docs/master/radosgw/keystone/
-| Docs: http://ceph.com/docs/master/rbd/rbd-openstack/
-
-Ceph is an :ref:`Open Source <open-source>` network file system
-(a :ref:`distributed database <distributed-databases>`
-for files with attributes like owner, group, permissions)
-written in :ref:`C++` and :ref:`Perl`
-which runs over top of one or more on-disk file systems.
-
-* Ceph Object Gateway (*radosgw*) -- :term:`RESTful API`,
-  :ref:`AWS` S3 API, :ref:`OpenStack` Swift API,
-  :ref:`OpenStack` Keystone authentication
-* Ceph Block Device (*rbd*) -- striping, caching, snapshots, copy-on-write,
-  :ref:`kvm`, :ref:`libvirt`, :ref:`OpenStack` Cinder block storage
-* Ceph Filesystem (*cephfs*) -- :ref:`POSIX`
-  :ref:`file system <file systems>` with
-  FUSE, NFS, CIFS, and Hadoop HDFS APIs
-
-
-.. index:: CIFS
-.. _cifs:
-
-CIFS
-++++++
-CIFS (*#TODO filesystem*) is a centralized network filesystem.
-
-* Samba ``smbd`` is one implementation of a :ref:`CIFS` network file server.
- 
-
-.. index:: GlusterFS
-.. _glusterfs:
-
-GlusterFS
-+++++++++++
-| Wikipedia: https://en.wikipedia.org/wiki/GlusterFS
-| Homepage: http://www.gluster.org/
-| Project: https://forge.gluster.org/glusterfs-core
-| Source: git https://git.forge.gluster.org/glusterfs-core/glusterfs.git
-| Docs: https://gluster.readthedocs.org/en/latest/
-| Docs: https://gluster.readthedocs.org/en/latest/Quick-Start-Guide/Quickstart/
-| Docs: https://gluster.readthedocs.org/en/latest/Install-Guide/Setup_virt/
-| Docs: https://gluster.readthedocs.org/en/latest/Install-Guide/Setup_Bare_metal/
-| Docs: https://gluster.readthedocs.org/en/latest/Install-Guide/Setup_aws/
-| Docs: https://gluster.readthedocs.org/en/latest/Administrator%20Guide/GlusterFS%20Cinder/
-| Tcp ports: 111, 24007, 24008, 24009, 24010, 24011, 38465:38469
-
-GlusterFS is an :ref:`Open Source <open-source>` network file system
-(a :ref:`distributed database <distributed-databases>`
-for files with attributes like owner, group, permissions)
-which runs over top of one or more on-disk file systems.
-
-* GlusterFS can serve volumes for :ref:`OpenStack` Cinder block storage
-
-
-.. index:: NFS
-.. _nfs:
-
-NFS
-++++++
-| Wikipedia: https://en.wikipedia.org/wiki/NFS
-
-NFS (*Network File System* #TODO) is an :ref:`Open Source <open-source>`
-centralized network filesystem.
-
-
-.. index:: SMB
-.. _smb:
-
-SMB
-+++++++
-| Wikipedia: https://en.wikipedia.org/wiki/Server_Message_Block
-
-SMB (*Server Message Block*) is a centralized network filesystem.
-
-* SMB has been superseded by :ref:`CIFS`.
-
-
-.. index:: WebDAV
-.. _webdav:
-
-WebDAV
-++++++++
-| Wikipedia: https://en.wikipedia.org/wiki/WebDAV
-| Standard: https://tools.ietf.org/html/rfc2518
-| Standard: https://tools.ietf.org/html/rfc4918
-
-WebDAV (*Web Distributed Authoring and Versioning*) 
-is a network filesystem protocol built with :ref:`HTTP`.
-
-* WebDAV specifies a number of unique :ref:`HTTP` methods:
-  
-  * ``PROPFIND`` (``ls``, ``stat``, ``getfacl``),
-  * ``PROPPATCH`` (``touch``, ``setfacl``)
-  * ``MKCOL`` (``mkdir``)
-  * ``COPY`` (``cp``)
-  * ``MOVE`` (``mv``)
-  * ``LOCK`` (:ref:`file locking`)
-  * ``UNLOCK`` ()
 
 
 .. index:: File Locking
 .. _file locking:
 
 File Locking
---------------
+++++++++++++++
 | Wikipedia: https://en.wikipedia.org/wiki/File_locking
 
 File locking is one strategy for synchronization
@@ -553,89 +279,12 @@ with concurrency and parallelism.
 
   
 
-.. index:: Compression Algorithms
-.. _compression algorithms:
-
-Compression Algorithms
--------------------------
-
-.. index:: bzip2
-.. _bzip2:
-
-bzip2
-+++++++
-| Wikipedia: https://en.wikipedia.org/wiki/Bzip2
-| File Extension: ``.bz2``
-| Homepage: http://bzip.org/
-
-bzip2 is an :ref:`Open Source <open-source>` lossless compression algorithm
-based upon the ``Burrows-Wheeler`` algorithm.
-
-* bzip2 is usually slower than :ref:`gzip` or :ref:`zip`,
-  but more space efficient
-
-
-.. index:: gzip
-.. _gzip:
-
-gzip
-++++++
-| Wikipedia: https://en.wikipedia.org/wiki/Gzip
-| Homepage: https://www.gnu.org/software/gzip/
-| File Extension: ``.gz``
-| Source: http://ftp.gnu.org/gnu/gzip/
-| Docs: https://www.gnu.org/software/gzip/manual/
-| Docs: https://www.gnu.org/software/gzip/manual/gzip.html
-
-gzip is a compression algorithm
-based on ``DEFLATE`` and ``LZ77``.
-
-* gzip is similar to :ref:`Zip`, in that both are based upon
-  ``DEFLATE``
-
-
-.. index:: tar
-.. _tar:
-
-tar
-++++
-| Wikipedia: `<https://en.wikipedia.org/wiki/Tar_(computing)>`__
-| File Extension: ``.tar``
-
-:ref:`tar` is a file archiving format
-for storing a manifest of records of
-a set of files with paths and attributes
-at the beginning of the actual files
-all concatenated into one file.
-
-* TAR = ( table of contents + data stream )
-* ``.tar.gz`` is :ref:`tar` + :ref:`gzip`
-* ``.tar.bz2`` is :ref:`tar` + :ref:`bzip2`
-
-TAR and :ref:`gzip` or :ref:`bzip2` can be streamed over SSH::
-
-    # https://unix.stackexchange.com/a/95994
-    tar czf - . | ssh remote "( cd ~/ ; cat > file.tar.gz )"
-    tar bzf - . | ssh remote "( cd ~/ ; cat > file.tar.bz2 )"
-
-See also: :ref:`zip` (:ref:`windows`)
-
-
-.. index:: ZIP
-.. _zip:
-
-zip
-++++
-| Wikipedia: `<https://en.wikipedia.org/wiki/Zip_(file_format)>`__
-
-zip is a lossless file archive compression
-
 
 .. index:: Data Structures
 .. _data structures:
 
 Data Structures
-----------------
+++++++++++++++++
 https://en.wikipedia.org/wiki/Data_structure
 
 https://en.wikipedia.org/wiki/List_of_data_structures
@@ -650,7 +299,7 @@ https://en.wikipedia.org/wiki/List_of_data_structures
 .. _arrays:
 
 Arrays
-++++++++
+````````
 https://en.wikipedia.org/wiki/Array_data_structure
 
 * https://en.wikipedia.org/wiki/List_of_data_structures#Arrays
@@ -668,7 +317,7 @@ An array is a data structure for unidimensional data.
 .. _matrix:
 
 Matrices
-++++++++++
+``````````
 | `<https://en.wikipedia.org/wiki/Matrix_(computer_science)>`_
 
 A matrix is a data structure for multidimensional data;
@@ -679,7 +328,7 @@ a multidimensional :ref:`array <arrays>`.
 .. _lists:
 
 Lists
-+++++++
+```````
 https://en.wikipedia.org/wiki/Linked_list
 
 * https://en.wikipedia.org/wiki/List_of_data_structures#Lists
@@ -692,7 +341,7 @@ a next and/or previous node.
 .. _graphs:
 
 Graphs
-++++++++
+````````
 | `<https://en.wikipedia.org/wiki/Graph_(abstract_data_type)>`__
 | `<https://en.wikipedia.org/wiki/Graph_(mathematics)>`__
 | `<https://en.wikipedia.org/wiki/Graph_theory>`__
@@ -738,7 +387,7 @@ suitable data structures.
 .. _dfs:
 
 DFS
-`````
+~~~~~
 | https://en.wikipedia.org/wiki/Depth-first_search
 
 DFS (*Depth-first search*) is a :ref:`graph <graphs>` traversal algorithm.
@@ -764,7 +413,7 @@ See also: :ref:`BSP`, Firefly Algorithm
 .. _bfs:
 
 BFS
-````
+~~~~
 | https://en.wikipedia.org/wiki/Breadth-first_search
 
 BFS (*Breadth-first search*) is a :ref:`graph <graphs>` traversal agorithm.
@@ -789,7 +438,7 @@ BFS (*Breadth-first search*) is a :ref:`graph <graphs>` traversal agorithm.
 .. _trees:
 
 Trees
-+++++++
+```````
 | https://en.wikipedia.org/wiki/Tree_data_structure
 | http://rosettacode.org/wiki/Tree_traversal
 
@@ -810,30 +459,520 @@ There are many types of and applications for trees:
 * Search: Indexing, Lookup
 
 
+.. index:: Compression Algorithms
+.. _compression algorithms:
+
+Compression Algorithms
++++++++++++++++++++++++++
+
+.. index:: bzip2
+.. _bzip2:
+
+bzip2
+```````
+| Wikipedia: https://en.wikipedia.org/wiki/Bzip2
+| File Extension: ``.bz2``
+| Homepage: http://bzip.org/
+
+bzip2 is an :ref:`Open Source <open-source>` lossless compression algorithm
+based upon the ``Burrows-Wheeler`` algorithm.
+
+* bzip2 is usually slower than :ref:`gzip` or :ref:`zip`,
+  but more space efficient
+
+
+.. index:: gzip
+.. _gzip:
+
+gzip
+``````
+| Wikipedia: https://en.wikipedia.org/wiki/Gzip
+| Homepage: https://www.gnu.org/software/gzip/
+| File Extension: ``.gz``
+| Source: http://ftp.gnu.org/gnu/gzip/
+| Docs: https://www.gnu.org/software/gzip/manual/
+| Docs: https://www.gnu.org/software/gzip/manual/gzip.html
+
+gzip is a compression algorithm
+based on ``DEFLATE`` and ``LZ77``.
+
+* gzip is similar to :ref:`Zip`, in that both are based upon
+  ``DEFLATE``
+
+
+.. index:: tar
+.. _tar:
+
+tar
+````
+| Wikipedia: `<https://en.wikipedia.org/wiki/Tar_(computing)>`__
+| File Extension: ``.tar``
+
+:ref:`tar` is a file archiving format
+for storing a manifest of records of
+a set of files with paths and attributes
+at the beginning of the actual files
+all concatenated into one file.
+
+* TAR = ( table of contents + data stream )
+* ``.tar.gz`` is :ref:`tar` + :ref:`gzip`
+* ``.tar.bz2`` is :ref:`tar` + :ref:`bzip2`
+
+TAR and :ref:`gzip` or :ref:`bzip2` can be streamed over SSH::
+
+    # https://unix.stackexchange.com/a/95994
+    tar czf - . | ssh remote "( cd ~/ ; cat > file.tar.gz )"
+    tar bzf - . | ssh remote "( cd ~/ ; cat > file.tar.bz2 )"
+
+See also: :ref:`zip` (:ref:`windows`)
+
+
+.. index:: ZIP
+.. _zip:
+
+zip
+````
+| Wikipedia: `<https://en.wikipedia.org/wiki/Zip_(file_format)>`__
+
+zip is a lossless file archive compression
+
+
+
+.. index:: Filesystems
+.. index:: File Systems
+.. _filesystems:
+
+Filesystems
+++++++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/File_system
+
+File systems determine how files are represented in a persistent
+physical medium.
+
+* On-disk filesystems determine where and how redundantly data is stored
+* On-disk filesystems: :ref:`ext`, :ref:`btrfs`
+* Networked filesystems link disk storage pools with other resources
+* Networked filesystems: :ref:`Ceph`, :ref:`GlusterFS`, :ref:`Bittorrent`
+
+.. index:: MBR
+.. _mbr:
+
+MBR
+`````
+| Wikipedia: https://en.wikipedia.org/wiki/Master_boot_record
+
+MBR (*Master Boot Record*) is a
+boot record format and a
+file partition scheme.
+
+* :ref:`DOS` and :ref:`Windows` use MBR partition tables.
+* Many/most UNIX variants support MBR partition tables.
+* :ref:`Linux` supports MBR partition tables.
+* Most PCs since 1983 boot from MBR partition tables.
+
+
+.. index:: GPT
+.. _gpt:
+
+GPT
+`````
+| Wikipedia: https://en.wikipedia.org/wiki/GUID_Partition_Table
+
+GPT (*GUID Partition Table*) is a
+boot record format and a
+file partition scheme
+wherein partitions are assigned GUIDs (*Globally Unique Identifiers*).
+
+* :ref:`OSX` uses GPT partition tables.
+* :ref:`Linux` supports GPT partition tables.
+* https://en.wikipedia.org/wiki/GUID_Partition_Table#UNIX_and_Unix-like_operating_systems
+
+
+.. index:: LVM
+.. index:: Logical Volume Manager
+.. _lvm:
+
+LVM
+``````````````````````
+| Wikipedia: `<https://en.wikipedia.org/wiki/Logical_Volume_Manager_(Linux)>`__
+| Homepage: https://www.sourceware.org/lvm2/
+| Source: ftp://sources.redhat.com/pub/lvm2/
+| Docs: https://www.sourceware.org/dm/
+| Docs: http://www.tldp.org/HOWTO/LVM-HOWTO/index.html
+| Docs:
+
+LVM (*Logical Volume Manager*) is an :ref:`Open Source <open-source>`
+software disk abstraction layer with snapshotting, copy-on-write,
+online resize and allocation
+
+* In LVM, *Volume Groups* (VG) contain
+  *Physical Volumes* (PV) contain *Logical Volumes* (LV)
+* LVM can do striping and high-availability sofware RAID
+* LVM and ``device-mapper`` are now part of the :ref:`Linux`
+  kernel tree
+  (the LVM linux kernel modules are built and included
+  with most distributions' default kernel build)
+* There is feature overlap between :ref:`lvm` and :ref:`btrfs`
+  (pooling, snapshotting, copy-on-write).
+
+
+
+.. index:: btrfs
+.. _btrfs:
+
+btrfs
+```````
+| Wikipedia: https://en.wikipedia.org/wiki/Btrfs
+| Homepage: https://btrfs.wiki.kernel.org/index.php/Main_Page
+| Source: https://btrfs.wiki.kernel.org/index.php/Btrfs_source_repositories
+| Source: git git://git.kernel.org/pub/scm/linux/kernel/git/mason/btrfs-progs.git
+| Docs: https://btrfs.wiki.kernel.org/index.php/Getting_started#Basic_Filesystem_Commands
+| Docs: https://btrfs.wiki.kernel.org/index.php/Problem_FAQ
+| Docs: https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Storage_Administration_Guide/ch-btrfs.html
+| Docs: https://wiki.archlinux.org/index.php/Btrfs
+| Docs: https://help.ubuntu.com/community/btrfs
+
+btrfs (:ref:`B-tree <trees>` *filesystem*) is an
+:ref:`Open Source <open-source>` pooling, snapshotting,
+checksumming, deduplicating, union mounting
+copy-on-write on-disk :ref:`Linux` filesystem.
+
+
+.. index:: ext2
+.. index:: ext3
+.. index:: ext4
+.. _ext:
+
+ext
+````
+| Wikipedia: https://en.wikipedia.org/wiki/Ext2
+| Wikipedia: https://en.wikipedia.org/wiki/Ext3
+| Wikipedia: https://en.wikipedia.org/wiki/Ext4
+
+ext2, ext3, and ext4 are the ext (*extended filesystem*)
+:ref:`Open Source <open-source>`
+on-disk filesystems.
+
+* ext filesystems are the default filesystems of many
+  :ref:`Linux` distributions.
+* :ref:`windows` machines can access ext2, ext3, and ext4 filesystems
+  with ext2explore and ext2fsd.
+* :ref:`OSX` machines can access ext2, ext3, and ext4 filesystems
+  with OSXFuse and FUSE-EXT2.
+
+
+.. index:: FAT
+.. index:: FAT12
+.. index:: FAT16
+.. index:: FAT32
+.. _fat:
+
+FAT
+`````
+| Wikipedia: https://en.wikipedia.org/wiki/File_Allocation_Table
+
+FAT is a group of on-disk filesystem standards.
+
+* FAT is used on cross-platform USB drives.
+* FAT is found on older :ref:`Windows` and DOS machines.
+* FAT12, FAT16, and FAT32 are all FAT filesystem standards.
+* FAT32 has a maximum filesize of 4GB and a maximum volume size of 2 TB.
+* :ref:`Windows` machines can read and write FAT partitions.
+* :ref:`OSX` machines can read and write FAT partitions.
+* :ref:`Linux` machines can read and write FAT partitions.
+
+
+.. index:: HFS+
+.. _hfs+:
+
+HFS+
+`````````
+| Wikipedia: https://en.wikipedia.org/wiki/HFS_Plus
+
+HFS+ (*Hierarchical Filesystem*) or *Mac OS Extended*,
+is the filesystem for Mac OS 8.1+ and :ref:`OSX`.
+
+* HFS+ is required for :ref:`OSX` and Time Machine.
+
+  http://www.cnet.com/how-to/the-best-ways-to-format-an-external-drive-for-windows-and-mac/
+
+* :ref:`Windows` machines can access HFS+ partitions with:
+  HFSExplorer (free, :ref:`Java`), Paragon HFS+ for Windows,
+  or MacDrive
+
+  http://www.makeuseof.com/tag/4-ways-read-mac-formatted-drive-windows/
+
+* :ref:`Linux` machines can access HFS+ partitions with
+  ``hfsprogs`` (``apt-get install hfsprogs``, ``yum install hfsprogs``).
+
+
+.. index:: NTFS
+.. _ntfs:
+
+NTFS
+```````
+| Wikipedia: https://en.wikipedia.org/wiki/NTFS
+
+NTFS is a proprietary journaling filesytem.
+
+* Windows machines since Windows NT 3.1 and Windows XP
+  default to NTFS filesystems.
+* Non-windows machines can access NTFS partitions through
+  NTFS-3G: https://en.wikipedia.org/wiki/NTFS-3G
+
+
+
+
+.. index:: Network Filesystems
+.. index:: Network File Systems
+.. _network filesystems:
+
+Network Filesystems
++++++++++++++++++++++
+
+
+.. index:: Ceph
+.. _ceph:
+
+Ceph
+`````
+| Wikipedia: `<https://en.wikipedia.org/wiki/Ceph_(software)>`__
+| Homepage: http://ceph.com/
+| Download: http://ceph.com/resources/downloads/
+| Source: git https://github.com/ceph/ceph
+| Docs: http://ceph.com/docs/master/
+| Docs: http://ceph.com/docs/master/rados/
+| Docs: http://ceph.com/docs/master/radosgw/
+| Docs: http://ceph.com/docs/master/radosgw/s3/
+| Docs: http://ceph.com/docs/master/radosgw/swift/
+| Docs: http://ceph.com/docs/master/radosgw/keystone/
+| Docs: http://ceph.com/docs/master/rbd/rbd-openstack/
+
+Ceph is an :ref:`Open Source <open-source>` network filesystem
+(a :ref:`distributed database <distributed-databases>`
+for files with attributes like owner, group, permissions)
+written in :ref:`C++` and :ref:`Perl`
+which runs over top of one or more on-disk filesystems.
+
+* Ceph Object Gateway (*radosgw*) -- :term:`RESTful API`,
+  :ref:`AWS` S3 API, :ref:`OpenStack` Swift API,
+  :ref:`OpenStack` Keystone authentication
+* Ceph Block Device (*rbd*) -- striping, caching, snapshots, copy-on-write,
+  :ref:`kvm`, :ref:`libvirt`, :ref:`OpenStack` Cinder block storage
+* Ceph Filesystem (*cephfs*) -- :ref:`POSIX`
+  :ref:`filesystem <filesystems>` with
+  FUSE, NFS, CIFS, and Hadoop HDFS APIs
+
+
+.. index:: CIFS
+.. _cifs:
+
+CIFS
+``````
+CIFS (*Common Internet File System*) is a centralized network filesystem
+protocol.
+
+* Samba ``smbd`` is one implementation of a :ref:`CIFS` network file server.
+ 
+
+.. index:: DDFS
+.. _ddfs:
+
+DDFS
+``````
+| 
+
+DDFS (*Disco Distributed File System*) is a
+distributed network filesystem
+written in :ref:`Python` and :ref:`C`.
+
+* DDFS is like a :ref:`python` implementation of :ref:`HDFS`
+  (which is written in :ref:`Java`).
+
+
+
+.. index:: GlusterFS
+.. _glusterfs:
+
+GlusterFS
+```````````
+| Wikipedia: https://en.wikipedia.org/wiki/GlusterFS
+| Homepage: http://www.gluster.org/
+| Project: https://forge.gluster.org/glusterfs-core
+| Source: git https://git.forge.gluster.org/glusterfs-core/glusterfs.git
+| Docs: https://gluster.readthedocs.org/en/latest/
+| Docs: https://gluster.readthedocs.org/en/latest/Quick-Start-Guide/Quickstart/
+| Docs: https://gluster.readthedocs.org/en/latest/Install-Guide/Setup_virt/
+| Docs: https://gluster.readthedocs.org/en/latest/Install-Guide/Setup_Bare_metal/
+| Docs: https://gluster.readthedocs.org/en/latest/Install-Guide/Setup_aws/
+| Docs: https://gluster.readthedocs.org/en/latest/Administrator%20Guide/GlusterFS%20Cinder/
+| Tcp ports: 111, 24007, 24008, 24009, 24010, 24011, 38465:38469
+
+GlusterFS is an :ref:`Open Source <open-source>` network filesystem
+(a :ref:`distributed database <distributed-databases>`
+for files with attributes like owner, group, permissions)
+which runs over top of one or more on-disk filesystems.
+
+* GlusterFS can serve volumes for :ref:`OpenStack` Cinder block storage
+
+
+.. index:: Hadoop distributed filesystem
+.. index:: HDFS
+.. _hdfs:
+
+HDFS
+``````````
+| Wikipedia: https://en.wikipedia.org/wiki/Apache_Hadoop#HDFS
+
+HDFS (*Hadoop Distributed File System*) is
+an :ref:`Open Source <open-source>`
+distributed network filesystem.
+
+* HDFS runs code next to data;
+  rather than streaming data through code across the network.
+* HDFS is especially suitable for :ref:`MapReduce`-style
+  distributed computation.
+* Apache `Hadoop` works with files stored over HDFS, FTP, :ref:`S3`,
+  WASB (Azure)
+* There are HDFS :term:`language apis <language api>` for
+  many languages:
+  :ref:`Java`, :ref:`Scala`, :ref:`Go`, :ref:`Python`,
+  :ref:`Ruby`, :ref:`Perl`, :ref:`Haskell`, :ref:`C++`
+* :ref:`Mesos` can manage distributed HDFS grids.
+* :ref:`ElasticSearch`
+* It's possible to configure a :ref:`Jenkins` cluster
+  as :ref:`Hadoop` cluster.
+* Many databases support storage over HDFS
+  (:ref:`HBase`, :ref:`Cassandra`, :ref:`Accumulo`, :ref:`Spark`)
+* :ref:`Ceph` can now serve files over :ref:`HDFS`.
+* HDFS can be mounted as a :ref:`FUSE` filesystem (e.g. with :ref:`Linux`).
+* HDFS can be accessed from the commandline (e.g. #TODO list, get, put, stat)
+* HDFS can be browsed with HDFS-UI (HTTP :term:`web api`).
+
+
+.. index:: NFS
+.. _nfs:
+
+NFS
+``````
+| Wikipedia: https://en.wikipedia.org/wiki/NFS
+
+NFS (*Network File System* #TODO) is an :ref:`Open Source <open-source>`
+centralized network filesystem.
+
+
+.. index:: S3
+.. _s3:
+
+S3 
+``````````````
+
+* :ref:`AWS` S3
+* :ref:`OpenStack` Swift
+* :ref:`Ceph`
+* :ref:`GlusterFS`
+
+
+.. index:: Swift
+.. _swift:
+
+Swift
+```````
+
+* :ref:`OpenStack` Swift
+* :ref:`Ceph`
+* :ref:`GlusterFS`
+
+
+.. index:: SMB
+.. _smb:
+
+SMB
+```````
+| Wikipedia: https://en.wikipedia.org/wiki/Server_Message_Block
+
+SMB (*Server Message Block*) is a centralized network filesystem.
+
+* SMB has been superseded by :ref:`CIFS`.
+
+
+.. index:: WebDAV
+.. _webdav:
+
+WebDAV
+````````
+| Wikipedia: https://en.wikipedia.org/wiki/WebDAV
+| Standard: https://tools.ietf.org/html/rfc2518
+| Standard: https://tools.ietf.org/html/rfc4918
+
+WebDAV (*Web Distributed Authoring and Versioning*) 
+is a network filesystem protocol built with :ref:`HTTP`.
+
+* WebDAV specifies a number of unique :ref:`HTTP` methods:
+  
+  * ``PROPFIND`` (``ls``, ``stat``, ``getfacl``),
+  * ``PROPPATCH`` (``touch``, ``setfacl``)
+  * ``MKCOL`` (``mkdir``)
+  * ``COPY`` (``cp``)
+  * ``MOVE`` (``mv``)
+  * ``LOCK`` (:ref:`file locking`)
+  * ``UNLOCK`` ()
+
+
+
 .. index:: Databases
 .. _databases:
 
 Databases
------------
-https://en.wikipedia.org/wiki/Database
++++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/Database
 
-https://en.wikipedia.org/wiki/Database_schema
+* https://en.wikipedia.org/wiki/Database_schema
 
-https://en.wikipedia.org/wiki/Create,_read,_update_and_delete
+* https://en.wikipedia.org/wiki/Create,_read,_update_and_delete
 
-https://en.wikipedia.org/wiki/CRUD
+* https://en.wikipedia.org/wiki/CRUD
 
-https://en.wikipedia.org/wiki/ACID
+* https://en.wikipedia.org/wiki/ACID
 
-https://en.wikipedia.org/wiki/Query_plan
+* https://en.wikipedia.org/wiki/Query_plan
 
-https://en.wikipedia.org/wiki/Database_index
+* https://en.wikipedia.org/wiki/Database_index
 
-https://en.wikipedia.org/wiki/Search_engine_indexing
+* https://en.wikipedia.org/wiki/Search_engine_indexing
 
-https://en.wikipedia.org/wiki/Category:Database_software_comparisons
+* https://en.wikipedia.org/wiki/Category:Database_software_comparisons
 
-* http://db-engines.com/en/ranking
+  * http://db-engines.com/en/ranking
+
+
+.. index:: Data Engineering Review
+.. _data engineering review:
+
+Data Engineering Review
+`````````````````````````
+
+From :ref:`computer engineering` > :ref:`data engineering`:
+
+* :ref:`file systems`
+  (:ref:`mbr`, :ref:`gpt`, :ref:`lvm`, :ref:`btrfs`, :ref:`ext`,
+  :ref:`fat`, :ref:`ntfs`, :ref:`hfs+`)
+
+* :ref:`network filesystems`
+  (:ref:`NFS`, :ref:`SMB`, :ref:`CIFS`,
+  :ref:`WebDAV`,
+  :ref:`Ceph`, :ref:`GlusterFS`)
+
+* :ref:`file locking`
+
+* :ref:`compression algorithms`
+  (:ref:`bzip2`, :ref:`gzip`, :ref:`tar`, :ref:`zip`)
+
+* :ref:`file structures`
+
+* :ref:`data structures`
+  (:ref:`arrays` (:ref:`matrices`),
+  :ref:`lists`, :ref:`graphs` (:ref:`trees`))
 
 
 .. index:: ORM
@@ -841,15 +980,15 @@ https://en.wikipedia.org/wiki/Category:Database_software_comparisons
 .. _orm:
 
 Object Relational Mapping
-+++++++++++++++++++++++++++
-https://en.wikipedia.org/wiki/Object-relational_mapping
+```````````````````````````
+| Wikipedia: https://en.wikipedia.org/wiki/Object-relational_mapping
 
 * https://en.wikipedia.org/wiki/Data_mapper_pattern
 * https://en.wikipedia.org/wiki/Active_record_pattern
 
 https://en.wikipedia.org/wiki/Object-relational_impedance_mismatch
 
-https://en.wikipedia.org/wiki/List_of_object-relational_mapping_software
+* https://en.wikipedia.org/wiki/List_of_object-relational_mapping_software
 
 
 .. index:: Relational Databases
@@ -857,8 +996,8 @@ https://en.wikipedia.org/wiki/List_of_object-relational_mapping_software
 .. _relational-databases:
 
 Relational Databases
-+++++++++++++++++++++
-https://en.wikipedia.org/wiki/Relational_database
+`````````````````````
+| Wikipedia: https://en.wikipedia.org/wiki/Relational_database
 
 https://en.wikipedia.org/wiki/Relational_model
 
@@ -893,8 +1032,8 @@ https://en.wikipedia.org/wiki/Relational_database_management_system
 .. _sql:
 
 SQL
-````
-https://en.wikipedia.org/wiki/SQL
+~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/SQL
 
 * `<https://en.wikipedia.org/wiki/Null_(SQL)#Comparisons_with_NULL_and_the_three-valued_logic_.283VL.29>`_
 * `<https://en.wikipedia.org/wiki/Join_(SQL)>`_
@@ -910,8 +1049,8 @@ See: :ref:`Object Relational Modeling <orm>`
 .. _nosql:
 
 NoSQL Databases
-+++++++++++++++++
-https://en.wikipedia.org/wiki/NoSQL
+`````````````````
+| Wikipedia: https://en.wikipedia.org/wiki/NoSQL
 
 `<https://en.wikipedia.org/wiki/Keyspace_(distributed_data_store)>`_
 
@@ -926,8 +1065,8 @@ https://en.wikipedia.org/wiki/NoSQL
 .. _distributed-databases:
 
 Distributed Databases
-++++++++++++++++++++++++
-https://en.wikipedia.org/wiki/Distributed_database
+````````````````````````
+| Wikipedia: https://en.wikipedia.org/wiki/Distributed_database
 
 https://en.wikipedia.org/wiki/Distributed_data_store
 
@@ -950,7 +1089,7 @@ https://en.wikipedia.org/wiki/Category:Distributed_algorithms
 .. _mapreduce:
 
 MapReduce
-++++++++++++
+````````````
 | Wikipedia:  https://en.wikipedia.org/wiki/MapReduce
 
 MapReduce is an algorithm for distributed computation.
@@ -964,7 +1103,7 @@ MapReduce is an algorithm for distributed computation.
 .. _bsp:
 
 Bulk Synchronous Parallel
-++++++++++++++++++++++++++++
+````````````````````````````
 | Wikipedia: https://en.wikipedia.org/wiki/Bulk_synchronous_parallel
 
 Bulk Synchronous Parallel (*BSP*) is an algorithm for distributed computation.
@@ -980,7 +1119,7 @@ Bulk Synchronous Parallel (*BSP*) is an algorithm for distributed computation.
 .. _dht:
 
 Distributed Hash Table
-++++++++++++++++++++++++
+````````````````````````
 | Wikipedia: https://en.wikipedia.org/wiki/Distributed_hash_table
 
 A Distributed Hash Table (*:ref:`DHT <dht>`*) is a distributed key value store
@@ -1016,8 +1155,8 @@ looked up with an exact string match.
 .. _graph-databases:
 
 Graph Databases
-++++++++++++++++++
-https://en.wikipedia.org/wiki/Graph_database
+``````````````````
+| Wikipedia: https://en.wikipedia.org/wiki/Graph_database
 
 https://en.wikipedia.org/wiki/Graph_database#Graph_database_projects
 
@@ -1040,8 +1179,8 @@ Graph Queries
 .. _triplestores:
 
 RDF Triplestores
-+++++++++++++++++
-https://en.wikipedia.org/wiki/Triplestore
+`````````````````
+| Wikipedia: https://en.wikipedia.org/wiki/Triplestore
 
 https://en.wikipedia.org/wiki/List_of_subject-predicate-object_databases
 
@@ -1075,8 +1214,8 @@ Graph Pattern Query Results
 .. _data-grid:
 
 Data Grid
-------------
-https://en.wikipedia.org/wiki/Data_grid
+++++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/Data_grid
 
 
 
@@ -1094,7 +1233,7 @@ Time Standards
 
 International Atomic Time (IAT)
 ++++++++++++++++++++++++++++++++
-https://en.wikipedia.org/wiki/International_Atomic_Time
+| Wikipedia: https://en.wikipedia.org/wiki/International_Atomic_Time
 
 International Atomic Time (*IAT*)
 is an international standard for
@@ -1122,7 +1261,7 @@ https://en.wikipedia.org/wiki/Long_Now_Foundation
 
 Decimal Time
 ++++++++++++++
-https://en.wikipedia.org/wiki/Decimal_time
+| Wikipedia: https://en.wikipedia.org/wiki/Decimal_time
 
 * https://en.wikipedia.org/wiki/Decimal_time#Conversions
 * https://en.wikipedia.org/wiki/Decimal_time#Fractional_days
@@ -1135,7 +1274,7 @@ https://en.wikipedia.org/wiki/Decimal_time
 
 Unix Time
 +++++++++++
-https://en.wikipedia.org/wiki/Unix_time
+| Wikipedia: https://en.wikipedia.org/wiki/Unix_time
 
      Defined as the number of seconds that have elapsed
      since 00:00:00 Coordinated Universal Time (UTC),
@@ -1164,7 +1303,7 @@ See also: `Swatch Internet Time` (`Beat Time`)
 
 Year Zero
 ++++++++++
-`<https://en.wikipedia.org/wiki/0_(year)>`__
+| Wikipedia: `<https://en.wikipedia.org/wiki/0_(year)>`__
 
 * The Gregorian Calendar
   (e.g. :ref:`Common Era <ce>`, `Julian Calendar`)
@@ -1180,7 +1319,7 @@ Year Zero
 
 Astronomical year numbering
 ++++++++++++++++++++++++++++
-https://en.wikipedia.org/wiki/Astronomical_year_numbering
+| Wikipedia: https://en.wikipedia.org/wiki/Astronomical_year_numbering
 
 * Astronomical year numbering includes a year zero:
 
@@ -1198,7 +1337,7 @@ Tools with support for :ref:`astronomical year numbering`:
 
 Before Present (BP)
 ++++++++++++++++++++
-https://en.wikipedia.org/wiki/Before_Present
+| Wikipedia: https://en.wikipedia.org/wiki/Before_Present
 
 Before Present (*BP*) dates are relative to the current date
 (or *date of publication*); e.g. "2.6 million years ago".
@@ -1209,7 +1348,7 @@ Before Present (*BP*) dates are relative to the current date
 
 Common Era (CE)
 +++++++++++++++++
-| https://en.wikipedia.org/wiki/Common_Era
+| Wikipedia: https://en.wikipedia.org/wiki/Common_Era
 | https://en.wikipedia.org/wiki/Pax_Romana
 | :ref:`Year Zero`
 
@@ -1272,7 +1411,7 @@ Common Era and :ref:`Python` datetime calculations:
 
 Time Zones
 ++++++++++++
-https://en.wikipedia.org/wiki/Time_zone
+| Wikipedia: https://en.wikipedia.org/wiki/Time_zone
 
 https://en.wikipedia.org/wiki/Daylight_saving_time
 
@@ -1289,7 +1428,7 @@ https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 UTC
 `````
-https://en.wikipedia.org/wiki/Coordinated_Universal_Time
+| Wikipedia: https://en.wikipedia.org/wiki/Coordinated_Universal_Time
 
 UTC (*Coordinated Universal Time*) is
 the primary terrestrial Earth-based clock time.
@@ -1315,7 +1454,7 @@ the primary terrestrial Earth-based clock time.
 
 US Time Zones
 `````````````````
-https://en.wikipedia.org/wiki/Time_in_the_United_States
+| Wikipedia: https://en.wikipedia.org/wiki/Time_in_the_United_States
 
 https://en.wikipedia.org/wiki/Time_in_the_United_States#Standard_time_and_daylight_saving_time
 
@@ -1328,8 +1467,7 @@ https://en.wikipedia.org/wiki/History_of_time_in_the_United_States
 
 US Daylight Saving Time
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-https://en.wikipedia.org/wiki/Daylight_saving_time_in_the_United_States
+| Wikipedia: https://en.wikipedia.org/wiki/Daylight_saving_time_in_the_United_States
 
     Currently, daylight saving time
     **starts on the second Sunday in March**
@@ -1533,7 +1671,7 @@ A few examples of ISO8601:
 
 Linked Data
 -------------
-https://en.wikipedia.org/wiki/Linked_data
+| Wikipedia: https://en.wikipedia.org/wiki/Linked_data
 
 * http://www.w3.org/DesignIssues/LinkedData.html
 
@@ -1599,14 +1737,16 @@ See: :ref:`Semantic Web <semantic-web>`
 
 Semantic Web
 -------------
-https://en.wikipedia.org/wiki/Semantic_Web
+| Wikipedia: https://en.wikipedia.org/wiki/Semantic_Web
+| WikipediaCategory: https://en.wikipedia.org/wiki/Category:Semantic_Web
 
 https://en.wikipedia.org/wiki/Template:Semantic_Web
 
-https://en.wikipedia.org/wiki/Category:Semantic_Web
-
 `<https://en.wikipedia.org/wiki/Semantics_(computer_science)>`_
 
+:ref:`W3C` Semantic Web Wiki:
+
+* http://www.w3.org/2001/sw/wiki
 * http://www.w3.org/2001/sw/wiki/Books
 * http://www.w3.org/2001/sw/wiki/Tools
 
@@ -1665,7 +1805,7 @@ Reasoners
 
 Web Standards
 ---------------
-https://en.wikipedia.org/wiki/Web_standards
+| Wikipedia: https://en.wikipedia.org/wiki/Web_standards
 
 .. index:: Web Names
 .. _web names:
