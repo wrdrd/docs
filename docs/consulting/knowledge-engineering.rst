@@ -233,7 +233,9 @@ https://en.wikipedia.org/wiki/Index#Computer_science
 Git File Structures
 ``````````````````````
 :ref:`Git` specifies a number of file structures:
-:ref:`Git Objects`, :ref:`Git References`, :ref:`Git Packfiles`.
+:ref:`Git Objects <git object>`,
+:ref:`Git References <git reference>`,
+and :ref:`Git Packfiles <git packfile>`.
 
 Git implements something like **on-disk** *shared snapshot objects*
 with commits, branching, merging, and multi-protocol push/pull
@@ -319,7 +321,7 @@ with concurrency and parallelism.
   is still susceptible to *race conditions*
 * :ref:`C` file locking functions: ``fcntl``, ``lockf``, ``flock``
 * :ref:`Python` file locking functions: ``fcntl.fcntl``, ``fcntl.lockf``,
-  ``fcntl.flock``: 
+  ``fcntl.flock``:
   https://docs.python.org/2/library/fcntl.html
 * To lock a file for all processes with :ref:`Linux` requires
   a *mandatory file locking* mount option (`mount -o mand``) and
@@ -339,7 +341,7 @@ with concurrency and parallelism.
 
     https://en.wikipedia.org/wiki/Deadlock
 
-  
+
 
 
 .. index:: Data Structures
@@ -871,14 +873,14 @@ CIFS (*Common Internet File System*) is a centralized network filesystem
 protocol.
 
 * Samba ``smbd`` is one implementation of a :ref:`CIFS` network file server.
- 
+
 
 .. index:: DDFS
 .. _ddfs:
 
 DDFS
 ``````
-| 
+|
 
 DDFS (*Disco Distributed File System*) is a
 distributed network filesystem
@@ -962,7 +964,7 @@ centralized network filesystem.
 .. index:: S3
 .. _s3:
 
-S3 
+S3
 ``````````````
 
 * :ref:`AWS` S3
@@ -1003,11 +1005,11 @@ WebDAV
 | Standard: https://tools.ietf.org/html/rfc2518
 | Standard: https://tools.ietf.org/html/rfc4918
 
-WebDAV (*Web Distributed Authoring and Versioning*) 
+WebDAV (*Web Distributed Authoring and Versioning*)
 is a network filesystem protocol built with :ref:`HTTP`.
 
 * WebDAV specifies a number of unique :ref:`HTTP` methods:
-  
+
   * ``PROPFIND`` (``ls``, ``stat``, ``getfacl``),
   * ``PROPPATCH`` (``touch``, ``setfacl``)
   * ``MKCOL`` (``mkdir``)
@@ -1159,30 +1161,6 @@ NoSQL Databases
 * https://en.wikipedia.org/wiki/Apache_Accumulo
 
 
-.. index:: Distributed Databases
-.. _distributed-databases:
-
-Distributed Databases
-````````````````````````
-| Wikipedia: https://en.wikipedia.org/wiki/Distributed_database
-
-https://en.wikipedia.org/wiki/Distributed_data_store
-
-https://en.wikipedia.org/wiki/Distributed_computing
-
-https://en.wikipedia.org/wiki/Category:Distributed_computing_problems
-
-* `<https://en.wikipedia.org/wiki/Consensus_(computer_science)>`_
-* https://en.wikipedia.org/wiki/Leader_election
-* https://en.wikipedia.org/wiki/Distributed_concurrency_control
-* https://en.wikipedia.org/wiki/Distributed_lock_manager
-*
-
-https://en.wikipedia.org/wiki/Category:Distributed_algorithms
-
-* `<https://en.wikipedia.org/wiki/Paxos_(computer_science)>`_
-
-
 .. index:: Graph Databases
 .. _graph-databases:
 
@@ -1242,6 +1220,19 @@ Graph Pattern Query Results
 * :ref:`LDP`
 
 
+.. index:: Distributed Databases
+.. _distributed-databases:
+
+Distributed Databases
+````````````````````````
+| Wikipedia: https://en.wikipedia.org/wiki/Distributed_database
+| Wikipedia: https://en.wikipedia.org/wiki/Distributed_data_store
+
+
+
+See: :ref:`distributed algorithms`
+
+
 .. index:: Distributed Algorithms
 .. _distributed algorithms:
 
@@ -1260,6 +1251,38 @@ As separate records / statements to be ``yield``-ed or emitted:
     implement :ref:`Distributed Algorithms`.
 * Distributed :ref:`information systems`
     implement :ref:`Distributed Algorithms`.
+
+See Also:
+
+* https://en.wikipedia.org/wiki/Parallel_computing
+* https://en.wikipedia.org/wiki/Supercomputer#Distributed_supercomputing
+*
+
+
+.. index:: Distributed Computing Problems
+.. _distributed computing problems:
+
+Distributed Computing Problems
+````````````````````````````````````
+| Wikipedia: https://en.wikipedia.org/wiki/Distributed_computing
+| WikipediaCategory: https://en.wikipedia.org/wiki/Category:Distributed_computing_problems
+
+* `<https://en.wikipedia.org/wiki/Consensus_(computer_science)>`_
+* https://en.wikipedia.org/wiki/Leader_election
+* https://en.wikipedia.org/wiki/Distributed_concurrency_control
+* https://en.wikipedia.org/wiki/Distributed_lock_manager
+*
+
+
+.. index:: Non-blocking algorithm
+.. _non-blocking algorithm:
+
+Non-blocking algorithm
+```````````````````````
+| Wikipedia: https://en.wikipedia.org/wiki/Non-blocking_algorithm
+
+* `<https://en.wikipedia.org/wiki/Lock_(computer_science)#Disadvantages>`__
+* See: :ref:`file locking`
 
 
 .. index:: Distributed Hash Table
@@ -1311,6 +1334,21 @@ MapReduce is an algorithm for distributed computation.
 
 * BigTable, Hadoop, HDFS, Disco, DDFS are built on the :ref:`mapreduce`
   model
+
+
+.. index:: Paxos
+.. _paxos:
+
+Paxos
+```````
+| Wikipedia: `<https://en.wikipedia.org/wiki/Paxos_(computer_science)>`__
+| Docs: `<https://en.wikipedia.org/wiki/Paxos_(computer_science)#Production_use_of_Paxos>`__
+
+* https://en.wikipedia.org/wiki/Paxos_(computer_science)#Production_use_of_Paxos
+
+  * Bigtable, Spanner, Megastore
+  * :ref:`Ceph`
+  * :ref:`neo4j`
 
 
 .. index:: BSP
