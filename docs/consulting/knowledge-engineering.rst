@@ -2853,6 +2853,9 @@ OMG (*Object Management Group*) is a standards body.
 * :ref:`CORBA` is now an OMG standard.
 * List of OMG standards: http://www.omg.org/spec/
 
+  https://en.wikipedia.org/wiki/Object_Management_Group#OMG_Standards
+
+
 .. index:: W3C
 .. _w3c:
 
