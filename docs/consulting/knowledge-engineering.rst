@@ -1241,14 +1241,38 @@ SQL
 See: :ref:`Object Relational Modeling <orm>`
 
 
+.. index:: Drizzle
+.. _drizzle:
+
+Drizzle
+~~~~~~~~~
+| Wikipedia: `<https://en.wikipedia.org/wiki/Drizzle_(database_server)>`__
+| Homepage: http://www.drizzle.org/
+| Project: https://launchpad.net/drizzle
+| Download: http://www.drizzle.org/content/download
+| Source: bzr lp:drizzle
+| Docs: http://www.drizzle.org/content/documentation
+| Docs: http://docs.drizzle.org/
+
+Drizzle is an :ref:`open source` relational database "for the cloud"
+which was forked from :ref:`MySQL` 6.0.
+
+* Drizzle stores all data as UTF-8.
+* Drizzle has a minimal core and a plugin API.
+
+
 .. index:: MySQL
 .. _mysql:
 
 MySQL
 ~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/MySQL
+| Homepage: https://www.mysql.com/
+| Download: https://dev.mysql.com/downloads/mysql/
+| Source: git https://github.com/mysql/mysql-server
+| Doc: https://dev.mysql.com/doc/
 
-MySQL is an :ref:`open source` relational database.
+MySQL Community Edition is an :ref:`open source` relational database.
 
 
 .. index:: PostgreSQL
@@ -1257,8 +1281,17 @@ MySQL is an :ref:`open source` relational database.
 PostgreSQL
 ~~~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/PostgreSQL
+| Homepage: http://www.postgresql.org/
+| Download: http://www.postgresql.org/download/
+| Source: git http://git.postgresql.org/git/postgresql.git
+| Docs: http://www.postgresql.org/docs/
+| Docs: http://www.postgresql.org/docs/9.4/static/index.html
+| Docs: http://www.postgresql.org/docs/9.4/static/sql.html
 
 PostgreSQL is an :ref:`open source` relational database.
+
+* PostgreSQL has native support for storing and querying :ref:`JSON`.
+* PostgreSQL has support for geographical queries (*PostGIS*).
 
 
 .. index:: SQLite
@@ -1267,8 +1300,50 @@ PostgreSQL is an :ref:`open source` relational database.
 SQLite
 ~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/SQLite
+| Homepage: https://www.sqlite.org/
+| Download: https://www.sqlite.org/download.html
+| Source: 
+| Docs: https://www.sqlite.org/docs.html
+| Docs: https://www.sqlite.org/different.html
+| Docs: https://www.sqlite.org/threadsafe.html
+| Docs: https://www.sqlite.org/uri.html
+| FileExt: ``.sqlite``
 
-SQLite is an :ref:`open source` relational database.
+SQLite is a serverless :ref:`open source` relational database
+which stores all data in one file.
+
+* SQLite is included in the :ref:`Python` standard library.
+
+
+.. index:: Virtuoso Universal Server
+.. index:: Virtuoso
+.. _virtuoso:
+
+Virtuoso
+~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Virtuoso_Universal_Server
+| Homepage: http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/
+| Source: git https://github.com/openlink/virtuoso-opensource
+| Docs: 
+
+Virtuoso :ref:`open source` edition is a multi-paradigm
+:ref:`relational database` / 
+:ref:`rdf triplestore`.
+
+    * Relational Tables Data Management
+      (Columnar or Column-Store :ref:`SQL` RDBMS)
+    * Relational Property Graphs Data Management
+      (:ref:`SPARQL` :ref:`RDF` based Quad Store)
+    * Content Management
+      (:ref:`HTML`, TEXT, :ref:`TURTLE`, :ref:`RDF/XML`, :ref:`JSON`,
+      :ref:`JSON-LD`, :ref:`XML`)
+    * Web and other Document File Services (Web Document or File Server)
+    * Five-Star Linked Open Data Deployment
+      (:ref:`RDF`-based Linked Data Server)
+    * Web Application Server (SOAP or :term:`RESTful <restful api>`
+      interaction modes).
+
+* Virtuoso supports ODBC, JDBC, and DB-API relational database access.
 
 
 .. index:: NoSQL
