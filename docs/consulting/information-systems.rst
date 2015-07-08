@@ -1,6 +1,6 @@
 
 .. index:: Information Systems
-.. _information-systems:
+.. _information systems:
 
 Information Systems
 ---------------------
@@ -10,7 +10,7 @@ https://en.wikipedia.org/wiki/List_of_collaborative_software
 
 
 .. index:: Information Systems Glossary
-.. _information-systems-glossary:
+.. _information systems glossary:
 
 Information Systems Glossary
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -755,7 +755,7 @@ See: :ref:`Tools > Configuration Managment <configuration management>`
 
 
 .. index:: Information Security
-.. _information-security:
+.. _information security:
 
 Information Security
 ~~~~~~~~~~~~~~~~~~~~~
@@ -1006,7 +1006,7 @@ https://squareup.com/
 
 
 .. index:: Sales Information Systems
-.. _sales-information-systems:
+.. _sales information systems:
 
 Sales
 ~~~~~~~

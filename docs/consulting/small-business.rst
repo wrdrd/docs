@@ -150,7 +150,7 @@ Interactions: Cold, Warm, and Hot
 
 See: :ref:`Information Systems > Customer Relationship Management (CRM) <crm>`
 
-See: :ref:`Team Building <team-building>`
+See: :ref:`team building`
 
 .. index:: Marketing Mix
 .. _marketing-mix:
@@ -184,7 +184,7 @@ https://en.wikipedia.org/wiki/Sales_process_engineering
 
 https://en.wikipedia.org/wiki/Profit-based_sales_targets
 
-See: :ref:`Information Systems > Sales <sales-information-systems>`
+See: :ref:`Information Systems > Sales <sales information systems>`
 
 See: :ref:`Information Systems > CRM <crm>`
 

@@ -282,5 +282,5 @@ See also:
 
 * :ref:`Software Engineering > Digital Stand Up Meeting
   <digital stand up meeting>`
-* :ref:`Collaboration Plan <collaboration-plan>`
+* :ref:`collaboration plan`
 

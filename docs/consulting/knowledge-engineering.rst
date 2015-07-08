@@ -851,7 +851,7 @@ Ceph
 | Docs: http://ceph.com/docs/master/rbd/rbd-openstack/
 
 Ceph is an :ref:`Open Source <open-source>` network filesystem
-(a :ref:`distributed database <distributed-databases>`
+(a :ref:`distributed database <distributed databases>`
 for files with attributes like owner, group, permissions)
 written in :ref:`C++` and :ref:`Perl`
 which runs over top of one or more on-disk filesystems.
@@ -911,7 +911,7 @@ GlusterFS
 | Tcp ports: 111, 24007, 24008, 24009, 24010, 24011, 38465:38469
 
 GlusterFS is an :ref:`Open Source <open-source>` network filesystem
-(a :ref:`distributed database <distributed-databases>`
+(a :ref:`distributed database <distributed databases>`
 for files with attributes like owner, group, permissions)
 which runs over top of one or more on-disk filesystems.
 
@@ -1223,7 +1223,7 @@ Graph Pattern Query Results
 
 
 .. index:: Distributed Databases
-.. _distributed-databases:
+.. _distributed databases:
 
 Distributed Databases
 ````````````````````````

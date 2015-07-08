@@ -33,7 +33,7 @@ Topics:
 
 * `<https://en.wikipedia.org/wiki/Abstraction_(computer_science)>`_
 * https://en.wikipedia.org/wiki/Category:Algorithms
-* :ref:`Computer Engineering <computer-engineering>`
+* :ref:`computer engineering`
 * :ref:`Data Structures`
 * :ref:`Operating Systems`
 * :ref:`Software Development <software-development>` (*applied CS*)
@@ -61,7 +61,7 @@ Computer Science Curricula
       + https://en.wikipedia.org/wiki/Criterion
       + `<https://en.wikipedia.org/wiki/Criterion_(disambiguation)#Science_and_mathematics>`__
       + https://en.wikipedia.org/wiki/Information_criterion
-      + "Common Criteria" -- :ref:`information-security` platform specification
+      + "Common Criteria" -- :ref:`information security` platform specification
       + "Common Core" -- US education standard:
         https://en.wikipedia.org/wiki/Common_Core_State_Standards_Initiative
       + :ref:`business-roi`, :ref:`is-roi`
@@ -167,7 +167,7 @@ Computer Science criteria, guidelines, and curricula:
 Computer Science Courses
 ++++++++++++++++++++++++
 
-* :ref:`education-technology` > :ref:`Online Courses`
+* :ref:`education technology` > :ref:`Online Courses`
 * https://www.khanacademy.org/cs
 * https://www.class-central.com/subject/cs
 
@@ -308,7 +308,7 @@ Digital Stand Up Meeting Process Checklist:
     :ref:`WebRTC`
 
 
-See: :ref:`Team Building <team-building>`
+See: :ref:`team building`
 (:ref:`The same page`,
 :ref:`Collaborative software`)
 

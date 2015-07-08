@@ -517,4 +517,4 @@ OpenBadges Backpack
 | Source: https://github.com/mozilla/openbadges-backpack
 
 
-See also: :ref:`Team Building <team-building>`, :ref:`Jupyter`
+See also: :ref:`team building`, :ref:`Jupyter`
