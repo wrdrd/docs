@@ -307,7 +307,7 @@ Learning Topics:
 
 * :ref:`computer science`
 * :ref:`Data Science > Data Learning <data-learning>`
-* :ref:`Software Development <software-development>`
+* :ref:`software development`
 * :ref:`Python`
 * :ref:`awesome-python-testing`
 

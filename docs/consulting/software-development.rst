@@ -1,6 +1,6 @@
 
 .. index:: Software Development
-.. _software-development:
+.. _software development:
 
 Software Development
 =====================
@@ -36,7 +36,7 @@ Topics:
 * :ref:`computer engineering`
 * :ref:`Data Structures`
 * :ref:`Operating Systems`
-* :ref:`Software Development <software-development>` (*applied CS*)
+* :ref:`software development` (*applied CS*)
 * :ref:`data science` (*applied CS*)
 * :ref:`Knowledge Engineering <knowledge-engineering>` (*applied CS*)
 * :ref:`Science` (*applied CS* with/for/on behalf of a domain)

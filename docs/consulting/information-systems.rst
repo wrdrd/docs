@@ -15,7 +15,7 @@ https://en.wikipedia.org/wiki/List_of_collaborative_software
 Information Systems Glossary
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. TODO: split this to software-development / web-development
+.. TODO: split this to software development / web-development
 .. ... / computer science
 
 .. glossary::
