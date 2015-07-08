@@ -365,7 +365,7 @@ Math Courses
 * https://www.khanacademy.org/math/probability
 * :ref:`Linear Algebra <linear-algebra>`
 * :ref:`Calculus`
-* :ref:`Information Theory <information-theory>`
+* :ref:`information theory`
 * "Mathematics for Computer Science" (CC-BY-SA 3.0)
 
   http://courses.csail.mit.edu/6.042/spring14/mcs.pdf
@@ -427,7 +427,7 @@ Tools
 
 
 .. index:: Information Theory
-.. _information-theory:
+.. _information theory:
 
 Information Theory
 ~~~~~~~~~~~~~~~~~~~~

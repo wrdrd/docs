@@ -584,7 +584,7 @@ A bit can be ``1`` or ``0``.
       8 4 2 1   # big endian
       0 1 0 1   # == 0 + 4 + 0 + 1 == 5 (base 10)
 
-* See also: :ref:`information-theory` > Shannon bit (*Shannon entropy*)
+* See also: :ref:`information theory` > Shannon bit (*Shannon entropy*)
 
 
 .. index:: SI Byte

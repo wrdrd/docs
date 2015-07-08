@@ -32,7 +32,7 @@ Information Systems Glossary
    Information
       Not noise.
 
-      See: :ref:`data science` > :ref:`information-theory`,
+      See: :ref:`data science` > :ref:`information theory`,
       :ref:`knowledge-engineering`
 
    Information System
