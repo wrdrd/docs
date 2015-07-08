@@ -220,7 +220,7 @@ Text Templates
 
 
 .. index:: Collaboration Checklist
-.. _collaboration-checklist:
+.. _collaboration checklist:
 
 Collaboration Checklist
 -------------------------

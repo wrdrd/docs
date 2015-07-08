@@ -584,7 +584,7 @@ See also: :ref:`https everywhere`
 Web Development Requirements
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* [ ] :ref:`Software Development > Project Management <project-management>`
+* [ ] :ref:`Software Development > Project Management <project management>`
 * [ ] :ref:`Team Building > Collaboration Checklist <collaboration checklist>`
 * [ ] :ref:`Collaboration Plan`
 * [ ] :ref:`Photography Checklist`

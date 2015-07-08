@@ -185,7 +185,7 @@ Exercises, Problems
 
 
 .. index:: Project Management
-.. _project-management:
+.. _project management:
 
 Project Management
 -------------------
