@@ -7898,7 +7898,8 @@ designed to query multiple datastores at once.</p>
 <ul class="simple">
 <li>Presto has connectors for <a class="reference internal" href="#cassandra"><em>Cassandra</em></a>, <a class="reference internal" href="#hive"><em>Hive</em></a>, JMX,
 Kafka, <a class="reference internal" href="#mysql"><em>MySQL</em></a>, and <a class="reference internal" href="#postgresql"><em>PostgreSQL</em></a>.</li>
-<li>Presto does not yet support <a class="reference internal" href="#sparql"><em>SPARQL</em></a> or SPARQL federated query.</li>
+<li>Presto does not yet support <a class="reference internal" href="#sparql"><em>SPARQL</em></a>.</li>
+<li>Presto does not yet support <a class="reference internal" href="#sparql"><em>SPARQL</em></a> federated query.</li>
 </ul>
 </div>
 <div class="section" id="spark">
@@ -8454,13 +8455,25 @@ does not include a <cite>year zero</cite>;
 </li>
 </ul>
 <p>Common Era and <a class="reference internal" href="#year-zero"><em>Year Zero</em></a>:</p>
-<div class="highlight-python"><div class="highlight"><pre>5000 BCE == -5000 CE
-   1 BCE ==    -1 CE
-   0 BCE ==     0 CE
-   0  CE ==     0 BCE
-   1  CE ==     1 CE
-2015  CE ==  2015 CE
-</pre></div>
+<blockquote>
+<div><dl class="docutils">
+<dt>5000 BCE == -5000 CE</dt>
+<dd>1 BCE ==    -1 CE
+0 BCE ==     0 CE
+0  CE ==     0 BCE
+1  CE ==     1 CE</dd>
+</dl>
+<p>2015  CE ==  2015 CE</p>
+</div></blockquote>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Are these off by one?</p>
+<ul class="last simple">
+<li><a class="reference internal" href="#astronomical-year-numbering"><em>Astronomical year numbering</em></a> &#8211;
+you must convert from julian/gregorian dates
+to <a class="reference internal" href="#astronomical-year-numbering"><em>Astronomical year numbering</em></a>.</li>
+<li><a class="reference internal" href="#year-zero"><em>Year Zero</em></a> &#8211; they are off by one (&#8220;there is no year zero&#8221;).</li>
+</ul>
 </div>
 <p>Common Era and <a class="reference internal" href="index.html#python"><em>Python</em></a> datetime calculations:</p>
 <div class="code python highlight-python"><div class="highlight"><pre># Paleolithic Era (2.6m years ago -&gt; 12000 years ago)
@@ -17953,7 +17966,7 @@ stripsinglehtml --help
 
 <dl class="function">
 <dt id="wrdrd.tools.crawl.crawl_url">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">crawl_url</code><span class="sig-paren">(</span><em>start_url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x102c5a150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#crawl_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.crawl_url" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">crawl_url</code><span class="sig-paren">(</span><em>start_url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10f092150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#crawl_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.crawl_url" title="Permalink to this definition">¶</a></dt>
 <dd><p>Crawl pages starting at <code class="docutils literal"><span class="pre">start_url</span></code></p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -18246,7 +18259,7 @@ a <a class="reference internal" href="#wrdrd.tools.crawl.Link" title="wrdrd.tool
 
 <dl class="function">
 <dt id="wrdrd.tools.crawl.print_frequency_table">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">print_frequency_table</code><span class="sig-paren">(</span><em>frequencies</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x102c5a150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#print_frequency_table"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.print_frequency_table" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">print_frequency_table</code><span class="sig-paren">(</span><em>frequencies</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10f092150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#print_frequency_table"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.print_frequency_table" title="Permalink to this definition">¶</a></dt>
 <dd><p>Print a formatted ASCII frequency table</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -18400,7 +18413,7 @@ a <a class="reference internal" href="#wrdrd.tools.crawl.Link" title="wrdrd.tool
 
 <dl class="function">
 <dt id="wrdrd.tools.crawl.wrdcrawler">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">wrdcrawler</code><span class="sig-paren">(</span><em>url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x102c5a150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#wrdcrawler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.wrdcrawler" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">wrdcrawler</code><span class="sig-paren">(</span><em>url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x10f092150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#wrdcrawler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.wrdcrawler" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fetch and generate a report from the given URL</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />

@@ -1584,7 +1584,8 @@ designed to query multiple datastores at once.
 
 * Presto has connectors for :ref:`Cassandra`, :ref:`Hive`, JMX,
   Kafka, :ref:`MySQL`, and :ref:`PostgreSQL`.
-* Presto does not yet support :ref:`SPARQL` or SPARQL federated query.
+* Presto does not yet support :ref:`SPARQL`.
+* Presto does not yet support :ref:`SPARQL` federated query.
 
 
 .. index:: Spark
@@ -2212,7 +2213,7 @@ Common Era (CE)
   * https://en.wiktionary.org/wiki/CE
   * https://en.wiktionary.org/wiki/AD
 
-Common Era and :ref:`Year Zero`::
+Common Era and :ref:`year zero`:
 
        5000 BCE == -5000 CE
           1 BCE ==    -1 CE
@@ -2220,6 +2221,13 @@ Common Era and :ref:`Year Zero`::
           0  CE ==     0 BCE
           1  CE ==     1 CE
        2015  CE ==  2015 CE
+
+.. note:: Are these off by one?
+
+   * :ref:`astronomical year numbering` --
+     you must convert from julian/gregorian dates
+     to :ref:`astronomical year numbering`.
+   * :ref:`year zero` -- they are off by one ("there is no year zero").
 
 Common Era and :ref:`Python` datetime calculations:
 
