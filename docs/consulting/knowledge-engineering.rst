@@ -2213,7 +2213,7 @@ Common Era (CE)
   * https://en.wiktionary.org/wiki/CE
   * https://en.wiktionary.org/wiki/AD
 
-Common Era and :ref:`astronomical year numbering`:
+Common Era and :ref:`year zero`:
 
        5000 BCE == -5000 CE
           1 BCE ==    -1 CE
@@ -2227,7 +2227,7 @@ Common Era and :ref:`astronomical year numbering`:
    * :ref:`astronomical year numbering` --
      you must convert from julian/gregorian dates
      to :ref:`astronomical year numbering`.
-   * :ref:`Year Zero` -- they are off by one (there is no year zero).
+   * :ref:`year zero` -- they are off by one ("there is no year zero").
 
 Common Era and :ref:`Python` datetime calculations:
 
