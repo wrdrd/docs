@@ -1775,19 +1775,122 @@ for distributed computation.
 Distributed Computing Protocols
 +++++++++++++++++++++++++++++++++
 
+* :ref:`CORBA`
+* :ref:`Message Passing`
 * :ref:`MPI`
 * https://en.wikipedia.org/wiki/XML-RPC
 * https://en.wikipedia.org/wiki/Java_Remote_Method_Invocation
 * :ref:`ws-`
 * :term:`RESTful HTTP <restful api>`
-* https://en.wikipedia.org/wiki/JSON-RPC
 * :ref:`Protocol Buffers`
 * :ref:`Thrift`
 * :ref:`Avro`
 * :ref:`msgpack`
-* :ref:`WebSocket`
+* :ref:`WebSocket <websockets>`
 * :ref:`WebRTC`
+* :ref:`JSON-WSP`
+* :ref:`LDP` (:ref:`Turtle` or :ref:`JSON-LD` :ref:`RDF` over :ref:`HTTP`)
 * https://en.wikipedia.org/wiki/List_of_web_service_protocols
+
+
+.. index:: CORBA
+.. _corba:
+
+CORBA
+``````
+| Wikipedia: https://en.wikipedia.org/wiki/Common_Object_Request_Broker_Architecture
+
+CORBA (*Common Object Request Broker Architecture*) is
+a :ref:`distributed computing protocol <distributed computing protocols>`
+now defined by :ref:`OMG`
+with implementations in many languages.
+
+* CORBA is a distributed object-oriented protocol
+  for platform-neutral distributed computing.
+* CORBA objects are marshalled and serialized
+  according to an IDL
+  (*Interface Definition Language*)
+  with a limited set of datatypes (see also :ref:`XSD`,
+  :ref:`Distributed Computing Protocols`:
+  :ref:`Protocol Buffers`, :ref:`Thrift`,
+  :ref:`Avro`, :ref:`msgpack`, :ref:`JSON-LD`)
+* CORBA ORBs (*Object Request Brokers*)
+  route requests for objects (see also :ref:`ESB`)
+* CORBA objects are either in
+  local address space (see also ``file://`` / ``/dev/mem``)
+  or remote address space
+  (see also dereferencable :ref:`HTTP`, :ref:`HTTPS`
+  :term:`URLs <url>` )
+* CORBA objects can be looked up by reference
+  (by :term:`URL`, or *NameService* (see also :term:`DNS`))
+* "CORBA Objects are passed by reference, while data
+  (integers, doubles, structs, enums, etc.) are passed by value"
+  -- https://en.wikipedia.org/wiki/Common_Object_Request_Broker_Architecture#Features
+ 
+
+
+
+.. index:: Message Passing
+.. _message passing:
+
+Message Passing
+`````````````````
+| Wikipedia: https://en.wikipedia.org/wiki/Message_passing
+| https://en.wikipedia.org/wiki/Messaging_pattern
+| https://en.wikipedia.org/wiki/Message_passing_in_computer_clusters
+| https://en.wikipedia.org/wiki/Active_message
+
+* https://en.wikipedia.org/wiki/Message_passing#Synchronous_versus_asynchronous_message_passing
+
+* https://en.wikipedia.org/wiki/Dataflow_programming
+
+  * https://en.wikipedia.org/wiki/Flow-based_programming
+  * https://en.wikipedia.org/wiki/Spreadsheet
+  * https://en.wikipedia.org/wiki/Reactive_programming
+
+* https://en.wikipedia.org/wiki/Actor_model_implementation
+* https://en.wikipedia.org/wiki/Factor_graph#Message_passing_on_factor_graphs
+* :ref:`BSP`
+
+
+.. index:: ESB
+.. index:: Enterprise Service Bus
+.. _esb:
+
+ESB
+````
+| Wikipedia: https://en.wikipedia.org/wiki/Enterprise_service_bus
+
+An ESB (*Enterprise Service Bus*) is a centralized
+distributed computing component
+which relays (or *brokers*) messages
+with or as a message queue (*MQ*).
+
+* ESB is generally the name for a message queue / task worker pattern
+  in the :ref:`SOA` (particularly :ref:`Java`).
+* ESBs host service endpoints for message producers and consumers.
+* ESBs can also maintain state, or logging.
+* ESB services can often be described with e.g.
+  :ref:`WSDL` and/or :ref:`JSON-WSP`.
+
+
+
+.. index:: MPI
+.. _mpi:
+
+MPI
+````
+| Wikipedia: https://en.wikipedia.org/wiki/Message_Passing_Interface
+
+MPI (*Message Passing Interface*)
+is a distributed computing protocol
+for structured data interchange
+with implementations in many languages.
+
+* Many supercomputing applications are built with MPI.
+* MPI is faster than :ref:`JSON`.
+* :ref:`IPython` supports MPI:
+  https://ipython.org/ipython-doc/3/parallel/parallel_mpi.html
 
 
 .. index:: Avro
@@ -1817,23 +1920,6 @@ with implementations in many languages.
   but does not require code generation.
 * Avro stores *schemas* within the data.
 
-
-.. index:: MPI
-.. _mpi:
-
-MPI
-````
-| Wikipedia: https://en.wikipedia.org/wiki/Message_Passing_Interface
-
-MPI (*Message Passing Interface*)
-is a distributed computing protocol
-for structured data interchange
-with implementations in many languages.
-
-* Many supercomputing applications are built with MPI.
-* MPI is faster than :ref:`JSON`.
-* :ref:`IPython` supports MPI:
-  https://ipython.org/ipython-doc/3/parallel/parallel_mpi.html
 
 
 .. index:: Protocol Buffers
@@ -1901,6 +1987,22 @@ WSDL (*Web Services Description Language*)
 is a :ref:`web standard <web standards>`
 for describing web services and the schema
 of their inputs and outputs.
+
+
+.. index:: JSON-WSP
+.. _json-wsp:
+
+JSON-WSP
+``````````
+| Wikipedia: https://en.wikipedia.org/wiki/JSON-WSP
+
+JSON-WSP (:ref:`JSON` Web-Service Protocol)
+is a :ref:`web standard <web standards>` protocol
+for describing services and request and response objects.
+
+* JSON-WSP is similar in function to :ref:`WSDL` and :ref:`CORBA` IDL.
+
+See also: :ref:`Linked Data Platform (LDP) <ldp>`
 
 
 .. index:: Data Grid
@@ -2735,6 +2837,23 @@ ISO (*International Organization for Standardization*) is a standards
 body.
 
 * List of ISO standards: http://www.iso.org/iso/home/standards.htm
+
+
+.. index:: OMG
+.. _omg:
+
+OMG
+++++
+| Wikipedia: https://en.wikipedia.org/wiki/Object_Management_Group
+| Homepage: http://www.omg.org/
+
+OMG (*Object Management Group*) is a standards body.
+
+* UML is an OMG standard.
+* :ref:`CORBA` is now an OMG standard.
+* List of OMG standards: http://www.omg.org/spec/
+
+  https://en.wikipedia.org/wiki/Object_Management_Group#OMG_Standards
 
 
 .. index:: W3C
