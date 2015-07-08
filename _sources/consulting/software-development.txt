@@ -1,6 +1,6 @@
 
 .. index:: Software Development
-.. _software-development:
+.. _software development:
 
 Software Development
 =====================
@@ -19,7 +19,7 @@ https://en.wikipedia.org/wiki/Software_engineering
 
 .. index:: CS
 .. index:: Computer Science
-.. _computer-science:
+.. _computer science:
 
 Computer Science
 -----------------
@@ -33,12 +33,12 @@ Topics:
 
 * `<https://en.wikipedia.org/wiki/Abstraction_(computer_science)>`_
 * https://en.wikipedia.org/wiki/Category:Algorithms
-* :ref:`Computer Engineering <computer-engineering>`
+* :ref:`computer engineering`
 * :ref:`Data Structures`
 * :ref:`Operating Systems`
-* :ref:`Software Development <software-development>` (*applied CS*)
-* :ref:`Data Science <data-science>` (*applied CS*)
-* :ref:`Knowledge Engineering <knowledge-engineering>` (*applied CS*)
+* :ref:`software development` (*applied CS*)
+* :ref:`data science` (*applied CS*)
+* :ref:`knowledge engineering` (*applied CS*)
 * :ref:`Science` (*applied CS* with/for/on behalf of a domain)
 
 
@@ -61,7 +61,7 @@ Computer Science Curricula
       + https://en.wikipedia.org/wiki/Criterion
       + `<https://en.wikipedia.org/wiki/Criterion_(disambiguation)#Science_and_mathematics>`__
       + https://en.wikipedia.org/wiki/Information_criterion
-      + "Common Criteria" -- :ref:`information-security` platform specification
+      + "Common Criteria" -- :ref:`information security` platform specification
       + "Common Core" -- US education standard:
         https://en.wikipedia.org/wiki/Common_Core_State_Standards_Initiative
       + :ref:`business-roi`, :ref:`is-roi`
@@ -167,7 +167,7 @@ Computer Science criteria, guidelines, and curricula:
 Computer Science Courses
 ++++++++++++++++++++++++
 
-* :ref:`education-technology` > :ref:`Online Courses`
+* :ref:`education technology` > :ref:`Online Courses`
 * https://www.khanacademy.org/cs
 * https://www.class-central.com/subject/cs
 
@@ -185,7 +185,7 @@ Exercises, Problems
 
 
 .. index:: Project Management
-.. _project-management:
+.. _project management:
 
 Project Management
 -------------------
@@ -308,7 +308,7 @@ Digital Stand Up Meeting Process Checklist:
     :ref:`WebRTC`
 
 
-See: :ref:`Team Building <team-building>`
+See: :ref:`team building`
 (:ref:`The same page`,
 :ref:`Collaborative software`)
 
@@ -348,7 +348,7 @@ Unified Process
 | EPFWiki: http://epf.eclipse.org/wikis/openup/
 
 * "Rational Unified Process" (RUP)
-* OpenUP is an :ref:`Open Source <open-source>` Unified Process
+* OpenUP is an :ref:`open source` Unified Process
 
 
 .. index:: Scrum
@@ -368,7 +368,7 @@ Scrum
 .. index:: Software Development Effort Estimation
 .. index:: Effort Estimation
 .. index:: Planning Poker
-.. _effort-estimation:
+.. _effort estimation:
 
 Effort Estimation
 ~~~~~~~~~~~~~~~~~~~

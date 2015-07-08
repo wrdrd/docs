@@ -471,6 +471,28 @@ volt
 # TODO frequency / current relation
 
 
+.. index:: SI Power Units
+.. _si power units:
+
+SI Power Units
+++++++++++++++++
+
+.. index:: Joule
+.. _joule:
+
+joule
+```````
+| Wikipedia: https://en.wikipedia.org/wiki/Joule
+
+
+.. index:: Watt
+.. _watt:
+
+watt
+``````
+| Wikipedia: https://en.wikipedia.org/wiki/Watt
+
+
 .. index:: SI Temperature Units
 .. _si temperature units:
 
@@ -562,7 +584,7 @@ A bit can be ``1`` or ``0``.
       8 4 2 1   # big endian
       0 1 0 1   # == 0 + 4 + 0 + 1 == 5 (base 10)
 
-* See also: :ref:`information-theory` > Shannon bit (*Shannon entropy*)
+* See also: :ref:`information theory` > Shannon bit (*Shannon entropy*)
 
 
 .. index:: SI Byte
@@ -917,8 +939,8 @@ pound
 | Abbr: ``lb``
 | Abbr: ``lbm``
 
-* Conversion: 1 :ref:`lb` == 16 :ref:`ounces <ounce>`
-* Conversion: 1 :ref:`lb` == 448 :ref:`grams <gram>`
+* Conversion: 1 :ref:`lb` == 16 :ref:`ounces (oz) <oz>`
+* Conversion: 1 :ref:`lb` == 448 :ref:`grams (g) <gram>`
 * Conversion: 1 :ref:`lb` == 0.45359237 kg (kilo- :ref:`grams <gram>`)
 
 

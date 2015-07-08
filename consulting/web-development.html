@@ -105,7 +105,15 @@
 <li><a class="reference internal" href="#web-hosting">Web Hosting</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#requirements">Requirements</a></li>
+<li><a class="reference internal" href="#websec">WebSec</a><ul>
+<li><a class="reference internal" href="#https">HTTPS</a></li>
+<li><a class="reference internal" href="#http-sts">HTTP STS</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#web-development-requirements">Web Development Requirements</a><ul>
+<li><a class="reference internal" href="#user-stories">User Stories</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -171,7 +179,15 @@
 <li><a class="reference internal" href="#web-hosting">Web Hosting</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#requirements">Requirements</a></li>
+<li><a class="reference internal" href="#websec">WebSec</a><ul>
+<li><a class="reference internal" href="#https">HTTPS</a></li>
+<li><a class="reference internal" href="#http-sts">HTTP STS</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#web-development-requirements">Web Development Requirements</a><ul>
+<li><a class="reference internal" href="#user-stories">User Stories</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -502,7 +518,7 @@ social web, sharing.</p>
 </li>
 <li>[ ] Add structured data markup to page<ul>
 <li><a class="reference external" href="http://schema.org/docs/full.html">http://schema.org/docs/full.html</a></li>
-<li>See: <a class="reference internal" href="knowledge-engineering#knowledge-engineering"><em>Knowledge Engineering</em></a> &gt;
+<li>See: <a class="reference internal" href="knowledge-engineering#knowledge-engineering"><em>Knowledge Engineering</em></a>,
 <a class="reference internal" href="knowledge-engineering#semantic-web-standards"><em>Semantic Web Standards</em></a>,
 <a class="reference internal" href="knowledge-engineering#schema-org"><em>Schema.org</em></a></li>
 <li>[ ] Add standard header tags<ul>
@@ -681,7 +697,7 @@ whois $DOMAIN | egrep &#39;Registrar|Date|Domain Status|Registrant|Admin&#39;
 <p>See: <a class="reference internal" href="../wrdrd/wrdrd.tools#module-wrdrd.tools.domain" title="wrdrd.tools.domain"><code class="xref py py-mod docutils literal"><span class="pre">wrdrd.tools.domain</span></code></a></p>
 </div>
 <div class="section" id="web-hosting">
-<h3>Web Hosting<a class="headerlink" href="#web-hosting" title="Permalink to this headline">¶</a></h3>
+<span id="index-8"></span><span id="id9"></span><h3>Web Hosting<a class="headerlink" href="#web-hosting" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference internal" href="#term-web-hosting-service"><em class="xref std std-term">Web Hosting</em></a> Information</p>
 <ul class="simple">
 <li>Reverse IP (How many sites are hosted from the same
@@ -690,13 +706,84 @@ whois $DOMAIN | egrep &#39;Registrar|Date|Domain Status|Registrant|Admin&#39;
 </ul>
 </li>
 </ul>
+<p>See: <a class="reference internal" href="information-systems#clouds"><em>Information Systems &gt; Clouds</em></a></p>
 </div>
 </div>
-<div class="section" id="requirements">
-<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/Requirements_analysis">https://en.wikipedia.org/wiki/Requirements_analysis</a></p>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/User_story">https://en.wikipedia.org/wiki/User_story</a></p>
-<p>See: <a class="reference internal" href="software-development#project-management"><em>Project Management</em></a></p>
+<div class="section" id="websec">
+<span id="index-9"></span><span id="id10"></span><h2>WebSec<a class="headerlink" href="#websec" title="Permalink to this headline">¶</a></h2>
+<p>WebSec (<em>web security</em>) is <a class="reference internal" href="information-systems#information-security"><em>Information Security</em></a>
+for web applications.</p>
+<p>Security at <a class="reference internal" href="knowledge-engineering#w3c"><em>W3C</em></a> :</p>
+<ul class="simple">
+<li><a class="reference external" href="http://www.w3.org/Security/">http://www.w3.org/Security/</a></li>
+<li><a class="reference external" href="http://www.w3.org/Security/wiki/Main_Page">http://www.w3.org/Security/wiki/Main_Page</a></li>
+<li><a class="reference external" href="http://www.w3.org/2011/webappsec/">http://www.w3.org/2011/webappsec/</a></li>
+<li><a class="reference internal" href="knowledge-engineering#web-standards"><em>Web Standards</em></a></li>
+</ul>
+<p>CWE:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://cwe.mitre.org/">https://cwe.mitre.org/</a></li>
+<li><a class="reference external" href="https://cwe.mitre.org/top25/">https://cwe.mitre.org/top25/</a></li>
+<li><a class="reference external" href="https://cwe.mitre.org/top25/#CWE-89">https://cwe.mitre.org/top25/#CWE-89</a></li>
+<li><a class="reference external" href="https://cwe.mitre.org/data/definitions/89.html">https://cwe.mitre.org/data/definitions/89.html</a></li>
+</ul>
+<p>OWASP:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project">https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project</a></li>
+<li><a class="reference external" href="https://www.owasp.org/index.php/OWASP_Proactive_Controls">https://www.owasp.org/index.php/OWASP_Proactive_Controls</a></li>
+<li><a class="reference external" href="https://www.owasp.org/index.php/Top_10_2013-Table_of_Contents">https://www.owasp.org/index.php/Top_10_2013-Table_of_Contents</a></li>
+<li><a class="reference external" href="https://www.owasp.org/index.php/Web_Standards_and_Specifications">https://www.owasp.org/index.php/Web_Standards_and_Specifications</a></li>
+</ul>
+<div class="section" id="https">
+<span id="index-10"></span><span id="id11"></span><h3>HTTPS<a class="headerlink" href="#https" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/HTTPS">https://en.wikipedia.org/wiki/HTTPS</a></div>
+</div>
+<p>See: <a class="reference internal" href="knowledge-engineering#https"><em>HTTPS</em></a>, <a class="reference internal" href="knowledge-engineering#http"><em>HTTP</em></a></p>
+<span class="target" id="index-11"></span></div>
+<div class="section" id="http-sts">
+<span id="index"></span><span id="index-12"></span><h3>HTTP STS<a class="headerlink" href="#http-sts" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security">https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</a></div>
+</div>
+<p>HTTP STS (<em>HTTP Strict Transport Security</em>) is
+a standardized extension for notifying browsers
+that all requests should be made over <a class="reference internal" href="knowledge-engineering#http"><em>HTTP</em></a>
+indefinitely or for a specified time period.</p>
+<p>See also: <a class="reference internal" href="../tools/index#https-everywhere"><em>HTTPS Everywhere</em></a></p>
+</div>
+</div>
+<div class="section" id="web-development-requirements">
+<span id="index-13"></span><span id="id12"></span><h2>Web Development Requirements<a class="headerlink" href="#web-development-requirements" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>[ ] <a class="reference internal" href="software-development#project-management"><em>Software Development &gt; Project Management</em></a></li>
+<li>[ ] <a class="reference internal" href="team-building#collaboration-checklist"><em>Team Building &gt; Collaboration Checklist</em></a></li>
+<li>[ ] <a class="reference internal" href="collaboration-plan#collaboration-plan"><em>Collaboration Plan</em></a></li>
+<li>[ ] <a class="reference internal" href="small-business#photography-checklist"><em>Photography Checklist</em></a></li>
+<li>[ ] <a class="reference internal" href="small-business#social-media-images"><em>Social Media Images</em></a></li>
+<li>[ ] <a class="reference internal" href="#web-hosting"><em>Web Hosting</em></a></li>
+<li>[ ] <a class="reference internal" href="#web-development-checklist"><em>Web Development Checklist</em></a></li>
+</ul>
+<div class="section" id="user-stories">
+<h3>User Stories<a class="headerlink" href="#user-stories" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/User_story">https://en.wikipedia.org/wiki/User_story</a></div>
+</div>
+<p>User Stories are an <a class="reference internal" href="software-development#agile"><em>Agile</em></a> <a class="reference internal" href="team-building#seven-layer-model-of-collaboration"><em>technique</em></a>
+for capturing structured requires on <em>cards</em> (or as <em>issues</em> in e.g. GitHub).</p>
+<ul class="simple">
+<li>User Stories are, in general, less complex than <em>Use Cases</em>
+which are often more highly specified (in terms of e.g. UML diagrams).</li>
+<li>User Stories can be grouped in <strong>epics</strong>. An <strong>epic</strong> story
+is a long and arduous journey; often with multiple parts.</li>
+<li>User Stories can be <a class="reference internal" href="software-development#effort-estimation"><em>estimated</em></a>
+and assigned arbitrary but relatively relevant point values
+with e.g. <a class="reference internal" href="software-development#planning-poker"><em>Planning Poker</em></a> and/or a <a class="reference internal" href="software-development#kanban"><em>Kanban</em></a> web application.</li>
+</ul>
+<p>See also:
+<a class="reference internal" href="software-development#agile"><em>Software Development &gt; Agile</em></a>,
+<a class="reference internal" href="team-building#six-patterns-of-collaboration"><em>Six Patterns of Collaboration</em></a></p>
+</div>
 </div>
 </div>
 

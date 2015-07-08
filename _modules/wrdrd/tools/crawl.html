@@ -248,62 +248,6 @@
             <span class="n">l</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">&#39;target&#39;</span><span class="p">),</span>
             <span class="n">l</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">(),</span>
             <span class="n">nearest_parent</span><span class="p">)</span>
-</div>
-<div class="viewcode-block" id="extract_links_sphinx_almost_rdf"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools#wrdrd.tools.crawl.extract_links_sphinx_almost_rdf">[docs]</a><span class="k">def</span> <span class="nf">extract_links_sphinx_almost_rdf</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">bs</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Walk through headings and extract internal and external links</span>
-
-<span class="sd">    Args:</span>
-<span class="sd">        url (str): URL of the BeautifulSoup object</span>
-<span class="sd">        bs (bs4.BeautifulSoup): BeautifulSoup object</span>
-<span class="sd">    Yields:</span>
-<span class="sd">        Thing: a :py:class:`Thing`</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="c">#@staticmethod</span>
-    <span class="k">def</span> <span class="nf">walk_docs_dom</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="n">filterfunc</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        Walk a Chromium Bookmarks dict recursively; yielding folders and urls</span>
-<span class="sd">        Args:</span>
-<span class="sd">            node (dict): dict to traverse (type:url|folder, children:[]])</span>
-<span class="sd">        Keyword Arguments:</span>
-<span class="sd">            filterfunc (None, True, callable): default, all, True to include</span>
-<span class="sd">        Yields:</span>
-<span class="sd">            namedtuple: Folder or URL namedtuples</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="n">heading_tags</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;h1&#39;</span><span class="p">,</span><span class="s">&#39;h2&#39;</span><span class="p">,</span><span class="s">&#39;h3&#39;</span><span class="p">,</span><span class="s">&#39;h4&#39;</span><span class="p">,</span><span class="s">&#39;h5&#39;</span><span class="p">,</span><span class="s">&#39;h6&#39;</span><span class="p">,</span><span class="s">&#39;h7&#39;</span><span class="p">,</span><span class="s">&#39;h8&#39;</span><span class="p">,</span><span class="s">&#39;h9&#39;</span><span class="p">]</span>
-
-        <span class="n">_type</span> <span class="o">=</span> <span class="n">node</span><span class="o">.</span><span class="n">name</span>
-        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">_type</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span> <span class="ow">and</span> <span class="n">_type</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s">&#39;h&#39;</span><span class="p">:</span>
-            <span class="k">if</span> <span class="p">(</span><span class="n">filterfunc</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">(</span><span class="bp">None</span><span class="p">,</span> <span class="bp">True</span><span class="p">)</span> <span class="ow">and</span> <span class="n">filterfunc</span><span class="p">(</span><span class="n">node</span><span class="p">))</span> <span class="ow">or</span> <span class="bp">True</span><span class="p">:</span>
-                <span class="c"># yield Folder.from_dict(node)</span>
-                <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">node</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">heading_tags</span><span class="p">)</span> <span class="ow">or</span> <span class="p">[]:</span>
-                    <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="n">item</span> <span class="ow">and</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="s">&#39;get&#39;</span><span class="p">)</span> <span class="ow">and</span> <span class="s">&#39;type&#39;</span> <span class="ow">in</span> <span class="n">item</span><span class="p">):</span>
-                        <span class="k">continue</span>
-                    <span class="k">if</span> <span class="n">filterfunc</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">(</span><span class="bp">None</span><span class="p">,</span> <span class="bp">True</span><span class="p">)</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">filterfunc</span><span class="p">(</span><span class="n">item</span><span class="p">):</span>
-                        <span class="k">continue</span>
-                    <span class="n">_item_type</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="n">name</span>
-                    <span class="k">if</span> <span class="n">_item_type</span> <span class="ow">in</span> <span class="n">heading_tags</span><span class="p">:</span>
-                        <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">walk_docs_dom</span><span class="p">(</span>
-                                <span class="n">item</span><span class="p">,</span> <span class="n">filterfunc</span><span class="o">=</span><span class="n">filterfunc</span><span class="p">):</span>
-                            <span class="k">yield</span> <span class="n">b</span>
-                    <span class="k">else</span><span class="p">:</span>
-                        <span class="k">yield</span> <span class="p">(</span><span class="s">&#39;inner else&#39;</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">yield</span> <span class="p">(</span><span class="s">&#39;outer else&#39;</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
-
-    <span class="k">def</span> <span class="nf">test_walk_tree</span><span class="p">():</span>
-        <span class="kn">import</span> <span class="nn">urllib2</span>
-
-        <span class="n">url</span> <span class="o">=</span> <span class="s">&#39;file://&#39;</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">expandvars</span><span class="p">(</span><span class="s">&#39;$WORKON_HOME/wrd/src/docs/docs/_build/singlehtml/index.html&#39;</span><span class="p">)</span>
-        <span class="n">resp</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
-        <span class="n">text</span> <span class="o">=</span> <span class="n">resp</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-        <span class="n">bs</span> <span class="o">=</span> <span class="n">bs4</span><span class="o">.</span><span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
-
-        <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">walk_tree</span><span class="p">(</span><span class="s">&#39;example&#39;</span><span class="p">,</span> <span class="n">bs</span><span class="p">):</span>
-            <span class="k">print</span><span class="p">(</span><span class="nb">repr</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
-
-    <span class="n">test_walk_tree</span><span class="p">()</span>
-
 
 </div>
 <span class="n">Image</span> <span class="o">=</span> <span class="n">namedtuple</span><span class="p">(</span><span class="s">&#39;Image&#39;</span><span class="p">,</span> <span class="p">(</span><span class="s">&#39;loc&#39;</span><span class="p">,</span> <span class="s">&#39;src&#39;</span><span class="p">,</span> <span class="s">&#39;alt&#39;</span><span class="p">,</span> <span class="s">&#39;height&#39;</span><span class="p">,</span> <span class="s">&#39;width&#39;</span><span class="p">,</span> <span class="s">&#39;text&#39;</span><span class="p">))</span>

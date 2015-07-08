@@ -1,6 +1,6 @@
 
 .. index:: Knowledge Engineering
-.. _knowledge-engineering:
+.. _knowledge engineering:
 
 Knowledge Engineering
 ========================
@@ -174,7 +174,7 @@ Entailment
 
 * http://www.w3.org/TR/owl2-profiles/#Introduction
 
-See: :ref:`Data Science <data-science>`
+See: :ref:`data science`
 
 
 .. index:: Data Engineering
@@ -222,10 +222,11 @@ https://en.wikipedia.org/wiki/Index#Computer_science
   file structures (and stream protocols):
 
   * :ref:`XML`
-  * :ref:`RDF` (:ref:`RDFXML`, :ref:`Turtle`, :ref:`n3`, :ref:`rdfa`,
+  * :ref:`RDF` (:ref:`RDF/XML`, :ref:`Turtle`, :ref:`n3`, :ref:`rdfa`,
     :ref:`json-ld`)
-  * :ref:`JSON` (:ref:
+  * :ref:`JSON` (:ref:`json-ld`)
   * :ref:`HTTP`
+
 
 .. index:: Git File Structures
 .. _git file structures:
@@ -297,14 +298,14 @@ and rolling checksums.
 Torrent file structure
 ```````````````````````
 A :term:`bittorrent torrent file` is an encoded manifest
-of tracker, :ref:`DHT`, and :term:`web seed` :term:`URIs <URI>`;
+of tracker, :ref:`DHT`, and :term:`web seed <web seeding>` :term:`URIs <URI>`;
 and segment checksum hashes.
 
 * Like :ref:`MPEG-DASH` and :ref:`HTTP Live Streaming`,
   :ref:`bittorrent` downloads file segments
   over :ref:`http`.
 
-See: :ref:`bittorrent`, :ref:`ndn`, :ref:`web distribution`
+See: :ref:`bittorrent`, :ref:`named data networking`, :ref:`web distribution`
 
 
 .. index:: File Locking
@@ -330,7 +331,7 @@ with concurrency and parallelism.
   :ref:`Windows` requires no additional work beyond
   ``win32con.LOCKFILE_EXCLUSIVE_LOCK``,
   ``win32file.LockFileEx``, and ``win32file.UnlockFileEx``.
-+ CWE-667: Improper Locking:
+* CWE-667: Improper Locking:
   https://cwe.mitre.org/data/definitions/667.html#Relationships
 
   + https://en.wikipedia.org/wiki/File_locking#Problems
@@ -540,7 +541,7 @@ bzip2
 | File Extension: ``.bz2``
 | Homepage: http://bzip.org/
 
-bzip2 is an :ref:`Open Source <open-source>` lossless compression algorithm
+bzip2 is an :ref:`open source` lossless compression algorithm
 based upon the ``Burrows-Wheeler`` algorithm.
 
 * bzip2 is usually slower than :ref:`gzip` or :ref:`zip`,
@@ -667,7 +668,7 @@ LVM
 | Docs: http://www.tldp.org/HOWTO/LVM-HOWTO/index.html
 | Docs:
 
-LVM (*Logical Volume Manager*) is an :ref:`Open Source <open-source>`
+LVM (*Logical Volume Manager*) is an :ref:`open source`
 software disk abstraction layer with snapshotting, copy-on-write,
 online resize and allocation
 
@@ -699,7 +700,7 @@ btrfs
 | Docs: https://help.ubuntu.com/community/btrfs
 
 btrfs (:ref:`B-tree <trees>` *filesystem*) is an
-:ref:`Open Source <open-source>` pooling, snapshotting,
+:ref:`open source` pooling, snapshotting,
 checksumming, deduplicating, union mounting
 copy-on-write on-disk :ref:`Linux` filesystem.
 
@@ -716,7 +717,7 @@ ext
 | Wikipedia: https://en.wikipedia.org/wiki/Ext4
 
 ext2, ext3, and ext4 are the ext (*extended filesystem*)
-:ref:`Open Source <open-source>`
+:ref:`open source`
 on-disk filesystems.
 
 * ext filesystems are the default filesystems of many
@@ -756,20 +757,21 @@ ISO9660
 | Wikipedia: https://en.wikipedia.org/wiki/ISO_9660
 | FileExt: ``.iso``
 
-ISO9660 is an :ref:`ISO` standard for :ref:`disc drive` images
+ISO9660 is an :ref:`ISO` standard for :ref:`disc drive <disc drives>` images
 which specifies a standard for booting from a filesystem image.
 
-* Many :ref:`Operating System` distributions are distributed
+* Many :ref:`Operating System <operating systems>`
+  distributions are distributed
   as :ref:`ISO9660` ``.iso`` files.
 * ISO9660 and :ref:`Linux`:
 
   + An ISO9660 ISO can be *loop mounted*::
 
-    mount -o loop,ro -t iso9660 ./path/to/file.iso /mnt/cdrom
+        mount -o loop,ro -t iso9660 ./path/to/file.iso /mnt/cdrom
 
   + An ISO8660 CD can be *mounted*::
 
-    mount -o ro -t iso9660 /dev/cdrom /mnt/cdrom
+        mount -o ro -t iso9660 /dev/cdrom /mnt/cdrom
 
 * Most CD/DVD burning utilities support ISO9660 ``.iso``
   files.
@@ -848,8 +850,8 @@ Ceph
 | Docs: http://ceph.com/docs/master/radosgw/keystone/
 | Docs: http://ceph.com/docs/master/rbd/rbd-openstack/
 
-Ceph is an :ref:`Open Source <open-source>` network filesystem
-(a :ref:`distributed database <distributed-databases>`
+Ceph is an :ref:`open source` network filesystem
+(a :ref:`distributed database <distributed databases>`
 for files with attributes like owner, group, permissions)
 written in :ref:`C++` and :ref:`Perl`
 which runs over top of one or more on-disk filesystems.
@@ -908,8 +910,8 @@ GlusterFS
 | Docs: https://gluster.readthedocs.org/en/latest/Administrator%20Guide/GlusterFS%20Cinder/
 | Tcp ports: 111, 24007, 24008, 24009, 24010, 24011, 38465:38469
 
-GlusterFS is an :ref:`Open Source <open-source>` network filesystem
-(a :ref:`distributed database <distributed-databases>`
+GlusterFS is an :ref:`open source` network filesystem
+(a :ref:`distributed database <distributed databases>`
 for files with attributes like owner, group, permissions)
 which runs over top of one or more on-disk filesystems.
 
@@ -925,7 +927,7 @@ HDFS
 | Wikipedia: https://en.wikipedia.org/wiki/Apache_Hadoop#HDFS
 
 HDFS (*Hadoop Distributed File System*) is
-an :ref:`Open Source <open-source>`
+an :ref:`open source`
 distributed network filesystem.
 
 * HDFS runs code next to data;
@@ -957,7 +959,7 @@ NFS
 ``````
 | Wikipedia: https://en.wikipedia.org/wiki/NFS
 
-NFS (*Network File System* #TODO) is an :ref:`Open Source <open-source>`
+NFS (*Network File System* #TODO) is an :ref:`open source`
 centralized network filesystem.
 
 
@@ -1054,7 +1056,7 @@ Data Engineering Review
 
 From :ref:`computer engineering` > :ref:`data engineering`:
 
-* :ref:`file systems`
+* :ref:`filesystems`
   (:ref:`mbr`, :ref:`gpt`, :ref:`lvm`, :ref:`btrfs`, :ref:`ext`,
   :ref:`fat`, :ref:`ntfs`, :ref:`hfs+`)
 
@@ -1071,7 +1073,7 @@ From :ref:`computer engineering` > :ref:`data engineering`:
 * :ref:`file structures`
 
 * :ref:`data structures`
-  (:ref:`arrays` (:ref:`matrices`),
+  (:ref:`arrays` (:ref:`matrices <matrix>`),
   :ref:`lists`, :ref:`graphs` (:ref:`trees`))
 
 
@@ -1215,13 +1217,13 @@ Graph Pattern Query Results
 
 * :ref:`Linked Data <linked-data>`
 * :ref:`Semantic Web <semantic-web>`
-* :ref:`Semantic Web Standards <semantic-web-standards>`
+* :ref:`semantic web standards`
 * :ref:`Semantic Web Tools <semantic-web-tools>`
 * :ref:`LDP`
 
 
 .. index:: Distributed Databases
-.. _distributed-databases:
+.. _distributed databases:
 
 Distributed Databases
 ````````````````````````
@@ -1912,7 +1914,7 @@ https://en.wikipedia.org/wiki/Template:Semantic_Web
 
 
 .. index:: Semantic Web Standards
-.. _semantic-web-standards:
+.. _semantic web standards:
 
 Semantic Web Standards
 -----------------------
@@ -1961,7 +1963,7 @@ Reasoners
 
 
 .. index:: Web Standards
-.. _web-standards:
+.. _web standards:
 
 Web Standards
 ---------------
@@ -2061,7 +2063,7 @@ HTTP
 | URI Scheme: ``http://``
 | URI Scheme: ``https://``
 
-HTTP (*HyperText Transfer Protocol*) is an :ref:`Open Source <open-source>`
+HTTP (*HyperText Transfer Protocol*) is an :ref:`open source`
 text-based request-response
 TCP/IP protocol for data interchange.
 
@@ -2086,6 +2088,22 @@ HTTP in RDF
 HTTP-in-RDF is a standard for representing :ref:`HTTP` as :ref:`RDF`.
 
 
+.. index:: HTTPS
+.. _https:
+
+HTTPS
+```````
+| Standard: https://tools.ietf.org/html/rfc2818 (2000)
+| Wikipedia: https://en.wikipedia.org/wiki/HTTPS
+| Wikipedia: https://en.wikipedia.org/wiki/Transport_Layer_Security
+| Wikipedia: https://en.wikipedia.org/wiki/Secure_Sockets_Layer
+
+HTTPS (*HTTP over SSL*) is :ref:`HTTP` wrapped in TLS/SSL.
+
+* TLS (*Transport Layer Security*)
+* SSL (*Secure Sockets Layer*)
+
+
 .. index:: RTMP
 .. _rtmp:
 
@@ -2094,7 +2112,7 @@ RTMP
 | Wikipedia: https://en.wikipedia.org/wiki/Real_Time_Messaging_Protocol
 
 RTMP is a TCP/IP protocol for streaming audio, video, and data
-originally for Flash which is now :ref:`Open Source <open-source>`.
+originally for Flash which is now :ref:`open source`.
 
 * https://en.wikipedia.org/wiki/Real_Time_Messaging_Protocol#Client_software
 
@@ -2106,10 +2124,10 @@ originally for Flash which is now :ref:`Open Source <open-source>`.
   * Adobe Flash Live Media Server
   * :ref:`AWS` S3 HTTP Object Storage, CloudFront :ref:`CDN`
   * Helix Universal Media Server
-  * Red5 (:ref:`Open Source <open-source>`)
-  * :ref:`ffmpeg` (:ref:`Open Source <open-source>`)
-  * :ref:`nginx-rtmp-module` (:ref:`Open Source <open-source>`)
-  * FreeSwitch (:ref:`OpenSource <open-source>`, VoIP, SIP, :ref:`Video Chat`)
+  * Red5 (:ref:`open source`)
+  * :ref:`ffmpeg` (:ref:`open source`)
+  * :ref:`nginx-rtmp-module` (:ref:`open source`)
+  * FreeSwitch (:ref:`OpenSource <open source>`, VoIP, SIP, :ref:`Video Chat`)
 
 * :ref:`WebRTC` solves for all of the RTMP use cases,
   and is becoming as or more widely deployed than Flash Player
@@ -2152,7 +2170,7 @@ WebRTC
 | Standard: http://tools.ietf.org/wg/rtcweb/
 | Docs: https://webrtc.github.io/samples/
 
-WebRTC is a :ref:`web standard <web-standards>` for
+WebRTC is a :ref:`web standard <web standards>` for
 decentralized or centralized
 streaming of audio, video, and data
 in :ref:`browser <browsers>`,
@@ -2168,7 +2186,6 @@ without having to download any plugins.
 
 .. index:: HTTP/2
 .. index:: HTTP2
-.. index:: HTTP2.0
 .. _http2:
 
 HTTP/2
@@ -2177,13 +2194,13 @@ HTTP/2
 | Homepage: https://http2.github.io/
 | Standard: https://http2.github.io/http2-spec/
 | Standard: https://http2.github.io/http2-spec/compression.html
-| Standard: https://tools.ietf.org/html/draft-ietf-httpbis-http2
+| Standard: https://tools.ietf.org/html/rfc7540
+| Docs: https://github.com/http2/http2-spec/wiki/Implementations
 
-HTTP/2 (*HTTP 2.0*) is the newest standard for :ref:`HTTP`.
+HTTP/2 (*HTTP2*) is the newest standard for :ref:`HTTP`.
 
-HTTP/2 is largely derived from the SPDY protocol.
+* HTTP/2 is largely derived from the SPDY protocol.
 
-* https://github.com/http2/http2-spec/wiki/Implementations
 
 
 .. index:: HTML
@@ -2193,7 +2210,7 @@ HTML
 +++++
 | Wikipedia: https://en.wikipedia.org/wiki/HTML
 
-HTML (*HyperText Markup Language*) is a :ref:`Open Source <open-source>`
+HTML (*HyperText Markup Language*) is a :ref:`open source`
 standard for representing
 documents with tags, attributes, and **hyperlinks**.
 
@@ -2403,7 +2420,7 @@ RDF Interfaces
 | Standard: http://www.w3.org/TR/rdf-interfaces/
 | Docs: http://www.w3.org/TR/rdf-interfaces/#high-level-api
 
-RDF Interfaces is an :ref:`Open Source <open-source>` standard
+RDF Interfaces is an :ref:`open source` standard
 for :ref:`RDF` APIs (e.g. as implemented by RDF libraries
 and :ref:`triplestores`.
 

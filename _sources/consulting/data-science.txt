@@ -1,6 +1,6 @@
 
 .. index:: Data Science
-.. _data-science:
+.. _data science:
 
 Data Science
 =============
@@ -20,7 +20,7 @@ https://en.wikipedia.org/wiki/Data
 https://en.wikipedia.org/wiki/Information
 
 https://en.wikipedia.org/wiki/Knowledge
-(see: :ref:`knowledge-engineering`)
+(see: :ref:`knowledge engineering`)
 
 https://en.wikipedia.org/wiki/Wisdom
 
@@ -153,7 +153,7 @@ I'm probably walking outside and it is hot out.
 
 
 .. index:: Data Science Theory
-.. _data-science-theory:
+.. _data science theory:
 
 Theory
 --------
@@ -203,8 +203,8 @@ https://en.wikipedia.org/wiki/Open_science
 
 * https://en.wikipedia.org/wiki/Open_source
 * https://en.wikipedia.org/wiki/Open_standard
-  (:ref:`Web Standards <web-standards>`,
-  :ref:`Semantic Web Standards <semantic-web-standards>`)
+  (:ref:`web standards`,
+  :ref:`semantic web standards`)
 * https://en.wikipedia.org/wiki/Open_data
 
 https://en.wikipedia.org/wiki/Peer_review
@@ -365,7 +365,7 @@ Math Courses
 * https://www.khanacademy.org/math/probability
 * :ref:`Linear Algebra <linear-algebra>`
 * :ref:`Calculus`
-* :ref:`Information Theory <information-theory>`
+* :ref:`information theory`
 * "Mathematics for Computer Science" (CC-BY-SA 3.0)
 
   http://courses.csail.mit.edu/6.042/spring14/mcs.pdf
@@ -427,7 +427,7 @@ Tools
 
 
 .. index:: Information Theory
-.. _information-theory:
+.. _information theory:
 
 Information Theory
 ~~~~~~~~~~~~~~~~~~~~
@@ -613,7 +613,7 @@ https://en.wikipedia.org/wiki/Validated_learning
 
 https://en.wikipedia.org/wiki/Organizational_learning
 
-See: :ref:`Knowledge Engineering <knowledge-engineering>`
+See: :ref:`knowledge engineering`
 
 
 .. index:: Data Mining
@@ -750,8 +750,8 @@ http://www.w3.org/TR/ld-glossary/#x5-star-linked-open-data
    -- http://5stardata.info/
 
 
-See: :ref:`Knowledge Engineering <knowledge-engineering>`,
-:ref:`Semantic Web Standards <semantic-web-standards>`
+See: :ref:`knowledge engineering`,
+:ref:`semantic web standards`
 
 
 .. index:: Data Visualization

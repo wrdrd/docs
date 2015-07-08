@@ -1,6 +1,6 @@
 
 .. index:: Team Building
-.. _team-building:
+.. _team building:
 
 
 Team Building
@@ -220,7 +220,7 @@ Text Templates
 
 
 .. index:: Collaboration Checklist
-.. _collaboration-checklist:
+.. _collaboration checklist:
 
 Collaboration Checklist
 -------------------------
@@ -282,5 +282,5 @@ See also:
 
 * :ref:`Software Engineering > Digital Stand Up Meeting
   <digital stand up meeting>`
-* :ref:`Collaboration Plan <collaboration-plan>`
+* :ref:`collaboration plan`
 

@@ -1,7 +1,7 @@
 
 .. index:: Education Technology
 .. index:: EdTech
-.. _education-technology:
+.. _education technology:
 
 **********************
 Education Technology
@@ -18,13 +18,13 @@ STEM
 STEM (*Science, Technology, Engineering, and Mathematics*)
 is a broad field of R&D fields.
 
-* Science (:ref:`Science`, :ref:`data-science`)
-* Technology (:ref:`computer-science`, :ref:`information-systems`,
-  :ref:`art-design`, :ref:`education-technology`)
-* Engineering (:ref:`knowledge-engineering`,
-  :ref:`software-development`,
-  :ref:`project-management`)
-* :ref:`Mathematics <math>` (:ref:`data-science`)
+* Science (:ref:`Science`, :ref:`data science`)
+* Technology (:ref:`computer science`, :ref:`information systems`,
+  :ref:`art-design`, :ref:`education technology`)
+* Engineering (:ref:`knowledge engineering`,
+  :ref:`software development`,
+  :ref:`project management`)
+* :ref:`Mathematics <math>` (:ref:`data science`)
 
 Why STEM?
 
@@ -34,8 +34,8 @@ Why STEM?
 
 Why CS?
 
-* :ref:`CS <computer-science>` tools are foundational to
-  :ref:`data-science`,
+* :ref:`computer science` tools are foundational to
+  :ref:`data science`,
   which is foundational to :ref:`STEM`,
   which is foundational to :term:`infrastructure`.
 
@@ -121,7 +121,7 @@ ReadTheDocs
 | Source: git https://github.com/rtfd/readthedocs.org
 | Docs: https://read-the-docs.readthedocs.org/en/latest/
 
-ReadTheDocs is a free and :ref:`Open Source <open-source>`
+ReadTheDocs is a free and :ref:`open source`
 web service for publishing :ref:`Sphinx` documentation sets
 which functions like a :ref:`continuous-integration` build server
 and artifact publisher.
@@ -235,7 +235,7 @@ edX
 | Docs: https://open.edx.org/features-roadmap/all
 | Twitter: https://twitter.com/edXOnline
 
-edX is an :ref:`Open Source <open-source>` platform for :ref:`Online Courses`
+edX is an :ref:`open source` platform for :ref:`Online Courses`
 written mostly in :ref:`Python` and :ref:`Javascript`.
 
 
@@ -305,9 +305,9 @@ Jupyter and Learning
 
 Learning Topics:
 
-* :ref:`Computer Science <computer-science>`
+* :ref:`computer science`
 * :ref:`Data Science > Data Learning <data-learning>`
-* :ref:`Software Development <software-development>`
+* :ref:`software development`
 * :ref:`Python`
 * :ref:`awesome-python-testing`
 
@@ -452,7 +452,7 @@ JupyterHub Servers
 
 Knowledge Engineering
 =======================
-See: :ref:`Knowledge Engineering <knowledge-engineering>`
+See: :ref:`knowledge engineering`
 
 .. index:: Linked Curricula Graphs
 .. _linked curricula graphs:
@@ -468,7 +468,7 @@ Linked Curricula Graphs
 
 * [ ] Link each component of the curriculum to a **Concept URI**
 
-  * :ref:`Knowledge Engineering <knowledge-engineering>`
+  * :ref:`knowledge engineering`
     lists a number of **Wikipedia Concept URIs**
 
     Wikipedia (-> DBpedia RDF <- :ref:`LODCloud`))
@@ -517,4 +517,4 @@ OpenBadges Backpack
 | Source: https://github.com/mozilla/openbadges-backpack
 
 
-See also: :ref:`Team Building <team-building>`, :ref:`Jupyter`
+See also: :ref:`team building`, :ref:`Jupyter`
