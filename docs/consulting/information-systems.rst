@@ -1,12 +1,14 @@
 
+.. index:: IS
 .. index:: Information Systems
 .. _information systems:
 
 Information Systems
 ---------------------
-https://en.wikipedia.org/wiki/Information_systems#Types_of_information_systems
+| Wikipedia: https://en.wikipedia.org/wiki/Information_systems
 
-https://en.wikipedia.org/wiki/List_of_collaborative_software
+* https://en.wikipedia.org/wiki/Information_systems#Types_of_information_systems
+* https://en.wikipedia.org/wiki/List_of_collaborative_software
 
 
 .. index:: Information Systems Glossary
@@ -14,9 +16,6 @@ https://en.wikipedia.org/wiki/List_of_collaborative_software
 
 Information Systems Glossary
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. TODO: split this to software development / web-development
-.. ... / computer science
 
 .. glossary::
 
@@ -216,11 +215,12 @@ Choosing Components
 
 
 .. index:: Clouds
+.. index:: Cloud Computing
 .. _clouds:
 
 Clouds
 ~~~~~~~
-https://en.wikipedia.org/wiki/Cloud_computing
+| Wikipedia: https://en.wikipedia.org/wiki/Cloud_computing
 
 https://en.wikipedia.org/wiki/Cloud_computing#Service_models
 
@@ -358,9 +358,8 @@ Cloud Application Layers
 
 SaaS
 +++++++++++++++++++++++
-https://en.wikipedia.org/wiki/Software_as_a_service
-
-https://en.wikipedia.org/wiki/Application_service_provider
+| Wikipedia: https://en.wikipedia.org/wiki/Software_as_a_service
+| Wikipedia: https://en.wikipedia.org/wiki/Application_service_provider
 
 SaaS (*Software-as-a-Service*) is a service provision,
 application lifecycle,
@@ -375,7 +374,7 @@ Examples of SaaS:
 * Travis-CI is a :ref:`SaaS` :ref:`continuous-integration` service
   which pulls and builds from a
   GitHub repository upon receipt of a :term:`Webhook`,
-  that is free for :ref:`Open Source <open-source>` projects
+  that is free for :ref:`open source` projects
 
   https://en.wikipedia.org/wiki/Travis_CI
 
@@ -399,7 +398,7 @@ Examples of SaaS:
 
 PaaS
 ++++++++++++++++++++++
-https://en.wikipedia.org/wiki/Platform_as_a_service
+| Wikipedia: https://en.wikipedia.org/wiki/Platform_as_a_service
 
 PaaS (*Platform-as-a-Service*) platforms
 offer platform APIs
@@ -482,7 +481,7 @@ AppScale
 | Docs: https://github.com/AppScale/appscale/wiki/Logging-in-AppScale
 | Docs: https://github.com/AppScale/appscale/wiki/Managing-Users
 
-AppScale is a completely :ref:`Open Source <open-source>`
+AppScale is a completely :ref:`open source`
 :ref:`PaaS` platform for developing and scaling web applications
 written in
 :ref:`Python`, :ref:`Java`, :ref:`Go`, and `PHP`.
@@ -554,7 +553,7 @@ Deis
 | Docs: http://docs.deis.io/en/latest/using_deis/deploy-application/
 | Docs: http://docs.deis.io/en/latest/using_deis/using-buildpacks/
 
-Deis is an :ref:`Open Source <open-source>` :ref:`PaaS`
+Deis is an :ref:`open source` :ref:`PaaS`
 platform built on :ref:`Docker` and :ref:`CoreOS`
 written in :ref:`Python` and :ref:`Go`.
 
@@ -611,8 +610,8 @@ Heroku is a :ref:`PaaS` Platform.
 .. _IaaS:
 
 IaaS
-+++++++++++++++++++++++++++++++++++++
-https://en.wikipedia.org/wiki/Category:Cloud_infrastructure
+++++++++++++
+| WikipediaCategory: https://en.wikipedia.org/wiki/Category:Cloud_infrastructure
 
 Infrastructure-as-a-Service providers provide a bit more than regular
 hosting services in that they offer something like virtual datacenter
@@ -745,9 +744,8 @@ Python and Rackspace Cloud
 
 Configuration Management
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
-https://en.wikipedia.org/wiki/Configuration_management#Software
-
-https://en.wikipedia.org/wiki/Software_configuration_management
+| Wikipedia: https://en.wikipedia.org/wiki/Configuration_management#Software
+| Wikipedia: https://en.wikipedia.org/wiki/Software_configuration_management
 
 https://en.wikipedia.org/wiki/Comparison_of_open-source_configuration_management_software
 
@@ -759,7 +757,7 @@ See: :ref:`Tools > Configuration Managment <configuration management>`
 
 Information Security
 ~~~~~~~~~~~~~~~~~~~~~
-https://en.wikipedia.org/wiki/Information_security
+| Wikipedia: https://en.wikipedia.org/wiki/Information_security
 
 Managing risk and uncertainty.
 
@@ -777,7 +775,7 @@ See: :ref:`WebSec`
 
 Confidentiality
 ++++++++++++++++
-https://en.wikipedia.org/wiki/Confidentiality
+| Wikipedia: https://en.wikipedia.org/wiki/Confidentiality
 
 
 .. index:: Integrity
@@ -785,7 +783,7 @@ https://en.wikipedia.org/wiki/Confidentiality
 
 Integrity
 ++++++++++
-https://en.wikipedia.org/wiki/Data_integrity
+| Wikipedia: https://en.wikipedia.org/wiki/Data_integrity
 
 
 .. index:: Availability
@@ -793,7 +791,7 @@ https://en.wikipedia.org/wiki/Data_integrity
 
 Availability
 +++++++++++++
-https://en.wikipedia.org/wiki/Availability
+| Wikipedia: https://en.wikipedia.org/wiki/Availability
 
 https://en.wikipedia.org/wiki/Service-level_agreement
 
@@ -803,7 +801,7 @@ https://en.wikipedia.org/wiki/Service-level_agreement
 
 Business Continuity
 ~~~~~~~~~~~~~~~~~~~~
-https://en.wikipedia.org/wiki/Business_continuity
+| Wikipedia: https://en.wikipedia.org/wiki/Business_continuity
 
 https://en.wikipedia.org/wiki/Business_continuity_planning
 
@@ -817,7 +815,7 @@ See: `Information Security`_ (`Availability`_)
 
 Backups
 ++++++++
-https://en.wikipedia.org/wiki/Backup
+| Wikipedia: https://en.wikipedia.org/wiki/Backup
 
 
 .. index:: Reliability
@@ -825,7 +823,7 @@ https://en.wikipedia.org/wiki/Backup
 
 Reliability
 +++++++++++
-https://en.wikipedia.org/wiki/Reliability_engineering
+| Wikipedia: https://en.wikipedia.org/wiki/Reliability_engineering
 
 `<https://en.wikipedia.org/wiki/Redundancy_(engineering)>`_
 
@@ -880,6 +878,7 @@ Google Apps
 
 * https://www.google.com/enterprise/marketplace/
 
+
 .. index:: Handling Money
 .. index:: Transaction Processing
 .. _handling-money:
@@ -896,7 +895,7 @@ https://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard
 
 Accounting
 +++++++++++
-https://en.wikipedia.org/wiki/Accounting
+| Wikipedia: https://en.wikipedia.org/wiki/Accounting
 
 https://en.wikipedia.org/wiki/Double-entry_bookkeeping_system
 
@@ -912,7 +911,7 @@ https://en.wikipedia.org/wiki/Business_valuation
 
 GNUCash
 `````````
-https://en.wikipedia.org/wiki/GnuCash
+| Wikipedia: https://en.wikipedia.org/wiki/GnuCash
 
 * Free and Open Source
 * Personal Accounting
@@ -924,7 +923,7 @@ https://en.wikipedia.org/wiki/GnuCash
 
 Quicken
 `````````
-https://en.wikipedia.org/wiki/Quicken
+| Wikipedia: https://en.wikipedia.org/wiki/Quicken
 
 * Personal Accounting
 * USA Version
@@ -936,7 +935,7 @@ https://en.wikipedia.org/wiki/Quicken
 
 QuickBooks
 ````````````
-https://en.wikipedia.org/wiki/QuickBooks
+| Wikipedia: https://en.wikipedia.org/wiki/QuickBooks
 
 * Small Business Accounting
 * Square integrates with QuickBooks
@@ -955,7 +954,7 @@ Payments
 
 Amazon Payments
 `````````````````
-https://en.wikipedia.org/wiki/Amazon_Payments
+| Wikipedia: https://en.wikipedia.org/wiki/Amazon_Payments
 
 
 .. index:: Apple Pay
@@ -963,7 +962,7 @@ https://en.wikipedia.org/wiki/Amazon_Payments
 
 Apple Pay
 ``````````
-https://en.wikipedia.org/wiki/Apple_Pay
+| Wikipedia: https://en.wikipedia.org/wiki/Apple_Pay
 
 
 .. index:: Google Wallet
@@ -972,9 +971,9 @@ https://en.wikipedia.org/wiki/Apple_Pay
 
 Google Wallet
 ``````````````
-https://en.wikipedia.org/wiki/Google_Wallet
+| Wikipedia: https://en.wikipedia.org/wiki/Google_Wallet
 
-https://en.wikipedia.org/wiki/Google_Checkout
+* https://en.wikipedia.org/wiki/Google_Checkout
 
 
 .. index:: PayPal
@@ -982,7 +981,7 @@ https://en.wikipedia.org/wiki/Google_Checkout
 
 PayPal
 ```````
-https://en.wikipedia.org/wiki/PayPal
+| Wikipedia: https://en.wikipedia.org/wiki/PayPal
 
 
 .. index:: Square
@@ -990,7 +989,7 @@ https://en.wikipedia.org/wiki/PayPal
 
 Square
 ````````
-`<https://en.wikipedia.org/wiki/Square,_Inc.>`__
+| Wikipedia: `<https://en.wikipedia.org/wiki/Square,_Inc.>`__
 
 https://squareup.com/
 
@@ -1003,6 +1002,7 @@ https://squareup.com/
 * Square Analytics (sales reporting)
 * Square Capital (business funding)
 * Square Invoices (online invoicing)
+* Square Payroll (employee payroll)
 
 
 .. index:: Sales Information Systems

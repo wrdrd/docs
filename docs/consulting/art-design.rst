@@ -73,7 +73,7 @@ GIMP
 | Docs: http://wiki.gimp.org/wiki/Hacking:Developer_FAQ
 
 GIMP (GNU Image Manipulation Program) is an
-extensible :ref:`Open Source <open-source>`
+extensible :ref:`open source`
 raster image editor
 (:ref:`BMP`,
 :ref:`PNG`,
@@ -143,7 +143,7 @@ Inkscape
 | Docs: https://inkscape.org/en/doc/keys091.html
 | Docs: https://inkscape.org/en/doc/inkscape-man.html
 
-Inkscape is an :ref:`Open Source <open-source>` vector graphics (:ref:`SVG`
+Inkscape is an :ref:`open source` vector graphics (:ref:`SVG`
 :ref:`XML`) editor.
 
 :ref:`SVG` graphics can scale to very large and very small
@@ -206,7 +206,7 @@ Blender
 | Docs: https://www.blender.org/manual/
 | Docs: https://www.blender.org/api/250PythonDoc/
 
-Blender is an :ref:`Open Source <open-source>` 3D computer graphics software
+Blender is an :ref:`open source` 3D computer graphics software
 for movies, apps, and games
 written in :ref:`C`, :ref:`C++`, and :ref:`Python`.
 
@@ -368,7 +368,7 @@ CinePaint
 | Homepage: http://sourceforge.net/projects/cinepaint/
 | Source: http://sourceforge.net/p/cinepaint/code/
 
-CinePaint is an :ref:`Open Source <open-source>` tool
+CinePaint is an :ref:`open source` tool
 for hand-painting video frames.
 
 
@@ -478,7 +478,7 @@ LiVES
 | Docs: http://lives-video.com/doxygen/LiVES/files.html
 | Video: http://sourceforge.net/projects/lives/
 
-LiVES is an :ref:`Open Source <open-source>`
+LiVES is an :ref:`open source`
 video editing and realtime :ref:`VJing <vj>` software tool
 written in :ref:`C`, :ref:`Perl`, and :ref:`Python`.
 
@@ -591,7 +591,7 @@ LilyPond
 | Docs: http://www.lilypond.org/manuals.html
 | Docs: http://www.lilypond.org/doc/v2.19/Documentation/contributor-big-page.html
 
-LilyPond is an :ref:`Open Source <open-source>`
+LilyPond is an :ref:`open source`
 software tool for writing and engraving musical score compositions
 with support for
 :ref:`MIDI`,
@@ -611,7 +611,7 @@ MuseScore
 | Docs: https://musescore.org/en/handbook
 | Docs: https://musescore.org/en/development
 
-MuseScore is an :ref:`Open Source <open-source>`
+MuseScore is an :ref:`open source`
 software tool for writing and engraving
 musical score compositions
 with support for
@@ -683,7 +683,7 @@ Rosegarden
 | Wikipedia: https://en.wikipedia.org/wiki/Rosegarden
 | Homepage: http://www.rosegardenmusic.com/
 
-Rosegarden is an :ref:`Open Source <open-source>`
+Rosegarden is an :ref:`open source`
 digital audio workstation for score composition.
 
     - :ref:`MIDI` and Hydrogen file import
@@ -753,7 +753,7 @@ ChucK
 | Docs: http://chuck.cs.princeton.edu/doc/program/
 | Docs: http://chuck.cs.princeton.edu/doc/program/otfp.html
 
-Chuck is an :ref:`Open Source <open-source>`
+Chuck is an :ref:`open source`
 realtime, concurrent :ref:`musical composition` :ref:`audio synthesis`
 programming language.
 
@@ -777,7 +777,7 @@ Csound
 | Docs: http://csound.github.io/docs/manual/index.html
 | Docs: http://booki.flossmanuals.net/csound/introduction/
 
-Csound is an :ref:`Open Source <open-source>`
+Csound is an :ref:`open source`
 :ref:`musical composition` :ref:`audio synthesis`
 programming library API.
 
@@ -821,7 +821,7 @@ Hydrogen
 | Docs: http://hydrogen-music.org/hcms/node/393
 | Docs: http://hydrogen-music.org/hcms/node/5
 
-Hydrogen is an :ref:`Open Source <open-source>` drum machine
+Hydrogen is an :ref:`open source` drum machine
 software with support for :ref:`JACK`, ALSA, :ref:`MIDI`, and drumkits.
 
 * Hydogen is included in :ref:`DreamStudio`.
@@ -938,7 +938,7 @@ Ardour
 | Homepage: https://ardour.org/
 |
 
-Ardour is an :ref:`Open Source <open-source>`
+Ardour is an :ref:`open source`
 Digital Audio Workstation (DAW) for multi-track recording,
 editing, and mixing.
 
@@ -966,7 +966,7 @@ Audacity
 | Docs: http://wiki.audacityteam.org/wiki/Creating_your_own_Plug-in
 | Docs: http://wiki.audacityteam.org/wiki/Category:Tutorial
 
-Audacity is an :ref:`Open Source <open-source>`
+Audacity is an :ref:`open source`
 sound recording and editing software tool.
 
 * Audacity supports LADSPA, and LV2
@@ -984,7 +984,7 @@ FLAC
 | Source: git https://git.xiph.org/flac.git
 | Docs: https://xiph.org/flac/documentation.html
 
-FLAC is an :ref:`Open Source <open-source>` lossless audio codec.
+FLAC is an :ref:`open source` lossless audio codec.
 
 * :ref:`FLAC` files are, on average, like 10x (TODO ?) the
   file size of e.g. :ref:`MP3`, because they encode the full spectrum.
@@ -1026,7 +1026,7 @@ LADSPA
 | Homepage: http://www.ladspa.org/
 
 LADSPA ("Linux Audio Developer's Simple Plugin API") is
-an :ref:`Open Source <open-source>`
+an :ref:`open source`
 standard for audio filters and effects
 written in :ref:`C`.
 
@@ -1050,7 +1050,7 @@ Mixxx
 | Docs: http://mixxx.org/wiki/doku.php/hardware_compatibility#sound_cards
 | Docs: http://mixxx.org/wiki/doku.php/hardware_compatibility#controller_mappings
 
-Mixxx is an :ref:`Open Source <open-source>`
+Mixxx is an :ref:`open source`
 sound recording, mixing, editing, beatmatching, and production
 software tool
 with :ref:`MIDI` and HID :ref:`DJ` controller support
@@ -1105,7 +1105,7 @@ PulseAudio
 | Docs: https://wiki.gentoo.org/wiki/PulseAudio
 | Docs: http://mpd.wikia.com/wiki/PulseAudio
 
-PulseAudio is an :ref:`Open Source <open-source>` realtime sound server.
+PulseAudio is an :ref:`open source` realtime sound server.
 
   * How can I use PulseAudio to stream music from my main PC to my LAN with multiple PCs with speakers?
   * How can I use PulseAudio to share a single LINE-IN/MIC jack on the entire LAN?
@@ -1300,7 +1300,7 @@ ProjectM
 | Project: http://sourceforge.net/projects/projectm/
 | Source: git git://git.code.sf.net/p/projectm/code
 
-ProjectM is an :ref:`Open Source <open-source>` implementation
+ProjectM is an :ref:`open source` implementation
 of :ref:`MilkDrop` with :ref:`OpenGL`.
 
 * :ref:`MilkDrop Presets` work with ProjectM
@@ -1386,7 +1386,7 @@ Popcorn Maker
 ~~~~~~~~~~~~~~
 | Homepage: https://popcorn.webmaker.org/
 
-Popcorn Maker is an :ref:`Open Source <open-source>`
+Popcorn Maker is an :ref:`open source`
 tool for creating multitrack web media presentations.
 
 * Popcorn Maker is a Mozilla Webmaker tool: https://webmaker.org/en-US/tools
@@ -1410,7 +1410,7 @@ other tools support commenting on points or ranges of timecodes
 ---------------------
 OpenAnnotation
 ---------------------
-:ref:`OpenAnnotation <OA>` is an :ref:`Open Source <open-source>`
+:ref:`OpenAnnotation <OA>` is an :ref:`open source`
 :ref:`RDF` standard for commenting
 on things with URLs and URIs.
 
@@ -1445,7 +1445,7 @@ XSPF
 | Standard: http://xspf.org/xspf-v1.html
 | Docs: http://xspf.org/applications/
 
-XSPF (*XML Shareable Playlist Format*) is an :ref:`Open Source <open-source>` 
+XSPF (*XML Shareable Playlist Format*) is an :ref:`open source` 
 media playlist format for files with :term:`URIs <uri>`, :term:`URNs <urn>`,
 and :term:`URLs <url>`.
 
@@ -1473,7 +1473,7 @@ JSPF
 ------
 | Homepage: http://xspf.org/jspf/
 
-JSPF (*:ref:`JSON` Shareable Playlist Format*) is an :ref:`Open Source <open-source>`
+JSPF (*:ref:`JSON` Shareable Playlist Format*) is an :ref:`open source`
 media playlist format for files with :term:`URIs <uri>`, :term:`URNs <urn>`,
 and :term:`URLs <url>`.
 
@@ -1829,7 +1829,7 @@ nginx-rtmp-module
 | Docs: https://github.com/arut/nginx-rtmp-module/wiki
 | Docs: https://github.com/arut/nginx-rtmp-module/wiki/Installing-on-Ubuntu-using-PPAs
 
-nginx-rtmp-module is an :ref:`Open Source <open-source>`
+nginx-rtmp-module is an :ref:`open source`
 module for the :ref:`nginx` web server
 which implements :ref:`RTMP`, :ref:`HTTP Live Streaming`, and :ref:`MPEG-DASH`
 for hosting streaming audio and video
@@ -1928,7 +1928,7 @@ with lots of great :ref:`packages`
 and a kernel tuned for media production.
 
 * Ubuntu Studio includes software with a diverse set of
-  all Free and :ref:`Open Source <open-source>` software licenses.
+  all Free and :ref:`open source` software licenses.
 
 
 .. index:: VLC

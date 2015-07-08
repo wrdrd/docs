@@ -305,7 +305,7 @@ and segment checksum hashes.
   :ref:`bittorrent` downloads file segments
   over :ref:`http`.
 
-See: :ref:`bittorrent`, :ref:`ndn`, :ref:`web distribution`
+See: :ref:`bittorrent`, :ref:`named data networking`, :ref:`web distribution`
 
 
 .. index:: File Locking
@@ -541,7 +541,7 @@ bzip2
 | File Extension: ``.bz2``
 | Homepage: http://bzip.org/
 
-bzip2 is an :ref:`Open Source <open-source>` lossless compression algorithm
+bzip2 is an :ref:`open source` lossless compression algorithm
 based upon the ``Burrows-Wheeler`` algorithm.
 
 * bzip2 is usually slower than :ref:`gzip` or :ref:`zip`,
@@ -668,7 +668,7 @@ LVM
 | Docs: http://www.tldp.org/HOWTO/LVM-HOWTO/index.html
 | Docs:
 
-LVM (*Logical Volume Manager*) is an :ref:`Open Source <open-source>`
+LVM (*Logical Volume Manager*) is an :ref:`open source`
 software disk abstraction layer with snapshotting, copy-on-write,
 online resize and allocation
 
@@ -700,7 +700,7 @@ btrfs
 | Docs: https://help.ubuntu.com/community/btrfs
 
 btrfs (:ref:`B-tree <trees>` *filesystem*) is an
-:ref:`Open Source <open-source>` pooling, snapshotting,
+:ref:`open source` pooling, snapshotting,
 checksumming, deduplicating, union mounting
 copy-on-write on-disk :ref:`Linux` filesystem.
 
@@ -717,7 +717,7 @@ ext
 | Wikipedia: https://en.wikipedia.org/wiki/Ext4
 
 ext2, ext3, and ext4 are the ext (*extended filesystem*)
-:ref:`Open Source <open-source>`
+:ref:`open source`
 on-disk filesystems.
 
 * ext filesystems are the default filesystems of many
@@ -850,7 +850,7 @@ Ceph
 | Docs: http://ceph.com/docs/master/radosgw/keystone/
 | Docs: http://ceph.com/docs/master/rbd/rbd-openstack/
 
-Ceph is an :ref:`Open Source <open-source>` network filesystem
+Ceph is an :ref:`open source` network filesystem
 (a :ref:`distributed database <distributed databases>`
 for files with attributes like owner, group, permissions)
 written in :ref:`C++` and :ref:`Perl`
@@ -910,7 +910,7 @@ GlusterFS
 | Docs: https://gluster.readthedocs.org/en/latest/Administrator%20Guide/GlusterFS%20Cinder/
 | Tcp ports: 111, 24007, 24008, 24009, 24010, 24011, 38465:38469
 
-GlusterFS is an :ref:`Open Source <open-source>` network filesystem
+GlusterFS is an :ref:`open source` network filesystem
 (a :ref:`distributed database <distributed databases>`
 for files with attributes like owner, group, permissions)
 which runs over top of one or more on-disk filesystems.
@@ -927,7 +927,7 @@ HDFS
 | Wikipedia: https://en.wikipedia.org/wiki/Apache_Hadoop#HDFS
 
 HDFS (*Hadoop Distributed File System*) is
-an :ref:`Open Source <open-source>`
+an :ref:`open source`
 distributed network filesystem.
 
 * HDFS runs code next to data;
@@ -959,7 +959,7 @@ NFS
 ``````
 | Wikipedia: https://en.wikipedia.org/wiki/NFS
 
-NFS (*Network File System* #TODO) is an :ref:`Open Source <open-source>`
+NFS (*Network File System* #TODO) is an :ref:`open source`
 centralized network filesystem.
 
 
@@ -1073,7 +1073,7 @@ From :ref:`computer engineering` > :ref:`data engineering`:
 * :ref:`file structures`
 
 * :ref:`data structures`
-  (:ref:`arrays` (:ref:`matrices`),
+  (:ref:`arrays` (:ref:`matrices <matrix>`),
   :ref:`lists`, :ref:`graphs` (:ref:`trees`))
 
 
@@ -2063,7 +2063,7 @@ HTTP
 | URI Scheme: ``http://``
 | URI Scheme: ``https://``
 
-HTTP (*HyperText Transfer Protocol*) is an :ref:`Open Source <open-source>`
+HTTP (*HyperText Transfer Protocol*) is an :ref:`open source`
 text-based request-response
 TCP/IP protocol for data interchange.
 
@@ -2112,7 +2112,7 @@ RTMP
 | Wikipedia: https://en.wikipedia.org/wiki/Real_Time_Messaging_Protocol
 
 RTMP is a TCP/IP protocol for streaming audio, video, and data
-originally for Flash which is now :ref:`Open Source <open-source>`.
+originally for Flash which is now :ref:`open source`.
 
 * https://en.wikipedia.org/wiki/Real_Time_Messaging_Protocol#Client_software
 
@@ -2124,10 +2124,10 @@ originally for Flash which is now :ref:`Open Source <open-source>`.
   * Adobe Flash Live Media Server
   * :ref:`AWS` S3 HTTP Object Storage, CloudFront :ref:`CDN`
   * Helix Universal Media Server
-  * Red5 (:ref:`Open Source <open-source>`)
-  * :ref:`ffmpeg` (:ref:`Open Source <open-source>`)
-  * :ref:`nginx-rtmp-module` (:ref:`Open Source <open-source>`)
-  * FreeSwitch (:ref:`OpenSource <open-source>`, VoIP, SIP, :ref:`Video Chat`)
+  * Red5 (:ref:`open source`)
+  * :ref:`ffmpeg` (:ref:`open source`)
+  * :ref:`nginx-rtmp-module` (:ref:`open source`)
+  * FreeSwitch (:ref:`OpenSource <open source>`, VoIP, SIP, :ref:`Video Chat`)
 
 * :ref:`WebRTC` solves for all of the RTMP use cases,
   and is becoming as or more widely deployed than Flash Player
@@ -2210,7 +2210,7 @@ HTML
 +++++
 | Wikipedia: https://en.wikipedia.org/wiki/HTML
 
-HTML (*HyperText Markup Language*) is a :ref:`Open Source <open-source>`
+HTML (*HyperText Markup Language*) is a :ref:`open source`
 standard for representing
 documents with tags, attributes, and **hyperlinks**.
 
@@ -2420,7 +2420,7 @@ RDF Interfaces
 | Standard: http://www.w3.org/TR/rdf-interfaces/
 | Docs: http://www.w3.org/TR/rdf-interfaces/#high-level-api
 
-RDF Interfaces is an :ref:`Open Source <open-source>` standard
+RDF Interfaces is an :ref:`open source` standard
 for :ref:`RDF` APIs (e.g. as implemented by RDF libraries
 and :ref:`triplestores`.
 

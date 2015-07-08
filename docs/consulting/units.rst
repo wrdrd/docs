@@ -939,8 +939,8 @@ pound
 | Abbr: ``lb``
 | Abbr: ``lbm``
 
-* Conversion: 1 :ref:`lb` == 16 :ref:`ounces <ounce>`
-* Conversion: 1 :ref:`lb` == 448 :ref:`grams <gram>`
+* Conversion: 1 :ref:`lb` == 16 :ref:`ounces (oz) <oz>`
+* Conversion: 1 :ref:`lb` == 448 :ref:`grams (g) <gram>`
 * Conversion: 1 :ref:`lb` == 0.45359237 kg (kilo- :ref:`grams <gram>`)
 
 

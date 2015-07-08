@@ -121,7 +121,7 @@ ReadTheDocs
 | Source: git https://github.com/rtfd/readthedocs.org
 | Docs: https://read-the-docs.readthedocs.org/en/latest/
 
-ReadTheDocs is a free and :ref:`Open Source <open-source>`
+ReadTheDocs is a free and :ref:`open source`
 web service for publishing :ref:`Sphinx` documentation sets
 which functions like a :ref:`continuous-integration` build server
 and artifact publisher.
@@ -235,7 +235,7 @@ edX
 | Docs: https://open.edx.org/features-roadmap/all
 | Twitter: https://twitter.com/edXOnline
 
-edX is an :ref:`Open Source <open-source>` platform for :ref:`Online Courses`
+edX is an :ref:`open source` platform for :ref:`Online Courses`
 written mostly in :ref:`Python` and :ref:`Javascript`.
 
 

@@ -348,7 +348,7 @@ Unified Process
 | EPFWiki: http://epf.eclipse.org/wikis/openup/
 
 * "Rational Unified Process" (RUP)
-* OpenUP is an :ref:`Open Source <open-source>` Unified Process
+* OpenUP is an :ref:`open source` Unified Process
 
 
 .. index:: Scrum
@@ -368,7 +368,7 @@ Scrum
 .. index:: Software Development Effort Estimation
 .. index:: Effort Estimation
 .. index:: Planning Poker
-.. _effort-estimation:
+.. _effort estimation:
 
 Effort Estimation
 ~~~~~~~~~~~~~~~~~~~

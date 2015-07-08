@@ -1,7 +1,7 @@
 
 
 .. index:: Open Source
-.. _open-source:
+.. _open source:
 
 Open Source
 =============
@@ -20,7 +20,7 @@ https://en.wikipedia.org/wiki/Open-source_movement
 
 
 .. index:: Open Source Licensing
-.. _open-source-licensing:
+.. _open source licensing:
 
 Open Source Licensing
 -----------------------

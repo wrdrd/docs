@@ -231,6 +231,7 @@ ExpressCard
 * ExpressCard supersedes the :ref:`PCMCIA` (PC Card, CardBus)
   standards for smaller-form-factor expansion cards.
 
+
 .. index:: PCI-e
 .. _pci-e:
 
@@ -239,6 +240,8 @@ PCI-e
 | Wikipedia: https://en.wikipedia.org/wiki/PCI_Express
 
 
+.. index:: Video Card
+.. _video card:
 
 
 Video Card

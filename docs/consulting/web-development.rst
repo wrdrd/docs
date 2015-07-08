@@ -599,13 +599,13 @@ User Stories
 User Stories are an :ref:`agile` :ref:`technique <seven layer model of collaboration>`
 for capturing structured requires on *cards* (or as *issues* in e.g. GitHub).
 
-* User Stories can be :ref:`estimated <software development estimation>`
-  and assigned arbitrary but relatively relevant point values
-  with e.g. :ref:`planning poker` and/or a :ref:`kanban` web application.
 * User Stories are, in general, less complex than *Use Cases*
   which are often more highly specified (in terms of e.g. UML diagrams).
 * User Stories can be grouped in **epics**. An **epic** story
   is a long and arduous journey; often with multiple parts.
+* User Stories can be :ref:`estimated <effort estimation>`
+  and assigned arbitrary but relatively relevant point values
+  with e.g. :ref:`planning poker` and/or a :ref:`kanban` web application.
 
 
 See also:
