@@ -613,13 +613,51 @@ Filesystems
 ++++++++++++++
 | Wikipedia: https://en.wikipedia.org/wiki/File_system
 
-File systems determine how files are represented in a persistent
-physical medium.
+Filesystems (*file systems*) determine how files are 
+represented in a persistent physical medium.
 
 * On-disk filesystems determine where and how redundantly data is stored
-* On-disk filesystems: :ref:`ext`, :ref:`btrfs`
-* Networked filesystems link disk storage pools with other resources
-* Networked filesystems: :ref:`Ceph`, :ref:`GlusterFS`, :ref:`Bittorrent`
+* On-disk filesystems: :ref:`ext`, :ref:`btrfs`,
+  :ref:`FAT`, :ref:`NTFS`, :ref:`HFS+`
+* :ref:`network filesystems` link disk storage pools with other resources
+  (e.g. :ref:`NFS`, :ref:`Ceph`, :ref:`GlusterFS`)
+
+
+.. index:: RAID
+.. _raid:
+
+RAID
+``````
+| Wikipedia: https://en.wikipedia.org/wiki/RAID
+
+RAID (*redundant array of independent disks*)
+is set of configurations for :ref:`hard drives` and :ref:`SSDs <ssd>`
+to *stripe* and/or *mirror* with *parity*. 
+
+::
+
+  RAID 0 -- striping,        -,             no parity ... throughput
+  RAID 1 -- no striping,  mirroring,        no parity ... 
+  RAID 2 -- bit striping,    -,             no parity ... legacy
+  RAID 3 -- byte striping,   -,      dedicated parity ... uncommon
+  RAID 4 -- block striping,  -,      dedicated parity
+  RAID 5 -- block striping,  -,    distributed parity ... min. 3; n-1 rebuild
+  RAID 6 -- block striping,  -, 2x distributed parity
+
+RAID Implementations:
+
+* https://en.wikipedia.org/wiki/RAID#Software-based
+* https://en.wikipedia.org/wiki/RAID#Firmware-_and_driver-based ("*fake RAID*")
+
+* Data Scrubbing
+    Data scrubbing is a technique for checking
+    for inconsistencies between redundant copies of data
+
+    Data scrubbing is routinely part of RAID
+    (with *mirrors* and/or *parity* bits).
+
+    https://en.wikipedia.org/wiki/Data_scrubbing
+
 
 .. index:: MBR
 .. _mbr:
@@ -817,11 +855,59 @@ NTFS
 
 NTFS is a proprietary journaling filesytem.
 
-* Windows machines since Windows NT 3.1 and Windows XP
+* :ref:`Windows` machines since Windows NT 3.1 and Windows XP
   default to NTFS filesystems.
-* Non-windows machines can access NTFS partitions through
+* Non-Windows machines can access NTFS partitions through
   NTFS-3G: https://en.wikipedia.org/wiki/NTFS-3G
 
+
+.. index:: FUSE
+.. _fuse:
+
+FUSE
+`````
+| Wikipedia: https://en.wikipedia.org/wiki/Filesystem_in_Userspace
+| Homepage: http://fuse.sourceforge.net/
+| Download: http://sourceforge.net/projects/fuse/files/fuse-2.X/
+| Source: git http://git.code.sf.net/p/fuse/fuse
+| Docs: http://fuse.sourceforge.net/doxygen/index.html
+| Docs: http://sourceforge.net/p/fuse/wiki/FileSystems/
+| Docs: http://sourceforge.net/p/fuse/wiki/LanguageBindings/
+| Docs: http://sourceforge.net/p/fuse/wiki/OperatingSystems/
+
+FUSE (*Filesystem in Userspace*) is a userspace filesystem API
+for implementing filesystems in userspace.
+
+* FUSE support is included in the :ref:`Linux` kernel since 
+* FUSE is available for most :ref:`POSIX` platforms.
+
+Interesting FUSE implementations:
+
+* https://pythonhosted.org/fs/ is a :ref:`Python` :term:`language api`
+  interface which supports `FUSE`.
+* There are FUSE bindings for :ref:`Hadoop` :ref:`HDFS`.
+* :ref:`Ceph` can be mounted with/over/through `FUSE`.
+* :ref:`GlusterFS` can be mounted with/over/through `FUSE`.
+* :ref:`NTFS`-3G mounts volumes with FUSE.
+* virtualbox-fuse supports mounting of :ref:`virtualbox` VDI images with FUSE.
+* :ref:`SSHFS`, GitFS, GmailFS, GdriveFS, WikipediaFS and :ref:`Gnome` GVFS
+  are all FUSE filesystems.
+
+
+.. index:: SSHFS
+.. _sshfs:
+
+SSHFS
+```````
+| Wikipedia: https://en.wikipedia.org/wiki/SSHFS
+| Homepage: http://fuse.sourceforge.net/sshfs.html
+| Download: http://sourceforge.net/projects/fuse/files/sshfs-fuse/
+| Source: git http://git.code.sf.net/p/fuse/sshfs
+| Docs: https://wiki.archlinux.org/index.php/Sshfs
+| Docs: https://help.ubuntu.com/community/SSHFS
+| Docs: https://github.com/osxfuse/osxfuse/wiki/SSHFS
+
+SSHFS is a :ref:`FUSE` filesystem for mounting remote directories over SSH.
 
 
 
@@ -831,6 +917,7 @@ NTFS is a proprietary journaling filesytem.
 
 Network Filesystems
 +++++++++++++++++++++
+| Wikipedia: `<https://en.wikipedia.org/wiki/Network_filesystem>`__
 
 
 .. index:: Ceph
@@ -856,14 +943,14 @@ for files with attributes like owner, group, permissions)
 written in :ref:`C++` and :ref:`Perl`
 which runs over top of one or more on-disk filesystems.
 
-* Ceph Object Gateway (*radosgw*) -- :term:`RESTful API`,
-  :ref:`AWS` S3 API, :ref:`OpenStack` Swift API,
-  :ref:`OpenStack` Keystone authentication
 * Ceph Block Device (*rbd*) -- striping, caching, snapshots, copy-on-write,
   :ref:`kvm`, :ref:`libvirt`, :ref:`OpenStack` Cinder block storage
 * Ceph Filesystem (*cephfs*) -- :ref:`POSIX`
   :ref:`filesystem <filesystems>` with
-  FUSE, NFS, CIFS, and Hadoop HDFS APIs
+  :ref:`FUSE`, :ref:`NFS`, :ref:`CIFS`, and :ref:`HDFS` APIs
+* Ceph Object Gateway (*radosgw*) -- :term:`RESTful API`,
+  :ref:`AWS` S3 API, :ref:`OpenStack` Swift API,
+  :ref:`OpenStack` Keystone authentication
 
 
 .. index:: CIFS
