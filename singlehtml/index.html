@@ -650,6 +650,11 @@
 <li class="toctree-l4"><a class="reference internal" href="index.html#object-relational-mapping">Object Relational Mapping</a></li>
 <li class="toctree-l4"><a class="reference internal" href="index.html#relational-databases">Relational Databases</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="index.html#sql">SQL</a></li>
+<li class="toctree-l5"><a class="reference internal" href="index.html#drizzle">Drizzle</a></li>
+<li class="toctree-l5"><a class="reference internal" href="index.html#mysql">MySQL</a></li>
+<li class="toctree-l5"><a class="reference internal" href="index.html#postgresql">PostgreSQL</a></li>
+<li class="toctree-l5"><a class="reference internal" href="index.html#sqlite">SQLite</a></li>
+<li class="toctree-l5"><a class="reference internal" href="index.html#virtuoso">Virtuoso</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="index.html#nosql-databases">NoSQL Databases</a></li>
@@ -657,11 +662,15 @@
 <li class="toctree-l4"><a class="reference internal" href="index.html#rdf-triplestores">RDF Triplestores</a></li>
 <li class="toctree-l4"><a class="reference internal" href="index.html#distributed-databases">Distributed Databases</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="index.html#accumulo">Accumulo</a></li>
+<li class="toctree-l5"><a class="reference internal" href="index.html#bigtable">BigTable</a></li>
 <li class="toctree-l5"><a class="reference internal" href="index.html#cassandra">Cassandra</a></li>
 <li class="toctree-l5"><a class="reference internal" href="index.html#elasticsearch">ElasticSearch</a></li>
 <li class="toctree-l5"><a class="reference internal" href="index.html#hadoop">Hadoop</a></li>
 <li class="toctree-l5"><a class="reference internal" href="index.html#hbase">HBase</a></li>
-<li class="toctree-l5"><a class="reference internal" href="index.html#spark">Spark</a></li>
+<li class="toctree-l5"><a class="reference internal" href="index.html#spark">Spark</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="index.html#graphx">GraphX</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -6362,23 +6371,23 @@ not the curb weight of a vehicle.</li>
 </ul>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><a class="reference internal" href="#logic" id="id150">Logic</a><ul>
-<li><a class="reference internal" href="#set-theory" id="id151">Set Theory</a></li>
-<li><a class="reference internal" href="#boolean-algebra" id="id152">Boolean Algebra</a></li>
-<li><a class="reference internal" href="#many-valued-logic" id="id153">Many-valued Logic</a><ul>
-<li><a class="reference internal" href="#three-valued-logic" id="id154">Three-valued Logic</a></li>
-<li><a class="reference internal" href="#fuzzy-logic" id="id155">Fuzzy Logic</a></li>
-<li><a class="reference internal" href="#probabilistic-logic" id="id156">Probabilistic Logic</a></li>
+<li><a class="reference internal" href="#logic" id="id157">Logic</a><ul>
+<li><a class="reference internal" href="#set-theory" id="id158">Set Theory</a></li>
+<li><a class="reference internal" href="#boolean-algebra" id="id159">Boolean Algebra</a></li>
+<li><a class="reference internal" href="#many-valued-logic" id="id160">Many-valued Logic</a><ul>
+<li><a class="reference internal" href="#three-valued-logic" id="id161">Three-valued Logic</a></li>
+<li><a class="reference internal" href="#fuzzy-logic" id="id162">Fuzzy Logic</a></li>
+<li><a class="reference internal" href="#probabilistic-logic" id="id163">Probabilistic Logic</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#propositional-logic" id="id157">Propositional Logic</a></li>
-<li><a class="reference internal" href="#first-order-logic" id="id158">First-order Logic</a></li>
-<li><a class="reference internal" href="#description-logic" id="id159">Description Logic</a></li>
+<li><a class="reference internal" href="#propositional-logic" id="id164">Propositional Logic</a></li>
+<li><a class="reference internal" href="#first-order-logic" id="id165">First-order Logic</a></li>
+<li><a class="reference internal" href="#description-logic" id="id166">Description Logic</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#reasoning" id="id160">Reasoning</a><ul>
-<li><a class="reference internal" href="#inference" id="id161">Inference</a><ul>
-<li><a class="reference internal" href="#entailment" id="id162">Entailment</a></li>
+<li><a class="reference internal" href="#reasoning" id="id167">Reasoning</a><ul>
+<li><a class="reference internal" href="#inference" id="id168">Inference</a><ul>
+<li><a class="reference internal" href="#entailment" id="id169">Entailment</a></li>
 </ul>
 </li>
 </ul>
@@ -6386,31 +6395,31 @@ not the curb weight of a vehicle.</li>
 </ul>
 </div>
 <div class="section" id="logic">
-<span id="index-1"></span><span id="id2"></span><h4><a class="toc-backref" href="#id150">Logic</a><a class="headerlink" href="#logic" title="Permalink to this headline">¶</a></h4>
+<span id="index-1"></span><span id="id2"></span><h4><a class="toc-backref" href="#id157">Logic</a><a class="headerlink" href="#logic" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Logic">https://en.wikipedia.org/wiki/Logic</a></div>
 <div class="line">WikipediaCategory: <a class="reference external" href="https://en.wikipedia.org/wiki/Category:Logic">https://en.wikipedia.org/wiki/Category:Logic</a></div>
 </div>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/List_of_logic_symbols">https://en.wikipedia.org/wiki/List_of_logic_symbols</a></p>
 <div class="section" id="set-theory">
-<span id="index-2"></span><span id="id3"></span><h5><a class="toc-backref" href="#id151">Set Theory</a><a class="headerlink" href="#set-theory" title="Permalink to this headline">¶</a></h5>
+<span id="index-2"></span><span id="id3"></span><h5><a class="toc-backref" href="#id158">Set Theory</a><a class="headerlink" href="#set-theory" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikpedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Set_theory">https://en.wikipedia.org/wiki/Set_theory</a></div>
 </div>
 </div>
 <div class="section" id="boolean-algebra">
-<span id="index-3"></span><span id="id4"></span><h5><a class="toc-backref" href="#id152">Boolean Algebra</a><a class="headerlink" href="#boolean-algebra" title="Permalink to this headline">¶</a></h5>
+<span id="index-3"></span><span id="id4"></span><h5><a class="toc-backref" href="#id159">Boolean Algebra</a><a class="headerlink" href="#boolean-algebra" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Boolean_algebra">https://en.wikipedia.org/wiki/Boolean_algebra</a></div>
 </div>
 </div>
 <div class="section" id="many-valued-logic">
-<span id="index-4"></span><span id="id5"></span><h5><a class="toc-backref" href="#id153">Many-valued Logic</a><a class="headerlink" href="#many-valued-logic" title="Permalink to this headline">¶</a></h5>
+<span id="index-4"></span><span id="id5"></span><h5><a class="toc-backref" href="#id160">Many-valued Logic</a><a class="headerlink" href="#many-valued-logic" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Many-valued_logic">https://en.wikipedia.org/wiki/Many-valued_logic</a></div>
 </div>
 <div class="section" id="three-valued-logic">
-<span id="index-5"></span><span id="id6"></span><h6><a class="toc-backref" href="#id154">Three-valued Logic</a><a class="headerlink" href="#three-valued-logic" title="Permalink to this headline">¶</a></h6>
+<span id="index-5"></span><span id="id6"></span><h6><a class="toc-backref" href="#id161">Three-valued Logic</a><a class="headerlink" href="#three-valued-logic" title="Permalink to this headline">¶</a></h6>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Three-valued_logic">https://en.wikipedia.org/wiki/Three-valued_logic</a></div>
 </div>
@@ -6424,33 +6433,33 @@ not the curb weight of a vehicle.</li>
 </div>
 </div>
 <div class="section" id="fuzzy-logic">
-<span id="index-6"></span><span id="id7"></span><h6><a class="toc-backref" href="#id155">Fuzzy Logic</a><a class="headerlink" href="#fuzzy-logic" title="Permalink to this headline">¶</a></h6>
+<span id="index-6"></span><span id="id7"></span><h6><a class="toc-backref" href="#id162">Fuzzy Logic</a><a class="headerlink" href="#fuzzy-logic" title="Permalink to this headline">¶</a></h6>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Fuzzy_logic">https://en.wikipedia.org/wiki/Fuzzy_logic</a></div>
 </div>
 </div>
 <div class="section" id="probabilistic-logic">
-<span id="index-7"></span><span id="id8"></span><h6><a class="toc-backref" href="#id156">Probabilistic Logic</a><a class="headerlink" href="#probabilistic-logic" title="Permalink to this headline">¶</a></h6>
+<span id="index-7"></span><span id="id8"></span><h6><a class="toc-backref" href="#id163">Probabilistic Logic</a><a class="headerlink" href="#probabilistic-logic" title="Permalink to this headline">¶</a></h6>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Probabilistic_logic">https://en.wikipedia.org/wiki/Probabilistic_logic</a></div>
 </div>
 </div>
 </div>
 <div class="section" id="propositional-logic">
-<span id="propsitional-logic"></span><span id="index-8"></span><h5><a class="toc-backref" href="#id157">Propositional Logic</a><a class="headerlink" href="#propositional-logic" title="Permalink to this headline">¶</a></h5>
+<span id="propsitional-logic"></span><span id="index-8"></span><h5><a class="toc-backref" href="#id164">Propositional Logic</a><a class="headerlink" href="#propositional-logic" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Propositional_logic">https://en.wikipedia.org/wiki/Propositional_logic</a></div>
 </div>
 <span class="target" id="index-9"></span></div>
 <div class="section" id="first-order-logic">
-<span id="fol"></span><span id="index-10"></span><h5><a class="toc-backref" href="#id158">First-order Logic</a><a class="headerlink" href="#first-order-logic" title="Permalink to this headline">¶</a></h5>
+<span id="fol"></span><span id="index-10"></span><h5><a class="toc-backref" href="#id165">First-order Logic</a><a class="headerlink" href="#first-order-logic" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/First-order_logic">https://en.wikipedia.org/wiki/First-order_logic</a></div>
 </div>
 <p>First-order (<em>FOL</em>)</p>
 <span class="target" id="index-11"></span></div>
 <div class="section" id="description-logic">
-<span id="dl"></span><span id="index-12"></span><h5><a class="toc-backref" href="#id159">Description Logic</a><a class="headerlink" href="#description-logic" title="Permalink to this headline">¶</a></h5>
+<span id="dl"></span><span id="index-12"></span><h5><a class="toc-backref" href="#id166">Description Logic</a><a class="headerlink" href="#description-logic" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Description_logic">https://en.wikipedia.org/wiki/Description_logic</a></div>
 </div>
@@ -6473,13 +6482,13 @@ not the curb weight of a vehicle.</li>
 </div>
 </div>
 <div class="section" id="reasoning">
-<span id="index-13"></span><span id="id9"></span><h4><a class="toc-backref" href="#id160">Reasoning</a><a class="headerlink" href="#reasoning" title="Permalink to this headline">¶</a></h4>
+<span id="index-13"></span><span id="id9"></span><h4><a class="toc-backref" href="#id167">Reasoning</a><a class="headerlink" href="#reasoning" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Deductive_reasoning">https://en.wikipedia.org/wiki/Deductive_reasoning</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Category:Reasoning">https://en.wikipedia.org/wiki/Category:Reasoning</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Semantic_reasoner">https://en.wikipedia.org/wiki/Semantic_reasoner</a></p>
 <p>See: <a class="reference internal" href="#dl"><em>Description Logic</em></a></p>
 <div class="section" id="inference">
-<span id="index-14"></span><span id="id10"></span><h5><a class="toc-backref" href="#id161">Inference</a><a class="headerlink" href="#inference" title="Permalink to this headline">¶</a></h5>
+<span id="index-14"></span><span id="id10"></span><h5><a class="toc-backref" href="#id168">Inference</a><a class="headerlink" href="#inference" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Inference: <a class="reference external" href="https://en.wikipedia.org/wiki/Inference">https://en.wikipedia.org/wiki/Inference</a></div>
 </div>
@@ -6488,7 +6497,7 @@ not the curb weight of a vehicle.</li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Category:Statistical_inference">https://en.wikipedia.org/wiki/Category:Statistical_inference</a> (Logic + Math)</li>
 </ul>
 <div class="section" id="entailment">
-<span id="index-15"></span><span id="id11"></span><h6><a class="toc-backref" href="#id162">Entailment</a><a class="headerlink" href="#entailment" title="Permalink to this headline">¶</a></h6>
+<span id="index-15"></span><span id="id11"></span><h6><a class="toc-backref" href="#id169">Entailment</a><a class="headerlink" href="#entailment" title="Permalink to this headline">¶</a></h6>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Entailment">https://en.wikipedia.org/wiki/Entailment</a></div>
 </div>
@@ -6515,102 +6524,111 @@ and <strong>how</strong> data are stored.</p>
 </div>
 <div class="contents local topic" id="id13">
 <ul class="simple">
-<li><a class="reference internal" href="#file-structures" id="id163">File Structures</a><ul>
-<li><a class="reference internal" href="#git-file-structures" id="id164">Git File Structures</a><ul>
-<li><a class="reference internal" href="#git-object" id="id165">Git Object</a></li>
-<li><a class="reference internal" href="#git-reference" id="id166">Git Reference</a></li>
-<li><a class="reference internal" href="#git-packfile" id="id167">Git Packfile</a><ul>
-<li><a class="reference internal" href="#bup" id="id168">bup</a></li>
+<li><a class="reference internal" href="#file-structures" id="id170">File Structures</a><ul>
+<li><a class="reference internal" href="#git-file-structures" id="id171">Git File Structures</a><ul>
+<li><a class="reference internal" href="#git-object" id="id172">Git Object</a></li>
+<li><a class="reference internal" href="#git-reference" id="id173">Git Reference</a></li>
+<li><a class="reference internal" href="#git-packfile" id="id174">Git Packfile</a><ul>
+<li><a class="reference internal" href="#bup" id="id175">bup</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#torrent-file-structure" id="id169">Torrent file structure</a></li>
+<li><a class="reference internal" href="#torrent-file-structure" id="id176">Torrent file structure</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#file-locking" id="id170">File Locking</a></li>
-<li><a class="reference internal" href="#data-structures" id="id171">Data Structures</a><ul>
-<li><a class="reference internal" href="#arrays" id="id172">Arrays</a></li>
-<li><a class="reference internal" href="#matrices" id="id173">Matrices</a></li>
-<li><a class="reference internal" href="#lists" id="id174">Lists</a></li>
-<li><a class="reference internal" href="#graphs" id="id175">Graphs</a><ul>
-<li><a class="reference internal" href="#dfs" id="id176">DFS</a></li>
-<li><a class="reference internal" href="#bfs" id="id177">BFS</a></li>
+<li><a class="reference internal" href="#file-locking" id="id177">File Locking</a></li>
+<li><a class="reference internal" href="#data-structures" id="id178">Data Structures</a><ul>
+<li><a class="reference internal" href="#arrays" id="id179">Arrays</a></li>
+<li><a class="reference internal" href="#matrices" id="id180">Matrices</a></li>
+<li><a class="reference internal" href="#lists" id="id181">Lists</a></li>
+<li><a class="reference internal" href="#graphs" id="id182">Graphs</a><ul>
+<li><a class="reference internal" href="#dfs" id="id183">DFS</a></li>
+<li><a class="reference internal" href="#bfs" id="id184">BFS</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#trees" id="id178">Trees</a></li>
+<li><a class="reference internal" href="#trees" id="id185">Trees</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#compression-algorithms" id="id179">Compression Algorithms</a><ul>
-<li><a class="reference internal" href="#bzip2" id="id180">bzip2</a></li>
-<li><a class="reference internal" href="#gzip" id="id181">gzip</a></li>
-<li><a class="reference internal" href="#tar" id="id182">tar</a></li>
-<li><a class="reference internal" href="#zip" id="id183">zip</a></li>
+<li><a class="reference internal" href="#compression-algorithms" id="id186">Compression Algorithms</a><ul>
+<li><a class="reference internal" href="#bzip2" id="id187">bzip2</a></li>
+<li><a class="reference internal" href="#gzip" id="id188">gzip</a></li>
+<li><a class="reference internal" href="#tar" id="id189">tar</a></li>
+<li><a class="reference internal" href="#zip" id="id190">zip</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#filesystems" id="id184">Filesystems</a><ul>
-<li><a class="reference internal" href="#raid" id="id185">RAID</a></li>
-<li><a class="reference internal" href="#mbr" id="id186">MBR</a></li>
-<li><a class="reference internal" href="#gpt" id="id187">GPT</a></li>
-<li><a class="reference internal" href="#lvm" id="id188">LVM</a></li>
-<li><a class="reference internal" href="#btrfs" id="id189">btrfs</a></li>
-<li><a class="reference internal" href="#ext" id="id190">ext</a></li>
-<li><a class="reference internal" href="#fat" id="id191">FAT</a></li>
-<li><a class="reference internal" href="#iso9660" id="id192">ISO9660</a></li>
-<li><a class="reference internal" href="#hfs" id="id193">HFS+</a></li>
-<li><a class="reference internal" href="#ntfs" id="id194">NTFS</a></li>
-<li><a class="reference internal" href="#fuse" id="id195">FUSE</a></li>
-<li><a class="reference internal" href="#sshfs" id="id196">SSHFS</a></li>
+<li><a class="reference internal" href="#filesystems" id="id191">Filesystems</a><ul>
+<li><a class="reference internal" href="#raid" id="id192">RAID</a></li>
+<li><a class="reference internal" href="#mbr" id="id193">MBR</a></li>
+<li><a class="reference internal" href="#gpt" id="id194">GPT</a></li>
+<li><a class="reference internal" href="#lvm" id="id195">LVM</a></li>
+<li><a class="reference internal" href="#btrfs" id="id196">btrfs</a></li>
+<li><a class="reference internal" href="#ext" id="id197">ext</a></li>
+<li><a class="reference internal" href="#fat" id="id198">FAT</a></li>
+<li><a class="reference internal" href="#iso9660" id="id199">ISO9660</a></li>
+<li><a class="reference internal" href="#hfs" id="id200">HFS+</a></li>
+<li><a class="reference internal" href="#ntfs" id="id201">NTFS</a></li>
+<li><a class="reference internal" href="#fuse" id="id202">FUSE</a></li>
+<li><a class="reference internal" href="#sshfs" id="id203">SSHFS</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#network-filesystems" id="id197">Network Filesystems</a><ul>
-<li><a class="reference internal" href="#ceph" id="id198">Ceph</a></li>
-<li><a class="reference internal" href="#cifs" id="id199">CIFS</a></li>
-<li><a class="reference internal" href="#ddfs" id="id200">DDFS</a></li>
-<li><a class="reference internal" href="#glusterfs" id="id201">GlusterFS</a></li>
-<li><a class="reference internal" href="#hdfs" id="id202">HDFS</a></li>
-<li><a class="reference internal" href="#nfs" id="id203">NFS</a></li>
-<li><a class="reference internal" href="#s3" id="id204">S3</a></li>
-<li><a class="reference internal" href="#swift" id="id205">Swift</a></li>
-<li><a class="reference internal" href="#smb" id="id206">SMB</a></li>
-<li><a class="reference internal" href="#webdav" id="id207">WebDAV</a></li>
+<li><a class="reference internal" href="#network-filesystems" id="id204">Network Filesystems</a><ul>
+<li><a class="reference internal" href="#ceph" id="id205">Ceph</a></li>
+<li><a class="reference internal" href="#cifs" id="id206">CIFS</a></li>
+<li><a class="reference internal" href="#ddfs" id="id207">DDFS</a></li>
+<li><a class="reference internal" href="#glusterfs" id="id208">GlusterFS</a></li>
+<li><a class="reference internal" href="#hdfs" id="id209">HDFS</a></li>
+<li><a class="reference internal" href="#nfs" id="id210">NFS</a></li>
+<li><a class="reference internal" href="#s3" id="id211">S3</a></li>
+<li><a class="reference internal" href="#swift" id="id212">Swift</a></li>
+<li><a class="reference internal" href="#smb" id="id213">SMB</a></li>
+<li><a class="reference internal" href="#webdav" id="id214">WebDAV</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#databases" id="id208">Databases</a><ul>
-<li><a class="reference internal" href="#data-engineering-review" id="id209">Data Engineering Review</a></li>
-<li><a class="reference internal" href="#object-relational-mapping" id="id210">Object Relational Mapping</a></li>
-<li><a class="reference internal" href="#relational-databases" id="id211">Relational Databases</a><ul>
-<li><a class="reference internal" href="#sql" id="id212">SQL</a></li>
+<li><a class="reference internal" href="#databases" id="id215">Databases</a><ul>
+<li><a class="reference internal" href="#data-engineering-review" id="id216">Data Engineering Review</a></li>
+<li><a class="reference internal" href="#object-relational-mapping" id="id217">Object Relational Mapping</a></li>
+<li><a class="reference internal" href="#relational-databases" id="id218">Relational Databases</a><ul>
+<li><a class="reference internal" href="#sql" id="id219">SQL</a></li>
+<li><a class="reference internal" href="#drizzle" id="id220">Drizzle</a></li>
+<li><a class="reference internal" href="#mysql" id="id221">MySQL</a></li>
+<li><a class="reference internal" href="#postgresql" id="id222">PostgreSQL</a></li>
+<li><a class="reference internal" href="#sqlite" id="id223">SQLite</a></li>
+<li><a class="reference internal" href="#virtuoso" id="id224">Virtuoso</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#nosql-databases" id="id213">NoSQL Databases</a></li>
-<li><a class="reference internal" href="#graph-databases" id="id214">Graph Databases</a></li>
-<li><a class="reference internal" href="#rdf-triplestores" id="id215">RDF Triplestores</a></li>
-<li><a class="reference internal" href="#distributed-databases" id="id216">Distributed Databases</a><ul>
-<li><a class="reference internal" href="#accumulo" id="id217">Accumulo</a></li>
-<li><a class="reference internal" href="#cassandra" id="id218">Cassandra</a></li>
-<li><a class="reference internal" href="#elasticsearch" id="id219">ElasticSearch</a></li>
-<li><a class="reference internal" href="#hadoop" id="id220">Hadoop</a></li>
-<li><a class="reference internal" href="#hbase" id="id221">HBase</a></li>
-<li><a class="reference internal" href="#spark" id="id222">Spark</a></li>
+<li><a class="reference internal" href="#nosql-databases" id="id225">NoSQL Databases</a></li>
+<li><a class="reference internal" href="#graph-databases" id="id226">Graph Databases</a></li>
+<li><a class="reference internal" href="#rdf-triplestores" id="id227">RDF Triplestores</a></li>
+<li><a class="reference internal" href="#distributed-databases" id="id228">Distributed Databases</a><ul>
+<li><a class="reference internal" href="#accumulo" id="id229">Accumulo</a></li>
+<li><a class="reference internal" href="#bigtable" id="id230">BigTable</a></li>
+<li><a class="reference internal" href="#cassandra" id="id231">Cassandra</a></li>
+<li><a class="reference internal" href="#elasticsearch" id="id232">ElasticSearch</a></li>
+<li><a class="reference internal" href="#hadoop" id="id233">Hadoop</a></li>
+<li><a class="reference internal" href="#hbase" id="id234">HBase</a></li>
+<li><a class="reference internal" href="#spark" id="id235">Spark</a><ul>
+<li><a class="reference internal" href="#graphx" id="id236">GraphX</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#distributed-algorithms" id="id223">Distributed Algorithms</a><ul>
-<li><a class="reference internal" href="#distributed-computing-problems" id="id224">Distributed Computing Problems</a></li>
-<li><a class="reference internal" href="#non-blocking-algorithm" id="id225">Non-blocking algorithm</a></li>
-<li><a class="reference internal" href="#dht" id="id226">DHT</a></li>
-<li><a class="reference internal" href="#mapreduce" id="id227">MapReduce</a></li>
-<li><a class="reference internal" href="#paxos" id="id228">Paxos</a></li>
-<li><a class="reference internal" href="#bulk-synchronous-parallel" id="id229">Bulk Synchronous Parallel</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#data-grid" id="id230">Data Grid</a></li>
+<li><a class="reference internal" href="#distributed-algorithms" id="id237">Distributed Algorithms</a><ul>
+<li><a class="reference internal" href="#distributed-computing-problems" id="id238">Distributed Computing Problems</a></li>
+<li><a class="reference internal" href="#non-blocking-algorithm" id="id239">Non-blocking algorithm</a></li>
+<li><a class="reference internal" href="#dht" id="id240">DHT</a></li>
+<li><a class="reference internal" href="#mapreduce" id="id241">MapReduce</a></li>
+<li><a class="reference internal" href="#paxos" id="id242">Paxos</a></li>
+<li><a class="reference internal" href="#bulk-synchronous-parallel" id="id243">Bulk Synchronous Parallel</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#data-grid" id="id244">Data Grid</a></li>
 </ul>
 </div>
 <div class="section" id="file-structures">
-<span id="index-17"></span><span id="id14"></span><h4><a class="toc-backref" href="#id163">File Structures</a><a class="headerlink" href="#file-structures" title="Permalink to this headline">¶</a></h4>
+<span id="index-17"></span><span id="id14"></span><h4><a class="toc-backref" href="#id170">File Structures</a><a class="headerlink" href="#file-structures" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/File_format">https://en.wikipedia.org/wiki/File_format</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Record_(computer_science)">https://en.wikipedia.org/wiki/Record_(computer_science)</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Field_(computer_science)">https://en.wikipedia.org/wiki/Field_(computer_science)</a></p>
@@ -6634,7 +6652,7 @@ file structures (and stream protocols):<ul>
 </li>
 </ul>
 <div class="section" id="git-file-structures">
-<span id="index-18"></span><span id="id15"></span><h5><a class="toc-backref" href="#id164">Git File Structures</a><a class="headerlink" href="#git-file-structures" title="Permalink to this headline">¶</a></h5>
+<span id="index-18"></span><span id="id15"></span><h5><a class="toc-backref" href="#id171">Git File Structures</a><a class="headerlink" href="#git-file-structures" title="Permalink to this headline">¶</a></h5>
 <p><a class="reference internal" href="index.html#git"><em>Git</em></a> specifies a number of file structures:
 <a class="reference internal" href="#git-object"><em>Git Objects</em></a>,
 <a class="reference internal" href="#git-reference"><em>Git References</em></a>,
@@ -6643,26 +6661,26 @@ and <a class="reference internal" href="#git-packfile"><em>Git Packfiles</em></a
 with commits, branching, merging, and multi-protocol push/pull
 semantics: <a class="reference external" href="https://en.wikipedia.org/wiki/Shared_snapshot_objects">https://en.wikipedia.org/wiki/Shared_snapshot_objects</a></p>
 <div class="section" id="git-object">
-<span id="index-19"></span><span id="id16"></span><h6><a class="toc-backref" href="#id165">Git Object</a><a class="headerlink" href="#git-object" title="Permalink to this headline">¶</a></h6>
+<span id="index-19"></span><span id="id16"></span><h6><a class="toc-backref" href="#id172">Git Object</a><a class="headerlink" href="#git-object" title="Permalink to this headline">¶</a></h6>
 <div class="line-block">
 <div class="line">Docs: <a class="reference external" href="https://git-scm.com/book/en/v2/Git-Internals-Git-Objects">https://git-scm.com/book/en/v2/Git-Internals-Git-Objects</a></div>
 </div>
 </div>
 <div class="section" id="git-reference">
-<span id="index-20"></span><span id="id17"></span><h6><a class="toc-backref" href="#id166">Git Reference</a><a class="headerlink" href="#git-reference" title="Permalink to this headline">¶</a></h6>
+<span id="index-20"></span><span id="id17"></span><h6><a class="toc-backref" href="#id173">Git Reference</a><a class="headerlink" href="#git-reference" title="Permalink to this headline">¶</a></h6>
 <div class="line-block">
 <div class="line">Docs: <a class="reference external" href="https://git-scm.com/book/en/v2/Git-Internals-Git-References">https://git-scm.com/book/en/v2/Git-Internals-Git-References</a></div>
 </div>
 </div>
 <div class="section" id="git-packfile">
-<span id="index-21"></span><span id="id18"></span><h6><a class="toc-backref" href="#id167">Git Packfile</a><a class="headerlink" href="#git-packfile" title="Permalink to this headline">¶</a></h6>
+<span id="index-21"></span><span id="id18"></span><h6><a class="toc-backref" href="#id174">Git Packfile</a><a class="headerlink" href="#git-packfile" title="Permalink to this headline">¶</a></h6>
 <div class="line-block">
 <div class="line">Docs: <a class="reference external" href="https://git-scm.com/book/en/v2/Git-Internals-Packfiles">https://git-scm.com/book/en/v2/Git-Internals-Packfiles</a></div>
 </div>
 <blockquote>
 <div>&#8220;Git is a content-addressable <a class="reference internal" href="#filesystems"><em>filesystem</em></a>&#8220;</div></blockquote>
 <div class="section" id="bup">
-<span id="index-22"></span><span id="id19"></span><h7><a class="toc-backref" href="#id168">bup</a><a class="headerlink" href="#bup" title="Permalink to this headline">¶</a></h7>
+<span id="index-22"></span><span id="id19"></span><h7><a class="toc-backref" href="#id175">bup</a><a class="headerlink" href="#bup" title="Permalink to this headline">¶</a></h7>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="https://bup.github.io/">https://bup.github.io/</a></div>
 <div class="line">Source: git <a class="reference external" href="https://github.com/bup/bup">https://github.com/bup/bup</a></div>
@@ -6682,7 +6700,7 @@ and global deduplication
 </div>
 </div>
 <div class="section" id="torrent-file-structure">
-<span id="index-23"></span><span id="id20"></span><h5><a class="toc-backref" href="#id169">Torrent file structure</a><a class="headerlink" href="#torrent-file-structure" title="Permalink to this headline">¶</a></h5>
+<span id="index-23"></span><span id="id20"></span><h5><a class="toc-backref" href="#id176">Torrent file structure</a><a class="headerlink" href="#torrent-file-structure" title="Permalink to this headline">¶</a></h5>
 <p>A <a class="reference internal" href="index.html#term-bittorrent-torrent-file"><em class="xref std std-term">bittorrent torrent file</em></a> is an encoded manifest
 of tracker, <a class="reference internal" href="#dht"><em>DHT</em></a>, and <a class="reference internal" href="index.html#term-web-seeding"><em class="xref std std-term">web seed</em></a> <a class="reference internal" href="index.html#term-uri"><em class="xref std std-term">URIs</em></a>;
 and segment checksum hashes.</p>
@@ -6695,7 +6713,7 @@ over <a class="reference internal" href="#http"><em>HTTP</em></a>.</li>
 </div>
 </div>
 <div class="section" id="file-locking">
-<span id="index-24"></span><span id="id21"></span><h4><a class="toc-backref" href="#id170">File Locking</a><a class="headerlink" href="#file-locking" title="Permalink to this headline">¶</a></h4>
+<span id="index-24"></span><span id="id21"></span><h4><a class="toc-backref" href="#id177">File Locking</a><a class="headerlink" href="#file-locking" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/File_locking">https://en.wikipedia.org/wiki/File_locking</a></div>
 </div>
@@ -6736,7 +6754,7 @@ per-file setgid and noexec bits (<code class="docutils literal"><span class="pre
 </ul>
 </div>
 <div class="section" id="data-structures">
-<span id="index-25"></span><span id="id22"></span><h4><a class="toc-backref" href="#id171">Data Structures</a><a class="headerlink" href="#data-structures" title="Permalink to this headline">¶</a></h4>
+<span id="index-25"></span><span id="id22"></span><h4><a class="toc-backref" href="#id178">Data Structures</a><a class="headerlink" href="#data-structures" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Data_structure">https://en.wikipedia.org/wiki/Data_structure</a></div>
 <div class="line">WikipediaCategory: <a class="reference external" href="https://en.wikipedia.org/wiki/Category:Data_structures">https://en.wikipedia.org/wiki/Category:Data_structures</a></div>
@@ -6750,7 +6768,7 @@ per-file setgid and noexec bits (<code class="docutils literal"><span class="pre
 </li>
 </ul>
 <div class="section" id="arrays">
-<span id="index-26"></span><span id="id23"></span><h5><a class="toc-backref" href="#id172">Arrays</a><a class="headerlink" href="#arrays" title="Permalink to this headline">¶</a></h5>
+<span id="index-26"></span><span id="id23"></span><h5><a class="toc-backref" href="#id179">Arrays</a><a class="headerlink" href="#arrays" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Array_data_structure">https://en.wikipedia.org/wiki/Array_data_structure</a></div>
 <div class="line">Docs: <a class="reference external" href="https://en.wikipedia.org/wiki/List_of_data_structures#Arrays">https://en.wikipedia.org/wiki/List_of_data_structures#Arrays</a></div>
@@ -6764,7 +6782,7 @@ shape of the array.</li>
 </ul>
 <span class="target" id="index-27"></span></div>
 <div class="section" id="matrices">
-<span id="matrix"></span><span id="index-28"></span><h5><a class="toc-backref" href="#id173">Matrices</a><a class="headerlink" href="#matrices" title="Permalink to this headline">¶</a></h5>
+<span id="matrix"></span><span id="index-28"></span><h5><a class="toc-backref" href="#id180">Matrices</a><a class="headerlink" href="#matrices" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Matrix_(computer_science)">https://en.wikipedia.org/wiki/Matrix_(computer_science)</a></div>
 </div>
@@ -6772,7 +6790,7 @@ shape of the array.</li>
 a multidimensional <a class="reference internal" href="#arrays"><em>array</em></a>.</p>
 </div>
 <div class="section" id="lists">
-<span id="index-29"></span><span id="id24"></span><h5><a class="toc-backref" href="#id174">Lists</a><a class="headerlink" href="#lists" title="Permalink to this headline">¶</a></h5>
+<span id="index-29"></span><span id="id24"></span><h5><a class="toc-backref" href="#id181">Lists</a><a class="headerlink" href="#lists" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Linked_list">https://en.wikipedia.org/wiki/Linked_list</a></div>
 <div class="line">Docs: <a class="reference external" href="https://en.wikipedia.org/wiki/List_of_data_structures#Lists">https://en.wikipedia.org/wiki/List_of_data_structures#Lists</a></div>
@@ -6781,7 +6799,7 @@ a multidimensional <a class="reference internal" href="#arrays"><em>array</em></
 a next and/or previous node.</p>
 </div>
 <div class="section" id="graphs">
-<span id="index-30"></span><span id="id25"></span><h5><a class="toc-backref" href="#id175">Graphs</a><a class="headerlink" href="#graphs" title="Permalink to this headline">¶</a></h5>
+<span id="index-30"></span><span id="id25"></span><h5><a class="toc-backref" href="#id182">Graphs</a><a class="headerlink" href="#graphs" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Graph_(abstract_data_type)">https://en.wikipedia.org/wiki/Graph_(abstract_data_type)</a></div>
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Graph_(mathematics)">https://en.wikipedia.org/wiki/Graph_(mathematics)</a></div>
@@ -6833,7 +6851,7 @@ according to a given algorithm (e.g. <a class="reference internal" href="#dfs"><
 </li>
 </ul>
 <span class="target" id="index-31"></span><div class="section" id="dfs">
-<span id="index-32"></span><span id="id26"></span><h6><a class="toc-backref" href="#id176">DFS</a><a class="headerlink" href="#dfs" title="Permalink to this headline">¶</a></h6>
+<span id="index-32"></span><span id="id26"></span><h6><a class="toc-backref" href="#id183">DFS</a><a class="headerlink" href="#dfs" title="Permalink to this headline">¶</a></h6>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Depth-first_search">https://en.wikipedia.org/wiki/Depth-first_search</a></div>
 </div>
@@ -6853,7 +6871,7 @@ according to a given algorithm (e.g. <a class="reference internal" href="#dfs"><
 <p>See also: <a class="reference internal" href="#bsp"><em>Bulk Synchronous Parallel</em></a>, Firefly Algorithm</p>
 <span class="target" id="index-33"></span></div>
 <div class="section" id="bfs">
-<span id="index-34"></span><span id="id27"></span><h6><a class="toc-backref" href="#id177">BFS</a><a class="headerlink" href="#bfs" title="Permalink to this headline">¶</a></h6>
+<span id="index-34"></span><span id="id27"></span><h6><a class="toc-backref" href="#id184">BFS</a><a class="headerlink" href="#bfs" title="Permalink to this headline">¶</a></h6>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Breadth-first_search">https://en.wikipedia.org/wiki/Breadth-first_search</a></div>
 </div>
@@ -6876,7 +6894,7 @@ according to a given algorithm (e.g. <a class="reference internal" href="#dfs"><
 </div>
 </div>
 <div class="section" id="trees">
-<span id="index-35"></span><span id="id28"></span><h5><a class="toc-backref" href="#id178">Trees</a><a class="headerlink" href="#trees" title="Permalink to this headline">¶</a></h5>
+<span id="index-35"></span><span id="id28"></span><h5><a class="toc-backref" href="#id185">Trees</a><a class="headerlink" href="#trees" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Tree_data_structure">https://en.wikipedia.org/wiki/Tree_data_structure</a></div>
 <div class="line">Docs: <a class="reference external" href="http://rosettacode.org/wiki/Tree_traversal">http://rosettacode.org/wiki/Tree_traversal</a></div>
@@ -6900,9 +6918,9 @@ according to a given algorithm (e.g. <a class="reference internal" href="#dfs"><
 </div>
 </div>
 <div class="section" id="compression-algorithms">
-<span id="index-36"></span><span id="id29"></span><h4><a class="toc-backref" href="#id179">Compression Algorithms</a><a class="headerlink" href="#compression-algorithms" title="Permalink to this headline">¶</a></h4>
+<span id="index-36"></span><span id="id29"></span><h4><a class="toc-backref" href="#id186">Compression Algorithms</a><a class="headerlink" href="#compression-algorithms" title="Permalink to this headline">¶</a></h4>
 <div class="section" id="bzip2">
-<span id="index-37"></span><span id="id30"></span><h5><a class="toc-backref" href="#id180">bzip2</a><a class="headerlink" href="#bzip2" title="Permalink to this headline">¶</a></h5>
+<span id="index-37"></span><span id="id30"></span><h5><a class="toc-backref" href="#id187">bzip2</a><a class="headerlink" href="#bzip2" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Bzip2">https://en.wikipedia.org/wiki/Bzip2</a></div>
 <div class="line">File Extension: <code class="docutils literal"><span class="pre">.bz2</span></code></div>
@@ -6916,7 +6934,7 @@ but more space efficient</li>
 </ul>
 </div>
 <div class="section" id="gzip">
-<span id="index-38"></span><span id="id31"></span><h5><a class="toc-backref" href="#id181">gzip</a><a class="headerlink" href="#gzip" title="Permalink to this headline">¶</a></h5>
+<span id="index-38"></span><span id="id31"></span><h5><a class="toc-backref" href="#id188">gzip</a><a class="headerlink" href="#gzip" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Gzip">https://en.wikipedia.org/wiki/Gzip</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://www.gnu.org/software/gzip/">https://www.gnu.org/software/gzip/</a></div>
@@ -6933,7 +6951,7 @@ based on <code class="docutils literal"><span class="pre">DEFLATE</span></code> 
 </ul>
 </div>
 <div class="section" id="tar">
-<span id="index-39"></span><span id="id32"></span><h5><a class="toc-backref" href="#id182">tar</a><a class="headerlink" href="#tar" title="Permalink to this headline">¶</a></h5>
+<span id="index-39"></span><span id="id32"></span><h5><a class="toc-backref" href="#id189">tar</a><a class="headerlink" href="#tar" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Tar_(computing)">https://en.wikipedia.org/wiki/Tar_(computing)</a></div>
 <div class="line">File Extension: <code class="docutils literal"><span class="pre">.tar</span></code></div>
@@ -6957,7 +6975,7 @@ tar bzf - . | ssh remote &quot;( cd ~/ ; cat &gt; file.tar.bz2 )&quot;
 <p>See also: <a class="reference internal" href="#zip"><em>zip</em></a> (<a class="reference internal" href="index.html#windows"><em>Windows</em></a>)</p>
 </div>
 <div class="section" id="zip">
-<span id="index-40"></span><span id="id33"></span><h5><a class="toc-backref" href="#id183">zip</a><a class="headerlink" href="#zip" title="Permalink to this headline">¶</a></h5>
+<span id="index-40"></span><span id="id33"></span><h5><a class="toc-backref" href="#id190">zip</a><a class="headerlink" href="#zip" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Zip_(file_format)">https://en.wikipedia.org/wiki/Zip_(file_format)</a></div>
 </div>
@@ -6965,7 +6983,7 @@ tar bzf - . | ssh remote &quot;( cd ~/ ; cat &gt; file.tar.bz2 )&quot;
 <span class="target" id="index-41"></span></div>
 </div>
 <div class="section" id="filesystems">
-<span id="index-42"></span><span id="id34"></span><h4><a class="toc-backref" href="#id184">Filesystems</a><a class="headerlink" href="#filesystems" title="Permalink to this headline">¶</a></h4>
+<span id="index-42"></span><span id="id34"></span><h4><a class="toc-backref" href="#id191">Filesystems</a><a class="headerlink" href="#filesystems" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/File_system">https://en.wikipedia.org/wiki/File_system</a></div>
 </div>
@@ -6979,7 +6997,7 @@ represented in a persistent physical medium.</p>
 (e.g. <a class="reference internal" href="#nfs"><em>NFS</em></a>, <a class="reference internal" href="#ceph"><em>Ceph</em></a>, <a class="reference internal" href="#glusterfs"><em>GlusterFS</em></a>)</li>
 </ul>
 <div class="section" id="raid">
-<span id="index-43"></span><span id="id35"></span><h5><a class="toc-backref" href="#id185">RAID</a><a class="headerlink" href="#raid" title="Permalink to this headline">¶</a></h5>
+<span id="index-43"></span><span id="id35"></span><h5><a class="toc-backref" href="#id192">RAID</a><a class="headerlink" href="#raid" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/RAID">https://en.wikipedia.org/wiki/RAID</a></div>
 </div>
@@ -7021,7 +7039,7 @@ for inconsistencies between redundant copies of data</p>
 </ul>
 </div>
 <div class="section" id="mbr">
-<span id="index-44"></span><span id="id36"></span><h5><a class="toc-backref" href="#id186">MBR</a><a class="headerlink" href="#mbr" title="Permalink to this headline">¶</a></h5>
+<span id="index-44"></span><span id="id36"></span><h5><a class="toc-backref" href="#id193">MBR</a><a class="headerlink" href="#mbr" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Master_boot_record">https://en.wikipedia.org/wiki/Master_boot_record</a></div>
 </div>
@@ -7038,7 +7056,7 @@ drive in order to determine where to find the bootloader.</li>
 </ul>
 </div>
 <div class="section" id="gpt">
-<span id="index-45"></span><span id="id37"></span><h5><a class="toc-backref" href="#id187">GPT</a><a class="headerlink" href="#gpt" title="Permalink to this headline">¶</a></h5>
+<span id="index-45"></span><span id="id37"></span><h5><a class="toc-backref" href="#id194">GPT</a><a class="headerlink" href="#gpt" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/GUID_Partition_Table">https://en.wikipedia.org/wiki/GUID_Partition_Table</a></div>
 </div>
@@ -7053,7 +7071,7 @@ wherein partitions are assigned GUIDs (<em>Globally Unique Identifiers</em>).</p
 </ul>
 <span class="target" id="index-46"></span></div>
 <div class="section" id="lvm">
-<span id="index-47"></span><span id="id38"></span><h5><a class="toc-backref" href="#id188">LVM</a><a class="headerlink" href="#lvm" title="Permalink to this headline">¶</a></h5>
+<span id="index-47"></span><span id="id38"></span><h5><a class="toc-backref" href="#id195">LVM</a><a class="headerlink" href="#lvm" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Logical_Volume_Manager_(Linux)">https://en.wikipedia.org/wiki/Logical_Volume_Manager_(Linux)</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://www.sourceware.org/lvm2/">https://www.sourceware.org/lvm2/</a></div>
@@ -7078,7 +7096,7 @@ with most distributions&#8217; default kernel build)</li>
 </ul>
 </div>
 <div class="section" id="btrfs">
-<span id="index-48"></span><span id="id39"></span><h5><a class="toc-backref" href="#id189">btrfs</a><a class="headerlink" href="#btrfs" title="Permalink to this headline">¶</a></h5>
+<span id="index-48"></span><span id="id39"></span><h5><a class="toc-backref" href="#id196">btrfs</a><a class="headerlink" href="#btrfs" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Btrfs">https://en.wikipedia.org/wiki/Btrfs</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://btrfs.wiki.kernel.org/index.php/Main_Page">https://btrfs.wiki.kernel.org/index.php/Main_Page</a></div>
@@ -7096,7 +7114,7 @@ checksumming, deduplicating, union mounting
 copy-on-write on-disk <a class="reference internal" href="index.html#linux"><em>Linux</em></a> filesystem.</p>
 <span class="target" id="index-49"></span><span class="target" id="index-50"></span></div>
 <div class="section" id="ext">
-<span id="index-51"></span><span id="id40"></span><h5><a class="toc-backref" href="#id190">ext</a><a class="headerlink" href="#ext" title="Permalink to this headline">¶</a></h5>
+<span id="index-51"></span><span id="id40"></span><h5><a class="toc-backref" href="#id197">ext</a><a class="headerlink" href="#ext" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Ext2">https://en.wikipedia.org/wiki/Ext2</a></div>
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Ext3">https://en.wikipedia.org/wiki/Ext3</a></div>
@@ -7115,7 +7133,7 @@ with OSXFuse and FUSE-EXT2.</li>
 </ul>
 <span class="target" id="index-52"></span><span class="target" id="index-53"></span><span class="target" id="index-54"></span></div>
 <div class="section" id="fat">
-<span id="index-55"></span><span id="id41"></span><h5><a class="toc-backref" href="#id191">FAT</a><a class="headerlink" href="#fat" title="Permalink to this headline">¶</a></h5>
+<span id="index-55"></span><span id="id41"></span><h5><a class="toc-backref" href="#id198">FAT</a><a class="headerlink" href="#fat" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/File_Allocation_Table">https://en.wikipedia.org/wiki/File_Allocation_Table</a></div>
 </div>
@@ -7131,7 +7149,7 @@ with OSXFuse and FUSE-EXT2.</li>
 </ul>
 </div>
 <div class="section" id="iso9660">
-<span id="index-56"></span><span id="id42"></span><h5><a class="toc-backref" href="#id192">ISO9660</a><a class="headerlink" href="#iso9660" title="Permalink to this headline">¶</a></h5>
+<span id="index-56"></span><span id="id42"></span><h5><a class="toc-backref" href="#id199">ISO9660</a><a class="headerlink" href="#iso9660" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/ISO_9660">https://en.wikipedia.org/wiki/ISO_9660</a></div>
 <div class="line">FileExt: <code class="docutils literal"><span class="pre">.iso</span></code></div>
@@ -7172,7 +7190,7 @@ for <a class="reference internal" href="index.html#debian"><em>Debian</em></a>, 
 </ul>
 </div>
 <div class="section" id="hfs">
-<span id="index-57"></span><span id="id43"></span><h5><a class="toc-backref" href="#id193">HFS+</a><a class="headerlink" href="#hfs" title="Permalink to this headline">¶</a></h5>
+<span id="index-57"></span><span id="id43"></span><h5><a class="toc-backref" href="#id200">HFS+</a><a class="headerlink" href="#hfs" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/HFS_Plus">https://en.wikipedia.org/wiki/HFS_Plus</a></div>
 </div>
@@ -7193,7 +7211,7 @@ or MacDrive</p>
 </ul>
 </div>
 <div class="section" id="ntfs">
-<span id="index-58"></span><span id="id44"></span><h5><a class="toc-backref" href="#id194">NTFS</a><a class="headerlink" href="#ntfs" title="Permalink to this headline">¶</a></h5>
+<span id="index-58"></span><span id="id44"></span><h5><a class="toc-backref" href="#id201">NTFS</a><a class="headerlink" href="#ntfs" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/NTFS">https://en.wikipedia.org/wiki/NTFS</a></div>
 </div>
@@ -7206,7 +7224,7 @@ NTFS-3G: <a class="reference external" href="https://en.wikipedia.org/wiki/NTFS-
 </ul>
 </div>
 <div class="section" id="fuse">
-<span id="index-59"></span><span id="id45"></span><h5><a class="toc-backref" href="#id195">FUSE</a><a class="headerlink" href="#fuse" title="Permalink to this headline">¶</a></h5>
+<span id="index-59"></span><span id="id45"></span><h5><a class="toc-backref" href="#id202">FUSE</a><a class="headerlink" href="#fuse" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Filesystem_in_Userspace">https://en.wikipedia.org/wiki/Filesystem_in_Userspace</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://fuse.sourceforge.net/">http://fuse.sourceforge.net/</a></div>
@@ -7237,7 +7255,7 @@ are all FUSE filesystems.</li>
 </ul>
 </div>
 <div class="section" id="sshfs">
-<span id="index-60"></span><span id="id46"></span><h5><a class="toc-backref" href="#id196">SSHFS</a><a class="headerlink" href="#sshfs" title="Permalink to this headline">¶</a></h5>
+<span id="index-60"></span><span id="id46"></span><h5><a class="toc-backref" href="#id203">SSHFS</a><a class="headerlink" href="#sshfs" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/SSHFS">https://en.wikipedia.org/wiki/SSHFS</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://fuse.sourceforge.net/sshfs.html">http://fuse.sourceforge.net/sshfs.html</a></div>
@@ -7251,12 +7269,12 @@ are all FUSE filesystems.</li>
 <span class="target" id="index-61"></span></div>
 </div>
 <div class="section" id="network-filesystems">
-<span id="index-62"></span><span id="id47"></span><h4><a class="toc-backref" href="#id197">Network Filesystems</a><a class="headerlink" href="#network-filesystems" title="Permalink to this headline">¶</a></h4>
+<span id="index-62"></span><span id="id47"></span><h4><a class="toc-backref" href="#id204">Network Filesystems</a><a class="headerlink" href="#network-filesystems" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Network_filesystem">https://en.wikipedia.org/wiki/Network_filesystem</a></div>
 </div>
 <div class="section" id="ceph">
-<span id="index-63"></span><span id="id48"></span><h5><a class="toc-backref" href="#id198">Ceph</a><a class="headerlink" href="#ceph" title="Permalink to this headline">¶</a></h5>
+<span id="index-63"></span><span id="id48"></span><h5><a class="toc-backref" href="#id205">Ceph</a><a class="headerlink" href="#ceph" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Ceph_(software)">https://en.wikipedia.org/wiki/Ceph_(software)</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://ceph.com/">http://ceph.com/</a></div>
@@ -7287,7 +7305,7 @@ which runs over top of one or more on-disk filesystems.</p>
 </ul>
 </div>
 <div class="section" id="cifs">
-<span id="index-64"></span><span id="id49"></span><h5><a class="toc-backref" href="#id199">CIFS</a><a class="headerlink" href="#cifs" title="Permalink to this headline">¶</a></h5>
+<span id="index-64"></span><span id="id49"></span><h5><a class="toc-backref" href="#id206">CIFS</a><a class="headerlink" href="#cifs" title="Permalink to this headline">¶</a></h5>
 <p>CIFS (<em>Common Internet File System</em>) is a centralized network filesystem
 protocol.</p>
 <ul class="simple">
@@ -7295,7 +7313,7 @@ protocol.</p>
 </ul>
 </div>
 <div class="section" id="ddfs">
-<span id="index-65"></span><span id="id50"></span><h5><a class="toc-backref" href="#id200">DDFS</a><a class="headerlink" href="#ddfs" title="Permalink to this headline">¶</a></h5>
+<span id="index-65"></span><span id="id50"></span><h5><a class="toc-backref" href="#id207">DDFS</a><a class="headerlink" href="#ddfs" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -7308,7 +7326,7 @@ written in <a class="reference internal" href="index.html#python"><em>Python</em
 </ul>
 </div>
 <div class="section" id="glusterfs">
-<span id="index-66"></span><span id="id51"></span><h5><a class="toc-backref" href="#id201">GlusterFS</a><a class="headerlink" href="#glusterfs" title="Permalink to this headline">¶</a></h5>
+<span id="index-66"></span><span id="id51"></span><h5><a class="toc-backref" href="#id208">GlusterFS</a><a class="headerlink" href="#glusterfs" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/GlusterFS">https://en.wikipedia.org/wiki/GlusterFS</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://www.gluster.org/">http://www.gluster.org/</a></div>
@@ -7331,7 +7349,7 @@ which runs over top of one or more on-disk filesystems.</p>
 </ul>
 <span class="target" id="index-67"></span></div>
 <div class="section" id="hdfs">
-<span id="index-68"></span><span id="id52"></span><h5><a class="toc-backref" href="#id202">HDFS</a><a class="headerlink" href="#hdfs" title="Permalink to this headline">¶</a></h5>
+<span id="index-68"></span><span id="id52"></span><h5><a class="toc-backref" href="#id209">HDFS</a><a class="headerlink" href="#hdfs" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Apache_Hadoop#HDFS">https://en.wikipedia.org/wiki/Apache_Hadoop#HDFS</a></div>
 </div>
@@ -7362,7 +7380,7 @@ as <a class="reference internal" href="#hadoop"><em>Hadoop</em></a> cluster.</li
 </ul>
 </div>
 <div class="section" id="nfs">
-<span id="index-69"></span><span id="id53"></span><h5><a class="toc-backref" href="#id203">NFS</a><a class="headerlink" href="#nfs" title="Permalink to this headline">¶</a></h5>
+<span id="index-69"></span><span id="id53"></span><h5><a class="toc-backref" href="#id210">NFS</a><a class="headerlink" href="#nfs" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/NFS">https://en.wikipedia.org/wiki/NFS</a></div>
 </div>
@@ -7370,7 +7388,7 @@ as <a class="reference internal" href="#hadoop"><em>Hadoop</em></a> cluster.</li
 centralized network filesystem.</p>
 </div>
 <div class="section" id="s3">
-<span id="index-70"></span><span id="id54"></span><h5><a class="toc-backref" href="#id204">S3</a><a class="headerlink" href="#s3" title="Permalink to this headline">¶</a></h5>
+<span id="index-70"></span><span id="id54"></span><h5><a class="toc-backref" href="#id211">S3</a><a class="headerlink" href="#s3" title="Permalink to this headline">¶</a></h5>
 <ul class="simple">
 <li><a class="reference internal" href="index.html#aws"><em>Amazon AWS</em></a> S3</li>
 <li><a class="reference internal" href="index.html#openstack"><em>OpenStack</em></a> Swift</li>
@@ -7379,7 +7397,7 @@ centralized network filesystem.</p>
 </ul>
 </div>
 <div class="section" id="swift">
-<span id="index-71"></span><span id="id55"></span><h5><a class="toc-backref" href="#id205">Swift</a><a class="headerlink" href="#swift" title="Permalink to this headline">¶</a></h5>
+<span id="index-71"></span><span id="id55"></span><h5><a class="toc-backref" href="#id212">Swift</a><a class="headerlink" href="#swift" title="Permalink to this headline">¶</a></h5>
 <ul class="simple">
 <li><a class="reference internal" href="index.html#openstack"><em>OpenStack</em></a> Swift</li>
 <li><a class="reference internal" href="#ceph"><em>Ceph</em></a></li>
@@ -7387,7 +7405,7 @@ centralized network filesystem.</p>
 </ul>
 </div>
 <div class="section" id="smb">
-<span id="index-72"></span><span id="id56"></span><h5><a class="toc-backref" href="#id206">SMB</a><a class="headerlink" href="#smb" title="Permalink to this headline">¶</a></h5>
+<span id="index-72"></span><span id="id56"></span><h5><a class="toc-backref" href="#id213">SMB</a><a class="headerlink" href="#smb" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Server_Message_Block">https://en.wikipedia.org/wiki/Server_Message_Block</a></div>
 </div>
@@ -7397,7 +7415,7 @@ centralized network filesystem.</p>
 </ul>
 </div>
 <div class="section" id="webdav">
-<span id="index-73"></span><span id="id57"></span><h5><a class="toc-backref" href="#id207">WebDAV</a><a class="headerlink" href="#webdav" title="Permalink to this headline">¶</a></h5>
+<span id="index-73"></span><span id="id57"></span><h5><a class="toc-backref" href="#id214">WebDAV</a><a class="headerlink" href="#webdav" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/WebDAV">https://en.wikipedia.org/wiki/WebDAV</a></div>
 <div class="line">Standard: <a class="reference external" href="https://tools.ietf.org/html/rfc2518">https://tools.ietf.org/html/rfc2518</a></div>
@@ -7420,7 +7438,7 @@ is a network filesystem protocol built with <a class="reference internal" href="
 </div>
 </div>
 <div class="section" id="databases">
-<span id="index-74"></span><span id="id58"></span><h4><a class="toc-backref" href="#id208">Databases</a><a class="headerlink" href="#databases" title="Permalink to this headline">¶</a></h4>
+<span id="index-74"></span><span id="id58"></span><h4><a class="toc-backref" href="#id215">Databases</a><a class="headerlink" href="#databases" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Database">https://en.wikipedia.org/wiki/Database</a></div>
 </div>
@@ -7438,7 +7456,7 @@ is a network filesystem protocol built with <a class="reference internal" href="
 </li>
 </ul>
 <div class="section" id="data-engineering-review">
-<span id="index-75"></span><span id="id59"></span><h5><a class="toc-backref" href="#id209">Data Engineering Review</a><a class="headerlink" href="#data-engineering-review" title="Permalink to this headline">¶</a></h5>
+<span id="index-75"></span><span id="id59"></span><h5><a class="toc-backref" href="#id216">Data Engineering Review</a><a class="headerlink" href="#data-engineering-review" title="Permalink to this headline">¶</a></h5>
 <p>From <a class="reference internal" href="index.html#computer-engineering"><em>Computer Engineering</em></a> &gt; <a class="reference internal" href="#data-engineering"><em>Data Engineering</em></a>:</p>
 <ul class="simple">
 <li><a class="reference internal" href="#filesystems"><em>Filesystems</em></a>
@@ -7458,7 +7476,7 @@ is a network filesystem protocol built with <a class="reference internal" href="
 </ul>
 <span class="target" id="index-76"></span></div>
 <div class="section" id="object-relational-mapping">
-<span id="orm"></span><span id="index-77"></span><h5><a class="toc-backref" href="#id210">Object Relational Mapping</a><a class="headerlink" href="#object-relational-mapping" title="Permalink to this headline">¶</a></h5>
+<span id="orm"></span><span id="index-77"></span><h5><a class="toc-backref" href="#id217">Object Relational Mapping</a><a class="headerlink" href="#object-relational-mapping" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Object-relational_mapping">https://en.wikipedia.org/wiki/Object-relational_mapping</a></div>
 </div>
@@ -7472,7 +7490,7 @@ is a network filesystem protocol built with <a class="reference internal" href="
 </ul>
 <span class="target" id="index-78"></span></div>
 <div class="section" id="relational-databases">
-<span id="index-79"></span><span id="id60"></span><h5><a class="toc-backref" href="#id211">Relational Databases</a><a class="headerlink" href="#relational-databases" title="Permalink to this headline">¶</a></h5>
+<span id="index-79"></span><span id="id60"></span><h5><a class="toc-backref" href="#id218">Relational Databases</a><a class="headerlink" href="#relational-databases" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Relational_database">https://en.wikipedia.org/wiki/Relational_database</a></div>
 </div>
@@ -7497,14 +7515,14 @@ is a network filesystem protocol built with <a class="reference internal" href="
 <ul class="simple">
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Comparison_of_relational_database_management_systems">https://en.wikipedia.org/wiki/Comparison_of_relational_database_management_systems</a></li>
 <li><a class="reference external" href="http://db-engines.com/en/ranking/relational+dbms">http://db-engines.com/en/ranking/relational+dbms</a></li>
-<li><a class="reference external" href="https://en.wikipedia.org/wiki/SQLite">https://en.wikipedia.org/wiki/SQLite</a></li>
-<li><a class="reference external" href="https://en.wikipedia.org/wiki/MySQL">https://en.wikipedia.org/wiki/MySQL</a></li>
-<li><a class="reference external" href="https://en.wikipedia.org/wiki/PostgreSQL">https://en.wikipedia.org/wiki/PostgreSQL</a></li>
+<li><a class="reference internal" href="#mysql"><em>MySQL</em></a></li>
+<li><a class="reference internal" href="#postgresql"><em>PostgreSQL</em></a></li>
+<li><a class="reference internal" href="#sqlite"><em>SQLite</em></a></li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Virtuoso_Universal_Server">https://en.wikipedia.org/wiki/Virtuoso_Universal_Server</a></li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/OLAP">https://en.wikipedia.org/wiki/OLAP</a></li>
 </ul>
 <div class="section" id="sql">
-<span id="index-80"></span><span id="id61"></span><h6><a class="toc-backref" href="#id212">SQL</a><a class="headerlink" href="#sql" title="Permalink to this headline">¶</a></h6>
+<span id="index-80"></span><span id="id61"></span><h6><a class="toc-backref" href="#id219">SQL</a><a class="headerlink" href="#sql" title="Permalink to this headline">¶</a></h6>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/SQL">https://en.wikipedia.org/wiki/SQL</a></div>
 </div>
@@ -7516,10 +7534,106 @@ is a network filesystem protocol built with <a class="reference internal" href="
 Security Error (2011))</li>
 </ul>
 <p>See: <a class="reference internal" href="#orm"><em>Object Relational Modeling</em></a></p>
-<span class="target" id="index-81"></span></div>
+</div>
+<div class="section" id="drizzle">
+<span id="index-81"></span><span id="id62"></span><h6><a class="toc-backref" href="#id220">Drizzle</a><a class="headerlink" href="#drizzle" title="Permalink to this headline">¶</a></h6>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Drizzle_(database_server)">https://en.wikipedia.org/wiki/Drizzle_(database_server)</a></div>
+<div class="line">Homepage: <a class="reference external" href="http://www.drizzle.org/">http://www.drizzle.org/</a></div>
+<div class="line">Project: <a class="reference external" href="https://launchpad.net/drizzle">https://launchpad.net/drizzle</a></div>
+<div class="line">Download: <a class="reference external" href="http://www.drizzle.org/content/download">http://www.drizzle.org/content/download</a></div>
+<div class="line">Source: bzr lp:drizzle</div>
+<div class="line">Docs: <a class="reference external" href="http://www.drizzle.org/content/documentation">http://www.drizzle.org/content/documentation</a></div>
+<div class="line">Docs: <a class="reference external" href="http://docs.drizzle.org/">http://docs.drizzle.org/</a></div>
+</div>
+<p>Drizzle is an <a class="reference internal" href="index.html#open-source"><em>Open Source</em></a> relational database &#8220;for the cloud&#8221;
+which was forked from <a class="reference internal" href="#mysql"><em>MySQL</em></a> 6.0.</p>
+<ul class="simple">
+<li>Drizzle stores all data as UTF-8.</li>
+<li>Drizzle has a minimal core and a plugin API.</li>
+</ul>
+</div>
+<div class="section" id="mysql">
+<span id="index-82"></span><span id="id63"></span><h6><a class="toc-backref" href="#id221">MySQL</a><a class="headerlink" href="#mysql" title="Permalink to this headline">¶</a></h6>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/MySQL">https://en.wikipedia.org/wiki/MySQL</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://www.mysql.com/">https://www.mysql.com/</a></div>
+<div class="line">Download: <a class="reference external" href="https://dev.mysql.com/downloads/mysql/">https://dev.mysql.com/downloads/mysql/</a></div>
+<div class="line">Source: git <a class="reference external" href="https://github.com/mysql/mysql-server">https://github.com/mysql/mysql-server</a></div>
+<div class="line">Doc: <a class="reference external" href="https://dev.mysql.com/doc/">https://dev.mysql.com/doc/</a></div>
+</div>
+<p>MySQL Community Edition is an <a class="reference internal" href="index.html#open-source"><em>Open Source</em></a> relational database.</p>
+</div>
+<div class="section" id="postgresql">
+<span id="index-83"></span><span id="id64"></span><h6><a class="toc-backref" href="#id222">PostgreSQL</a><a class="headerlink" href="#postgresql" title="Permalink to this headline">¶</a></h6>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/PostgreSQL">https://en.wikipedia.org/wiki/PostgreSQL</a></div>
+<div class="line">Homepage: <a class="reference external" href="http://www.postgresql.org/">http://www.postgresql.org/</a></div>
+<div class="line">Download: <a class="reference external" href="http://www.postgresql.org/download/">http://www.postgresql.org/download/</a></div>
+<div class="line">Source: git <a class="reference external" href="http://git.postgresql.org/git/postgresql.git">http://git.postgresql.org/git/postgresql.git</a></div>
+<div class="line">Docs: <a class="reference external" href="http://www.postgresql.org/docs/">http://www.postgresql.org/docs/</a></div>
+<div class="line">Docs: <a class="reference external" href="http://www.postgresql.org/docs/9.4/static/index.html">http://www.postgresql.org/docs/9.4/static/index.html</a></div>
+<div class="line">Docs: <a class="reference external" href="http://www.postgresql.org/docs/9.4/static/sql.html">http://www.postgresql.org/docs/9.4/static/sql.html</a></div>
+</div>
+<p>PostgreSQL is an <a class="reference internal" href="index.html#open-source"><em>Open Source</em></a> relational database.</p>
+<ul class="simple">
+<li>PostgreSQL has native support for storing and querying <a class="reference internal" href="#json"><em>JSON</em></a>.</li>
+<li>PostgreSQL has support for geographical queries (<em>PostGIS</em>).</li>
+</ul>
+</div>
+<div class="section" id="sqlite">
+<span id="index-84"></span><span id="id65"></span><h6><a class="toc-backref" href="#id223">SQLite</a><a class="headerlink" href="#sqlite" title="Permalink to this headline">¶</a></h6>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/SQLite">https://en.wikipedia.org/wiki/SQLite</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://www.sqlite.org/">https://www.sqlite.org/</a></div>
+<div class="line">Download: <a class="reference external" href="https://www.sqlite.org/download.html">https://www.sqlite.org/download.html</a></div>
+<div class="line">Source:</div>
+<div class="line">Docs: <a class="reference external" href="https://www.sqlite.org/docs.html">https://www.sqlite.org/docs.html</a></div>
+<div class="line">Docs: <a class="reference external" href="https://www.sqlite.org/different.html">https://www.sqlite.org/different.html</a></div>
+<div class="line">Docs: <a class="reference external" href="https://www.sqlite.org/threadsafe.html">https://www.sqlite.org/threadsafe.html</a></div>
+<div class="line">Docs: <a class="reference external" href="https://www.sqlite.org/uri.html">https://www.sqlite.org/uri.html</a></div>
+<div class="line">FileExt: <code class="docutils literal"><span class="pre">.sqlite</span></code></div>
+</div>
+<p>SQLite is a serverless <a class="reference internal" href="index.html#open-source"><em>Open Source</em></a> relational database
+which stores all data in one file.</p>
+<ul class="simple">
+<li>SQLite is included in the <a class="reference internal" href="index.html#python"><em>Python</em></a> standard library.</li>
+</ul>
+<span class="target" id="index-85"></span></div>
+<div class="section" id="virtuoso">
+<span id="index-86"></span><span id="id66"></span><h6><a class="toc-backref" href="#id224">Virtuoso</a><a class="headerlink" href="#virtuoso" title="Permalink to this headline">¶</a></h6>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Virtuoso_Universal_Server">https://en.wikipedia.org/wiki/Virtuoso_Universal_Server</a></div>
+<div class="line">Homepage: <a class="reference external" href="http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/">http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/</a></div>
+<div class="line">Source: git <a class="reference external" href="https://github.com/openlink/virtuoso-opensource">https://github.com/openlink/virtuoso-opensource</a></div>
+<div class="line">Docs:</div>
+</div>
+<p>Virtuoso <a class="reference internal" href="index.html#open-source"><em>Open Source</em></a> edition is a multi-paradigm
+<em class="xref std std-ref">relational database</em> /
+<em class="xref std std-ref">rdf triplestore</em>.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Relational Tables Data Management
+(Columnar or Column-Store <a class="reference internal" href="#sql"><em>SQL</em></a> RDBMS)</li>
+<li>Relational Property Graphs Data Management
+(<a class="reference internal" href="#sparql"><em>SPARQL</em></a> <a class="reference internal" href="#rdf"><em>RDF</em></a> based Quad Store)</li>
+<li>Content Management
+(<a class="reference internal" href="#html"><em>HTML</em></a>, TEXT, <a class="reference internal" href="#turtle"><em>Turtle</em></a>, <a class="reference internal" href="#rdf-xml"><em>RDF/XML</em></a>, <a class="reference internal" href="#json"><em>JSON</em></a>,
+<a class="reference internal" href="#json-ld"><em>JSON-LD</em></a>, <a class="reference internal" href="#xml"><em>XML</em></a>)</li>
+<li>Web and other Document File Services (Web Document or File Server)</li>
+<li>Five-Star Linked Open Data Deployment
+(<a class="reference internal" href="#rdf"><em>RDF</em></a>-based Linked Data Server)</li>
+<li>Web Application Server (SOAP or <a class="reference internal" href="index.html#term-restful-api"><em class="xref std std-term">RESTful</em></a>
+interaction modes).</li>
+</ul>
+</div></blockquote>
+<ul class="simple">
+<li>Virtuoso supports ODBC, JDBC, and DB-API relational database access.</li>
+</ul>
+<span class="target" id="index-87"></span></div>
 </div>
 <div class="section" id="nosql-databases">
-<span id="nosql"></span><span id="index-82"></span><h5><a class="toc-backref" href="#id213">NoSQL Databases</a><a class="headerlink" href="#nosql-databases" title="Permalink to this headline">¶</a></h5>
+<span id="nosql"></span><span id="index-88"></span><h5><a class="toc-backref" href="#id225">NoSQL Databases</a><a class="headerlink" href="#nosql-databases" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/NoSQL">https://en.wikipedia.org/wiki/NoSQL</a></div>
 </div>
@@ -7532,7 +7646,7 @@ Security Error (2011))</li>
 </ul>
 </div>
 <div class="section" id="graph-databases">
-<span id="index-83"></span><span id="id62"></span><h5><a class="toc-backref" href="#id214">Graph Databases</a><a class="headerlink" href="#graph-databases" title="Permalink to this headline">¶</a></h5>
+<span id="index-89"></span><span id="id67"></span><h5><a class="toc-backref" href="#id226">Graph Databases</a><a class="headerlink" href="#graph-databases" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Graph_database">https://en.wikipedia.org/wiki/Graph_database</a></div>
 </div>
@@ -7549,11 +7663,11 @@ Security Error (2011))</li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Graph_database#APIs_and_Graph_Query.2FProgramming_Languages">https://en.wikipedia.org/wiki/Graph_database#APIs_and_Graph_Query.2FProgramming_Languages</a></li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/SPARQL">https://en.wikipedia.org/wiki/SPARQL</a></li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Gremlin_(programming_language)">https://en.wikipedia.org/wiki/Gremlin_(programming_language)</a></li>
-<li><a class="reference external" href="https://en.wikipedia.org/wiki/Apache_Spark">https://en.wikipedia.org/wiki/Apache_Spark</a> GraphX</li>
+<li><a class="reference internal" href="#spark"><em>Spark</em></a> GraphX</li>
 </ul>
-<span class="target" id="index-84"></span></div>
+<span class="target" id="index-90"></span></div>
 <div class="section" id="rdf-triplestores">
-<span id="triplestores"></span><span id="index-85"></span><h5><a class="toc-backref" href="#id215">RDF Triplestores</a><a class="headerlink" href="#rdf-triplestores" title="Permalink to this headline">¶</a></h5>
+<span id="triplestores"></span><span id="index-91"></span><h5><a class="toc-backref" href="#id227">RDF Triplestores</a><a class="headerlink" href="#rdf-triplestores" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Triplestore">https://en.wikipedia.org/wiki/Triplestore</a></div>
 </div>
@@ -7586,76 +7700,176 @@ Security Error (2011))</li>
 </ul>
 </div>
 <div class="section" id="distributed-databases">
-<span id="index-86"></span><span id="id63"></span><h5><a class="toc-backref" href="#id216">Distributed Databases</a><a class="headerlink" href="#distributed-databases" title="Permalink to this headline">¶</a></h5>
+<span id="index-92"></span><span id="id68"></span><h5><a class="toc-backref" href="#id228">Distributed Databases</a><a class="headerlink" href="#distributed-databases" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Distributed_database">https://en.wikipedia.org/wiki/Distributed_database</a></div>
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Distributed_data_store">https://en.wikipedia.org/wiki/Distributed_data_store</a></div>
 </div>
 <p>See: <a class="reference internal" href="#distributed-algorithms"><em>Distributed Algorithms</em></a></p>
 <div class="section" id="accumulo">
-<span id="index-87"></span><span id="id64"></span><h6><a class="toc-backref" href="#id217">Accumulo</a><a class="headerlink" href="#accumulo" title="Permalink to this headline">¶</a></h6>
+<span id="index-93"></span><span id="id69"></span><h6><a class="toc-backref" href="#id229">Accumulo</a><a class="headerlink" href="#accumulo" title="Permalink to this headline">¶</a></h6>
 <div class="line-block">
 <div class="line">Wikipedia:</div>
 <div class="line">Homepage: <a class="reference external" href="https://accumulo.apache.org/">https://accumulo.apache.org/</a></div>
-<div class="line">Download:</div>
-<div class="line">Source:</div>
-<div class="line">Docs:</div>
+<div class="line">Download: <a class="reference external" href="https://accumulo.apache.org/downloads/">https://accumulo.apache.org/downloads/</a></div>
+<div class="line">Source: git <a class="reference external" href="https://github.com/apache/accumulo">https://github.com/apache/accumulo</a></div>
+<div class="line">Docs: <a class="reference external" href="https://accumulo.apache.org/1.7/accumulo_user_manual.html">https://accumulo.apache.org/1.7/accumulo_user_manual.html</a></div>
+<div class="line">Docs: <a class="reference external" href="https://accumulo.apache.org/1.7/accumulo_user_manual.html#_accumulo_design">https://accumulo.apache.org/1.7/accumulo_user_manual.html#_accumulo_design</a></div>
+<div class="line">Twitter: <a class="reference external" href="https://twitter.com/apacheaccumulo">https://twitter.com/apacheaccumulo</a></div>
 </div>
+<p>Apache Accumulo is an <a class="reference internal" href="index.html#open-source"><em>Open Source</em></a> distributed database
+key/value store written in <a class="reference internal" href="index.html#java"><em>Java</em></a>
+based on <a class="reference internal" href="#bigtable"><em>BigTable</em></a>
+which adds realtime queries, streaming iterators,
+row-level ACLs
+and a number of additional features.</p>
+<ul class="simple">
+<li>Accumulo supports <a class="reference internal" href="#mapreduce"><em>MapReduce</em></a>-style computation.</li>
+<li>Accumulo supports streaming iterator computation.</li>
+<li>Accumulo supports <a class="reference internal" href="#hdfs"><em>HDFS</em></a>.</li>
+<li>Accumulo implements a programmatic <a class="reference internal" href="index.html#java"><em>Java</em></a> query API.</li>
+</ul>
+</div>
+<div class="section" id="bigtable">
+<span id="index-94"></span><span id="id70"></span><h6><a class="toc-backref" href="#id230">BigTable</a><a class="headerlink" href="#bigtable" title="Permalink to this headline">¶</a></h6>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/BigTable">https://en.wikipedia.org/wiki/BigTable</a></div>
+<div class="line">Docs: <a class="reference external" href="http://research.google.com/archive/bigtable.html">http://research.google.com/archive/bigtable.html</a></div>
+</div>
+<p>Google BigTable is a open reference design for a distributed key/value
+column store
+and a proprietary production database system.</p>
+<ul class="simple">
+<li>BigTable functionality overlaps with that of the newer Pregel and Spanner
+distributed databases.</li>
+<li>Cloud BigTable is a <a class="reference internal" href="index.html#paas"><em>PaaS</em></a> / <a class="reference internal" href="index.html#saas"><em>SaaS</em></a> service
+with <a class="reference internal" href="index.html#java"><em>Java</em></a> integration through an adaptation of
+<a class="reference internal" href="#hbase"><em>HBase</em></a> API.</li>
+</ul>
 </div>
 <div class="section" id="cassandra">
-<span id="index-88"></span><span id="id65"></span><h6><a class="toc-backref" href="#id218">Cassandra</a><a class="headerlink" href="#cassandra" title="Permalink to this headline">¶</a></h6>
+<span id="index-95"></span><span id="id71"></span><h6><a class="toc-backref" href="#id231">Cassandra</a><a class="headerlink" href="#cassandra" title="Permalink to this headline">¶</a></h6>
 <div class="line-block">
-<div class="line">Wikipedia:</div>
-<div class="line">Homepage:</div>
-<div class="line">Download:</div>
-<div class="line">Source:</div>
-<div class="line">Docs:</div>
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Apache_Cassandra">https://en.wikipedia.org/wiki/Apache_Cassandra</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://cassandra.apache.org/">https://cassandra.apache.org/</a></div>
+<div class="line">Download: <a class="reference external" href="https://cassandra.apache.org/download/">https://cassandra.apache.org/download/</a></div>
+<div class="line">Source: git <a class="reference external" href="https://github.com/apache/cassandra">https://github.com/apache/cassandra</a></div>
+<div class="line">Docs: <a class="reference external" href="https://wiki.apache.org/cassandra/FrontPage">https://wiki.apache.org/cassandra/FrontPage</a></div>
+<div class="line">Docs: <a class="reference external" href="https://wiki.apache.org/cassandra/GettingStarted">https://wiki.apache.org/cassandra/GettingStarted</a></div>
+<div class="line">Docs: <a class="reference external" href="http://docs.datastax.com/en/latest-dsc/">http://docs.datastax.com/en/latest-dsc/</a></div>
+<div class="line">Docs: <a class="reference external" href="http://docs.datastax.com/en/cassandra/2.1/cassandra/architecture/architectureIntro_c.html">http://docs.datastax.com/en/cassandra/2.1/cassandra/architecture/architectureIntro_c.html</a></div>
 </div>
+<p>Apache Cassandra is an <a class="reference internal" href="index.html#open-source"><em>Open Source</em></a> distributed key/value
+super column store written in <a class="reference internal" href="index.html#java"><em>Java</em></a>.</p>
+<ul class="simple">
+<li>Cassandra is similar to <a class="reference internal" href="index.html#aws"><em>Amazon AWS</em></a> Dynamo and <a class="reference internal" href="#bigtable"><em>BigTable</em></a>.</li>
+<li>Cassandra supports <a class="reference internal" href="#mapreduce"><em>MapReduce</em></a>-style computation.</li>
+<li>Cassandra supports <a class="reference internal" href="#hdfs"><em>HDFS</em></a>.</li>
+<li>Facebook is one primary supporter of <a class="reference internal" href="#cassandra"><em>Cassandra</em></a> development.</li>
+</ul>
 </div>
 <div class="section" id="elasticsearch">
-<span id="index-89"></span><span id="id66"></span><h6><a class="toc-backref" href="#id219">ElasticSearch</a><a class="headerlink" href="#elasticsearch" title="Permalink to this headline">¶</a></h6>
+<span id="index-96"></span><span id="id72"></span><h6><a class="toc-backref" href="#id232">ElasticSearch</a><a class="headerlink" href="#elasticsearch" title="Permalink to this headline">¶</a></h6>
 <div class="line-block">
-<div class="line">Wikipedia:</div>
-<div class="line">Homepage:</div>
-<div class="line">Download:</div>
-<div class="line">Source:</div>
-<div class="line">Docs:</div>
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Elasticsearch">https://en.wikipedia.org/wiki/Elasticsearch</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://www.elastic.co/products/elasticsearch">https://www.elastic.co/products/elasticsearch</a></div>
+<div class="line">Download: <a class="reference external" href="https://www.elastic.co/downloads/elasticsearch">https://www.elastic.co/downloads/elasticsearch</a></div>
+<div class="line">Source: git <a class="reference external" href="https://github.com/elastic/elasticsearch">https://github.com/elastic/elasticsearch</a></div>
+<div class="line">Docs: <a class="reference external" href="https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html">https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html</a></div>
+<div class="line">Docs: <a class="reference external" href="https://www.elastic.co/guide/en/elasticsearch/guide/current/index.html">https://www.elastic.co/guide/en/elasticsearch/guide/current/index.html</a></div>
+<div class="line">DockerHub: <a class="reference external" href="https://registry.hub.docker.com/u/library/elasticsearch/">https://registry.hub.docker.com/u/library/elasticsearch/</a></div>
 </div>
+<p>ElasticSearch is an <a class="reference internal" href="index.html#open-source"><em>Open Source</em></a> realtime search server
+written in <a class="reference internal" href="index.html#java"><em>Java</em></a>
+built on Apache <em class="xref std std-ref">Lucene</em>
+with a <a class="reference internal" href="index.html#term-restful-api"><em class="xref std std-term">RESTful API</em></a> for indexing <a class="reference internal" href="#json"><em>JSON</em></a> documents.</p>
+<ul class="simple">
+<li>ElasticSearch supports geographical (bounded) queries.</li>
+<li>ElasticSearch can build better indexes for faster
+search response times when
+<em>ElasticSearch Mappings</em> are specified.</li>
+<li>ElasticSearch mappings can be (manually) transformed
+to <a class="reference internal" href="#json-ld"><em>JSON-LD</em></a> <code class="docutils literal"><span class="pre">&#64;context</span></code> mappings:
+<a class="reference external" href="https://github.com/westurner/elasticsearchjsonld">https://github.com/westurner/elasticsearchjsonld</a></li>
+</ul>
 </div>
 <div class="section" id="hadoop">
-<span id="index-90"></span><span id="id67"></span><h6><a class="toc-backref" href="#id220">Hadoop</a><a class="headerlink" href="#hadoop" title="Permalink to this headline">¶</a></h6>
+<span id="index-97"></span><span id="id73"></span><h6><a class="toc-backref" href="#id233">Hadoop</a><a class="headerlink" href="#hadoop" title="Permalink to this headline">¶</a></h6>
 <div class="line-block">
-<div class="line">Wikipedia:</div>
-<div class="line">Homepage:</div>
-<div class="line">Download:</div>
-<div class="line">Source:</div>
-<div class="line">Docs:</div>
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Apache_Hadoop">https://en.wikipedia.org/wiki/Apache_Hadoop</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://hadoop.apache.org/">https://hadoop.apache.org/</a></div>
+<div class="line">Download: <a class="reference external" href="https://hadoop.apache.org/releases.html">https://hadoop.apache.org/releases.html</a></div>
+<div class="line">Source: git git://git.apache.org/hadoop.git</div>
+<div class="line">Source: git <a class="reference external" href="https://github.com/apache/hadoop">https://github.com/apache/hadoop</a></div>
+<div class="line">Docs: <a class="reference external" href="http://hadoop.apache.org/docs/current/">http://hadoop.apache.org/docs/current/</a></div>
+<div class="line">Docs: <a class="reference external" href="http://hadoop.apache.org/docs/stable/">http://hadoop.apache.org/docs/stable/</a></div>
 </div>
+<p>Apache Hadoop is a collection of <a class="reference internal" href="index.html#open-source"><em>Open Source</em></a>
+distributed computing components;
+particularly for <a class="reference internal" href="#mapreduce"><em>MapReduce</em></a>-style computation
+over Hadoop <a class="reference internal" href="#hdfs"><em>HDFS</em></a> distributed filesystem.</p>
 </div>
 <div class="section" id="hbase">
-<span id="index-91"></span><span id="id68"></span><h6><a class="toc-backref" href="#id221">HBase</a><a class="headerlink" href="#hbase" title="Permalink to this headline">¶</a></h6>
+<span id="index-98"></span><span id="id74"></span><h6><a class="toc-backref" href="#id234">HBase</a><a class="headerlink" href="#hbase" title="Permalink to this headline">¶</a></h6>
 <div class="line-block">
-<div class="line">Wikipedia:</div>
-<div class="line">Homepage:</div>
-<div class="line">Download:</div>
-<div class="line">Source:</div>
-<div class="line">Docs:</div>
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Apache_HBase">https://en.wikipedia.org/wiki/Apache_HBase</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://hbase.apache.org/">https://hbase.apache.org/</a></div>
+<div class="line">Download: <a class="reference external" href="https://www.apache.org/dyn/closer.cgi/hbase/">https://www.apache.org/dyn/closer.cgi/hbase/</a></div>
+<div class="line">Source: git git://git.apache.org/hbase.git</div>
+<div class="line">Source: git <a class="reference external" href="https://github.com/apache/hbase">https://github.com/apache/hbase</a></div>
+<div class="line">Docs: <a class="reference external" href="https://hbase.apache.org/book.html">https://hbase.apache.org/book.html</a></div>
+<div class="line">Docs: <a class="reference external" href="https://hbase.apache.org/book.html#conceptual.view">https://hbase.apache.org/book.html#conceptual.view</a></div>
 </div>
+<p>Apache HBase is an <a class="reference internal" href="index.html#open-source"><em>Open Source</em></a> distributed key/value
+super column store
+based on <a class="reference internal" href="#bigtable"><em>BigTable</em></a>
+written in <a class="reference internal" href="index.html#java"><em>Java</em></a>
+that does <a class="reference internal" href="#mapreduce"><em>MapReduce</em></a>-style computation over Hadoop <a class="reference internal" href="#hdfs"><em>HDFS</em></a>.</p>
+<ul class="simple">
+<li>HBase has a <a class="reference internal" href="index.html#java"><em>Java</em></a> API, a <a class="reference internal" href="index.html#term-restful-api"><em class="xref std std-term">RESTful API</em></a>, an <cite>avro</cite> API,
+and a <em class="xref std std-ref">Thrift</em> API</li>
+</ul>
 </div>
 <div class="section" id="spark">
-<span id="index-92"></span><span id="id69"></span><h6><a class="toc-backref" href="#id222">Spark</a><a class="headerlink" href="#spark" title="Permalink to this headline">¶</a></h6>
+<span id="index-99"></span><span id="id75"></span><h6><a class="toc-backref" href="#id235">Spark</a><a class="headerlink" href="#spark" title="Permalink to this headline">¶</a></h6>
 <div class="line-block">
-<div class="line">Wikipedia:</div>
-<div class="line">Homepage:</div>
-<div class="line">Download:</div>
-<div class="line">Source:</div>
-<div class="line">Docs:</div>
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Apache_Spark">https://en.wikipedia.org/wiki/Apache_Spark</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://spark.apache.org/">https://spark.apache.org/</a></div>
+<div class="line">Download: <a class="reference external" href="https://spark.apache.org/downloads.html">https://spark.apache.org/downloads.html</a></div>
+<div class="line">Source: git git://git.apache.org/spark.git</div>
+<div class="line">Source: git <a class="reference external" href="https://github.com/apache/spark">https://github.com/apache/spark</a></div>
+<div class="line">Docs: <a class="reference external" href="https://spark.apache.org/documentation.html">https://spark.apache.org/documentation.html</a></div>
+<div class="line">Docs: <a class="reference external" href="https://spark.apache.org/docs/latest/">https://spark.apache.org/docs/latest/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://spark.apache.org/docs/latest/cluster-overview.html">https://spark.apache.org/docs/latest/cluster-overview.html</a></div>
+<div class="line">Docs: <a class="reference external" href="https://spark.apache.org/docs/latest/quick-start.html">https://spark.apache.org/docs/latest/quick-start.html</a></div>
+</div>
+<p>Apache Spark is an <a class="reference internal" href="index.html#open-source"><em>Open Source</em></a> distributed
+computation platform.</p>
+<ul class="simple">
+<li>Spark is in-memory; and 100x faster than <a class="reference internal" href="#mapreduce"><em>MapReduce</em></a>.</li>
+<li>Spark can work with data in/over/through
+<a class="reference internal" href="#hdfs"><em>HDFS</em></a>, <a class="reference internal" href="#cassandra"><em>Cassandra</em></a>, <a class="reference internal" href="index.html#openstack"><em>OpenStack</em></a> <a class="reference internal" href="#swift"><em>Swift</em></a>,
+<a class="reference internal" href="index.html#aws"><em>Amazon AWS</em></a> <a class="reference internal" href="#s3"><em>S3</em></a>, and the local filesystem.</li>
+<li>Spark can be provisioned by YARN or <a class="reference internal" href="index.html#mesos"><em>Mesos</em></a>.</li>
+<li>Spark has <a class="reference internal" href="index.html#java"><em>Java</em></a>, <a class="reference internal" href="index.html#scala"><em>Scala</em></a>, <a class="reference internal" href="index.html#python"><em>Python</em></a>, and <em class="xref std std-ref">R</em>
+<a class="reference internal" href="index.html#term-language-api"><em class="xref std std-term">language APIs</em></a>.</li>
+<li>Spark set a world sorting benchmark record in 2014:
+<a class="reference external" href="https://spark.apache.org/news/spark-wins-daytona-gray-sort-100tb-benchmark.html">https://spark.apache.org/news/spark-wins-daytona-gray-sort-100tb-benchmark.html</a></li>
+</ul>
+<div class="section" id="graphx">
+<span id="index-100"></span><span id="id76"></span><h7><a class="toc-backref" href="#id236">GraphX</a><a class="headerlink" href="#graphx" title="Permalink to this headline">¶</a></h7>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Apache_Spark#GraphX">https://en.wikipedia.org/wiki/Apache_Spark#GraphX</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://spark.apache.org/graphx/">https://spark.apache.org/graphx/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://spark.apache.org/docs/latest/graphx-programming-guide.html">https://spark.apache.org/docs/latest/graphx-programming-guide.html</a></div>
+</div>
+<p>GraphX is an <a class="reference internal" href="index.html#open-source"><em>Open Source</em></a> graph query framework built with <a class="reference internal" href="#spark"><em>Spark</em></a>.</p>
 </div>
 </div>
 </div>
 </div>
 <div class="section" id="distributed-algorithms">
-<span id="index-93"></span><span id="id70"></span><h4><a class="toc-backref" href="#id223">Distributed Algorithms</a><a class="headerlink" href="#distributed-algorithms" title="Permalink to this headline">¶</a></h4>
+<span id="index-101"></span><span id="id77"></span><h4><a class="toc-backref" href="#id237">Distributed Algorithms</a><a class="headerlink" href="#distributed-algorithms" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Distributed_algorithm">https://en.wikipedia.org/wiki/Distributed_algorithm</a></div>
 <div class="line">WikipediaCategory: <a class="reference external" href="https://en.wikipedia.org/wiki/Category:Distributed_algorithms">https://en.wikipedia.org/wiki/Category:Distributed_algorithms</a></div>
@@ -7685,7 +7899,7 @@ implement <a class="reference internal" href="#distributed-algorithms"><em>Distr
 <li></li>
 </ul>
 <div class="section" id="distributed-computing-problems">
-<span id="index-94"></span><span id="id71"></span><h5><a class="toc-backref" href="#id224">Distributed Computing Problems</a><a class="headerlink" href="#distributed-computing-problems" title="Permalink to this headline">¶</a></h5>
+<span id="index-102"></span><span id="id78"></span><h5><a class="toc-backref" href="#id238">Distributed Computing Problems</a><a class="headerlink" href="#distributed-computing-problems" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Distributed_computing">https://en.wikipedia.org/wiki/Distributed_computing</a></div>
 <div class="line">WikipediaCategory: <a class="reference external" href="https://en.wikipedia.org/wiki/Category:Distributed_computing_problems">https://en.wikipedia.org/wiki/Category:Distributed_computing_problems</a></div>
@@ -7699,7 +7913,7 @@ implement <a class="reference internal" href="#distributed-algorithms"><em>Distr
 </ul>
 </div>
 <div class="section" id="non-blocking-algorithm">
-<span id="index-95"></span><span id="id72"></span><h5><a class="toc-backref" href="#id225">Non-blocking algorithm</a><a class="headerlink" href="#non-blocking-algorithm" title="Permalink to this headline">¶</a></h5>
+<span id="index-103"></span><span id="id79"></span><h5><a class="toc-backref" href="#id239">Non-blocking algorithm</a><a class="headerlink" href="#non-blocking-algorithm" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Non-blocking_algorithm">https://en.wikipedia.org/wiki/Non-blocking_algorithm</a></div>
 </div>
@@ -7707,9 +7921,9 @@ implement <a class="reference internal" href="#distributed-algorithms"><em>Distr
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Lock_(computer_science)#Disadvantages">https://en.wikipedia.org/wiki/Lock_(computer_science)#Disadvantages</a></li>
 <li>See: <a class="reference internal" href="#file-locking"><em>File Locking</em></a></li>
 </ul>
-<span class="target" id="index-96"></span></div>
+<span class="target" id="index-104"></span></div>
 <div class="section" id="dht">
-<span id="index-97"></span><span id="id73"></span><h5><a class="toc-backref" href="#id226">DHT</a><a class="headerlink" href="#dht" title="Permalink to this headline">¶</a></h5>
+<span id="index-105"></span><span id="id80"></span><h5><a class="toc-backref" href="#id240">DHT</a><a class="headerlink" href="#dht" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Distributed_hash_table">https://en.wikipedia.org/wiki/Distributed_hash_table</a></div>
 </div>
@@ -7748,7 +7962,7 @@ which can be retrieved from a <a class="reference internal" href="#dht"><em>DHT<
 </ul>
 </div>
 <div class="section" id="mapreduce">
-<span id="index-98"></span><span id="id74"></span><h5><a class="toc-backref" href="#id227">MapReduce</a><a class="headerlink" href="#mapreduce" title="Permalink to this headline">¶</a></h5>
+<span id="index-106"></span><span id="id81"></span><h5><a class="toc-backref" href="#id241">MapReduce</a><a class="headerlink" href="#mapreduce" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia:  <a class="reference external" href="https://en.wikipedia.org/wiki/MapReduce">https://en.wikipedia.org/wiki/MapReduce</a></div>
 </div>
@@ -7759,7 +7973,7 @@ model</li>
 </ul>
 </div>
 <div class="section" id="paxos">
-<span id="index-99"></span><span id="id75"></span><h5><a class="toc-backref" href="#id228">Paxos</a><a class="headerlink" href="#paxos" title="Permalink to this headline">¶</a></h5>
+<span id="index-107"></span><span id="id82"></span><h5><a class="toc-backref" href="#id242">Paxos</a><a class="headerlink" href="#paxos" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Paxos_(computer_science)">https://en.wikipedia.org/wiki/Paxos_(computer_science)</a></div>
 <div class="line">Docs: <a class="reference external" href="https://en.wikipedia.org/wiki/Paxos_(computer_science)#Production_use_of_Paxos">https://en.wikipedia.org/wiki/Paxos_(computer_science)#Production_use_of_Paxos</a></div>
@@ -7772,9 +7986,9 @@ model</li>
 </ul>
 </li>
 </ul>
-<span class="target" id="index-100"></span></div>
+<span class="target" id="index-108"></span></div>
 <div class="section" id="bulk-synchronous-parallel">
-<span id="bsp"></span><span id="index-101"></span><h5><a class="toc-backref" href="#id229">Bulk Synchronous Parallel</a><a class="headerlink" href="#bulk-synchronous-parallel" title="Permalink to this headline">¶</a></h5>
+<span id="bsp"></span><span id="index-109"></span><h5><a class="toc-backref" href="#id243">Bulk Synchronous Parallel</a><a class="headerlink" href="#bulk-synchronous-parallel" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Bulk_synchronous_parallel">https://en.wikipedia.org/wiki/Bulk_synchronous_parallel</a></div>
 </div>
@@ -7788,16 +8002,16 @@ a <a class="reference internal" href="#bsp"><em>Bulk Synchronous Parallel</em></
 </div>
 </div>
 <div class="section" id="data-grid">
-<span id="index-102"></span><span id="id76"></span><h4><a class="toc-backref" href="#id230">Data Grid</a><a class="headerlink" href="#data-grid" title="Permalink to this headline">¶</a></h4>
+<span id="index-110"></span><span id="id83"></span><h4><a class="toc-backref" href="#id244">Data Grid</a><a class="headerlink" href="#data-grid" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Data_grid">https://en.wikipedia.org/wiki/Data_grid</a></div>
 </div>
 </div>
 </div>
 <div class="section" id="time-standards">
-<span id="index-103"></span><span id="id77"></span><h3>Time Standards<a class="headerlink" href="#time-standards" title="Permalink to this headline">¶</a></h3>
+<span id="index-111"></span><span id="id84"></span><h3>Time Standards<a class="headerlink" href="#time-standards" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="international-atomic-time-iat">
-<span id="iat"></span><span id="index-104"></span><h4>International Atomic Time (IAT)<a class="headerlink" href="#international-atomic-time-iat" title="Permalink to this headline">¶</a></h4>
+<span id="iat"></span><span id="index-112"></span><h4>International Atomic Time (IAT)<a class="headerlink" href="#international-atomic-time-iat" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/International_Atomic_Time">https://en.wikipedia.org/wiki/International_Atomic_Time</a></div>
 </div>
@@ -7809,7 +8023,7 @@ for <a class="reference internal" href="#utc"><em>UTC</em></a> Earth time
 and for <cite>Terrestrial Time</cite> (Earth and Space).</p>
 </div>
 <div class="section" id="long-now-dates">
-<span id="index-105"></span><span id="id78"></span><h4>Long Now Dates<a class="headerlink" href="#long-now-dates" title="Permalink to this headline">¶</a></h4>
+<span id="index-113"></span><span id="id85"></span><h4>Long Now Dates<a class="headerlink" href="#long-now-dates" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="https://en.wikipedia.org/wiki/Long_Now_Foundation">https://en.wikipedia.org/wiki/Long_Now_Foundation</a></div>
 <div class="line">Docs: <a class="reference external" href="https://en.wikipedia.org/wiki/Year_10,000_problem">https://en.wikipedia.org/wiki/Year_10,000_problem</a></div>
@@ -7820,7 +8034,7 @@ and for <cite>Terrestrial Time</cite> (Earth and Space).</p>
 </div>
 </div>
 <div class="section" id="decimal-time">
-<span id="index-106"></span><span id="id79"></span><h4>Decimal Time<a class="headerlink" href="#decimal-time" title="Permalink to this headline">¶</a></h4>
+<span id="index-114"></span><span id="id86"></span><h4>Decimal Time<a class="headerlink" href="#decimal-time" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Decimal_time">https://en.wikipedia.org/wiki/Decimal_time</a></div>
 </div>
@@ -7833,7 +8047,7 @@ time)</li>
 </ul>
 </div>
 <div class="section" id="unix-time">
-<span id="index-107"></span><span id="id80"></span><h4>Unix Time<a class="headerlink" href="#unix-time" title="Permalink to this headline">¶</a></h4>
+<span id="index-115"></span><span id="id87"></span><h4>Unix Time<a class="headerlink" href="#unix-time" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Unix_time">https://en.wikipedia.org/wiki/Unix_time</a></div>
 </div>
@@ -7856,9 +8070,9 @@ Thursday, 1 January 1970, not counting leap seconds</div></blockquote>
 <p class="last"><a class="reference external" href="https://en.wikipedia.org/wiki/Unix_time#Leap_seconds">https://en.wikipedia.org/wiki/Unix_time#Leap_seconds</a></p>
 </div>
 <p>See also: <cite>Swatch Internet Time</cite> (<cite>Beat Time</cite>)</p>
-<span class="target" id="index-108"></span></div>
+<span class="target" id="index-116"></span></div>
 <div class="section" id="year-zero">
-<span id="index-109"></span><span id="id81"></span><h4>Year Zero<a class="headerlink" href="#year-zero" title="Permalink to this headline">¶</a></h4>
+<span id="index-117"></span><span id="id88"></span><h4>Year Zero<a class="headerlink" href="#year-zero" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/0_(year)">https://en.wikipedia.org/wiki/0_(year)</a></div>
 </div>
@@ -7873,7 +8087,7 @@ does not include a <cite>year zero</cite>;
 </ul>
 </div>
 <div class="section" id="astronomical-year-numbering">
-<span id="index-110"></span><span id="id82"></span><h4>Astronomical year numbering<a class="headerlink" href="#astronomical-year-numbering" title="Permalink to this headline">¶</a></h4>
+<span id="index-118"></span><span id="id89"></span><h4>Astronomical year numbering<a class="headerlink" href="#astronomical-year-numbering" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Astronomical_year_numbering">https://en.wikipedia.org/wiki/Astronomical_year_numbering</a></div>
 </div>
@@ -7886,9 +8100,9 @@ does not include a <cite>year zero</cite>;
 <p><a class="reference external" href="https://astropy.readthedocs.org/en/latest/time/">https://astropy.readthedocs.org/en/latest/time/</a></p>
 </li>
 </ul>
-<span class="target" id="index-111"></span></div>
+<span class="target" id="index-119"></span></div>
 <div class="section" id="before-present-bp">
-<span id="bp"></span><span id="index-112"></span><h4>Before Present (BP)<a class="headerlink" href="#before-present-bp" title="Permalink to this headline">¶</a></h4>
+<span id="bp"></span><span id="index-120"></span><h4>Before Present (BP)<a class="headerlink" href="#before-present-bp" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Before_Present">https://en.wikipedia.org/wiki/Before_Present</a></div>
 </div>
@@ -7896,7 +8110,7 @@ does not include a <cite>year zero</cite>;
 (or <em>date of publication</em>); e.g. &#8220;2.6 million years ago&#8221;.</p>
 </div>
 <div class="section" id="common-era-ce">
-<span id="ce"></span><span id="index-113"></span><h4>Common Era (CE)<a class="headerlink" href="#common-era-ce" title="Permalink to this headline">¶</a></h4>
+<span id="ce"></span><span id="index-121"></span><h4>Common Era (CE)<a class="headerlink" href="#common-era-ce" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Common_Era">https://en.wikipedia.org/wiki/Common_Era</a></div>
 <div class="line">Docs: <a class="reference external" href="https://en.wikipedia.org/wiki/Pax_Romana">https://en.wikipedia.org/wiki/Pax_Romana</a></div>
@@ -7957,7 +8171,7 @@ datetime.date(1, 1, 1)
 </div>
 </div>
 <div class="section" id="time-zones">
-<span id="index-114"></span><span id="id83"></span><h4>Time Zones<a class="headerlink" href="#time-zones" title="Permalink to this headline">¶</a></h4>
+<span id="index-122"></span><span id="id90"></span><h4>Time Zones<a class="headerlink" href="#time-zones" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Time_zone">https://en.wikipedia.org/wiki/Time_zone</a></div>
 </div>
@@ -7967,8 +8181,8 @@ datetime.date(1, 1, 1)
 <ul class="simple">
 <li><a class="reference internal" href="#iso8601"><em>ISO8601</em></a></li>
 </ul>
-<span class="target" id="index-115"></span><div class="section" id="utc">
-<span id="index-116"></span><span id="id84"></span><h5>UTC<a class="headerlink" href="#utc" title="Permalink to this headline">¶</a></h5>
+<span class="target" id="index-123"></span><div class="section" id="utc">
+<span id="index-124"></span><span id="id91"></span><h5>UTC<a class="headerlink" href="#utc" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Coordinated_Universal_Time">https://en.wikipedia.org/wiki/Coordinated_Universal_Time</a></div>
 </div>
@@ -7992,14 +8206,14 @@ exactly synchronized with <a class="reference internal" href="#iat"><em>Internat
 </ul>
 </div>
 <div class="section" id="us-time-zones">
-<span id="index-117"></span><span id="id85"></span><h5>US Time Zones<a class="headerlink" href="#us-time-zones" title="Permalink to this headline">¶</a></h5>
+<span id="index-125"></span><span id="id92"></span><h5>US Time Zones<a class="headerlink" href="#us-time-zones" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Time_in_the_United_States">https://en.wikipedia.org/wiki/Time_in_the_United_States</a></div>
 </div>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Time_in_the_United_States#Standard_time_and_daylight_saving_time">https://en.wikipedia.org/wiki/Time_in_the_United_States#Standard_time_and_daylight_saving_time</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/History_of_time_in_the_United_States">https://en.wikipedia.org/wiki/History_of_time_in_the_United_States</a></p>
-<span class="target" id="index-118"></span><div class="section" id="us-daylight-saving-time">
-<span id="daylight-saving-time"></span><span id="index-119"></span><h6>US Daylight Saving Time<a class="headerlink" href="#us-daylight-saving-time" title="Permalink to this headline">¶</a></h6>
+<span class="target" id="index-126"></span><div class="section" id="us-daylight-saving-time">
+<span id="daylight-saving-time"></span><span id="index-127"></span><h6>US Daylight Saving Time<a class="headerlink" href="#us-daylight-saving-time" title="Permalink to this headline">¶</a></h6>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Daylight_saving_time_in_the_United_States">https://en.wikipedia.org/wiki/Daylight_saving_time_in_the_United_States</a></div>
 </div>
@@ -8157,11 +8371,11 @@ moved back from 2:00 am to 1:00 am.</p>
 </tr>
 </tbody>
 </table>
-<span class="target" id="index-120"></span></div>
+<span class="target" id="index-128"></span></div>
 </div>
 </div>
 <div class="section" id="iso8601">
-<span id="index-121"></span><span id="id86"></span><h4>ISO8601<a class="headerlink" href="#iso8601" title="Permalink to this headline">¶</a></h4>
+<span id="index-129"></span><span id="id93"></span><h4>ISO8601<a class="headerlink" href="#iso8601" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/ISO_8601">https://en.wikipedia.org/wiki/ISO_8601</a></div>
 <div class="line">Standard: <a class="reference external" href="http://www.iso.org/iso/iso8601">http://www.iso.org/iso/iso8601</a></div>
@@ -8228,15 +8442,15 @@ or attoseconds.</p>
 </div>
 </div>
 <div class="section" id="linked-data">
-<span id="index-122"></span><span id="id87"></span><h3>Linked Data<a class="headerlink" href="#linked-data" title="Permalink to this headline">¶</a></h3>
+<span id="index-130"></span><span id="id94"></span><h3>Linked Data<a class="headerlink" href="#linked-data" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Linked_data">https://en.wikipedia.org/wiki/Linked_data</a></div>
 </div>
 <ul class="simple">
 <li><a class="reference external" href="http://www.w3.org/DesignIssues/LinkedData.html">http://www.w3.org/DesignIssues/LinkedData.html</a></li>
 </ul>
-<span class="target" id="index-123"></span><div class="section" id="fivestardata">
-<span id="index-124"></span><span id="id88"></span><h4>5 ★ Linked Data<a class="headerlink" href="#fivestardata" title="Permalink to this headline">¶</a></h4>
+<span class="target" id="index-131"></span><div class="section" id="fivestardata">
+<span id="index-132"></span><span id="id95"></span><h4>5 ★ Linked Data<a class="headerlink" href="#fivestardata" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="http://www.w3.org/TR/ld-glossary/#x5-star-linked-open-data">http://www.w3.org/TR/ld-glossary/#x5-star-linked-open-data</a></p>
 <blockquote class="epigraph">
 <div><p>☆</p>
@@ -8274,7 +8488,7 @@ to useful <a class="reference external" href="https://en.wikipedia.org/wiki/Data
 </div>
 </div>
 <div class="section" id="semantic-web">
-<span id="index-125"></span><span id="id89"></span><h3>Semantic Web<a class="headerlink" href="#semantic-web" title="Permalink to this headline">¶</a></h3>
+<span id="index-133"></span><span id="id96"></span><h3>Semantic Web<a class="headerlink" href="#semantic-web" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Semantic_Web">https://en.wikipedia.org/wiki/Semantic_Web</a></div>
 <div class="line">WikipediaCategory: <a class="reference external" href="https://en.wikipedia.org/wiki/Category:Semantic_Web">https://en.wikipedia.org/wiki/Category:Semantic_Web</a></div>
@@ -8289,7 +8503,7 @@ to useful <a class="reference external" href="https://en.wikipedia.org/wiki/Data
 </ul>
 </div>
 <div class="section" id="semantic-web-standards">
-<span id="index-126"></span><span id="id90"></span><h3>Semantic Web Standards<a class="headerlink" href="#semantic-web-standards" title="Permalink to this headline">¶</a></h3>
+<span id="index-134"></span><span id="id97"></span><h3>Semantic Web Standards<a class="headerlink" href="#semantic-web-standards" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Statement_(computer_science)">https://en.wikipedia.org/wiki/Statement_(computer_science)</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Resource_(computing)">https://en.wikipedia.org/wiki/Resource_(computing)</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Entity-attribute-value_model">https://en.wikipedia.org/wiki/Entity-attribute-value_model</a></p>
@@ -8330,34 +8544,34 @@ to useful <a class="reference external" href="https://en.wikipedia.org/wiki/Data
 </ul>
 </div>
 <div class="section" id="web-standards">
-<span id="index-127"></span><span id="id91"></span><h3>Web Standards<a class="headerlink" href="#web-standards" title="Permalink to this headline">¶</a></h3>
+<span id="index-135"></span><span id="id98"></span><h3>Web Standards<a class="headerlink" href="#web-standards" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Web_standards">https://en.wikipedia.org/wiki/Web_standards</a></div>
 </div>
 <div class="section" id="web-names">
-<span id="index-128"></span><span id="id92"></span><h4>Web Names<a class="headerlink" href="#web-names" title="Permalink to this headline">¶</a></h4>
+<span id="index-136"></span><span id="id99"></span><h4>Web Names<a class="headerlink" href="#web-names" title="Permalink to this headline">¶</a></h4>
 <div class="section" id="url">
-<span id="index-129"></span><span id="id93"></span><h5>URL<a class="headerlink" href="#url" title="Permalink to this headline">¶</a></h5>
+<span id="index-137"></span><span id="id100"></span><h5>URL<a class="headerlink" href="#url" title="Permalink to this headline">¶</a></h5>
 <ul class="simple">
 <li><a class="reference internal" href="index.html#term-url"><em class="xref std std-term">URL</em></a></li>
 </ul>
 </div>
 <div class="section" id="uri">
-<span id="index-130"></span><span id="id94"></span><h5>URI<a class="headerlink" href="#uri" title="Permalink to this headline">¶</a></h5>
+<span id="index-138"></span><span id="id101"></span><h5>URI<a class="headerlink" href="#uri" title="Permalink to this headline">¶</a></h5>
 <ul class="simple">
 <li><a class="reference internal" href="index.html#term-uri"><em class="xref std std-term">URI</em></a></li>
 <li><a class="reference internal" href="index.html#term-magnet-uri"><em class="xref std std-term">Magnet URI</em></a></li>
 </ul>
 </div>
 <div class="section" id="urn">
-<span id="index-131"></span><span id="id95"></span><h5>URN<a class="headerlink" href="#urn" title="Permalink to this headline">¶</a></h5>
+<span id="index-139"></span><span id="id102"></span><h5>URN<a class="headerlink" href="#urn" title="Permalink to this headline">¶</a></h5>
 <ul class="simple">
 <li><a class="reference internal" href="index.html#term-urn"><em class="xref std std-term">URN</em></a></li>
 </ul>
 </div>
 </div>
 <div class="section" id="iec">
-<span id="index-132"></span><span id="id96"></span><h4>IEC<a class="headerlink" href="#iec" title="Permalink to this headline">¶</a></h4>
+<span id="index-140"></span><span id="id103"></span><h4>IEC<a class="headerlink" href="#iec" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/International_Electrotechnical_Commission">https://en.wikipedia.org/wiki/International_Electrotechnical_Commission</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://www.iec.ch/">http://www.iec.ch/</a></div>
@@ -8368,7 +8582,7 @@ to useful <a class="reference external" href="https://en.wikipedia.org/wiki/Data
 </ul>
 </div>
 <div class="section" id="ietf">
-<span id="index-133"></span><span id="id97"></span><h4>IETF<a class="headerlink" href="#ietf" title="Permalink to this headline">¶</a></h4>
+<span id="index-141"></span><span id="id104"></span><h4>IETF<a class="headerlink" href="#ietf" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force">https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://www.ietf.org/">https://www.ietf.org/</a></div>
@@ -8379,7 +8593,7 @@ to useful <a class="reference external" href="https://en.wikipedia.org/wiki/Data
 </ul>
 </div>
 <div class="section" id="iso">
-<span id="index-134"></span><span id="id98"></span><h4>ISO<a class="headerlink" href="#iso" title="Permalink to this headline">¶</a></h4>
+<span id="index-142"></span><span id="id105"></span><h4>ISO<a class="headerlink" href="#iso" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/International_Organization_for_Standardization">https://en.wikipedia.org/wiki/International_Organization_for_Standardization</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://www.iso.org/">http://www.iso.org/</a></div>
@@ -8391,7 +8605,7 @@ body.</p>
 </ul>
 </div>
 <div class="section" id="w3c">
-<span id="index-135"></span><span id="id99"></span><h4>W3C<a class="headerlink" href="#w3c" title="Permalink to this headline">¶</a></h4>
+<span id="index-143"></span><span id="id106"></span><h4>W3C<a class="headerlink" href="#w3c" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/World_Wide_Web_Consortium">https://en.wikipedia.org/wiki/World_Wide_Web_Consortium</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://www.w3.org/">http://www.w3.org/</a></div>
@@ -8402,7 +8616,7 @@ body.</p>
 </ul>
 </div>
 <div class="section" id="http">
-<span id="index-136"></span><span id="id100"></span><h4>HTTP<a class="headerlink" href="#http" title="Permalink to this headline">¶</a></h4>
+<span id="index-144"></span><span id="id107"></span><h4>HTTP<a class="headerlink" href="#http" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol</a></div>
 <div class="line">Standard: <a class="reference external" href="https://tools.ietf.org/html/rfc2616">https://tools.ietf.org/html/rfc2616</a></div>
@@ -8418,7 +8632,7 @@ TCP/IP protocol for data interchange.</p>
 <li><a class="reference external" href="https://www.mnot.net/blog/2014/06/07/rfc2616_is_dead">https://www.mnot.net/blog/2014/06/07/rfc2616_is_dead</a></li>
 </ul>
 <div class="section" id="http-in-rdf">
-<span id="httprdf"></span><span id="index-137"></span><h5>HTTP in RDF<a class="headerlink" href="#http-in-rdf" title="Permalink to this headline">¶</a></h5>
+<span id="httprdf"></span><span id="index-145"></span><h5>HTTP in RDF<a class="headerlink" href="#http-in-rdf" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Standard: <a class="reference external" href="http://www.w3.org/TR/HTTP-in-RDF10/">http://www.w3.org/TR/HTTP-in-RDF10/</a></div>
 <div class="line">Namespace: <a class="reference external" href="http://www.w3.org/2011/http#">http://www.w3.org/2011/http#</a></div>
@@ -8431,7 +8645,7 @@ TCP/IP protocol for data interchange.</p>
 <p>HTTP-in-RDF is a standard for representing <a class="reference internal" href="#http"><em>HTTP</em></a> as <a class="reference internal" href="#rdf"><em>RDF</em></a>.</p>
 </div>
 <div class="section" id="https">
-<span id="index-138"></span><span id="id101"></span><h5>HTTPS<a class="headerlink" href="#https" title="Permalink to this headline">¶</a></h5>
+<span id="index-146"></span><span id="id108"></span><h5>HTTPS<a class="headerlink" href="#https" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Standard: <a class="reference external" href="https://tools.ietf.org/html/rfc2818">https://tools.ietf.org/html/rfc2818</a> (2000)</div>
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/HTTPS">https://en.wikipedia.org/wiki/HTTPS</a></div>
@@ -8446,7 +8660,7 @@ TCP/IP protocol for data interchange.</p>
 </div>
 </div>
 <div class="section" id="rtmp">
-<span id="index-139"></span><span id="id102"></span><h4>RTMP<a class="headerlink" href="#rtmp" title="Permalink to this headline">¶</a></h4>
+<span id="index-147"></span><span id="id109"></span><h4>RTMP<a class="headerlink" href="#rtmp" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Real_Time_Messaging_Protocol">https://en.wikipedia.org/wiki/Real_Time_Messaging_Protocol</a></div>
 </div>
@@ -8474,7 +8688,7 @@ and is becoming as or more widely deployed than Flash Player
 </ul>
 </div>
 <div class="section" id="websocket">
-<span id="websockets"></span><span id="index-140"></span><h4>WebSocket<a class="headerlink" href="#websocket" title="Permalink to this headline">¶</a></h4>
+<span id="websockets"></span><span id="index-148"></span><h4>WebSocket<a class="headerlink" href="#websocket" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/WebSocket">https://en.wikipedia.org/wiki/WebSocket</a></div>
 <div class="line">URI Scheme: <code class="docutils literal"><span class="pre">ws://</span></code></div>
@@ -8496,7 +8710,7 @@ pypi:autobahn (pypi:twisted, asyncio)</li>
 <p>See also: <a class="reference external" href="https://en.wikipedia.org/wiki/Push_technology">https://en.wikipedia.org/wiki/Push_technology</a>, <a class="reference internal" href="#webrtc"><em>WebRTC</em></a></p>
 </div>
 <div class="section" id="webrtc">
-<span id="index-141"></span><span id="id103"></span><h4>WebRTC<a class="headerlink" href="#webrtc" title="Permalink to this headline">¶</a></h4>
+<span id="index-149"></span><span id="id110"></span><h4>WebRTC<a class="headerlink" href="#webrtc" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/WebRTC">https://en.wikipedia.org/wiki/WebRTC</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://www.webrtc.org/">http://www.webrtc.org/</a></div>
@@ -8515,9 +8729,9 @@ without having to download any plugins.</p>
 <p class="last">Notably, <a class="reference internal" href="index.html#internet-explorer"><em>Internet Explorer</em></a> and <a class="reference internal" href="index.html#safari"><em>Safari</em></a> still require
 a plugin to handle <a class="reference internal" href="#webrtc"><em>WebRTC</em></a>.</p>
 </div>
-<span class="target" id="index-142"></span></div>
+<span class="target" id="index-150"></span></div>
 <div class="section" id="http-2">
-<span id="http2"></span><span id="index-143"></span><h4>HTTP/2<a class="headerlink" href="#http-2" title="Permalink to this headline">¶</a></h4>
+<span id="http2"></span><span id="index-151"></span><h4>HTTP/2<a class="headerlink" href="#http-2" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/HTTP/2">https://en.wikipedia.org/wiki/HTTP/2</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://http2.github.io/">https://http2.github.io/</a></div>
@@ -8532,7 +8746,7 @@ a plugin to handle <a class="reference internal" href="#webrtc"><em>WebRTC</em><
 </ul>
 </div>
 <div class="section" id="html">
-<span id="index-144"></span><span id="id104"></span><h4>HTML<a class="headerlink" href="#html" title="Permalink to this headline">¶</a></h4>
+<span id="index-152"></span><span id="id111"></span><h4>HTML<a class="headerlink" href="#html" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/HTML">https://en.wikipedia.org/wiki/HTML</a></div>
 </div>
@@ -8541,14 +8755,14 @@ standard for representing
 documents with tags, attributes, and <strong>hyperlinks</strong>.</p>
 <p>Recent HTML standards include <a class="reference internal" href="#html4"><em>HTML4</em></a>, <a class="reference internal" href="#xhtml"><em>XHTML</em></a>, and <a class="reference internal" href="#html5"><em>HTML5</em></a>.</p>
 <div class="section" id="html4">
-<span id="index-145"></span><span id="id105"></span><h5>HTML4<a class="headerlink" href="#html4" title="Permalink to this headline">¶</a></h5>
+<span id="index-153"></span><span id="id112"></span><h5>HTML4<a class="headerlink" href="#html4" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Standard: <a class="reference external" href="http://www.w3.org/TR/html4/">http://www.w3.org/TR/html4/</a></div>
 </div>
 <p>HTML4 is the fourth generation <a class="reference internal" href="#html"><em>HTML</em></a> standard.</p>
 </div>
 <div class="section" id="xhtml">
-<span id="index-146"></span><span id="id106"></span><h5>XHTML<a class="headerlink" href="#xhtml" title="Permalink to this headline">¶</a></h5>
+<span id="index-154"></span><span id="id113"></span><h5>XHTML<a class="headerlink" href="#xhtml" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/XHTML">https://en.wikipedia.org/wiki/XHTML</a></div>
 <div class="line">Standard: <a class="reference external" href="http://www.w3.org/TR/xhtml2/">http://www.w3.org/TR/xhtml2/</a></div>
@@ -8563,7 +8777,7 @@ among a few other notable differences.</p>
 and is being largely superseded by <a class="reference internal" href="#html5"><em>HTML5</em></a>.</p>
 </div>
 <div class="section" id="html5">
-<span id="index-147"></span><span id="id107"></span><h5>HTML5<a class="headerlink" href="#html5" title="Permalink to this headline">¶</a></h5>
+<span id="index-155"></span><span id="id114"></span><h5>HTML5<a class="headerlink" href="#html5" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Standard: <a class="reference external" href="http://www.w3.org/TR/html5/">http://www.w3.org/TR/html5/</a></div>
 </div>
@@ -8588,7 +8802,7 @@ markup).</li>
 </div>
 </div>
 <div class="section" id="xml">
-<span id="index-148"></span><span id="id108"></span><h4>XML<a class="headerlink" href="#xml" title="Permalink to this headline">¶</a></h4>
+<span id="index-156"></span><span id="id115"></span><h4>XML<a class="headerlink" href="#xml" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/XML">https://en.wikipedia.org/wiki/XML</a></div>
 <div class="line">Standard: <a class="reference external" href="http://www.w3.org/TR/xml/">http://www.w3.org/TR/xml/</a></div>
@@ -8598,7 +8812,7 @@ with tags and attributes.</p>
 <p>Like PDF, XML is derived from SGML.</p>
 </div>
 <div class="section" id="xsd">
-<span id="index-149"></span><span id="id109"></span><h4>XSD<a class="headerlink" href="#xsd" title="Permalink to this headline">¶</a></h4>
+<span id="index-157"></span><span id="id116"></span><h4>XSD<a class="headerlink" href="#xsd" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/XML_Schema_(W3C)">https://en.wikipedia.org/wiki/XML_Schema_(W3C)</a></div>
 <div class="line">Standard: <a class="reference external" href="http://www.w3.org/TR/xmlschema11-2/">http://www.w3.org/TR/xmlschema11-2/</a></div>
@@ -8610,7 +8824,7 @@ with tags and attributes.</p>
 strings, integers, floats, and dates for <a class="reference internal" href="#xml"><em>XML</em></a> and also <a class="reference internal" href="#rdf"><em>RDF</em></a>.</p>
 </div>
 <div class="section" id="json">
-<span id="index-150"></span><span id="id110"></span><h4>JSON<a class="headerlink" href="#json" title="Permalink to this headline">¶</a></h4>
+<span id="index-158"></span><span id="id117"></span><h4>JSON<a class="headerlink" href="#json" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/JSON">https://en.wikipedia.org/wiki/JSON</a></div>
 <div class="line">Standard: <a class="reference external" href="https://tools.ietf.org/html/rfc7159">https://tools.ietf.org/html/rfc7159</a></div>
@@ -8626,7 +8840,7 @@ It is not safe to <code class="docutils literal"><span class="pre">eval</span></
 with <code class="docutils literal"><span class="pre">&#64;context</span></code>.</p>
 </div>
 <div class="section" id="csv">
-<span id="index-151"></span><span id="id111"></span><h4>CSV<a class="headerlink" href="#csv" title="Permalink to this headline">¶</a></h4>
+<span id="index-159"></span><span id="id118"></span><h4>CSV<a class="headerlink" href="#csv" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Comma-separated_values">https://en.wikipedia.org/wiki/Comma-separated_values</a></div>
 <div class="line">Standard: <a class="reference external" href="https://tools.ietf.org/html/rfc4180">https://tools.ietf.org/html/rfc4180</a></div>
@@ -8638,7 +8852,7 @@ for columnar data with rows and columns.</p>
 <p>Most spreadsheet tools can export (raw and computed) data
 from a sheet into a CSV file, for use with many other tools.</p>
 <div class="section" id="csvw">
-<span id="index-152"></span><span id="id112"></span><h5>CSVW<a class="headerlink" href="#csvw" title="Permalink to this headline">¶</a></h5>
+<span id="index-160"></span><span id="id119"></span><h5>CSVW<a class="headerlink" href="#csvw" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="https://w3c.github.io/csvw/">https://w3c.github.io/csvw/</a></div>
 <div class="line">Standard: <a class="reference external" href="http://www.w3.org/TR/tabular-data-model/">http://www.w3.org/TR/tabular-data-model/</a></div>
@@ -8663,7 +8877,7 @@ along with <em>metadata</em>.</p>
 </div>
 </div>
 <div class="section" id="rdf">
-<span id="index-153"></span><span id="id113"></span><h4>RDF<a class="headerlink" href="#rdf" title="Permalink to this headline">¶</a></h4>
+<span id="index-161"></span><span id="id120"></span><h4>RDF<a class="headerlink" href="#rdf" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Resource_Description_Framework">https://en.wikipedia.org/wiki/Resource_Description_Framework</a></div>
 <div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">rdf:</span> <span class="pre">&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span> <span class="pre">.</span></code></div>
@@ -8699,7 +8913,7 @@ consuming Linked Data&#8221;
 </ul>
 <p>See also: <a class="reference internal" href="#triplestores"><em>RDF Triplestores</em></a></p>
 <div class="section" id="rdf-interfaces">
-<span id="index-154"></span><span id="id114"></span><h5>RDF Interfaces<a class="headerlink" href="#rdf-interfaces" title="Permalink to this headline">¶</a></h5>
+<span id="index-162"></span><span id="id121"></span><h5>RDF Interfaces<a class="headerlink" href="#rdf-interfaces" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Standard: <a class="reference external" href="http://www.w3.org/TR/rdf-interfaces/">http://www.w3.org/TR/rdf-interfaces/</a></div>
 <div class="line">Docs: <a class="reference external" href="http://www.w3.org/TR/rdf-interfaces/#high-level-api">http://www.w3.org/TR/rdf-interfaces/#high-level-api</a></div>
@@ -8791,7 +9005,7 @@ sorted / source order is not a good assumption to make).</p>
 </ul>
 </div>
 <div class="section" id="n-triples">
-<span id="index-155"></span><span id="id115"></span><h5>N-Triples<a class="headerlink" href="#n-triples" title="Permalink to this headline">¶</a></h5>
+<span id="index-163"></span><span id="id122"></span><h5>N-Triples<a class="headerlink" href="#n-triples" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/N-Triples">https://en.wikipedia.org/wiki/N-Triples</a></div>
 <div class="line">Standard: <a class="reference external" href="http://www.w3.org/TR/n-triples/">http://www.w3.org/TR/n-triples/</a></div>
@@ -8801,7 +9015,7 @@ sorted / source order is not a good assumption to make).</p>
 <p>N-Triples is a standard for serializing <a class="reference internal" href="#rdf"><em>RDF</em></a> triples to text.</p>
 </div>
 <div class="section" id="rdf-xml">
-<span id="index-156"></span><span id="id116"></span><h5>RDF/XML<a class="headerlink" href="#rdf-xml" title="Permalink to this headline">¶</a></h5>
+<span id="index-164"></span><span id="id123"></span><h5>RDF/XML<a class="headerlink" href="#rdf-xml" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/RDF/XML">https://en.wikipedia.org/wiki/RDF/XML</a></div>
 <div class="line">Standard: <a class="reference external" href="http://www.w3.org/TR/rdf-syntax-grammar/">http://www.w3.org/TR/rdf-syntax-grammar/</a></div>
@@ -8811,7 +9025,7 @@ sorted / source order is not a good assumption to make).</p>
 <p>RDF/XML is a standard for serializing <a class="reference internal" href="#rdf"><em>RDF</em></a> as <a class="reference internal" href="#xml"><em>XML</em></a>.</p>
 </div>
 <div class="section" id="trix">
-<span id="index-157"></span><span id="id117"></span><h5>TriX<a class="headerlink" href="#trix" title="Permalink to this headline">¶</a></h5>
+<span id="index-165"></span><span id="id124"></span><h5>TriX<a class="headerlink" href="#trix" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/TriX_(syntax)">https://en.wikipedia.org/wiki/TriX_(syntax)</a></div>
 </div>
@@ -8821,9 +9035,9 @@ sorted / source order is not a good assumption to make).</p>
 <p>TriX is a standard which extends
 the <a class="reference internal" href="#rdf-xml"><em>RDF/XML</em></a> <a class="reference internal" href="#rdf"><em>RDF</em></a> serialization standard
 with named graphs.</p>
-<span class="target" id="index-158"></span></div>
+<span class="target" id="index-166"></span></div>
 <div class="section" id="n3">
-<span id="index-159"></span><span id="id118"></span><h5>N3<a class="headerlink" href="#n3" title="Permalink to this headline">¶</a></h5>
+<span id="index-167"></span><span id="id125"></span><h5>N3<a class="headerlink" href="#n3" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Notation3">https://en.wikipedia.org/wiki/Notation3</a></div>
 <div class="line">Standard: <a class="reference external" href="http://www.w3.org/TeamSubmission/n3/">http://www.w3.org/TeamSubmission/n3/</a></div>
@@ -8838,7 +9052,7 @@ with a few extra features.</p>
 </ul>
 </div>
 <div class="section" id="turtle">
-<span id="index-160"></span><span id="id119"></span><h5>Turtle<a class="headerlink" href="#turtle" title="Permalink to this headline">¶</a></h5>
+<span id="index-168"></span><span id="id126"></span><h5>Turtle<a class="headerlink" href="#turtle" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Turtle_(syntax)">https://en.wikipedia.org/wiki/Turtle_(syntax)</a></div>
 <div class="line">Standard: <a class="reference external" href="http://www.w3.org/TR/turtle/">http://www.w3.org/TR/turtle/</a></div>
@@ -8849,7 +9063,7 @@ with a few extra features.</p>
 into human-readable text.</p>
 </div>
 <div class="section" id="trig">
-<span id="index-161"></span><span id="id120"></span><h5>TriG<a class="headerlink" href="#trig" title="Permalink to this headline">¶</a></h5>
+<span id="index-169"></span><span id="id127"></span><h5>TriG<a class="headerlink" href="#trig" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/TriG_(syntax)">https://en.wikipedia.org/wiki/TriG_(syntax)</a></div>
 <div class="line">Standard: <a class="reference external" href="http://www.w3.org/TR/trig/">http://www.w3.org/TR/trig/</a></div>
@@ -8863,7 +9077,7 @@ to allow multiple named graphs to be expressed in one file
 part of the &#8220;Default Graph&#8221;.</p>
 </div>
 <div class="section" id="rdfa">
-<span id="index-162"></span><span id="id121"></span><h5>RDFa<a class="headerlink" href="#rdfa" title="Permalink to this headline">¶</a></h5>
+<span id="index-170"></span><span id="id128"></span><h5>RDFa<a class="headerlink" href="#rdfa" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/RDFa">https://en.wikipedia.org/wiki/RDFa</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://www.w3.org/2001/sw/wiki/RDFa">http://www.w3.org/2001/sw/wiki/RDFa</a></div>
@@ -8879,7 +9093,7 @@ structured data (<a class="reference internal" href="#rdf"><em>RDF</em></a> trip
 RDFa.</p>
 </div>
 <div class="section" id="json-ld">
-<span id="index-163"></span><span id="id122"></span><h5>JSON-LD<a class="headerlink" href="#json-ld" title="Permalink to this headline">¶</a></h5>
+<span id="index-171"></span><span id="id129"></span><h5>JSON-LD<a class="headerlink" href="#json-ld" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/JSON-LD">https://en.wikipedia.org/wiki/JSON-LD</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://json-ld.org/">http://json-ld.org/</a></div>
@@ -8892,10 +9106,10 @@ which maps JSON attributes to URIs with datatypes and, optionally, languages.</p
 <ul class="simple">
 <li><a class="reference external" href="http://json-ld.org/playground/">http://json-ld.org/playground/</a></li>
 </ul>
-<span class="target" id="index-164"></span></div>
+<span class="target" id="index-172"></span></div>
 </div>
 <div class="section" id="rdfs">
-<span id="index-165"></span><span id="id123"></span><h4>RDFS<a class="headerlink" href="#rdfs" title="Permalink to this headline">¶</a></h4>
+<span id="index-173"></span><span id="id130"></span><h4>RDFS<a class="headerlink" href="#rdfs" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/RDF_Schema">https://en.wikipedia.org/wiki/RDF_Schema</a></div>
 <div class="line">Standard: <a class="reference external" href="http://www.w3.org/TR/rdf-schema/">http://www.w3.org/TR/rdf-schema/</a></div>
@@ -8921,8 +9135,8 @@ and properties.</p>
 <li><code class="docutils literal"><span class="pre">rdfs:subPropertyOf</span></code></li>
 </ul>
 <p><a class="reference internal" href="#owl"><em>OWL</em></a> builds upon many RDFS concepts.</p>
-<span class="target" id="index-166"></span><span class="target" id="index-167"></span><div class="section" id="dcmi">
-<span id="index-168"></span><span id="id124"></span><h5>DCMI<a class="headerlink" href="#dcmi" title="Permalink to this headline">¶</a></h5>
+<span class="target" id="index-174"></span><span class="target" id="index-175"></span><div class="section" id="dcmi">
+<span id="index-176"></span><span id="id131"></span><h5>DCMI<a class="headerlink" href="#dcmi" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Dublin_Core">https://en.wikipedia.org/wiki/Dublin_Core</a></div>
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Dublin_Core#DCMI_Metadata_Terms">https://en.wikipedia.org/wiki/Dublin_Core#DCMI_Metadata_Terms</a></div>
@@ -8936,9 +9150,9 @@ and properties.</p>
 <p>DCTYPES (<em>Dublin Core Types</em>) and DCTERMS (<em>Dublin Core Terms</em>)
 are standards for common types, classes, and properties
 that have been mapped to <a class="reference internal" href="#xml"><em>XML</em></a> and <a class="reference internal" href="#rdf"><em>RDF</em></a>.</p>
-<span class="target" id="index-169"></span></div>
+<span class="target" id="index-177"></span></div>
 <div class="section" id="rdf-data-cubes">
-<span id="qb"></span><span id="index-170"></span><h5>RDF Data Cubes<a class="headerlink" href="#rdf-data-cubes" title="Permalink to this headline">¶</a></h5>
+<span id="qb"></span><span id="index-178"></span><h5>RDF Data Cubes<a class="headerlink" href="#rdf-data-cubes" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Standard: <a class="reference external" href="http://www.w3.org/TR/vocab-data-cube/">http://www.w3.org/TR/vocab-data-cube/</a></div>
 <div class="line">Namespace: <a class="reference external" href="http://purl.org/linked-data/cube#">http://purl.org/linked-data/cube#</a></div>
@@ -8952,9 +9166,9 @@ linked multi-dimensional statistical data and aggregations.</p>
 <li>Pivot tables and crosstabulations can be expressed with
 RDF Data Cubes vocabulary</li>
 </ul>
-<span class="target" id="index-171"></span></div>
+<span class="target" id="index-179"></span></div>
 <div class="section" id="skos">
-<span id="index-172"></span><span id="id125"></span><h5>SKOS<a class="headerlink" href="#skos" title="Permalink to this headline">¶</a></h5>
+<span id="index-180"></span><span id="id132"></span><h5>SKOS<a class="headerlink" href="#skos" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Simple_Knowledge_Organization_System">https://en.wikipedia.org/wiki/Simple_Knowledge_Organization_System</a></div>
 <div class="line">Standard: <a class="reference external" href="http://www.w3.org/TR/skos-reference/">http://www.w3.org/TR/skos-reference/</a></div>
@@ -8965,9 +9179,9 @@ RDF Data Cubes vocabulary</li>
 </div>
 <p>SKOS (<em>Simple Knowledge Organization System</em>) is an <a class="reference internal" href="#rdf"><em>RDF</em></a> standard
 vocabulary for linking concepts and vocabulary terms.</p>
-<span class="target" id="index-173"></span></div>
+<span class="target" id="index-181"></span></div>
 <div class="section" id="xkos">
-<span id="index-174"></span><span id="id126"></span><h5>XKOS<a class="headerlink" href="#xkos" title="Permalink to this headline">¶</a></h5>
+<span id="index-182"></span><span id="id133"></span><h5>XKOS<a class="headerlink" href="#xkos" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="http://www.ddialliance.org/Specification/RDF/XKOS">http://www.ddialliance.org/Specification/RDF/XKOS</a></div>
 <div class="line">Standard: <a class="reference external" href="http://rdf-vocabulary.ddialliance.org/xkos.html">http://rdf-vocabulary.ddialliance.org/xkos.html</a></div>
@@ -8979,9 +9193,9 @@ vocabulary for linking concepts and vocabulary terms.</p>
 <p>XKOS (<em>Extended Knowledge Organization System</em>) is an <a class="reference internal" href="#rdf"><em>RDF</em></a>
 standard which extends <a class="reference internal" href="#skos"><em>SKOS</em></a>
 for linking concepts and statistical measures.</p>
-<span class="target" id="index-175"></span></div>
+<span class="target" id="index-183"></span></div>
 <div class="section" id="foaf">
-<span id="index-176"></span><span id="id127"></span><h5>FOAF<a class="headerlink" href="#foaf" title="Permalink to this headline">¶</a></h5>
+<span id="index-184"></span><span id="id134"></span><h5>FOAF<a class="headerlink" href="#foaf" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/FOAF_(ontology)">https://en.wikipedia.org/wiki/FOAF_(ontology)</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://www.foaf-project.org/">http://www.foaf-project.org/</a></div>
@@ -8992,9 +9206,9 @@ for linking concepts and statistical measures.</p>
 </div>
 <p>FOAF (<em>Friend of a Friend</em>) is an <a class="reference internal" href="#rdf"><em>RDF</em></a> standard vocabulary for
 expressing social networks and contact information.</p>
-<span class="target" id="index-177"></span></div>
+<span class="target" id="index-185"></span></div>
 <div class="section" id="sioc">
-<span id="index-178"></span><span id="id128"></span><h5>SIOC<a class="headerlink" href="#sioc" title="Permalink to this headline">¶</a></h5>
+<span id="index-186"></span><span id="id135"></span><h5>SIOC<a class="headerlink" href="#sioc" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Semantically-Interlinked_Online_Communities">https://en.wikipedia.org/wiki/Semantically-Interlinked_Online_Communities</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://www.sioc-project.org/">http://www.sioc-project.org/</a></div>
@@ -9005,9 +9219,9 @@ expressing social networks and contact information.</p>
 <p>SIOC (<em>Semantically Interlinked Online Communities</em>) is an <a class="reference internal" href="#rdf"><em>RDF</em></a>
 standard for online social networks and resources
 like blog, forum, and mailing list posts.</p>
-<span class="target" id="index-179"></span></div>
+<span class="target" id="index-187"></span></div>
 <div class="section" id="oa">
-<span id="index-180"></span><span id="id129"></span><h5>OA<a class="headerlink" href="#oa" title="Permalink to this headline">¶</a></h5>
+<span id="index-188"></span><span id="id136"></span><h5>OA<a class="headerlink" href="#oa" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="http://www.openannotation.org/">http://www.openannotation.org/</a></div>
 <div class="line">Standard: <a class="reference external" href="http://www.openannotation.org/spec/core/">http://www.openannotation.org/spec/core/</a></div>
@@ -9032,7 +9246,7 @@ commenting on anything with a URI.</p>
 </div>
 </div>
 <div class="section" id="schema-org">
-<span id="index-181"></span><span id="id130"></span><h4>Schema.org<a class="headerlink" href="#schema-org" title="Permalink to this headline">¶</a></h4>
+<span id="index-189"></span><span id="id137"></span><h4>Schema.org<a class="headerlink" href="#schema-org" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Schema.org">https://en.wikipedia.org/wiki/Schema.org</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://schema.org/">http://schema.org/</a></div>
@@ -9049,7 +9263,7 @@ and <a class="reference internal" href="#json-ld"><em>JSON-LD</em></a>.</p>
 <li><a class="reference external" href="http://www.w3.org/wiki/WebSchemas/SchemaDotOrgProposals">http://www.w3.org/wiki/WebSchemas/SchemaDotOrgProposals</a></li>
 </ul>
 <div class="section" id="schema-org-rdf">
-<span id="index-182"></span><span id="id131"></span><h5>Schema.org RDF<a class="headerlink" href="#schema-org-rdf" title="Permalink to this headline">¶</a></h5>
+<span id="index-190"></span><span id="id138"></span><h5>Schema.org RDF<a class="headerlink" href="#schema-org-rdf" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">schema:</span> <span class="pre">&lt;http://schema.org/&gt;</span> <span class="pre">.</span></code></div>
 <div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">schemax:</span> <span class="pre">&lt;http://topbraid.org/schemax/&gt;</span> <span class="pre">.</span></code></div>
@@ -9072,7 +9286,7 @@ transformations of <a class="reference internal" href="#schema-org"><em>Schema.o
 </div>
 </div>
 <div class="section" id="sparql">
-<span id="index-183"></span><span id="id132"></span><h4>SPARQL<a class="headerlink" href="#sparql" title="Permalink to this headline">¶</a></h4>
+<span id="index-191"></span><span id="id139"></span><h4>SPARQL<a class="headerlink" href="#sparql" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/SPARQL">https://en.wikipedia.org/wiki/SPARQL</a></div>
 <div class="line">Standard: <a class="reference external" href="http://www.w3.org/TR/sparql11-overview/">http://www.w3.org/TR/sparql11-overview/</a></div>
@@ -9099,9 +9313,9 @@ could allow for more efficient caching</li>
 that can be implemented on top of
 the graph pattern queries supported by SPARQL.</li>
 </ul>
-<span class="target" id="index-184"></span></div>
+<span class="target" id="index-192"></span></div>
 <div class="section" id="ldp">
-<span id="index-185"></span><span id="id133"></span><h4>LDP<a class="headerlink" href="#ldp" title="Permalink to this headline">¶</a></h4>
+<span id="index-193"></span><span id="id140"></span><h4>LDP<a class="headerlink" href="#ldp" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Spec <a class="reference external" href="http://www.w3.org/TR/ldp/">http://www.w3.org/TR/ldp/</a></div>
 <div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">ldp:</span> <span class="pre">&lt;http://www.w3.org/ns/ldp#&gt;</span> <span class="pre">.</span></code></div>
@@ -9118,9 +9332,9 @@ for <a class="reference internal" href="#rdf"><em>RDF</em></a> <a class="referen
 containing Linked Data Plaform <strong>Resources</strong> (LDPR)</li>
 <li>Server-side <em>Paging</em></li>
 </ul>
-<span class="target" id="index-186"></span></div>
+<span class="target" id="index-194"></span></div>
 <div class="section" id="owl">
-<span id="index-187"></span><span id="id134"></span><h4>OWL<a class="headerlink" href="#owl" title="Permalink to this headline">¶</a></h4>
+<span id="index-195"></span><span id="id141"></span><h4>OWL<a class="headerlink" href="#owl" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Web_Ontology_Language">https://en.wikipedia.org/wiki/Web_Ontology_Language</a></div>
 <div class="line">Standard: <a class="reference external" href="http://www.w3.org/TR/owl2-overview/">http://www.w3.org/TR/owl2-overview/</a></div>
@@ -9133,7 +9347,7 @@ containing Linked Data Plaform <strong>Resources</strong> (LDPR)</li>
 <p>OWL (<em>Web Ontology Language</em>) adds semantics, reasoning, inference,
 and entailment capabilities to <a class="reference internal" href="#rdf"><em>RDF</em></a>.</p>
 <div class="section" id="prov">
-<span id="index-188"></span><span id="id135"></span><h5>PROV<a class="headerlink" href="#prov" title="Permalink to this headline">¶</a></h5>
+<span id="index-196"></span><span id="id142"></span><h5>PROV<a class="headerlink" href="#prov" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="http://www.w3.org/2011/prov/wiki/Main_Page">http://www.w3.org/2011/prov/wiki/Main_Page</a></div>
 <div class="line">Standard: <a class="reference external" href="http://www.w3.org/ns/prov.owl">http://www.w3.org/ns/prov.owl</a></div>
@@ -9152,7 +9366,7 @@ extent).</p>
 </ul>
 </div>
 <div class="section" id="dbpedia">
-<span id="index-189"></span><span id="id136"></span><h5>DBpedia<a class="headerlink" href="#dbpedia" title="Permalink to this headline">¶</a></h5>
+<span id="index-197"></span><span id="id143"></span><h5>DBpedia<a class="headerlink" href="#dbpedia" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="http://wiki.dbpedia.org/Ontology">http://wiki.dbpedia.org/Ontology</a></div>
 <div class="line">Namespace: <a class="reference external" href="http://dbpedia.org/ontology/">http://dbpedia.org/ontology/</a></div>
@@ -9178,7 +9392,7 @@ structured data from Wikipedia sidebar infoboxes.</p>
 <p>DBpedia is generated by batch extraction on a regular basis.</p>
 </div>
 <div class="section" id="qudt">
-<span id="index-190"></span><span id="id137"></span><h5>QUDT<a class="headerlink" href="#qudt" title="Permalink to this headline">¶</a></h5>
+<span id="index-198"></span><span id="id144"></span><h5>QUDT<a class="headerlink" href="#qudt" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="http://www.linkedmodel.org/doc/qudt/1.1/">http://www.linkedmodel.org/doc/qudt/1.1/</a></div>
 <div class="line">Standard: <a class="reference external" href="http://qudt.org/">http://qudt.org/</a></div>
@@ -9227,7 +9441,7 @@ vocabulary for representing physical units.</p>
 <a class="reference external" href="http://www.linkedmodel.org/catalog/qudt/1.1/">http://www.linkedmodel.org/catalog/qudt/1.1/</a></p>
 </div>
 <div class="section" id="qudt-quantities">
-<span id="index-191"></span><span id="id138"></span><h5>QUDT Quantities<a class="headerlink" href="#qudt-quantities" title="Permalink to this headline">¶</a></h5>
+<span id="index-199"></span><span id="id145"></span><h5>QUDT Quantities<a class="headerlink" href="#qudt-quantities" title="Permalink to this headline">¶</a></h5>
 <p>Schema</p>
 <div class="line-block">
 <div class="line">Standard: <a class="reference external" href="http://qudt.org/1.1/schema/quantity">http://qudt.org/1.1/schema/quantity</a></div>
@@ -9271,7 +9485,7 @@ unit:SquareFootSecondDegreeFahrenheit
 </ul>
 </div>
 <div class="section" id="qudt-units">
-<span id="index-192"></span><span id="id139"></span><h5>QUDT Units<a class="headerlink" href="#qudt-units" title="Permalink to this headline">¶</a></h5>
+<span id="index-200"></span><span id="id146"></span><h5>QUDT Units<a class="headerlink" href="#qudt-units" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Standard: <a class="reference external" href="http://qudt.org/1.1/vocab/unit">http://qudt.org/1.1/vocab/unit</a></div>
 <div class="line">Namespace: <a class="reference external" href="http://qudt.org/1.1/vocab/unit#">http://qudt.org/1.1/vocab/unit#</a></div>
@@ -9333,9 +9547,9 @@ defining many units of measure.</p>
 </div>
 </div>
 <div class="section" id="semantic-web-tools">
-<span id="index-193"></span><span id="id140"></span><h3>Semantic Web Tools<a class="headerlink" href="#semantic-web-tools" title="Permalink to this headline">¶</a></h3>
+<span id="index-201"></span><span id="id147"></span><h3>Semantic Web Tools<a class="headerlink" href="#semantic-web-tools" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="protege">
-<span id="id141"></span><h4>Protégé<a class="headerlink" href="#protege" title="Permalink to this headline">¶</a></h4>
+<span id="id148"></span><h4>Protégé<a class="headerlink" href="#protege" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Protégé_(software)">https://en.wikipedia.org/wiki/Protégé_(software)</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://protege.stanford.edu/">http://protege.stanford.edu/</a></div>
@@ -9348,7 +9562,7 @@ features.</p>
 <p>Protégé is a Free and Open Source software tool.</p>
 </div>
 <div class="section" id="rdfjs">
-<span id="index-194"></span><span id="id142"></span><h4>RDFJS<a class="headerlink" href="#rdfjs" title="Permalink to this headline">¶</a></h4>
+<span id="index-202"></span><span id="id149"></span><h4>RDFJS<a class="headerlink" href="#rdfjs" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="http://www.w3.org/community/rdfjs/">http://www.w3.org/community/rdfjs/</a></div>
 </div>
@@ -9358,7 +9572,7 @@ language.</p>
 <p><a class="reference external" href="http://www.w3.org/community/rdfjs/wiki/Comparison_of_RDFJS_libraries">http://www.w3.org/community/rdfjs/wiki/Comparison_of_RDFJS_libraries</a></p>
 </div>
 <div class="section" id="rdfhdt">
-<span id="index-195"></span><span id="id143"></span><h4>RDFHDT<a class="headerlink" href="#rdfhdt" title="Permalink to this headline">¶</a></h4>
+<span id="index-203"></span><span id="id150"></span><h4>RDFHDT<a class="headerlink" href="#rdfhdt" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="http://www.rdfhdt.org/">http://www.rdfhdt.org/</a></div>
 </div>
@@ -9372,7 +9586,7 @@ form.</p>
 </ul>
 </div>
 <div class="section" id="rdflib">
-<span id="index-196"></span><span id="id144"></span><h4>RDFLib<a class="headerlink" href="#rdflib" title="Permalink to this headline">¶</a></h4>
+<span id="index-204"></span><span id="id151"></span><h4>RDFLib<a class="headerlink" href="#rdflib" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/RDFLib">https://en.wikipedia.org/wiki/RDFLib</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://github.com/RDFLib">https://github.com/RDFLib</a></div>
@@ -9389,17 +9603,17 @@ for working with <a class="reference internal" href="#rdf"><em>RDF</em></a> in t
 </div>
 </div>
 <div class="section" id="semantic-web-schema-resources">
-<span id="index-197"></span><span id="id145"></span><h3>Semantic Web Schema Resources<a class="headerlink" href="#semantic-web-schema-resources" title="Permalink to this headline">¶</a></h3>
+<span id="index-205"></span><span id="id152"></span><h3>Semantic Web Schema Resources<a class="headerlink" href="#semantic-web-schema-resources" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="prefix-cc">
-<span id="index-198"></span><span id="id146"></span><h4>prefix.cc<a class="headerlink" href="#prefix-cc" title="Permalink to this headline">¶</a></h4>
+<span id="index-206"></span><span id="id153"></span><h4>prefix.cc<a class="headerlink" href="#prefix-cc" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="http://prefix.cc">http://prefix.cc</a></div>
 <div class="line">Docs:</div>
 </div>
 <p>Lookup <a class="reference internal" href="#rdf"><em>RDF</em></a> vocabularies, classes, and properties</p>
-<span class="target" id="index-199"></span></div>
+<span class="target" id="index-207"></span></div>
 <div class="section" id="lov">
-<span id="index-200"></span><span id="id147"></span><h4>LOV<a class="headerlink" href="#lov" title="Permalink to this headline">¶</a></h4>
+<span id="index-208"></span><span id="id154"></span><h4>LOV<a class="headerlink" href="#lov" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="http://lov.okfn.org/">http://lov.okfn.org/</a></div>
 <div class="line">Source: git <a class="reference external" href="https://github.com/pyvandenbussche/lov">https://github.com/pyvandenbussche/lov</a></div>
@@ -9421,7 +9635,7 @@ can also be searched or looked up from <a class="reference internal" href="#pref
 </ul>
 </div>
 <div class="section" id="uris-for-units">
-<span id="index-201"></span><span id="id148"></span><h4>URIs for Units<a class="headerlink" href="#uris-for-units" title="Permalink to this headline">¶</a></h4>
+<span id="index-209"></span><span id="id155"></span><h4>URIs for Units<a class="headerlink" href="#uris-for-units" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><a class="reference external" href="https://lists.w3.org/Archives/Public/public-vocabs/2014Jan/0157.html">https://lists.w3.org/Archives/Public/public-vocabs/2014Jan/0157.html</a><ul>
 <li><a class="reference external" href="https://lists.w3.org/Archives/Public/public-vocabs/2015May/">https://lists.w3.org/Archives/Public/public-vocabs/2015May/</a></li>
@@ -9431,7 +9645,7 @@ can also be searched or looked up from <a class="reference internal" href="#pref
 </ul>
 </div>
 <div class="section" id="lodcloud">
-<span id="index-202"></span><span id="id149"></span><h4>LODCloud<a class="headerlink" href="#lodcloud" title="Permalink to this headline">¶</a></h4>
+<span id="index-210"></span><span id="id156"></span><h4>LODCloud<a class="headerlink" href="#lodcloud" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="http://lod-cloud.net">http://lod-cloud.net</a></div>
 <div class="line">Source: git <a class="reference external" href="https://github.com/lod-cloud/datahub2void">https://github.com/lod-cloud/datahub2void</a></div>
@@ -17412,7 +17626,7 @@ stripsinglehtml --help
 
 <dl class="function">
 <dt id="wrdrd.tools.crawl.crawl_url">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">crawl_url</code><span class="sig-paren">(</span><em>start_url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x109795150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#crawl_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.crawl_url" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">crawl_url</code><span class="sig-paren">(</span><em>start_url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x1027c4150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#crawl_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.crawl_url" title="Permalink to this definition">¶</a></dt>
 <dd><p>Crawl pages starting at <code class="docutils literal"><span class="pre">start_url</span></code></p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -17705,7 +17919,7 @@ a <a class="reference internal" href="#wrdrd.tools.crawl.Link" title="wrdrd.tool
 
 <dl class="function">
 <dt id="wrdrd.tools.crawl.print_frequency_table">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">print_frequency_table</code><span class="sig-paren">(</span><em>frequencies</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x109795150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#print_frequency_table"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.print_frequency_table" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">print_frequency_table</code><span class="sig-paren">(</span><em>frequencies</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x1027c4150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#print_frequency_table"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.print_frequency_table" title="Permalink to this definition">¶</a></dt>
 <dd><p>Print a formatted ASCII frequency table</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -17859,7 +18073,7 @@ a <a class="reference internal" href="#wrdrd.tools.crawl.Link" title="wrdrd.tool
 
 <dl class="function">
 <dt id="wrdrd.tools.crawl.wrdcrawler">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">wrdcrawler</code><span class="sig-paren">(</span><em>url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x109795150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#wrdcrawler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.wrdcrawler" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">wrdcrawler</code><span class="sig-paren">(</span><em>url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x1027c4150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#wrdcrawler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.wrdcrawler" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fetch and generate a report from the given URL</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
