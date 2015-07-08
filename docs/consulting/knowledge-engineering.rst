@@ -896,7 +896,7 @@ Interesting FUSE implementations:
 * There are FUSE bindings for :ref:`Hadoop` :ref:`HDFS`.
 * :ref:`Ceph` can be mounted with/over/through `FUSE`.
 * :ref:`GlusterFS` can be mounted with/over/through `FUSE`.
-* :ref:`NTFS`-3G mounts volumes with FUSE.
+* :ref:`NTFS`-3G mounts volumes with `FUSE`.
 * virtualbox-fuse supports mounting of :ref:`virtualbox` VDI images with FUSE.
 * :ref:`SSHFS`, GitFS, GmailFS, GdriveFS, WikipediaFS and :ref:`Gnome` GVFS
   are all FUSE filesystems.
@@ -906,7 +906,7 @@ Interesting FUSE implementations:
 .. _sshfs:
 
 SSHFS
-```````
+~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/SSHFS
 | Homepage: http://fuse.sourceforge.net/sshfs.html
 | Download: http://sourceforge.net/projects/fuse/files/sshfs-fuse/
@@ -1141,35 +1141,6 @@ Databases
 * https://en.wikipedia.org/wiki/Category:Database_software_comparisons
 
   * http://db-engines.com/en/ranking
-
-
-.. index:: Data Engineering Review
-.. _data engineering review:
-
-Data Engineering Review
-`````````````````````````
-
-From :ref:`computer engineering` > :ref:`data engineering`:
-
-* :ref:`filesystems`
-  (:ref:`mbr`, :ref:`gpt`, :ref:`lvm`, :ref:`btrfs`, :ref:`ext`,
-  :ref:`fat`, :ref:`ntfs`, :ref:`hfs+`)
-
-* :ref:`network filesystems`
-  (:ref:`NFS`, :ref:`SMB`, :ref:`CIFS`,
-  :ref:`WebDAV`,
-  :ref:`Ceph`, :ref:`GlusterFS`)
-
-* :ref:`file locking`
-
-* :ref:`compression algorithms`
-  (:ref:`bzip2`, :ref:`gzip`, :ref:`tar`, :ref:`zip`)
-
-* :ref:`file structures`
-
-* :ref:`data structures`
-  (:ref:`arrays` (:ref:`matrices <matrix>`),
-  :ref:`lists`, :ref:`graphs` (:ref:`trees`))
 
 
 .. index:: ORM
