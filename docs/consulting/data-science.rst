@@ -20,7 +20,7 @@ https://en.wikipedia.org/wiki/Data
 https://en.wikipedia.org/wiki/Information
 
 https://en.wikipedia.org/wiki/Knowledge
-(see: :ref:`knowledge-engineering`)
+(see: :ref:`knowledge engineering`)
 
 https://en.wikipedia.org/wiki/Wisdom
 
@@ -613,7 +613,7 @@ https://en.wikipedia.org/wiki/Validated_learning
 
 https://en.wikipedia.org/wiki/Organizational_learning
 
-See: :ref:`Knowledge Engineering <knowledge-engineering>`
+See: :ref:`knowledge engineering`
 
 
 .. index:: Data Mining
@@ -750,7 +750,7 @@ http://www.w3.org/TR/ld-glossary/#x5-star-linked-open-data
    -- http://5stardata.info/
 
 
-See: :ref:`Knowledge Engineering <knowledge-engineering>`,
+See: :ref:`knowledge engineering`,
 :ref:`semantic web standards`
 
 

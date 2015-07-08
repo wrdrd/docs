@@ -452,7 +452,7 @@ JupyterHub Servers
 
 Knowledge Engineering
 =======================
-See: :ref:`Knowledge Engineering <knowledge-engineering>`
+See: :ref:`knowledge engineering`
 
 .. index:: Linked Curricula Graphs
 .. _linked curricula graphs:
@@ -468,7 +468,7 @@ Linked Curricula Graphs
 
 * [ ] Link each component of the curriculum to a **Concept URI**
 
-  * :ref:`Knowledge Engineering <knowledge-engineering>`
+  * :ref:`knowledge engineering`
     lists a number of **Wikipedia Concept URIs**
 
     Wikipedia (-> DBpedia RDF <- :ref:`LODCloud`))

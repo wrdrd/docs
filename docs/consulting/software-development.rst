@@ -38,7 +38,7 @@ Topics:
 * :ref:`Operating Systems`
 * :ref:`software development` (*applied CS*)
 * :ref:`data science` (*applied CS*)
-* :ref:`Knowledge Engineering <knowledge-engineering>` (*applied CS*)
+* :ref:`knowledge engineering` (*applied CS*)
 * :ref:`Science` (*applied CS* with/for/on behalf of a domain)
 
 

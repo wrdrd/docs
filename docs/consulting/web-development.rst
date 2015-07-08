@@ -327,7 +327,7 @@ See also: `<http://webdevchecklist.com/>`_
 * [ ] Add structured data markup to page
 
   * http://schema.org/docs/full.html
-  * See: :ref:`Knowledge Engineering <knowledge-engineering>` >
+  * See: :ref:`knowledge engineering`,
     :ref:`semantic web standards`,
     :ref:`Schema.org`
 

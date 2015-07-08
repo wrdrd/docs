@@ -1,6 +1,6 @@
 
 .. index:: Knowledge Engineering
-.. _knowledge-engineering:
+.. _knowledge engineering:
 
 Knowledge Engineering
 ========================

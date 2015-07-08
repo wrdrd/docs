@@ -33,7 +33,7 @@ Information Systems Glossary
       Not noise.
 
       See: :ref:`data science` > :ref:`information theory`,
-      :ref:`knowledge-engineering`
+      :ref:`knowledge engineering`
 
    Information System
       A :term:`system` with :term:`information` inputs and outputs
@@ -1049,4 +1049,4 @@ https://en.wikipedia.org/wiki/Business_intelligence
 
 See: :ref:`data science`
 
-See: :ref:`Knowledge Engineering <knowledge-engineering>`
+See: :ref:`knowledge engineering`
