@@ -646,6 +646,11 @@ to *stripe* and/or *mirror* with *parity*.
 
 RAID Implementations:
 
+* RAID may be implemented by a physical controller with
+  multiple drive connectors.
+* RAID may be implemented as a BIOS setting.
+* RAID may be implemented with software e.g. :ref:`lvm`, :ref:`btrfs`.
+
 * https://en.wikipedia.org/wiki/RAID#Software-based
 * https://en.wikipedia.org/wiki/RAID#Firmware-_and_driver-based ("*fake RAID*")
 
@@ -659,6 +664,7 @@ RAID Implementations:
     https://en.wikipedia.org/wiki/Data_scrubbing
 
 
+
 .. index:: MBR
 .. _mbr:
 
@@ -670,10 +676,12 @@ MBR (*Master Boot Record*) is a
 boot record format and a
 file partition scheme.
 
-* :ref:`DOS` and :ref:`Windows` use MBR partition tables.
+* DOS and :ref:`Windows` use MBR partition tables.
 * Many/most UNIX variants support MBR partition tables.
 * :ref:`Linux` supports MBR partition tables.
 * Most PCs since 1983 boot from MBR partition tables.
+* When a PC boots, it reads the MBR on the first configured
+  drive in order to determine where to find the bootloader.
 
 
 .. index:: GPT
@@ -1317,9 +1325,79 @@ Distributed Databases
 | Wikipedia: https://en.wikipedia.org/wiki/Distributed_database
 | Wikipedia: https://en.wikipedia.org/wiki/Distributed_data_store
 
-
-
 See: :ref:`distributed algorithms`
+
+
+.. index:: Accumulo
+.. _accumulo:
+
+Accumulo
+~~~~~~~~~~
+| Wikipedia: 
+| Homepage: https://accumulo.apache.org/
+| Download:
+| Source:
+| Docs:
+
+
+.. index:: Cassandra
+.. _cassandra:
+
+Cassandra
+~~~~~~~~~~~
+| Wikipedia:
+| Homepage:
+| Download:
+| Source:
+| Docs:
+
+
+.. index:: ElasticSearch
+.. _elasticsearch:
+
+ElasticSearch
+~~~~~~~~~~~~~~~
+| Wikipedia:
+| Homepage:
+| Download:
+| Source:
+| Docs:
+
+
+.. index:: Hadoop
+.. _hadoop:
+
+Hadoop
+~~~~~~~~
+| Wikipedia:
+| Homepage:
+| Download:
+| Source:
+| Docs:
+
+
+.. index:: HBase
+.. _hbase:
+
+HBase
+~~~~~~~
+| Wikipedia:
+| Homepage:
+| Download:
+| Source:
+| Docs:
+
+
+.. index:: Spark
+.. _spark:
+
+Spark
+~~~~~~~~
+| Wikipedia:
+| Homepage:
+| Download:
+| Source:
+| Docs:
 
 
 .. index:: Distributed Algorithms
