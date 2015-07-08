@@ -19,7 +19,7 @@ https://en.wikipedia.org/wiki/Software_engineering
 
 .. index:: CS
 .. index:: Computer Science
-.. _computer-science:
+.. _computer science:
 
 Computer Science
 -----------------

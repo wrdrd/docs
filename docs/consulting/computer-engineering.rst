@@ -8,7 +8,7 @@ Computer Engineering
 | Wikipedia: https://en.wikipedia.org/wiki/Computer_engineering
 
 Computer engineering combines, traditionally, electrical engineering
-and :ref:`computer-science`.
+and :ref:`computer science`.
 
 * Computers are made of components with inputs, outputs, and logic tables.
 * Computer programs may or may not be verified using formal methods.

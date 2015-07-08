@@ -16,7 +16,7 @@ Information Systems Glossary
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. TODO: split this to software-development / web-development
-.. ... / computer-science
+.. ... / computer science
 
 .. glossary::
 

@@ -305,7 +305,7 @@ Jupyter and Learning
 
 Learning Topics:
 
-* :ref:`Computer Science <computer-science>`
+* :ref:`computer science`
 * :ref:`Data Science > Data Learning <data-learning>`
 * :ref:`Software Development <software-development>`
 * :ref:`Python`
