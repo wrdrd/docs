@@ -138,7 +138,7 @@ Knowledge Base = TBox + ABox
 See:
 
 * :ref:`OWL`, :ref:`entailment`
-* :ref:`Semantic-web`
+* :ref:`Semantic web`
 * :ref:`N3` for ``=>`` implies
 
 .. index:: Reasoning
@@ -434,7 +434,7 @@ suitable data structures.
 * There are many :ref:`data structure <data structures>`
   representatations for :ref:`graphs`:
 
-  * :ref:`RDF` is a :ref:`linked-data` format for :ref:`graphs`.
+  * :ref:`RDF` is a :ref:`linked data` format for :ref:`graphs`.
 
 * Graphs and :ref:`trees` are **traversed** (or *walked*);
   according to a given algorithm (e.g. :ref:`DFS`, :ref:`BFS`).
@@ -1320,8 +1320,8 @@ Virtuoso :ref:`open source` edition is a multi-paradigm
       (:ref:`HTML`, TEXT, :ref:`TURTLE`, :ref:`RDF/XML`, :ref:`JSON`,
       :ref:`JSON-LD`, :ref:`XML`)
     * Web and other Document File Services (Web Document or File Server)
-    * Five-Star Linked Open Data Deployment
-      (:ref:`RDF`-based Linked Data Server)
+    * :ref:`Five-Star Linked Open Data <fivestardata>` Deployment
+      (:ref:`RDF`-based :ref:`Linked Data` Server)
     * Web Application Server (SOAP or :term:`RESTful <restful api>`
       interaction modes).
 
@@ -1397,11 +1397,10 @@ Graph Pattern Query Results
 
 ``rdfs:seeAlso``
 
-* :ref:`Linked Data <linked-data>`
-* :ref:`Semantic Web <semantic-web>`
-* :ref:`semantic web standards`
-* :ref:`Semantic Web Tools <semantic-web-tools>`
-* :ref:`LDP`
+* :ref:`Linked Data`
+* :ref:`Semantic Web`
+* :ref:`semantic Web Standards`
+* :ref:`Semantic Web Tools`
 
 
 .. index:: Distributed Databases
@@ -1523,6 +1522,52 @@ that does :ref:`MapReduce`-style computation over Hadoop :ref:`HDFS`.
 
 * HBase has a :ref:`Java` API, a :term:`RESTful API`, an `avro` API,
   and a :ref:`Thrift` API
+
+
+.. index:: Apache Hive
+.. index:: Hive
+.. _hive:
+
+Hive
+~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Apache_Hive
+| Homepage: https://hive.apache.org/
+| Download: https://hive.apache.org/downloads.html
+| Docs: https://cwiki.apache.org/confluence/display/Hive/LanguageManual
+| Docs: https://hive.apache.org/javadocs/r1.2.1/api/index.html
+| Docs: https://cwiki.apache.org/confluence/display/Hive/Home
+
+Apache Hive is an :ref:`open source` data warehousing platform
+written in :ref:`java`.
+
+* Hive can read data from :ref:`HDFS` and :ref:`S3`.
+* :ref:`Hive` supports :ref:`Avro`, Parqet.
+* HiveQL is a :ref:`SQL`-like language.
+
+
+.. index:: Apache Parquet
+.. index:: Parquet
+.. _parquet:
+
+Parquet
+~~~~~~~~
+| Homepage: https://parquet.apache.org/
+| Download: https://parquet.apache.org/downloads/
+| Source: git git://git.apache.org/incubator-parquet-mr.git
+| Source: git https://github.com/apache/parquet-mr
+| Standard: https://github.com/apache/parquet-format
+| Docs: https://parquet.apache.org/documentation/latest/
+
+Apache Parqet is an :ref:`open source` columnar storage format
+for :ref:`distributed databases`
+
+    Apache Parquet is a columnar storage format available to any project
+    in the :ref:`Hadoop` ecosystem,
+    regardless of the choice of data processing framework,
+    data model or programming language.
+
+* The *Parquet format* and *Parquet metadata* are encoded with :ref:`Thrift`:
+* See also: :ref:`CSV`, :ref:`CSVW`
 
 
 .. index:: Spark
@@ -1667,7 +1712,7 @@ MapReduce is a :ref:`distributed algorithm <distributed algorithms>`
 for distributed computation.
 
 * :ref:`BigTable`, :ref:`Hadoop`, :ref:`HDFS`,
-  :ref:`Disco`, :ref:`DDFS` all support
+  `Disco`, :ref:`DDFS` all support
   :ref:`mapreduce`-style computation.
 * See also: bashreduce
 
@@ -2455,7 +2500,7 @@ A few examples of ISO8601:
 
 
 .. index:: Linked Data
-.. _linked-data:
+.. _linked data:
 
 Linked Data
 -------------
@@ -2517,11 +2562,11 @@ http://www.w3.org/TR/ld-glossary/#x5-star-linked-open-data
    -- http://5stardata.info/
 
 
-See: :ref:`Semantic Web <semantic-web>`
+See: :ref:`Semantic Web`
 
 
 .. index:: Semantic Web
-.. _semantic-web:
+.. _semantic web:
 
 Semantic Web
 -------------
@@ -3238,7 +3283,7 @@ JSON-LD
 | Standard: http://www.w3.org/TR/json-ld/
 
 JSON-LD (*JSON Linked Data*) is a standard for expressing
-:ref:`RDF` :ref:`Linked Data <linked-data>` as :ref:`JSON`.
+:ref:`RDF` :ref:`Linked Data` as :ref:`JSON`.
 
 JSON-LD specifies a ``@context`` for regular JSON documents
 which maps JSON attributes to URIs with datatypes and, optionally, languages.
@@ -3506,7 +3551,7 @@ LDP
 | LOVLink: http://lov.okfn.org/dataset/lov/vocabs/ldp
 
 LDP (*Linked Data Platform*) is a standard for building :ref:`HTTP` REST APIs
-for :ref:`RDF` :ref:`Linked Data <linked-data>`.
+for :ref:`RDF` :ref:`Linked Data`.
 
 * http://www.w3.org/TR/ldp/#terms
 
@@ -3758,7 +3803,7 @@ Examples:
 
 
 .. index:: Semantic Web Tools
-.. _semantic-web-tools:
+.. _semantic web tools:
 
 Semantic Web Tools
 ---------------------
