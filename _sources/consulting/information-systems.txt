@@ -371,7 +371,7 @@ Examples of SaaS:
 * :ref:`ReadTheDocs` is a :ref:`SaaS` which can integrate with
   GitHub (also a :ref:`SaaS` offering) through :term:`Webhooks <webhook>`:
 
-* Travis-CI is a :ref:`SaaS` :ref:`continuous-integration` service
+* Travis-CI is a :ref:`SaaS` :ref:`continuous integration` service
   which pulls and builds from a
   GitHub repository upon receipt of a :term:`Webhook`,
   that is free for :ref:`open source` projects

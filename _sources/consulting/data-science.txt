@@ -262,7 +262,7 @@ https://en.wikipedia.org/wiki/Systematic_review
 
 Linked Reproducibility
 `````````````````````````
-:ref:`linked-data` + :ref:`Reproducibility` => :ref:`Linked Reproducibility`
+:ref:`linked data` + :ref:`Reproducibility` => :ref:`Linked Reproducibility`
 
 ::
 
@@ -309,17 +309,17 @@ Further Objectives:
 
   * developing vocabularies:
 
-    + :ref:`semantic-web-tools`
+    + :ref:`semantic web tools`
     + :ref:`Git`, :ref:`GitHub Pages`
     + [ ] :ref:`schema.org` extension vocabularies
 
   * linked reproduciblity edges:
 
-    + similarTo
-    + concursWith
-    + discordantWith
-    + intendedToReproduce
-    + reproduces
+    + ``similarTo``
+    + ``concursWith``
+    + ``discordantWith``
+    + ``intendedToReproduce``
+    + ``reproduces``
 
   * linked reproducibility classes and properties:
 
@@ -841,5 +841,5 @@ https://github.com/quantopian/qgrid (SlickGrid w/
 
 https://github.com/josephmisiti/awesome-machine-learning
 
-See: :ref:`Tools`, :ref:`Semantic Web Tools <semantic-web-tools>`,
+See: :ref:`Tools`, :ref:`Semantic Web Tools <semantic web tools>`,
 :ref:`Art & Design <art-design>`
