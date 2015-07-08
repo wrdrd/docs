@@ -1037,14 +1037,18 @@ distributed network filesystem.
   :ref:`Ruby`, :ref:`Perl`, :ref:`Haskell`, :ref:`C++`
 * :ref:`Mesos` can manage distributed HDFS grids.
 * :ref:`ElasticSearch`
-* It's possible to configure a :ref:`Jenkins` cluster
+* It's possible to configure a `Jenkins` :ref:`continuous integration` cluster
   as :ref:`Hadoop` cluster.
 * Many databases support storage over HDFS
   (:ref:`HBase`, :ref:`Cassandra`, :ref:`Accumulo`, :ref:`Spark`)
 * :ref:`Ceph` can now serve files over :ref:`HDFS`.
 * HDFS can be mounted as a :ref:`FUSE` filesystem (e.g. with :ref:`Linux`).
-* HDFS can be accessed from the commandline (e.g. #TODO list, get, put, stat)
-* HDFS can be browsed with HDFS-UI (HTTP :term:`web api`).
+* HDFS can be accessed from the commandline with the
+  Hadoop *FS shell*:
+  https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/FileSystemShell.html
+* HDFS can be browsed with hdfs-du:
+  https://github.com/twitter/hdfs-du
+
 
 
 .. index:: NFS
@@ -1544,7 +1548,7 @@ computation platform.
   :ref:`HDFS`, :ref:`Cassandra`, :ref:`OpenStack` :ref:`Swift`,
   :ref:`AWS` :ref:`S3`, and the local filesystem.
 * Spark can be provisioned by YARN or :ref:`Mesos`.
-* Spark has :ref:`Java`, :ref:`Scala`, :ref:`Python`, and :ref:`R`
+* Spark has :ref:`Java`, :ref:`Scala`, :ref:`Python`, and `R`
   :term:`language APIs <language api>`.
 * Spark set a world sorting benchmark record in 2014:
   https://spark.apache.org/news/spark-wins-daytona-gray-sort-100tb-benchmark.html
@@ -1659,10 +1663,13 @@ MapReduce
 ````````````
 | Wikipedia:  https://en.wikipedia.org/wiki/MapReduce
 
-MapReduce is an algorithm for distributed computation.
+MapReduce is a :ref:`distributed algorithm <distributed algorithms>`
+for distributed computation.
 
-* BigTable, Hadoop, HDFS, Disco, DDFS are built on the :ref:`mapreduce`
-  model
+* :ref:`BigTable`, :ref:`Hadoop`, :ref:`HDFS`,
+  :ref:`Disco`, :ref:`DDFS` all support
+  :ref:`mapreduce`-style computation.
+* See also: bashreduce
 
 
 .. index:: Paxos
@@ -1675,9 +1682,9 @@ Paxos
 
 * https://en.wikipedia.org/wiki/Paxos_(computer_science)#Production_use_of_Paxos
 
-  * Bigtable, Spanner, Megastore
+  * :ref:`BigTable`, Spanner, Megastore
   * :ref:`Ceph`
-  * :ref:`neo4j`
+  * neo4j
 
 
 .. index:: BSP
@@ -1688,7 +1695,9 @@ Bulk Synchronous Parallel
 ````````````````````````````
 | Wikipedia: https://en.wikipedia.org/wiki/Bulk_synchronous_parallel
 
-Bulk Synchronous Parallel (*BSP*) is an algorithm for distributed computation.
+Bulk Synchronous Parallel (*BSP*) is a
+:ref:`distributed algorithm <distributed algorithms>`
+for distributed computation.
 
 * Google Pregel, Apache Giraph, and Apache Spark are built for
   a :ref:`bsp` model
@@ -1839,8 +1848,8 @@ Data Grid
 
 
 
-.. index:: Search Indexing
-.. _search indexing:
+.. index:: Search Engine Indexing
+.. _search engine indexing:
 
 Search Engine Indexing
 +++++++++++++++++++++++++
@@ -1848,6 +1857,9 @@ Search Engine Indexing
 
 * https://en.wikipedia.org/wiki/Web_search_engine
 * :ref:`information retrieval`
+* :ref:`semantic web` :ref:`graph <graphs>`
+  of :ref:`linked data`, :
+  :ref:`RDFa`, :ref:`JSON-LD`, :ref:`Schema.org`.
 
 
 .. index:: ElasticSearch
