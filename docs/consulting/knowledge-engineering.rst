@@ -1136,7 +1136,7 @@ Databases
 
 * https://en.wikipedia.org/wiki/Database_index
 
-* https://en.wikipedia.org/wiki/Search_engine_indexing
+* :ref:`search engine indexing`
 
 * https://en.wikipedia.org/wiki/Category:Database_software_comparisons
 
@@ -1161,7 +1161,7 @@ https://en.wikipedia.org/wiki/Object-relational_impedance_mismatch
 
 .. index:: Relational Databases
 .. index:: SQL Databases
-.. _relational-databases:
+.. _relational databases:
 
 Relational Databases
 `````````````````````
@@ -1273,7 +1273,7 @@ SQLite
 | Wikipedia: https://en.wikipedia.org/wiki/SQLite
 | Homepage: https://www.sqlite.org/
 | Download: https://www.sqlite.org/download.html
-| Source: 
+| Source:
 | Docs: https://www.sqlite.org/docs.html
 | Docs: https://www.sqlite.org/different.html
 | Docs: https://www.sqlite.org/threadsafe.html
@@ -1295,11 +1295,18 @@ Virtuoso
 | Wikipedia: https://en.wikipedia.org/wiki/Virtuoso_Universal_Server
 | Homepage: http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/
 | Source: git https://github.com/openlink/virtuoso-opensource
-| Docs: 
+| Docs: http://docs.openlinksw.com/virtuoso/
+| Docs: http://docs.openlinksw.com/virtuoso/sqlreference.html
+| Docs: http://docs.openlinksw.com/virtuoso/rdfandsparql.html
+| Docs: http://docs.openlinksw.com/virtuoso/rdfsparql.html
+| Docs: http://docs.openlinksw.com/virtuoso/rdfsparqlrule.html
+| Docs: http://docs.openlinksw.com/virtuoso/rdfgraphsecurity.html
+| Docs: http://docs.openlinksw.com/virtuoso/virtuososponger.html
 
 Virtuoso :ref:`open source` edition is a multi-paradigm
-:ref:`relational database` / 
-:ref:`rdf triplestore`.
+:ref:`relational database <relational databases>` /
+:ref:`XML` document database /
+:ref:`RDF triplestore <triplestores>`.
 
     * Relational Tables Data Management
       (Columnar or Column-Store :ref:`SQL` RDBMS)
@@ -1472,33 +1479,6 @@ super column store written in :ref:`Java`.
 * Facebook is one primary supporter of :ref:`Cassandra` development.
 
 
-.. index:: ElasticSearch
-.. _elasticsearch:
-
-ElasticSearch
-~~~~~~~~~~~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/Elasticsearch
-| Homepage: https://www.elastic.co/products/elasticsearch
-| Download: https://www.elastic.co/downloads/elasticsearch
-| Source: git https://github.com/elastic/elasticsearch
-| Docs: https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html
-| Docs: https://www.elastic.co/guide/en/elasticsearch/guide/current/index.html
-| DockerHub: https://registry.hub.docker.com/u/library/elasticsearch/
-
-ElasticSearch is an :ref:`open source` realtime search server
-written in :ref:`Java`
-built on Apache :ref:`Lucene`
-with a :term:`RESTful API` for indexing :ref:`JSON` documents.
-
-* ElasticSearch supports geographical (bounded) queries.
-* ElasticSearch can build better indexes for faster
-  search response times when
-  *ElasticSearch Mappings* are specified.
-* ElasticSearch mappings can be (manually) transformed
-  to :ref:`JSON-LD` ``@context`` mappings:
-  https://github.com/westurner/elasticsearchjsonld
-
-
 .. index:: Hadoop
 .. _hadoop:
 
@@ -1665,12 +1645,11 @@ looked up with e.g. an exact string match.
   which is a *checksum* of a manifest,
   which can be retrieved from a :ref:`DHT`::
 
-    # https://tug.org/mactex/MacTeX.pkg.torrent
-
-
+    # <a href="magnet:?xt=urn:btih:IJBDPDSBT4QZLBIJ6NX7LITSZHZQ7F5I">.</a>
+    # key_uri = "IJBDPDSBT4QZLBIJ6NX7LITSZHZQ7F5I"
     dht = DHT(); value = dht.get(key_uri)
 
-
+* :ref:`named data networking` is also essentially a cached :ref:`DHT`.
 
 
 .. index:: MapReduce
@@ -1718,6 +1697,137 @@ Bulk Synchronous Parallel (*BSP*) is an algorithm for distributed computation.
 
 
 
+.. index:: Distributed Computing Protocols
+.. _distributed computing protocols:
+
+Distributed Computing Protocols
++++++++++++++++++++++++++++++++++
+
+* :ref:`MPI`
+* https://en.wikipedia.org/wiki/XML-RPC
+* https://en.wikipedia.org/wiki/Java_Remote_Method_Invocation
+* :ref:`ws-`
+* :term:`RESTful HTTP <restful api>`
+* https://en.wikipedia.org/wiki/JSON-RPC
+* :ref:`Protocol Buffers`
+* :ref:`Thrift`
+* :ref:`Avro`
+* :ref:`msgpack`
+* https://en.wikipedia.org/wiki/List_of_web_service_protocols
+
+
+.. index:: Avro
+.. index:: Apache Avro
+.. _avro:
+
+Avro
+``````
+| Wikipedia: https://en.wikipedia.org/wiki/Apache_Avro
+| Homepage: https://avro.apache.org/
+| Standard: https://avro.apache.org/docs/current/spec.html
+| Standard: https://avro.apache.org/docs/current/trevni/spec.html
+| Download: https://avro.apache.org/releases.html#Download
+| Docs: https://avro.apache.org/docs/current/
+| Docs: https://avro.apache.org/docs/current/gettingstartedjava.html
+| Docs: https://avro.apache.org/docs/current/api/java/
+| Docs: https://avro.apache.org/docs/current/gettingstartedpython.html
+| Docs: https://avro.apache.org/docs/current/api/c/
+| Docs: https://avro.apache.org/docs/current/api/cpp/html/
+| Docs: https://avro.apache.org/docs/current/api/csharp/
+
+Apache Avro is an RPC distributed computing protocol
+with implementations in many languages.
+
+* Avro *schemas* are defined in :ref:`JSON`.
+* Avro is similar to :ref:`Protocol Buffers` and :ref:`Thrift`,
+  but does not require code generation.
+* Avro stores *schemas* within the data.
+
+
+.. index:: MPI
+.. _mpi:
+
+MPI
+````
+| Wikipedia: https://en.wikipedia.org/wiki/Message_Passing_Interface
+
+MPI (*Message Passing Interface*)
+is a distributed computing protocol
+for structured data interchange
+with implementations in many languages.
+
+* Many supercomputing applications are built with MPI.
+* MPI is faster than :ref:`JSON`.
+* :ref:`IPython` supports MPI:
+  https://ipython.org/ipython-doc/3/parallel/parallel_mpi.html
+
+
+.. index:: Protocol Buffers
+.. _protocol buffers:
+
+Protocol Buffers
+``````````````````
+| Homepage: https://developers.google.com/protocol-buffers/
+| Source: git https://github.com/google/protobuf
+| Docs:
+
+Protocol Buffers (*PB*) is a standard
+for structured data interchange.
+
+* Protocol Buffers are faster than :ref:`JSON`
+
+
+.. index:: Thrift
+.. _thrift:
+
+Thrift
+````````
+Thrift is a standard
+for structured data interchange
+in the style of :ref:`Protocol Buffers`.
+
+* Thrift is faster than :ref:`JSON`.
+
+
+.. index:: SOA
+.. _soa:
+
+SOA
+``````
+| Wikipedia: https://en.wikipedia.org/wiki/Service-oriented_architecture
+
+SOA (*Service Oriented Architecture*) is a collection
+of :ref:`web standards` (e.g :ref:`ws-`) and architectural patterns
+for distributed computing.
+
+
+.. index:: WS- Web Services
+.. _ws-:
+
+WS-*
+~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/List_of_web_service_specifications
+
+There are many web service specifications; many
+web service specifications often start with ``WS-``.
+
+* https://en.wikipedia.org/wiki/List_of_web_service_specifications
+* Many/most WS-* standards specify :ref:`XML`.
+* Some WS-* standards also specify :ref:`JSON`.
+
+
+.. index:: WSDL
+.. _wsdl:
+
+WSDL
+~~~~~~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Web_Services_Description_Language
+
+WSDL (*Web Services Description Language*)
+is a :ref:`web standard <web standards>`
+for describing web services and the schema
+of their inputs and outputs.
+
 
 .. index:: Data Grid
 .. _data-grid:
@@ -1728,6 +1838,162 @@ Data Grid
 
 
 
+
+.. index:: Search Indexing
+.. _search indexing:
+
+Search Engine Indexing
++++++++++++++++++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/Search_engine_indexing
+
+* https://en.wikipedia.org/wiki/Web_search_engine
+* :ref:`information retrieval`
+
+
+.. index:: ElasticSearch
+.. _elasticsearch:
+
+ElasticSearch
+```````````````
+| Wikipedia: https://en.wikipedia.org/wiki/Elasticsearch
+| Homepage: https://www.elastic.co/products/elasticsearch
+| Download: https://www.elastic.co/downloads/elasticsearch
+| Source: git https://github.com/elastic/elasticsearch
+| Docs: https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html
+| Docs: https://www.elastic.co/guide/en/elasticsearch/guide/current/index.html
+| DockerHub: https://registry.hub.docker.com/u/library/elasticsearch/
+
+ElasticSearch is an :ref:`open source` realtime search server
+written in :ref:`Java`
+built on Apache :ref:`Lucene`
+with a :term:`RESTful API` for indexing :ref:`JSON` documents.
+
+* ElasticSearch supports geographical (bounded) queries.
+* ElasticSearch can build better indexes for faster
+  search response times when
+  *ElasticSearch Mappings* are specified.
+* ElasticSearch mappings can be (manually) transformed
+  to :ref:`JSON-LD` ``@context`` mappings:
+  https://github.com/westurner/elasticsearchjsonld
+
+
+.. index:: Haystack
+.. _haystack:
+
+Haystack
+``````````
+| Homepage: http://haystacksearch.org/
+| Source: git https://github.com/django-haystack/django-haystack
+| PyPI: https://pypi.python.org/pypi/django-haystack
+| Docs: https://django-haystack.readthedocs.org/en/latest/
+
+Haystack is an :ref:`open source`
+:ref:`Python` Django API for a number of search
+services (e.g. :ref:`solr`, :ref:`elasticsearch`, :ref:`Whoosh`,
+:ref:`Xapian`).
+
+
+.. index:: Apache Lucene
+.. index:: Lucene
+.. _lucene:
+
+Lucene
+````````
+| Wikipedia: https://en.wikipedia.org/wiki/Lucene
+| Homepage: https://lucene.apache.org/
+| Download: https://lucene.apache.org/core/downloads.html
+| Source: svn http://svn.apache.org/repos/asf/lucene/dev/trunk
+| Docs: https://lucene.apache.org/core/
+| Docs: https://lucene.apache.org/core/5_2_0/
+
+Apache Lucene is an :ref:`open source` search indexing service
+written in :ref:`java`.
+
+* :ref:`ElasticSearch`, :ref:`Nutch`, and :ref:`Solr`
+  are implemented on top of Lucene.
+
+
+.. index:: ApacheNutch
+.. index:: Nutch
+.. _nutch:
+
+Nutch
+```````
+| Wikipedia: https://en.wikipedia.org/wiki/Nutch
+| Homepage: https://nutch.apache.org/
+| Download: https://nutch.apache.org/downloads.html
+| Source: git git://git.apache.org/nutch.git
+| Source: git https://github.com/apache/nutch
+| Docs: https://nutch.apache.org/apidocs/apidocs-2.3/index.html
+| Docs: https://wiki.apache.org/nutch/
+| Docs: https://wiki.apache.org/nutch/#Tutorials
+
+Apache Nutch is an :ref:`open source`
+distributed web crawler and search engine
+written in :ref:`Java`
+and implemented on top of :ref:`Lucene`.
+
+* Nutch has a pluggable storage and indexing API with support
+  for e.g. :ref:`Solr`, :ref:`ElasticSearch`.
+
+
+.. index:: Solr
+.. index:: Apache Solr
+.. _solr:
+
+Solr
+```````
+| Wikipedia:
+| Homepage: https://lucene.apache.org/solr/
+| Download: https://lucene.apache.org/solr/mirrors-solr-latest-redir.html
+| Docs: https://lucene.apache.org/solr/resources.html
+| Docs: https://www.apache.org/dyn/closer.cgi/lucene/solr/ref-guide/
+| Docs: https://wiki.apache.org/solr/
+
+Apache Solr is an :ref:`open source` web search platform
+written in :ref:`Java`
+and implemented on top of :ref:`Lucene`.
+
+
+.. index:: Whoosh
+.. _whoosh:
+
+Whoosh
+````````
+| Homepage:
+| PyPI: https://pypi.python.org/pypi/Whoosh
+| Docs: https://pythonhosted.org/Whoosh/
+
+Whoosh is an :ref:`open source` search indexing service
+written in :ref:`Python`.
+
+
+.. index:: Xapian
+.. _xapian:
+
+Xapian
+````````
+| Wikipedia: https://en.wikipedia.org/wiki/Xapian
+| Homepage: http://xapian.org/
+| Docs: http://xapian.org/docs/
+| Docs: http://xapian.org/docs/apidoc/html/inherits.html
+
+Xapian is an :ref:`open source` search library written in :ref:`C++`
+with bindings for many languages.
+
+
+.. index:: Information Retrieval
+.. _information retrieval:
+
+Information Retrieval
+```````````````````````
+| Wikipedia: https://en.wikipedia.org/wiki/Information_retrieval
+| Docs: http://nlp.stanford.edu/IR-book/information-retrieval.html
+
+* Christopher D. Manning, Prabhakar Raghavan and Hinrich Schütze,
+  *Introduction to Information Retrieval*, Cambridge University Press. 2008.
+
+  http://nlp.stanford.edu/IR-book/
 
 
 .. index:: Time Standards
