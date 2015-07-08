@@ -464,7 +464,7 @@ See also: `<http://webdevchecklist.com/>`_
 
   * [ ] JS libraries (:ref:`CDN`, cdnjs, jQuery, :ref:`Bootstrap`,
     underscore, Backbone, Angular, React)
-  * [ ] JS Analytics loaders (:ref:`data-science`
+  * [ ] JS Analytics loaders (:ref:`data science`
     > :ref:`repro:ObservationalStudy <linked reproducibility>`)
   * [ ] JS Optimization loaders (:ref:`machine-learning`
     > :ref:`repro:ControlledTrial <linked reproducibility>`)

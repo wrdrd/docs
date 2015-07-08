@@ -342,7 +342,7 @@ CUDA (*Compute Unified Device Architecture*) is an API for
 :ref:`GPUs <gpu>`.
 
 CUDA-accelerated libraries for
-:ref:`data-science`, :ref:`machine-learning`, :ref:`deep learning`:
+:ref:`data science`, :ref:`machine-learning`, :ref:`deep learning`:
 
   + Pylearn2 (Theano), Numba
   + Torch

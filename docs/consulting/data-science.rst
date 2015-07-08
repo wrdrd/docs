@@ -1,6 +1,6 @@
 
 .. index:: Data Science
-.. _data-science:
+.. _data science:
 
 Data Science
 =============
@@ -153,7 +153,7 @@ I'm probably walking outside and it is hot out.
 
 
 .. index:: Data Science Theory
-.. _data-science-theory:
+.. _data science theory:
 
 Theory
 --------

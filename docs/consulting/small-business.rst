@@ -104,7 +104,7 @@ https://en.wikipedia.org/wiki/Business_plan
 
 "How to make your business plan stand out?"
 
-* Data (see: :ref:`Data Science <data-science>`)
+* Data (see: :ref:`data science`)
 * Projections: Pessimistic, Realistic, Optimistic
 * Version Number: (see http://semver.org)
 * Collaborative Document: (it will change)
@@ -201,7 +201,7 @@ https://en.wikipedia.org/wiki/Performance_indicator
 
 https://en.wikipedia.org/wiki/Critical_success_factor
 
-See: :ref:`Data Science <data-science>`
+See: :ref:`data science`
 
 
 .. index:: Conversion Marketing

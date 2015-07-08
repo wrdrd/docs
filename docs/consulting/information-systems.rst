@@ -32,7 +32,7 @@ Information Systems Glossary
    Information
       Not noise.
 
-      See: :ref:`data-science` > :ref:`information-theory`,
+      See: :ref:`data science` > :ref:`information-theory`,
       :ref:`knowledge-engineering`
 
    Information System
@@ -1047,6 +1047,6 @@ Business Intelligence
 ~~~~~~~~~~~~~~~~~~~~~~
 https://en.wikipedia.org/wiki/Business_intelligence
 
-See: :ref:`Data Science <data-science>`
+See: :ref:`data science`
 
 See: :ref:`Knowledge Engineering <knowledge-engineering>`

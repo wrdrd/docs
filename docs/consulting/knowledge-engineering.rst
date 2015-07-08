@@ -174,7 +174,7 @@ Entailment
 
 * http://www.w3.org/TR/owl2-profiles/#Introduction
 
-See: :ref:`Data Science <data-science>`
+See: :ref:`data science`
 
 
 .. index:: Data Engineering
