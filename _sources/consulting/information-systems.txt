@@ -250,7 +250,7 @@ Cloud Application Layers
 
   * :ref:`PaaS` APIs (:ref:`AppEngine`, :ref:`AppScale`, :ref:`Heroku`)
   * :ref:`Databases`
-    (:ref:`relational-databases`,
+    (:ref:`relational databases`,
     :ref:`sql`,
     :ref:`nosql`,
     :ref:`graph-databases`,

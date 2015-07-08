@@ -71,7 +71,7 @@ https://en.wikipedia.org/wiki/Publishing
   * **It is faster to run the code next to the data.**
 
     * HDFS (Hadoop, Hive, Cassandra, Spark, :ref:`Mesos`), DDFS (Disco)
-    * :ref:`SQL` (:ref:`Relational Database <relational-databases>`)
+    * :ref:`SQL` (:ref:`Relational Database <relational databases>`)
     * :ref:`SPARQL` (:ref:`Linked Data <linked-data>`)
 
 * Publishing Tools
