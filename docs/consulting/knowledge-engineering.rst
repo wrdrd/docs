@@ -1786,7 +1786,7 @@ Distributed Computing Protocols
 * :ref:`Thrift`
 * :ref:`Avro`
 * :ref:`msgpack`
-* :ref:`WebSocket`
+* :ref:`WebSocket <websockets>`
 * :ref:`WebRTC`
 * :ref:`JSON-WSP`
 * :ref:`LDP` (:ref:`Turtle` or :ref:`JSON-LD` :ref:`RDF` over :ref:`HTTP`)
@@ -1801,7 +1801,7 @@ CORBA
 | Wikipedia: https://en.wikipedia.org/wiki/Common_Object_Request_Broker_Architecture
 
 CORBA (*Common Object Request Broker Architecture*) is
-a :ref:`distributed computing protocol`
+a :ref:`distributed computing protocol <distributed computing protocols>`
 now defined by :ref:`OMG`
 with implementations in many languages.
 
@@ -1822,7 +1822,7 @@ with implementations in many languages.
   (see also dereferencable :ref:`HTTP`, :ref:`HTTPS`
   :term:`URLs <url>` )
 * CORBA objects can be looked up by reference
-  (by :term:`URL`, or *NameService* (see also :ref:`DNS`))
+  (by :term:`URL`, or *NameService* (see also :term:`DNS`))
 * "CORBA Objects are passed by reference, while data
   (integers, doubles, structs, enums, etc.) are passed by value"
   -- https://en.wikipedia.org/wiki/Common_Object_Request_Broker_Architecture#Features
@@ -1855,6 +1855,7 @@ Message Passing
 
 .. index:: ESB
 .. index:: Enterprise Service Bus
+.. _esb:
 
 ESB
 ````
@@ -2837,6 +2838,20 @@ body.
 
 * List of ISO standards: http://www.iso.org/iso/home/standards.htm
 
+
+.. index:: OMG
+.. _omg:
+
+OMG
+++++
+| Wikipedia: https://en.wikipedia.org/wiki/Object_Management_Group
+| Homepage: http://www.omg.org/
+
+OMG (*Object Management Group*) is a standards body.
+
+* UML is an OMG standard.
+* :ref:`CORBA` is now an OMG standard.
+* List of OMG standards: http://www.omg.org/spec/
 
 .. index:: W3C
 .. _w3c:
