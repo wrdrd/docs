@@ -123,7 +123,7 @@ ReadTheDocs
 
 ReadTheDocs is a free and :ref:`open source`
 web service for publishing :ref:`Sphinx` documentation sets
-which functions like a :ref:`continuous-integration` build server
+which functions like a :ref:`continuous integration` build server
 and artifact publisher.
 
 * ReadTheDocs can rebuild HTML, PDF, and ePub from

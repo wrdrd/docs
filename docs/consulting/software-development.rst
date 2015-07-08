@@ -515,7 +515,7 @@ Test Automation
 
 .. index:: Continuous Integration
 .. index:: CI
-.. _continuous-integration:
+.. _continuous integration:
 
 Continuous Integration
 ++++++++++++++++++++++++
