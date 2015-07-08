@@ -1762,7 +1762,7 @@ Bulk Synchronous Parallel (*BSP*) is a
 :ref:`distributed algorithm <distributed algorithms>`
 for distributed computation.
 
-* Google Pregel, Apache Giraph, and :ref:`Apache Spark` are built for
+* Google Pregel, Apache Giraph, and :ref:`Spark` are built for
   a :ref:`bsp` model
 * :ref:`mapreduce` can be expressed very concisely in terms of
   BSP.
