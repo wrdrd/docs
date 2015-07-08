@@ -1785,6 +1785,8 @@ Distributed Computing Protocols
 * :ref:`Thrift`
 * :ref:`Avro`
 * :ref:`msgpack`
+* :ref:`WebSocket`
+* :ref:`WebRTC`
 * https://en.wikipedia.org/wiki/List_of_web_service_protocols
 
 
