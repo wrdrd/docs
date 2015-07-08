@@ -158,9 +158,9 @@ Web Glossary
 
         https://en.wikipedia.org/wiki/Web_standards
 
-        See: :ref:`Web Standards <web-standards>`
+        See: :ref:`web standards`
 
-        See: :ref:`Semantic Web Standards <semantic-web-standards>`
+        See: :ref:`semantic web standards`
 
 
 .. index:: Web Content
@@ -173,7 +173,7 @@ Web Content
 Media Resources: Copy, Text, Photos, Images, Videos
 (things with :ref:`HTTP` URLs)
 
-See :ref:`Web Standards <web-standards>`, :ref:`Art & Design <art-design>`
+See :ref:`web standards`, :ref:`Art & Design <art-design>`
 
 
 
@@ -328,7 +328,7 @@ See also: `<http://webdevchecklist.com/>`_
 
   * http://schema.org/docs/full.html
   * See: :ref:`Knowledge Engineering <knowledge-engineering>` >
-    :ref:`Semantic Web Standards <semantic-web-standards>`,
+    :ref:`semantic web standards`,
     :ref:`Schema.org`
 
   * [ ] Add standard header tags
@@ -507,6 +507,9 @@ DNS Configuration
 See: :py:mod:`wrdrd.tools.domain`
 
 
+.. index:: Web Hosting
+.. _web hosting:
+
 Web Hosting
 +++++++++++++
 :term:`Web Hosting <Web Hosting Service>` Information
@@ -516,12 +519,95 @@ Web Hosting
 
   * http://reverseip.domaintools.com/search/?q=$IP
 
+See: :ref:`Information Systems > Clouds <clouds>`
 
 
-Requirements
-~~~~~~~~~~~~~~
-https://en.wikipedia.org/wiki/Requirements_analysis
+.. index:: WebSec
+.. _websec:
 
-https://en.wikipedia.org/wiki/User_story
+WebSec
+~~~~~~~~~
+WebSec (*web security*) is :ref:`Information Security`
+for web applications.
 
-See: :ref:`Project Management <project-management>`
+Security at :ref:`W3C` :
+
+* http://www.w3.org/Security/
+* http://www.w3.org/Security/wiki/Main_Page
+* http://www.w3.org/2011/webappsec/
+* :ref:`Web Standards`
+
+CWE:
+
+* https://cwe.mitre.org/
+* https://cwe.mitre.org/top25/
+* https://cwe.mitre.org/top25/#CWE-89
+* https://cwe.mitre.org/data/definitions/89.html
+
+OWASP:
+
+* https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project
+* https://www.owasp.org/index.php/OWASP_Proactive_Controls
+* https://www.owasp.org/index.php/Top_10_2013-Table_of_Contents
+* https://www.owasp.org/index.php/Web_Standards_and_Specifications
+
+
+.. index:: HTTPS
+.. _https-:
+
+HTTPS
++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/HTTPS
+
+See: :ref:`HTTPS`, :ref:`HTTP`
+
+
+.. index:: HTTP STS
+.. index:: HTTP Strict Transport Security
+.. _index:
+
+HTTP STS
+++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security
+
+HTTP STS (*HTTP Strict Transport Security*) is
+a standardized extension for notifying browsers
+that all requests should be made over :ref:`HTTP`
+indefinitely or for a specified time period.
+
+See also: :ref:`https everywhere`
+
+
+.. index:: Web Development Requirements
+.. _web development requirements:
+
+Web Development Requirements
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* [ ] :ref:`Software Development > Project Management <project-management>`
+* [ ] :ref:`Team Building > Collaboration Checklist <collaboration checklist>`
+* [ ] :ref:`Collaboration Plan`
+* [ ] :ref:`Photography Checklist`
+* [ ] :ref:`Social Media Images`
+* [ ] :ref:`Web Hosting`
+* [ ] :ref:`Web Development Checklist`
+
+User Stories
++++++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/User_story
+
+User Stories are an :ref:`agile` :ref:`technique <seven layer model of collaboration>`
+for capturing structured requires on *cards* (or as *issues* in e.g. GitHub).
+
+* User Stories can be :ref:`estimated <software development estimation>`
+  and assigned arbitrary but relatively relevant point values
+  with e.g. :ref:`planning poker` and/or a :ref:`kanban` web application.
+* User Stories are, in general, less complex than *Use Cases*
+  which are often more highly specified (in terms of e.g. UML diagrams).
+* User Stories can be grouped in **epics**. An **epic** story
+  is a long and arduous journey; often with multiple parts.
+
+
+See also:
+:ref:`Software Development > Agile <agile>`,
+:ref:`six patterns of collaboration`

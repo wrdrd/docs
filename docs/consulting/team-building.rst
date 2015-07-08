@@ -1,6 +1,6 @@
 
 .. index:: Team Building
-.. _team-building:
+.. _team building:
 
 
 Team Building

@@ -364,7 +364,7 @@ https://en.wikipedia.org/wiki/Favicon
 
 
 .. index:: Social Media Images
-.. _social-media-images:
+.. _social media images:
 
 Social Media Images
 ````````````````````

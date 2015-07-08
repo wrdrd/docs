@@ -222,10 +222,11 @@ https://en.wikipedia.org/wiki/Index#Computer_science
   file structures (and stream protocols):
 
   * :ref:`XML`
-  * :ref:`RDF` (:ref:`RDFXML`, :ref:`Turtle`, :ref:`n3`, :ref:`rdfa`,
+  * :ref:`RDF` (:ref:`RDF/XML`, :ref:`Turtle`, :ref:`n3`, :ref:`rdfa`,
     :ref:`json-ld`)
-  * :ref:`JSON` (:ref:
+  * :ref:`JSON` (:ref:`json-ld`)
   * :ref:`HTTP`
+
 
 .. index:: Git File Structures
 .. _git file structures:
@@ -297,7 +298,7 @@ and rolling checksums.
 Torrent file structure
 ```````````````````````
 A :term:`bittorrent torrent file` is an encoded manifest
-of tracker, :ref:`DHT`, and :term:`web seed` :term:`URIs <URI>`;
+of tracker, :ref:`DHT`, and :term:`web seed <web seeding>` :term:`URIs <URI>`;
 and segment checksum hashes.
 
 * Like :ref:`MPEG-DASH` and :ref:`HTTP Live Streaming`,
@@ -330,7 +331,7 @@ with concurrency and parallelism.
   :ref:`Windows` requires no additional work beyond
   ``win32con.LOCKFILE_EXCLUSIVE_LOCK``,
   ``win32file.LockFileEx``, and ``win32file.UnlockFileEx``.
-+ CWE-667: Improper Locking:
+* CWE-667: Improper Locking:
   https://cwe.mitre.org/data/definitions/667.html#Relationships
 
   + https://en.wikipedia.org/wiki/File_locking#Problems
@@ -756,20 +757,21 @@ ISO9660
 | Wikipedia: https://en.wikipedia.org/wiki/ISO_9660
 | FileExt: ``.iso``
 
-ISO9660 is an :ref:`ISO` standard for :ref:`disc drive` images
+ISO9660 is an :ref:`ISO` standard for :ref:`disc drive <disc drives>` images
 which specifies a standard for booting from a filesystem image.
 
-* Many :ref:`Operating System` distributions are distributed
+* Many :ref:`Operating System <operating systems>`
+  distributions are distributed
   as :ref:`ISO9660` ``.iso`` files.
 * ISO9660 and :ref:`Linux`:
 
   + An ISO9660 ISO can be *loop mounted*::
 
-    mount -o loop,ro -t iso9660 ./path/to/file.iso /mnt/cdrom
+        mount -o loop,ro -t iso9660 ./path/to/file.iso /mnt/cdrom
 
   + An ISO8660 CD can be *mounted*::
 
-    mount -o ro -t iso9660 /dev/cdrom /mnt/cdrom
+        mount -o ro -t iso9660 /dev/cdrom /mnt/cdrom
 
 * Most CD/DVD burning utilities support ISO9660 ``.iso``
   files.
@@ -1054,7 +1056,7 @@ Data Engineering Review
 
 From :ref:`computer engineering` > :ref:`data engineering`:
 
-* :ref:`file systems`
+* :ref:`filesystems`
   (:ref:`mbr`, :ref:`gpt`, :ref:`lvm`, :ref:`btrfs`, :ref:`ext`,
   :ref:`fat`, :ref:`ntfs`, :ref:`hfs+`)
 
@@ -1215,7 +1217,7 @@ Graph Pattern Query Results
 
 * :ref:`Linked Data <linked-data>`
 * :ref:`Semantic Web <semantic-web>`
-* :ref:`Semantic Web Standards <semantic-web-standards>`
+* :ref:`semantic web standards`
 * :ref:`Semantic Web Tools <semantic-web-tools>`
 * :ref:`LDP`
 
@@ -1912,7 +1914,7 @@ https://en.wikipedia.org/wiki/Template:Semantic_Web
 
 
 .. index:: Semantic Web Standards
-.. _semantic-web-standards:
+.. _semantic web standards:
 
 Semantic Web Standards
 -----------------------
@@ -1961,7 +1963,7 @@ Reasoners
 
 
 .. index:: Web Standards
-.. _web-standards:
+.. _web standards:
 
 Web Standards
 ---------------
@@ -2086,6 +2088,22 @@ HTTP in RDF
 HTTP-in-RDF is a standard for representing :ref:`HTTP` as :ref:`RDF`.
 
 
+.. index:: HTTPS
+.. _https:
+
+HTTPS
+```````
+| Standard: https://tools.ietf.org/html/rfc2818 (2000)
+| Wikipedia: https://en.wikipedia.org/wiki/HTTPS
+| Wikipedia: https://en.wikipedia.org/wiki/Transport_Layer_Security
+| Wikipedia: https://en.wikipedia.org/wiki/Secure_Sockets_Layer
+
+HTTPS (*HTTP over SSL*) is :ref:`HTTP` wrapped in TLS/SSL.
+
+* TLS (*Transport Layer Security*)
+* SSL (*Secure Sockets Layer*)
+
+
 .. index:: RTMP
 .. _rtmp:
 
@@ -2152,7 +2170,7 @@ WebRTC
 | Standard: http://tools.ietf.org/wg/rtcweb/
 | Docs: https://webrtc.github.io/samples/
 
-WebRTC is a :ref:`web standard <web-standards>` for
+WebRTC is a :ref:`web standard <web standards>` for
 decentralized or centralized
 streaming of audio, video, and data
 in :ref:`browser <browsers>`,
@@ -2168,7 +2186,6 @@ without having to download any plugins.
 
 .. index:: HTTP/2
 .. index:: HTTP2
-.. index:: HTTP2.0
 .. _http2:
 
 HTTP/2
@@ -2177,13 +2194,13 @@ HTTP/2
 | Homepage: https://http2.github.io/
 | Standard: https://http2.github.io/http2-spec/
 | Standard: https://http2.github.io/http2-spec/compression.html
-| Standard: https://tools.ietf.org/html/draft-ietf-httpbis-http2
+| Standard: https://tools.ietf.org/html/rfc7540
+| Docs: https://github.com/http2/http2-spec/wiki/Implementations
 
-HTTP/2 (*HTTP 2.0*) is the newest standard for :ref:`HTTP`.
+HTTP/2 (*HTTP2*) is the newest standard for :ref:`HTTP`.
 
-HTTP/2 is largely derived from the SPDY protocol.
+* HTTP/2 is largely derived from the SPDY protocol.
 
-* https://github.com/http2/http2-spec/wiki/Implementations
 
 
 .. index:: HTML

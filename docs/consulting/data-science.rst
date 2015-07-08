@@ -203,8 +203,8 @@ https://en.wikipedia.org/wiki/Open_science
 
 * https://en.wikipedia.org/wiki/Open_source
 * https://en.wikipedia.org/wiki/Open_standard
-  (:ref:`Web Standards <web-standards>`,
-  :ref:`Semantic Web Standards <semantic-web-standards>`)
+  (:ref:`web standards`,
+  :ref:`semantic web standards`)
 * https://en.wikipedia.org/wiki/Open_data
 
 https://en.wikipedia.org/wiki/Peer_review
@@ -751,7 +751,7 @@ http://www.w3.org/TR/ld-glossary/#x5-star-linked-open-data
 
 
 See: :ref:`Knowledge Engineering <knowledge-engineering>`,
-:ref:`Semantic Web Standards <semantic-web-standards>`
+:ref:`semantic web standards`
 
 
 .. index:: Data Visualization

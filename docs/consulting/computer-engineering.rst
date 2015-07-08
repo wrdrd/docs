@@ -1,6 +1,6 @@
 
 .. index:: Computer Engineering
-.. _computer-engineering:
+.. _computer engineering:
 
 *********************
 Computer Engineering
@@ -274,7 +274,7 @@ Multiheaded Display
    A: For presentations. For presentations with
    multiple projectors and something like :ref:`Resolume`.
 
-Per :ref:`video card <video cards>` multi-headed display configurations:
+Per :ref:`video card` multi-headed display configurations:
 
 * Synchronized, Mirroring --- Same output on multiple monitors
 * Teamed, Seamed, Tiled --- One framebuffer which spans multiple monitors

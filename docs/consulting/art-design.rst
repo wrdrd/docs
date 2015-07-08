@@ -1490,7 +1490,7 @@ Web Distribution
 | https://en.wikipedia.org/wiki/New_media
 
 * New Web :ref:`Media` (:ref:`Web Content <web content>`)
-  are shared through :ref:`web standards <web-standards>`
+  are shared through :ref:`web standards`
   like TCP/IP, :ref:`HTTP`, :ref:`HTML`, and :ref:`webrtc`
 * Streaming a video with seek and rewind is a bit different
   than downloading / streaming / buffering a file from beginning to end

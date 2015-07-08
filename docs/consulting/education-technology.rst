@@ -1,7 +1,7 @@
 
 .. index:: Education Technology
 .. index:: EdTech
-.. _education-technology:
+.. _education technology:
 
 **********************
 Education Technology
@@ -18,13 +18,13 @@ STEM
 STEM (*Science, Technology, Engineering, and Mathematics*)
 is a broad field of R&D fields.
 
-* Science (:ref:`Science`, :ref:`data-science`)
-* Technology (:ref:`computer-science`, :ref:`information-systems`,
-  :ref:`art-design`, :ref:`education-technology`)
-* Engineering (:ref:`knowledge-engineering`,
-  :ref:`software-development`,
-  :ref:`project-management`)
-* :ref:`Mathematics <math>` (:ref:`data-science`)
+* Science (:ref:`Science`, :ref:`data science`)
+* Technology (:ref:`computer science`, :ref:`information systems`,
+  :ref:`art-design`, :ref:`education technology`)
+* Engineering (:ref:`knowledge engineering`,
+  :ref:`software development`,
+  :ref:`project management`)
+* :ref:`Mathematics <math>` (:ref:`data science`)
 
 Why STEM?
 
@@ -34,8 +34,8 @@ Why STEM?
 
 Why CS?
 
-* :ref:`CS <computer-science>` tools are foundational to
-  :ref:`data-science`,
+* :ref:`computer science` tools are foundational to
+  :ref:`data science`,
   which is foundational to :ref:`STEM`,
   which is foundational to :term:`infrastructure`.
 

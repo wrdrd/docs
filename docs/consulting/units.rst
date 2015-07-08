@@ -471,6 +471,28 @@ volt
 # TODO frequency / current relation
 
 
+.. index:: SI Power Units
+.. _si power units:
+
+SI Power Units
+++++++++++++++++
+
+.. index:: Joule
+.. _joule:
+
+joule
+```````
+| Wikipedia: https://en.wikipedia.org/wiki/Joule
+
+
+.. index:: Watt
+.. _watt:
+
+watt
+``````
+| Wikipedia: https://en.wikipedia.org/wiki/Watt
+
+
 .. index:: SI Temperature Units
 .. _si temperature units:
 

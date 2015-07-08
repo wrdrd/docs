@@ -1,6 +1,6 @@
 
 .. index:: Collaboration Plan
-.. _collaboration-plan:   
+.. _collaboration plan:   
 
 Collaboration Plan
 --------------------
