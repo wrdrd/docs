@@ -1570,6 +1570,23 @@ for :ref:`distributed databases`
 * See also: :ref:`CSV`, :ref:`CSVW`
 
 
+.. index:: Presto
+.. _presto:
+
+Presto
+~~~~~~~~
+| Homepage: https://prestodb.io/
+| Source: git https://github.com/facebook/presto
+| Docs: https://prestodb.io/docs/current/
+
+Presto is an :ref:`open source` distributed query engine
+designed to query multiple datastores at once.
+
+* Presto has connectors for :ref:`Cassandra`, :ref:`Hive`, JMX,
+  Kafka, :ref:`MySQL`, and :ref:`PostgreSQL`.
+* Presto does not yet support :ref:`SPARQL` or SPARQL federated query.
+
+
 .. index:: Spark
 .. _spark:
 
