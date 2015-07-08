@@ -613,7 +613,7 @@ Filesystems
 ++++++++++++++
 | Wikipedia: https://en.wikipedia.org/wiki/File_system
 
-Filesystems (*file systems*) determine how files are 
+Filesystems (*file systems*) determine how files are
 represented in a persistent physical medium.
 
 * On-disk filesystems determine where and how redundantly data is stored
@@ -632,12 +632,12 @@ RAID
 
 RAID (*redundant array of independent disks*)
 is set of configurations for :ref:`hard drives` and :ref:`SSDs <ssd>`
-to *stripe* and/or *mirror* with *parity*. 
+to *stripe* and/or *mirror* with *parity*.
 
 ::
 
   RAID 0 -- striping,        -,             no parity ... throughput
-  RAID 1 -- no striping,  mirroring,        no parity ... 
+  RAID 1 -- no striping,  mirroring,        no parity ...
   RAID 2 -- bit striping,    -,             no parity ... legacy
   RAID 3 -- byte striping,   -,      dedicated parity ... uncommon
   RAID 4 -- block striping,  -,      dedicated parity
@@ -886,7 +886,7 @@ FUSE
 FUSE (*Filesystem in Userspace*) is a userspace filesystem API
 for implementing filesystems in userspace.
 
-* FUSE support is included in the :ref:`Linux` kernel since 
+* FUSE support is included in the :ref:`Linux` kernel since
 * FUSE is available for most :ref:`POSIX` platforms.
 
 Interesting FUSE implementations:
@@ -1218,9 +1218,9 @@ https://en.wikipedia.org/wiki/Relational_database_management_system
 
 * https://en.wikipedia.org/wiki/Comparison_of_relational_database_management_systems
 * http://db-engines.com/en/ranking/relational+dbms
-* https://en.wikipedia.org/wiki/SQLite
-* https://en.wikipedia.org/wiki/MySQL
-* https://en.wikipedia.org/wiki/PostgreSQL
+* :ref:`mysql`
+* :ref:`postgresql`
+* :ref:`sqlite`
 * https://en.wikipedia.org/wiki/Virtuoso_Universal_Server
 * https://en.wikipedia.org/wiki/OLAP
 
@@ -1239,6 +1239,36 @@ SQL
   Security Error (2011))
 
 See: :ref:`Object Relational Modeling <orm>`
+
+
+.. index:: MySQL
+.. _mysql:
+
+MySQL
+~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/MySQL
+
+MySQL is an :ref:`open source` relational database.
+
+
+.. index:: PostgreSQL
+.. _postgresql:
+
+PostgreSQL
+~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/PostgreSQL
+
+PostgreSQL is an :ref:`open source` relational database.
+
+
+.. index:: SQLite
+.. _sqlite:
+
+SQLite
+~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/SQLite
+
+SQLite is an :ref:`open source` relational database.
 
 
 .. index:: NoSQL
@@ -1278,7 +1308,7 @@ Graph Queries
 * https://en.wikipedia.org/wiki/Graph_database#APIs_and_Graph_Query.2FProgramming_Languages
 * https://en.wikipedia.org/wiki/SPARQL
 * `<https://en.wikipedia.org/wiki/Gremlin_(programming_language)>`__
-* https://en.wikipedia.org/wiki/Apache_Spark GraphX
+* :ref:`spark` GraphX
 
 
 .. index:: RDF Triplestores
@@ -1333,11 +1363,44 @@ See: :ref:`distributed algorithms`
 
 Accumulo
 ~~~~~~~~~~
-| Wikipedia: 
+| Wikipedia:
 | Homepage: https://accumulo.apache.org/
-| Download:
-| Source:
-| Docs:
+| Download: https://accumulo.apache.org/downloads/
+| Source: git https://github.com/apache/accumulo
+| Docs: https://accumulo.apache.org/1.7/accumulo_user_manual.html
+| Docs: https://accumulo.apache.org/1.7/accumulo_user_manual.html#_accumulo_design
+| Twitter: https://twitter.com/apacheaccumulo
+
+Apache Accumulo is an :ref:`open source` distributed database
+key/value store written in :ref:`Java`
+based on :ref:`BigTable`
+which adds realtime queries, streaming iterators,
+row-level ACLs
+and a number of additional features.
+
+* Accumulo supports :ref:`MapReduce`-style computation.
+* Accumulo supports streaming iterator computation.
+* Accumulo supports :ref:`HDFS`.
+* Accumulo implements a programmatic :ref:`Java` query API.
+
+
+.. index:: BigTable
+.. _bigtable:
+
+BigTable
+~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/BigTable
+| Docs: http://research.google.com/archive/bigtable.html
+
+Google BigTable is a open reference design for a distributed key/value
+column store
+and a proprietary production database system.
+
+* BigTable functionality overlaps with that of the newer Pregel and Spanner
+  distributed databases.
+* Cloud BigTable is a :ref:`PaaS` / :ref:`SaaS` service
+  with :ref:`Java` integration through an adaptation of
+  :ref:`HBase` API.
 
 
 .. index:: Cassandra
@@ -1345,11 +1408,22 @@ Accumulo
 
 Cassandra
 ~~~~~~~~~~~
-| Wikipedia:
-| Homepage:
-| Download:
-| Source:
-| Docs:
+| Wikipedia: https://en.wikipedia.org/wiki/Apache_Cassandra
+| Homepage: https://cassandra.apache.org/
+| Download: https://cassandra.apache.org/download/
+| Source: git https://github.com/apache/cassandra
+| Docs: https://wiki.apache.org/cassandra/FrontPage
+| Docs: https://wiki.apache.org/cassandra/GettingStarted
+| Docs: http://docs.datastax.com/en/latest-dsc/
+| Docs: http://docs.datastax.com/en/cassandra/2.1/cassandra/architecture/architectureIntro_c.html
+
+Apache Cassandra is an :ref:`open source` distributed key/value
+super column store written in :ref:`Java`.
+
+* Cassandra is similar to :ref:`AWS` Dynamo and :ref:`BigTable`.
+* Cassandra supports :ref:`MapReduce`-style computation.
+* Cassandra supports :ref:`HDFS`.
+* Facebook is one primary supporter of :ref:`Cassandra` development.
 
 
 .. index:: ElasticSearch
@@ -1357,11 +1431,26 @@ Cassandra
 
 ElasticSearch
 ~~~~~~~~~~~~~~~
-| Wikipedia:
-| Homepage:
-| Download:
-| Source:
-| Docs:
+| Wikipedia: https://en.wikipedia.org/wiki/Elasticsearch
+| Homepage: https://www.elastic.co/products/elasticsearch
+| Download: https://www.elastic.co/downloads/elasticsearch
+| Source: git https://github.com/elastic/elasticsearch
+| Docs: https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html
+| Docs: https://www.elastic.co/guide/en/elasticsearch/guide/current/index.html
+| DockerHub: https://registry.hub.docker.com/u/library/elasticsearch/
+
+ElasticSearch is an :ref:`open source` realtime search server
+written in :ref:`Java`
+built on Apache :ref:`Lucene`
+with a :term:`RESTful API` for indexing :ref:`JSON` documents.
+
+* ElasticSearch supports geographical (bounded) queries.
+* ElasticSearch can build better indexes for faster
+  search response times when
+  *ElasticSearch Mappings* are specified.
+* ElasticSearch mappings can be (manually) transformed
+  to :ref:`JSON-LD` ``@context`` mappings:
+  https://github.com/westurner/elasticsearchjsonld
 
 
 .. index:: Hadoop
@@ -1369,11 +1458,18 @@ ElasticSearch
 
 Hadoop
 ~~~~~~~~
-| Wikipedia:
-| Homepage:
-| Download:
-| Source:
-| Docs:
+| Wikipedia: https://en.wikipedia.org/wiki/Apache_Hadoop
+| Homepage: https://hadoop.apache.org/
+| Download: https://hadoop.apache.org/releases.html
+| Source: git git://git.apache.org/hadoop.git
+| Source: git https://github.com/apache/hadoop
+| Docs: http://hadoop.apache.org/docs/current/
+| Docs: http://hadoop.apache.org/docs/stable/
+
+Apache Hadoop is a collection of :ref:`open source`
+distributed computing components;
+particularly for :ref:`MapReduce`-style computation
+over Hadoop :ref:`HDFS` distributed filesystem.
 
 
 .. index:: HBase
@@ -1381,11 +1477,22 @@ Hadoop
 
 HBase
 ~~~~~~~
-| Wikipedia:
-| Homepage:
-| Download:
-| Source:
-| Docs:
+| Wikipedia: https://en.wikipedia.org/wiki/Apache_HBase
+| Homepage: https://hbase.apache.org/
+| Download: https://www.apache.org/dyn/closer.cgi/hbase/
+| Source: git git://git.apache.org/hbase.git
+| Source: git https://github.com/apache/hbase
+| Docs: https://hbase.apache.org/book.html
+| Docs: https://hbase.apache.org/book.html#conceptual.view
+
+Apache HBase is an :ref:`open source` distributed key/value
+super column store
+based on :ref:`BigTable`
+written in :ref:`Java`
+that does :ref:`MapReduce`-style computation over Hadoop :ref:`HDFS`.
+
+* HBase has a :ref:`Java` API, a :term:`RESTful API`, an `avro` API,
+  and a :ref:`Thrift` API
 
 
 .. index:: Spark
@@ -1393,11 +1500,41 @@ HBase
 
 Spark
 ~~~~~~~~
-| Wikipedia:
-| Homepage:
-| Download:
-| Source:
-| Docs:
+| Wikipedia: https://en.wikipedia.org/wiki/Apache_Spark
+| Homepage: https://spark.apache.org/
+| Download: https://spark.apache.org/downloads.html
+| Source: git git://git.apache.org/spark.git
+| Source: git https://github.com/apache/spark
+| Docs: https://spark.apache.org/documentation.html
+| Docs: https://spark.apache.org/docs/latest/
+| Docs: https://spark.apache.org/docs/latest/cluster-overview.html
+| Docs: https://spark.apache.org/docs/latest/quick-start.html
+
+Apache Spark is an :ref:`open source` distributed
+computation platform.
+
+* Spark is in-memory; and 100x faster than :ref:`MapReduce`.
+* Spark can work with data in/over/through
+  :ref:`HDFS`, :ref:`Cassandra`, :ref:`OpenStack` :ref:`Swift`,
+  :ref:`AWS` :ref:`S3`, and the local filesystem.
+* Spark can be provisioned by YARN or :ref:`Mesos`.
+* Spark has :ref:`Java`, :ref:`Scala`, :ref:`Python`, and :ref:`R`
+  :term:`language APIs <language api>`.
+* Spark set a world sorting benchmark record in 2014:
+  https://spark.apache.org/news/spark-wins-daytona-gray-sort-100tb-benchmark.html
+
+
+.. index:: GraphX
+.. _graphx:
+
+=========
+GraphX
+=========
+| Wikipedia: https://en.wikipedia.org/wiki/Apache_Spark#GraphX
+| Homepage: https://spark.apache.org/graphx/
+| Docs: https://spark.apache.org/docs/latest/graphx-programming-guide.html
+
+GraphX is an :ref:`open source` graph query framework built with :ref:`Spark`.
 
 
 .. index:: Distributed Algorithms
