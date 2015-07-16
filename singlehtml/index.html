@@ -7633,11 +7633,15 @@ is a network filesystem protocol built with <a class="reference internal" href="
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Relational_database_management_system">https://en.wikipedia.org/wiki/Relational_database_management_system</a></p>
 <ul class="simple">
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Comparison_of_relational_database_management_systems">https://en.wikipedia.org/wiki/Comparison_of_relational_database_management_systems</a></li>
-<li><a class="reference external" href="http://db-engines.com/en/ranking/relational+dbms">http://db-engines.com/en/ranking/relational+dbms</a></li>
 <li><a class="reference internal" href="#mysql"><em>MySQL</em></a></li>
 <li><a class="reference internal" href="#postgresql"><em>PostgreSQL</em></a></li>
 <li><a class="reference internal" href="#sqlite"><em>SQLite</em></a></li>
-<li><a class="reference external" href="https://en.wikipedia.org/wiki/Virtuoso_Universal_Server">https://en.wikipedia.org/wiki/Virtuoso_Universal_Server</a></li>
+<li><a class="reference internal" href="#virtuoso"><em>Virtuoso</em></a></li>
+<li><a class="reference external" href="http://db-engines.com/en/ranking/relational+dbms">http://db-engines.com/en/ranking/relational+dbms</a></li>
+</ul>
+<p>What doesn&#8217;t SQL do?</p>
+<ul class="simple">
+<li><a class="reference internal" href="#rdf"><em>RDF</em></a>, <a class="reference internal" href="#owl"><em>OWL</em></a></li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/OLAP">https://en.wikipedia.org/wiki/OLAP</a></li>
 </ul>
 <div class="section" id="sql">
@@ -7755,6 +7759,7 @@ interaction modes).</li>
 </div></blockquote>
 <ul class="simple">
 <li>Virtuoso supports ODBC, JDBC, and DB-API relational database access.</li>
+<li>Virtuoso powers <a class="reference internal" href="#dbpedia"><em>DBpedia</em></a>.</li>
 </ul>
 <span class="target" id="index-87"></span></div>
 </div>
@@ -7798,6 +7803,7 @@ interaction modes).</li>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="http://www.blazegraph.com/">http://www.blazegraph.com/</a></div>
 <div class="line">Download: <a class="reference external" href="http://www.blazegraph.com/download">http://www.blazegraph.com/download</a></div>
+<div class="line">Src: git git://git.code.sf.net/p/bigdata/git</div>
 <div class="line">Docs: <a class="reference external" href="http://www.blazegraph.com/learn">http://www.blazegraph.com/learn</a></div>
 <div class="line">Docs: <a class="reference external" href="http://www.blazegraph.com/inference">http://www.blazegraph.com/inference</a></div>
 <div class="line">Docs: <a class="reference external" href="http://www.blazegraph.com/blueprints">http://www.blazegraph.com/blueprints</a></div>
@@ -7812,6 +7818,8 @@ with support for <a class="reference internal" href="#gremlin"><em>Gremlin</em><
 <a class="reference internal" href="#rdfs"><em>RDFS</em></a> and <a class="reference internal" href="#owl"><em>OWL</em></a> inferencing,
 <a class="reference internal" href="#sparql"><em>SPARQL</em></a>.</p>
 <ul>
+<li><p class="first">Blazegraph was formerly known as <em>Bigdata</em>.</p>
+</li>
 <li><p class="first">Blazegraph 1.5.2 supports <a class="reference internal" href="#solr"><em>Solr</em></a> (e.g. TF-IDF) indexing.</p>
 </li>
 <li><p class="first">Blazegraph will power the <em class="xref std std-ref">Wikidata</em> Query Service (RDF, SPARQL):</p>
@@ -18187,7 +18195,7 @@ stripsinglehtml --help
 
 <dl class="function">
 <dt id="wrdrd.tools.crawl.crawl_url">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">crawl_url</code><span class="sig-paren">(</span><em>start_url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x7f57658fc150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#crawl_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.crawl_url" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">crawl_url</code><span class="sig-paren">(</span><em>start_url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x7f5fae5d1150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#crawl_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.crawl_url" title="Permalink to this definition">¶</a></dt>
 <dd><p>Crawl pages starting at <code class="docutils literal"><span class="pre">start_url</span></code></p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -18480,7 +18488,7 @@ a <a class="reference internal" href="#wrdrd.tools.crawl.Link" title="wrdrd.tool
 
 <dl class="function">
 <dt id="wrdrd.tools.crawl.print_frequency_table">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">print_frequency_table</code><span class="sig-paren">(</span><em>frequencies</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x7f57658fc150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#print_frequency_table"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.print_frequency_table" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">print_frequency_table</code><span class="sig-paren">(</span><em>frequencies</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x7f5fae5d1150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#print_frequency_table"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.print_frequency_table" title="Permalink to this definition">¶</a></dt>
 <dd><p>Print a formatted ASCII frequency table</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -18634,7 +18642,7 @@ a <a class="reference internal" href="#wrdrd.tools.crawl.Link" title="wrdrd.tool
 
 <dl class="function">
 <dt id="wrdrd.tools.crawl.wrdcrawler">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">wrdcrawler</code><span class="sig-paren">(</span><em>url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x7f57658fc150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#wrdcrawler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.wrdcrawler" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">wrdcrawler</code><span class="sig-paren">(</span><em>url</em>, <em>output=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w' at 0x7f5fae5d1150&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#wrdcrawler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.wrdcrawler" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fetch and generate a report from the given URL</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />

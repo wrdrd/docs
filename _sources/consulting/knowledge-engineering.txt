@@ -1252,11 +1252,15 @@ https://en.wikipedia.org/wiki/Database_normalization
 https://en.wikipedia.org/wiki/Relational_database_management_system
 
 * https://en.wikipedia.org/wiki/Comparison_of_relational_database_management_systems
-* http://db-engines.com/en/ranking/relational+dbms
 * :ref:`mysql`
 * :ref:`postgresql`
 * :ref:`sqlite`
-* https://en.wikipedia.org/wiki/Virtuoso_Universal_Server
+* :ref:`Virtuoso`
+* http://db-engines.com/en/ranking/relational+dbms
+
+What doesn't SQL do?
+
+* :ref:`RDF`, :ref:`OWL`
 * https://en.wikipedia.org/wiki/OLAP
 
 
@@ -1386,6 +1390,7 @@ Virtuoso :ref:`open source` edition is a multi-paradigm
       interaction modes).
 
 * Virtuoso supports ODBC, JDBC, and DB-API relational database access.
+* Virtuoso powers :ref:`DBpedia`.
 
 
 .. index:: NoSQL
@@ -1437,6 +1442,7 @@ Blazegraph
 ~~~~~~~~~~~~
 | Homepage: http://www.blazegraph.com/
 | Download: http://www.blazegraph.com/download
+| Src: git git://git.code.sf.net/p/bigdata/git
 | Docs: http://www.blazegraph.com/learn
 | Docs: http://www.blazegraph.com/inference
 | Docs: http://www.blazegraph.com/blueprints
@@ -1451,6 +1457,7 @@ with support for :ref:`Gremlin`, :ref:`Blueprints`, :ref:`RDF`,
 :ref:`RDFS` and :ref:`OWL` inferencing,
 :ref:`SPARQL`.
 
+* Blazegraph was formerly known as *Bigdata*.
 * Blazegraph 1.5.2 supports :ref:`Solr` (e.g. TF-IDF) indexing.
 
 * Blazegraph will power the :ref:`Wikidata` Query Service (RDF, SPARQL):
