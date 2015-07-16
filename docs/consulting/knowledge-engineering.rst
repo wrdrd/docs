@@ -501,6 +501,53 @@ BFS (*Breadth-first search*) is a :ref:`graph <graphs>` traversal agorithm.
 * [ ] BFS and :ref:`BSP`
 
 
+.. index:: Topological Sorting
+.. _topological sorting:
+
+Topological Sorting
+~~~~~~~~~~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Topological_sorting
+
+A DAG (*directed acyclic* :ref:`graph`) has a
+topological sorting, or is topologically sorted.
+
+* The unix ``tsort`` utility does a topological sorting
+  of a space and newline delimited list of edge
+  labels:
+
+.. code:: bash
+
+    $ tsort --help
+    Usage: tsort [OPTION] [FILE]
+    Write totally ordered list consistent with the partial ordering in FILE.
+    With no FILE, or when FILE is -, read standard input.
+
+        --help     display this help and exit
+        --version  output version information and exit
+
+    GNU coreutils online help: <http://www.gnu.org/software/coreutils/>
+    For complete documentation, run: info coreutils 'tsort invocation'
+
+    $ echo -e '1 2\n2 3\n3 4\n2 a' | tsort
+    1
+    2
+    a
+    3
+    4
+
+* Installing a set of packages with dependencies
+  is a topological sorting problem;
+  plus e.g. version and platform constraints
+  (as solvable with a SAT constraint satisfaction solver
+  (see :ref:`conda` (pypi:pycosat)))
+
+* A topological sorting can identify the
+  "root" of a **directed acyclic graph**.
+
+  * *Information gain* can be useful
+    for less discrete problems.
+
+
 .. index:: Trees
 .. _trees:
 
@@ -1826,7 +1873,7 @@ with implementations in many languages.
 * "CORBA Objects are passed by reference, while data
   (integers, doubles, structs, enums, etc.) are passed by value"
   -- https://en.wikipedia.org/wiki/Common_Object_Request_Broker_Architecture#Features
- 
+
 
 
 
