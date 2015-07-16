@@ -1,4 +1,5 @@
--e hg+ssh://hg@bitbucket.org/birkenfeld/sphinx#egg=sphinx
+#-e hg+https://hg@bitbucket.org/birkenfeld/sphinx#egg=sphinx
+sphinx
 sphinxcontrib-srclinks
 -e git+https://github.com/westurner/sphinxjp.themes.basicstrap#egg=sphinxjp.themes.basicstrap
 -e git+https://github.com/davisp/ghp-import#egg=ghp-import
