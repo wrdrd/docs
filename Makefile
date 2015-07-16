@@ -96,6 +96,10 @@ docs_tools_submodule_upgrade: docs_tools_submodule
 
 docs-tools: docs_tools_submodule_upgrade docs
 
+docs-tools-clone:
+	test -d ./docs/tools && rmdir ./docs/tools || true
+	git clone https://github.com/westurner/tools ./docs/tools
+
 docs-open: docs open
 
 
