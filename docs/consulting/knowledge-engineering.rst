@@ -431,22 +431,35 @@ suitable data structures.
 
   | Wikipedia: `<https://en.wikipedia.org/wiki/Graph_(mathematics)#Undirected_graph>`__
 
-* There are many :ref:`data structure <data structures>`
-  representatations for :ref:`graphs`:
-
-  * :ref:`RDF` is a :ref:`linked data` format for :ref:`graphs`.
-
 * Graphs and :ref:`trees` are **traversed** (or *walked*);
   according to a given algorithm (e.g. :ref:`DFS`, :ref:`BFS`).
 
-* Graph nodes can be listed in many different *orders*:
+* Graph nodes can be listed in many different *orders*
+  (or with a given *ordering*):
 
   * Preoder
   * Inorder
   * Postorder
   * Level-order
 
+* There are many :ref:`data structure <data structures>`
+representatations for :ref:`graphs`.
+
+* There are many data serialization/marshalling
+formats for graphs:
+
+  * Graph edge lists can be stored as adjacency :ref:`matrices`.
+  * :ref:`NetworkX` supports a number of graph storage formats.
+  * :ref:`RDF` is a :ref:`standard semantic web <semantic web standards>`
+    :ref:`linked data` format for :ref:`graphs`.
+  * :ref:`JSON-LD` is a :ref:`standard semantic web <semantic web standards>`
+    :ref:`linked data` format for :ref:`graphs`.
+
+* There are many :ref:`Graph Databases` and :ref:`RDF Databases`
+  for storing graphs.
+
 * A cartesian product has an interesting graph representation.
+  (See :ref:`compression algorithms`)
 
 
 .. index:: DFS
@@ -1401,18 +1414,131 @@ Graph Databases
 
 https://en.wikipedia.org/wiki/Graph_database#Graph_database_projects
 
-* http://db-engines.com/en/ranking/graph+dbms
-* https://en.wikipedia.org/wiki/Virtuoso_Universal_Server
-* https://en.wikipedia.org/wiki/AllegroGraph
-* https://en.wikipedia.org/wiki/Sqrrl
+* https://en.wikipedia.org/wiki/AllegroGraph [:ref:`RDF`]
+* :ref:`Blazegraph`  [:ref:`RDF`, :ref:`OWL`]
 * https://en.wikipedia.org/wiki/Neo4j
+* https://en.wikipedia.org/wiki/Sqrrl
+* :ref:`Virtuoso` [:ref:`RDF`, :ref:`OWL`]
+* http://db-engines.com/en/ranking/graph+dbms
 
 Graph Queries
 
 * https://en.wikipedia.org/wiki/Graph_database#APIs_and_Graph_Query.2FProgramming_Languages
-* https://en.wikipedia.org/wiki/SPARQL
-* `<https://en.wikipedia.org/wiki/Gremlin_(programming_language)>`__
-* :ref:`spark` GraphX
+* :ref:`SPARQL`
+* :ref:`Gremlin`
+* :ref:`Blueprints`
+* :ref:`Spark` GraphX
+
+
+.. index:: Blazegraph
+.. _blazegraph:
+
+Blazegraph
+~~~~~~~~~~~~
+| Homepage: http://www.blazegraph.com/
+| Download: http://www.blazegraph.com/download
+| Docs: http://www.blazegraph.com/learn
+| Docs: http://www.blazegraph.com/inference
+| Docs: http://www.blazegraph.com/blueprints
+| Docs: http://www.blazegraph.com/sesame
+| Docs: http://www.blazegraph.com/develop
+| Docs: http://www.blazegraph.com/docs/api/
+| Docs: https://wiki.blazegraph.com/wiki/index.php/Main_Page
+
+Blazegraph is an :ref:`open source` :ref:`graph database`
+written in :ref:`Java`
+with support for :ref:`Gremlin`, :ref:`Blueprints`, :ref:`RDF`,
+:ref:`RDFS` and :ref:`OWL` inferencing,
+:ref:`SPARQL`.
+
+* Blazegraph 1.5.2 supports :ref:`Solr` (e.g. TF-IDF) indexing.
+
+* Blazegraph will power the :ref:`Wikidata` Query Service (RDF, SPARQL):
+
+  https://lists.wikimedia.org/pipermail/wikidata-tech/2015-March/000740.html
+
+* MapGraph is a set of :ref:`GPU`-accelerations for graph processing.
+
+
+.. index:: Blueprints
+.. _blueprints:
+
+Blueprints
+~~~~~~~~~~~
+| Wikipedia:
+| Homepage:
+| Src: git https://github.com/tinkerpop/blueprints
+| Docs: https://github.com/tinkerpop/blueprints/wiki
+
+Blueprints is an :ref:`open source` :ref:`graph database` API
+(and reference graph data model).
+
+    Blueprints is a collection of interfaces, implementations,
+    ouplementations, and test suites for the property graph data model.
+
+    Blueprints is analogous to the JDBC, but for graph databases.
+    As such, it provides a common set of interfaces to allow developers to
+    plug-and-play their graph database backend.
+
+    Moreover, software written atop Blueprints works over all
+    Blueprints-enabled graph databases.
+
+    Within the TinkerPop software stack, Blueprints serves
+    as the foundational technology for:
+
+    * Pipes: A lazy, data flow framework
+    * :ref:`Gremlin`: A graph traversal language
+    * Frames: An object-to-graph mapper
+    * Furnace: A graph algorithms package
+    * Rexster: A graph server
+
+* There are many blueprints API implementations
+  (e.g. Rexster, :ref:`neo4j`, :ref:`Blazegraph`, :ref:`Accumulo`)
+
+
+.. index:: Gremlin
+.. _gremlin:
+
+Gremlin
+~~~~~~~~
+| Wikipedia: `<https://en.wikipedia.org/wiki/Gremlin_(programming_language)>`__
+| Src: git https://github.com/tinkerpop/gremlin
+| Docs: https://github.com/tinkerpop/gremlin/wiki
+
+Gremlin is an :ref:`open source` domain-specific language
+for traversing property graphs.
+
+* Gremlin works with databases that implement the :ref:`blueprints`
+  graph database API.
+
+
+.. index:: Neo4j
+.. _neo4j:
+
+Neo4j
+~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Neo4j
+| Homepage: http://neo4j.com/
+| Download: http://neo4j.com/download/
+| Src: git https://github.com/neo4j/neo4j
+| Docs: http://neo4j.com/developer/get-started/
+| Docs: http://neo4j.com/docs/
+| Docs: http://neo4j.com/docs/2.2.3/
+| Docs: http://neo4j.com/developer/cypher/
+| Docs: http://neo4j.com/docs/stable/cypher-refcard/
+| Docs: https://en.wikipedia.org/wiki/Cypher_Query_Language
+| Docs: http://neo4j.com/open-source-project/
+
+Neo4j is an :ref:`Open Source` HA graph database
+written in :ref:`Java`.
+
+* Neo4j implements the :ref:`Paxos` distributed algorithm
+  for HA (*high availability*).
+* Neo4j can integrate with :ref:`Spark` and :ref:`ElasticSearch`.
+* Neo4j is widely deployed in production environments.
+* There is a :ref:`blueprints` API implementation for Neo4j:
+
+  https://github.com/tinkerpop/blueprints/wiki/Neo4j-Implementation
 
 
 .. index:: RDF Triplestores
@@ -1425,10 +1551,11 @@ RDF Triplestores
 
 https://en.wikipedia.org/wiki/List_of_subject-predicate-object_databases
 
-* http://db-engines.com/en/ranking/rdf+store
-* https://en.wikipedia.org/wiki/Virtuoso_Universal_Server
-* `<https://en.wikipedia.org/wiki/Sesame_(framework)>`__
+* :ref:`Blazegraph`
 * `<https://en.wikipedia.org/wiki/Jena_(framework)>`__
+* `<https://en.wikipedia.org/wiki/Sesame_(framework)>`__
+* :ref:`Virtuoso`
+* http://db-engines.com/en/ranking/rdf+store
 
 Graph Pattern Query Results
 
@@ -1635,6 +1762,7 @@ designed to query multiple datastores at once.
 * Presto does not yet support :ref:`SPARQL` federated query.
 
 
+.. index:: Apache Spark
 .. index:: Spark
 .. _spark:
 
@@ -2924,16 +3052,15 @@ HTTP
 | Wikipedia: https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
 | Standard: https://tools.ietf.org/html/rfc2616
 | Standard: http://tools.ietf.org/html/rfc7230#page-5
+| Docs: https://www.mnot.net/blog/2014/06/07/rfc2616_is_dead
 | URI Scheme: ``http://``
 | URI Scheme: ``https://``
 
 HTTP (*HyperText Transfer Protocol*) is an :ref:`open source`
 text-based request-response
-TCP/IP protocol for data interchange.
+TCP/IP protocol for text and binary data interchange.
 
-HTTPS (*Secure HTTP*) wraps HTTP in SSL/TLS to secure HTTP.
-
-* https://www.mnot.net/blog/2014/06/07/rfc2616_is_dead
+* :ref:`HTTPS` (*Secure HTTP*) wraps HTTP in SSL/TLS to secure HTTP.
 
 
 .. index:: HTTP in RDF
