@@ -1809,7 +1809,7 @@ are all FUSE filesystems.</li>
 <p>Ceph is an <a class="reference internal" href="open-source#open-source"><em>Open Source</em></a> network filesystem
 (a <a class="reference internal" href="#distributed-databases"><em>distributed database</em></a>
 for files with attributes like owner, group, permissions)
-written in <a class="reference internal" href="../tools/index#id43"><em>C++</em></a> and <a class="reference internal" href="../tools/index#perl"><em>Perl</em></a>
+written in <a class="reference internal" href="../tools/index#id47"><em>C++</em></a> and <a class="reference internal" href="../tools/index#perl"><em>Perl</em></a>
 which runs over top of one or more on-disk filesystems.</p>
 <ul class="simple">
 <li>Ceph Block Device (<em>rbd</em>) &#8211; striping, caching, snapshots, copy-on-write,
@@ -1884,7 +1884,7 @@ WASB (Azure)</li>
 <li>There are HDFS <a class="reference internal" href="information-systems#term-language-api"><em class="xref std std-term">language apis</em></a> for
 many languages:
 <a class="reference internal" href="../tools/index#java"><em>Java</em></a>, <a class="reference internal" href="../tools/index#scala"><em>Scala</em></a>, <a class="reference internal" href="../tools/index#go"><em>Go</em></a>, <a class="reference internal" href="../tools/index#python"><em>Python</em></a>,
-<a class="reference internal" href="../tools/index#ruby"><em>Ruby</em></a>, <a class="reference internal" href="../tools/index#perl"><em>Perl</em></a>, <a class="reference internal" href="../tools/index#haskell"><em>Haskell</em></a>, <a class="reference internal" href="../tools/index#id43"><em>C++</em></a></li>
+<a class="reference internal" href="../tools/index#ruby"><em>Ruby</em></a>, <a class="reference internal" href="../tools/index#perl"><em>Perl</em></a>, <a class="reference internal" href="../tools/index#haskell"><em>Haskell</em></a>, <a class="reference internal" href="../tools/index#id47"><em>C++</em></a></li>
 <li><a class="reference internal" href="../tools/index#mesos"><em>Mesos</em></a> can manage distributed HDFS grids.</li>
 <li><a class="reference internal" href="#elasticsearch"><em>ElasticSearch</em></a></li>
 <li>It&#8217;s possible to configure a <cite>Jenkins</cite> <a class="reference internal" href="software-development#continuous-integration"><em>Continuous Integration</em></a> cluster
@@ -2988,7 +2988,7 @@ written in <a class="reference internal" href="../tools/index#python"><em>Python
 <div class="line">Docs: <a class="reference external" href="http://xapian.org/docs/">http://xapian.org/docs/</a></div>
 <div class="line">Docs: <a class="reference external" href="http://xapian.org/docs/apidoc/html/inherits.html">http://xapian.org/docs/apidoc/html/inherits.html</a></div>
 </div>
-<p>Xapian is an <a class="reference internal" href="open-source#open-source"><em>Open Source</em></a> search library written in <a class="reference internal" href="../tools/index#id43"><em>C++</em></a>
+<p>Xapian is an <a class="reference internal" href="open-source#open-source"><em>Open Source</em></a> search library written in <a class="reference internal" href="../tools/index#id47"><em>C++</em></a>
 with bindings for many languages.</p>
 </div>
 <div class="section" id="information-retrieval">
@@ -4438,9 +4438,28 @@ vocabulary for representing physical units.</p>
 <ul>
 <li><p class="first"><code class="docutils literal"><span class="pre">qudt:SpaceAndTimeUnit</span></code></p>
 <blockquote>
-<div></div></blockquote>
+<div><div class="code n3 highlight-python"><div class="highlight"><pre>qudt:SpaceAndTimeUnit
+   rdf:type owl:Class ;
+   rdfs:label &quot;Space And Time Unit&quot;^^xsd:string ;
+   rdfs:subClassOf qudt:PhysicalUnit ;
+   rdfs:subClassOf
+           [ rdf:type owl:Restriction ;
+             owl:hasValue &quot;UST&quot;^^xsd:string ;
+             owl:onProperty qudt:typePrefix
+           ] .
+</pre></div>
+</div>
+</div></blockquote>
 </li>
 <li><p class="first">QUDT Namespaces:</p>
+<div class="code n3 highlight-python"><div class="highlight"><pre>@prefix qudt:           &lt;http://qudt.org/schema/qudt#&gt; .
+@prefix qudt-1.1:       &lt;http://qudt.org/1.1/schema/qudt#&gt; .
+@prefix qudt-dimension: &lt;http://qudt.org/vocab/dimension#&gt; .
+@prefix qudt-quantity:  &lt;http://qudt.org/vocab/quantity#&gt; .
+@prefix qudt-unit-1.1:  &lt;http://qudt.org/1.1/vocab/unit#&gt; .
+@prefix unit:           &lt;http://qudt.org/vocab/unit#&gt; .
+</pre></div>
+</div>
 </li>
 </ul>
 <p>This diagram explains how each of the vocabularies are linked and derived:
@@ -4464,9 +4483,30 @@ vocabulary for representing physical units.</p>
 <p><a class="reference internal" href="#qudt"><em>QUDT</em></a> Quantities is an <a class="reference internal" href="#rdf"><em>RDF</em></a> schema and vocabulary for describing
 physical quantities.</p>
 <p>Examples from <a class="reference external" href="http://qudt.org/1.1/vocab/OVG_quantities-qudt-(v1.1).ttl">http://qudt.org/1.1/vocab/OVG_quantities-qudt-(v1.1).ttl</a> :</p>
-<ul class="simple">
-<li><code class="docutils literal"><span class="pre">qudt-quantity:Time</span></code></li>
-<li><code class="docutils literal"><span class="pre">qudt-quantity:AreaTimeTemperature</span></code></li>
+<ul>
+<li><p class="first"><code class="docutils literal"><span class="pre">qudt-quantity:Time</span></code></p>
+<div class="code n3 highlight-python"><div class="highlight"><pre>qudt-quantity:Time
+    rdf:type qudt:SpaceAndTimeQuantityKind ;
+    rdfs:label &quot;Time&quot;^^xsd:string ;
+    qudt:description &quot;Time is a basic component of the measuring system used to sequence events, to compare the durations of events and the intervals between them, and to quantify the motions of objects.&quot;^^xsd:string ;
+    qudt:symbol &quot;T&quot;^^xsd:string ;
+    skos:exactMatch &lt;http://dbpedia.org/resource/Time&gt; .
+# ...
+unit:SecondTime
+    qudt:quantityKind qudt-quantity:Time .
+</pre></div>
+</div>
+</li>
+<li><p class="first"><code class="docutils literal"><span class="pre">qudt-quantity:AreaTimeTemperature</span></code></p>
+<div class="code n3 highlight-python"><div class="highlight"><pre>qudt-quantity:AreaTimeTemperature
+    rdf:type qudt:ThermodynamicsQuantityKind ;
+    rdfs:label &quot;Area Time Temperature&quot;^^xsd:string .
+# ...
+unit:SquareFootSecondDegreeFahrenheit
+    qudt:quantityKind qudt-quantity:AreaTimeTemperature .
+</pre></div>
+</div>
+</li>
 </ul>
 </div>
 <div class="section" id="qudt-units">
@@ -4483,13 +4523,49 @@ defining many units of measure.</p>
 <p>Examples:</p>
 <ul>
 <li><p class="first"><code class="docutils literal"><span class="pre">unit:SecondTime</span></code></p>
+<div class="code n3 highlight-python"><div class="highlight"><pre>unit:SecondTime
+      rdf:type qudt:SIBaseUnit , qudt:TimeUnit ;
+      rdfs:label &quot;Second&quot;^^xsd:string ;
+      qudt:abbreviation &quot;s&quot;^^xsd:string ;
+      qudt:code &quot;1615&quot;^^xsd:string ;
+      qudt:conversionMultiplier
+              &quot;1&quot;^^xsd:double ;
+      qudt:conversionOffset
+              &quot;0.0&quot;^^xsd:double ;
+      qudt:symbol &quot;s&quot;^^xsd:string ;
+      skos:exactMatch &lt;http://dbpedia.org/resource/Second&gt; .
+# ...
+</pre></div>
+</div>
 <p><a class="reference external" href="http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#SecondTime">http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#SecondTime</a></p>
 </li>
 <li><p class="first"><code class="docutils literal"><span class="pre">unit:HorsepowerElectric</span></code></p>
 <p><a class="reference external" href="http://qudt.org/1.1/vocab/OVG_units-qudt-(v1.1).ttl">http://qudt.org/1.1/vocab/OVG_units-qudt-(v1.1).ttl</a></p>
+<div class="code n3 highlight-python"><div class="highlight"><pre>unit:HorsepowerElectric
+    rdf:type qudt:NotUsedWithSIUnit , qudt:PowerUnit ;
+    rdfs:label &quot;Horsepower Electric&quot;^^xsd:string ;
+    qudt:abbreviation &quot;hp/V&quot;^^xsd:string ;
+    qudt:code &quot;0815&quot;^^xsd:string ;
+    qudt:symbol &quot;hp/V&quot;^^xsd:string .
+</pre></div>
+</div>
 </li>
 <li><p class="first"><code class="docutils literal"><span class="pre">unit:SystemOfUnits_SI</span></code></p>
 <p><a class="reference external" href="http://qudt.org/1.1/vocab/OVG_units-qudt-(v1.1).ttl">http://qudt.org/1.1/vocab/OVG_units-qudt-(v1.1).ttl</a></p>
+<div class="code n3 highlight-python"><div class="highlight"><pre>unit:SystemOfUnits_SI
+      rdf:type qudt:SystemOfUnits ;
+      rdfs:label &quot;International System of Units&quot;^^xsd:string ;
+      qudt:abbreviation &quot;SI&quot;^^xsd:string ;
+      qudt:systemAllowedUnit
+              unit:ArcMinute , unit:Day , unit:MinuteTime , unit:DegreeAngle , unit:ArcSecond , unit:ElectronVolt , unit:RevolutionPerHour , unit:Femtometer , unit:DegreePerSecond , unit:DegreeCelsius , unit:Liter , unit:MicroFarad , unit:AmperePerDegree , unit:RevolutionPerMinute , unit:MicroHenry , unit:Kilometer , unit:Revolution , unit:Hour , unit:PicoFarad , unit:Gram , unit:DegreePerSecondSquared , unit:MetricTon , unit:CubicCentimeter , unit:SquareCentimeter , unit:CubicMeterPerHour , unit:KiloPascal , unit:DegreePerHour , unit:UnifiedAtomicMassUnit , unit:MilliHenry , unit:KilogramPerHour , unit:KiloPascalAbsolute , unit:NanoFarad , unit:RadianPerMinute , unit:RevolutionPerSecond ;
+      qudt:systemBaseUnit unit:Kilogram , unit:Unitless , unit:Kelvin , unit:Meter , unit:SecondTime , unit:Mole , unit:Candela , unit:Ampere ;
+      qudt:systemCoherentDerivedUnit
+              unit:PerCubicMeter , unit:WattPerSquareMeter , unit:Volt , unit:WattPerMeterKelvin , unit:CoulombPerCubicMeter , unit:Becquerel , unit:WattPerSquareMeterSteradian , unit:KelvinPerSecond , unit:Gray , unit:RadianPerSecond , unit:VoltPerMeter , unit:HenryPerMeter , unit:WattPerSteradian , unit:JouleMeterPerMole , unit:CoulombMeter , unit:PerTeslaMeter , unit:Pascal , unit:LumenPerWatt , unit:KilogramMeterPerSecond , unit:SquareMeterKelvin , unit:MoleKelvin , unit:MeterKelvinPerWatt , unit:Steradian , unit:AmperePerMeter , unit:SquareMeterKelvinPerWatt , unit:JouleSecond , unit:MeterPerFarad , unit:KilogramPerSecond , unit:HertzPerTesla , unit:KilogramMeterSquared , unit:WattPerSquareMeterQuarticKelvin , unit:PerMeterKelvin , unit:JoulePerCubicMeterKelvin , unit:JoulePerSquareTesla , unit:JoulePerCubicMeter , unit:MeterPerKelvin , unit:AmperePerSquareMeter , unit:CubicCoulombMeterPerSquareJoule , unit:CoulombPerMeter , unit:Katal , unit:CubicMeter , unit:LumenSecond , unit:Coulomb , unit:MolePerKilogram , unit:CubicMeterPerKilogramSecondSquared , unit:PerMeter , unit:AmperePerRadian , unit:CoulombPerKilogram , unit:QuarticCoulombMeterPerCubicEnergy , unit:Tesla , unit:JoulePerKilogram , unit:MeterKelvin , unit:MeterPerSecond , unit:NewtonMeter , unit:CandelaPerSquareMeter , unit:Siemens , unit:CoulombSquareMeter , unit:KilogramPerCubicMeter , unit:KilogramSecondSquared , unit:Watt , unit:AmperePerJoule , unit:VoltPerSecond , unit:JoulePerKilogramKelvinPerCubicMeter , unit:PascalPerSecond , unit:CubicMeterPerMole , unit:KilogramPerMeter , unit:PascalSecond , unit:Joule , unit:HertzPerVolt , unit:KilogramPerSquareMeter , unit:PerTeslaSecond , unit:MolePerCubicMeter , unit:PerSecond , unit:JoulePerKelvin , unit:RadianPerSecondSquared , unit:Newton , unit:CubicMeterPerKelvin , unit:GrayPerSecond , unit:SquareMeterPerSecond , unit:CubicMeterPerKilogram , unit:KilogramPerMole , unit:SquareMeterPerKelvin , unit:SquareMeterSteradian , unit:TeslaSecond , unit:Ohm , unit:KelvinPerWatt , unit:JoulePerKilogramKelvinPerPascal , unit:WattSquareMeter , unit:MeterKilogram , unit:WattSquareMeterPerSteradian , unit:Hertz , unit:VoltPerSquareMeter , unit:CubicMeterPerSecond , unit:JoulePerMoleKelvin , unit:TeslaMeter , unit:JoulePerMole , unit:Lux , unit:FaradPerMeter , unit:PerMole , unit:JouleSecondPerMole , unit:AmpereTurnPerMeter , unit:VoltMeter , unit:SecondTimeSquared , unit:AmpereTurn , unit:JoulePerKilogramKelvin , unit:CoulombPerSquareMeter , unit:NewtonPerKilogram , unit:JoulePerSquareMeter , unit:Weber , unit:Henry , unit:MeterPerSecondSquared , unit:KilogramKelvin , unit:Sievert , unit:NewtonPerMeter , unit:WattPerSquareMeterKelvin , unit:SquareCoulombMeterPerJoule , unit:Lumen , unit:Farad , unit:HertzPerKelvin , unit:SquareMeter , unit:JoulePerTesla , unit:Radian , unit:KelvinPerTesla , unit:NewtonPerCoulomb , unit:CoulombPerMole ;
+      qudt:systemPrefixUnit
+              unit:Hecto , unit:Nano , unit:Tera , unit:Atto , unit:Kilo , unit:Yocto , unit:Yotta , unit:Deci , unit:Zepto , unit:Pico , unit:Femto , unit:Milli , unit:Micro , unit:Zetta , unit:Mega , unit:Centi , unit:Giga , unit:Peta , unit:Deca , unit:Exa ;
+      skos:exactMatch &lt;http://dbpedia.org/resource/International_System_of_Units&gt; .
+</pre></div>
+</div>
 </li>
 </ul>
 </div>

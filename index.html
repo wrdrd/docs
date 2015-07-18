@@ -1201,14 +1201,18 @@
 <li class="toctree-l2"><a class="reference internal" href="tools/index#packages">Packages</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#anaconda">Anaconda</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#apt">APT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tools/index#aur">AUR</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#bower">Bower</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#cabal">Cabal</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#conda">Conda</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#deb">DEB</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#dpkg">Dpkg</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tools/index#dnf">dnf</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#homebrew">Homebrew</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#npm">NPM</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#nuget">NuGet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tools/index#pacman">pacman</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tools/index#pkgbuild">PKGBUILD</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#portage">Portage</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#ports">Ports</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#rpm">RPM</a></li>
@@ -1254,7 +1258,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="tools/index#id43">C++</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tools/index#id47">C++</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#fortran">Fortran</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#haskell">Haskell</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#go">Go</a></li>
@@ -1297,7 +1301,8 @@
 <li class="toctree-l2"><a class="reference internal" href="tools/index#operating-systems">Operating Systems</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#posix">POSIX</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#linux">Linux</a></li>
-<li class="toctree-l3"><a class="reference internal" href="tools/index#linux-distributions">Linux Distributions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tools/index#linux-distributions">Linux Distributions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tools/index#arch">Arch</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="tools/index#debian">Debian</a></li>
 <li class="toctree-l4"><a class="reference internal" href="tools/index#ubuntu">Ubuntu</a></li>
 <li class="toctree-l4"><a class="reference internal" href="tools/index#fedora">Fedora</a></li>
@@ -1422,6 +1427,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="tools/index#window-managers">Window Managers</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#compiz">Compiz</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tools/index#f-lux">f.lux</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#gnome">Gnome</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#i3wm">i3wm</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#kde">KDE</a></li>
@@ -1431,7 +1437,8 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="tools/index#browsers">Browsers</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="tools/index#chrome">Chrome</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tools/index#chrome">Chrome</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tools/index#chromium">Chromium</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="tools/index#chrome-devtools">Chrome DevTools</a></li>
 <li class="toctree-l4"><a class="reference internal" href="tools/index#chrome-extensions">Chrome Extensions</a></li>
 <li class="toctree-l4"><a class="reference internal" href="tools/index#pbm">pbm</a></li>
@@ -1466,6 +1473,7 @@
 <li class="toctree-l4"><a class="reference internal" href="tools/index#high-contrast">High Contrast</a></li>
 <li class="toctree-l4"><a class="reference internal" href="tools/index#spectrum">Spectrum</a></li>
 <li class="toctree-l4"><a class="reference internal" href="tools/index#stylish">Stylish</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tools/index#tiesto">Tiësto</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#safety-extensions">Safety Extensions</a><ul>
@@ -1531,7 +1539,13 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="tools/index#standards">Standards</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tools/index#css">CSS</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#filesystem-hierarchy-standard">Filesystem Hierarchy Standard</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tools/index#http">HTTP</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tools/index#https">HTTPS</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tools/index#html">HTML</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#json">JSON</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#json-ld">JSON-LD</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#messagepack">MessagePack</a></li>
