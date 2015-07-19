@@ -2375,7 +2375,7 @@ OSX Notes
 
   * [ ] Manually update to latest versions (of zip, tar.gz, .dmg)
   * [ ] Port / wrap :ref:`shell <shells>` scripts
-    to / with :term:`salt formulas <salt formula>`
+    to / with :term:`salt formulas`
     and parameters (per-subnet, group, machine, os; :term:`salt pillar`):
 
     + [ ] https://github.com/westurner/dotfiles/blob/master/scripts/setup_brew.sh  # :ref:`homebrew`
@@ -5418,12 +5418,13 @@ Sphinx
 ~~~~~~~~~~~~~~~~~
 | Wikipedia: `<https://en.wikipedia.org/wiki/Sphinx_(documentation_generator)>`_
 | Homepage: https://pypi.python.org/pypi/Sphinx
+| Source: hg https://bitbucket.org/birkenfeld/sphinx/
+| Pypi: https://pypi.python.org/pypi/Sphinx
 | Docs: http://sphinx-doc.org/contents.html
 | Docs: http://sphinx-doc.org/markup/code.html
 | Docs: http://pygments.org/docs/lexers/
 | Docs: http://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html
-| Source: hg https://bitbucket.org/birkenfeld/sphinx/
-| Pypi: https://pypi.python.org/pypi/Sphinx
+| Docs: https://github.com/yoloseem/awesome-sphinxdoc
 
 
 Sphinx is a tool for working with
@@ -5580,6 +5581,15 @@ CSS
 ~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/Cascading_Style_Sheets
 | Docs: https://wrdrd.com/docs/consulting/knowledge-engineering#css
+
+CSS (*Cascading Style Sheets*) define the presentational
+aspects of :ref:`HTML` and a number of mobile and desktop
+web framworks.
+
+* CSS is designed to ensure separation of data and presentation.
+  With javascript, the separation is then data, code, and presentation.
+
+
 
 
 .. index:: Filesystem Hierarchy Standard

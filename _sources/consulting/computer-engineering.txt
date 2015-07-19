@@ -473,7 +473,7 @@ A gigabit is 1000 Mbps (1000 megabits per second).
 
 
 .. index:: NIC
-.. nic:
+.. _nic:
 
 NIC
 -----

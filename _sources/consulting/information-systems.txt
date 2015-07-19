@@ -253,7 +253,8 @@ Cloud Application Layers
     (:ref:`relational databases`,
     :ref:`sql`,
     :ref:`nosql`,
-    :ref:`graph-databases`,
+    :ref:`graph databases`,
+    :ref:`triplestores`,
     :ref:`sparql`)
   * Authz: Authentication, Authorization
 
