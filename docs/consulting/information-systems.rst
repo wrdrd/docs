@@ -281,56 +281,79 @@ Cloud Application Layers
 
   * Search Indexing (:ref:`JSON`, :ref:`json-ld-`, :ref:`json-ld`)
 
-    * ElasticSearch (Lucene), Solr
+    * :ref:`ElasticSearch` (:ref:`Lucene`), :ref:`Solr`
     * AppEngine/AppScale Search API
 
   * Big Data storage and data local iterators:
 
     * :ref:`MapReduce`, :ref:`BSP`
-    * HDFS, Hadoop (Spark, GraphX, Pregel, Cassandra, Accumulo, :ref:`Mesos`)
-    * DDFS, Disco
+    * :ref:`HDFS`, :ref:`DDFS`
+    * :ref:`Hadoop`, :ref:`Spark`, :ref:`Cassandra`, :ref:`Accumulo`
+    * :ref:`Mesos`
 
-  * HTTP Object Storage (:ref:`libcloud`)
+  * HTTP Object Storage
 
-    * https://libcloud.readthedocs.org/en/latest/storage/
-    * :ref:`OpenStack` Swift (Swift, S3 APIs)
-    * :ref:`Linux` :ref:`Ceph` RADOS gateway (Swift, S3 APIs)
-    * :ref:`Linux`, :ref:`OSX`, :ref:`POSIX`:  :ref:`GlusterFS` (Swift, S3 APIs)
+    * :ref:`libcloud` (https://libcloud.readthedocs.org/en/latest/storage/)
+    * Amazon :ref:`AWS` :ref:`S3`
+    * :ref:`OpenStack` Swift (:ref:`Swift`, :ref:`S3` APIs)
+    * :ref:`Linux`: :ref:`Ceph` RADOS Gateway (:ref:`Swift`, :ref:`S3` APIs)
+    * :ref:`Linux`, :ref:`OSX`, :ref:`POSIX`:  :ref:`GlusterFS` (:ref:`Swift`, :ref:`S3` APIs)
 
-* Infrastructure Layer
+* Infrastructure Layer ("provisioning")
 
-  * Resource Pool
+  * Resource Pool ("instances" of {virtual machines, containers, task workers})
 
-    * :ref:`Cobbler` (libvirt :ref:`virtualization`)
-    * :ref:`OpenStack`
-    * :ref:`kubernetes`, :ref:`kubernetes-mesos`
-    * :ref:`Mesos` schedulers (Aurora, Chronos, Marathon)
+    * :ref:`Cobbler` (:ref:`libvirt` :ref:`virtualization`)
     * :ref:`Docker` Swarm
+    * :ref:`Kubernetes` :ref:`Docker` pods
+    * :ref:`Kubernetes-Mesos`: :ref:`Mesos` schedulers and
+      :ref:`Kubernetes` :ref:`Docker` pods
+    * :ref:`Mesos` schedulers (Aurora, Chronos, Marathon)
+    * :ref:`OpenStack`
 
-  * Provisioning / Inventory / Monitoring
+  * Inventory / Monitoring
 
-    * :ref:`Cobbler` Dashboard <-->
-      {:ref:`Ansible`, :ref:`Puppet`, :ref:`Salt`}
-    * :ref:`OpenStack` Horizon Dashboard
-    * Nagios, Shinken, Icinga
-    * Syslog, LogStash, Heka (logtailers)
-    * Kibana, Grafana, Graphite, RRD (:ref:`data-visualization-tools`)
-    * http://www.brendangregg.com/linuxperf.html
-    * https://www.opsschool.org/en/latest/
+    # #ConfigMgmt: :ref:`Packages`
+    # #ConfigMgmt: :ref:`Ansible`, :ref:`Puppet`, :ref:`Salt`, :ref:`configuration management`
+    * #ConfigMgmt #Instances: :ref:`Cobbler` Web Dashboard
+    * #ConfigMgmt #Instances: :ref:`OpenStack` Horizon Dashboard
+    # #Inventory: Cobbler JSON, Salt Grains, Puppet Facts, :ref:`osquery` SQL tables
+    # #Monitoring: #ConfigMgmt events
+    * #Monitoring: Nagios, Shinken, Icinga
+    * #Monitoring: Monitd, Collectd, RRD
+    * #Logging: Syslog, LogStash, Heka (logtailers)
+    * #Logviz: Kibana, Grafana, Graphite, RRD (:ref:`data-visualization-tools`)
+    * #PRF: http://www.brendangregg.com/linuxperf.html
+    * | Docs: https://www.opsschool.org/en/latest/
 
-  * Physical and Virtual Servers
+  * Physical and Virtual Servers ("servers", "racks", "machines")
 
-    * :ref:`Operating Systems`
-    * :ref:`Virtualization`
-    * :ref:`configuration-management`
+    * #ConfigMgmt: :ref:`configuration-management`
+      ("infrastructure as code",
+      shell-escaping,
+      task queues / :ref:`ESBs <ESB>`,
+      :ref:`distributed computing protocols`,
+      #Logging,
+      worker pools)
+    * :ref:`Virtualization` (full / para-virtualization)
+    * :ref:`Operating Systems` ("OS")
+    * Manual Testing -- PEBKAM (*Between Keyboard and Monitor*)
+    * :ref:`Computer Engineering` ("computer", #power AC/DC, BIOS, :ref:`NIC`,
+      :ref:`ethernet`, USB, RS232 Serial Console, KVM switch)
 
   * Physical and Software Networks
 
-    + Router = Gateway + Switch
-    + :ref:`Vagrant` networking
-    + :ref:`Docker` networking
+    + Internet connections
     + VLANs, IPv6 6to4 tunnels
-    + SDN (:ref:`OpenStack` Neutron)
+    + SDN
+        Software Defined Networking
+        
+        * :ref:`OpenStack` Neutron
+        * :ref:`Docker` networking
+        * :ref:`Docker` Swarm networking
+        * :ref:`Vagrant` networking
+        * :ref:`Virtualbox` networking
+
     + :term:`DNS` (BIND, dnsmasq, :ref:`Cobbler`, :ref:`OpenStack`,
       :ref:`Vagrant`, :ref:`Docker`)
 
@@ -338,19 +361,33 @@ Cloud Application Layers
 
     + Virtual storage:
 
-      - Central file storage (NFS, CIFS, WebDAV)
-      - distributed file storage (:ref:`Ceph`, :ref:`GlusterFS`)
-      - persistent block storage (:ref:`AWS` S3, :ref:`OpenStack` Cinder
-      - on-disk filesystems (ref:`ext4 <ext>`, :ref:`LVM`, :ref:`BTRFS`,
+      - Central file storage (:ref:`NFS`, :ref:`CIFS`, :ref:`WebDAV`)
+      - distributed file storage: (:ref:`Ceph`, :ref:`GlusterFS`)
+      - persistent block storage: (:ref:`AWS` S3, :ref:`OpenStack` Cinder)
+      - on-disk filesystems: (ref:`ext4 <ext>`, :ref:`LVM`, :ref:`BTRFS`,
         :ref:`NTFS`, :ref:`FAT`, :ref:`HFS+`)
 
     + Physical storage
 
-      - SAN -- Storage Area Network (iSCSI)
-      - NAS -- Network Attached Storage (FreeNAS, Synology)
-      - :ref:`USB`, :ref:`SATA`, :ref:`SCSI`, :ref:`IDE <ide drive>`,
-        :ref:`ATA <PATA>` :ref:`hard drives`
+      - SAN -- Storage Area Network (iSCSI, :ref:`fibre channel`, persistent block storage)
+      - NAS -- Network Attached Storage (FreeNAS, Synology,
+        :ref:`Network Filesystems`, iSCSI)
+      - :ref:`data device bus`: (:ref:`USB`, :ref:`SATA`, :ref:`SCSI`, :ref:`IDE <ide drive>`,
+        :ref:`ATA <PATA>` :ref:`hard drives`)
 
+    + Power, HVAC, Fire Suppression
+
+      - #HVAC: Cooling (Active / Passive)
+      - #HVAC: Heating (Active / Passive)
+      - #Fire: Extinguishers
+      - #Fire: Sprinklers: ~**"do not pour water on an
+        #lectrical fire"** --- 20,000 Leagues Under the Sea
+      - #Fire: Halon
+      - #Power: Power supplies (AC --> DC conversion)
+      - #Power: Batteries  (AC --> DC --> Batteries --> AC/DC)
+      - #Power: Generators
+      - #Power: Generator fuel for the generators
+      - #Power: Renewable energy, Clean Energy, Sustainable Energy
 
 
 .. index:: Software-as-a-Service

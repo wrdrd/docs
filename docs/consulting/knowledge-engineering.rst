@@ -443,10 +443,10 @@ suitable data structures.
   * Level-order
 
 * There are many :ref:`data structure <data structures>`
-representatations for :ref:`graphs`.
+  representatations for :ref:`graphs`.
 
 * There are many data serialization/marshalling
-formats for graphs:
+  formats for graphs:
 
   * Graph edge lists can be stored as adjacency :ref:`matrices <matrix>`.
   * :ref:`NetworkX` supports a number of graph storage formats.
