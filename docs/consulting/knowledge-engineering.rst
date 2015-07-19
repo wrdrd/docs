@@ -462,6 +462,25 @@ formats for graphs:
   (See :ref:`compression algorithms`)
 
 
+.. index:: NetworkX
+.. _networkx:
+
+NetworkX
+~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/NetworkX
+| Homepage: https://networkx.github.io/
+| Source: git https://github.com/networkx/networkx
+| Docs: https://networkx.github.io/documentation.html
+| Docs: https://networkx.github.io/documentation/latest/
+| Docs: https://networkx.github.io/documentation/latest/tutorial/
+| Docs: https://networkx.github.io/documentation/latest/reference/classes.html
+| Docs: https://networkx.github.io/documentation/latest/reference/algorithms.html
+
+NetworkX is an :ref:`open source` graph algorithms library
+written in :ref:`Python`.
+
+
+
 .. index:: DFS
 .. index:: Depth-first search
 .. _dfs:
@@ -2889,6 +2908,27 @@ A few examples of ISO8601:
     milliseconds, microseconds, nanoseconds, picoseconds, femtoseconds,
     or attoseconds.
 
+
+.. index:: Network Time Protocol
+.. index:: NTP
+.. _ntp:
+
+NTP
+++++
+| Wikipedia: https://en.wikipedia.org/wiki/Network_Time_Protocol
+| Homepage: http://www.pool.ntp.org/en/
+
+NTP (*Network Time Protocol*) is a standard for synchronizing
+clock times.
+
+* Most :ref:`Operating Systems` and mobile devices support
+  :ref:`NTP`.
+* NTP clients calculate *time drift* (or *time skew*)
+  and network latency
+  and then gradually adjust the local system time
+  to the most recently retrieved server time.
+* Many OS distributions run their own :ref:`NTP` servers
+  (in order to reduce load on the core NTP pool servers).
 
 
 .. index:: Linked Data

@@ -171,8 +171,10 @@ Web Glossary
 
     DHCP
         DHCP (*Dynamic Host Configuration Protocol*) is a standard
-        for acquiring an :ref:`IP address`, :ref:`DNS`, and :ref:`NTP`
+        for acquiring an :term:`IP address`, :term:`DNS`, and :ref:`NTP`
         settings.
+
+        | Wikipedia: https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol
 
     Domain Name
         A human-readable textual name for a network entity
