@@ -6,92 +6,219 @@ Web Glossary
 .. glossary::
 
     Web Page
-        A single ("static") HTML page.
+        A *web page* is a single ("static") :ref:`HTML` page.
 
-        https://en.wikipedia.org/wiki/Web_page
+        * Sometimes, when people say :term:`web page`
+          they really mean the whole
+          :term:`website` (as composed by e.g.
+          a :term:`web application` backed by a :ref:`database <databases>`
+          or a static page generator
+          with support for managing
+          collections
+          of interlinked :ref:`HTML` pages
+          (e.g. :ref:`Sphinx`, :ref:`Tinkerer`).
+
+        | Wikipedia: https://en.wikipedia.org/wiki/Web_page
 
     Website
-        A set of interlinked HTML pages. Also used to refer to a web page.
+        A website is a set of interlinked :ref:`HTML` pages.
+        Also used to refer to a web page.
 
-        https://en.wikipedia.org/wiki/Website
+        | Wikipedia: https://en.wikipedia.org/wiki/Website
 
     Web Application
-        A software application running on a hosted server which returns
-        responses to specific requests. May interact with a database,
+        A web application is a software application
+        running on a server which returns
+        responses to specific requests and may interact with a database,
         email services, etc.
 
-        Works with variable data inputs and outputs.
+        * Like all :term:`systems <system>`,
+          a web application works with variable data inputs and outputs.
 
-        https://en.wikipedia.org/wiki/Web_application
+        | Wikipedia: https://en.wikipedia.org/wiki/Web_application
+        | Docs: :ref:`Information Systems > Cloud Application Layers <cloud application layers>`
 
     Web Hosting Service
-        A service providing virtual or physical server resource space
+        A web hosting service offers
+        virtual or physical server resource space
         for a web page, web site, or web application.
 
-        https://en.wikipedia.org/wiki/Web_hosting_service
+        * Shared, Dedicated, Virtual Private, Cloud (Virtual Instance)
+        * Managed (24/7 Supported // n hours a month),
+          Unmanaged (file a support request and wait)
+
+        | Wikipedia: https://en.wikipedia.org/wiki/Web_hosting_service
+        | Docs: :ref:`clouds`
+        | Docs: :ref:`web hosting`
+
+    MAC address
+        A MAC (*Media Access Control*) address is a
+        48-bit identifier.
+
+        * :ref:`NIC` cards have a `MAC address`.
+        * :ref:`Wireless` cards a `MAC address`.
+        * Many :ref:`Wireless` Access Points (*AP*)
+          MAY all have the same text ``SSID``
+          but different `MAC addresses`
+          (e.g. for :ref:`wireless mesh networking <wireless mesh
+          network>` or `WDS`)
+        * :term:`DHCP` :term:`IP address` leases
+          are tied to a `MAC address`.
+        * A `MAC address`
+          identifies a node to the nearest packet routing link
+          segment (e.g. AP, Switch, Hub, Bridge).
+        * Some :term:`IPv6 addresses <ipv6 address>`
+          contain the link `Mac address`.
+        * :term:`UUID` version 1 128-bit identifiers
+          contain a link `MAC address` and the date/time.
+          (:ref:`Python` ``import uuid; print(uuid.uuid1())``)
+
+        | Wikipedia: https://en.wikipedia.org/wiki/MAC_address
+
+    ARP
+        Address Resolution Protocol
+
+        | Wikipedia: https://en.wikipedia.org/wiki/Address_Resolution_Protocol
+
+    TCP
+        Transmission Control Protocol
+
+        | Wikipedia: https://en.wikipedia.org/wiki/Transmission_Control_Protocol
+
+    IP
+        Internet Protocol
+
+        | Wikipedia: https://en.wikipedia.org/wiki/Internet_Protocol
 
     IP Address
-        A number identifying a particular network entity (e.g. ``127.0.0.1``)
+        A :term:`IP` identifier
+        number identifying a particular network entity (e.g. ``127.0.0.1``)
 
-        We are running out of 32-bit IPv4 addresses (``127.0.0.1``),
-        and are now moving toward 128-bit IPv6 addresses (
-        ``0000:0000:0000:0000:0000:0000:0000:0001``, ``::1``)
+        * We are running out of 32-bit :term:`IPv4` addresses (``127.0.0.1``),
+          and are now moving toward 128-bit :term:`IPv6` addresses (
+          ``0000:0000:0000:0000:0000:0000:0000:0001``, ``::1``)
 
-        Certain IP addresses are locally-routable (e.g. ``192.168.0.1``
-        within a home LAN)
-        while others are globally-routable (e.g. ``8.8.8.8``
-        through the internet).
+        * Certain IP addresses are locally-routable (e.g. ``192.168.0.1``
+          within a home LAN)
+          while others are globally-routable (e.g. ``8.8.8.8``)
 
-        https://en.wikipedia.org/wiki/IP_address
+        | Wikipedia: https://en.wikipedia.org/wiki/IP_address
+
+    IPv4
+        IPv4 (:term:`IP` version 4) is a :ref:`web standard <web
+        standards>` protocol defined by :ref:`ietf`.
+
+        | Wikipedia: https://en.wikipedia.org/wiki/IPv4
+        | Docs: :term:`IPv4 Address`
+
+
+    IPv4 Address
+        :term:`IPv4` addresses are 32-bit :term:`IP Address`
+        identifiers.
+
+        | Standard: https://tools.ietf.org/html/rfc1918
+
+
+        .. code:: bash
+
+            ## Local IPv4 Addresses
+            127.0.0.1
+            10.0.0.0/8
+            172.16.0.0/12
+            192.168.0.0/16
+
+            ## Global IPv4 Addresses
+            8.8.8.8
+
+    IPv6
+        IPv6 (:term:`IP` version 6)
+        is a :ref:`web standard <web standards>`
+        protocol defined by :ref:`ietf`.
+
+        | Wikipedia: https://en.wikipedia.org/wiki/IPv6
+
+    IPv6 Address
+        :term:`IPv6` addresses are 128-bit :term:`IP Address`
+        identifiers.
+
+        | Wikipedia: https://en.wikipedia.org/wiki/IPv6_address
+        | Standard: https://tools.ietf.org/html/rfc4291
+        | Docs: https://en.wikipedia.org/wiki/IPv6_address#IPv6_address_scopes
+        | Docs:
+
+        IPv6 Address Examples:
+
+        .. code:: bash
+
+            ## Local IPv4 Addresses
+            0000:0000:0000:0000:0000:0000:0000:0001  == ::1  # 127.0.0.1
+            0001:0000:0000:0000:0000:0000:0000:0001  == 1::1
+
+            ::/128          # unspecified           (~IPv4 0.0.0.0/32)
+            ::1/128         # localhost             (~IPv4 127.0.0.0/24)
+            ::/0            # unicast default route (~IPv4 0.0.0.0/0)
+            ::ffff:0:0/96   # IPv6-mapped IPv4
+            ::96            # IPV4 compatible IPv6 addresses (deprecated)
+            2002::/16       # 6to4
+            2001::/32       # teredo
+            fc00::/7        # unique local address
+            fe80::/10 #MAC  # link-local address    (~IPv4 169.254.0.0/16)
+            fec0::/10       # site-local address (deprecated)
+            3ffe::/16       # 6bone (returned)
+
+            ## Global IPv6 Addresses
+                                                             # 8.8.8.8
+
+    DHCP
+        DHCP (*Dynamic Host Configuration Protocol*) is a standard
+        for acquiring an :ref:`IP address`, :ref:`DNS`, and :ref:`NTP`
+        settings.
 
     Domain Name
         A human-readable textual name for a network entity
         (e.g. ``example.org``)
 
-        https://en.wikipedia.org/wiki/Domain_name
+        | Wikipedia: https://en.wikipedia.org/wiki/Domain_name
 
     DNS
-        Domain Name System. Converts a :term:`domain name` into an
+        Domain Name System. Converts a :term:`domain name`
+        (e.g. ``localhost`` or ``wrdrd.com``) into an
         :term:`IP address` (e.g. ``127.0.0.1`` (IPv4) or ``::1`` (IPv6)).
 
-        Initial DNS hosting costs are often covered by Web Hosts.
+        * Initial DNS hosting costs are often covered by Web Hosts.
+        * There are DNS record types for different types of services.
+        * Surfing to a website in a browser
+          may utilize ``A``, ``AAAA``, and/or ``CNAME`` records to lookup
+          the :term:`IP address` of the web server (or least busy load
+          balancer).
+        * Sending an email utilizes an ``MX`` record to lookup the IP address
+          and sender information for the mail host.
+        * Updates to DNS settings can take as long as 86400 seconds (one
+          day) to propagate, depending upon the DNS TTL.
 
-        There are DNS record types for different types of services.
-
-        Surfing to a website in a browser
-        may utilize A, AAAA, and/or CNAME records to lookup the IP
-        address of the web server.
-
-        Sending an email utilizes an MX record to lookup the IP address
-        and sender information for the mail host.
-
-        Updates to DNS settings can take as long as 86400 seconds (one
-        day) to propagate, depending upon the DNS TTL.
-
-        https://en.wikipedia.org/wiki/Domain_Name_System
-
-        See: :ref:`DNS Configuration <dns-configuration>`
+        | Wikipedia: https://en.wikipedia.org/wiki/Domain_Name_System
+        | Docs: :ref:`DNS Configuration <dns-configuration>`
+        | Docs: :py:mod:`wrdrd.tools.domain`
 
     URL
-        Uniform Resource Locator. A string of characters that identify
+        A URL (*Uniform Resource Locator*) is a string of characters that identify
         a resource location.
 
+        Where ``host`` is an IP address, hostname, or domain name,
+        a URL is of the form:
         ::
 
             scheme://host:port/p/a/t/h
 
-            https://wrdrd.com/docs/
+            https://wrdrd.com/docs/   # https, wrdrd.com, port 443, /docs/
 
-        Where ``host`` is an IP address, hostname, or domain name.
+        * With an :ref:`http <HTTP>` scheme, the default port is 80.
+        * With an :ref:`https <HTTPS>` scheme, the default port is 443.
 
-        With an http scheme, the default port is 80.
-
-        With an https scheme, the default port is 443.
-
-        https://en.wikipedia.org/wiki/Uniform_resource_locator
+        | Wikipedia: https://en.wikipedia.org/wiki/Uniform_resource_locator
 
     URI
-        Uniform Resource Identifier. A string of characters that identify
+        A URI (*Uniform Resource Identifier*) is a string of characters that identify
         a resource.
 
         ::
@@ -100,11 +227,14 @@ Web Glossary
 
             https://wrdrd.com/docs/#wrdrd
 
-        https://en.wikipedia.org/wiki/Uniform_resource_identifier
+        * :term:`URLs <url>` are URIs.
+        * :term:`URNs <urn>` are URIs.
+
+        | Wikipedia: https://en.wikipedia.org/wiki/Uniform_resource_identifier
 
     URN
-        Uniform Resource Name. A string of characters that identify a
-        named resource *in a namespace*.
+        A URN (*Uniform Resource Name*) is a string of characters
+        that identify a named resource *in a namespace*.
 
         ::
 
@@ -113,16 +243,43 @@ Web Glossary
             urn:isbn:0-486-27557-4
             urn:uuid:6e8bc430-9c3a-11d9-9669-0800200c9a66
 
-        https://en.wikipedia.org/wiki/Uniform_resource_name
+        | Wikipedia: https://en.wikipedia.org/wiki/Uniform_resource_name
 
     Magnet URI
-        A Magnet URI is a URN containing an key to retrieve
-        from a network (such as a :ref:`DHT`)
+        A Magnet :term:`URI` is a :term:`URN` containing an key to retrieve
+        from a network (such as a :ref:`DHT`).
 
-        :term:`Web browsers <web browser>` can be configured
-        to open Magnet URIs with other programs
+        * :term:`Web browsers <web browser>` can be configured
+          to open Magnet URIs with other programs.
 
-        https://en.wikipedia.org/wiki/Magnet_URI_scheme
+        | Wikipedia: https://en.wikipedia.org/wiki/Magnet_URI_scheme
+
+    UUID
+        A UUID (*Universally Unique Identifier*) is a 128- :ref:`bit`
+        identifier for a resource.
+
+        :ref:`IETF` RFC 4122 defines 5 different algorithms
+        for generating :term:`UUID <uuid>`:
+
+        * UUID 1
+              A UUID 1 identifier contains a
+              :term:`mac address` and a :ref:`datetime <time standards>`
+              with 100- nano-:ref:`second` resolution.
+        * UUID 2
+              A UUID 2 identifier contains a
+              :term:`mac address` and a :ref:`POSIX` UID or GID.
+        * UUID 3
+              A UUID 3 identifier contains an :ref:`MD5`
+              hash of a :term:`URI`, :term:`URN`, or :ref:`URL`.
+        * UUID 4
+              A UUID 4 identifier contains a random identifier
+              as determined by the configured source of random.
+        * UUID 5
+              A UUID 5 identifier contains an :ref:`SHA-1 <sha>`
+              hash of a :term:`URI`, :term:`URN`, or :ref:`URL`.
+
+        | Wikipedia: https://en.wikipedia.org/wiki/Universally_unique_identifier
+        | Standard: https://tools.ietf.org/html/rfc4122
 
     Web Browser
         A software program which visually renders resources
@@ -130,15 +287,25 @@ Web Glossary
 
         Examples: Internet Explorer, Mozilla Firefox, Google Chrome
 
-        All web browsers support :ref:`HTML`.
+        * All web browsers support :ref:`HTML` over :ref:`HTTP`.
+        * Many web browsers support :ref:`HTTPS` and/or :ref:`HTTP STS`.
+        * Some web browsers support :ref:`WebSockets`.
+        * Some web browsers support :ref:`WebRTC`.
+        * Many web browsers support image formats like
+          :ref:`GIF`,
+          :ref:`JPEG`,
+          :ref:`PNG`,
+          and :ref:`SVG` Scalable Vector Graphics.
+        * Many web browsers support :ref:`Javascript` scripts.
+        * All web browsers work with a :term:`DOM` (Document Object Model)
+          which is parsed from :ref:`HTTP`
+          and transformed by :ref:`Javascript`.
+        * A number of example web browser extensions:
+          :ref:`Browser Extensions`
 
-        Many web browsers support images like GIF, JPEG, PNG, and SVG.
-
-        Many web browsers support Javascript scripts.
-
-        Web browsers work with a :term:`DOM` (Document Object Model).
-
-        https://en.wikipedia.org/wiki/Web_browser
+        | Wikipedia: https://en.wikipedia.org/wiki/Web_browser
+        | Docs: :ref:`Tools  > Browsers <browsers>`
+        | Docs: :ref:`WebSec`
 
     DOM
         Document Object Model. Can be thought of as a layout outline of
@@ -148,19 +315,28 @@ Web Glossary
         Different web browsers interpret the DOM differently,
         depending on Web Standards and individual implementations.
 
-        https://en.wikipedia.org/wiki/Document_Object_Model
-
-        See: :ref:`Web Design <web-design>`
+        | Wikipedia: https://en.wikipedia.org/wiki/Document_Object_Model
+        | Docs: :ref:`Web Design <web-design>`
 
     Web Standard
-        An agreed-upon standard specification for web things
-        (e.g. HTTP, HTML, XHTML, HTML5, CSS, Javascript, SVG)
+        An agreed-upon standard specification for web things like
+        data interchange, structure, and presentation.
 
-        https://en.wikipedia.org/wiki/Web_standards
+        | Wikipedia: https://en.wikipedia.org/wiki/Web_standards
+        | Docs: :ref:`web standards`
+        | Docs: :ref:`semantic web standards`
 
-        See: :ref:`web standards`
+    Open Web Standards
+        Open Web Standards are :ref:`Open Source` :term:`Web Standards <web standard>`
+        (e.g. :ref:`HTTP`,
+        :ref:`HTML`,
+        :ref:`XHTML`,
+        :ref:`HTML5`,
+        :ref:`CSS`,
+        :ref:`Javascript`,
+        :ref:`SVG`,
+        :ref:`RDF`)
 
-        See: :ref:`semantic web standards`
 
 
 .. index:: Web Content
@@ -185,15 +361,33 @@ Web Design
 https://en.wikipedia.org/wiki/Web_design
 
 
+.. index:: CSS
+.. _css-webdev:
+
+CSS
++++++
+| Wikipedia: https://en.wikipedia.org/wiki/Cascading_Style_Sheets
+| Docs: :ref:`CSS`
+
+CSS (*Cascading Style Sheets*) define the presentational
+aspects of :ref:`HTML` and a number of mobile and desktop
+web framworks.
+
+* CSS is designed to ensure separation of data and presentation.
+  With javascript, the separation is then data, code, and presentation.
+
+
 .. index:: Web Layout
 .. _web-layout:
 
 Web Layout
 +++++++++++
-A *web layout* is a box-model composition of DOM objects, their styles, and their
+A *web layout* is a box-model composition of :term:`DOM` objects,
+their styles, and their
 behaviors at various screen sizes and resolutions.
 
-Different browsers implement the DOM, HTML, CSS, and Javascript
+Different browsers implement the :term:`DOM`,
+:ref:`HTML`, :ref:`CSS`, and :ref:`Javascript`
 differently. It is necessary to test a web layout in the browsers which
 are utilized by the target audience.
 
@@ -255,8 +449,8 @@ Features to look for:
 Ways to collect screen captures
 and movies at various points in a testing workflow:
 
-* Browser: :ref:`Web Browser <browsers>` 
-  testing tools (e.g. :ref:`Javascript`) 
+* Browser: :ref:`Web Browser <browsers>`
+  testing tools (e.g. :ref:`Javascript`)
 * Browser: :ref:`browser extensions`
 * Web Service: multi-platform browser testing grid services
 * Build Script: record the [:ref:`X <X11>`] buffer with the test sequence
@@ -564,7 +758,7 @@ See: :ref:`HTTPS`, :ref:`HTTP`
 
 .. index:: HTTP STS
 .. index:: HTTP Strict Transport Security
-.. _index:
+.. _http sts-:
 
 HTTP STS
 ++++++++++

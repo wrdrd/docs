@@ -448,14 +448,14 @@ representatations for :ref:`graphs`.
 * There are many data serialization/marshalling
 formats for graphs:
 
-  * Graph edge lists can be stored as adjacency :ref:`matrices`.
+  * Graph edge lists can be stored as adjacency :ref:`matrices <matrix>`.
   * :ref:`NetworkX` supports a number of graph storage formats.
   * :ref:`RDF` is a :ref:`standard semantic web <semantic web standards>`
     :ref:`linked data` format for :ref:`graphs`.
   * :ref:`JSON-LD` is a :ref:`standard semantic web <semantic web standards>`
     :ref:`linked data` format for :ref:`graphs`.
 
-* There are many :ref:`Graph Databases` and :ref:`RDF Databases`
+* There are many :ref:`Graph Databases` and :ref:`triplestores`
   for storing graphs.
 
 * A cartesian product has an interesting graph representation.
@@ -521,7 +521,7 @@ Topological Sorting
 ~~~~~~~~~~~~~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/Topological_sorting
 
-A DAG (*directed acyclic* :ref:`graph`) has a
+A DAG (*directed acyclic* :ref:`graph <graphs>`) has a
 topological sorting, or is topologically sorted.
 
 * The unix ``tsort`` utility does a topological sorting
@@ -664,6 +664,82 @@ zip
 zip is a lossless file archive compression
 
 
+.. index:: Checksums
+.. index:: Hash Functions
+.. _hash function:
+
+Hash Functions
+++++++++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/Hash_function
+| Wikipedia: https://en.wikipedia.org/wiki/Cryptographic_hash_function
+
+Hash functions (or *checksums*) are one-way functions
+designed to produce uniquely identifying identifiers for blocks
+or whole files in order to verify data :ref:`integrity`.
+
+* A *hash* is the output of a hash function.
+* In :ref:`Python`, ``dict`` keys must be *hashable*
+  (must have a ``__hash__`` method).
+* In :ref:`Java`, :ref:`Scala`, and many other languages
+  ``dicts`` are called ``HashMaps``.
+* :ref:`MD5` is a checksum algorithm.
+* :ref:`SHA` is a group of checksum algorithms.
+
+
+.. index:: CRC
+.. index:: Cyclical Redundancy Check
+.. _crc:
+
+CRC
+````
+| Wikipedia: https://en.wikipedia.org/wiki/Cyclic_redundancy_check
+
+A CRC (*Cyclical Redundancy Check*) is a hash function
+for error detection based upon an extra *check value*.
+
+* :ref:`Hard drives` and :ref:`SSDs <ssd>` implement CRCs.
+* :ref:`Ethernet` implements CRCs.
+
+
+.. index:: MD5
+.. _md5:
+
+MD5
+`````
+| Wikipedia: https://en.wikipedia.org/wiki/MD5
+
+MD5 is a 128-bit hash function which is now broken, and deprecated
+in favor of :ref:`SHA-2 <sha>` or better.
+
+.. code:: bash
+
+    md5
+    md5sums
+
+
+.. index:: SHA
+.. _sha:
+
+SHA
+````
+| Wikipedia: https://en.wikipedia.org/wiki/Secure_Hash_Algorithm
+
+* SHA-0 --  160 bit (retracted 1993)
+* SHA-1 --- 160 bit (deprecated 2010)
+* SHA-2 --- sha-256, sha-512
+* SHA-3 (2012)
+
+.. code:: bash
+
+    shasum
+    shasum -a 1
+    shasum -a 224
+    shasum -a 256
+    shasum -a 384
+    shasum -a 512
+    shasum -a 512224
+    shasum -a 512256
+
 
 .. index:: Filesystems
 .. index:: File Systems
@@ -772,22 +848,25 @@ LVM
 | Source: ftp://sources.redhat.com/pub/lvm2/
 | Docs: https://www.sourceware.org/dm/
 | Docs: http://www.tldp.org/HOWTO/LVM-HOWTO/index.html
-| Docs:
+| Docs: http://www.tldp.org/HOWTO/LVM-HOWTO/anatomy.html
 
 LVM (*Logical Volume Manager*) is an :ref:`open source`
 software disk abstraction layer with snapshotting, copy-on-write,
-online resize and allocation
+online resize and allocation and a number of additional features.
 
-* In LVM, *Volume Groups* (VG) contain
-  *Physical Volumes* (PV) contain *Logical Volumes* (LV)
-* LVM can do striping and high-availability sofware RAID
+* In LVM, there are *Volume Groups* (VG),
+  *Physical Volumes* (PV), and *Logical Volumes* (LV).
+* LVM can do striping and high-availability sofware :ref:`RAID`.
 * LVM and ``device-mapper`` are now part of the :ref:`Linux`
   kernel tree
-  (the LVM linux kernel modules are built and included
-  with most distributions' default kernel build)
+  (the LVM :ref:`linux` kernel modules are built and included
+  with most distributions' default kernel build).
+* LVM Logical Volumes can be resized online
+  (without e.g. rebooting to busybox or a LiveCD);
+  but many :ref:`filesystems` support only
+  onlize grow (and not online shrink).
 * There is feature overlap between :ref:`lvm` and :ref:`btrfs`
   (pooling, snapshotting, copy-on-write).
-
 
 
 .. index:: btrfs
@@ -1411,7 +1490,7 @@ NoSQL Databases
 
 
 .. index:: Graph Databases
-.. _graph-databases:
+.. _graph databases:
 
 Graph Databases
 ``````````````````
@@ -1451,7 +1530,7 @@ Blazegraph
 | Docs: http://www.blazegraph.com/docs/api/
 | Docs: https://wiki.blazegraph.com/wiki/index.php/Main_Page
 
-Blazegraph is an :ref:`open source` :ref:`graph database`
+Blazegraph is an :ref:`open source` :ref:`graph database <graph databases>`
 written in :ref:`Java`
 with support for :ref:`Gremlin`, :ref:`Blueprints`, :ref:`RDF`,
 :ref:`RDFS` and :ref:`OWL` inferencing,
@@ -1477,7 +1556,8 @@ Blueprints
 | Src: git https://github.com/tinkerpop/blueprints
 | Docs: https://github.com/tinkerpop/blueprints/wiki
 
-Blueprints is an :ref:`open source` :ref:`graph database` API
+Blueprints is an :ref:`open source`
+:ref:`graph database <graph databases>` API
 (and reference graph data model).
 
     Blueprints is a collection of interfaces, implementations,
@@ -1549,6 +1629,7 @@ written in :ref:`Java`.
 
 
 .. index:: RDF Triplestores
+.. index:: RDF Databases
 .. index:: Triplestores
 .. _triplestores:
 
@@ -3102,6 +3183,38 @@ HTTPS (*HTTP over SSL*) is :ref:`HTTP` wrapped in TLS/SSL.
 * SSL (*Secure Sockets Layer*)
 
 
+.. index:: HTTP STS
+.. index:: HTTP Strict Transport Security
+.. _http sts:
+
+HTTP STS
+``````````
+| Wikipedia: https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security
+
+HTTP STS (*HTTP Strict Transport Security*) is
+a standardized extension for notifying browsers
+that all requests should be made over :ref:`HTTP`
+indefinitely or for a specified time period.
+
+See also: :ref:`https everywhere`
+
+
+.. index:: CSS
+.. _css:
+
+CSS
++++++
+| Wikipedia: https://en.wikipedia.org/wiki/Cascading_Style_Sheets
+| Docs: :ref:`CSS`
+
+CSS (*Cascading Style Sheets*) define the presentational
+aspects of :ref:`HTML` and a number of mobile and desktop
+web framworks.
+
+* CSS is designed to ensure separation of data and presentation.
+  With javascript, the separation is then data, code, and presentation.
+
+
 .. index:: RTMP
 .. _rtmp:
 
@@ -4129,11 +4242,68 @@ Examples:
             skos:exactMatch <http://dbpedia.org/resource/International_System_of_Units> .
 
 
+.. index:: Wikidata
+.. _wikidata:
+
+Wikidata
+`````````
+| Wikipedia: https://en.wikipedia.org/wiki/Wikidata
+| Homepage: https://www.wikidata.org/
+
+Wikidata is an :ref:`open source` collaboratively edited knowledgebase.
+
+* :ref:`dbpedia` scrapes data from Wikipedia Infoboxes
+  periodically. :ref:`wikidata` *is* a database with
+  forms, datatypes, and alphanumerical identifiers
+  (which do not change or redirect).
+* Wikidata :ref:`SPARQL`, :ref:`RDF`, and :ref:`OWL`
+  will be powered by :ref:`blazegraph`.
+
+
 .. index:: Semantic Web Tools
 .. _semantic web tools:
 
 Semantic Web Tools
 ---------------------
+| Homepage: http://www.w3.org/2001/sw/wiki/Tools
+
+:ref:`Semantic Web` Tools are designed to work with :ref:`RDF` formats.
+
+See also: :ref:`triplestores`
+
+
+.. index:: CKAN
+.. _ckan:
+
+CKAN
+++++++
+| Wikipedia: https://en.wikipedia.org/wiki/CKAN
+| Homepage: http://ckan.org/
+| Source: git https://github.com/ckan/ckan
+| Source: git https://github.com/ckan/ckan-docker
+| DockerHub: https://registry.hub.docker.com/u/ckan/ckan/
+| Docs: http://docs.ckan.org/en/latest/
+| Docs: http://docs.ckan.org/en/latest/maintaining/installing/index.html
+| Docs: http://docs.ckan.org/en/latest/maintaining/data-viewer.html
+| Docs: http://docs.ckan.org/en/latest/maintaining/paster.html
+| Docs: http://docs.ckan.org/en/latest/maintaining/linked-data-and-rdf.html
+| Docs: http://docs.ckan.org/en/latest/api/
+
+CKAN (*Comprehensive Knowledge Archive Network*)
+is an :ref:`open source` data repository :term:`web application`
+and API
+written in :ref:`python` with support for :ref:`rdf`.
+
+* https://datahub.io is powered by CKAN.
+  :ref:`LODCloud` draws from datahub.io datasets.
+* Many national data.gov sites are powered by CKAN.
+  (e.g https://catalog.data.gov/)
+* Many public and private data repositories are powered by CKAN.
+* CKAN is currently *not yet*
+  built on an :ref:`RDF triplestore <triplestores>`.
+* There are :ref:`Docker` :term:`Dockerfiles <dockerfile>`
+  for CKAN.
+
 
 .. index: Protégé
 .. _protege:
