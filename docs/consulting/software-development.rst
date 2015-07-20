@@ -185,9 +185,10 @@ Exercises, Problems
 
 
 .. index:: Code Golf
+.. _code golf:
 
 Code Golf
-+++++++++++
+~~~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/Code_golf
 
 * https://en.wikipedia.org/wiki/Code_golf#Tournaments_by_language
@@ -407,9 +408,37 @@ Kanban
   * https://taiga.io (https://github.com/taigaio)
 
 
+.. index:: Technical Debt
+.. _technical debt:
+
+Technical Debt
+----------------
+| Wikipedia: https://en.wikipedia.org/wiki/Technical_debt
+
+* https://en.wikipedia.org/wiki/Technical_debt#Causes
+* :ref:`Refactoring` can reduce :ref:`Technical Debt`.
+
+
+.. index:: Refactoring
+.. _refactoring:
+
+Refactoring
+-------------
+| Wikipedia: https://en.wikipedia.org/wiki/Code_refactoring
+
+* :ref:`tdd` and :ref:`continuous integration` are key to "Fearless Refactoring".
+* :ref:`Refactoring` can reduce :ref:`Technical Debt`.
+* While syntactical eloquence and/or elegance
+  in one or more languages can be learned through
+  :ref:`Code Golf`,
+  practical :ref:`refactoring` is more about
+  structural, architectural decisions
+  which anticipate change.
+
+
 .. index:: Continuous Delivery
 .. index:: CD
-.. _continuous-delivery:
+.. _continuous delivery:
 
 Continuous Delivery
 ---------------------
@@ -427,14 +456,15 @@ Continuous Delivery
 .. index:: Version Control
 .. index:: VCS
 .. index:: RCS
-.. _revision-control:
+.. _revision control:
 
 Revision Control
 ++++++++++++++++++
 | Wikipedia: https://en.wikipedia.org/wiki/Revision_control
+| Docs: :ref:`Tools > Version Control Systems <vcs>`
 
-Revision control is a change management strategy for a project
-repository.
+Revision control, or *version control*,
+is a change management strategy for a project repository.
 
 * There is a better way than emailing which version
   of what the attachment was named
@@ -444,11 +474,16 @@ repository.
   * file versions
   * usernames, change logs, signatures
 
-* "Revision control" is synonomous with ":ref:`Version Control <vcs>`".
-* Centralized :ref:`Revision Control Systems <revision-control>`:
-  :ref:`CVS`, :ref:`SVN <subversion>`
-* :ref:`Distributed Revision Control Systems <dvcs>`:
-  :ref:`Git`, :ref:`Mercurial`, :ref:`Bazaar`
+* A *Revision Control System* (RCS) or *Version Control System* (VCS)
+  is a software solution for handling change management
+  with one or more project repositories.
+* Centralized :ref:`Revision Control` Systems (RCS, VCS):
+  
+  * :ref:`CVS`, :ref:`SVN <subversion>`
+
+* :ref:`Distributed Revision Control <dvcs>` Systems (DVCS):
+
+  * :ref:`Git`, :ref:`Mercurial`, :ref:`Bazaar`
 
 
 .. index:: Distributed Revision Control
@@ -514,13 +549,20 @@ Branching & Merging
 
 
 .. index:: Test Automation
-.. _test-automation:
+.. _test automation:
 
 Test Automation
 +++++++++++++++++
 | Wikipedia: https://en.wikipedia.org/wiki/Test_automation
 
-* :ref:`Test Driven Development <TDD>`
+* :ref:`Test Driven Development <TDD>` -- write tests for bugs, use
+  cases, user stories, features, workflows, changes.
+* :ref:`Continuous Integration` -- always run the tests
+  when checking code into :ref:`revision control`
+  and *before releasing*.
+* :ref:`Continuous Delivery` -- test the application
+  delivery and deployment (script a complete system install
+  e.g. with :ref:`virtualization` like :ref:`Docker`).
 
 
 .. index:: Continuous Integration
