@@ -15,7 +15,7 @@
     <!--
     <meta property="og:description" content="" />
     -->
-    <meta property="og:image" content="http://www.wrdrd.com/static/png/drawing-7.09-v0.1.1--_desk.svg-470x242.png" />
+    <meta property="og:image" content="https://wrdrd.com/static/png/drawing-7.09-v0.1.1--_desk.svg-470x242.png" />
     <meta property="og:image:width" content="470" />
     <meta property="og:image:height" content="242" />
     <!--
@@ -521,13 +521,15 @@ business systems?</li>
 </div>
 <div class="section" id="cloud-application-layers">
 <span id="index-6"></span><span id="id5"></span><h3>Cloud Application Layers<a class="headerlink" href="#cloud-application-layers" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first"><a class="reference internal" href="#term-application"><em class="xref std std-term">Applications</em></a> Layer</p>
 <ul class="simple">
-<li><a class="reference internal" href="#term-application"><em class="xref std std-term">Applications</em></a> Layer<ul>
 <li><a class="reference external" href="https://github.com/wrdrd/wrd/blob/master/app.yaml">https://github.com/wrdrd/wrd/blob/master/app.yaml</a>
 (AppEngine/AppScale)</li>
 </ul>
 </li>
-<li>Platform Layer<ul>
+<li><p class="first">Platform Layer</p>
+<ul class="simple">
 <li><a class="reference internal" href="#paas"><em>PaaS</em></a> APIs (<a class="reference internal" href="#appengine"><em>AppEngine</em></a>, <a class="reference internal" href="#appscale"><em>AppScale</em></a>, <a class="reference internal" href="#heroku"><em>Heroku</em></a>)</li>
 <li><a class="reference internal" href="knowledge-engineering#databases"><em>Databases</em></a>
 (<a class="reference internal" href="knowledge-engineering#relational-databases"><em>Relational Databases</em></a>,
@@ -560,75 +562,124 @@ Worker Pools)<ul>
 </ul>
 </li>
 <li>Search Indexing (<a class="reference internal" href="knowledge-engineering#json"><em>JSON</em></a>, <a class="reference internal" href="../tools/index#json-ld"><em>JSON-LD</em></a>, <a class="reference internal" href="knowledge-engineering#json-ld"><em>JSON-LD</em></a>)<ul>
-<li>ElasticSearch (Lucene), Solr</li>
+<li><a class="reference internal" href="knowledge-engineering#elasticsearch"><em>ElasticSearch</em></a> (<a class="reference internal" href="knowledge-engineering#lucene"><em>Lucene</em></a>), <a class="reference internal" href="knowledge-engineering#solr"><em>Solr</em></a></li>
 <li>AppEngine/AppScale Search API</li>
 </ul>
 </li>
 <li>Big Data storage and data local iterators:<ul>
 <li><a class="reference internal" href="knowledge-engineering#mapreduce"><em>MapReduce</em></a>, <a class="reference internal" href="knowledge-engineering#bsp"><em>Bulk Synchronous Parallel</em></a></li>
-<li>HDFS, Hadoop (Spark, GraphX, Pregel, Cassandra, Accumulo, <a class="reference internal" href="../tools/index#mesos"><em>Mesos</em></a>)</li>
-<li>DDFS, Disco</li>
+<li><a class="reference internal" href="knowledge-engineering#hdfs"><em>HDFS</em></a>, <a class="reference internal" href="knowledge-engineering#ddfs"><em>DDFS</em></a></li>
+<li><a class="reference internal" href="knowledge-engineering#hadoop"><em>Hadoop</em></a>, <a class="reference internal" href="knowledge-engineering#spark"><em>Spark</em></a>, <a class="reference internal" href="knowledge-engineering#cassandra"><em>Cassandra</em></a>, <a class="reference internal" href="knowledge-engineering#accumulo"><em>Accumulo</em></a></li>
+<li><a class="reference internal" href="../tools/index#mesos"><em>Mesos</em></a></li>
 </ul>
 </li>
-<li>HTTP Object Storage (<a class="reference internal" href="../tools/index#libcloud"><em>Libcloud</em></a>)<ul>
-<li><a class="reference external" href="https://libcloud.readthedocs.org/en/latest/storage/">https://libcloud.readthedocs.org/en/latest/storage/</a></li>
-<li><a class="reference internal" href="../tools/index#openstack"><em>OpenStack</em></a> Swift (Swift, S3 APIs)</li>
-<li><a class="reference internal" href="../tools/index#linux"><em>Linux</em></a> <a class="reference internal" href="knowledge-engineering#ceph"><em>Ceph</em></a> RADOS gateway (Swift, S3 APIs)</li>
-<li><a class="reference internal" href="../tools/index#linux"><em>Linux</em></a>, <a class="reference internal" href="../tools/index#osx"><em>OS X</em></a>, <a class="reference internal" href="../tools/index#posix"><em>POSIX</em></a>:  <a class="reference internal" href="knowledge-engineering#glusterfs"><em>GlusterFS</em></a> (Swift, S3 APIs)</li>
+<li>HTTP Object Storage<ul>
+<li><a class="reference internal" href="../tools/index#libcloud"><em>Libcloud</em></a> (<a class="reference external" href="https://libcloud.readthedocs.org/en/latest/storage/">https://libcloud.readthedocs.org/en/latest/storage/</a>)</li>
+<li>Amazon <a class="reference internal" href="#aws"><em>Amazon AWS</em></a> <a class="reference internal" href="knowledge-engineering#s3"><em>S3</em></a></li>
+<li><a class="reference internal" href="../tools/index#openstack"><em>OpenStack</em></a> Swift (<a class="reference internal" href="knowledge-engineering#swift"><em>Swift</em></a>, <a class="reference internal" href="knowledge-engineering#s3"><em>S3</em></a> APIs)</li>
+<li><a class="reference internal" href="../tools/index#linux"><em>Linux</em></a>: <a class="reference internal" href="knowledge-engineering#ceph"><em>Ceph</em></a> RADOS Gateway (<a class="reference internal" href="knowledge-engineering#swift"><em>Swift</em></a>, <a class="reference internal" href="knowledge-engineering#s3"><em>S3</em></a> APIs)</li>
+<li><a class="reference internal" href="../tools/index#linux"><em>Linux</em></a>, <a class="reference internal" href="../tools/index#osx"><em>OS X</em></a>, <a class="reference internal" href="../tools/index#posix"><em>POSIX</em></a>:  <a class="reference internal" href="knowledge-engineering#glusterfs"><em>GlusterFS</em></a> (<a class="reference internal" href="knowledge-engineering#swift"><em>Swift</em></a>, <a class="reference internal" href="knowledge-engineering#s3"><em>S3</em></a> APIs)</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>Infrastructure Layer<ul>
-<li>Resource Pool<ul>
-<li><a class="reference internal" href="../tools/index#cobbler"><em>Cobbler</em></a> (libvirt <a class="reference internal" href="../tools/index#virtualization"><em>Virtualization</em></a>)</li>
-<li><a class="reference internal" href="../tools/index#openstack"><em>OpenStack</em></a></li>
-<li><a class="reference internal" href="../tools/index#kubernetes"><em>Kubernetes</em></a>, <a class="reference internal" href="../tools/index#kubernetes-mesos"><em>Kubernetes-Mesos</em></a></li>
-<li><a class="reference internal" href="../tools/index#mesos"><em>Mesos</em></a> schedulers (Aurora, Chronos, Marathon)</li>
+<li><p class="first">Infrastructure Layer (&#8220;provisioning&#8221;)</p>
+<ul>
+<li><p class="first">Resource Pool (&#8220;instances&#8221; of {virtual machines, containers, task workers})</p>
+<ul class="simple">
+<li><a class="reference internal" href="../tools/index#cobbler"><em>Cobbler</em></a> (<a class="reference internal" href="../tools/index#libvirt"><em>Libvirt</em></a> <a class="reference internal" href="../tools/index#virtualization"><em>Virtualization</em></a>)</li>
 <li><a class="reference internal" href="../tools/index#docker"><em>Docker</em></a> Swarm</li>
+<li><a class="reference internal" href="../tools/index#kubernetes"><em>Kubernetes</em></a> <a class="reference internal" href="../tools/index#docker"><em>Docker</em></a> pods</li>
+<li><a class="reference internal" href="../tools/index#kubernetes-mesos"><em>Kubernetes-Mesos</em></a>: <a class="reference internal" href="../tools/index#mesos"><em>Mesos</em></a> schedulers and
+<a class="reference internal" href="../tools/index#kubernetes"><em>Kubernetes</em></a> <a class="reference internal" href="../tools/index#docker"><em>Docker</em></a> pods</li>
+<li><a class="reference internal" href="../tools/index#mesos"><em>Mesos</em></a> schedulers (Aurora, Chronos, Marathon)</li>
+<li><a class="reference internal" href="../tools/index#openstack"><em>OpenStack</em></a></li>
 </ul>
 </li>
-<li>Provisioning / Inventory / Monitoring<ul>
-<li><a class="reference internal" href="../tools/index#cobbler"><em>Cobbler</em></a> Dashboard &lt;&#8211;&gt;
-{<a class="reference internal" href="../tools/index#ansible"><em>Ansible</em></a>, <a class="reference internal" href="../tools/index#puppet"><em>Puppet</em></a>, <a class="reference internal" href="../tools/index#salt"><em>Salt</em></a>}</li>
-<li><a class="reference internal" href="../tools/index#openstack"><em>OpenStack</em></a> Horizon Dashboard</li>
-<li>Nagios, Shinken, Icinga</li>
-<li>Syslog, LogStash, Heka (logtailers)</li>
-<li>Kibana, Grafana, Graphite, RRD (<a class="reference internal" href="data-science#data-visualization-tools"><em>Data Visualization Tools</em></a>)</li>
-<li><a class="reference external" href="http://www.brendangregg.com/linuxperf.html">http://www.brendangregg.com/linuxperf.html</a></li>
-<li><a class="reference external" href="https://www.opsschool.org/en/latest/">https://www.opsschool.org/en/latest/</a></li>
+<li><p class="first">Inventory / Monitoring</p>
+<p># #ConfigMgmt: <a class="reference internal" href="../tools/index#packages"><em>Packages</em></a>
+# #ConfigMgmt: <a class="reference internal" href="../tools/index#ansible"><em>Ansible</em></a>, <a class="reference internal" href="../tools/index#puppet"><em>Puppet</em></a>, <a class="reference internal" href="../tools/index#salt"><em>Salt</em></a>, <a class="reference internal" href="../tools/index#configuration-management"><em>Configuration Management</em></a>
+* #ConfigMgmt #Instances: <a class="reference internal" href="../tools/index#cobbler"><em>Cobbler</em></a> Web Dashboard
+* #ConfigMgmt #Instances: <a class="reference internal" href="../tools/index#openstack"><em>OpenStack</em></a> Horizon Dashboard
+# #Inventory: Cobbler JSON, Salt Grains, Puppet Facts, <a class="reference internal" href="../tools/index#osquery"><em>osquery</em></a> SQL tables
+# #Monitoring: #ConfigMgmt events
+* #Monitoring: Nagios, Shinken, Icinga
+* #Monitoring: Monitd, Collectd, RRD
+* #Logging: Syslog, LogStash, Heka (logtailers)
+* #Logviz: Kibana, Grafana, Graphite, RRD (<a class="reference internal" href="data-science#data-visualization-tools"><em>Data Visualization Tools</em></a>)
+* #PRF: <a class="reference external" href="http://www.brendangregg.com/linuxperf.html">http://www.brendangregg.com/linuxperf.html</a>
+* | Docs: <a class="reference external" href="https://www.opsschool.org/en/latest/">https://www.opsschool.org/en/latest/</a></p>
+</li>
+<li><p class="first">Physical and Virtual Servers (&#8220;servers&#8221;, &#8220;racks&#8221;, &#8220;machines&#8221;)</p>
+<ul class="simple">
+<li>#ConfigMgmt: <a class="reference internal" href="#configuration-management"><em>Configuration Management</em></a>
+(&#8220;infrastructure as code&#8221;,
+shell-escaping,
+task queues / <a class="reference internal" href="knowledge-engineering#esb"><em>ESBs</em></a>,
+<a class="reference internal" href="knowledge-engineering#distributed-computing-protocols"><em>Distributed Computing Protocols</em></a>,
+#Logging,
+worker pools)</li>
+<li><a class="reference internal" href="../tools/index#virtualization"><em>Virtualization</em></a> (full / para-virtualization)</li>
+<li><a class="reference internal" href="../tools/index#operating-systems"><em>Operating Systems</em></a> (&#8220;OS&#8221;)</li>
+<li>Manual Testing &#8211; PEBKAM (<em>Between Keyboard and Monitor</em>)</li>
+<li><a class="reference internal" href="computer-engineering#computer-engineering"><em>Computer Engineering</em></a> (&#8220;computer&#8221;, #power AC/DC, BIOS, <a class="reference internal" href="computer-engineering#nic"><em>NIC</em></a>,
+<a class="reference internal" href="computer-engineering#ethernet"><em>Ethernet</em></a>, USB, RS232 Serial Console, KVM switch)</li>
 </ul>
 </li>
-<li>Physical and Virtual Servers<ul>
-<li><a class="reference internal" href="../tools/index#operating-systems"><em>Operating Systems</em></a></li>
-<li><a class="reference internal" href="../tools/index#virtualization"><em>Virtualization</em></a></li>
-<li><a class="reference internal" href="#configuration-management"><em>Configuration Management</em></a></li>
-</ul>
+<li><p class="first">Physical and Software Networks</p>
+<ul>
+<li><p class="first">Internet connections</p>
 </li>
-<li>Physical and Software Networks<ul>
-<li>Router = Gateway + Switch</li>
-<li><a class="reference internal" href="../tools/index#vagrant"><em>Vagrant</em></a> networking</li>
+<li><p class="first">VLANs, IPv6 6to4 tunnels</p>
+</li>
+<li><dl class="first docutils">
+<dt>SDN</dt>
+<dd><p class="first">Software Defined Networking</p>
+<ul class="last simple">
+<li><a class="reference internal" href="../tools/index#openstack"><em>OpenStack</em></a> Neutron</li>
 <li><a class="reference internal" href="../tools/index#docker"><em>Docker</em></a> networking</li>
-<li>VLANs, IPv6 6to4 tunnels</li>
-<li>SDN (<a class="reference internal" href="../tools/index#openstack"><em>OpenStack</em></a> Neutron)</li>
-<li><a class="reference internal" href="web-development#term-dns"><em class="xref std std-term">DNS</em></a> (BIND, dnsmasq, <a class="reference internal" href="../tools/index#cobbler"><em>Cobbler</em></a>, <a class="reference internal" href="../tools/index#openstack"><em>OpenStack</em></a>,
-<a class="reference internal" href="../tools/index#vagrant"><em>Vagrant</em></a>, <a class="reference internal" href="../tools/index#docker"><em>Docker</em></a>)</li>
+<li><a class="reference internal" href="../tools/index#docker"><em>Docker</em></a> Swarm networking</li>
+<li><a class="reference internal" href="../tools/index#vagrant"><em>Vagrant</em></a> networking</li>
+<li><a class="reference internal" href="../tools/index#virtualbox"><em>VirtualBox</em></a> networking</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first"><a class="reference internal" href="web-development#term-dns"><em class="xref std std-term">DNS</em></a> (BIND, dnsmasq, <a class="reference internal" href="../tools/index#cobbler"><em>Cobbler</em></a>, <a class="reference internal" href="../tools/index#openstack"><em>OpenStack</em></a>,
+<a class="reference internal" href="../tools/index#vagrant"><em>Vagrant</em></a>, <a class="reference internal" href="../tools/index#docker"><em>Docker</em></a>)</p>
+</li>
 </ul>
 </li>
-<li>Physical and Virtual Storage<ul>
+<li><p class="first">Physical and Virtual Storage</p>
+<ul class="simple">
 <li>Virtual storage:<ul>
-<li>Central file storage (NFS, CIFS, WebDAV)</li>
-<li>distributed file storage (<a class="reference internal" href="knowledge-engineering#ceph"><em>Ceph</em></a>, <a class="reference internal" href="knowledge-engineering#glusterfs"><em>GlusterFS</em></a>)</li>
-<li>persistent block storage (<a class="reference internal" href="#aws"><em>Amazon AWS</em></a> S3, <a class="reference internal" href="../tools/index#openstack"><em>OpenStack</em></a> Cinder</li>
-<li>on-disk filesystems (ref:<cite>ext4 &lt;ext&gt;</cite>, <a class="reference internal" href="knowledge-engineering#lvm"><em>LVM</em></a>, <a class="reference internal" href="knowledge-engineering#btrfs"><em>btrfs</em></a>,
+<li>Central file storage (<a class="reference internal" href="knowledge-engineering#nfs"><em>NFS</em></a>, <a class="reference internal" href="knowledge-engineering#cifs"><em>CIFS</em></a>, <a class="reference internal" href="knowledge-engineering#webdav"><em>WebDAV</em></a>)</li>
+<li>distributed file storage: (<a class="reference internal" href="knowledge-engineering#ceph"><em>Ceph</em></a>, <a class="reference internal" href="knowledge-engineering#glusterfs"><em>GlusterFS</em></a>)</li>
+<li>persistent block storage: (<a class="reference internal" href="#aws"><em>Amazon AWS</em></a> S3, <a class="reference internal" href="../tools/index#openstack"><em>OpenStack</em></a> Cinder)</li>
+<li>on-disk filesystems: (ref:<cite>ext4 &lt;ext&gt;</cite>, <a class="reference internal" href="knowledge-engineering#lvm"><em>LVM</em></a>, <a class="reference internal" href="knowledge-engineering#btrfs"><em>btrfs</em></a>,
 <a class="reference internal" href="knowledge-engineering#ntfs"><em>NTFS</em></a>, <a class="reference internal" href="knowledge-engineering#fat"><em>FAT</em></a>, <a class="reference internal" href="knowledge-engineering#hfs"><em>HFS+</em></a>)</li>
 </ul>
 </li>
 <li>Physical storage<ul>
-<li>SAN &#8211; Storage Area Network (iSCSI)</li>
-<li>NAS &#8211; Network Attached Storage (FreeNAS, Synology)</li>
-<li><a class="reference internal" href="computer-engineering#usb"><em>USB</em></a>, <a class="reference internal" href="computer-engineering#sata"><em>SATA</em></a>, <a class="reference internal" href="computer-engineering#scsi"><em>SCSI</em></a>, <a class="reference internal" href="computer-engineering#ide-drive"><em>IDE</em></a>,
-<a class="reference internal" href="computer-engineering#pata"><em>ATA</em></a> <a class="reference internal" href="computer-engineering#hard-drives"><em>Hard Drives</em></a></li>
+<li>SAN &#8211; Storage Area Network (iSCSI, <a class="reference internal" href="computer-engineering#fibre-channel"><em>Fibre Channel</em></a>, persistent block storage)</li>
+<li>NAS &#8211; Network Attached Storage (FreeNAS, Synology,
+<a class="reference internal" href="knowledge-engineering#network-filesystems"><em>Network Filesystems</em></a>, iSCSI)</li>
+<li><a class="reference internal" href="computer-engineering#data-device-bus"><em>Data Device Bus</em></a>: (<a class="reference internal" href="computer-engineering#usb"><em>USB</em></a>, <a class="reference internal" href="computer-engineering#sata"><em>SATA</em></a>, <a class="reference internal" href="computer-engineering#scsi"><em>SCSI</em></a>, <a class="reference internal" href="computer-engineering#ide-drive"><em>IDE</em></a>,
+<a class="reference internal" href="computer-engineering#pata"><em>ATA</em></a> <a class="reference internal" href="computer-engineering#hard-drives"><em>Hard Drives</em></a>)</li>
+</ul>
+</li>
+<li>Power, HVAC, Fire Suppression<ul>
+<li>#HVAC: Cooling (Active / Passive)</li>
+<li>#HVAC: Heating (Active / Passive)</li>
+<li>#Fire: Extinguishers</li>
+<li>#Fire: Sprinklers: ~**&#8221;do not pour water on an
+#lectrical fire&#8221;** &#8212; 20,000 Leagues Under the Sea</li>
+<li>#Fire: Halon</li>
+<li>#Power: Power supplies (AC &#8211;&gt; DC conversion)</li>
+<li>#Power: Batteries  (AC &#8211;&gt; DC &#8211;&gt; Batteries &#8211;&gt; AC/DC)</li>
+<li>#Power: Generators</li>
+<li>#Power: Generator fuel for the generators</li>
+<li>#Power: Renewable energy, Clean Energy, Sustainable Energy</li>
 </ul>
 </li>
 </ul>

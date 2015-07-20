@@ -26,7 +26,7 @@ Monitor
 * LCD
 * OLED
 * Quantum Dots
-* [ ] list of emerging technologies # ~display 
+* [ ] list of emerging technologies # ~display
 
 todo: grep for todo,fixme,[ ]
 
@@ -406,7 +406,7 @@ HDMI
 | Wikipedia: https://en.wikipedia.org/wiki/HDMI
 | Wikipedia: https://en.wikipedia.org/wiki/HDMI#Connectors
 
-HDMI (*High-Definition Multimedia Interface*) is an audio/visual 
+HDMI (*High-Definition Multimedia Interface*) is an audio/visual
 interface standard.
 
 * HDMI cables carry audio and video over the same cable.
@@ -451,288 +451,6 @@ Micro HDMI is an :ref:`HDMI` Type E connector.
 .. note:: An adapter is required to connect :ref:`Mini HDMI`
    and/or :ref:`Micro HDMI` connectors
    to e.g. a standard HDMI Type A connector on a TV.
-
-
-.. index:: Network interfaces
-.. _network interfaces:
-
-Network Interfaces
-====================
-
-.. index:: Gigabit
-.. _gigabit:
-
-Gigabit
----------
-A gigabit is 1000 Mbps (1000 megabits per second).
-
-* :ref:`1000BASE-T`, :ref:`10GBASE-T`, and :ref:`40GBASE-T`
-  can all handle gigabit speeds.
-* Wireless routers before :ref:`802.11ac <802.11>` 
-  are not fast enough to handle gigabit speeds.
-
-
-.. index:: NIC
-.. _nic:
-
-NIC
------
-A NIC (*Network Interface Card*) is a card
-that plugs into a :ref:`system bus`
-which interfaces with a wired network.
-
-
-
-.. index:: Ethernet
-.. _ethernet:
-
-Ethernet
-----------
-| Wikipedia: https://en.wikipedia.org/wiki/Ethernet_over_twisted_pair
-
-
-.. index:: CAT-5
-.. index:: CAT-5e
-.. _cat-5:
-
-CAT-5
-~~~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/Category_5_cable
-
-A CAT-5 (*Category 5*) cable is an :ref:`ethernet` cable.
-
-* CAT-5 can carry :ref:`10base-t`, :ref:`100base-t`,
-  or :ref:`1000base-t`
-* CAT-5e is the newer CAT-5 standard.
-* A cable installer uses a *crimper tool* to *crimp*
-  connectors ("*terminators*")
-  to the end of a :ref:`CAT-5` or :ref:`CAT-6` cable.
-
-
-.. index:: CAT-6
-.. _cat-6:
-
-CAT-6
-~~~~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/Category_6_cable
-
-A CAT-6 (*Category 6*) cable is an :ref:`ethernet` cable
-
-* CAT-5 can carry :ref:`10base-t`, :ref:`100base-t`,
-  :ref:`1000base-t`, :ref:`10gbase-t`, 
-
-
-.. index:: 10BASE-T
-.. _10base-t:
-
-10BASE-T
-~~~~~~~~~~
-10Base-T is a 10 Mbps :ref:`ethernet` standard.
-
-
-.. index:: 100Base-T
-.. _100base-t:
-
-100BASE-T
-~~~~~~~~~~~~~~
-100BASE-T is a 100 Mbps :ref:`ethernet` standard.
-
-* 100BASE-T is backward-compatible with 10BASE-T
-  (some cards will say 10/100, or 10/100/1000)
-
-.. index:: 1000BASE-T
-.. _1000base-t:
-
-1000BASE-T
-~~~~~~~~~~~
-1000BASE-T is a 1000 Mbps (1 Gbps; 1 **gigabit**) :ref:`ethernet` standard.
-
-* 100BASE-T is backward-compatible with 10BASE-T
-  (some cards will say 10/100, or 10/100/1000)
-
-
-.. index:: 10GBASE-T
-.. _10gbase-t:
-
-10GBASE-T
-~~~~~~~~~~~
-10GBASE-T is a 10000 Mbps (10 Gbps) :ref:`ethernet` standard.
-
-
-.. index:: 40GBASE-T
-.. _40gbase-t:
-
-40GBASE-T
-~~~~~~~~~~~~~~~~~~~~~
-10GBASE-T is a 40000 Mbps (40 Gbps) :ref:`ethernet` standard.
-
-
-.. index:: Wireless
-.. _wireless:
-
-Wireless
-----------
-
-.. index:: 802.11
-.. _802.11:
-
-802.11
-~~~~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/IEEE_802.11
-
-IEEE 802.11 is a group of standards for wireless networking.
-
-  IEEE 802.11 is a set of media access control (MAC)
-  and physical layer (PHY) specifications for
-  implementing wireless local area network (WLAN)
-  computer communication in the 2.4, 3.6, 5, and 60 GHz frequency bands.
-
-802.11 "WiFi" standards:
-
-* 802.11b -- 2.4 GHz -- 11 Mbps
-* 802.11g -- 2.4 GHz -- 54 Mbps
-* 802.11a -- 5 GHz -- 54 Mbp/s
-* 802.11n -- 2.4 GHz, 5 GHz -- 600 Mbps (MIMO)
-* 802.11ac -- 2.4 GHz, 5 GHz -- 1300 Mbps (MIMO)
-* 802.11ad -- 60 GHz -- 7000 Mbps ("WiGig")
-* 802.11ax -- 2.4 GHZ, 5 GHZ -- ~4x 802.11ac [ Draft ]
-* 802.11ay -- 60 Ghz -- 100000 Mbps (100 Gbps) [ Draft ]
-
-802.11 standards:
-
-* 802.11s -- wireless mesh networking
-
-
-.. index:: Mesh Wireless
-.. index:: Wireless mesh network
-.. _wireless mesh network:
-
-Wireless mesh network
-~~~~~~~~~~~~~~~~~~~~~~
-| https://en.wikipedia.org/wiki/Wireless_mesh_network
-
-Wireless mesh networks route connections between nodes.
-
-* Wireless mesh networks do not require APs.
-* Wireless mesh networks are designed to be resilient to and tolerant of
-  network failure.
-* Wireless mesh networks require ingress and egress points
-  in order to route with the wider internet.
-
-Mesh Wireless Approaches:
-
-* OLPC (*One-laptop per child*) laptops support IEEE 802.11s 
-  mesh networking with standard 802.11b/g wireless cards.
-
-  http://wiki.laptop.org/go/Mesh_Network_Details
-
-* Redstone Technologies LLC (:ref:`gigabit` wireless mesh networks)
-
-  http://redstone.us.com/simplified-wireless-architecture/
-
-
-.. index:: Mobile Broadband
-.. _mobile broadband:
-
-Mobile Broadband
------------------
-| https://en.wikipedia.org/wiki/Mobile_broadband
-
-
-.. index:: 3G
-.. _3g:
-
-3G
-~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/3G
-
-
-.. index:: 4G
-.. _4g:
-
-4G
-~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/4G
-
-* :ref:`LTE` is a :ref:`4G` wireless standard.
-
-
-.. index:: 5G
-.. _5g:
-
-5G
-~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/5G
-
-
-.. index:: CDMA
-.. _cdma:
-
-CDMA
-~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/Code_division_multiple_access
-
-* W-CDMA (*WCDMA*) is a :ref:`3G` wireless standard.
-
-
-.. index:: GSM
-.. _gsm:
-
-GSM
-~~~~~~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/GSM 
-
-
-.. index:: LTE
-.. _lte:
-
-LTE
-~~~~~~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/LTE_(telecommunication)
-
-* Artemis pCell pWave LTE: http://www.artemis.com/pcell
-
-
-.. index:: Fiber
-.. _fiber:
-
-Fiber
--------
-| https://en.wikipedia.org/wiki/Fiber-optic_communication
-| https://en.wikipedia.org/wiki/Optical_fiber
-
-Optical fiber can carry photons near the speed of light.
-
-
-.. index:: Fiber to the x
-.. _fiber to the x:
-
-Fiber to the x
-~~~~~~~~~~~~~~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/Fiber_to_the_x
-
-The various fiber deployment strategies are somewhat undescriptively
-all called "fiber to the x (*FTTX*)". 
-
-* Fiber to the neighborhood
-* Fiber to the premises
-* Fiber to the home
-
-Fiber is the way forward in *wireline* broadband networks:
-
-* https://en.wikipedia.org/wiki/Fiber_to_the_premises_by_country
-* https://en.wikipedia.org/wiki/Fiber_to_the_premises_in_the_United_States
-
-
-.. index:: Fibre Channel
-.. _fibre channel:
-
-Fibre Channel
-~~~~~~~~~~~~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/Fibre_Channel
-
-Fibre channel is an optical fiber networking technology.
-
 
 
 
@@ -785,7 +503,7 @@ USB connectors:
 
 * USB 3.0 Type A -- classic rectangular USB with pins on one side
   (works with USB Type A)
-* USB 3.0 Type B -- USB 3.0 Type A + extra block of pins on the top 
+* USB 3.0 Type B -- USB 3.0 Type A + extra block of pins on the top
 
 * Each USB device can draw 5 :ref:`v <volt>` 500 :ref:`mA <ampere>`
   of current (2.5 :ref:`watts <watt>`).
@@ -800,7 +518,7 @@ USB connectors:
 
 USB Hub
 ~~~~~~~~~~
-A :ref:`USB` Hub is an n-way splitter with two or more 
+A :ref:`USB` Hub is an n-way splitter with two or more
 USB connectors.
 
 * A *powered USB Hub* is a USB Hub which must be connected
@@ -855,7 +573,7 @@ SATA
 
 SATA (*Serial* :ref:`ATA <pata>`) is a data device bus standard.
 
-* SATA (1.5, 3.0, 6.0, 16 Gbit/s) is faster than 
+* SATA (1.5, 3.0, 6.0, 16 Gbit/s) is faster than
   all current :ref:`USB` standards
   (USB 2.0, USB 3.0. USB 3.1 (:ref:`USB Type-C`)),
   :ref:`IDE <ide drive>`, and :ref:`ATA (PATA) <pata>`
@@ -979,3 +697,484 @@ Disc Drives
 
 See: :ref:`data engineering`
 
+
+.. index:: Network interfaces
+.. _network interfaces:
+
+Network Interfaces
+====================
+
+.. index:: Gigabit
+.. _gigabit:
+
+Gigabit
+---------
+A gigabit is 1000 Mbps (1000 megabits per second).
+
+* :ref:`1000BASE-T`, :ref:`10GBASE-T`, and :ref:`40GBASE-T`
+  can all handle gigabit speeds.
+* Wireless routers before :ref:`802.11ac <802.11>`
+  are not fast enough to handle gigabit speeds.
+
+
+.. index:: NIC
+.. _nic:
+
+NIC
+-----
+A NIC (*Network Interface Card*) is a card
+that plugs into a :ref:`system bus`
+which interfaces with a wired network.
+
+
+
+.. index:: Ethernet
+.. _ethernet:
+
+Ethernet
+----------
+| Wikipedia: https://en.wikipedia.org/wiki/Ethernet_over_twisted_pair
+
+
+.. index:: CAT-5
+.. index:: CAT-5e
+.. _cat-5:
+
+CAT-5
+~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Category_5_cable
+
+A CAT-5 (*Category 5*) cable is an :ref:`ethernet` cable.
+
+* CAT-5 can carry :ref:`10base-t`, :ref:`100base-t`,
+  or :ref:`1000base-t`
+* CAT-5e is the newer CAT-5 standard.
+* A cable installer uses a *crimper tool* to *crimp*
+  connectors ("*terminators*")
+  to the end of a :ref:`CAT-5` or :ref:`CAT-6` cable.
+
+
+.. index:: CAT-6
+.. _cat-6:
+
+CAT-6
+~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Category_6_cable
+
+A CAT-6 (*Category 6*) cable is an :ref:`ethernet` cable
+
+* CAT-5 can carry :ref:`10base-t`, :ref:`100base-t`,
+  :ref:`1000base-t`, :ref:`10gbase-t`,
+
+
+.. index:: 10BASE-T
+.. _10base-t:
+
+10BASE-T
+~~~~~~~~~~
+10Base-T is a 10 Mbps :ref:`ethernet` standard.
+
+
+.. index:: 100Base-T
+.. _100base-t:
+
+100BASE-T
+~~~~~~~~~~~~~~
+100BASE-T is a 100 Mbps :ref:`ethernet` standard.
+
+* 100BASE-T is backward-compatible with 10BASE-T
+  (some cards will say 10/100, or 10/100/1000)
+
+.. index:: 1000BASE-T
+.. _1000base-t:
+
+1000BASE-T
+~~~~~~~~~~~
+1000BASE-T is a 1000 Mbps (1 Gbps; 1 **gigabit**) :ref:`ethernet` standard.
+
+* 100BASE-T is backward-compatible with 10BASE-T
+  (some cards will say 10/100, or 10/100/1000)
+
+
+.. index:: 10GBASE-T
+.. _10gbase-t:
+
+10GBASE-T
+~~~~~~~~~~~
+10GBASE-T is a 10000 Mbps (10 Gbps) :ref:`ethernet` standard.
+
+
+.. index:: 40GBASE-T
+.. _40gbase-t:
+
+40GBASE-T
+~~~~~~~~~~~~~~~~~~~~~
+10GBASE-T is a 40000 Mbps (40 Gbps) :ref:`ethernet` standard.
+
+
+.. index:: Wireless
+.. _wireless:
+
+Wireless
+----------
+
+.. index:: 802.11
+.. _802.11:
+
+802.11
+~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/IEEE_802.11
+
+IEEE 802.11 is a group of standards for wireless networking.
+
+  IEEE 802.11 is a set of media access control (MAC)
+  and physical layer (PHY) specifications for
+  implementing wireless local area network (WLAN)
+  computer communication in the 2.4, 3.6, 5, and 60 GHz frequency bands.
+
+802.11 "WiFi" standards:
+
+* 802.11b -- 2.4 GHz -- 11 Mbps
+* 802.11g -- 2.4 GHz -- 54 Mbps
+* 802.11a -- 5 GHz -- 54 Mbp/s
+* 802.11n -- 2.4 GHz, 5 GHz -- 600 Mbps (MIMO)
+* 802.11ac -- 2.4 GHz, 5 GHz -- 1300 Mbps (MIMO)
+* 802.11ad -- 60 GHz -- 7000 Mbps ("WiGig")
+* 802.11ax -- 2.4 GHZ, 5 GHZ -- ~4x 802.11ac [ Draft ]
+* 802.11ay -- 60 Ghz -- 100000 Mbps (100 Gbps) [ Draft ]
+
+802.11 standards:
+
+* 802.11s -- wireless mesh networking
+
+
+.. index:: Mesh Wireless
+.. index:: Wireless mesh network
+.. _wireless mesh network:
+
+Wireless mesh network
+~~~~~~~~~~~~~~~~~~~~~~
+| https://en.wikipedia.org/wiki/Wireless_mesh_network
+
+Wireless mesh networks route connections between nodes.
+
+* Wireless mesh networks do not require APs.
+* Wireless mesh networks are designed to be resilient to and tolerant of
+  network failure.
+* Wireless mesh networks require ingress and egress points
+  in order to route with the wider internet.
+
+Mesh Wireless Approaches:
+
+* OLPC (*One-laptop per child*) laptops support IEEE 802.11s
+  mesh networking with standard 802.11b/g wireless cards.
+
+  http://wiki.laptop.org/go/Mesh_Network_Details
+
+* Redstone Technologies LLC (:ref:`gigabit` wireless mesh networks)
+
+  http://redstone.us.com/simplified-wireless-architecture/
+
+
+.. index:: Mobile Broadband
+.. _mobile broadband:
+
+Mobile Broadband
+-----------------
+| https://en.wikipedia.org/wiki/Mobile_broadband
+
+
+.. index:: 3G
+.. _3g:
+
+3G
+~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/3G
+
+
+.. index:: 4G
+.. _4g:
+
+4G
+~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/4G
+
+* :ref:`LTE` is a :ref:`4G` wireless standard.
+
+
+.. index:: 5G
+.. _5g:
+
+5G
+~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/5G
+
+
+.. index:: CDMA
+.. _cdma:
+
+CDMA
+~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Code_division_multiple_access
+
+* W-CDMA (*WCDMA*) is a :ref:`3G` wireless standard.
+
+
+.. index:: GSM
+.. _gsm:
+
+GSM
+~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/GSM
+
+
+.. index:: LTE
+.. _lte:
+
+LTE
+~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/LTE_(telecommunication)
+
+* Artemis pCell pWave LTE: http://www.artemis.com/pcell
+
+
+.. index:: Fiber
+.. _fiber:
+
+Fiber
+-------
+| https://en.wikipedia.org/wiki/Fiber-optic_communication
+| https://en.wikipedia.org/wiki/Optical_fiber
+
+Optical fiber can carry photons near the speed of light.
+
+
+.. index:: Fiber to the x
+.. _fiber to the x:
+
+Fiber to the x
+~~~~~~~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Fiber_to_the_x
+
+The various fiber deployment strategies are somewhat undescriptively
+all called "fiber to the x (*FTTX*)".
+
+* Fiber to the neighborhood
+* Fiber to the premises
+* Fiber to the home
+
+Fiber is the way forward in *wireline* broadband networks:
+
+* https://en.wikipedia.org/wiki/Fiber_to_the_premises_by_country
+* https://en.wikipedia.org/wiki/Fiber_to_the_premises_in_the_United_States
+
+
+.. index:: Fibre Channel
+.. _fibre channel:
+
+Fibre Channel
+~~~~~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Fibre_Channel
+
+Fibre channel is an optical fiber networking technology.
+
+
+
+
+Network Glossary
+==================
+
+.. glossary::
+
+  SOHO
+    Small home office
+
+  Modem
+    Modulator/demodulator. Transforms between [:ref:`ethernet`, :ref:`ethernet`
+    over :ref:`USB`] signals
+    Coaxial *Cable* (*Co-ax*),
+    to e.g. *DSL* Twisted Copper Pair(s),
+    :ref:`Mobile Broadband` (*cell-modem*),
+    SDR (*Software Defined Radio*),
+    :ref:`Fiber to the x`.
+
+  ARP
+    ARP (*Address Resolution Protocol*) is an :ref:`IETF` standard
+    for linking :term:`IP` addresses with :ref:`ethernet` addresses.
+
+    | Standard: https://tools.ietf.org/html/rfc826
+
+    ::
+
+        arp -a  # list arp entries [BSD style]
+        arp -e  # list arp entries [Linux tabular format]
+        arp -n  # do not resolve DNS addresses (display IPs instead)
+
+  DHCP
+    DHCP (*Dynamic Host Configuration Protocol*) is an internet standard
+    for acquiring IP address leases and e.g. DNS resolver configuration
+    settings.
+
+    Most SOHO routers include a DHCP server.
+
+    Some ISPs offer 'dynamic' IPs: an IP lease is acquired and/or
+    released for a given MAC address, and may change as often as the ISP
+    DHCP configuration specifies.
+
+    Some ISPs offter 'static' IPS: through DHCP and/or manual
+    configuration of static routes.
+
+    If a DHCP lease expires while e.g. downloading or streaming,
+    the connections are only dropped if the address
+    is also removed from the interface (e.g. by dhclient upon
+    notification of the DHCP lease expiration). One workaround
+    for this is to preemptively renew the DHCP lease
+    (as dhclient usually does).
+
+    To troubleshoot an ISP connection by removing the router
+    and directly attaching a device with a firewall that starts at boot
+    time,
+    it's often necessary to 'clone' the :term:`MAC address`
+    (for a static IP) or release the DHCP lease and/or power-cycle the
+    modem.
+
+    | Wikipedia: https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol
+
+  Gateway
+    A gateway provides a connection to another :term:`IP` network.
+
+    A routing table may include a default gateway :term:`network route`
+    and zero or more additional routes defined by system configuration
+    and/or :term:`DHCP`
+
+  Network Interface
+    A network interface is a software identifier for a "port"
+    on a :term:`NIC`.
+
+    .. code:: bash
+
+        ## List interfaces
+        ifconfig    # UNIX, BSD, Linux
+        ipconfig    # Windows
+        ip l #link  # Linux
+        ip -s link  # Linux
+        ip a #addr  # Linux
+
+        ## Bring an interface up or down
+        ifconfig eth0 up 127.2.2.2 netmask 255.255.255.0 broadcast 127.2.2.255
+        ifconfig eth0 down
+        ip l set dev eth0 up
+        ip l set dev eth0 down
+
+    * There may be one or more network interfaces registered to a
+      :term:`NIC`::
+
+        ip addr add 127.1.2.3 dev lo netmask 255.255.255.0
+
+  NIC
+    A NIC (:term:`Network Interface` *Card*), or *Network Card*,
+    is a physical adapter
+    for connecting to a network (generally with a physical
+    :ref:`ethernet` (or :ref:`fiber`) cable).
+
+    * A :ref:`wireless` :term:`NIC` is also called
+      a *wireless card* or *wireless adapter*.
+
+    | Docs: :ref:`NIC`
+
+  Network Route
+    Packets are routed based upon network routing tables: rules
+    for which :term:`network interface(s) <network interface>`
+    and/or link(s)/tunnel(s) to send packets destined
+    for anywhere (default gateway) or a specific network subnet
+    (identified by e.g. a /24 prefix or a 255.255.255.0 subnet mask).
+
+        netstat -rn # BSD, OSX, Linux
+        route -n    # Linux # Flags="G"
+        route add gw 192.168.1.1 dev eth0
+        ip r #route # Linux       # "default via"
+        ip r add default gw 10.2.2.253
+        ip r add 10.2.3.0/24 via 10.2.2.253 dev eth0
+
+        # routes are usually managed by the OS.
+        # to reset them all and reboot all interfaces with downtime (!):
+        #  /etc/init.d/networking restart   # SysV Ubuntu, Debian
+        #  service network restart          # systemd {...}
+
+        # restart interface eth0
+        #  #(and re-run dhcplient for an IP lease from DHCP
+        #  #  (e.g. from a router that assigns local IPs ike 192.168.0.101))
+        #  ifdown eth0; ifup eth0           # Linux [man ifdown ifup]
+
+  Hub
+    A network hub connects (or *bridges*) multiple network interfaces
+    to a shared bus; where all machines get a copy of all packets
+    as repeated by the hub.
+
+    * Normally, a :ref:`NIC` (device, driver) is configured
+      to select only packets destined for local addresses.
+    * (In *promiscuous mode*, an interface receives all packets
+      regardless of the packet protocol destination field.
+      (Useful for debugging e.g. :term:`ARP`)).
+
+  Bridge
+    A network bridge is a :term:`hub`; often
+    a software defined bridge to which :term:`network interfaces <network
+    interface>` can be *added*/*attached* and *deleted*/*removed*.
+
+    In :ref:`Linux`, network bridges are configured with ``brctl``:
+
+        brctl
+        brctl show
+
+        # create a bridge which will last until reboot
+        brctl addbr br0
+        brctl addif br0 eth0
+        btctl addif br0 eth1
+        brctl show  br0
+        brctl showmacs br0
+
+  Switch
+    A network switch routes packets to specific ports based upon
+    an :term:`ARP` table.
+
+    * :term:`SOHO` :term:`Routers <router>` are often
+      configured as a switch (relay packets);
+      with a fallback or configuration setting to
+      :term:`hub` mode (repeat all packets).
+
+  Router
+    A :term:`SOHO` Router is usually configured as a
+    :term:`Gateway` and a :term:`Switch`
+    (with at least one port allocated to a different network
+    connection).
+
+    * An actual ("trunk", "internet", "backbone")
+      router is usually configured as a `Router`,
+      with routing table advertisement protocols
+      like RIP, BGP, and **IPv6 radvd**; in order to optimize throughput
+      and minimize latency.
+    * :term:`SOHO` :term:`Routers <router>` are often
+      configured as a switch (relay packets);
+      with a fallback or configuration setting to
+      :term:`hub` mode (repeat all packets).
+
+  AP
+    A :ref:`wireless` access point (*AP*) is a wireless :term:`NIC`
+    with one or more antennas and a power source;
+    which often also acts as a router and/or a wireless mesh router.
+
+    .. note::
+
+        Cool :term:`AP` Ideas
+        (cost, maintenance, spacing, redundancy, resiliency):
+
+        * [ ] Wifi Streetlamp posts
+        * [ ] Wifi Parking meters
+        * [ ] Solar wireless APs (shaped as flowers for cost and
+          water/cleaning/maintenance)
+        * [ ] MEMS wireless APs (see also: Bluetooth BLE)
+
+  WiFi
+    WiFi is a name for a set of
+    :ref:`IEEE 802.11 <802.11>` :ref:`wireless` standards.
