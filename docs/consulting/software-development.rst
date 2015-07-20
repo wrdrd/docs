@@ -184,22 +184,27 @@ Exercises, Problems
 * :ref:`rosalind`
 
 
+.. index:: Code Golf
+
+Code Golf
++++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/Code_golf
+
+* https://en.wikipedia.org/wiki/Code_golf#Tournaments_by_language
+
+
 .. index:: Project Management
 .. _project management:
 
 Project Management
 -------------------
-https://en.wikipedia.org/wiki/Project_management
+| Wikipedia: https://en.wikipedia.org/wiki/Project_management
 
-https://en.wikipedia.org/wiki/DMAIC
-
-https://en.wikipedia.org/wiki/Kaizen
-
-https://en.wikipedia.org/wiki/Systems_development_life_cycle
-
-https://en.wikipedia.org/wiki/Software_project_management
-
-https://en.wikipedia.org/wiki/Software_development_process
+* https://en.wikipedia.org/wiki/DMAIC
+* https://en.wikipedia.org/wiki/Kaizen
+* https://en.wikipedia.org/wiki/Systems_development_life_cycle
+* https://en.wikipedia.org/wiki/Software_project_management
+* https://en.wikipedia.org/wiki/Software_development_process
 
 
 .. index:: Waterfall
@@ -207,7 +212,7 @@ https://en.wikipedia.org/wiki/Software_development_process
 
 Waterfall
 +++++++++++
-https://en.wikipedia.org/wiki/Waterfall_model
+| Wikipedia: https://en.wikipedia.org/wiki/Waterfall_model
 
 
 .. index:: Agile
@@ -215,10 +220,9 @@ https://en.wikipedia.org/wiki/Waterfall_model
 
 Agile
 +++++++
-https://en.wikipedia.org/wiki/Agile_software_development
+| Wikipedia: https://en.wikipedia.org/wiki/Agile_software_development
 
-https://en.wikipedia.org/wiki/Lean_software_development
-
+* https://en.wikipedia.org/wiki/Lean_software_development
 * http://epf.eclipse.org/wikis/epfpractices/
 
 
@@ -240,21 +244,26 @@ Stand Up Meeting
 
 Three Questions
 `````````````````
+| Wikipedia: https://en.wikipedia.org/wiki/Stand-up_meeting#Three_Questions
 
- - What did I accomplish yesterday?
- - What will I do today?
- - What obstacles are impeding my progress?
+ 1. What did I accomplish yesterday?
+ 2. What will I do today?
+ 3. What obstacles are impeding my progress?
 
 
-.. index:: Digital Stand-up Meeting
+.. index:: Digital Stand Up Meeting
 .. _digital stand up meeting:
 
 Digital Stand Up Meeting
 ```````````````````````````
+A Digital :ref:`Stand Up Meeting` is a meeting
+conducted through digital means of communication;
+rather than through traditional in-person communication.
 
 Pros:
 
-* Live docs, team chat logs, and issue/ticket comment threads
+* **Links**: Realtime collaborative documents (*live docs*),
+  team chat logs, and issue/ticket comment threads
   have URIs, are easier to remember,
   and more to the point.
 * Easier to prepare for
@@ -267,8 +276,9 @@ Cons:
 - It's not everyone in the same room
 - "Shouldn't this all be in the issue tracker?"
 
+  * Mailing Lists, Forums, :ref:`SIOC` <- Links to source, docs, issues
   * Bugs, User Stories -> Issue Tracker
-  * Daily Stand Up Meeting log ->
+  * Daily Stand Up Meeting log / **minutes** ->
 
     *
 
