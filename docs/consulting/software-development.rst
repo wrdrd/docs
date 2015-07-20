@@ -226,8 +226,8 @@ Agile
 * http://epf.eclipse.org/wikis/epfpractices/
 
 
-.. index:: Stand-up Meeting
-.. _stand-up-meeting:
+.. index:: Stand Up Meeting
+.. _stand up meeting:
 
 Stand Up Meeting
 ~~~~~~~~~~~~~~~~~
