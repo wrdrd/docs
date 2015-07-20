@@ -216,6 +216,18 @@ Waterfall
 | Wikipedia: https://en.wikipedia.org/wiki/Waterfall_model
 
 
+.. index:: Everyone Codes
+.. _everyone codes:
+
+Everyone Codes
+++++++++++++++++
+
+    Q. Everyone?
+    A. Everyone but
+
+* https://code.org/
+
+
 .. index:: Agile
 .. _agile:
 
