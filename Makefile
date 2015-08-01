@@ -42,10 +42,10 @@ coverage:
 	open htmlcov/index.html
 
 
-BUILDDIR:=./docs/_build
-BUILDDIRHTML:=./docs/_build/html
-BUILDDIRSINGLEHTML:=./docs/_build/singlehtml
-STATIC:=./docs/_static
+BUILDDIR:=docs/_build
+BUILDDIRHTML:=${BUILDDIR}/html
+BUILDDIRSINGLEHTML:=${BUILDDIR}/singlehtml
+STATIC:=docs/_static
 LOCALJS=$(STATIC)/js/local.js
 
 localjs:
@@ -87,6 +87,11 @@ docs-api:
 docs: clean-docs docs-api localjs localcss
 	SPHINX_HTML_LINK_SUFFIX='' $(MAKE) -C docs html singlehtml
 	#$(MAKE) -C docs singlehtml
+	$(MAKE) docs-notify
+
+docs-notify:
+	$(shell (hash notify-send \
+		&& notify-send -t 30000 "docs build complete." "${PWD}/${BUILDDIRHTML}") || true)
 
 docs_tools_submodule:
 	git -C docs/tools/ pull origin master
@@ -104,8 +109,9 @@ docs-open: docs open
 
 
 open:
-	web ./docs/_build/html/index.html
-	#open docs/_build/singlehtml/index.html
+	@#pip install websh.py
+	web ./${BUILDDIRHTML}/index.html
+	#web ./${BUILDDIRSINGLEHTML}/index.html
 
 release: clean
 	python setup.py sdist upload
@@ -114,15 +120,15 @@ sdist: clean
 	python setup.py sdist
 	ls -l dist
 
-docs/_build/html/singlehtml:
-	test -d docs/_build/singlehtml && ( \
-	mv docs/_build/singlehtml docs/_build/html/singlehtml && \
-	ln -s docs/_build/html/singlehtml docs/_build/singlehtml;)  || echo true
+${BUILDDIRHTML}/singlehtml:
+	test -d ${BUILDDIRSINGLEHTML} && ( \
+	mv ${BUILDDIRSINGLEHTML} ${BUILDDIRHTML}/singlehtml && \
+	ln -s ${BUILDDIRHTML}/singlehtml ${BUILDDIRSINGLEHTML};)  || echo true
 
-gh-pages: docs/_build/html/singlehtml
+gh-pages: ${BUILDDIRHTML}/singlehtml
 	# Push docs to gh-pages branch with a .nojekyll file
-	ghp-import -n -p ./docs/_build/html/
-	#ghp-import -n -p ./docs/_build/singlehtml/
+	ghp-import -n -p ./${BUILDDIRHTML}
+	#ghp-import -n -p ./${BUILDDIRSINGLEHTML}
 
 pull:
 	git pull
@@ -130,17 +136,20 @@ pull:
 push:
 	git push
 
-install_dev:
-	# Install pgs
+setup-docs:
 	pip install pgs
+	pip install -r ./requirements-docs.txt
+
+setup-dev:
+	pip install -r ./requirements-dev.txt
 
 pgs:
 	# Serve locally built HTML over HTTP (with try_files $1.html)
-	pgs -p ./docs/_build/html -P 8082
+	pgs -p ${BUILDDIRHTML} -P 8082
 
 pgs-gh-pages:
 	# Serve gh-pages branch over HTTP (with try_files $1.html)
-	pgs -g . -r gh-pages -P 8083
+	pgs -g "${PWD}" -r gh-pages -P 8083
 
 serve: pgs
 
