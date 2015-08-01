@@ -12,7 +12,8 @@
 # All configuration values have a default; values that are commented out
 # serve to show the default.
 
-import sys, os
+import sys
+import os
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -139,14 +140,15 @@ html_theme_options = {
     'googlewebfont_style': u"font-family: 'Lily Script One' cursive;",
     'header_inverse': False,
     'relbar_inverse': False,
-    'inner_theme': False,
-    'inner_theme_name': 'bootswatch-readable',
-#    'h1_size': '3.0em',
-#    'h2_size': '2.6em',
-#    'h3_size': '2.2em',
-#    'h4_size': '1.8em',
-#    'h5_size': '1.4em',
-#    'h6_size': '1.1em',
+    'inner_theme': False
+    #    'inner_theme_name': 'bootswatch-readable',
+    #    'inner_theme_name': 'bootswatch-superhero',
+    #    'h1_size': '3.0em',
+    #    'h2_size': '2.6em',
+    #    'h3_size': '2.2em',
+    #    'h4_size': '1.8em',
+    #    'h5_size': '1.4em',
+    #    'h6_size': '1.1em',
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
@@ -181,21 +183,26 @@ html_static_path = ['_static']
 # typographically correct entities.
 #html_use_smartypants = True
 
+sidebars_globaltoc = [
+    'globaltoc.html',
+    'relations.html',
+    'searchbox.html',
+    'srclinks.html',
+    'links.html', ]
+
+sidebars_localtoc = [
+    'localtoc.html',
+    'relations.html',
+    'searchbox.html',
+    'srclinks.html',
+    'links.html', ]
+
 # Custom sidebar templates, maps document names to template names.
 html_sidebars = {
-    '**': [
-        'localtoc.html',
-        'relations.html',
-        'searchbox.html',
-        'srclinks.html',
-        'links.html',],
-
-    'index': [
-        'globaltoc.html',
-        'relations.html',
-        'searchbox.html',
-        'srclinks.html',
-        'links.html',],
+    '*': sidebars_globaltoc,
+    'consulting/index': sidebars_globaltoc,
+    'consulting/**': sidebars_localtoc,
+    'wrdrd/index': sidebars_localtoc,
 }
 
 # Additional templates that should be rendered to pages, maps page names to
@@ -242,21 +249,21 @@ htmlhelp_basename = 'wrdrddoc'
 # -- Options for LaTeX output --------------------------------------------------
 
 latex_elements = {
-# The paper size ('letterpaper' or 'a4paper').
-#'papersize': 'letterpaper',
+    # The paper size ('letterpaper' or 'a4paper').
+    #'papersize': 'letterpaper',
 
-# The font size ('10pt', '11pt' or '12pt').
-#'pointsize': '10pt',
+    # The font size ('10pt', '11pt' or '12pt').
+    #'pointsize': '10pt',
 
-# Additional stuff for the LaTeX preamble.
-#'preamble': '',
+    # Additional stuff for the LaTeX preamble.
+    #'preamble': '',
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'wrdrd.tex', u'WRD R&D Documentation',
-   u'WRD R&D', 'manual'),
+    ('index', 'wrdrd.tex', u'WRD R&D Documentation',
+     u'WRD R&D', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -299,9 +306,9 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'wrdrd', u'WRD R&D Documentation',
-   u'WRD R&D', 'wrdrd', 'WRD R&D Documentation',
-   'WRD R&D'),
+    ('index', 'wrdrd', u'WRD R&D Documentation',
+     u'WRD R&D', 'wrdrd', 'WRD R&D Documentation',
+     'WRD R&D'),
 ]
 
 # Documents to append as an appendix to all manuals.
@@ -316,6 +323,7 @@ texinfo_documents = [
 
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 #texinfo_no_detailmenu = False
+
 
 def configure_meta_tags(app, pagename, templatename, context, doctree):
     metatags = context.get('metatags', '')
@@ -341,14 +349,15 @@ def configure_meta_tags(app, pagename, templatename, context, doctree):
     <meta property="twitter:site" content="{twitter_user}" />
     <meta property="twitter:creator" content="{twitter_user}" />
     """.format(
-        title=context.get('title',''),
+        title=context.get('title', ''),
         description=context.get('description', ''),
         og_site_name="WRD R&D",
-        og_image_url="http://www.wrdrd.com/static/png/drawing-7.09-v0.1.1--_desk.svg-470x242.png",
+        og_image_url="https://wrdrd.com/static/png/drawing-7.09-v0.1.1--_desk.svg-470x242.png",
         og_image_width="470",
         og_image_height="242",
         twitter_user="wrdrd")
     context['metatags'] = metatags
+
 
 def setup(app):
     app.add_javascript('js/local.js')
