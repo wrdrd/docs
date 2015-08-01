@@ -521,15 +521,13 @@ business systems?</li>
 </div>
 <div class="section" id="cloud-application-layers">
 <span id="index-6"></span><span id="id5"></span><h3>Cloud Application Layers<a class="headerlink" href="#cloud-application-layers" title="Permalink to this headline">¶</a></h3>
-<ul>
-<li><p class="first"><a class="reference internal" href="#term-application"><em class="xref std std-term">Applications</em></a> Layer</p>
 <ul class="simple">
+<li><a class="reference internal" href="#term-application"><em class="xref std std-term">Applications</em></a> Layer<ul>
 <li><a class="reference external" href="https://github.com/wrdrd/wrd/blob/master/app.yaml">https://github.com/wrdrd/wrd/blob/master/app.yaml</a>
 (AppEngine/AppScale)</li>
 </ul>
 </li>
-<li><p class="first">Platform Layer</p>
-<ul class="simple">
+<li>Platform Layer<ul>
 <li><a class="reference internal" href="#paas"><em>PaaS</em></a> APIs (<a class="reference internal" href="#appengine"><em>AppEngine</em></a>, <a class="reference internal" href="#appscale"><em>AppScale</em></a>, <a class="reference internal" href="#heroku"><em>Heroku</em></a>)</li>
 <li><a class="reference internal" href="knowledge-engineering#databases"><em>Databases</em></a>
 (<a class="reference internal" href="knowledge-engineering#relational-databases"><em>Relational Databases</em></a>,
@@ -583,10 +581,8 @@ Worker Pools)<ul>
 </li>
 </ul>
 </li>
-<li><p class="first">Infrastructure Layer (&#8220;provisioning&#8221;)</p>
-<ul>
-<li><p class="first">Resource Pool (&#8220;instances&#8221; of {virtual machines, containers, task workers})</p>
-<ul class="simple">
+<li>Infrastructure Layer (&#8220;provisioning&#8221;)<ul>
+<li>Resource Pool (&#8220;instances&#8221; of {virtual machines, containers, task workers})<ul>
 <li><a class="reference internal" href="../tools/index#cobbler"><em>Cobbler</em></a> (<a class="reference internal" href="../tools/index#libvirt"><em>Libvirt</em></a> <a class="reference internal" href="../tools/index#virtualization"><em>Virtualization</em></a>)</li>
 <li><a class="reference internal" href="../tools/index#docker"><em>Docker</em></a> Swarm</li>
 <li><a class="reference internal" href="../tools/index#kubernetes"><em>Kubernetes</em></a> <a class="reference internal" href="../tools/index#docker"><em>Docker</em></a> pods</li>
@@ -596,22 +592,22 @@ Worker Pools)<ul>
 <li><a class="reference internal" href="../tools/index#openstack"><em>OpenStack</em></a></li>
 </ul>
 </li>
-<li><p class="first">Inventory / Monitoring</p>
-<p># #ConfigMgmt: <a class="reference internal" href="../tools/index#packages"><em>Packages</em></a>
-# #ConfigMgmt: <a class="reference internal" href="../tools/index#ansible"><em>Ansible</em></a>, <a class="reference internal" href="../tools/index#puppet"><em>Puppet</em></a>, <a class="reference internal" href="../tools/index#salt"><em>Salt</em></a>, <a class="reference internal" href="../tools/index#configuration-management"><em>Configuration Management</em></a>
-* #ConfigMgmt #Instances: <a class="reference internal" href="../tools/index#cobbler"><em>Cobbler</em></a> Web Dashboard
-* #ConfigMgmt #Instances: <a class="reference internal" href="../tools/index#openstack"><em>OpenStack</em></a> Horizon Dashboard
-# #Inventory: Cobbler JSON, Salt Grains, Puppet Facts, <a class="reference internal" href="../tools/index#osquery"><em>osquery</em></a> SQL tables
-# #Monitoring: #ConfigMgmt events
-* #Monitoring: Nagios, Shinken, Icinga
-* #Monitoring: Monitd, Collectd, RRD
-* #Logging: Syslog, LogStash, Heka (logtailers)
-* #Logviz: Kibana, Grafana, Graphite, RRD (<a class="reference internal" href="data-science#data-visualization-tools"><em>Data Visualization Tools</em></a>)
-* #PRF: <a class="reference external" href="http://www.brendangregg.com/linuxperf.html">http://www.brendangregg.com/linuxperf.html</a>
-* | Docs: <a class="reference external" href="https://www.opsschool.org/en/latest/">https://www.opsschool.org/en/latest/</a></p>
+<li>Inventory / Monitoring<ul>
+<li>#ConfigMgmt: <a class="reference internal" href="../tools/index#packages"><em>Packages</em></a></li>
+<li>#ConfigMgmt: <a class="reference internal" href="../tools/index#ansible"><em>Ansible</em></a>, <a class="reference internal" href="../tools/index#puppet"><em>Puppet</em></a>, <a class="reference internal" href="../tools/index#salt"><em>Salt</em></a>, <a class="reference internal" href="../tools/index#configuration-management"><em>Configuration Management</em></a></li>
+<li>#ConfigMgmt #Instances: <a class="reference internal" href="../tools/index#cobbler"><em>Cobbler</em></a> Web Dashboard</li>
+<li>#ConfigMgmt #Instances: <a class="reference internal" href="../tools/index#openstack"><em>OpenStack</em></a> Horizon Dashboard</li>
+<li>#Inventory: Cobbler JSON, Salt Grains, Puppet Facts, <a class="reference internal" href="../tools/index#osquery"><em>osquery</em></a> SQL tables</li>
+<li>#Monitoring: #ConfigMgmt events</li>
+<li>#Monitoring: Nagios, Shinken, Icinga</li>
+<li>#Monitoring: Monitd, Collectd, RRD</li>
+<li>#Logging: Syslog, LogStash, Heka (logtailers)</li>
+<li>#Logviz: Kibana, Grafana, Graphite, RRD (<a class="reference internal" href="data-science#data-visualization-tools"><em>Data Visualization Tools</em></a>)</li>
+<li>#PRF: <a class="reference external" href="http://www.brendangregg.com/linuxperf.html">http://www.brendangregg.com/linuxperf.html</a></li>
+<li>Docs: <a class="reference external" href="https://www.opsschool.org/en/latest/">https://www.opsschool.org/en/latest/</a></li>
+</ul>
 </li>
-<li><p class="first">Physical and Virtual Servers (&#8220;servers&#8221;, &#8220;racks&#8221;, &#8220;machines&#8221;)</p>
-<ul class="simple">
+<li>Physical and Virtual Servers (&#8220;servers&#8221;, &#8220;racks&#8221;, &#8220;machines&#8221;)<ul>
 <li>#ConfigMgmt: <a class="reference internal" href="#configuration-management"><em>Configuration Management</em></a>
 (&#8220;infrastructure as code&#8221;,
 shell-escaping,
@@ -626,32 +622,22 @@ worker pools)</li>
 <a class="reference internal" href="computer-engineering#ethernet"><em>Ethernet</em></a>, USB, RS232 Serial Console, KVM switch)</li>
 </ul>
 </li>
-<li><p class="first">Physical and Software Networks</p>
-<ul>
-<li><p class="first">Internet connections</p>
-</li>
-<li><p class="first">VLANs, IPv6 6to4 tunnels</p>
-</li>
-<li><dl class="first docutils">
-<dt>SDN</dt>
-<dd><p class="first">Software Defined Networking</p>
-<ul class="last simple">
+<li>Physical and Software Networks<ul>
+<li>Internet connections</li>
+<li>VLANs, IPv6 6to4 tunnels</li>
+<li>SDN &#8212; Software Defined Networking<ul>
 <li><a class="reference internal" href="../tools/index#openstack"><em>OpenStack</em></a> Neutron</li>
 <li><a class="reference internal" href="../tools/index#docker"><em>Docker</em></a> networking</li>
 <li><a class="reference internal" href="../tools/index#docker"><em>Docker</em></a> Swarm networking</li>
 <li><a class="reference internal" href="../tools/index#vagrant"><em>Vagrant</em></a> networking</li>
 <li><a class="reference internal" href="../tools/index#virtualbox"><em>VirtualBox</em></a> networking</li>
 </ul>
-</dd>
-</dl>
 </li>
-<li><p class="first"><a class="reference internal" href="web-development#term-dns"><em class="xref std std-term">DNS</em></a> (BIND, dnsmasq, <a class="reference internal" href="../tools/index#cobbler"><em>Cobbler</em></a>, <a class="reference internal" href="../tools/index#openstack"><em>OpenStack</em></a>,
-<a class="reference internal" href="../tools/index#vagrant"><em>Vagrant</em></a>, <a class="reference internal" href="../tools/index#docker"><em>Docker</em></a>)</p>
-</li>
+<li><a class="reference internal" href="web-development#term-dns"><em class="xref std std-term">DNS</em></a> (BIND, dnsmasq, <a class="reference internal" href="../tools/index#cobbler"><em>Cobbler</em></a>, <a class="reference internal" href="../tools/index#openstack"><em>OpenStack</em></a>,
+<a class="reference internal" href="../tools/index#vagrant"><em>Vagrant</em></a>, <a class="reference internal" href="../tools/index#docker"><em>Docker</em></a>)</li>
 </ul>
 </li>
-<li><p class="first">Physical and Virtual Storage</p>
-<ul class="simple">
+<li>Physical and Virtual Storage<ul>
 <li>Virtual storage:<ul>
 <li>Central file storage (<a class="reference internal" href="knowledge-engineering#nfs"><em>NFS</em></a>, <a class="reference internal" href="knowledge-engineering#cifs"><em>CIFS</em></a>, <a class="reference internal" href="knowledge-engineering#webdav"><em>WebDAV</em></a>)</li>
 <li>distributed file storage: (<a class="reference internal" href="knowledge-engineering#ceph"><em>Ceph</em></a>, <a class="reference internal" href="knowledge-engineering#glusterfs"><em>GlusterFS</em></a>)</li>
