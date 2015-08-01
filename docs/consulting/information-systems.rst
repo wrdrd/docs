@@ -313,18 +313,18 @@ Cloud Application Layers
 
   * Inventory / Monitoring
 
-    # #ConfigMgmt: :ref:`Packages`
-    # #ConfigMgmt: :ref:`Ansible`, :ref:`Puppet`, :ref:`Salt`, :ref:`configuration management`
+    * #ConfigMgmt: :ref:`Packages`
+    * #ConfigMgmt: :ref:`Ansible`, :ref:`Puppet`, :ref:`Salt`, :ref:`configuration management`
     * #ConfigMgmt #Instances: :ref:`Cobbler` Web Dashboard
     * #ConfigMgmt #Instances: :ref:`OpenStack` Horizon Dashboard
-    # #Inventory: Cobbler JSON, Salt Grains, Puppet Facts, :ref:`osquery` SQL tables
-    # #Monitoring: #ConfigMgmt events
+    * #Inventory: Cobbler JSON, Salt Grains, Puppet Facts, :ref:`osquery` SQL tables
+    * #Monitoring: #ConfigMgmt events
     * #Monitoring: Nagios, Shinken, Icinga
     * #Monitoring: Monitd, Collectd, RRD
     * #Logging: Syslog, LogStash, Heka (logtailers)
     * #Logviz: Kibana, Grafana, Graphite, RRD (:ref:`data-visualization-tools`)
     * #PRF: http://www.brendangregg.com/linuxperf.html
-    * | Docs: https://www.opsschool.org/en/latest/
+    * Docs: https://www.opsschool.org/en/latest/
 
   * Physical and Virtual Servers ("servers", "racks", "machines")
 
@@ -345,14 +345,13 @@ Cloud Application Layers
 
     + Internet connections
     + VLANs, IPv6 6to4 tunnels
-    + SDN
-        Software Defined Networking
+    + SDN --- Software Defined Networking
         
-        * :ref:`OpenStack` Neutron
-        * :ref:`Docker` networking
-        * :ref:`Docker` Swarm networking
-        * :ref:`Vagrant` networking
-        * :ref:`Virtualbox` networking
+      * :ref:`OpenStack` Neutron
+      * :ref:`Docker` networking
+      * :ref:`Docker` Swarm networking
+      * :ref:`Vagrant` networking
+      * :ref:`Virtualbox` networking
 
     + :term:`DNS` (BIND, dnsmasq, :ref:`Cobbler`, :ref:`OpenStack`,
       :ref:`Vagrant`, :ref:`Docker`)
