@@ -70,8 +70,9 @@ https://en.wikipedia.org/wiki/Publishing
 
   * **It is faster to run the code next to the data.**
 
-    * :ref:`HDFS` (:ref:`Hadoop`, :ref:`Hive`,
-      :ref:`Cassandra`, :ref:`Spark`, :ref:`Mesos`), :ref:`DDFS`
+    * :ref:`HDFS`, :ref:`Hadoop`, :ref:`Hive`,
+      :ref:`Cassandra`, :ref:`Spark`, :ref:`Mesos`, :ref:`ibis`,
+      :ref:`DDFS`
     * :ref:`Accumulo` iterators
     * :ref:`SQL` (:ref:`Relational Database <relational databases>`)
     * :ref:`SPARQL` (:ref:`Linked Data`)
