@@ -15,6 +15,9 @@
 import sys
 import os
 
+# ON_RTD is whether we are on readthedocs.org
+ON_RTD = os.environ.get('READTHEDOCS', None) == 'True'
+
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
@@ -239,7 +242,7 @@ html_use_opensearch = 'https://wrdrd.com/docs/'
 # The default is whatever html_file_suffix is set to;
 # it can be set differently (e.g. to support different web server setups).
 SPHINX_HTML_LINK_SUFFIX = os.environ.get('SPHINX_HTML_LINK_SUFFIX')
-if SPHINX_HTML_LINK_SUFFIX is not None:
+if SPHINX_HTML_LINK_SUFFIX is not None and not ON_RTD:
     html_link_suffix = SPHINX_HTML_LINK_SUFFIX
 
 # Output file base name for HTML help builder.
