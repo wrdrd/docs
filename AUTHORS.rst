@@ -2,8 +2,12 @@
 Credits
 =======
 
-| WRD R&D
-| http://www.wrdrd.com/
+WRD R&D
+---------
+
+| Source: https://github.com/wrdrd/docs
+| Docs: https://wrdrd.readthedocs.org/en/latest/
+| Docs: https://wrdrd.com/docs/
 
 
 Lead
