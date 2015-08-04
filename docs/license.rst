@@ -1,4 +1,7 @@
 
+.. _docs license:
+.. index:: License (Docs)
+
 License
 ==========
 
