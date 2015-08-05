@@ -141,6 +141,8 @@ setup-docs:
 	pip install -r ./requirements-docs.txt
 
 setup-dev:
+	# sudo dnf install gcc python-devel
+	# sudo apt-get install gcc python-dev
 	pip install -r ./requirements-dev.txt
 
 pgs:
