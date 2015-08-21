@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- OpenGraph metadata: ogp.me -->
+    <meta property="og:title" content="wrdrd.tools.stripsinglehtml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="WRD R&D" />
+    <!--
+    <meta property="og:description" content="" />
+    -->
+    <meta property="og:image" content="https://wrdrd.com/static/png/drawing-7.09-v0.1.1--_desk.svg-470x242.png" />
+    <meta property="og:image:width" content="470" />
+    <meta property="og:image:height" content="242" />
+    <!--
+    <meta property="og:image:secure_url" content="./_static/img/logo.png" />
+    -->
+    <!-- Twitter metadata -->
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:title" content="wrdrd.tools.stripsinglehtml" />
+    <meta property="twitter:description" content="" />
+    <meta property="twitter:site" content="wrdrd" />
+    <meta property="twitter:creator" content="wrdrd" />
+    
+    <title>wrdrd.tools.stripsinglehtml &mdash; WRD R&amp;D Documentation</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    
+
+<link rel="stylesheet" href="../../../_static/css/basicstrap-base.css" type="text/css" />
+<link rel="stylesheet" id="current-theme" href="../../../_static/css/bootstrap3/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" id="current-adjust-theme" type="text/css" />
+
+<link rel="stylesheet" href="../../../_static/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="../../../_static/css/basicstrap.css" type="text/css" />
+<link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+<link rel="stylesheet" href="../../../_static/css/local.css" type="text/css" />
+    
+<script type="text/javascript">
+  var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:    '../../../',
+            VERSION:     '0.2.0',
+            COLLAPSE_INDEX: false,
+            FILE_SUFFIX: '.html',
+            HAS_SOURCE:  true
+  };
+</script>
+    <script type="text/javascript" src="../../../_static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/js/local.js"></script>
+    <script type="text/javascript" src="../../../_static/js/bootstrap3.min.js"></script>
+<script type="text/javascript" src="../../../_static/js/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="../../../_static/js/basicstrap.js"></script>
+<script type="text/javascript">
+</script>
+    <link rel="search" type="application/opensearchdescription+xml"
+    title="Search within WRD R&amp;D Documentation"
+    href="../../../_static/opensearch.xml"/>
+    <link rel="top" title="WRD R&amp;D Documentation" href="../../../index" />
+    <link rel="up" title="Module code" href="../../index" /> 
+  </head>
+  <body role="document">
+    <div id="navbar-top" class="navbar navbar-default" role="navigation" aria-label="top navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../../../index">WRD R&amp;D Documentation</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+
+            
+              <li><a href="../../../py-modindex" title="Python Module Index" >modules </a></li>
+              <li><a href="../../../genindex" title="General Index" accesskey="I">index </a></li>
+              <li><a href="../../index" accesskey="U">Module code</a></li>
+            
+
+            <li class="visible-xs">
+                <form class="search form-search form-inline navbar-form navbar-right sp-searchbox" action="../../../search" method="get">
+                  <div class="input-append input-group">
+                    <input type="text" class="search-query form-control" name="q" placeholder="Search...">
+                    <span class="input-group-btn">
+                    <input type="submit" class="btn" value="Go" />
+                    </span>
+                  </div>
+                  <input type="hidden" name="check_keywords" value="yes" />
+                  <input type="hidden" name="area" value="default" />
+                </form>
+            </li>
+
+            
+
+          </ul>
+
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- container -->
+    <div class="container-fluid">
+
+      <!-- row -->
+      <div class="row">
+         
+<div class="col-md-3 hidden-xs" id="sidebar-wrapper">
+  <div class="sidebar hidden-xs" role="navigation" aria-label="main navigation">
+<div id="searchbox" role="search">
+  <h3>Quick search</h3>
+  <form class="search form-inline" action="../../../search" method="get">
+      <div class="input-append input-group">
+        <input type="text" class="search-query form-control" name="q" placeholder="Search...">
+        <span class="input-group-btn">
+        <input type="submit" class="btn" value="Go" />
+        </span>
+      </div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+  </div>
+</div> 
+        
+
+        <div class="col-md-9" id="content-wrapper">
+          <div class="document" role="main">
+            <div class="documentwrapper">
+              <div class="bodywrapper">
+                <div class="body">
+                  
+  <h1>Source code for wrdrd.tools.stripsinglehtml</h1><div class="highlight"><pre>
+<span class="c">#!/usr/bin/env python</span>
+<span class="c"># encoding: utf-8</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">wrdrd.tools.stripsinglehtml</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">import</span> <span class="nn">codecs</span>
+<span class="kn">import</span> <span class="nn">bs4</span>
+
+
+<div class="viewcode-block" id="stripsinglehtml"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools#wrdrd.tools.stripsinglehtml.stripsinglehtml">[docs]</a><span class="k">def</span> <span class="nf">stripsinglehtml</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="s">&#39;index.html&#39;</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    strip markup from sphinx singlehtml files</span>
+<span class="sd">    (rather than writing a sphinx [...]-er)</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        path (str): path to a Sphinx singlehtml file</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        bs4.BeautifulSoup: stripped HTML file</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">contents</span> <span class="o">=</span> <span class="bp">None</span>
+    <span class="k">with</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="s">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s">&#39;utf8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">contents</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+
+    <span class="n">bs</span> <span class="o">=</span> <span class="n">bs4</span><span class="o">.</span><span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">contents</span><span class="p">)</span>
+    <span class="n">bs</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">&#39;body&#39;</span><span class="p">)</span>
+    <span class="n">bs</span> <span class="o">=</span> <span class="n">bs</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">&#39;body&#39;</span><span class="p">)</span>
+    <span class="p">[</span><span class="n">x</span><span class="o">.</span><span class="n">extract</span><span class="p">()</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">bs</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&#39;a&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s">&#39;class&#39;</span><span class="p">:</span> <span class="s">&#39;headerlink&#39;</span><span class="p">})]</span>
+    <span class="n">elem</span> <span class="o">=</span> <span class="n">bs</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">&#39;div&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s">&#39;class&#39;</span><span class="p">:</span> <span class="s">&#39;sphinxsidebar&#39;</span><span class="p">})</span>
+    <span class="n">elem</span> <span class="ow">and</span> <span class="n">elem</span><span class="o">.</span><span class="n">extract</span><span class="p">()</span>
+    <span class="n">elem</span> <span class="o">=</span> <span class="n">bs</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">&#39;div&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s">&#39;id&#39;</span><span class="p">:</span> <span class="s">&#39;indices-and-tables&#39;</span><span class="p">})</span>
+    <span class="n">elem</span> <span class="ow">and</span> <span class="n">elem</span><span class="o">.</span><span class="n">extract</span><span class="p">()</span>
+    <span class="p">[</span><span class="n">x</span><span class="o">.</span><span class="n">extract</span><span class="p">()</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">bs</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&#39;div&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s">&#39;class&#39;</span><span class="p">:</span> <span class="s">&#39;related&#39;</span><span class="p">})]</span>
+
+    <span class="k">return</span> <span class="n">bs</span>
+
+</div>
+<span class="kn">import</span> <span class="nn">unittest</span>
+
+
+<div class="viewcode-block" id="Test_stripsinglehtml"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools#wrdrd.tools.stripsinglehtml.Test_stripsinglehtml">[docs]</a><span class="k">class</span> <span class="nc">Test_stripsinglehtml</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+
+<div class="viewcode-block" id="Test_stripsinglehtml.test_stripsinglehtml"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools#wrdrd.tools.stripsinglehtml.Test_stripsinglehtml.test_stripsinglehtml">[docs]</a>    <span class="k">def</span> <span class="nf">test_stripsinglehtml</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">filename</span> <span class="o">=</span> <span class="s">&#39;./test/data/singlehtml.html&#39;</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="n">stripsinglehtml</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
+
+</div></div>
+<div class="viewcode-block" id="main"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools#wrdrd.tools.stripsinglehtml.main">[docs]</a><span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    :py:mod:`wrdrd.tools.stripsinglehtml` main method: print unicode</span>
+<span class="sd">    stripsinglehtml output to ``stdout``.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        args (list): list of commandline arguments</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        int: zero</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="kn">import</span> <span class="nn">logging</span>
+    <span class="kn">import</span> <span class="nn">optparse</span>
+    <span class="kn">import</span> <span class="nn">sys</span>
+
+    <span class="n">prs</span> <span class="o">=</span> <span class="n">optparse</span><span class="o">.</span><span class="n">OptionParser</span><span class="p">(</span>
+        <span class="n">usage</span><span class="o">=</span><span class="s">&quot;%prog &lt;path&gt;&quot;</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s">&quot;Strip markup from a Sphinx singlehtml HTML page&quot;</span><span class="p">)</span>
+
+    <span class="n">prs</span><span class="o">.</span><span class="n">add_option</span><span class="p">(</span><span class="s">&#39;-v&#39;</span><span class="p">,</span> <span class="s">&#39;--verbose&#39;</span><span class="p">,</span>
+                   <span class="n">dest</span><span class="o">=</span><span class="s">&#39;verbose&#39;</span><span class="p">,</span>
+                   <span class="n">action</span><span class="o">=</span><span class="s">&#39;store_true&#39;</span><span class="p">,)</span>
+    <span class="n">prs</span><span class="o">.</span><span class="n">add_option</span><span class="p">(</span><span class="s">&#39;-q&#39;</span><span class="p">,</span> <span class="s">&#39;--quiet&#39;</span><span class="p">,</span>
+                   <span class="n">dest</span><span class="o">=</span><span class="s">&#39;quiet&#39;</span><span class="p">,</span>
+                   <span class="n">action</span><span class="o">=</span><span class="s">&#39;store_true&#39;</span><span class="p">,)</span>
+    <span class="n">prs</span><span class="o">.</span><span class="n">add_option</span><span class="p">(</span><span class="s">&#39;-t&#39;</span><span class="p">,</span> <span class="s">&#39;--test&#39;</span><span class="p">,</span>
+                   <span class="n">dest</span><span class="o">=</span><span class="s">&#39;run_tests&#39;</span><span class="p">,</span>
+                   <span class="n">action</span><span class="o">=</span><span class="s">&#39;store_true&#39;</span><span class="p">,)</span>
+
+    <span class="n">args</span> <span class="o">=</span> <span class="n">args</span> <span class="ow">and</span> <span class="nb">list</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="ow">or</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+    <span class="p">(</span><span class="n">opts</span><span class="p">,</span> <span class="n">args</span><span class="p">)</span> <span class="o">=</span> <span class="n">prs</span><span class="o">.</span><span class="n">parse_args</span><span class="p">()</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">opts</span><span class="o">.</span><span class="n">quiet</span><span class="p">:</span>
+        <span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="n">opts</span><span class="o">.</span><span class="n">verbose</span><span class="p">:</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">()</span><span class="o">.</span><span class="n">setLevel</span><span class="p">(</span><span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">opts</span><span class="o">.</span><span class="n">run_tests</span><span class="p">:</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">argv</span> <span class="o">=</span> <span class="p">[</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span> <span class="o">+</span> <span class="n">args</span>
+        <span class="kn">import</span> <span class="nn">unittest</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">())</span>
+
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s">&quot;Must specify a file path&quot;</span><span class="p">)</span>
+    <span class="n">path</span> <span class="o">=</span> <span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+    <span class="n">sys</span><span class="o">.</span><span class="n">stdout</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">getwriter</span><span class="p">(</span><span class="s">&#39;utf-8&#39;</span><span class="p">)(</span><span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s">&#39;replace&#39;</span><span class="p">)</span>
+    <span class="n">bs</span> <span class="o">=</span> <span class="n">stripsinglehtml</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="nb">unicode</span><span class="p">(</span><span class="n">bs</span><span class="p">))</span>
+    <span class="k">return</span> <span class="mi">0</span>
+
+</div>
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="kn">import</span> <span class="nn">sys</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">main</span><span class="p">())</span>
+</pre></div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div><!-- /row -->
+
+      <!-- row -->
+      <div class="row footer-relbar">
+<div id="navbar-related" class=" related navbar navbar-default" role="navigation" aria-label="related navigation">
+  <div class="navbar-inner">
+    <ul class="nav navbar-nav text-center">
+        <li><a href="../../../index">WRD R&amp;D Documentation</a></li>
+    </ul>
+<ul class="nav navbar-nav text-center">
+      
+        <li><a href="../../../py-modindex" title="Python Module Index" >modules</a></li>
+        <li><a href="../../../genindex" title="General Index" >index</a></li>
+        <li><a href="../../index" >Module code</a></li>
+        <li><a href="#">top</a></li> 
+      
+    </ul>
+  </div>
+</div>
+      </div><!-- /row -->
+
+      <!-- footer -->
+      <footer role="contentinfo">
+          &copy; <a href="../../../license">Copyright</a> WRD R&amp;D 2014 - 2015.
+
+      <br/>
+      <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+        <img alt="Creative Commons License"
+        style="border-width:0; padding:12px"
+        src="../../../_static/img/cc-by-sa-4.0-88x31.png" /></a>
+      <br />
+      <span xmlns:dct="http://purl.org/dc/terms/"
+        property="dct:title">WRD R&amp;D Documentation</span> is licensed under a 
+      <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"
+        >Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+      </footer>
+      <!-- /footer -->
+
+    </div>
+    <!-- /container -->
+
+  </body>
+</html>
