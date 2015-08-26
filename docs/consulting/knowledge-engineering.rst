@@ -2685,12 +2685,12 @@ the primary terrestrial Earth-based clock time.
   Earth's rotational time and
   the actual passage of time
   according to the decay rate of cesium atoms
-  (an `SI Unit` calibrated with an *atomic clock*;
+  (an :`SI Unit <si units>` calibrated with an *atomic clock*;
   see :ref:`QUDT`).
 * Many/most computer systems work with UTC,
   but are not
   exactly synchronized with :ref:`iat`
-  (see also: `RTC`, `NTP` and `time drift`).
+  (see also: `RTC`, :ref:`NTP` and `time drift`).
 
 
 .. index:: US Time Zones
