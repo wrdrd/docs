@@ -873,7 +873,8 @@ Mesh Wireless Approaches:
 
 * Redstone Technologies LLC (:ref:`gigabit` wireless mesh networks)
 
-  http://redstone.us.com/simplified-wireless-architecture/
+  * http://redstone.us.com/simplified-wireless-architecture/
+  * http://redstone.us.com/8-major-breakthroughs/
 
 
 .. index:: Mobile Broadband
