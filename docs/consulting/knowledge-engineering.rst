@@ -2685,7 +2685,7 @@ the primary terrestrial Earth-based clock time.
   Earth's rotational time and
   the actual passage of time
   according to the decay rate of cesium atoms
-  (an :`SI Unit <si units>` calibrated with an *atomic clock*;
+  (an :ref:`SI Unit <si units>` calibrated with an *atomic clock*;
   see :ref:`QUDT`).
 * Many/most computer systems work with UTC,
   but are not
