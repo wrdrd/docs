@@ -3233,7 +3233,7 @@ HTTP STS
 
 HTTP STS (*HTTP Strict Transport Security*) is
 a standardized extension for notifying browsers
-that all requests should be made over :ref:`HTTP`
+that all requests should be made over :ref:`HTTPS`
 indefinitely or for a specified time period.
 
 See also: :ref:`https everywhere`
