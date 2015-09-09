@@ -1519,8 +1519,8 @@ https://en.wikipedia.org/wiki/Graph_database#Graph_database_projects
 
 * https://en.wikipedia.org/wiki/AllegroGraph [:ref:`RDF`]
 * :ref:`Blazegraph`  [:ref:`RDF`, :ref:`OWL`]
-* https://en.wikipedia.org/wiki/Neo4j
-* https://en.wikipedia.org/wiki/Sqrrl
+* :ref:`neo4j`
+* :ref:`Accumulo` + https://en.wikipedia.org/wiki/Sqrrl
 * :ref:`Virtuoso` [:ref:`RDF`, :ref:`OWL`]
 * http://db-engines.com/en/ranking/graph+dbms
 
