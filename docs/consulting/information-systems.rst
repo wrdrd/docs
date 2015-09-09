@@ -290,6 +290,7 @@ Cloud Application Layers
     * :ref:`HDFS`, :ref:`DDFS`
     * :ref:`Hadoop`, :ref:`Spark`, :ref:`Cassandra`, :ref:`Accumulo`
     * :ref:`Mesos`
+    * :ref:`Ibis`
 
   * HTTP Object Storage
 
