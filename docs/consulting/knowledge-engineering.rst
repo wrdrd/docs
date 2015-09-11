@@ -1519,8 +1519,8 @@ https://en.wikipedia.org/wiki/Graph_database#Graph_database_projects
 
 * https://en.wikipedia.org/wiki/AllegroGraph [:ref:`RDF`]
 * :ref:`Blazegraph`  [:ref:`RDF`, :ref:`OWL`]
-* https://en.wikipedia.org/wiki/Neo4j
-* https://en.wikipedia.org/wiki/Sqrrl
+* :ref:`neo4j`
+* :ref:`Accumulo` + https://en.wikipedia.org/wiki/Sqrrl
 * :ref:`Virtuoso` [:ref:`RDF`, :ref:`OWL`]
 * http://db-engines.com/en/ranking/graph+dbms
 
@@ -2685,12 +2685,12 @@ the primary terrestrial Earth-based clock time.
   Earth's rotational time and
   the actual passage of time
   according to the decay rate of cesium atoms
-  (an `SI Unit` calibrated with an *atomic clock*;
+  (an :ref:`SI Unit <si units>` calibrated with an *atomic clock*;
   see :ref:`QUDT`).
 * Many/most computer systems work with UTC,
   but are not
   exactly synchronized with :ref:`iat`
-  (see also: `RTC`, `NTP` and `time drift`).
+  (see also: `RTC`, :ref:`NTP` and `time drift`).
 
 
 .. index:: US Time Zones
@@ -3233,7 +3233,7 @@ HTTP STS
 
 HTTP STS (*HTTP Strict Transport Security*) is
 a standardized extension for notifying browsers
-that all requests should be made over :ref:`HTTP`
+that all requests should be made over :ref:`HTTPS`
 indefinitely or for a specified time period.
 
 See also: :ref:`https everywhere`
