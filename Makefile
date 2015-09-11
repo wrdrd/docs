@@ -1,3 +1,4 @@
+
 .PHONY: clean-pyc clean-build docs
 
 help:
@@ -110,8 +111,12 @@ docs-open: docs open
 
 open:
 	@#pip install websh.py
-	web ./${BUILDDIRHTML}/index.html
+	web './${BUILDDIRHTML}/index.html'
 	#web ./${BUILDDIRSINGLEHTML}/index.html
+
+PGS_PORT:=8082
+open-pgs:
+	web 'http://localhost:${PGS_PORT}'
 
 release: clean
 	python setup.py sdist upload
@@ -120,14 +125,21 @@ sdist: clean
 	python setup.py sdist
 	ls -l dist
 
-${BUILDDIRHTML}/singlehtml:
-	test -d ${BUILDDIRSINGLEHTML} && ( \
-	mv ${BUILDDIRSINGLEHTML} ${BUILDDIRHTML}/singlehtml && \
-	ln -s ${BUILDDIRHTML}/singlehtml ${BUILDDIRSINGLEHTML};)  || echo true
+docs-singlehtml:
+	$(MAKE) -C ./docs singlehtml
+	$(MAKE) docs-mv-singlehtml
 
-gh-pages: ${BUILDDIRHTML}/singlehtml
+docs-mv-singlehtml:
+	test -d '${BUILDDIRSINGLEHTML}' && ( \
+		mv '${BUILDDIRSINGLEHTML}' '${BUILDDIRHTML}/singlehtml' && \
+		ln -s '${BUILDDIRHTML}/singlehtml' '${BUILDDIRSINGLEHTML}' \
+	;)  || echo true
+
+singlehtml: ${BUILDDIRHTML}/singlehtml
+
+gh-pages: docs-mv-singlehtml
 	# Push docs to gh-pages branch with a .nojekyll file
-	ghp-import -n -p ./${BUILDDIRHTML}
+	ghp-import -n -p '${BUILDDIRHTML}'
 	#ghp-import -n -p ./${BUILDDIRSINGLEHTML}
 
 pull:
@@ -147,12 +159,20 @@ setup-dev:
 
 pgs:
 	# Serve locally built HTML over HTTP (with try_files $1.html)
-	pgs -p ${BUILDDIRHTML} -P 8082
+	pgs -p '${BUILDDIRHTML}' -P '${PGS_PORT}'
 
 pgs-gh-pages:
 	# Serve gh-pages branch over HTTP (with try_files $1.html)
-	pgs -g "${PWD}" -r gh-pages -P 8083
+	pgs -g '${PWD}' -r gh-pages -P '${PGS_PORT}'
 
-serve: pgs
+serve: serve-fs
 
-serve-gh-pages: pgs-gh-pages
+serve-fs:
+	$(MAKE) pgs PGS_PORT=8082
+
+serve-gh-pages:
+	$(MAKE) pgs-gh-pages
+
+serve:
+	$(MAKE) pgs PGS_PORT=8082
+	$(MAKE) pgs-gh-pages PGS_PORT=8083
