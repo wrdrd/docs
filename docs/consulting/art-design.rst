@@ -1473,7 +1473,7 @@ JSPF
 ------
 | Homepage: http://xspf.org/jspf/
 
-JSPF (*:ref:`JSON` Shareable Playlist Format*) is an :ref:`open source`
+JSPF (:ref:`JSON` *Shareable Playlist Format*) is an :ref:`open source`
 media playlist format for files with :term:`URIs <uri>`, :term:`URNs <urn>`,
 and :term:`URLs <url>`.
 
