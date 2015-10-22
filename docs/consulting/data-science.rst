@@ -11,6 +11,10 @@ https://en.wikipedia.org/wiki/Data_science
 |
 | "Ten Simple Rules for Reproducible Computational Research"
 | http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1003285
+|
+| "LearnDataSci | A hub for data science online learning resources"
+| http://www.learndatasci.com/
+
 
 
 Data, Information, Knowledge, & Wisdom
