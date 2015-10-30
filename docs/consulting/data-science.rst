@@ -6,11 +6,167 @@ Data Science
 =============
 https://en.wikipedia.org/wiki/Data_science
 
+
+* https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks
+
+
+datasciencemasters.org
+-------------------------
 | "The Open Source Data Science Masters"
 | http://datasciencemasters.org/
 |
+
+Ten Simple Rules
+------------------
+| Homepage: http://collections.plos.org/ten-simple-rules
+| Hashtag: #TenSimpleRules
+| Twitter: https://twitter.com/hashtag/TenSimpleRules?src=hash
+
+
+#TenSimpleRules for Reproducible Computation Research
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 | "Ten Simple Rules for Reproducible Computational Research"
 | http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1003285
+| DOI: 10.1371/journal.pcbi.1003285 Featured in PLOS Collections
+
+    1. For Every Result, Keep Track of How It Was Produced
+    2. Avoid Manual Data Manipulation Steps
+    3. Archive the Exact Versions of All External Programs Used
+    4. Version Control All Custom Scripts
+    5. Record All Intermediate Results, When Possible in Standardized Formats
+    6. For Analyses That Include Randomness, Note Underlying Random Seeds
+    7. Always Store Raw Data behind Plots
+    8. Generate Hierarchical Analysis Output, Allowing Layers of Increasing Detail to Be Inspected
+    9. Connect Textual Statements to Underlying Results
+    10. Provide Public Access to Scripts, Runs, and Results
+
+
+1. For Every Result, Keep Track of How It Was Produced
+
+   * :ref:`RDF`, :ref:`JSON-LD` (e.g. :ref:`W3C` :ref:`PROV`)
+   * :ref:`Workflow`
+   * :ref:`Knowledge Engineering` > :ref:`Linked Data`
+
+2. Avoid Manual Data Manipulation Steps
+
+   * :ref:`Workflow`
+   * :ref:`Continuous Delivery`
+     
+     * :ref:`Test Automation` (e.g. :ref:`Test Driven Development <TDD>`)
+
+3. Archive the Exact Versions of All External Programs Used
+
+   * :ref:`Jupyter and Reproducibility` (``%version_information``,
+     ``%watermark``) (should be "Reproducibility and Jupyter Notebook")
+
+4. Version Control All Custom Scripts
+
+   * :ref:`Revision Control` (e.g. :ref:`DVCS`)
+
+5. Record All Intermediate Results, When Possible in Standardized Formats
+
+   * :ref:`Linked Data` (e.g. :ref:`5 ★ Linked Open Data <fivestardata2>`)
+
+6. For Analyses That Include Randomness, Note Underlying Random Seeds
+
+   Python random functions:
+
+   .. code:: python
+
+       print(os.environ['PYTHONHASHSEED'])
+       RANDOMSEED = 1  # /dev/[x]random
+
+       import random
+       random.seed(RANDOMSEED)
+
+       import numpy as np
+       np.random.seed(RANDOMSEED)    # Seed
+       print(np.random.get_state())  # State
+       np.random.rand(4, 2) # (rows, cols, [...])
+       np.random.randn(4, 2) # "standard normal" distribution
+
+   * http://docs.scipy.org/doc/numpy/reference/routines.random.html#distributions
+   * 
+
+   Python hash randomization and algorithmic determinism:
+
+   | ``python -R``
+   | https://docs.python.org/3/using/cmdline.html#cmdoption-R
+   | ``PYTHONHASHSEED``
+   | https://docs.python.org/3/using/cmdline.html#envvar-PYTHONHASHSEED
+
+7. Always Store Raw Data behind Plots
+
+   * Or, "Generate all plots from [source-controlled] [transforms-of]
+     raw data"
+   * :ref:`Data Visualzation Tools` (:ref:`Data Visualization`)
+
+8. Generate Hierarchical Analysis Output,
+   Allowing Layers of Increasing Detail to Be Inspected
+
+
+   * :ref:`Schema.org`: https://schema.org/docs/full.html
+   * :ref:`SKOS`:
+     
+      | http://www.w3.org/TR/skos-reference/
+      | http://www.w3.org/TR/skos-reference/skos.html
+
+     ``skos:narrower``, ``skos:narrowerTransitive``,
+     ``skos:broader`` , ``skos:broaderTransistive``,
+     [...]
+
+   * :ref:`XKOS`: "An SKOS extension for representing
+     statistical classifications"
+     
+     http://rdf-vocabulary.ddialliance.org/xkos.html
+
+   * :ref:`QB`: "The RDF Data Cube Vocabulary"
+     
+     ``qb:DataSet``,
+     ``qb:Dimension``,
+     ``qb:ObservationGroup``,
+     ``qb:Slice``, [...]
+
+     http://www.w3.org/TR/vocab-data-cube/
+
+9. Connect Textual Statements to Underlying Results
+
+   * :ref:`Linked Data`: :ref:`URIs <URI>`, :ref:`URLs <URL>`, ``#uri-fragments``
+   * :ref:`Turtle` / :ref:`Trig`: ``<>`` (this document, this named graph)
+   * :ref:`ReStructuredText`
+
+     * http://sphinx-doc.org/rest.html#footnotes #citations #substitutions
+     * https://github.com/yoloseem/awesome-sphinxdoc
+
+10. Provide Public Access to Scripts, Runs, and Results
+
+    * :ref:`Jupyter and Reproducibility`
+    * https://en.wikipedia.org/wiki/Comparison_of_source_code_hosting_facilities
+
+      * :ref:`GitHub`: Git
+      * :ref:`BitBucket`: Hg, Git
+
+#TenSimpleRules for Creating a Good Data Management Plan
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+| "Ten Simple Rules for Creating a Good Data Management Plan"
+| http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004525
+| DOI: 10.1371/journal.pcbi.1004525
+
+    1. Determine the Research Sponsor Requirements
+    2. Identify the Data to Be Collected
+    3. Define How the Data Will Be Organized
+    4. Explain How the Data Will Be Documented
+    5. Describe How Data Quality Will Be Assured
+    6. Present a Sound Data Storage and Preservation Strategy
+    7. Define the Project’s Data Policies
+    8. Describe How the Data Will Be Disseminated
+    9. Assign Roles and Responsibilities
+    10. Prepare a Realistic Budget
+
+http://journals.plos.org/plosone/s/data-availability
+
+> PLOS journals require authors to make all data underlying the findings described in their manuscript fully available without restriction, with rare exception.
 
 
 Data, Information, Knowledge, & Wisdom
@@ -663,18 +819,73 @@ https://en.wikipedia.org/wiki/Deep_learning
 
 
 
+Datasets
+++++++++++
+
+
+
+awesome-public-datasets
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+https://github.com/caesar0301/awesome-public-datasets
+
+* https://github.com/caesar0301/awesome-public-datasets#search-engines
+
+
+
+.. _awesome:
+
+Awesome
+~~~~~~~~~~~~
+https://github.com/bayandin/awesome-awesomeness
+
+* https://github.com/onurakpolat/awesome-bigdata
+* https://github.com/josephmisiti/awesome-machine-learning
+* https://github.com/caesar0301/awesome-public-datasets
+
+
+
 .. index:: Data Science Tools
 .. _data science tools:
 
 Tools
 -------
-https://en.wikipedia.org/wiki/Scientific_workflow_system
 
-https://github.com/josephmisiti/awesome-machine-learning
+.. index:: ETL
 
-See: :ref:`Tools`,
-:ref:`Jupyter and Reproducibility`,
-:ref:`Publishing`
+ETL
++++++
+| Wikipedia: https://en.wikipedia.org/wiki/Extract,_transform,_load
+
+* https://en.wikipedia.org/wiki/Extract,_transform,_load#Real-life_ETL_cycle
+
+
+Workflow
+++++++++++
+
+* :ref:`Scientific Method <scientific-method>`
+* :ref:`Project Management <project management>`
+* https://en.wikipedia.org/wiki/Checklist
+* https://en.wikipedia.org/wiki/Scientific_workflow_system
+* :ref:`Units` of measure
+* I/O Transforms of :ref:`information(/energy) <information theory>`
+
+
+"Data Provenance", "Data Lineage"
+
+* https://en.wikipedia.org/wiki/Provenance#Data_provenance
+* https://en.wikipedia.org/wiki/Data_lineage#Data_Provenance
+* :ref:`W3C PROV <prov>` Provenance Ontology
+
+  * http://www.w3.org/TR/prov-overview/
+  * http://www.w3.org/TR/prov-o/
+
+
+See:
+
+* :ref:`Knowledge Engineering`
+* :ref:`Tools`
+* :ref:`Education Technology` > :ref:`Jupyter and Reproducibility`
+* :ref:`Education Technology` > :ref:`Publishing`
 
 
 .. index:: Data Science Techniques
@@ -781,7 +992,7 @@ Field representations
 
 
 .. index:: Data Visualization Tools
-.. _data-visualization-tools:
+.. _data visualization tools:
 
 Data Visualization Tools
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -843,3 +1054,6 @@ https://github.com/josephmisiti/awesome-machine-learning
 
 See: :ref:`Tools`, :ref:`Semantic Web Tools <semantic web tools>`,
 :ref:`Art & Design <art-design>`
+
+
+.. _datasets:
