@@ -6,8 +6,13 @@ Data Science
 =============
 https://en.wikipedia.org/wiki/Data_science
 
+* :ref:`Linked Reproducibility`
 
-* https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks
+* :ref:`IPython Notebook` -> :ref:`Jupyter Notebook`
+ 
+  * https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks
+  * :ref:`Jupyter and Reproducibility`
+
 
 
 datasciencemasters.org
@@ -100,7 +105,10 @@ Ten Simple Rules
 
    * Or, "Generate all plots from [source-controlled] [transforms-of]
      raw data"
-   * :ref:`Data Visualzation Tools` (:ref:`Data Visualization`)
+   * ``./data``
+   * ``./tests/data``
+   * ``./nb/data`` (``./notebooks``)
+   * :ref:`Data Visualization`, :ref:`Data Visualization Tools`
 
 8. Generate Hierarchical Analysis Output,
    Allowing Layers of Increasing Detail to Be Inspected
@@ -966,7 +974,7 @@ See: :ref:`knowledge engineering`,
 
 
 .. index:: Data Visualization
-.. _data-visualization:
+.. _data visualization:
 
 Data Visualization
 ++++++++++++++++++++
