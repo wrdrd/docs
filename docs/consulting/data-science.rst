@@ -12,6 +12,7 @@ https://en.wikipedia.org/wiki/Data_science
  
   * https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks
   * :ref:`Jupyter and Reproducibility`
+  * ``conda install jupyter`` (:ref:`Conda` (:ref:`Anaconda`))
 
 
 
@@ -1013,7 +1014,7 @@ https://en.wikipedia.org/wiki/Matplotlib
 * http://tonysyu.github.com/mpltools/auto_examples/index.html#style-package
 * http://stanford.edu/~mwaskom/software/seaborn/index.html
 * http://mpld3.github.io/ (Matplotlib + D3.js)
-** ``conda install matplotlib`` (:ref:`Conda` (:ref:`Anaconda`))
+* ``conda install matplotlib`` (:ref:`Conda` (:ref:`Anaconda`))
 
 
 https://en.wikipedia.org/wiki/MayaVi
