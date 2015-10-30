@@ -3743,6 +3743,7 @@ RDFa
 | Standard: http://www.w3.org/TR/rdfa-core/
 | Standard: http://www.w3.org/TR/rdfa-lite/
 | Standard: http://www.w3.org/TR/html-rdfa/
+| Standard: http://www.w3.org/TR/rdfa-syntax/
 | Docs: http://www.w3.org/TR/rdfa-primer/
 
 RDFa (*RDF in attributes*) is a standard for storing

@@ -292,7 +292,7 @@ with :ref:`HTML5` and :ref:`Javascript`.
 
   https://www.chromeexperiments.com/webgl
 
-See: :ref:`data-visualization-tools`
+See: :ref:`data visualization tools`
 
 
 .. index:: Photography
@@ -1473,7 +1473,7 @@ JSPF
 ------
 | Homepage: http://xspf.org/jspf/
 
-JSPF (*:ref:`JSON` Shareable Playlist Format*) is an :ref:`open source`
+JSPF (:ref:`JSON` *Shareable Playlist Format*) is an :ref:`open source`
 media playlist format for files with :term:`URIs <uri>`, :term:`URNs <urn>`,
 and :term:`URLs <url>`.
 

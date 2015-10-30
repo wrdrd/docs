@@ -323,7 +323,7 @@ Cloud Application Layers
     * #Monitoring: Nagios, Shinken, Icinga
     * #Monitoring: Monitd, Collectd, RRD
     * #Logging: Syslog, LogStash, Heka (logtailers)
-    * #Logviz: Kibana, Grafana, Graphite, RRD (:ref:`data-visualization-tools`)
+    * #Logviz: Kibana, Grafana, Graphite, RRD (:ref:`data visualization tools`)
     * #PRF: http://www.brendangregg.com/linuxperf.html
     * Docs: https://www.opsschool.org/en/latest/
 

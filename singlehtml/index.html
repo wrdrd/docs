@@ -389,6 +389,12 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="index.html#document-consulting/data-science">Data Science</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#datasciencemasters-org">datasciencemasters.org</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#ten-simple-rules">Ten Simple Rules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="index.html#tensimplerules-for-reproducible-computation-research">#TenSimpleRules for Reproducible Computation Research</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#tensimplerules-for-creating-a-good-data-management-plan">#TenSimpleRules for Creating a Good Data Management Plan</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#data-information-knowledge-wisdom">Data, Information, Knowledge, &amp; Wisdom</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="index.html#optimization">Optimization</a></li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#smoothies">Smoothies</a></li>
@@ -438,9 +444,18 @@
 <li class="toctree-l4"><a class="reference internal" href="index.html#deep-learning">Deep Learning</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#datasets">Datasets</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="index.html#awesome-public-datasets">awesome-public-datasets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index.html#awesome">Awesome</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#tools">Tools</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#tools">Tools</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="index.html#etl">ETL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#workflow">Workflow</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#techniques">Techniques</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="index.html#automated-workflows">Automated Workflows</a></li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#linked-open-data">5 ★ Linked Open Data</a></li>
@@ -5397,12 +5412,188 @@ own email addresses (everything gets relayed)</li>
 <span id="document-consulting/data-science"></span><div class="section" id="data-science">
 <span id="index-0"></span><span id="id1"></span><h2>Data Science<a class="headerlink" href="#data-science" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Data_science">https://en.wikipedia.org/wiki/Data_science</a></p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks">https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks</a></li>
+</ul>
+<div class="section" id="datasciencemasters-org">
+<h3>datasciencemasters.org<a class="headerlink" href="#datasciencemasters-org" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">&#8220;The Open Source Data Science Masters&#8221;</div>
 <div class="line"><a class="reference external" href="http://datasciencemasters.org/">http://datasciencemasters.org/</a></div>
 <div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="ten-simple-rules">
+<h3>Ten Simple Rules<a class="headerlink" href="#ten-simple-rules" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Homepage: <a class="reference external" href="http://collections.plos.org/ten-simple-rules">http://collections.plos.org/ten-simple-rules</a></div>
+<div class="line">Hashtag: #TenSimpleRules</div>
+<div class="line">Twitter: <a class="reference external" href="https://twitter.com/hashtag/TenSimpleRules?src=hash">https://twitter.com/hashtag/TenSimpleRules?src=hash</a></div>
+</div>
+<div class="section" id="tensimplerules-for-reproducible-computation-research">
+<h4>#TenSimpleRules for Reproducible Computation Research<a class="headerlink" href="#tensimplerules-for-reproducible-computation-research" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
 <div class="line">&#8220;Ten Simple Rules for Reproducible Computational Research&#8221;</div>
 <div class="line"><a class="reference external" href="http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1003285">http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1003285</a></div>
+<div class="line">DOI: 10.1371/journal.pcbi.1003285 Featured in PLOS Collections</div>
+</div>
+<blockquote>
+<div><ol class="arabic simple">
+<li>For Every Result, Keep Track of How It Was Produced</li>
+<li>Avoid Manual Data Manipulation Steps</li>
+<li>Archive the Exact Versions of All External Programs Used</li>
+<li>Version Control All Custom Scripts</li>
+<li>Record All Intermediate Results, When Possible in Standardized Formats</li>
+<li>For Analyses That Include Randomness, Note Underlying Random Seeds</li>
+<li>Always Store Raw Data behind Plots</li>
+<li>Generate Hierarchical Analysis Output, Allowing Layers of Increasing Detail to Be Inspected</li>
+<li>Connect Textual Statements to Underlying Results</li>
+<li>Provide Public Access to Scripts, Runs, and Results</li>
+</ol>
+</div></blockquote>
+<ol class="arabic">
+<li><p class="first">For Every Result, Keep Track of How It Was Produced</p>
+<ul class="simple">
+<li><a class="reference internal" href="index.html#rdf"><span>RDF</span></a>, <a class="reference internal" href="index.html#json-ld"><span>JSON-LD</span></a> (e.g. <a class="reference internal" href="index.html#w3c"><span>W3C</span></a> <a class="reference internal" href="index.html#prov"><span>PROV</span></a>)</li>
+<li><span class="xref std std-ref">Workflow</span></li>
+<li><a class="reference internal" href="index.html#knowledge-engineering"><span>Knowledge Engineering</span></a> &gt; <a class="reference internal" href="index.html#linked-data"><span>Linked Data</span></a></li>
+</ul>
+</li>
+<li><p class="first">Avoid Manual Data Manipulation Steps</p>
+<ul class="simple">
+<li><span class="xref std std-ref">Workflow</span></li>
+<li><a class="reference internal" href="index.html#continuous-delivery"><span>Continuous Delivery</span></a><ul>
+<li><a class="reference internal" href="index.html#test-automation"><span>Test Automation</span></a> (e.g. <a class="reference internal" href="index.html#tdd"><span>Test Driven Development</span></a>)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p class="first">Archive the Exact Versions of All External Programs Used</p>
+<ul class="simple">
+<li><a class="reference internal" href="index.html#jupyter-and-reproducibility"><span>Jupyter and Reproducibility</span></a> (<code class="docutils literal"><span class="pre">%version_information</span></code>,
+<code class="docutils literal"><span class="pre">%watermark</span></code>) (should be &#8220;Reproducibility and Jupyter Notebook&#8221;)</li>
+</ul>
+</li>
+<li><p class="first">Version Control All Custom Scripts</p>
+<ul class="simple">
+<li><a class="reference internal" href="index.html#revision-control"><span>Revision Control</span></a> (e.g. <a class="reference internal" href="index.html#dvcs"><span>Distributed Version Control</span></a>)</li>
+</ul>
+</li>
+<li><p class="first">Record All Intermediate Results, When Possible in Standardized Formats</p>
+<ul class="simple">
+<li><a class="reference internal" href="index.html#linked-data"><span>Linked Data</span></a> (e.g. <a class="reference internal" href="#fivestardata2"><span>5 ★ Linked Open Data</span></a>)</li>
+</ul>
+</li>
+<li><p class="first">For Analyses That Include Randomness, Note Underlying Random Seeds</p>
+<p>Python random functions:</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s">&#39;PYTHONHASHSEED&#39;</span><span class="p">])</span>
+<span class="n">RANDOMSEED</span> <span class="o">=</span> <span class="mi">1</span>  <span class="c"># /dev/[x]random</span>
+
+<span class="kn">import</span> <span class="nn">random</span>
+<span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="n">RANDOMSEED</span><span class="p">)</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="n">RANDOMSEED</span><span class="p">)</span>    <span class="c"># Seed</span>
+<span class="k">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">get_state</span><span class="p">())</span>  <span class="c"># State</span>
+<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="c"># (rows, cols, [...])</span>
+<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="c"># &quot;standard normal&quot; distribution</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><a class="reference external" href="http://docs.scipy.org/doc/numpy/reference/routines.random.html#distributions">http://docs.scipy.org/doc/numpy/reference/routines.random.html#distributions</a></li>
+<li></li>
+</ul>
+<p>Python hash randomization and algorithmic determinism:</p>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">python</span> <span class="pre">-R</span></code></div>
+<div class="line"><a class="reference external" href="https://docs.python.org/3/using/cmdline.html#cmdoption-R">https://docs.python.org/3/using/cmdline.html#cmdoption-R</a></div>
+<div class="line"><code class="docutils literal"><span class="pre">PYTHONHASHSEED</span></code></div>
+<div class="line"><a class="reference external" href="https://docs.python.org/3/using/cmdline.html#envvar-PYTHONHASHSEED">https://docs.python.org/3/using/cmdline.html#envvar-PYTHONHASHSEED</a></div>
+</div>
+</li>
+<li><p class="first">Always Store Raw Data behind Plots</p>
+<ul class="simple">
+<li>Or, &#8220;Generate all plots from [source-controlled] [transforms-of]
+raw data&#8221;</li>
+<li><span class="xref std std-ref">Data Visualzation Tools</span> (<span class="xref std std-ref">Data Visualization</span>)</li>
+</ul>
+</li>
+<li><p class="first">Generate Hierarchical Analysis Output,
+Allowing Layers of Increasing Detail to Be Inspected</p>
+<ul>
+<li><p class="first"><a class="reference internal" href="index.html#schema-org"><span>Schema.org</span></a>: <a class="reference external" href="https://schema.org/docs/full.html">https://schema.org/docs/full.html</a></p>
+</li>
+<li><p class="first"><a class="reference internal" href="index.html#skos"><span>SKOS</span></a>:</p>
+<blockquote>
+<div><div class="line-block">
+<div class="line"><a class="reference external" href="http://www.w3.org/TR/skos-reference/">http://www.w3.org/TR/skos-reference/</a></div>
+<div class="line"><a class="reference external" href="http://www.w3.org/TR/skos-reference/skos.html">http://www.w3.org/TR/skos-reference/skos.html</a></div>
+</div>
+</div></blockquote>
+<p><code class="docutils literal"><span class="pre">skos:narrower</span></code>, <code class="docutils literal"><span class="pre">skos:narrowerTransitive</span></code>,
+<code class="docutils literal"><span class="pre">skos:broader</span></code> , <code class="docutils literal"><span class="pre">skos:broaderTransistive</span></code>,
+[...]</p>
+</li>
+<li><p class="first"><a class="reference internal" href="index.html#xkos"><span>XKOS</span></a>: &#8220;An SKOS extension for representing
+statistical classifications&#8221;</p>
+<p><a class="reference external" href="http://rdf-vocabulary.ddialliance.org/xkos.html">http://rdf-vocabulary.ddialliance.org/xkos.html</a></p>
+</li>
+<li><p class="first"><a class="reference internal" href="index.html#qb"><span>RDF Data Cubes</span></a>: &#8220;The RDF Data Cube Vocabulary&#8221;</p>
+<p><code class="docutils literal"><span class="pre">qb:DataSet</span></code>,
+<code class="docutils literal"><span class="pre">qb:Dimension</span></code>,
+<code class="docutils literal"><span class="pre">qb:ObservationGroup</span></code>,
+<code class="docutils literal"><span class="pre">qb:Slice</span></code>, [...]</p>
+<p><a class="reference external" href="http://www.w3.org/TR/vocab-data-cube/">http://www.w3.org/TR/vocab-data-cube/</a></p>
+</li>
+</ul>
+</li>
+<li><p class="first">Connect Textual Statements to Underlying Results</p>
+<ul class="simple">
+<li><a class="reference internal" href="index.html#linked-data"><span>Linked Data</span></a>: <a class="reference internal" href="index.html#uri"><span>URIs</span></a>, <a class="reference internal" href="index.html#url"><span>URLs</span></a>, <code class="docutils literal"><span class="pre">#uri-fragments</span></code></li>
+<li><a class="reference internal" href="index.html#turtle"><span>Turtle</span></a> / <a class="reference internal" href="index.html#trig"><span>TriG</span></a>: <code class="docutils literal"><span class="pre">&lt;&gt;</span></code> (this document, this named graph)</li>
+<li><a class="reference internal" href="index.html#restructuredtext"><span>ReStructuredText</span></a><ul>
+<li><a class="reference external" href="http://sphinx-doc.org/rest.html#footnotes">http://sphinx-doc.org/rest.html#footnotes</a> #citations #substitutions</li>
+<li><a class="reference external" href="https://github.com/yoloseem/awesome-sphinxdoc">https://github.com/yoloseem/awesome-sphinxdoc</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p class="first">Provide Public Access to Scripts, Runs, and Results</p>
+<ul class="simple">
+<li><a class="reference internal" href="index.html#jupyter-and-reproducibility"><span>Jupyter and Reproducibility</span></a></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Comparison_of_source_code_hosting_facilities">https://en.wikipedia.org/wiki/Comparison_of_source_code_hosting_facilities</a><ul>
+<li><span class="xref std std-ref">GitHub</span>: Git</li>
+<li><span class="xref std std-ref">BitBucket</span>: Hg, Git</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="tensimplerules-for-creating-a-good-data-management-plan">
+<h4>#TenSimpleRules for Creating a Good Data Management Plan<a class="headerlink" href="#tensimplerules-for-creating-a-good-data-management-plan" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">&#8220;Ten Simple Rules for Creating a Good Data Management Plan&#8221;</div>
+<div class="line"><a class="reference external" href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004525">http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004525</a></div>
+<div class="line">DOI: 10.1371/journal.pcbi.1004525</div>
+</div>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Determine the Research Sponsor Requirements</li>
+<li>Identify the Data to Be Collected</li>
+<li>Define How the Data Will Be Organized</li>
+<li>Explain How the Data Will Be Documented</li>
+<li>Describe How Data Quality Will Be Assured</li>
+<li>Present a Sound Data Storage and Preservation Strategy</li>
+<li>Define the Project’s Data Policies</li>
+<li>Describe How the Data Will Be Disseminated</li>
+<li>Assign Roles and Responsibilities</li>
+<li>Prepare a Realistic Budget</li>
+</ol>
+</div></blockquote>
+<p><a class="reference external" href="http://journals.plos.org/plosone/s/data-availability">http://journals.plos.org/plosone/s/data-availability</a></p>
+<p>&gt; PLOS journals require authors to make all data underlying the findings described in their manuscript fully available without restriction, with rare exception.</p>
+</div>
 </div>
 <div class="section" id="data-information-knowledge-wisdom">
 <h3>Data, Information, Knowledge, &amp; Wisdom<a class="headerlink" href="#data-information-knowledge-wisdom" title="Permalink to this headline">¶</a></h3>
@@ -5897,17 +6088,68 @@ and their collection methods with URIs.<ul>
 </ul>
 </div>
 </div>
+<div class="section" id="datasets">
+<h4>Datasets<a class="headerlink" href="#datasets" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="awesome-public-datasets">
+<h5>awesome-public-datasets<a class="headerlink" href="#awesome-public-datasets" title="Permalink to this headline">¶</a></h5>
+<p><a class="reference external" href="https://github.com/caesar0301/awesome-public-datasets">https://github.com/caesar0301/awesome-public-datasets</a></p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/caesar0301/awesome-public-datasets#search-engines">https://github.com/caesar0301/awesome-public-datasets#search-engines</a></li>
+</ul>
+</div>
+<div class="section" id="awesome">
+<span id="id26"></span><h5>Awesome<a class="headerlink" href="#awesome" title="Permalink to this headline">¶</a></h5>
+<p><a class="reference external" href="https://github.com/bayandin/awesome-awesomeness">https://github.com/bayandin/awesome-awesomeness</a></p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/onurakpolat/awesome-bigdata">https://github.com/onurakpolat/awesome-bigdata</a></li>
+<li><a class="reference external" href="https://github.com/josephmisiti/awesome-machine-learning">https://github.com/josephmisiti/awesome-machine-learning</a></li>
+<li><a class="reference external" href="https://github.com/caesar0301/awesome-public-datasets">https://github.com/caesar0301/awesome-public-datasets</a></li>
+</ul>
+</div>
+</div>
 </div>
 <div class="section" id="tools">
 <span id="data-science-tools"></span><span id="index-32"></span><h3>Tools<a class="headerlink" href="#tools" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/Scientific_workflow_system">https://en.wikipedia.org/wiki/Scientific_workflow_system</a></p>
-<p><a class="reference external" href="https://github.com/josephmisiti/awesome-machine-learning">https://github.com/josephmisiti/awesome-machine-learning</a></p>
-<p>See: <a class="reference internal" href="index.html#tools"><span>Tools</span></a>,
-<a class="reference internal" href="index.html#jupyter-and-reproducibility"><span>Jupyter and Reproducibility</span></a>,
-<a class="reference internal" href="index.html#publishing"><span>Publishing</span></a></p>
+<div class="section" id="etl">
+<span id="index-33"></span><h4>ETL<a class="headerlink" href="#etl" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Extract,_transform,_load">https://en.wikipedia.org/wiki/Extract,_transform,_load</a></div>
+</div>
+<ul class="simple">
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Extract,_transform,_load#Real-life_ETL_cycle">https://en.wikipedia.org/wiki/Extract,_transform,_load#Real-life_ETL_cycle</a></li>
+</ul>
+</div>
+<div class="section" id="workflow">
+<h4>Workflow<a class="headerlink" href="#workflow" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><a class="reference internal" href="#scientific-method"><span>Scientific Method</span></a></li>
+<li><a class="reference internal" href="index.html#project-management"><span>Project Management</span></a></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Checklist">https://en.wikipedia.org/wiki/Checklist</a></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Scientific_workflow_system">https://en.wikipedia.org/wiki/Scientific_workflow_system</a></li>
+<li><a class="reference internal" href="index.html#units"><span>Units</span></a> of measure</li>
+<li>I/O Transforms of <a class="reference internal" href="#information-theory"><span>information(/energy)</span></a></li>
+</ul>
+<p>&#8220;Data Provenance&#8221;, &#8220;Data Lineage&#8221;</p>
+<ul class="simple">
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Provenance#Data_provenance">https://en.wikipedia.org/wiki/Provenance#Data_provenance</a></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Data_lineage#Data_Provenance">https://en.wikipedia.org/wiki/Data_lineage#Data_Provenance</a></li>
+<li><a class="reference internal" href="index.html#prov"><span>W3C PROV</span></a> Provenance Ontology<ul>
+<li><a class="reference external" href="http://www.w3.org/TR/prov-overview/">http://www.w3.org/TR/prov-overview/</a></li>
+<li><a class="reference external" href="http://www.w3.org/TR/prov-o/">http://www.w3.org/TR/prov-o/</a></li>
+</ul>
+</li>
+</ul>
+<p>See:</p>
+<ul class="simple">
+<li><a class="reference internal" href="index.html#knowledge-engineering"><span>Knowledge Engineering</span></a></li>
+<li><a class="reference internal" href="index.html#tools"><span>Tools</span></a></li>
+<li><a class="reference internal" href="index.html#education-technology"><span>Education Technology</span></a> &gt; <a class="reference internal" href="index.html#jupyter-and-reproducibility"><span>Jupyter and Reproducibility</span></a></li>
+<li><a class="reference internal" href="index.html#education-technology"><span>Education Technology</span></a> &gt; <a class="reference internal" href="index.html#publishing"><span>Publishing</span></a></li>
+</ul>
+</div>
 </div>
 <div class="section" id="techniques">
-<span id="data-science-techniques"></span><span id="index-33"></span><h3>Techniques<a class="headerlink" href="#techniques" title="Permalink to this headline">¶</a></h3>
+<span id="data-science-techniques"></span><span id="index-34"></span><h3>Techniques<a class="headerlink" href="#techniques" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="automated-workflows">
 <h4>Automated Workflows<a class="headerlink" href="#automated-workflows" title="Permalink to this headline">¶</a></h4>
 <p>Standard, Automated Workflows</p>
@@ -5961,10 +6203,10 @@ to useful <a class="reference external" href="https://en.wikipedia.org/wiki/Data
 <a class="reference internal" href="index.html#semantic-web-standards"><span>Semantic Web Standards</span></a></p>
 </div>
 <div class="section" id="data-visualization">
-<span id="index-34"></span><span id="id26"></span><h4>Data Visualization<a class="headerlink" href="#data-visualization" title="Permalink to this headline">¶</a></h4>
+<span id="index-35"></span><span id="id27"></span><h4>Data Visualization<a class="headerlink" href="#data-visualization" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Data_visualization">https://en.wikipedia.org/wiki/Data_visualization</a></p>
 <div class="section" id="visualizing-data-science">
-<span id="index-35"></span><span id="id27"></span><h5>Visualizing Data Science<a class="headerlink" href="#visualizing-data-science" title="Permalink to this headline">¶</a></h5>
+<span id="index-36"></span><span id="id28"></span><h5>Visualizing Data Science<a class="headerlink" href="#visualizing-data-science" title="Permalink to this headline">¶</a></h5>
 <p>The Data Science Venn Diagram</p>
 <ul class="simple">
 <li><a class="reference external" href="http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram">http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram</a></li>
@@ -5978,7 +6220,7 @@ to useful <a class="reference external" href="https://en.wikipedia.org/wiki/Data
 </ul>
 </div>
 <div class="section" id="data-visualization-tools">
-<span id="index-36"></span><span id="id28"></span><h5>Data Visualization Tools<a class="headerlink" href="#data-visualization-tools" title="Permalink to this headline">¶</a></h5>
+<span id="index-37"></span><span id="id29"></span><h5>Data Visualization Tools<a class="headerlink" href="#data-visualization-tools" title="Permalink to this headline">¶</a></h5>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Matplotlib">https://en.wikipedia.org/wiki/Matplotlib</a></p>
 <ul class="simple">
 <li><a class="reference external" href="http://scipy-lectures.github.io/intro/matplotlib/matplotlib.html">http://scipy-lectures.github.io/intro/matplotlib/matplotlib.html</a></li>
@@ -6026,7 +6268,7 @@ to useful <a class="reference external" href="https://en.wikipedia.org/wiki/Data
 <p><a class="reference external" href="https://github.com/josephmisiti/awesome-machine-learning">https://github.com/josephmisiti/awesome-machine-learning</a></p>
 <p>See: <a class="reference internal" href="index.html#tools"><span>Tools</span></a>, <a class="reference internal" href="index.html#semantic-web-tools"><span>Semantic Web Tools</span></a>,
 <a class="reference internal" href="index.html#art-design"><span>Art &amp; Design</span></a></p>
-</div>
+<span class="target" id="id30"></span></div>
 </div>
 </div>
 </div>
@@ -10500,6 +10742,7 @@ part of the &#8220;Default Graph&#8221;.</p>
 <div class="line">Standard: <a class="reference external" href="http://www.w3.org/TR/rdfa-core/">http://www.w3.org/TR/rdfa-core/</a></div>
 <div class="line">Standard: <a class="reference external" href="http://www.w3.org/TR/rdfa-lite/">http://www.w3.org/TR/rdfa-lite/</a></div>
 <div class="line">Standard: <a class="reference external" href="http://www.w3.org/TR/html-rdfa/">http://www.w3.org/TR/html-rdfa/</a></div>
+<div class="line">Standard: <a class="reference external" href="http://www.w3.org/TR/rdfa-syntax/">http://www.w3.org/TR/rdfa-syntax/</a></div>
 <div class="line">Docs: <a class="reference external" href="http://www.w3.org/TR/rdfa-primer/">http://www.w3.org/TR/rdfa-primer/</a></div>
 </div>
 <p>RDFa (<em>RDF in attributes</em>) is a standard for storing
@@ -12928,7 +13171,7 @@ of resources from a given set of resource collections.</li>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="http://xspf.org/jspf/">http://xspf.org/jspf/</a></div>
 </div>
-<p>JSPF (<em>:ref:`JSON` Shareable Playlist Format</em>) is an <a class="reference internal" href="index.html#open-source"><span>Open Source</span></a>
+<p>JSPF (<a class="reference internal" href="index.html#json"><span>JSON</span></a> <em>Shareable Playlist Format</em>) is an <a class="reference internal" href="index.html#open-source"><span>Open Source</span></a>
 media playlist format for files with <a class="reference internal" href="index.html#term-uri"><span class="xref std std-term">URIs</span></a>, <a class="reference internal" href="index.html#term-urn"><span class="xref std std-term">URNs</span></a>,
 and <a class="reference internal" href="index.html#term-url"><span class="xref std std-term">URLs</span></a>.</p>
 <ul class="simple">
