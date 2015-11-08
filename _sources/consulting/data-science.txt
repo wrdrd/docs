@@ -29,8 +29,8 @@ Ten Simple Rules
 | Twitter: https://twitter.com/hashtag/TenSimpleRules?src=hash
 
 
-#TenSimpleRules for Reproducible Computation Research
-++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#TenSimpleRules for Reproducible Computational Research
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 | "Ten Simple Rules for Reproducible Computational Research"
 | http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1003285
