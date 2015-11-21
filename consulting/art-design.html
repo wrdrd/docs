@@ -1701,7 +1701,7 @@ other tools support commenting on points or ranges of timecodes
 <div class="section" id="openannotation">
 <span id="index-86"></span><span id="id79"></span><h4>OpenAnnotation<a class="headerlink" href="#openannotation" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference internal" href="knowledge-engineering#oa"><span>OpenAnnotation</span></a> is an <a class="reference internal" href="open-source#open-source"><span>Open Source</span></a>
-<a class="reference internal" href="knowledge-engineering#rdf"><span>RDF</span></a> standard for commenting
+<a class="reference internal" href="knowledge-engineering#rdf"><span>RDF</span></a> standard for threaded commenting
 on things with URLs and URIs.</p>
 <p>OpenAnnotation <em>annotations</em> (comments with metadata)
 can be stored on (<em>synced with</em>) a central server,
@@ -1716,9 +1716,19 @@ generally under a key, URN, or URI:</p>
 <li><a class="reference internal" href="../tools/index#hypothesis"><span>Hypothesis</span></a> is one implementation
 of an <a class="reference internal" href="knowledge-engineering#oa"><span>OpenAnnotation</span></a> RDF server API (<a class="reference internal" href="../tools/index#python"><span>Python</span></a>, Pyramid)</li>
 <li>There&#8217;s a <a class="reference internal" href="../tools/index#javascript"><span>JavaScript</span></a> sidebar bookmarklet for <a class="reference internal" href="../tools/index#hypothesis"><span>Hypothesis</span></a>
-threaded <a class="reference internal" href="knowledge-engineering#oa"><span>OA</span></a> comments.</li>
+<a class="reference internal" href="knowledge-engineering#oa"><span>OA</span></a> comments.</li>
 <li>There&#8217;s a <a class="reference internal" href="../tools/index#firefox"><span>Firefox</span></a> sidebar extension for <a class="reference internal" href="../tools/index#hypothesis"><span>Hypothesis</span></a>
-threaded <a class="reference internal" href="knowledge-engineering#oa"><span>OA</span></a> comments.</li>
+<a class="reference internal" href="knowledge-engineering#oa"><span>OA</span></a> comments.</li>
+<li>There&#8217;s a <a class="reference internal" href="../tools/index#javascript"><span>JavaScript</span></a> widget for Hypothesis <a class="reference internal" href="knowledge-engineering#oa"><span>OA</span></a> comments:</li>
+</ul>
+<div class="code html highlight-python"><div class="highlight"><pre>&lt;script async defer src=&quot;//hypothes.is/embed.js&quot;&gt;&lt;/script&gt;
+&lt;!-- show comments by default --&gt;
+&lt;script&gt;window.hypothesisConfig=function(){return{showHighlights:true};&lt;/script&gt;
+</pre></div>
+</div>
+<ul class="simple">
+<li>There&#8217;s a bookmarklet for Hypothesis <a class="reference internal" href="knowledge-engineering#oa"><span>OA</span></a> comments:
+<a class="reference external" href="javascript:(function(){window.hypothesisConfig=function(){return{showHighlights:true};};vard=document,s=d.createElement('script');s.setAttribute('src','https://hypothes.is/app/embed.js');d.body.appendChild(s)})();">Hypothesis Bookmarklet</a></li>
 </ul>
 <p><code class="docutils literal"><span class="pre">owl:sameAs</span></code>: <a class="reference internal" href="knowledge-engineering#oa"><span>Knowledge Engineering &gt; Web Standards &gt; OA</span></a></p>
 </div>
