@@ -1411,7 +1411,7 @@ other tools support commenting on points or ranges of timecodes
 OpenAnnotation
 ---------------------
 :ref:`OpenAnnotation <OA>` is an :ref:`open source`
-:ref:`RDF` standard for commenting
+:ref:`RDF` standard for threaded commenting
 on things with URLs and URIs.
 
 OpenAnnotation *annotations* (comments with metadata)
@@ -1428,9 +1428,20 @@ generally under a key, URN, or URI:
 * :ref:`Hypothesis` is one implementation
   of an :ref:`OpenAnnotation <OA>` RDF server API (:ref:`Python`, Pyramid)
 * There's a :ref:`Javascript` sidebar bookmarklet for :ref:`Hypothesis`
-  threaded :ref:`oa` comments.
+  :ref:`oa` comments.
 * There's a :ref:`Firefox` sidebar extension for :ref:`Hypothesis`
-  threaded :ref:`oa` comments.
+  :ref:`oa` comments.
+* There's a :ref:`Javascript` widget for Hypothesis :ref:`oa` comments:
+
+.. code:: html
+
+   <script async defer src="//hypothes.is/embed.js"></script>
+   <!-- show comments by default -->
+   <script>window.hypothesisConfig=function(){return{showHighlights:true};</script>
+
+* There's a bookmarklet for Hypothesis :ref:`oa` comments:
+  `Hypothesis Bookmarklet <javascript:(function(){window.hypothesisConfig=function(){return{showHighlights:true};};var d=document,s=d.createElement('script');s.setAttribute('src','https://hypothes.is/app/embed.js');d.body.appendChild(s)})();>`__
+
 
 ``owl:sameAs``: :ref:`Knowledge Engineering > Web Standards > OA <oa>`
 
