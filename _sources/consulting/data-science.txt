@@ -818,6 +818,7 @@ https://en.wikipedia.org/wiki/Deep_learning
 * https://en.wikipedia.org/wiki/Recurrent_neural_network
 * http://www.scholarpedia.org/article/Recurrent_neural_networks
 * https://en.wikipedia.org/wiki/Feedforward_neural_network
+* https://en.wikipedia.org/wiki/Convolutional_neural_network
 * https://en.wikipedia.org/wiki/Perceptron
 * https://en.wikipedia.org/wiki/Reservoir_computing
 * http://deeplearning.net/

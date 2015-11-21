@@ -3950,8 +3950,10 @@ Implementations:
 Schema.org
 +++++++++++
 | Wikipedia: https://en.wikipedia.org/wiki/Schema.org
-| Homepage: http://schema.org/
-| Source: https://github.com/rvguha/schemaorg
+| Homepage: http://schema.org
+| Download: https://schema.org/version/latest/
+| Source: https://github.com/schemaorg/schemaorg
+| Source: https://github.com/schemaorg/schemaorg/tree/sdo-phobos/data/releases/2.2
 
 Schema.org is a vocabulary for expressing structured data on the web.
 

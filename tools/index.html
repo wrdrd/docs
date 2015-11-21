@@ -3419,9 +3419,10 @@ one or more physical and virtual machines running various operating systems.</p>
 <div class="line">Docs: <a class="reference external" href="https://docs.saltstack.com/en/latest/glossary.html">https://docs.saltstack.com/en/latest/glossary.html</a></div>
 <div class="line">Pypi: <a class="reference external" href="https://pypi.python.org/pypi/salt">https://pypi.python.org/pypi/salt</a></div>
 <div class="line">Twitter: <a class="reference external" href="https://twitter.com/SaltStackInc">https://twitter.com/SaltStackInc</a></div>
-<div class="line">IRC: #salt</div>
-<div class="line">TcpPort: 4505</div>
-<div class="line">TcpPort: 4506</div>
+<div class="line">IRC: <code class="docutils literal"><span class="pre">#salt</span></code></div>
+<div class="line">TcpPort: 4505 (salt zmq)</div>
+<div class="line">TcpPort: 4506 (salt zmq)</div>
+<div class="line">TcpPort: 22 (salt-ssh)</div>
 </div>
 <p>Salt is a <a class="reference internal" href="#configuration-management"><span>Configuration Management</span></a> system
 written in <a class="reference internal" href="#python"><span>Python</span></a>
@@ -3429,15 +3430,54 @@ which runs Salt Formulas
 written in <a class="reference internal" href="#yaml"><span>YAML</span></a>, <a class="reference internal" href="#jinja2"><span>Jinja2</span></a>, <a class="reference internal" href="#python"><span>Python</span></a>
 for managing
 one or more physical and virtual machines running various operating systems.</p>
+<p>Salt runs modules defined by states over a transport.
+Salt transports include:</p>
+<ul class="simple">
+<li><span class="xref std std-ref">ZeroMQ</span> Transport (TCP, msgpack) (libzmq, (default)</li>
+<li>TCP Transport</li>
+<li>RAET: Reliable Asynchronous Event Transport (UDP, msgpack) (libsodium, libnacl)</li>
+<li><a class="reference internal" href="#term-salt-ssh"><span class="xref std std-term">salt-ssh</span></a> runs salt states over SSH</li>
+</ul>
 <dl class="glossary docutils">
 <dt id="term-salt-top-file">Salt Top File</dt>
-<dd>Root of a Salt Environment (<code class="docutils literal"><span class="pre">top.sls</span></code>)</dd>
+<dd><p class="first">A Salt <em>Top File</em> (<code class="docutils literal"><span class="pre">top.sls</span></code>) defines the
+Root of a Salt Environment.</p>
+<p>The Top File contains:</p>
+<ul class="last simple">
+<li>YAML + Jinja2 (SLS)</li>
+<li>References to <a class="reference internal" href="#term-salt-states"><span class="xref std std-term">Salt States</span></a> defined in <a class="reference internal" href="#term-salt-formulas"><span class="xref std std-term">Salt
+Formulas</span></a> (e.g. <code class="docutils literal"><span class="pre">-</span> <span class="pre">docker</span></code>)</li>
+<li>Jinja2 logic<ul>
+<li><code class="docutils literal"><span class="pre">{%</span> <span class="pre">if</span> <span class="pre">%}</span></code></li>
+<li><code class="docutils literal"><span class="pre">{%</span> <span class="pre">for</span> <span class="pre">x</span> <span class="pre">in</span> <span class="pre">iterable</span> <span class="pre">%}</span></code></li>
+<li>Conditional on <a class="reference internal" href="#term-salt-grains"><span class="xref std std-term">Salt Grains</span></a></li>
+</ul>
+</li>
+</ul>
+</dd>
 <dt id="term-salt-environment">Salt Environment</dt>
-<dd>Folder of Salt States with a top.sls top file.</dd>
+<dd><p class="first">A Salt Environment is a
+folder of <a class="reference internal" href="#term-salt-states"><span class="xref std std-term">Salt States</span></a> with a <code class="docutils literal"><span class="pre">top.sls</span></code> <span class="xref std std-ref">Salt Top File</span>.</p>
+<p class="last">A <a class="reference internal" href="#term-salt-master"><span class="xref std std-term">Salt Master</span></a> and/or a (standalone) <a class="reference internal" href="#term-salt-minion"><span class="xref std std-term">Salt Minion</span></a>
+maintain a Salt Environment.</p>
+</dd>
 <dt id="term-salt-bootstrap">Salt Bootstrap</dt>
-<dd>Installer for salt master and/or salt minion</dd>
+<dd><p class="first">The Salt Bootstrap script (<code class="docutils literal"><span class="pre">bootstrap-salt.sh</span></code>) is a shell script
+installer for a
+<a class="reference internal" href="#term-salt-master"><span class="xref std std-term">salt master</span></a> and/or <a class="reference internal" href="#term-salt-minion"><span class="xref std std-term">salt minion</span></a>.</p>
+<p>Salt Bootstrap can install from source (<code class="docutils literal"><span class="pre">git</span></code>),
+from (mostly) Python packages served from e.g. <a class="reference internal" href="#pypi"><span>PyPI</span></a>, with
+<a class="reference internal" href="#pip"><span>Pip</span></a>, OS Packages (e.g. <a class="reference internal" href="#deb"><span>DEB</span></a>, <a class="reference internal" href="#rpm"><span>RPM</span></a>).</p>
+<ul class="last simple">
+<li><code class="docutils literal"><span class="pre">bootstrap-salt.sh</span> <span class="pre">-h</span></code>:
+<a class="reference external" href="https://github.com/saltstack/salt-bootstrap/blob/stable/bootstrap-salt.sh">https://github.com/saltstack/salt-bootstrap/blob/stable/bootstrap-salt.sh</a></li>
+</ul>
+</dd>
 <dt id="term-salt-minion">Salt Minion</dt>
-<dd><p class="first">Daemon process which executes Salt States on the local machine.</p>
+<dd><p class="first">A Salt Minion is a
+daemon process which executes
+the <span class="xref std std-ref">Salt Modules</span> defined by
+<span class="xref std std-ref">Salt States</span> on the local machine.</p>
 <p>Can run as a background daemon.
 Can retrieve and execute states from a salt master</p>
 <p>Can execute local states in a standalone minion setup:</p>
