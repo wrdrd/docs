@@ -1299,11 +1299,14 @@ all called &#8220;fiber to the x (<em>FTTX</em>)&#8221;.</p>
 <dt id="term-soho">SOHO</dt>
 <dd>Small home office</dd>
 <dt id="term-modem">Modem</dt>
-<dd>Modulator/demodulator. Transforms between [<a class="reference internal" href="#ethernet"><span>Ethernet</span></a>, <a class="reference internal" href="#ethernet"><span>Ethernet</span></a>
-over <span class="xref std std-ref">HSB</span>] signals
+<dd>Modulator/demodulator.
+Transforms signals between
+<a class="reference internal" href="#ethernet"><span>Ethernet</span></a>,
+<a class="reference internal" href="#ethernet"><span>Ethernet</span></a> over <a class="reference internal" href="#usb"><span>USB</span></a>,
 Coaxial <em>Cable</em> (<em>Co-ax</em>),
-to e.g. <em>DSL</em> Twisted Copper Pair(s),
-<a class="reference internal" href="#mobile-broadband"><span>Mobile Broadband</span></a> (<em>cell-modem</em>),
+Copper <em>Phone</em>,
+<em>DSL</em> Twisted Copper Pair(s),
+High Frequency Radio <a class="reference internal" href="#mobile-broadband"><span>Mobile Broadband</span></a> (<em>cell-modem</em>),
 SDR (<em>Software Defined Radio</em>),
 <a class="reference internal" href="#fiber-to-the-x"><span>Fiber to the x</span></a>.</dd>
 <dt id="term-arp">ARP</dt>
@@ -1312,7 +1315,7 @@ for linking <a class="reference internal" href="web-development#term-ip"><span c
 <div class="line-block">
 <div class="line">Standard: <a class="reference external" href="https://tools.ietf.org/html/rfc826">https://tools.ietf.org/html/rfc826</a></div>
 </div>
-<div class="last highlight-python"><div class="highlight"><pre><span class="n">arp</span> <span class="o">-</span><span class="n">a</span>  <span class="c"># list arp entries [BSD style]</span>
+<div class="code bash last highlight-python"><div class="highlight"><pre><span class="n">arp</span> <span class="o">-</span><span class="n">a</span>  <span class="c"># list arp entries [BSD style]</span>
 <span class="n">arp</span> <span class="o">-</span><span class="n">e</span>  <span class="c"># list arp entries [Linux tabular format]</span>
 <span class="n">arp</span> <span class="o">-</span><span class="n">n</span>  <span class="c"># do not resolve DNS addresses (display IPs instead)</span>
 </pre></div>
@@ -1395,22 +1398,24 @@ for which <a class="reference internal" href="#term-network-interface"><span cla
 and/or link(s)/tunnel(s) to send packets destined
 for anywhere (default gateway) or a specific network subnet
 (identified by e.g. a /24 prefix or a 255.255.255.0 subnet mask).</p>
-<blockquote class="last">
-<div><p>netstat -rn # BSD, OSX, Linux
-route -n    # Linux # Flags=&#8221;G&#8221;
+<div class="code bash last highlight-python"><div class="highlight"><pre>netstat -rn # BSD, OSX, Linux
+route -n    # Linux # Flags=&quot;G&quot;
 route add gw 192.168.1.1 dev eth0
-ip r #route # Linux       # &#8220;default via&#8221;
+ip r #route # Linux       # &quot;default via&quot;
 ip r add default gw 10.2.2.253
-ip r add 10.2.3.0/24 via 10.2.2.253 dev eth0</p>
-<p># routes are usually managed by the OS.
+ip r add 10.2.3.0/24 via 10.2.2.253 dev eth0
+
+# routes are usually managed by the OS.
 # to reset them all and reboot all interfaces with downtime (!):
 #  /etc/init.d/networking restart   # SysV Ubuntu, Debian
-#  service network restart          # systemd {...}</p>
-<p># restart interface eth0
+#  service network restart          # systemd {...}
+
+# restart interface eth0
 #  #(and re-run dhcplient for an IP lease from DHCP
 #  #  (e.g. from a router that assigns local IPs ike 192.168.0.101))
-#  ifdown eth0; ifup eth0           # Linux [man ifdown ifup]</p>
-</div></blockquote>
+#  ifdown eth0; ifup eth0           # Linux [man ifdown ifup]
+</pre></div>
+</div>
 </dd>
 <dt id="term-hub">Hub</dt>
 <dd><p class="first">A network hub connects (or <em>bridges</em>) multiple network interfaces
@@ -1428,16 +1433,17 @@ regardless of the packet protocol destination field.
 <dd><p class="first">A network bridge is a <a class="reference internal" href="#term-hub"><span class="xref std std-term">hub</span></a>; often
 a software defined bridge to which <a class="reference internal" href="#term-network-interface"><span class="xref std std-term">network interfaces</span></a> can be <em>added</em>/<em>attached</em> and <em>deleted</em>/<em>removed</em>.</p>
 <p>In <a class="reference internal" href="../tools/index#linux"><span>Linux</span></a>, network bridges are configured with <code class="docutils literal"><span class="pre">brctl</span></code>:</p>
-<blockquote class="last">
-<div><p>brctl
-brctl show</p>
-<p># create a bridge which will last until reboot
+<div class="code bash last highlight-python"><div class="highlight"><pre>brctl
+brctl show
+
+# create a bridge which will last until reboot
 brctl addbr br0
 brctl addif br0 eth0
 btctl addif br0 eth1
 brctl show  br0
-brctl showmacs br0</p>
-</div></blockquote>
+brctl showmacs br0
+</pre></div>
+</div>
 </dd>
 <dt id="term-switch">Switch</dt>
 <dd><p class="first">A network switch routes packets to specific ports based upon
