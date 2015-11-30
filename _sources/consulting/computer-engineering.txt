@@ -483,6 +483,8 @@ USB bus speeds:
 * USB 3.1 -- 10000 Mbps (10 Gbps) (10 :ref:`gigabit`)
 * :ref:`USB Type-C` (USB 3.1; 10 GBps)
 
+.. _microusb:
+
 USB connectors:
 
 * USB Type A -- classic rectangular USB with pins on one side
@@ -832,20 +834,60 @@ IEEE 802.11 is a group of standards for wireless networking.
   implementing wireless local area network (WLAN)
   computer communication in the 2.4, 3.6, 5, and 60 GHz frequency bands.
 
+.. _wi-fi:  
+.. _wifi:
+
 802.11 "WiFi" standards:
 
-* 802.11b -- 2.4 GHz -- 11 Mbps
-* 802.11g -- 2.4 GHz -- 54 Mbps
-* 802.11a -- 5 GHz -- 54 Mbp/s
-* 802.11n -- 2.4 GHz, 5 GHz -- 600 Mbps (MIMO)
-* 802.11ac -- 2.4 GHz, 5 GHz -- 1300 Mbps (MIMO)
-* 802.11ad -- 60 GHz -- 7000 Mbps ("WiGig")
-* 802.11ax -- 2.4 GHZ, 5 GHZ -- ~4x 802.11ac [ Draft ]
-* 802.11ay -- 60 Ghz -- 100000 Mbps (100 Gbps) [ Draft ]
++---------------+-------------------+----------------------------------+
+| IEEE Standard | Frequency Band[s] | Bandwidth (bits per second)      |
++---------------+-------------------+----------------------------------+
+| 802.11b       | 2.4 GHz           | 11 Mbps                          |
++---------------+-------------------+----------------------------------+
+| 802.11g       | 2.4 GHz           | 54 Mbps                          |
++---------------+-------------------+----------------------------------+
+| 802.11a       | 5 GHz             | 54 Mbps                          |
++---------------+-------------------+----------------------------------+
+| 802.11n       | 2.4 GHz, 5 GHz    | 600 Mbps (MIMO)                  |
++---------------+-------------------+----------------------------------+
+| 802.11ac      | 2.4 GHz, 5 GHz    | 1300 Mbps (MIMO)                 |
++---------------+-------------------+----------------------------------+
+| 802.11ad      | 60 GHz            | 7000 Mbps ("WiGig")              |
++---------------+-------------------+----------------------------------+
+| 802.11ax      | 2.4 GHZ, 5 GHZ    | ~4x 802.11ac [ Draft ]           |
++---------------+-------------------+----------------------------------+
+| 802.11ay      | 60 GHz            | 100000 Mbps (100 Gbps) [ Draft ] |
++---------------+-------------------+----------------------------------+
+|               |                   |                                  |
++---------------+-------------------+----------------------------------+
 
-802.11 standards:
+MIMO
+    Multiple-Input Multiple-Output 802.11 devices
+    aggregate multi-link capacity
+    (and so operate with multi-band presence).
+
+Other IEEE 802.11 standards:
 
 * 802.11s -- wireless mesh networking
+*
+
+.. note:: Microwave ovens and cordless telephones, for example,
+   operate in the 2.4 GHz (and 900 MHz) bands; which may cause
+   interference in the already-crowded 2.4 GHz frequencies;
+   which is why 802.11a, 802.11n, 802.11ac all [also] support
+   the 5 GHz (:ref:`hz`) range.
+
+
+.. index:: Wi-Fi Direct
+.. _wi-fi direct:
+
+Wi-Fi Direct
+~~~~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Wi-Fi_Direct
+
+Wi-Fi Direct is an alternative to :ref:`Bluetooth` with
+relatively seamless
+wireless device pairing/configuration.
 
 
 .. index:: Mesh Wireless
@@ -992,7 +1034,7 @@ Network Glossary
 
   Modem
     Modulator/demodulator. Transforms between [:ref:`ethernet`, :ref:`ethernet`
-    over :ref:`USB`] signals
+    over :ref:`HSB`] signals
     Coaxial *Cable* (*Co-ax*),
     to e.g. *DSL* Twisted Copper Pair(s),
     :ref:`Mobile Broadband` (*cell-modem*),

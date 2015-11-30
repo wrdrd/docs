@@ -300,13 +300,14 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#wireless">Wireless</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="index.html#id58">802.11</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index.html#wi-fi-direct">Wi-Fi Direct</a></li>
 <li class="toctree-l4"><a class="reference internal" href="index.html#wireless-mesh-network">Wireless mesh network</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#mobile-broadband">Mobile Broadband</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="index.html#g">3G</a></li>
-<li class="toctree-l4"><a class="reference internal" href="index.html#id63">4G</a></li>
-<li class="toctree-l4"><a class="reference internal" href="index.html#id65">5G</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index.html#id64">4G</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index.html#id66">5G</a></li>
 <li class="toctree-l4"><a class="reference internal" href="index.html#cdma">CDMA</a></li>
 <li class="toctree-l4"><a class="reference internal" href="index.html#gsm">GSM</a></li>
 <li class="toctree-l4"><a class="reference internal" href="index.html#lte">LTE</a></li>
@@ -1047,6 +1048,33 @@
 <li class="toctree-l3"><a class="reference internal" href="index.html#dreamstudio">DreamStudio</a></li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#ubuntu-studio">Ubuntu Studio</a></li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#vlc">VLC</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#home-a-v">Home A/V</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="index.html#standards">Standards</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="index.html#google-cast-sdk">Google Cast SDK</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index.html#dlna">DLNA</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index.html#upnp">UPnP</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index.html#zeroconf">Zeroconf</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#foot-interfaces">10-foot interfaces</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="index.html#gaming-consoles">Gaming Consoles</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index.html#standalone-media-devices">Standalone Media Devices</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="index.html#android-tv">Android TV</a></li>
+<li class="toctree-l5"><a class="reference internal" href="index.html#chromecast">Chromecast</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="index.html#chromecast-audio">Chromecast Audio</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="index.html#apple-tv">Apple TV</a></li>
+<li class="toctree-l5"><a class="reference internal" href="index.html#kodi">Kodi</a></li>
+<li class="toctree-l5"><a class="reference internal" href="index.html#mythtv">MythTV</a></li>
+<li class="toctree-l5"><a class="reference internal" href="index.html#plex">Plex</a></li>
+<li class="toctree-l5"><a class="reference internal" href="index.html#roku">Roku</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -3863,7 +3891,7 @@ for device interaction and one-way and two-way power and data transfer.</p>
 <li>USB 3.1 &#8211; 10000 Mbps (10 Gbps) (10 <a class="reference internal" href="#gigabit"><span>Gigabit</span></a>)</li>
 <li><a class="reference internal" href="#usb-type-c"><span>USB Type-C</span></a> (USB 3.1; 10 GBps)</li>
 </ul>
-<p>USB connectors:</p>
+<p id="microusb">USB connectors:</p>
 <ul class="simple">
 <li>USB Type A &#8211; classic rectangular USB with pins on one side</li>
 <li>USB Type B &#8211; square USB (e.g. some printers)</li>
@@ -4135,24 +4163,87 @@ to the end of a <a class="reference internal" href="#cat-5"><span>CAT-5</span></
 and physical layer (PHY) specifications for
 implementing wireless local area network (WLAN)
 computer communication in the 2.4, 3.6, 5, and 60 GHz frequency bands.</div></blockquote>
-<p>802.11 &#8220;WiFi&#8221; standards:</p>
-<ul class="simple">
-<li>802.11b &#8211; 2.4 GHz &#8211; 11 Mbps</li>
-<li>802.11g &#8211; 2.4 GHz &#8211; 54 Mbps</li>
-<li>802.11a &#8211; 5 GHz &#8211; 54 Mbp/s</li>
-<li>802.11n &#8211; 2.4 GHz, 5 GHz &#8211; 600 Mbps (MIMO)</li>
-<li>802.11ac &#8211; 2.4 GHz, 5 GHz &#8211; 1300 Mbps (MIMO)</li>
-<li>802.11ad &#8211; 60 GHz &#8211; 7000 Mbps (&#8220;WiGig&#8221;)</li>
-<li>802.11ax &#8211; 2.4 GHZ, 5 GHZ &#8211; ~4x 802.11ac [ Draft ]</li>
-<li>802.11ay &#8211; 60 Ghz &#8211; 100000 Mbps (100 Gbps) [ Draft ]</li>
-</ul>
-<p>802.11 standards:</p>
+<p id="wifi"><span id="wi-fi"></span>802.11 &#8220;WiFi&#8221; standards:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="22%" />
+<col width="28%" />
+<col width="50%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>IEEE Standard</td>
+<td>Frequency Band[s]</td>
+<td>Bandwidth (bits per second)</td>
+</tr>
+<tr class="row-even"><td>802.11b</td>
+<td>2.4 GHz</td>
+<td>11 Mbps</td>
+</tr>
+<tr class="row-odd"><td>802.11g</td>
+<td>2.4 GHz</td>
+<td>54 Mbps</td>
+</tr>
+<tr class="row-even"><td>802.11a</td>
+<td>5 GHz</td>
+<td>54 Mbps</td>
+</tr>
+<tr class="row-odd"><td>802.11n</td>
+<td>2.4 GHz, 5 GHz</td>
+<td>600 Mbps (MIMO)</td>
+</tr>
+<tr class="row-even"><td>802.11ac</td>
+<td>2.4 GHz, 5 GHz</td>
+<td>1300 Mbps (MIMO)</td>
+</tr>
+<tr class="row-odd"><td>802.11ad</td>
+<td>60 GHz</td>
+<td>7000 Mbps (&#8220;WiGig&#8221;)</td>
+</tr>
+<tr class="row-even"><td>802.11ax</td>
+<td>2.4 GHZ, 5 GHZ</td>
+<td>~4x 802.11ac [ Draft ]</td>
+</tr>
+<tr class="row-odd"><td>802.11ay</td>
+<td>60 GHz</td>
+<td>100000 Mbps (100 Gbps) [ Draft ]</td>
+</tr>
+<tr class="row-even"><td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<dl class="docutils">
+<dt>MIMO</dt>
+<dd>Multiple-Input Multiple-Output 802.11 devices
+aggregate multi-link capacity
+(and so operate with multi-band presence).</dd>
+</dl>
+<p>Other IEEE 802.11 standards:</p>
 <ul class="simple">
 <li>802.11s &#8211; wireless mesh networking</li>
+<li></li>
 </ul>
-<span class="target" id="index-60"></span></div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Microwave ovens and cordless telephones, for example,
+operate in the 2.4 GHz (and 900 MHz) bands; which may cause
+interference in the already-crowded 2.4 GHz frequencies;
+which is why 802.11a, 802.11n, 802.11ac all [also] support
+the 5 GHz (<a class="reference internal" href="index.html#hz"><span>hertz</span></a>) range.</p>
+</div>
+</div>
+<div class="section" id="wi-fi-direct">
+<span id="index-60"></span><span id="id60"></span><h5>Wi-Fi Direct<a class="headerlink" href="#wi-fi-direct" title="Permalink to this headline">¶</a></h5>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Wi-Fi_Direct">https://en.wikipedia.org/wiki/Wi-Fi_Direct</a></div>
+</div>
+<p>Wi-Fi Direct is an alternative to <span class="xref std std-ref">Bluetooth</span> with
+relatively seamless
+wireless device pairing/configuration.</p>
+<span class="target" id="index-61"></span></div>
 <div class="section" id="wireless-mesh-network">
-<span id="index-61"></span><span id="id60"></span><h5>Wireless mesh network<a class="headerlink" href="#wireless-mesh-network" title="Permalink to this headline">¶</a></h5>
+<span id="index-62"></span><span id="id61"></span><h5>Wireless mesh network<a class="headerlink" href="#wireless-mesh-network" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/Wireless_mesh_network">https://en.wikipedia.org/wiki/Wireless_mesh_network</a></div>
 </div>
@@ -4180,33 +4271,33 @@ mesh networking with standard 802.11b/g wireless cards.</p>
 </div>
 </div>
 <div class="section" id="mobile-broadband">
-<span id="index-62"></span><span id="id61"></span><h4>Mobile Broadband<a class="headerlink" href="#mobile-broadband" title="Permalink to this headline">¶</a></h4>
+<span id="index-63"></span><span id="id62"></span><h4>Mobile Broadband<a class="headerlink" href="#mobile-broadband" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/Mobile_broadband">https://en.wikipedia.org/wiki/Mobile_broadband</a></div>
 </div>
 <div class="section" id="g">
-<span id="index-63"></span><span id="id62"></span><h5>3G<a class="headerlink" href="#g" title="Permalink to this headline">¶</a></h5>
+<span id="index-64"></span><span id="id63"></span><h5>3G<a class="headerlink" href="#g" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/3G">https://en.wikipedia.org/wiki/3G</a></div>
 </div>
 </div>
-<div class="section" id="id63">
-<span id="index-64"></span><span id="id64"></span><h5>4G<a class="headerlink" href="#id63" title="Permalink to this headline">¶</a></h5>
+<div class="section" id="id64">
+<span id="index-65"></span><span id="id65"></span><h5>4G<a class="headerlink" href="#id64" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/4G">https://en.wikipedia.org/wiki/4G</a></div>
 </div>
 <ul class="simple">
-<li><a class="reference internal" href="#lte"><span>LTE</span></a> is a <a class="reference internal" href="#id63"><span>4G</span></a> wireless standard.</li>
+<li><a class="reference internal" href="#lte"><span>LTE</span></a> is a <a class="reference internal" href="#id64"><span>4G</span></a> wireless standard.</li>
 </ul>
 </div>
-<div class="section" id="id65">
-<span id="index-65"></span><span id="id66"></span><h5>5G<a class="headerlink" href="#id65" title="Permalink to this headline">¶</a></h5>
+<div class="section" id="id66">
+<span id="index-66"></span><span id="id67"></span><h5>5G<a class="headerlink" href="#id66" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/5G">https://en.wikipedia.org/wiki/5G</a></div>
 </div>
 </div>
 <div class="section" id="cdma">
-<span id="index-66"></span><span id="id67"></span><h5>CDMA<a class="headerlink" href="#cdma" title="Permalink to this headline">¶</a></h5>
+<span id="index-67"></span><span id="id68"></span><h5>CDMA<a class="headerlink" href="#cdma" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Code_division_multiple_access">https://en.wikipedia.org/wiki/Code_division_multiple_access</a></div>
 </div>
@@ -4215,13 +4306,13 @@ mesh networking with standard 802.11b/g wireless cards.</p>
 </ul>
 </div>
 <div class="section" id="gsm">
-<span id="index-67"></span><span id="id68"></span><h5>GSM<a class="headerlink" href="#gsm" title="Permalink to this headline">¶</a></h5>
+<span id="index-68"></span><span id="id69"></span><h5>GSM<a class="headerlink" href="#gsm" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/GSM">https://en.wikipedia.org/wiki/GSM</a></div>
 </div>
 </div>
 <div class="section" id="lte">
-<span id="index-68"></span><span id="id69"></span><h5>LTE<a class="headerlink" href="#lte" title="Permalink to this headline">¶</a></h5>
+<span id="index-69"></span><span id="id70"></span><h5>LTE<a class="headerlink" href="#lte" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/LTE_(telecommunication">https://en.wikipedia.org/wiki/LTE_(telecommunication</a>)</div>
 </div>
@@ -4231,14 +4322,14 @@ mesh networking with standard 802.11b/g wireless cards.</p>
 </div>
 </div>
 <div class="section" id="fiber">
-<span id="index-69"></span><span id="id70"></span><h4>Fiber<a class="headerlink" href="#fiber" title="Permalink to this headline">¶</a></h4>
+<span id="index-70"></span><span id="id71"></span><h4>Fiber<a class="headerlink" href="#fiber" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/Fiber-optic_communication">https://en.wikipedia.org/wiki/Fiber-optic_communication</a></div>
 <div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/Optical_fiber">https://en.wikipedia.org/wiki/Optical_fiber</a></div>
 </div>
 <p>Optical fiber can carry photons near the speed of light.</p>
 <div class="section" id="fiber-to-the-x">
-<span id="index-70"></span><span id="id71"></span><h5>Fiber to the x<a class="headerlink" href="#fiber-to-the-x" title="Permalink to this headline">¶</a></h5>
+<span id="index-71"></span><span id="id72"></span><h5>Fiber to the x<a class="headerlink" href="#fiber-to-the-x" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Fiber_to_the_x">https://en.wikipedia.org/wiki/Fiber_to_the_x</a></div>
 </div>
@@ -4256,7 +4347,7 @@ all called &#8220;fiber to the x (<em>FTTX</em>)&#8221;.</p>
 </ul>
 </div>
 <div class="section" id="fibre-channel">
-<span id="index-71"></span><span id="id72"></span><h5>Fibre Channel<a class="headerlink" href="#fibre-channel" title="Permalink to this headline">¶</a></h5>
+<span id="index-72"></span><span id="id73"></span><h5>Fibre Channel<a class="headerlink" href="#fibre-channel" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Fibre_Channel">https://en.wikipedia.org/wiki/Fibre_Channel</a></div>
 </div>
@@ -4271,7 +4362,7 @@ all called &#8220;fiber to the x (<em>FTTX</em>)&#8221;.</p>
 <dd>Small home office</dd>
 <dt id="term-modem">Modem</dt>
 <dd>Modulator/demodulator. Transforms between [<a class="reference internal" href="#ethernet"><span>Ethernet</span></a>, <a class="reference internal" href="#ethernet"><span>Ethernet</span></a>
-over <a class="reference internal" href="#usb"><span>USB</span></a>] signals
+over <span class="xref std std-ref">HSB</span>] signals
 Coaxial <em>Cable</em> (<em>Co-ax</em>),
 to e.g. <em>DSL</em> Twisted Copper Pair(s),
 <a class="reference internal" href="#mobile-broadband"><span>Mobile Broadband</span></a> (<em>cell-modem</em>),
@@ -13016,6 +13107,7 @@ which enables integration and reuse with a number of media players.</p>
 <p>MilkDrop is a visualization tool which runs <em>MilkDrop presets</em></p>
 <ul class="simple">
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/MilkDrop">https://en.wikipedia.org/wiki/MilkDrop</a></li>
+<li><a class="reference internal" href="#kodi"><span>Kodi</span></a> supports MilkDrop visualizations.</li>
 </ul>
 <div class="section" id="milkdrop-presets">
 <span id="index-77"></span><span id="id71"></span><h5>MilkDrop Presets<a class="headerlink" href="#milkdrop-presets" title="Permalink to this headline">¶</a></h5>
@@ -13629,6 +13721,268 @@ all Free and <a class="reference internal" href="index.html#open-source"><span>O
 <div class="line">Docs: <a class="reference external" href="https://wiki.videolan.org/Documentation:Streaming_HowTo">https://wiki.videolan.org/Documentation:Streaming_HowTo</a></div>
 <div class="line">Docs: <a class="reference external" href="https://wiki.videolan.org/Documentation:Streaming_HowTo_New/">https://wiki.videolan.org/Documentation:Streaming_HowTo_New/</a></div>
 <div class="line">Docs: <a class="reference external" href="https://wiki.videolan.org/Documentation:Modules/">https://wiki.videolan.org/Documentation:Modules/</a></div>
+</div>
+</div>
+</div>
+<div class="section" id="home-a-v">
+<span id="home-av"></span><span id="index-109"></span><h3>Home A/V<a class="headerlink" href="#home-a-v" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="standards">
+<h4>Standards<a class="headerlink" href="#standards" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="google-cast-sdk">
+<h5>Google Cast SDK<a class="headerlink" href="#google-cast-sdk" title="Permalink to this headline">¶</a></h5>
+<div class="line-block">
+<div class="line">Homepage: <a class="reference external" href="https://en.wikipedia.org/wiki/Chromecast">https://en.wikipedia.org/wiki/Chromecast</a></div>
+<div class="line">Source: <a class="reference external" href="https://github.com/googlecast">https://github.com/googlecast</a></div>
+<div class="line">Docs: <a class="reference external" href="https://en.wikipedia.org/wiki/List_of_apps_with_Google_Cast_support">https://en.wikipedia.org/wiki/List_of_apps_with_Google_Cast_support</a></div>
+<div class="line">Docs: <a class="reference external" href="https://developers.google.com/cast/">https://developers.google.com/cast/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://developers.google.com/cast/docs/developers">https://developers.google.com/cast/docs/developers</a></div>
+<div class="line">Docs: <a class="reference external" href="https://developers.google.com/cast/docs/reference/">https://developers.google.com/cast/docs/reference/</a></div>
+</div>
+<p>Google Cast SDK powers <a class="reference internal" href="#chromecast"><span>Chromecast</span></a> devices.</p>
+<ul class="simple">
+<li>A Cast sender application pushes a URI to a Cast receiver application.</li>
+<li>The Cast receiver application then retrieves the resource/app
+identified by the URI; saving the battery of the Cast sender
+application.<ul>
+<li>Bluetooth Audio (A2DP, ) and Chromecast <strong>full device audio/video cast</strong>
+require audio [recompression and] transmission,
+which drains a mobile device battery.</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="dlna">
+<h5>DLNA<a class="headerlink" href="#dlna" title="Permalink to this headline">¶</a></h5>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Digital_Living_Network_Alliance">https://en.wikipedia.org/wiki/Digital_Living_Network_Alliance</a></div>
+<div class="line">Homepage: <a class="reference external" href="http://www.dlna.org/">http://www.dlna.org/</a></div>
+</div>
+<dl class="docutils">
+<dt>DLNA: Digital Living Network Alliance</dt>
+<dd>DLNA is a standards group and a standard for networked devices;
+particularly audio/video media devices like
+standalone media players
+and networked stereos.</dd>
+</dl>
+</div>
+<div class="section" id="upnp">
+<span id="index-110"></span><span id="id99"></span><h5>UPnP<a class="headerlink" href="#upnp" title="Permalink to this headline">¶</a></h5>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Universal_Plug_and_Play">https://en.wikipedia.org/wiki/Universal_Plug_and_Play</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://en.wikipedia.org/wiki/Universal_Plug_and_Play">https://en.wikipedia.org/wiki/Universal_Plug_and_Play</a></div>
+</div>
+<p>Universal Plug and Play is a group of standards for
+networked devices built on <a class="reference internal" href="index.html#http"><span>HTTP</span></a>, <a class="reference internal" href="index.html#xml"><span>XML</span></a>, and <span class="xref std std-ref">SOAP</span>
+web services.</p>
+<ul class="simple">
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Comparison_of_UPnP_AV_media_servers">https://en.wikipedia.org/wiki/Comparison_of_UPnP_AV_media_servers</a></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/List_of_UPnP_AV_media_servers_and_clients">https://en.wikipedia.org/wiki/List_of_UPnP_AV_media_servers_and_clients</a></li>
+</ul>
+</div>
+<div class="section" id="zeroconf">
+<span id="index-111"></span><span id="id100"></span><h5>Zeroconf<a class="headerlink" href="#zeroconf" title="Permalink to this headline">¶</a></h5>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Zeroconf">https://en.wikipedia.org/wiki/Zeroconf</a></div>
+</div>
+<p>Zeroconf/Bonjour are standards for zero-configuration networking;
+wherein networked devices assume local IP addresses
+if necessary, and broadcast their capabilities
+over multicast DNS.</p>
+<ul class="simple">
+<li>Devices must be on the same LAN/WLAN segment (!?)<ul>
+<li>[ ] Otherwise forwarding / ebtables ?<ul>
+<li>[ ] <span class="xref std std-ref">pulseaudio-dlna</span></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="foot-interfaces">
+<span id="index-112"></span><span id="id101"></span><h4>10-foot interfaces<a class="headerlink" href="#foot-interfaces" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="gaming-consoles">
+<span id="index-113"></span><span id="id102"></span><h5>Gaming Consoles<a class="headerlink" href="#gaming-consoles" title="Permalink to this headline">¶</a></h5>
+<p>[...]</p>
+<ul class="simple">
+<li><a class="reference internal" href="#steam"><span>Steam</span></a> Machine (<a class="reference internal" href="index.html#steamos"><span>SteamOS</span></a>)</li>
+<li>NVIDIA Shield (<span class="xref std std-ref">AndroidTV</span>)</li>
+<li>XBox<ul>
+<li><a class="reference internal" href="#kodi"><span>XBMC</span></a> (now <a class="reference internal" href="#kodi"><span>Kodi</span></a>) started out as a
+an application for modded XBoxen way back in 2002.</li>
+</ul>
+</li>
+<li>XBox 360 (joysticks tied to visualizations)</li>
+<li>XBox One</li>
+<li>PS3</li>
+<li>PS4</li>
+</ul>
+</div>
+<div class="section" id="standalone-media-devices">
+<span id="index-114"></span><span id="id103"></span><h5>Standalone Media Devices<a class="headerlink" href="#standalone-media-devices" title="Permalink to this headline">¶</a></h5>
+<p>Pros:</p>
+<ul class="simple">
+<li>Upgradeable</li>
+<li>Interchangeable</li>
+</ul>
+<p>Cons:</p>
+<ul class="simple">
+<li>Extra HDMI, Power</li>
+<li>Remote Control Integration</li>
+</ul>
+<div class="section" id="android-tv">
+<span id="index-115"></span><span id="id104"></span><h6>Android TV<a class="headerlink" href="#android-tv" title="Permalink to this headline">¶</a></h6>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Android_TV">https://en.wikipedia.org/wiki/Android_TV</a></div>
+</div>
+<ul class="simple">
+<li>Android TV is originally based on <a class="reference internal" href="index.html#android"><span>Android</span></a> 5.0 (&#8220;Lollipop&#8221;)</li>
+<li>Android TV supports the <a class="reference internal" href="#chromecast"><span>Chromecast</span></a> API</li>
+<li>Android TV supersedes Google TV (which was also Android-based)</li>
+</ul>
+</div>
+<div class="section" id="chromecast">
+<span id="index-116"></span><span id="id105"></span><h6>Chromecast<a class="headerlink" href="#chromecast" title="Permalink to this headline">¶</a></h6>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Chromecast">https://en.wikipedia.org/wiki/Chromecast</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://www.google.com/chromecast/">https://www.google.com/chromecast/</a></div>
+</div>
+<ul class="simple">
+<li>1: 2013, 2: 2015</li>
+<li>In: Power: <span class="xref std std-ref">MicroUSB</span></li>
+<li>Configure WiFI w/ Android/iOS device and <a class="reference internal" href="#chromecast"><span>Chromecast</span></a> app</li>
+<li>Cast content from <a class="reference internal" href="index.html#android"><span>Android</span></a>, computer (<a class="reference internal" href="index.html#chrome"><span>Chrome</span></a>,
+<a class="reference internal" href="index.html#chromeos"><span>ChromeOS</span></a>), <a class="reference internal" href="index.html#ios"><span>iOS</span></a> to Chromecast</li>
+<li>Out: <a class="reference internal" href="index.html#hdmi"><span>HDMI</span></a></li>
+</ul>
+<div class="section" id="chromecast-audio">
+<span id="index-117"></span><span id="id106"></span><h7>Chromecast Audio<a class="headerlink" href="#chromecast-audio" title="Permalink to this headline">¶</a></h7>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Chromecast">https://en.wikipedia.org/wiki/Chromecast</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://www.google.com/chromecast/speakers/">https://www.google.com/chromecast/speakers/</a></div>
+</div>
+<p>Chromecast Audio turns just about any stereo with an AUX input
+into a web-connected audio player.</p>
+<ul class="simple">
+<li>In: Power: <span class="xref std std-ref">MicroUSB</span></li>
+<li>Configure WiFI w/ Android/iOS device and <a class="reference internal" href="#chromecast"><span>Chromecast</span></a> app</li>
+<li>Cast content from <a class="reference internal" href="index.html#android"><span>Android</span></a>, computer (<a class="reference internal" href="index.html#chrome"><span>Chrome</span></a>,
+<a class="reference internal" href="index.html#chromeos"><span>ChromeOS</span></a>), <a class="reference internal" href="index.html#ios"><span>iOS</span></a> to Chromecast Audio</li>
+<li>Out: 3.5mm Headphone Jack</li>
+<li>Out: Optical Audio Out</li>
+</ul>
+</div>
+</div>
+<div class="section" id="apple-tv">
+<span id="index-118"></span><span id="id107"></span><h6>Apple TV<a class="headerlink" href="#apple-tv" title="Permalink to this headline">¶</a></h6>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Apple_TV">https://en.wikipedia.org/wiki/Apple_TV</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://www.apple.com/tv/">https://www.apple.com/tv/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://www.apple.com/tv/compare/">https://www.apple.com/tv/compare/</a></div>
+</div>
+<ul class="simple">
+<li>1: 2007, 2: 2010, 3: 2012/2013, 4: 2015</li>
+<li>Extremely simple remote</li>
+<li>Supports Bluetooth Keyboards, <a class="reference internal" href="index.html#ios"><span>iOS</span></a> devices</li>
+</ul>
+</div>
+<div class="section" id="kodi">
+<span id="index-119"></span><span id="id108"></span><h6>Kodi<a class="headerlink" href="#kodi" title="Permalink to this headline">¶</a></h6>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Kodi_(software)">https://en.wikipedia.org/wiki/Kodi_(software)</a></div>
+</div>
+<p>Kodi (formerly XBMC) is a &#8220;10 foot&#8221; media playback application
+designed for use with a remote.</p>
+<p>Kodi addons are written in <a class="reference internal" href="index.html#python"><span>Python</span></a> and <a class="reference internal" href="index.html#xml"><span>XML</span></a>.</p>
+<ul class="simple">
+<li>Kodi runs on <a class="reference internal" href="index.html#windows"><span>Windows</span></a></li>
+<li>Kodi runs on <a class="reference internal" href="index.html#osx"><span>OS X</span></a></li>
+<li>Kodi runs on <a class="reference internal" href="index.html#linux"><span>Linux</span></a></li>
+<li>Kodi runs on <a class="reference internal" href="index.html#android"><span>Android</span></a></li>
+<li>Kodi runs on <a class="reference internal" href="index.html#ios"><span>iOS</span></a></li>
+<li>Kodi runs on <a class="reference internal" href="#apple-tv"><span>Apple TV</span></a></li>
+<li>Kodi runs on <span class="xref std std-ref">FreeBSD</span></li>
+<li>Kodi runs on <a class="reference internal" href="index.html#arm"><span>ARM</span></a>, MIPS, <span class="xref std std-ref">PowerPC</span>, <a class="reference internal" href="index.html#x86"><span>x86</span></a>,
+<span class="xref std std-ref">x86-64</span></li>
+<li>Kodi supports <a class="reference internal" href="#milkdrop"><span>MilkDrop</span></a> audio visualizations.</li>
+</ul>
+</div>
+<div class="section" id="mythtv">
+<span id="index-120"></span><span id="id109"></span><h6>MythTV<a class="headerlink" href="#mythtv" title="Permalink to this headline">¶</a></h6>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/MythTV">https://en.wikipedia.org/wiki/MythTV</a></div>
+<div class="line"><br /></div>
+</div>
+<p>MythTV (<em>2002</em>) is a networked <span class="xref std std-ref">DVR</span> server
+and protocol standard
+with a number of client implementations.</p>
+<ul class="simple">
+<li>MythTV supports [remote] tuner cards</li>
+<li>MythTV supports TV listings</li>
+<li>MythTV supports IR remotes, timeshifting, <a class="reference internal" href="index.html#linux"><span>Linux</span></a>, <a class="reference internal" href="index.html#windows"><span>Windows</span></a></li>
+</ul>
+</div>
+<div class="section" id="plex">
+<span id="index-121"></span><span id="id110"></span><h6>Plex<a class="headerlink" href="#plex" title="Permalink to this headline">¶</a></h6>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Plex_(software)">https://en.wikipedia.org/wiki/Plex_(software)</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://plex.tv/">https://plex.tv/</a></div>
+<div class="line">Download: <a class="reference external" href="https://plex.tv/downloads">https://plex.tv/downloads</a></div>
+</div>
+<dl class="docutils">
+<dt>Plex Media Server</dt>
+<dd>Plex Media Server is a free app which runs on a computer or a <span class="xref std std-ref">NAS</span>
+device and serves media to Plex client apps.</dd>
+<dt>Plex Home Theater</dt>
+<dd>Plex Home Theater is a free <a class="reference internal" href="#foot-interfaces"><span>10-foot interface</span></a>
+client app for a computer attached to a TV (e.g. with <a class="reference internal" href="index.html#vga"><span>VGA</span></a>,
+<a class="reference internal" href="index.html#dvi"><span>DVI</span></a>, or <a class="reference internal" href="index.html#hdmi"><span>HDMI</span></a>).</dd>
+<dt>Plex Pass</dt>
+<dd><p class="first">Plex Pass is an optional premium subscription service upgrade.</p>
+<p class="last"><a class="reference external" href="https://plex.tv/subscription/about">https://plex.tv/subscription/about</a></p>
+</dd>
+</dl>
+<ul class="simple">
+<li>Plex is/was originally a fork of <a class="reference internal" href="#kodi"><span>Kodi</span></a></li>
+<li>Plex works with <a class="reference internal" href="index.html#windows"><span>Windows</span></a></li>
+<li>Plex works with <span class="xref std std-ref">Windows Phone</span></li>
+<li>Plex works with <a class="reference internal" href="index.html#osx"><span>OS X</span></a></li>
+<li>Plex works with <a class="reference internal" href="index.html#linux"><span>Linux</span></a></li>
+<li>Plex works with <a class="reference internal" href="index.html#android"><span>Android</span></a></li>
+<li>Plex works with <a class="reference internal" href="#chromecast"><span>Chromecast</span></a></li>
+<li>Plex works with <span class="xref std std-ref">FreeBSD</span></li>
+<li>Plex works with <a class="reference internal" href="index.html#ios"><span>iOS</span></a></li>
+<li>Plex works with <a class="reference internal" href="#apple-tv"><span>Apple TV</span></a></li>
+<li>Plex works with <span class="xref std std-ref">Xbox 360</span></li>
+<li>Plex works with <span class="xref std std-ref">Xbox One</span></li>
+<li>Plex works with <span class="xref std std-ref">PS3</span></li>
+<li>Plex works with <span class="xref std std-ref">PS4</span></li>
+<li>Plex works with <a class="reference internal" href="#roku"><span>Roku</span></a></li>
+</ul>
+</div>
+<div class="section" id="roku">
+<span id="index-122"></span><span id="id111"></span><h6>Roku<a class="headerlink" href="#roku" title="Permalink to this headline">¶</a></h6>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Roku">https://en.wikipedia.org/wiki/Roku</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://www.roku.com/">https://www.roku.com/</a></div>
+<div class="line">Store: <a class="reference external" href="https://channelstore.roku.com/">https://channelstore.roku.com/</a></div>
+</div>
+<ul class="simple">
+<li>Through the Roku Channel Store,
+Roku supports Google Play, Netflix, PBS, HBO Go, HBO Now, Epix,
+Showtime,
+and a number of other channels:</li>
+<li>Roku supports Amazon Instant VOD
+(which is available on <span class="xref std std-ref">FireTV</span> but no longer for
+other <a class="reference internal" href="index.html#android"><span>Android</span></a> devices)</li>
+<li>Roku apps are written in a Roku-specific language called
+&#8220;BrightScript&#8221;</li>
+<li>Roku OS is derived from <a class="reference internal" href="index.html#linux"><span>Linux</span></a></li>
+<li>The Roku remotes are all very simple and easy.</li>
+<li>The Roku 3 remote has a headphone jack for private listening
+(<a class="reference internal" href="index.html#wi-fi-direct"><span>Wi-Fi Direct</span></a>)</li>
+</ul>
+</div>
 </div>
 </div>
 </div>

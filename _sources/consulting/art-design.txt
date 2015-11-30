@@ -1271,6 +1271,8 @@ MilkDrop
 MilkDrop is a visualization tool which runs *MilkDrop presets*
 
 * https://en.wikipedia.org/wiki/MilkDrop
+* :ref:`Kodi` supports MilkDrop visualizations.
+
 
 .. index:: MilkDrop Presets
 .. _milkdrop presets:
@@ -1960,3 +1962,301 @@ VLC
 | Docs: https://wiki.videolan.org/Documentation:Streaming_HowTo
 | Docs: https://wiki.videolan.org/Documentation:Streaming_HowTo_New/
 | Docs: https://wiki.videolan.org/Documentation:Modules/
+
+
+
+.. index:: Home A/V
+.. _home av:
+
+Home A/V
+*********
+
+
+Standards
+~~~~~~~~~~~~
+
+-----------------
+Google Cast SDK
+-----------------
+| Homepage: https://en.wikipedia.org/wiki/Chromecast
+| Source: https://github.com/googlecast
+| Docs: https://en.wikipedia.org/wiki/List_of_apps_with_Google_Cast_support
+| Docs: https://developers.google.com/cast/
+| Docs: https://developers.google.com/cast/docs/developers
+| Docs: https://developers.google.com/cast/docs/reference/
+
+
+Google Cast SDK powers :ref:`Chromecast` devices.
+
+* A Cast sender application pushes a URI to a Cast receiver application. 
+* The Cast receiver application then retrieves the resource/app
+  identified by the URI; saving the battery of the Cast sender
+  application.
+
+  * Bluetooth Audio (A2DP, ) and Chromecast **full device audio/video cast**
+    require audio [recompression and] transmission,
+    which drains a mobile device battery.
+
+
+-----
+DLNA
+-----
+| Wikipedia: https://en.wikipedia.org/wiki/Digital_Living_Network_Alliance
+| Homepage: http://www.dlna.org/
+
+DLNA: Digital Living Network Alliance
+    DLNA is a standards group and a standard for networked devices;
+    particularly audio/video media devices like
+    standalone media players
+    and networked stereos.
+
+
+.. index:: UPnP
+.. _UPnP:
+
+-----
+UPnP
+-----
+| Wikipedia: https://en.wikipedia.org/wiki/Universal_Plug_and_Play
+| Homepage: https://en.wikipedia.org/wiki/Universal_Plug_and_Play
+
+Universal Plug and Play is a group of standards for
+networked devices built on :ref:`HTTP`, :ref:`XML`, and :ref:`SOAP`
+web services.
+
+* https://en.wikipedia.org/wiki/Comparison_of_UPnP_AV_media_servers
+* https://en.wikipedia.org/wiki/List_of_UPnP_AV_media_servers_and_clients
+
+
+.. index:: Zeroconf
+.. _zeroconf:
+
+---------
+Zeroconf
+---------
+| Wikipedia: https://en.wikipedia.org/wiki/Zeroconf
+
+Zeroconf/Bonjour are standards for zero-configuration networking;
+wherein networked devices assume local IP addresses
+if necessary, and broadcast their capabilities
+over multicast DNS.
+
+* Devices must be on the same LAN/WLAN segment (!?)
+
+  * [ ] Otherwise forwarding / ebtables ?
+    
+    * [ ] :ref:`pulseaudio-dlna`
+
+.. index:: 10-foot interfaces
+.. _10-foot interfaces:
+
+10-foot interfaces
+~~~~~~~~~~~~~~~~~~~~~
+
+
+.. index:: Gaming Consoles
+.. _gaming consoles:
+
+----------------
+Gaming Consoles
+----------------
+
+[...]
+
+* :ref:`Steam` Machine (:ref:`SteamOS`)
+* NVIDIA Shield (:ref:`AndroidTV`)
+* XBox
+  
+  * :ref:`XBMC <Kodi>` (now :ref:`Kodi`) started out as a
+    an application for modded XBoxen way back in 2002.
+
+* XBox 360 (joysticks tied to visualizations)
+* XBox One
+* PS3
+* PS4
+
+
+.. index:: Standalone Media Devices
+.. _standalone media devices:
+
+--------------------------
+Standalone Media Devices
+--------------------------
+Pros:
+
+* Upgradeable
+* Interchangeable
+
+Cons:
+
+* Extra HDMI, Power
+* Remote Control Integration
+
+
+.. index:: Android TV
+.. _android tv:
+
+Android TV
+===========
+| Wikipedia: https://en.wikipedia.org/wiki/Android_TV 
+
+* Android TV is originally based on :ref:`Android` 5.0 ("Lollipop")
+* Android TV supports the :ref:`Chromecast` API
+* Android TV supersedes Google TV (which was also Android-based)
+
+
+.. index:: Chromecast
+.. _chromecast:
+
+Chromecast
+===============
+| Wikipedia: https://en.wikipedia.org/wiki/Chromecast
+| Homepage: https://www.google.com/chromecast/
+
+* 1: 2013, 2: 2015
+* In: Power: :ref:`MicroUSB`
+* Configure WiFI w/ Android/iOS device and :ref:`Chromecast` app
+* Cast content from :ref:`Android`, computer (:ref:`Chrome`,
+  :ref:`ChromeOS`), :ref:`iOS` to Chromecast
+* Out: :ref:`HDMI`
+
+
+.. index:: Chromecast Audio
+.. _chromecast audio:
+
+Chromecast Audio
+------------------
+| Wikipedia: https://en.wikipedia.org/wiki/Chromecast
+| Homepage: https://www.google.com/chromecast/speakers/
+
+Chromecast Audio turns just about any stereo with an AUX input
+into a web-connected audio player.
+
+* In: Power: :ref:`MicroUSB`
+* Configure WiFI w/ Android/iOS device and :ref:`Chromecast` app
+* Cast content from :ref:`Android`, computer (:ref:`Chrome`,
+  :ref:`ChromeOS`), :ref:`iOS` to Chromecast Audio
+* Out: 3.5mm Headphone Jack
+* Out: Optical Audio Out
+
+
+.. index:: Apple TV
+.. _apple tv:
+
+Apple TV
+==========
+| Wikipedia: https://en.wikipedia.org/wiki/Apple_TV
+| Homepage: https://www.apple.com/tv/
+| Docs: https://www.apple.com/tv/compare/
+
+* 1: 2007, 2: 2010, 3: 2012/2013, 4: 2015
+* Extremely simple remote
+* Supports Bluetooth Keyboards, :ref:`iOS` devices
+
+
+.. index:: Kodi
+.. _kodi:
+
+Kodi
+=====
+| Wikipedia: `<https://en.wikipedia.org/wiki/Kodi_(software)>`__
+
+Kodi (formerly XBMC) is a "10 foot" media playback application
+designed for use with a remote.
+
+Kodi addons are written in :ref:`Python` and :ref:`XML`.
+
+* Kodi runs on :ref:`Windows`
+* Kodi runs on :ref:`OSX`
+* Kodi runs on :ref:`Linux`
+* Kodi runs on :ref:`Android`
+* Kodi runs on :ref:`iOS`
+* Kodi runs on :ref:`Apple TV`
+* Kodi runs on :ref:`FreeBSD`
+* Kodi runs on :ref:`ARM`, MIPS, :ref:`PowerPC`, :ref:`x86`,
+  :ref:`x86-64`
+* Kodi supports :ref:`MilkDrop` audio visualizations.
+
+
+.. index:: MythTV
+.. _mythtv:
+
+MythTV
+========
+| Wikipedia: https://en.wikipedia.org/wiki/MythTV
+| 
+
+MythTV (*2002*) is a networked :ref:`DVR` server
+and protocol standard
+with a number of client implementations.
+
+* MythTV supports [remote] tuner cards
+* MythTV supports TV listings
+* MythTV supports IR remotes, timeshifting, :ref:`Linux`, :ref:`Windows`
+
+
+.. index:: Plex
+.. _plex:
+
+Plex
+=====
+| Wikipedia: `<https://en.wikipedia.org/wiki/Plex_(software)>`__
+| Homepage: https://plex.tv/
+| Download: https://plex.tv/downloads
+
+Plex Media Server
+    Plex Media Server is a free app which runs on a computer or a :ref:`NAS`
+    device and serves media to Plex client apps.
+
+Plex Home Theater
+    Plex Home Theater is a free :ref:`10-foot interface <10-foot interfaces>`
+    client app for a computer attached to a TV (e.g. with :ref:`VGA`,
+    :ref:`DVI`, or :ref:`HDMI`).
+
+Plex Pass
+    Plex Pass is an optional premium subscription service upgrade.
+
+    https://plex.tv/subscription/about
+
+* Plex is/was originally a fork of :ref:`Kodi`
+* Plex works with :ref:`Windows`
+* Plex works with :ref:`Windows Phone`
+* Plex works with :ref:`OSX`
+* Plex works with :ref:`Linux`
+* Plex works with :ref:`Android`
+* Plex works with :ref:`Chromecast`
+* Plex works with :ref:`FreeBSD`
+* Plex works with :ref:`iOS`
+* Plex works with :ref:`Apple TV`
+* Plex works with :ref:`Xbox 360`
+* Plex works with :ref:`Xbox One`
+* Plex works with :ref:`PS3`
+* Plex works with :ref:`PS4`
+* Plex works with :ref:`Roku`
+
+
+.. index:: Roku
+.. _roku:
+
+Roku
+=====
+| Wikipedia: https://en.wikipedia.org/wiki/Roku
+| Homepage: https://www.roku.com/
+| Store: https://channelstore.roku.com/
+
+* Through the Roku Channel Store,
+  Roku supports Google Play, Netflix, PBS, HBO Go, HBO Now, Epix,
+  Showtime,
+  and a number of other channels:
+
+
+* Roku supports Amazon Instant VOD
+  (which is available on :ref:`FireTV` but no longer for
+  other :ref:`Android` devices)
+* Roku apps are written in a Roku-specific language called
+  "BrightScript"
+* Roku OS is derived from :ref:`Linux`
+* The Roku remotes are all very simple and easy.
+* The Roku 3 remote has a headphone jack for private listening
+  (:ref:`Wi-Fi Direct`)
+
