@@ -1033,11 +1033,14 @@ Network Glossary
     Small home office
 
   Modem
-    Modulator/demodulator. Transforms between [:ref:`ethernet`, :ref:`ethernet`
-    over :ref:`HSB`] signals
+    Modulator/demodulator.
+    Transforms signals between
+    :ref:`ethernet`,
+    :ref:`ethernet` over :ref:`USB`,
     Coaxial *Cable* (*Co-ax*),
-    to e.g. *DSL* Twisted Copper Pair(s),
-    :ref:`Mobile Broadband` (*cell-modem*),
+    Copper *Phone*,
+    *DSL* Twisted Copper Pair(s),
+    High Frequency Radio :ref:`Mobile Broadband` (*cell-modem*),
     SDR (*Software Defined Radio*),
     :ref:`Fiber to the x`.
 
@@ -1047,7 +1050,7 @@ Network Glossary
 
     | Standard: https://tools.ietf.org/html/rfc826
 
-    ::
+    .. code:: bash
 
         arp -a  # list arp entries [BSD style]
         arp -e  # list arp entries [Linux tabular format]
@@ -1132,6 +1135,8 @@ Network Glossary
     for anywhere (default gateway) or a specific network subnet
     (identified by e.g. a /24 prefix or a 255.255.255.0 subnet mask).
 
+    .. code:: bash
+
         netstat -rn # BSD, OSX, Linux
         route -n    # Linux # Flags="G"
         route add gw 192.168.1.1 dev eth0
@@ -1166,6 +1171,8 @@ Network Glossary
     interface>` can be *added*/*attached* and *deleted*/*removed*.
 
     In :ref:`Linux`, network bridges are configured with ``brctl``:
+
+    .. code:: bash
 
         brctl
         brctl show
