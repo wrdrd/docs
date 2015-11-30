@@ -1113,7 +1113,9 @@ Network Glossary
         ip l set dev eth0 down
 
     * There may be one or more network interfaces registered to a
-      :term:`NIC`::
+      :term:`NIC`:
+
+      .. code:: bash
 
         ip addr add 127.1.2.3 dev lo netmask 255.255.255.0
 
