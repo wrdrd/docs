@@ -972,7 +972,9 @@ Gigabit Ethernet
 
 10GBASE-T
 ~~~~~~~~~~~
-10GBASE-T is a 10000 Mbps (10 Gbps) :ref:`ethernet` standard.
+| Wikipedia: https://en.wikipedia.org/wiki/10_Gigabit_Ethernet#10GBASE-T
+
+10GBASE-T is a 10000 Mbps (10 Gbps) copper :ref:`ethernet` standard.
 
 
 .. index:: 40GBASE-T
@@ -980,7 +982,10 @@ Gigabit Ethernet
 
 40GBASE-T
 ~~~~~~~~~~~~~~~~~~~~~
-10GBASE-T is a 40000 Mbps (40 Gbps) :ref:`ethernet` standard.
+| Wikipedia: https://en.wikipedia.org/wiki/100_Gigabit_Ethernet#40GBASE-T
+
+40GBASE-T is a 40000 Mbps (40 Gbps) copper :ref:`ethernet` standard
+with :ref:`ISO` :ref:`Cat.8` cables.
 
 
 .. index:: Wireless
@@ -988,6 +993,11 @@ Gigabit Ethernet
 
 Wireless
 ----------
+| Wikipedia: https://en.wikipedia.org/wiki/Wireless
+
+* Wireless / Mobile / Radiofrequency
+* :ref:`Wi-Fi` == :ref:`802.11` wireless networking
+
 
 .. index:: 802.11
 .. _802.11:
