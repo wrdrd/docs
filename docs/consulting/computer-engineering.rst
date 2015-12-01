@@ -706,6 +706,30 @@ See: :ref:`data engineering`
 Network Interfaces
 ====================
 
+
+.. index:: RS-232
+.. _rs-232:
+
+RS-232
+--------
+| Wikipedia: https://en.wikipedia.org/wiki/RS-232
+
+An RS-232 *serial* or *console* port supports a DB-25 (25-pin)
+trapezoidal connector (most properly with stablizing thumb screws).
+
+* Systems with no/broken/unsupported graphics cards can
+  often be booted and interacted with over an RS-232 serial port
+  (given a serial console/monitor to attach)
+* There are :ref:`USB` to :ref:`RS-232` cables
+* There are :ref:`RS-232` over :ref:`IP` solutions.
+* Many full-system :ref:`virtualization` tools support
+  a serial / RS-232 console (for logging, debugging, emergencies).
+* Some e.g. wireless routers have :ref:`RS-232` ports
+  for flash recovery.
+* Many enterprise grade switches have :ref:`RS-232` ports
+  to which a console may be attached.
+
+
 .. index:: Gigabit
 .. _gigabit:
 
@@ -713,10 +737,13 @@ Gigabit
 ---------
 A gigabit is 1000 Mbps (1000 megabits per second).
 
-* :ref:`1000BASE-T`, :ref:`10GBASE-T`, and :ref:`40GBASE-T`
-  can all handle gigabit speeds.
+* :ref:`1000BASE-T`, :ref:`1000BASE-X`,
+  :ref:`10GBASE-T`, and :ref:`40GBASE-T`
+  can all handle :ref:`gigabit ethernet` speeds (or greater)
 * Wireless routers before :ref:`802.11ac <802.11>`
   are not fast enough to handle gigabit speeds.
+* Wireless routers with :ref:`802.11ac <802.11>` and up (TODO)
+  handle (shared) gigabit speeds.
 
 
 .. index:: NIC
@@ -730,11 +757,31 @@ which has one or more connectors
 for e.g. [wired :ref:`gigabit ethernet` :ref:`Patch Cable`].
 
 
+.. index:: 8P8C
+.. _8P8C:
+
+8P8C
+------------
+| Wikipedia: https://en.wikipedia.org/wiki/Modular_connector#8P8C
+
+An 8P8C modular connector is an **8-pin plug** (usually with a clip for
+cable safety); often for [:ref:`ethernet`].
+
+* Some 8PMC modular connectors include a [flexible] coat/shield/tail
+  to help with pin/connector strain and cabling safety.
+* :ref:`Ethernet` (:ref:`CAT-5`, :ref:`CAT-6`)
+  cables have :ref:`8PMC` connectors
+* :ref:`HDMI` over :ref:`ethernet` (:ref:`CAT-5`, :ref:`CAT-6`)
+  cables have :ref:`8P8C` connectors
+* :ref:`RS-232` cables have :ref:`8P8C` connectors
+
+
+
 .. index:: TIA
 .. _TIA:
 
 TIA
-~~~~
+----
 | Wikipedia: https://en.wikipedia.org/wiki/Telecommunications_Industry_Association
 | Homepage: https://www.tiaonline.org/
 | Homepage: http://www.tia-942.org/
@@ -747,29 +794,12 @@ including specs for :ref:`ethernet`-capable cabling
 
 * List of :ref:`TIA` standards: http://www.tiaonline.org/standards/
 
-.. index:: 8P8C
-.. _8P8C:
-
-
-8P8C
-~~~~~~~~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/Modular_connector#8P8C
-
-An 8P8C modular connector is an 8-pin jack/plug (usually with a clip for
-cable safety); often used for [:ref:`ethernet`].
-
-* Some 8PMC modular connectors include a [flexible] coat/shield/tail
-  to help with pin/connector strain and cabling safety.
-* :ref:`Ethernet` (:ref:`CAT-5`, :ref:`CAT-6`)
-  cables have :ref:`8PMC` connectors
-* :ref:`HDMI` over :ref:`ethernet` (:ref:`CAT-5`, :ref:`CAT-6`)
-  cables have :ref:`8P8C` connectors
-* :ref:`RS-232` cables have :ref:`8P8C` connectors
-
 
 .. index:: T568A
 .. index:: T568B
 .. _T568A and T568B:
+.. _t568a:
+.. _t568b:
 
 T568A and T568B
 ~~~~~~~~~~~~~~~~~
@@ -933,6 +963,16 @@ A "Patch Cable" is a cable for connecting two devices
 * :ref:`100BASE-TX` ultimately supersedes :ref:`10BASE-T`
 
 
+.. index:: Gigabit Ethernet
+.. _gigabit ethernet:
+
+Gigabit Ethernet
+~~~~~~~~~~~~~~~~~~
+* Copper Gigabit Ethernet: :ref:`1000BASE-T`, :ref:`10GBASE-T`,
+  :ref:`40GBASE-T`
+* Fiber Gigabit Ethernet : :ref:`1000BASE-X`, [...]
+
+
 .. index:: 1000BASE-T
 .. _1000base-t:
 
@@ -956,15 +996,6 @@ A "Patch Cable" is a cable for connecting two devices
 
 1000BASE-X is a 1000 Mbps (1 Gbps; 1 :ref:`gigabit ethernet`)
 :ref:`fiber` :ref:`ethernet` standard.
-
-
-.. index:: Gigabit Ethernet
-.. _gigabit ethernet:
-
-Gigabit Ethernet
-~~~~~~~~~~~~~~~~~~
-* Copper Gigabit Ethernet: :ref:`1000BASE-T`
-* Fiber Gigabit Ethernet : :ref:`1000BASE-X`
 
 
 .. index:: 10GBASE-T
