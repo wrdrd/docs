@@ -726,20 +726,68 @@ NIC
 -----
 A NIC (*Network Interface Card*) is a card
 that plugs into a :ref:`system bus`
-which interfaces with a wired network.
+which has one or more connectors
+for e.g. [wired :ref:`gigabit ethernet` :ref:`Patch Cable`].
 
 
+.. index:: TIA
+.. _TIA:
 
-.. index:: Ethernet
-.. _ethernet:
+TIA
+~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Telecommunications_Industry_Association
+| Homepage: https://www.tiaonline.org/
+| Homepage: http://www.tia-942.org/
+| Standards: https://www.tiaonline.org/standards/
 
-Ethernet
-----------
-| Wikipedia: https://en.wikipedia.org/wiki/Ethernet_over_twisted_pair
+TIA (*Telecommunications Industry Association*) is a standards group
+for many types of wireless and wireline networking;
+including specs for :ref:`ethernet`-capable cabling
+(:ref:`CAT-5`, :ref:`CAT-5e`, :ref:`CAT-6`, :ref:`CAT-6A`).
+
+* List of :ref:`TIA` standards: http://www.tiaonline.org/standards/
+
+.. index:: 8P8C
+.. _8P8C:
+
+
+8P8C
+~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Modular_connector#8P8C
+
+An 8P8C modular connector is an 8-pin jack/plug (usually with a clip for
+cable safety); often used for [:ref:`ethernet`].
+
+* Some 8PMC modular connectors include a [flexible] coat/shield/tail
+  to help with pin/connector strain and cabling safety.
+* :ref:`Ethernet` (:ref:`CAT-5`, :ref:`CAT-6`)
+  cables have :ref:`8PMC` connectors
+* :ref:`HDMI` over :ref:`ethernet` (:ref:`CAT-5`, :ref:`CAT-6`)
+  cables have :ref:`8P8C` connectors
+* :ref:`RS-232` cables have :ref:`8P8C` connectors
+
+
+.. index:: T568A
+.. index:: T568B
+.. _T568A and T568B:
+
+T568A and T568B
+~~~~~~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/TIA/EIA-568#T568A_and_T568B_termination
+
+:ref:`TIA` EIA-568 specifies the **T568A** and **T568BB**
+connector pin sequence ('pinouts*)
+for 4-pair (8-wire) cabling
+(e.g. usually with an 8P8C [RJ45 [:ref:`ethernet`]]
+connector).
+
+* An :ref:`Ethernet Crossover Cable` has one **T568A** and one **T568BB**
+  on each end, respectively.
+* An :ref:`ethernet` :ref:`patch cable` has one of either
+  :ref:`T568A` or :ref:`T568B` connectors on each end.
 
 
 .. index:: CAT-5
-.. index:: CAT-5e
 .. _cat-5:
 
 CAT-5
@@ -750,10 +798,23 @@ A CAT-5 (*Category 5*) cable is an :ref:`ethernet` cable.
 
 * CAT-5 can carry :ref:`10base-t`, :ref:`100base-t`,
   or :ref:`1000base-t`
-* CAT-5e is the newer CAT-5 standard.
-* A cable installer uses a *crimper tool* to *crimp*
-  connectors ("*terminators*")
-  to the end of a :ref:`CAT-5` or :ref:`CAT-6` cable.
+* :ref:`CAT-5e` is the newer CAT-5 standard.
+
+
+.. index:: CAT-5e
+.. _cat-5e:
+
+CAT-5e
+~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Category_5_cable#Category_5_vs._5e
+
+* CAT-5e (*Category 5e*) cable is an :ref:`ethernet` cable
+  with more stringent *crosstalk* (~'interference')
+  specs than a :ref:`CAT-5` cable.
+* CAT-5e can carry :ref:`10base-t`, :ref:`100base-t`,
+  or :ref:`1000base-t`
+* https://en.wikipedia.org/wiki/Crosstalk
+* There is no CAT-6e, but there is a :ref:`CAT-6A`.
 
 
 .. index:: CAT-6
@@ -765,8 +826,83 @@ CAT-6
 
 A CAT-6 (*Category 6*) cable is an :ref:`ethernet` cable
 
-* CAT-5 can carry :ref:`10base-t`, :ref:`100base-t`,
+* CAT-6 can carry :ref:`10base-t`, :ref:`100base-t`,
   :ref:`1000base-t`, :ref:`10gbase-t`,
+
+
+.. index:: CAT-6A
+.. _cat-6a:
+
+CAT-6A
+~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Category_6_cable#Category_6A
+
+A CAT-6A (*Category 6A*) cable is an :ref:`ethernet` cable
+
+* CAT-6A can carry :ref:`10base-t`, :ref:`100base-t`,
+  :ref:`1000base-t`, :ref:`10gbase-t`,
+
+
+.. index:: Ethernet
+.. _ethernet:
+
+Ethernet
+----------
+| Wikipedia: https://en.wikipedia.org/wiki/Ethernet_over_twisted_pair
+| Wikipedia: https://en.wikipedia.org/wiki/Fast_Ethernet
+
+
+* Ethernet cables are limited to 100 metres (328 ft) in length
+  -- https://en.wikipedia.org/wiki/Fast_Ethernet#Copper
+
+* An ethernet cable installer uses a *crimper tool* to *crimp*
+  [:ref:`8PMC`] connectors ("*terminators*")
+  to the ends of an ethernet :ref:`patch cable` or an
+  :ref:`ethernet crossover cable`.
+
+
+.. index:: Ethernet Crossover Cable
+.. _Ethernet Crossover Cable:
+
+Ethernet Crossover Cable
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Ethernet_crossover_cable
+
+An ethernet crossover cable has *the correct pins*
+swapped on one or both s of a cable (:ref:`T568A` <--> :ref:`T568B`).
+
+    Because the only difference between the :ref:`T568A` and
+    :ref:`T568B` pin/pair assignments are that pairs 2 and 3 are
+    swapped, a crossover cable may be envisioned as a cable with one
+    modular connector following :ref:`T568A` and the other :ref:`T568B`
+    (see TIA/EIA-568 Wiring). Such a cable will work for :ref:`10BASE-T`
+    or :ref:`100BASE-TX <100BASE-T>`.
+
+    -- https://en.wikipedia.org/wiki/Ethernet_crossover_cable#Overview
+
+.. warning:: :ref:`Ethernet Crossover Cable`
+   != :ref:`Ethernet` :ref:`Patch Cable`
+
+   * Many/most(?) newer devices are auto-sensing; and so won't
+     short out, or maybe work at all
+     if a crossover cable is connected to
+     anything other than:
+
+     * between two :ref:`NICs <NIC>`
+     * between router/switch 'bridge' or 'uplink' ports
+       (with instructions designated by the manufacturer
+       in a manual often also available online).
+
+
+Patch Cable
+~~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Patch_cable
+
+A "Patch Cable" is a cable for connecting two devices
+(with two different or the same connectors on each end).
+
+* e.g. an :ref:`Ethernet` patch cable
+* e.g. an :ref:`Fiber` patch cable
 
 
 .. index:: 10BASE-T
@@ -774,28 +910,61 @@ A CAT-6 (*Category 6*) cable is an :ref:`ethernet` cable
 
 10BASE-T
 ~~~~~~~~~~
+| Wikipedia:  https://en.wikipedia.org/wiki/Ethernet_over_twisted_pair#Cabling
+
 10Base-T is a 10 Mbps :ref:`ethernet` standard.
 
 
-.. index:: 100Base-T
+* :ref:`100BASE-TX` ultimately supersedes :ref:`10BASE-T`
+
+
+.. index:: 100BASE-T
+.. index:: 100BASE-TX
 .. _100base-t:
 
-100BASE-T
+100BASE-TX
 ~~~~~~~~~~~~~~
-100BASE-T is a 100 Mbps :ref:`ethernet` standard.
+| Wikipedia: https://en.wikipedia.org/wiki/Fast_Ethernet#100BASE-TX
 
-* 100BASE-T is backward-compatible with 10BASE-T
-  (some cards will say 10/100, or 10/100/1000)
+100BASE-TX is a 100 Mbps :ref:`ethernet` standard.
+
+* 100BASE-T is backward-compatible with :ref:`10BASE-T`
+  (some cards will say 10/100)
+* :ref:`100BASE-TX` ultimately supersedes :ref:`10BASE-T`
+
 
 .. index:: 1000BASE-T
 .. _1000base-t:
 
 1000BASE-T
 ~~~~~~~~~~~
-1000BASE-T is a 1000 Mbps (1 Gbps; 1 **gigabit**) :ref:`ethernet` standard.
+| Wikipedia: https://en.wikipedia.org/wiki/Gigabit_Ethernet#1000BASE-T
+
+1000BASE-T is a 1000 Mbps (1 Gbps; 1 :ref:`gigabit ethernet`)
+:ref:`ethernet` standard.
 
 * 100BASE-T is backward-compatible with 10BASE-T
   (some cards will say 10/100, or 10/100/1000)
+
+
+.. index:: 1000BASE-X
+.. _1000BASE-X:
+
+1000BASE-X
+~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Gigabit_Ethernet#1000BASE-X
+
+1000BASE-X is a 1000 Mbps (1 Gbps; 1 :ref:`gigabit ethernet`)
+:ref:`fiber` :ref:`ethernet` standard.
+
+
+.. index:: Gigabit Ethernet
+.. _gigabit ethernet:
+
+Gigabit Ethernet
+~~~~~~~~~~~~~~~~~~
+* Copper Gigabit Ethernet: :ref:`1000BASE-T`
+* Fiber Gigabit Ethernet : :ref:`1000BASE-X`
 
 
 .. index:: 10GBASE-T
@@ -834,7 +1003,7 @@ IEEE 802.11 is a group of standards for wireless networking.
   implementing wireless local area network (WLAN)
   computer communication in the 2.4, 3.6, 5, and 60 GHz frequency bands.
 
-.. _wi-fi:  
+.. _wi-fi:
 .. _wifi:
 
 802.11 "WiFi" standards:
