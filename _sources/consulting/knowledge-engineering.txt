@@ -1044,13 +1044,14 @@ FUSE
 FUSE (*Filesystem in Userspace*) is a userspace filesystem API
 for implementing filesystems in userspace.
 
-* FUSE support is included in the :ref:`Linux` kernel since
+* FUSE support is included in the :ref:`Linux` kernel since 2.6.14.
 * FUSE is available for most :ref:`POSIX` platforms.
 
 Interesting FUSE implementations:
 
-* https://pythonhosted.org/fs/ is a :ref:`Python` :term:`language api`
-  interface which supports `FUSE`.
+* PyFilesystem is a :ref:`Python` :term:`language api`
+  interface which supports `FUSE`:
+  http://docs.pyfilesystem.org/en/latest/
 * There are FUSE bindings for :ref:`Hadoop` :ref:`HDFS`.
 * :ref:`Ceph` can be mounted with/over/through `FUSE`.
 * :ref:`GlusterFS` can be mounted with/over/through `FUSE`.
