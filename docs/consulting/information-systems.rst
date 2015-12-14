@@ -170,6 +170,11 @@ Criteria
 .. contents::
    :local:
 
+seeAlso:
+
+* :ref:`Computer Science Curricula` (Criteria)
+* :ref:`Information Security` (Risk)
+
 
 .. _is-roi:
 
