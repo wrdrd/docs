@@ -166,9 +166,14 @@ Information Systems Glossary
 
 Criteria
 ~~~~~~~~~
-* ROI (Returns/Cost :: Output/Input)
-* Need / Want
-* Maintainability
+
+.. contents::
+   :local:
+
+seeAlso:
+
+* :ref:`Computer Science Curricula` (Criteria)
+* :ref:`Information Security` (Risk)
 
 
 .. _is-roi:
@@ -180,12 +185,18 @@ The investment should be justified by gains in productivity / efficiency.
 Productivity / Efficiency::
 
     output / input
+    returns / costs
 
-Units: Hours, Units, Dollars (see: :ref:`qudt`)
+:ref:`Units` and :ref:`ratios <data science>`:
 
-https://en.wikipedia.org/wiki/Productivity
+* Hours
+* Dollars
+* :ref:`Units`: e.g. :ref:`qudt` :ref:`URIs <URI>` (:ref:`RDF`)
 
-See: :ref:`Business > ROI <business-roi>`
+seeAlso:
+
+* :ref:`Business > ROI <business-roi>`
+* https://en.wikipedia.org/wiki/Productivity
 
 
 Need / Want
