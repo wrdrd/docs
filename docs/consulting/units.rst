@@ -241,7 +241,7 @@ litre
 | Abbr: ``L``
 
 * Conversion: 1 :ref:`litre` == ``10e−3 m**3`` (:ref:`metres <metre>` cubed)
-* Conversion: 1 :ref:`litre` == 0.2641720523 US :ref:`gallon` (~ 1/4)
+* Conversion: 1 :ref:`litre` == 0.2641720523 US :ref:`gallon`
 
 
 .. index:: SI Mass Units
@@ -893,6 +893,7 @@ gallon
 
 * Conversion: 1 :ref:`gallon` == 128 :ref:`oz <fl oz>`
 * Conversion: 1 :ref:`gallon` == 8 :ref:`pints <pint>`
+* Conversion: 1 :ref:`gallon` == 3.78541 :ref:`litres <litre>`
 
 
 .. index:: Keg
