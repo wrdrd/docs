@@ -14,6 +14,20 @@ https://en.wikipedia.org/wiki/Small_business
 https://en.wikipedia.org/wiki/Enterprise
 
 
+.. index:: Solving
+.. _solving:
+
+Solving
+~~~~~~~~~
+Solving a:
+
+* need
+* challenge
+* problem
+* gap
+* remaining piece
+
+
 .. index:: Business Books
 .. _business-books:
 
