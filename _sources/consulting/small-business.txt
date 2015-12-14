@@ -39,6 +39,13 @@ Books
 * https://en.wikipedia.org/wiki/The_Five_Dysfunctions_of_a_Team
 * https://en.wikipedia.org/wiki/Getting_Things_Done
 
+seeAlso:
+
+* :ref:`Art & Design <art-design>` > :ref:`Screenwriting`, :ref:`Web
+  Production`, :ref:`Web Distribution`
+* :ref:`Education Technology` > :ref:`Publishing`
+* :ref:`Team Building`
+
 
 .. index:: Strategy (Business)
 .. index:: Business Strategy
