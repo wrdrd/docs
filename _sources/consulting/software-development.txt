@@ -70,7 +70,7 @@ Computer Science Curricula
 
       + `<https://en.wikipedia.org/wiki/Rubric_(academic)>`__
       + A rubric can be expressed with a
-        :ref:`matrix <matrix>` :ref:`data structure <data structures>`
+        :ref:`matrix <matrix>` :ref:`data structure <data structures>`.
       + A rubric can be expressed as an :ref:`RDF`
         :ref:`graph <graphs>` in e.g.
         :ref:`RDFa` or :ref:`JSON-LD`.
