@@ -3945,6 +3945,7 @@ Implementations:
 
 
 .. index:: Schema.org
+.. _schemaorg:
 .. _Schema.org:
 
 Schema.org
