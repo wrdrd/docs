@@ -390,9 +390,25 @@ Cloud Application Layers
 
       - #HVAC: Cooling (Active / Passive)
       - #HVAC: Heating (Active / Passive)
-      - #Fire: Extinguishers
-      - #Fire: Sprinklers: ~**"do not pour water on an
-        #lectrical fire"** --- 20,000 Leagues Under the Sea
+      - #Fire: Fire Extinguishers
+      
+        - Class A Fire Extinguisher -- silver -- water
+        - Class C Fire Extinguisher -- red -- chemicals (e.g. CO2)
+        - Datacenter: { ..., Halon, ... }
+      
+      - #Fire: Sprinklers:
+        ~**"do not pour water on an electrical fire"** ---
+        20,000 Leagues Under the Sea
+        
+        - Do not pour water on an electrical fire,
+          **until you have switched off the power source at the circuit breaker box**.
+        
+        - **How to Extinguish a Fire at the Initial Stages**: http://www.wikihow.com/Extinguish-a-Fire-at-the-Initial-Stages
+
+          - Extinguishing **Electrial** Fires (**Class C** Extinguisher (**Red**))
+          - Extinguishing **Liquid/Oil** Fires
+          - Extinguishing **Organic** Fires
+        
       - #Fire: Halon
       - #Power: Power supplies (AC --> DC conversion)
       - #Power: Batteries  (AC --> DC --> Batteries --> AC/DC)
