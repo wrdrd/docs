@@ -398,18 +398,17 @@ Cloud Application Layers
       
       - #Fire: Sprinklers:
         ~**"do not pour water on an electrical fire"** ---
-        20,000 Leagues Under the Sea
+        novel/films: 20,000 Leagues Under the Sea, Sphere
         
         - Do not pour water on an electrical fire,
           **until you have switched off the power source at the circuit breaker box**.
-        
         - **How to Extinguish a Fire at the Initial Stages**: http://www.wikihow.com/Extinguish-a-Fire-at-the-Initial-Stages
 
           - Extinguishing **Electrial** Fires (**Class C** Extinguisher (**Red**))
           - Extinguishing **Liquid/Oil** Fires
           - Extinguishing **Organic** Fires
         
-      - #Fire: Halon
+
       - #Power: Power supplies (AC --> DC conversion)
       - #Power: Batteries  (AC --> DC --> Batteries --> AC/DC)
       - #Power: Generators
