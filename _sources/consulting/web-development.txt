@@ -467,17 +467,19 @@ See: :ref:`Video Production`
 
 Bootstrap
 +++++++++++
-`<https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)>`_
+| Wikipedia: `<https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)>`_
+| Homepage: http://getbootstrap.com/
+| Source: git https://github.com/twbs/bootstrap
 
 * What is Bootstrap?
 
-  * A responsive HTML and CSS (LESS) Framework
-  * http://getbootstrap.com/
+  * A responsive HTML and CSS (LESS, Sass (4.0)) Framework.
   * `<https://en.wikipedia.org/wiki/LESS_(stylesheet_language)>`_
+  * `<https://en.wikipedia.org/wiki/Sass_(stylesheet_language)>`_
+  
+* Bootstrap :term:`Web Site` Styles / Themes / Templates
 
-* Styles / Themes / Templates
-
-  * From Scratch / Customizing
+  * From Scratch / Custom :
 
     * http://getbootstrap.com/customize/#less-variables
     * http://bootply.com/
