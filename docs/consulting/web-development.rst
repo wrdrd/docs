@@ -468,29 +468,41 @@ See: :ref:`Video Production`
 Bootstrap
 +++++++++++
 | Wikipedia: `<https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)>`_
-| Homepage: http://getbootstrap.com/
+| Homepage: https://getbootstrap.com/
 | Source: git https://github.com/twbs/bootstrap
 
 * What is Bootstrap?
 
-  * A responsive HTML and CSS (LESS, Sass (4.0)) Framework.
+  * A responsive HTML and CSS (LESS, Sass SCSS (4.0)) Framework.
   * `<https://en.wikipedia.org/wiki/LESS_(stylesheet_language)>`_
   * `<https://en.wikipedia.org/wiki/Sass_(stylesheet_language)>`_
   
 * Bootstrap :term:`Web Site` Styles / Themes / Templates
 
-  * From Scratch / Custom :
+  https://expo.getbootstrap.com/resources/
 
-    * http://getbootstrap.com/customize/#less-variables
+  * Custom:
+
+    * https://getbootstrap.com/customize/#less-variables
     * http://bootply.com/
 
-  * Templates
+  * Templates:
 
-    * http://bootswatch.com/ (FREE)
+    * https://themes.getbootstrap.com/ (Updated, Free, Official)
+
+      https://themes.getbootstrap.com/pages/our-license
+    * https://expo.getbootstrap.com/resources/#themes
+    * https://bootswatch.com/ (Free)
     * http://www.themesforbootstrap.com/
     * https://wrapbootstrap.com/
     * https://wrapbootstrap.com/theme/deusone-responsive-one-page-template-WB0271X52
     * http://themeforest.net/search?utf8=%E2%9C%93&term=bootstrap
+
+  * Examples:
+
+    * https://expo.getbootstrap.com/
+    * http://builtwithbootstrap.com/
+    * http://v4-alpha.getbootstrap.com/examples/
 
 
 .. index:: Web Development Checklist
