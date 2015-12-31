@@ -131,34 +131,78 @@ Collaborative Software
 | https://en.wikipedia.org/wiki/Collaborative_software
 | https://en.wikipedia.org/wiki/Collaborative_software#Classification
 
-Classifying Collaborative Software
+.. list-table:: Classifying Collaborative Software
+   :widths: 40 20 20 20
+   :header-rows: 1
+   :class: table-responsive table-striped
 
-    + Core capabilities
-    + Data contributions
-    + Data relationships
-    + Data limits
-    + Data persistence
-    + Actions
-    + Synchronicity
-    + Identifiability
-    + Access Controls
-    + Roles
-    + Awareness indicators
-    + Interruption alerts
-    + Instructions
+   * - Features
+     - X_n
+     - X_1
+     - X-2
+   * - Core capabilities
+     -
+     -
+     -
+   * - Data contributions
+     -
+     -
+     -
+   * - Data relationships
+     -
+     -
+     -
+   * - Data limits
+     -
+     -
+     -
+   * - Data persistence
+     -
+     -
+     -
+   * - Actions
+     -
+     -
+     -
+   * - Synchronicity
+     -
+     -
+     -
+   * - Identifiability
+     -
+     -
+     -
+   * - Access Controls
+     -
+     -
+     -
+   * - Roles
+     -
+     -
+     -
+   * - Awareness indicators
+     -
+     -
+     -
+   * - Interruption alerts
+     -
+     -
+     -
+   * - Instructions
+     -
+     -
+     -
 
 * "Toward a Taxonomy of Groupware Technologies" (2008)
 
-  https://books.google.com/books?id=ONRsCQAAQBAJ&pg=PA309
-
-  https://www.worldcat.org/title/groupware-design-implementation-and-use-14th-international-workshop-criwg-2008-omaha-ne-usa-september-14-18-2008-revised-selected-papers/oclc/760695691
+  | https://books.google.com/books?id=ONRsCQAAQBAJ&pg=PA309
+  | https://www.worldcat.org/title/groupware-design-implementation-and-use-14th-international-workshop-criwg-2008-omaha-ne-usa-september-14-18-2008-revised-selected-papers/oclc/760695691
 
   
 * "Classification of Collaboration Technology" (2013)
 
-  https://books.google.com/books?id=gTR0AgAAQBAJ&pg=PA44
-
-  https://www.worldcat.org/title/collaboration-systems-concept-value-and-use/oclc/867930692
+  | https://books.google.com/books?id=gTR0AgAAQBAJ&pg=PA44
+  | https://www.worldcat.org/title/collaboration-systems-concept-value-and-use/oclc/867930692
 
 See also:
 
