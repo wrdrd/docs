@@ -27,9 +27,19 @@ WRD R&D Documentation
    consulting/art-design
    consulting/team-building
    consulting/collaboration-plan
-   tools/index
    authors
    license
+
+
+Tools
+------
+| Homepage: https://westurner.org/tools/
+| Source: git https://github.com/westurner/tools
+
+.. toctree::
+  :maxdepth: 7
+
+  tools/index
 
 
 wrdrd

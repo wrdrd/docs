@@ -7,11 +7,8 @@
 WRD R&D Documentation
 =======================
 
-| Homepage: https://wrdrd.com
+| Homepage: https://wrdrd.com/docs/
 | Source: git https://github.com/wrdrd/docs
-| Download: https://github.com/wrdrd/docs/tarball/master
-| Download: https://github.com/wrdrd/docs/zipfile/master
-| Docs: https://wrdrd.com/docs/
 | Twitter: https://twitter.com/wrdrd
 
 The latest HTML version of WRD R&D Documentation
@@ -25,3 +22,5 @@ The WRD R&D Documentation includes the
 `<https://github.com/westurner/tools>`__
 :ref:`Tools` :ref:`Sphinx` documentation set as a :ref:`Git`
 subrepository as well.
+
+    https://wrdrd.com/docs/
