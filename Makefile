@@ -140,7 +140,7 @@ singlehtml: ${BUILDDIRHTML}/singlehtml
 gh-pages: docs-mv-singlehtml
 	# Push docs to gh-pages branch with a .nojekyll file
 	ghp-import -n -p '${BUILDDIRHTML}'
-	#ghp-import -n -p ./${BUILDDIRSINGLEHTML}
+	@#ghp-import -n -p ./${BUILDDIRSINGLEHTML}
 
 pull:
 	git pull
