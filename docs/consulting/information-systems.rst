@@ -180,9 +180,9 @@ seeAlso:
 
 ROI
 ++++
-The investment should be justified by gains in productivity / efficiency.
+The investment should be justified by gains in productivity & efficiency.
 
-Productivity / Efficiency::
+Productivity & Efficiency::
 
     output / input
     returns / costs
@@ -193,10 +193,25 @@ Productivity / Efficiency::
 * Dollars
 * :ref:`Units`: e.g. :ref:`qudt` :ref:`URIs <URI>` (:ref:`RDF`)
 
+
+::
+
+    widgets / hours ---**---> widgets/hour
+
+    ** curves
+
+
+
+::
+
+    reduction in {risk, error, loss} / time spent on {workflow, automation}
+
+
 seeAlso:
 
 * :ref:`Business > ROI <business-roi>`
 * https://en.wikipedia.org/wiki/Productivity
+* https://en.wikipedia.org/wiki/Efficiency
 
 
 Need / Want
