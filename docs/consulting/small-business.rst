@@ -516,10 +516,23 @@ https://en.wikipedia.org/wiki/List_of_social_networking_websites
 Twitter
 +++++++++
 - [ ] Are you ``@tweetable``?
+- [ ] Add Twitter cards RDFa markup to HTML templates
 - [ ] Can we enqueue these for followup?
 
   * SalesForce :ref:`CRM` TwitterForce
-  * Zapier (Twitter -> ______): https://zapier.com/zapbook/twitter/
+  * Zapier (Twitter -> [______]): https://zapier.com/zapbook/twitter/
+
+* https://dev.twitter.com/cards/overview
+
+
+.. _opengraph:
+
+OpenGraph
++++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/Facebook_Platform#Open_Graph_protocol
+| Homepage: http://ogp.me/
+
+OpenGraph is an RDFa standard for structured data.
 
 
 .. index:: Location Based Services
