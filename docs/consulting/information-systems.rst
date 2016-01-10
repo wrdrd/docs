@@ -389,7 +389,7 @@ Cloud Application Layers
       - Central file storage (:ref:`NFS`, :ref:`CIFS`, :ref:`WebDAV`)
       - distributed file storage: (:ref:`Ceph`, :ref:`GlusterFS`)
       - persistent block storage: (:ref:`AWS` S3, :ref:`OpenStack` Cinder)
-      - on-disk filesystems: (ref:`ext4 <ext>`, :ref:`LVM`, :ref:`BTRFS`,
+      - on-disk filesystems: ( ref:`ext4 <ext>`, :ref:`LVM`, :ref:`BTRFS`,
         :ref:`NTFS`, :ref:`FAT`, :ref:`HFS+`)
 
     + Physical storage
