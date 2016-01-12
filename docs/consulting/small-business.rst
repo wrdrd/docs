@@ -515,14 +515,109 @@ https://en.wikipedia.org/wiki/List_of_social_networking_websites
 
 Twitter
 +++++++++
-- [ ] Are you ``@tweetable``?
-- [ ] Add Twitter cards RDFa markup to HTML templates
-- [ ] Can we enqueue these for followup?
+| Wikipedia: https://en.wikipedia.org/wiki/Twitter
+| Homepage: https://twitter.com
+| Homepage: https://twttr.com
+| Source: https://github.com/twitter
+| Twitter: https://twitter.com/twitter
+| Twitter: https://twitter.com/gov
+| Twitter: https://twitter.com/TwitterIR
+| Twitter: https://twitter.com/TwitterSmallBiz
+| Twitter: https://twitter.com/support
+| Twitter: https://twitter.com/TwitterDev
+| Twitter: https://twitter.com/TwitterEng
+| Twitter: https://twitter.com/TwitterAPI
+| Twitter: https://twitter.com/TwitterOSS
+| Twitter: https://twitter.com/TwitterData
+| Twitter: https://twitter.com/design
+| Twitter: https://twitter.com/TwitterMedia
+| Twitter: https://twitter.com/TwitterStage
+| Twitter: https://twitter.com/TwitterMusic
+| Twitter: https://twitter.com/TwitterMovies
+| Twitter: https://twitter.com/TwitterSports
+| Twitter: https://twitter.com/TwitterFood
+| Twitter: https://twitter.com/TwitterBooks
+| Twitter: https://twitter.com/Nonprofits
+| Twitter: https://twitter.com/TwitterAds
+| Twitter: https://twitter.com/TwitterForNews
+| Twitter: https://twitter.com/TwitterMoments
+| Docs: https://support.twitter.com/
+| Docs: https://dev.twitter.com/
+| Docs: https://dev.twitter.com/cards/overview
 
-  * SalesForce :ref:`CRM` TwitterForce
-  * Zapier (Twitter -> [______]): https://zapier.com/zapbook/twitter/
+- [ ] Are you ``tweetable``?
 
-* https://dev.twitter.com/cards/overview
+  [ ] Can I (send you a) ``tweet`` you sometime?
+
+  [ ] What's your Twitter [(optional) username / handle / :ref:`URL`]?
+
+- When you add ``@username`` (with the ``@`` *at* symbol,
+  the username is then linked and added to a notification list.
+
+  Tweets that start with ``@username`` show in the "Tweets & replies"
+  Twitter User Profile view.
+
+  Tweets that start with ``.@username`` show in the "Tweets"
+  Twitter User Profile view; may be linked replies; and still do send a
+  notification to ``@username`` and any other ``@``-addressed Tweeters.
+
+- When you add ``#example`` (with the ``#`` *hashtag* symbol) before a word
+  -- like in :ref:`IRC` clients and old :ref:`BBS` systems --
+  the hashtag becomes a link to a current search for
+  other tweets containing that hashtag
+  and/or similar terms
+  (after the ``140 character`` limit).
+
+  (e.g. regex ``#\w+``),
+  except for Unicode; and Right-To-Left languages.
+
+  https://github.com/twitter/twitter-text-js
+
+- [ ] :ref:`Web Developers <web development>`: :ref:`HTML` templates: Add Twitter cards :ref:`RDFa` attributes and vocabulary markup
+
+- [ ] Support: Can we enqueue these for followup?
+
+  -
+  -
+  - :ref:`Zapier`: :ref:`Twitter` <--> <:term:`API`>
+
+    - https://zapier.com/zapbook/twitter/
+    - New tweet <-> New sheet row
+    - New tweet -> New support ticket / issue / case
+    - New tweet <-> New webchat (e.g. Slack, Gitter,) message
+    - {...}
+
+
+.. index:: Zapier
+
+.. _zapier:
+
+Zapier
++++++++
+| Homepage: https://zapier.com/
+| Source: https://github.com/zapier
+| Twitter: https://twitter.com/zapier
+| Twitter: https://twitter.com/zapierstatus
+| Docs: https://zapier.com/zapbook/
+| Docs: https://zapier.com/zapbook/use-cases/
+| Docs: https://zapier.com/status/
+| Docs: https://zapier.com/help/
+| Docs: https://zapier.com/developer/
+| Docs: https://zapier.com/developer/documentation/v2/
+| Docs: https://zapier.com/developer/documentation/v2/scripting/
+| Docs: https://zapier.com/developer/documentation/v2/reference/
+| Docs: https://zapier.com/engineering/
+
+Zapier (z'API-er) is a software-development-free :ref:`SaaS` web service
+for integrating 500+ great web APIS through Zaps:
+*triggers* (when this) and *actions* (do this).
+
+* Users can find and select Zaps from the Zapbook (App Directory).
+* Users can CRUD (create, read, update (edit), delete) Zaps.
+* Zaps run in worker instances with free and paid time and memory
+  limits.
+* Users can review Zap logs and data.
+
 
 
 .. _opengraph:
