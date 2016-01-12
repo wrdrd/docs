@@ -113,9 +113,9 @@ docs-open: docs open
 
 
 open:
-	@#pip install websh.py
+	@#pip install web.sh  # https://pypi.python.org/pypi/web.sh
 	web './${BUILDDIRHTML}/index.html'
-	#web ./${BUILDDIRSINGLEHTML}/index.html
+	@#web ./${BUILDDIRSINGLEHTML}/index.html
 
 PGS_PORT:=8082
 open-pgs:
