@@ -401,7 +401,7 @@ Jupyter and TDD
 
 
 .. index:: nbgrader
-.. _nbgrader:
+.. _nbgrader-:
 
 nbgrader
 ~~~~~~~~~
