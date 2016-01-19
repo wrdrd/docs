@@ -627,7 +627,12 @@ OpenGraph
 | Wikipedia: https://en.wikipedia.org/wiki/Facebook_Platform#Open_Graph_protocol
 | Homepage: http://ogp.me/
 
-OpenGraph is an RDFa standard for structured data.
+OpenGraph is an :ref:`RDFa` standard for structured data.
+
+See:
+
+* :ref:`Web Development Checklist`
+* :ref:`Knowledge Engineering` > :ref:`Linked Data`
 
 
 .. index:: Location Based Services
