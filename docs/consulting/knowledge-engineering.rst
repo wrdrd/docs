@@ -2818,24 +2818,24 @@ US Daylight Saving Time
    moved back from 2:00 am to 1:00 am.
 
 
-   Daylight Savings Time Starts and Ends on the following dates
-   (from https://en.wikipedia.org/wiki/Time_in_the_United_States#Daylight_saving_time):
+Daylight Savings Time Starts and Ends on the following dates
+(from https://en.wikipedia.org/wiki/Time_in_the_United_States#Daylight_saving_time):
 
-   +----------+--------------------+------------------+
-   | **Year** | **DST start date** | **DST end date** |
-   +----------+--------------------+------------------+
-   | 2015     | 2015-03-08 02:00   | 2015-11-01 02:00 |
-   +----------+--------------------+------------------+
-   | 2016     | 2016-03-13 02:00   | 2016-11-06 02:00 |
-   +----------+--------------------+------------------+
-   | 2017     | 2017-03-12 02:00   | 2017-11-05 02:00 |
-   +----------+--------------------+------------------+
-   | 2018     | 2018-03-11 02:00   | 2018-11-04 02:00 |
-   +----------+--------------------+------------------+
-   | 2019     | 2019-03-10 02:00   | 2019-11-03 02:00 |
-   +----------+--------------------+------------------+
-   | 2020     | 2020-03-08 02:00   | 2020-11-01 02:00 |
-   +----------+--------------------+------------------+
++----------+--------------------+------------------+
+| **Year** | **DST start date** | **DST end date** |
++----------+--------------------+------------------+
+| 2015     | 2015-03-08 02:00   | 2015-11-01 02:00 |
++----------+--------------------+------------------+
+| 2016     | 2016-03-13 02:00   | 2016-11-06 02:00 |
++----------+--------------------+------------------+
+| 2017     | 2017-03-12 02:00   | 2017-11-05 02:00 |
++----------+--------------------+------------------+
+| 2018     | 2018-03-11 02:00   | 2018-11-04 02:00 |
++----------+--------------------+------------------+
+| 2019     | 2019-03-10 02:00   | 2019-11-03 02:00 |
++----------+--------------------+------------------+
+| 2020     | 2020-03-08 02:00   | 2020-11-01 02:00 |
++----------+--------------------+------------------+
 
 
 .. index:: ISO8601
@@ -2850,12 +2850,16 @@ ISO8601
 ISO8601 is an :ref:`ISO` standard for specifying Gregorian
 dates, times, datetime intervals, durations, and recurring datetimes.
 
-* With the ``date`` command:
+* The ``date`` command can print :ref:`iso8601` -compatible
+  datestrings:
 
   .. code:: bash
 
       $ date +'%FT%T%z'
       2016-01-01T22:11:59-0600
+
+      $ date +'%F %T%z'
+      2016-01-01 22:11:59-0600
 
 * Roughly, an ISO8601 datetime is specified as:
   year,
@@ -2863,14 +2867,15 @@ dates, times, datetime intervals, durations, and recurring datetimes.
   month,
   dash
   day,
-  (``T`` or space),
+  (``T`` or `` `` [space-character]),
   hour,
   colon,
   minute,
   colon,
   second,
-  (``Z`` (for UTC)) or (plus/minus
-  :ref:`time zone <time zones>` offset));
+  (``Z`` [for UTC] or a
+  :ref:`time zone <time zones>` offset
+  (e.g. ``+``/``-`` ``-0000``, ``+0000``));
   where the dashes and colons are optional.
 
 * ISO8601 specifies a standard for absolute time durations:
