@@ -3454,6 +3454,7 @@ in spring (technically late winter) the clocks are
 moved forward from 2:00 a.m. to 3:00 a.m.,
 and in fall they are
 moved back from 2:00 am to 1:00 am.</p>
+</div></blockquote>
 <p>Daylight Savings Time Starts and Ends on the following dates
 (from <a class="reference external" href="https://en.wikipedia.org/wiki/Time_in_the_United_States#Daylight_saving_time">https://en.wikipedia.org/wiki/Time_in_the_United_States#Daylight_saving_time</a>):</p>
 <table border="1" class="docutils">
@@ -3493,7 +3494,6 @@ moved back from 2:00 am to 1:00 am.</p>
 </tr>
 </tbody>
 </table>
-</div></blockquote>
 <span class="target" id="index-171"></span></div>
 </div>
 </div>
@@ -3506,9 +3506,13 @@ moved back from 2:00 am to 1:00 am.</p>
 <p>ISO8601 is an <a class="reference internal" href="#iso"><span>ISO</span></a> standard for specifying Gregorian
 dates, times, datetime intervals, durations, and recurring datetimes.</p>
 <ul>
-<li><p class="first">With the <code class="docutils literal"><span class="pre">date</span></code> command:</p>
+<li><p class="first">The <code class="docutils literal"><span class="pre">date</span></code> command can print <a class="reference internal" href="#iso8601"><span>ISO8601</span></a> -compatible
+datestrings:</p>
 <div class="code bash highlight-python"><div class="highlight"><pre>$ date +&#39;%FT%T%z&#39;
 2016-01-01T22:11:59-0600
+
+$ date +&#39;%F %T%z&#39;
+2016-01-01 22:11:59-0600
 </pre></div>
 </div>
 </li>
@@ -3518,14 +3522,15 @@ dash
 month,
 dash
 day,
-(<code class="docutils literal"><span class="pre">T</span></code> or space),
+(<code class="docutils literal"><span class="pre">T</span></code> or `` `` [space-character]),
 hour,
 colon,
 minute,
 colon,
 second,
-(<code class="docutils literal"><span class="pre">Z</span></code> (for UTC)) or (plus/minus
-<a class="reference internal" href="#time-zones"><span>time zone</span></a> offset));
+(<code class="docutils literal"><span class="pre">Z</span></code> [for UTC] or a
+<a class="reference internal" href="#time-zones"><span>time zone</span></a> offset
+(e.g. <code class="docutils literal"><span class="pre">+</span></code>/<code class="docutils literal"><span class="pre">-</span></code> <code class="docutils literal"><span class="pre">-0000</span></code>, <code class="docutils literal"><span class="pre">+0000</span></code>));
 where the dashes and colons are optional.</p>
 </li>
 <li><p class="first">ISO8601 specifies a standard for absolute time durations:
