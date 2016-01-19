@@ -2847,6 +2847,13 @@ ISO8601
 ISO8601 is an :ref:`ISO` standard for specifying Gregorian
 dates, times, datetime intervals, durations, and recurring datetimes.
 
+* With the ``date`` command:
+
+  .. code:: bash
+
+      $ date +'%FT%T%z'
+      2016-01-01T22:11:59-0600
+
 * Roughly, an ISO8601 datetime is specified as:
   year,
   dash
