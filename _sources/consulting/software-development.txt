@@ -239,6 +239,7 @@ Agile
 
 * https://en.wikipedia.org/wiki/Lean_software_development
 * http://epf.eclipse.org/wikis/epfpractices/
+* http://agilemodeling.com/essays/bestPractices.htm
 
 
 .. index:: Stand Up Meeting
