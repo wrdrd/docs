@@ -4128,7 +4128,7 @@ OWL
 OWL (*Web Ontology Language*) adds semantics, reasoning, inference,
 and entailment capabilities to :ref:`RDF`.
 
-* OWL as :ref:`Turtle`: http://www.w3.org/2002/07/owl#
+* OWL as :ref:`Turtle`: `<http://www.w3.org/2002/07/owl#>`__
 * https://www.w3.org/TR/owl2-quick-reference/#Names.2C_Prefixes.2C_and_Notation
 * https://www.w3.org/TR/owl2-quick-reference/#OWL_2_constructs_and_axioms
 
