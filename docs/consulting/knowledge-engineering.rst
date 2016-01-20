@@ -4125,8 +4125,9 @@ OWL
 | xmlns: ``@prefix owl: <http://www.w3.org/2002/07/owl#> .``
 | LOVLink: http://lov.okfn.org/dataset/lov/vocabs/owl
 
-OWL (*Web Ontology Language*) adds semantics, reasoning, inference,
-and entailment capabilities to :ref:`RDF`.
+OWL (*Web Ontology Language*) layers semantics, reasoning, inference,
+and entailment capabilities onto :ref:`RDF` (and general logical set
+theory).
 
 * OWL as :ref:`Turtle`: `<http://www.w3.org/2002/07/owl#>`__
 * https://www.w3.org/TR/owl2-quick-reference/#Names.2C_Prefixes.2C_and_Notation
