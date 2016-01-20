@@ -3760,6 +3760,7 @@ RDFa
 | Standard: http://www.w3.org/TR/rdfa-lite/
 | Standard: http://www.w3.org/TR/html-rdfa/
 | Standard: http://www.w3.org/TR/rdfa-syntax/
+| Standard: https://www.w3.org/2011/rdfa-context/rdfa-1.1
 | Docs: http://www.w3.org/TR/rdfa-primer/
 
 RDFa (*RDF in attributes*) is a standard for storing
@@ -3768,6 +3769,52 @@ structured data (:ref:`RDF` triples) in :ref:`HTML`,
 
 :ref:`Schema.org` structured data can be included in an HTML page as
 RDFa.
+
+
+.. index:: RDFa Core Context
+.. _rdfa core context:
+
+RDFa 1.1 Core Context
+```````````````````
+| Standard: https://www.w3.org/2011/rdfa-context/rdfa-1.1
+| Standard:  http://www.w3.org/2013/json-ld-context/rdfa11
+| Docs: https://github.com/RDFLib/rdflib/blob/master/rdflib/plugins/parsers/pyRdfa/initialcontext.py
+
+The RDFa 1.1 Core Context defines a number of commonly used
+vocabulary namespaces and URIs (*prefix mappings*).
+
+An example :ref:`RDFa` :ref:`HTML5` fragment with vocabularies drawn from
+the :ref:`RDFa` 1.1 Core Context:
+
+.. code:: html
+
+   <div vocab="schema: http://schema.org/">
+     <div typeof="schema:Thing">
+       <span property="schema:name">RDFa 1.1 JSON-LD Core Context</span>
+       <a property="schema:url">http://www.w3.org/2013/json-ld-context/rdfa11</a>
+     </div>
+   </div>
+
+An example :ref:`JSON-LD` document with the :ref:`RDFa` 1.1 Core Context:
+
+.. code:: javascript
+
+   {"@context": "http://www.w3.org/2013/json-ld-context/rdfa11",
+    "@graph": [
+      {"@type": "schema:Thing"
+       "schema:name": "RDFa 1.1 JSON-LD Core Context",
+       "schema:url": "http://www.w3.org/2013/json-ld-context/rdfa11"}
+    ]}
+
+
+.. note:: :ref:`Schema.org` is included in the RDFa 1.1 Core Context.
+
+   Schema.org does, in many places, reimplement other vocabularies
+   e.g. for consistency with Schema.org/DataType s like schema.org/Number.
+
+   There is also :ref:`Schema.org RDF <schema.org-rdf>`,
+   which, for example maps ``schema:name`` to ``rdfs:label``;
+   and :ref:`OWL`.
 
 
 .. index:: JSON-LD
@@ -4066,7 +4113,7 @@ Features:
 
 .. index:: OWL
 .. index:: Web Ontology Language
-.. _OWL:
+.. _owl:
 
 OWL
 +++++
@@ -4080,6 +4127,56 @@ OWL
 
 OWL (*Web Ontology Language*) adds semantics, reasoning, inference,
 and entailment capabilities to :ref:`RDF`.
+
+* OWL as :ref:`Turtle`: http://www.w3.org/2002/07/owl#
+* https://www.w3.org/TR/owl2-quick-reference/#Names.2C_Prefixes.2C_and_Notation
+* https://www.w3.org/TR/owl2-quick-reference/#OWL_2_constructs_and_axioms
+
+A few notable OWL classes:
+
+* ``owl:Class`` a ``owl:Class`` ;
+  ``rdfs:subClassOf`` ``rdfs:Class`` (:ref:`RDFS`)
+* ``owl:Thing`` a ``owl:Class`` -- universal class
+* ``owl:Nothing`` a ``owl:Class`` -- empty class
+* ``owl:Restriction`` a ``rdfs:Class`` ;
+  ``rdfs:subClassOf`` ``owl:Class``
+
+.
+
+* ``owl:DatatypeProperty``
+* ``owl:ObjectProperty``
+* ``owl:ReflexiveProperty``
+* ``owl:IrreflexiveProperty``
+* ``owl:SymmetricProperty``
+* ``owl:TransitiveProperty``
+* ``owl:FunctionalProperty``
+* ``owl:InverseFunctionalProperty``
+* ``owl:OntologyProperty``
+* ``owl:AnnotationProperty``
+* ``owl:AsymmetricProperty``
+
+.
+
+* ``owl:minCardinality``
+* ``owl:cardinality``
+* ``owl:maxCardinality``
+
+.
+
+* ``owl:intersectionOf``
+* ``owl:unionOf``
+* ``owl:complementOf``
+* ``owl:oneOf``
+
+.
+
+* ``owl:allValuesFrom``
+* ``owl:someValuesFrom``
+
+.
+
+| `<https://www.w3.org/2002/07/owl#>`__
+| https://www.w3.org/TR/owl2-quick-reference/
 
 
 .. index:: PROV
