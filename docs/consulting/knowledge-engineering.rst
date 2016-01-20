@@ -4139,9 +4139,9 @@ A few notable OWL classes:
 * ``owl:Thing`` a ``owl:Class`` -- universal class
 * ``owl:Nothing`` a ``owl:Class`` -- empty class
 * ``owl:Restriction`` a ``rdfs:Class`` ;
-  ``rdfs:subClassOf`` ``owl:Class``
+  ``rdfs:subClassOf`` ``owl:Class``
 
-.
+A few OWL Property types:
 
 * ``owl:DatatypeProperty``
 * ``owl:ObjectProperty``
@@ -4155,7 +4155,7 @@ A few notable OWL classes:
 * ``owl:AnnotationProperty``
 * ``owl:AsymmetricProperty``
 
-.
+https://en.wikipedia.org/wiki/Cardinality
 
 * ``owl:minCardinality``
 * ``owl:cardinality``
