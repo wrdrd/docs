@@ -3208,12 +3208,15 @@ TCP/IP protocol for text and binary data interchange.
 
 
 .. index:: HTTP in RDF
-.. _httprdf:
+.. _http in rdf:
 
 HTTP in RDF
 `````````````
 | Standard: http://www.w3.org/TR/HTTP-in-RDF10/
 | Namespace: `<http://www.w3.org/2011/http#>`__
+| Namespace: `<http://www.w3.org/2011/http-headers> .`__
+| Namespace: `<http://www.w3.org/2011/http-methods> .`__
+| Namespace: `<http://www.w3.org/2011/http-statusCodes> .`__
 | xmlns: ``@prefix http: <http://www.w3.org/2011/http#> .``
 | xmlns: ``@prefix http-headers: <http://www.w3.org/2011/http-headers> .``
 | xmlns: ``@prefix http-methods: <http://www.w3.org/2011/http-methods> .``
