@@ -3890,6 +3890,24 @@ are standards for common types, classes, and properties
 that have been mapped to :ref:`XML` and :ref:`RDF`.
 
 
+.. index:: EARL
+.. _earl:
+
+EARL
+``````
+| Standard: https://www.w3.org/TR/EARL10/
+| Namespace: `<http://www.w3.org/ns/earl#>`__
+| xmlns: ``@prefix earl: http://www.w3.org/ns/earl#>`__
+| LOVLink: http://lov.okfn.org/dataset/lov/vocabs/earl
+
+:ref:`W3C` EARL (*Evaluation and Reporting Language*) is an RDFS
+vocabulary for automated, semi-automated, and manual test results.
+
+* The JSON-LD Implementation test results are expressed with EARL:
+
+  | http://json-ld.org/test-suite/
+  | http://json-ld.org/test-suite/reports/
+
 
 .. index:: RDF Data Cube
 .. index:: QB
@@ -3960,6 +3978,28 @@ FOAF
 
 FOAF (*Friend of a Friend*) is an :ref:`RDF` standard vocabulary for
 expressing social networks and contact information.
+
+
+.. index:: SHACL
+.. _shacl:
+
+SHACL
+```````
+| Standard: https://www.w3.org/TR/shacl/
+| Namespace: `<http://www.w3.org/ns/shacl#>`__
+| xmlns: ``@prefix sh: <http://www.w3.org/ns/shacl#> .``
+| LOVLink:
+
+:ref:`W3C` SHACL (*Shapes Constraint Language*) is a language for describing
+:ref:`RDF` and :ref:`RDFS` graph shape constraints.
+
+* SHACL relaxes specific RDFS restrictions:
+  https://www.w3.org/TR/shacl/#shacl-rdfs
+* Required RDFS / :ref:`OWL` :ref:`entailment` can be specified in SHACL with
+  the ``sh:entailment`` property and e.g. :ref:`SPARQL` 1.1 entailment
+  IRIs.
+  https://www.w3.org/TR/shacl/#entailment
+* https://github.com/TopQuadrant/shacl
 
 
 .. index:: SIOC
