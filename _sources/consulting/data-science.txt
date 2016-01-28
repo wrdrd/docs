@@ -427,6 +427,14 @@ https://en.wikipedia.org/wiki/Systematic_review
 
 Linked Reproducibility
 `````````````````````````
+| Hashtag: ``#LinkedReproducibility``
+| Twitter: https://twitter.com/hashtag/LinkedReproducibility
+
+We should use annotations with typed, reified edges to link between
+various studies with comparable and incomparable analyses. (e.g.
+:ref:`OpenAnnotation` :ref:`OA` :ref:`RDF` :ref:`OWL` with more data
+than threaded comments).
+
 :ref:`linked data` + :ref:`Reproducibility` => :ref:`Linked Reproducibility`
 
 ::

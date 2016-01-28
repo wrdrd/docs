@@ -4073,6 +4073,11 @@ and :ref:`JSON-LD`.
 * http://www.w3.org/wiki/WebSchemas
 * http://www.w3.org/wiki/WebSchemas/SchemaDotOrgProposals
 
+.
+
+* "Schema.org: Evolution of Structured Data on the Web" (2015)
+  https://queue.acm.org/detail.cfm?id=2857276
+
 
 .. index:: Schema.org RDF
 .. _schema.org-rdf:

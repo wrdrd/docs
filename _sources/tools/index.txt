@@ -1241,6 +1241,55 @@ Project Templates
   :ref:`configuration management`
 
 
+Project Contributions
+~~~~~~~~~~~~~~~~~~~~~~
+  * see also: // Open Source Project Management
+
+    * https://www.python.org/dev/peps/
+
+      | "PEP 0 -- Index of Python Enhancement Proposals (PEPs)"
+
+      * https://www.python.org/dev/peps/pep-0012/
+
+        | "PEP 0012 -- Sample :ref:`reStructuredText` PEP Template" (:ref:`Python`)
+
+    * https://github.com/ipython/ipython/wiki/IPEPs:-IPython-Enhancement-Proposals
+
+      | "IPEPs: IPython Enhancement Proposals"
+
+      * https://github.com/ipython/ipython/wiki/IPEP-0%3A-IPEP-Template
+
+        | "IPEP 0: IPEP Template" (:ref:`IPython`, :ref:`Jupyter`)
+
+      * https://github.com/jupyter/roadmap
+
+    * github.com/westurner/wiki: a GitHub Sphinx Wiki
+
+      | Home: https://westurner.org/wiki/
+      | Wiki: https://github.com/westurner/wiki/wiki
+      | Src: https://github.com/westurner/wiki
+      | Src: https://github.com/westurner/wiki.wiki.git
+      | Issues: https://github.com/westurner/wiki/issues
+
+      .. code:: bash
+
+          make help
+          # - build    the docs w/ sphinx
+          # - push     to both branches
+          # - gh-pages from eg _build/html, _build/singlehtml
+          make docs push gh-pages
+
+    * github.com/rdfjs/rdfjs.org: a GitHub Project
+
+      | Home: https://github.com/rdfjs/rdfjs.org
+      | Wiki: https://github.com/rdfjs/rdfjs.org/wiki
+      | Src: https://github.com/rdfjs/rdfjs.org
+      | Src: https://github.com/rdfjs/rdfjs.org.wiki.git
+      | Issues: https://github.com/rdfjs/rdfjs.org/issues
+
+      * https://github.com/rdfjs/rdfjs.org/wiki/Meetings
+
+
 .. index:: cookiecutter
 .. _cookiecutter:
 
@@ -1280,39 +1329,17 @@ for projects written in :ref:`Python` and other languages.
 
 * https://github.com/openstack-dev/cookiecutter
 
-  Cookiecutter template for :ref:`OpenStack` specs projects
-  (pbr, tox, :ref:`sphinx`)
+  Cookiecutter template for :ref:`OpenStack`
+  :ref:`Python Package <Python packages>`
+  projects
+  (\* :ref:`pip` \*, pbr, tox, :ref:`sphinx`)
 
 * https://github.com/openstack-dev/specs-cookiecutter
 
   Cookiecutter template for :ref:`OpenStack` specs projects
   (pbr, tox, :ref:`sphinx`)
 
-* see also:
 
-  https://www.python.org/dev/peps/
-
-  "PEP 0 -- Index of Python Enhancement Proposals (PEPs)"
-
-  https://www.python.org/dev/peps/pep-0012/
-
-  "PEP 0012 -- Sample :ref:`reStructuredText` PEP Template" (:ref:`Python`)
-
-  * https://github.com/ipython/ipython/wiki/IPEPs:-IPython-Enhancement-Proposals
-
-    "IPEPs: IPython Enhancement Proposals"
-
-    https://github.com/ipython/ipython/wiki/IPEP-0%3A-IPEP-Template
-
-    "IPEP 0: IPEP Template" (:ref:`IPython`, :ref:`Jupyter`)
-
-    https://github.com/jupyter/roadmap
-
-    * https://github.com/wrdrd/wiki/wiki
-    * https://github.com/westurner/wiki/wiki
-
-      https://westurner.org/wiki/
-    * https://github.com/rdfjs/rdfjs.org/wiki/Meetings
 
 
 .. index:: yeoman
