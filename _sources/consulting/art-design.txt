@@ -2251,8 +2251,6 @@ Roku
 
 
 * Roku supports Amazon Instant VOD
-  (which is available on :ref:`FireTV` but no longer for
-  other :ref:`Android` devices)
 * Roku apps are written in a Roku-specific language called
   "BrightScript"
 * Roku OS is derived from :ref:`Linux`
