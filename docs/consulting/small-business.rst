@@ -607,6 +607,7 @@ Zapier
 | Docs: https://zapier.com/developer/documentation/v2/scripting/
 | Docs: https://zapier.com/developer/documentation/v2/reference/
 | Docs: https://zapier.com/engineering/
+| Docs: https://zapier.com/learn/the-ultimate-guide-to-remote-working/
 
 Zapier (z'API-er) is a software-development-free :ref:`SaaS` web service
 for integrating 500+ great web APIS through Zaps:
