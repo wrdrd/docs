@@ -3778,7 +3778,7 @@ RDFa.
 .. _rdfa core context:
 
 RDFa 1.1 Core Context
-```````````````````
+```````````````````````
 | Standard: https://www.w3.org/2011/rdfa-context/rdfa-1.1
 | Standard:  http://www.w3.org/2013/json-ld-context/rdfa11
 | Docs: https://github.com/RDFLib/rdflib/blob/master/rdflib/plugins/parsers/pyRdfa/initialcontext.py
@@ -3900,7 +3900,7 @@ EARL
 ``````
 | Standard: https://www.w3.org/TR/EARL10/
 | Namespace: `<http://www.w3.org/ns/earl#>`__
-| xmlns: ``@prefix earl: http://www.w3.org/ns/earl#>`__
+| xmlns: ``@prefix earl: http://www.w3.org/ns/earl#``
 | LOVLink: http://lov.okfn.org/dataset/lov/vocabs/earl
 
 :ref:`W3C` EARL (*Evaluation and Reporting Language*) is an RDFS
