@@ -339,19 +339,6 @@ See: :ref:`team building`
 :ref:`Collaborative software`)
 
 
-.. index:: Test Driven Development
-.. index:: TDD
-.. _tdd:
-
-Test Driven Development
-~~~~~~~~~~~~~~~~~~~~~~~~
-| Wikipedia https://en.wikipedia.org/wiki/Test-driven_development
-
-* https://westurner.org/wiki/awesome-python-testing
-* https://westurner.org/wiki/awesome-python-testing#workflow-evolution
-* https://westurner.org/wiki/awesome-python-testing#test-driven-development-tdd
-
-
 .. index:: Extreme Programming
 .. index:: XP
 .. _XP:
@@ -421,6 +408,127 @@ Kanban
 
   * https://waffle.io
   * https://taiga.io (https://github.com/taigaio)
+
+
+.. index:: Requirements Modeling
+.. _requirements modeling:
+
+Requirements Modeling
+------------------------
+| Wikipedia: https://en.wikipedia.org/wiki/Requirements_analysis
+
+
+
+
+.. index:: Test Driven Development
+.. index:: TDD
+.. _tdd:
+.. _test-driven-development:
+
+Test Driven Development
+++++++++++++++++++++++++
+| Wikipedia https://en.wikipedia.org/wiki/Test-driven_development
+
+* https://westurner.org/wiki/awesome-python-testing
+* https://westurner.org/wiki/awesome-python-testing#workflow-evolution
+* https://westurner.org/wiki/awesome-python-testing#test-driven-development-tdd
+
+
+.. index:: Behavior Driven Development
+.. index:: BDD
+.. _bdd:
+.. _behavior driven development:
+
+Behavior Driven Development
++++++++++++++++++++++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/Behavior-driven_development
+
+
+.. index:: User Story
+.. _user story:
+
+User Story
+++++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/User_story
+
+A user story is a couple of simple sentences expressing desired
+competencies, features, or behaviors of a system.
+
+Ideally, user stories can simply be transformed to e.g. :ref:`TDD <tdd>`
+and :ref:`BDD <bdd>` tests.
+
+Example user stories:
+
+> * "[role] can [action [objects]] [in order to / so that [...]]"
+> * "Users can login and post Things with a description and a url"
+> * "Users can login and post Things with a description and a url
+>   in order to have something with a URL to share"
+> * "Users can share shared Things with a URL"
+
+* User story formats
+
+  https://en.wikipedia.org/wiki/User_story#Format
+
+
+.. index:: Three C's
+.. _3cs:
+.. _three c's:
+
+Three C's:
+++++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/User_story#History
+| Docs: http://ronjeffries.com/xprog/articles/expcardconversationconfirmation/
+
+The Three C's of :ref:`User story` :ref:`requirements modeling` are
+**Card**, **Conversation**, and **Confirmation**.
+
+* Card
+
+  * Issue ``name`` and ``description`` (or
+    ``description__markdown_github``).
+  * :ref:`Codelabels`
+
+* Conversation
+
+  * Issue comment thread or **threads** (with full URLs)
+  * Pull Request comment thread or **threads** (with full URLs)
+  * :ref:`Codelabels`
+
+* Confirmation
+
+  * Issue ``status``: open / closed
+  * Issue Labels: { duplicate, wontftix }
+  * Issue labels: { ready, in progress, } TODO
+
+    * https://waffle.io/ uses ready, in progress labels
+      to build an interactive :ref:`Kanban` board with columns
+      from github issue labels.
+
+
+.. index:: Use Case
+.. _use case:
+
+Use Case
+++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/Use_case
+
+A use case describes actions, actors, and goals.
+
+* :ref:`UML` defines a formal model for :ref:`Use cases <use case>`
+  and use case diagrams.
+
+  * Use case diagrams may involve **stick figures**
+    as symbols for **actors**.
+
+* In practice, the use case is a more formal requirement model than the :ref:`user story`.
+
+  * In terms of process workflow, a
+    :ref:`Use Cases <use case>` could be derived from zero or more
+    :ref:`User Stories <user story>`.
+  * There are many :ref:`domain modeling` tools for e.g. :ref:`UML`;
+    each with various levels of support for *round-trip* between
+    modeling tool and e.g. code that you add after transforming to which
+    is sometimes referred to as *stub* code.
 
 
 .. index:: Technical Debt
@@ -493,7 +601,7 @@ is a change management strategy for a project repository.
   is a software solution for handling change management
   with one or more project repositories.
 * Centralized :ref:`Revision Control` Systems (RCS, VCS):
-  
+
   * :ref:`CVS`, :ref:`SVN <subversion>`
 
 * :ref:`Distributed Revision Control <dvcs>` Systems (DVCS):
