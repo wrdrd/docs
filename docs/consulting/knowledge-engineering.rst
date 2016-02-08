@@ -3821,7 +3821,8 @@ An example :ref:`JSON-LD` document with the :ref:`RDFa` 1.1 Core Context:
 
 
 .. index:: JSON-LD
-.. _JSON-LD:
+.. _jsonld:
+.. _json-ld:
 
 JSON-LD
 ````````
