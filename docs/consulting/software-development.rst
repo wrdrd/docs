@@ -410,14 +410,51 @@ Kanban
   * https://taiga.io (https://github.com/taigaio)
 
 
+.. index:: Requirements Management
+.. _requirements management:
+
+Requirements Management
+-------------------------
+| Wikipedia: https://en.wikipedia.org/wiki/Requirements_management
+
+
 .. index:: Requirements Modeling
 .. _requirements modeling:
 
 Requirements Modeling
-------------------------
+++++++++++++++++++++++++
 | Wikipedia: https://en.wikipedia.org/wiki/Requirements_analysis
 
 
+.. index:: Agile Modeling
+.. _agile modeling:
+
+Agile Modeling
+++++++++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/Agile_modeling
+| Docs:
+
+* "Agile Modeling Best Practices"
+
+  http://agilemodeling.com/essays/bestPractices.htm
+
+  * **Model storming**: http://agilemodeling.com/essays/modelStorming.htm
+  * JIT: Just-in-time 
+  * BRUF: "Big Requirements Up Front"
+  * JBGE: "Just Barely Good Enough" (/``anticipation``)
+  * **Executable Specifications**: http://agilemodeling.com/essays/executableSpecifications.htm
+
+    * TST: :ref:`TDD` and :ref:`BDD` tests (:ref:`Test Automation`)
+    * BLD: :ref:`Software Packaging <software packages>`
+    * BLD: :ref:`Configuration Management` (*Infrastructure as Code*)
+    * BLD: :ref:`Continuous Integration` (*one-click build*)
+    * BLD: :ref:`Continuous Deployment` (*one-click deploy*)
+
+See also:
+
+* :ref:`Scrum`, :ref:`Extreme Programming`, :ref:`Unified Process`
+* :ref:`collaborative software`
+* :ref:`six patterns of collaboration`
 
 
 .. index:: Test Driven Development
@@ -426,7 +463,7 @@ Requirements Modeling
 .. _test-driven-development:
 
 Test Driven Development
-++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~
 | Wikipedia https://en.wikipedia.org/wiki/Test-driven_development
 
 * https://westurner.org/wiki/awesome-python-testing
@@ -440,7 +477,7 @@ Test Driven Development
 .. _behavior driven development:
 
 Behavior Driven Development
-+++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/Behavior-driven_development
 
 
@@ -448,7 +485,7 @@ Behavior Driven Development
 .. _user story:
 
 User Story
-++++++++++++
+~~~~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/User_story
 
 A user story is a couple of simple sentences expressing desired
@@ -474,8 +511,8 @@ Example user stories:
 .. _3cs:
 .. _three c's:
 
-Three C's:
-++++++++++++
+Card, Conversation, Confirmation
+``````````````````````````````````
 | Wikipedia: https://en.wikipedia.org/wiki/User_story#History
 | Docs: http://ronjeffries.com/xprog/articles/expcardconversationconfirmation/
 
@@ -509,7 +546,7 @@ The Three C's of :ref:`User story` :ref:`requirements modeling` are
 .. _use case:
 
 Use Case
-++++++++++
+~~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/Use_case
 
 A use case describes actions, actors, and goals.
@@ -529,6 +566,190 @@ A use case describes actions, actors, and goals.
     each with various levels of support for *round-trip* between
     modeling tool and e.g. code that you add after transforming to which
     is sometimes referred to as *stub* code.
+
+
+.. index:: Requirements Traceability
+.. _requirements traceability:
+
+Requirements Traceability
++++++++++++++++++++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/Requirements_traceability
+
+::
+
+    MISSION
+    GOAL
+    OBJECTIVE
+
+    IDEA: idea
+
+    STRY: user story -> TST, ENH, BUG, RLS ; -> CASE ; + REQ 
+    CASE: use case   -> TST, ENH, BUG, RLS ; -> STRY ; + REQ
+    REQ: requirement -> TST                          ; + REQ
+
+    SPRINT: sprint == { REQ, CASE, STRY, TST, BUG, ENH, DOC, TST, RLS }
+
+    TASK
+
+Work Breakdown Structure
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Work_breakdown_structure
+
+Mission
+````````
+| Wikipedia: https://en.wikipedia.org/wiki/Mission_statement
+
+Goal
+```````
+| Wikpedia: https://en.wikipedia.org/wiki/Goal
+
+Objective
+```````````
+| Wikipedia: https://en.wikipedia.org/wiki/OKR
+
+
+
+Checkboxes
+~~~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Checkbox
+
+
+Checkboxes can be expressed in plaintext with square brackets
+surrounding a space character, a state character, or a completion
+character (e.g. lowercase ``x`` or uppercase ``X``).
+
+
+
+A :ref:`Markdown` list of items with checkboxes and :ref:`codelabels`:
+
+.. code:: markdown
+
+   - [x] ENH: one **bold**
+   - [ ] ENH: two *italic*
+     - [x] TST: two.one
+     - [ ] DOC: two.two \* two
+   - [ ] RLS: ``three`` (also `three`)
+
+A :ref:`ReStructuredText` list of items with checkboxes and
+:ref:`codelabels`:
+
+.. code:: restructuredtext
+
+  * [x] ENH: one **bold**
+  * [ ] ENH: two *italic*
+
+    * [x] TST: two.one
+    * [ ] DOC: two.two \* two
+
+  * [ ] RLS: ``three``
+
+
+TODO ::
+
+    * [ ] Unchecked # github
+    * [x] Checked   # github
+    * [X] Checked   # github
+
+    - [X (YYYY-MM-DD HH:MM:SS)] 
+    - [-]
+    - [o]
+    - [O]
+
+    - [[ ]]         # text
+    - [[x]]         # text
+    - [[o]]         # text
+    - \\[ ]         # text
+    - \\[-]         # text
+    - \\[o]         # text
+    - \\[x]         # text
+    - \\[X]         # text
+
+
+.. index:: Codelabels
+.. _code-labels:
+.. _code labels:
+.. _codelabels:
+
+Codelabels
+~~~~~~~~~~~~
+Codelabels (*code labels*) are three-letter codes with which commit messages can be prefixed.
+
+::
+
+    CODE Label          color name      background  text
+    ---- -------------- --------------- ----------  -------
+    BLD  build          light green     #bfe5bf     #2a332a
+    BUG  bug            red             #fc2929     #ffffff  (github default)
+    CLN  cleanup        light yellow    #fef2c0     #333026
+    DOC  documentation  light blue      #c7def8     #282d33
+    ENH  enhancement    blue            #84b6eb     #1c2733  (github default)
+    PRF  performance    deep purple     #5319e7     #ffffff
+    REF  refactor       dark green      #009800     #ffffff
+    RLS  release        dark blue       #0052cc     #ffffff
+    SEC  security       orange          #eb6420     #ffffff
+    TST  test           light purple    #d4c5f9     #2b2833
+    UBY  usability      light pink      #f7c6c7     #332829
+
+    DAT  data
+    SCH  schema
+
+    # Workflow Labels   (e.g. for waffle.io kanban board columns)
+    ready               dark sea green  #006b75     #ffffff
+    in progress         yellow          #fbca04     #332900
+
+    # GitHub Labels
+    duplicate           darker gray     #cccccc     #333333  (github default)
+    help wanted         green           #159818     #ffffff  (github default)
+    invalid             light gray      #e6e6e6     #333333  (github default)
+    question            fuschia         #cc317c     #ffffff  (github default)
+    wontfix             white           #ffffff     #333333  (github default)
+
+    Note: All of these color codes (except for fuschia)
+    are drawn from the default GitHub palette.
+
+    Note: There are 23 labels listed here.
+
+
+
+.. note:: For examples with color swatches in alphabetical order,
+   see https://github.com/westurner/dotfiles/labels
+
+
+Codelabel Syntax
+```````````````````
+
+::
+
+    BLD: Makefile: default -> test
+    BUG: setup.py: fix console_entrypoints
+    CLN: .gitignore: add "'pattern'
+    DOC: index.rst: add readme.rst to TOC
+    ENH: app/app.py: print 'Hello World' (closes #1)
+    PRF,REF: app/app.py: factor out of a loop
+    REF: app/app.py: extract into class and @staticmethods
+    RLS: setup.py,VERSION.txt,app/app.py: app v0.0.1
+    SEC: app/app.py: pass lists/tuples to sarge.run (#2)
+    TST: Extend tests for #1
+    UBY: app/app.py: update _('strings')
+
+    DAT: data/filename.csvw.jsonld: added, updated
+    SCH: data/context.jsonld: added, updated
+
+
+* ``COMMA,DELIMITED, SET: of prefix labels``
+* ``THR`` - Three-characters (code labels)
+
+Code labels are helpful for:
+
+* DOC: working with issue tracking tagging and labeling systems
+* DOC: aggregating changes into release logs (``HISTORY``)
+* DOC: correlating changes with requirements
+  (https://en.wikipedia.org/wiki/Requirements_traceability)
+  [`Requirements Traceability`_]
+
+.. note:: These code labels are adapted and extended from
+   a previous version of the 
+   `pandas/CONTRIBUTING.md <https://github.com/pydata/pandas/blob/master/CONTRIBUTING.md>`_
 
 
 .. index:: Technical Debt
@@ -696,4 +917,17 @@ Continuous Integration
 ++++++++++++++++++++++++
 | Wikipedia: https://en.wikipedia.org/wiki/Continuous_integration
 
+* :ref:`Test Automation`
+* :ref:`Configuration Management`
+* #DevOps
 
+.. index:: Continuous Deployment
+.. _continuous deployment:
+
+Continuous Deployment
++++++++++++++++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/Continuous_deployment
+
+* :ref:`Configuration Management`
+* :ref:`Virtualization`
+* #DevOps
