@@ -4062,6 +4062,7 @@ Schema.org
 | Download: https://schema.org/version/latest/
 | Source: https://github.com/schemaorg/schemaorg
 | Source: https://github.com/schemaorg/schemaorg/tree/sdo-phobos/data/releases/2.2
+| Docs: http://dataliberate.com/2016/02/evolving-schema-org-in-practice-pt1-the-bits-and-pieces/
 
 Schema.org is a vocabulary for expressing structured data on the web.
 
@@ -4079,6 +4080,8 @@ and :ref:`JSON-LD`.
 * "Schema.org: Evolution of Structured Data on the Web" (2015)
   https://queue.acm.org/detail.cfm?id=2857276
 
+* "Evolving Schema.org in Practice Pt1: The Bits and Pieces" (2016)
+  http://dataliberate.com/2016/02/evolving-schema-org-in-practice-pt1-the-bits-and-pieces/
 
 .. index:: Schema.org RDF
 .. _schema.org-rdf:
