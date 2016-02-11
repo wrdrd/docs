@@ -3821,7 +3821,8 @@ An example :ref:`JSON-LD` document with the :ref:`RDFa` 1.1 Core Context:
 
 
 .. index:: JSON-LD
-.. _JSON-LD:
+.. _jsonld:
+.. _json-ld:
 
 JSON-LD
 ````````
@@ -4057,50 +4058,71 @@ Implementations:
 Schema.org
 +++++++++++
 | Wikipedia: https://en.wikipedia.org/wiki/Schema.org
-| Homepage: http://schema.org
+| Homepage: https://schema.org
 | Download: https://schema.org/version/latest/
 | Source: https://github.com/schemaorg/schemaorg
 | Source: https://github.com/schemaorg/schemaorg/tree/sdo-phobos/data/releases/2.2
+| Docs: http://dataliberate.com/2016/02/evolving-schema-org-in-practice-pt1-the-bits-and-pieces/
+| Issues: https://github.com/schemaorg/schemaorg/issues
+| IssueLabels: https://github.com/schemaorg/schemaorg/labels
 
 Schema.org is a vocabulary for expressing structured data on the web.
 
 Schema.org can be expressed as microdata, :ref:`RDF`, :ref:`RDFa`,
 and :ref:`JSON-LD`.
 
-* http://schema.org/docs/full.html
-* http://schema.org/docs/schemas.html
-* http://schema.org/docs/releases.html
-* http://www.w3.org/wiki/WebSchemas
-* http://www.w3.org/wiki/WebSchemas/SchemaDotOrgProposals
+* http:s//schema.org/docs/full.html
+* https://schema.org/docs/schemas.html
+* https://schema.org/docs/releases.html
+* https://www.w3.org/wiki/WebSchemas
+* https://www.w3.org/wiki/WebSchemas/SchemaDotOrgProposals
+* https://www.w3.org/wiki/WebSchemas/Accessibility
 
 .
 
 * "Schema.org: Evolution of Structured Data on the Web" (2015)
   https://queue.acm.org/detail.cfm?id=2857276
 
+* "Evolving Schema.org in Practice Pt1: The Bits and Pieces" (2016)
+  http://dataliberate.com/2016/02/evolving-schema-org-in-practice-pt1-the-bits-and-pieces/
+
+.. note:: The `<https://schema.org/>`__ site is served over HTTPS,
+   but the schema.org terms are HTTP **URIs**
 
 .. index:: Schema.org RDF
 .. _schema.org-rdf:
+.. _schemaorg rdf:
 
 Schema.org RDF
 ````````````````
 | xmlns: ``@prefix schema: <http://schema.org/> .``
-| xmlns: ``@prefix schemax: <http://topbraid.org/schemax/> .``
 | LOVLink: http://lov.okfn.org/dataset/lov/vocabs/schema
-
-TopBraid maintains more complete :ref:`OWL` :ref:`RDF`
-transformations of :ref:`Schema.org`.
-
-* http://topbraid.org/schema/
-* http://topbraid.org/schema/schema.rdf
-* http://topbraid.org/schema/schema.ttl
-* http://topbraid.org/schema/schema-single-range.ttl
+| Standard: https://schema.org/docs/schema_org_rdfa.html [:ref:`RDFa`]
 
 Tools and Mappings
 
 * https://github.com/mhausenblas/schema-org-rdf
 * http://schema.rdfs.org/tools.html
 * http://schema.rdfs.org/mappings.html
+
+.. index:: Schema.org TopBraid RDF
+.. _schemaorg topbraid rdf:
+
+Schema.org TopBraid RDF
+``````````````````````````````````````````
+| Homepage: http://topbraid.org/schema/
+| Docs: http://topbraid.org/schema/
+| xmlns: ``@prefix schema: <http://schema.org/> .``
+| xmlns: ``@prefix schemax: <http://topbraid.org/schemax/> .``
+
+TopBraid maintains more complete :ref:`OWL` :ref:`RDF`
+transformations of :ref:`Schema.org`.
+
+* http://topbraid.org/schema/schema.rdf :ref:`rdfxml`
+* http://topbraid.org/schema/schema.ttl :ref:`turtle`
+* http://topbraid.org/schema/schema-single-range.ttl :ref:`turtle`
+  with only one type per range
+
 
 
 
