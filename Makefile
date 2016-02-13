@@ -98,7 +98,7 @@ docs_tools_submodule:
 	git -C docs/tools/ pull origin master
 
 docs_tools_submodule_upgrade: docs_tools_submodule
-	git commit docs/tools -m "DOC: docs/tools: pull latest: $(shell git -C docs/tools rev-parse --short HEAD)"
+	git commit docs/tools -m "DOC: :books: docs/tools: pull latest: $(shell git -C docs/tools rev-parse --short HEAD)"
 
 docs-tools: docs_tools_submodule_upgrade docs
 
