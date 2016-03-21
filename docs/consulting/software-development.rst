@@ -683,6 +683,7 @@ Codelabels (*code labels*) are three-letter codes with which commit messages can
     CLN  cleanup        light yellow    #fef2c0     #333026
     DOC  documentation  light blue      #c7def8     #282d33
     ENH  enhancement    blue            #84b6eb     #1c2733  (github default)
+    ETC  config
     PRF  performance    deep purple     #5319e7     #ffffff
     REF  refactor       dark green      #009800     #ffffff
     RLS  release        dark blue       #0052cc     #ffffff
@@ -707,7 +708,7 @@ Codelabels (*code labels*) are three-letter codes with which commit messages can
     Note: All of these color codes (except for fuschia)
     are drawn from the default GitHub palette.
 
-    Note: There are 23 labels listed here.
+    Note: There are 21 labels listed here.
 
 
 
