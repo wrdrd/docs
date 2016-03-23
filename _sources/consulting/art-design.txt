@@ -7,7 +7,7 @@
 =============
 Art & Design
 =============
-| https://en.wikipedia.org/wiki/Art
+| https://en.wikifpedia.org/wiki/Art
 | https://en.wikipedia.org/wiki/Design
 
 
@@ -1291,6 +1291,7 @@ MilkDrop Presets
 * http://ghostco.de/milkdrop_pack/
 * http://www.milkdrop.tk/
 * http://forums.winamp.com/forumdisplay.php?f=84
+* http://www.geisswerks.com/milkdrop/favorite_presets_2013_12.zip
 
 
 .. index:: ProjectM
