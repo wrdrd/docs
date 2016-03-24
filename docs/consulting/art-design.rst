@@ -295,6 +295,128 @@ with :ref:`HTML5` and :ref:`Javascript`.
 See: :ref:`data visualization tools`
 
 
+.. index:: Computer-mediated Reality
+.. index:: Mediated Reality
+.. _mediated reality:
+
+Mediated Reality
+******************
+| Wikipedia: https://en.wikipedia.org/wiki/Computer-mediated_reality
+
+* https://en.wikipedia.org/wiki/Computer-mediated_reality#/media/File:Viraugmixmodmediated_reality.png
+
+
+.. index:: Mixed Reality
+.. _mixed reality:
+
+Mixed Reality
+~~~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Mixed_reality
+
+
+.. index:: Augmented Reality
+.. _augmented reality:
+
+-------------------
+Augmented Reality
+-------------------
+| Wikipedia: https://en.wikipedia.org/wiki/Augmented_reality
+
+
+.. index:: Virtual Reality
+.. _virtual reality:
+
+Virtual Reality
+=================
+| https://en.wikipedia.org/wiki/Virtual_reality
+
+
+.. index:: Mediated Reality Mediums
+.. _mediated reality mediums:
+
+Mediated reality mediums
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+.. index:: Google Cardboard
+.. _google cardboard:
+
+------------------
+Google Cardboard
+------------------
+| Wikipedia: https://en.wikipedia.org/wiki/Google_Cardboard
+| Homepage: https://www.google.com/get/cardboard/
+
+* Google Nexus :ref:`Android` Smartphone + Google Cardboard viewer
+
+  * https://www.google.com/get/cardboard/get-cardboard/
+
+
+.. index:: Google Glass
+.. _google glass:
+
+-------------
+Google Glass
+-------------
+| Wikipedia: https://en.wikipedia.org/wiki/Google_Glass
+| Homepage:  https://www.google.com/glass/
+
+* Glasses frame + projective 
+
+
+.. index:: Oculus VR
+.. _oculus vr:
+
+------------
+Oculus VR
+------------
+| Wikipedia: https://en.wikipedia.org/wiki/Oculus_VR
+| Homepage: https://www.oculus.com/
+
+
+.. index:: Oculus Rift
+.. _oculus rift:
+
+Oculus Rift
+============
+| Wikipedia: https://en.wikipedia.org/wiki/Oculus_Rift
+| Homepage: https://www.oculus.com/en-us/rift/
+
+
+.. index:: Oculus Gear VR
+.. _oculus gear vr:
+
+Samsung Gear VR
+=================
+| Wikipedia: https://en.wikipedia.org/wiki/Samsung_Gear_VR
+| Homepage: https://www.oculus.com/en-us/gear-vr/ 
+
+* Samsung Galaxy :ref:`Android` Smartphone + Samsung Ocular Gear VR Headset
+
+
+.. index:: Windows Holographic
+.. _windows holographic:
+
+---------------------
+Windows Holographic
+---------------------
+| Wikipedia: https://en.wikipedia.org/wiki/Windows_Holographic
+| Docs: https://dev.windows.com/en-us/holographic
+| Docs: https://dev.windows.com/en-us/holographic/documentation
+
+* :ref:`Windows` 10
+
+
+.. index:: Microsoft HoloLens
+.. _microsoft hololens:
+
+Microsoft HoloLens
+=====================
+| Wikipedia: https://en.wikipedia.org/wiki/Microsoft_HoloLens
+| Homepage: https://www.microsoft.com/microsoft-hololens/en-us
+| Docs: https://www.microsoft.com/microsoft-hololens/en-us/developers
+
+
 .. index:: Photography
 .. _photography:
 
