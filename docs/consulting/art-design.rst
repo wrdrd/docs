@@ -347,7 +347,7 @@ Google Cardboard
 | Wikipedia: https://en.wikipedia.org/wiki/Google_Cardboard
 | Homepage: https://www.google.com/get/cardboard/
 
-* Google Nexus :ref:`Android` Smartphone + Google Cardboard viewer
+* :ref:`Android` Smartphone + Google Cardboard viewer
 
   * https://www.google.com/get/cardboard/get-cardboard/
 
