@@ -23,6 +23,8 @@ WRD R&D Documentation
    consulting/units
    consulting/knowledge-engineering
    consulting/entrepreneurship
+   consulting/personal-finance
+   consulting/investing
    consulting/education-technology
    consulting/art-design
    consulting/team-building
