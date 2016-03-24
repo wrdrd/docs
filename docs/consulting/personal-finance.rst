@@ -432,21 +432,21 @@ Intestacy
             *if there is not a more specific will*,
             the first matching class takes everything (after debts are
             paid and then federal (and state) estate taxes):
-          + 0. Surviving spouse
-          + a.1. decendents (children)
-          + a.2. parents (equally)
-          + a.3. parents' decendents (e.g. siblings)
-          + a.4.A. 1/2 each to paternal/maternal grandparents
-          + a.4.B. 1/2 each to paternal/maternal grandparents' decendents
-          + a.5. [... speak with an estate attorney ...]
-          + b. deceased spouse's decendents (equally)
+          + .0. Surviving spouse
+          + .a.1. decendents (children)
+          + .a.2. parents (equally)
+          + .a.3. parents' decendents (e.g. siblings)
+          + .a.4.A. 1/2 each to paternal/maternal grandparents
+          + .a.4.B. 1/2 each to paternal/maternal grandparents' decendents
+          + .a.5. [... speak with an estate attorney ...]
+          + .b. deceased spouse's decendents (equally)
 
       * https://en.wikipedia.org/wiki/Uniform_Simultaneous_Death_Act
 
 .. note:: If the default state order of succession applies
    (e.g. when there is no other will defined),
    for one matching class to gift all or part of their inheritance
-   to others, they then must pay *both* inheritance tax *and*
+   to others, they then must pay *both* :ref:`inheritance tax` *and*
    :ref:`gift tax` on any amount over the annual exclusion for the year.
 
 
