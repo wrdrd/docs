@@ -368,7 +368,7 @@ QuantLib
 | Docs: http://quantlib.org/install.shtml
 
 Quantlib is a library for
-:ref:`Quantitative analysis <quantiative analyst>` written in
+:ref:`Quantitative analysis <quantitative analyst>` written in
 :ref:`C++`.
 
 * :ref:`QuantLib-Python` is one wrapper library / language binding
