@@ -277,7 +277,7 @@ Social Security
 
 401(k)
 +++++++
-| Wikipedia: https://en.wikipedia.org/wiki/401(k)
+| Wikipedia: `<https://en.wikipedia.org/wiki/401(k)>`__
 
 * 403(b) -- non-profits
 * 457(b) -- governmental employers
