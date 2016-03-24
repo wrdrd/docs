@@ -8,7 +8,8 @@ Investing
 | Wikipedia: https://en.wikipedia.org/wiki/Investment
 
 .. warning:: Like the rest of this documentation set,
-   this is not to be taken as financial advice.
+   this is not to be taken as financial advice;
+   or advice of any kind.
 
 Basics
 -------
@@ -361,11 +362,13 @@ QuantLib
 ++++++++++
 | Wikipedia: https://en.wikipedia.org/wiki/QuantLib
 | Homepage: http://quantlib.org/
+| Twitter: https://twitter.com/quantlib
 | Src: https://github.com/lballabio/QuantLib
 | Docs: http://quantlib.org/docs.shtml
 | Docs: http://quantlib.org/install.shtml
 
-Quantlib is a library for :ref:`Quantitative analysis` written in
+Quantlib is a library for
+:ref:`Quantitative analysis <quantiative analyst>` written in
 :ref:`C++`.
 
 * :ref:`QuantLib-Python` is one wrapper library / language binding
@@ -379,7 +382,7 @@ Quantlib is a library for :ref:`Quantitative analysis` written in
 .. _pyql:
 
 pyql
-++++++
+~~~~~~
 | Src: https://github.com/enthought/pyql
 
 pyql is a :ref:`Cython` package for working with parts of
@@ -389,7 +392,7 @@ pyql is a :ref:`Cython` package for working with parts of
 .. _quantlib-python:
 
 QuantLib-Python
-++++++++++++++++++
+~~~~~~~~~~~~~~~~~~
 | PyPI: https://pypi.python.org/pypi/QuantLib-Python
 
 QuantLib-Python is a :ref:`Python` library for working with
