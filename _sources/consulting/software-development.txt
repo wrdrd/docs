@@ -496,11 +496,11 @@ and :ref:`BDD <bdd>` tests.
 
 Example user stories:
 
-> * "[role] can [action [objects]] [in order to / so that [...]]"
-> * "Users can login and post Things with a description and a url"
-> * "Users can login and post Things with a description and a url
->   in order to have something with a URL to share"
-> * "Users can share shared Things with a URL"
+   * "[role] can [action [objects]] [in order to / so that [...]]"
+   * "Users can login and post Things with a description and a url"
+   * "Users can login and post Things with a description and a url
+     in order to have something with a URL to share"
+   * "Users can share shared Things with a URL"
 
 * User story formats
 
