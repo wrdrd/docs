@@ -142,7 +142,7 @@ gh-pages: docs-mv-singlehtml
 	# Push docs to gh-pages branch with a .nojekyll file
 	ghp-import -n -b '${DOCS_GIT_HTML_BRANCH}' -p '${BUILDDIRHTML}' \
 		-m "DOC,RLS: :books: docs built from: $(shell git -C $(shell pwd) rev-parse --short HEAD)"
-	git log -n3 --stat '${DOCS_GIT_HTML_BRANCH}'
+	git log -n3 --reverse --stat '${DOCS_GIT_HTML_BRANCH}'
 
 pull:
 	git pull
