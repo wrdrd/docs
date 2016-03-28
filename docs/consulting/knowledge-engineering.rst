@@ -38,8 +38,8 @@ Symbols
 
 * :ref:`URI` are symbols:
 
-  * :ref:`urn` (:ref:`term: URN <urn>`)
-  * :ref:`url` (:ref:`term: URL <url>`)
+  * :ref:`urn` (:term:`term: URN <urn>`)
+  * :ref:`url` (:term:`term: URL <url>`)
 
 * Linguistics
   https://en.wikipedia.org/wiki/Linguistics
