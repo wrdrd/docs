@@ -206,8 +206,11 @@ Logic
 | WikipediaCategory: https://en.wikipedia.org/wiki/Category:Logic
 
 * https://en.wikipedia.org/wiki/List_of_logic_symbols
+* https://en.wikipedia.org/wiki/Category:Latin_logical_phrases
 
-* https://en.wikipedia.org/wiki/Rule_of_inference
+See:
+
+* :ref:`Inference`
 
 
 .. index:: Set Theory
@@ -466,9 +469,12 @@ Inference
 ```````````
 | Inference: https://en.wikipedia.org/wiki/Inference
 
-* https://en.wikipedia.org/wiki/Rule_of_inference (Logic)
-* https://en.wikipedia.org/wiki/Category:Statistical_inference (Logic + Math)
 
+* https://en.wikipedia.org/wiki/Rule_of_inference (Logic)
+* https://en.wikipedia.org/wiki/List_of_rules_of_inference
+
+
+* https://en.wikipedia.org/wiki/Category:Statistical_inference (Logic + Math)
 
 .. index:: Entailment
 .. _entailment:
