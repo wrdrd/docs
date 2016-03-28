@@ -108,15 +108,19 @@ docs-tools-clone:
 
 docs-open: docs open
 
+WEB=web  # browser (pip install web.sh)
 
 open:
 	@#pip install web.sh  # https://pypi.python.org/pypi/web.sh
-	web './${BUILDDIRHTML}/index.html'
-	@#web ./${BUILDDIRSINGLEHTML}/index.html
+	$(WEB) './${BUILDDIRHTML}/index.html'
+	@#$(WEB) ./${BUILDDIRSINGLEHTML}/index.html
 
 PGS_PORT:=8082
 open-pgs:
-	web 'http://localhost:${PGS_PORT}'
+	$(WEB) 'http://localhost:${PGS_PORT}'
+
+open-pgs-gh-pages:
+	$(MAKE) open-pgs PGS_PORT=8083
 
 release: clean
 	python setup.py sdist upload
@@ -165,7 +169,15 @@ pgs:
 
 pgs-gh-pages:
 	# Serve gh-pages branch over HTTP (with try_files $1.html)
-	pgs -g '${PWD}' -r gh-pages -P '${PGS_PORT}'
+	pgs -g '${PWD}' -r gh-pages -P '$(PGS_PORT)'
+
+pgs-open:
+	(sleep 3; $(MAKE) open-pgs) &
+	$(MAKE) pgs PGS_PORT=$(PGS_PORT)
+
+pgs-gh-pages-open:
+	(sleep 3; $(MAKE) open-pgs-gh-pages) &
+	$(MAKE) pgs-gh-pages PGS_PORT=8083
 
 serve: serve-fs
 
