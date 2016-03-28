@@ -355,8 +355,8 @@ Hoare Logic
 
 See:
 
-* :ref:`Predicate Logic`, :ref:`Description Logic`
-* :ref:`Given-When-Then <given when then>`
+* :ref:`Predicate Calculus`, :ref:`Description Logic`
+* :ref:`Given-When-Then`
 
 
 .. index:: First-order Logic
@@ -431,7 +431,9 @@ Description Logic (*DL*; DLP (Description Logic Programming))
 * https://en.wikipedia.org/wiki/Description_logic#Notation
 * https://en.wikipedia.org/wiki/Description_logic#Relationship_with_other_logics
 
-Knowledge Base = TBox + ABox
+::
+
+    Knowledge Base = TBox + ABox
 
 * https://en.wikipedia.org/wiki/TBox (Schema: Class/Property Ontology)
 * https://en.wikipedia.org/wiki/ABox (Facts / Instances)
