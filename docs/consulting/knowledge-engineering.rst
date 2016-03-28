@@ -2370,6 +2370,7 @@ for distributed computation.
 Distributed Computing Protocols
 +++++++++++++++++++++++++++++++++
 
+* https://en.wikipedia.org/wiki/Comparison_of_data_serialization_formats
 * :ref:`CORBA`
 * :ref:`Message Passing`
 * :ref:`MPI`
