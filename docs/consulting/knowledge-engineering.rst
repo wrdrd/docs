@@ -2523,13 +2523,18 @@ with implementations in many languages.
 Protocol Buffers
 ``````````````````
 | Homepage: https://developers.google.com/protocol-buffers/
-| Source: git https://github.com/google/protobuf
-| Docs:
+| Src: https://github.com/google/protobuf
+| Docs: https://developers.google.com/protocol-buffers/docs/overview
 
 Protocol Buffers (*PB*) is a standard
 for structured data interchange.
 
 * Protocol Buffers are faster than :ref:`JSON`
+
+See also:
+
+* :ref:`Thrift`
+* :ref:`Avro`
 
 
 .. index:: Thrift
@@ -2537,12 +2542,22 @@ for structured data interchange.
 
 Thrift
 ````````
+| Wikipedia: https://en.wikipedia.org/wiki/Apache_Thrift
+| Homepage: https://thrift.apache.org
+| Src: http://github.com/apache/thrift
+| Docs: https://thrift.apache.org/docs/
+| Docs: https://thrift.apache.org/docs/idl
+
 Thrift is a standard
 for structured data interchange
 in the style of :ref:`Protocol Buffers`.
 
 * Thrift is faster than :ref:`JSON`.
 
+See also:
+
+* :ref:`Protocol Buffers`
+* :ref:`Avro`
 
 .. index:: SOA
 .. _soa:
