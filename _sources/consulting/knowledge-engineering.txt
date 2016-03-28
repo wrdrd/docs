@@ -206,8 +206,11 @@ Logic
 | WikipediaCategory: https://en.wikipedia.org/wiki/Category:Logic
 
 * https://en.wikipedia.org/wiki/List_of_logic_symbols
+* https://en.wikipedia.org/wiki/Category:Latin_logical_phrases
 
-* https://en.wikipedia.org/wiki/Rule_of_inference
+See:
+
+* :ref:`Inference`
 
 
 .. index:: Set Theory
@@ -355,8 +358,8 @@ Hoare Logic
 
 See:
 
-* :ref:`Predicate Logic`, :ref:`Description Logic`
-* :ref:`Given-When-Then <given when then>`
+* :ref:`Predicate Calculus`, :ref:`Description Logic`
+* :ref:`Given-When-Then`
 
 
 .. index:: First-order Logic
@@ -420,7 +423,8 @@ First-order logic (*FOL*)
 
 .. index:: Description Logic
 .. index:: DL
-.. _DL:
+.. _description logic:
+.. _dl:
 
 Description Logic
 ```````````````````
@@ -431,7 +435,9 @@ Description Logic (*DL*; DLP (Description Logic Programming))
 * https://en.wikipedia.org/wiki/Description_logic#Notation
 * https://en.wikipedia.org/wiki/Description_logic#Relationship_with_other_logics
 
-Knowledge Base = TBox + ABox
+::
+
+    Knowledge Base = TBox + ABox
 
 * https://en.wikipedia.org/wiki/TBox (Schema: Class/Property Ontology)
 * https://en.wikipedia.org/wiki/ABox (Facts / Instances)
@@ -464,9 +470,12 @@ Inference
 ```````````
 | Inference: https://en.wikipedia.org/wiki/Inference
 
-* https://en.wikipedia.org/wiki/Rule_of_inference (Logic)
-* https://en.wikipedia.org/wiki/Category:Statistical_inference (Logic + Math)
 
+* https://en.wikipedia.org/wiki/Rule_of_inference (Logic)
+* https://en.wikipedia.org/wiki/List_of_rules_of_inference
+
+
+* https://en.wikipedia.org/wiki/Category:Statistical_inference (Logic + Math)
 
 .. index:: Entailment
 .. _entailment:
