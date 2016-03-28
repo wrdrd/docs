@@ -565,9 +565,9 @@ Math Algorithm Problems
 
 Rosalind
 ~~~~~~~~~~
-http://rosalind.info/
+| Web: http://rosalind.info/
 
-Bioinformatics and Science Algorithm Problems
+Bioinformatics and Data Science Algorithm Problems and Exercises
 
 
 .. index:: Mathematical Notation
@@ -581,22 +581,61 @@ Mathematical Notation
 * https://en.wikipedia.org/wiki/Latin_letters_used_in_mathematics
 
 
+See:
+
+* :ref:`Knowledge Engineering` > :ref:`symbols`
+* :ref:`Units` > :ref:`Units and RDF`
+
+
 .. index:: LaTeX
-.. _LaTeX:
+.. _latex:
 
 LaTeX
-~~~~~~
-https://en.wikipedia.org/wiki/LaTeX
+``````
+| Wikipedia: https://en.wikipedia.org/wiki/LaTeX
 
 * https://en.wikipedia.org/wiki/LaTeX#Examples
+
+
+.. index:: MathJax
+.. _mathjax:
+
+MathJax
+````````
+| Wikipedia: https://en.wikipedia.org/wiki/MathJax
+| Docs: http://docs.mathjax.org/en/latest/tex.html
+
+MathJax is a :ref:`Javascript` library for displaying
+:ref:`mathml`,
+:ref:`latex`,
+and :ref:`ASCIIMathML` markup
+in a browser.
+
 * http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference
-* http://nbviewer.ipython.org/github/ipython/ipython/blob/master/examples/Notebook/Typesetting%20Equations.ipynb
 
-Tools
+MathJax and :ref:`IPython Notebook` / :ref:`Jupyter Notebook`:
 
-* http://docs.mathjax.org/en/latest/tex.html
 * http://ipython.org/ipython-doc/dev/install/install.html#mathjax
+* http://nbviewer.ipython.org/github/ipython/ipython/blob/master/examples/Notebook/Typesetting%20Equations.ipynb
 * http://nbviewer.ipython.org/gist/rpmuller/5920182
+
+
+.. index:: MathML
+.. _mathml:
+
+MathML
+```````
+| Wikipedia: https://en.wikipedia.org/wiki/MathML
+
+.. index:: ASCIIMathML
+.. _asciimathml:
+
+ASCIIMathML
+^^^^^^^^^^^^
+| Wikipedia: https://en.wikipedia.org/wiki/ASCIIMathML
+
+* :ref:`ASCII`
+* :ref:`MathML`
 
 
 .. index:: Information Theory

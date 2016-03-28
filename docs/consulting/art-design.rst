@@ -1,6 +1,7 @@
 
 .. index:: Art & Design
 .. index:: A&D
+.. _art & design:
 .. _art-design:
 
 

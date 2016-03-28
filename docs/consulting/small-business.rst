@@ -573,7 +573,9 @@ Twitter
 
   https://github.com/twitter/twitter-text-js
 
-- [ ] :ref:`Web Developers <web development>`: :ref:`HTML` templates: Add Twitter cards :ref:`RDFa` attributes and vocabulary markup
+- [ ] :ref:`#webdev <web development>`:
+  * :ref:`HTML` templates:
+  Add Twitter cards :ref:`RDFa` attributes and vocabulary markup
 
 - [ ] Support: Can we enqueue these for followup?
 
@@ -609,7 +611,8 @@ Zapier
 | Docs: https://zapier.com/engineering/
 | Docs: https://zapier.com/learn/the-ultimate-guide-to-remote-working/
 
-Zapier (z'API-er) is a software-development-free :ref:`SaaS` web service
+Zapier (z'API-er, ~"happier") is a
+software-development-free :ref:`SaaS` web service
 for integrating 600+ great web APIS through Zaps:
 *triggers* (when this) and *actions* (do this).
 
@@ -619,6 +622,9 @@ for integrating 600+ great web APIS through Zaps:
   limits.
 * Users can review Zap logs and data.
 
+See also:
+
+* :ref:`Given-When-Then <givenwhenthen>`
 
 
 .. _opengraph:

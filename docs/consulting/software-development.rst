@@ -439,7 +439,7 @@ Agile Modeling
   http://agilemodeling.com/essays/bestPractices.htm
 
   * **Model storming**: http://agilemodeling.com/essays/modelStorming.htm
-  * JIT: Just-in-time 
+  * JIT: Just-in-time
   * BRUF: "Big Requirements Up Front"
   * JBGE: "Just Barely Good Enough" (/``anticipation``)
   * **Executable Specifications**: http://agilemodeling.com/essays/executableSpecifications.htm
@@ -479,6 +479,58 @@ Test Driven Development
 Behavior Driven Development
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/Behavior-driven_development
+
+* https://westurner.org/wiki/awesome-python-testing#behavior-driven-development-bdd
+
+
+.. index:: Given-When-Then
+.. _given-when-then:
+
+Given-When-Then
+``````````````````
+| Wikipedia: https://en.wikipedia.org/wiki/Given-When-Then
+
+* Given (context)
+* When (event)
+* Then (expect, should, assert)
+
+
+.. list-table::
+
+    * - Given When Then
+      - Given
+      - When
+      - Then
+
+    * - :ref:`Hoare Logic`
+      - precondition ``P``
+      - command ``C``
+      - postcondition ``Q``
+
+    * - Terms
+      - Input: State, Context (,RDF), Database
+      - Input: Parametrized Event, Message
+      - Output Conditions,
+        Rules,
+        Expressions,
+        Assertions,
+        Expectations
+
+    * - HTTP 1.1
+      - app state (etc, fs, db)
+      - request (URI(URN|URL))?attrs=values
+      - response ({json: True})
+
+
+    * - Channels
+      - app state (etc, fs, db)
+      - event(message_in)
+      - conditions(message_out)
+
+    * - Vows
+      - test suite, ``@Vows.Batch``, ``Vows.Context``, ``topic()``
+      - vow -- ``def should_quack(self, topic):``
+      - vow -- ``    expect(topic.quack()).to_equal(value)``
 
 
 .. index:: User Story
@@ -583,7 +635,7 @@ Requirements Traceability
 
     IDEA: idea
 
-    STRY: user story -> TST, ENH, BUG, RLS ; -> CASE ; + REQ 
+    STRY: user story -> TST, ENH, BUG, RLS ; -> CASE ; + REQ
     CASE: use case   -> TST, ENH, BUG, RLS ; -> STRY ; + REQ
     REQ: requirement -> TST                          ; + REQ
 
@@ -650,7 +702,7 @@ TODO ::
     * [x] Checked   # github
     * [X] Checked   # github
 
-    - [X (YYYY-MM-DD HH:MM:SS)] 
+    - [X (YYYY-MM-DD HH:MM:SS)]
     - [-]
     - [o]
     - [O]
@@ -749,7 +801,7 @@ Code labels are helpful for:
   [`Requirements Traceability`_]
 
 .. note:: These code labels are adapted and extended from
-   a previous version of the 
+   a previous version of the
    `pandas/CONTRIBUTING.md <https://github.com/pydata/pandas/blob/master/CONTRIBUTING.md>`_
 
 
