@@ -15,3 +15,6 @@ sphinxcontrib-srclinks
 
 ghp-import
 #-e git+https://github.com/davisp/ghp-import#egg=ghp-import
+
+pygments-markdown-lexer
+#-e git+https://github.com/jhermann/pygments-markdown-lexer#egg=pygments-markdown-lexer
