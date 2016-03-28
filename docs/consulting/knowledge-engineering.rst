@@ -2484,8 +2484,8 @@ with implementations in many languages.
 
 * Many supercomputing applications are built with MPI.
 * MPI is faster than :ref:`JSON`.
-* :ref:`IPython` supports MPI:
-  https://ipython.org/ipython-doc/3/parallel/parallel_mpi.html
+* :ref:`IPython` ``ipyparallel`` supports MPI:
+  https://ipyparallel.readthedocs.org/en/latest/
 
 
 .. index:: Avro
