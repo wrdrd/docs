@@ -423,7 +423,8 @@ First-order logic (*FOL*)
 
 .. index:: Description Logic
 .. index:: DL
-.. _DL:
+.. _description logic:
+.. _dl:
 
 Description Logic
 ```````````````````
