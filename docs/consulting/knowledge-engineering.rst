@@ -2467,7 +2467,7 @@ with or as a message queue (*MQ*).
 * ESBs can also maintain state, or logging.
 * ESB services can often be described with e.g.
   :ref:`WSDL` and/or :ref:`JSON-WSP`.
-
+* https://en.wikipedia.org/wiki/Category:Message-oriented_middleware
 
 
 .. index:: MPI
