@@ -120,7 +120,10 @@
 <li><a class="reference internal" href="#requirements-modeling">Requirements Modeling</a></li>
 <li><a class="reference internal" href="#agile-modeling">Agile Modeling</a><ul>
 <li><a class="reference internal" href="#test-driven-development">Test Driven Development</a></li>
-<li><a class="reference internal" href="#behavior-driven-development">Behavior Driven Development</a></li>
+<li><a class="reference internal" href="#behavior-driven-development">Behavior Driven Development</a><ul>
+<li><a class="reference internal" href="#given-when-then">Given-When-Then</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#user-story">User Story</a><ul>
 <li><a class="reference internal" href="#card-conversation-confirmation">Card, Conversation, Confirmation</a></li>
 </ul>
@@ -238,7 +241,10 @@
 <li><a class="reference internal" href="#requirements-modeling">Requirements Modeling</a></li>
 <li><a class="reference internal" href="#agile-modeling">Agile Modeling</a><ul>
 <li><a class="reference internal" href="#test-driven-development">Test Driven Development</a></li>
-<li><a class="reference internal" href="#behavior-driven-development">Behavior Driven Development</a></li>
+<li><a class="reference internal" href="#behavior-driven-development">Behavior Driven Development</a><ul>
+<li><a class="reference internal" href="#given-when-then">Given-When-Then</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#user-story">User Story</a><ul>
 <li><a class="reference internal" href="#card-conversation-confirmation">Card, Conversation, Confirmation</a></li>
 </ul>
@@ -779,9 +785,67 @@ and more to the point.</li>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Behavior-driven_development">https://en.wikipedia.org/wiki/Behavior-driven_development</a></div>
 </div>
+<ul class="simple">
+<li><a class="reference external" href="https://westurner.org/wiki/awesome-python-testing#behavior-driven-development-bdd">https://westurner.org/wiki/awesome-python-testing#behavior-driven-development-bdd</a></li>
+</ul>
+<div class="section" id="given-when-then">
+<span id="index-33"></span><span id="id24"></span><h5>Given-When-Then<a class="headerlink" href="#given-when-then" title="Permalink to this headline">¶</a></h5>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Given-When-Then">https://en.wikipedia.org/wiki/Given-When-Then</a></div>
+</div>
+<ul class="simple">
+<li>Given (context)</li>
+<li>When (event)</li>
+<li>Then (expect, should, assert)</li>
+</ul>
+<table border="1" class="docutils">
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>Given When Then</td>
+<td>Given</td>
+<td>When</td>
+<td>Then</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="knowledge-engineering#hoare-logic"><span>Hoare Logic</span></a></td>
+<td>precondition <code class="docutils literal"><span class="pre">P</span></code></td>
+<td>command <code class="docutils literal"><span class="pre">C</span></code></td>
+<td>postcondition <code class="docutils literal"><span class="pre">Q</span></code></td>
+</tr>
+<tr class="row-odd"><td>Terms</td>
+<td>Input: State, Context (,RDF), Database</td>
+<td>Input: Parametrized Event, Message</td>
+<td>Output Conditions,
+Rules,
+Expressions,
+Assertions,
+Expectations</td>
+</tr>
+<tr class="row-even"><td>HTTP 1.1</td>
+<td>app state (etc, fs, db)</td>
+<td>request (URI(URN|URL))?attrs=values</td>
+<td>response ({json: True})</td>
+</tr>
+<tr class="row-odd"><td>Channels</td>
+<td>app state (etc, fs, db)</td>
+<td>event(message_in)</td>
+<td>conditions(message_out)</td>
+</tr>
+<tr class="row-even"><td>Vows</td>
+<td>test suite, <code class="docutils literal"><span class="pre">&#64;Vows.Batch</span></code>, <code class="docutils literal"><span class="pre">Vows.Context</span></code>, <code class="docutils literal"><span class="pre">topic()</span></code></td>
+<td>vow &#8211; <code class="docutils literal"><span class="pre">def</span> <span class="pre">should_quack(self,</span> <span class="pre">topic):</span></code></td>
+<td>vow &#8211; ``    expect(topic.quack()).to_equal(value)``</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 <div class="section" id="user-story">
-<span id="index-33"></span><span id="id24"></span><h4>User Story<a class="headerlink" href="#user-story" title="Permalink to this headline">¶</a></h4>
+<span id="index-34"></span><span id="id25"></span><h4>User Story<a class="headerlink" href="#user-story" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/User_story">https://en.wikipedia.org/wiki/User_story</a></div>
 </div>
@@ -805,7 +869,7 @@ in order to have something with a URL to share&#8221;</li>
 </li>
 </ul>
 <div class="section" id="card-conversation-confirmation">
-<span id="three-c-s"></span><span id="cs"></span><span id="index-34"></span><h5>Card, Conversation, Confirmation<a class="headerlink" href="#card-conversation-confirmation" title="Permalink to this headline">¶</a></h5>
+<span id="three-c-s"></span><span id="cs"></span><span id="index-35"></span><h5>Card, Conversation, Confirmation<a class="headerlink" href="#card-conversation-confirmation" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/User_story#History">https://en.wikipedia.org/wiki/User_story#History</a></div>
 <div class="line">Docs: <a class="reference external" href="http://ronjeffries.com/xprog/articles/expcardconversationconfirmation/">http://ronjeffries.com/xprog/articles/expcardconversationconfirmation/</a></div>
@@ -840,7 +904,7 @@ from github issue labels.</li>
 </div>
 </div>
 <div class="section" id="use-case">
-<span id="index-35"></span><span id="id25"></span><h4>Use Case<a class="headerlink" href="#use-case" title="Permalink to this headline">¶</a></h4>
+<span id="index-36"></span><span id="id26"></span><h4>Use Case<a class="headerlink" href="#use-case" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Use_case">https://en.wikipedia.org/wiki/Use_case</a></div>
 </div>
@@ -866,7 +930,7 @@ is sometimes referred to as <em>stub</em> code.</li>
 </div>
 </div>
 <div class="section" id="requirements-traceability">
-<span id="index-36"></span><span id="id26"></span><h3>Requirements Traceability<a class="headerlink" href="#requirements-traceability" title="Permalink to this headline">¶</a></h3>
+<span id="index-37"></span><span id="id27"></span><h3>Requirements Traceability<a class="headerlink" href="#requirements-traceability" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Requirements_traceability">https://en.wikipedia.org/wiki/Requirements_traceability</a></div>
 </div>
@@ -918,6 +982,13 @@ TASK
 surrounding a space character, a state character, or a completion
 character (e.g. lowercase <code class="docutils literal"><span class="pre">x</span></code> or uppercase <code class="docutils literal"><span class="pre">X</span></code>).</p>
 <p>A <a class="reference internal" href="../tools/index#markdown"><span>Markdown</span></a> list of items with checkboxes and <a class="reference internal" href="#codelabels"><span>Codelabels</span></a>:</p>
+<div class="code markdown highlight-python"><div class="highlight"><pre>- [x] ENH: one **bold**
+- [ ] ENH: two *italic*
+  - [x] TST: two.one
+  - [ ] DOC: two.two \* two
+- [ ] RLS: ``three`` (also `three`)
+</pre></div>
+</div>
 <p>A <a class="reference internal" href="../tools/index#restructuredtext"><span>ReStructuredText</span></a> list of items with checkboxes and
 <a class="reference internal" href="#codelabels"><span>Codelabels</span></a>:</p>
 <div class="code restructuredtext highlight-python"><div class="highlight"><pre>* [x] ENH: one **bold**
@@ -951,7 +1022,7 @@ character (e.g. lowercase <code class="docutils literal"><span class="pre">x</sp
 </div>
 </div>
 <div class="section" id="codelabels">
-<span id="id27"></span><span id="code-labels"></span><span id="index-37"></span><span id="id28"></span><h4>Codelabels<a class="headerlink" href="#codelabels" title="Permalink to this headline">¶</a></h4>
+<span id="id28"></span><span id="code-labels"></span><span id="index-38"></span><span id="id29"></span><h4>Codelabels<a class="headerlink" href="#codelabels" title="Permalink to this headline">¶</a></h4>
 <p>Codelabels (<em>code labels</em>) are three-letter codes with which commit messages can be prefixed.</p>
 <div class="highlight-python"><div class="highlight"><pre>CODE Label          color name      background  text
 ---- -------------- --------------- ----------  -------
@@ -1034,7 +1105,7 @@ a previous version of the
 </div>
 </div>
 <div class="section" id="technical-debt">
-<span id="index-38"></span><span id="id29"></span><h2>Technical Debt<a class="headerlink" href="#technical-debt" title="Permalink to this headline">¶</a></h2>
+<span id="index-39"></span><span id="id30"></span><h2>Technical Debt<a class="headerlink" href="#technical-debt" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Technical_debt">https://en.wikipedia.org/wiki/Technical_debt</a></div>
 </div>
@@ -1044,7 +1115,7 @@ a previous version of the
 </ul>
 </div>
 <div class="section" id="refactoring">
-<span id="index-39"></span><span id="id30"></span><h2>Refactoring<a class="headerlink" href="#refactoring" title="Permalink to this headline">¶</a></h2>
+<span id="index-40"></span><span id="id31"></span><h2>Refactoring<a class="headerlink" href="#refactoring" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Code_refactoring">https://en.wikipedia.org/wiki/Code_refactoring</a></div>
 </div>
@@ -1058,9 +1129,9 @@ practical <a class="reference internal" href="#refactoring"><span>Refactoring</s
 structural, architectural decisions
 which anticipate change.</li>
 </ul>
-<span class="target" id="index-40"></span></div>
+<span class="target" id="index-41"></span></div>
 <div class="section" id="continuous-delivery">
-<span id="index-41"></span><span id="id31"></span><h2>Continuous Delivery<a class="headerlink" href="#continuous-delivery" title="Permalink to this headline">¶</a></h2>
+<span id="index-42"></span><span id="id32"></span><h2>Continuous Delivery<a class="headerlink" href="#continuous-delivery" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Continuous_delivery">https://en.wikipedia.org/wiki/Continuous_delivery</a></div>
 </div>
@@ -1074,8 +1145,8 @@ which anticipate change.</li>
 </ul>
 </li>
 </ul>
-<span class="target" id="index-42"></span><span class="target" id="index-43"></span><span class="target" id="index-44"></span><div class="section" id="revision-control">
-<span id="index-45"></span><span id="id32"></span><h3>Revision Control<a class="headerlink" href="#revision-control" title="Permalink to this headline">¶</a></h3>
+<span class="target" id="index-43"></span><span class="target" id="index-44"></span><span class="target" id="index-45"></span><div class="section" id="revision-control">
+<span id="index-46"></span><span id="id33"></span><h3>Revision Control<a class="headerlink" href="#revision-control" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Revision_control">https://en.wikipedia.org/wiki/Revision_control</a></div>
 <div class="line">Docs: <a class="reference internal" href="../tools/index#vcs"><span>Tools &gt; Version Control Systems</span></a></div>
@@ -1103,9 +1174,9 @@ with one or more project repositories.</li>
 </ul>
 </li>
 </ul>
-<span class="target" id="index-46"></span></div>
+<span class="target" id="index-47"></span></div>
 <div class="section" id="distributed-version-control">
-<span id="dvcs"></span><span id="index-47"></span><h3>Distributed Version Control<a class="headerlink" href="#distributed-version-control" title="Permalink to this headline">¶</a></h3>
+<span id="dvcs"></span><span id="index-48"></span><h3>Distributed Version Control<a class="headerlink" href="#distributed-version-control" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Distributed_revision_control">https://en.wikipedia.org/wiki/Distributed_revision_control</a></div>
 </div>
@@ -1118,7 +1189,7 @@ for backup redundancy and collaboration.</p>
 <li><a class="reference internal" href="../tools/index#vcs"><span>Version Control Systems</span></a> (<a class="reference internal" href="../tools/index#git"><span>Git</span></a>, <a class="reference internal" href="../tools/index#hubflow"><span>HubFlow</span></a>, <a class="reference internal" href="../tools/index#mercurial"><span>Mercurial</span></a>)</li>
 </ul>
 <div class="section" id="bisection">
-<span id="index-48"></span><span id="id33"></span><h4>Bisection<a class="headerlink" href="#bisection" title="Permalink to this headline">¶</a></h4>
+<span id="index-49"></span><span id="id34"></span><h4>Bisection<a class="headerlink" href="#bisection" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Bisection_(software_engineering)">https://en.wikipedia.org/wiki/Bisection_(software_engineering)</a></div>
 </div>
@@ -1142,7 +1213,7 @@ should return <code class="docutils literal"><span class="pre">0</span></code> f
 </ul>
 </div>
 <div class="section" id="branching-merging">
-<span id="branching-and-merging"></span><span id="index-49"></span><h4>Branching &amp; Merging<a class="headerlink" href="#branching-merging" title="Permalink to this headline">¶</a></h4>
+<span id="branching-and-merging"></span><span id="index-50"></span><h4>Branching &amp; Merging<a class="headerlink" href="#branching-merging" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Branching_(revision_control)">https://en.wikipedia.org/wiki/Branching_(revision_control)</a></div>
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Merge_(revision_control)">https://en.wikipedia.org/wiki/Merge_(revision_control)</a></div>
@@ -1158,7 +1229,7 @@ consistently woven.</li>
 </div>
 </div>
 <div class="section" id="test-automation">
-<span id="index-50"></span><span id="id34"></span><h3>Test Automation<a class="headerlink" href="#test-automation" title="Permalink to this headline">¶</a></h3>
+<span id="index-51"></span><span id="id35"></span><h3>Test Automation<a class="headerlink" href="#test-automation" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Test_automation">https://en.wikipedia.org/wiki/Test_automation</a></div>
 </div>
@@ -1172,9 +1243,9 @@ and <em>before releasing</em>.</li>
 delivery and deployment (script a complete system install
 e.g. with <a class="reference internal" href="../tools/index#virtualization"><span>Virtualization</span></a> like <a class="reference internal" href="../tools/index#docker"><span>Docker</span></a>).</li>
 </ul>
-<span class="target" id="index-51"></span></div>
+<span class="target" id="index-52"></span></div>
 <div class="section" id="continuous-integration">
-<span id="index-52"></span><span id="id35"></span><h3>Continuous Integration<a class="headerlink" href="#continuous-integration" title="Permalink to this headline">¶</a></h3>
+<span id="index-53"></span><span id="id36"></span><h3>Continuous Integration<a class="headerlink" href="#continuous-integration" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Continuous_integration">https://en.wikipedia.org/wiki/Continuous_integration</a></div>
 </div>
@@ -1185,7 +1256,7 @@ e.g. with <a class="reference internal" href="../tools/index#virtualization"><sp
 </ul>
 </div>
 <div class="section" id="continuous-deployment">
-<span id="index-53"></span><span id="id36"></span><h3>Continuous Deployment<a class="headerlink" href="#continuous-deployment" title="Permalink to this headline">¶</a></h3>
+<span id="index-54"></span><span id="id37"></span><h3>Continuous Deployment<a class="headerlink" href="#continuous-deployment" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Continuous_deployment">https://en.wikipedia.org/wiki/Continuous_deployment</a></div>
 </div>

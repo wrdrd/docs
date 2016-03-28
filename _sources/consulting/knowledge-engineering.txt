@@ -17,6 +17,173 @@ Knowledge Engineering
 * https://en.wikipedia.org/wiki/Schema
 
 
+.. contents:
+
+
+.. index:: Symbols
+.. _symbols:
+
+Symbols
+---------
+| Wikipedia: https://en.wikipedia.org/wiki/Symbol
+| WikipediaCategory: https://en.wikipedia.org/wiki/Category:Symbols
+
+
+* `<https://en.wikipedia.org/wiki/Symbol_(disambiguation)>`__
+* https://en.wikipedia.org/wiki/List_of_logic_symbols
+
+* :ref:`Art & Design`
+
+  * [...]
+
+* :ref:`URI` are symbols:
+
+  * :ref:`urn` (:ref:`term: URN <urn>`)
+  * :ref:`url` (:ref:`term: URL <url>`)
+
+* Linguistics
+  https://en.wikipedia.org/wiki/Linguistics
+
+  * https://en.wikipedia.org/wiki/Morpheme
+
+    + https://en.wikipedia.org/wiki/Phoneme
+    + https://en.wikipedia.org/wiki/Grapheme
+
+  * https://en.wikipedia.org/wiki/Word
+  * https://en.wikipedia.org/wiki/Phrase
+  * https://en.wikipedia.org/wiki/Clause
+  * `<https://en.wikipedia.org/wiki/Sentence_(linguistics)>`__
+  * https://en.wikipedia.org/wiki/Paragraph
+  * https://en.wikipedia.org/wiki/Document
+
+* :ref:`Mathematical Notation`
+
+  * :ref:`LaTeX`
+  * :ref:`MathML`
+  * :ref:`ASCIIMathML`
+  * :ref:`MathJax`
+
+.. index:: Character encoding
+.. index:: Character set
+.. index:: Character map
+.. index:: Codeset
+.. _character encoding:
+.. _character set:
+
+Character encoding
+++++++++++++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/Character_encoding
+| WikipedaCategory: https://en.wikipedia.org/wiki/Category:Character_encoding
+
+* https://en.wikipedia.org/wiki/Character_encoding#Common_character_encodings
+
+
+.. index:: ASCII
+.. _ascii:
+
+ASCII
+```````
+| Wikipedia: https://en.wikipedia.org/wiki/ASCII
+
+ASCII (*American Standard Code for Information Exchance*) defines
+128 characters.
+
+* https://en.wikipedia.org/wiki/Teleprinter#Teleprinter_operation
+* https://en.wikipedia.org/wiki/Telegraph_code
+
+- Python:
+
+  .. code:: python
+
+      from __future__ import print_function
+      for i in range(0,128):
+          print("{0:<3d} {1!r} {1:s}.".format(i, chr(i)))
+
+
+.. index:: Unicode
+.. _unicode:
+
+Unicode
+`````````
+| Wikipedia: https://en.wikipedia.org/wiki/Unicode
+| Wikipedia: https://en.wikipedia.org/wiki/Unicode_symbols
+
+* https://en.wikipedia.org/wiki/Unicode_symbols#Symbol_block_list
+* Entering Unicode Symbols:
+
+  | https://en.wikipedia.org/wiki/Unicode_input#Hexadecimal_code_input
+
+  - https://en.wikipedia.org/wiki/Unicode_input#Hexadecimal_code_input
+
+  + ∴ -- Therefore ( ``u+2234`` )
+
+    - :ref:`X11`: ``ctrl-shift-u 2234``
+    - :ref:`Vim`: ``ctrl-v u2234``
+
+    - :ref:`Python`:
+
+      * Python 3 Unicode HOWTO: https://docs.python.org/3/howto/unicode.html
+      * Python 2 Unicode HOWTO: https://docs.python.org/2/howto/unicode.html
+
+      .. code:: python
+
+          c1 = u'∴'  # Python 2.6-3.2, 3.4+
+          c2 =  '∴'  # Python 3.0+
+          c3 = '\N{THEREFORE}' # howto/unicode#the-string-type glyph name
+          u1 = unichr(0x2234)  # Python 2+
+          u2 =    chr(0x2234)  # Python 3.0+
+          from builtins import chr  # Python 2 & 3
+          u3 =    chr(0x2234)       # Python 2 & 3
+          u4 =    chr(8756)    # int(hex(8756)[2:], 16) == 8756 (0x2234)
+          chars = [c1, c2, u1, u2, u3, u4]
+          from operator import eq
+          assert all((eq(x, chars[0]) for x in chars))
+
+* Python and :ref:`UTF-8`:
+
+  * Python 2 Codecs docs: https://docs.python.org/2/library/codecs.html
+  *
+  * https://pymotw.com/2/codecs/
+  * e.g. :ref:`JSON` with :ref:`UTF-8`:
+
+    .. code:: python
+
+        # Read an assumed UTF-8 encoded JSON file with Python 2+, 3+
+        import codecs
+        with codecs.open('filename.json', encoding='utf8') as file_:
+            text = file_.read()
+
+
+.. index:: UTF-8
+.. _utf-8:
+.. _utf8:
+
+UTF-8
+~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/UTF-8
+
+UTF-8 is a :ref:`Unicode` :ref:`Character encoding` which can
+represent all Unicode symbols with 8-bit code units.
+
+* https://en.wikipedia.org/wiki/UTF-8#Examples
+* In 2015, UTF-8 is the most common web character
+  encoding.
+
+  * :ref:`HTML` ``charset`` meta attribute:
+
+    ``<meta charset="UTF-8">``
+
+  * :ref:`XML` Header:
+
+    ``<?xml version="1.0" encoding="UTF-8"?>``
+
+  * :ref:`HTTP` Header:
+
+    ``content-type: text/html; charset=UTF-8``
+
+
+.. index:: Logic, Reasoning, and Inference
+.. _logic reasoning and inference:
 
 Logic, Reasoning, and Inference
 ---------------------------------
@@ -38,7 +205,9 @@ Logic
 | Wikipedia: https://en.wikipedia.org/wiki/Logic
 | WikipediaCategory: https://en.wikipedia.org/wiki/Category:Logic
 
-https://en.wikipedia.org/wiki/List_of_logic_symbols
+* https://en.wikipedia.org/wiki/List_of_logic_symbols
+
+* https://en.wikipedia.org/wiki/Rule_of_inference
 
 
 .. index:: Set Theory
@@ -98,12 +267,96 @@ Probabilistic Logic
 | Wikipedia: https://en.wikipedia.org/wiki/Probabilistic_logic
 
 
+.. index:: Propositional Calculus
 .. index:: Propositional Logic
-.. _propsitional-logic:
+.. _propsitional logic:
+.. _propsitional calculus:
 
-Propositional Logic
-`````````````````````
-| Wikipedia: https://en.wikipedia.org/wiki/Propositional_logic
+Propositional Calculus
+```````````````````````
+| Wikipedia: https://en.wikipedia.org/wiki/Propositional_calculus
+| WikipediaCategory: https://en.wikipedia.org/wiki/Category:Propositional_calculus
+| WikipediaCategory: https://en.wikipedia.org/wiki/Category:Theorems_in_propositional_logic
+
+* Premise ``P``
+* Conclusion ``Q``
+
+
+.. index:: Modus ponens
+.. _modus ponens:
+
+Modus ponens
+~~~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Modus_ponens
+
+  + ``P -> Q`` -- Premise 1 ``P1`` ``P_1`` ("P sub 1")
+  + ``P`` -- Premise 2 ``P2`` ``P_2`` ("P sub 2")
+  + ``∴ Q`` -- Conclusion ``Q`` ``Q_0`` ("Q sub 0")
+
+
+.. index:: Predicate Logic
+.. _predicate logic:
+
+Predicate Logic
+`````````````````
+| Wikipedia: https://en.wikipedia.org/wiki/Predicate_logic
+
+* Universe of discourse
+* Predicate
+
+  * ∃ -- There exists -- Existential quantifier
+  * ∀ -- For all -- Universal quantifier
+
+
+
+.. index:: Existential quantification
+.. _existential quantification:
+
+Existential quantification
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Existential_quantification
+
+* ∃ -- "There exists" is the **Existential quantifier** symbol.
+
+* An existential quantifier
+  is true ("holds true")
+  if there is one (or more) example in which
+  the condition holds true.
+
+* An existential quantifier is
+  *satisfied* by **one** (or more) examples.
+
+
+
+.. index:: Universal quantification
+.. _universal quantification:
+
+Universal quantification
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Existential_quantification
+
+* ∀ -- "For all" is the **Universal quantifier** symbol.
+* A universal quantification is **disproven by one counterexample**
+  where the condition does not hold true.
+
+  * disproven by one counterexample.
+
+
+.. index:: Hoare Logic
+.. _hoare logic:
+
+Hoare Logic
+`````````````
+| Wikipedia: https://en.wikipedia.org/wiki/Hoare_logic
+
+   * precondition ``P``
+   * command ``C``
+   * postcondition ``Q``
+
+See:
+
+* :ref:`Predicate Logic`, :ref:`Description Logic`
+* :ref:`Given-When-Then <given when then>`
 
 
 .. index:: First-order Logic
@@ -114,7 +367,55 @@ First-order Logic
 ```````````````````
 | Wikipedia: https://en.wikipedia.org/wiki/First-order_logic
 
-First-order (*FOL*)
+First-order logic (*FOL*)
+
+* Terms
+
+  + Variables
+
+    + ``x``, ``y``, ``z``
+    + ``x``, ``x_0`` ("x subscript 0", "x sub 0")
+
+  + Functions
+
+    + ``f(x)`` -- function symbol (arity 1)
+    + ``a`` -- constant symbol (arity 0) ( ``a()`` )
+
++ Formulas ("formulae")
+
+  + Equality
+
+    * ``=`` -- equality
+
+  + Logical Connectives ("unary", "binary", sequence/tuple/list)
+
+    + ``¬`` --  ``~``, ``!`` -- negation (unary)
+    + ...
+    + ``∧`` -- ``^``, ``&&``, ``and`` -- conjunction
+    + ``∨`` -- ``v``, ``||``, ``or`` -- disjunction
+    + ``→`` -- ``->``, ``⊃`` -- implication
+    + ``↔`` -- ``<->``, ``≡`` -- biconditional
+    + ...
+    + ``XOR``
+    + ``NAND``
+
+  + Grouping Operators
+
+    + Parentheses ``( )``
+    + Brackets ``< >``
+
+  + Relations
+
+    + ``P(x)`` -- predicate symbol (n_args=1, arity 1, valence 1)
+    + ``R(x)`` -- relation symbol  (n_args=1, arity 1, valence 1)
+    + ``Q(x,y)`` -- binary predicate/relation symbol (n_args=2, ...)
+
+  + Quantifier Symbols "universe relation"
+
+    * :ref:`∃ <Existential Quantification>`
+    * :ref:`∀ <Universal Quantification>`
+
+  + ... https://en.wikipedia.org/wiki/First-order_logic
 
 
 .. index:: Description Logic
@@ -141,6 +442,7 @@ See:
 * :ref:`Semantic web`
 * :ref:`N3` for ``=>`` implies
 
+
 .. index:: Reasoning
 .. _reasoning:
 
@@ -153,6 +455,7 @@ https://en.wikipedia.org/wiki/Category:Reasoning
 https://en.wikipedia.org/wiki/Semantic_reasoner
 
 See: :ref:`DL`
+
 
 .. index:: Inference
 .. _inference:

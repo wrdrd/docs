@@ -10,6 +10,16 @@ Units
 | Wikipedia: https://en.wikipedia.org/wiki/System_of_measurement
 
 
+.. index:: Mass noun
+.. _mass noun:
+
+Mass noun
+***********
+| Wikipedia: https://en.wikipedia.org/wiki/Mass_noun
+
+* e.g. :ref:`knowledge <knowledge engineering>` is a mass noun.
+
+
 .. index:: RDF and Units
 .. _rdf and units:
 
