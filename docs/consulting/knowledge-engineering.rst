@@ -150,6 +150,9 @@ Escape Sequences
 | Wikipedia: https://en.wikipedia.org/wiki/Escape_sequence
 
 * https://en.wikipedia.org/wiki/Escape_sequences_in_C#Table_of_escape_sequences
+* https://en.wikipedia.org/wiki/CDATA
+
+  * https://en.wikipedia.org/wiki/CDATA#Nesting
 
 * :ref:`XML`, :ref:`HTML` & escape sequences::
 
