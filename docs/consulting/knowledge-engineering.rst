@@ -2370,14 +2370,17 @@ for distributed computation.
 Distributed Computing Protocols
 +++++++++++++++++++++++++++++++++
 
+.. contents::
+   :local:
+
 * https://en.wikipedia.org/wiki/Comparison_of_data_serialization_formats
-* :ref:`CORBA`
-* :ref:`Message Passing`
-* :ref:`MPI`
-* https://en.wikipedia.org/wiki/XML-RPC
-* https://en.wikipedia.org/wiki/Java_Remote_Method_Invocation
+* :ref:`Programming Languages`' implementations:
+
+  - https://en.wikipedia.org/wiki/Java_Remote_Method_Invocation
+  - https://twisted.readthedocs.org/en/latest/core/howto/pb-usage.html
+
 * :ref:`ws-`
-* :term:`RESTful HTTP <restful api>`
+* :ref:`REST` (:term:`RESTful HTTP API <restful api>`)
 * :ref:`Protocol Buffers`
 * :ref:`Thrift`
 * :ref:`Avro`
@@ -2487,6 +2490,41 @@ with implementations in many languages.
 * MPI is faster than :ref:`JSON`.
 * :ref:`IPython` ``ipyparallel`` supports MPI:
   https://ipyparallel.readthedocs.org/en/latest/
+
+
+.. index:: XML-RPC
+.. _xml-rpc:
+
+XML-RPC
+``````````
+| Wikipedia: https://en.wikipedia.org/wiki/XML-RPC
+
+:ref:`XML` Remote Procedure Call defines method names with parameters
+and values for making function calls with XML.
+
+* Python ``xmlrpclib``:
+  https://docs.python.org/2/library/xmlrpclib.html
+
+  https://docs.python.org/3/library/xmlrpc.client.html
+
+  https://docs.python.org/3/library/xmlrpc.server.html
+
+See also:
+
+* :ref:`JSON-RPC`
+* ~:ref:`C` structs: :ref:`Protocol Buffers`, :ref:`Thrift`, :ref:`Avro`
+* :ref:`SOA` Web Services: :ref:`ws-`, :ref:`WSDL`
+* :ref:`ROA` Web Services: :ref:`REST`
+
+
+.. index:: JSON-RPC
+.. _json-rpc:
+
+JSON-RPC
+``````````
+| Wikipedia: https://en.wikipedia.org/wiki/JSON-RPC
+| Specification: http://www.jsonrpc.org/specification
+
 
 
 .. index:: Avro
@@ -2614,6 +2652,77 @@ for describing services and request and response objects.
 * JSON-WSP is similar in function to :ref:`WSDL` and :ref:`CORBA` IDL.
 
 See also: :ref:`Linked Data Platform (LDP) <ldp>`
+
+
+.. index:: ROA
+.. index:: Resource-Oriented Architecture
+.. _roa:
+
+ROA
+`````
+| Wikipedia: https://en.wikipedia.org/wiki/Resource-oriented_architecture
+
+
+.. index:: REST
+.. index:: Representational State Transfer
+.. _rest api:
+.. _restful api:
+.. _restful:
+.. _rest:
+
+REST
+~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Representational_state_transfer
+| Awesome: https://github.com/marmelab/awesome-rest
+
+REST (*Representational State Transfer*) is a pattern for interacting with
+web resources using regular :ref:`HTTP` methods like ``GET``, ``POST``,
+``PUT``, and ``DELETE``.
+
+* A REST :term:`API` is known as a RESTful API.
+* A REST implementation maps Create, Read, Update, Delete (CRUD) methods
+  for URI-named collections of **resources**
+  onto HTTP verbs like ``GET``, ``POST``, ``PATCH``.
+* Sometimes, a REST implementation accepts a :ref:`URL` parameter
+  like ``?method=PUT`` e.g. for :ref:`Javascript` implementations
+  on browsers which only support e.g. ``GET`` and ``POST``.
+* There are many software libraries for implementing REST API Servers:
+
+  * Java, JS: Restlet:
+
+    | Wikipedia: https://en.wikipedia.org/wiki/Restlet
+    | Src: https://github.com/restlet
+
+  * Ruby: Grape:
+
+    | Src: https://github.com/ruby-grape/grape
+
+  * Python: Django REST Framework:
+
+    | Src: https://github.com/tomchristie/django-rest-framework
+
+* There are many software libraries for implementing REST API Clients:
+
+  * Python REST API client libraries:
+
+    * requests:
+
+      | Src:
+      | Docs: http://docs.python-requests.org/en/master/
+
+      + httpie is a CLI utility written on top of requests:
+
+        | Src: https://github.com/jkbrzt/httpie
+
+    * WebTest:
+
+      | Src: https://github.com/Pylons/webtest
+      | Docs: https://webtest.readthedocs.org/en/latest/
+
+      * https://pypi.python.org/pypi/webtest-plus/ (requests-auth)
+      * https://github.com/django-webtest/django-webtest
+
+    * | Docs: https://westurner.org/wiki/awesome-python-testing#web-applications
 
 
 .. index:: Data Grid
