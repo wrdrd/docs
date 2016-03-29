@@ -78,6 +78,107 @@ Character encoding
 * https://en.wikipedia.org/wiki/Character_encoding#Common_character_encodings
 
 
+.. index:: Control Characters
+.. _control character:
+.. _control characters:
+
+Control Characters
+````````````````````
+| Wikipedia: https://en.wikipedia.org/wiki/Control_character
+
+* :ref:`ASCII` Control Characters
+
+  https://en.wikipedia.org/wiki/Control_character#In_ASCII
+
+* :ref:`Unicode` Control Characters
+
+  https://en.wikipedia.org/wiki/Unicode_control_characters
+
+
+.. warning:: Control characters are often significant.
+
+   Common security errors involving control characters:
+
+   * https://cwe.mitre.org/data/definitions/74.html
+
+     CWE-74: Improper Neutralization of Special Elements in Output
+     Used by a Downstream Component ('Injection')
+
+     * https://cwe.mitre.org/data/definitions/93.html
+
+       CWE-93: Improper Neutralization of CRLF Sequences ('CRLF Injection')
+
+       .. code:: python
+
+           x = "line1_start"
+           x2 = "thing\r\n\0line1_end"
+           x = x + x2
+           x = x + "line2...line2_end\n"
+           records = x.splitlines()  # ! error
+
+   * https://cwe.mitre.org/data/definitions/140.html
+
+     CWE-140: Improper Neutralization of Delimiters
+
+     + https://cwe.mitre.org/data/definitions/141.html
+
+       CWE-141: Improper Neutralization of Parameter/Argument Delimiters
+
+     + https://cwe.mitre.org/data/definitions/142.html
+
+       CWE-142: Improper Neutralization of Value Delimiters
+
+     + https://cwe.mitre.org/data/definitions/143.html
+       
+       CWE-143: Improper Neutralization of Record Delimiters
+
+     + https://cwe.mitre.org/data/definitions/144.html
+
+       CWE-144: Improper Neutralization of Line Delimiters
+
+     + https://cwe.mitre.org/data/definitions/145.html
+
+       CWE-145: Improper Neutralization of Section Delimiters
+
+   
+
+.. index:: Escape Sequences
+.. _escape sequences:
+
+Escape Sequences
+~~~~~~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Escape_sequence
+
+
+* :ref:`XML`, :ref:`HTML` escape sequences::
+
+  &
+  < > />
+  "
+  <!-- -->
+
+* :ref:`Python` escape sequences:
+
+  .. code:: python
+
+    s =   "Here's one"
+    s =   'Here\'s one'
+    s = '''Here's one'''
+    s =   'Here\N{APOSTROPHE}s one'
+    s =   'Here'"'s"' one'
+
+* :ref:`Bash` escape sequences:
+
+  .. code:: bash
+
+    s1="$Here's one"
+    s1="${Here}'s one"
+    s2='${Here}\'s one'  # ! error
+    s2='${Here}'"'s"' one'
+    s3=""$Here"'s one"
+    s3=""${Here}"'s one"
+
+
 .. index:: ASCII
 .. _ascii:
 
@@ -115,7 +216,7 @@ Unicode
 
   - https://en.wikipedia.org/wiki/Unicode_input#Hexadecimal_code_input
 
-  + ∴ -- Therefore ( ``u+2234`` )
+  + ∴ -- Therefore -- ``u+2234``
 
     - :ref:`X11`: ``ctrl-shift-u 2234``
     - :ref:`Vim`: ``ctrl-v u2234``
@@ -152,6 +253,17 @@ Unicode
         import codecs
         with codecs.open('filename.json', encoding='utf8') as file_:
             text = file_.read()
+
+
+Unicode encodings:
+
+* UTF-1
+* UTF-5
+* UTF-6
+* :ref:`UTF-8`
+* UTF-9, UTF-18
+* UTF-16
+* UTF-32
 
 
 .. index:: UTF-8
