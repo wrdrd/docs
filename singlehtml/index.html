@@ -11013,6 +11013,7 @@ BSP.</li>
 <li><a class="reference internal" href="#json-wsp"><span>JSON-WSP</span></a></li>
 <li><a class="reference internal" href="#ldp"><span>LDP</span></a> (<a class="reference internal" href="#turtle"><span>Turtle</span></a> or <a class="reference internal" href="#json-ld"><span>JSON-LD</span></a> <a class="reference internal" href="#rdf"><span>RDF</span></a> over <a class="reference internal" href="#http"><span>HTTP</span></a>)</li>
 <li><a class="reference internal" href="#rest"><span>REST</span></a></li>
+<li><a class="reference internal" href="#wamp"><span>WAMP</span></a></li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/List_of_web_service_protocols">https://en.wikipedia.org/wiki/List_of_web_service_protocols</a></li>
 </ul>
 <div class="section" id="corba">
@@ -11341,12 +11342,26 @@ on browsers which only support e.g. <code class="docutils literal"><span class="
 <blockquote>
 <div>Using WAMP, you can have a browser-based UI,
 the embedded device and your backend talk to each other in real-time:</div></blockquote>
+<ul>
+<li><p class="first">WAMP Router = Broker (PubSub topic broker) + Dealer (RPC)</p>
+</li>
+<li><p class="first">WAMP can run on other transports (e.g. <a class="reference internal" href="index.html#msgpack"><span>MessagePack</span></a>)
+than the preferred <a class="reference internal" href="#websockets"><span>WebSocket</span></a> w/ <a class="reference internal" href="#json"><span>JSON</span></a>.</p>
 <ul class="simple">
-<li>WAMP Router = Broker (PubSub topic broker) + Dealer (RPC)</li>
-<li>WAMP can run on other transports (e.g. <a class="reference internal" href="index.html#msgpack"><span>MessagePack</span></a>)
-than the preferred <a class="reference internal" href="#websockets"><span>WebSocket</span></a> w/ <a class="reference internal" href="#json"><span>JSON</span></a>.<ul>
 <li><a class="reference internal" href="#json-ld"><span>JSON-LD</span></a></li>
 </ul>
+</li>
+<li><p class="first">Implementations:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://wamp-proto.org/implementations/">http://wamp-proto.org/implementations/</a></li>
+<li><a class="reference external" href="http://autobahn.ws/">http://autobahn.ws/</a> (Python, JS, Cpp, Android, Test Suite)<ul>
+<li><a class="reference external" href="http://autobahn.ws/#code">http://autobahn.ws/#code</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p class="first"><a class="reference external" href="https://tools.ietf.org/html/draft-oberstet-hybi-tavendo-wamp#section-6.5">https://tools.ietf.org/html/draft-oberstet-hybi-tavendo-wamp#section-6.5</a></p>
+<p>WAMP Message Codes and Direction</p>
 </li>
 </ul>
 </div>

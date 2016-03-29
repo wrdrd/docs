@@ -2511,6 +2511,7 @@ Distributed Computing Protocols
 * :ref:`JSON-WSP`
 * :ref:`LDP` (:ref:`Turtle` or :ref:`JSON-LD` :ref:`RDF` over :ref:`HTTP`)
 * :ref:`REST`
+* :ref:`WAMP`
 * https://en.wikipedia.org/wiki/List_of_web_service_protocols
 
 
@@ -2872,6 +2873,16 @@ WAMP (*Web Application Messaging Protocol*) defines Publish/Subscribe
 
   * :ref:`JSON-LD`
 
+* Implementations:
+
+  * http://wamp-proto.org/implementations/
+  * http://autobahn.ws/ (Python, JS, Cpp, Android, Test Suite)
+
+    * http://autobahn.ws/#code
+
+* https://tools.ietf.org/html/draft-oberstet-hybi-tavendo-wamp#section-6.5
+
+  WAMP Message Codes and Direction
 
 
 .. index:: Data Grid
