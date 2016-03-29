@@ -4509,7 +4509,9 @@ Schema.org is a vocabulary for expressing structured data on the web.
 Schema.org can be expressed as microdata, :ref:`RDF`, :ref:`RDFa`,
 and :ref:`JSON-LD`.
 
-* http:s//schema.org/docs/full.html
+* http:// -- vocab :term:`URIs <URI>`
+* https:// -- docs, :ref:`HTTP STS` (?)
+* https://schema.org/docs/full.html
 * https://schema.org/docs/schemas.html
 * https://schema.org/docs/releases.html
 * https://www.w3.org/wiki/WebSchemas
