@@ -149,13 +149,19 @@ Escape Sequences
 ~~~~~~~~~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/Escape_sequence
 
+* https://en.wikipedia.org/wiki/Escape_sequences_in_C#Table_of_escape_sequences
 
-* :ref:`XML`, :ref:`HTML` escape sequences::
+* :ref:`XML`, :ref:`HTML` & escape sequences::
 
   &
   < > />
-  "
+  " 
   <!-- -->
+  <![CDATA[ ]]>
+
+  # HTML & Templates
+  <p id="{{attr}}">text</p>   # attr='here"s one'
+
 
 * :ref:`Python` escape sequences:
 
