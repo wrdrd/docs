@@ -216,7 +216,7 @@ Unicode
 
   - https://en.wikipedia.org/wiki/Unicode_input#Hexadecimal_code_input
 
-  + ∴ -- Therefore ( ``u+2234`` )
+  + ∴ -- Therefore -- ``u+2234``
 
     - :ref:`X11`: ``ctrl-shift-u 2234``
     - :ref:`Vim`: ``ctrl-v u2234``
@@ -253,6 +253,17 @@ Unicode
         import codecs
         with codecs.open('filename.json', encoding='utf8') as file_:
             text = file_.read()
+
+
+Unicode encodings:
+
+* UTF-1
+* UTF-5
+* UTF-6
+* :ref:`UTF-8`
+* UTF-9, UTF-18
+* UTF-16
+* UTF-32
 
 
 .. index:: UTF-8
