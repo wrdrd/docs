@@ -21,6 +21,7 @@ Web Glossary
         | Wikipedia: https://en.wikipedia.org/wiki/Web_page
 
     Website
+    Web site
         A website is a set of interlinked :ref:`HTML` pages.
         Also used to refer to a web page.
 
@@ -782,10 +783,13 @@ HTTP STS
 
 HTTP STS (*HTTP Strict Transport Security*) is
 a standardized extension for notifying browsers
-that all requests should be made over :ref:`HTTP`
+that all requests should be made over :ref:`HTTPS`
 indefinitely or for a specified time period.
 
-See also: :ref:`https everywhere`
+See also:
+
+* :ref:`Knowledge Engineering` > :ref:`HTTP STS`
+* :ref:`https everywhere`
 
 
 .. index:: Web Development Requirements
