@@ -2726,6 +2726,33 @@ web resources using regular :ref:`HTTP` methods like ``GET``, ``POST``,
     * | Docs: https://westurner.org/wiki/awesome-python-testing#web-applications
 
 
+.. index:: WAMP
+.. _wamp:
+
+WAMP
+`````
+| Homepage: http://wamp-proto.org
+| Specification: https://tools.ietf.org/html/draft-oberstet-hybi-tavendo-wamp
+| Src: https://github.com/wamp-proto/wamp-proto
+| Docs: http://wamp-proto.org/why/
+| Docs: http://wamp-proto.org/faq/
+| Docs: http://wamp-proto.org/implementations/
+
+WAMP (*Web Application Messaging Protocol*) defines Publish/Subscribe
+(PubSub) and Remote Procedure Call (RPC) over :ref:`WebSockets`,
+:ref:`JSON`, and :term:`URIs <uri>`
+
+    Using WAMP, you can have a browser-based UI,
+    the embedded device and your backend talk to each other in real-time:
+
+* WAMP Router = Broker (PubSub topic broker) + Dealer (RPC)
+* WAMP can run on other transports (e.g. :ref:`msgpack`)
+  than the preferred :ref:`WebSockets` w/ :ref:`JSON`.
+
+  * :ref:`JSON-LD`
+
+
+
 .. index:: Data Grid
 .. _data-grid:
 
