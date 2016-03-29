@@ -624,7 +624,20 @@ for integrating 600+ great web APIS through Zaps:
 
 See also:
 
-* :ref:`Given-When-Then <givenwhenthen>`
+* :ref:`Given-When-Then`
+
+
+.. index:: IFTT
+.. _ifttt:
+
+IFTTT
++++++++
+| Homepage: https://ifttt.com/
+| Src: https://github.com/ifttt
+
+See also:
+
+* :ref:`Given-When-Then`
 
 
 .. _opengraph:
@@ -636,10 +649,15 @@ OpenGraph
 
 OpenGraph is an :ref:`RDFa` standard for structured data.
 
+* When you share a link,
+  Facebook reads the OpenGraph :ref:`RDFa` tags from the linked
+  :ref:`HTML` for e.g. name, description, image.
+
 See:
 
 * :ref:`Web Development Checklist`
 * :ref:`Knowledge Engineering` > :ref:`Linked Data`
+* :ref:`Schema.org` -- https://schema.org/Thing
 
 
 .. index:: Location Based Services
