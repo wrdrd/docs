@@ -3786,7 +3786,7 @@ W3C (*World Wide Web Consortium*) is a standards body.
 
 
 .. index:: HTTP
-.. _HTTP:
+.. _http:
 
 HTTP
 +++++
