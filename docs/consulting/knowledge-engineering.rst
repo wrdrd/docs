@@ -2389,6 +2389,7 @@ Distributed Computing Protocols
 * :ref:`WebRTC`
 * :ref:`JSON-WSP`
 * :ref:`LDP` (:ref:`Turtle` or :ref:`JSON-LD` :ref:`RDF` over :ref:`HTTP`)
+* :ref:`REST`
 * https://en.wikipedia.org/wiki/List_of_web_service_protocols
 
 
@@ -4490,7 +4491,7 @@ Implementations:
 
 .. index:: Schema.org
 .. _schemaorg:
-.. _Schema.org:
+.. _schema.org:
 
 Schema.org
 +++++++++++
