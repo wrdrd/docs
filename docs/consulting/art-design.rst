@@ -931,6 +931,7 @@ Hookpad
 Hookpad is a web-based tool for :ref:`Musical Composition`
 
 * http://www.hooktheory.com/hookpad/new
+* http://www.hooktheory.com/education
 
 
 .. index:: Hydrogen
