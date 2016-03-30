@@ -415,7 +415,7 @@ Quantopian is a crowd-sourced hedge fund.
   with :ref:`Pandas`, :ref:`Zipline`, and minutely data from 2002
   for algorithmic backtesting and live-trading.
 
-  http://pandas.pydata.org/pandas-docs/stable/ecosystem.html* https://www.quantopian.com/posts/live-minutely-data-new-to-quantopian
+  * https://www.quantopian.com/posts/live-minutely-data-new-to-quantopian
 
 * You own your intellectual property.
 * You can choose to share your research and algorithms with the
