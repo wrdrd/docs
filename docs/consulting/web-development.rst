@@ -1,5 +1,12 @@
+
+
+.. index:: Web Development
+.. _web development:
+
 Web Development
 -----------------
+| Wikipedia: https://en.wikipedia.org/wiki/Web_development
+
 
 Web Glossary
 ~~~~~~~~~~~~~~~
@@ -361,7 +368,7 @@ See :ref:`web standards`, :ref:`Art & Design <art-design>`
 
 Web Design
 ~~~~~~~~~~~
-https://en.wikipedia.org/wiki/Web_design
+| Wikipedia: https://en.wikipedia.org/wiki/Web_design
 
 
 .. index:: CSS
@@ -689,6 +696,11 @@ Hosting / DNS
 
 DNS Configuration
 +++++++++++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/Domain_Name_System
+| Standards: https://en.wikipedia.org/wiki/Domain_Name_System#RFC_documents
+| Standards: https://en.wikipedia.org/wiki/List_of_DNS_record_types
+| Standards: https://en.wikipedia.org/wiki/Domain_Name_System_Security_Extensions
+
 :term:`DNS` :term:`Domain Name` Information (``A``, ``AAAA``, ``CNAME``,
 ``TXT``, ``MX``, ``SRV``)
 ::
@@ -713,7 +725,7 @@ DNS Configuration
 
 * Online Whois Tools
 
-  * http://whois.domaintools.com/$DOMAIN
+  * https://whois.domaintools.com/$DOMAIN
 
 See: :py:mod:`wrdrd.tools.domain`
 
@@ -723,6 +735,8 @@ See: :py:mod:`wrdrd.tools.domain`
 
 Web Hosting
 +++++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/Web_hosting_service
+
 :term:`Web Hosting <Web Hosting Service>` Information
 
 * Reverse IP (How many sites are hosted from the same
@@ -738,6 +752,10 @@ See: :ref:`Information Systems > Clouds <clouds>`
 
 WebSec
 ~~~~~~~~~
+| WikipediaCategory: https://en.wikipedia.org/wiki/Category:Web_security_exploits
+| WikipediaCategory: https://en.wikipedia.org/wiki/Category:Internet_security
+
+
 WebSec (*web security*) is :ref:`Information Security`
 for web applications.
 
@@ -761,6 +779,34 @@ OWASP:
 * https://www.owasp.org/index.php/OWASP_Proactive_Controls
 * https://www.owasp.org/index.php/Top_10_2013-Table_of_Contents
 * https://www.owasp.org/index.php/Web_Standards_and_Specifications
+
+SANS:
+
+* | Wikipedia: https://en.wikipedia.org/wiki/Consensus_audit_guidelines
+
+  * "SANS Top 20": https://www.sans.org/critical-security-controls/
+  * "SANS Top 25": https://cwe.mitre.org/top25/
+
+Internet Forums:
+
+* https://www.reddit.com/r/websec
+* https://www.reddit.com/r/netsec
+* https://twitter.com/search?q=websec
+* https://twitter.com/search?q=netsec
+* https://twitter.com/search?q=netsec
+* https://twitter.com/search?q=infosec
+
+
+.. index:: HTTP
+.. _http-:
+
+HTTP
+++++++
+| WikipediaCategory: https://en.wikipedia.org/wiki/Category:Hypertext_Transfer_Protocol
+| WikipediaCategory: https://en.wikipedia.org/wiki/Category:Hypertext_Transfer_Protocol_headers
+
+
+See: Knowledge Engineering > :ref:`HTTP`
 
 
 .. index:: HTTPS

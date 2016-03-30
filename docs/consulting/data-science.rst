@@ -571,7 +571,7 @@ Bioinformatics and Data Science Algorithm Problems and Exercises
 
 
 .. index:: Mathematical Notation
-.. _mathematical-notation:
+.. _mathematical notation:
 
 Mathematical Notation
 ~~~~~~~~~~~~~~~~~~~~~~~
