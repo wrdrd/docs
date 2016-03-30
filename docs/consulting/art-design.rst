@@ -932,6 +932,9 @@ Hookpad is a web-based tool for :ref:`Musical Composition`
 
 * http://www.hooktheory.com/hookpad/new
 * http://www.hooktheory.com/education
+* *Hooktheory I: Music Theory* (Book)
+
+  http://www.hooktheory.com/music-theory-for-songwriting
 
 
 .. index:: Hydrogen
