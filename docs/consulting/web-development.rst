@@ -766,7 +766,21 @@ Security at :ref:`W3C` :
 * http://www.w3.org/2011/webappsec/
 * :ref:`Web Standards`
 
-CWE:
+
+SANS/CIS Consensus Audit Guidelines:
+
+* | Wikipedia: https://en.wikipedia.org/wiki/Consensus_audit_guidelines
+
+  * "SANS Top 20": https://www.sans.org/critical-security-controls/
+  * "SANS Top 25": https://cwe.mitre.org/top25/
+
+  * CIS: 
+
+    * https://www.cisecurity.org/critical-controls.cfm
+    * https://www.cisecurity.org/critical-controls/reports/
+    * PDF for email.
+
+CWE (*Common Weakness Enumeration*)
 
 * https://cwe.mitre.org/
 * https://cwe.mitre.org/top25/
@@ -779,13 +793,6 @@ OWASP:
 * https://www.owasp.org/index.php/OWASP_Proactive_Controls
 * https://www.owasp.org/index.php/Top_10_2013-Table_of_Contents
 * https://www.owasp.org/index.php/Web_Standards_and_Specifications
-
-SANS:
-
-* | Wikipedia: https://en.wikipedia.org/wiki/Consensus_audit_guidelines
-
-  * "SANS Top 20": https://www.sans.org/critical-security-controls/
-  * "SANS Top 25": https://cwe.mitre.org/top25/
 
 Internet Forums:
 
@@ -806,7 +813,10 @@ HTTP
 | WikipediaCategory: https://en.wikipedia.org/wiki/Category:Hypertext_Transfer_Protocol_headers
 
 
-See: Knowledge Engineering > :ref:`HTTP`
+See:
+
+* Knowledge Engineering > :ref:`HTTP`
+* :ref:`HTTPS`, :ref:`HTTPS-`
 
 
 .. index:: HTTPS
@@ -816,7 +826,10 @@ HTTPS
 +++++++
 | Wikipedia: https://en.wikipedia.org/wiki/HTTPS
 
-See: :ref:`HTTPS`, :ref:`HTTP`
+See:
+
+* Knowledge Engineering > :ref:`HTTPS`
+* :ref:`HTTP`, :ref:`HTTP-`
 
 
 .. index:: HTTP STS
@@ -834,7 +847,7 @@ indefinitely or for a specified time period.
 
 See also:
 
-* :ref:`Knowledge Engineering` > :ref:`HTTP STS`
+* Knowledge Engineering > :ref:`HTTP STS`
 * :ref:`https everywhere`
 
 
@@ -851,6 +864,7 @@ Web Development Requirements
 * [ ] :ref:`Social Media Images`
 * [ ] :ref:`Web Hosting`
 * [ ] :ref:`Web Development Checklist`
+
 
 User Stories
 +++++++++++++
@@ -869,5 +883,6 @@ for capturing structured requires on *cards* (or as *issues* in e.g. GitHub).
 
 
 See also:
-:ref:`Software Development > Agile <agile>`,
-:ref:`six patterns of collaboration`
+
+* :ref:`Software Development` > :ref:`Agile <agile>` > :ref:`User Story`
+* :ref:`Team Building` > :ref:`six patterns of collaboration`
