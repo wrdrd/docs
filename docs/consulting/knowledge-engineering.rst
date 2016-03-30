@@ -479,7 +479,7 @@ Hoare Logic
 
 See:
 
-* :ref:`Predicate Calculus`, :ref:`Description Logic`
+* :ref:`Propositional Calculus`, :ref:`Predicate Logic`
 * :ref:`Given-When-Then`
 
 
@@ -4717,9 +4717,9 @@ Schema.org TopBraid RDF
 TopBraid maintains more complete :ref:`OWL` :ref:`RDF`
 transformations of :ref:`Schema.org`.
 
-* http://topbraid.org/schema/schema.rdf :ref:`rdfxml`
-* http://topbraid.org/schema/schema.ttl :ref:`turtle`
-* http://topbraid.org/schema/schema-single-range.ttl :ref:`turtle`
+* http://topbraid.org/schema/schema.rdf :ref:`RDF/XML`
+* http://topbraid.org/schema/schema.ttl :ref:`Turtle`
+* http://topbraid.org/schema/schema-single-range.ttl :ref:`Turtle`
   with only one type per range
 
 
