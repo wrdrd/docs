@@ -746,6 +746,9 @@ Codelabels (*code labels*) are three-letter codes with which commit messages can
     DAT  data
     SCH  schema
 
+    REQ  request
+    ANN  announcement
+
     # Workflow Labels   (e.g. for waffle.io kanban board columns)
     ready               dark sea green  #006b75     #ffffff
     in progress         yellow          #fbca04     #332900
@@ -760,7 +763,7 @@ Codelabels (*code labels*) are three-letter codes with which commit messages can
     Note: All of these color codes (except for fuschia)
     are drawn from the default GitHub palette.
 
-    Note: There are 21 labels listed here.
+    Note: There are 23 labels listed here.
 
 
 
