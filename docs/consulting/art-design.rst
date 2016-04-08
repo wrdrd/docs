@@ -325,6 +325,7 @@ Augmented Reality
 
 
 .. index:: Virtual Reality
+.. _vr:
 .. _virtual reality:
 
 Virtual Reality
@@ -363,6 +364,18 @@ Google Glass
 | Homepage:  https://www.google.com/glass/
 
 * Glasses frame + projective 
+
+
+.. index:: HTC Vive
+.. _htc vive:
+
+---------
+HTC Vive
+---------
+| Wikipedia: https://en.wikipedia.org/wiki/HTC_Vive
+| Homepage: https://www.htcvive.com/us/
+
+* Valve :ref:`Steam` VR
 
 
 .. index:: Oculus VR
