@@ -1122,6 +1122,7 @@ Mesh Wireless Approaches:
   mesh networking with standard 802.11b/g wireless cards.
 
   | Wikipedia: https://en.wikipedia.org/wiki/One_Laptop_per_Child#Technology
+  | Wikipedia: https://en.wikipedia.org/wiki/OLPC_XO#Networking
   | Docs: http://wiki.laptop.org/go/Mesh_Network_Details
 
 * Redstone Technologies LLC (:ref:`gigabit` wireless mesh networks)
