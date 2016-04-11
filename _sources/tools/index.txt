@@ -137,18 +137,6 @@ Bower is "a package manager for the web" (:ref:`Javascript` packages)
 built on :ref:`NPM`.
 
 
-.. index:: BUILD
-.. _build:
-
-BUILD
-~~~~~~
-| Docs: https://pantsbuild.github.io/build_files.html
-| Docs: https://pantsbuild.github.io/build_dictionary.html
-| Docs: https://pantsbuild.github.io/options_reference.html
-
-A ``BUILD`` file describes a :ref:`Pants Build` build.
-
-
 .. index:: Cabal
 .. _cabal:
 
@@ -191,10 +179,10 @@ to install packages written in any language.
   with a ``meta.yaml``, a ``build.sh``, and/or a ``build.bat``.
 * Conda recipes reference and build from
   a source package URI
-  *OR* a :ref:`VCS <vcs>` URI and revision; and/or custom ``build.sh`` or
+  *OR* a :ref:`vcs` URI and revision; and/or custom ``build.sh`` or
   ``build.bat`` scripts.
 * ``conda skeleton`` can automatically create conda recipes
-  from ``PyPI`` (Python), ``CRAN`` (R), and ``CPAN`` (Perl)
+  from ``PyPI`` (Python), ``CRAN`` (R), and from ``CPAN`` (Perl)
 * ``conda skeleton``-generated recipes can be updated
   with additional metadata, scripts, and source URIs
   (as separate patches or consecutive branch commits
@@ -342,68 +330,6 @@ dnf is a an open source package manager written in :ref:`Python`.
   * See ``dnf help`` (and ``man dnf``)
 
 * dnf integrates with the Anaconda system installer.
-* :ref:`dnf` supports **Delta** RPM packages (DRPM),
-  which often significantly reduce the required amount of network
-  transfer required to regularly retrieve and upgrade to
-  the latest repository packages.
-
-
-.. index:: ebuild
-.. _ebuild:
-
-ebuild
-~~~~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/Ebuild
-| Homepage: https://wiki.gentoo.org/wiki/Ebuild
-| Docs: https://devmanual.gentoo.org/quickstart/
-| Docs: https://devmanual.gentoo.org/ebuild-writing/
-| Docs: https://devmanual.gentoo.org/ebuild-writing/file-format/
-| Docs: https://devmanual.gentoo.org/ebuild-writing/variables/
-| Docs: https://devmanual.gentoo.org/ebuild-writing/use-conditional-code/
-| Docs: https://wiki.gentoo.org/wiki/Submitting_ebuilds
-
-ebuild is a software package definition format.
-
-* ebuilds are like special :ref:`bash` scripts.
-* ebuilds have ``USE`` flags for specifying build features.
-* :ref:`Gentoo` is built from ebuild package definitions
-  stored in Gentoo :ref:`Portage`.
-* :ref:`Portage` packages are built from ebuilds.
-* The :ref:`emerge` :ref:`Portage` command installs ebuilds.
-
-
-.. index:: emerge
-.. _emerge:
-
-emerge
-~~~~~~~~
-| Wikipedia: `<https://en.wikipedia.org/wiki/Portage_(software)#Emerge>`__
-| Homepage: https://wiki.gentoo.org/wiki/Portage#emerge
-| Source: git https://github.com/gentoo/portage
-| Docs: https://wiki.gentoo.org/wiki/Project:Package_Manager_Specification
-| Docs: https://projects.gentoo.org/pms/6/pms.html
-
-``emerge`` is the primary CLI tool used for installing
-packages built from :ref:`ebuilds <ebuild>` [from :ref:`Portage`].
-
-
-.. index:: fpm
-.. _fpm:
-
-fpm
-~~~~~
-| Wikipedia:
-| Src: https://github.com/jordansissel/fpm
-| Docs: https://github.com/jordansissel/fpm/wiki/
-| Docs: https://github.com/jordansissel/fpm/wiki/PackageMakeInstall
-
-fpm (*effing package management*) is a tool for building many types
-of software packages from many other types of software packages
-(e.g. :ref:`DEB`. :ref:`RPM`, :ref:`Python Packages`);
-often more easily than working with the actual package manager.
-
-* fpm package source types include: dir rpm gem python empty tar deb cpan npm osxpkg pear pkgin virtualenv zip.
-* fpm target package types include: rpm deb solaris puppet dir osxpkg p5p puppet sh tar zip
 
 
 .. index:: Brew
@@ -428,13 +354,11 @@ NPM
 | Wikipedia: `<https://en.wikipedia.org/wiki/Npm_(software)>`__
 | Homepage: https://www.npmjs.org/
 | Src: https://github.com/npm/npm
-| Docs: https://docs.npmjs.com/files/package.json#files
+
 
 NPM is a :ref:`Javascript` package manager created for :ref:`Node.js`.
 
-* an NPM package is defined by a ``package.json`` :ref:`JSON` file.
-* NPM packages are installed with the ``npm`` CLI utility.
-* :ref:`Bower` builds upon NPM.
+:ref:`Bower` builds on NPM.
 
 
 .. index:: NuGet
@@ -469,74 +393,6 @@ Pacman is an open source package manager which installs
 ``.pkg.tar.xz`` files for :ref:`Arch` Linux.
 
 
-.. index:: Pants
-.. index:: Pants Build
-.. _pants build:
-.. _pants:
-
-Pants Build
-~~~~~~~~~~~
-| Homepage: https://pantsbuild.github.io/
-| Source: git https://github.com/pantsbuild/pants
-| Docs: https://pantsbuild.github.io/first_concepts.html
-| Docs: https://pantsbuild.github.io/install.html
-| Docs: https://pantsbuild.github.io/first_tutorial.html
-| Docs: https://pantsbuild.github.io/JVMProjects.html
-| Docs: https://pantsbuild.github.io/scala.html
-| Docs: https://pantsbuild.github.io/python-readme.html
-| Docs: https://pantsbuild.github.io/pex_design.html
-| Docs: https://pantsbuild.github.io/build_files.html
-| Docs: https://pantsbuild.github.io/build_dictionary.html
-| Docs: https://pantsbuild.github.io/options_reference.html
-| Docs: https://pantsbuild.github.io/export.html
-| Docs: https://pantsbuild.github.io/internals.html
-| Docs: https://pantsbuild.github.io/howto_contribute.html
-
-Pants Build is a build tool for :ref:`JVM` [:ref:`Java`, :ref:`Scala`,
-:ref:`Android`], :ref:`C++`, :ref:`Go`, :ref:`Haskell`, and :ref:`Python`
-[:ref:`CPython`] software projects.
-
-* A Pants ``BUILD`` file defines one or more build targets:
-
-  + Pants can build *Deployable Bundles*, *Runnable Binaries*,
-    *Importable Code*, *Tests*, and *Generated Code* (e.g.
-    Java from :ref:`Thrift` ``.thrift`` definitions).
-  + Pants can build :ref:`PEX` files (*Python EXecutables*);
-    which are essentially executable ZIP files
-    with inlined dependency sets.
-  + Pants can build :ref:`DEX` files (:ref:`Android` *Dalvik Executables*)
-  + https://pantsbuild.github.io/build_files.html
-  + https://pantsbuild.github.io/build_dictionary.html
-  + https://pantsbuild.github.io/options_reference.html
-
-* A Pants ``pants.ini`` file in a top-level source directory
-  defines options for binaries, tools, goals, tasks (sub-goals)
-
-  + https://pantsbuild.github.io/setup_repo.html#configuring-with-pantsini
-  + https://pantsbuild.github.io/options_reference.html
-
-* :ref:`Vim` plugin for Pants Build ``BUILD`` syntax:
-  https://github.com/pantsbuild/vim-pants
-* :ref:`IntelliJ` plugin for Pants Build:
-  https://github.com/pantsbuild/intellij-pants-plugin
-
-
-.. index:: PEX
-.. _pex:
-
-PEX
-~~~~~
-| Homepage: https://pex.readthedocs.org/
-| Source: https://github.com/pantsbuild/pex
-| PyPI: https://pypi.python.org/pypi/pex
-| Docs: https://pex.readthedocs.org/en/stable/
-
-PEX (*Python Executable*) is a :ref:`ZIP`-based software package archive
-format with an executable header.
-
-* :ref:`Pants` creates PEX packages.
-
-
 .. index:: PKGBUILD
 .. _pkgbuild:
 
@@ -548,7 +404,7 @@ PKGBUILD
 | Docs: https://wiki.archlinux.org/index.php/Creating_packages
 
 PKGBUILD is a shell script containing the build information
-for an :ref:`AUR` :ref:`Arch` :ref:`linux` software package.
+for an :ref:`AUR` :ref:`Arch` linux software package.
 
 
 .. index:: Portage
@@ -558,13 +414,10 @@ Portage
 ~~~~~~~~~
 | Wikipedia: `<https://en.wikipedia.org/wiki/Portage_(software)>`__
 | Homepage: http://wiki.gentoo.org/wiki/Project:Portage
-| Docs: https://wiki.gentoo.org/wiki/Project:Package_Manager_Specification
-| Docs: https://projects.gentoo.org/pms/6/pms.html
 
-Portage is a package management and repository system
-written in :ref:`Python` initially just for :ref:`Gentoo` :ref:`Linux`.
 
-* :ref:`Emerge` installs :ref:`ebuilds <ebuild>` from :ref:`portage`.
+* Build recipes with flag sets
+* Package Repositories (portage)
 
 
 .. index:: Ports
@@ -576,13 +429,9 @@ Ports
 | Homepage: https://www.freebsd.org/ports/
 
 
-A Ports collection contains *Sources* (e.g. archived releases and patch
-sets)
-and :ref:`Makefiles <make>`
-designed to compile software :ref:`packages`
-for particular :ref:`operating systems <operating system>`
-distributions' kernel and standard libraries
-usually for a particular platform.
+Sources and Makefiles designed to compile software packages
+for particular distributions' kernel and standard libraries
+on a particular platform.
 
 
 .. index:: RPM
@@ -592,32 +441,18 @@ RPM
 ~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/RPM_Package_Manager
 
-RPM (*RPM Package Manager*, :ref:`RedHat` *Package Manager*)
-is a :ref:`package` format and a set of commandline utilities
-written in :ref:`C` and :ref:`Perl`.
 
-* RPM packages can be installed with ``rpm``,
-  :ref:`yum`, :ref:`dnf`.
-* RPM pacage can be built with tools like ``rpmbuild`` and ``fpm``
-* Python packages can be built into RPM packages with
-  :ref:`setuptools' <setuptools>` ``bdist_rpm``, ``fpm``
-* List contents of RPM packages (archives) with e.g. ``less`` and
-  ``lesspipe``::
+* Install with ``rpm``, ``yum``
+* Build with tools like ``rpmbuild`` and ``fpm``
+* Python: build with ``bdist_rpm``, ``fpm``
+* List contents::
 
    less ~/path/to/local.rpm   # requires lesspipe to be configured
 
-* RPM Packages are served by and retrieved from
-  repositories by tools like :ref:`yum` and :ref:`dnf`:
+* Package Repositories (yum):
 
-  * Local: directories of :ref:`RPM` packages and metadata
-  * Network: :ref:`HTTP <http->`, :ref:`HTTPS <https-->`, :ref:`RSYNC`, FTP
-  * :ref:`dnf` supports **Delta** RPM packages (DRPM),
-    which often significantly reduce the required amount of network
-    transfer required to regularly retrieve and upgrade to
-    the latest repository packages.
-
-.. note:: There's not yet a :ref:`debtorrent` for
-   :ref:`RPM`, :ref:`YUM`, :ref:`DNF`.
+  * Local: directories of packages and metadata
+  * Network: HTTP, HTTPS, RSYNC, FTP
 
 
 .. index:: Egg
@@ -628,14 +463,9 @@ written in :ref:`C` and :ref:`Perl`.
 Python Packages
 ~~~~~~~~~~~~~~~~~~~~~~~~
 | Homepage: https://pypi.python.org/pypi
-| Download: https://pypi.python.org/simple/
 | Docs: https://packaging.python.org/en/latest/
-| Docs: https://packaging.python.org/en/latest/current/
-| Docs: https://packaging.python.org/en/latest/distributing/
 | Docs: https://packaging.python.org/en/latest/peps.html
 | Docs: https://packaging.python.org/en/latest/projects.html
-| Docs: https://packaging.python.org/en/latest/specifications/
-| Docs: https://pypaio.readthedocs.org/en/latest/roadmap/
 
 A :ref:`Python` Package is a collection of source code and package data files.
 
@@ -673,38 +503,19 @@ A :ref:`Python` Package is a collection of source code and package data files.
   contained in packages in order to resolve a dependency graph
   (which can contain cycles) and install necessary packages.
 
-.
 
-* PyPA Tool Recommendations
-
-  * | Docs: https://packaging.python.org/en/latest/current
-
-* PyPA Python Package PEPs
-
-  * | Docs: https://packaging.python.org/en/latest/peps.html
-
-* PyPA Projects List
-
-  * | Docs: https://packaging.python.org/en/latest/projects.html
-
-
-.. note:: :ref:`JSON-LD-` for package metadata and environment build
-   metadata could be helpful.
-
-   - https://github.com/pypa/interoperability-peps/issues/31
 
 
 .. index:: distutils
 .. _distutils:
 
-Distutils
+Distuils
 +++++++++
 | Docs: https://docs.python.org/2/distutils/
-| Docs: https://docs.python.org/3/distutils/
 
 Distutils is a collection of tools for common packaging needs.
 
-* Distutils is included in the :ref:`Python` standard library.
+Distutils is included in the Python standard library.
 
 
 .. index:: setuptools
@@ -886,34 +697,13 @@ PyPI is the Python Package Index.
 Warehouse
 ++++++++++
 | Homepage: https://warehouse.python.org/
-| Src: https://github.com/pypa/warehouse
 | Docs: https://warehouse.readthedocs.org/en/latest/
+| Src: https://github.com/pypa/warehouse
 
 
 Warehouse is the "Next Generation Python Package Repository".
 
 All packages uploaded to :ref:`PyPI` are also available from Warehouse.
-
-
-.. index:: Devpi
-.. _devpi:
-
-Devpi
-++++++++
-| Homepage: http://doc.devpi.net/
-| Src: hg https://bitbucket.org/hpk42/devpi
-| Issues: https://bitbucket.org/hpk42/devpi/issues
-| PyPI: https://pypi.python.org/pypi/devpi-server
-| PyPI: https://pypi.python.org/pypi/devpi-web
-| PyPI: https://pypi.python.org/pypi/devpi-client
-| Docs: http://doc.devpi.net/latest/
-| Docs: http://doc.devpi.net/latest/userman/
-| Docs: http://doc.devpi.net/latest/userman/devpi_concepts.html
-| Docs: http://doc.devpi.net/latest/userman/devpi_commands.html#cmdref-test
-| Docs: http://doc.devpi.net/latest/userman/devpi_misc.html
-
-Devpi is a server and client solution for :ref:`Python package <python
-packages>` mirroring, hosting, and testing.
 
 
 .. index:: Python Wheel
@@ -1170,7 +960,7 @@ Creating a new release with :ref:`Git` and :ref:`GitFlow`:
   git flow feature
   git flow feature finish ENH_print_hello_world   # ENH<TAB>
 
-  ## release/0.1.0
+  ## release/v0.1.0
   git flow release start 0.1.0
   #git commit (e.g. update __version__, setup.py, release notes)
   git flow release finish 0.1.0
@@ -1248,7 +1038,7 @@ Creating a new release with :ref:`Git` and :ref:`HubFlow`:
   #git commit, commit
   git hf feature finish ENH_print_hello_world   # ENH<TAB>
 
-  ## release/0.1.0
+  ## release/v0.1.0
   git hf release start 0.1.0
   ## commit (e.g. update __version__, setup.py, release notes)
   git hf release finish 0.1.0
@@ -1295,212 +1085,8 @@ To clone a repository with ``hg``:
    hg clone http://selenic.com/hg
 
 
-.. index:: Project Templates
-.. _project templates:
-
-Project Templates
-===================
-
-* :ref:`cookiecutter` (Python, [...])
-* :ref:`yeoman` (JS, [...])
-* :ref:`jinja2` (:ref:`salt`, :ref:`ansible`
-  :ref:`configuration management`
-
-
-.. index:: Exemplar Projects
-.. _exemplar projects:
-
-Exemplar Projects
-~~~~~~~~~~~~~~~~~~~~~~
-* https://www.python.org/dev/peps/
-
-  | "PEP 0 -- Index of Python Enhancement Proposals (PEPs)"
-
-  * https://www.python.org/dev/peps/pep-0012/
-
-    | "PEP 0012 -- Sample :ref:`reStructuredText` PEP Template" (:ref:`Python`)
-
-* https://github.com/ipython/ipython/wiki/IPEPs:-IPython-Enhancement-Proposals
-
-  | "IPEPs: IPython Enhancement Proposals"
-
-  * https://github.com/ipython/ipython/wiki/IPEP-0%3A-IPEP-Template
-
-    | "IPEP 0: IPEP Template" (:ref:`IPython`, :ref:`Jupyter`)
-
-  * https://github.com/jupyter/roadmap
-
-* github.com/westurner/wiki: a GitHub Sphinx Wiki
-
-  | Home: https://westurner.org/wiki/
-  | Wiki: https://github.com/westurner/wiki/wiki
-  | Src: https://github.com/westurner/wiki
-  | Src: https://github.com/westurner/wiki.wiki.git
-  | Issues: https://github.com/westurner/wiki/issues
-
-  .. code:: bash
-
-      make help
-      # - build    the docs w/ sphinx
-      # - push     to both branches
-      # - gh-pages from eg _build/html, _build/singlehtml
-      make docs push gh-pages
-
-* github.com/rdfjs/rdfjs.org: a GitHub Project
-
-  | Home: https://github.com/rdfjs/rdfjs.org
-  | Wiki: https://github.com/rdfjs/rdfjs.org/wiki
-  | Src: https://github.com/rdfjs/rdfjs.org
-  | Src: https://github.com/rdfjs/rdfjs.org.wiki.git
-  | Issues: https://github.com/rdfjs/rdfjs.org/issues
-
-  * https://github.com/rdfjs/rdfjs.org/wiki/Meetings
-
-seeAlso:
-
-* https://wrdrd.com/docs/consulting/software-development#agile
-* https://wrdrd.com/docs/consulting/team-building#the-same-page
-
-
-.. index:: cookiecutter
-.. _cookiecutter:
-
-cookiecutter
-~~~~~~~~~~~~~
-| Homepage: https://github.com/audreyr/cookiecutter
-| Source: git https://github.com/audreyr/cookiecutter
-| PyPI: https://pypi.python.org/pypi/cookiecutter
-| Docs: https://cookiecutter.readthedocs.org/en/latest/
-| Docs: https://cookiecutter.readthedocs.org/en/latest/usage.html
-| Docs: https://cookiecutter.readthedocs.org/en/latest/tutorials.html#create-your-very-own-cookiecutter
-
-Cookiecutter creates projects (files and directories) from
-project templates written in :ref:`Jinja2`
-for projects written in :ref:`Python` and other languages.
-
-* https://cookiecutter.readthedocs.org/en/latest/readme.html#available-cookiecutters
-
-  List of Cookiecutter generators
-
-* https://github.com/audreyr/cookiecutter-pypackage
-
-  Cookiecutter template for a :ref:`Python Package <Python packages>`
-  (e.g. ``setup.py``, ``docs/``, ``README.rst``)
-
-* https://github.com/pydanny/cookiecutter-django
-
-  Cookiecutter template for a Django project
-  w/ Bootstrap, AngularJS, :ref:`Docker`,
-
-  * see also: https://github.com/xenith/django-base-template
-
-* https://github.com/pydanny/cookiecutter-djangopackage
-
-  Cookiecutter template for reusable Django packages (**installable
-  apps**).
-
-* https://github.com/openstack-dev/cookiecutter
-
-  Cookiecutter template for :ref:`OpenStack`
-  :ref:`Python Package <Python packages>`
-  projects
-  (\* :ref:`pip` \*, pbr, tox, :ref:`sphinx`)
-
-* https://github.com/openstack-dev/specs-cookiecutter
-
-  Cookiecutter template for :ref:`OpenStack` specs projects
-  (pbr, tox, :ref:`sphinx`)
-
-
-
-
-.. index:: yeoman
-.. _yeoman:
-
-yeoman
-~~~~~~~~
-| Wikipedia: `<https://en.wikipedia.org/wiki/Yeoman_(computing)>`__
-| Homepage: http://yeoman.io/
-| Source: git https://github.com/yeoman/yeoman
-| Source: https://github.com/yeoman
-| NPM: https://www.npmjs.com/package/yo
-| NPMPkg: ``yo``
-| Docs: http://yeoman.io/learning/
-| Docs: http://yeoman.io/codelab/
-| Docs: http://yeoman.io/authoring
-| Docs: http://yeoman.io/learning/resources.html
-
-* https://github.com/yeoman/generator-generator
-
-  Generate a Yeoman generator (``./authoring``).
-
-* http://yeoman.io/generators/
-
-  List of Yeoman generators
-
-  * https://github.com/yeoman/generator-angular
-
-    AngularJS 1 Yeoman generator (:ref:`bower`, karma tests,
-    :ref:`CoffeeScript`, :ref:`TypeScript` )
-
-  * https://github.com/diegonetto/generator-ionic
-
-    Apache Cordova mobile app w/ Ionic (AngularJS 1, :ref:`grunt`)
-
-  * https://stackoverflow.com/questions/29649578/available-yeoman-generator-for-angular-2
-
-    AngularJS 2 Yeoman generators (:ref:`TypeScript`)
-
-  * https://github.com/kriasoft/react-starter-kit
-
-    React.js, Express, Flux, ES6+, JSX, Babel, PostCSS, Webpack, BrowserSync
-    (:ref:`Node.js`)
-
-  * https://github.com/yeoman/generator-polymer
-
-    Polymer Web Components (:ref:`gulp`)
-
-
-
-.. index: Languages
-.. _languages:
-
 Languages
-=======================
-
-
-.. index: Programming Languages
-.. _programming languages:
-.. _programming language:
-
-Programming Languages
-~~~~~~~~~~~~~~~~~~~~~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/Programming_language
-| WikipediaCategory: https://en.wikipedia.org/wiki/Category:Programming_languages
-| WikipediaCategory: https://en.wikipedia.org/wiki/Category:Programming_language_classification
-
-
-* https://en.wikipedia.org/wiki/Von_Neumann_programming_languages
-* https://en.wikipedia.org/wiki/Von_Neumann_architecture#Mitigations
-
-  * https://en.wikipedia.org/wiki/NX_bit
-
-
-.. contents:
-   :local:
-
-
-.. index:: Programming Paradigms
-.. _programming paradigms:
-
-Programming Paradigms
-~~~~~~~~~~~~~~~~~~~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/Programming_paradigm
-| WikipediaCategory: https://en.wikipedia.org/wiki/Category:Programming_paradigms
-
-* https://en.wikipedia.org/wiki/Comparison_of_programming_paradigms
-
-
+===========
 
 .. index:: Lightweight Markup Languages
 .. _lightweight markup language:
@@ -2338,58 +1924,14 @@ Scala
 | Src: git https://github.com/scala/scala
 | Twitter: https://twitter.com/scala_lang
 | Docs: http://scala-lang.org/api/current/
-| Docs: http://www.scala-lang.org/api/current/#scala.collection.mutable.LinkedHashMap
 | Docs: http://learnxinyminutes.com/docs/scala/
 
 Scala is a free and open source
 object-oriented and functional
-:ref:`programming language` which compiles to
+language which compiles to
 :ref:`JVM` (and :ref:`LLVM`) bytecode.
 
 
-.. index:: TypeScript
-.. _typescript:
-
-TypeScript
-~~~~~~~~~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/TypeScript
-| Homepage: http://www.typescriptlang.org/
-| Source: git https://github.com/Microsoft/TypeScript
-| NPM: https://www.npmjs.com/package/typescript
-| NPMPkg: typescript
-| Standard: https://github.com/Microsoft/TypeScript/blob/master/doc/spec.md
-| FileExt: ``.ts``
-| Docs: http://www.typescriptlang.org/Tutorial
-| Docs: http://www.typescriptlang.org/Handbook
-| Docs: http://learnxinyminutes.com/docs/typescript/
-
-TypeScript is a free and open source :ref:`Programming Language`
-developed as a superset of :ref:`Javascript` with optional
-additional features like static typing and native object-oriented code.
-
-* Angular 2 is written in :ref:`TypeScript`:
-  https://github.com/angular/angular/blob/master/modules/angular2/angular2.ts
-
-
-.. index:: WebAssembly
-.. _webassembly:
-
-WebAssembly
-~~~~~~~~~~~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/WebAssembly
-| Project: https://www.w3.org/community/webassembly/
-| Source: https://github.com/WebAssembly
-| FileExt: ``.wast``
-| FileExt: ``.wasm``
-| Docs: https://github.com/WebAssembly/design
-| Docs: https://github.com/WebAssembly/design/blob/master/UseCases.md
-
-WebAssembly (*wasm*) is a safe (sandboxed), efficient low-level
-:ref:`programming language` (abstract syntax tree)
-and binary format for the web.
-
-* WebAssembly is initially derived from asm.js and PNaCL.
-* WebAssembly is an industry-wide effort.
 
 
 .. index:: YAML
@@ -2425,69 +1967,6 @@ example ``top.sls`` file:
 
 Compilers
 ==========
-| Wikipedia: https://en.wikipedia.org/wiki/Compiler
-| WikipediaCategory: https://en.wikipedia.org/wiki/Category:Compilers
-
-* History of compiler construction
-
-  https://en.wikipedia.org/wiki/History_of_compiler_construction
-
-
-
-.. index:: Interpreters
-.. _interpreters:
-
-Interpreter
-~~~~~~~~~~~~~
-| Wikipedia: `<https://en.wikipedia.org/wiki/Interpreter_(computing)>`__
-| WikipediaCategory: `<https://en.wikipedia.org/wiki/Category:Interpreters_(computing)>`__
-
-* https://en.wikipedia.org/wiki/List_of_command-line_interpreters
-* https://en.wikipedia.org/wiki/List_of_command-line_interpreters#Operating_system_shells
-* https://en.wikipedia.org/wiki/List_of_command-line_interpreters#Programming
-* https://en.wikipedia.org/wiki/List_of_command-line_interpreters#Programming_languages
-
-* A programming :ref:`language` interpreter interprets
-  instructions without an ahead-of-time compilation step.
-* A programming language interpreter is generally compiled ahead-of-time.
-* A programming language interpreter implements a version of
-  a programming language specification.
-* Command :ref:`Shells` (e.g. :ref:`Bash`, :ref:`ZSH`) are
-  programming language interpreters.
-* Scripting :ref:`Languages` (e.g. :ref:`PERL`, :ref:`Ruby`, :ref:`Python`)
-  are interpreted or interpret-able languages.
-* Interpreted languages can often also be compiled ahead-of-time
-  (e.g. with build optimizations).
-
-
-.. index:: Source-to-Source Compiler
-.. _source-to-source compiler:
-
-Source-to-Source compiler
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/Source-to-source_compiler
-| WikipediaCategory: https://en.wikipedia.org/wiki/Category:Source-to-source_compilers
-
-.. contents:
-   :local:
-
-
-.. index:: ROSE
-.. _rose:
-
-ROSE
-++++++
-| Wikipedia: `<https://en.wikipedia.org/wiki/ROSE_(compiler_framework)>`__
-| Homepage: http://rosecompiler.org/
-| Source: git https://github.com/rose-compiler/rose
-| Docs: http://rosecompiler.org/?page_id=11
-| Docs: http://rosecompiler.org/ROSE_Tutorial/ROSE-Tutorial.pdf
-| Docs: http://www.rosecompiler.org/ROSE_HTML_Reference/
-| Docs: http://wiki.rosecompiler.org/
-
-
-* http://rosecompiler.org/ROSE_Tutorial/ROSE-Tutorial.pdf
-
 
 .. index:: Binutils
 .. index:: GNU Binutils
@@ -2572,28 +2051,6 @@ with frontends for many languages.
 Operating Systems
 ===================
 | Wikipedia: https://en.wikipedia.org/wiki/Operating_system
-| WikipediaCategory: https://en.wikipedia.org/wiki/Category:Operating_systems
-| WikipediaCategory: https://en.wikipedia.org/wiki/Category:Operating_system_technology
-
-* History of operating systems
-
-  https://en.wikipedia.org/wiki/History_of_operating_systems
-
-  * Timeline of operating systems
-
-    https://en.wikipedia.org/wiki/Timeline_of_operating_systems
-
-    * List of operating systems
-
-      https://en.wikipedia.org/wiki/List_of_operating_systems
-
-* Comparison of operating systems
-
-  https://en.wikipedia.org/wiki/Comparison_of_operating_systems
-
-  * http://distrowatch.com/
-
-* https://en.wikipedia.org/wiki/List_of_important_publications_in_computer_science#Operating_systems
 
 
 .. index:: POSIX
@@ -3110,79 +2567,11 @@ Windows
 | Docs: https://www.microsoft.com/enable/products/docs/
 | Docs:
 
-Microsoft Windows is a NT-kernel based operating system.
+Windows is a NT-kernel based operating system.
 
-* There used to be a POSIX compatibility mode.
-* Chocolatey maintains a set of :ref:`NuGet` packages for Windows.
+There used to be a POSIX compatibility mode.
 
-
-.. index:: Windows Sysinternals
-.. _windows sysinternals:
-
-Windows Sysinternals
-+++++++++++++++++++++++
-| Wikipedia: https://en.wikipedia.org/wiki/Sysinternals
-| Homepage: https://technet.microsoft.com/en-us/sysinternals
-| Download: https://technet.microsoft.com/en-us/sysinternals/bb842062
-| Download: http://live.sysinternals.com/
-| Docs: https://technet.microsoft.com/en-us/sysinternals/bb545027
-| Docs: http://blogs.technet.com/sysinternals
-| Docs: http://blogs.technet.com/b/sysinternals/
-
-Windows Sysinternals is a group of tools for working with
-:ref:`Windows`.
-
-* | Download: https://technet.microsoft.com/en-us/sysinternals/bb842062
-
-  * File & Disk: https://technet.microsoft.com/en-us/sysinternals/bb545046
-  * Networking: https://technet.microsoft.com/en-us/sysinternals/bb795532
-  * Process: https://technet.microsoft.com/en-us/sysinternals/bb795533
-
-    * Process Explorer:
-
-      https://technet.microsoft.com/en-us/sysinternals/processexplorer
-
-      * You can replace Task Manager (``taskman.exe``)
-        with Process Explorer (``procexp.exe``)
-        in many versions of Windows (e.g. so that ``ctrl-alt-delete``
-        launches ``procexp.exe``
-      * ``Win+R`` launches the run dialog
-
-        .. code::
-
-            ## Win+R commands
-            C:/           # open explorer to 'C:/'
-            %UserProfile% # open the user profile env var directory
-            cmd[.exe]     # open a command prompt
-            calc          # calculator
-            control       # control panel
-            services.msc  # services management
-            compmgmt.msc  # computer management
-            eventvwr.msc  # event viewer
-            Wupdmgr       # windows update manager
-
-        * http://www.pcsteps.com/1675-run-command-complete-list-windows/
-
-      * `<https://en.wikipedia.org/wiki/PATH_(variable)#DOS.2C_OS.2F2.2C_and_Windows>`__
-
-        + ``%PATH%`` determines which commands you can run without typing
-          a full absolute path. (Some programs will not run if other
-          programs are not in a directory included in
-          a user's current ``%PATH%`` variable)
-
-          + The ``%PATH%`` variable is determined by key value pairs in
-            the Windows Registry and can be set for:
-
-            + The current prompt (with ``SET PATH=C:/additionalpath;%PATH%``)
-            + A user
-            + The machine
-
-            https://stackoverflow.com/questions/8358265/how-to-update-path-variable-permanently-from-cmd-windows
-
-
-  * Security: https://technet.microsoft.com/en-us/sysinternals/bb795534
-  * System Information: https://technet.microsoft.com/en-us/sysinternals/bb795535
-  * Miscellaneous: https://technet.microsoft.com/en-us/sysinternals/bb842059
+Chocolatey maintains a set of :ref:`NuGet` packages for Windows.
 
 
 .. index:: WSUS Offline Update
@@ -3369,21 +2758,6 @@ Gulp is a build tool written in :ref:`Javascript`
 which builds a directed acyclic graph (DAG).
 
 
-.. index:: Jake
-.. _jake:
-
-Jake
-~~~~~
-| Homepage: http://jakejs.com/
-| Source: git https://github.com/jakejs/jake
-| NPMPkg: jake
-| NPM: https://www.npmjs.com/package/jake
-| Docs: http://jakejs.com/docs
-
-Jake is a :ref:`Javascript` build tool written in :ref:`Javascript`
-(for :ref:`Node.js`) similar to :ref:`Make` or :ref:`Rake`.
-
-
 .. index:: JuJu
 .. _juju:
 
@@ -3473,11 +2847,6 @@ for :ref:`OSX` and :ref:`Linux`.
 * https://github.com/westurner/dotfiles/blob/develop/scripts/osquery-all.sh
 
 
-Pants
-~~~~~~
-See: :ref:`Pants Build`
-
-
 .. index:: Puppet
 .. _puppet:
 
@@ -3516,10 +2885,9 @@ Salt
 | Docs: https://docs.saltstack.com/en/latest/glossary.html
 | Pypi: https://pypi.python.org/pypi/salt
 | Twitter: https://twitter.com/SaltStackInc
-| IRC: ``#salt``
-| TcpPort: 4505 (salt zmq)
-| TcpPort: 4506 (salt zmq)
-| TcpPort: 22 (salt-ssh)
+| IRC: #salt
+| TcpPort: 4505
+| TcpPort: 4506
 
 
 Salt is a :ref:`Configuration Management` system
@@ -3529,58 +2897,19 @@ written in :ref:`YAML`, :ref:`Jinja2`, :ref:`Python`
 for managing
 one or more physical and virtual machines running various operating systems.
 
-Salt runs modules defined by states over a transport.
-Salt transports include:
-
-* :ref:`ZeroMQ` Transport (TCP, msgpack) (libzmq, (default)
-* TCP Transport
-* RAET: Reliable Asynchronous Event Transport (UDP, msgpack) (libsodium, libnacl)
-* :term:`salt-ssh <salt ssh>` runs salt states over SSH
-
 .. glossary::
 
    Salt Top File
-      A Salt *Top File* (``top.sls``) defines the
-      Root of a Salt Environment.
-
-      The Top File contains:
-
-      * YAML + Jinja2 (SLS)
-      * References to :term:`Salt States` defined in :term:`Salt
-        Formulas` (e.g. ``- docker``)
-      * Jinja2 logic
-
-        * ``{% if %}``
-        * ``{% for x in iterable %}``
-        * Conditional on :term:`Salt Grains`
+      Root of a Salt Environment (``top.sls``)
 
    Salt Environment
-      A Salt Environment is a
-      folder of :term:`Salt States` with a ``top.sls`` :ref:`Salt Top File`.
-
-      A :term:`Salt Master` and/or a (standalone) :term:`Salt Minion`
-      maintain a Salt Environment.
+      Folder of Salt States with a top.sls top file.
 
    Salt Bootstrap
-      The Salt Bootstrap script (``bootstrap-salt.sh``) is a shell script
-      installer for a
-      :term:`salt master` and/or :term:`salt minion`.
-
-      Salt Bootstrap can install from source (``git``),
-      from (mostly) Python packages served from e.g. :ref:`PyPI`, with
-      :ref:`pip`, OS Packages (e.g. :ref:`deb`, :ref:`rpm`).
-
-      * ``bootstrap-salt.sh -h``:
-        https://github.com/saltstack/salt-bootstrap/blob/stable/bootstrap-salt.sh
+      Installer for salt master and/or salt minion
 
    Salt Minion
-      A Salt Minion is a
-      daemon process which executes
-      the :ref:`Salt Modules <salt module>` defined by
-      :ref:`Salt States <salt state>` on the local machine.
-
-
-
+      Daemon process which executes Salt States on the local machine.
 
       Can run as a background daemon.
       Can retrieve and execute states from a salt master
@@ -4620,25 +3949,6 @@ managed :ref:`JSON-LD <json-ld->` ``@context``
 would work.
 
 
-.. index:: nbgrader
-.. _nbgrader:
-
-nbgrader
-++++++++
-| Source: git https://github.com/jupyter/nbgrader
-| Docs: https://nbgrader.readthedocs.org/en/stable/
-| Docs: https://nbgrader.readthedocs.org/en/stable/user_guide/
-| Docs: https://nbgrader.readthedocs.org/en/latest/
-| Docs: https://nbgrader.readthedocs.org/en/latest/user_guide/
-| Docs: https://nbgrader.readthedocs.org/en/latest/command_line_tools/
-
-nbgrader is a solution for centrally receiving and grading :ref:`Jupyter notebooks <jupyter notebook>`.
-
-See also:
-
-* https://wrdrd.com/docs/consulting/education-technology#jupyter-and-tdd
-
-
 .. index:: nbviewer
 .. _nbviewer:
 
@@ -5359,7 +4669,7 @@ written in :ref:`C++` which was forked from :ref:`WebKit`.
 
 Chrome
 ~~~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/Google_Chrome
+| Wikipedia: https://en.wikipedia.org/wiki/Google_Chrome 
 | Homepage: https://www.google.com/chrome/
 | Download: https://www.google.com/chrome/browser/desktop/
 | Download: https://www.google.com/chrome/browser/mobile/
@@ -6381,7 +5691,6 @@ Sphinx
 | Pypi: https://pypi.python.org/pypi/Sphinx
 | Docs: http://sphinx-doc.org/contents.html
 | Docs: http://sphinx-doc.org/markup/code.html
-| Docs: http://www.sphinx-doc.org/en/stable/markup/inline.html#ref-role
 | Docs: http://pygments.org/docs/lexers/
 | Docs: http://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html
 | Docs: https://github.com/yoloseem/awesome-sphinxdoc
@@ -6594,11 +5903,6 @@ Clonezilla
 ~~~~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/Clonezilla
 | DistroWatch: http://distrowatch.com/table.php?distribution=clonezilla
-| Homepage: http://clonezilla.org/
-| Src: git https://github.com/stevenshiau/clonezilla
-| Docs: http://clonezilla.org/clonezilla-live.php 
-| Docs: http://clonezilla.org/clonezilla-SE/
-| Docs: http://clonezilla.org/related-links/
 
 Clonezilla is an open source :ref:`Linux` distribution
 which is bootable from a CD/DVD/USB (a LiveCD, LiveDVD, LiveUSB)
@@ -6610,19 +5914,7 @@ to one or more computers over a LAN.
 
 * Clonezilla contains :ref:`FSArchiver`, :ref:`partclone`,
   :ref:`partimage`, and :ref:`rsync`.
-* Clonezilla can backup and restore very many (if not most) filesystems.
-* Clonezilla supports MBR, GPT, and uEFI.
-* Clonezilla can restore a networked multicast group (e.g. lab)
-  of machines to a system image (saving TCP overhead when sharing
-  the same multi-gigabyte / terabyte image to zero or more machines);
-  and boot them with PXE and/or Wake-on-Lan.
-
-  * :ref:`bup`, :ref:`debtorrent`
-
-* Clonezilla can backup to disk, ssh, samba, NFS, WebDAV
-* drbl-winroll helps with restoring :ref:`windows` images
 * :ref:`SystemRescueCD` also contains :ref:`partimage`.
-* :ref:`Cobbler` also supports PXE boot from images.
 
 
 .. index:: Duplicity

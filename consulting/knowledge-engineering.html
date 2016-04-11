@@ -2427,7 +2427,7 @@ are all FUSE filesystems.</li>
 <p>Ceph is an <a class="reference internal" href="open-source#open-source"><span>Open Source</span></a> network filesystem
 (a <a class="reference internal" href="#distributed-databases"><span>distributed database</span></a>
 for files with attributes like owner, group, permissions)
-written in <a class="reference internal" href="../tools/index#id64"><span>C++</span></a> and <a class="reference internal" href="../tools/index#perl"><span>Perl</span></a>
+written in <a class="reference internal" href="../tools/index#id49"><span>C++</span></a> and <a class="reference internal" href="../tools/index#perl"><span>Perl</span></a>
 which runs over top of one or more on-disk filesystems.</p>
 <ul class="simple">
 <li>Ceph Block Device (<em>rbd</em>) &#8211; striping, caching, snapshots, copy-on-write,
@@ -2502,7 +2502,7 @@ WASB (Azure)</li>
 <li>There are HDFS <a class="reference internal" href="information-systems#term-language-api"><span class="xref std std-term">language apis</span></a> for
 many languages:
 <a class="reference internal" href="../tools/index#java"><span>Java</span></a>, <a class="reference internal" href="../tools/index#scala"><span>Scala</span></a>, <a class="reference internal" href="../tools/index#go"><span>Go</span></a>, <a class="reference internal" href="../tools/index#python"><span>Python</span></a>,
-<a class="reference internal" href="../tools/index#ruby"><span>Ruby</span></a>, <a class="reference internal" href="../tools/index#perl"><span>Perl</span></a>, <a class="reference internal" href="../tools/index#haskell"><span>Haskell</span></a>, <a class="reference internal" href="../tools/index#id64"><span>C++</span></a></li>
+<a class="reference internal" href="../tools/index#ruby"><span>Ruby</span></a>, <a class="reference internal" href="../tools/index#perl"><span>Perl</span></a>, <a class="reference internal" href="../tools/index#haskell"><span>Haskell</span></a>, <a class="reference internal" href="../tools/index#id49"><span>C++</span></a></li>
 <li><a class="reference internal" href="../tools/index#mesos"><span>Mesos</span></a> can manage distributed HDFS grids.</li>
 <li><a class="reference internal" href="#elasticsearch"><span>ElasticSearch</span></a></li>
 <li>It&#8217;s possible to configure a <cite>Jenkins</cite> <a class="reference internal" href="software-development#continuous-integration"><span>Continuous Integration</span></a> cluster
@@ -3308,7 +3308,7 @@ BSP.</li>
 </div>
 <ul class="simple">
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Comparison_of_data_serialization_formats">https://en.wikipedia.org/wiki/Comparison_of_data_serialization_formats</a></li>
-<li><a class="reference internal" href="../tools/index#programming-languages"><span>Programming Languages</span></a>&#8216; implementations:<ul>
+<li><span class="xref std std-ref">Programming Languages</span>&#8216; implementations:<ul>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Java_Remote_Method_Invocation">https://en.wikipedia.org/wiki/Java_Remote_Method_Invocation</a></li>
 <li><a class="reference external" href="https://twisted.readthedocs.org/en/latest/core/howto/pb-usage.html">https://twisted.readthedocs.org/en/latest/core/howto/pb-usage.html</a></li>
 </ul>
@@ -3803,7 +3803,7 @@ written in <a class="reference internal" href="../tools/index#python"><span>Pyth
 <div class="line">Docs: <a class="reference external" href="http://xapian.org/docs/">http://xapian.org/docs/</a></div>
 <div class="line">Docs: <a class="reference external" href="http://xapian.org/docs/apidoc/html/inherits.html">http://xapian.org/docs/apidoc/html/inherits.html</a></div>
 </div>
-<p>Xapian is an <a class="reference internal" href="open-source#open-source"><span>Open Source</span></a> search library written in <a class="reference internal" href="../tools/index#id64"><span>C++</span></a>
+<p>Xapian is an <a class="reference internal" href="open-source#open-source"><span>Open Source</span></a> search library written in <a class="reference internal" href="../tools/index#id49"><span>C++</span></a>
 with bindings for many languages.</p>
 </div>
 <div class="section" id="information-retrieval">
@@ -4841,10 +4841,27 @@ and <a class="reference internal" href="#triplestores"><span>RDF Triplestores</s
 <ul>
 <li><p class="first"><a class="reference internal" href="../tools/index#javascript"><span>JavaScript</span></a> and/or <a class="reference internal" href="../tools/index#node-js"><span>Node.js</span></a> implementations of RDF Interfaces:</p>
 <p><a class="reference external" href="http://www.w3.org/community/rdfjs/wiki/Comparison_of_RDFJS_libraries">http://www.w3.org/community/rdfjs/wiki/Comparison_of_RDFJS_libraries</a></p>
-<ul class="simple">
-<li><a class="reference external" href="https://github.com/Acubed/node-rdf">https://github.com/Acubed/node-rdf</a></li>
-<li><a class="reference external" href="https://github.com/antoniogarrote/rdfstore-js">https://github.com/antoniogarrote/rdfstore-js</a></li>
-<li><a class="reference external" href="https://github.com/bergos/rdf-ext">https://github.com/bergos/rdf-ext</a></li>
+<ul>
+<li><p class="first"><a class="reference external" href="https://github.com/Acubed/node-rdf">https://github.com/Acubed/node-rdf</a></p>
+</li>
+<li><p class="first"><a class="reference external" href="https://github.com/antoniogarrote/rdfstore-js">https://github.com/antoniogarrote/rdfstore-js</a></p>
+</li>
+<li><p class="first"><a class="reference external" href="https://github.com/bergos/rdf-ext">https://github.com/bergos/rdf-ext</a></p>
+<ul>
+<li><div class="first line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/rdf-ext/rdf-ext">https://github.com/rdf-ext/rdf-ext</a></div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line">Standard: <a class="reference external" href="https://github.com/rdf-ext/rdf-ext-spec">https://github.com/rdf-ext/rdf-ext-spec</a></div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line">Standard: <a class="reference external" href="https://github.com/rdf-ext/rdf-ext-spec/blob/gh-pages/API.md">https://github.com/rdf-ext/rdf-ext-spec/blob/gh-pages/API.md</a></div>
+</div>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><p class="first"><a class="reference internal" href="#rdflib"><span>RDFLib</span></a> (<a class="reference internal" href="../tools/index#python"><span>Python</span></a>) mappings to RDF Interfaces:</p>
@@ -5681,11 +5698,45 @@ features.</p>
 <span id="index-281"></span><span id="id209"></span><h3>RDFJS<a class="headerlink" href="#rdfjs" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="http://www.w3.org/community/rdfjs/">http://www.w3.org/community/rdfjs/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github">https://github</a></div>
 </div>
 <p>RDFJS (<a class="reference internal" href="#rdf"><span>RDF</span></a> Javascript) is an acronym for referring to
 tools for working with <a class="reference internal" href="#rdf"><span>RDF</span></a> in the Javascript programming
 language.</p>
-<p><a class="reference external" href="http://www.w3.org/community/rdfjs/wiki/Comparison_of_RDFJS_libraries">http://www.w3.org/community/rdfjs/wiki/Comparison_of_RDFJS_libraries</a></p>
+<ul>
+<li><p class="first"><a class="reference external" href="http://www.w3.org/community/rdfjs/wiki/Comparison_of_RDFJS_libraries">http://www.w3.org/community/rdfjs/wiki/Comparison_of_RDFJS_libraries</a></p>
+</li>
+<li><p class="first"><a class="reference external" href="https://github.com/rdfjs/rdfjs.github.io">https://github.com/rdfjs/rdfjs.github.io</a></p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/rdfjs/rdfjs.github.io/wiki/Relevant-Specs">https://github.com/rdfjs/rdfjs.github.io/wiki/Relevant-Specs</a></li>
+<li><a class="reference external" href="https://github.com/rdfjs/rdfjs.github.io/wiki/Relevant-Specs#tangential-technologies">https://github.com/rdfjs/rdfjs.github.io/wiki/Relevant-Specs#tangential-technologies</a></li>
+</ul>
+</li>
+<li><p class="first"><a class="reference external" href="https://github.com/rdfjs/representation-task-force/wiki">https://github.com/rdfjs/representation-task-force/wiki</a></p>
+<ul>
+<li><p class="first">Subject, Predicate, Object</p>
+<p><a class="reference external" href="https://github.com/rdfjs/representation-task-force/wiki/Existing-triple-and-quad-representations#subject-predicate-object">https://github.com/rdfjs/representation-task-force/wiki/Existing-triple-and-quad-representations#subject-predicate-object</a></p>
+</li>
+<li><p class="first">Node type matrix</p>
+<p><a class="reference external" href="https://github.com/rdfjs/representation-task-force/wiki/Existing-triple-and-quad-representations#node-types">https://github.com/rdfjs/representation-task-force/wiki/Existing-triple-and-quad-representations#node-types</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<p>See:</p>
+<ul>
+<li><p class="first"><a class="reference internal" href="#rdf-interfaces"><span>RDF Interfaces</span></a></p>
+</li>
+<li><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">ref:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
 </div>
 <div class="section" id="rdfhdt">
 <span id="index-282"></span><span id="id210"></span><h3>RDFHDT<a class="headerlink" href="#rdfhdt" title="Permalink to this headline">¶</a></h3>
