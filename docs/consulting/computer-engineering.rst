@@ -1118,10 +1118,11 @@ Wireless mesh networks route connections between nodes.
 
 Mesh Wireless Approaches:
 
-* OLPC (*One-laptop per child*) laptops support IEEE 802.11s
+* OLPC (*One Laptop Per Child*) laptops support IEEE 802.11s
   mesh networking with standard 802.11b/g wireless cards.
 
-  http://wiki.laptop.org/go/Mesh_Network_Details
+  | Wikipedia: https://en.wikipedia.org/wiki/One_Laptop_per_Child#Technology
+  | Docs: http://wiki.laptop.org/go/Mesh_Network_Details
 
 * Redstone Technologies LLC (:ref:`gigabit` wireless mesh networks)
 
