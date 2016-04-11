@@ -4211,6 +4211,10 @@ Implementations of RDF Interfaces:
   + https://github.com/Acubed/node-rdf
   + https://github.com/antoniogarrote/rdfstore-js
   + https://github.com/bergos/rdf-ext
+  
+    + | Src: https://github.com/rdf-ext/rdf-ext
+    + | Standard: https://github.com/rdf-ext/rdf-ext-spec
+    + | Standard: https://github.com/rdf-ext/rdf-ext-spec/blob/gh-pages/API.md
 
 * :ref:`rdflib` (:ref:`python`) mappings to RDF Interfaces:
 
@@ -5156,13 +5160,32 @@ Protégé is a Free and Open Source software tool.
 RDFJS
 ++++++
 | Homepage: http://www.w3.org/community/rdfjs/
+| Src: https://github
 
 RDFJS (:ref:`RDF` Javascript) is an acronym for referring to
 tools for working with :ref:`RDF` in the Javascript programming
 language.
 
-http://www.w3.org/community/rdfjs/wiki/Comparison_of_RDFJS_libraries
+* http://www.w3.org/community/rdfjs/wiki/Comparison_of_RDFJS_libraries
+* https://github.com/rdfjs/rdfjs.github.io
 
+  * https://github.com/rdfjs/rdfjs.github.io/wiki/Relevant-Specs
+  * https://github.com/rdfjs/rdfjs.github.io/wiki/Relevant-Specs#tangential-technologies
+  
+* https://github.com/rdfjs/representation-task-force/wiki
+
+  * Subject, Predicate, Object
+  
+    https://github.com/rdfjs/representation-task-force/wiki/Existing-triple-and-quad-representations#subject-predicate-object 
+  
+  * Node type matrix
+  
+    https://github.com/rdfjs/representation-task-force/wiki/Existing-triple-and-quad-representations#node-types
+
+See:
+
+* :ref:`RDF Interfaces`
+* :ref:
 
 .. index:: RDFHDT
 .. _RDFHDT:
