@@ -1125,6 +1125,8 @@ Mesh Wireless Approaches:
   | Wikipedia: https://en.wikipedia.org/wiki/OLPC_XO#Networking
   | Docs: http://wiki.laptop.org/go/Mesh_Network_Details
 
+  * http://wiki.laptop.org/go/XO-4_Touch
+
 * Redstone Technologies LLC (:ref:`gigabit` wireless mesh networks)
 
   * http://redstone.us.com/simplified-wireless-architecture/
