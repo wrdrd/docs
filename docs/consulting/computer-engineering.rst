@@ -1186,7 +1186,7 @@ GSM
 
 LTE
 ~~~~~~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/LTE_(telecommunication)
+| Wikipedia: `<https://en.wikipedia.org/wiki/LTE_(telecommunication)>`__
 
 * Artemis pCell pWave LTE: http://www.artemis.com/pcell
 
