@@ -2677,6 +2677,10 @@ with implementations in many languages.
   but does not require code generation.
 * Avro stores *schemas* within the data.
 
+seeAlso:
+
+* :ref:`JSON-LD` maps to :ref:`RDF`
+* :ref:`5stardata`
 
 
 .. index:: Protocol Buffers
