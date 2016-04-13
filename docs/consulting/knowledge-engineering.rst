@@ -2857,6 +2857,7 @@ web resources using regular :ref:`HTTP` methods like ``GET``, ``POST``,
 
 WAMP
 `````
+| Wikipedia: https://en.wikipedia.org/wiki/Web_Application_Messaging_Protocol
 | Homepage: http://wamp-proto.org
 | Specification: https://tools.ietf.org/html/draft-oberstet-hybi-tavendo-wamp
 | Src: https://github.com/wamp-proto/wamp-proto
