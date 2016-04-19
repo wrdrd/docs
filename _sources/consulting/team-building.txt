@@ -54,6 +54,18 @@ https://en.wikipedia.org/wiki/Positive_psychology#Broad_theories
 https://en.wikipedia.org/wiki/Happiness#Research_results
 
 
+.. index:: Golden Rule
+.. _golden rule:
+
+==============
+Golden Rule
+==============
+| Wikipedia: https://en.wikipedia.org/wiki/Golden_Rule
+
+* https://en.wikipedia.org/wiki/Empathy
+* https://en.wikipedia.org/wiki/Compassion
+
+
 .. index:: Collaboration Engineering
 .. _collaboration engineering:
 

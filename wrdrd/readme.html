@@ -195,7 +195,7 @@
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>At the command line:</p>
-<div class="highlight-python"><div class="highlight"><pre>pip install -e git+https://github.com/wrdrd/docs#egg=wrdrd
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">e</span> <span class="n">git</span><span class="o">+</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">wrdrd</span><span class="o">/</span><span class="n">docs</span><span class="c1">#egg=wrdrd</span>
 </pre></div>
 </div>
 </div>
@@ -205,43 +205,43 @@
 </div>
 <div class="section" id="domaintool">
 <h2>domaintool<a class="headerlink" href="#domaintool" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python"><div class="highlight"><pre># Retrieve DNS and Whois information for a domain
-domaintool wrdrd.com
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Retrieve DNS and Whois information for a domain</span>
+<span class="n">domaintool</span> <span class="n">wrdrd</span><span class="o">.</span><span class="n">com</span>
 
-# Print usage
-domaintool --help
+<span class="c1"># Print usage</span>
+<span class="n">domaintool</span> <span class="o">--</span><span class="n">help</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="crawl">
 <h2>crawl<a class="headerlink" href="#crawl" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python"><div class="highlight"><pre># Install requirements
-pip install -r requirements.txt
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Install requirements</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
 
-# Download NLTK libraries
-python -m nltk.downloader all
+<span class="c1"># Download NLTK libraries</span>
+<span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">nltk</span><span class="o">.</span><span class="n">downloader</span> <span class="nb">all</span>
 
-# Crawl a website
-crawl -c http://www.wrdrd.com/
+<span class="c1"># Crawl a website</span>
+<span class="n">crawl</span> <span class="o">-</span><span class="n">c</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">wrdrd</span><span class="o">.</span><span class="n">com</span><span class="o">/</span>
 
-# Print HTML to stdout
-crawl --html http://www.wrdrd.com/
+<span class="c1"># Print HTML to stdout</span>
+<span class="n">crawl</span> <span class="o">--</span><span class="n">html</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">wrdrd</span><span class="o">.</span><span class="n">com</span><span class="o">/</span>
 
-# Print text to stdout
-crawl --text http://www.wrdrd.com/
+<span class="c1"># Print text to stdout</span>
+<span class="n">crawl</span> <span class="o">--</span><span class="n">text</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">wrdrd</span><span class="o">.</span><span class="n">com</span><span class="o">/</span>
 
-# Print usage
-crawl --help
+<span class="c1"># Print usage</span>
+<span class="n">crawl</span> <span class="o">--</span><span class="n">help</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="stripsinglehtml">
 <h2>stripsinglehtml<a class="headerlink" href="#stripsinglehtml" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python"><div class="highlight"><pre># Strip Sphinx (single) HTML markup
-stripsinglehtml ./_build/singlehtml/index.html &gt; __index.html
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Strip Sphinx (single) HTML markup</span>
+<span class="n">stripsinglehtml</span> <span class="o">./</span><span class="n">_build</span><span class="o">/</span><span class="n">singlehtml</span><span class="o">/</span><span class="n">index</span><span class="o">.</span><span class="n">html</span> <span class="o">&gt;</span> <span class="n">__index</span><span class="o">.</span><span class="n">html</span>
 
-# Print usage
-stripsinglehtml --help
+<span class="c1"># Print usage</span>
+<span class="n">stripsinglehtml</span> <span class="o">--</span><span class="n">help</span>
 </pre></div>
 </div>
 </div>

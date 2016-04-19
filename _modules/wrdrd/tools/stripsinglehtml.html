@@ -146,8 +146,8 @@
                 <div class="body">
                   
   <h1>Source code for wrdrd.tools.stripsinglehtml</h1><div class="highlight"><pre>
-<span class="c">#!/usr/bin/env python</span>
-<span class="c"># encoding: utf-8</span>
+<span></span><span class="ch">#!/usr/bin/env python</span>
+<span class="c1"># encoding: utf-8</span>
 <span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span>
 <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">wrdrd.tools.stripsinglehtml</span>
@@ -156,7 +156,7 @@
 <span class="kn">import</span> <span class="nn">bs4</span>
 
 
-<div class="viewcode-block" id="stripsinglehtml"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools#wrdrd.tools.stripsinglehtml.stripsinglehtml">[docs]</a><span class="k">def</span> <span class="nf">stripsinglehtml</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="s">&#39;index.html&#39;</span><span class="p">):</span>
+<div class="viewcode-block" id="stripsinglehtml"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools#wrdrd.tools.stripsinglehtml.stripsinglehtml">[docs]</a><span class="k">def</span> <span class="nf">stripsinglehtml</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="s1">&#39;index.html&#39;</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    strip markup from sphinx singlehtml files</span>
 <span class="sd">    (rather than writing a sphinx [...]-er)</span>
@@ -167,33 +167,33 @@
 <span class="sd">        bs4.BeautifulSoup: stripped HTML file</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">contents</span> <span class="o">=</span> <span class="bp">None</span>
-    <span class="k">with</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="s">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s">&#39;utf8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="k">with</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
         <span class="n">contents</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
 
     <span class="n">bs</span> <span class="o">=</span> <span class="n">bs4</span><span class="o">.</span><span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">contents</span><span class="p">)</span>
-    <span class="n">bs</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">&#39;body&#39;</span><span class="p">)</span>
-    <span class="n">bs</span> <span class="o">=</span> <span class="n">bs</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">&#39;body&#39;</span><span class="p">)</span>
-    <span class="p">[</span><span class="n">x</span><span class="o">.</span><span class="n">extract</span><span class="p">()</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">bs</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&#39;a&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s">&#39;class&#39;</span><span class="p">:</span> <span class="s">&#39;headerlink&#39;</span><span class="p">})]</span>
-    <span class="n">elem</span> <span class="o">=</span> <span class="n">bs</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">&#39;div&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s">&#39;class&#39;</span><span class="p">:</span> <span class="s">&#39;sphinxsidebar&#39;</span><span class="p">})</span>
+    <span class="n">bs</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;body&#39;</span><span class="p">)</span>
+    <span class="n">bs</span> <span class="o">=</span> <span class="n">bs</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;body&#39;</span><span class="p">)</span>
+    <span class="p">[</span><span class="n">x</span><span class="o">.</span><span class="n">extract</span><span class="p">()</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">bs</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;class&#39;</span><span class="p">:</span> <span class="s1">&#39;headerlink&#39;</span><span class="p">})]</span>
+    <span class="n">elem</span> <span class="o">=</span> <span class="n">bs</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;class&#39;</span><span class="p">:</span> <span class="s1">&#39;sphinxsidebar&#39;</span><span class="p">})</span>
     <span class="n">elem</span> <span class="ow">and</span> <span class="n">elem</span><span class="o">.</span><span class="n">extract</span><span class="p">()</span>
-    <span class="n">elem</span> <span class="o">=</span> <span class="n">bs</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">&#39;div&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s">&#39;id&#39;</span><span class="p">:</span> <span class="s">&#39;indices-and-tables&#39;</span><span class="p">})</span>
+    <span class="n">elem</span> <span class="o">=</span> <span class="n">bs</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="s1">&#39;indices-and-tables&#39;</span><span class="p">})</span>
     <span class="n">elem</span> <span class="ow">and</span> <span class="n">elem</span><span class="o">.</span><span class="n">extract</span><span class="p">()</span>
-    <span class="p">[</span><span class="n">x</span><span class="o">.</span><span class="n">extract</span><span class="p">()</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">bs</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&#39;div&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s">&#39;class&#39;</span><span class="p">:</span> <span class="s">&#39;related&#39;</span><span class="p">})]</span>
+    <span class="p">[</span><span class="n">x</span><span class="o">.</span><span class="n">extract</span><span class="p">()</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">bs</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;class&#39;</span><span class="p">:</span> <span class="s1">&#39;related&#39;</span><span class="p">})]</span>
 
-    <span class="k">return</span> <span class="n">bs</span>
+    <span class="k">return</span> <span class="n">bs</span></div>
 
-</div>
+
 <span class="kn">import</span> <span class="nn">unittest</span>
 
 
 <div class="viewcode-block" id="Test_stripsinglehtml"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools#wrdrd.tools.stripsinglehtml.Test_stripsinglehtml">[docs]</a><span class="k">class</span> <span class="nc">Test_stripsinglehtml</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
 
 <div class="viewcode-block" id="Test_stripsinglehtml.test_stripsinglehtml"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools#wrdrd.tools.stripsinglehtml.Test_stripsinglehtml.test_stripsinglehtml">[docs]</a>    <span class="k">def</span> <span class="nf">test_stripsinglehtml</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="n">filename</span> <span class="o">=</span> <span class="s">&#39;./test/data/singlehtml.html&#39;</span>
+        <span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;./test/data/singlehtml.html&#39;</span>
         <span class="n">output</span> <span class="o">=</span> <span class="n">stripsinglehtml</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="n">output</span><span class="p">)</span></div></div>
 
-</div></div>
+
 <div class="viewcode-block" id="main"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools#wrdrd.tools.stripsinglehtml.main">[docs]</a><span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    :py:mod:`wrdrd.tools.stripsinglehtml` main method: print unicode</span>
@@ -209,18 +209,18 @@
     <span class="kn">import</span> <span class="nn">sys</span>
 
     <span class="n">prs</span> <span class="o">=</span> <span class="n">optparse</span><span class="o">.</span><span class="n">OptionParser</span><span class="p">(</span>
-        <span class="n">usage</span><span class="o">=</span><span class="s">&quot;%prog &lt;path&gt;&quot;</span><span class="p">,</span>
-        <span class="n">description</span><span class="o">=</span><span class="s">&quot;Strip markup from a Sphinx singlehtml HTML page&quot;</span><span class="p">)</span>
+        <span class="n">usage</span><span class="o">=</span><span class="s2">&quot;%prog &lt;path&gt;&quot;</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Strip markup from a Sphinx singlehtml HTML page&quot;</span><span class="p">)</span>
 
-    <span class="n">prs</span><span class="o">.</span><span class="n">add_option</span><span class="p">(</span><span class="s">&#39;-v&#39;</span><span class="p">,</span> <span class="s">&#39;--verbose&#39;</span><span class="p">,</span>
-                   <span class="n">dest</span><span class="o">=</span><span class="s">&#39;verbose&#39;</span><span class="p">,</span>
-                   <span class="n">action</span><span class="o">=</span><span class="s">&#39;store_true&#39;</span><span class="p">,)</span>
-    <span class="n">prs</span><span class="o">.</span><span class="n">add_option</span><span class="p">(</span><span class="s">&#39;-q&#39;</span><span class="p">,</span> <span class="s">&#39;--quiet&#39;</span><span class="p">,</span>
-                   <span class="n">dest</span><span class="o">=</span><span class="s">&#39;quiet&#39;</span><span class="p">,</span>
-                   <span class="n">action</span><span class="o">=</span><span class="s">&#39;store_true&#39;</span><span class="p">,)</span>
-    <span class="n">prs</span><span class="o">.</span><span class="n">add_option</span><span class="p">(</span><span class="s">&#39;-t&#39;</span><span class="p">,</span> <span class="s">&#39;--test&#39;</span><span class="p">,</span>
-                   <span class="n">dest</span><span class="o">=</span><span class="s">&#39;run_tests&#39;</span><span class="p">,</span>
-                   <span class="n">action</span><span class="o">=</span><span class="s">&#39;store_true&#39;</span><span class="p">,)</span>
+    <span class="n">prs</span><span class="o">.</span><span class="n">add_option</span><span class="p">(</span><span class="s1">&#39;-v&#39;</span><span class="p">,</span> <span class="s1">&#39;--verbose&#39;</span><span class="p">,</span>
+                   <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;verbose&#39;</span><span class="p">,</span>
+                   <span class="n">action</span><span class="o">=</span><span class="s1">&#39;store_true&#39;</span><span class="p">,)</span>
+    <span class="n">prs</span><span class="o">.</span><span class="n">add_option</span><span class="p">(</span><span class="s1">&#39;-q&#39;</span><span class="p">,</span> <span class="s1">&#39;--quiet&#39;</span><span class="p">,</span>
+                   <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;quiet&#39;</span><span class="p">,</span>
+                   <span class="n">action</span><span class="o">=</span><span class="s1">&#39;store_true&#39;</span><span class="p">,)</span>
+    <span class="n">prs</span><span class="o">.</span><span class="n">add_option</span><span class="p">(</span><span class="s1">&#39;-t&#39;</span><span class="p">,</span> <span class="s1">&#39;--test&#39;</span><span class="p">,</span>
+                   <span class="n">dest</span><span class="o">=</span><span class="s1">&#39;run_tests&#39;</span><span class="p">,</span>
+                   <span class="n">action</span><span class="o">=</span><span class="s1">&#39;store_true&#39;</span><span class="p">,)</span>
 
     <span class="n">args</span> <span class="o">=</span> <span class="n">args</span> <span class="ow">and</span> <span class="nb">list</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="ow">or</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
     <span class="p">(</span><span class="n">opts</span><span class="p">,</span> <span class="n">args</span><span class="p">)</span> <span class="o">=</span> <span class="n">prs</span><span class="o">.</span><span class="n">parse_args</span><span class="p">()</span>
@@ -237,16 +237,16 @@
         <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">())</span>
 
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s">&quot;Must specify a file path&quot;</span><span class="p">)</span>
+        <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;Must specify a file path&quot;</span><span class="p">)</span>
     <span class="n">path</span> <span class="o">=</span> <span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 
-    <span class="n">sys</span><span class="o">.</span><span class="n">stdout</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">getwriter</span><span class="p">(</span><span class="s">&#39;utf-8&#39;</span><span class="p">)(</span><span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s">&#39;replace&#39;</span><span class="p">)</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">stdout</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">getwriter</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)(</span><span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;replace&#39;</span><span class="p">)</span>
     <span class="n">bs</span> <span class="o">=</span> <span class="n">stripsinglehtml</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
     <span class="k">print</span><span class="p">(</span><span class="nb">unicode</span><span class="p">(</span><span class="n">bs</span><span class="p">))</span>
-    <span class="k">return</span> <span class="mi">0</span>
+    <span class="k">return</span> <span class="mi">0</span></div>
 
-</div>
-<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">&quot;__main__&quot;</span><span class="p">:</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
     <span class="kn">import</span> <span class="nn">sys</span>
     <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">main</span><span class="p">())</span>
 </pre></div>

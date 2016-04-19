@@ -414,7 +414,7 @@ Homebrew
 ~~~~~~~~~~
 | Wikipedia: `<https://en.wikipedia.org/wiki/Homebrew_(package_management_software)>`__
 | Homepage: http://brew.sh/
-
+| Src: https://github.com/Homebrew/brew
 
 Homebrew is a package manager (``brew``) for :ref:`OSX`.
 
@@ -1121,25 +1121,28 @@ Gitflow branch names and prefixes are configured in ``.git/config``;
 the defaults are:
 
 
-+--------------------+-------------------------------------------------------------------------+
-| **Branch Name**    | **Description**                                                         |
-|                    | (and `Code Labels <https://westurner.org/wiki/workflow#code-labels>`__) |
-+--------------------+-------------------------------------------------------------------------+
-| ``master``         | Stable trunk (latest release)                                           |
-+--------------------+-------------------------------------------------------------------------+
-| ``develop``        | Development main line                                                   |
-+--------------------+-------------------------------------------------------------------------+
-| ``feature/<name>`` | New features for the next release (e.g. ``ENH``, ``PRF``)               |
-+--------------------+-------------------------------------------------------------------------+
-| ``release/<name>`` | In-progress release branches (e.g. ``RLS``)                             |
-+--------------------+-------------------------------------------------------------------------+
-| ``hotfix/<name>``  | Fixes to merge to both ``master`` and ``develop``                       |
-|                    | (e.g. ``BUG``, ``TST``, ``DOC``)                                        |
-+--------------------+-------------------------------------------------------------------------+
-| ``support/<name>`` | "What is the 'support' branch?"                                         |
-|                    |                                                                         |
-|                    | https://github.com/nvie/gitflow/wiki/FAQ                                |
-+--------------------+-------------------------------------------------------------------------+
+.. table:: GitFlow Branch Names
+   :class: table-striped table-responsive
+
+   +--------------------+-------------------------------------------------------------------------+
+   | **Branch Name**    | **Description**                                                         |
+   |                    | (and `Code Labels <https://westurner.org/wiki/workflow#code-labels>`__) |
+   +--------------------+-------------------------------------------------------------------------+
+   | ``master``         | Stable trunk (latest release)                                           |
+   +--------------------+-------------------------------------------------------------------------+
+   | ``develop``        | Development main line                                                   |
+   +--------------------+-------------------------------------------------------------------------+
+   | ``feature/<name>`` | New features for the next release (e.g. ``ENH``, ``PRF``)               |
+   +--------------------+-------------------------------------------------------------------------+
+   | ``release/<name>`` | In-progress release branches (e.g. ``RLS``)                             |
+   +--------------------+-------------------------------------------------------------------------+
+   | ``hotfix/<name>``  | Fixes to merge to both ``master`` and ``develop``                       |
+   |                    | (e.g. ``BUG``, ``TST``, ``DOC``)                                        |
+   +--------------------+-------------------------------------------------------------------------+
+   | ``support/<name>`` | "What is the 'support' branch?"                                         |
+   |                    |                                                                         |
+   |                    | https://github.com/nvie/gitflow/wiki/FAQ                                |
+   +--------------------+-------------------------------------------------------------------------+
 
 Creating a new release with :ref:`Git` and :ref:`GitFlow`:
 
@@ -1198,21 +1201,24 @@ HubFlow branch names and prefixes are configured in ``.git/config``;
 the defaults are as follows:
 
 
-+--------------------+-------------------------------------------------------------------------+
-| **Branch Name**    | **Description**                                                         |
-|                    | (and `Code Labels <https://westurner.org/wiki/workflow#code-labels>`__) |
-+--------------------+-------------------------------------------------------------------------+
-| ``master``         | Stable trunk (latest release)                                           |
-+--------------------+-------------------------------------------------------------------------+
-| ``develop``        | Development main line                                                   |
-+--------------------+-------------------------------------------------------------------------+
-| ``feature/<name>`` | New features for the next release (e.g. ``ENH``, ``PRF``)               |
-+--------------------+-------------------------------------------------------------------------+
-| ``release/<name>`` | In-progress release branches (e.g. ``RLS``)                             |
-+--------------------+-------------------------------------------------------------------------+
-| ``hotfix/<name>``  | Fixes to merge to both ``master`` and ``develop``                       |
-|                    | (e.g. ``BUG``, ``TST``, ``DOC``)                                        |
-+--------------------+-------------------------------------------------------------------------+
+.. table:: HubFlow Branch Names
+   :class: table-striped table-responsive
+
+   +--------------------+-------------------------------------------------------------------------+
+   | **Branch Name**    | **Description**                                                         |
+   |                    | (and `Code Labels <https://westurner.org/wiki/workflow#code-labels>`__) |
+   +--------------------+-------------------------------------------------------------------------+
+   | ``master``         | Stable trunk (latest release)                                           |
+   +--------------------+-------------------------------------------------------------------------+
+   | ``develop``        | Development main line                                                   |
+   +--------------------+-------------------------------------------------------------------------+
+   | ``feature/<name>`` | New features for the next release (e.g. ``ENH``, ``PRF``)               |
+   +--------------------+-------------------------------------------------------------------------+
+   | ``release/<name>`` | In-progress release branches (e.g. ``RLS``)                             |
+   +--------------------+-------------------------------------------------------------------------+
+   | ``hotfix/<name>``  | Fixes to merge to both ``master`` and ``develop``                       |
+   |                    | (e.g. ``BUG``, ``TST``, ``DOC``)                                        |
+   +--------------------+-------------------------------------------------------------------------+
 
 Creating a new release with :ref:`Git` and :ref:`HubFlow`:
 
@@ -4503,7 +4509,7 @@ for many languages (:ref:`Python`, :ref:`Ruby`, :ref:`Java`,
 
 
 .. table:: IPython Jupyter comparison (adapted from http://jupyter.org)
-   :name: IPython Jupyter comparison
+   :class: table-striped table-responsive
 
    +-------------------------------+-------------------------------------------------------------+
    | :ref:`IPython`                | :ref:`Jupyter`                                              |
@@ -6377,7 +6383,7 @@ Sphinx
 ~~~~~~~~~~~~~~~~~
 | Wikipedia: `<https://en.wikipedia.org/wiki/Sphinx_(documentation_generator)>`_
 | Homepage: https://pypi.python.org/pypi/Sphinx
-| Src: hg https://bitbucket.org/birkenfeld/sphinx/
+| Src: git https://github.com/sphinx-doc/sphinx
 | Pypi: https://pypi.python.org/pypi/Sphinx
 | Docs: http://sphinx-doc.org/contents.html
 | Docs: http://sphinx-doc.org/markup/code.html
