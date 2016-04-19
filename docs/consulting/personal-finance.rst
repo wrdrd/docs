@@ -57,6 +57,21 @@ Personal Income
 * https://en.wikipedia.org/wiki/Personal_income_in_the_United_States
 
 
+.. index:: Occupational Outlook Handbook
+.. _occupational outlook handbook:
+
+Occupational Outlook Handbook
++++++++++++++++++++++++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/Occupational_Outlook_Handbook
+| Homepage: http://www.bls.gov/ooh/
+
+
+* [...]
+
+  * http://www.bls.gov/ooh/computer-and-information-technology/home.htm
+  * :ref:`Software Development` > :ref:`Everyone Codes`
+
+
 .. index:: Personal Expenses
 .. _personal expenses:
 
