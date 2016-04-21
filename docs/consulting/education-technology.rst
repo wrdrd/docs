@@ -95,7 +95,7 @@ https://en.wikipedia.org/wiki/Publishing
 
 GitHub Pages
 **************
-| Homepage:
+| Homepage: https://pages.github.com/
 
 GitHub Pages serves webpages from :ref:`git` branches.
 
