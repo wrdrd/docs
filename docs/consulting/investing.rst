@@ -351,7 +351,7 @@ quandl-python
 
   .. code:: bash
 
-      conda install numpy pip
+      conda install numpy pandas requests pip
       pip install quandl-python
 
 
@@ -388,15 +388,15 @@ pyql
 pyql is a :ref:`Cython` package for working with parts of
 :ref:`QuantLib`.
 
-.. index:: QuantLib-Python
-.. _quantlib-python:
-
-QuantLib-Python
-~~~~~~~~~~~~~~~~~~
-| PyPI: https://pypi.python.org/pypi/QuantLib-Python
-
-QuantLib-Python is a :ref:`Python` library for working with
-:ref:`QuantLib`.
+.. .. index:: QuantLib-Python
+.. .. _quantlib-python:
+..
+.. QuantLib-Python
+.. ~~~~~~~~~~~~~~~~~~
+.. | PyPI: https://pypi.python.org/pypi/QuantLib-Python
+..
+.. QuantLib-Python is a :ref:`Python` library for working with
+.. :ref:`QuantLib`.
 
 
 .. index:: Quantopian
@@ -422,8 +422,10 @@ Quantopian is a crowd-sourced hedge fund.
 * You can choose to share your research and algorithms with the
   community; who can clone and modify at will.
 
-  + Sample Mean Reversion Algorithm:
+  + Sample Mean Reversion algorithm:
     https://www.quantopian.com/algorithms/56f32bbf633c20776d000108
+  + Most cloned algorithms:
+    https://www.quantopian.com/posts/community-algorithms-migrated-to-quantopian-2
 
 
 .. index:: Quantopian Open
@@ -432,7 +434,6 @@ Quantopian is a crowd-sourced hedge fund.
 Quantopian Open
 ~~~~~~~~~~~~~~~~
 | Homepage: https://www.quantopian.com/open
-| 
 
 * https://www.quantopian.com/open/rules
 * https://www.quantopian.com/leaderboard
