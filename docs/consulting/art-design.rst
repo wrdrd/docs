@@ -1802,7 +1802,7 @@ debtorrent
 
 debtorrent downloads
 :ref:`APT` :ref:`DEB` :ref:`packages` with :ref:`BitTorrent`
-for :ref:`Linux` distrubtions like
+for :ref:`Linux` distribtions like
 :ref:`Ubuntu` and/or :ref:`Debian`.
 
 * debtorrent can efficiently transfer packages to many local
