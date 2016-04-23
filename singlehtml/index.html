@@ -1087,7 +1087,6 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#quantlib">QuantLib</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="index.html#pyql">pyql</a></li>
-<li class="toctree-l4"><a class="reference internal" href="index.html#quantlib-python">QuantLib-Python</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#quantopian">Quantopian</a><ul>
@@ -14399,7 +14398,7 @@ and a number of additional libraries.</p>
 <ul>
 <li><p class="first">quandl-python requires <a class="reference internal" href="index.html#numpy"><span class="std std-ref">NumPy</span></a>,
 which is really easy to install with <a class="reference internal" href="index.html#conda"><span class="std std-ref">Conda</span></a>.</p>
-<div class="code bash highlight-default"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">install</span> <span class="n">numpy</span> <span class="n">pip</span>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">install</span> <span class="n">numpy</span> <span class="n">pandas</span> <span class="n">requests</span> <span class="n">pip</span>
 <span class="n">pip</span> <span class="n">install</span> <span class="n">quandl</span><span class="o">-</span><span class="n">python</span>
 </pre></div>
 </div>
@@ -14421,7 +14420,7 @@ which is really easy to install with <a class="reference internal" href="index.h
 <a class="reference internal" href="#quantitative-analyst"><span class="std std-ref">Quantitative analysis</span></a> written in
 <a class="reference internal" href="index.html#id64"><span class="std std-ref">C++</span></a>.</p>
 <ul>
-<li><p class="first"><a class="reference internal" href="#quantlib-python"><span class="std std-ref">QuantLib-Python</span></a> is one wrapper library / language binding
+<li><p class="first"><span class="xref std std-ref">QuantLib-Python</span> is one wrapper library / language binding
 for QuantLib.</p>
 </li>
 <li><p class="first">There are many language bindings for QuantLib:</p>
@@ -14436,17 +14435,9 @@ for QuantLib.</p>
 <p>pyql is a <a class="reference internal" href="index.html#cython"><span class="std std-ref">Cython</span></a> package for working with parts of
 <a class="reference internal" href="#quantlib"><span class="std std-ref">QuantLib</span></a>.</p>
 </div>
-<div class="section" id="quantlib-python">
-<span id="index-26"></span><span id="id29"></span><h5>QuantLib-Python<a class="headerlink" href="#quantlib-python" title="Permalink to this headline">¶</a></h5>
-<div class="line-block">
-<div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/QuantLib-Python">https://pypi.python.org/pypi/QuantLib-Python</a></div>
-</div>
-<p>QuantLib-Python is a <a class="reference internal" href="index.html#python"><span class="std std-ref">Python</span></a> library for working with
-<a class="reference internal" href="#quantlib"><span class="std std-ref">QuantLib</span></a>.</p>
-</div>
 </div>
 <div class="section" id="quantopian">
-<span id="index-27"></span><span id="id30"></span><h4>Quantopian<a class="headerlink" href="#quantopian" title="Permalink to this headline">¶</a></h4>
+<span id="index-26"></span><span id="id29"></span><h4>Quantopian<a class="headerlink" href="#quantopian" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Quantopian">https://en.wikipedia.org/wiki/Quantopian</a></div>
 <div class="line">Homepage:  <a class="reference external" href="https://www.quantopian.com/">https://www.quantopian.com/</a></div>
@@ -14465,16 +14456,17 @@ for algorithmic backtesting and live-trading.<ul>
 <li>You own your intellectual property.</li>
 <li>You can choose to share your research and algorithms with the
 community; who can clone and modify at will.<ul>
-<li>Sample Mean Reversion Algorithm:
+<li>Sample Mean Reversion algorithm:
 <a class="reference external" href="https://www.quantopian.com/algorithms/56f32bbf633c20776d000108">https://www.quantopian.com/algorithms/56f32bbf633c20776d000108</a></li>
+<li>Most cloned algorithms:
+<a class="reference external" href="https://www.quantopian.com/posts/community-algorithms-migrated-to-quantopian-2">https://www.quantopian.com/posts/community-algorithms-migrated-to-quantopian-2</a></li>
 </ul>
 </li>
 </ul>
 <div class="section" id="quantopian-open">
-<span id="index-28"></span><span id="id31"></span><h5>Quantopian Open<a class="headerlink" href="#quantopian-open" title="Permalink to this headline">¶</a></h5>
+<span id="index-27"></span><span id="id30"></span><h5>Quantopian Open<a class="headerlink" href="#quantopian-open" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="https://www.quantopian.com/open">https://www.quantopian.com/open</a></div>
-<div class="line"><br /></div>
 </div>
 <ul class="simple">
 <li><a class="reference external" href="https://www.quantopian.com/open/rules">https://www.quantopian.com/open/rules</a></li>
@@ -14483,7 +14475,7 @@ community; who can clone and modify at will.<ul>
 </ul>
 </div>
 <div class="section" id="zipline">
-<span id="index-29"></span><span id="id32"></span><h5>Zipline<a class="headerlink" href="#zipline" title="Permalink to this headline">¶</a></h5>
+<span id="index-28"></span><span id="id31"></span><h5>Zipline<a class="headerlink" href="#zipline" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Src: <a class="reference external" href="https://github.com/quantopian/zipline">https://github.com/quantopian/zipline</a></div>
 <div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/zipline">https://pypi.python.org/pypi/zipline</a></div>
@@ -14499,7 +14491,7 @@ perfomed based upon historical data?&#8221;)</li>
 </ul>
 </div>
 <div class="section" id="qgrid">
-<span id="index-30"></span><span id="id33"></span><h5>qgrid<a class="headerlink" href="#qgrid" title="Permalink to this headline">¶</a></h5>
+<span id="index-29"></span><span id="id32"></span><h5>qgrid<a class="headerlink" href="#qgrid" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Src: <a class="reference external" href="https://github.com/quantopian/qgrid">https://github.com/quantopian/qgrid</a></div>
 <div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/qgrid">https://pypi.python.org/pypi/qgrid</a></div>
@@ -17845,6 +17837,11 @@ files which list conda and <a class="reference internal" href="#pip"><span class
 <div class="code bash highlight-default"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">pydanny</span> <span class="n">cookiecutter</span>   <span class="c1"># OR pip install cookiecutter</span>
 </pre></div>
 </div>
+<p>The conda-forge custom channel packages are built with <a class="reference internal" href="index.html#continuous-integration"><span class="std std-ref">Continuous Integration</span></a> on multiple platforms:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://conda-forge.github.io/">https://conda-forge.github.io/</a></li>
+<li><a class="reference external" href="http://anaconda.org/conda-forge">http://anaconda.org/conda-forge</a></li>
+</ul>
 <p>Sources:</p>
 <ul class="simple">
 <li><a class="reference external" href="https://github.com/conda">https://github.com/conda</a></li>

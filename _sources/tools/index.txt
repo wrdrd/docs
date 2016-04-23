@@ -270,6 +270,12 @@ To install a conda package from a custom channel:
 
     conda install -c pydanny cookiecutter   # OR pip install cookiecutter
 
+The conda-forge custom channel packages are built with :ref:`continuous
+integration` on multiple platforms:
+
+* https://conda-forge.github.io/
+* http://anaconda.org/conda-forge
+
 Sources:
 
 * https://github.com/conda
@@ -283,6 +289,8 @@ Sources:
   conda recipes (which users may build and
   :ref:`maintain <packages>` in https://binstar.org
   package repositories)
+
+
 
 See also: :ref:`Anaconda`
 
