@@ -150,7 +150,6 @@ A stock option is a type of `Option`_.
 Employee Stock Option
 ======================
 | Wikipedia: https://en.wikipedia.org/wiki/Employee_stock_option
-| Investopedia: 
 
 
 .. index:: SAFE
