@@ -424,7 +424,7 @@ Quantopian is a crowd-sourced hedge fund.
 
   + Sample Mean Reversion algorithm:
     https://www.quantopian.com/algorithms/56f32bbf633c20776d000108
-  + Most cloned algorithms:
+  + 100 most-popular cloned algorithms:
     https://www.quantopian.com/posts/community-algorithms-migrated-to-quantopian-2
 
 
