@@ -251,8 +251,10 @@
 </li>
 <li><a class="reference internal" href="#home-a-v">Home A/V</a><ul>
 <li><a class="reference internal" href="#standards">Standards</a><ul>
-<li><a class="reference internal" href="#google-cast-sdk">Google Cast SDK</a></li>
+<li><a class="reference internal" href="#dial">DIAL</a></li>
 <li><a class="reference internal" href="#dlna">DLNA</a></li>
+<li><a class="reference internal" href="#google-cast-sdk">Google Cast SDK</a></li>
+<li><a class="reference internal" href="#ssdp">SSDP</a></li>
 <li><a class="reference internal" href="#upnp">UPnP</a></li>
 <li><a class="reference internal" href="#zeroconf">Zeroconf</a></li>
 </ul>
@@ -487,8 +489,10 @@
 </li>
 <li><a class="reference internal" href="#home-a-v">Home A/V</a><ul>
 <li><a class="reference internal" href="#standards">Standards</a><ul>
-<li><a class="reference internal" href="#google-cast-sdk">Google Cast SDK</a></li>
+<li><a class="reference internal" href="#dial">DIAL</a></li>
 <li><a class="reference internal" href="#dlna">DLNA</a></li>
+<li><a class="reference internal" href="#google-cast-sdk">Google Cast SDK</a></li>
+<li><a class="reference internal" href="#ssdp">SSDP</a></li>
 <li><a class="reference internal" href="#upnp">UPnP</a></li>
 <li><a class="reference internal" href="#zeroconf">Zeroconf</a></li>
 </ul>
@@ -2424,10 +2428,45 @@ all Free and <a class="reference internal" href="open-source#open-source"><span 
 <span id="home-av"></span><span id="index-123"></span><h2>Home A/V<a class="headerlink" href="#home-a-v" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="standards">
 <h3>Standards<a class="headerlink" href="#standards" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="google-cast-sdk">
-<h4>Google Cast SDK<a class="headerlink" href="#google-cast-sdk" title="Permalink to this headline">¶</a></h4>
+<span class="target" id="index-124"></span><div class="section" id="dial">
+<span id="index-125"></span><span id="id112"></span><h4>DIAL<a class="headerlink" href="#dial" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
-<div class="line">Homepage: <a class="reference external" href="https://en.wikipedia.org/wiki/Chromecast">https://en.wikipedia.org/wiki/Chromecast</a></div>
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Discovery_and_Launch">https://en.wikipedia.org/wiki/Discovery_and_Launch</a></div>
+<div class="line">Homepage: <a class="reference external" href="http://www.dial-multiscreen.org/">http://www.dial-multiscreen.org/</a></div>
+<div class="line">Standard: <a class="reference external" href="http://www.dial-multiscreen.org/dial-protocol-specification">http://www.dial-multiscreen.org/dial-protocol-specification</a></div>
+</div>
+<p>DIAL (<em>Discovery and Launch</em>) is a standard for discovering media
+devices and launching media resources
+built upon <a class="reference internal" href="#ssdp"><span class="std std-ref">SSDP</span></a>, <a class="reference internal" href="#upnp"><span class="std std-ref">UPnP</span></a>, and <a class="reference internal" href="knowledge-engineering#http"><span class="std std-ref">HTTP</span></a>.</p>
+<ul class="simple">
+<li>A DIAL Server (a &#8220;1st screen device&#8221;; e.g. a TV or streaming device)
+receives DIAL requests from a DIAL client.</li>
+<li>A DIAL Client (a &#8220;2nd screen device&#8221;; e.g. a phone or a PC) sends DIAL
+requests to a DIAL server.</li>
+<li>DIAL Clients discover DIAL devices with <em>DIAL Service Discovery</em>.</li>
+<li>DIAL Clients interact with DIAL devices over a <em>DIAL REST Service</em>
+API.</li>
+</ul>
+</div>
+<div class="section" id="dlna">
+<span id="index-126"></span><span id="id113"></span><h4>DLNA<a class="headerlink" href="#dlna" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Digital_Living_Network_Alliance">https://en.wikipedia.org/wiki/Digital_Living_Network_Alliance</a></div>
+<div class="line">Homepage: <a class="reference external" href="http://www.dlna.org/">http://www.dlna.org/</a></div>
+</div>
+<dl class="docutils">
+<dt>DLNA: Digital Living Network Alliance</dt>
+<dd>DLNA is a standards group and a standard for networked devices;
+particularly audio/video media devices like
+standalone media players
+and networked stereos.</dd>
+</dl>
+</div>
+<div class="section" id="google-cast-sdk">
+<span id="index-127"></span><span id="id114"></span><h4>Google Cast SDK<a class="headerlink" href="#google-cast-sdk" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Chromecast">https://en.wikipedia.org/wiki/Chromecast</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://developers.google.com/cast/">https://developers.google.com/cast/</a></div>
 <div class="line">Source: <a class="reference external" href="https://github.com/googlecast">https://github.com/googlecast</a></div>
 <div class="line">Docs: <a class="reference external" href="https://en.wikipedia.org/wiki/List_of_apps_with_Google_Cast_support">https://en.wikipedia.org/wiki/List_of_apps_with_Google_Cast_support</a></div>
 <div class="line">Docs: <a class="reference external" href="https://developers.google.com/cast/">https://developers.google.com/cast/</a></div>
@@ -2446,26 +2485,24 @@ which drains a mobile device battery.</li>
 </ul>
 </li>
 </ul>
-</div>
-<div class="section" id="dlna">
-<h4>DLNA<a class="headerlink" href="#dlna" title="Permalink to this headline">¶</a></h4>
+<span class="target" id="index-128"></span></div>
+<div class="section" id="ssdp">
+<span id="index-129"></span><span id="id115"></span><h4>SSDP<a class="headerlink" href="#ssdp" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
-<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Digital_Living_Network_Alliance">https://en.wikipedia.org/wiki/Digital_Living_Network_Alliance</a></div>
-<div class="line">Homepage: <a class="reference external" href="http://www.dlna.org/">http://www.dlna.org/</a></div>
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Simple_Service_Discovery_Protocol">https://en.wikipedia.org/wiki/Simple_Service_Discovery_Protocol</a></div>
+<div class="line">Standard: <a class="reference external" href="https://tools.ietf.org/html/draft-cai-ssdp-v1">https://tools.ietf.org/html/draft-cai-ssdp-v1</a></div>
 </div>
-<dl class="docutils">
-<dt>DLNA: Digital Living Network Alliance</dt>
-<dd>DLNA is a standards group and a standard for networked devices;
-particularly audio/video media devices like
-standalone media players
-and networked stereos.</dd>
-</dl>
+<p>SSDP (<em>Simple Service Discovery Protocol</em>) is a networking protocol for
+discovering services over HTTPU (<a class="reference internal" href="knowledge-engineering#http"><span class="std std-ref">HTTP</span></a> over <span class="xref std std-ref">UDP</span>)
+<span class="xref std std-ref">unicast</span> and <span class="xref std std-ref">multicast</span>;
+without <span class="xref std std-ref">DNS</span> or <span class="xref std std-ref">DHCP</span>.</p>
 </div>
 <div class="section" id="upnp">
-<span id="index-124"></span><span id="id112"></span><h4>UPnP<a class="headerlink" href="#upnp" title="Permalink to this headline">¶</a></h4>
+<span id="index-130"></span><span id="id116"></span><h4>UPnP<a class="headerlink" href="#upnp" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Universal_Plug_and_Play">https://en.wikipedia.org/wiki/Universal_Plug_and_Play</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://en.wikipedia.org/wiki/Universal_Plug_and_Play">https://en.wikipedia.org/wiki/Universal_Plug_and_Play</a></div>
+<div class="line">Standards: <a class="reference external" href="http://openconnectivity.org/upnp/specifications">http://openconnectivity.org/upnp/specifications</a></div>
 </div>
 <p>Universal Plug and Play is a group of standards for
 networked devices built on <a class="reference internal" href="knowledge-engineering#http"><span class="std std-ref">HTTP</span></a>, <a class="reference internal" href="knowledge-engineering#xml"><span class="std std-ref">XML</span></a>, and <span class="xref std std-ref">SOAP</span>
@@ -2476,7 +2513,7 @@ web services.</p>
 </ul>
 </div>
 <div class="section" id="zeroconf">
-<span id="index-125"></span><span id="id113"></span><h4>Zeroconf<a class="headerlink" href="#zeroconf" title="Permalink to this headline">¶</a></h4>
+<span id="index-131"></span><span id="id117"></span><h4>Zeroconf<a class="headerlink" href="#zeroconf" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Zeroconf">https://en.wikipedia.org/wiki/Zeroconf</a></div>
 </div>
@@ -2496,9 +2533,9 @@ over multicast DNS.</p>
 </div>
 </div>
 <div class="section" id="foot-interfaces">
-<span id="index-126"></span><span id="id114"></span><h3>10-foot interfaces<a class="headerlink" href="#foot-interfaces" title="Permalink to this headline">¶</a></h3>
+<span id="index-132"></span><span id="id118"></span><h3>10-foot interfaces<a class="headerlink" href="#foot-interfaces" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="gaming-consoles">
-<span id="index-127"></span><span id="id115"></span><h4>Gaming Consoles<a class="headerlink" href="#gaming-consoles" title="Permalink to this headline">¶</a></h4>
+<span id="index-133"></span><span id="id119"></span><h4>Gaming Consoles<a class="headerlink" href="#gaming-consoles" title="Permalink to this headline">¶</a></h4>
 <p>[...]</p>
 <ul class="simple">
 <li><a class="reference internal" href="#steam"><span class="std std-ref">Steam</span></a> Machine (<a class="reference internal" href="../tools/index#steamos"><span class="std std-ref">SteamOS</span></a>)</li>
@@ -2515,7 +2552,7 @@ an application for modded XBoxen way back in 2002.</li>
 </ul>
 </div>
 <div class="section" id="standalone-media-devices">
-<span id="index-128"></span><span id="id116"></span><h4>Standalone Media Devices<a class="headerlink" href="#standalone-media-devices" title="Permalink to this headline">¶</a></h4>
+<span id="index-134"></span><span id="id120"></span><h4>Standalone Media Devices<a class="headerlink" href="#standalone-media-devices" title="Permalink to this headline">¶</a></h4>
 <p>Pros:</p>
 <ul class="simple">
 <li>Upgradeable</li>
@@ -2527,7 +2564,7 @@ an application for modded XBoxen way back in 2002.</li>
 <li>Remote Control Integration</li>
 </ul>
 <div class="section" id="android-tv">
-<span id="index-129"></span><span id="id117"></span><h5>Android TV<a class="headerlink" href="#android-tv" title="Permalink to this headline">¶</a></h5>
+<span id="index-135"></span><span id="id121"></span><h5>Android TV<a class="headerlink" href="#android-tv" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Android_TV">https://en.wikipedia.org/wiki/Android_TV</a></div>
 </div>
@@ -2538,7 +2575,7 @@ an application for modded XBoxen way back in 2002.</li>
 </ul>
 </div>
 <div class="section" id="chromecast">
-<span id="index-130"></span><span id="id118"></span><h5>Chromecast<a class="headerlink" href="#chromecast" title="Permalink to this headline">¶</a></h5>
+<span id="index-136"></span><span id="id122"></span><h5>Chromecast<a class="headerlink" href="#chromecast" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Chromecast">https://en.wikipedia.org/wiki/Chromecast</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://www.google.com/chromecast/">https://www.google.com/chromecast/</a></div>
@@ -2552,7 +2589,7 @@ an application for modded XBoxen way back in 2002.</li>
 <li>Out: <a class="reference internal" href="computer-engineering#hdmi"><span class="std std-ref">HDMI</span></a></li>
 </ul>
 <div class="section" id="chromecast-audio">
-<span id="index-131"></span><span id="id119"></span><h6>Chromecast Audio<a class="headerlink" href="#chromecast-audio" title="Permalink to this headline">¶</a></h6>
+<span id="index-137"></span><span id="id123"></span><h6>Chromecast Audio<a class="headerlink" href="#chromecast-audio" title="Permalink to this headline">¶</a></h6>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Chromecast">https://en.wikipedia.org/wiki/Chromecast</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://www.google.com/chromecast/speakers/">https://www.google.com/chromecast/speakers/</a></div>
@@ -2570,7 +2607,7 @@ into a web-connected audio player.</p>
 </div>
 </div>
 <div class="section" id="apple-tv">
-<span id="index-132"></span><span id="id120"></span><h5>Apple TV<a class="headerlink" href="#apple-tv" title="Permalink to this headline">¶</a></h5>
+<span id="index-138"></span><span id="id124"></span><h5>Apple TV<a class="headerlink" href="#apple-tv" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Apple_TV">https://en.wikipedia.org/wiki/Apple_TV</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://www.apple.com/tv/">https://www.apple.com/tv/</a></div>
@@ -2583,7 +2620,7 @@ into a web-connected audio player.</p>
 </ul>
 </div>
 <div class="section" id="kodi">
-<span id="index-133"></span><span id="id121"></span><h5>Kodi<a class="headerlink" href="#kodi" title="Permalink to this headline">¶</a></h5>
+<span id="index-139"></span><span id="id125"></span><h5>Kodi<a class="headerlink" href="#kodi" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Kodi_(software)">https://en.wikipedia.org/wiki/Kodi_(software)</a></div>
 </div>
@@ -2604,7 +2641,7 @@ designed for use with a remote.</p>
 </ul>
 </div>
 <div class="section" id="mythtv">
-<span id="index-134"></span><span id="id122"></span><h5>MythTV<a class="headerlink" href="#mythtv" title="Permalink to this headline">¶</a></h5>
+<span id="index-140"></span><span id="id126"></span><h5>MythTV<a class="headerlink" href="#mythtv" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/MythTV">https://en.wikipedia.org/wiki/MythTV</a></div>
 <div class="line"><br /></div>
@@ -2619,7 +2656,7 @@ with a number of client implementations.</p>
 </ul>
 </div>
 <div class="section" id="plex">
-<span id="index-135"></span><span id="id123"></span><h5>Plex<a class="headerlink" href="#plex" title="Permalink to this headline">¶</a></h5>
+<span id="index-141"></span><span id="id127"></span><h5>Plex<a class="headerlink" href="#plex" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Plex_(software)">https://en.wikipedia.org/wiki/Plex_(software)</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://plex.tv/">https://plex.tv/</a></div>
@@ -2657,7 +2694,7 @@ client app for a computer attached to a TV (e.g. with <a class="reference intern
 </ul>
 </div>
 <div class="section" id="roku">
-<span id="index-136"></span><span id="id124"></span><h5>Roku<a class="headerlink" href="#roku" title="Permalink to this headline">¶</a></h5>
+<span id="index-142"></span><span id="id128"></span><h5>Roku<a class="headerlink" href="#roku" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Roku">https://en.wikipedia.org/wiki/Roku</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://www.roku.com/">https://www.roku.com/</a></div>

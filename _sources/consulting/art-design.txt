@@ -2116,10 +2116,54 @@ Home A/V
 Standards
 ~~~~~~~~~~~~
 
+.. index:: DIAL
+.. index:: Discovery and Launch
+.. _dial:
+
+-----
+DIAL
+-----
+| Wikipedia: https://en.wikipedia.org/wiki/Discovery_and_Launch
+| Homepage: http://www.dial-multiscreen.org/
+| Standard: http://www.dial-multiscreen.org/dial-protocol-specification
+
+DIAL (*Discovery and Launch*) is a standard for discovering media
+devices and launching media resources
+built upon :ref:`SSDP`, :ref:`UPnP`, and :ref:`HTTP`.
+
+* A DIAL Server (a "1st screen device"; e.g. a TV or streaming device)
+  receives DIAL requests from a DIAL client.
+* A DIAL Client (a "2nd screen device"; e.g. a phone or a PC) sends DIAL
+  requests to a DIAL server.
+* DIAL Clients discover DIAL devices with *DIAL Service Discovery*.
+* DIAL Clients interact with DIAL devices over a *DIAL REST Service*
+  API.
+
+
+.. index:: DLNA
+.. _dlna:
+
+-----
+DLNA
+-----
+| Wikipedia: https://en.wikipedia.org/wiki/Digital_Living_Network_Alliance
+| Homepage: http://www.dlna.org/
+
+DLNA: Digital Living Network Alliance
+    DLNA is a standards group and a standard for networked devices;
+    particularly audio/video media devices like
+    standalone media players
+    and networked stereos.
+
+
+.. index:: Google Cast SDK
+.. _google cast sdk:
+
 -----------------
 Google Cast SDK
 -----------------
-| Homepage: https://en.wikipedia.org/wiki/Chromecast
+| Wikipedia: https://en.wikipedia.org/wiki/Chromecast
+| Homepage: https://developers.google.com/cast/
 | Source: https://github.com/googlecast
 | Docs: https://en.wikipedia.org/wiki/List_of_apps_with_Google_Cast_support
 | Docs: https://developers.google.com/cast/
@@ -2139,17 +2183,21 @@ Google Cast SDK powers :ref:`Chromecast` devices.
     which drains a mobile device battery.
 
 
------
-DLNA
------
-| Wikipedia: https://en.wikipedia.org/wiki/Digital_Living_Network_Alliance
-| Homepage: http://www.dlna.org/
+.. index:: SSDP
+.. index:: Simple Service Discovery Protocol
+.. _ssdp:
 
-DLNA: Digital Living Network Alliance
-    DLNA is a standards group and a standard for networked devices;
-    particularly audio/video media devices like
-    standalone media players
-    and networked stereos.
+-----
+SSDP
+-----
+| Wikipedia: https://en.wikipedia.org/wiki/Simple_Service_Discovery_Protocol
+| Standard: https://tools.ietf.org/html/draft-cai-ssdp-v1
+
+SSDP (*Simple Service Discovery Protocol*) is a networking protocol for
+discovering services over HTTPU (:ref:`HTTP` over :ref:`UDP`)
+:ref:`unicast` and :ref:`multicast`;
+without :ref:`DNS` or :ref:`DHCP`.
+
 
 
 .. index:: UPnP
@@ -2160,6 +2208,7 @@ UPnP
 -----
 | Wikipedia: https://en.wikipedia.org/wiki/Universal_Plug_and_Play
 | Homepage: https://en.wikipedia.org/wiki/Universal_Plug_and_Play
+| Standards: http://openconnectivity.org/upnp/specifications
 
 Universal Plug and Play is a group of standards for
 networked devices built on :ref:`HTTP`, :ref:`XML`, and :ref:`SOAP`
