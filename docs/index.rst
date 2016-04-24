@@ -26,6 +26,7 @@ WRD R&D Documentation
    consulting/personal-finance
    consulting/investing
    consulting/education-technology
+   consulting/educational-testing
    consulting/art-design
    consulting/team-building
    consulting/collaboration-plan
