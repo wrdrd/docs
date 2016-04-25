@@ -6302,6 +6302,8 @@ Docutils
 | Docs: http://docutils.sourceforge.net/docs/
 | Docs: http://docutils.sourceforge.net/rst.html
 | Docs: http://docutils.sourceforge.net/docs/ref/doctree.html
+| Docs: https://docutils.readthedocs.org/en/sphinx-docs/
+| Docs: https://docutils.readthedocs.org/en/sphinx-docs/ref/rst/restructuredtext.html
 | Src: svn http://svn.code.sf.net/p/docutils/code/trunk
 
 Docutils is a :ref:`Python` library which 'parses" :ref:`ReStructuredText`
