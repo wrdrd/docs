@@ -9,7 +9,7 @@ https://en.wikipedia.org/wiki/Data_science
 * :ref:`Linked Reproducibility`
 
 * :ref:`IPython Notebook` -> :ref:`Jupyter Notebook`
- 
+
   * https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks
   * :ref:`Jupyter and Reproducibility`
   * ``conda install jupyter`` (:ref:`Conda` (:ref:`Anaconda`))
@@ -58,7 +58,7 @@ Ten Simple Rules
 
    * :ref:`Workflow`
    * :ref:`Continuous Delivery`
-     
+
      * :ref:`Test Automation` (e.g. :ref:`Test Driven Development <TDD>`)
 
 3. Archive the Exact Versions of All External Programs Used
@@ -93,7 +93,7 @@ Ten Simple Rules
        np.random.randn(4, 2) # "standard normal" distribution
 
    * http://docs.scipy.org/doc/numpy/reference/routines.random.html#distributions
-   * 
+   *
 
    Python hash randomization and algorithmic determinism:
 
@@ -117,7 +117,7 @@ Ten Simple Rules
 
    * :ref:`Schema.org`: https://schema.org/docs/full.html
    * :ref:`SKOS`:
-     
+
       | http://www.w3.org/TR/skos-reference/
       | http://www.w3.org/TR/skos-reference/skos.html
 
@@ -127,11 +127,11 @@ Ten Simple Rules
 
    * :ref:`XKOS`: "An SKOS extension for representing
      statistical classifications"
-     
+
      http://rdf-vocabulary.ddialliance.org/xkos.html
 
    * :ref:`QB`: "The RDF Data Cube Vocabulary"
-     
+
      ``qb:DataSet``,
      ``qb:Dimension``,
      ``qb:ObservationGroup``,
@@ -234,6 +234,9 @@ limited by resource constraints.
   + http://scikit-learn.org/stable/tutorial/machine_learning_map/
   + https://en.wikipedia.org/wiki/Firefly_algorithm
 
+
+.. index:: Smoothies
+.. _smoothies:
 
 Smoothies
 +++++++++++
