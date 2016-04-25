@@ -1,3 +1,7 @@
+
+.. index:: Small Business Consulting
+.. _small business consulting:
+
 Small Business Consulting
 =========================
 
@@ -29,17 +33,21 @@ Solving a:
 
 
 .. index:: Business Books
-.. _business-books:
+.. _business books:
 
 Books
 ~~~~~~
 
-* http://personalmba.com/best-business-books/
+* The Personal MBA: Master The Art of Business
+
+  | https://personalmba.com/
+  | https://personalmba.com/best-business-books
+
 * https://www.quora.com/What-books-should-entrepreneurs-read
 * https://en.wikipedia.org/wiki/The_Five_Dysfunctions_of_a_Team
 * https://en.wikipedia.org/wiki/Getting_Things_Done
 
-seeAlso:
+See also:
 
 * :ref:`Art & Design <art-design>` > :ref:`Screenwriting`, :ref:`Web
   Production`, :ref:`Web Distribution`
@@ -49,7 +57,7 @@ seeAlso:
 
 .. index:: Strategy (Business)
 .. index:: Business Strategy
-.. _business-strategy:
+.. _business strategy:
 
 Strategy
 -----------
@@ -71,7 +79,7 @@ https://en.wikipedia.org/wiki/Business_process
 
 
 .. index:: Business Modeling
-.. _business-modeling:
+.. _business modeling:
 
 Business Modeling
 --------------------

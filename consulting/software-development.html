@@ -133,9 +133,17 @@
 </li>
 <li><a class="reference internal" href="#requirements-traceability">Requirements Traceability</a><ul>
 <li><a class="reference internal" href="#work-breakdown-structure">Work Breakdown Structure</a><ul>
-<li><a class="reference internal" href="#mission">Mission</a></li>
-<li><a class="reference internal" href="#goal">Goal</a></li>
+<li><a class="reference internal" href="#mission">Mission</a><ul>
+<li><a class="reference internal" href="#project">Project</a><ul>
+<li><a class="reference internal" href="#goal">Goal</a><ul>
+<li><a class="reference internal" href="#smart">SMART</a></li>
 <li><a class="reference internal" href="#objective">Objective</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a class="reference internal" href="#checkboxes">Checkboxes</a></li>
@@ -254,9 +262,17 @@
 </li>
 <li><a class="reference internal" href="#requirements-traceability">Requirements Traceability</a><ul>
 <li><a class="reference internal" href="#work-breakdown-structure">Work Breakdown Structure</a><ul>
-<li><a class="reference internal" href="#mission">Mission</a></li>
-<li><a class="reference internal" href="#goal">Goal</a></li>
+<li><a class="reference internal" href="#mission">Mission</a><ul>
+<li><a class="reference internal" href="#project">Project</a><ul>
+<li><a class="reference internal" href="#goal">Goal</a><ul>
+<li><a class="reference internal" href="#smart">SMART</a></li>
 <li><a class="reference internal" href="#objective">Objective</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a class="reference internal" href="#checkboxes">Checkboxes</a></li>
@@ -934,6 +950,114 @@ is sometimes referred to as <em>stub</em> code.</li>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Requirements_traceability">https://en.wikipedia.org/wiki/Requirements_traceability</a></div>
 </div>
+<ul>
+<li><p class="first"><a class="reference internal" href="web-development#term-url"><span class="xref std std-term">URLs</span></a></p>
+<ul>
+<li><p class="first">issue numbers (GitHub, BitBucket, ):</p>
+<ul class="simple">
+<li>ad-hoc (the numbers probably won&#8217;t be sequential)</li>
+<li>issue <code class="docutils literal"><span class="pre">#1</span></code>: Mission, Project list</li>
+<li>issue <code class="docutils literal"><span class="pre">#2</span></code>: Project</li>
+<li>issue <code class="docutils literal"><span class="pre">#3</span></code>: Goal</li>
+<li>issue <code class="docutils literal"><span class="pre">#4</span></code>: an Objective for goal <code class="docutils literal"><span class="pre">#3</span></code><ul>
+<li>With a fixed, preallocated numbering system,
+this would be e.g. <code class="docutils literal"><span class="pre">project:3.1</span></code>;
+however, issue ticket numbers are sequential by order of
+creation<ul>
+<li>the numbers would then appear somewhat arbitrary</li>
+<li>there would be no need to renumber things</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p class="first"><code class="docutils literal"><span class="pre">#perma-link</span></code> document <a class="reference internal" href="web-development#term-url"><span class="xref std std-term">URL</span></a> fragments</p>
+<ul>
+<li><p class="first"><code class="docutils literal"><span class="pre">#mission-statement</span></code></p>
+</li>
+<li><p class="first"><code class="docutils literal"><span class="pre">#project-&lt;name&gt;</span></code> / <code class="docutils literal"><span class="pre">#p-&lt;name&gt;</span></code></p>
+</li>
+<li><p class="first"><code class="docutils literal"><span class="pre">#goal-&lt;name&gt;</span></code> / <code class="docutils literal"><span class="pre">#g-&lt;name&gt;</span></code></p>
+</li>
+<li><p class="first"><code class="docutils literal"><span class="pre">#objective-&lt;name&gt;</span></code> / <code class="docutils literal"><span class="pre">#o-&lt;name&gt;</span></code></p>
+</li>
+<li><p class="first">implementations:</p>
+<ul>
+<li><p class="first"><a class="reference internal" href="../tools/index#sphinx"><span class="std std-ref">Sphinx</span></a> <a class="reference internal" href="../tools/index#restructuredtext"><span class="std std-ref">ReStructuredText</span></a> (with Ctrl-F&#8217;able explicit links):</p>
+<ul class="simple">
+<li><a class="reference external" href="https://docs.python.org/devguide/documenting.html#sections">https://docs.python.org/devguide/documenting.html#sections</a></li>
+</ul>
+<div class="code rst highlight-default"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">_mission</span><span class="p">:</span>
+
+<span class="c1">#########</span>
+<span class="n">Mission</span>
+<span class="c1">#########</span>
+
+<span class="o">..</span> <span class="n">_project</span><span class="o">-</span><span class="n">name</span><span class="p">:</span>
+
+<span class="o">***************</span>
+<span class="n">Project</span><span class="p">:</span> <span class="n">Name</span>
+<span class="o">***************</span>
+
+
+<span class="o">..</span> <span class="n">_goal</span><span class="o">-</span><span class="n">name</span><span class="p">:</span>
+
+<span class="n">Goal</span><span class="p">:</span> <span class="n">Name</span>
+<span class="o">===============</span>
+
+
+<span class="o">..</span> <span class="n">_objective</span><span class="o">-</span><span class="n">name</span><span class="p">:</span>
+
+<span class="n">Objective</span><span class="p">:</span> <span class="n">Name</span>
+<span class="o">----------------</span>
+
+<span class="o">*</span> <span class="p">[</span> <span class="p">]</span> <span class="n">Task</span><span class="p">:</span> <span class="n">Name</span>
+
+<span class="o">..</span> <span class="n">_task</span><span class="o">-</span><span class="n">name</span><span class="p">:</span>
+
+<span class="n">Task</span><span class="p">:</span> <span class="n">Name</span>
+<span class="o">^^^^^^^^^^^^</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first"><a class="reference internal" href="../tools/index#markdown"><span class="std std-ref">Markdown</span></a>:</p>
+<div class="code markdown highlight-default"><div class="highlight"><pre><span></span><span class="c1">#</span>
+<span class="n">Mission</span><span class="p">:</span>
+
+<span class="c1">## Project: Name</span>
+
+<span class="c1">## Goal: Name</span>
+
+<span class="c1">### Objective: Name</span>
+
+<span class="o">*</span> <span class="p">[</span> <span class="p">]</span> <span class="n">Task</span><span class="p">:</span> <span class="n">Name</span>
+
+<span class="c1">#### Task: Name</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li>see also: <code class="docutils literal"><span class="pre">#pyglobalgoals</span></code><ul>
+<li><a class="reference external" href="https://github.com/schemaorg/schemaorg/issues/1127">https://github.com/schemaorg/schemaorg/issues/1127</a><ul>
+<li>[ ] <code class="docutils literal"><span class="pre">schema:Project</span></code></li>
+<li>[ ] <code class="docutils literal"><span class="pre">schema:Goal</span></code></li>
+<li>[ ] <code class="docutils literal"><span class="pre">schema:Objective</span></code></li>
+<li>[ ] <code class="docutils literal"><span class="pre">schema:Task</span></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first"><a class="reference internal" href="#codelabels"><span class="std std-ref">Codelabels</span></a>:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">MISSION</span>
 <span class="n">GOAL</span>
 <span class="n">OBJECTIVE</span>
@@ -949,27 +1073,58 @@ is sometimes referred to as <em>stub</em> code.</li>
 <span class="n">TASK</span>
 </pre></div>
 </div>
+</li>
+</ul>
 <div class="section" id="work-breakdown-structure">
-<h4>Work Breakdown Structure<a class="headerlink" href="#work-breakdown-structure" title="Permalink to this headline">¶</a></h4>
+<span id="index-38"></span><span id="id28"></span><h4>Work Breakdown Structure<a class="headerlink" href="#work-breakdown-structure" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Work_breakdown_structure">https://en.wikipedia.org/wiki/Work_breakdown_structure</a></div>
 </div>
 <div class="section" id="mission">
-<h5>Mission<a class="headerlink" href="#mission" title="Permalink to this headline">¶</a></h5>
+<span id="index-39"></span><span id="id29"></span><h5>Mission<a class="headerlink" href="#mission" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Mission_statement">https://en.wikipedia.org/wiki/Mission_statement</a></div>
 </div>
+<div class="section" id="project">
+<span id="index-40"></span><span id="id30"></span><h6>Project<a class="headerlink" href="#project" title="Permalink to this headline">¶</a></h6>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Project">https://en.wikipedia.org/wiki/Project</a></div>
 </div>
+<ul class="simple">
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Scope_(project_management)">https://en.wikipedia.org/wiki/Scope_(project_management)</a></li>
+</ul>
 <div class="section" id="goal">
-<h5>Goal<a class="headerlink" href="#goal" title="Permalink to this headline">¶</a></h5>
+<span id="index-41"></span><span id="id31"></span><h7>Goal<a class="headerlink" href="#goal" title="Permalink to this headline">¶</a></h7>
 <div class="line-block">
 <div class="line">Wikpedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Goal">https://en.wikipedia.org/wiki/Goal</a></div>
 </div>
+<ul class="simple">
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Goal_setting">https://en.wikipedia.org/wiki/Goal_setting</a></li>
+</ul>
+<div class="section" id="smart">
+<span id="smart-criteria"></span><span id="index-42"></span><span id="id32"></span><h8>SMART<a class="headerlink" href="#smart" title="Permalink to this headline">¶</a></h8>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/SMART_criteria">https://en.wikipedia.org/wiki/SMART_criteria</a></div>
+</div>
+<ul class="simple">
+<li>Specific</li>
+<li>Measurable</li>
+<li>Attainable</li>
+<li>Relevant</li>
+<li>Time-bound</li>
+</ul>
 </div>
 <div class="section" id="objective">
-<h5>Objective<a class="headerlink" href="#objective" title="Permalink to this headline">¶</a></h5>
+<span id="index-43"></span><h8>Objective<a class="headerlink" href="#objective" title="Permalink to this headline">¶</a></h8>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/OKR">https://en.wikipedia.org/wiki/OKR</a></div>
+</div>
+<ul class="simple">
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Management_by_objectives">https://en.wikipedia.org/wiki/Management_by_objectives</a></li>
+<li><a class="reference internal" href="#smart"><span class="std std-ref">SMART</span></a></li>
+</ul>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -1022,7 +1177,7 @@ character (e.g. lowercase <code class="docutils literal"><span class="pre">x</sp
 </div>
 </div>
 <div class="section" id="codelabels">
-<span id="id28"></span><span id="code-labels"></span><span id="index-38"></span><span id="id29"></span><h4>Codelabels<a class="headerlink" href="#codelabels" title="Permalink to this headline">¶</a></h4>
+<span id="id33"></span><span id="code-labels"></span><span id="index-44"></span><span id="id34"></span><h4>Codelabels<a class="headerlink" href="#codelabels" title="Permalink to this headline">¶</a></h4>
 <p>Codelabels (<em>code labels</em>) are three-letter codes with which commit messages can be prefixed.</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">CODE</span> <span class="n">Label</span>          <span class="n">color</span> <span class="n">name</span>      <span class="n">background</span>  <span class="n">text</span>
 <span class="o">----</span> <span class="o">--------------</span> <span class="o">---------------</span> <span class="o">----------</span>  <span class="o">-------</span>
@@ -1108,7 +1263,7 @@ a previous version of the
 </div>
 </div>
 <div class="section" id="technical-debt">
-<span id="index-39"></span><span id="id30"></span><h2>Technical Debt<a class="headerlink" href="#technical-debt" title="Permalink to this headline">¶</a></h2>
+<span id="index-45"></span><span id="id35"></span><h2>Technical Debt<a class="headerlink" href="#technical-debt" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Technical_debt">https://en.wikipedia.org/wiki/Technical_debt</a></div>
 </div>
@@ -1118,7 +1273,7 @@ a previous version of the
 </ul>
 </div>
 <div class="section" id="refactoring">
-<span id="index-40"></span><span id="id31"></span><h2>Refactoring<a class="headerlink" href="#refactoring" title="Permalink to this headline">¶</a></h2>
+<span id="index-46"></span><span id="id36"></span><h2>Refactoring<a class="headerlink" href="#refactoring" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Code_refactoring">https://en.wikipedia.org/wiki/Code_refactoring</a></div>
 </div>
@@ -1132,9 +1287,9 @@ practical <a class="reference internal" href="#refactoring"><span class="std std
 structural, architectural decisions
 which anticipate change.</li>
 </ul>
-<span class="target" id="index-41"></span></div>
+<span class="target" id="index-47"></span></div>
 <div class="section" id="continuous-delivery">
-<span id="index-42"></span><span id="id32"></span><h2>Continuous Delivery<a class="headerlink" href="#continuous-delivery" title="Permalink to this headline">¶</a></h2>
+<span id="index-48"></span><span id="id37"></span><h2>Continuous Delivery<a class="headerlink" href="#continuous-delivery" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Continuous_delivery">https://en.wikipedia.org/wiki/Continuous_delivery</a></div>
 </div>
@@ -1148,8 +1303,8 @@ which anticipate change.</li>
 </ul>
 </li>
 </ul>
-<span class="target" id="index-43"></span><span class="target" id="index-44"></span><span class="target" id="index-45"></span><div class="section" id="revision-control">
-<span id="index-46"></span><span id="id33"></span><h3>Revision Control<a class="headerlink" href="#revision-control" title="Permalink to this headline">¶</a></h3>
+<span class="target" id="index-49"></span><span class="target" id="index-50"></span><span class="target" id="index-51"></span><div class="section" id="revision-control">
+<span id="index-52"></span><span id="id38"></span><h3>Revision Control<a class="headerlink" href="#revision-control" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Revision_control">https://en.wikipedia.org/wiki/Revision_control</a></div>
 <div class="line">Docs: <a class="reference internal" href="../tools/index#vcs"><span class="std std-ref">Tools &gt; Version Control Systems</span></a></div>
@@ -1177,9 +1332,9 @@ with one or more project repositories.</li>
 </ul>
 </li>
 </ul>
-<span class="target" id="index-47"></span></div>
+<span class="target" id="index-53"></span></div>
 <div class="section" id="distributed-version-control">
-<span id="dvcs"></span><span id="index-48"></span><h3>Distributed Version Control<a class="headerlink" href="#distributed-version-control" title="Permalink to this headline">¶</a></h3>
+<span id="dvcs"></span><span id="index-54"></span><h3>Distributed Version Control<a class="headerlink" href="#distributed-version-control" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Distributed_revision_control">https://en.wikipedia.org/wiki/Distributed_revision_control</a></div>
 </div>
@@ -1192,7 +1347,7 @@ for backup redundancy and collaboration.</p>
 <li><a class="reference internal" href="../tools/index#vcs"><span class="std std-ref">Version Control Systems</span></a> (<a class="reference internal" href="../tools/index#git"><span class="std std-ref">Git</span></a>, <a class="reference internal" href="../tools/index#hubflow"><span class="std std-ref">HubFlow</span></a>, <a class="reference internal" href="../tools/index#mercurial"><span class="std std-ref">Mercurial</span></a>)</li>
 </ul>
 <div class="section" id="bisection">
-<span id="index-49"></span><span id="id34"></span><h4>Bisection<a class="headerlink" href="#bisection" title="Permalink to this headline">¶</a></h4>
+<span id="index-55"></span><span id="id39"></span><h4>Bisection<a class="headerlink" href="#bisection" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Bisection_(software_engineering)">https://en.wikipedia.org/wiki/Bisection_(software_engineering)</a></div>
 </div>
@@ -1216,7 +1371,7 @@ should return <code class="docutils literal"><span class="pre">0</span></code> f
 </ul>
 </div>
 <div class="section" id="branching-merging">
-<span id="branching-and-merging"></span><span id="index-50"></span><h4>Branching &amp; Merging<a class="headerlink" href="#branching-merging" title="Permalink to this headline">¶</a></h4>
+<span id="branching-and-merging"></span><span id="index-56"></span><h4>Branching &amp; Merging<a class="headerlink" href="#branching-merging" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Branching_(revision_control)">https://en.wikipedia.org/wiki/Branching_(revision_control)</a></div>
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Merge_(revision_control)">https://en.wikipedia.org/wiki/Merge_(revision_control)</a></div>
@@ -1232,7 +1387,7 @@ consistently woven.</li>
 </div>
 </div>
 <div class="section" id="test-automation">
-<span id="index-51"></span><span id="id35"></span><h3>Test Automation<a class="headerlink" href="#test-automation" title="Permalink to this headline">¶</a></h3>
+<span id="index-57"></span><span id="id40"></span><h3>Test Automation<a class="headerlink" href="#test-automation" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Test_automation">https://en.wikipedia.org/wiki/Test_automation</a></div>
 </div>
@@ -1246,9 +1401,9 @@ and <em>before releasing</em>.</li>
 delivery and deployment (script a complete system install
 e.g. with <a class="reference internal" href="../tools/index#virtualization"><span class="std std-ref">Virtualization</span></a> like <a class="reference internal" href="../tools/index#docker"><span class="std std-ref">Docker</span></a>).</li>
 </ul>
-<span class="target" id="index-52"></span></div>
+<span class="target" id="index-58"></span></div>
 <div class="section" id="continuous-integration">
-<span id="index-53"></span><span id="id36"></span><h3>Continuous Integration<a class="headerlink" href="#continuous-integration" title="Permalink to this headline">¶</a></h3>
+<span id="index-59"></span><span id="id41"></span><h3>Continuous Integration<a class="headerlink" href="#continuous-integration" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Continuous_integration">https://en.wikipedia.org/wiki/Continuous_integration</a></div>
 </div>
@@ -1259,7 +1414,7 @@ e.g. with <a class="reference internal" href="../tools/index#virtualization"><sp
 </ul>
 </div>
 <div class="section" id="continuous-deployment">
-<span id="index-54"></span><span id="id37"></span><h3>Continuous Deployment<a class="headerlink" href="#continuous-deployment" title="Permalink to this headline">¶</a></h3>
+<span id="index-60"></span><span id="id42"></span><h3>Continuous Deployment<a class="headerlink" href="#continuous-deployment" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Continuous_deployment">https://en.wikipedia.org/wiki/Continuous_deployment</a></div>
 </div>

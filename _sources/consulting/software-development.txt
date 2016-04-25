@@ -627,7 +627,98 @@ Requirements Traceability
 +++++++++++++++++++++++++++
 | Wikipedia: https://en.wikipedia.org/wiki/Requirements_traceability
 
-::
+* :term:`URLs <URL>`
+
+  * issue numbers (GitHub, BitBucket, ):
+
+    * ad-hoc (the numbers probably won't be sequential)
+    * issue ``#1``: Mission, Project list
+    * issue ``#2``: Project
+    * issue ``#3``: Goal
+    * issue ``#4``: an Objective for goal ``#3``
+
+      * With a fixed, preallocated numbering system,
+        this would be e.g. ``project:3.1``;
+        however, issue ticket numbers are sequential by order of
+        creation
+
+        * the numbers would then appear somewhat arbitrary
+        * there would be no need to renumber things
+
+  * ``#perma-link`` document :term:`URL` fragments
+
+    * ``#mission-statement``
+    * ``#project-<name>`` / ``#p-<name>``
+    * ``#goal-<name>`` / ``#g-<name>``
+    * ``#objective-<name>`` / ``#o-<name>``
+    * implementations:
+
+      * :ref:`sphinx` :ref:`restructuredtext` (with Ctrl-F'able explicit links):
+
+        * https://docs.python.org/devguide/documenting.html#sections
+
+        .. code:: rst
+
+            .. _mission:
+
+            #########
+            Mission
+            #########
+
+            .. _project-name:
+
+            ***************
+            Project: Name
+            ***************
+
+
+            .. _goal-name:
+
+            Goal: Name
+            ===============
+
+
+            .. _objective-name:
+
+            Objective: Name
+            ----------------
+
+            * [ ] Task: Name
+
+            .. _task-name:
+
+            Task: Name
+            ^^^^^^^^^^^^
+
+
+      * :ref:`markdown`:
+
+        .. code:: markdown
+
+            #
+            Mission:
+
+            ## Project: Name
+
+            ## Goal: Name
+
+            ### Objective: Name
+
+            * [ ] Task: Name
+
+            #### Task: Name
+
+   * see also: ``#pyglobalgoals``
+
+     * https://github.com/schemaorg/schemaorg/issues/1127
+
+       * \[ ] ``schema:Project``
+       * \[ ] ``schema:Goal``
+       * \[ ] ``schema:Objective``
+       * \[ ] ``schema:Task``
+
+
+* :ref:`codelabels`::
 
     MISSION
     GOAL
@@ -643,22 +734,67 @@ Requirements Traceability
 
     TASK
 
+
+.. index:: Work Breakdown Structure
+.. _work breakdown structure:
+
 Work Breakdown Structure
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/Work_breakdown_structure
+
+
+.. index:: Mission
+.. _mission:
 
 Mission
 ````````
 | Wikipedia: https://en.wikipedia.org/wiki/Mission_statement
 
+
+.. index:: Project
+.. _project:
+
+========
+Project
+========
+| Wikipedia: https://en.wikipedia.org/wiki/Project
+
+* `<https://en.wikipedia.org/wiki/Scope_(project_management)>`__
+
+
+.. index:: Goal
+.. _goal:
+
+-------
 Goal
-```````
+-------
 | Wikpedia: https://en.wikipedia.org/wiki/Goal
 
+* https://en.wikipedia.org/wiki/Goal_setting
+
+
+.. index:: SMART
+.. _smart criteria:
+.. _smart:
+
+SMART
+******
+| Wikipedia: https://en.wikipedia.org/wiki/SMART_criteria
+
+* Specific
+* Measurable
+* Attainable
+* Relevant
+* Time-bound
+
+.. index:: Objective
+
 Objective
-```````````
+***********
 | Wikipedia: https://en.wikipedia.org/wiki/OKR
 
+* https://en.wikipedia.org/wiki/Management_by_objectives
+* :ref:`SMART`
 
 
 Checkboxes

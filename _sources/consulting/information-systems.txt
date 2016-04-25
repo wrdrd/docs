@@ -372,7 +372,7 @@ Cloud Application Layers
     + Internet connections
     + VLANs, IPv6 6to4 tunnels
     + SDN --- Software Defined Networking
-        
+
       * :ref:`OpenStack` Neutron
       * :ref:`Docker` networking
       * :ref:`Docker` Swarm networking
@@ -406,14 +406,14 @@ Cloud Application Layers
       - #HVAC: Heating (Active / Passive)
       - #Fire: Sprinklers
       - #Fire: Fire Extinguishers
-      
+
         - Class A Fire Extinguisher -- silver -- water
         - Class C Fire Extinguisher -- red -- chemicals (e.g. CO2)
-      
+
             Do not pour water on an electrical fire until
             you have switched off the power source
             at the circuit breaker box.
-        
+
         - Novels/films: 20,000 Leagues Under the Sea, Sphere
         - **How to Extinguish a Fire at the Initial Stages**:
           http://www.wikihow.com/Extinguish-a-Fire-at-the-Initial-Stages
@@ -421,7 +421,7 @@ Cloud Application Layers
           - Extinguishing **Electrial** Fires: **Red** **Class C** Extinguisher
           - Extinguishing **Liquid/Oil** Fires
           - Extinguishing **Organic** Fires
-        
+
       - #Power: Power supplies (AC --> DC conversion)
       - #Power: Batteries  (AC --> DC --> Batteries --> AC/DC)
       - #Power: Generators
@@ -462,7 +462,7 @@ Examples of SaaS:
 * Many :ref:`CRM` software applications are offered as
   :ref:`SaaS` subscription services
 
-* See: :ref:`business-modeling`
+* See: :ref:`business modeling`
 
   :ref:`SaaS` is distinct from e.g. subscription software licensing;
   because :ref:`SaaS` applications are usually
@@ -874,7 +874,7 @@ https://en.wikipedia.org/wiki/Service-level_agreement
 
 
 .. index:: Business Continuity
-.. _business-continuity:
+.. _business continuity:
 
 Business Continuity
 ~~~~~~~~~~~~~~~~~~~~
