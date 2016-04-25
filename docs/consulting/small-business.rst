@@ -96,7 +96,7 @@ https://en.wikipedia.org/wiki/Risk
 
 .. index:: ROI
 .. index:: Business ROI
-.. _business-roi:
+.. _business roi:
 
 ROI
 ~~~~
@@ -117,11 +117,11 @@ What are our desired outcomes from this experiment?
 
 What do we want to happen when our message reaches people?
 
-See: :ref:`Information Systems > ROI <is-roi>`
+See: :ref:`Information Systems > ROI <is roi>`
 
 
 .. index:: Business Plans
-.. _business-plans:
+.. _business plans:
 
 Business Plans
 ---------------

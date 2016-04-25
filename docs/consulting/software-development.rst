@@ -64,7 +64,7 @@ Computer Science Curricula
       + "Common Criteria" -- :ref:`information security` platform specification
       + "Common Core" -- US education standard:
         https://en.wikipedia.org/wiki/Common_Core_State_Standards_Initiative
-      + :ref:`business-roi`, :ref:`is-roi`
+      + :ref:`business roi`, :ref:`is roi`
 
     Rubric
 
