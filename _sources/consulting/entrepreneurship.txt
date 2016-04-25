@@ -17,7 +17,7 @@ Entrepreneurship
 See also:
 
 * :ref:`Personal Finance`
-* :ref:`Small-Business-Consulting`
+* :ref:`Small Business Consulting`
 
   * :ref:`Solving`
   * :ref:`business modeling`
@@ -57,8 +57,9 @@ Planning
 See also:
 
 * :ref:`Business Plans` (Pessimistic, Realistic, Optimistic)
+* :ref:`Business Strategies <business strategy>`
 * :ref:`Scenarios`
-* :ref:`Strategies <strategy>`
+* :ref:`Team Building` > :ref:`The Same Page`
 
 
 .. index:: Plan for Failure
@@ -233,6 +234,11 @@ USA Entrepreneurship
 
   * State of incorporation
   * :ref:`Types of business entity`
+
+
+.. index:: Business Entity Types
+.. index:: Types of Business Entity
+.. _types of business entity:
 
 =========================
 Types of business entity

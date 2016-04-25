@@ -175,7 +175,7 @@ seeAlso:
 * :ref:`Information Security` (Risk)
 
 
-.. _is-roi:
+.. _is roi:
 
 ROI
 ++++
@@ -208,7 +208,7 @@ Productivity & Efficiency::
 
 seeAlso:
 
-* :ref:`Business > ROI <business-roi>`
+* :ref:`Business > ROI <business roi>`
 * https://en.wikipedia.org/wiki/Productivity
 * https://en.wikipedia.org/wiki/Efficiency
 
