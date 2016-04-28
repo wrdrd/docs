@@ -260,7 +260,7 @@ LSAT
 | Wikipedia: https://en.wikipedia.org/wiki/Law_School_Admission_Test
 | Homepage: http://www.lsac.org/jd/lsat
 
-A LSAT (*Law School Admissions Test*) is a standardized test for
+An LSAT (*Law School Admissions Test*) is a standardized test for
 law school entrance to a law school.
 
 
@@ -272,7 +272,7 @@ MCAT
 | Wikipedia: https://en.wikipedia.org/wiki/Medical_College_Admission_Test
 | Homepage: https://students-residents.aamc.org/applying-medical-school/taking-mcat-exam/
 
-A MCAT (*Medical College Admission Test*) is a standardized test for
+An MCAT (*Medical College Admission Test*) is a standardized test for
 medical school entrance.
 
 * Khan Academy MCAT resources:
