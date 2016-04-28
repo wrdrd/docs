@@ -66,7 +66,7 @@ Unit and/or precision-aware calculations:
 
   | PyPI: https://pypi.python.org/pypi/pint
   | Src:  https://github.com/hgrecco/pint
-  | Docs: https://pint.readthedocs.org/en/latest/
+  | Docs: https://pint.readthedocs.io/en/latest/
 
 
 Storage formats:

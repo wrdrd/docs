@@ -1589,12 +1589,12 @@ GlusterFS
 | Homepage: http://www.gluster.org/
 | Project: https://forge.gluster.org/glusterfs-core
 | Source: git https://git.forge.gluster.org/glusterfs-core/glusterfs.git
-| Docs: https://gluster.readthedocs.org/en/latest/
-| Docs: https://gluster.readthedocs.org/en/latest/Quick-Start-Guide/Quickstart/
-| Docs: https://gluster.readthedocs.org/en/latest/Install-Guide/Setup_virt/
-| Docs: https://gluster.readthedocs.org/en/latest/Install-Guide/Setup_Bare_metal/
-| Docs: https://gluster.readthedocs.org/en/latest/Install-Guide/Setup_aws/
-| Docs: https://gluster.readthedocs.org/en/latest/Administrator%20Guide/GlusterFS%20Cinder/
+| Docs: https://gluster.readthedocs.io/en/latest/
+| Docs: https://gluster.readthedocs.io/en/latest/Quick-Start-Guide/Quickstart/
+| Docs: https://gluster.readthedocs.io/en/latest/Install-Guide/Setup_virt/
+| Docs: https://gluster.readthedocs.io/en/latest/Install-Guide/Setup_Bare_metal/
+| Docs: https://gluster.readthedocs.io/en/latest/Install-Guide/Setup_aws/
+| Docs: https://gluster.readthedocs.io/en/latest/Administrator%20Guide/GlusterFS%20Cinder/
 | Tcp ports: 111, 24007, 24008, 24009, 24010, 24011, 38465:38469
 
 GlusterFS is an :ref:`open source` network filesystem
@@ -2498,7 +2498,7 @@ Distributed Computing Protocols
 * :ref:`Programming Languages`' implementations:
 
   - https://en.wikipedia.org/wiki/Java_Remote_Method_Invocation
-  - https://twisted.readthedocs.org/en/latest/core/howto/pb-usage.html
+  - https://twisted.readthedocs.io/en/latest/core/howto/pb-usage.html
 
 * :ref:`ws-`
 * :ref:`REST` (:term:`RESTful HTTP API <restful api>`)
@@ -2612,7 +2612,7 @@ with implementations in many languages.
 * Many supercomputing applications are built with MPI.
 * MPI is faster than :ref:`JSON`.
 * :ref:`IPython` ``ipyparallel`` supports MPI:
-  https://ipyparallel.readthedocs.org/en/latest/
+  https://ipyparallel.readthedocs.io/en/latest/
 
 
 .. index:: XML-RPC
@@ -2844,7 +2844,7 @@ web resources using regular :ref:`HTTP` methods like ``GET``, ``POST``,
     * WebTest:
 
       | Src: https://github.com/Pylons/webtest
-      | Docs: https://webtest.readthedocs.org/en/latest/
+      | Docs: https://webtest.readthedocs.io/en/latest/
 
       * https://pypi.python.org/pypi/webtest-plus/ (requests-auth)
       * https://github.com/django-webtest/django-webtest
@@ -2949,7 +2949,7 @@ Haystack
 | Homepage: http://haystacksearch.org/
 | Source: git https://github.com/django-haystack/django-haystack
 | PyPI: https://pypi.python.org/pypi/django-haystack
-| Docs: https://django-haystack.readthedocs.org/en/latest/
+| Docs: https://django-haystack.readthedocs.io/en/latest/
 
 Haystack is an :ref:`open source`
 :ref:`Python` Django API for a number of search
@@ -3167,7 +3167,7 @@ Tools with support for :ref:`astronomical year numbering`:
 
 * AstroPy is a :ref:`Python` library that supports astronomical year numbering:
 
-  https://astropy.readthedocs.org/en/latest/time/
+  https://astropy.readthedocs.io/en/latest/time/
 
 
 
@@ -3245,7 +3245,7 @@ Common Era and :ref:`Python` datetime calculations:
     <Arrow [0001-01-01T00:00:00+00:00]>
 
     ### astropy.time.Time supports (1 BCE <= dates >= 1 CE) and/or *Year Zero*
-    ### https://astropy.readthedocs.org/en/latest/time/
+    ### https://astropy.readthedocs.io/en/latest/time/
     >>> !conda install astropy
     >>> import astropy.time
     >>> # TimeJulianEpoch (Julian date (jd) ~= Common Era (CE))
@@ -4235,11 +4235,11 @@ Implementations of RDF Interfaces:
     ``rdflib.store.TripleAddedEvent`,
     ``rdflib.store.TripleRemovedEvent``
 
-  + https://rdflib.readthedocs.org/en/latest/apidocs/rdflib.html#rdflib.term.Node
+  + https://rdflib.readthedocs.io/en/latest/apidocs/rdflib.html#rdflib.term.Node
   + ``Profile`` -> ______ TODO
   + ``TermMap`` ->  ____ TODO
   + ``PrefixMap`` -> ``rdflib.namespace.NamespaceManager``
-    https://rdflib.readthedocs.org/en/latest/apidocs/rdflib.html#rdflib.namespace.NamespaceManager
+    https://rdflib.readthedocs.io/en/latest/apidocs/rdflib.html#rdflib.namespace.NamespaceManager
 
   .. note:: rdflib is not order-preserving at this time,
      because internally Graphs are represented as ``dict`` and not yet
@@ -5217,14 +5217,14 @@ RDFLib
 | Wikipedia: https://en.wikipedia.org/wiki/RDFLib
 | Homepage: https://github.com/RDFLib
 | Source: https://github.com/RDFLib/rdflib
-| Docs: https://rdflib.readthedocs.org/en/latest/
+| Docs: https://rdflib.readthedocs.io/en/latest/
 
 RDFLib is a library (and a collection of companion libraries)
 for working with :ref:`RDF` in the Python programming language.
 
-* https://rdflib.readthedocs.org/en/latest/gettingstarted.html
-* https://rdflib.readthedocs.org/en/latest/apidocs/examples.html
-* https://rdflib.readthedocs.org/en/latest/apidocs/rdflib.html#module-rdflib.resource
+* https://rdflib.readthedocs.io/en/latest/gettingstarted.html
+* https://rdflib.readthedocs.io/en/latest/apidocs/examples.html
+* https://rdflib.readthedocs.io/en/latest/apidocs/rdflib.html#module-rdflib.resource
 
 
 .. index:: Semantic Web Schema Resources

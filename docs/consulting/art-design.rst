@@ -1696,7 +1696,7 @@ CDN APIs
 
 * :ref:`libcloud` Object Storage API:
 
-  http://libcloud.readthedocs.org/en/latest/supported_providers.html#object-storage
+  http://libcloud.readthedocs.io/en/latest/supported_providers.html#object-storage
 
 * :ref:`Ceph` Object Gateway: :ref:`aws` S3 API and :ref:`OpenStack` Swift API
 
