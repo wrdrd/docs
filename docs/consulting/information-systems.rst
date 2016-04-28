@@ -300,7 +300,7 @@ Cloud Application Layers
   * Message Queue (Task Queue, Channels, :ref:`WebSockets <websockets>`, AMQP,
     Worker Pools)
 
-    * Celery: https://celery.readthedocs.org/en/latest/getting-started/brokers/
+    * Celery: https://celery.readthedocs.io/en/latest/getting-started/brokers/
     * AppEngine/AppScale Tasks API
     * :ref:`Mesos` schedulers (Aurora, Chronos, Marathon)
 
@@ -319,7 +319,7 @@ Cloud Application Layers
 
   * HTTP Object Storage
 
-    * :ref:`libcloud` (https://libcloud.readthedocs.org/en/latest/storage/)
+    * :ref:`libcloud` (https://libcloud.readthedocs.io/en/latest/storage/)
     * Amazon :ref:`AWS` :ref:`S3`
     * :ref:`OpenStack` Swift (:ref:`Swift`, :ref:`S3` APIs)
     * :ref:`Linux`: :ref:`Ceph` RADOS Gateway (:ref:`Swift`, :ref:`S3` APIs)
@@ -703,7 +703,7 @@ Examples of IaaS:
 * :ref:`Rackspace Cloud`
 * :ref:`libcloud` implements a :ref:`Python` :term:`language api`
   over very many :ref:`IaaS` and :ref:`PaaS` clouds:
-  https://libcloud.readthedocs.org/en/latest/supported_providers.html
+  https://libcloud.readthedocs.io/en/latest/supported_providers.html
 
 
 .. index:: AWS
