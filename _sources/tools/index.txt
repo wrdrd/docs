@@ -931,7 +931,7 @@ packages>` mirroring, hosting, and testing.
 Wheel
 ++++++
 | Docs: http://legacy.python.org/dev/peps/pep-0427/
-| Docs: http://wheel.readthedocs.io/en/latest/
+| Docs: https://wheel.readthedocs.io/en/latest/
 | Src: hg https://bitbucket.org/pypa/wheel/
 | PyPI: https://pypi.python.org/pypi/wheel
 
@@ -2078,7 +2078,7 @@ and the Python Infrastructure Team:
 
 * https://www.python.org/psf/sponsorship/
 * https://www.python.org/psf/members/#sponsor-members
-* http://psf-salt.readthedocs.io/en/latest/overview/
+* https://psf-salt.readthedocs.io/en/latest/overview/
 
 
 .. index:: CPython
@@ -5102,7 +5102,7 @@ A standard virtual environment::
 
 Virtualenvwrapper
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-| Docs: http://virtualenvwrapper.readthedocs.io/en/latest/
+| Docs: https://virtualenvwrapper.readthedocs.io/en/latest/
 | Src: hg https://bitbucket.org/dhellmann/virtualenvwrapper
 | PyPI: https://pypi.python.org/pypi/virtualenvwrapper
 

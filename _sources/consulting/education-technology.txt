@@ -155,10 +155,10 @@ Self Directed Learning
 |
 | Source: git https://github.com/westurner/self-directed-learning
 | HTML: https://westurner.org/self-directed-learning/
-| HTML: http://self-directed-learning.readthedocs.io/
-| HTML (zip): http://media.readthedocs.io/htmlzip/self-directed-learning/self-directed-learning.zip
-| PDF: http://media.readthedocs.io/pdf/self-directed-learning/latest/self-directed-learning.pdf
-| ePub: http://media.readthedocs.io/epub/self-directed-learning/latest/self-directed-learning.epub
+| HTML: https://self-directed-learning.readthedocs.io/
+| HTML (zip): https://media.readthedocs.io/htmlzip/self-directed-learning/self-directed-learning.zip
+| PDF: https://media.readthedocs.io/pdf/self-directed-learning/latest/self-directed-learning.pdf
+| ePub: https://media.readthedocs.io/epub/self-directed-learning/latest/self-directed-learning.epub
 
 Report Process:
 
