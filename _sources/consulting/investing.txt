@@ -311,7 +311,7 @@ Pandas (:ref:`Python` data analysis) is a library for
 pandas-datareader
 ~~~~~~~~~~~~~~~~~~~
 | Src: https://github.com/pydata/pandas-datareader
-| Docs: https://pandas-datareader.readthedocs.org/en/latest/
+| Docs: https://pandas-datareader.readthedocs.io/en/latest/
 
 * Yahoo! Finance
 * Google Finance
@@ -464,7 +464,7 @@ qgrid
 ~~~~~~
 | Src: https://github.com/quantopian/qgrid
 | PyPI: https://pypi.python.org/pypi/qgrid
-| Docs: https://qgrid.readthedocs.org/en/latest/
+| Docs: https://qgrid.readthedocs.io/en/latest/
 
 qgrid is "An Interactive Grid for Sorting and Filtering
 [:ref:`Pandas`] DataFrames in :ref:`IPython Notebook`.

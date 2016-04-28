@@ -334,7 +334,7 @@ dnf
 | Homepage: http://dnf.baseurl.org/
 | Homepage: https://fedoraproject.org/wiki/Features/DNF
 | Src: git https://github.com/rpm-software-management/dnf
-| Docs: https://dnf.readthedocs.org/en/latest/
+| Docs: https://dnf.readthedocs.io/en/latest/
 | Docs: https://github.com/rpm-software-management/dnf/wiki
 | Docs: https://rpm-software-management.github.io/dnf-plugins-core/
 
@@ -534,10 +534,10 @@ Pants Build is a build tool for :ref:`JVM` [:ref:`Java`, :ref:`Scala`,
 
 PEX
 ~~~~~
-| Homepage: https://pex.readthedocs.org/
+| Homepage: https://pex.readthedocs.io/
 | Source: https://github.com/pantsbuild/pex
 | PyPI: https://pypi.python.org/pypi/pex
-| Docs: https://pex.readthedocs.org/en/stable/
+| Docs: https://pex.readthedocs.io/en/stable/
 
 PEX (*Python Executable*) is a :ref:`ZIP`-based software package archive
 format with an executable header.
@@ -643,7 +643,7 @@ Python Packages
 | Docs: https://packaging.python.org/en/latest/peps.html
 | Docs: https://packaging.python.org/en/latest/projects.html
 | Docs: https://packaging.python.org/en/latest/specifications/
-| Docs: https://pypaio.readthedocs.org/en/latest/roadmap/
+| Docs: https://pypaio.readthedocs.io/en/latest/roadmap/
 
 A :ref:`Python` Package is a collection of source code and package data files.
 
@@ -756,7 +756,7 @@ Pip
 | Wikipedia: `<https://en.wikipedia.org/wiki/Pip_(package_manager)>`_
 | Homepage: https://pip.pypa.io/
 | Docs: https://pip.pypa.io/en/latest/user_guide.html
-| Docs: https://pip.readthedocs.org/en/latest/
+| Docs: https://pip.readthedocs.io/en/latest/
 | Src: git https://github.com/pypa/pip
 | Pypi: https://pypi.python.org/pypi/pip
 | IRC: #pypa
@@ -895,7 +895,7 @@ Warehouse
 ++++++++++
 | Homepage: https://warehouse.python.org/
 | Src: https://github.com/pypa/warehouse
-| Docs: https://warehouse.readthedocs.org/en/latest/
+| Docs: https://warehouse.readthedocs.io/en/latest/
 
 
 Warehouse is the "Next Generation Python Package Repository".
@@ -931,7 +931,7 @@ packages>` mirroring, hosting, and testing.
 Wheel
 ++++++
 | Docs: http://legacy.python.org/dev/peps/pep-0427/
-| Docs: http://wheel.readthedocs.org/en/latest/
+| Docs: http://wheel.readthedocs.io/en/latest/
 | Src: hg https://bitbucket.org/pypa/wheel/
 | PyPI: https://pypi.python.org/pypi/wheel
 
@@ -1384,15 +1384,15 @@ cookiecutter
 | Homepage: https://github.com/audreyr/cookiecutter
 | Source: git https://github.com/audreyr/cookiecutter
 | PyPI: https://pypi.python.org/pypi/cookiecutter
-| Docs: https://cookiecutter.readthedocs.org/en/latest/
-| Docs: https://cookiecutter.readthedocs.org/en/latest/usage.html
-| Docs: https://cookiecutter.readthedocs.org/en/latest/tutorials.html#create-your-very-own-cookiecutter
+| Docs: https://cookiecutter.readthedocs.io/en/latest/
+| Docs: https://cookiecutter.readthedocs.io/en/latest/usage.html
+| Docs: https://cookiecutter.readthedocs.io/en/latest/tutorials.html#create-your-very-own-cookiecutter
 
 Cookiecutter creates projects (files and directories) from
 project templates written in :ref:`Jinja2`
 for projects written in :ref:`Python` and other languages.
 
-* https://cookiecutter.readthedocs.org/en/latest/readme.html#available-cookiecutters
+* https://cookiecutter.readthedocs.io/en/latest/readme.html#available-cookiecutters
 
   List of Cookiecutter generators
 
@@ -1999,7 +1999,7 @@ Jinja2
 | Wikipedia: `<https://en.wikipedia.org/wiki/Jinja_%28template_engine%29>`__
 | Homepage: http://jinja.pocoo.org/
 | Src: https://github.com/mitsuhiko/jinja2
-| Docs: https://jinja2.readthedocs.org/en/latest/
+| Docs: https://jinja2.readthedocs.io/en/latest/
 | Docs: http://jinja.pocoo.org/docs/dev/
 
 Jinja2 is a free and open source
@@ -2078,7 +2078,7 @@ and the Python Infrastructure Team:
 
 * https://www.python.org/psf/sponsorship/
 * https://www.python.org/psf/members/#sponsor-members
-* http://psf-salt.readthedocs.org/en/latest/overview/
+* http://psf-salt.readthedocs.io/en/latest/overview/
 
 
 .. index:: CPython
@@ -2103,7 +2103,7 @@ CPython can interface with other :ref:`C` libraries
 through a number of interfaces:
 
 * https://docs.python.org/2/c-api/
-* https://cffi.readthedocs.org/en/latest/
+* https://cffi.readthedocs.io/en/latest/
 * :ref:`Cython`
 
 
@@ -2201,8 +2201,8 @@ PyPy
 | Homepage: http://pypy.org/
 | Src: https://bitbucket.org/pypy/pypy
 | Docs: http://buildbot.pypy.org/waterfall
-| Docs: https://pypy.readthedocs.org/en/latest/
-| Docs: https://pypy.readthedocs.org/en/latest/introduction.html
+| Docs: https://pypy.readthedocs.io/en/latest/
+| Docs: https://pypy.readthedocs.io/en/latest/introduction.html
 
 PyPy is a JIT LLVM compiler for :ref:`Python` code
 written in RPython -- a restricted subset of :ref:`CPython` syntax --
@@ -2272,7 +2272,7 @@ awesome-python-testing
 Tox
 ++++++++++++++
 | Homepage: https://testrun.org/tox/
-| Docs: https://tox.readthedocs.org/en/latest/
+| Docs: https://tox.readthedocs.io/en/latest/
 | Src: hg https://bitbucket.org/hpk42/tox
 | Pypi: https://pypi.python.org/pypi/tox
 
@@ -3476,7 +3476,7 @@ osquery
 | Homepage: https://osquery.io/
 | Src: https://github.com/facebook/osquery
 | Docs: https://osquery.io/docs/tables/
-| Docs: https://osquery.readthedocs.org/en/stable/
+| Docs: https://osquery.readthedocs.io/en/stable/
 
 osquery is a tool for reading and querying
 many sources of system data
@@ -3881,8 +3881,8 @@ on a given host machine.
 Libcloud
 ~~~~~~~~~~~~~~~~~~
 | Homepage: https://libcloud.apache.org/
-| Docs: https://libcloud.readthedocs.org/en/latest/
-| Docs: https://libcloud.readthedocs.org/en/latest/supported_providers.html
+| Docs: https://libcloud.readthedocs.io/en/latest/
+| Docs: https://libcloud.readthedocs.io/en/latest/supported_providers.html
 | Src: git git://git.apache.org/libcloud.git
 | Src: git https://github.com/apache/libcloud
 
@@ -4083,7 +4083,7 @@ There are many alternatives to and implementations of OpenStack DevStack:
 * https://github.com/openstack-ansible/openstack-ansible
 * https://forge.puppetlabs.com/puppetlabs/openstack
 * https://jujucharms.com/q/openstack
-* https://anvil.readthedocs.org/en/latest/topics/summary.html
+* https://anvil.readthedocs.io/en/latest/topics/summary.html
 
 
 .. index:: Packer
@@ -4614,8 +4614,8 @@ slides (reveal.js), LaTeX, PDF, ePub, Mobi).
 nbformat
 ++++++++++
 | Docs: http://ipython.org/ipython-doc/dev/notebook/nbformat.html
-| Docs: https://nbformat.readthedocs.org/en/latest/
-| Docs: https://nbformat.readthedocs.org/en/latest/format_description.html#backward-compatible-changes
+| Docs: https://nbformat.readthedocs.io/en/latest/
+| Docs: https://nbformat.readthedocs.io/en/latest/format_description.html#backward-compatible-changes
 
 The :ref:`Jupyter notebook` (``.ipynb``) format is a versioned
 :ref:`JSON <json->` format for storing metadata and input/output sequences.
@@ -4640,11 +4640,11 @@ would work.
 nbgrader
 ++++++++
 | Source: git https://github.com/jupyter/nbgrader
-| Docs: https://nbgrader.readthedocs.org/en/stable/
-| Docs: https://nbgrader.readthedocs.org/en/stable/user_guide/
-| Docs: https://nbgrader.readthedocs.org/en/latest/
-| Docs: https://nbgrader.readthedocs.org/en/latest/user_guide/
-| Docs: https://nbgrader.readthedocs.org/en/latest/command_line_tools/
+| Docs: https://nbgrader.readthedocs.io/en/stable/
+| Docs: https://nbgrader.readthedocs.io/en/stable/user_guide/
+| Docs: https://nbgrader.readthedocs.io/en/latest/
+| Docs: https://nbgrader.readthedocs.io/en/latest/user_guide/
+| Docs: https://nbgrader.readthedocs.io/en/latest/command_line_tools/
 
 nbgrader is a solution for centrally receiving and grading :ref:`Jupyter notebooks <jupyter notebook>`.
 
@@ -4839,7 +4839,7 @@ Htop is a commandline task manager; like ``top`` extended.
 Pyline
 ~~~~~~~~
 | Homepage: https://github.com/westurner/pyline
-| Docs: https://pyline.readthedocs.org/en/latest/
+| Docs: https://pyline.readthedocs.io/en/latest/
 | Src: git https://github.com/westurner/pyline
 | Pypi: https://pypi.python.org/pypi/pyline
 
@@ -5102,7 +5102,7 @@ A standard virtual environment::
 
 Virtualenvwrapper
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-| Docs: http://virtualenvwrapper.readthedocs.org/en/latest/
+| Docs: http://virtualenvwrapper.readthedocs.io/en/latest/
 | Src: hg https://bitbucket.org/dhellmann/virtualenvwrapper
 | PyPI: https://pypi.python.org/pypi/virtualenvwrapper
 
@@ -6302,8 +6302,8 @@ Docutils
 | Docs: http://docutils.sourceforge.net/docs/
 | Docs: http://docutils.sourceforge.net/rst.html
 | Docs: http://docutils.sourceforge.net/docs/ref/doctree.html
-| Docs: https://docutils.readthedocs.org/en/sphinx-docs/
-| Docs: https://docutils.readthedocs.org/en/sphinx-docs/ref/rst/restructuredtext.html
+| Docs: https://docutils.readthedocs.io/en/sphinx-docs/
+| Docs: https://docutils.readthedocs.io/en/sphinx-docs/ref/rst/restructuredtext.html
 | Src: svn http://svn.code.sf.net/p/docutils/code/trunk
 
 Docutils is a :ref:`Python` library which 'parses" :ref:`ReStructuredText`
@@ -6466,9 +6466,9 @@ so, for example,
 
   * Output: *ReadTheDocs*:
 
-    https://<projectname>.readthedocs.org/en/<version>/
+    https://<projectname>.readthedocs.io/en/<version>/
 
-    https://read-the-docs.readthedocs.org/en/latest/
+    https://read-the-docs.readthedocs.io/en/latest/
 
 
 .. glossary::

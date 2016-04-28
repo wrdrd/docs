@@ -120,9 +120,9 @@ GitHub Pages serves webpages from :ref:`git` branches.
 
 ReadTheDocs
 *************
-| Homepage: https://readthedocs.org/
-| Source: git https://github.com/rtfd/readthedocs.org
-| Docs: https://read-the-docs.readthedocs.org/en/latest/
+| Homepage: https:/.readthedocs.io/
+| Source: git https://github.com/rtfd.readthedocs.io
+| Docs: https://read-the-docs.readthedocs.io/en/latest/
 
 ReadTheDocs is a free and :ref:`open source`
 web service for publishing :ref:`Sphinx` documentation sets
@@ -132,15 +132,15 @@ and artifact publisher.
 * ReadTheDocs can rebuild HTML, PDF, and ePub from
   :ref:`Sphinx` :ref:`ReStructuredText`
   every time a commit is made to a e.g. GitHub or BitBucket
-  repository: https://read-the-docs.readthedocs.org/en/latest/webhooks.html
+  repository: https://read-the-docs.readthedocs.io/en/latest/webhooks.html
 * ReadTheDocs can build and serve localized versions
-  for one or more languages: https://read-the-docs.readthedocs.org/en/latest/localization.html
+  for one or more languages: https://read-the-docs.readthedocs.io/en/latest/localization.html
 * ReadTheDocs can build and serve multiple versions or :ref:`vcs`
   revisions. By default, ReadTheDocs will try appending ``/en/latest/``,
   so these links all redirect to the first link
 
-  * https://read-the-docs.readthedocs.org/en/latest/
-  * https://read-the-docs.readthedocs.org/
+  * https://read-the-docs.readthedocs.io/en/latest/
+  * https://read-the-docs.readthedocs.io/
   * https://read-the-docs.rtfd.org/
 
 
@@ -155,10 +155,10 @@ Self Directed Learning
 |
 | Source: git https://github.com/westurner/self-directed-learning
 | HTML: https://westurner.org/self-directed-learning/
-| HTML: http://self-directed-learning.readthedocs.org/
-| HTML (zip): http://media.readthedocs.org/htmlzip/self-directed-learning/self-directed-learning.zip
-| PDF: http://media.readthedocs.org/pdf/self-directed-learning/latest/self-directed-learning.pdf
-| ePub: http://media.readthedocs.org/epub/self-directed-learning/latest/self-directed-learning.epub
+| HTML: http://self-directed-learning.readthedocs.io/
+| HTML (zip): http://media.readthedocs.io/htmlzip/self-directed-learning/self-directed-learning.zip
+| PDF: http://media.readthedocs.io/pdf/self-directed-learning/latest/self-directed-learning.pdf
+| ePub: http://media.readthedocs.io/epub/self-directed-learning/latest/self-directed-learning.epub
 
 Report Process:
 
@@ -230,8 +230,8 @@ edX
 | Source: https://github.com/edx
 | Source: git https://github.com/edx/edx-platform
 | Docs: http://docs.edx.org/
-| Docs: https://edx.readthedocs.org/projects/edx-guide-for-students/en/latest/
-| Docs: https://edx.readthedocs.org/projects/edx-partner-course-staff/en/latest/
+| Docs: https://edx.readthedocs.io/projects/edx-guide-for-students/en/latest/
+| Docs: https://edx.readthedocs.io/projects/edx-partner-course-staff/en/latest/
 | Docs: https://github.com/edx/edx-platform/wiki
 | Docs: https://github.com/edx/edx-platform/wiki/Sites-powered-by-Open-edX
 | Docs: https://open.edx.org/open-edx-rest-apis
