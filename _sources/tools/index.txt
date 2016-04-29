@@ -4535,6 +4535,7 @@ for many languages (:ref:`Python`, :ref:`Ruby`, :ref:`Java`,
 
 Jupyter Notebook
 +++++++++++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/Jupyter#Notebook
 | Src: https://github.com/jupyter/notebook
 
 :ref:`Jupyter` Notebook is the latest :ref:`IPython Notebook`.
@@ -4754,6 +4755,18 @@ and can write errors to stderr.
   https://github.com/westurner/notebooks/blob/gh-pages/Makefile
 
 
+.. index:: RISE
+.. index:: Jupyter RISE
+.. _rise:
+
+RISE
++++++++++++++
+| Src: https://github.com/damianavila/RISE
+
+    Reveal.js - Jupyter/IPython Slideshow Extension,
+    also known as live_reveal
+
+* Interactive presentations with live source code evaluation
 
 
 .. index:: PowerShell
