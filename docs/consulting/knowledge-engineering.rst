@@ -903,11 +903,10 @@ NetworkX
 | Wikipedia: https://en.wikipedia.org/wiki/NetworkX
 | Homepage: https://networkx.github.io/
 | Source: git https://github.com/networkx/networkx
-| Docs: https://networkx.github.io/documentation.html
-| Docs: https://networkx.github.io/documentation/latest/
-| Docs: https://networkx.github.io/documentation/latest/tutorial/
-| Docs: https://networkx.github.io/documentation/latest/reference/classes.html
-| Docs: https://networkx.github.io/documentation/latest/reference/algorithms.html
+| Docs: https://networkx.readthedocs.io/en/latest/
+| Docs: https://networkx.readthedocs.io/en/latest/tutorial/
+| Docs: https://networkx.readthedocs.io/en/latest/reference/classes.html
+| Docs: https://networkx.readthedocs.io/en/latest/reference/algorithms.html
 
 NetworkX is an :ref:`open source` graph algorithms library
 written in :ref:`Python`.
