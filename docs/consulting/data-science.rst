@@ -501,12 +501,19 @@ Further Objectives:
 
     * [x] schema.org/MedicalStudy, MedicalObservationalStudy, MedicalTrial
 
-      * [ ] @schemed
+      * [ ] https://github.com/twamarc/ScheMed
 
-    * [ ] Study, ObservationalStudy, RandomizedControlledTrial, RCT
-    * [ ] StudyProtocol
-    * [ ] StudyGroup (design, admin, participant, stats)
-    * [ ] StudyGroup.masked <bool>, StudyProtocol.url
+        + http://schema.org/MedicalTrialDesign
+        + http://schema.org/DoubleBlindedTrial
+        + http://schema.org/InternationalTrial
+        + http://schema.org/MultiCenterTrial
+        + http://schema.org/OpenTrial
+        + http://schema.org/PlaceboControlledTrial
+        + http://schema.org/RandomizedTrial
+        + http://schema.org/SingleBlindedTrial
+        + http://schema.org/SingleCenterTrial
+        + http://schema.org/TripleBlindedTrial
+
     * See: https://westurner.org/opengov/us/#personal-health-agenda
 
 
