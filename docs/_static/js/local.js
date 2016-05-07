@@ -17,8 +17,17 @@ if (document.location.hostname in keymap) {
 }
 
 
+// newtab.js
 $(document).ready(function() {
-    $("a[href^='http']").attr('target','_blank');
+    $(document).on('click', 'a', function(e) {
+        var url = $(this).attr('href');
+        if (url.substring(0,4) === 'http') {
+            e.preventDefault();
+            var otherWindow = window.open();
+            otherWindow.opener = null;
+            otherWindow.location = url;
+        }
+    });
 });
 
 // <affix-sidenav>
