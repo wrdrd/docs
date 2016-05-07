@@ -169,7 +169,15 @@ if (document.location.hostname in keymap) {
 }));
 
 // newtab.js
+//
+// Requires
+// * jQuery: https://github.com/jquery/jquery
+// * js-cookie: https://github.com/js-cookie/js-cookie
+//
+// References
 // * https://mathiasbynens.github.io/rel-noopener/
+//
+// License: MIT LICENSE
 $(document).ready(function() {
 
 
