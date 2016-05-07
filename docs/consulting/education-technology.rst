@@ -120,8 +120,8 @@ GitHub Pages serves webpages from :ref:`git` branches.
 
 ReadTheDocs
 *************
-| Homepage: https:/.readthedocs.io/
-| Source: git https://github.com/rtfd.readthedocs.io
+| Homepage: https://readthedocs.org/
+| Source: git https://github.com/rtfd/readthedocs.io
 | Docs: https://read-the-docs.readthedocs.io/en/latest/
 
 ReadTheDocs is a free and :ref:`open source`
