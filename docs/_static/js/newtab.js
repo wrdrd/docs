@@ -3,10 +3,18 @@
 // * https://mathiasbynens.github.io/rel-noopener/
 $(document).ready(function() {
 
-  var options = {
-    'open_in_new_tab': true,
-    'show_visited_links': true,
-  };
+
+  var options;
+  var options_cookie_json = Cookies.getJSON('options');
+  if (options_cookie_json === undefined) {
+    var options_defaults = {
+      'open_in_new_tab': true,
+      'show_visited_links': true,
+    };
+    options = options_defaults;
+  } else {
+    options = options_cookie_json;
+  }
   console.log('options:');
   console.log(options);
 
@@ -51,6 +59,7 @@ $(document).ready(function() {
   chk.prop('checked', options['open_in_new_tab']);
   chk.on('change', function(e) {
     options['open_in_new_tab'] = this.checked;
+    Cookies.set('options', options);
   });
 
 
@@ -85,6 +94,7 @@ $(document).ready(function() {
   chk.prop('checked', options['show_visited_links']);
   chk.on('change', function(e) {
     options['show_visited_links'] = this.checked;
+    Cookies.set('options', options);
     set_showvisitedcss();
   });
 });
