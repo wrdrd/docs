@@ -1754,6 +1754,32 @@ https://en.wikipedia.org/wiki/Object-relational_impedance_mismatch
 * https://en.wikipedia.org/wiki/List_of_object-relational_mapping_software
 
 
+.. index:: Relation Algebra
+.. _relation algebra:
+
+Relation Algebra
+`````````````````````
+| Wikipedia: https://en.wikipedia.org/wiki/Relation_algebra
+
+* https://en.wikipedia.org/wiki/Relation_algebra#Expressing_properties_of_binary_relations_in_RA
+
+See: :ref:`relational algebra`
+
+
+.. index:: Relational Algebra
+.. _relational algebra:
+
+Relational Algebra
+```````````````````````
+| Wikipedia: https://en.wikipedia.org/wiki/Relational_algebra
+
+* `<https://en.wikipedia.org/wiki/Projection_(relational_algebra)>`_
+* https://en.wikipedia.org/wiki/Relational_algebra#Joins_and_join-like_operators
+* https://en.wikipedia.org/wiki/Relational_algebra#Common_extensions
+
+See: :ref:`relation algebra`, :ref:`relational databases`
+
+
 .. index:: Relational Databases
 .. index:: SQL Databases
 .. _relational databases:
@@ -1764,11 +1790,7 @@ Relational Databases
 
 https://en.wikipedia.org/wiki/Relational_model
 
-https://en.wikipedia.org/wiki/Relational_algebra
-
-* `<https://en.wikipedia.org/wiki/Projection_(relational_algebra)>`_
-* https://en.wikipedia.org/wiki/Relational_algebra#Joins_and_join-like_operators
-* https://en.wikipedia.org/wiki/Relational_algebra#Common_extensions
+:ref:`relational algebra`
 
 https://en.wikipedia.org/wiki/Database_normalization
 
