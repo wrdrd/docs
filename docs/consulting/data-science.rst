@@ -161,6 +161,12 @@ Ten Simple Rules
       * :ref:`GitHub`: Git
       * :ref:`BitBucket`: Hg, Git
 
+    * https://en.wikipedia.org/wiki/Digital_object_identifier
+
+      * https://en.wikipedia.org/wiki/Figshare
+      * https://en.wikipedia.org/wiki/Zenodo
+
+
 #TenSimpleRules for Creating a Good Data Management Plan
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 | "Ten Simple Rules for Creating a Good Data Management Plan"
