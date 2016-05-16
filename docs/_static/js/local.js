@@ -281,7 +281,7 @@ $(document).ready(function() {
     var stylesheet = document.styleSheets[0];
     if (options['show_visited_links'] === true) {
       localstate['show_visited_links/a:visited/color'] = (
-        stylesheet.insertRule('a:visited { color: #a0a !important; }',
+        stylesheet.insertRule('a:visited { color: #551A8B !important; }',
                              stylesheet.cssRules.length)
       );
     } else {
