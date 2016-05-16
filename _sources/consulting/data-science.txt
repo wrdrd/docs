@@ -158,8 +158,17 @@ Ten Simple Rules
     * :ref:`Jupyter and Reproducibility`
     * https://en.wikipedia.org/wiki/Comparison_of_source_code_hosting_facilities
 
-      * :ref:`GitHub`: Git
-      * :ref:`BitBucket`: Hg, Git
+      * :ref:`GitHub`: :ref:`Git`
+      * :ref:`BitBucket`: :ref:`Hg`, :ref:`Git`
+
+    * https://en.wikipedia.org/wiki/Digital_object_identifier
+
+      * https://en.wikipedia.org/wiki/Figshare
+      * https://en.wikipedia.org/wiki/Zenodo
+
+    * :ref:`Linked Reproducibility`
+    * :ref:`Education Technology` > :ref:`Publishing`
+
 
 #TenSimpleRules for Creating a Good Data Management Plan
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
