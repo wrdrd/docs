@@ -26,10 +26,45 @@ $(document).ready(function() {
   console.log('options:');
   console.log(options);
 
+  function match_external_url_elem(elem) {
+    var elem = $(elem);
+    if (elem === undefined) {
+      return false;
+    }
+    var url = elem.attr('href');
+    if (url === undefined) {
+      return false;
+    }
+    var relstr = elem.attr('rel');
+    var rels = [];
+    if (relstr !== undefined) {
+      rels = relstr.split(' ');
+    }
+    // skip rel="noreferrer" (because window.open)
+    if (rels.indexOf('noreferrer') !== -1)
+    {
+      return false;
+    }
+    if (
+      (   elem.attr('target') === '_blank')
+      || (rels.indexOf('noopener') > -1)
+      || (rels.indexOf('external') !== -1)
+      || (elem.hasClass('external'))  // [sphinx,]
+      || (url.substring(0,8) === 'http://')
+      || (url.substring(0,9) === 'https://')
+      || (url.substring(0,3) === '//')
+      || (url.substring(0,7) === 'ftp://')
+      || (url.substring(0,7) === 'svn://')
+      || (url.substring(0,7) === 'git://')
+    ) {
+        return true;
+    }
+    return false;
+  }
   $(document).on('click', 'a', function(e) {
     if (options['open_in_new_tab']) {
-      var url = $(this).attr('href');
-      if (url.substring(0,4) === 'http') {
+      if (match_external_url_elem(this)) {
+        var url = $(this).attr('href');
         e.preventDefault();
         var otherWindow = window.open();
         otherWindow.opener = null;
@@ -77,7 +112,7 @@ $(document).ready(function() {
     var stylesheet = document.styleSheets[0];
     if (options['show_visited_links'] === true) {
       localstate['show_visited_links/a:visited/color'] = (
-        stylesheet.insertRule('a:visited { color: #a0a !important; }',
+        stylesheet.insertRule('a:visited { color: #551A8B !important; }',
                              stylesheet.cssRules.length)
       );
     } else {
