@@ -1288,6 +1288,7 @@ and understanding any DVCS workflow:
 
 .. index:: Hg
 .. index:: Mercurial
+.. _hg:
 .. _mercurial:
 
 Mercurial
