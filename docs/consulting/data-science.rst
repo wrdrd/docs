@@ -153,6 +153,9 @@ Ten Simple Rules
      * http://sphinx-doc.org/rest.html#footnotes #citations #substitutions
      * https://github.com/yoloseem/awesome-sphinxdoc
 
+   * :ref:`Linked Reproducibility`: :ref:`URIs <URI>`, :ref:`URLs
+     <URL>`, ``#uri-fragments``
+
 10. Provide Public Access to Scripts, Runs, and Results
 
     * :ref:`Jupyter and Reproducibility`
