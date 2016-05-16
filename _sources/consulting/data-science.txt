@@ -115,11 +115,16 @@ Ten Simple Rules
    Allowing Layers of Increasing Detail to Be Inspected
 
 
+   * :ref:`pandas`:
+
+     * http://pandas.pydata.org/pandas-docs/stable/reshaping.html#reshaping-by-stacking-and-unstacking
+     * http://pandas.pydata.org/pandas-docs/stable/reshaping.html#combining-with-stats-and-groupby
+
    * :ref:`Schema.org`: https://schema.org/docs/full.html
    * :ref:`SKOS`:
 
-      | http://www.w3.org/TR/skos-reference/
-      | http://www.w3.org/TR/skos-reference/skos.html
+     | http://www.w3.org/TR/skos-reference/
+     | http://www.w3.org/TR/skos-reference/skos.html
 
      ``skos:narrower``, ``skos:narrowerTransitive``,
      ``skos:broader`` , ``skos:broaderTransistive``,
