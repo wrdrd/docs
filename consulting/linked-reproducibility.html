@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- OpenGraph metadata: ogp.me -->
+    <meta property="og:title" content="Linked Reproducibility" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="WRD R&D" />
+    <!--
+    <meta property="og:description" content="" />
+    -->
+    <meta property="og:image" content="https://wrdrd.com/static/png/drawing-7.09-v0.1.1--_desk.svg-470x242.png" />
+    <meta property="og:image:width" content="470" />
+    <meta property="og:image:height" content="242" />
+    <!--
+    <meta property="og:image:secure_url" content="./_static/img/logo.png" />
+    -->
+    <!-- Twitter metadata -->
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:title" content="Linked Reproducibility" />
+    <meta property="twitter:description" content="" />
+    <meta property="twitter:site" content="wrdrd" />
+    <meta property="twitter:creator" content="wrdrd" />
+    
+    <title>Linked Reproducibility &mdash; WRD R&amp;D Documentation</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    
+
+<link rel="stylesheet" href="../_static/css/basicstrap-base.css" type="text/css" />
+<link rel="stylesheet" id="current-theme" href="../_static/css/bootstrap3/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" id="current-adjust-theme" type="text/css" />
+
+<link rel="stylesheet" href="../_static/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="../_static/css/basicstrap.css" type="text/css" />
+<link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+<link rel="stylesheet" href="../_static/css/local.css" type="text/css" />
+    
+<script type="text/javascript">
+  var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:    '../',
+            VERSION:     '0.2.0',
+            COLLAPSE_INDEX: false,
+            FILE_SUFFIX: '.html',
+            HAS_SOURCE:  true
+  };
+</script>
+    <script type="text/javascript" src="../_static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/local.js"></script>
+    <script type="text/javascript" src="../_static/js/bootstrap3.min.js"></script>
+<script type="text/javascript" src="../_static/js/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="../_static/js/basicstrap.js"></script>
+<script type="text/javascript">
+</script>
+    <link rel="search" type="application/opensearchdescription+xml"
+    title="Search within WRD R&amp;D Documentation"
+    href="../_static/opensearch.xml"/>
+    <link rel="top" title="WRD R&amp;D Documentation" href="../index" /> 
+  </head>
+  <body role="document">
+    <div id="navbar-top" class="navbar navbar-default" role="navigation" aria-label="top navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index">WRD R&amp;D Documentation</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown visible-xs">
+                <a role="button" id="localToc" data-toggle="dropdown" data-target="#" href="#">Table Of Contents <b class="caret"></b></a>
+                <ul class="dropdown-menu localtoc sp-localtoc" role="menu" aria-labelledby="localToc">
+                <ul>
+<li><a class="reference internal" href="#">Linked Reproducibility</a><ul>
+<li><a class="reference internal" href="#studygraph-document-nodes-and-link-edges">StudyGraph: Document Nodes and Link Edges</a></li>
+<li><a class="reference internal" href="#structuredpremises-premises-as-structured-data">StructuredPremises: Premises as structured data</a></li>
+<li><a class="reference internal" href="#linkedmetaanalyses">LinkedMetaAnalyses</a></li>
+<li><a class="reference internal" href="#references">References</a></li>
+</ul>
+</li>
+</ul>
+
+                </ul>
+              </li>
+
+            
+              <li><a href="../py-modindex" title="Python Module Index" >modules </a></li>
+              <li><a href="../genindex" title="General Index" accesskey="I">index </a></li>
+            
+            <li class="visible-xs"><a href="../_sources/consulting/linked-reproducibility.txt" rel="nofollow">Show Source</a></li>
+
+            <li class="visible-xs">
+                <form class="search form-search form-inline navbar-form navbar-right sp-searchbox" action="../search" method="get">
+                  <div class="input-append input-group">
+                    <input type="text" class="search-query form-control" name="q" placeholder="Search...">
+                    <span class="input-group-btn">
+                    <input type="submit" class="btn" value="Go" />
+                    </span>
+                  </div>
+                  <input type="hidden" name="check_keywords" value="yes" />
+                  <input type="hidden" name="area" value="default" />
+                </form>
+            </li>
+
+            
+
+          </ul>
+
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- container -->
+    <div class="container-fluid">
+
+      <!-- row -->
+      <div class="row">
+         
+<div class="col-md-3 hidden-xs" id="sidebar-wrapper">
+  <div class="sidebar hidden-xs" role="navigation" aria-label="main navigation">
+  <h3><a href="../index">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Linked Reproducibility</a><ul>
+<li><a class="reference internal" href="#studygraph-document-nodes-and-link-edges">StudyGraph: Document Nodes and Link Edges</a></li>
+<li><a class="reference internal" href="#structuredpremises-premises-as-structured-data">StructuredPremises: Premises as structured data</a></li>
+<li><a class="reference internal" href="#linkedmetaanalyses">LinkedMetaAnalyses</a></li>
+<li><a class="reference internal" href="#references">References</a></li>
+</ul>
+</li>
+</ul>
+
+<div id="searchbox" role="search">
+  <h3>Quick search</h3>
+  <form class="search form-inline" action="../search" method="get">
+      <div class="input-append input-group">
+        <input type="text" class="search-query form-control" name="q" placeholder="Search...">
+        <span class="input-group-btn">
+        <input type="submit" class="btn" value="Go" />
+        </span>
+      </div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/consulting/linked-reproducibility.txt"
+            rel="nofollow"
+            target="_blank">Source RST</a></li>
+    <li><a href="https://github.com/wrdrd/docs/blob/master/docs/consulting/linked-reproducibility.rst"
+            rel="nofollow"
+            target="_blank">Source</a></li>
+    <li><a href="https://github.com/wrdrd/docs/edit/master/docs/consulting/linked-reproducibility.rst"
+            rel="nofollow"
+            target="_blank">Edit</a></li>
+     <li><a href="https://github.com/wrdrd/docs/commits/master/docs/consulting/linked-reproducibility.rst"
+             rel="nofollow"
+             target="_blank">History</a></li>
+     <li><a href="https://github.com/wrdrd/docs/blame/master/docs/consulting/linked-reproducibility.rst"
+             rel="nofollow"
+             target="_blank">Annotate</a></li>
+  </ul>
+  <h3>Source</h3>
+  <h5><a href="https://github.com/wrdrd/docs">github.com/wrdrd/docs</a>
+      / <a href="https://github.com/wrdrd/docs/tree/master"
+                rel="nofollow"
+                target="_blank"
+                font="monospace">master</a>
+  </h5>
+
+  <ul>
+    <li><pre>git clone https://github.com/wrdrd/docs</pre></li>
+    <li><pre>git clone ssh://git@github.com/wrdrd/docs</pre></li>
+    <li><pre>git clone git://github.com/wrdrd/docs</pre></li>
+  </ul><div class="widget">
+    <h3><a href="https://wrdrd.com/">wrdrd.com</a></h3>
+    <ul>
+        <li><a href="https://wrdrd.com/">wrdrd.com/</a></li>
+        <li><a href="https://wrdrd.com/docs/">wrdrd.com/docs/</a></li>
+        <li><a href="https://wrdrd.com/wiki/">wrdrd.com/wiki/</a></li>
+        <li><a href="https://github.com/wrdrd">github.com/wrdrd</a></li>
+        <li><a href="https://google.com/+Wrdrdrd">+Wrdrdrd</a></li>
+        <li><a href="https://twitter.com/wrdrd">@wrdrd</a></li>
+    </ul>
+</div>
+  </div>
+</div> 
+        
+
+        <div class="col-md-9" id="content-wrapper">
+          <div class="document" role="main">
+            <div class="documentwrapper">
+              <div class="bodywrapper">
+                <div class="body">
+                  
+  <div class="section" id="linked-reproducibility">
+<span id="index-0"></span><span id="id1"></span><h1>Linked Reproducibility<a class="headerlink" href="#linked-reproducibility" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="data-science#data-science"><span class="std std-ref">Data Science</span></a></li>
+<li><a class="reference internal" href="knowledge-engineering#knowledge-engineering"><span class="std std-ref">Knowledge Engineering</span></a> &gt; <a class="reference internal" href="knowledge-engineering#linked-data"><span class="std std-ref">Linked Data</span></a></li>
+<li><a class="reference internal" href="information-systems#information-systems"><span class="std std-ref">Information Systems</span></a></li>
+</ul>
+<div class="section" id="studygraph-document-nodes-and-link-edges">
+<h2>StudyGraph: Document Nodes and Link Edges<a class="headerlink" href="#studygraph-document-nodes-and-link-edges" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>PDFs are the de-facto standard for scientific publishing</li>
+<li>Many journals also / instead request HTML<ul>
+<li>PLoS, for example</li>
+</ul>
+</li>
+<li>Then, a &#8220;study&#8221; is a document<ul>
+<li>title &#8211; <a class="reference external" href="schema.org/name">schema.org/name</a></li>
+<li>authors &#8211; lead first (usu.)<ul>
+<li>schema.org/TODO &#8211; author, creator, contributor</li>
+</ul>
+</li>
+<li>abstract</li>
+<li>tags/labels/keywords are <strong>edges</strong> to a tag/label/keyword node<ul>
+<li>hierarchical<ul>
+<li>MESH</li>
+<li>PyPI Trove Classifiers</li>
+</ul>
+</li>
+<li>folksonomy<ul>
+<li>tags<ul>
+<li>tags often require deduplication / part of speech
+normalization / de-pluralization / etc</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Concept URIs<ul>
+<li>wikipedia, dbpedia, wikidata, etc</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>What we lack are <strong>edges</strong> between the actual studies<ul>
+<li>confirms, seemsToConfirm -&gt; confirmatoryEdge<ul>
+<li>[strength of association [&#8220;magnitude&#8221;]]</li>
+</ul>
+</li>
+<li>reproduces, seemsToReproduce -&gt; reproducibilityEdge</li>
+<li>refutes</li>
+<li>disproves</li>
+<li>TODO: see the list i brainstormed</li>
+<li>frameworks for edges:<ul>
+<li><a class="reference internal" href="knowledge-engineering#networkx"><span class="std std-ref">NetworkX</span></a></li>
+<li><a class="reference internal" href="knowledge-engineering#rdf"><span class="std std-ref">RDF</span></a><ul>
+<li><a class="reference external" href="http://patterns.dataincubator.org/book/qualified-relation.html">http://patterns.dataincubator.org/book/qualified-relation.html</a></li>
+<li><a class="reference external" href="http://patterns.dataincubator.org/book/nary-relation.html">http://patterns.dataincubator.org/book/nary-relation.html</a></li>
+</ul>
+</li>
+<li>OpenCog AtomSpace (strength of association)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>TODO:
+- pandas 3402
+-</p>
+</div>
+<div class="section" id="structuredpremises-premises-as-structured-data">
+<h2>StructuredPremises: Premises as structured data<a class="headerlink" href="#structuredpremises-premises-as-structured-data" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>And then URIs for controls / study design<ul>
+<li>see schema.org/MedicalTrialDesign<ul>
+<li>[ ] these could/should be extended to all of science</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>logical premises (sequence of propositions)</li>
+<li>i/o sequences</li>
+<li>conclusions<ul>
+<li>#TenSimpleRules for reproducibile TODO: link back to the data<ul>
+<li>this is a computation graph</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>further questions</li>
+<li>&#8220;downstream&#8221; studies / implementations<ul>
+<li>retraction management</li>
+<li>policy predicated on said conclusions</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="linkedmetaanalyses">
+<h2>LinkedMetaAnalyses<a class="headerlink" href="#linkedmetaanalyses" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>You evaluated 10, I evaluated (the same / a different) 10 studies<ul>
+<li>PRISMA</li>
+<li>evaluation of controls<ul>
+<li>&#8220;the URI says they did a Triple Blind Study, but it doesn&#8217;t sound
+like they had groups named just e.g. X, Y, and Z&#8221;<ul>
+<li>disqualified / questionable / etc</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>a MetaAnalysis type</li>
+</ul>
+</li>
+<li>When do we show?<ul>
+<li>Deadline</li>
+<li>Only if you also produce your own meta-analyses</li>
+<li>Only if we&#8217;re doing Open Access (as required by stipulations of
+federal funding)</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>TODO: &#64;westurner<ul>
+<li>reddit</li>
+<li>twitter</li>
+<li>hackernews</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div><!-- /row -->
+
+      <!-- row -->
+      <div class="row footer-relbar">
+<div id="navbar-related" class=" related navbar navbar-default" role="navigation" aria-label="related navigation">
+  <div class="navbar-inner">
+    <ul class="nav navbar-nav text-center">
+        <li><a href="../index">WRD R&amp;D Documentation</a></li>
+    </ul>
+<ul class="nav navbar-nav text-center">
+      
+        <li><a href="../py-modindex" title="Python Module Index" >modules</a></li>
+        <li><a href="../genindex" title="General Index" >index</a></li>
+        <li><a href="#">top</a></li> 
+      
+    </ul>
+  </div>
+</div>
+      </div><!-- /row -->
+
+      <!-- footer -->
+      <footer role="contentinfo">
+          &copy; <a href="../license">Copyright</a> WRD R&amp;D 2014 - 2016.
+
+      <br/>
+      <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+        <img alt="Creative Commons License"
+        style="border-width:0; padding:12px"
+        src="../_static/img/cc-by-sa-4.0-88x31.png" /></a>
+      <br />
+      <span xmlns:dct="http://purl.org/dc/terms/"
+        property="dct:title">WRD R&amp;D Documentation</span> is licensed under a 
+      <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"
+        >Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+      </footer>
+      <!-- /footer -->
+
+    </div>
+    <!-- /container -->
+
+  </body>
+</html>
