@@ -9,6 +9,9 @@ LinkedReproducibility
 
 * :ref:`Data Science`
 * :ref:`Knowledge Engineering` > :ref:`Linked Data`
+
+  * :ref:`Units` > :ref:`RDF and Units` [:ref:`QUDT`,]
+
 * :ref:`Information Systems`
 
 * ELI5: Our data is probably already aware of a cure.
