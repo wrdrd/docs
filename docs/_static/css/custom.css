@@ -2,6 +2,9 @@
     margin-bottom: 0;
 }
 
+div.navbar-header a:visited, ul.navbar-nav a:visited, div.sidebar h3 a {
+    color: #777 !important;
+}
 
 button.navbar-toggle {
     z-index: 1000;
