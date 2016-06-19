@@ -60,6 +60,13 @@ div.body a {
     margin-top: -52px; /* magic */
 }
 
+#sidebar-wrapper li {
+    /* hanging indent */
+    padding-left: 8px;
+    text-indent: -8px;
+}
+
+
 #navbar-related {
     border: 0;
     background: none;
