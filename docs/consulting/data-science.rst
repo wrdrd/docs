@@ -451,7 +451,8 @@ Linked Reproducibility
 | Twitter: https://twitter.com/hashtag/LinkedReproducibility
 | Wrdrddocs: :ref:`linkedreproducibility`
 
-This heading is now merged into a separate page: :ref:`linkedreproducibility`
+.. note::
+   This heading is now merged into a separate page: :ref:`linkedreproducibility`
 
 .. index:: Math
 .. index:: Mathematics
