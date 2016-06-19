@@ -54,6 +54,11 @@ than threaded comments).
 
       - wikipedia, dbpedia, wikidata, etc
 
+  - links to :ref:`Linked Data`
+
+    - https://schema.org/Dataset
+    - :ref:`CSVW`
+    - :ref:`StructuredPremises`
 
 - What we lack are **edges** between the actual studies
 
@@ -119,6 +124,10 @@ than threaded comments).
 TODO:
 - pandas 3402
 -
+
+
+.. index:: StructuredPremises
+.. _StructuredPremises:
 
 StructuredPremises: Premises as structured data
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
