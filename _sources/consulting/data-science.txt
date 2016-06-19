@@ -449,90 +449,9 @@ Linked Reproducibility
 `````````````````````````
 | Hashtag: ``#LinkedReproducibility``
 | Twitter: https://twitter.com/hashtag/LinkedReproducibility
+| Wrdrddocs: :ref:`linkedreproducibility`
 
-We should use annotations with typed, reified edges to link between
-various studies with comparable and incomparable analyses. (e.g.
-:ref:`OpenAnnotation` :ref:`OA` :ref:`RDF` :ref:`OWL` with more data
-than threaded comments).
-
-:ref:`linked data` + :ref:`Reproducibility` => :ref:`Linked Reproducibility`
-
-::
-
-    Reproducibility ---\___  Linked Reproducibility
-    Linked Data     ---/
-
-
-In :ref:`turtle` :ref:`rdf` syntax:
-::
-
-    :LinkedData rdf:type skos:Concept ;
-        rdfs:label "Linked Data"@en ;
-        schema:name "Linked Data"@en ;
-        owl:sameAs <https://en.wikipedia.org/wiki/Linked_data> ;
-        owl:sameAs <http://dbpedia.org/page/Linked_data> ;
-
-        owl:sameAs <http://ja.dbpedia.org/resource/Linked_data>
-        owl:sameAs <http://es.dbpedia.org/resource/Datos_enlazados> ;
-        owl:sameAs <http://fr.dbpedia.org/resource/Web_des_donn%C3%A9es> ;
-        owl:sameAs <http://nl.dbpedia.org/resource/Linked_data>
-        owl:sameAs <http://ko.dbpedia.org/resource/링크드_데이터> ;
-        owl:sameAs <http://wikidata.org/entity/Q515701> ;
-        .
-
-    :Reproducibility a skos:Concept ;
-        rdfs:label "Reproducibility"@en ;
-        schema:name "Reproducibility"@en ;
-        owl:sameAs <https://en.wikipedia.org/wiki/Reproducibility> ;
-        owl:sameAs <http://dbpedia.org/page/Reproducibility> ;
-        .
-
-    :LinkedReproducibility a skos:Concept ;
-        rdfs:label "Linked Reproducibility"@en ;
-        schema:name "Linked Reproducibility"@en ;
-        skos:related [ :LinkedData, :Reproducibility ] ;
-        .
-
-Further Objectives:
-
-* Develop best practices guidelines and
-  and/or an :ref:`RDF` schema and vocabulary ("``repro:``)
-  for linking between studies, their supporting data,
-  and their collection methods with URIs.
-
-  * developing vocabularies:
-
-    + :ref:`semantic web tools`
-    + :ref:`Git`, :ref:`GitHub Pages`
-    + [ ] :ref:`schema.org` extension vocabularies
-
-  * linked reproduciblity edges:
-
-    + ``similarTo``
-    + ``concursWith``
-    + ``discordantWith``
-    + ``intendedToReproduce``
-    + ``reproduces``
-
-  * linked reproducibility classes and properties:
-
-    * [x] schema.org/MedicalStudy, MedicalObservationalStudy, MedicalTrial
-
-      * [ ] https://github.com/twamarc/ScheMed
-
-        + http://schema.org/MedicalTrialDesign
-        + http://schema.org/DoubleBlindedTrial
-        + http://schema.org/InternationalTrial
-        + http://schema.org/MultiCenterTrial
-        + http://schema.org/OpenTrial
-        + http://schema.org/PlaceboControlledTrial
-        + http://schema.org/RandomizedTrial
-        + http://schema.org/SingleBlindedTrial
-        + http://schema.org/SingleCenterTrial
-        + http://schema.org/TripleBlindedTrial
-
-    * See: https://westurner.org/opengov/us/#personal-health-agenda
-
+This heading is now merged into a separate page: :ref:`linkedreproducibility`
 
 .. index:: Math
 .. index:: Mathematics

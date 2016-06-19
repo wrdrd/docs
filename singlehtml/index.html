@@ -971,6 +971,14 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-consulting/linkedreproducibility">LinkedReproducibility</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#studygraph-document-nodes-and-link-edges">StudyGraph: Document Nodes and Link Edges</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#structuredpremises-premises-as-structured-data">StructuredPremises: Premises as structured data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#linkedmetaanalyses">LinkedMetaAnalyses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#rdf-example">RDF Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#references">References</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="index.html#document-consulting/entrepreneurship">Entrepreneurship</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="index.html#sba">SBA</a></li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#planning">Planning</a><ul>
@@ -1926,6 +1934,7 @@
 <li class="toctree-l1"><a class="reference internal" href="index.html#document-consulting/data-science">Data Science</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html#document-consulting/units">Units</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html#document-consulting/knowledge-engineering">Knowledge Engineering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-consulting/linkedreproducibility">LinkedReproducibility</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html#document-consulting/entrepreneurship">Entrepreneurship</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html#document-consulting/personal-finance">Personal Finance</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html#document-consulting/investing">Investing</a></li>
@@ -7325,88 +7334,9 @@ I&#8217;m probably walking outside and it is hot out.</p>
 <div class="line-block">
 <div class="line">Hashtag: <code class="docutils literal"><span class="pre">#LinkedReproducibility</span></code></div>
 <div class="line">Twitter: <a class="reference external" href="https://twitter.com/hashtag/LinkedReproducibility">https://twitter.com/hashtag/LinkedReproducibility</a></div>
+<div class="line">Wrdrddocs: <a class="reference internal" href="index.html#linkedreproducibility"><span class="std std-ref">LinkedReproducibility</span></a></div>
 </div>
-<p>We should use annotations with typed, reified edges to link between
-various studies with comparable and incomparable analyses. (e.g.
-<a class="reference internal" href="index.html#openannotation"><span class="std std-ref">OpenAnnotation</span></a> <a class="reference internal" href="index.html#oa"><span class="std std-ref">OA</span></a> <a class="reference internal" href="index.html#rdf"><span class="std std-ref">RDF</span></a> <a class="reference internal" href="index.html#owl"><span class="std std-ref">OWL</span></a> with more data
-than threaded comments).</p>
-<p><a class="reference internal" href="index.html#linked-data"><span class="std std-ref">Linked Data</span></a> + <a class="reference internal" href="#reproducibility"><span class="std std-ref">Reproducibility</span></a> =&gt; <a class="reference internal" href="#linked-reproducibility"><span class="std std-ref">Linked Reproducibility</span></a></p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Reproducibility</span> <span class="o">---</span>\<span class="n">___</span>  <span class="n">Linked</span> <span class="n">Reproducibility</span>
-<span class="n">Linked</span> <span class="n">Data</span>     <span class="o">---/</span>
-</pre></div>
-</div>
-<p>In <a class="reference internal" href="index.html#turtle"><span class="std std-ref">Turtle</span></a> <a class="reference internal" href="index.html#rdf"><span class="std std-ref">RDF</span></a> syntax:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">LinkedData</span> <span class="n">rdf</span><span class="p">:</span><span class="nb">type</span> <span class="n">skos</span><span class="p">:</span><span class="n">Concept</span> <span class="p">;</span>
-    <span class="n">rdfs</span><span class="p">:</span><span class="n">label</span> <span class="s2">&quot;Linked Data&quot;</span><span class="nd">@en</span> <span class="p">;</span>
-    <span class="n">schema</span><span class="p">:</span><span class="n">name</span> <span class="s2">&quot;Linked Data&quot;</span><span class="nd">@en</span> <span class="p">;</span>
-    <span class="n">owl</span><span class="p">:</span><span class="n">sameAs</span> <span class="o">&lt;</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">en</span><span class="o">.</span><span class="n">wikipedia</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">wiki</span><span class="o">/</span><span class="n">Linked_data</span><span class="o">&gt;</span> <span class="p">;</span>
-    <span class="n">owl</span><span class="p">:</span><span class="n">sameAs</span> <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">dbpedia</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">page</span><span class="o">/</span><span class="n">Linked_data</span><span class="o">&gt;</span> <span class="p">;</span>
-
-    <span class="n">owl</span><span class="p">:</span><span class="n">sameAs</span> <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">ja</span><span class="o">.</span><span class="n">dbpedia</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">resource</span><span class="o">/</span><span class="n">Linked_data</span><span class="o">&gt;</span>
-    <span class="n">owl</span><span class="p">:</span><span class="n">sameAs</span> <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">es</span><span class="o">.</span><span class="n">dbpedia</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">resource</span><span class="o">/</span><span class="n">Datos_enlazados</span><span class="o">&gt;</span> <span class="p">;</span>
-    <span class="n">owl</span><span class="p">:</span><span class="n">sameAs</span> <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">fr</span><span class="o">.</span><span class="n">dbpedia</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">resource</span><span class="o">/</span><span class="n">Web_des_donn</span><span class="o">%</span><span class="n">C3</span><span class="o">%</span><span class="n">A9es</span><span class="o">&gt;</span> <span class="p">;</span>
-    <span class="n">owl</span><span class="p">:</span><span class="n">sameAs</span> <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">nl</span><span class="o">.</span><span class="n">dbpedia</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">resource</span><span class="o">/</span><span class="n">Linked_data</span><span class="o">&gt;</span>
-    <span class="n">owl</span><span class="p">:</span><span class="n">sameAs</span> <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">ko</span><span class="o">.</span><span class="n">dbpedia</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">resource</span><span class="o">/</span><span class="n">링크드_데이터</span><span class="o">&gt;</span> <span class="p">;</span>
-    <span class="n">owl</span><span class="p">:</span><span class="n">sameAs</span> <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">wikidata</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">entity</span><span class="o">/</span><span class="n">Q515701</span><span class="o">&gt;</span> <span class="p">;</span>
-    <span class="o">.</span>
-
-<span class="p">:</span><span class="n">Reproducibility</span> <span class="n">a</span> <span class="n">skos</span><span class="p">:</span><span class="n">Concept</span> <span class="p">;</span>
-    <span class="n">rdfs</span><span class="p">:</span><span class="n">label</span> <span class="s2">&quot;Reproducibility&quot;</span><span class="nd">@en</span> <span class="p">;</span>
-    <span class="n">schema</span><span class="p">:</span><span class="n">name</span> <span class="s2">&quot;Reproducibility&quot;</span><span class="nd">@en</span> <span class="p">;</span>
-    <span class="n">owl</span><span class="p">:</span><span class="n">sameAs</span> <span class="o">&lt;</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">en</span><span class="o">.</span><span class="n">wikipedia</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">wiki</span><span class="o">/</span><span class="n">Reproducibility</span><span class="o">&gt;</span> <span class="p">;</span>
-    <span class="n">owl</span><span class="p">:</span><span class="n">sameAs</span> <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">dbpedia</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">page</span><span class="o">/</span><span class="n">Reproducibility</span><span class="o">&gt;</span> <span class="p">;</span>
-    <span class="o">.</span>
-
-<span class="p">:</span><span class="n">LinkedReproducibility</span> <span class="n">a</span> <span class="n">skos</span><span class="p">:</span><span class="n">Concept</span> <span class="p">;</span>
-    <span class="n">rdfs</span><span class="p">:</span><span class="n">label</span> <span class="s2">&quot;Linked Reproducibility&quot;</span><span class="nd">@en</span> <span class="p">;</span>
-    <span class="n">schema</span><span class="p">:</span><span class="n">name</span> <span class="s2">&quot;Linked Reproducibility&quot;</span><span class="nd">@en</span> <span class="p">;</span>
-    <span class="n">skos</span><span class="p">:</span><span class="n">related</span> <span class="p">[</span> <span class="p">:</span><span class="n">LinkedData</span><span class="p">,</span> <span class="p">:</span><span class="n">Reproducibility</span> <span class="p">]</span> <span class="p">;</span>
-    <span class="o">.</span>
-</pre></div>
-</div>
-<p>Further Objectives:</p>
-<ul class="simple">
-<li>Develop best practices guidelines and
-and/or an <a class="reference internal" href="index.html#rdf"><span class="std std-ref">RDF</span></a> schema and vocabulary (&#8220;<code class="docutils literal"><span class="pre">repro:</span></code>)
-for linking between studies, their supporting data,
-and their collection methods with URIs.<ul>
-<li>developing vocabularies:<ul>
-<li><a class="reference internal" href="index.html#semantic-web-tools"><span class="std std-ref">Semantic Web Tools</span></a></li>
-<li><a class="reference internal" href="index.html#git"><span class="std std-ref">Git</span></a>, <a class="reference internal" href="index.html#github-pages"><span class="std std-ref">GitHub Pages</span></a></li>
-<li>[ ] <a class="reference internal" href="index.html#schema-org"><span class="std std-ref">Schema.org</span></a> extension vocabularies</li>
-</ul>
-</li>
-<li>linked reproduciblity edges:<ul>
-<li><code class="docutils literal"><span class="pre">similarTo</span></code></li>
-<li><code class="docutils literal"><span class="pre">concursWith</span></code></li>
-<li><code class="docutils literal"><span class="pre">discordantWith</span></code></li>
-<li><code class="docutils literal"><span class="pre">intendedToReproduce</span></code></li>
-<li><code class="docutils literal"><span class="pre">reproduces</span></code></li>
-</ul>
-</li>
-<li>linked reproducibility classes and properties:<ul>
-<li>[x] schema.org/MedicalStudy, MedicalObservationalStudy, MedicalTrial<ul>
-<li>[ ] <a class="reference external" href="https://github.com/twamarc/ScheMed">https://github.com/twamarc/ScheMed</a><ul>
-<li><a class="reference external" href="http://schema.org/MedicalTrialDesign">http://schema.org/MedicalTrialDesign</a></li>
-<li><a class="reference external" href="http://schema.org/DoubleBlindedTrial">http://schema.org/DoubleBlindedTrial</a></li>
-<li><a class="reference external" href="http://schema.org/InternationalTrial">http://schema.org/InternationalTrial</a></li>
-<li><a class="reference external" href="http://schema.org/MultiCenterTrial">http://schema.org/MultiCenterTrial</a></li>
-<li><a class="reference external" href="http://schema.org/OpenTrial">http://schema.org/OpenTrial</a></li>
-<li><a class="reference external" href="http://schema.org/PlaceboControlledTrial">http://schema.org/PlaceboControlledTrial</a></li>
-<li><a class="reference external" href="http://schema.org/RandomizedTrial">http://schema.org/RandomizedTrial</a></li>
-<li><a class="reference external" href="http://schema.org/SingleBlindedTrial">http://schema.org/SingleBlindedTrial</a></li>
-<li><a class="reference external" href="http://schema.org/SingleCenterTrial">http://schema.org/SingleCenterTrial</a></li>
-<li><a class="reference external" href="http://schema.org/TripleBlindedTrial">http://schema.org/TripleBlindedTrial</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>See: <a class="reference external" href="https://westurner.org/opengov/us/#personal-health-agenda">https://westurner.org/opengov/us/#personal-health-agenda</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<p>This heading is now merged into a separate page: <a class="reference internal" href="index.html#linkedreproducibility"><span class="std std-ref">LinkedReproducibility</span></a></p>
 <span class="target" id="index-11"></span></div>
 </div>
 </div>
@@ -13867,6 +13797,306 @@ the nodes and edges of the <em>Linked Open Data Cloud</em></p>
 <li><a class="reference external" href="http://lod-cloud.net/versions/2014-08-30/lod-cloud.svg">http://lod-cloud.net/versions/2014-08-30/lod-cloud.svg</a></li>
 </ul>
 </div>
+</div>
+</div>
+<span id="document-consulting/linkedreproducibility"></span><div class="section" id="linkedreproducibility">
+<span id="index-0"></span><span id="id1"></span><h2>LinkedReproducibility<a class="headerlink" href="#linkedreproducibility" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">Hashtag: <code class="docutils literal"><span class="pre">#LinkedReproducibility</span></code></div>
+<div class="line">Twitter: <a class="reference external" href="https://twitter.com/hashtag/LinkedReproducibility">https://twitter.com/hashtag/LinkedReproducibility</a></div>
+</div>
+<ul class="simple">
+<li><a class="reference internal" href="index.html#data-science"><span class="std std-ref">Data Science</span></a></li>
+<li><a class="reference internal" href="index.html#knowledge-engineering"><span class="std std-ref">Knowledge Engineering</span></a> &gt; <a class="reference internal" href="index.html#linked-data"><span class="std std-ref">Linked Data</span></a></li>
+<li><a class="reference internal" href="index.html#information-systems"><span class="std std-ref">Information Systems</span></a></li>
+<li>ELI5: Our data is probably already aware of a cure.<ul>
+<li>Cure: Win/Win solution</li>
+</ul>
+</li>
+</ul>
+<div class="section" id="studygraph-document-nodes-and-link-edges">
+<h3>StudyGraph: Document Nodes and Link Edges<a class="headerlink" href="#studygraph-document-nodes-and-link-edges" title="Permalink to this headline">¶</a></h3>
+<p>We should use annotations with typed, reified edges to link between
+various studies with comparable and incomparable analyses. (e.g.
+<a class="reference internal" href="index.html#openannotation"><span class="std std-ref">OpenAnnotation</span></a> <a class="reference internal" href="index.html#oa"><span class="std std-ref">OA</span></a> <a class="reference internal" href="index.html#rdf"><span class="std std-ref">RDF</span></a> <a class="reference internal" href="index.html#owl"><span class="std std-ref">OWL</span></a> with more data
+than threaded comments).</p>
+<ul class="simple">
+<li>PDFs are the de-facto standard for scientific publishing</li>
+<li>Many journals also / instead request HTML<ul>
+<li>PLoS, for example</li>
+</ul>
+</li>
+<li>Then, a &#8220;study&#8221; is a document<ul>
+<li>title &#8211; <a class="reference external" href="schema.org/name">schema.org/name</a></li>
+<li>authors &#8211; lead first (usu.)<ul>
+<li>schema.org/TODO &#8211; author, creator, contributor</li>
+</ul>
+</li>
+<li>abstract</li>
+<li>tags/labels/keywords are <strong>edges</strong> to a tag/label/keyword node<ul>
+<li>hierarchical<ul>
+<li>MESH</li>
+<li>PyPI Trove Classifiers</li>
+</ul>
+</li>
+<li>folksonomy<ul>
+<li>tags<ul>
+<li>tags often require deduplication / part of speech
+normalization / de-pluralization / etc</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Concept URIs<ul>
+<li>wikipedia, dbpedia, wikidata, etc</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>links to <a class="reference internal" href="index.html#linked-data"><span class="std std-ref">Linked Data</span></a><ul>
+<li><a class="reference external" href="https://schema.org/Dataset">https://schema.org/Dataset</a></li>
+<li><a class="reference internal" href="index.html#csvw"><span class="std std-ref">CSVW</span></a></li>
+<li><a class="reference internal" href="#structuredpremises"><span class="std std-ref">StructuredPremises: Premises as structured data</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>What we lack are <strong>edges</strong> between the actual studies<ul>
+<li>confirms, seemsToConfirm -&gt; confirmatoryEdge<ul>
+<li>[strength of association [&#8220;magnitude&#8221;]]</li>
+</ul>
+</li>
+<li>reproduces, seemsToReproduce -&gt; reproducibilityEdge</li>
+<li>refutes</li>
+<li>disproves</li>
+<li>TODO: see the list i brainstormed</li>
+<li>frameworks for edges:<ul>
+<li><a class="reference internal" href="index.html#networkx"><span class="std std-ref">NetworkX</span></a></li>
+<li><a class="reference internal" href="index.html#rdf"><span class="std std-ref">RDF</span></a><ul>
+<li><a class="reference external" href="http://patterns.dataincubator.org/book/qualified-relation.html">http://patterns.dataincubator.org/book/qualified-relation.html</a></li>
+<li><a class="reference external" href="http://patterns.dataincubator.org/book/nary-relation.html">http://patterns.dataincubator.org/book/nary-relation.html</a></li>
+</ul>
+</li>
+<li>OpenCog AtomSpace (strength of association)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="simple">
+<li>Develop best practices guidelines and
+and/or an <a class="reference internal" href="index.html#rdf"><span class="std std-ref">RDF</span></a> schema and vocabulary (&#8220;<code class="docutils literal"><span class="pre">repro:</span></code>)
+for linking between studies, their supporting data,
+and their collection methods with URIs.<ul>
+<li>developing vocabularies:<ul>
+<li><a class="reference internal" href="index.html#semantic-web-tools"><span class="std std-ref">Semantic Web Tools</span></a></li>
+<li><a class="reference internal" href="index.html#git"><span class="std std-ref">Git</span></a>, <a class="reference internal" href="index.html#github-pages"><span class="std std-ref">GitHub Pages</span></a></li>
+<li>[ ] <a class="reference internal" href="index.html#schema-org"><span class="std std-ref">Schema.org</span></a> extension vocabularies</li>
+</ul>
+</li>
+<li>linked reproduciblity edges:<ul>
+<li><code class="docutils literal"><span class="pre">similarTo</span></code></li>
+<li><code class="docutils literal"><span class="pre">concursWith</span></code></li>
+<li><code class="docutils literal"><span class="pre">discordantWith</span></code></li>
+<li><code class="docutils literal"><span class="pre">intendedToReproduce</span></code></li>
+<li><code class="docutils literal"><span class="pre">reproduces</span></code></li>
+</ul>
+</li>
+<li>linked reproducibility classes and properties:<ul>
+<li>[x] schema.org/MedicalStudy, MedicalObservationalStudy, MedicalTrial<ul>
+<li>[ ] <a class="reference external" href="https://github.com/twamarc/ScheMed">https://github.com/twamarc/ScheMed</a><ul>
+<li><a class="reference external" href="http://schema.org/MedicalTrialDesign">http://schema.org/MedicalTrialDesign</a></li>
+<li><a class="reference external" href="http://schema.org/DoubleBlindedTrial">http://schema.org/DoubleBlindedTrial</a></li>
+<li><a class="reference external" href="http://schema.org/InternationalTrial">http://schema.org/InternationalTrial</a></li>
+<li><a class="reference external" href="http://schema.org/MultiCenterTrial">http://schema.org/MultiCenterTrial</a></li>
+<li><a class="reference external" href="http://schema.org/OpenTrial">http://schema.org/OpenTrial</a></li>
+<li><a class="reference external" href="http://schema.org/PlaceboControlledTrial">http://schema.org/PlaceboControlledTrial</a></li>
+<li><a class="reference external" href="http://schema.org/RandomizedTrial">http://schema.org/RandomizedTrial</a></li>
+<li><a class="reference external" href="http://schema.org/SingleBlindedTrial">http://schema.org/SingleBlindedTrial</a></li>
+<li><a class="reference external" href="http://schema.org/SingleCenterTrial">http://schema.org/SingleCenterTrial</a></li>
+<li><a class="reference external" href="http://schema.org/TripleBlindedTrial">http://schema.org/TripleBlindedTrial</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>See: <a class="reference external" href="https://westurner.org/opengov/us/#personal-health-agenda">https://westurner.org/opengov/us/#personal-health-agenda</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>TODO:
+- pandas 3402
+-</p>
+</div>
+<div class="section" id="structuredpremises-premises-as-structured-data">
+<span id="structuredpremises"></span><span id="index-1"></span><h3>StructuredPremises: Premises as structured data<a class="headerlink" href="#structuredpremises-premises-as-structured-data" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">And then URIs for controls / study design</p>
+<ul class="simple">
+<li>see schema.org/MedicalTrialDesign<ul>
+<li>[ ] these could/should be extended to all of science</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p class="first">logical premises (sequence of propositions)</p>
+</li>
+<li><p class="first">i/o sequences</p>
+<ul class="simple">
+<li><a class="reference internal" href="index.html#nbformat"><span class="std std-ref">nbformat</span></a> (IPython / Jupyter notebook format)<ul>
+<li>insufficient because we need stable premise permalinks
+(across versioned publishing URIs)<ul>
+<li><code class="docutils literal"><span class="pre">#premise-1</span></code></li>
+<li><code class="docutils literal"><span class="pre">#premise-abc398f</span></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p class="first">conclusions (derivations)</p>
+<ul class="simple">
+<li>this is a computation graph</li>
+<li>it should have links (edges) to the datasets<ul>
+<li><a class="reference external" href="https://schema.org/Dataset">https://schema.org/Dataset</a></li>
+<li>&#8220;ENH: Linked Datasets (RDF)&#8221;
+<a class="reference external" href="https://github.com/pydata/pandas/issues/3402">https://github.com/pydata/pandas/issues/3402</a></li>
+</ul>
+</li>
+<li>figures should have links (edges) to the datasets<ul>
+<li>permalinks to premises</li>
+</ul>
+</li>
+</ul>
+<ul class="simple">
+<li>#TenSimpleRules for Reproducibile Computational Research
+| <a class="reference external" href="http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1003285">http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1003285</a>
+| <a class="reference external" href="https://wrdrd.com/docs/consulting/data-science#tensimplerules-for-reproducible-computational-research">https://wrdrd.com/docs/consulting/data-science#tensimplerules-for-reproducible-computational-research</a></li>
+</ul>
+</li>
+<li><p class="first">further questions</p>
+</li>
+<li><p class="first">&#8220;downstream&#8221; studies / implementations</p>
+<ul class="simple">
+<li>retraction management</li>
+<li>decisions / policy predicated on said conclusions</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="linkedmetaanalyses">
+<h3>LinkedMetaAnalyses<a class="headerlink" href="#linkedmetaanalyses" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">You evaluated 10, I evaluated (the same / a different) 10 studies</p>
+<ul>
+<li><p class="first">PRISMA</p>
+<ul>
+<li><div class="first line-block">
+<div class="line">Homepage: <a class="reference external" href="http://www.prisma-statement.org/">http://www.prisma-statement.org/</a></div>
+</div>
+</li>
+<li><p class="first"><a class="reference external" href="http://www.prisma-statement.org/PRISMAStatement/">http://www.prisma-statement.org/PRISMAStatement/</a></p>
+</li>
+<li><p class="first">Checklist: <a class="reference external" href="http://www.prisma-statement.org/documents/PRISMA%202009%20checklist.pdf">http://www.prisma-statement.org/documents/PRISMA%202009%20checklist.pdf</a></p>
+</li>
+<li><p class="first">Flow Diagram: <a class="reference external" href="http://www.prisma-statement.org/documents/PRISMA%202009%20flow%20diagram.pdf">http://www.prisma-statement.org/documents/PRISMA%202009%20flow%20diagram.pdf</a></p>
+</li>
+</ul>
+</li>
+<li><p class="first">evaluation of controls</p>
+<ul class="simple">
+<li>&#8220;the URI says they did a Triple Blind Study, but it doesn&#8217;t sound
+like they had groups named just e.g. X, Y, and Z&#8221;<ul>
+<li>disqualified / questionable / etc</li>
+<li>schema.org/MedicalTrial -&gt; schema.org/ScientificTrial</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p class="first">C = Class (RDFS)</p>
+</li>
+<li><p class="first">P = Property (RDFS)</p>
+</li>
+<li><p class="first"><a class="reference internal" href="index.html#schemaorg"><span class="std std-ref">schema.org/</span></a></p>
+<ul class="simple">
+<li>[ ] C: MetaAnalysis<ul>
+<li>[ ] C: CriteriaBase type<ul>
+<li>[ ] C: Criterion</li>
+</ul>
+</li>
+<li>[ ] C: ScientificStudy<ul>
+<li>[x] C: MedicalStudy<ul>
+<li>[ ] C: MedicalObservationalStudy &lt;- ScientificObservationalStudy</li>
+<li>[ ] C: MedicalTrial &lt;- ScientificTrial</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>[x] C: Dataset</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p class="first">When do we show?</p>
+<ul class="simple">
+<li>Deadline</li>
+<li>Only if you also produce your own meta-analyses</li>
+<li>Only if we&#8217;re doing Open Access (as required by stipulations of
+federal funding)</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="rdf-example">
+<h3>RDF Example<a class="headerlink" href="#rdf-example" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="index.html#linked-data"><span class="std std-ref">Linked Data</span></a> + <a class="reference internal" href="index.html#reproducibility"><span class="std std-ref">Reproducibility</span></a> =&gt; <a class="reference internal" href="index.html#linked-reproducibility"><span class="std std-ref">Linked Reproducibility</span></a></p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Reproducibility</span> <span class="o">---</span>\<span class="n">___</span>  <span class="n">Linked</span> <span class="n">Reproducibility</span>
+<span class="n">Linked</span> <span class="n">Data</span>     <span class="o">---/</span>
+</pre></div>
+</div>
+<p>In <a class="reference internal" href="index.html#turtle"><span class="std std-ref">Turtle</span></a> <a class="reference internal" href="index.html#rdf"><span class="std std-ref">RDF</span></a> syntax:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">LinkedData</span> <span class="n">rdf</span><span class="p">:</span><span class="nb">type</span> <span class="n">skos</span><span class="p">:</span><span class="n">Concept</span> <span class="p">;</span>
+    <span class="n">rdfs</span><span class="p">:</span><span class="n">label</span> <span class="s2">&quot;Linked Data&quot;</span><span class="nd">@en</span> <span class="p">;</span>
+    <span class="n">schema</span><span class="p">:</span><span class="n">name</span> <span class="s2">&quot;Linked Data&quot;</span><span class="nd">@en</span> <span class="p">;</span>
+    <span class="n">owl</span><span class="p">:</span><span class="n">sameAs</span> <span class="o">&lt;</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">en</span><span class="o">.</span><span class="n">wikipedia</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">wiki</span><span class="o">/</span><span class="n">Linked_data</span><span class="o">&gt;</span> <span class="p">;</span>
+    <span class="n">owl</span><span class="p">:</span><span class="n">sameAs</span> <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">dbpedia</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">page</span><span class="o">/</span><span class="n">Linked_data</span><span class="o">&gt;</span> <span class="p">;</span>
+
+    <span class="n">owl</span><span class="p">:</span><span class="n">sameAs</span> <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">ja</span><span class="o">.</span><span class="n">dbpedia</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">resource</span><span class="o">/</span><span class="n">Linked_data</span><span class="o">&gt;</span>
+    <span class="n">owl</span><span class="p">:</span><span class="n">sameAs</span> <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">es</span><span class="o">.</span><span class="n">dbpedia</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">resource</span><span class="o">/</span><span class="n">Datos_enlazados</span><span class="o">&gt;</span> <span class="p">;</span>
+    <span class="n">owl</span><span class="p">:</span><span class="n">sameAs</span> <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">fr</span><span class="o">.</span><span class="n">dbpedia</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">resource</span><span class="o">/</span><span class="n">Web_des_donn</span><span class="o">%</span><span class="n">C3</span><span class="o">%</span><span class="n">A9es</span><span class="o">&gt;</span> <span class="p">;</span>
+    <span class="n">owl</span><span class="p">:</span><span class="n">sameAs</span> <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">nl</span><span class="o">.</span><span class="n">dbpedia</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">resource</span><span class="o">/</span><span class="n">Linked_data</span><span class="o">&gt;</span>
+    <span class="n">owl</span><span class="p">:</span><span class="n">sameAs</span> <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">ko</span><span class="o">.</span><span class="n">dbpedia</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">resource</span><span class="o">/</span><span class="n">링크드_데이터</span><span class="o">&gt;</span> <span class="p">;</span>
+    <span class="n">owl</span><span class="p">:</span><span class="n">sameAs</span> <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">wikidata</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">entity</span><span class="o">/</span><span class="n">Q515701</span><span class="o">&gt;</span> <span class="p">;</span>
+    <span class="o">.</span>
+
+<span class="p">:</span><span class="n">Reproducibility</span> <span class="n">a</span> <span class="n">skos</span><span class="p">:</span><span class="n">Concept</span> <span class="p">;</span>
+    <span class="n">rdfs</span><span class="p">:</span><span class="n">label</span> <span class="s2">&quot;Reproducibility&quot;</span><span class="nd">@en</span> <span class="p">;</span>
+    <span class="n">schema</span><span class="p">:</span><span class="n">name</span> <span class="s2">&quot;Reproducibility&quot;</span><span class="nd">@en</span> <span class="p">;</span>
+    <span class="n">owl</span><span class="p">:</span><span class="n">sameAs</span> <span class="o">&lt;</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">en</span><span class="o">.</span><span class="n">wikipedia</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">wiki</span><span class="o">/</span><span class="n">Reproducibility</span><span class="o">&gt;</span> <span class="p">;</span>
+    <span class="n">owl</span><span class="p">:</span><span class="n">sameAs</span> <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">dbpedia</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">page</span><span class="o">/</span><span class="n">Reproducibility</span><span class="o">&gt;</span> <span class="p">;</span>
+    <span class="o">.</span>
+
+<span class="p">:</span><span class="n">LinkedReproducibility</span> <span class="n">a</span> <span class="n">skos</span><span class="p">:</span><span class="n">Concept</span> <span class="p">;</span>
+    <span class="n">rdfs</span><span class="p">:</span><span class="n">label</span> <span class="s2">&quot;Linked Reproducibility&quot;</span><span class="nd">@en</span> <span class="p">;</span>
+    <span class="n">schema</span><span class="p">:</span><span class="n">name</span> <span class="s2">&quot;Linked Reproducibility&quot;</span><span class="nd">@en</span> <span class="p">;</span>
+    <span class="n">skos</span><span class="p">:</span><span class="n">related</span> <span class="p">[</span> <span class="p">:</span><span class="n">LinkedData</span><span class="p">,</span> <span class="p">:</span><span class="n">Reproducibility</span> <span class="p">]</span> <span class="p">;</span>
+    <span class="o">.</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="references">
+<h3>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>TODO: &#64;westurner<ul>
+<li>reddit</li>
+<li>twitter</li>
+<li>hackernews</li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 <span id="document-consulting/entrepreneurship"></span><div class="section" id="entrepreneurship">

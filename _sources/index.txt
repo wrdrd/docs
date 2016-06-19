@@ -22,6 +22,7 @@ WRD R&D Documentation
    consulting/data-science
    consulting/units
    consulting/knowledge-engineering
+   consulting/linkedreproducibility
    consulting/entrepreneurship
    consulting/personal-finance
    consulting/investing
