@@ -16,6 +16,15 @@ LinkedReproducibility
   * Cure: Win/Win solution
 
 
+.. note:: This page (``linkedreproducibility.rst``) is licensed with
+   `CC0 1.0 <https://creativecommons.org/publicdomain/zero/1.0/>`__
+   (Public Domain).
+
+   Please do implement these ideas and specifications.
+
+   -- `@westurner <https://twitter.com/westurner>`__
+
+
 StudyGraph: Document Nodes and Link Edges
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 We should use annotations with typed, reified edges to link between
