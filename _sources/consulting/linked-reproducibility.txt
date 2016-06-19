@@ -11,6 +11,10 @@ LinkedReproducibility
 * :ref:`Knowledge Engineering` > :ref:`Linked Data`
 * :ref:`Information Systems`
 
+* ELI5: Our data is probably already aware of a cure.
+
+  * Cure: Win/Win solution
+
 
 StudyGraph: Document Nodes and Link Edges
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
