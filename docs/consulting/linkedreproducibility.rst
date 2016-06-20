@@ -302,23 +302,23 @@ A classic data table with 1 metadata header row (column label):
    :class: table-striped table-responsive
 
    * - **column label**
-     - date
      - sample
+     - date
      - width
      - height
    * - 
-     - 2016-06-19T06:28:49-0500
      - 1
+     - 2016-06-19T06:28:49-0500
      - 20.0
      - 30.0
    * - 
-     - 2016-06-19T06:29:22-0500
      - 2
+     - 2016-06-19T06:29:22-0500
      - 40.0
      - 50.0
    * - 
-     - 2016-06-19T06:29:48-0500
      - 3
+     - 2016-06-19T06:29:48-0500
      - 60.0
      - 70.0
 
