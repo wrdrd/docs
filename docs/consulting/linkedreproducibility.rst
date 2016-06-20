@@ -323,7 +323,7 @@ A classic data table with 1 metadata header row (column label):
      - 70.0
 
 A data table with 7 metadata header rows (column label, property URI path,
-DataType, unit, accuracy, precision, significant figures)
+DataType, unit, accuracy, precision, significant figures):
 
 .. list-table:: Table with 7 metadata header rows
    :header-rows: 7
