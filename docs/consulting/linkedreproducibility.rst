@@ -200,7 +200,8 @@ A classic data table / dataframe (~:ref:`CSV` with one header row):
 .. list-table:: Standard CSV
    :header-rows: 1
 
-   * - date
+   * - **column label**
+     - date
      - sample
      - width
      - height
