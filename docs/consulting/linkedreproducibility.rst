@@ -298,6 +298,7 @@ A classic data table with 1 metadata header row (column label):
 
 .. list-table:: Table with 1 metadata header row
    :header-rows: 1
+   :stub-columns: 1
    :class: table-striped table-responsive
 
    * - **column label**
@@ -326,6 +327,7 @@ DataType, unit, accuracy, precision, significant figures)
 
 .. list-table:: Table with 6 metadata header rows
    :header-rows: 7
+   :stub-columns: 1
    :class: table-striped table-responsive
 
    * - **column label**
