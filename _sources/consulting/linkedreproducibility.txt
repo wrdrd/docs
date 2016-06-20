@@ -195,12 +195,14 @@ StructuredPremises: Premises as structured data
 CSV, CSVW, and metadata rows
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-A classic data table / dataframe (~:ref:`CSV` with one header row):
+A classic data table / dataframe (~ :ref:`CSV` with one header row):
 
 .. list-table:: Standard CSV
    :header-rows: 1
+   :class: table-striped table-responsive
 
-   * - date
+   * - **column label**
+     - date
      - sample
      - width
      - height
@@ -220,11 +222,12 @@ A classic data table / dataframe (~:ref:`CSV` with one header row):
      - 60.0
      - 70.0
 
-An :ref:`CSV` data table / dataframe (~:ref:`CSV` with 6 header rows)
+An :ref:`CSV` data table / dataframe (~ :ref:`CSV` with 6 header rows)
 which could also be expressed with :ref:`CSVW`:
 
 .. list-table:: CSV with columnspec ("colspec") metadata rows
    :header-rows: 6
+   :class: table-striped table-responsive
 
    * - **column label**
      - sample
@@ -236,7 +239,7 @@ which could also be expressed with :ref:`CSVW`:
      - http://schema.org/dateCreated
      - [http://schema.org/height , http://schema.org/value]
      - [http://schema.org/width , http://schema.org/value]
-   * - **schema.org/DataType**
+   * - `<http://schema.org/DataType>`__
      - http://schema.org/Integer
      - http://schema.org/Date
      - http://schema.org/Float
@@ -254,8 +257,8 @@ which could also be expressed with :ref:`CSVW`:
    * - **significant figures**
      - .
      - .
-     - *.1
-     - *.1
+     - \*.1
+     - \*.1
    * - .
      - 2016-06-19T06:28:49-0500
      - 1

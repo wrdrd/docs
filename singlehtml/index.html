@@ -14005,11 +14005,49 @@ and their collection methods with URIs.<ul>
 </div>
 <div class="section" id="csv-csvw-and-metadata-rows">
 <span id="index-2"></span><h3>CSV, CSVW, and metadata rows<a class="headerlink" href="#csv-csvw-and-metadata-rows" title="Permalink to this headline">¶</a></h3>
-<p>A classic data table / dataframe (~:ref:<cite>CSV</cite> with one header row):</p>
-<p>An <a class="reference internal" href="index.html#csv"><span class="std std-ref">CSV</span></a> data table / dataframe (~:ref:<cite>CSV</cite> with 6 header rows)
+<p>A classic data table / dataframe (~ <a class="reference internal" href="index.html#csv"><span class="std std-ref">CSV</span></a> with one header row):</p>
+<table border="1" class="table-striped table-responsive docutils" id="id2">
+<caption><span class="caption-text">Standard CSV</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><strong>column label</strong></th>
+<th class="head">date</th>
+<th class="head">sample</th>
+<th class="head">width</th>
+<th class="head">height</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>.</td>
+<td>2016-06-19T06:28:49-0500</td>
+<td>1</td>
+<td>20.0</td>
+<td>30.0</td>
+</tr>
+<tr class="row-odd"><td>.</td>
+<td>2016-06-19T06:29:22-0500</td>
+<td>2</td>
+<td>40.0</td>
+<td>50.0</td>
+</tr>
+<tr class="row-even"><td>.</td>
+<td>2016-06-19T06:29:48-0500</td>
+<td>3</td>
+<td>60.0</td>
+<td>70.0</td>
+</tr>
+</tbody>
+</table>
+<p>An <a class="reference internal" href="index.html#csv"><span class="std std-ref">CSV</span></a> data table / dataframe (~ <a class="reference internal" href="index.html#csv"><span class="std std-ref">CSV</span></a> with 6 header rows)
 which could also be expressed with <a class="reference internal" href="index.html#csvw"><span class="std std-ref">CSVW</span></a>:</p>
-<table border="1" class="docutils" id="id6">
-<caption><span class="caption-text">CSV with columnspec (&#8220;colspec&#8221;) metadata rows</span><a class="headerlink" href="#id6" title="Permalink to this table">¶</a></caption>
+<table border="1" class="table-striped table-responsive docutils" id="id3">
+<caption><span class="caption-text">CSV with columnspec (&#8220;colspec&#8221;) metadata rows</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="20%" />
 <col width="20%" />
@@ -14030,7 +14068,7 @@ which could also be expressed with <a class="reference internal" href="index.htm
 <th class="head">[<a class="reference external" href="http://schema.org/height">http://schema.org/height</a> , <a class="reference external" href="http://schema.org/value">http://schema.org/value</a>]</th>
 <th class="head">[<a class="reference external" href="http://schema.org/width">http://schema.org/width</a> , <a class="reference external" href="http://schema.org/value">http://schema.org/value</a>]</th>
 </tr>
-<tr class="row-odd"><th class="head"><strong>schema.org/DataType</strong></th>
+<tr class="row-odd"><th class="head"><a class="reference external" href="http://schema.org/DataType">http://schema.org/DataType</a></th>
 <th class="head"><a class="reference external" href="http://schema.org/Integer">http://schema.org/Integer</a></th>
 <th class="head"><a class="reference external" href="http://schema.org/Date">http://schema.org/Date</a></th>
 <th class="head"><a class="reference external" href="http://schema.org/Float">http://schema.org/Float</a></th>
@@ -14051,8 +14089,8 @@ which could also be expressed with <a class="reference internal" href="index.htm
 <tr class="row-even"><th class="head"><strong>significant figures</strong></th>
 <th class="head">.</th>
 <th class="head">.</th>
-<th class="head"><a href="#id2"><span class="problematic" id="id3">*</span></a>.1</th>
-<th class="head"><a href="#id4"><span class="problematic" id="id5">*</span></a>.1</th>
+<th class="head">*.1</th>
+<th class="head">*.1</th>
 </tr>
 </thead>
 <tbody valign="top">

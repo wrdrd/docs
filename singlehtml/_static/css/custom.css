@@ -66,7 +66,7 @@ div.body a {
     margin-top: -52px; /* magic */
 }
 
-#sidebar-wrapper li a {
+div.sidebar:first-of-type li {
     /* hanging indent */
     padding-left: 8px;
     text-indent: -8px;
