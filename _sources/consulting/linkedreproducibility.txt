@@ -190,96 +190,6 @@ StructuredPremises: Premises as structured data
   - decisions / policy predicated on said conclusions
 
 
-.. index:: CSV, CSVW, and metadata rows
-
-CSV, CSVW, and metadata rows
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-A classic data table / dataframe (~ :ref:`CSV` with one header row):
-
-.. list-table:: Standard CSV
-   :header-rows: 1
-   :class: table-striped table-responsive
-
-   * - **column label**
-     - date
-     - sample
-     - width
-     - height
-   * - .
-     - 2016-06-19T06:28:49-0500
-     - 1
-     - 20.0
-     - 30.0
-   * - .
-     - 2016-06-19T06:29:22-0500
-     - 2
-     - 40.0
-     - 50.0
-   * - .
-     - 2016-06-19T06:29:48-0500
-     - 3
-     - 60.0
-     - 70.0
-
-An :ref:`CSV` data table / dataframe (~ :ref:`CSV` with 6 header rows)
-which could also be expressed with :ref:`CSVW`:
-
-.. list-table:: CSV with columnspec ("colspec") metadata rows
-   :header-rows: 6
-   :class: table-striped table-responsive
-
-   * - **column label**
-     - sample
-     - date
-     - width
-     - height
-   * - **property URI path**
-     - http://schema.org/name
-     - http://schema.org/dateCreated
-     - [http://schema.org/height , http://schema.org/value]
-     - [http://schema.org/width , http://schema.org/value]
-   * - `<http://schema.org/DataType>`__
-     - http://schema.org/Integer
-     - http://schema.org/Date
-     - http://schema.org/Float
-     - http://schema.org/Float
-   * - **accuracy**
-     - .
-     - .
-     - .
-     - .
-   * - **precision**
-     - .
-     - .
-     - .
-     - .
-   * - **significant figures**
-     - .
-     - .
-     - \*.1
-     - \*.1
-   * - .
-     - 2016-06-19T06:28:49-0500
-     - 1
-     - 20.0
-     - 30.0
-   * - .
-     - 2016-06-19T06:29:22-0500
-     - 2
-     - 40.0
-     - 50.0
-   * - .
-     - 2016-06-19T06:29:48-0500
-     - 3
-     - 60.0
-     - 70.0
-
-
-* https://en.wikipedia.org/wiki/Significant_figures
-* https://en.wikipedia.org/wiki/Accuracy_and_precision
-
-
 LinkedMetaAnalyses
 ~~~~~~~~~~~~~~~~~~~~
 - You evaluated 10, I evaluated (the same / a different) 10 studies
@@ -366,6 +276,121 @@ In :ref:`turtle` :ref:`rdf` syntax:
         schema:name "Linked Reproducibility"@en ;
         skos:related [ :LinkedData, :Reproducibility ] ;
         .
+
+
+.. index:: CSV, CSVW, and metadata rows
+.. _csv, csvw, and metadata rows:
+
+=============================
+CSV, CSVW, and metadata rows
+=============================
+
+* :ref:`CSV` -- Comma Separated Values
+* :ref:`CSVW` -- CSV on the Web ( :ref:`RDF`, :ref:`JSON`,
+  :ref:`JSON-LD` )
+* :ref:`RDF` - Resource Description Framework
+
+  * A two dimensional spreadsheet containing just data values
+    (e.g. :ref:`CSV`) is a projection of an RDF graph
+    which can be expressed as :ref:`CSVW`.
+
+
+A classic data table with 1 metadata header row (column label):
+
+.. list-table:: Table with 1 metadata header row
+   :header-rows: 1
+   :class: table-striped table-responsive
+
+   * - **column label**
+     - date
+     - sample
+     - width
+     - height
+   * - .
+     - 2016-06-19T06:28:49-0500
+     - 1
+     - 20.0
+     - 30.0
+   * - .
+     - 2016-06-19T06:29:22-0500
+     - 2
+     - 40.0
+     - 50.0
+   * - .
+     - 2016-06-19T06:29:48-0500
+     - 3
+     - 60.0
+     - 70.0
+
+A data table with 6 header rows (column label, property URI path,
+DataType, unit, accuracy, precision, significant figures)
+
+.. list-table:: Table with 6 metadata header rows
+   :header-rows: 7
+   :class: table-striped table-responsive
+
+   * - **column label**
+     - sample
+     - date
+     - width
+     - height
+   * - **property URI path**
+     - `schema.org/name <http://schema.org/name>`__
+     - `schema.org/DateCreated <http://schema.org/dateCreated>`__
+     - [`schema.org/height <http://schema.org/height>`__,
+        `schema.org/value <http://schema.org/value>`__]
+     - [`schema.org/width <http://schema.org/width>`__,
+        `schema.org/value <http://schema.org/value>`__]
+   * - `schema.org/DataType <http://schema.org/DataType>`__
+     - `schema.org/Integer <http://schema.org/Integer>`__
+     - `schema.org/Date <http://schema.org/Date>`__
+     - `schema.org/Float <http://schema.org/Float>`__
+     - `schema.org/Float <http://schema.org/Float>`__
+   * - Unit
+     -  
+     - 
+     - unit:Meter
+     - unit:Meter
+   * - **accuracy**
+     - 
+     -
+     -
+     -
+   * - **precision**
+     -
+     -
+     -
+     -
+   * - **significant figures**
+     -
+     -
+     - \*.1
+     - \*.1
+   * - .
+     - 1
+     - 2016-06-19T06:28:49-0500
+     - 20.0
+     - 30.0
+   * - .
+     - 2
+     - 2016-06-19T06:29:22-0500
+     - 40.0
+     - 50.0
+   * - .
+     - 3
+     - 2016-06-19T06:29:48-0500
+     - 60.0
+     - 70.0
+
+
+* https://en.wikipedia.org/wiki/Significant_figures
+* https://en.wikipedia.org/wiki/Accuracy_and_precision
+
+* :ref:`QUDT` ``unit:``
+
+  * http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Meter
+  * http://prefix.cc/unit:Meter
+
 
 
 References
