@@ -195,9 +195,14 @@ StructuredPremises: Premises as structured data
 CSV, CSVW, and metadata rows
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-A classic data table / dataframe (~ :ref:`CSV` with one header row):
+* :ref:`CSV` -- Comma Separated Values
+* :ref:`CSVW` -- CSV on the Web ( :ref:`RDF`, :ref:`JSON`,
+  :ref:`JSON-LD` )
 
-.. list-table:: Standard CSV
+
+A classic data table with 1 metadata header row (column label):
+
+.. list-table:: Table with 1 metadata header row
    :header-rows: 1
    :class: table-striped table-responsive
 
@@ -222,11 +227,11 @@ A classic data table / dataframe (~ :ref:`CSV` with one header row):
      - 60.0
      - 70.0
 
-An :ref:`CSV` data table / dataframe (~ :ref:`CSV` with 6 header rows)
-which could also be expressed with :ref:`CSVW`:
+A data table with 6 header rows (column label, property URI path,
+DataType, unit, accuracy, precision, significant figures)
 
-.. list-table:: CSV with columnspec ("colspec") metadata rows
-   :header-rows: 6
+.. list-table:: Table with 6 metadata header rows
+   :header-rows: 7
    :class: table-striped table-responsive
 
    * - **column label**
@@ -235,49 +240,61 @@ which could also be expressed with :ref:`CSVW`:
      - width
      - height
    * - **property URI path**
-     - http://schema.org/name
-     - http://schema.org/dateCreated
-     - [http://schema.org/height , http://schema.org/value]
-     - [http://schema.org/width , http://schema.org/value]
-   * - `<http://schema.org/DataType>`__
-     - http://schema.org/Integer
-     - http://schema.org/Date
-     - http://schema.org/Float
-     - http://schema.org/Float
+     - `schema.org/name <http://schema.org/name>`__
+     - `schema.org/DateCreated <http://schema.org/dateCreated>`__
+     - [`schema.org/height <http://schema.org/height>`__,
+        `schema.org/value <http://schema.org/value>`__]
+     - [`schema.org/width <http://schema.org/width>`__,
+        `schema.org/value <http://schema.org/value>`__]
+   * - `schema.org/DataType <http://schema.org/DataType>`__
+     - `schema.org/Integer <http://schema.org/Integer>`__
+     - `schema.org/Date <http://schema.org/Date>`__
+     - `schema.org/Float <http://schema.org/Float>`__
+     - `schema.org/Float <http://schema.org/Float>`__
+   * - Unit
+     -  
+     - 
+     - unit:Meter
+     - unit:Meter
    * - **accuracy**
-     - .
-     - .
-     - .
-     - .
+     - 
+     -
+     -
+     -
    * - **precision**
-     - .
-     - .
-     - .
-     - .
+     -
+     -
+     -
+     -
    * - **significant figures**
-     - .
-     - .
+     -
+     -
      - \*.1
      - \*.1
    * - .
-     - 2016-06-19T06:28:49-0500
      - 1
+     - 2016-06-19T06:28:49-0500
      - 20.0
      - 30.0
    * - .
-     - 2016-06-19T06:29:22-0500
      - 2
+     - 2016-06-19T06:29:22-0500
      - 40.0
      - 50.0
    * - .
-     - 2016-06-19T06:29:48-0500
      - 3
+     - 2016-06-19T06:29:48-0500
      - 60.0
      - 70.0
 
 
 * https://en.wikipedia.org/wiki/Significant_figures
 * https://en.wikipedia.org/wiki/Accuracy_and_precision
+
+* :ref:`QUDT` ``unit:``
+
+  * http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Meter
+  * http://prefix.cc/unit:Meter
 
 
 LinkedMetaAnalyses
