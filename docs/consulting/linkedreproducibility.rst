@@ -198,6 +198,11 @@ CSV, CSVW, and metadata rows
 * :ref:`CSV` -- Comma Separated Values
 * :ref:`CSVW` -- CSV on the Web ( :ref:`RDF`, :ref:`JSON`,
   :ref:`JSON-LD` )
+* :ref:`RDF` - Resource Description Framework
+
+  * A two dimensional spreadsheet containing just data values
+    (e.g. :ref:`CSV`) is a projection of an RDF graph
+    which can be expressed as :ref:`CSVW`.
 
 
 A classic data table with 1 metadata header row (column label):
