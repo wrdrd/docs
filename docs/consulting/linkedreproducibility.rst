@@ -306,17 +306,17 @@ A classic data table with 1 metadata header row (column label):
      - sample
      - width
      - height
-   * - .
+   * - 
      - 2016-06-19T06:28:49-0500
      - 1
      - 20.0
      - 30.0
-   * - .
+   * - 
      - 2016-06-19T06:29:22-0500
      - 2
      - 40.0
      - 50.0
-   * - .
+   * - 
      - 2016-06-19T06:29:48-0500
      - 3
      - 60.0
@@ -325,7 +325,7 @@ A classic data table with 1 metadata header row (column label):
 A data table with 7 metadata header rows (column label, property URI path,
 DataType, unit, accuracy, precision, significant figures)
 
-.. list-table:: Table with 6 metadata header rows
+.. list-table:: Table with 7 metadata header rows
    :header-rows: 7
    :stub-columns: 1
    :class: table-striped table-responsive
@@ -367,17 +367,17 @@ DataType, unit, accuracy, precision, significant figures)
      -
      - \*.1
      - \*.1
-   * - .
+   * - 
      - 1
      - 2016-06-19T06:28:49-0500
      - 20.0
      - 30.0
-   * - .
+   * - 
      - 2
      - 2016-06-19T06:29:22-0500
      - 40.0
      - 50.0
-   * - .
+   * - 
      - 3
      - 2016-06-19T06:29:48-0500
      - 60.0
