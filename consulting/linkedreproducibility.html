@@ -90,6 +90,7 @@
 <li><a class="reference internal" href="#">LinkedReproducibility</a><ul>
 <li><a class="reference internal" href="#studygraph-document-nodes-and-link-edges">StudyGraph: Document Nodes and Link Edges</a></li>
 <li><a class="reference internal" href="#structuredpremises-premises-as-structured-data">StructuredPremises: Premises as structured data</a></li>
+<li><a class="reference internal" href="#csv-csvw-and-metadata-rows">CSV, CSVW, and metadata rows</a></li>
 <li><a class="reference internal" href="#linkedmetaanalyses">LinkedMetaAnalyses</a></li>
 <li><a class="reference internal" href="#rdf-example">RDF Example</a></li>
 <li><a class="reference internal" href="#references">References</a></li>
@@ -143,6 +144,7 @@
 <li><a class="reference internal" href="#">LinkedReproducibility</a><ul>
 <li><a class="reference internal" href="#studygraph-document-nodes-and-link-edges">StudyGraph: Document Nodes and Link Edges</a></li>
 <li><a class="reference internal" href="#structuredpremises-premises-as-structured-data">StructuredPremises: Premises as structured data</a></li>
+<li><a class="reference internal" href="#csv-csvw-and-metadata-rows">CSV, CSVW, and metadata rows</a></li>
 <li><a class="reference internal" href="#linkedmetaanalyses">LinkedMetaAnalyses</a></li>
 <li><a class="reference internal" href="#rdf-example">RDF Example</a></li>
 <li><a class="reference internal" href="#references">References</a></li>
@@ -231,7 +233,10 @@
 </div>
 <ul class="simple">
 <li><a class="reference internal" href="data-science#data-science"><span class="std std-ref">Data Science</span></a></li>
-<li><a class="reference internal" href="knowledge-engineering#knowledge-engineering"><span class="std std-ref">Knowledge Engineering</span></a> &gt; <a class="reference internal" href="knowledge-engineering#linked-data"><span class="std std-ref">Linked Data</span></a></li>
+<li><a class="reference internal" href="knowledge-engineering#knowledge-engineering"><span class="std std-ref">Knowledge Engineering</span></a> &gt; <a class="reference internal" href="knowledge-engineering#linked-data"><span class="std std-ref">Linked Data</span></a><ul>
+<li><a class="reference internal" href="units#units"><span class="std std-ref">Units</span></a> &gt; <a class="reference internal" href="units#rdf-and-units"><span class="std std-ref">RDF and Units</span></a> [<a class="reference internal" href="knowledge-engineering#qudt"><span class="std std-ref">QUDT</span></a>,]</li>
+</ul>
+</li>
 <li><a class="reference internal" href="information-systems#information-systems"><span class="std std-ref">Information Systems</span></a></li>
 <li>ELI5: Our data is probably already aware of a cure.<ul>
 <li>Cure: Win/Win solution</li>
@@ -408,13 +413,94 @@ and their collection methods with URIs.<ul>
 </ul>
 </li>
 <li><p class="first">further questions</p>
-</li>
-<li><p class="first">&#8220;downstream&#8221; studies / implementations</p>
-<ul class="simple">
+<blockquote>
+<div><ul class="simple">
+<li>&#8220;downstream&#8221; studies / implementations</li>
 <li>retraction management</li>
+</ul>
+</div></blockquote>
+<ul class="simple">
 <li>decisions / policy predicated on said conclusions</li>
 </ul>
 </li>
+</ul>
+</div>
+<div class="section" id="csv-csvw-and-metadata-rows">
+<span id="index-2"></span><h2>CSV, CSVW, and metadata rows<a class="headerlink" href="#csv-csvw-and-metadata-rows" title="Permalink to this headline">¶</a></h2>
+<p>A classic data table / dataframe (~:ref:<cite>CSV</cite> with one header row):</p>
+<p>An <a class="reference internal" href="knowledge-engineering#csv"><span class="std std-ref">CSV</span></a> data table / dataframe (~:ref:<cite>CSV</cite> with 6 header rows)
+which could also be expressed with <a class="reference internal" href="knowledge-engineering#csvw"><span class="std std-ref">CSVW</span></a>:</p>
+<table border="1" class="docutils" id="id6">
+<caption><span class="caption-text">CSV with columnspec (&#8220;colspec&#8221;) metadata rows</span><a class="headerlink" href="#id6" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><strong>column label</strong></th>
+<th class="head">sample</th>
+<th class="head">date</th>
+<th class="head">width</th>
+<th class="head">height</th>
+</tr>
+<tr class="row-even"><th class="head"><strong>property URI path</strong></th>
+<th class="head"><a class="reference external" href="http://schema.org/name">http://schema.org/name</a></th>
+<th class="head"><a class="reference external" href="http://schema.org/dateCreated">http://schema.org/dateCreated</a></th>
+<th class="head">[<a class="reference external" href="http://schema.org/height">http://schema.org/height</a> , <a class="reference external" href="http://schema.org/value">http://schema.org/value</a>]</th>
+<th class="head">[<a class="reference external" href="http://schema.org/width">http://schema.org/width</a> , <a class="reference external" href="http://schema.org/value">http://schema.org/value</a>]</th>
+</tr>
+<tr class="row-odd"><th class="head"><strong>schema.org/DataType</strong></th>
+<th class="head"><a class="reference external" href="http://schema.org/Integer">http://schema.org/Integer</a></th>
+<th class="head"><a class="reference external" href="http://schema.org/Date">http://schema.org/Date</a></th>
+<th class="head"><a class="reference external" href="http://schema.org/Float">http://schema.org/Float</a></th>
+<th class="head"><a class="reference external" href="http://schema.org/Float">http://schema.org/Float</a></th>
+</tr>
+<tr class="row-even"><th class="head"><strong>accuracy</strong></th>
+<th class="head">.</th>
+<th class="head">.</th>
+<th class="head">.</th>
+<th class="head">.</th>
+</tr>
+<tr class="row-odd"><th class="head"><strong>precision</strong></th>
+<th class="head">.</th>
+<th class="head">.</th>
+<th class="head">.</th>
+<th class="head">.</th>
+</tr>
+<tr class="row-even"><th class="head"><strong>significant figures</strong></th>
+<th class="head">.</th>
+<th class="head">.</th>
+<th class="head"><a href="#id2"><span class="problematic" id="id3">*</span></a>.1</th>
+<th class="head"><a href="#id4"><span class="problematic" id="id5">*</span></a>.1</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-odd"><td>.</td>
+<td>2016-06-19T06:28:49-0500</td>
+<td>1</td>
+<td>20.0</td>
+<td>30.0</td>
+</tr>
+<tr class="row-even"><td>.</td>
+<td>2016-06-19T06:29:22-0500</td>
+<td>2</td>
+<td>40.0</td>
+<td>50.0</td>
+</tr>
+<tr class="row-odd"><td>.</td>
+<td>2016-06-19T06:29:48-0500</td>
+<td>3</td>
+<td>60.0</td>
+<td>70.0</td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Significant_figures">https://en.wikipedia.org/wiki/Significant_figures</a></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Accuracy_and_precision">https://en.wikipedia.org/wiki/Accuracy_and_precision</a></li>
 </ul>
 </div>
 <div class="section" id="linkedmetaanalyses">
