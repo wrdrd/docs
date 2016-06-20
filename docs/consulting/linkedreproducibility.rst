@@ -339,9 +339,9 @@ DataType, unit, accuracy, precision, significant figures)
      - `schema.org/name <http://schema.org/name>`__
      - `schema.org/DateCreated <http://schema.org/dateCreated>`__
      - [`schema.org/height <http://schema.org/height>`__,
-        `schema.org/value <http://schema.org/value>`__]
+       `schema.org/value <http://schema.org/value>`__]
      - [`schema.org/width <http://schema.org/width>`__,
-        `schema.org/value <http://schema.org/value>`__]
+       `schema.org/value <http://schema.org/value>`__]
    * - `schema.org/DataType <http://schema.org/DataType>`__
      - `schema.org/Integer <http://schema.org/Integer>`__
      - `schema.org/Date <http://schema.org/Date>`__
