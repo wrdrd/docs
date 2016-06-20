@@ -190,10 +190,100 @@ StructuredPremises: Premises as structured data
   - decisions / policy predicated on said conclusions
 
 
-.. index:: CSV, CSVW, and metadata rows
+LinkedMetaAnalyses
+~~~~~~~~~~~~~~~~~~~~
+- You evaluated 10, I evaluated (the same / a different) 10 studies
 
+  - PRISMA
+
+    - | Homepage: http://www.prisma-statement.org/
+    - http://www.prisma-statement.org/PRISMAStatement/
+    - Checklist: http://www.prisma-statement.org/documents/PRISMA%202009%20checklist.pdf
+    - Flow Diagram: http://www.prisma-statement.org/documents/PRISMA%202009%20flow%20diagram.pdf
+
+  - evaluation of controls
+
+    - "the URI says they did a Triple Blind Study, but it doesn't sound
+      like they had groups named just e.g. X, Y, and Z"
+
+      - disqualified / questionable / etc
+      - schema.org/MedicalTrial -> schema.org/ScientificTrial
+
+  - C = Class (RDFS)
+  - P = Property (RDFS)
+  - :ref:`schema.org/ <schemaorg>`
+
+    - [ ] C: MetaAnalysis
+
+      - [ ] C: CriteriaBase type
+
+        - [ ] C: Criterion
+
+      - [ ] C: ScientificStudy
+      
+        - [x] C: MedicalStudy
+        
+          - [ ] C: MedicalObservationalStudy <- ScientificObservationalStudy
+          - [ ] C: MedicalTrial <- ScientificTrial
+
+      - [x] C: Dataset
+
+- When do we show?
+
+  - Deadline
+  - Only if you also produce your own meta-analyses
+  - Only if we're doing Open Access (as required by stipulations of
+    federal funding)
+
+
+RDF Example
+~~~~~~~~~~~~~
+
+:ref:`linked data` + :ref:`Reproducibility` => :ref:`Linked Reproducibility`
+
+::
+
+    Reproducibility ---\___  Linked Reproducibility
+    Linked Data     ---/
+
+
+In :ref:`turtle` :ref:`rdf` syntax:
+::
+
+    :LinkedData rdf:type skos:Concept ;
+        rdfs:label "Linked Data"@en ;
+        schema:name "Linked Data"@en ;
+        owl:sameAs <https://en.wikipedia.org/wiki/Linked_data> ;
+        owl:sameAs <http://dbpedia.org/page/Linked_data> ;
+
+        owl:sameAs <http://ja.dbpedia.org/resource/Linked_data>
+        owl:sameAs <http://es.dbpedia.org/resource/Datos_enlazados> ;
+        owl:sameAs <http://fr.dbpedia.org/resource/Web_des_donn%C3%A9es> ;
+        owl:sameAs <http://nl.dbpedia.org/resource/Linked_data>
+        owl:sameAs <http://ko.dbpedia.org/resource/링크드_데이터> ;
+        owl:sameAs <http://wikidata.org/entity/Q515701> ;
+        .
+
+    :Reproducibility a skos:Concept ;
+        rdfs:label "Reproducibility"@en ;
+        schema:name "Reproducibility"@en ;
+        owl:sameAs <https://en.wikipedia.org/wiki/Reproducibility> ;
+        owl:sameAs <http://dbpedia.org/page/Reproducibility> ;
+        .
+
+    :LinkedReproducibility a skos:Concept ;
+        rdfs:label "Linked Reproducibility"@en ;
+        schema:name "Linked Reproducibility"@en ;
+        skos:related [ :LinkedData, :Reproducibility ] ;
+        .
+
+
+.. index:: CSV, CSVW, and metadata rows
+.. _csv, csvw, and metadata rows:
+
+=============================
 CSV, CSVW, and metadata rows
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=============================
 
 * :ref:`CSV` -- Comma Separated Values
 * :ref:`CSVW` -- CSV on the Web ( :ref:`RDF`, :ref:`JSON`,
@@ -301,93 +391,6 @@ DataType, unit, accuracy, precision, significant figures)
   * http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Meter
   * http://prefix.cc/unit:Meter
 
-
-LinkedMetaAnalyses
-~~~~~~~~~~~~~~~~~~~~
-- You evaluated 10, I evaluated (the same / a different) 10 studies
-
-  - PRISMA
-
-    - | Homepage: http://www.prisma-statement.org/
-    - http://www.prisma-statement.org/PRISMAStatement/
-    - Checklist: http://www.prisma-statement.org/documents/PRISMA%202009%20checklist.pdf
-    - Flow Diagram: http://www.prisma-statement.org/documents/PRISMA%202009%20flow%20diagram.pdf
-
-  - evaluation of controls
-
-    - "the URI says they did a Triple Blind Study, but it doesn't sound
-      like they had groups named just e.g. X, Y, and Z"
-
-      - disqualified / questionable / etc
-      - schema.org/MedicalTrial -> schema.org/ScientificTrial
-
-  - C = Class (RDFS)
-  - P = Property (RDFS)
-  - :ref:`schema.org/ <schemaorg>`
-
-    - [ ] C: MetaAnalysis
-
-      - [ ] C: CriteriaBase type
-
-        - [ ] C: Criterion
-
-      - [ ] C: ScientificStudy
-      
-        - [x] C: MedicalStudy
-        
-          - [ ] C: MedicalObservationalStudy <- ScientificObservationalStudy
-          - [ ] C: MedicalTrial <- ScientificTrial
-
-      - [x] C: Dataset
-
-- When do we show?
-
-  - Deadline
-  - Only if you also produce your own meta-analyses
-  - Only if we're doing Open Access (as required by stipulations of
-    federal funding)
-
-
-RDF Example
-~~~~~~~~~~~~~
-
-:ref:`linked data` + :ref:`Reproducibility` => :ref:`Linked Reproducibility`
-
-::
-
-    Reproducibility ---\___  Linked Reproducibility
-    Linked Data     ---/
-
-
-In :ref:`turtle` :ref:`rdf` syntax:
-::
-
-    :LinkedData rdf:type skos:Concept ;
-        rdfs:label "Linked Data"@en ;
-        schema:name "Linked Data"@en ;
-        owl:sameAs <https://en.wikipedia.org/wiki/Linked_data> ;
-        owl:sameAs <http://dbpedia.org/page/Linked_data> ;
-
-        owl:sameAs <http://ja.dbpedia.org/resource/Linked_data>
-        owl:sameAs <http://es.dbpedia.org/resource/Datos_enlazados> ;
-        owl:sameAs <http://fr.dbpedia.org/resource/Web_des_donn%C3%A9es> ;
-        owl:sameAs <http://nl.dbpedia.org/resource/Linked_data>
-        owl:sameAs <http://ko.dbpedia.org/resource/링크드_데이터> ;
-        owl:sameAs <http://wikidata.org/entity/Q515701> ;
-        .
-
-    :Reproducibility a skos:Concept ;
-        rdfs:label "Reproducibility"@en ;
-        schema:name "Reproducibility"@en ;
-        owl:sameAs <https://en.wikipedia.org/wiki/Reproducibility> ;
-        owl:sameAs <http://dbpedia.org/page/Reproducibility> ;
-        .
-
-    :LinkedReproducibility a skos:Concept ;
-        rdfs:label "Linked Reproducibility"@en ;
-        schema:name "Linked Reproducibility"@en ;
-        skos:related [ :LinkedData, :Reproducibility ] ;
-        .
 
 
 References
