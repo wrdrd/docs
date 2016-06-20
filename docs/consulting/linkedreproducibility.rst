@@ -184,10 +184,97 @@ StructuredPremises: Premises as structured data
 
 - further questions
 
-- "downstream" studies / implementations
+    - "downstream" studies / implementations
 
-  - retraction management
+    - retraction management
   - decisions / policy predicated on said conclusions
+
+
+.. index:: CSV, CSVW, and metadata rows
+
+CSV, CSVW, and metadata rows
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+A classic data table / dataframe (~:ref:`CSV` with one header row):
+
+.. list-table:: Standard CSV
+   :header-rows: 1
+
+   * - date
+     - sample
+     - width
+     - height
+   * - .
+     - 2016-06-19T06:28:49-0500
+     - 1
+     - 20.0
+     - 30.0
+   * - .
+     - 2016-06-19T06:29:22-0500
+     - 2
+     - 40.0
+     - 50.0
+   * - .
+     - 2016-06-19T06:29:48-0500
+     - 3
+     - 60.0
+     - 70.0
+
+An :ref:`CSV` data table / dataframe (~:ref:`CSV` with 6 header rows)
+which could also be expressed with :ref:`CSVW`:
+
+.. list-table:: CSV with columnspec ("colspec") metadata rows
+   :header-rows: 6
+
+   * - **column label**
+     - sample
+     - date
+     - width
+     - height
+   * - **property URI path**
+     - http://schema.org/name
+     - http://schema.org/dateCreated
+     - [http://schema.org/height , http://schema.org/value]
+     - [http://schema.org/width , http://schema.org/value]
+   * - **schema.org/DataType**
+     - http://schema.org/Integer
+     - http://schema.org/Date
+     - http://schema.org/Float
+     - http://schema.org/Float
+   * - **accuracy**
+     - .
+     - .
+     - .
+     - .
+   * - **precision**
+     - .
+     - .
+     - .
+     - .
+   * - **significant figures**
+     - .
+     - .
+     - *.1
+     - *.1
+   * - .
+     - 2016-06-19T06:28:49-0500
+     - 1
+     - 20.0
+     - 30.0
+   * - .
+     - 2016-06-19T06:29:22-0500
+     - 2
+     - 40.0
+     - 50.0
+   * - .
+     - 2016-06-19T06:29:48-0500
+     - 3
+     - 60.0
+     - 70.0
+
+
+* https://en.wikipedia.org/wiki/Significant_figures
+* https://en.wikipedia.org/wiki/Accuracy_and_precision
 
 
 LinkedMetaAnalyses
