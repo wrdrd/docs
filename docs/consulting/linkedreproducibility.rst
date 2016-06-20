@@ -337,7 +337,7 @@ DataType, unit, accuracy, precision, significant figures):
      - height
    * - **property URI path**
      - `schema.org/name <http://schema.org/name>`__
-     - `schema.org/DateCreated <http://schema.org/dateCreated>`__
+     - `schema.org/dateCreated <http://schema.org/dateCreated>`__
      - [`schema.org/height <http://schema.org/height>`__,
        `schema.org/value <http://schema.org/value>`__]
      - [`schema.org/width <http://schema.org/width>`__,
@@ -391,8 +391,7 @@ DataType, unit, accuracy, precision, significant figures):
 
   * http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Meter
   * http://prefix.cc/unit:Meter
-
-
+  * These should be full :ref:`URIs <URI>` ( :ref:`uris for units` )
 
 References
 ~~~~~~~~~~~~~
