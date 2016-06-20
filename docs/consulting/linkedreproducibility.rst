@@ -239,7 +239,7 @@ which could also be expressed with :ref:`CSVW`:
      - http://schema.org/dateCreated
      - [http://schema.org/height , http://schema.org/value]
      - [http://schema.org/width , http://schema.org/value]
-   * - **schema.org/DataType**
+   * - `<http://schema.org/DataType>`__
      - http://schema.org/Integer
      - http://schema.org/Date
      - http://schema.org/Float
