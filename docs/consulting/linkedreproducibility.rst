@@ -257,8 +257,8 @@ which could also be expressed with :ref:`CSVW`:
    * - **significant figures**
      - .
      - .
-     - *.1
-     - *.1
+     - \*.1
+     - \*.1
    * - .
      - 2016-06-19T06:28:49-0500
      - 1
