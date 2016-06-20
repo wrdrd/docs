@@ -195,7 +195,7 @@ StructuredPremises: Premises as structured data
 CSV, CSVW, and metadata rows
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-A classic data table / dataframe (~:ref:`CSV` with one header row):
+A classic data table / dataframe (~ :ref:`CSV` with one header row):
 
 .. list-table:: Standard CSV
    :header-rows: 1
@@ -222,7 +222,7 @@ A classic data table / dataframe (~:ref:`CSV` with one header row):
      - 60.0
      - 70.0
 
-An :ref:`CSV` data table / dataframe (~:ref:`CSV` with 6 header rows)
+An :ref:`CSV` data table / dataframe (~ :ref:`CSV` with 6 header rows)
 which could also be expressed with :ref:`CSVW`:
 
 .. list-table:: CSV with columnspec ("colspec") metadata rows
