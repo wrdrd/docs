@@ -199,6 +199,7 @@ A classic data table / dataframe (~:ref:`CSV` with one header row):
 
 .. list-table:: Standard CSV
    :header-rows: 1
+   :class: table-striped table-responsive
 
    * - **column label**
      - date
@@ -226,6 +227,7 @@ which could also be expressed with :ref:`CSVW`:
 
 .. list-table:: CSV with columnspec ("colspec") metadata rows
    :header-rows: 6
+   :class: table-striped table-responsive
 
    * - **column label**
      - sample
