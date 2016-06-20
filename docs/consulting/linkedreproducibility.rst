@@ -281,9 +281,8 @@ In :ref:`turtle` :ref:`rdf` syntax:
 .. index:: CSV, CSVW, and metadata rows
 .. _csv, csvw, and metadata rows:
 
-=============================
 CSV, CSVW, and metadata rows
-=============================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * :ref:`CSV` -- Comma Separated Values
 * :ref:`CSVW` -- CSV on the Web ( :ref:`RDF`, :ref:`JSON`,
@@ -322,7 +321,7 @@ A classic data table with 1 metadata header row (column label):
      - 60.0
      - 70.0
 
-A data table with 6 header rows (column label, property URI path,
+A data table with 7 metadata header rows (column label, property URI path,
 DataType, unit, accuracy, precision, significant figures)
 
 .. list-table:: Table with 6 metadata header rows
