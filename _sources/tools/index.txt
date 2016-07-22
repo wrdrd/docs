@@ -5948,6 +5948,7 @@ Zotero archives and tags resources with bibliographic metadata.
 
 
 .. index:: Zotero and Schema.org RDFa
+.. _zotero and schema.org RDFa:
 
 -------------------------------
 [ ] Zotero and Schema.org RDFa

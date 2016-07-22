@@ -30,18 +30,18 @@ Bibliographic citations can take many forms.
 Citations are most useful in a structured form
 (with a **schema**).
 
-  - :ref:`DCMI`
-  - :ref:`OAI-PMH`
-  - :ref:`Schema.org` CreativeWork
+- :ref:`DCMI`
+- :ref:`OAI-PMH`
+- :ref:`Schema.org` CreativeWork
 
 Citations in the bibliography or references
 or resources section of a textual document
 must be parsed in order to derived a
 **citation graph**.
 
-  - :ref:`Zotero`
-  - :ref:`Mendeley`
-  - http://citationstyles.org/
+- :ref:`Zotero`
+- :ref:`Mendeley`
+- http://citationstyles.org/
 
 Many *impact statistics* are derived from :ref:`graph <graphs>` metricsa
 according to citation frequency (and, by implication, things like
@@ -49,91 +49,92 @@ centrality).
 
 See:
 
+- :ref:`Knowledge Engineering` > :ref:`graphs`
 - :ref:`linkedreproducibility` > :ref:`studygraph`
 - :ref:`Zotero and Schema.org RDFa`
 
 
 .. index:: Search engines
 .. _search engines:
+
+Search engines
 --------------------
-- Search engines
-  
-  - :ref:`knowledge engineering` > :ref:`search engine indexing`
-  - Query syntax
-  - Case sensitivity
-  - :ref:`Unicode` symbols (Zero, Zerö, Zerø, Ƶero)
-  - Stemming & Spelling Correction
+- :ref:`knowledge engineering` > :ref:`search engine indexing`
+- Query syntax
+- Case sensitivity
+- :ref:`Unicode` symbols (Zero, Zerö, Zerø, Ƶero)
+- Stemming & Spelling Correction
 
-    - "walking" -> walk -> walk, walking, walkers, walked
+  - "walking" -> walk -> walk, walking, walkers, walked
 
-  - Fuzzy matching
+- Fuzzy matching
 
-    - :ref:`elasticsearch`
-      
-      - "Typoes and Mispelings" > "Fuzziness"
-        https://www.elastic.co/guide/en/elasticsearch/guide/current/fuzziness.html
-
-        - String distance (*hamming distance*)
-        - Substitution, Insertion, Deletion
-          (see also: :ref:`Operational Transformation`)
-
-  - Regional language variants
-
-    + https://en.wikipedia.org/wiki/American_and_British_English_spelling_differences#-our.2C_-or
-
-      + "Colour", "Couleur", and "Color"
-
-    + https://en.wikipedia.org/wiki/Romanization
-
-      + "寿司", "壽司", and "Sushi"
-
-
-  - String prefixes
-
-    - Does "Apple" also return e.g. "Grapple"; or just
-      e.g. "apples", "appleton", "apple pie"
-  
-  - Stop words
-
-    - a, and\*, the, or\*, not\*
-
-  - Logical Term grouping
-
-    - "Quoting", (Parentheses), Logical terms (:ref:`Logic`)
-    - "This one" AND "That one"
-    - "This one" AND ("that one")
-    - this one AND that one
-    - -this one AND that one
-    - -("this one") AND "that one"
-    - (NOT "this one") AND ("that one")
+  - :ref:`elasticsearch`
     
-  - Search algorithms:
-   
-    - :ref:`search engine indexing`
-    - :ref:`data structures`
-    - :ref:`natural language`
-    - Full table scan (match every row every time) [very slow]
-    - Document-Term graph / tree
-      
-      - "index" non-stop words *and phrases* as graph edges
+    - "Typoes and Mispelings" > "Fuzziness"
+      https://www.elastic.co/guide/en/elasticsearch/guide/current/fuzziness.html
+
+      - String distance (*hamming distance*)
+      - Substitution, Insertion, Deletion
+        (see also: :ref:`Operational Transformation`)
+
+- Regional language variants
+
+  + `<https://en.wikipedia.org/wiki/American_and_British_English_spelling_differences#-our.2C_-or>`__
+
+    + "Colour", "Couleur", and "Color"
+
+  + https://en.wikipedia.org/wiki/Romanization
+
+    + "寿司", "壽司", and "Sushi"
+
+
+- String prefixes
+
+  - Does "Apple" also return e.g. "Grapple"; or just
+    e.g. "apples", "appleton", "apple pie"
+
+- Stop words
+
+  - a, and\*, the, or\*, not\*
+
+- Logical Term grouping
+
+  - "Quoting", (Parentheses), Logical terms (:ref:`Logic`)
+  - "This one" AND "That one"
+  - "This one" AND ("that one")
+  - this one AND that one
+  - -this one AND that one
+  - -("this one") AND "that one"
+  - (NOT "this one") AND ("that one")
+  
+- Search algorithms:
+ 
+  - :ref:`search engine indexing`
+  - :ref:`data structures`
+  - :ref:`natural language`
+  - Full table scan (match every row every time) [very slow]
+  - Document-Term graph / tree
     
-      - "entity recognition" / "entity extraction" / "phrase extraction"
+    - "index" non-stop words *and phrases* as graph edges
+  
+    - "entity recognition" / "entity extraction" / "phrase extraction"
 
-        - OpenNLP (Java), NLTK (Python), Watson
-        - Mark Twain grew up not in Hannibal, Missouri
-          but in St Louis, Missouri.
+      - OpenNLP (Java), NLTK (Python), Watson
+      - Mark Twain grew up not in Hannibal, Missouri
+        but in St Louis, Missouri.
 
-          - grew up
-          - Mark Twain (Mark, Twain, Mark Twain)
-          - Hannibal
-          - Hannibal, Missouri
-          - St Louis
-          - St Louis, Missouri
+        - grew up
+        - Mark Twain (Mark, Twain, Mark Twain)
+        - Hannibal
+        - Hannibal, Missouri
+        - St Louis
+        - St Louis, Missouri
 
-      - Manual Index
+    - Manual Index
 
-        - "biased"
-        - https://wrdrd.com/docs/genindex
+      - "biased"
+      - https://wrdrd.com/docs/genindex
 
 
 
