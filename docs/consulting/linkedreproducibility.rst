@@ -28,6 +28,9 @@ LinkedReproducibility
    -- `@westurner <https://twitter.com/westurner>`__
 
 
+.. index:: StudyGraph
+.. _studygraph:
+
 StudyGraph: Document Nodes and Link Edges
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 We should use annotations with typed, reified edges to link between
