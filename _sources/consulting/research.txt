@@ -121,8 +121,8 @@ Search engines
     - "entity recognition" / "entity extraction" / "phrase extraction"
 
       - OpenNLP (Java), NLTK (Python), Watson
-      - Mark Twain grew up not in Hannibal, Missouri
-        but in St Louis, Missouri.
+      - "Mark Twain grew up not in Hannibal, Missouri
+        but in St Louis, Missouri."
 
         - grew up
         - Mark Twain (Mark, Twain, Mark Twain)
@@ -190,7 +190,7 @@ written in :ref:`Python`.
 
     see also:
     
-    - :ref:`linkedreproducibility`
+    - :ref:`linkedreproducibility` > :ref:`studygraph`
     - :ref:`OAI-PMH`, :ref:`Fedora Commons`
 
   - ckanext-datajson can generate data.gov JSON for datasets:
@@ -233,7 +233,7 @@ written in :ref:`Java`.
 - http://fedorarepository.org/features
 - Fedora supports :ref:`OAI-PMH`.
 - Fedora can index metadata with other search engines
-  (e.g. :ref:`Apache Solr`, :ref:`Elasticsearch`)
+  (e.g. :ref:`Solr`, :ref:`Elasticsearch`)
 
 - There are additional frontend web applications for Fedora:
 
@@ -263,7 +263,7 @@ Hydra
 Hydra is an open source web application
 frontend for :ref:`Fedora Commons` written in :ref:`Ruby`
 
-- :ref:`Apache Solr`
+- :ref:`Solr`
 - :ref:`Blacklight`
 
 
@@ -278,10 +278,10 @@ Blacklight
 
 Blacklight is an open source web application
 written in :ref:`Ruby`
-for providing a search interface to :ref:`Apache Solr`.
+for providing a search interface to :ref:`Solr`.
 
 - :ref:`Hydra` indexes :ref:`Fedora Commons` metadata
-  with :ref:`Apache Solr`; which can be displayed with Blacklight.
+  with :ref:`Solr`; which can be displayed with Blacklight.
 
 
 .. index:: Islandora
@@ -296,10 +296,10 @@ Islandora
 Hydra is an open source web application
 frontend for :ref:`Fedora Commons` written in :ref:`PHP`
 
-- :ref:`Apache Solr`
+- :ref:`Solr`
 - Drupal (:ref:`PHP`)
 - :ref:`Islandora` indexes :ref:`Fedora Commons` metadata
-  with :ref:`Apache Solr`; which can be displayed with the Islandora
+  with :ref:`Solr`; which can be displayed with the Islandora
   Drupal application.
 
 
