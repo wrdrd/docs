@@ -3927,11 +3927,27 @@ to partition process workloads across one or more host systems.
 
 
 
+.. index:: CNCF
+.. index:: Cloud Native Computing Foundation
+.. _cloud native computing foundation:
+.. _cncf:
+
+Cloud Native Computing Foundation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Linux_Foundation#Cloud_Native_Computing_Foundation
+
+The Cloud Native Computing Foundation (*CNCF*) is a foundation
+for cloud and container industry collaboration.
+
+- :ref:`Kubernetes` is now a CNCF project.
+
+
 .. index:: Kubernetes
 .. _kubernetes:
 
 Kubernetes
 ~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Kubernetes
 | Homepage: http://kubernetes.io/
 | Src: https://github.com/GoogleCloudPlatform/kubernetes
 | Docs: http://kubernetes.io/gettingstarted/
@@ -3940,12 +3956,14 @@ Kubernetes
 | Docs: https://github.com/GoogleCloudPlatform/kubernetes/blob/master/docs/getting-started-guides/coreos.md
 | Docs: https://github.com/GoogleCloudPlatform/kubernetes/blob/master/docs/getting-started-guides/mesos.md
 | Q&A: http://stackoverflow.com/questions/tagged/kubernetes
-| Twitter: https://twitter.com/googlecloud
+| Twitter: https://twitter.com/kubernetesio
 | Awesome: https://github.com/ramitsurana/awesome-kubernetes
 
-Kubernetes is a highly-available distributed cluster scheduler
+Kubernetes (*k8s*) is a highly-available distributed cluster scheduler
 which works with groups of :ref:`Docker` containers
 called Pods.
+
+- Google donated Kubernetes to the :ref:`CNCF`.
 
 
 .. index:: Kubernetes-Mesos
