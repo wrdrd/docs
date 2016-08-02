@@ -3817,10 +3817,11 @@ runC
 
 runC is a container abstraction 
 
-  runc is a CLI tool for spawning and running containers according to the OCI specification.
+  runc is a CLI tool for spawning and running containers according to
+  the :ref:`OCI` specification.
 
 - runC builds upon the :ref:`libcontainer` abstraction
-  and the OCI (*Open Container Initiative*) container specification.
+  and the :ref:`OCI` container specification.
 - runC works on :ref:`Linux`, :ref:`OSX`, and :ref:`Windows`.
 - runC containers do not require a daemon process.
 - runC containers can run as e.g. a systemd service unit.
@@ -3877,15 +3878,17 @@ to partition process workloads across one or more host systems.
 
     Docker Compose
         Docker Compose is a Python application for defining and managing
-        services (Docker Containers) and networks with a
-        ``docker-compose.yml`` :ref:`YAML` configuration file.
+        services (:term:`Docker containers <docker container>`) and
+        networks with a ``docker-compose.yml`` :ref:`YAML` configuration
+        file.
 
     Docker Image
         A Docker Image is an archived container filesystem with
         configuration which is usually defined by a :term:`Dockerfile`.
 
     Docker Hub
-        Docker Hub is a cloud-based registry service for Docker Images.
+        Docker Hub is a cloud-based registry service for
+        :term:`Docker Images <Docker Image>`.
 
     Docker Cloud
         Docker Cloud is the hosting service offered by Docker.
