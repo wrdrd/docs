@@ -3767,6 +3767,65 @@ groups of processes and resources.
   * ``machinectl``, ``systemctl``, ``journalctl``,
 
 
+.. index:: libcontainer
+.. _libcontainer:
+
+libcontainer
+~~~~~~~~~~~~~
+| Homepage: https://www.opencontainers.org/
+| Src: https://github.com/docker/libcontainer
+| Src: https://github.com/opencontainers/runc/tree/master/libcontainer
+
+libcontainer is a library built by :ref:`Docker` to replace :ref:`LXC`.
+
+  Libcontainer provides a native :ref:`Go` implementation for creating
+  containers with namespaces, :ref:`cgroups`, capabilities, and filesystem
+  access controls.
+
+  -- https://github.com/opencontainers/runc/tree/master/libcontainer
+
+- libcontainer is now developed as part of 
+  :ref:`OCI` :ref:`runC`.
+
+
+
+.. index:: OCI
+.. index:: Open Container Initiative
+.. _open container initiative:
+.. _oci:
+
+Open Container Initiative
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+| Homepage: https://www.opencontainers.org/
+| Docs: https://www.opencontainers.org/about
+| Src: https://github.com/opencontainers
+| Twitter: https://twitter.com/oci_org
+
+The Open Container Initiative (*OCI*) is a Linux Foundation 
+collaborative project dedicated to developing a working, portable
+software container specification.
+
+
+.. index:: runC
+.. _runc:
+
+runC
+~~~~~~
+| Homepage: http://runc.io/
+| Homepage: https://www.opencontainers.org/
+| Src: https://github.com/opencontainers/runc
+
+runC is a container abstraction 
+
+  runc is a CLI tool for spawning and running containers according to the OCI specification.
+
+- runC builds upon the :ref:`libcontainer` abstraction
+  and the OCI (*Open Container Initiative*) container specification.
+- runC works on :ref:`Linux`, :ref:`OSX`, and :ref:`Windows`.
+- runC containers do not require a daemon process.
+- runC containers can run as e.g. a systemd service unit.
+
+
 .. index:: Docker
 .. _docker:
 
@@ -3774,12 +3833,14 @@ Docker
 ~~~~~~~~~~~~~~~~~
 | Wikipedia: `<https://en.wikipedia.org/wiki/Docker_(software)>`_
 | Homepage: https://www.docker.com/
-| Docs: https://docs.docker.com/
 | Src: https://github.com/docker/docker
+| Docs: https://docs.docker.com/
+| Awesome: https://github.com/veggiemonk/awesome-docker
 
 Docker is an OS virtualization project written in :ref:`Go`
-which utilizes :ref:`Linux` :ref:`LXC` Containers
-to partition process workloads all running under one kernel.
+which utilizes :ref:`Linux` containers -- first :ref:`LXC`
+now :ref:`libcontainer` / :ref:`runC` --
+to partition process workloads across one or more host systems.
 
 .. glossary::
 
@@ -3787,25 +3848,73 @@ to partition process workloads all running under one kernel.
         A ``Dockerfile`` contains the instructions needed to
         create a docker image.
 
-* Docker images build from a ``Dockerfile``
+    Docker container
+        A Docker container is an instance of a :term:`Docker Image`
+        with configuration.
+
+    Docker API
+        The Docker API is an interface of management commands for
+        provisioning and managing containers.
+
+        :term:`Docker Machine`, :term:`Docker Swarm`, and
+        :term:`Docker Universal Control Plane` all implement the Docker
+        API; so the ``docker`` client works equally well with each
+        implementation.
+
+    Docker Machine
+        Docker Machine is the container management application 
+        which implements the :term:`Docker API`.
+
+    Docker Swarm
+        Docker Swarm is a cluster management system for Docker
+        containers hosted on one or more :term:`Docker Machines <Docker
+        Machine>` 
+
+    Docker Universal Control Plane
+        Docker Universal Control Plane is an enterprise-grade cluster
+        management solution with a web dashboard and external authentication
+        which implements the :term:`Docker API`.
+
+    Docker Compose
+        Docker Compose is a Python application for defining and managing
+        services (Docker Containers) and networks with a
+        ``docker-compose.yml`` :ref:`YAML` configuration file.
+
+    Docker Image
+        A Docker Image is an archived container filesystem with
+        configuration which is usually defined by a :term:`Dockerfile`.
+
+    Docker Hub
+        Docker Hub is a cloud-based registry service for Docker Images.
+
+    Docker Cloud
+        Docker Cloud is the hosting service offered by Docker.
+
+
+* Docker images build from a :term:`Dockerfile`
 * A ``Dockerfile`` can subclass another Dockerfile (to add, remove, or
   change configuration)
 * ``Dockerfile`` support a limited number of commands
 * Docker is not intended to be a
   complete :ref:`configuration management system
   <configuration management>`
-* Ideally, a Docker images requires minimal configuration once built
+* Ideally, a Docker image requires minimal configuration once built
 * Docker images can be hosted by https://hub.docker.com/
-* ``docker run -it ubuntu/15.04`` downloads the image
+* ``docker run -it ubuntu/16.04`` downloads the image
   from https://registry.hub.docker.com/_/ubuntu/,
   creates a new instance (``docker ps``),
   and spawns a root :ref:`Shell <shells>` with
   a UUID name (by default).
-* "Scheduling" [redundant] persistent containers that launch on boot
-  is not in scope for :ref:`Docker`
+* There are a number of ways to "Schedule" [redundant]
+  persistent containers that launch on boot
+  with :ref:`Docker`
 
-:ref:`Kubernetes` is one project which uses Docker to
-schedule redundant :ref:`LXC` containers (in "Pods").
+  - Docker Swarm is the Docker-native way to run a cluster of
+    containers. To a client app, Docker Swarm looks just like Docker
+    Machine because it implements the Docker API.
+  - :ref:`Kubernetes` is one project which uses Docker to
+    schedule redundant, optionally geodistributed,
+    :ref:`LXC` containers (in "Pods").
 
 :ref:`Salt` can install and manage docker, docker images and containers:
 
@@ -3813,7 +3922,6 @@ schedule redundant :ref:`LXC` containers (in "Pods").
 * https://docs.saltstack.com/en/latest/ref/states/all/salt.states.dockerio.html
 * http://docs.saltstack.com/en/latest/ref/modules/all/salt.modules.dockerio.html
 
-https://github.com/veggiemonk/awesome-docker
 
 
 .. index:: Kubernetes
@@ -3830,6 +3938,7 @@ Kubernetes
 | Docs: https://github.com/GoogleCloudPlatform/kubernetes/blob/master/docs/getting-started-guides/mesos.md
 | Q&A: http://stackoverflow.com/questions/tagged/kubernetes
 | Twitter: https://twitter.com/googlecloud
+| Awesome: https://github.com/ramitsurana/awesome-kubernetes
 
 Kubernetes is a highly-available distributed cluster scheduler
 which works with groups of :ref:`Docker` containers
