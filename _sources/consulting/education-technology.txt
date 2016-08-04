@@ -220,7 +220,7 @@ Coursera is a platform for :ref:`Online Courses`.
 
 edX
 ****
-| Wikipedia:
+| Wikipedia: https://en.wikipedia.org/wiki/EdX
 | Homepage: https://www.edx.org/
 | Courses: https://www.edx.org/course
 | OpenBadges: [ ]
