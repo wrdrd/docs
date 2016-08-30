@@ -882,7 +882,7 @@ Codelabels (*code labels*) are three-letter codes with which commit messages can
     DAT  data
     SCH  schema
 
-    REQ  request
+    REQ  requirement
     ANN  announcement
 
     # Workflow Labels   (e.g. for waffle.io kanban board columns)
