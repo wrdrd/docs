@@ -469,3 +469,7 @@ qgrid
 qgrid is "An Interactive Grid for Sorting and Filtering
 [:ref:`Pandas`] DataFrames in :ref:`IPython Notebook`.
 
+See Also
+++++++++++
+* :ref:`data science` > :ref:`data visualization`
+
