@@ -208,7 +208,7 @@
 <span class="sd">        str: dig output</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">cmd</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">shell_format</span><span class="p">(</span>
-        <span class="s2">&quot;dig {0} +cmd +nocomments +question +noidentify +nostats&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;dig {0} +cmd +nocomments +question +noidentify +nostats +dnssec&quot;</span><span class="p">,</span>
         <span class="n">domain</span><span class="p">)</span>
     <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;cmd&#39;</span><span class="p">,</span> <span class="n">cmd</span><span class="o">=</span><span class="n">cmd</span><span class="p">)</span>
     <span class="n">output</span> <span class="o">=</span> <span class="n">sarge</span><span class="o">.</span><span class="n">capture_both</span><span class="p">(</span><span class="n">cmd</span><span class="p">)</span>
