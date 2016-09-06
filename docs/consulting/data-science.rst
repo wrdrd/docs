@@ -6,11 +6,17 @@ Data Science
 =============
 https://en.wikipedia.org/wiki/Data_science
 
-* :ref:`Reproducibility`
-* :ref:`Ten Simple Rules`
-* :ref:`Linked Reproducibility`
+* :ref:`Science`
 
-:ref:`Open Source` Tools:
+  * :ref:`Open Science`
+  * :ref:`Scientific Method`
+
+* :ref:`Reproducibility`
+
+  * :ref:`Ten Simple Rules`
+  * :ref:`Linked Reproducibility`
+
+:ref:`Open Source` :ref:`Tools`:
 
 * :ref:`SageMathCloud` (:ref:`SageMath`)
 * :ref:`Jupyter Notebook`
@@ -804,7 +810,9 @@ https://en.wikipedia.org/wiki/Extract,_transform,_load
 
 Machine Learning
 ~~~~~~~~~~~~~~~~~~
-https://en.wikipedia.org/wiki/Machine_learning
+| Wikipedia: https://en.wikipedia.org/wiki/Machine_learning
+| Awesome: https://github.com/onurakpolat/awesome-bigdata
+| Awesome: https://github.com/josephmisiti/awesome-machine-learning
 
 https://en.wikipedia.org/wiki/Online_machine_learning
 
@@ -817,7 +825,7 @@ https://en.wikipedia.org/wiki/Online_machine_learning
 
 Deep Learning
 ~~~~~~~~~~~~~~
-https://en.wikipedia.org/wiki/Deep_learning
+| Wikipedia: https://en.wikipedia.org/wiki/Deep_learning
 
 * https://en.wikipedia.org/wiki/Biological_neural_network
 * https://en.wikipedia.org/wiki/Artificial_neural_network
