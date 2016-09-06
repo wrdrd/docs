@@ -6,21 +6,32 @@ Data Science
 =============
 https://en.wikipedia.org/wiki/Data_science
 
+* :ref:`Reproducibility`
+* :ref:`Ten Simple Rules`
 * :ref:`Linked Reproducibility`
 
-* :ref:`IPython Notebook` -> :ref:`Jupyter Notebook`
+:ref:`Open Source` Tools:
 
-  * https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks
+* :ref:`SageMathCloud` (:ref:`SageMath`)
+* :ref:`Jupyter Notebook`
+
+  * :ref:`Jupyter Docker Stacks` (:ref:`Conda`)
+  * :ref:`Jupyter Extensions`
   * :ref:`Jupyter and Reproducibility`
-  * ``conda install jupyter`` (:ref:`Conda` (:ref:`Anaconda`))
 
 
+.. index:: datasciencemasters.org
+.. _datasciencemasters.org: 
 
 datasciencemasters.org
 -------------------------
 | "The Open Source Data Science Masters"
 | http://datasciencemasters.org/
 |
+
+
+.. index:: Ten Simple Rules
+.. _ten simple rules:
 
 Ten Simple Rules
 ------------------
