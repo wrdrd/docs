@@ -302,6 +302,9 @@ represent all Unicode symbols with 8-bit code units.
 
     ``content-type: text/html; charset=UTF-8``
 
+* Why use UTF-8?
+  https://www.w3.org/International/questions/qa-choosing-encodings#useunicode
+
 
 .. index:: Logic, Reasoning, and Inference
 .. _logic reasoning and inference:
