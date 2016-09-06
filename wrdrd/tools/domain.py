@@ -60,7 +60,7 @@ def dig_all(domain):
         str: dig output
     """
     cmd = sarge.shell_format(
-        "dig {0} +cmd +nocomments +question +noidentify +nostats",
+        "dig {0} +cmd +nocomments +question +noidentify +nostats +dnssec",
         domain)
     log.info('cmd', cmd=cmd)
     output = sarge.capture_both(cmd)
