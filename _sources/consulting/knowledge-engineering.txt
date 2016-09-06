@@ -2480,11 +2480,28 @@ Paxos
 | Wikipedia: `<https://en.wikipedia.org/wiki/Paxos_(computer_science)>`__
 | Docs: `<https://en.wikipedia.org/wiki/Paxos_(computer_science)#Production_use_of_Paxos>`__
 
-* https://en.wikipedia.org/wiki/Paxos_(computer_science)#Production_use_of_Paxos
+* `<https://en.wikipedia.org/wiki/Paxos_(computer_science)#Production_use_of_Paxos>`__
 
   * :ref:`BigTable`, Spanner, Megastore
   * :ref:`Ceph`
-  * neo4j
+  * :ref:`neo4j`
+
+
+.. index:: Raft
+.. _raft:
+
+Raft
+``````
+| Wikipedia: `<https://en.wikipedia.org/wiki/Raft_(computer_science)>`__
+| Homepage: https://raft.github.io/
+
+* `<https://en.wikipedia.org/wiki/Raft_(computer_science)#Basics>`__
+
+  * Leader / Candidate / Follower
+  * Heartbeat (Leader -> Followers [-> Candidates])
+  * :ref:`etcd` (:ref:`CoreOS`, :ref:`Kubernetes`, :ref:`configuration
+    management`)
+  * :ref:`skydns`
 
 
 .. index:: BSP

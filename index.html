@@ -972,6 +972,7 @@
 <li class="toctree-l4"><a class="reference internal" href="consulting/knowledge-engineering#dht">DHT</a></li>
 <li class="toctree-l4"><a class="reference internal" href="consulting/knowledge-engineering#mapreduce">MapReduce</a></li>
 <li class="toctree-l4"><a class="reference internal" href="consulting/knowledge-engineering#paxos">Paxos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="consulting/knowledge-engineering#raft">Raft</a></li>
 <li class="toctree-l4"><a class="reference internal" href="consulting/knowledge-engineering#bulk-synchronous-parallel">Bulk Synchronous Parallel</a></li>
 </ul>
 </li>
@@ -1738,6 +1739,10 @@
 <li class="toctree-l4"><a class="reference internal" href="tools/index#numpy">NumPy</a></li>
 <li class="toctree-l4"><a class="reference internal" href="tools/index#scipy">SciPy</a></li>
 <li class="toctree-l4"><a class="reference internal" href="tools/index#scipy-stack">SciPy Stack</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tools/index#scipy-stack-docker-containers">SciPy Stack Docker Containers</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="tools/index#jupyter-docker-stacks">Jupyter Docker Stacks</a></li>
+</ul>
+</li>
 <li class="toctree-l4"><a class="reference internal" href="tools/index#pypy">PyPy</a></li>
 <li class="toctree-l4"><a class="reference internal" href="tools/index#numpypy">NumPyPy</a></li>
 <li class="toctree-l4"><a class="reference internal" href="tools/index#python-3">Python 3</a></li>
@@ -1832,7 +1837,7 @@
 <li class="toctree-l3"><a class="reference internal" href="tools/index#juju">Juju</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#make">Make</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#osquery">osquery</a></li>
-<li class="toctree-l3"><a class="reference internal" href="tools/index#id133">Pants</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tools/index#id135">Pants</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#puppet">Puppet</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#salt">Salt</a></li>
 </ul>
@@ -1863,24 +1868,7 @@
 <li class="toctree-l2"><a class="reference internal" href="tools/index#shells">Shells</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#bash">Bash</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#readline">Readline</a></li>
-<li class="toctree-l3"><a class="reference internal" href="tools/index#ipython">IPython</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="tools/index#ipython-notebook">IPython Notebook</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="tools/index#ipython-nose">ipython_nose</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="tools/index#jupyter">Jupyter</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="tools/index#jupyter-notebook">Jupyter Notebook</a></li>
-<li class="toctree-l4"><a class="reference internal" href="tools/index#jupyter-drive">Jupyter Drive</a></li>
-<li class="toctree-l4"><a class="reference internal" href="tools/index#nbconvert">nbconvert</a></li>
-<li class="toctree-l4"><a class="reference internal" href="tools/index#nbformat">nbformat</a></li>
-<li class="toctree-l4"><a class="reference internal" href="tools/index#nbgrader">nbgrader</a></li>
-<li class="toctree-l4"><a class="reference internal" href="tools/index#nbviewer">nbviewer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="tools/index#runipy">runipy</a></li>
-<li class="toctree-l4"><a class="reference internal" href="tools/index#rise">RISE</a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="tools/index#ipython">IPython</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#powershell">PowerShell</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#zsh">ZSH</a></li>
 </ul>
@@ -1892,6 +1880,29 @@
 <li class="toctree-l3"><a class="reference internal" href="tools/index#pyline">Pyline</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#pyrpo">Pyrpo</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#sed">Sed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tools/index#web-shells">Web Shells</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tools/index#ipython-notebook">IPython Notebook</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tools/index#ipython-nose">ipython_nose</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tools/index#jupyter">Jupyter</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tools/index#jupyter-notebook">Jupyter Notebook</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tools/index#jupyter-drive">Jupyter Drive</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tools/index#nbconvert">nbconvert</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tools/index#nbformat">nbformat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tools/index#nbgrader">nbgrader</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tools/index#nbviewer">nbviewer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tools/index#runipy">runipy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tools/index#jupyter-contrib-nbextensions">jupyter_contrib_nbextensions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tools/index#rise">RISE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tools/index#nbpresent">NBPresent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tools/index#anaconda-jupyter-notebook-extensions">Anaconda Jupyter Notebook Extensions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tools/index#sagemathcloud">SageMathCloud</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tools/index#wakari">Wakari</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="tools/index#dotfiles">Dotfiles</a><ul>

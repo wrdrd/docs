@@ -2164,11 +2164,11 @@ for :ref:`Python`, primarily written in :ref:`C`.
 * http://nbviewer.ipython.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-3-Scipy.ipynb
 * https://scipy-lectures.github.io/intro/scipy.html
 
-The :ref:`SciPy Stack <scipystack>` specification
-includes the SciPy package and its dependencies.
+* The :ref:`SciPy Stack <scipystack>` specification
+  includes the SciPy package and its dependencies.
 
 
-.. index:: SciPy
+.. index:: SciPy Stack
 .. _scipystack:
 
 SciPy Stack
@@ -2178,19 +2178,47 @@ SciPy Stack
 
 Python Distributions
 
-* Sage
-* :ref:`Anaconda` (:ref:`Conda`)
+* :ref:`Sage Math` (:ref:`SageMathCloud`)
 * Enthought Canopy
 * Python(x,y)
 * WinPython
 * Pyzo
-* Algorete Loopy (:ref:`Conda`)
+* :ref:`Anaconda` (:ref:`Conda`, :ref:`Wakari`)
+
+
+.. index:: Scipy Stack Docker Containers
+.. _scipy stack docker containers:
 
 SciPy Stack Docker Containers
++++++++++++++++++++++++++++++++
 
-| DockerHub: https://registry.hub.docker.com/u/ipython/ipython/
-| DockerHub: https://registry.hub.docker.com/u/ipython/scipystack/
-| DockerHub: https://registry.hub.docker.com/u/ipython/scipyserver/
+
+.. index:: Jupyter Docker Stacks
+.. _jupyter docker stacks:
+
+-----------------------------
+Jupyter Docker Stacks
+-----------------------------
+| Src: https://github.com/jupyter/docker-stacks
+| DockerHub: https://hub.docker.com/r/ipython/ipython/
+| DockerHub: https://hub.docker.com/r/jupyter/
+| DockerHub: https://hub.docker.com/r/jupyter/datascience-notebook/
+| DockerHub: https://hub.docker.com/r/jupyter/tmpnb/
+
+
+* :ref:`Jupyter` and :ref:`Scipystack` :ref:`Docker` containers:
+
+  * https://hub.docker.com/r/jupyter/datascience-notebook/
+  
+    * https://github.com/jupyter/docker-stacks/tree/master/datascience-notebook#docker-options
+    * :ref:`conda`
+
+  * https://github.com/jupyter/tmpnb#using-jupyterdocker-stacks-images
+
+See also:
+
++ :ref:`Docker`
++ https://wrdrd.com/docs/consulting/data-science#reproducibility
 
 
 .. index:: PyPy
@@ -2683,7 +2711,7 @@ Debian
 | Wikipedia: `<https://en.wikipedia.org/wiki/Debian>`__
 | Homepage: https://www.debian.org/
 | Download: https://www.debian.org/distrib/
-| DockerHub: https://registry.hub.docker.com/_/debian/
+| DockerHub: https://hub.docker.com/_/debian/
 | Docs: https://www.debian.org/doc/
 | Docs: https://www.debian.org/doc/manuals/debian-reference/
 | Docs: https://www.debian.org/doc/#manuals
@@ -2707,7 +2735,7 @@ Ubuntu
 | Src: http://archive.ubuntu.com/
 | Src: http://releases.ubuntu.com/
 | Download: http://www.ubuntu.com/download
-| DockerHub: https://registry.hub.docker.com/_/ubuntu/
+| DockerHub: https://hub.docker.com/_/ubuntu/
 | Docs: https://help.ubuntu.com/
 | Q&A: https://askubuntu.com
 
@@ -2764,7 +2792,7 @@ CentOS
 | Download: https://www.centos.org/download/
 | Docs: https://wiki.centos.org/
 | Docs: https://www.centos.org/docs/
-| DockerHub: https://registry.hub.docker.com/_/centos/
+| DockerHub: https://hub.docker.com/_/centos/
 
 CentOS is a :ref:`Linux Distribution <linux-distributions>`
 that is built from :ref:`RPM` packages
@@ -2823,7 +2851,7 @@ Gentoo
 Gentoo is a :ref:`Linux Distribution <linux-distributions>`
 built on :ref:`Portage`.
 
-* https://registry.hub.docker.com/search?q=gentoo (Stage 3 + Portage)
+* https://hub.docker.com/search?q=gentoo (Stage 3 + Portage)
 
 
 .. index:: ChromiumOS
@@ -3904,7 +3932,7 @@ to partition process workloads across one or more host systems.
 * Ideally, a Docker image requires minimal configuration once built
 * Docker images can be hosted by https://hub.docker.com/
 * ``docker run -it ubuntu/16.04`` downloads the image
-  from https://registry.hub.docker.com/_/ubuntu/,
+  from https://hub.docker.com/_/ubuntu/,
   creates a new instance (``docker ps``),
   and spawns a root :ref:`Shell <shells>` with
   a UUID name (by default).
@@ -4480,7 +4508,7 @@ IPython
 | Wikipedia: https://en.wikipedia.org/wiki/IPython
 | Homepage: http://ipython.org/
 | Src: git https://github.com/ipython/ipython
-| DockerHub: https://registry.hub.docker.com/repos/ipython/
+| DockerHub: https://hub.docker.com/repos/ipython/
 | Docs: http://ipython.org/ipython-doc/stable/
 | Docs: http://ipython.org/ipython-doc/stable/interactive/
 | Docs: http://ipython.org/ipython-doc/stable/notebook/
@@ -4488,7 +4516,6 @@ IPython
 | Docs: https://github.com/ipython/ipython/wiki/Extensions-Index
 | Docs: https://github.com/ipython/ipython/wiki/IPython-kernels-for-other-languages
 | Docs: https://github.com/ipython/ipython/wiki/Install:-Docker
-| Docs: https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks
 
 IPython is an interactive REPL and distributed computation framework
 written in :ref:`Python`.
@@ -4518,386 +4545,6 @@ written in :ref:`Python`.
     %run -d example.py             # run a script with pdb
     %pdb on                        # automatically run pdb on Exception
 
-
-.. index:: IPython Notebook
-.. index:: IPython notebook
-.. _ipython notebook:
-
-IPython Notebook
-++++++++++++++++++
-| Wikipedia: https://en.wikipedia.org/wiki/IPython#Notebook
-| Src: https://github.com/ipython/ipython/tree/3.x/IPython/html
-| Docs: http://ipython.org/ipython-doc/stable/notebook/
-| Docs: http://ipython.org/ipython-doc/stable/notebook/notebook.html
-| Docs: http://ipython.org/ipython-doc/stable/notebook/nbformat.html
-| Docs: http://ipython.org/ipython-doc/stable/notebook/nbconvert.html
-| Docs: http://ipython.org/ipython-doc/stable/notebook/public_server.html
-| Docs: http://ipython.org/ipython-doc/stable/notebook/security.html
-
-:ref:`IPython` Notebook is a web-based shell for interactive
-and literate computing with IPython notebooks.
-
-* An IPython notebook (``.ipynb``) is a
-  :ref:`JSON-` document containing input and output
-  for a linear sequence of cells;
-  which can be exported to many output formats
-  (e.g. :ref:`HTML-`, RST, LaTeX, PDF);
-  and edited through the web with
-  IPython Notebook.
-* IPython Notebook supports :ref:`Markdown` syntax for comment cells.
-* IPython Notebook supports more than 40 different IPython kernels for
-  other languages:
-
-  https://github.com/ipython/ipython/wiki/IPython-kernels-for-other-languages
-
-* IPython Notebook development has now moved to :ref:`Jupyter` Notebook;
-  which supports IPython kernels (and defaults to the :ref:`IPython`
-  :ref:`CPython` :ref:`2 <python>`
-  or :ref:`3 <python3>` kernel).
-
-To start IPython Notebook (assuming the ``_SRC`` variable
-as defined in :ref:`Venv`):
-
-.. code:: bash
-
-   pip install ipython[notebook]
-   # pip install -e git+https://github.com/ipython/ipython@rel-3.2.1#egg=ipython
-   # https://github.com/ipython/ipython/releases
-
-   mkdir $_SRC/notebooks; cd $_SRC/notebooks
-   ipython notebook
-
-   ipython notebook --notebook-dir="${_SRC}/notebooks"
-
-   # With HTTPS (TLS/SSL)
-   ipython notebook \
-    --ip=127.0.0.1 \
-    --certfile=mycert.pem \
-    --keyfile=privkey.pem \
-    --port=8888 \
-    --browser=web  # (optional) westurner/dotfiles/scripts/web
-
-    # List supported options
-    ipython notebook --help
-
-
-.. warning:: IPython Notebook runs code and shell commands as
-    the user the process is running as, on a remote or local machine.
-
-    Reproducible :ref:`SciPy Stack <scipystack>`
-    IPython Notebook / :ref:`Jupyter Notebook` servers
-    implement best practices like process isolation and privilege separation
-    with e.g. :ref:`Docker` and/or :ref:`Jupyter` Hub.
-
-.. note:: IPython Notebook is now :ref:`Jupyter Notebook`.
-
-   Jupyter Notebook runs Python notebooks with the :ref:`IPython`
-   :ref:`CPython` kernel (from :ref:`IPython Notebook`).
-
-
-.. index:: ipython_nose
-.. _ipython_nose:
-
---------------
-ipython_nose
---------------
-| Src: git https://github.com/taavi/ipython_nose
-
-
-ipython_nose is an extension for :ref:`IPython Notebook`
-(and likely :ref:`Jupyter Notebook`)
-for discovering and running test functions
-starting with ``test_``
-(and unittest.TestCase test classes with names containing ``Test``)
-with `Nose <https://westurner.org/wiki/awesome-python-testing#nose>`__.
-
-* ipython_nose is not (yet?) uploaded to PyPI
-* to install ipython_nose from GitHub (with :ref:`Pip` and :ref:`Git`):
-
-.. code:: bash
-
-   pip install -e git+https://github.com/taavi/ipython_nose#egg=ipython_nose
-
-
-.. index:: Jupyter
-.. index:: Project Jupyter
-.. _jupyter:
-
-Jupyter
-~~~~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/IPython#Project_Jupyter
-| Homepage: http://jupyter.org/
-| Src: https://github.com/jupyter/
-| Src: git https://github.com/jupyter/notebook
-| Src: git https://github.com/jupyter/jupyterhub
-| Src: https://registry.hub.docker.com/u/jupyter/tmpnb/
-| DockerHub: https://registry.hub.docker.com/repos/ipython/
-| DockerHub: https://registry.hub.docker.com/repos/jupyter/
-| Docs: https://github.com/ipython/ipython/wiki/Install:-Docker
-| Docs: https://github.com/ipython/ipython/wiki/IPython-kernels-for-other-languages
-| Docs: https://github.com/jupyter/jupyter/blob/master/docs/source/index.rst
-| Docs: https://github.com/jupyter/jupyterhub/wiki
-| Docs: https://github.com/jupyter/jupyterhub/wiki/Authenticators
-| Docs: https://github.com/jupyter/jupyterhub/wiki/Spawners
-
-Project Jupyter expands upon
-components like :ref:`IPython` and :ref:`IPython Notebook`
-to provide a multi-user web-based shell
-for many languages (:ref:`Python`, :ref:`Ruby`, :ref:`Java`,
-:ref:`Haskell`, Julia, R).
-
-
-.. table:: IPython Jupyter comparison (adapted from http://jupyter.org)
-   :class: table-striped table-responsive
-
-   +-------------------------------+-------------------------------------------------------------+
-   | :ref:`IPython`                | :ref:`Jupyter`                                              |
-   +-------------------------------+-------------------------------------------------------------+
-   | - Interactive Python shell    | - Rich REPL Protocol                                        |
-   | - Python kernel for Jupyter   | - :ref:`Jupyter Notebook` (format, environment, conversion) |
-   | - Interactive Parallel Python | - JupyterHub (multi-user notebook server)                   |
-   |                               | - JupyterHub authenticators (MediaWiki OAuth, GitHub OAuth) |
-   |                               | - JupyterHub spawners (Docker, Sudo, Remote, Docker Swarm)  |
-   +-------------------------------+-------------------------------------------------------------+
-
-
-.. index:: Jupyter Notebook
-.. _jupyter notebook:
-
-Jupyter Notebook
-+++++++++++++++++++
-| Wikipedia: https://en.wikipedia.org/wiki/Jupyter#Notebook
-| Src: https://github.com/jupyter/notebook
-
-:ref:`Jupyter` Notebook is the latest :ref:`IPython Notebook`.
-
-   The Jupyter HTML Notebook is a web-based notebook environment
-   for interactive computing.
-
-.. warning:: Jupyter Notebook runs code and shell commands as
-   the user the process is running as, on a remote or local machine.
-
-   Reproducible :ref:`SciPy Stack <scipystack>`
-   IPython Notebook / :ref:`Jupyter Notebook` servers
-   implement best practices like process isolation and privilege separation
-   with e.g. :ref:`Docker` and/or :ref:`Jupyter` Hub.
-
-
-.. index:: Jupyter Drive
-.. _jupyter drive:
-
-Jupyter Drive
-++++++++++++++++++++++++++
-| Src: git https://github.com/jupyter/jupyter-drive
-
-Jupyter Drive adds support to :ref:`Jupyter Notebook`
-for reading and writing :ref:`nbformat` notebook ``.ipynb``
-files to and from Google Drive.
-
-Realtime collaborative features (e.g. with `Operational Transformation`)
-are next.
-
-
-.. index:: nbconvert
-.. _nbconvert:
-
-nbconvert
-+++++++++++
-| Docs: http://ipython.org/ipython-doc/stable/notebook/nbconvert.html
-|
-
-nbconvert is the code that converts (transforms) an ``.ipynb`` notebook
-(:ref:`nbformat` :ref:`JSON <json->`) file
-( into an output representation (e.g. HTML,
-slides (reveal.js), LaTeX, PDF, ePub, Mobi).
-
-* nbconvert is included with :ref:`IPython`
-* nbconvert is part of :ref:`Project Jupyter<jupyter>`
-
-  .. code:: bash
-
-    pip install nbconvert
-    # pip install -e git+https://github.com/jupyter/nbconvert@master#egg=nbconvert
-
-    ipython nbconvert --to html mynotebook.ipynb
-    jupyter nbconvert --to html mynotebook.ipynb
-
-
-* reveal.js is an HTML presentation framework
-  for slides in a 1D or 2D arrangement.
-
-  Presentation content that doesn't fit on the slide is hidden
-  and unscrollable (*only put a slide worth of data in each cell
-  for a Jupyter reveal.js presentation*).
-
-  .. code:: bash
-
-    jupyter nbconvert --to slides mynotebook.ipynb
-
-  https://github.com/hakimel/reveal.js
-* RISE does live reveal.js notebook presentations
-
-  https://github.com/damianavila/RISE
-
-
-.. index:: nbformat
-.. _nbformat:
-
-nbformat
-++++++++++
-| Docs: http://ipython.org/ipython-doc/dev/notebook/nbformat.html
-| Docs: https://nbformat.readthedocs.io/en/latest/
-| Docs: https://nbformat.readthedocs.io/en/latest/format_description.html#backward-compatible-changes
-
-The :ref:`Jupyter notebook` (``.ipynb``) format is a versioned
-:ref:`JSON <json->` format for storing metadata and input/output sequences.
-
-Usually, when the nbformat changes, notebooks are silently upgraded to the
-new version on the next save.
-
-.. note:: nbformat v3 and above add a **kernelspec** attribute to the
-   nbformat :ref:`JSON <json->`, because ``.ipynb`` files can now contain
-   code for languages other than :ref:`Python`.
-
-nbformat does not specify any schema for the user-supplied
-metadata dict (TODO) that can be edited
-so, JSON that conforms to an externally
-managed :ref:`JSON-LD <json-ld->` ``@context``
-would work.
-
-
-.. index:: nbgrader
-.. _nbgrader:
-
-nbgrader
-++++++++
-| Source: git https://github.com/jupyter/nbgrader
-| Docs: https://nbgrader.readthedocs.io/en/stable/
-| Docs: https://nbgrader.readthedocs.io/en/stable/user_guide/
-| Docs: https://nbgrader.readthedocs.io/en/latest/
-| Docs: https://nbgrader.readthedocs.io/en/latest/user_guide/
-| Docs: https://nbgrader.readthedocs.io/en/latest/command_line_tools/
-
-nbgrader is a solution for centrally receiving and grading :ref:`Jupyter notebooks <jupyter notebook>`.
-
-See also:
-
-* https://wrdrd.com/docs/consulting/education-technology#jupyter-and-tdd
-
-
-.. index:: nbviewer
-.. _nbviewer:
-
-nbviewer
-+++++++++++
-| Homepage: http://nbviewer.ipython.org
-| Src: git https://github.com/jupyter/nbviewer
-| Dockerfile: https://github.com/jupyter/nbviewer/blob/master/Dockerfile
-
-:ref:`Jupyter Notebook` Viewer (``nbviewer``)
-is an application for serving read-only
-versions of ``.ipynb`` files which have HTTP URLs.
-
-GitHub now also renders static ``.ipynb`` files, CSV, SVG, and PDF.
-
-
-.. index:: runipy
-.. _runipy:
-
-runipy
-+++++++
-| Src: git https://github.com/paulgb/runipy
-| PyPI: https://pypi.python.org/pypi/runipy
-
-runipy runs :ref:`Jupyter notebooks <jupyter notebook>`
-from a :ref:`Shell <shells>` commandline, generates
-`HTML` reports,
-and can write errors to stderr.
-
-:ref:`Jupyter notebook <Jupyter Notebook>` *manual* test review process:
-
-.. code:: python
-
-    # - run Jupyter Notebook server
-    !jupyter notebook
-    # - Browser
-    #     - navigate to / upload / drag and drop the notebook
-            !web http://localhost:8888   # or https://
-    #     - (optional) click 'TODO Restart Kernel'
-    #     - (optional) click 'Cell' > 'All Output' > 'Clear'
-    #     - click 'Cell' > 'Run All'
-    #     - [wait] <Jupyter Kernel runs notebook>
-    #     - visually seek for the first ERRoring cell (scroll)
-    #     - review the notebook
-            for (i, o) in notebook_cells:
-                human.manually_review((i, o))
-    # - Compare the files on disk with the most recent commit (HEAD)
-    !git status && git diff
-    !git diff mynotebook.ipynb
-    # - Commit the changes
-    !git-add-commit "TST: mynotebook: tests for #123" ./mynotebook.ipynb
-
-
-:ref:`Jupyter notebook <Jupyter Notebook>` TODO review process:
-
-.. code:: python
-
-   # - run Jupyter Notebook server
-   !jupyter notebook
-   # - Browser
-   #     - navigate to / upload / drag and drop the notebook
-           !web http://localhost:8888   # or https://
-   #     - (optional) click 'TODO Restart Kernel'
-   #     - (optional) click 'Cell' > 'All Output' > 'Clear'
-   #     - click 'Cell' > 'Run All'
-   #     - [wait] <Jupyter Kernel runs notebook>
-   #     - visually seek for the first ERRoring cell (scroll)
-   #     - review the notebook
-           for (i, o) in notebook_cells:
-               human.manually_review((i, o))
-   # - Compare the files on disk with the most recent commit (HEAD)
-   !git status && git diff
-   !git diff mynotebook.ipynb
-   # - Commit the changes
-   !git-add-commit "TST: mynotebook: tests for #123" ./mynotebook.ipynb
-
-
-:ref:`Jupyter notebook <Jupyter Notebook>` runipy review process:
-
-.. code:: python
-
-    # - runipy the Jupyter notebook
-    !runipy mynotebook.ipynb
-    # - review stdout and stderr from runipy
-    # - review in browser (optional; recommended)
-    #     - navigate to the converted HTML
-            !web ./mynotebook.ipynb.html
-    #     - visually seek for the first WEEoring cell (scroll)
-    #     - review the notebook
-            for (i, o) in notebook_cells:
-                human.manually_review((i, o))
-    # - Compare the files on disk with the most recent commit (HEAD)
-    !git status && git diff
-    !git diff mynotebook.ipynb*
-    # - Commit the changes
-    !git-add-commit "TST: mynotebook: tests for #123" ./mynotebook.ipynb*
-
-* An example of runipy usage in a :ref:`Makefile <Make>`:
-  https://github.com/westurner/notebooks/blob/gh-pages/Makefile
-
-
-.. index:: RISE
-.. index:: Jupyter RISE
-.. _rise:
-
-RISE
-+++++++++++++
-| Src: https://github.com/damianavila/RISE
-
-    Reveal.js - Jupyter/IPython Slideshow Extension,
-    also known as live_reveal
-
-* Interactive presentations with live source code evaluation
 
 
 .. index:: PowerShell
@@ -5042,6 +4689,476 @@ GNU Sed is an `open source`
    See: https://unix.stackexchange.com/questions/101059/sed-behaves-different-on-freebsd-and-on-linux
 
    See: https://superuser.com/questions/307165/newlines-in-sed-on-mac-os-x
+
+
+
+.. index:: Web Shells
+.. _web shells:
+
+Web Shells
+=============
+
+.. index:: IPython Notebook
+.. index:: IPython notebook
+.. _ipython notebook:
+
+IPython Notebook
+~~~~~~~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/IPython#Notebook
+| Src: https://github.com/ipython/ipython/tree/3.x/IPython/html
+| Docs: http://ipython.org/ipython-doc/stable/notebook/
+| Docs: http://ipython.org/ipython-doc/stable/notebook/notebook.html
+| Docs: http://ipython.org/ipython-doc/stable/notebook/nbformat.html
+| Docs: http://ipython.org/ipython-doc/stable/notebook/nbconvert.html
+| Docs: http://ipython.org/ipython-doc/stable/notebook/public_server.html
+| Docs: http://ipython.org/ipython-doc/stable/notebook/security.html
+| Docs: https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks
+
+:ref:`IPython` Notebook is a web-based shell for interactive
+and literate computing with IPython notebooks.
+
+* An IPython notebook (``.ipynb``) is a
+  :ref:`JSON-` document containing input and output
+  for a linear sequence of cells;
+  which can be exported to many output formats
+  (e.g. :ref:`HTML-`, RST, LaTeX, PDF);
+  and edited through the web with
+  IPython Notebook.
+* IPython Notebook supports :ref:`Markdown` syntax for comment cells.
+* IPython Notebook supports more than 40 different IPython kernels for
+  other languages:
+
+  https://github.com/ipython/ipython/wiki/IPython-kernels-for-other-languages
+
+* IPython Notebook development has now moved to :ref:`Jupyter` Notebook;
+  which supports IPython kernels (and defaults to the :ref:`IPython`
+  :ref:`CPython` :ref:`2 <python>`
+  or :ref:`3 <python3>` kernel).
+
+To start IPython Notebook (assuming the ``_SRC`` variable
+as defined in :ref:`Venv`):
+
+.. code:: bash
+
+   pip install ipython[notebook]
+   # pip install -e git+https://github.com/ipython/ipython@rel-3.2.1#egg=ipython
+   # https://github.com/ipython/ipython/releases
+
+   mkdir $_SRC/notebooks; cd $_SRC/notebooks
+   ipython notebook
+
+   ipython notebook --notebook-dir="${_SRC}/notebooks"
+
+   # With HTTPS (TLS/SSL)
+   ipython notebook \
+    --ip=127.0.0.1 \
+    --certfile=mycert.pem \
+    --keyfile=privkey.pem \
+    --port=8888 \
+    --browser=web  # (optional) westurner/dotfiles/scripts/web
+
+    # List supported options
+    ipython notebook --help
+
+
+.. warning:: IPython Notebook runs code and shell commands as
+    the user the process is running as, on a remote or local machine.
+
+    Reproducible :ref:`SciPy Stack <scipystack>`
+    IPython Notebook / :ref:`Jupyter Notebook` servers
+    implement best practices like process isolation and privilege separation
+    with e.g. :ref:`Docker` and/or :ref:`Jupyter` Hub.
+
+.. note:: IPython Notebook is now :ref:`Jupyter Notebook`.
+
+   Jupyter Notebook runs Python notebooks with the :ref:`IPython`
+   :ref:`CPython` kernel (from :ref:`IPython Notebook`).
+
+
+.. index:: ipython_nose
+.. _ipython_nose:
+
+ipython_nose
+++++++++++++++
+| Src: git https://github.com/taavi/ipython_nose
+
+
+ipython_nose is an extension for :ref:`IPython Notebook`
+(and likely :ref:`Jupyter Notebook`)
+for discovering and running test functions
+starting with ``test_``
+(and unittest.TestCase test classes with names containing ``Test``)
+with `Nose <https://westurner.org/wiki/awesome-python-testing#nose>`__.
+
+* ipython_nose is not (yet?) uploaded to PyPI
+* to install ipython_nose from GitHub (with :ref:`Pip` and :ref:`Git`):
+
+.. code:: bash
+
+   pip install -e git+https://github.com/taavi/ipython_nose#egg=ipython_nose
+
+
+See also:
+
+* TDD: Test Driven Development
+  https://wrdrd.com/docs/consulting/software-development#test-driven-development
+* **Refactoring** and **Reproducibility**
+
+  * https://wrdrd.com/docs/consulting/software-development#refactoring
+  * https://wrdrd.com/docs/consulting/data-science#reproducibility
+
+.. index:: Jupyter
+.. index:: Project Jupyter
+.. _jupyter:
+
+Jupyter
+~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/IPython#Project_Jupyter
+| Homepage: http://jupyter.org/
+| Src: https://github.com/jupyter/
+| Src: git https://github.com/jupyter/notebook
+| Src: git https://github.com/jupyter/jupyterhub
+| Src: https://hub.docker.com/r/jupyter/tmpnb/
+| DockerHub: https://hub.docker.com/repos/ipython/
+| DockerHub: https://hub.docker.com/repos/jupyter/
+| Docs: https://github.com/ipython/ipython/wiki/Install:-Docker
+| Docs: https://github.com/ipython/ipython/wiki/IPython-kernels-for-other-languages
+| Docs: https://github.com/jupyter/jupyter/blob/master/docs/source/index.rst
+| Docs: https://github.com/jupyter/jupyterhub/wiki
+| Docs: https://github.com/jupyter/jupyterhub/wiki/Authenticators
+| Docs: https://github.com/jupyter/jupyterhub/wiki/Spawners
+
+Project Jupyter expands upon
+components like :ref:`IPython` and :ref:`IPython Notebook`
+to provide a multi-user web-based shell
+for many languages (:ref:`Python`, :ref:`Ruby`, :ref:`Java`,
+:ref:`Haskell`, Julia, R).
+
+
+.. table:: IPython Jupyter comparison (adapted from http://jupyter.org)
+   :class: table-striped table-responsive
+
+   +-------------------------------+-------------------------------------------------------------+
+   | :ref:`IPython`                | :ref:`Jupyter`                                              |
+   +-------------------------------+-------------------------------------------------------------+
+   | - Interactive Python shell    | - Rich REPL Protocol                                        |
+   | - Python kernel for Jupyter   | - :ref:`Jupyter Notebook` (format, environment, conversion) |
+   | - Interactive Parallel Python | - JupyterHub (multi-user notebook server)                   |
+   |                               | - JupyterHub authenticators (MediaWiki OAuth, GitHub OAuth) |
+   |                               | - JupyterHub spawners (Docker, Sudo, Remote, Docker Swarm)  |
+   +-------------------------------+-------------------------------------------------------------+
+
+
+.. index:: Jupyter Notebook
+.. _jupyter notebook:
+
+Jupyter Notebook
++++++++++++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/Jupyter#Notebook
+| Src: https://github.com/jupyter/notebook
+
+:ref:`Jupyter` Notebook is the latest :ref:`IPython Notebook`.
+
+   The Jupyter HTML Notebook is a web-based notebook environment
+   for interactive computing.
+
+.. warning:: Jupyter Notebook runs code and shell commands as
+   the user the process is running as, on a remote or local machine.
+
+   Reproducible :ref:`SciPy Stack <scipystack>`
+   IPython Notebook / :ref:`Jupyter Notebook` servers
+   implement best practices like process isolation and privilege separation
+   with e.g. :ref:`Docker` and/or :ref:`Jupyter` Hub.
+
+
+.. index:: Jupyter Drive
+.. _jupyter drive:
+
+Jupyter Drive
+++++++++++++++++++++++++++
+| Src: git https://github.com/jupyter/jupyter-drive
+
+Jupyter Drive adds support to :ref:`Jupyter Notebook`
+for reading and writing :ref:`nbformat` notebook ``.ipynb``
+files to and from Google Drive.
+
+
+.. index:: nbconvert
+.. _nbconvert:
+
+nbconvert
++++++++++++
+| Docs: http://ipython.org/ipython-doc/stable/notebook/nbconvert.html
+|
+
+nbconvert is the code that converts (transforms) an ``.ipynb`` notebook
+(:ref:`nbformat` :ref:`JSON <json->`) file
+( into an output representation (e.g. HTML,
+slides (reveal.js), LaTeX, PDF, ePub, Mobi).
+
+* nbconvert is included with :ref:`IPython`
+* nbconvert is part of :ref:`Project Jupyter<jupyter>`
+
+  .. code:: bash
+
+    pip install nbconvert
+    # pip install -e git+https://github.com/jupyter/nbconvert@master#egg=nbconvert
+
+    ipython nbconvert --to html mynotebook.ipynb
+    jupyter nbconvert --to html mynotebook.ipynb
+
+
+* reveal.js is an HTML presentation framework
+  for slides in a 1D or 2D arrangement.
+
+  | https://github.com/hakimel/reveal.js
+
+  * Presentation content that doesn't fit on the slide is hidden
+    and unscrollable (*only put a slide worth of data in each cell
+    for a Jupyter reveal.js presentation*).
+
+    .. code:: bash
+
+        jupyter nbconvert --to slides mynotebook.ipynb
+
+* RISE does live reveal.js notebook presentations
+
+  https://github.com/damianavila/RISE
+
+
+.. index:: nbformat
+.. _nbformat:
+
+nbformat
+++++++++++
+| Docs: http://ipython.org/ipython-doc/dev/notebook/nbformat.html
+| Docs: https://nbformat.readthedocs.io/en/latest/
+| Docs: https://nbformat.readthedocs.io/en/latest/format_description.html#backward-compatible-changes
+
+The :ref:`Jupyter notebook` (``.ipynb``) format is a versioned
+:ref:`JSON <json->` format for storing metadata and input/output sequences.
+
+Usually, when the nbformat changes, notebooks are silently upgraded to the
+new version on the next save.
+
+.. note:: nbformat v3 and above add a **kernelspec** attribute to the
+   nbformat :ref:`JSON <json->`, because ``.ipynb`` files can now contain
+   code for languages other than :ref:`Python`.
+
+* nbformat does not specify any schema for the user-supplied
+  metadata dict (TODO) that can be edited
+  so, JSON that conforms to an externally
+  managed :ref:`JSON-LD <json-ld->` ``@context``
+  would work.
+
+
+.. index:: nbgrader
+.. _nbgrader:
+
+nbgrader
+++++++++
+| Source: git https://github.com/jupyter/nbgrader
+| Docs: https://nbgrader.readthedocs.io/en/stable/
+| Docs: https://nbgrader.readthedocs.io/en/stable/user_guide/
+| Docs: https://nbgrader.readthedocs.io/en/latest/
+| Docs: https://nbgrader.readthedocs.io/en/latest/user_guide/
+| Docs: https://nbgrader.readthedocs.io/en/latest/command_line_tools/
+
+nbgrader is a solution for centrally receiving and grading :ref:`Jupyter notebooks <jupyter notebook>`.
+
+See also:
+
+* :ref:`sagemathcloud` Course management
+* https://wrdrd.com/docs/consulting/education-technology#jupyter-and-tdd
+
+  * :ref:`jupyter and tdd`
+
+
+.. index:: nbviewer
+.. _nbviewer:
+
+nbviewer
++++++++++++
+| Homepage: http://nbviewer.ipython.org
+| Src: git https://github.com/jupyter/nbviewer
+| Dockerfile: https://github.com/jupyter/nbviewer/blob/master/Dockerfile
+
+:ref:`Jupyter Notebook` Viewer (``nbviewer``)
+is an application for serving read-only
+versions of ``.ipynb`` files which have HTTP URLs.
+
+GitHub now also renders static ``.ipynb`` files, CSV, SVG, and PDF.
+
+
+.. index:: runipy
+.. _runipy:
+
+runipy
++++++++
+| Src: git https://github.com/paulgb/runipy
+| PyPI: https://pypi.python.org/pypi/runipy
+
+runipy runs :ref:`Jupyter notebooks <jupyter notebook>`
+from a :ref:`Shell <shells>` commandline, generates
+`HTML` reports,
+and can write errors to stderr.
+
+:ref:`Jupyter notebook <Jupyter Notebook>` *manual* test review process:
+
+.. code:: python
+
+    # - run Jupyter Notebook server
+    !jupyter notebook
+    # - Browser
+    #     - navigate to / upload / drag and drop the notebook
+            !web http://localhost:8888   # or https://
+    #     - (optional) click 'TODO Restart Kernel'
+    #     - (optional) click 'Cell' > 'All Output' > 'Clear'
+    #     - click 'Cell' > 'Run All'
+    #     - [wait] <Jupyter Kernel runs notebook>
+    #     - visually seek for the first ERRoring cell (scroll)
+    #     - review the notebook
+            for (i, o) in notebook_cells:
+                human.manually_review((i, o))
+    # - Compare the files on disk with the most recent commit (HEAD)
+    !git status && git diff
+    !git diff mynotebook.ipynb
+    # - Commit the changes
+    !git-add-commit "TST: mynotebook: tests for #123" ./mynotebook.ipynb
+
+
+:ref:`Jupyter notebook <Jupyter Notebook>` TODO review process:
+
+.. code:: python
+
+   # - run Jupyter Notebook server
+   !jupyter notebook
+   # - Browser
+   #     - navigate to / upload / drag and drop the notebook
+           !web http://localhost:8888   # or https://
+   #     - (optional) click 'TODO Restart Kernel'
+   #     - (optional) click 'Cell' > 'All Output' > 'Clear'
+   #     - click 'Cell' > 'Run All'
+   #     - [wait] <Jupyter Kernel runs notebook>
+   #     - visually seek for the first ERRoring cell (scroll)
+   #     - review the notebook
+           for (i, o) in notebook_cells:
+               human.manually_review((i, o))
+   # - Compare the files on disk with the most recent commit (HEAD)
+   !git status && git diff
+   !git diff mynotebook.ipynb
+   # - Commit the changes
+   !git-add-commit "TST: mynotebook: tests for #123" ./mynotebook.ipynb
+
+
+:ref:`Jupyter notebook <Jupyter Notebook>` runipy review process:
+
+.. code:: python
+
+    # - runipy the Jupyter notebook
+    !runipy mynotebook.ipynb
+    # - review stdout and stderr from runipy
+    # - review in browser (optional; recommended)
+    #     - navigate to the converted HTML
+            !web ./mynotebook.ipynb.html
+    #     - visually seek for the first WEEoring cell (scroll)
+    #     - review the notebook
+            for (i, o) in notebook_cells:
+                human.manually_review((i, o))
+    # - Compare the files on disk with the most recent commit (HEAD)
+    !git status && git diff
+    !git diff mynotebook.ipynb*
+    # - Commit the changes
+    !git-add-commit "TST: mynotebook: tests for #123" ./mynotebook.ipynb*
+
+* An example of runipy usage in a :ref:`Makefile <Make>`:
+  https://github.com/westurner/notebooks/blob/gh-pages/Makefile
+
+
+.. index:: jupyter_contrib_nbextensions
+.. _jupyter_contrib_nbextensions:
+
+jupyter_contrib_nbextensions
+++++++++++++++++++++++++++++++
+| Src: https://github.com/ipython-contrib/jupyter_contrib_nbextensions
+| Docs: https://github.com/ipython-contrib/jupyter_contrib_nbextensions#1-install-the-python-package
+
+- https://github.com/ipython-contrib/jupyter_contrib_nbextensions#pip
+- https://github.com/ipython-contrib/jupyter_contrib_nbextensions#conda
+
+
+
+.. index:: RISE
+.. index:: Jupyter RISE
+.. _rise:
+
+RISE
++++++++++++++
+| Src: https://github.com/damianavila/RISE
+
+    Reveal.js - Jupyter/IPython Slideshow Extension,
+    also known as ``live_reveal``
+
+* :ref:`Jupyter Notebook`
+* Interactive presentations with live source code evaluation
+
+
+.. index:: NBPresent
+.. _nbpresent:
+
+NBPresent
+++++++++++++
+| Src: https://github.com/Anaconda-Platform/nbpresent
+| Docs: https://docs.continuum.io/anaconda/jupyter-notebook-extensions#notebook-present
+
+    remix your :ref:`Jupyter Notebooks <jupyter notebook>`
+    as interactive slideshows
+
+
+
+.. index:: Anaconda Jupyter Notebook Extensions
+.. _anaconda jupyter notebook extensions:
+
+Anaconda Jupyter Notebook Extensions
++++++++++++++++++++++++++++++++++++++++
+| Src: https://github.com/Anaconda-Platform/anaconda-nb-extensions
+| Docs: https://docs.continuum.io/anaconda/jupyter-notebook-extensions
+
+* :ref:`Conda` environments, :ref:`Anaconda`, :ref:`Jupyter Notebook`
+
+
+.. index:: SageMathCloud
+.. _sagemathcloud:
+
+SageMathCloud
+~~~~~~~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/SageMathCloud
+| Homepage: https://cloud.sagemath.com/
+| Src: https://github.com/sagemathinc/smc
+| ChromeExt: https://chrome.google.com/webstore/detail/the-sagemath-cloud/eocdndagganmilahaiclppjigemcinmb
+| Docs: https://github.com/sagemathinc/smc/wiki
+
+* https://cloud.sagemath.com/
+* Interactive Worksheets
+* Course Management
+* :ref:`LaTeX` Editor
+* :ref:`Jupyter Notebook`
+* Linux Terminal
+* :ref:`Sage Math`
+* CodeMirror
+* Login with: 
+
+
+.. index:: Wakari
+.. _wakari:
+
+Wakari
+~~~~~~~
+| Homepage: https://wakari.io/
+| Src: https://anaconda.org/wakari
+
+* :ref:`Anaconda`, SSH
+* https://github.com/liftoff/GateOne
 
 
 .. index:: Dotfiles

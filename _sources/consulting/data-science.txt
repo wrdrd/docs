@@ -6,21 +6,38 @@ Data Science
 =============
 https://en.wikipedia.org/wiki/Data_science
 
-* :ref:`Linked Reproducibility`
+* :ref:`Science`
 
-* :ref:`IPython Notebook` -> :ref:`Jupyter Notebook`
+  * :ref:`Open Science`
+  * :ref:`Scientific Method`
 
-  * https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks
+* :ref:`Reproducibility`
+
+  * :ref:`Ten Simple Rules`
+  * :ref:`Linked Reproducibility`
+
+:ref:`Open Source` :ref:`Tools`:
+
+* :ref:`SageMathCloud` (:ref:`SageMath`)
+* :ref:`Jupyter Notebook`
+
+  * :ref:`Jupyter Docker Stacks` (:ref:`Conda`)
+  * :ref:`Jupyter Extensions`
   * :ref:`Jupyter and Reproducibility`
-  * ``conda install jupyter`` (:ref:`Conda` (:ref:`Anaconda`))
 
 
+.. index:: datasciencemasters.org
+.. _datasciencemasters.org: 
 
 datasciencemasters.org
 -------------------------
 | "The Open Source Data Science Masters"
 | http://datasciencemasters.org/
 |
+
+
+.. index:: Ten Simple Rules
+.. _ten simple rules:
 
 Ten Simple Rules
 ------------------
@@ -793,7 +810,9 @@ https://en.wikipedia.org/wiki/Extract,_transform,_load
 
 Machine Learning
 ~~~~~~~~~~~~~~~~~~
-https://en.wikipedia.org/wiki/Machine_learning
+| Wikipedia: https://en.wikipedia.org/wiki/Machine_learning
+| Awesome: https://github.com/onurakpolat/awesome-bigdata
+| Awesome: https://github.com/josephmisiti/awesome-machine-learning
 
 https://en.wikipedia.org/wiki/Online_machine_learning
 
@@ -806,7 +825,7 @@ https://en.wikipedia.org/wiki/Online_machine_learning
 
 Deep Learning
 ~~~~~~~~~~~~~~
-https://en.wikipedia.org/wiki/Deep_learning
+| Wikipedia: https://en.wikipedia.org/wiki/Deep_learning
 
 * https://en.wikipedia.org/wiki/Biological_neural_network
 * https://en.wikipedia.org/wiki/Artificial_neural_network
