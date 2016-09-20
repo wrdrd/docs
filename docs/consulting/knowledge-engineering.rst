@@ -4478,6 +4478,7 @@ JSON-LD
 | Wikipedia: https://en.wikipedia.org/wiki/JSON-LD
 | Homepage: http://json-ld.org/
 | Standard: http://www.w3.org/TR/json-ld/
+| Docs: http://manu.sporny.org/2014/json-ld-origins-2/
 
 JSON-LD (*JSON Linked Data*) is a standard for expressing
 :ref:`RDF` :ref:`Linked Data` as :ref:`JSON`.
@@ -4737,8 +4738,19 @@ and :ref:`JSON-LD`.
 * "Evolving Schema.org in Practice Pt1: The Bits and Pieces" (2016)
   http://dataliberate.com/2016/02/evolving-schema-org-in-practice-pt1-the-bits-and-pieces/
 
+* :ref:`RDFa`
+
+  - https://github.com/schemaorg/schemaorg/blob/sdo-callisto/data/schema.rdfa
+  - https://raw.githubusercontent.com/schemaorg/schemaorg/sdo-callisto/data/schema.rdfa
+
+* :ref:`JSONLD`
+
+  - https://github.com/schemaorg/schemaorg/blob/sdo-callisto/data/releases/3.2/all-layers.jsonld
+  - https://github.com/schemaorg/schemaorg/raw/sdo-callisto/data/releases/3.2/all-layers.jsonld
+
 .. note:: The `<https://schema.org/>`__ site is served over HTTPS,
    but the schema.org terms are HTTP **URIs**
+
 
 .. index:: Schema.org RDF
 .. _schema.org-rdf:
@@ -4750,11 +4762,11 @@ Schema.org RDF
 | LOVLink: http://lov.okfn.org/dataset/lov/vocabs/schema
 | Standard: https://schema.org/docs/schema_org_rdfa.html [:ref:`RDFa`]
 
-Tools and Mappings
+* :ref:`RDFa`
 
-* https://github.com/mhausenblas/schema-org-rdf
-* http://schema.rdfs.org/tools.html
-* http://schema.rdfs.org/mappings.html
+  - https://github.com/schemaorg/schemaorg/blob/sdo-callisto/data/schema.rdfa
+  - https://raw.githubusercontent.com/schemaorg/schemaorg/sdo-callisto/data/schema.rdfa
+
 
 .. index:: Schema.org TopBraid RDF
 .. _schemaorg topbraid rdf:
