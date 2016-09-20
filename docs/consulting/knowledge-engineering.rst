@@ -4105,7 +4105,7 @@ Like PDF, XML is derived from SGML.
 
 
 .. index:: XSD
-.. _XSD:
+.. _xsd:
 
 XSD
 ++++
@@ -4117,6 +4117,8 @@ XSD
 
 XSD (*XML Schema Datatypes*) are standard datatypes for things like
 strings, integers, floats, and dates for :ref:`XML` and also :ref:`RDF`.
+
+- https://www.w3.org/TR/xmlschema11-2/#built-in-datatypes
 
 
 .. index:: JSON
