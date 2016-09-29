@@ -505,7 +505,7 @@ Math Courses
 * :ref:`information theory`
 * "Mathematics for Computer Science" (CC-BY-SA 3.0)
 
-  http://courses.csail.mit.edu/6.042/spring14/mcs.pdf
+  https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-spring-2015/readings/MIT6_042JS15_textbook.pdf
 * https://www.khanacademy.org/math/recreational-math
 * https://www.khanacademy.org/math/competition-math
 * https://www.class-central.com/subject/maths
