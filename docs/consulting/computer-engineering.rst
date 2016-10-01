@@ -592,6 +592,35 @@ eSATA (*External* :ref:`SATA`) works with
 (powered, unpowered, portable) external drives.
 
 
+.. index:: mSATA
+.. _msata:
+
+mSATA
+--------
+| Wikipedia: https://en.wikipedia.org/wiki/Serial_ATA#Mini-SATA_.28mSATA.29
+
+mSATA (Mini-SATA) is a smaller :ref:`SATA` connector.
+
+
+.. index:: eSATAp
+.. _esatap:
+
+eSATAp
+--------
+| Wikipedia: https://en.wikipedia.org/wiki/ESATAp
+
+eSATAp (Power ESATA) is a :ref:`SATA` connector which also includes
+power and supports :ref:`USB`.
+
+
+    An eSATAp port combines the four pins of the USB 2.0 (or earlier)
+    port, the seven pins of the eSATA port, and optionally two 12 V
+    power pins
+
+- Without eSATAp, :ref:`eSATA` devices require an additional power
+  source.
+
+
 .. index:: SCSI
 .. _scsi:
 
