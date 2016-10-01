@@ -36,7 +36,7 @@ Citations are most useful in a structured form
 
 Citations in the bibliography or references
 or resources section of a textual document
-must be parsed in order to derived a
+must be parsed in order to derive a
 **citation graph**.
 
 - :ref:`Zotero`
