@@ -600,7 +600,7 @@ mSATA
 ========
 | Wikipedia: https://en.wikipedia.org/wiki/Serial_ATA#Mini-SATA_.28mSATA.29
 
-mSATA (Mini-SATA) is a smaller :ref:`SATA` connector.
+mSATA (Mini-SATA) is a smaller :ref:`eSATA` connector.
 
 
 .. index:: eSATAp
@@ -611,7 +611,7 @@ eSATAp
 ========
 | Wikipedia: https://en.wikipedia.org/wiki/ESATAp
 
-eSATAp (Power eSATA) is a :ref:`SATA` connector which also includes
+eSATAp (Power eSATA) is a :ref:`eSATA` connector which also includes
 power and supports :ref:`USB`.
 
 
