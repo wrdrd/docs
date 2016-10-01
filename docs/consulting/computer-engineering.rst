@@ -611,7 +611,7 @@ eSATAp
 ========
 | Wikipedia: https://en.wikipedia.org/wiki/ESATAp
 
-eSATAp (Power ESATA) is a :ref:`SATA` connector which also includes
+eSATAp (Power eSATA) is a :ref:`SATA` connector which also includes
 power and supports :ref:`USB`.
 
 
