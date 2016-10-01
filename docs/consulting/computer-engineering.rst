@@ -595,8 +595,9 @@ eSATA (*External* :ref:`SATA`) works with
 .. index:: mSATA
 .. _msata:
 
+========
 mSATA
---------
+========
 | Wikipedia: https://en.wikipedia.org/wiki/Serial_ATA#Mini-SATA_.28mSATA.29
 
 mSATA (Mini-SATA) is a smaller :ref:`SATA` connector.
@@ -605,8 +606,9 @@ mSATA (Mini-SATA) is a smaller :ref:`SATA` connector.
 .. index:: eSATAp
 .. _esatap:
 
+========
 eSATAp
---------
+========
 | Wikipedia: https://en.wikipedia.org/wiki/ESATAp
 
 eSATAp (Power ESATA) is a :ref:`SATA` connector which also includes
