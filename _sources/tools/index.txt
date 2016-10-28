@@ -387,7 +387,7 @@ emerge
 ~~~~~~~~
 | Wikipedia: `<https://en.wikipedia.org/wiki/Portage_(software)#Emerge>`__
 | Homepage: https://wiki.gentoo.org/wiki/Portage#emerge
-| Source: git https://github.com/gentoo/portage
+| Src: git https://github.com/gentoo/portage
 | Docs: https://wiki.gentoo.org/wiki/Project:Package_Manager_Specification
 | Docs: https://projects.gentoo.org/pms/6/pms.html
 
@@ -485,7 +485,7 @@ Pacman is an open source package manager which installs
 Pants Build
 ~~~~~~~~~~~
 | Homepage: https://pantsbuild.github.io/
-| Source: git https://github.com/pantsbuild/pants
+| Src: git https://github.com/pantsbuild/pants
 | Docs: https://pantsbuild.github.io/first_concepts.html
 | Docs: https://pantsbuild.github.io/install.html
 | Docs: https://pantsbuild.github.io/first_tutorial.html
@@ -535,7 +535,7 @@ Pants Build is a build tool for :ref:`JVM` [:ref:`Java`, :ref:`Scala`,
 PEX
 ~~~~~
 | Homepage: https://pex.readthedocs.io/
-| Source: https://github.com/pantsbuild/pex
+| Src: https://github.com/pantsbuild/pex
 | PyPI: https://pypi.python.org/pypi/pex
 | Docs: https://pex.readthedocs.io/en/stable/
 
@@ -1383,7 +1383,7 @@ seeAlso:
 cookiecutter
 ~~~~~~~~~~~~~
 | Homepage: https://github.com/audreyr/cookiecutter
-| Source: git https://github.com/audreyr/cookiecutter
+| Src: git https://github.com/audreyr/cookiecutter
 | PyPI: https://pypi.python.org/pypi/cookiecutter
 | Docs: https://cookiecutter.readthedocs.io/en/latest/
 | Docs: https://cookiecutter.readthedocs.io/en/latest/usage.html
@@ -1436,8 +1436,8 @@ yeoman
 ~~~~~~~~
 | Wikipedia: `<https://en.wikipedia.org/wiki/Yeoman_(computing)>`__
 | Homepage: http://yeoman.io/
-| Source: git https://github.com/yeoman/yeoman
-| Source: https://github.com/yeoman
+| Src: git https://github.com/yeoman/yeoman
+| Src: https://github.com/yeoman
 | NPM: https://www.npmjs.com/package/yo
 | NPMPkg: ``yo``
 | Docs: http://yeoman.io/learning/
@@ -1574,7 +1574,7 @@ CommonMark
 +++++++++++++
 | Homepage: http://commonmark.org
 | Standard: http://spec.commonmark.org/0.22/
-| Source:  https://github.com/jgm/CommonMark
+| Src:  https://github.com/jgm/CommonMark
 
 :ref:`CommonMark` is one effort to standardize :ref:`Markdown`.
 
@@ -2398,7 +2398,7 @@ TypeScript
 ~~~~~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/TypeScript
 | Homepage: http://www.typescriptlang.org/
-| Source: git https://github.com/Microsoft/TypeScript
+| Src: git https://github.com/Microsoft/TypeScript
 | NPM: https://www.npmjs.com/package/typescript
 | NPMPkg: typescript
 | Standard: https://github.com/Microsoft/TypeScript/blob/master/doc/spec.md
@@ -2422,7 +2422,7 @@ WebAssembly
 ~~~~~~~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/WebAssembly
 | Project: https://www.w3.org/community/webassembly/
-| Source: https://github.com/WebAssembly
+| Src: https://github.com/WebAssembly
 | FileExt: ``.wast``
 | FileExt: ``.wasm``
 | Docs: https://github.com/WebAssembly/design
@@ -2523,7 +2523,7 @@ ROSE
 ++++++
 | Wikipedia: `<https://en.wikipedia.org/wiki/ROSE_(compiler_framework)>`__
 | Homepage: http://rosecompiler.org/
-| Source: git https://github.com/rose-compiler/rose
+| Src: git https://github.com/rose-compiler/rose
 | Docs: http://rosecompiler.org/?page_id=11
 | Docs: http://rosecompiler.org/ROSE_Tutorial/ROSE-Tutorial.pdf
 | Docs: http://www.rosecompiler.org/ROSE_HTML_Reference/
@@ -3419,7 +3419,7 @@ which builds a directed acyclic graph (DAG).
 Jake
 ~~~~~
 | Homepage: http://jakejs.com/
-| Source: git https://github.com/jakejs/jake
+| Src: git https://github.com/jakejs/jake
 | NPMPkg: jake
 | NPM: https://www.npmjs.com/package/jake
 | Docs: http://jakejs.com/docs
@@ -4976,7 +4976,7 @@ new version on the next save.
 
 nbgrader
 ++++++++
-| Source: git https://github.com/jupyter/nbgrader
+| Src: git https://github.com/jupyter/nbgrader
 | Docs: https://nbgrader.readthedocs.io/en/stable/
 | Docs: https://nbgrader.readthedocs.io/en/stable/user_guide/
 | Docs: https://nbgrader.readthedocs.io/en/latest/
