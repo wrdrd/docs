@@ -408,6 +408,8 @@ Quantopian
 | Twitter: https://twitter.com/quantopian
 | Src: https://github.com/quantopian
 | Docs: https://www.quantopian.com/help
+| Docs: https://www.quantopian.com/tutorials/getting-started
+| Docs: https://www.quantopian.com/tutorials/
 
 Quantopian is a crowd-sourced hedge fund.
 
