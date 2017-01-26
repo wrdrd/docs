@@ -2197,8 +2197,13 @@ and a proprietary production database system.
   with :ref:`Java` integration through an adaptation of
   :ref:`HBase` API.
 
+
 .. index:: Beam
 .. index:: Apache Beam
+.. _apache-beam:
+.. _beam:
+
+Apache Beam
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 | Homepage: https://beam.apache.org/
 | Src: git://git.apache.org/beam.git
