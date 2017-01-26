@@ -1963,7 +1963,7 @@ NoSQL Databases
 
 * `<https://en.wikipedia.org/wiki/Column_family>`_
 * `<https://en.wikipedia.org/wiki/Super_column>`_
-* https://en.wikipedia.org/wiki/Apache_Accumulo
+* https://en.wikipedia.org/wiki/Apache:
 
 
 .. index:: Graph Databases
@@ -2196,6 +2196,23 @@ and a proprietary production database system.
 * Cloud BigTable is a :ref:`PaaS` / :ref:`SaaS` service
   with :ref:`Java` integration through an adaptation of
   :ref:`HBase` API.
+
+
+.. index:: Beam
+.. index:: Apache Beam
+.. _apache-beam:
+.. _beam:
+
+Apache Beam
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+| Homepage: https://beam.apache.org/
+| Src: git://git.apache.org/beam.git
+| Src: https://github.com/apache/beam
+| Docs: https://beam.apache.org/documentation/
+
+Apache Beam is an open source batch and streaming
+parallel data processing framework with support for
+Apache Apex, Apache Flink, `Apache Spark`_, and Google Cloud Dataflow. 
 
 
 .. index:: Cassandra
