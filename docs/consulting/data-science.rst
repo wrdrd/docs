@@ -805,6 +805,20 @@ https://en.wikipedia.org/wiki/Knowledge_extraction
 https://en.wikipedia.org/wiki/Extract,_transform,_load
 
 
+.. index:: Data Dredging
+.. _data dredging:
+
+Data Dredging
+~~~~~~~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Data_dredging
+
+* **!**
+* :ref:`causality`
+* spurious correlations
+
+  * http://tylervigen.com/spurious-correlations
+
+
 .. index:: Machine Learning
 .. _machine-learning:
 
