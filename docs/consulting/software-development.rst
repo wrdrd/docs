@@ -329,9 +329,23 @@ Digital Stand Up Meeting Process Checklist:
 
 * [ ] Chat (Text, Voice, Video)
 
-  * Text: XMPP, HipChat, Gitter, Slack, IRC
+  * Text
+  
+    * :ref:`Slack`
+    * :ref:`Mattermost`
+    * HipChat
+    * Gitter
+    * :ref:`XMPP`
+    * :ref:`IRC`
+    
   * Voice/Video (cross-platform): Google Hangouts, Skype, Cisco WebEx,
     :ref:`WebRTC`
+    
+    * Live streaming
+    
+      * YouTube
+      * Twitter
+      * Facebook
 
 
 See: :ref:`team building`
