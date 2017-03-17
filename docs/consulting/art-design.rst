@@ -1978,8 +1978,7 @@ with adaptive bitrates over :ref:`HTTP`.
 
 nginx-rtmp-module
 ~~~~~~~~~~~~~~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/Nginx-rtmp-module
-| Source: git https://github.com/arut/nginx-rtmp-module
+| Source: https://github.com/arut/nginx-rtmp-module
 | Docs: https://github.com/arut/nginx-rtmp-module/wiki
 | Docs: https://github.com/arut/nginx-rtmp-module/wiki/Installing-on-Ubuntu-using-PPAs
 
