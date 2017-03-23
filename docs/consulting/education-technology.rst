@@ -7,6 +7,7 @@
 Education Technology
 **********************
 | Wikipedia: https://en.wikipedia.org/wiki/Educational_technology
+| Hashtags: ``#EdTech``, ``#EduTech``
 
 
 .. index:: STEM
