@@ -33,6 +33,7 @@ LinkedReproducibility
 
 StudyGraph: Document Nodes and Link Edges
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 We should use annotations with typed, reified edges to link between
 various studies with comparable and incomparable analyses. (e.g.
 :ref:`OpenAnnotation` :ref:`OA` :ref:`RDF` :ref:`OWL` with more data
@@ -75,16 +76,17 @@ than threaded comments).
     - :ref:`CSVW`
     - :ref:`StructuredPremises`
 
-- What we lack are **edges** between the actual studies
+- What we lack are **structured edges/relations** between the actual studies
 
-  - confirms, seemsToConfirm -> confirmatoryEdge
+  - ex:confirms, ex:seemsToConfirm -> ex:confirmatoryEdge
 
     - [strength of association ["magnitude"]]
 
-  - reproduces, seemsToReproduce -> reproducibilityEdge
-  - refutes
-  - disproves
+  - ex:reproduces, ex:seemsToReproduce -> ex:reproducibilityEdge
+  - ex:refutes
+  - ex:disproves
   - TODO: see the list i brainstormed
+    - 
 
   - frameworks for edges:
 
@@ -188,9 +190,8 @@ StructuredPremises: Premises as structured data
 - further questions
 
     - "downstream" studies / implementations
-
     - retraction management
-  - decisions / policy predicated on said conclusions
+    - decisions / policy predicated on said conclusions
 
 
 LinkedMetaAnalyses
