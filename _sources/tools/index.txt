@@ -292,7 +292,82 @@ Sources:
 
 
 
-See also: :ref:`Anaconda`
+See also: :ref:`Anaconda`, :ref:`conda-forge` (:ref:`conda-smithy`)
+
+
+.. index:: conda-forge
+.. _conda-forge:
+
+conda-forge
+~~~~~~~~~~~~~~~~~
+| Homepage: https://conda-forge.github.io/
+| Src: https://github.com/conda-forge
+| Src: https://github.com/conda-forge/feedstocks
+| Src: https://github.com/conda-forge/feedstocks/tree/master/feedstocks
+| Src: https://github.com/conda-forge/staged-recipes
+| DockerHub: https://hub.docker.com/r/condaforge/linux-anvil
+| Docs: https://conda-forge.github.io/docs/
+| Docs: https://conda-forge.github.io/docs/recipe.html
+
+* https://conda-forge.github.io/#add_recipe
+
+  * A. fork: https://github.com/conda-forge/staged-recipes
+  
+    * meta.yaml https://github.com/conda-forge/staged-recipes/blob/master/recipes/example/meta.yaml
+    
+  * B. conda-smithy
+    
+  * meta.yaml
+  
+    * Docs: numpy x.x: https://conda-forge.github.io/docs/meta.html#building-against-numpy
+    
+  * circle.yml
+  
+    * https://github.com/conda-forge/staged-recipes/blob/master/circle.yml
+    
+  * .travis.yml
+  
+    * https://github.com/conda-forge/staged-recipes/blob/master/.travis.yml
+    
+  * appveyor.yml
+  
+    * https://github.com/conda-forge/staged-recipes/blob/master/appveyor.yml
+    
+  * conda-forge.yml
+  * run_docker_build.sh
+    https://github.com/conda-forge/staged-recipes/blob/master/scripts/run_docker_build.sh
+  * bootstrap-obvious-ci-and-miniconda.py
+    https://github.com/conda-forge/conda-smithy/blob/master/bootstrap-obvious-ci-and-miniconda.py
+
+.. code:: bash
+    # create a conda package recipe from a pypi package
+    cd $VIRTUAL_ENV/src
+    conda skeleton pypi jupyterthemes
+    ls -ld jupyterthemes/
+    edit jupyterthemes/meta.yaml
+    # - git repo tags || pypi releases
+
+    # create a conda-forge feedstock from a conda recipe
+    ## https://github.com/conda-forge/conda-smithy#making-a-new-feedstock
+    cd $VIRTUAL_ENV/src
+    ls -ld jupyterthemes
+    conda-smithy init jupyterhemes
+    ls jupyterthemes-feedstock/
+
+    # build a conda-forge feedstock with docker
+    # FROM condaforge/linux-anvil
+    cat ./scripts/run_docker_build.sh
+    ./scripts/run_docker_build.sh
+    ./ci_support/run_docker_build.sh
+    
+    
+.. index:: conda-smithy
+.. _conda-smithy:
+
+conda-smithy
+~~~~~~~~~~~~~~
+| Src: https://github.com/conda-forge/conda-smithy
+| Docs: https://github.com/conda-forge/conda-smithy#making-a-new-feedstock
 
 
 .. index:: DEB
@@ -2047,6 +2122,7 @@ Python
 | Docs: https://en.wikiversity.org/wiki/Python
 | Docs: https://www.class-central.com/search?q=python
 | Docs: http://learnxinyminutes.com/docs/python/
+| Awesome: https://github.com/vinta/awesome-python
 
 Python is a free and open source
 dynamically-typed, :ref:`C`-based third-generation
