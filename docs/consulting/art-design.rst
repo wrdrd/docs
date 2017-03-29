@@ -8,7 +8,7 @@
 =============
 Art & Design
 =============
-| https://en.wikifpedia.org/wiki/Art
+| https://en.wikipedia.org/wiki/Art
 | https://en.wikipedia.org/wiki/Design
 
 
