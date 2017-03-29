@@ -123,6 +123,7 @@ ReadTheDocs
 *************
 | Homepage: https://readthedocs.org/
 | Source: git https://github.com/rtfd/readthedocs.io
+| Source: git https://github.com/rtfd/readthedocs-docker-images
 | Docs: https://read-the-docs.readthedocs.io/en/latest/
 
 ReadTheDocs is a free and :ref:`open source`
