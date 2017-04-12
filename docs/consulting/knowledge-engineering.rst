@@ -3615,6 +3615,9 @@ Linked Data
 | Wikipedia: https://en.wikipedia.org/wiki/Linked_data
 
 * http://www.w3.org/DesignIssues/LinkedData.html
+* Linked Data Standards:
+
+  * W3C: https://www.w3.org/TR/#tr_Linked_Data
 
 
 .. index:: 5 Star Open Data
@@ -3846,6 +3849,8 @@ W3C
 W3C (*World Wide Web Consortium*) is a standards body.
 
 * List of W3C standards: http://www.w3.org/TR/
+
+  - https://www.w3.org/TR/#tr_Linked_Data
 
 
 .. index:: HTTP
