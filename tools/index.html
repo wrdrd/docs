@@ -1326,6 +1326,27 @@ package repositories)</li>
 </ul>
 </li>
 </ul>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span># create a conda package recipe from a pypi package
+cd $VIRTUAL_ENV/src
+conda skeleton pypi jupyterthemes
+ls -ld jupyterthemes/
+edit jupyterthemes/meta.yaml
+# - git repo tags || pypi releases
+
+# create a conda-forge feedstock from a conda recipe
+## https://github.com/conda-forge/conda-smithy#making-a-new-feedstock
+cd $VIRTUAL_ENV/src
+ls -ld jupyterthemes
+conda-smithy init jupyterhemes
+ls jupyterthemes-feedstock/
+
+# build a conda-forge feedstock with docker
+# FROM condaforge/linux-anvil
+cat ./scripts/run_docker_build.sh
+./scripts/run_docker_build.sh
+./ci_support/run_docker_build.sh
+</pre></div>
+</div>
 </div>
 <div class="section" id="conda-smithy">
 <span id="index-12"></span><span id="id11"></span><h3>conda-smithy<a class="headerlink" href="#conda-smithy" title="Permalink to this headline">¶</a></h3>

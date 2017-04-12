@@ -340,6 +340,7 @@ conda-forge
     https://github.com/conda-forge/conda-smithy/blob/master/bootstrap-obvious-ci-and-miniconda.py
 
 .. code:: bash
+
     # create a conda package recipe from a pypi package
     cd $VIRTUAL_ENV/src
     conda skeleton pypi jupyterthemes
