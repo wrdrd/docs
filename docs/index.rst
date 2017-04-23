@@ -5,7 +5,6 @@
 
 WRD R&D Documentation
 =======================
-| Docs: https://wrdrd.com/docs/
 | Docs: https://wrdrd.github.io/docs/
 | Src: https://github.com/wrdrd/docs
 

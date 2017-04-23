@@ -233,7 +233,7 @@ html_show_sphinx = False
 # If true, an OpenSearch description file will be output, and all pages will
 # contain a <link> tag referring to it.  The value of this option must be the
 # base URL from which the finished HTML is served.
-html_use_opensearch = 'https://wrdrd.com/docs/'
+html_use_opensearch = 'https://wrdrd.github.io/docs/'
 
 # This is the file name suffix for HTML files (e.g. ".xhtml").
 #html_file_suffix = None
@@ -355,7 +355,7 @@ def configure_meta_tags(app, pagename, templatename, context, doctree):
         title=context.get('title', ''),
         description=context.get('description', ''),
         og_site_name="WRD R&D",
-        og_image_url="https://wrdrd.com/static/png/drawing-7.09-v0.1.1--_desk.svg-470x242.png",
+        og_image_url="https://wrdrd.github.io/static/png/drawing-7.09-v0.1.1--_desk.svg-470x242.png",
         og_image_width="470",
         og_image_height="242",
         twitter_user="wrdrd")
