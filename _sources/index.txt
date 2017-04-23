@@ -5,7 +5,6 @@
 
 WRD R&D Documentation
 =======================
-| Docs: https://wrdrd.com/docs/
 | Docs: https://wrdrd.github.io/docs/
 | Src: https://github.com/wrdrd/docs
 
@@ -38,7 +37,7 @@ WRD R&D Documentation
 
 Tools
 ------
-| Homepage: https://westurner.org/tools/
+| Homepage: https://westurner.github.io/tools/
 | Source: git https://github.com/westurner/tools
 
 .. toctree::

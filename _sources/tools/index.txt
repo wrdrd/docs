@@ -1449,8 +1449,8 @@ Exemplar Projects
 
 seeAlso:
 
-* https://wrdrd.com/docs/consulting/software-development#agile
-* https://wrdrd.com/docs/consulting/team-building#the-same-page
+* https://wrdrd.github.io/docs/consulting/software-development#agile
+* https://wrdrd.github.io/docs/consulting/team-building#the-same-page
 
 
 .. index:: cookiecutter
@@ -2296,7 +2296,7 @@ Jupyter Docker Stacks
 See also:
 
 + :ref:`Docker`
-+ https://wrdrd.com/docs/consulting/data-science#reproducibility
++ https://wrdrd.github.io/docs/consulting/data-science#reproducibility
 
 
 .. index:: PyPy
@@ -4879,11 +4879,11 @@ with `Nose <https://westurner.org/wiki/awesome-python-testing#nose>`__.
 See also:
 
 * TDD: Test Driven Development
-  https://wrdrd.com/docs/consulting/software-development#test-driven-development
+  https://wrdrd.github.io/docs/consulting/software-development#test-driven-development
 * **Refactoring** and **Reproducibility**
 
-  * https://wrdrd.com/docs/consulting/software-development#refactoring
-  * https://wrdrd.com/docs/consulting/data-science#reproducibility
+  * https://wrdrd.github.io/docs/consulting/software-development#refactoring
+  * https://wrdrd.github.io/docs/consulting/data-science#reproducibility
 
 
 .. index:: nosebook
@@ -5065,7 +5065,7 @@ nbgrader is a solution for centrally receiving and grading :ref:`Jupyter noteboo
 See also:
 
 * :ref:`sagemathcloud` Course management
-* https://wrdrd.com/docs/consulting/education-technology#jupyter-and-tdd
+* https://wrdrd.github.io/docs/consulting/education-technology#jupyter-and-tdd
 
   * :ref:`jupyter and tdd`
 
@@ -6647,7 +6647,7 @@ modules and features bundled in.
 
 Documentation Tools
 =====================
-| Docs: https://wrdrd.com/docs/consulting/education-technology#publishing
+| Docs: https://wrdrd.github.io/docs/consulting/education-technology#publishing
 
 
 .. index:: Docutils
@@ -7228,8 +7228,8 @@ for system maintenance.
 
 Standards
 ============
-| Docs: https://wrdrd.com/docs/consulting/knowledge-engineering#web-standards
-| Docs: https://wrdrd.com/docs/consulting/knowledge-engineering#semantic-web-standards
+| Docs: https://wrdrd.github.io/docs/consulting/knowledge-engineering#web-standards
+| Docs: https://wrdrd.github.io/docs/consulting/knowledge-engineering#semantic-web-standards
 
 
 .. index:: Cascading Style Sheets
@@ -7239,7 +7239,7 @@ Standards
 CSS
 ~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/Cascading_Style_Sheets
-| Docs: https://wrdrd.com/docs/consulting/knowledge-engineering#css
+| Docs: https://wrdrd.github.io/docs/consulting/knowledge-engineering#css
 
 CSS (*Cascading Style Sheets*) define the presentational
 aspects of :ref:`HTML-` and a number of mobile and desktop
@@ -7281,8 +7281,8 @@ system file naming structure.
 HTTP
 ~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/HTTP
-| Docs: https://wrdrd.com/docs/consulting/knowledge-engineering#http
-| Docs: https://wrdrd.com/docs/consulting/knowledge-engineering#http2
+| Docs: https://wrdrd.github.io/docs/consulting/knowledge-engineering#http
+| Docs: https://wrdrd.github.io/docs/consulting/knowledge-engineering#http2
 
 
 .. index:: HTTPS
@@ -7291,7 +7291,7 @@ HTTP
 HTTPS
 ++++++
 | Wikipedia: https://en.wikipedia.org/wiki/HTTPS
-| Docs: https://wrdrd.com/docs/consulting/knowledge-engineering#https
+| Docs: https://wrdrd.github.io/docs/consulting/knowledge-engineering#https
 
 
 .. index:: HTML
@@ -7300,7 +7300,7 @@ HTTPS
 HTML
 ~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/HTML
-| Docs: https://wrdrd.com/docs/consulting/knowledge-engineering#html5
+| Docs: https://wrdrd.github.io/docs/consulting/knowledge-engineering#html5
 
 
 .. index:: JSON
@@ -7334,7 +7334,7 @@ for parsing and indenting ("prettifying") JSON from the commandline ::
     cat example.json | python -m json.tool
 
 * See also:
-  https://wrdrd.com/docs/consulting/knowledge-engineering#json
+  https://wrdrd.github.io/docs/consulting/knowledge-engineering#json
 
 
 .. index:: JSONLD
@@ -7346,7 +7346,7 @@ JSON-LD
 | Wikipedia: https://en.wikipedia.org/wiki/JSON-LD
 | Homepage: http://json-ld.org
 | Docs: http://json-ld.org/playground/
-| Docs: https://wrdrd.com/docs/consulting/knowledge-engineering#json-ld
+| Docs: https://wrdrd.github.io/docs/consulting/knowledge-engineering#json-ld
 
 JSON-LD is a web standard for **Linked Data** in :ref:`JSON <json->`.
 
@@ -7407,7 +7407,7 @@ MessagePack (*msgpack*) is a data interchange format
 with implementations in many languages.
 
 * :ref:`MsgPack` is a `Distributed Computing Protocol`
-  https://wrdrd.com/docs/consulting/knowledge-engineering#distributed-computing-protocols
+  https://wrdrd.github.io/docs/consulting/knowledge-engineering#distributed-computing-protocols
 * :ref:`Salt` serializes messages with :ref:`MsgPack` by default.
 
 
