@@ -183,7 +183,7 @@ StructuredPremises: Premises as structured data
 
   - #TenSimpleRules for Reproducibile Computational Research
     | http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1003285
-    | https://wrdrd.com/docs/consulting/data-science#tensimplerules-for-reproducible-computational-research
+    | https://wrdrd.github.io/docs/consulting/data-science#tensimplerules-for-reproducible-computational-research
     
 
 

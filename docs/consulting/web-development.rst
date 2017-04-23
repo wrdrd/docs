@@ -192,7 +192,7 @@ Web Glossary
 
     DNS
         Domain Name System. Converts a :term:`domain name`
-        (e.g. ``localhost`` or ``wrdrd.com``) into an
+        (e.g. ``localhost`` or ``wrdrd.github.io``) into an
         :term:`IP address` (e.g. ``127.0.0.1`` (IPv4) or ``::1`` (IPv6)).
 
         * Initial DNS hosting costs are often covered by Web Hosts.
@@ -220,7 +220,7 @@ Web Glossary
 
             scheme://host:port/p/a/t/h
 
-            https://wrdrd.com/docs/   # https, wrdrd.com, port 443, /docs/
+            https://wrdrd.github.io/docs/   # https, wrdrd.github.io, port 443, /docs/
 
         * With an :ref:`http <HTTP>` scheme, the default port is 80.
         * With an :ref:`https <HTTPS>` scheme, the default port is 443.
@@ -235,7 +235,7 @@ Web Glossary
 
             scheme://host:port/p/a/t/h?query#fragment
 
-            https://wrdrd.com/docs/#wrdrd
+            https://wrdrd.github.io/docs/#wrdrd
 
         * :term:`URLs <url>` are URIs.
         * :term:`URNs <urn>` are URIs.

@@ -242,7 +242,7 @@ The same page
 * `<https://www.google.com/search?q="on+the+same+page">`__
 * `<https://www.bing.com/search?q="on+the+same+page">`__
 * `<https://search.yahoo.com/search?p="on+the+same+page">`__
-* https://wrdrd.com/docs/consulting/team-building#the-same-page
+* https://wrdrd.github.io/docs/consulting/team-building#the-same-page
   (:ref:`Sphinx`, :ref:`Git`
   
   * Source, Edit, History, Annotate sidebar links
@@ -280,7 +280,7 @@ Text Templates
 Collaboration Checklist
 -------------------------
 
-* [X] Read https://wrdrd.com/docs/consulting/team-building
+* [X] Read https://wrdrd.github.io/docs/consulting/team-building
 * [ ] Collaboration Plan (`Seven Layer Model of Collaboration`_)
 
   1. [ ] Goals
