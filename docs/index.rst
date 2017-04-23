@@ -37,7 +37,7 @@ WRD R&D Documentation
 
 Tools
 ------
-| Homepage: https://westurner.org/tools/
+| Homepage: https://westurner.github.io/tools/
 | Source: git https://github.com/westurner/tools
 
 .. toctree::
