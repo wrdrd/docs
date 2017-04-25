@@ -134,7 +134,7 @@ Search engines
     - Manual Index
 
       - "biased"
-      - https://wrdrd.com/docs/genindex
+      - https://wrdrd.github.io/docs/genindex
 
 
 
