@@ -480,9 +480,9 @@ Test Driven Development
 ~~~~~~~~~~~~~~~~~~~~~~~~
 | Wikipedia https://en.wikipedia.org/wiki/Test-driven_development
 
-* https://westurner.org/wiki/awesome-python-testing
-* https://westurner.org/wiki/awesome-python-testing#workflow-evolution
-* https://westurner.org/wiki/awesome-python-testing#test-driven-development-tdd
+* https://westurner.github.io/wiki/awesome-python-testing
+* https://westurner.github.io/wiki/awesome-python-testing#workflow-evolution
+* https://westurner.github.io/wiki/awesome-python-testing#test-driven-development-tdd
 
 
 .. index:: Behavior Driven Development
@@ -494,7 +494,7 @@ Behavior Driven Development
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/Behavior-driven_development
 
-* https://westurner.org/wiki/awesome-python-testing#behavior-driven-development-bdd
+* https://westurner.github.io/wiki/awesome-python-testing#behavior-driven-development-bdd
 
 
 .. index:: Given-When-Then
@@ -999,7 +999,7 @@ Continuous Delivery
 
   https://playbook.cio.gov/
 
-  * https://westurner.org/opengov/us/us-digital-services-playbook
+  * https://westurner.github.io/opengov/us/us-digital-services-playbook
 
 
 .. index:: Revision Control

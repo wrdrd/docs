@@ -7,12 +7,12 @@
 WRD R&D Documentation
 =======================
 
-| Homepage: https://wrdrd.com/docs/
+| Homepage: https://wrdrd.github.io/docs/
 | Source: git https://github.com/wrdrd/docs
 | Twitter: https://twitter.com/wrdrd
 
 The latest HTML version of WRD R&D Documentation
-is at `<https://wrdrd.com/docs/>`__.
+is at `<https://wrdrd.github.io/docs/>`__.
 
 The :ref:`Sphinx` :ref:`ReStructuredText` sources of
 WRD R&D Documentation are at:
@@ -23,4 +23,4 @@ The WRD R&D Documentation includes the
 :ref:`Tools` :ref:`Sphinx` documentation set as a :ref:`Git`
 subrepository as well.
 
-    https://wrdrd.com/docs/
+    https://wrdrd.github.io/docs/

@@ -360,7 +360,7 @@ Health insurance
         * https://en.wikipedia.org/wiki/List_of_countries_by_health_insurance_coverage
         * https://en.wikipedia.org/wiki/List_of_countries_by_total_health_expenditure_per_capita
 
-    * https://westurner.org/opengov/us/healthcare#health-insurance-in-the-united-states
+    * https://westurner.github.io/opengov/us/healthcare#health-insurance-in-the-united-states
 
   * https://en.wikipedia.org/wiki/Health_insurance_in_the_United_States#Private_health_care_coverage
 

@@ -8,10 +8,10 @@
 Tools
 ================
 
-| Docs: https://westurner.org/tools/
+| Docs: https://westurner.github.io/tools/
 | Src: https://github.com/westurner/tools
 
-See Also: https://westurner.org/wiki/projects#tools
+See Also: https://westurner.github.io/wiki/projects#tools
 
 
 .. index:: Packages
@@ -1208,25 +1208,25 @@ the defaults are:
 .. table:: GitFlow Branch Names
    :class: table-striped table-responsive
 
-   +--------------------+-------------------------------------------------------------------------+
-   | **Branch Name**    | **Description**                                                         |
-   |                    | (and `Code Labels <https://westurner.org/wiki/workflow#code-labels>`__) |
-   +--------------------+-------------------------------------------------------------------------+
-   | ``master``         | Stable trunk (latest release)                                           |
-   +--------------------+-------------------------------------------------------------------------+
-   | ``develop``        | Development main line                                                   |
-   +--------------------+-------------------------------------------------------------------------+
-   | ``feature/<name>`` | New features for the next release (e.g. ``ENH``, ``PRF``)               |
-   +--------------------+-------------------------------------------------------------------------+
-   | ``release/<name>`` | In-progress release branches (e.g. ``RLS``)                             |
-   +--------------------+-------------------------------------------------------------------------+
-   | ``hotfix/<name>``  | Fixes to merge to both ``master`` and ``develop``                       |
-   |                    | (e.g. ``BUG``, ``TST``, ``DOC``)                                        |
-   +--------------------+-------------------------------------------------------------------------+
-   | ``support/<name>`` | "What is the 'support' branch?"                                         |
-   |                    |                                                                         |
-   |                    | https://github.com/nvie/gitflow/wiki/FAQ                                |
-   +--------------------+-------------------------------------------------------------------------+
+   +--------------------+-------------------------------------------------------------------------------+
+   | **Branch Name**    | **Description**                                                               |
+   |                    | (and `Code Labels <https://westurner.github.io/wiki/workflow#code-labels>`__) |
+   +--------------------+-------------------------------------------------------------------------------+
+   | ``master``         | Stable trunk (latest release)                                                 |
+   +--------------------+-------------------------------------------------------------------------------+
+   | ``develop``        | Development main line                                                         |
+   +--------------------+-------------------------------------------------------------------------------+
+   | ``feature/<name>`` | New features for the next release (e.g. ``ENH``, ``PRF``)                     |
+   +--------------------+-------------------------------------------------------------------------------+
+   | ``release/<name>`` | In-progress release branches (e.g. ``RLS``)                                   |
+   +--------------------+-------------------------------------------------------------------------------+
+   | ``hotfix/<name>``  | Fixes to merge to both ``master`` and ``develop``                             |
+   |                    | (e.g. ``BUG``, ``TST``, ``DOC``)                                              |
+   +--------------------+-------------------------------------------------------------------------------+
+   | ``support/<name>`` | "What is the 'support' branch?"                                               |
+   |                    |                                                                               |
+   |                    | https://github.com/nvie/gitflow/wiki/FAQ                                      |
+   +--------------------+-------------------------------------------------------------------------------+
 
 Creating a new release with :ref:`Git` and :ref:`GitFlow`:
 
@@ -1288,21 +1288,21 @@ the defaults are as follows:
 .. table:: HubFlow Branch Names
    :class: table-striped table-responsive
 
-   +--------------------+-------------------------------------------------------------------------+
-   | **Branch Name**    | **Description**                                                         |
-   |                    | (and `Code Labels <https://westurner.org/wiki/workflow#code-labels>`__) |
-   +--------------------+-------------------------------------------------------------------------+
-   | ``master``         | Stable trunk (latest release)                                           |
-   +--------------------+-------------------------------------------------------------------------+
-   | ``develop``        | Development main line                                                   |
-   +--------------------+-------------------------------------------------------------------------+
-   | ``feature/<name>`` | New features for the next release (e.g. ``ENH``, ``PRF``)               |
-   +--------------------+-------------------------------------------------------------------------+
-   | ``release/<name>`` | In-progress release branches (e.g. ``RLS``)                             |
-   +--------------------+-------------------------------------------------------------------------+
-   | ``hotfix/<name>``  | Fixes to merge to both ``master`` and ``develop``                       |
-   |                    | (e.g. ``BUG``, ``TST``, ``DOC``)                                        |
-   +--------------------+-------------------------------------------------------------------------+
+   +--------------------+-------------------------------------------------------------------------------+
+   | **Branch Name**    | **Description**                                                               |
+   |                    | (and `Code Labels <https://westurner.github.io/wiki/workflow#code-labels>`__) |
+   +--------------------+-------------------------------------------------------------------------------+
+   | ``master``         | Stable trunk (latest release)                                                 |
+   +--------------------+-------------------------------------------------------------------------------+
+   | ``develop``        | Development main line                                                         |
+   +--------------------+-------------------------------------------------------------------------------+
+   | ``feature/<name>`` | New features for the next release (e.g. ``ENH``, ``PRF``)                     |
+   +--------------------+-------------------------------------------------------------------------------+
+   | ``release/<name>`` | In-progress release branches (e.g. ``RLS``)                                   |
+   +--------------------+-------------------------------------------------------------------------------+
+   | ``hotfix/<name>``  | Fixes to merge to both ``master`` and ``develop``                             |
+   |                    | (e.g. ``BUG``, ``TST``, ``DOC``)                                              |
+   +--------------------+-------------------------------------------------------------------------------+
 
 Creating a new release with :ref:`Git` and :ref:`HubFlow`:
 
@@ -1423,7 +1423,7 @@ Exemplar Projects
 
 * github.com/westurner/wiki: a GitHub Sphinx Wiki
 
-  | Home: https://westurner.org/wiki/
+  | Home: https://westurner.github.io/wiki/
   | Wiki: https://github.com/westurner/wiki/wiki
   | Src: https://github.com/westurner/wiki
   | Src: https://github.com/westurner/wiki.wiki.git
@@ -2369,7 +2369,7 @@ See also: :ref:`Anaconda`
 
 awesome-python-testing
 ++++++++++++++++++++++++
-| Homepage: https://westurner.org/wiki/awesome-python-testing.html
+| Homepage: https://westurner.github.io/wiki/awesome-python-testing.html
 | Src: https://github.com/westurner/wiki/blob/master/awesome-python-testing.rest
 
 
@@ -4866,7 +4866,7 @@ ipython_nose is an extension for :ref:`IPython Notebook`
 for discovering and running test functions
 starting with ``test_``
 (and unittest.TestCase test classes with names containing ``Test``)
-with `Nose <https://westurner.org/wiki/awesome-python-testing#nose>`__.
+with `Nose <https://westurner.github.io/wiki/awesome-python-testing#nose>`__.
 
 * ipython_nose is not (yet?) uploaded to PyPI
 * to install ipython_nose from GitHub (with :ref:`Pip` and :ref:`Git`):
@@ -4900,7 +4900,7 @@ with ``nose``.
 
 See also:
 
-* https://westurner.org/wiki/awesome-python-testing#nose
+* https://westurner.github.io/wiki/awesome-python-testing#nose
 
 
 .. index:: Jupyter
@@ -5272,8 +5272,8 @@ configuration in files that are often prefixed with "dot"
 
   | Src: git https://github.com/westurner/dotfiles
   | Src: https://github.com/westurner/dotfiles/blob/master/etc/.bashrc
-  | Docs: https://westurner.org/dotfiles/
-  | Docs: https://westurner.org/dotfiles/usage#bash
+  | Docs: https://westurner.github.io/dotfiles/
+  | Docs: https://westurner.github.io/dotfiles/usage#bash
 
   Features
 
@@ -5298,7 +5298,7 @@ Dotvim is a conjunction / contraction of :ref:`Dotfiles` and :ref:`Vim`
 | Src: https://github.com/westurner/dotvim/blob/master/vimrc
 | Src: https://github.com/westurner/dotvim/blob/master/vimrc.full.bundles.vimrc
 | Src: https://github.com/westurner/dotvim/blob/master/vimrc.tinyvim.bundles.vimrc
-| Docs: https://westurner.org/dotfiles/usage#vim
+| Docs: https://westurner.github.io/dotfiles/usage#vim
 
 
 
@@ -5308,8 +5308,8 @@ Dotvim is a conjunction / contraction of :ref:`Dotfiles` and :ref:`Vim`
 Venv
 ~~~~~
 
-| Docs: https://westurner.org/dotfiles/venv
-| Docs: https://westurner.org/dotfiles/dotfiles.venv
+| Docs: https://westurner.github.io/dotfiles/venv
+| Docs: https://westurner.github.io/dotfiles/dotfiles.venv
 | Src: https://github.com/westurner/dotfiles/blob/develop/src/dotfiles/venv/
 | Src: https://github.com/westurner/dotfiles/blob/develop/etc/bash/10-bashrc.venv.sh
 
@@ -6722,9 +6722,9 @@ or from the local filesystem.
   Git or filesystem mtimes.
 * pgs does something like :ref:`Nginx` ``try_files $.html``
 
-  * https://westurner.org/tools/index
+  * https://westurner.github.io/tools/index
 
-    https://westurner.org/tools/index.html
+    https://westurner.github.io/tools/index.html
 
     * :ref:`Sphinx` can also generate links without ``.html`` extensions
       with the ``html_link_suffix`` ``conf.py`` configuration setting.
@@ -6813,7 +6813,7 @@ so, for example,
 
     https://github.com/westurner/tools/blob/gh-pages/index.html
 
-    https://westurner.org/tools/
+    https://westurner.github.io/tools/
 
 
     * RawGit:
@@ -7269,7 +7269,7 @@ system file naming structure.
 * Likewise, :ref:`virtualenv` and :ref:`Venv` implement
   a filesystem hierarchy:
 
-  | Docs: https://westurner.org/dotfiles/venv#venv-paths
+  | Docs: https://westurner.github.io/dotfiles/venv#venv-paths
 
 * :ref:`Docker` (and many LiveCDs) layer filesystem hierarchies
   with e.g. UnionFS, AUFS, and BTRFS filesystems.

@@ -301,7 +301,7 @@ medical school entrance.
 
   .
 
-* https://westurner.org/opengov/us/#gnuhealth
+* https://westurner.github.io/opengov/us/#gnuhealth
 
 
 Postgraduate
