@@ -2907,7 +2907,7 @@ web resources using regular :ref:`HTTP` methods like ``GET``, ``POST``,
       * https://pypi.python.org/pypi/webtest-plus/ (requests-auth)
       * https://github.com/django-webtest/django-webtest
 
-    * | Docs: https://westurner.org/wiki/awesome-python-testing#web-applications
+    * | Docs: https://westurner.github.io/wiki/awesome-python-testing#web-applications
 
 
 .. index:: WAMP

@@ -135,7 +135,7 @@ than threaded comments).
         + http://schema.org/SingleCenterTrial
         + http://schema.org/TripleBlindedTrial
 
-    * See: https://westurner.org/opengov/us/#personal-health-agenda
+    * See: https://westurner.github.io/opengov/us/#personal-health-agenda
 
 
 TODO:

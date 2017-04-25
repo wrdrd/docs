@@ -156,7 +156,7 @@ Self Directed Learning
 |  between tools and resources in online learning systems" (2012)
 |
 | Source: git https://github.com/westurner/self-directed-learning
-| HTML: https://westurner.org/self-directed-learning/
+| HTML: https://westurner.github.io/self-directed-learning/
 | HTML: https://self-directed-learning.readthedocs.io/
 | HTML (zip): https://media.readthedocs.io/htmlzip/self-directed-learning/self-directed-learning.zip
 | PDF: https://media.readthedocs.io/pdf/self-directed-learning/latest/self-directed-learning.pdf
@@ -172,7 +172,7 @@ Report Process:
 * [o] Products: glossary
 * [ ] Products: essay form
 * [o] Tools: :ref:`Sphinx`, :ref:`ReStructuredText`, :ref:`ReadTheDocs`
-* [o] https://westurner.org/self-directed-learning/process.html
+* [o] https://westurner.github.io/self-directed-learning/process.html
 
 
 .. index:: Online Courses
@@ -464,8 +464,8 @@ See: :ref:`knowledge engineering`
 
 Linked Curricula Graphs
 *****************************************
-* https://westurner.org/self-directed-learning/slides.html#knowledge-graph (2012)
-* https://westurner.org/redditlog/#comment/ci3c1o3 (2014)
+* https://westurner.github.io/self-directed-learning/slides.html#knowledge-graph (2012)
+* https://westurner.github.io/redditlog/#comment/ci3c1o3 (2014)
 
 * [ ] Add :ref:`RDFa` to Course Catalog / Index HTML pages
 
