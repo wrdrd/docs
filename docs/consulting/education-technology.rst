@@ -116,6 +116,13 @@ GitHub Pages serves webpages from :ref:`git` branches.
   like ``gh-pages`` and ``master``
 
 
+.. _gitlab pages:
+
+GitLab Pages
+**************
+| Homepage: https://pages.gitlab.io/
+
+
 .. index:: ReadTheDocs
 .. _readthedocs:
 
