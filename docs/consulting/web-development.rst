@@ -770,6 +770,7 @@ Security at :ref:`W3C` :
 SANS/CIS Consensus Audit Guidelines:
 
 * | Wikipedia: https://en.wikipedia.org/wiki/Consensus_audit_guidelines
+  | Wikipedia: https://en.wikipedia.org/wiki/The_CIS_Critical_Security_Controls_for_Effective_Cyber_Defense
 
   * "SANS Top 20": https://www.sans.org/critical-security-controls/
   * "SANS Top 25": https://cwe.mitre.org/top25/
