@@ -29,6 +29,7 @@ WRD R&D Documentation
    consulting/education-technology
    consulting/educational-testing
    consulting/art-design
+   consulting/ux
    consulting/team-building
    consulting/collaboration-plan
    authors
