@@ -47,6 +47,8 @@ Emotional Intelligence
 | Wikipedia: https://en.wikipedia.org/wiki/Emotional_intelligence
 | https://en.wikipedia.org/wiki/Industrial_and_organizational_psychology
 
+https://en.wikipedia.org/wiki/Contrasting_and_categorization_of_emotions
+
 https://en.wikipedia.org/wiki/Motivation
 
 * https://en.wikipedia.org/wiki/Theory_X_and_Theory_Y
