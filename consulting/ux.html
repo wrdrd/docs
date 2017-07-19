@@ -9,7 +9,7 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- OpenGraph metadata: ogp.me -->
-    <meta property="og:title" content="WRD R&amp;D Documentation" />
+    <meta property="og:title" content="UI / UX Design" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="WRD R&D" />
     <!--
@@ -23,12 +23,12 @@
     -->
     <!-- Twitter metadata -->
     <meta property="twitter:card" content="summary" />
-    <meta property="twitter:title" content="WRD R&amp;D Documentation" />
+    <meta property="twitter:title" content="UI / UX Design" />
     <meta property="twitter:description" content="" />
     <meta property="twitter:site" content="wrdrd" />
     <meta property="twitter:creator" content="wrdrd" />
     
-    <title>WRD R&amp;D Documentation &mdash; WRD R&amp;D Documentation</title>
+    <title>UI / UX Design &mdash; WRD R&amp;D Documentation</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -66,8 +66,8 @@
     title="Search within WRD R&amp;D Documentation"
     href="../_static/opensearch.xml"/>
     <link rel="top" title="WRD R&amp;D Documentation" href="../index" />
-    <link rel="next" title="Open Source" href="open-source" />
-    <link rel="prev" title="WRD R&amp;D Documentation" href="../index" /> 
+    <link rel="next" title="Team Building" href="team-building" />
+    <link rel="prev" title="Art &amp; Design" href="art-design" /> 
   </head>
   <body role="document">
     <div id="navbar-top" class="navbar navbar-default" role="navigation" aria-label="top navigation">
@@ -83,14 +83,31 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown visible-xs">
+                <a role="button" id="localToc" data-toggle="dropdown" data-target="#" href="#">Table Of Contents <b class="caret"></b></a>
+                <ul class="dropdown-menu localtoc sp-localtoc" role="menu" aria-labelledby="localToc">
+                <ul>
+<li><a class="reference internal" href="#">UI / UX Design</a><ul>
+<li><a class="reference internal" href="#human-computer-interaction-hci">Human-Computer Interaction (HCI)</a></li>
+<li><a class="reference internal" href="#usability">Usability</a></li>
+<li><a class="reference internal" href="#experience-design-xd">Experience Design (XD)</a></li>
+<li><a class="reference internal" href="#user-experience-ux">User Experience (UX)</a></li>
+<li><a class="reference internal" href="#user-interface-ui">User Interface (UI)</a></li>
+<li><a class="reference internal" href="#information-design">Information Design</a></li>
+</ul>
+</li>
+</ul>
+
+                </ul>
+              </li>
 
             
-              <li><a href="../index" title="WRD R&amp;D Documentation" accesskey="P">previous </a></li>
-              <li><a href="open-source" title="Open Source" accesskey="N">next </a></li>
+              <li><a href="art-design" title="Art &amp; Design" accesskey="P">previous </a></li>
+              <li><a href="team-building" title="Team Building" accesskey="N">next </a></li>
               <li><a href="../py-modindex" title="Python Module Index" >modules </a></li>
               <li><a href="../genindex" title="General Index" accesskey="I">index </a></li>
             
-            <li class="visible-xs"><a href="../_sources/consulting/index.txt" rel="nofollow">Show Source</a></li>
+            <li class="visible-xs"><a href="../_sources/consulting/ux.txt" rel="nofollow">Show Source</a></li>
 
             <li class="visible-xs">
                 <form class="search form-search form-inline navbar-form navbar-right sp-searchbox" action="../search" method="get">
@@ -122,49 +139,25 @@
          
 <div class="col-md-3 hidden-xs" id="sidebar-wrapper">
   <div class="sidebar hidden-xs" role="navigation" aria-label="main navigation">
-<h3><a href="../index">Table Of Contents</a></h3>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">WRD R&amp;D Documentation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="open-source">Open Source</a></li>
-<li class="toctree-l1"><a class="reference internal" href="small-business">Small Business Consulting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="web-development">Web Development</a></li>
-<li class="toctree-l1"><a class="reference internal" href="software-development">Software Development</a></li>
-<li class="toctree-l1"><a class="reference internal" href="computer-engineering">Computer Engineering</a></li>
-<li class="toctree-l1"><a class="reference internal" href="information-systems">Information Systems</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data-science">Data Science</a></li>
-<li class="toctree-l1"><a class="reference internal" href="units">Units</a></li>
-<li class="toctree-l1"><a class="reference internal" href="knowledge-engineering">Knowledge Engineering</a></li>
-<li class="toctree-l1"><a class="reference internal" href="linkedreproducibility">LinkedReproducibility</a></li>
-<li class="toctree-l1"><a class="reference internal" href="research">Research</a></li>
-<li class="toctree-l1"><a class="reference internal" href="entrepreneurship">Entrepreneurship</a></li>
-<li class="toctree-l1"><a class="reference internal" href="personal-finance">Personal Finance</a></li>
-<li class="toctree-l1"><a class="reference internal" href="investing">Investing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="education-technology">Education Technology</a></li>
-<li class="toctree-l1"><a class="reference internal" href="educational-testing">Educational Testing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="art-design">Art &amp; Design</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ux">UI / UX Design</a></li>
-<li class="toctree-l1"><a class="reference internal" href="team-building">Team Building</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collaboration-plan">Collaboration Plan</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../authors">Credits</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../license">License</a></li>
+  <h3><a href="../index">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">UI / UX Design</a><ul>
+<li><a class="reference internal" href="#human-computer-interaction-hci">Human-Computer Interaction (HCI)</a></li>
+<li><a class="reference internal" href="#usability">Usability</a></li>
+<li><a class="reference internal" href="#experience-design-xd">Experience Design (XD)</a></li>
+<li><a class="reference internal" href="#user-experience-ux">User Experience (UX)</a></li>
+<li><a class="reference internal" href="#user-interface-ui">User Interface (UI)</a></li>
+<li><a class="reference internal" href="#information-design">Information Design</a></li>
 </ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../tools/index">Tools</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../wrdrd/readme">wrdrd</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../wrdrd/wrdrd.tools">wrdrd.tools package</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../wrdrd/authors">Credits</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../wrdrd/history">History</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../wrdrd/license">License</a></li>
+</li>
 </ul>
 
   <h4>Previous topic</h4>
-  <p class="topless"><a href="../index"
-                        title="previous chapter">WRD R&amp;D Documentation</a></p>
+  <p class="topless"><a href="art-design"
+                        title="previous chapter">Art &amp; Design</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="open-source"
-                        title="next chapter">Open Source</a></p>
+  <p class="topless"><a href="team-building"
+                        title="next chapter">Team Building</a></p>
 <div id="searchbox" role="search">
   <h3>Quick search</h3>
   <form class="search form-inline" action="../search" method="get">
@@ -183,19 +176,19 @@
 </div>
   <h3>This Page</h3>
   <ul class="this-page-menu">
-    <li><a href="../_sources/consulting/index.txt"
+    <li><a href="../_sources/consulting/ux.txt"
             rel="nofollow"
             target="_blank">Source RST</a></li>
-    <li><a href="https://github.com/wrdrd/docs/blob/master/docs/consulting/index.rst"
+    <li><a href="https://github.com/wrdrd/docs/blob/master/docs/consulting/ux.rst"
             rel="nofollow"
             target="_blank">Source</a></li>
-    <li><a href="https://github.com/wrdrd/docs/edit/master/docs/consulting/index.rst"
+    <li><a href="https://github.com/wrdrd/docs/edit/master/docs/consulting/ux.rst"
             rel="nofollow"
             target="_blank">Edit</a></li>
-     <li><a href="https://github.com/wrdrd/docs/commits/master/docs/consulting/index.rst"
+     <li><a href="https://github.com/wrdrd/docs/commits/master/docs/consulting/ux.rst"
              rel="nofollow"
              target="_blank">History</a></li>
-     <li><a href="https://github.com/wrdrd/docs/blame/master/docs/consulting/index.rst"
+     <li><a href="https://github.com/wrdrd/docs/blame/master/docs/consulting/ux.rst"
              rel="nofollow"
              target="_blank">Annotate</a></li>
   </ul>
@@ -232,24 +225,70 @@
               <div class="bodywrapper">
                 <div class="body">
                   
-  <span class="target" id="index-0"></span><div class="section" id="wrd-r-d-documentation">
-<span id="wrdrd-documentation"></span><span id="index-1"></span><h1>WRD R&amp;D Documentation<a class="headerlink" href="#wrd-r-d-documentation" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="ui-ux-design">
+<span id="uiux"></span><span id="index-0"></span><h1>UI / UX Design<a class="headerlink" href="#ui-ux-design" title="Permalink to this headline">¶</a></h1>
+<p>seeAlso:</p>
+<ul class="simple">
+<li><a class="reference internal" href="art-design#id1"><span class="std std-ref">Art &amp; Design</span></a></li>
+<li><span class="xref std std-ref">web design</span></li>
+<li><span class="xref std std-ref">responsive web design</span></li>
+</ul>
+<div class="section" id="human-computer-interaction-hci">
+<span id="human-computer-interaction"></span><span id="index-1"></span><h2>Human-Computer Interaction (HCI)<a class="headerlink" href="#human-computer-interaction-hci" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line">Homepage: <a class="reference external" href="https://wrdrd.github.io/docs/">https://wrdrd.github.io/docs/</a></div>
-<div class="line">Source: git <a class="reference external" href="https://github.com/wrdrd/docs">https://github.com/wrdrd/docs</a></div>
-<div class="line">Twitter: <a class="reference external" href="https://twitter.com/wrdrd">https://twitter.com/wrdrd</a></div>
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Human%E2%80%93computer_interaction">https://en.wikipedia.org/wiki/Human%E2%80%93computer_interaction</a></div>
+<div class="line">WikipediaCategory: <a class="reference external" href="https://en.wikipedia.org/wiki/Category:Human%E2%80%93computer_interaction">https://en.wikipedia.org/wiki/Category:Human%E2%80%93computer_interaction</a></div>
 </div>
-<p>The latest HTML version of WRD R&amp;D Documentation
-is at <a class="reference external" href="https://wrdrd.github.io/docs/">https://wrdrd.github.io/docs/</a>.</p>
-<p>The <a class="reference internal" href="../tools/index#sphinx"><span class="std std-ref">Sphinx</span></a> <a class="reference internal" href="../tools/index#restructuredtext"><span class="std std-ref">ReStructuredText</span></a> sources of
-WRD R&amp;D Documentation are at:
-<a class="reference external" href="https://github.com/wrdrd/docs">https://github.com/wrdrd/docs</a>.</p>
-<p>The WRD R&amp;D Documentation includes the
-<a class="reference external" href="https://github.com/westurner/tools">https://github.com/westurner/tools</a>
-<a class="reference internal" href="../tools/index#tools"><span class="std std-ref">Tools</span></a> <a class="reference internal" href="../tools/index#sphinx"><span class="std std-ref">Sphinx</span></a> documentation set as a <a class="reference internal" href="../tools/index#git"><span class="std std-ref">Git</span></a>
-subrepository as well.</p>
-<blockquote>
-<div><a class="reference external" href="https://wrdrd.github.io/docs/">https://wrdrd.github.io/docs/</a></div></blockquote>
+<ul class="simple">
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Outline_of_human%E2%80%93computer_interaction">https://en.wikipedia.org/wiki/Outline_of_human%E2%80%93computer_interaction</a><ul>
+<li>History of human-computer interaction:
+<a class="reference external" href="https://en.wikipedia.org/wiki/Outline_of_human%E2%80%93computer_interaction#History_of_human.E2.80.93computer_interaction">https://en.wikipedia.org/wiki/Outline_of_human%E2%80%93computer_interaction#History_of_human.E2.80.93computer_interaction</a></li>
+</ul>
+</li>
+</ul>
+<blockquote class="epigraph">
+<div>Q1. How long have we been doing this?
+Q2. How do we make this better?</div></blockquote>
+</div>
+<div class="section" id="usability">
+<span id="index-2"></span><span id="id1"></span><h2>Usability<a class="headerlink" href="#usability" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Usability">https://en.wikipedia.org/wiki/Usability</a></div>
+<div class="line">WikipediaCategory: <a class="reference external" href="https://en.wikipedia.org/wiki/Category:Usability">https://en.wikipedia.org/wiki/Category:Usability</a></div>
+</div>
+<ul class="simple">
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Usability_engineering">https://en.wikipedia.org/wiki/Usability_engineering</a></li>
+</ul>
+</div>
+<div class="section" id="experience-design-xd">
+<span id="xd"></span><span id="index-3"></span><h2>Experience Design (XD)<a class="headerlink" href="#experience-design-xd" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Experience_design">https://en.wikipedia.org/wiki/Experience_design</a></div>
+</div>
+<span class="target" id="index-4"></span></div>
+<div class="section" id="user-experience-ux">
+<h2>User Experience (UX)<a class="headerlink" href="#user-experience-ux" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/User_experience">https://en.wikipedia.org/wiki/User_experience</a></div>
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/User_experience_design">https://en.wikipedia.org/wiki/User_experience_design</a></div>
+</div>
+<span class="target" id="index-5"></span></div>
+<div class="section" id="user-interface-ui">
+<span id="ui"></span><span id="index-6"></span><h2>User Interface (UI)<a class="headerlink" href="#user-interface-ui" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/User_interface_design">https://en.wikipedia.org/wiki/User_interface_design</a></div>
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/User_interface">https://en.wikipedia.org/wiki/User_interface</a></div>
+</div>
+<ul class="simple">
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Heuristic_evaluation">https://en.wikipedia.org/wiki/Heuristic_evaluation</a></li>
+</ul>
+</div>
+<div class="section" id="information-design">
+<span id="index-7"></span><span id="id2"></span><h2>Information Design<a class="headerlink" href="#information-design" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Information_design">https://en.wikipedia.org/wiki/Information_design</a></div>
+</div>
+</div>
 </div>
 
 
@@ -271,8 +310,8 @@ subrepository as well.</p>
     </ul>
 <ul class="nav navbar-nav text-center">
       
-        <li><a href="../index" title="WRD R&amp;D Documentation" >previous</a></li>
-        <li><a href="open-source" title="Open Source" >next</a></li>
+        <li><a href="art-design" title="Art &amp; Design" >previous</a></li>
+        <li><a href="team-building" title="Team Building" >next</a></li>
         <li><a href="../py-modindex" title="Python Module Index" >modules</a></li>
         <li><a href="../genindex" title="General Index" >index</a></li>
         <li><a href="#">top</a></li> 
