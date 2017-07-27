@@ -104,6 +104,9 @@ footer {
     margin-top: -1px;
 }
 
+ul.simple {
+    margin-bottom:10px;
+}
 
 #sidebar-wrapper a.youarehere,
 #navbar-top a.youarehere {
@@ -157,4 +160,8 @@ footer {
         right: 24px;
         z-index: 1000;
     }
+}
+
+div.sidebar-options ul li label {
+    padding-left: 8px;
 }

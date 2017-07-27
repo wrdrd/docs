@@ -364,7 +364,7 @@ See :ref:`web standards`, :ref:`Art & Design <art-design>`
 
 
 .. index:: Web Design
-.. _web-design:
+.. _web design:
 
 Web Design
 ~~~~~~~~~~~

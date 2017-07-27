@@ -75,7 +75,7 @@ $(document).ready(function() {
 
   var sidebar = $("#sidebar-wrapper").find("div.sidebar");
       var options_widget = $("\
-  <div class='widget'> \
+  <div class='widget sidebar-options'> \
     <h3>Options</h3> \
     <ul> \
       <li> \
