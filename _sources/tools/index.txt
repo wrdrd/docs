@@ -6288,6 +6288,9 @@ Zotero archives and tags resources with bibliographic metadata.
 
 * Zotero can export a collection of resources' bibliographic metadata
   as RDF
+* There are a number of plugins and integrations with Zotero:
+
+  https://www.zotero.org/support/plugins
 
 
 .. index:: Zotero and Schema.org RDFa
