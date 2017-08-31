@@ -170,6 +170,7 @@ Hackage is the community Cabal package index: https://hackage.haskell.org/
 
 Conda
 ~~~~~~~
+| Wikipedia: `<https://en.wikipedia.org/wiki/Conda_(package_manager)>`__
 | Docs: http://conda.pydata.org/docs/
 | Src: git https://github.com/conda/conda
 | PyPI: https://pypi.python.org/pypi/conda
