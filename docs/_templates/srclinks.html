@@ -1,4 +1,5 @@
 {%- if show_source and has_source and sourcename %}
+<div class="widget navlinks">
   <h3>{{ _('This Page') }}</h3>
   <ul class="this-page-menu">
     <li><a href="{{ pathto('_sources/' + sourcename, true)|e }}"
@@ -25,6 +26,8 @@
              target="_blank">{{ _('Annotate') }}</a></li>
    {%- endif %}
   </ul>
+</div>
+<div class="widget srclinks">
   <h3>Source</h3>
   {%- if srclink_src_url %}
   <h5><a href="{{ srclink_src_url }}">{{
@@ -37,19 +40,16 @@
       {%- endif %}
   </h5>
   {%- endif %}
-
   <ul>
-
   {%- if srclink_src_https_url %}
     <li><pre>{{ srclink_src_clone_cmd }} {{ srclink_src_https_url }}</pre></li>
   {%- endif %}
-
   {%- if srclink_src_ssh_url %}
     <li><pre>{{ srclink_src_clone_cmd }} {{ srclink_src_ssh_url }}</pre></li>
   {%- endif %}
-
   {%- if srclink_src_native_url %}
     <li><pre>{{ srclink_src_clone_cmd }} {{ srclink_src_native_url }}</pre></li>
   {%- endif %}
   </ul>
+</div>
 {%- endif %}
