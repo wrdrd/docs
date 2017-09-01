@@ -161,3 +161,7 @@ ul.simple {
         z-index: 1000;
     }
 }
+
+div.sidebar-options ul li label {
+    padding-left: 8px;
+}
