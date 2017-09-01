@@ -165,9 +165,21 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#websec">WebSec</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="index.html#responsible-disclosure">Responsible Disclosure</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="index.html#bug-bounty-program">Bug Bounty Program</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#sans-cis-consensus-audit-guidelines">SANS/CIS Consensus Audit Guidelines:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#common-weakness-enumeration">CWE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#owasp">OWASP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#websec-forums">WebSec Forums</a></li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#http">HTTP</a></li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#https">HTTPS</a></li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#http-sts">HTTP STS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#acme-protocol">ACME Protocol</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="index.html#letsencrypt">Letsencrypt</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#web-development-requirements">Web Development Requirements</a><ul>
@@ -526,13 +538,33 @@
 <li class="toctree-l3"><a class="reference internal" href="index.html#linked-open-data">5 ★ Linked Open Data</a></li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#data-visualization">Data Visualization</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="index.html#visualizing-data-science">Visualizing Data Science</a></li>
-<li class="toctree-l4"><a class="reference internal" href="index.html#data-visualization-tools">Data Visualization Tools</a></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#data-visualization-tools">Data Visualization Tools</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#matplotlib">Matplotlib</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="index.html#seaborn">Seaborn</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#mayavi">Mayavi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#bokeh">Bokeh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#vispy">VisPy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#vega">Vega</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="index.html#vincent">Vincent</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#plotly">Plotly</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#pyqtgraph">PyQtGraph</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#qgrid">qgrid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#d3-js">D3.js</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#three-js">Three.js</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#sigmajs">Sigmajs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#see-also">See Also</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html#document-consulting/units">Units</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="index.html#mass-noun">Mass noun</a></li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#rdf-and-units">RDF and Units</a><ul>
@@ -1986,6 +2018,8 @@
 <li class="toctree-l1"><a class="reference internal" href="index.html#document-consulting/computer-engineering">Computer Engineering</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html#document-consulting/information-systems">Information Systems</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html#document-consulting/data-science">Data Science</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#data-visualization-tools">Data Visualization Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#see-also">See Also</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html#document-consulting/units">Units</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html#document-consulting/knowledge-engineering">Knowledge Engineering</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html#document-consulting/linkedreproducibility">LinkedReproducibility</a></li>
@@ -3516,9 +3550,37 @@ for web applications.</p>
 <li><a class="reference external" href="http://www.w3.org/2011/webappsec/">http://www.w3.org/2011/webappsec/</a></li>
 <li><a class="reference internal" href="index.html#web-standards"><span class="std std-ref">Web Standards</span></a></li>
 </ul>
-<p>SANS/CIS Consensus Audit Guidelines:</p>
+<div class="section" id="responsible-disclosure">
+<span id="index-12"></span><span id="id12"></span><h4>Responsible Disclosure<a class="headerlink" href="#responsible-disclosure" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Responsible_disclosure">https://en.wikipedia.org/wiki/Responsible_disclosure</a></div>
+</div>
+<ul class="simple">
+<li><a class="reference external" href="https://www.owasp.org/index.php/Vulnerability_Disclosure_Cheat_Sheet">https://www.owasp.org/index.php/Vulnerability_Disclosure_Cheat_Sheet</a></li>
+</ul>
+<div class="section" id="bug-bounty-program">
+<span id="index-13"></span><span id="id13"></span><h5>Bug Bounty Program<a class="headerlink" href="#bug-bounty-program" title="Permalink to this headline">¶</a></h5>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Bug_bounty_program">https://en.wikipedia.org/wiki/Bug_bounty_program</a></div>
+</div>
 <ul>
-<li><div class="first line-block">
+<li><p class="first">Hacker One:</p>
+<ul class="simple">
+<li>Homepage: <a class="reference external" href="https://hackerone.com/">https://hackerone.com/</a></li>
+<li><a class="reference external" href="https://hackerone.com/twitter">https://hackerone.com/twitter</a></li>
+</ul>
+</li>
+<li><p class="first">Professional integrity:</p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Integrity">https://en.wikipedia.org/wiki/Integrity</a></p>
+</li>
+<li><p class="first"><a class="reference internal" href="index.html#open-source"><span class="std std-ref">Open Source</span></a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="sans-cis-consensus-audit-guidelines">
+<span id="index-14"></span><span id="id14"></span><h4>SANS/CIS Consensus Audit Guidelines:<a class="headerlink" href="#sans-cis-consensus-audit-guidelines" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Consensus_audit_guidelines">https://en.wikipedia.org/wiki/Consensus_audit_guidelines</a></div>
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/The_CIS_Critical_Security_Controls_for_Effective_Cyber_Defense">https://en.wikipedia.org/wiki/The_CIS_Critical_Security_Controls_for_Effective_Cyber_Defense</a></div>
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/CSC_Version_6.0">https://en.wikipedia.org/wiki/CSC_Version_6.0</a></div>
@@ -3533,24 +3595,38 @@ for web applications.</p>
 </ul>
 </li>
 </ul>
-</li>
-</ul>
+<span class="target" id="index-15"></span></div>
+<div class="section" id="common-weakness-enumeration">
+<span id="cwe"></span><span id="index-16"></span><span id="id15"></span><h4>CWE<a class="headerlink" href="#common-weakness-enumeration" title="Permalink to this headline">¶</a></h4>
 <p>CWE (<em>Common Weakness Enumeration</em>)</p>
+<div class="line-block">
+<div class="line">Homepage: <a class="reference external" href="https://cwe.mitre.org/">https://cwe.mitre.org/</a></div>
+</div>
 <ul class="simple">
-<li><a class="reference external" href="https://cwe.mitre.org/">https://cwe.mitre.org/</a></li>
 <li><a class="reference external" href="https://cwe.mitre.org/top25/">https://cwe.mitre.org/top25/</a></li>
 <li><a class="reference external" href="https://cwe.mitre.org/top25/#CWE-89">https://cwe.mitre.org/top25/#CWE-89</a></li>
 <li><a class="reference external" href="https://cwe.mitre.org/data/definitions/89.html">https://cwe.mitre.org/data/definitions/89.html</a></li>
 </ul>
-<p>OWASP:</p>
+</div>
+<div class="section" id="owasp">
+<span id="index-17"></span><span id="id16"></span><h4>OWASP<a class="headerlink" href="#owasp" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Homepage: <a class="reference external" href="https://www.owasp.org/">https://www.owasp.org/</a></div>
+</div>
 <ul class="simple">
 <li><a class="reference external" href="https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project">https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project</a></li>
 <li><a class="reference external" href="https://www.owasp.org/index.php/OWASP_Proactive_Controls">https://www.owasp.org/index.php/OWASP_Proactive_Controls</a></li>
 <li><a class="reference external" href="https://www.owasp.org/index.php/Top_10_2013-Table_of_Contents">https://www.owasp.org/index.php/Top_10_2013-Table_of_Contents</a></li>
 <li><a class="reference external" href="https://www.owasp.org/index.php/Web_Standards_and_Specifications">https://www.owasp.org/index.php/Web_Standards_and_Specifications</a></li>
 </ul>
-<p>Internet Forums:</p>
+</div>
+<div class="section" id="websec-forums">
+<span id="index-18"></span><span id="id17"></span><h4>WebSec Forums<a class="headerlink" href="#websec-forums" title="Permalink to this headline">¶</a></h4>
+<p>Internet Forums for WebSec (&#8220;Web Security&#8221;)</p>
 <ul class="simple">
+<li><a class="reference internal" href="#responsible-disclosure"><span class="std std-ref">Responsible Disclosure</span></a> / Vulnerability Disclosure</li>
+<li><a class="reference external" href="https://www.cvedetails.com/">https://www.cvedetails.com/</a></li>
+<li><span class="xref std std-ref">IRC</span>, <span class="xref std std-ref">Slack</span>, <span class="xref std std-ref">Mattermost</span></li>
 <li><a class="reference external" href="https://www.reddit.com/r/websec">https://www.reddit.com/r/websec</a></li>
 <li><a class="reference external" href="https://www.reddit.com/r/netsec">https://www.reddit.com/r/netsec</a></li>
 <li><a class="reference external" href="https://twitter.com/search?q=websec">https://twitter.com/search?q=websec</a></li>
@@ -3558,8 +3634,9 @@ for web applications.</p>
 <li><a class="reference external" href="https://twitter.com/search?q=netsec">https://twitter.com/search?q=netsec</a></li>
 <li><a class="reference external" href="https://twitter.com/search?q=infosec">https://twitter.com/search?q=infosec</a></li>
 </ul>
+</div>
 <div class="section" id="http">
-<span id="index-12"></span><span id="id12"></span><h4>HTTP<a class="headerlink" href="#http" title="Permalink to this headline">¶</a></h4>
+<span id="index-19"></span><span id="id18"></span><h4>HTTP<a class="headerlink" href="#http" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">WikipediaCategory: <a class="reference external" href="https://en.wikipedia.org/wiki/Category:Hypertext_Transfer_Protocol">https://en.wikipedia.org/wiki/Category:Hypertext_Transfer_Protocol</a></div>
 <div class="line">WikipediaCategory: <a class="reference external" href="https://en.wikipedia.org/wiki/Category:Hypertext_Transfer_Protocol_headers">https://en.wikipedia.org/wiki/Category:Hypertext_Transfer_Protocol_headers</a></div>
@@ -3571,7 +3648,7 @@ for web applications.</p>
 </ul>
 </div>
 <div class="section" id="https">
-<span id="index-13"></span><span id="id13"></span><h4>HTTPS<a class="headerlink" href="#https" title="Permalink to this headline">¶</a></h4>
+<span id="index-20"></span><span id="id19"></span><h4>HTTPS<a class="headerlink" href="#https" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/HTTPS">https://en.wikipedia.org/wiki/HTTPS</a></div>
 </div>
@@ -3580,9 +3657,9 @@ for web applications.</p>
 <li>Knowledge Engineering &gt; <a class="reference internal" href="index.html#https"><span class="std std-ref">HTTPS</span></a></li>
 <li><a class="reference internal" href="index.html#http"><span class="std std-ref">HTTP</span></a>, <a class="reference internal" href="index.html#http"><span class="std std-ref">HTTP</span></a></li>
 </ul>
-<span class="target" id="index-14"></span></div>
+<span class="target" id="index-21"></span></div>
 <div class="section" id="http-sts">
-<span id="index-15"></span><span id="id14"></span><h4>HTTP STS<a class="headerlink" href="#http-sts" title="Permalink to this headline">¶</a></h4>
+<span id="index-22"></span><span id="id20"></span><h4>HTTP STS<a class="headerlink" href="#http-sts" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security">https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</a></div>
 </div>
@@ -3596,9 +3673,50 @@ indefinitely or for a specified time period.</p>
 <li><a class="reference internal" href="index.html#https-everywhere"><span class="std std-ref">HTTPS Everywhere</span></a></li>
 </ul>
 </div>
+<div class="section" id="acme-protocol">
+<span id="index-23"></span><span id="id21"></span><h4>ACME Protocol<a class="headerlink" href="#acme-protocol" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Automated_Certificate_Management_Environment">https://en.wikipedia.org/wiki/Automated_Certificate_Management_Environment</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/ietf-wg-acme/acme/">https://github.com/ietf-wg-acme/acme/</a></div>
+<div class="line">Spec: <a class="reference external" href="https://tools.ietf.org/html/draft-ietf-acme-acme">https://tools.ietf.org/html/draft-ietf-acme-acme</a></div>
+<div class="line">Spec: <a class="reference external" href="https://ietf-wg-acme.github.io/acme/draft-ietf-acme-acme.html">https://ietf-wg-acme.github.io/acme/draft-ietf-acme-acme.html</a></div>
+</div>
+<ul class="simple">
+<li>ACME (Automated Certificate Management Environment) is a protocol
+for Web PKI with X.509 Certificates and <a class="reference internal" href="index.html#https"><span class="std std-ref">HTTPS</span></a> (TLS/SL).</li>
+<li>ACME Spec Introduction:
+<a class="reference external" href="https://tools.ietf.org/html/draft-ietf-acme-acme#section-1">https://tools.ietf.org/html/draft-ietf-acme-acme#section-1</a></li>
+<li><a class="reference internal" href="#letsencrypt"><span class="std std-ref">Letsencrypt</span></a> implements the <span class="xref std std-ref">ACME</span> spec.</li>
+</ul>
+<div class="section" id="letsencrypt">
+<span id="index-24"></span><span id="id22"></span><h5>Letsencrypt<a class="headerlink" href="#letsencrypt" title="Permalink to this headline">¶</a></h5>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Let%27s_Encrypt">https://en.wikipedia.org/wiki/Let%27s_Encrypt</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://letsencrypt.org/">https://letsencrypt.org/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/letsencrypt">https://github.com/letsencrypt</a></div>
+<div class="line">Docs: <a class="reference external" href="https://letsencrypt.readthedocs.io/en/latest/">https://letsencrypt.readthedocs.io/en/latest/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://letsencrypt.readthedocs.io/en/latest/using.html#getting-certificates-and-choosing-plugins">https://letsencrypt.readthedocs.io/en/latest/using.html#getting-certificates-and-choosing-plugins</a></div>
+<div class="line">Docs: <a class="reference external" href="https://letsencrypt.readthedocs.io/en/latest/using.html#third-party-plugins">https://letsencrypt.readthedocs.io/en/latest/using.html#third-party-plugins</a></div>
+</div>
+<ul>
+<li><p class="first">&#8220;A free, automated, and open certificate authority.&#8221;</p>
+</li>
+<li><p class="first">Certs are valid for 90 days</p>
+</li>
+<li><p class="first">Use the staging server to avoid the certificate roll rate limit</p>
+</li>
+<li><p class="first">There are many <span class="xref std std-ref">ACME</span> clients (that work with letsencrypt):</p>
+<p><a class="reference external" href="https://letsencrypt.org/docs/client-options/">https://letsencrypt.org/docs/client-options/</a></p>
+<ul class="simple">
+<li>Certbot is an official, packaged Python client.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
 </div>
 <div class="section" id="web-development-requirements">
-<span id="index-16"></span><span id="id15"></span><h3>Web Development Requirements<a class="headerlink" href="#web-development-requirements" title="Permalink to this headline">¶</a></h3>
+<span id="index-25"></span><span id="id23"></span><h3>Web Development Requirements<a class="headerlink" href="#web-development-requirements" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>[ ] <a class="reference internal" href="index.html#project-management"><span class="std std-ref">Software Development &gt; Project Management</span></a></li>
 <li>[ ] <a class="reference internal" href="index.html#collaboration-checklist"><span class="std std-ref">Team Building &gt; Collaboration Checklist</span></a></li>
@@ -7866,7 +7984,9 @@ to useful <a class="reference external" href="https://en.wikipedia.org/wiki/Data
 </div>
 <div class="section" id="data-visualization">
 <span id="index-42"></span><span id="id34"></span><h4>Data Visualization<a class="headerlink" href="#data-visualization" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/Data_visualization">https://en.wikipedia.org/wiki/Data_visualization</a></p>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Data_visualization">https://en.wikipedia.org/wiki/Data_visualization</a></div>
+</div>
 <div class="section" id="visualizing-data-science">
 <span id="index-43"></span><span id="id35"></span><h5>Visualizing Data Science<a class="headerlink" href="#visualizing-data-science" title="Permalink to this headline">¶</a></h5>
 <p>The Data Science Venn Diagram</p>
@@ -7881,59 +8001,156 @@ to useful <a class="reference external" href="https://en.wikipedia.org/wiki/Data
 <li><a class="reference internal" href="index.html#lodcloud"><span class="std std-ref">LODCloud</span></a></li>
 </ul>
 </div>
+</div>
+</div>
+</div>
 <div class="section" id="data-visualization-tools">
-<span id="index-44"></span><span id="id36"></span><h5>Data Visualization Tools<a class="headerlink" href="#data-visualization-tools" title="Permalink to this headline">¶</a></h5>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/Matplotlib">https://en.wikipedia.org/wiki/Matplotlib</a></p>
+<span id="index-44"></span><span id="id36"></span><h2>Data Visualization Tools<a class="headerlink" href="#data-visualization-tools" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><a class="reference external" href="http://scipy-lectures.github.io/intro/matplotlib/matplotlib.html">http://scipy-lectures.github.io/intro/matplotlib/matplotlib.html</a></li>
-<li><a class="reference external" href="http://nbviewer.ipython.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb">http://nbviewer.ipython.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb</a></li>
-<li><a class="reference external" href="http://tonysyu.github.com/mpltools/auto_examples/index.html#style-package">http://tonysyu.github.com/mpltools/auto_examples/index.html#style-package</a></li>
-<li><a class="reference external" href="http://stanford.edu/~mwaskom/software/seaborn/index.html">http://stanford.edu/~mwaskom/software/seaborn/index.html</a></li>
-<li><a class="reference external" href="http://mpld3.github.io/">http://mpld3.github.io/</a> (Matplotlib + D3.js)</li>
-<li><code class="docutils literal"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">matplotlib</span></code> (<a class="reference internal" href="index.html#conda"><span class="std std-ref">Conda</span></a> (<a class="reference internal" href="index.html#anaconda"><span class="std std-ref">Anaconda</span></a>))</li>
+<li><a class="reference external" href="https://github.com/vinta/awesome-python#data-visualization">https://github.com/vinta/awesome-python#data-visualization</a></li>
+<li><a class="reference external" href="https://github.com/sorrycc/awesome-javascript#data-visualization">https://github.com/sorrycc/awesome-javascript#data-visualization</a></li>
+<li><a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/ecosystem.html#visualization">https://pandas.pydata.org/pandas-docs/stable/ecosystem.html#visualization</a></li>
 </ul>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/MayaVi">https://en.wikipedia.org/wiki/MayaVi</a></p>
+<div class="section" id="matplotlib">
+<span id="index-45"></span><span id="id37"></span><h3>Matplotlib<a class="headerlink" href="#matplotlib" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Matplotlib">https://en.wikipedia.org/wiki/Matplotlib</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://matplotlib.org/">https://matplotlib.org/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/matplotlib/matplotlib">https://github.com/matplotlib/matplotlib</a></div>
+<div class="line">Docs: <a class="reference external" href="https://matplotlib.org/contents.html">https://matplotlib.org/contents.html</a></div>
+</div>
+<ul>
+<li><p class="first">ref:<cite>Scipy lectures</cite>:</p>
+<p><a class="reference external" href="http://scipy-lectures.github.io/intro/matplotlib/matplotlib.html">http://scipy-lectures.github.io/intro/matplotlib/matplotlib.html</a></p>
+</li>
+<li><p class="first"><span class="xref std std-ref">Scientific-python-lectures</span>:</p>
+<p><a class="reference external" href="http://nbviewer.ipython.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb">http://nbviewer.ipython.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb</a></p>
+</li>
+<li><p class="first"><a class="reference external" href="http://stanford.edu/~mwaskom/software/seaborn/index.html">http://stanford.edu/~mwaskom/software/seaborn/index.html</a></p>
+</li>
+<li><p class="first"><a class="reference external" href="http://tonysyu.github.com/mpltools/auto_examples/index.html#style-package">http://tonysyu.github.com/mpltools/auto_examples/index.html#style-package</a></p>
+</li>
+<li><p class="first"><a class="reference external" href="http://mpld3.github.io/">http://mpld3.github.io/</a> (Matplotlib + D3.js)</p>
+</li>
+<li><p class="first"><code class="docutils literal"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">matplotlib</span></code> (<a class="reference internal" href="index.html#conda"><span class="std std-ref">Conda</span></a> (<a class="reference internal" href="index.html#anaconda"><span class="std std-ref">Anaconda</span></a>))</p>
+</li>
+</ul>
+<p>.</p>
 <ul class="simple">
-<li><a class="reference external" href="https://github.com/enthought/mayavi">https://github.com/enthought/mayavi</a></li>
-<li><a class="reference external" href="https://scipy-lectures.github.io/packages/3d_plotting/index.html">https://scipy-lectures.github.io/packages/3d_plotting/index.html</a></li>
+<li><a class="reference internal" href="index.html#pandas"><span class="std std-ref">pandas</span></a> plot functions generate matplotlib charts.</li>
 </ul>
-<p><a class="reference external" href="http://bokeh.pydata.org/">http://bokeh.pydata.org/</a></p>
+<div class="section" id="seaborn">
+<span id="index-46"></span><span id="id38"></span><h4>Seaborn<a class="headerlink" href="#seaborn" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/mwaskom/seaborn">https://github.com/mwaskom/seaborn</a></div>
+<div class="line">Docs: <a class="reference external" href="http://seaborn.pydata.org/">http://seaborn.pydata.org/</a></div>
+<div class="line">Docs: <a class="reference external" href="http://seaborn.pydata.org/examples/">http://seaborn.pydata.org/examples/</a></div>
+</div>
 <ul class="simple">
-<li><a class="reference external" href="https://github.com/bokeh/bokeh">https://github.com/bokeh/bokeh</a></li>
+<li>&#8220;Seaborn is a Python visualization library based on <a class="reference internal" href="#matplotlib"><span class="std std-ref">Matplotlib</span></a>.
+It provides a high-level interface for drawing attractive statistical
+graphics.&#8221;</li>
 </ul>
-<p><a class="reference external" href="http://vispy.org/">http://vispy.org/</a> (<a class="reference internal" href="index.html#opengl"><span class="std std-ref">OpenGL</span></a>)</p>
-<ul class="simple">
-<li><a class="reference external" href="https://github.com/vispy/vispy">https://github.com/vispy/vispy</a></li>
+</div>
+</div>
+<div class="section" id="mayavi">
+<span id="index-47"></span><span id="id39"></span><h3>Mayavi<a class="headerlink" href="#mayavi" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/MayaVi">https://en.wikipedia.org/wiki/MayaVi</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/enthought/mayavi">https://github.com/enthought/mayavi</a></div>
+<div class="line">Docs: <a class="reference external" href="http://docs.enthought.com/mayavi/mayavi/">http://docs.enthought.com/mayavi/mayavi/</a></div>
+</div>
+<ul>
+<li><p class="first">&#8220;Mayavi: 3D scientific data visualization and plotting in <a class="reference internal" href="index.html#python"><span class="std std-ref">Python</span></a>&#8220;</p>
+</li>
+<li><p class="first">ref:<cite>Scipy lectures</cite>:</p>
+<p><a class="reference external" href="https://scipy-lectures.github.io/packages/3d_plotting/">https://scipy-lectures.github.io/packages/3d_plotting/</a></p>
+</li>
 </ul>
-<p><a class="reference external" href="http://nbviewer.ipython.org/github/jakevdp/OpenVisConf2014/blob/master/PythonVis.ipynb">http://nbviewer.ipython.org/github/jakevdp/OpenVisConf2014/blob/master/PythonVis.ipynb</a></p>
-<p><a class="reference external" href="https://trifacta.github.io/vega/">https://trifacta.github.io/vega/</a></p>
-<ul class="simple">
-<li><a class="reference external" href="https://github.com/wrobstory/vincent">https://github.com/wrobstory/vincent</a></li>
-</ul>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/Plotly">https://en.wikipedia.org/wiki/Plotly</a></p>
-<ul class="simple">
-<li><a class="reference external" href="https://plot.ly/">https://plot.ly/</a></li>
-</ul>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/D3.js">https://en.wikipedia.org/wiki/D3.js</a></p>
-<ul class="simple">
-<li><a class="reference external" href="http://d3js.org/">http://d3js.org/</a></li>
-</ul>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/Three.js">https://en.wikipedia.org/wiki/Three.js</a></p>
-<ul class="simple">
-<li><a class="reference external" href="http://threejs.org/">http://threejs.org/</a> (<a class="reference internal" href="index.html#webgl"><span class="std std-ref">WebGL</span></a>)</li>
-</ul>
-<p><a class="reference external" href="http://sigmajs.org/">http://sigmajs.org/</a></p>
+</div>
+<div class="section" id="bokeh">
+<span id="index-48"></span><span id="id40"></span><h3>Bokeh<a class="headerlink" href="#bokeh" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/bokeh/bokeh">https://github.com/bokeh/bokeh</a></div>
+<div class="line">Docs: <a class="reference external" href="https://bokeh.pydata.org/">https://bokeh.pydata.org/</a></div>
+</div>
+</div>
+<div class="section" id="vispy">
+<span id="index-49"></span><span id="id41"></span><h3>VisPy<a class="headerlink" href="#vispy" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Homepage: <a class="reference external" href="http://vispy.org/">http://vispy.org/</a> (<a class="reference internal" href="index.html#opengl"><span class="std std-ref">OpenGL</span></a>)</div>
+<div class="line">Src: <a class="reference external" href="https://github.com/vispy/vispy">https://github.com/vispy/vispy</a></div>
+</div>
+</div>
+<div class="section" id="vega">
+<span id="index-50"></span><span id="id42"></span><h3>Vega<a class="headerlink" href="#vega" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Homepage: <a class="reference external" href="https://trifacta.github.io/vega/">https://trifacta.github.io/vega/</a></div>
+</div>
+<div class="section" id="vincent">
+<span id="index-51"></span><span id="id43"></span><h4>Vincent<a class="headerlink" href="#vincent" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/wrobstory/vincent">https://github.com/wrobstory/vincent</a></div>
+</div>
+</div>
+</div>
+<div class="section" id="plotly">
+<span id="index-52"></span><span id="id44"></span><h3>Plotly<a class="headerlink" href="#plotly" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Plotly">https://en.wikipedia.org/wiki/Plotly</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://plot.ly/">https://plot.ly/</a></div>
+</div>
+</div>
+<div class="section" id="pyqtgraph">
+<span id="index-53"></span><span id="id45"></span><h3>PyQtGraph<a class="headerlink" href="#pyqtgraph" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="http://www.pyqtgraph.org/">http://www.pyqtgraph.org/</a> (<a class="reference internal" href="index.html#opengl"><span class="std std-ref">OpenGL</span></a>)</p>
-<p><a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/ecosystem.html#visualization">http://pandas.pydata.org/pandas-docs/stable/ecosystem.html#visualization</a></p>
-<p><a class="reference external" href="https://github.com/quantopian/qgrid">https://github.com/quantopian/qgrid</a> (SlickGrid w/
-<a class="reference internal" href="index.html#ipython-notebook"><span class="std std-ref">IPython Notebook</span></a>
-(<a class="reference internal" href="index.html#jupyter-notebook"><span class="std std-ref">Jupyter Notebook</span></a>))</p>
-<p><a class="reference external" href="https://github.com/josephmisiti/awesome-machine-learning">https://github.com/josephmisiti/awesome-machine-learning</a></p>
-<p>See: <a class="reference internal" href="index.html#tools"><span class="std std-ref">Tools</span></a>, <a class="reference internal" href="index.html#semantic-web-tools"><span class="std std-ref">Semantic Web Tools</span></a>,
-<a class="reference internal" href="index.html#id1"><span class="std std-ref">Art &amp; Design</span></a></p>
-<span class="target" id="id37"></span></div>
+</div>
+<div class="section" id="qgrid">
+<span id="index-54"></span><span id="id46"></span><h3>qgrid<a class="headerlink" href="#qgrid" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/quantopian/qgrid">https://github.com/quantopian/qgrid</a></div>
+</div>
+<ul class="simple">
+<li>(SlickGrid w/ <a class="reference internal" href="index.html#ipython-notebook"><span class="std std-ref">IPython Notebook</span></a>/ <a class="reference internal" href="index.html#jupyter-notebook"><span class="std std-ref">Jupyter Notebook</span></a></li>
+<li><a class="reference internal" href="index.html#pandas"><span class="std std-ref">pandas</span></a> support</li>
+</ul>
+<span class="target" id="index-55"></span></div>
+<div class="section" id="d3-js">
+<span id="d3"></span><span id="index-56"></span><h3>D3.js<a class="headerlink" href="#d3-js" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/D3.js">https://en.wikipedia.org/wiki/D3.js</a></div>
+<div class="line">Homepage: <a class="reference external" href="http://d3js.org/">http://d3js.org/</a></div>
 </div>
 </div>
+<div class="section" id="three-js">
+<span id="threejs"></span><span id="index-57"></span><h3>Three.js<a class="headerlink" href="#three-js" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Three.js">https://en.wikipedia.org/wiki/Three.js</a></div>
+<div class="line">Homepage: <a class="reference external" href="http://threejs.org/">http://threejs.org/</a></div>
+</div>
+<p>(<a class="reference internal" href="index.html#webgl"><span class="std std-ref">WebGL</span></a>)</p>
+<ul class="simple">
+<li><span class="xref std std-ref">Google ARCore Web</span> is built on Three.js</li>
+<li><span class="xref std std-ref">React VR</span> is built on Three.js</li>
+</ul>
+</div>
+<div class="section" id="sigmajs">
+<span id="index-58"></span><span id="id47"></span><h3>Sigmajs<a class="headerlink" href="#sigmajs" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Homepage: <a class="reference external" href="http://sigmajs.org/">http://sigmajs.org/</a></div>
+</div>
+<ul class="simple">
+<li><a class="reference internal" href="index.html#graphs"><span class="std std-ref">Graphs</span></a> in <a class="reference internal" href="index.html#javascript"><span class="std std-ref">JavaScript</span></a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="see-also">
+<h2>See Also<a class="headerlink" href="#see-also" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference internal" href="index.html#tools"><span class="std std-ref">Tools</span></a> &gt; <a class="reference internal" href="index.html#semantic-web-tools"><span class="std std-ref">Semantic Web Tools</span></a></li>
+<li><a class="reference internal" href="index.html#id1"><span class="std std-ref">Art &amp; Design</span></a></li>
+<li><span class="xref std std-ref">Machine Learning</span></li>
+</ul>
 </div>
 <span id="document-consulting/units"></span><div class="section" id="units">
 <span id="index-0"></span><span id="id1"></span><h2>Units<a class="headerlink" href="#units" title="Permalink to this headline">¶</a></h2>

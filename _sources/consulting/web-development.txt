@@ -767,37 +767,94 @@ Security at :ref:`W3C` :
 * :ref:`Web Standards`
 
 
+.. index:: Resonsible Disclosure
+.. _responsible disclosure:
+
+Responsible Disclosure
++++++++++++++++++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/Responsible_disclosure
+
+- https://www.owasp.org/index.php/Vulnerability_Disclosure_Cheat_Sheet
+
+
+.. index:: Bug Bounty Program
+.. _bug bounty program:
+
+Bug Bounty Program
+``````````````````````
+| Wikipedia: https://en.wikipedia.org/wiki/Bug_bounty_program
+
+- Hacker One:
+
+  - Homepage: https://hackerone.com/
+  - https://hackerone.com/twitter
+
+- Professional integrity:
+
+  https://en.wikipedia.org/wiki/Integrity
+
+- :ref:`Open Source`
+
+
+.. index:: SANS/CIS Consensus Audit Guidelines:
+.. _sans/cis consensus audit guidelines:
+
 SANS/CIS Consensus Audit Guidelines:
++++++++++++++++++++++++++++++++++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/Consensus_audit_guidelines
+| Wikipedia: https://en.wikipedia.org/wiki/The_CIS_Critical_Security_Controls_for_Effective_Cyber_Defense
+| Wikipedia: https://en.wikipedia.org/wiki/CSC_Version_6.0
 
-* | Wikipedia: https://en.wikipedia.org/wiki/Consensus_audit_guidelines
-  | Wikipedia: https://en.wikipedia.org/wiki/The_CIS_Critical_Security_Controls_for_Effective_Cyber_Defense
-  | Wikipedia: https://en.wikipedia.org/wiki/CSC_Version_6.0
+* "SANS Top 20": https://www.sans.org/critical-security-controls/
+* "SANS Top 25": https://cwe.mitre.org/top25/
 
-  * "SANS Top 20": https://www.sans.org/critical-security-controls/
-  * "SANS Top 25": https://cwe.mitre.org/top25/
+* CIS: 
 
-  * CIS: 
+  * https://www.cisecurity.org/critical-controls.cfm
+  * https://www.cisecurity.org/critical-controls/reports/
+  * PDF for email.
 
-    * https://www.cisecurity.org/critical-controls.cfm
-    * https://www.cisecurity.org/critical-controls/reports/
-    * PDF for email.
 
+.. index:: CWE
+.. index:: Common Weakness Enumeration
+.. _cwe:
+.. _common weakness enumeration:
+
+CWE
+++++++
 CWE (*Common Weakness Enumeration*)
 
-* https://cwe.mitre.org/
+| Homepage: https://cwe.mitre.org/
+
+
 * https://cwe.mitre.org/top25/
 * https://cwe.mitre.org/top25/#CWE-89
 * https://cwe.mitre.org/data/definitions/89.html
 
-OWASP:
+
+.. index:: OWASP
+.. _owasp:
+
+OWASP
+++++++++
+| Homepage: https://www.owasp.org/
 
 * https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project
 * https://www.owasp.org/index.php/OWASP_Proactive_Controls
 * https://www.owasp.org/index.php/Top_10_2013-Table_of_Contents
 * https://www.owasp.org/index.php/Web_Standards_and_Specifications
 
-Internet Forums:
 
+.. index:: WebSec Forums
+.. _websec forums:
+
+WebSec Forums
+++++++++++++++++++
+Internet Forums for WebSec ("Web Security")
+
+* :ref:`Responsible Disclosure` / Vulnerability Disclosure
+* https://www.cvedetails.com/
+* :ref:`IRC`, :ref:`Slack`, :ref:`Mattermost`
 * https://www.reddit.com/r/websec
 * https://www.reddit.com/r/netsec
 * https://twitter.com/search?q=websec
@@ -851,6 +908,45 @@ See also:
 
 * Knowledge Engineering > :ref:`HTTP STS`
 * :ref:`https everywhere`
+
+
+.. index:: ACME Protocol
+.. _acme protocol:
+
+ACME Protocol
+++++++++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/Automated_Certificate_Management_Environment
+| Src: https://github.com/ietf-wg-acme/acme/
+| Spec: https://tools.ietf.org/html/draft-ietf-acme-acme
+| Spec: https://ietf-wg-acme.github.io/acme/draft-ietf-acme-acme.html
+
+- ACME (Automated Certificate Management Environment) is a protocol
+  for Web PKI with X.509 Certificates and :ref:`HTTPS` (TLS/SL).
+- ACME Spec Introduction:
+  https://tools.ietf.org/html/draft-ietf-acme-acme#section-1
+- :ref:`Letsencrypt` implements the :ref:`ACME` spec.
+
+
+.. index:: Letsencrypt
+.. _letsencrypt:
+
+Letsencrypt
+````````````````
+| Wikipedia: https://en.wikipedia.org/wiki/Let%27s_Encrypt
+| Homepage: https://letsencrypt.org/
+| Src: https://github.com/letsencrypt
+| Docs: https://letsencrypt.readthedocs.io/en/latest/
+| Docs: https://letsencrypt.readthedocs.io/en/latest/using.html#getting-certificates-and-choosing-plugins
+| Docs: https://letsencrypt.readthedocs.io/en/latest/using.html#third-party-plugins
+
+- "A free, automated, and open certificate authority."
+- Certs are valid for 90 days
+- Use the staging server to avoid the certificate roll rate limit
+- There are many :ref:`ACME` clients (that work with letsencrypt):
+  
+  https://letsencrypt.org/docs/client-options/
+
+  - Certbot is an official, packaged Python client.
 
 
 .. index:: Web Development Requirements

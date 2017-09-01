@@ -1008,7 +1008,7 @@ See: :ref:`knowledge engineering`,
 
 Data Visualization
 ++++++++++++++++++++
-https://en.wikipedia.org/wiki/Data_visualization
+| Wikipedia: https://en.wikipedia.org/wiki/Data_visualization
 
 
 .. index:: Visualizing Data Science
@@ -1016,7 +1016,6 @@ https://en.wikipedia.org/wiki/Data_visualization
 
 Visualizing Data Science
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 The Data Science Venn Diagram
 
 * http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram
@@ -1033,66 +1032,167 @@ Field representations
 .. _data visualization tools:
 
 Data Visualization Tools
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+==========================
+- https://github.com/vinta/awesome-python#data-visualization
+- https://github.com/sorrycc/awesome-javascript#data-visualization
+- https://pandas.pydata.org/pandas-docs/stable/ecosystem.html#visualization
 
 
-https://en.wikipedia.org/wiki/Matplotlib
+.. index:: Matplotlib
+.. _matplotlib:
 
-* http://scipy-lectures.github.io/intro/matplotlib/matplotlib.html
-* http://nbviewer.ipython.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb
-* http://tonysyu.github.com/mpltools/auto_examples/index.html#style-package
+Matplotlib
+--------------------
+| Wikipedia: https://en.wikipedia.org/wiki/Matplotlib
+| Homepage: https://matplotlib.org/
+| Src: https://github.com/matplotlib/matplotlib
+| Docs: https://matplotlib.org/contents.html 
+
+* ref:`Scipy lectures`:
+  
+  http://scipy-lectures.github.io/intro/matplotlib/matplotlib.html
+* :ref:`Scientific-python-lectures`:
+  
+  http://nbviewer.ipython.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb
 * http://stanford.edu/~mwaskom/software/seaborn/index.html
+* http://tonysyu.github.com/mpltools/auto_examples/index.html#style-package
 * http://mpld3.github.io/ (Matplotlib + D3.js)
 * ``conda install matplotlib`` (:ref:`Conda` (:ref:`Anaconda`))
 
+.
 
-https://en.wikipedia.org/wiki/MayaVi
-
-* https://github.com/enthought/mayavi
-* https://scipy-lectures.github.io/packages/3d_plotting/index.html
+* :ref:`Pandas` plot functions generate matplotlib charts.
 
 
-http://bokeh.pydata.org/
+.. index:: Seaborn
+.. _seaborn:
 
-* https://github.com/bokeh/bokeh
+Seaborn
+++++++++++
+| Src: https://github.com/mwaskom/seaborn
+| Docs: http://seaborn.pydata.org/
+| Docs: http://seaborn.pydata.org/examples/
 
-http://vispy.org/ (:ref:`OpenGL`)
-
-* https://github.com/vispy/vispy
-
-http://nbviewer.ipython.org/github/jakevdp/OpenVisConf2014/blob/master/PythonVis.ipynb
-
-https://trifacta.github.io/vega/
-
-* https://github.com/wrobstory/vincent
-
-https://en.wikipedia.org/wiki/Plotly
-
-* https://plot.ly/
+- "Seaborn is a Python visualization library based on :ref:`matplotlib`.
+  It provides a high-level interface for drawing attractive statistical
+  graphics."
 
 
-https://en.wikipedia.org/wiki/D3.js
+.. index:: Mayavi
+.. _mayavi:
 
-* http://d3js.org/
+Mayavi
+----------
+| Wikipedia: https://en.wikipedia.org/wiki/MayaVi
+| Src: https://github.com/enthought/mayavi
+| Docs: http://docs.enthought.com/mayavi/mayavi/
 
-https://en.wikipedia.org/wiki/Three.js
+* "Mayavi: 3D scientific data visualization and plotting in :ref:`Python`"
+* ref:`Scipy lectures`:
 
-* http://threejs.org/ (:ref:`WebGL`)
+  https://scipy-lectures.github.io/packages/3d_plotting/
 
-http://sigmajs.org/
+ 
+.. index:: Bokeh
+.. _bokeh:
 
+Bokeh
+------------
+| Src: https://github.com/bokeh/bokeh
+| Docs: https://bokeh.pydata.org/
+
+
+.. index:: VisPy
+.. _vispy:
+
+VisPy
+---------
+| Homepage: http://vispy.org/ (:ref:`OpenGL`)
+| Src: https://github.com/vispy/vispy
+
+
+.. index:: Vega
+.. _vega:
+
+Vega
+----------
+| Homepage: https://trifacta.github.io/vega/
+
+
+.. index:: Vincent
+.. _vincent:
+
+Vincent
++++++++++++
+| Src: https://github.com/wrobstory/vincent
+
+
+.. index:: Plotly
+.. _plotly:
+
+Plotly
+----------
+| Wikipedia: https://en.wikipedia.org/wiki/Plotly
+| Homepage: https://plot.ly/
+
+
+.. index:: PyQtGraph
+.. _pyqtgraph:
+
+PyQtGraph
+------------
 http://www.pyqtgraph.org/ (:ref:`OpenGL`)
 
-http://pandas.pydata.org/pandas-docs/stable/ecosystem.html#visualization
-
-https://github.com/quantopian/qgrid (SlickGrid w/
-:ref:`IPython Notebook`
-(:ref:`Jupyter Notebook`))
-
-https://github.com/josephmisiti/awesome-machine-learning
-
-See: :ref:`Tools`, :ref:`Semantic Web Tools <semantic web tools>`,
-:ref:`Art & Design <art-design>`
 
 
-.. _datasets:
+.. index:: qgrid
+.. _qgrid:
+
+qgrid
+--------
+| Src: https://github.com/quantopian/qgrid
+
+- (SlickGrid w/ :ref:`IPython Notebook`/ :ref:`Jupyter Notebook`
+- :ref:`Pandas` support
+
+
+.. index:: D3.js
+.. index:: D3
+.. _d3:
+
+D3.js
+------
+| Wikipedia: https://en.wikipedia.org/wiki/D3.js
+| Homepage: http://d3js.org/
+
+.. index:: Three.js
+.. _threejs:
+
+Three.js
+-----------
+| Wikipedia: https://en.wikipedia.org/wiki/Three.js
+| Homepage: http://threejs.org/
+
+(:ref:`WebGL`)
+
+- :ref:`Google ARCore Web` is built on Three.js
+- :ref:`React VR` is built on Three.js
+
+
+.. index:: SigmaJS
+.. _sigmajs:
+
+Sigmajs
+---------
+| Homepage: http://sigmajs.org/
+
+- :ref:`Graphs` in :ref:`Javascript`
+
+
+See Also
+===========
+
+- :ref:`Tools` > :ref:`Semantic Web Tools <semantic web tools>`
+- :ref:`Art & Design <art-design>`
+- :ref:`Machine Learning`
+
