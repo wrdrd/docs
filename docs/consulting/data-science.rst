@@ -1073,6 +1073,11 @@ Seaborn
 | Docs: http://seaborn.pydata.org/
 | Docs: http://seaborn.pydata.org/examples/
 
+- "Seaborn is a Python visualization library based on :ref:`matplotlib`.
+  It provides a high-level interface for drawing attractive statistical
+  graphics."
+
+
 .. index:: Mayavi
 .. _mayavi:
 
