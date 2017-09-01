@@ -68,6 +68,7 @@ localcss:
 	cat $(STATIC)/css/custom.css >> $(LOCALCSS)
 	cat $(STATIC)/css/sidenav-scrollto.css >> $(LOCALCSS)
 	cat $(STATIC)/css/leftnavbar.css >> $(LOCALCSS)
+	cat $(STATIC)/css/newtab.css >> $(LOCALCSS)
 
 localjs-live:
 	$(MAKE) localjs
