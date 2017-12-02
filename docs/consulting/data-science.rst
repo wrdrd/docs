@@ -581,7 +581,7 @@ in a browser.
 MathJax and :ref:`IPython Notebook` / :ref:`Jupyter Notebook`:
 
 * http://ipython.org/ipython-doc/dev/install/install.html#mathjax
-* http://nbviewer.ipython.org/github/ipython/ipython/blob/master/examples/Notebook/Typesetting%20Equations.ipynb
+* https://nbviewer.jupyter.org/github/jupyter/notebook/blob/master/docs/source/examples/Notebook/Typesetting%20Equations.ipynb
 * http://nbviewer.ipython.org/gist/rpmuller/5920182
 
 
