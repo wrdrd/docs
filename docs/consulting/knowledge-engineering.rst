@@ -1829,6 +1829,10 @@ SQL
 
 * `<https://en.wikipedia.org/wiki/Null_(SQL)#Comparisons_with_NULL_and_the_three-valued_logic_.283VL.29>`_
 * `<https://en.wikipedia.org/wiki/Join_(SQL)>`_
+* https://en.wikipedia.org/wiki/Hierarchical_and_recursive_queries_in_SQL
+
+SQL security:
+
 * https://en.wikipedia.org/wiki/SQL_injection
 * http://cwe.mitre.org/top25/#CWE-89 (#1 Most Prevalent Dangerous
   Security Error (2011))
