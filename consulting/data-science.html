@@ -118,6 +118,7 @@
 <li><a class="reference internal" href="#rosalind">Rosalind</a></li>
 <li><a class="reference internal" href="#mathematical-notation">Mathematical Notation</a><ul>
 <li><a class="reference internal" href="#latex">LaTeX</a></li>
+<li><a class="reference internal" href="#latex2sympy">latex2sympy</a></li>
 <li><a class="reference internal" href="#mathjax">MathJax</a></li>
 <li><a class="reference internal" href="#mathml">MathML</a><ul>
 <li><a class="reference internal" href="#asciimathml">ASCIIMathML</a></li>
@@ -271,6 +272,7 @@
 <li><a class="reference internal" href="#rosalind">Rosalind</a></li>
 <li><a class="reference internal" href="#mathematical-notation">Mathematical Notation</a><ul>
 <li><a class="reference internal" href="#latex">LaTeX</a></li>
+<li><a class="reference internal" href="#latex2sympy">latex2sympy</a></li>
 <li><a class="reference internal" href="#mathjax">MathJax</a></li>
 <li><a class="reference internal" href="#mathml">MathML</a><ul>
 <li><a class="reference internal" href="#asciimathml">ASCIIMathML</a></li>
@@ -920,13 +922,47 @@ I&#8217;m probably walking outside and it is hot out.</p>
 <span id="index-19"></span><span id="id15"></span><h5>LaTeX<a class="headerlink" href="#latex" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/LaTeX">https://en.wikipedia.org/wiki/LaTeX</a></div>
+<div class="line">LearnXinYMinutes: <a class="reference external" href="https://learnxinyminutes.com/docs/latex/">https://learnxinyminutes.com/docs/latex/</a></div>
+<div class="line">Docs: <a class="reference external" href="http://en.wikibooks.org/wiki/LaTeX">http://en.wikibooks.org/wiki/LaTeX</a></div>
 </div>
 <ul class="simple">
-<li><a class="reference external" href="https://en.wikipedia.org/wiki/LaTeX#Examples">https://en.wikipedia.org/wiki/LaTeX#Examples</a></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/LaTeX#Example">https://en.wikipedia.org/wiki/LaTeX#Example</a></li>
+<li>&#8220;A Primer on Using LaTeX in Jupyter Notebooks&#8221;
+<a class="reference external" href="http://data-blog.udacity.com/posts/2016/10/latex-primer/">http://data-blog.udacity.com/posts/2016/10/latex-primer/</a></li>
 </ul>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Comparison_of_TeX_editors">https://en.wikipedia.org/wiki/Comparison_of_TeX_editors</a></p>
+<ul>
+<li><p class="first"><a class="reference external" href="https://en.wikipedia.org/wiki/LyX">https://en.wikipedia.org/wiki/LyX</a></p>
+</li>
+<li><p class="first"><a class="reference external" href="https://twitter.com/wstein389/status/1002446637908811776">https://twitter.com/wstein389/status/1002446637908811776</a></p>
+<blockquote>
+<div><p>Completely new LaTeX editor in <a class="reference external" href="https://cocalc.com">https://cocalc.com</a> .  Open source, is
+written in React, has unlimited multipanel views, realtime collab,
+records all edits (TimeTravel), forward an inverse search, clickable
+links in the PDF,supports SageTex out of the box, and autoformat...</p>
+</div></blockquote>
+</li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference external" href="https://github.com/jupyterlab/jupyterlab-latex">https://github.com/jupyterlab/jupyterlab-latex</a></li>
+<li><a class="reference external" href="https://www.google.com/search?q=collaborative+latex">https://www.google.com/search?q=collaborative+latex</a></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="latex2sympy">
+<span id="index-20"></span><span id="id16"></span><h5>latex2sympy<a class="headerlink" href="#latex2sympy" title="Permalink to this headline">¶</a></h5>
+<div class="line-block">
+<div class="line">Pypi: <a class="reference external" href="https://pypi.org/project/latex2sympy3/">https://pypi.org/project/latex2sympy3/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/augustt198/latex2sympy">https://github.com/augustt198/latex2sympy</a></div>
+</div>
+<p>At a point, it makes a lot of sense to use executable specifications for
+mathematical concepts.  latex2sympy converts from <a class="reference internal" href="#latex"><span class="std std-ref">LaTeX</span></a> to Pyghon
+code that works with the <span class="xref std std-ref">SymPy</span> CAS (<span class="xref std std-ref">Computer Algebra
+System</span>).</p>
 </div>
 <div class="section" id="mathjax">
-<span id="index-20"></span><span id="id16"></span><h5>MathJax<a class="headerlink" href="#mathjax" title="Permalink to this headline">¶</a></h5>
+<span id="index-21"></span><span id="id17"></span><h5>MathJax<a class="headerlink" href="#mathjax" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/MathJax">https://en.wikipedia.org/wiki/MathJax</a></div>
 <div class="line">Docs: <a class="reference external" href="http://docs.mathjax.org/en/latest/tex.html">http://docs.mathjax.org/en/latest/tex.html</a></div>
@@ -944,15 +980,17 @@ in a browser.</p>
 <li><a class="reference external" href="http://ipython.org/ipython-doc/dev/install/install.html#mathjax">http://ipython.org/ipython-doc/dev/install/install.html#mathjax</a></li>
 <li><a class="reference external" href="https://nbviewer.jupyter.org/github/jupyter/notebook/blob/master/docs/source/examples/Notebook/Typesetting%20Equations.ipynb">https://nbviewer.jupyter.org/github/jupyter/notebook/blob/master/docs/source/examples/Notebook/Typesetting%20Equations.ipynb</a></li>
 <li><a class="reference external" href="http://nbviewer.ipython.org/gist/rpmuller/5920182">http://nbviewer.ipython.org/gist/rpmuller/5920182</a></li>
+<li>&#8220;A Primer on Using LaTeX in Jupyter Notebooks&#8221;
+<a class="reference external" href="http://data-blog.udacity.com/posts/2016/10/latex-primer/">http://data-blog.udacity.com/posts/2016/10/latex-primer/</a></li>
 </ul>
 </div>
 <div class="section" id="mathml">
-<span id="index-21"></span><span id="id17"></span><h5>MathML<a class="headerlink" href="#mathml" title="Permalink to this headline">¶</a></h5>
+<span id="index-22"></span><span id="id18"></span><h5>MathML<a class="headerlink" href="#mathml" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/MathML">https://en.wikipedia.org/wiki/MathML</a></div>
 </div>
 <div class="section" id="asciimathml">
-<span id="index-22"></span><span id="id18"></span><h6>ASCIIMathML<a class="headerlink" href="#asciimathml" title="Permalink to this headline">¶</a></h6>
+<span id="index-23"></span><span id="id19"></span><h6>ASCIIMathML<a class="headerlink" href="#asciimathml" title="Permalink to this headline">¶</a></h6>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/ASCIIMathML">https://en.wikipedia.org/wiki/ASCIIMathML</a></div>
 </div>
@@ -964,7 +1002,7 @@ in a browser.</p>
 </div>
 </div>
 <div class="section" id="information-theory">
-<span id="index-23"></span><span id="id19"></span><h4>Information Theory<a class="headerlink" href="#information-theory" title="Permalink to this headline">¶</a></h4>
+<span id="index-24"></span><span id="id20"></span><h4>Information Theory<a class="headerlink" href="#information-theory" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Information_theory">https://en.wikipedia.org/wiki/Information_theory</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Entropy_(information_theory)">https://en.wikipedia.org/wiki/Entropy_(information_theory)</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Signal_(electrical_engineering)">https://en.wikipedia.org/wiki/Signal_(electrical_engineering)</a></p>
@@ -976,7 +1014,7 @@ in a browser.</p>
 </ul>
 </div>
 <div class="section" id="linear-algebra">
-<span id="index-24"></span><span id="id20"></span><h4>Linear Algebra<a class="headerlink" href="#linear-algebra" title="Permalink to this headline">¶</a></h4>
+<span id="index-25"></span><span id="id21"></span><h4>Linear Algebra<a class="headerlink" href="#linear-algebra" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Linear_algebra">https://en.wikipedia.org/wiki/Linear_algebra</a></p>
 <ul class="simple">
 <li><a class="reference external" href="https://www.khanacademy.org/math/linear-algebra">https://www.khanacademy.org/math/linear-algebra</a></li>
@@ -986,7 +1024,7 @@ in a browser.</p>
 </ul>
 </div>
 <div class="section" id="calculus">
-<span id="index-25"></span><span id="id21"></span><h4>Calculus<a class="headerlink" href="#calculus" title="Permalink to this headline">¶</a></h4>
+<span id="index-26"></span><span id="id22"></span><h4>Calculus<a class="headerlink" href="#calculus" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Calculus">https://en.wikipedia.org/wiki/Calculus</a></p>
 <ul class="simple">
 <li><a class="reference external" href="https://www.khanacademy.org/math/precalculus">https://www.khanacademy.org/math/precalculus</a></li>
@@ -1004,7 +1042,7 @@ in a browser.</p>
 </ul>
 </div>
 <div class="section" id="statistics">
-<span id="index-26"></span><span id="id22"></span><h4>Statistics<a class="headerlink" href="#statistics" title="Permalink to this headline">¶</a></h4>
+<span id="index-27"></span><span id="id23"></span><h4>Statistics<a class="headerlink" href="#statistics" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Statistics">https://en.wikipedia.org/wiki/Statistics</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Outline_of_statistics">https://en.wikipedia.org/wiki/Outline_of_statistics</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Category:Statistics">https://en.wikipedia.org/wiki/Category:Statistics</a></p>
@@ -1014,10 +1052,10 @@ in a browser.</p>
 <li><a class="reference external" href="https://www.class-central.com/search?q=statistics">https://www.class-central.com/search?q=statistics</a></li>
 </ul>
 <div class="section" id="parametric-statistics">
-<span id="index-27"></span><span id="id23"></span><h5>Parametric Statistics<a class="headerlink" href="#parametric-statistics" title="Permalink to this headline">¶</a></h5>
+<span id="index-28"></span><span id="id24"></span><h5>Parametric Statistics<a class="headerlink" href="#parametric-statistics" title="Permalink to this headline">¶</a></h5>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Parametric_statistics">https://en.wikipedia.org/wiki/Parametric_statistics</a></p>
 <div class="section" id="regression-analysis">
-<span id="index-28"></span><span id="id24"></span><h6>Regression Analysis<a class="headerlink" href="#regression-analysis" title="Permalink to this headline">¶</a></h6>
+<span id="index-29"></span><span id="id25"></span><h6>Regression Analysis<a class="headerlink" href="#regression-analysis" title="Permalink to this headline">¶</a></h6>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Regression_analysis">https://en.wikipedia.org/wiki/Regression_analysis</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Template:Regression_bar">https://en.wikipedia.org/wiki/Template:Regression_bar</a></p>
 <ul class="simple">
@@ -1027,14 +1065,14 @@ in a browser.</p>
 </div>
 </div>
 <div class="section" id="nonparametric-statistics">
-<span id="index-29"></span><span id="id25"></span><h5>Nonparametric Statistics<a class="headerlink" href="#nonparametric-statistics" title="Permalink to this headline">¶</a></h5>
+<span id="index-30"></span><span id="id26"></span><h5>Nonparametric Statistics<a class="headerlink" href="#nonparametric-statistics" title="Permalink to this headline">¶</a></h5>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Nonparametric_statistics">https://en.wikipedia.org/wiki/Nonparametric_statistics</a></p>
 <div class="section" id="descriptive-statistics">
-<span id="index-30"></span><span id="id26"></span><h6>Descriptive Statistics<a class="headerlink" href="#descriptive-statistics" title="Permalink to this headline">¶</a></h6>
+<span id="index-31"></span><span id="id27"></span><h6>Descriptive Statistics<a class="headerlink" href="#descriptive-statistics" title="Permalink to this headline">¶</a></h6>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Descriptive_statistics">https://en.wikipedia.org/wiki/Descriptive_statistics</a></p>
 </div>
 <div class="section" id="statistical-inference">
-<span id="index-31"></span><span id="id27"></span><h6>Statistical Inference<a class="headerlink" href="#statistical-inference" title="Permalink to this headline">¶</a></h6>
+<span id="index-32"></span><span id="id28"></span><h6>Statistical Inference<a class="headerlink" href="#statistical-inference" title="Permalink to this headline">¶</a></h6>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Statistical_inference">https://en.wikipedia.org/wiki/Statistical_inference</a></p>
 <ul class="simple">
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Statistical_inference#Models_and_assumptions">https://en.wikipedia.org/wiki/Statistical_inference#Models_and_assumptions</a></li>
@@ -1047,7 +1085,7 @@ in a browser.</p>
 </div>
 </div>
 <div class="section" id="causality">
-<span id="index-32"></span><span id="id28"></span><h5>Causality<a class="headerlink" href="#causality" title="Permalink to this headline">¶</a></h5>
+<span id="index-33"></span><span id="id29"></span><h5>Causality<a class="headerlink" href="#causality" title="Permalink to this headline">¶</a></h5>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Causality">https://en.wikipedia.org/wiki/Causality</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Correlation_and_dependence">https://en.wikipedia.org/wiki/Correlation_and_dependence</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Correlation_does_not_imply_causation">https://en.wikipedia.org/wiki/Correlation_does_not_imply_causation</a></p>
@@ -1058,12 +1096,12 @@ in a browser.</p>
 </div>
 </div>
 <div class="section" id="analysis">
-<span id="data-analysis"></span><span id="index-33"></span><h3>Analysis<a class="headerlink" href="#analysis" title="Permalink to this headline">¶</a></h3>
+<span id="data-analysis"></span><span id="index-34"></span><h3>Analysis<a class="headerlink" href="#analysis" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Data_analysis">https://en.wikipedia.org/wiki/Data_analysis</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Big_data">https://en.wikipedia.org/wiki/Big_data</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Data_processing#Data_processing_functions">https://en.wikipedia.org/wiki/Data_processing#Data_processing_functions</a></p>
 <div class="section" id="learning">
-<span id="data-learning"></span><span id="index-34"></span><h4>Learning<a class="headerlink" href="#learning" title="Permalink to this headline">¶</a></h4>
+<span id="data-learning"></span><span id="index-35"></span><h4>Learning<a class="headerlink" href="#learning" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Learning">https://en.wikipedia.org/wiki/Learning</a></p>
 <ul class="simple">
 <li><a class="reference external" href="http://plato.stanford.edu/entries/learning-formal/">http://plato.stanford.edu/entries/learning-formal/</a></li>
@@ -1084,13 +1122,13 @@ in a browser.</p>
 <p>See: <a class="reference internal" href="knowledge-engineering#knowledge-engineering"><span class="std std-ref">Knowledge Engineering</span></a></p>
 </div>
 <div class="section" id="data-mining">
-<span id="index-35"></span><span id="id29"></span><h4>Data Mining<a class="headerlink" href="#data-mining" title="Permalink to this headline">¶</a></h4>
+<span id="index-36"></span><span id="id30"></span><h4>Data Mining<a class="headerlink" href="#data-mining" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Data_mining">https://en.wikipedia.org/wiki/Data_mining</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Knowledge_extraction">https://en.wikipedia.org/wiki/Knowledge_extraction</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Extract,_transform,_load">https://en.wikipedia.org/wiki/Extract,_transform,_load</a></p>
 </div>
 <div class="section" id="data-dredging">
-<span id="index-36"></span><span id="id30"></span><h4>Data Dredging<a class="headerlink" href="#data-dredging" title="Permalink to this headline">¶</a></h4>
+<span id="index-37"></span><span id="id31"></span><h4>Data Dredging<a class="headerlink" href="#data-dredging" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Data_dredging">https://en.wikipedia.org/wiki/Data_dredging</a></div>
 </div>
@@ -1104,7 +1142,7 @@ in a browser.</p>
 </ul>
 </div>
 <div class="section" id="machine-learning">
-<span id="index-37"></span><span id="id31"></span><h4>Machine Learning<a class="headerlink" href="#machine-learning" title="Permalink to this headline">¶</a></h4>
+<span id="index-38"></span><span id="id32"></span><h4>Machine Learning<a class="headerlink" href="#machine-learning" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Machine_learning">https://en.wikipedia.org/wiki/Machine_learning</a></div>
 <div class="line">Awesome: <a class="reference external" href="https://github.com/onurakpolat/awesome-bigdata">https://github.com/onurakpolat/awesome-bigdata</a></div>
@@ -1117,7 +1155,7 @@ in a browser.</p>
 </ul>
 </div>
 <div class="section" id="deep-learning">
-<span id="index-38"></span><span id="id32"></span><h4>Deep Learning<a class="headerlink" href="#deep-learning" title="Permalink to this headline">¶</a></h4>
+<span id="index-39"></span><span id="id33"></span><h4>Deep Learning<a class="headerlink" href="#deep-learning" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Deep_learning">https://en.wikipedia.org/wiki/Deep_learning</a></div>
 </div>
@@ -1149,7 +1187,7 @@ in a browser.</p>
 </ul>
 </div>
 <div class="section" id="awesome">
-<span id="id33"></span><h4>Awesome<a class="headerlink" href="#awesome" title="Permalink to this headline">¶</a></h4>
+<span id="id34"></span><h4>Awesome<a class="headerlink" href="#awesome" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference external" href="https://github.com/bayandin/awesome-awesomeness">https://github.com/bayandin/awesome-awesomeness</a></p>
 <ul class="simple">
 <li><a class="reference external" href="https://github.com/onurakpolat/awesome-bigdata">https://github.com/onurakpolat/awesome-bigdata</a></li>
@@ -1160,9 +1198,9 @@ in a browser.</p>
 </div>
 </div>
 <div class="section" id="tools">
-<span id="data-science-tools"></span><span id="index-39"></span><h2>Tools<a class="headerlink" href="#tools" title="Permalink to this headline">¶</a></h2>
+<span id="data-science-tools"></span><span id="index-40"></span><h2>Tools<a class="headerlink" href="#tools" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="etl">
-<span id="index-40"></span><h3>ETL<a class="headerlink" href="#etl" title="Permalink to this headline">¶</a></h3>
+<span id="index-41"></span><h3>ETL<a class="headerlink" href="#etl" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Extract,_transform,_load">https://en.wikipedia.org/wiki/Extract,_transform,_load</a></div>
 </div>
@@ -1200,7 +1238,7 @@ in a browser.</p>
 </div>
 </div>
 <div class="section" id="techniques">
-<span id="data-science-techniques"></span><span id="index-41"></span><h2>Techniques<a class="headerlink" href="#techniques" title="Permalink to this headline">¶</a></h2>
+<span id="data-science-techniques"></span><span id="index-42"></span><h2>Techniques<a class="headerlink" href="#techniques" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="automated-workflows">
 <h3>Automated Workflows<a class="headerlink" href="#automated-workflows" title="Permalink to this headline">¶</a></h3>
 <p>Standard, Automated Workflows</p>
@@ -1254,12 +1292,12 @@ to useful <a class="reference external" href="https://en.wikipedia.org/wiki/Data
 <a class="reference internal" href="knowledge-engineering#semantic-web-standards"><span class="std std-ref">Semantic Web Standards</span></a></p>
 </div>
 <div class="section" id="data-visualization">
-<span id="index-42"></span><span id="id34"></span><h3>Data Visualization<a class="headerlink" href="#data-visualization" title="Permalink to this headline">¶</a></h3>
+<span id="index-43"></span><span id="id35"></span><h3>Data Visualization<a class="headerlink" href="#data-visualization" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Data_visualization">https://en.wikipedia.org/wiki/Data_visualization</a></div>
 </div>
 <div class="section" id="visualizing-data-science">
-<span id="index-43"></span><span id="id35"></span><h4>Visualizing Data Science<a class="headerlink" href="#visualizing-data-science" title="Permalink to this headline">¶</a></h4>
+<span id="index-44"></span><span id="id36"></span><h4>Visualizing Data Science<a class="headerlink" href="#visualizing-data-science" title="Permalink to this headline">¶</a></h4>
 <p>The Data Science Venn Diagram</p>
 <ul class="simple">
 <li><a class="reference external" href="http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram">http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram</a></li>
@@ -1276,14 +1314,14 @@ to useful <a class="reference external" href="https://en.wikipedia.org/wiki/Data
 </div>
 </div>
 <div class="section" id="data-visualization-tools">
-<span id="index-44"></span><span id="id36"></span><h1>Data Visualization Tools<a class="headerlink" href="#data-visualization-tools" title="Permalink to this headline">¶</a></h1>
+<span id="index-45"></span><span id="id37"></span><h1>Data Visualization Tools<a class="headerlink" href="#data-visualization-tools" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
 <li><a class="reference external" href="https://github.com/vinta/awesome-python#data-visualization">https://github.com/vinta/awesome-python#data-visualization</a></li>
 <li><a class="reference external" href="https://github.com/sorrycc/awesome-javascript#data-visualization">https://github.com/sorrycc/awesome-javascript#data-visualization</a></li>
 <li><a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/ecosystem.html#visualization">https://pandas.pydata.org/pandas-docs/stable/ecosystem.html#visualization</a></li>
 </ul>
 <div class="section" id="matplotlib">
-<span id="index-45"></span><span id="id37"></span><h2>Matplotlib<a class="headerlink" href="#matplotlib" title="Permalink to this headline">¶</a></h2>
+<span id="index-46"></span><span id="id38"></span><h2>Matplotlib<a class="headerlink" href="#matplotlib" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Matplotlib">https://en.wikipedia.org/wiki/Matplotlib</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://matplotlib.org/">https://matplotlib.org/</a></div>
@@ -1311,7 +1349,7 @@ to useful <a class="reference external" href="https://en.wikipedia.org/wiki/Data
 <li><a class="reference internal" href="investing#pandas"><span class="std std-ref">pandas</span></a> plot functions generate matplotlib charts.</li>
 </ul>
 <div class="section" id="seaborn">
-<span id="index-46"></span><span id="id38"></span><h3>Seaborn<a class="headerlink" href="#seaborn" title="Permalink to this headline">¶</a></h3>
+<span id="index-47"></span><span id="id39"></span><h3>Seaborn<a class="headerlink" href="#seaborn" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Src: <a class="reference external" href="https://github.com/mwaskom/seaborn">https://github.com/mwaskom/seaborn</a></div>
 <div class="line">Docs: <a class="reference external" href="http://seaborn.pydata.org/">http://seaborn.pydata.org/</a></div>
@@ -1325,7 +1363,7 @@ graphics.&#8221;</li>
 </div>
 </div>
 <div class="section" id="mayavi">
-<span id="index-47"></span><span id="id39"></span><h2>Mayavi<a class="headerlink" href="#mayavi" title="Permalink to this headline">¶</a></h2>
+<span id="index-48"></span><span id="id40"></span><h2>Mayavi<a class="headerlink" href="#mayavi" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/MayaVi">https://en.wikipedia.org/wiki/MayaVi</a></div>
 <div class="line">Src: <a class="reference external" href="https://github.com/enthought/mayavi">https://github.com/enthought/mayavi</a></div>
@@ -1340,44 +1378,44 @@ graphics.&#8221;</li>
 </ul>
 </div>
 <div class="section" id="bokeh">
-<span id="index-48"></span><span id="id40"></span><h2>Bokeh<a class="headerlink" href="#bokeh" title="Permalink to this headline">¶</a></h2>
+<span id="index-49"></span><span id="id41"></span><h2>Bokeh<a class="headerlink" href="#bokeh" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
 <div class="line">Src: <a class="reference external" href="https://github.com/bokeh/bokeh">https://github.com/bokeh/bokeh</a></div>
 <div class="line">Docs: <a class="reference external" href="https://bokeh.pydata.org/">https://bokeh.pydata.org/</a></div>
 </div>
 </div>
 <div class="section" id="vispy">
-<span id="index-49"></span><span id="id41"></span><h2>VisPy<a class="headerlink" href="#vispy" title="Permalink to this headline">¶</a></h2>
+<span id="index-50"></span><span id="id42"></span><h2>VisPy<a class="headerlink" href="#vispy" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="http://vispy.org/">http://vispy.org/</a> (<a class="reference internal" href="art-design#opengl"><span class="std std-ref">OpenGL</span></a>)</div>
 <div class="line">Src: <a class="reference external" href="https://github.com/vispy/vispy">https://github.com/vispy/vispy</a></div>
 </div>
 </div>
 <div class="section" id="vega">
-<span id="index-50"></span><span id="id42"></span><h2>Vega<a class="headerlink" href="#vega" title="Permalink to this headline">¶</a></h2>
+<span id="index-51"></span><span id="id43"></span><h2>Vega<a class="headerlink" href="#vega" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="https://trifacta.github.io/vega/">https://trifacta.github.io/vega/</a></div>
 </div>
 <div class="section" id="vincent">
-<span id="index-51"></span><span id="id43"></span><h3>Vincent<a class="headerlink" href="#vincent" title="Permalink to this headline">¶</a></h3>
+<span id="index-52"></span><span id="id44"></span><h3>Vincent<a class="headerlink" href="#vincent" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Src: <a class="reference external" href="https://github.com/wrobstory/vincent">https://github.com/wrobstory/vincent</a></div>
 </div>
 </div>
 </div>
 <div class="section" id="plotly">
-<span id="index-52"></span><span id="id44"></span><h2>Plotly<a class="headerlink" href="#plotly" title="Permalink to this headline">¶</a></h2>
+<span id="index-53"></span><span id="id45"></span><h2>Plotly<a class="headerlink" href="#plotly" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Plotly">https://en.wikipedia.org/wiki/Plotly</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://plot.ly/">https://plot.ly/</a></div>
 </div>
 </div>
 <div class="section" id="pyqtgraph">
-<span id="index-53"></span><span id="id45"></span><h2>PyQtGraph<a class="headerlink" href="#pyqtgraph" title="Permalink to this headline">¶</a></h2>
+<span id="index-54"></span><span id="id46"></span><h2>PyQtGraph<a class="headerlink" href="#pyqtgraph" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="http://www.pyqtgraph.org/">http://www.pyqtgraph.org/</a> (<a class="reference internal" href="art-design#opengl"><span class="std std-ref">OpenGL</span></a>)</p>
 </div>
 <div class="section" id="qgrid">
-<span id="index-54"></span><span id="id46"></span><h2>qgrid<a class="headerlink" href="#qgrid" title="Permalink to this headline">¶</a></h2>
+<span id="index-55"></span><span id="id47"></span><h2>qgrid<a class="headerlink" href="#qgrid" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
 <div class="line">Src: <a class="reference external" href="https://github.com/quantopian/qgrid">https://github.com/quantopian/qgrid</a></div>
 </div>
@@ -1385,16 +1423,16 @@ graphics.&#8221;</li>
 <li>(SlickGrid w/ <a class="reference internal" href="../tools/index#ipython-notebook"><span class="std std-ref">IPython Notebook</span></a>/ <a class="reference internal" href="../tools/index#jupyter-notebook"><span class="std std-ref">Jupyter Notebook</span></a></li>
 <li><a class="reference internal" href="investing#pandas"><span class="std std-ref">pandas</span></a> support</li>
 </ul>
-<span class="target" id="index-55"></span></div>
+<span class="target" id="index-56"></span></div>
 <div class="section" id="d3-js">
-<span id="d3"></span><span id="index-56"></span><h2>D3.js<a class="headerlink" href="#d3-js" title="Permalink to this headline">¶</a></h2>
+<span id="d3"></span><span id="index-57"></span><h2>D3.js<a class="headerlink" href="#d3-js" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/D3.js">https://en.wikipedia.org/wiki/D3.js</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://d3js.org/">http://d3js.org/</a></div>
 </div>
 </div>
 <div class="section" id="three-js">
-<span id="threejs"></span><span id="index-57"></span><h2>Three.js<a class="headerlink" href="#three-js" title="Permalink to this headline">¶</a></h2>
+<span id="threejs"></span><span id="index-58"></span><h2>Three.js<a class="headerlink" href="#three-js" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Three.js">https://en.wikipedia.org/wiki/Three.js</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://threejs.org/">http://threejs.org/</a></div>
@@ -1406,7 +1444,7 @@ graphics.&#8221;</li>
 </ul>
 </div>
 <div class="section" id="sigmajs">
-<span id="index-58"></span><span id="id47"></span><h2>Sigmajs<a class="headerlink" href="#sigmajs" title="Permalink to this headline">¶</a></h2>
+<span id="index-59"></span><span id="id48"></span><h2>Sigmajs<a class="headerlink" href="#sigmajs" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="http://sigmajs.org/">http://sigmajs.org/</a></div>
 </div>
