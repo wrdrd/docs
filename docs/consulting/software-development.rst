@@ -13,6 +13,9 @@ https://en.wikipedia.org/wiki/Category:Software_design_patterns
 
 * `<https://en.wikipedia.org/wiki/Architectural_pattern_(computer_science)>`_
 * http://martinfowler.com/eaaCatalog/
+* https://github.com/DovAmir/awesome-design-patterns
+
+  * https://github.com/faif/python-patterns
 
 https://en.wikipedia.org/wiki/Software_engineering
 
