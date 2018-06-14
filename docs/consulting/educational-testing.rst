@@ -93,20 +93,23 @@ AP
 | Homepage: https://apstudent.collegeboard.org/
 | Homepage: http://apcentral.collegeboard.com/
 
-* https://en.wikipedia.org/wiki/Advanced_Placement#Advanced_Placement_courses
-* http://apcentral.collegeboard.com/apc/public/courses/teachers_corner/index.html
+* Advanced Placement (AP) courses conclude with an AP test
+  which many colleges and universities accept for credit hours;
+  given a sufficient test score.
 * Test grade: 1-5 (5 = "extremely well qualified")
-* e.g. AP Statistics
+* https://en.wikipedia.org/wiki/Advanced_Placement#Advanced_Placement_courses
+* AP Statistics
 
   * | Wikipedia: https://en.wikipedia.org/wiki/AP_Statistics
-  * http://apcentral.collegeboard.com/apstatistics
   * https://apstudent.collegeboard.org/apcourse/ap-statistics
+  * https://apcentral.collegeboard.org/courses/ap-statistics/course
 
-* e.g. AP Computer Science
+* AP Computer Science
 
   * | Wikipedia: https://en.wikipedia.org/wiki/AP_Computer_Science
-  * http://apcentral.collegeboard.com/apc/public/courses/teachers_corner/4483.html
   * https://apstudent.collegeboard.org/apcourse/ap-computer-science-a
+  * https://apcentral.collegeboard.org/courses/ap-computer-science-a/course
+
 
 .. index:: CLEP
 .. _clep:
