@@ -569,9 +569,15 @@ https://en.wikipedia.org/wiki/Comparison_of_TeX_editors
 
 - https://en.wikipedia.org/wiki/LyX
 - https://twitter.com/wstein389/status/1002446637908811776
-  > Completely new LaTeX editor in https://cocalc.com .  Open source, is written in React, has unlimited multipanel views, realtime collab, records all edits (TimeTravel), forward an inverse search, clickable links in the PDF,supports SageTex out of the box, and autoformat...
+
+      Completely new LaTeX editor in https://cocalc.com .  Open source, is
+      written in React, has unlimited multipanel views, realtime collab,
+      records all edits (TimeTravel), forward an inverse search, clickable
+      links in the PDF,supports SageTex out of the box, and autoformat...
+
  - https://github.com/jupyterlab/jupyterlab-latex
  - https://www.google.com/search?q=collaborative+latex
+
 
 .. index:: latex2sympy
 .. _latex2sympy:
@@ -581,8 +587,10 @@ latex2sympy
 | Pypi: https://pypi.org/project/latex2sympy3/
 | Src: https://github.com/augustt198/latex2sympy
 
-At a point, it makes a lot of sense to use executable specifications for mathematical concepts.
-latex2sympy converts from :ref:`LaTeX` to Pyghon code that works with the SymPy CAS (:ref:`Computer Algebra System`).
+At a point, it makes a lot of sense to use executable specifications for
+mathematical concepts.  latex2sympy converts from :ref:`LaTeX` to Pyghon
+code that works with the :ref:`SymPy` CAS (:ref:`Computer Algebra
+System`).
 
 
 .. index:: MathJax
