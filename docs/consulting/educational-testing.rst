@@ -266,6 +266,12 @@ LSAT
 An LSAT (*Law School Admissions Test*) is a standardized test for
 law school entrance to a law school.
 
+* Khan Academy LSAT resources:
+
+  * https://www.khanacademy.org/prep/lsat
+  * https://www.khanacademy.org/prep/lsat/diagnostic
+  * https://www.khanacademy.org/test-prep/lsat/lessons
+
 
 .. index:: MCAT
 .. _mcat:
