@@ -4,11 +4,186 @@ Kids
 ===============
 - **Learning**
 
-- TODO: Code.org
-- TODO: K12 CS Framework
-- TODO: Facebook Messenger Kids
-- TODO: Cell phone family plan GPS
-- TODO: Screen time guidelines 
+
+.. index:: Kids and Computer Science
+.. _kids and computer science:
+
+Kids and Computer Science
+==========================
+- :ref:`Education Technology` > :ref:`STEM`
+- :ref:`Software Development`
+
+  - :ref:`Computer Science`
+ 
+    - :ref:`Computer Science Curricula`
+
+      - :ref:`K12 CS Framework`
+
+    - :ref:`Computer Science Courses`
+
+      - :ref:`Code.org <codedotorg>` & :ref:`Hour of Code`
+      - :ref:`Javascript` (JS)
+
+        - https://learnxinyminutes.com/docs/javascript/
+
+      - :ref:`Python`
+        
+        - https://learnxinyminutes.com/docs/python/
+        - https://github.com/quobit/awesome-python-in-education
+
+    - :ref:`Computer Science Exercises`
+    
+- :ref:`Data Science`
+
+  - :ref:`Project Euler`
+  - :ref:`Rosalind` -- Natural algorithms with online grading
+
+
+.. index:: Code.org
+.. _codeorg:
+.. _codedotorg:
+
+Code.org
+---------
+| Wikipedia: https://en.wikipedia.org/wiki/Code.org
+| Homepage: https://code.org
+| Facebook: https://www.facebook.com/Code.org/
+| Twitter: https://twitter.com/codeorg
+| Instagram: https://www.instagram.com/codeorg/
+| Medium: https://medium.com/@codeorg
+
+- Learn: https://code.org/learn
+
+  - Find a local CS Class: https://code.org/learn/local
+
+- Teach: https://code.org/teach
+- Promote: https://code.org/promote
+
+See also: :ref:`Software Development` > :ref:`Everyone Codes`
+
+
+.. index:: Hour of Code
+.. _hour of code:
+
+Hour of Code
+^^^^^^^^^^^^^
+| Homepage: https://hourofcode.com/
+| Wikipedia: https://en.wikipedia.org/wiki/Code.org#Hour_of_Code
+| Twitter: https://twitter.com/hourofcode
+
+   Get your community involved in the Hour of Code
+   https://hourofcode.com/us/promote
+
+
+.. index:: K12 CS Framework
+.. _k12 cs framework:
+
+K12 CS Framework
+------------------
+| Homepage: https://k12cs.org/
+| PDF: http://k12cs.org/wp-content/uploads/2016/09/K%E2%80%9312-Computer-Science-Framework.pdf
+
+   The K–12 Computer Science Framework is a high-level set of guidelines
+   that informs the development of standards, curriculum, course
+   pathways, and professional development.
+
+The framework can be viewed as one PDF, by grade band, by progression,
+and by concept:
+
+- https://k12cs.org/framework-statements-by-grade-band/
+- https://k12cs.org/framework-statements-by-progression/
+- https://k12cs.org/framework-statements-by-concept/
+
+Very many organizations and corporations have endorsed K12 CS Framework
+with statements of support:
+ACM,
+Apple, Amazon, :ref:`Code.org <codedotorg>`, CollegeBoard, Google, Microsoft:
+https://k12cs.org/statements-of-support/
+
+
+**Core Concepts**
+
+1. Computing Systems
+2. Networks and Internet
+3. Data and Analysis
+4. Algorithms and Programming
+5. Impacts of Computing
+
+**Core Practices**
+
+1. Fostering and Inclusive Computing Culture
+2. Collaborating Around Computing
+3. Recognizing and Defining Computational Problems
+4. Developing and Using Abstractions
+5. Creating Computational Artifacts
+6. Testing and Refining Computational Artifacts
+7. Communicating About Computing
+
+
+.. index:: Family Media Plan
+.. _family media plan:
+
+Family Media Plan
+==================
+| Homepage: https://www.healthychildren.org/MediaUsePlan
+
+Create an AAP Family Media Plan:
+
+- Screen Free Zones
+- Screen Free Times
+- Device Curfews
+
+  - Devices will charge overnight
+
+- Choose & Diversify Your Media
+
+  - Co-view
+  - Co-play
+  - Educational
+
+- Balancing Online & Off-line Time
+- Manners Matter
+- Digital Citizenship
+
+  - Cyberbullying
+  - See also: :ref:`Team Building` > :ref:`Golden Rule`)
+
+- Safety First
+
+  - Do not give out personal information online
+  - Do not share private photos online
+  - Review privacy settings with your children
+  - See also: :ref:`Internet Safety`
+
+
+.. index:: Screen time guidelines 
+.. _screen time guidelines:
+
+Screen Time Guidelines 
+-----------------------
+
+"American Academy of Pediatrics Announces New Recommendations for
+Children’s Media Use" 
+https://www.aap.org/en-us/about-the-aap/aap-press-room/Pages/American-Academy-of-Pediatrics-Announces-New-Recommendations-for-Childrens-Media-Use.aspx
+
+- Ages 0-5:
+  "Media and Young Minds"
+  http://pediatrics.aappublications.org/content/early/2016/10/19/peds.2016-2591
+
+     The chief factor that facilitates toddlers’ learning from
+     commercial media (starting around 15 months of age) is parents
+     watching with them and reteaching the content.
+
+  - Ages 2-5: No more than one (1) hour a day.
+
+- Ages 5-18:
+  "Media Use in School-Aged Children and Adolescents"
+  http://pediatrics.aappublications.org/content/early/2016/10/19/peds.2016-2592
+
+
+- "Children and Adolescents and Digital Media"
+  http://pediatrics.aappublications.org/content/early/2016/10/19/peds.2016-2593
+
 
 .. index:: PBS Kids
 .. _pbs kids:
@@ -356,6 +531,30 @@ Amazon FreeTime
 - There are third-party cases with a handle and a stand
 
 
+.. index:: Facebook Messenger Kids
+.. _facebook messenger kids:
+
+Facebook Messenger Kids
+=======================
+| Homepage: https://messengerkids.com/
+| AndroidApp: https://play.google.com/store/apps/details?id=com.facebook.talk
+| AmazonApp: https://www.amazon.com/gp/product/B0765MX9NB
+| iOSapp: https://itunes.apple.com/us/app/messenger-kids/id1285713171
+
+   Messenger Kids is a free video calling and messaging app designed for
+   kids to connect with close friends and family from their tablet or
+   smartphone. Kids can only connect with parent-approved contacts,
+   which creates a more controlled environment. Group or one-on-one
+   video calls with loved ones are more fun with interactive masks,
+   reactions and sound effects.
+
+
+.. note:: Facebook was originally for college students at approving
+   colleges and universities with .edu email addresses.
+
+   Facebook is now for the whole community.
+
+
 .. index:: ABC Mouse
 .. _abc mouse:
 
@@ -372,6 +571,12 @@ ABC Mouse
 - Ages 2-8
 - ABC Mouse sponsors :ref:`PBS Kids`
 
+
+.. index:: Mobile phone family plan GPS
+.. _mobile phone family plan gps:
+
+Mobile phone family plan GPS
+=============================
 
 
 .. index:: Internet Safety
@@ -430,7 +635,7 @@ Internet Privacy
   assuming privacy on the internet is a bad assumption
   due to: legally authorized requests for information,
   security vulnerabilities,
-- Information assymetry is an assumption that tends not to hold over
+- Information asymmetry is an assumption that tends not to hold over
   time. Is quantum information ever lost?
 
   - https://en.wikipedia.org/wiki/Black_hole_information_paradox
