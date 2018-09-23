@@ -2112,8 +2112,10 @@ Python
 ~~~~~~~~~~~~~~~~~
 | Wikipedia: `<https://en.wikipedia.org/wiki/Python_(programming_language)>`_
 | Homepage: https://www.python.org/
-| Src: hg https://hg.python.org/cpython
+| Src: git https://github.com/python/cpython
+| Src: git https://github.com/python/peps
 | Docs: https://docs.python.org/2/
+| Docs: https://docs.python.org/3/
 | Docs: https://docs.python.org/devguide/
 | Docs: https://docs.python.org/devguide/documenting.html
 | Docs: https://wiki.python.org/moin/PythonBooks

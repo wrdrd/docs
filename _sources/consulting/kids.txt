@@ -1,4 +1,14 @@
 
+===============
+Kids
+===============
+- **Learning**
+
+- TODO: Code.org
+- TODO: K12 CS Framework
+- TODO: Facebook Messenger Kids
+- TODO: Cell phone family plan GPS
+- TODO: Screen time guidelines 
 
 .. index:: PBS Kids
 .. _pbs kids:
@@ -9,11 +19,29 @@ PBS Kids
 | Docs: http://www.pbs.org/about/support-pbs/
 | Docs: http://www.pbs.org/foundation/ways-to-give/
 | Homepage: http://pbskids.org/
+
+PBS Kids is programming for children.
+
+- There are dedicated PBS Kids TV stations in many markets.
+
+.. note:: PBS Kids is supported by donations:
+
+   - https://shop.pbskids.org/pbs-kids-donation
+   - https://www.pbs.org/donate/
+   - http://www.pbs.org/foundation/ways-to-give/
+
+
+.. index:: PBS Kids Video App
+.. _pbs kids video app:
+
+PBS Kids Video App
+------------------
 | AndroidApp: https://play.google.com/store/apps/details?id=org.pbskids.video
 | iOSapp: https://itunes.apple.com/us/artist/pbs-kids/id324323339
 | Twitter: https://twitter.com/PBSKIDS
 
-- PBS Kids Video App (full episodes, live PBS, captions)
+The PBS Kids Video app has full episodes, a live local PBS feed,
+and *professional captions*.
 
 
 .. index:: Sesame Street
@@ -255,6 +283,29 @@ Khan Academy
   It is perfectly okay to use Khan Academy content in schools and
   universities.
 
+.. note:: Khan Academy is funded entirely by donations:
+
+   https://www.khanacademy.org/donate
+
+
+.. index:: Khan Academy Kids
+.. _khan academy kids:
+
+Khan Academy Kids
+-------------------
+| Wikipedia: 
+| Homepage: https://www.khanacademy.org/kids
+| iOSapp: https://itunes.apple.com/app/apple-store/id1378467217
+| AndroidApp: https://play.google.com/store/apps/details?id=org.khankids.android
+| AmazonApp: http://www.amazon.com/gp/mas/dl/android?p=org.khankids.android
+
+Khan Academy Kids is an app for kids from TODO years
+
+There are also some Early Math exercises on regular Khan Academy:
+
+- https://www.khanacademy.org/math/early-math
+- https://www.youtube.com/channel/UCs8a-pNM8EHKKU28XQLetLw
+
 
 .. index:: Khan Academy SAT prep
 .. _khan academy sat prep:
@@ -268,6 +319,7 @@ Khan Academy SAT prep
 - https://www.khanacademy.org/test-prep/sat/sat-reading-writing-practice
 - https://www.khanacademy.org/test-prep/sat/new-sat-tips-planning
 - https://www.khanacademy.org/test-prep/sat/full-length-sat-1
+
 
 
 .. index:: Google Family Link
@@ -319,3 +371,137 @@ ABC Mouse
   with a monthly subscription with apps for phone, tablet, and computer.
 - Ages 2-8
 - ABC Mouse sponsors :ref:`PBS Kids`
+
+
+
+.. index:: Internet Safety
+.. _internet safety:
+
+Internet Safety
+==================
+| Wikipedia: https://en.wikipedia.org/wiki/Internet_safety
+| Wikipedia: https://simple.wikipedia.org/wiki/Internet_safety
+
+- Academia created the Internet and the World Wide Web
+  for sharing academic information; in ASCII.
+- Sometimes, the best thing to do is to format or totally reset a
+  computer. **Before formatting**, you should backup or have already
+  backed up important data.
+- :ref:`OpenDNS`, :ref:`Google Family Link`, and :ref:`Amazon FreeTime`
+  are examples of family-safe internet filter services
+  that do their best to avoid censoring the freedom of information
+  necessary for a functioning democracy.
+- Sometimes there a bad things in the world that moms and dads
+  need to know about in order to make good decisions.
+
+
+.. index:: Cybersecurity for all ages
+.. _cybersecurity for all ages:
+
+Cybersecurity for all ages
+-----------------------------
+
+
+.. index:: OWASP Juice Shop
+.. _owasp juice shop:
+
+OWASP Juice Shop
+^^^^^^^^^^^^^^^^^
+| Homepage: https://www.owasp.org/index.php/OWASP_Juice_Shop_Project
+
+- OWASP Juice Shop is a deliberately vulnerable web application
+  written with :ref:`NodeJS`.
+
+   "Pwning OWASP Juice Shop" is the official companion guide for this
+   project. It will give you a complete overview of the vulnerabilities
+   found in the application including hints how to spot and exploit
+   them. In the appendix you will even find complete step-by-step
+   solutions to every challenge. 
+
+
+.. index:: Internet Privacy
+.. _internet privacy:
+
+Internet Privacy
+-----------------
+| Wikipedia: https://en.wikipedia.org/wiki/Internet_privacy
+
+- Regardless of the language in a site's privacy policy,
+  assuming privacy on the internet is a bad assumption
+  due to: legally authorized requests for information,
+  security vulnerabilities,
+- Information assymetry is an assumption that tends not to hold over
+  time. Is quantum information ever lost?
+
+  - https://en.wikipedia.org/wiki/Black_hole_information_paradox
+  - "Why Quantum Information is Never Destroyed | [PBS] Space Time"
+    https://www.youtube.com/watch?v=HF-9Dy6iB_4
+
+- In the US, ISPs can sell internet usage history.
+  There was a bill specifically prohibiting such sale,
+  which has since been cancelled by the current FCC administration.
+- Law, Terms of Service, and Privacy Policies define how
+  you and your kids' information can be used to pay for the cost of a
+  service.
+- There is need to investigate the world.
+- There is need to keep people safe.
+- See: :ref:`Safety Extensions`
+- EFF (Electronic Frontiers Foundation) is generally on top of things.
+  https://www.eff.org/
+
+
+.. index:: COPPA
+.. index:: Children's Online Privacy Protection Act
+
+Children's Online Privacy Protection Act
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| Wikipedia: https://en.wikipedia.org/wiki/Children%27s_Online_Privacy_Protection_Act
+
+
+
+.. index:: OpenDNS
+.. _opendns:
+
+OpenDNS
+---------
+| Wikipedia: https://en.wikipedia.org/wiki/OpenDNS
+| Homepage: https://www.opendns.com/
+
+- The free OpenDNS FamilyShield DNS IPs are::
+
+   208.67.222.123
+   208.67.220.123
+   ::ffff:d043:de7b
+   ::ffff:d043:dc7b
+
+  https://www.opendns.com/setupguide/#familyshield
+
+- OpenDNS VIP costs $20/yr for custom whitelists and log review.
+- DNS resolver IPs
+  can be set on the router or on a particular machine given admin rights.
+
+  - DNS over HTTPS and DNS over TLS can bypass any DNS resolver
+    configuration on the router.
+  - CloudFlare DNS::
+
+     1.1.1.1
+     1.0.0.1
+     2606:4700:4700::1111
+     2606:4700:4700::1001
+
+    https://1.1.1.1/
+
+  - Google DNS::
+
+     8.8.8.8
+     8.8.4.4
+     2001:4860:4860::8888
+     2001:4860:4860::8844
+
+    https://developers.google.com/speed/public-dns/
+
+- Cisco purchased OpenDNS in 2015.
+- You can tell whether OpenDNS is configured from:
+  https://welcome.opendns.com/
+
+
