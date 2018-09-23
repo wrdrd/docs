@@ -28,6 +28,7 @@ WRD R&D Documentation
    consulting/investing
    consulting/education-technology
    consulting/educational-testing
+   consulting/kids
    consulting/art-design
    consulting/ux
    consulting/team-building
