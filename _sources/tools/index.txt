@@ -3402,6 +3402,8 @@ Ansible
 | Wikipedia: `<https://en.wikipedia.org/wiki/Ansible_(software)>`__
 | Homepage: http://ansible.com/
 | Src: https://github.com/ansible/ansible
+| Docs: https://docs.ansible.com/
+| Learnxinyminutes: https://learnxinyminutes.com/docs/ansible/
 
 Ansible is a :ref:`Configuration Management` tool
 written in :ref:`Python`
@@ -7425,7 +7427,7 @@ Vim
 | Wikipedia: `<https://en.wikipedia.org/wiki/Vim_(text_editor)>`__
 | Homepage: http://www.vim.org/
 | Docs: http://www.vim.org/docs.php
-| Src: hg https://vim.googlecode.com/hg/
+| Src: git https://github.com/vim/vim
 
 
 * https://github.com/scrooloose/nerdtree
