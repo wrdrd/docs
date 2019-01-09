@@ -3403,15 +3403,20 @@ Ansible
 | Homepage: http://ansible.com/
 | Src: https://github.com/ansible/ansible
 | Docs: https://docs.ansible.com/
+| Docs: https://docs.ansible.com/ansible/latest/
 | Learnxinyminutes: https://learnxinyminutes.com/docs/ansible/
 
 Ansible is a :ref:`Configuration Management` tool
 written in :ref:`Python`
 which runs idempotent Ansible Playbooks
-written in :ref:`YAML`
+written in :ref:`YAML` markup with :ref:`Jinja2` variables
 for managing
 one or more physical and virtual machines running various operating systems
 over SSH.
+
+- Ansible Glossary:
+
+
 
 
 .. index:: Cobbler
@@ -6193,12 +6198,17 @@ Ghostery
 
 HTTPS Everywhere
 +++++++++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/HTTPS_Everywhere
 | Homepage: https://www.eff.org/https-everywhere
 | Src: https://github.com/EFForg/https-everywhere
 | ChromeExt: https://chrome.google.com/webstore/detail/gcbommkclmclpchllfjekcdonpmejbdp
 | FirefoxXPI: https://www.eff.org/files/https-everywhere-latest.xpi
 | FirefoxAndroidXPI: https://www.eff.org/files/https-everywhere-android.xpi
 | Twitter: https://twitter.com/HTTPSEverywhere
+
+HTTPS Everywhere is a browser extension that forces the browser
+to only connect over HTTPS to sites listed in its database.
+
 
 .. index:: uBlock
 .. _ublock:
