@@ -2644,10 +2644,12 @@ Clang
 ~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/Clang
 | Homepage: http://clang.llvm.org/
+| Src: git https://github.com/llvm/llvm-project
 | Docs: http://clang.llvm.org/docs/
 | Docs: http://clang.llvm.org/docs/UsersManual.html
 
 Clang is a compiler front end for :ref:`C`, :ref:`C++`, and Objective C/++.
+Clang is part of the :ref:`LLVM` project.
 
 
 .. index:: GCC
@@ -2676,7 +2678,7 @@ LLVM
 ~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/LLVM
 | Homepage: http://llvm.org/
-| Src: git http://llvm.org/git/llvm.git
+| Src: git https://github.com/llvm/llvm-project
 | Docs: http://llvm.org/docs/
 | Docs: http://llvm.org/docs/GettingStarted.html
 | Docs: http://llvm.org/docs/ReleaseNotes.html
