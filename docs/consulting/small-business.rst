@@ -127,9 +127,15 @@ Business Plans
 ---------------
 https://en.wikipedia.org/wiki/Business_plan
 
-* https://en.wikipedia.org/wiki/Business_plan#Content
+* https://en.wikipedia.org/wiki/Business_plan#Presentation
+
+  * List of business plan sections
+
 * https://www.sba.gov/writing-business-plan
 * https://en.wikipedia.org/wiki/Open_business#Main_ideas
+* MATT: Milestones, Assumptions, Tests, Tasks
+
+  * A far simpler approach to planning a business venture
 
 "How to make your business plan stand out?"
 
