@@ -22,13 +22,19 @@ Kids and Computer Science
     - :ref:`Computer Science Courses`
 
       - :ref:`Code.org <codedotorg>` & :ref:`Hour of Code`
+      - Visual Programming
+      
+        - https://scratch.mit.edu/
+      
       - :ref:`Javascript` (JS)
 
         - https://learnxinyminutes.com/docs/javascript/
+        - https://grasshopper.codes/ (Android, iOS)
 
       - :ref:`Python`
         
         - https://learnxinyminutes.com/docs/python/
+        - https://www.codesters.com/
         - https://github.com/quobit/awesome-python-in-education
 
     - :ref:`Computer Science Exercises`
