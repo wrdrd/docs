@@ -63,7 +63,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'WRD R&D Documentation'
-copyright = u'WRD R&D 2014 - 2016'
+copyright = u'WRD R&D 2014 - 2019'
 
 srclink_project = 'https://github.com/wrdrd/docs'
 srclink_branch = 'master'
