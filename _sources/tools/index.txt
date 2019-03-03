@@ -1958,9 +1958,9 @@ programming language.
 Go
 ~~~~~~~~~~~~~
 | Wikipedia: `<https://en.wikipedia.org/wiki/Go_(programming_language)>`_
-| Homepage: http://golang.org/
-| Docs: http://golang.org/doc/
-| Src: hg https://code.google.com/p/go/
+| Homepage: https://golang.org/
+| Docs: https://golang.org/doc/
+| Src: https://github.com/golang/go
 | Docs: https://learnxinyminutes.com/docs/go/
 
 Go is a free and open source
@@ -3415,10 +3415,6 @@ written in :ref:`YAML` markup with :ref:`Jinja2` variables
 for managing
 one or more physical and virtual machines running various operating systems
 over SSH.
-
-- Ansible Glossary:
-
-
 
 
 .. index:: Cobbler
