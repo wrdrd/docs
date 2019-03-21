@@ -3406,6 +3406,10 @@ Ansible
 | Src: https://github.com/ansible/ansible
 | Docs: https://docs.ansible.com/
 | Docs: https://docs.ansible.com/ansible/latest/
+| Docs: https://docs.ansible.com/ansible/latest/user_guide/playbooks_best_practices.html
+| Docs: https://docs.ansible.com/ansible/latest/modules/list_of_all_modules.html
+| Docs: https://docs.ansible.com/ansible/latest/reference_appendices/galaxy.html
+| Docs: https://github.com/ansible/molecule
 | Learnxinyminutes: https://learnxinyminutes.com/docs/ansible/
 
 Ansible is a :ref:`Configuration Management` tool
@@ -7330,7 +7334,7 @@ JSON
 
 
 JSON is an object representation in :ref:`Javascript` syntax
-which is now supported by libraries for many language.
+which is now supported by libraries for many languages.
 
 A list of objects with ``key`` and ``value`` attributes in JSON syntax:
 
