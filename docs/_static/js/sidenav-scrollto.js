@@ -117,14 +117,29 @@ function navbar_init() {
     navbar__remap_sphinx_toc_links();
     navbar__add_top_button();
 
-    window.onhashchange = function(e) {
+    function _updatenavbar(hash) {
         // console.log(e); // e.newURL , e.oldURL
-        var loc_hash_url = window.location.hash;
-        console.log(loc_hash_url);
+        var loc_hash_url = hash || window.location.hash;
+        // console.log(loc_hash_url);
         if (loc_hash_url != false) {
             navbar_update(loc_hash_url);
         };
-    };
+    }
+
+    window.addEventListener('hashchange', function(e) {
+        _updatenavbar();
+    }, false);
+
+    document.addEventListener('click', function(e) {
+        var e = window.e || e;
+        if (e.target.tagName !== 'A') {
+            return
+        }
+        // TODO: skip extra-page links
+        // a.headerlink
+        // a.internal
+        _updatenavbar(e.target.hash);
+    }, false);
 }
 
 
