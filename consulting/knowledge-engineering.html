@@ -56,6 +56,7 @@
     <script type="text/javascript" src="../_static/js/jquery.min.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/js/local.js"></script>
     <script type="text/javascript" src="../_static/js/bootstrap3.min.js"></script>
 <script type="text/javascript" src="../_static/js/jquery.cookie.min.js"></script>
@@ -65,6 +66,8 @@
     <link rel="search" type="application/opensearchdescription+xml"
     title="Search within WRD R&amp;D Documentation"
     href="../_static/opensearch.xml"/>
+    <link rel="index" title="Index" href="../genindex" />
+    <link rel="search" title="Search" href="../search" />
     <link rel="top" title="WRD R&amp;D Documentation" href="../index" />
     <link rel="next" title="LinkedReproducibility" href="linkedreproducibility" />
     <link rel="prev" title="Units" href="units" /> 
@@ -429,7 +432,7 @@
               <li><a href="../py-modindex" title="Python Module Index" >modules </a></li>
               <li><a href="../genindex" title="General Index" accesskey="I">index </a></li>
             
-            <li class="visible-xs"><a href="../_sources/consulting/knowledge-engineering.txt" rel="nofollow">Show Source</a></li>
+            <li class="visible-xs"><a href="../_sources/consulting/knowledge-engineering.rst.txt" rel="nofollow">Show Source</a></li>
 
             <li class="visible-xs">
                 <form class="search form-search form-inline navbar-form navbar-right sp-searchbox" action="../search" method="get">
@@ -461,7 +464,7 @@
          
 <div class="col-md-3 hidden-xs" id="sidebar-wrapper">
   <div class="sidebar hidden-xs" role="navigation" aria-label="main navigation">
-  <h3><a href="../index">Table Of Contents</a></h3>
+  <h3><a href="../index">Table of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Knowledge Engineering</a><ul>
 <li><a class="reference internal" href="#symbols">Symbols</a><ul>
@@ -821,7 +824,7 @@
 <div class="widget navlinks">
   <h3>This Page</h3>
   <ul class="this-page-menu">
-    <li><a href="../_sources/consulting/knowledge-engineering.txt"
+    <li><a href="../_sources/consulting/knowledge-engineering.rst.txt"
             rel="nofollow"
             target="_blank">Source RST</a></li>
     <li><a href="https://github.com/wrdrd/docs/blob/master/docs/consulting/knowledge-engineering.rst"
@@ -896,7 +899,7 @@
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Symbol_(disambiguation)">https://en.wikipedia.org/wiki/Symbol_(disambiguation)</a></li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/List_of_logic_symbols">https://en.wikipedia.org/wiki/List_of_logic_symbols</a></li>
 <li><a class="reference internal" href="art-design#art-design"><span class="std std-ref">Art &amp; Design</span></a><ul>
-<li>[...]</li>
+<li>[…]</li>
 </ul>
 </li>
 <li><a class="reference internal" href="#uri"><span class="std std-ref">URI</span></a> are symbols:<ul>
@@ -956,11 +959,11 @@
 <ul class="last">
 <li><p class="first"><a class="reference external" href="https://cwe.mitre.org/data/definitions/74.html">https://cwe.mitre.org/data/definitions/74.html</a></p>
 <p>CWE-74: Improper Neutralization of Special Elements in Output
-Used by a Downstream Component (&#8216;Injection&#8217;)</p>
+Used by a Downstream Component (‘Injection’)</p>
 <ul>
 <li><p class="first"><a class="reference external" href="https://cwe.mitre.org/data/definitions/93.html">https://cwe.mitre.org/data/definitions/93.html</a></p>
-<p>CWE-93: Improper Neutralization of CRLF Sequences (&#8216;CRLF Injection&#8217;)</p>
-<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;line1_start&quot;</span>
+<p>CWE-93: Improper Neutralization of CRLF Sequences (‘CRLF Injection’)</p>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;line1_start&quot;</span>
 <span class="n">x2</span> <span class="o">=</span> <span class="s2">&quot;thing</span><span class="se">\r\n\0</span><span class="s2">line1_end&quot;</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">x2</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="s2">&quot;line2...line2_end</span><span class="se">\n</span><span class="s2">&quot;</span>
@@ -1006,18 +1009,18 @@ Used by a Downstream Component (&#8216;Injection&#8217;)</p>
 </ul>
 </li>
 <li><p class="first"><a class="reference internal" href="#xml"><span class="std std-ref">XML</span></a>, <a class="reference internal" href="#html"><span class="std std-ref">HTML</span></a> &amp; escape sequences:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&amp;</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&amp;</span>
 </pre></div>
 </div>
 <p>&lt; &gt; /&gt;
-&#8221;
-&lt;!&#8211; &#8211;&gt;
+”
+&lt;!– –&gt;
 &lt;![CDATA[ ]]&gt;</p>
 <p># HTML &amp; Templates
-&lt;p id=&#8221;{{attr}}&#8221;&gt;text&lt;/p&gt;   # attr=&#8217;here&#8221;s one&#8217;</p>
+&lt;p id=”{{attr}}”&gt;text&lt;/p&gt;   # attr=’here”s one’</p>
 </li>
 <li><p class="first"><a class="reference internal" href="../tools/index#python"><span class="std std-ref">Python</span></a> escape sequences:</p>
-<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span>   <span class="s2">&quot;Here&#39;s one&quot;</span>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span>   <span class="s2">&quot;Here&#39;s one&quot;</span>
 <span class="n">s</span> <span class="o">=</span>   <span class="s1">&#39;Here</span><span class="se">\&#39;</span><span class="s1">s one&#39;</span>
 <span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;Here&#39;s one&#39;&#39;&#39;</span>
 <span class="n">s</span> <span class="o">=</span>   <span class="s1">&#39;Here</span><span class="se">\N{APOSTROPHE}</span><span class="s1">s one&#39;</span>
@@ -1026,7 +1029,7 @@ Used by a Downstream Component (&#8216;Injection&#8217;)</p>
 </div>
 </li>
 <li><p class="first"><a class="reference internal" href="../tools/index#bash"><span class="std std-ref">Bash</span></a> escape sequences:</p>
-<div class="code bash highlight-default"><div class="highlight"><pre><span></span>s1=&quot;$Here&#39;s one&quot;
+<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span>s1=&quot;$Here&#39;s one&quot;
 s1=&quot;${Here}&#39;s one&quot;
 s2=&#39;${Here}\&#39;s one&#39;  # ! error
 s2=&#39;${Here}&#39;&quot;&#39;s&quot;&#39; one&#39;
@@ -1051,7 +1054,7 @@ s3=&quot;&quot;${Here}&quot;&#39;s one&quot;
 </ul>
 <ul>
 <li><p class="first">Python:</p>
-<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">print_function</span>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">print_function</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">128</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{0:&lt;3d}</span><span class="s2"> </span><span class="si">{1!r}</span><span class="s2"> </span><span class="si">{1:s}</span><span class="s2">.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="nb">chr</span><span class="p">(</span><span class="n">i</span><span class="p">)))</span>
 </pre></div>
@@ -1076,18 +1079,18 @@ s3=&quot;&quot;${Here}&quot;&#39;s one&quot;
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Unicode_input#Hexadecimal_code_input">https://en.wikipedia.org/wiki/Unicode_input#Hexadecimal_code_input</a></li>
 </ul>
 <ul>
-<li><p class="first">∴ &#8211; Therefore &#8211; <code class="docutils literal"><span class="pre">u+2234</span></code></p>
+<li><p class="first">∴ – Therefore – <code class="docutils literal notranslate"><span class="pre">u+2234</span></code></p>
 <ul>
-<li><p class="first"><a class="reference internal" href="../tools/index#x11"><span class="std std-ref">X11</span></a>: <code class="docutils literal"><span class="pre">ctrl-shift-u</span> <span class="pre">2234</span></code></p>
+<li><p class="first"><a class="reference internal" href="../tools/index#x11"><span class="std std-ref">X11</span></a>: <code class="docutils literal notranslate"><span class="pre">ctrl-shift-u</span> <span class="pre">2234</span></code></p>
 </li>
-<li><p class="first"><a class="reference internal" href="../tools/index#vim"><span class="std std-ref">Vim</span></a>: <code class="docutils literal"><span class="pre">ctrl-v</span> <span class="pre">u2234</span></code></p>
+<li><p class="first"><a class="reference internal" href="../tools/index#vim"><span class="std std-ref">Vim</span></a>: <code class="docutils literal notranslate"><span class="pre">ctrl-v</span> <span class="pre">u2234</span></code></p>
 </li>
 <li><p class="first"><a class="reference internal" href="../tools/index#python"><span class="std std-ref">Python</span></a>:</p>
 <ul class="simple">
 <li>Python 3 Unicode HOWTO: <a class="reference external" href="https://docs.python.org/3/howto/unicode.html">https://docs.python.org/3/howto/unicode.html</a></li>
 <li>Python 2 Unicode HOWTO: <a class="reference external" href="https://docs.python.org/2/howto/unicode.html">https://docs.python.org/2/howto/unicode.html</a></li>
 </ul>
-<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="n">c1</span> <span class="o">=</span> <span class="s1">u&#39;∴&#39;</span>  <span class="c1"># Python 2.6-3.2, 3.4+</span>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">c1</span> <span class="o">=</span> <span class="sa">u</span><span class="s1">&#39;∴&#39;</span>  <span class="c1"># Python 2.6-3.2, 3.4+</span>
 <span class="n">c2</span> <span class="o">=</span>  <span class="s1">&#39;∴&#39;</span>  <span class="c1"># Python 3.0+</span>
 <span class="n">c3</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="se">\N{THEREFORE}</span><span class="s1">&#39;</span> <span class="c1"># howto/unicode#the-string-type glyph name</span>
 <span class="n">u1</span> <span class="o">=</span> <span class="n">unichr</span><span class="p">(</span><span class="mh">0x2234</span><span class="p">)</span>  <span class="c1"># Python 2+</span>
@@ -1113,7 +1116,7 @@ s3=&quot;&quot;${Here}&quot;&#39;s one&quot;
 <li><p class="first"><a class="reference external" href="https://pymotw.com/2/codecs/">https://pymotw.com/2/codecs/</a></p>
 </li>
 <li><p class="first">e.g. <a class="reference internal" href="#json"><span class="std std-ref">JSON</span></a> with <a class="reference internal" href="#utf-8"><span class="std std-ref">UTF-8</span></a>:</p>
-<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Read an assumed UTF-8 encoded JSON file with Python 2+, 3+</span>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Read an assumed UTF-8 encoded JSON file with Python 2+, 3+</span>
 <span class="kn">import</span> <span class="nn">codecs</span>
 <span class="k">with</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">&#39;filename.json&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file_</span><span class="p">:</span>
     <span class="n">text</span> <span class="o">=</span> <span class="n">file_</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
@@ -1146,14 +1149,14 @@ represent all Unicode symbols with 8-bit code units.</p>
 <li><p class="first">In 2015, UTF-8 is the most common web character
 encoding.</p>
 <ul>
-<li><p class="first"><a class="reference internal" href="#html"><span class="std std-ref">HTML</span></a> <code class="docutils literal"><span class="pre">charset</span></code> meta attribute:</p>
-<p><code class="docutils literal"><span class="pre">&lt;meta</span> <span class="pre">charset=&quot;UTF-8&quot;&gt;</span></code></p>
+<li><p class="first"><a class="reference internal" href="#html"><span class="std std-ref">HTML</span></a> <code class="docutils literal notranslate"><span class="pre">charset</span></code> meta attribute:</p>
+<p><code class="docutils literal notranslate"><span class="pre">&lt;meta</span> <span class="pre">charset=&quot;UTF-8&quot;&gt;</span></code></p>
 </li>
 <li><p class="first"><a class="reference internal" href="#xml"><span class="std std-ref">XML</span></a> Header:</p>
-<p><code class="docutils literal"><span class="pre">&lt;?xml</span> <span class="pre">version=&quot;1.0&quot;</span> <span class="pre">encoding=&quot;UTF-8&quot;?&gt;</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">&lt;?xml</span> <span class="pre">version=&quot;1.0&quot;</span> <span class="pre">encoding=&quot;UTF-8&quot;?&gt;</span></code></p>
 </li>
 <li><p class="first"><a class="reference internal" href="#http"><span class="std std-ref">HTTP</span></a> Header:</p>
-<p><code class="docutils literal"><span class="pre">content-type:</span> <span class="pre">text/html;</span> <span class="pre">charset=UTF-8</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">content-type:</span> <span class="pre">text/html;</span> <span class="pre">charset=UTF-8</span></code></p>
 </li>
 </ul>
 </li>
@@ -1243,7 +1246,7 @@ encoding.</p>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Three-valued_logic">https://en.wikipedia.org/wiki/Three-valued_logic</a></div>
 </div>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">{</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="n">Unknown</span> <span class="p">}</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="n">Unknown</span> <span class="p">}</span>
 
 <span class="p">{</span> <span class="n">T</span><span class="p">,</span> <span class="n">F</span><span class="p">,</span> <span class="n">NULL</span> <span class="p">}</span>  <span class="c1"># SQL</span>
 <span class="p">{</span> <span class="n">T</span><span class="p">,</span> <span class="n">F</span><span class="p">,</span> <span class="kc">None</span> <span class="p">}</span>  <span class="c1"># Python</span>
@@ -1273,8 +1276,8 @@ encoding.</p>
 <div class="line">WikipediaCategory: <a class="reference external" href="https://en.wikipedia.org/wiki/Category:Theorems_in_propositional_logic">https://en.wikipedia.org/wiki/Category:Theorems_in_propositional_logic</a></div>
 </div>
 <ul class="simple">
-<li>Premise <code class="docutils literal"><span class="pre">P</span></code></li>
-<li>Conclusion <code class="docutils literal"><span class="pre">Q</span></code></li>
+<li>Premise <code class="docutils literal notranslate"><span class="pre">P</span></code></li>
+<li>Conclusion <code class="docutils literal notranslate"><span class="pre">Q</span></code></li>
 </ul>
 <div class="section" id="modus-ponens">
 <span id="index-21"></span><span id="id17"></span><h5><a class="toc-backref" href="#id234">Modus ponens</a><a class="headerlink" href="#modus-ponens" title="Permalink to this headline">¶</a></h5>
@@ -1283,9 +1286,9 @@ encoding.</p>
 </div>
 <blockquote>
 <div><ul class="simple">
-<li><code class="docutils literal"><span class="pre">P</span> <span class="pre">-&gt;</span> <span class="pre">Q</span></code> &#8211; Premise 1 <code class="docutils literal"><span class="pre">P1</span></code> <code class="docutils literal"><span class="pre">P_1</span></code> (&#8220;P sub 1&#8221;)</li>
-<li><code class="docutils literal"><span class="pre">P</span></code> &#8211; Premise 2 <code class="docutils literal"><span class="pre">P2</span></code> <code class="docutils literal"><span class="pre">P_2</span></code> (&#8220;P sub 2&#8221;)</li>
-<li><code class="docutils literal"><span class="pre">∴</span> <span class="pre">Q</span></code> &#8211; Conclusion <code class="docutils literal"><span class="pre">Q</span></code> <code class="docutils literal"><span class="pre">Q_0</span></code> (&#8220;Q sub 0&#8221;)</li>
+<li><code class="docutils literal notranslate"><span class="pre">P</span> <span class="pre">-&gt;</span> <span class="pre">Q</span></code> – Premise 1 <code class="docutils literal notranslate"><span class="pre">P1</span></code> <code class="docutils literal notranslate"><span class="pre">P_1</span></code> (“P sub 1”)</li>
+<li><code class="docutils literal notranslate"><span class="pre">P</span></code> – Premise 2 <code class="docutils literal notranslate"><span class="pre">P2</span></code> <code class="docutils literal notranslate"><span class="pre">P_2</span></code> (“P sub 2”)</li>
+<li><code class="docutils literal notranslate"><span class="pre">∴</span> <span class="pre">Q</span></code> – Conclusion <code class="docutils literal notranslate"><span class="pre">Q</span></code> <code class="docutils literal notranslate"><span class="pre">Q_0</span></code> (“Q sub 0”)</li>
 </ul>
 </div></blockquote>
 </div>
@@ -1298,8 +1301,8 @@ encoding.</p>
 <ul class="simple">
 <li>Universe of discourse</li>
 <li>Predicate<ul>
-<li>∃ &#8211; There exists &#8211; Existential quantifier</li>
-<li>∀ &#8211; For all &#8211; Universal quantifier</li>
+<li>∃ – There exists – Existential quantifier</li>
+<li>∀ – For all – Universal quantifier</li>
 </ul>
 </li>
 </ul>
@@ -1309,9 +1312,9 @@ encoding.</p>
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Existential_quantification">https://en.wikipedia.org/wiki/Existential_quantification</a></div>
 </div>
 <ul class="simple">
-<li>∃ &#8211; &#8220;There exists&#8221; is the <strong>Existential quantifier</strong> symbol.</li>
+<li>∃ – “There exists” is the <strong>Existential quantifier</strong> symbol.</li>
 <li>An existential quantifier
-is true (&#8220;holds true&#8221;)
+is true (“holds true”)
 if there is one (or more) example in which
 the condition holds true.</li>
 <li>An existential quantifier is
@@ -1324,7 +1327,7 @@ the condition holds true.</li>
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Existential_quantification">https://en.wikipedia.org/wiki/Existential_quantification</a></div>
 </div>
 <ul class="simple">
-<li>∀ &#8211; &#8220;For all&#8221; is the <strong>Universal quantifier</strong> symbol.</li>
+<li>∀ – “For all” is the <strong>Universal quantifier</strong> symbol.</li>
 <li>A universal quantification is <strong>disproven by one counterexample</strong>
 where the condition does not hold true.<ul>
 <li>disproven by one counterexample.</li>
@@ -1340,9 +1343,9 @@ where the condition does not hold true.<ul>
 </div>
 <blockquote>
 <div><ul class="simple">
-<li>precondition <code class="docutils literal"><span class="pre">P</span></code></li>
-<li>command <code class="docutils literal"><span class="pre">C</span></code></li>
-<li>postcondition <code class="docutils literal"><span class="pre">Q</span></code></li>
+<li>precondition <code class="docutils literal notranslate"><span class="pre">P</span></code></li>
+<li>command <code class="docutils literal notranslate"><span class="pre">C</span></code></li>
+<li>postcondition <code class="docutils literal notranslate"><span class="pre">Q</span></code></li>
 </ul>
 </div></blockquote>
 <p>See:</p>
@@ -1360,53 +1363,53 @@ where the condition does not hold true.<ul>
 <ul class="simple">
 <li>Terms<ul>
 <li>Variables<ul>
-<li><code class="docutils literal"><span class="pre">x</span></code>, <code class="docutils literal"><span class="pre">y</span></code>, <code class="docutils literal"><span class="pre">z</span></code></li>
-<li><code class="docutils literal"><span class="pre">x</span></code>, <code class="docutils literal"><span class="pre">x_0</span></code> (&#8220;x subscript 0&#8221;, &#8220;x sub 0&#8221;)</li>
+<li><code class="docutils literal notranslate"><span class="pre">x</span></code>, <code class="docutils literal notranslate"><span class="pre">y</span></code>, <code class="docutils literal notranslate"><span class="pre">z</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">x</span></code>, <code class="docutils literal notranslate"><span class="pre">x_0</span></code> (“x subscript 0”, “x sub 0”)</li>
 </ul>
 </li>
 <li>Functions<ul>
-<li><code class="docutils literal"><span class="pre">f(x)</span></code> &#8211; function symbol (arity 1)</li>
-<li><code class="docutils literal"><span class="pre">a</span></code> &#8211; constant symbol (arity 0) ( <code class="docutils literal"><span class="pre">a()</span></code> )</li>
+<li><code class="docutils literal notranslate"><span class="pre">f(x)</span></code> – function symbol (arity 1)</li>
+<li><code class="docutils literal notranslate"><span class="pre">a</span></code> – constant symbol (arity 0) ( <code class="docutils literal notranslate"><span class="pre">a()</span></code> )</li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 <ul class="simple">
-<li>Formulas (&#8220;formulae&#8221;)<ul>
+<li>Formulas (“formulae”)<ul>
 <li>Equality<ul>
-<li><code class="docutils literal"><span class="pre">=</span></code> &#8211; equality</li>
+<li><code class="docutils literal notranslate"><span class="pre">=</span></code> – equality</li>
 </ul>
 </li>
-<li>Logical Connectives (&#8220;unary&#8221;, &#8220;binary&#8221;, sequence/tuple/list)<ul>
-<li><code class="docutils literal"><span class="pre">¬</span></code> &#8211;  <code class="docutils literal"><span class="pre">~</span></code>, <code class="docutils literal"><span class="pre">!</span></code> &#8211; negation (unary)</li>
-<li>...</li>
-<li><code class="docutils literal"><span class="pre">∧</span></code> &#8211; <code class="docutils literal"><span class="pre">^</span></code>, <code class="docutils literal"><span class="pre">&amp;&amp;</span></code>, <code class="docutils literal"><span class="pre">and</span></code> &#8211; conjunction</li>
-<li><code class="docutils literal"><span class="pre">∨</span></code> &#8211; <code class="docutils literal"><span class="pre">v</span></code>, <code class="docutils literal"><span class="pre">||</span></code>, <code class="docutils literal"><span class="pre">or</span></code> &#8211; disjunction</li>
-<li><code class="docutils literal"><span class="pre">→</span></code> &#8211; <code class="docutils literal"><span class="pre">-&gt;</span></code>, <code class="docutils literal"><span class="pre">⊃</span></code> &#8211; implication</li>
-<li><code class="docutils literal"><span class="pre">↔</span></code> &#8211; <code class="docutils literal"><span class="pre">&lt;-&gt;</span></code>, <code class="docutils literal"><span class="pre">≡</span></code> &#8211; biconditional</li>
-<li>...</li>
-<li><code class="docutils literal"><span class="pre">XOR</span></code></li>
-<li><code class="docutils literal"><span class="pre">NAND</span></code></li>
+<li>Logical Connectives (“unary”, “binary”, sequence/tuple/list)<ul>
+<li><code class="docutils literal notranslate"><span class="pre">¬</span></code> –  <code class="docutils literal notranslate"><span class="pre">~</span></code>, <code class="docutils literal notranslate"><span class="pre">!</span></code> – negation (unary)</li>
+<li>…</li>
+<li><code class="docutils literal notranslate"><span class="pre">∧</span></code> – <code class="docutils literal notranslate"><span class="pre">^</span></code>, <code class="docutils literal notranslate"><span class="pre">&amp;&amp;</span></code>, <code class="docutils literal notranslate"><span class="pre">and</span></code> – conjunction</li>
+<li><code class="docutils literal notranslate"><span class="pre">∨</span></code> – <code class="docutils literal notranslate"><span class="pre">v</span></code>, <code class="docutils literal notranslate"><span class="pre">||</span></code>, <code class="docutils literal notranslate"><span class="pre">or</span></code> – disjunction</li>
+<li><code class="docutils literal notranslate"><span class="pre">→</span></code> – <code class="docutils literal notranslate"><span class="pre">-&gt;</span></code>, <code class="docutils literal notranslate"><span class="pre">⊃</span></code> – implication</li>
+<li><code class="docutils literal notranslate"><span class="pre">↔</span></code> – <code class="docutils literal notranslate"><span class="pre">&lt;-&gt;</span></code>, <code class="docutils literal notranslate"><span class="pre">≡</span></code> – biconditional</li>
+<li>…</li>
+<li><code class="docutils literal notranslate"><span class="pre">XOR</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">NAND</span></code></li>
 </ul>
 </li>
 <li>Grouping Operators<ul>
-<li>Parentheses <code class="docutils literal"><span class="pre">(</span> <span class="pre">)</span></code></li>
-<li>Brackets <code class="docutils literal"><span class="pre">&lt;</span> <span class="pre">&gt;</span></code></li>
+<li>Parentheses <code class="docutils literal notranslate"><span class="pre">(</span> <span class="pre">)</span></code></li>
+<li>Brackets <code class="docutils literal notranslate"><span class="pre">&lt;</span> <span class="pre">&gt;</span></code></li>
 </ul>
 </li>
 <li>Relations<ul>
-<li><code class="docutils literal"><span class="pre">P(x)</span></code> &#8211; predicate symbol (n_args=1, arity 1, valence 1)</li>
-<li><code class="docutils literal"><span class="pre">R(x)</span></code> &#8211; relation symbol  (n_args=1, arity 1, valence 1)</li>
-<li><code class="docutils literal"><span class="pre">Q(x,y)</span></code> &#8211; binary predicate/relation symbol (n_args=2, ...)</li>
+<li><code class="docutils literal notranslate"><span class="pre">P(x)</span></code> – predicate symbol (n_args=1, arity 1, valence 1)</li>
+<li><code class="docutils literal notranslate"><span class="pre">R(x)</span></code> – relation symbol  (n_args=1, arity 1, valence 1)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Q(x,y)</span></code> – binary predicate/relation symbol (n_args=2, …)</li>
 </ul>
 </li>
-<li>Quantifier Symbols &#8220;universe relation&#8221;<ul>
+<li>Quantifier Symbols “universe relation”<ul>
 <li><a class="reference internal" href="#existential-quantification"><span class="std std-ref">∃</span></a></li>
 <li><a class="reference internal" href="#universal-quantification"><span class="std std-ref">∀</span></a></li>
 </ul>
 </li>
-<li>... <a class="reference external" href="https://en.wikipedia.org/wiki/First-order_logic">https://en.wikipedia.org/wiki/First-order_logic</a></li>
+<li>… <a class="reference external" href="https://en.wikipedia.org/wiki/First-order_logic">https://en.wikipedia.org/wiki/First-order_logic</a></li>
 </ul>
 </li>
 </ul>
@@ -1421,7 +1424,7 @@ where the condition does not hold true.<ul>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Description_logic#Notation">https://en.wikipedia.org/wiki/Description_logic#Notation</a></li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Description_logic#Relationship_with_other_logics">https://en.wikipedia.org/wiki/Description_logic#Relationship_with_other_logics</a></li>
 </ul>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Knowledge</span> <span class="n">Base</span> <span class="o">=</span> <span class="n">TBox</span> <span class="o">+</span> <span class="n">ABox</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Knowledge</span> <span class="n">Base</span> <span class="o">=</span> <span class="n">TBox</span> <span class="o">+</span> <span class="n">ABox</span>
 </pre></div>
 </div>
 <ul class="simple">
@@ -1432,7 +1435,7 @@ where the condition does not hold true.<ul>
 <ul class="simple">
 <li><a class="reference internal" href="#owl"><span class="std std-ref">OWL</span></a>, <a class="reference internal" href="#entailment"><span class="std std-ref">Entailment</span></a></li>
 <li><a class="reference internal" href="#semantic-web"><span class="std std-ref">Semantic Web</span></a></li>
-<li><a class="reference internal" href="#n3"><span class="std std-ref">N3</span></a> for <code class="docutils literal"><span class="pre">=&gt;</span></code> implies</li>
+<li><a class="reference internal" href="#n3"><span class="std std-ref">N3</span></a> for <code class="docutils literal notranslate"><span class="pre">=&gt;</span></code> implies</li>
 </ul>
 </div>
 </div>
@@ -1470,11 +1473,11 @@ where the condition does not hold true.<ul>
 <p>Data Engineering is about the 5 Ws (who, what, when, where, why)
 and <strong>how</strong> data are stored.</p>
 <div class="line-block">
-<div class="line">Who:   schema:author         <code class="docutils literal"><span class="pre">&#64;westurner</span></code> ;</div>
-<div class="line">What:  schema:name           &#8220;WRD R&amp;D Documentation&#8221;&#64;en ;</div>
+<div class="line">Who:   schema:author         <code class="docutils literal notranslate"><span class="pre">&#64;westurner</span></code> ;</div>
+<div class="line">What:  schema:name           “WRD R&amp;D Documentation”&#64;en ;</div>
 <div class="line">When:  schema:codeRepository &lt;<a class="reference external" href="https://github.com/wrdrd/docs/commits/master">https://github.com/wrdrd/docs/commits/master</a>&gt; ;</div>
 <div class="line">Where: schema:codeRepository &lt;<a class="reference external" href="https://github.com/wrdrd/docs">https://github.com/wrdrd/docs</a>&gt; ;</div>
-<div class="line">Why:   schema:description    &#8220;Documentation purposes&#8221;&#64;en ;</div>
+<div class="line">Why:   schema:description    “Documentation purposes”&#64;en ;</div>
 <div class="line">How:   schema:programmingLanguage :ReStructuredText ;</div>
 <div class="line">How:   schema:runtimePlatform [ :Python, :CPython, :Sphinx ] ;</div>
 </div>
@@ -1689,7 +1692,7 @@ semantics: <a class="reference external" href="https://en.wikipedia.org/wiki/Sha
 <div class="line">Docs: <a class="reference external" href="https://git-scm.com/book/en/v2/Git-Internals-Packfiles">https://git-scm.com/book/en/v2/Git-Internals-Packfiles</a></div>
 </div>
 <blockquote>
-<div>&#8220;Git is a content-addressable <a class="reference internal" href="#filesystems"><span class="std std-ref">filesystem</span></a>&#8220;</div></blockquote>
+<div>“Git is a content-addressable <a class="reference internal" href="#filesystems"><span class="std std-ref">filesystem</span></a>”</div></blockquote>
 <div class="section" id="bup">
 <span id="index-39"></span><span id="id33"></span><h6><a class="toc-backref" href="#id249">bup</a><a class="headerlink" href="#bup" title="Permalink to this headline">¶</a></h6>
 <div class="line-block">
@@ -1731,23 +1734,23 @@ over <a class="reference internal" href="#http"><span class="std std-ref">HTTP</
 <p>File locking is one strategy for synchronization
 with concurrency and parallelism.</p>
 <ul>
-<li><p class="first">An auxilliary <code class="docutils literal"><span class="pre">&lt;filename&gt;.lock</span></code> file
+<li><p class="first">An auxilliary <code class="docutils literal notranslate"><span class="pre">&lt;filename&gt;.lock</span></code> file
 is still susceptible to <em>race conditions</em></p>
 </li>
-<li><p class="first"><a class="reference internal" href="../tools/index#c"><span class="std std-ref">C</span></a> file locking functions: <code class="docutils literal"><span class="pre">fcntl</span></code>, <code class="docutils literal"><span class="pre">lockf</span></code>, <code class="docutils literal"><span class="pre">flock</span></code></p>
+<li><p class="first"><a class="reference internal" href="../tools/index#c"><span class="std std-ref">C</span></a> file locking functions: <code class="docutils literal notranslate"><span class="pre">fcntl</span></code>, <code class="docutils literal notranslate"><span class="pre">lockf</span></code>, <code class="docutils literal notranslate"><span class="pre">flock</span></code></p>
 </li>
-<li><p class="first"><a class="reference internal" href="../tools/index#python"><span class="std std-ref">Python</span></a> file locking functions: <code class="docutils literal"><span class="pre">fcntl.fcntl</span></code>, <code class="docutils literal"><span class="pre">fcntl.lockf</span></code>,
-<code class="docutils literal"><span class="pre">fcntl.flock</span></code>:
+<li><p class="first"><a class="reference internal" href="../tools/index#python"><span class="std std-ref">Python</span></a> file locking functions: <code class="docutils literal notranslate"><span class="pre">fcntl.fcntl</span></code>, <code class="docutils literal notranslate"><span class="pre">fcntl.lockf</span></code>,
+<code class="docutils literal notranslate"><span class="pre">fcntl.flock</span></code>:
 <a class="reference external" href="https://docs.python.org/2/library/fcntl.html">https://docs.python.org/2/library/fcntl.html</a></p>
 </li>
 <li><p class="first">To lock a file for all processes with <a class="reference internal" href="../tools/index#linux"><span class="std std-ref">Linux</span></a> requires
 a <em>mandatory file locking</em> mount option (<cite>mount -o mand`</cite>) and
-per-file setgid and noexec bits (<code class="docutils literal"><span class="pre">chmod</span> <span class="pre">g+s,g-s</span></code>).</p>
+per-file setgid and noexec bits (<code class="docutils literal notranslate"><span class="pre">chmod</span> <span class="pre">g+s,g-s</span></code>).</p>
 </li>
 <li><p class="first">To lock a file (or a range / record of a file) for all processes with
 <a class="reference internal" href="../tools/index#windows"><span class="std std-ref">Windows</span></a> requires no additional work beyond
-<code class="docutils literal"><span class="pre">win32con.LOCKFILE_EXCLUSIVE_LOCK</span></code>,
-<code class="docutils literal"><span class="pre">win32file.LockFileEx</span></code>, and <code class="docutils literal"><span class="pre">win32file.UnlockFileEx</span></code>.</p>
+<code class="docutils literal notranslate"><span class="pre">win32con.LOCKFILE_EXCLUSIVE_LOCK</span></code>,
+<code class="docutils literal notranslate"><span class="pre">win32file.LockFileEx</span></code>, and <code class="docutils literal notranslate"><span class="pre">win32file.UnlockFileEx</span></code>.</p>
 </li>
 <li><p class="first">CWE-667: Improper Locking:
 <a class="reference external" href="https://cwe.mitre.org/data/definitions/667.html#Relationships">https://cwe.mitre.org/data/definitions/667.html#Relationships</a></p>
@@ -1830,7 +1833,7 @@ suitable data structures.</p>
 </li>
 <li><p class="first">Edges of <strong>directed graphs</strong> flow in only one direction;
 and so require two edges with separate attributes
-(e.g. &#8216;magnitude&#8217;, &#8216;scale&#8217;</p>
+(e.g. ‘magnitude’, ‘scale’</p>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Directed_graph">https://en.wikipedia.org/wiki/Directed_graph</a></div>
 </div>
@@ -1894,7 +1897,7 @@ written in <a class="reference internal" href="../tools/index#python"><span clas
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Depth-first_search">https://en.wikipedia.org/wiki/Depth-first_search</a></div>
 </div>
 <p>DFS (<em>Depth-first search</em>) is a <a class="reference internal" href="#graphs"><span class="std std-ref">graph</span></a> traversal algorithm.</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Given a tree:</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Given a tree:</span>
 <span class="mi">1</span>
   <span class="mf">1.1</span>
   <span class="mf">1.2</span>
@@ -1914,7 +1917,7 @@ written in <a class="reference internal" href="../tools/index#python"><span clas
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Breadth-first_search">https://en.wikipedia.org/wiki/Breadth-first_search</a></div>
 </div>
 <p>BFS (<em>Breadth-first search</em>) is a <a class="reference internal" href="#graphs"><span class="std std-ref">graph</span></a> traversal agorithm.</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Given a tree:</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Given a tree:</span>
 <span class="mi">1</span>
   <span class="mf">1.1</span>
   <span class="mf">1.2</span>
@@ -1938,11 +1941,11 @@ written in <a class="reference internal" href="../tools/index#python"><span clas
 <p>A DAG (<em>directed acyclic</em> <a class="reference internal" href="#graphs"><span class="std std-ref">graph</span></a>) has a
 topological sorting, or is topologically sorted.</p>
 <ul class="simple">
-<li>The unix <code class="docutils literal"><span class="pre">tsort</span></code> utility does a topological sorting
+<li>The unix <code class="docutils literal notranslate"><span class="pre">tsort</span></code> utility does a topological sorting
 of a space and newline delimited list of edge
 labels:</li>
 </ul>
-<div class="code bash highlight-default"><div class="highlight"><pre><span></span>$ tsort --help
+<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span>$ tsort --help
 Usage: tsort [OPTION] [FILE]
 Write totally ordered list consistent with the partial ordering in FILE.
 With no FILE, or when FILE is -, read standard input.
@@ -1968,7 +1971,7 @@ plus e.g. version and platform constraints
 (as solvable with a SAT constraint satisfaction solver
 (see <a class="reference internal" href="../tools/index#conda"><span class="std std-ref">Conda</span></a> (pypi:pycosat)))</li>
 <li>A topological sorting can identify the
-&#8220;root&#8221; of a <strong>directed acyclic graph</strong>.<ul>
+“root” of a <strong>directed acyclic graph</strong>.<ul>
 <li><em>Information gain</em> can be useful
 for less discrete problems.</li>
 </ul>
@@ -2006,11 +2009,11 @@ for less discrete problems.</li>
 <span id="index-56"></span><span id="id46"></span><h4><a class="toc-backref" href="#id263">bzip2</a><a class="headerlink" href="#bzip2" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Bzip2">https://en.wikipedia.org/wiki/Bzip2</a></div>
-<div class="line">File Extension: <code class="docutils literal"><span class="pre">.bz2</span></code></div>
+<div class="line">File Extension: <code class="docutils literal notranslate"><span class="pre">.bz2</span></code></div>
 <div class="line">Homepage: <a class="reference external" href="http://bzip.org/">http://bzip.org/</a></div>
 </div>
 <p>bzip2 is an <a class="reference internal" href="open-source#open-source"><span class="std std-ref">Open Source</span></a> lossless compression algorithm
-based upon the <code class="docutils literal"><span class="pre">Burrows-Wheeler</span></code> algorithm.</p>
+based upon the <code class="docutils literal notranslate"><span class="pre">Burrows-Wheeler</span></code> algorithm.</p>
 <ul class="simple">
 <li>bzip2 is usually slower than <a class="reference internal" href="#gzip"><span class="std std-ref">gzip</span></a> or <a class="reference internal" href="#zip"><span class="std std-ref">zip</span></a>,
 but more space efficient</li>
@@ -2021,23 +2024,23 @@ but more space efficient</li>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Gzip">https://en.wikipedia.org/wiki/Gzip</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://www.gnu.org/software/gzip/">https://www.gnu.org/software/gzip/</a></div>
-<div class="line">File Extension: <code class="docutils literal"><span class="pre">.gz</span></code></div>
+<div class="line">File Extension: <code class="docutils literal notranslate"><span class="pre">.gz</span></code></div>
 <div class="line">Source: <a class="reference external" href="http://ftp.gnu.org/gnu/gzip/">http://ftp.gnu.org/gnu/gzip/</a></div>
 <div class="line">Docs: <a class="reference external" href="https://www.gnu.org/software/gzip/manual/">https://www.gnu.org/software/gzip/manual/</a></div>
 <div class="line">Docs: <a class="reference external" href="https://www.gnu.org/software/gzip/manual/gzip.html">https://www.gnu.org/software/gzip/manual/gzip.html</a></div>
 </div>
 <p>gzip is a compression algorithm
-based on <code class="docutils literal"><span class="pre">DEFLATE</span></code> and <code class="docutils literal"><span class="pre">LZ77</span></code>.</p>
+based on <code class="docutils literal notranslate"><span class="pre">DEFLATE</span></code> and <code class="docutils literal notranslate"><span class="pre">LZ77</span></code>.</p>
 <ul class="simple">
 <li>gzip is similar to <a class="reference internal" href="#zip"><span class="std std-ref">zip</span></a>, in that both are based upon
-<code class="docutils literal"><span class="pre">DEFLATE</span></code></li>
+<code class="docutils literal notranslate"><span class="pre">DEFLATE</span></code></li>
 </ul>
 </div>
 <div class="section" id="tar">
 <span id="index-58"></span><span id="id48"></span><h4><a class="toc-backref" href="#id265">tar</a><a class="headerlink" href="#tar" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Tar_(computing)">https://en.wikipedia.org/wiki/Tar_(computing)</a></div>
-<div class="line">File Extension: <code class="docutils literal"><span class="pre">.tar</span></code></div>
+<div class="line">File Extension: <code class="docutils literal notranslate"><span class="pre">.tar</span></code></div>
 </div>
 <p><a class="reference internal" href="#tar"><span class="std std-ref">tar</span></a> is a file archiving format
 for storing a manifest of records of
@@ -2046,11 +2049,11 @@ at the beginning of the actual files
 all concatenated into one file.</p>
 <ul class="simple">
 <li>TAR = ( table of contents + data stream )</li>
-<li><code class="docutils literal"><span class="pre">.tar.gz</span></code> is <a class="reference internal" href="#tar"><span class="std std-ref">tar</span></a> + <a class="reference internal" href="#gzip"><span class="std std-ref">gzip</span></a></li>
-<li><code class="docutils literal"><span class="pre">.tar.bz2</span></code> is <a class="reference internal" href="#tar"><span class="std std-ref">tar</span></a> + <a class="reference internal" href="#bzip2"><span class="std std-ref">bzip2</span></a></li>
+<li><code class="docutils literal notranslate"><span class="pre">.tar.gz</span></code> is <a class="reference internal" href="#tar"><span class="std std-ref">tar</span></a> + <a class="reference internal" href="#gzip"><span class="std std-ref">gzip</span></a></li>
+<li><code class="docutils literal notranslate"><span class="pre">.tar.bz2</span></code> is <a class="reference internal" href="#tar"><span class="std std-ref">tar</span></a> + <a class="reference internal" href="#bzip2"><span class="std std-ref">bzip2</span></a></li>
 </ul>
 <p>TAR and <a class="reference internal" href="#gzip"><span class="std std-ref">gzip</span></a> or <a class="reference internal" href="#bzip2"><span class="std std-ref">bzip2</span></a> can be streamed over SSH:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># https://unix.stackexchange.com/a/95994</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># https://unix.stackexchange.com/a/95994</span>
 <span class="n">tar</span> <span class="n">czf</span> <span class="o">-</span> <span class="o">.</span> <span class="o">|</span> <span class="n">ssh</span> <span class="n">remote</span> <span class="s2">&quot;( cd ~/ ; cat &gt; file.tar.gz )&quot;</span>
 <span class="n">tar</span> <span class="n">bzf</span> <span class="o">-</span> <span class="o">.</span> <span class="o">|</span> <span class="n">ssh</span> <span class="n">remote</span> <span class="s2">&quot;( cd ~/ ; cat &gt; file.tar.bz2 )&quot;</span>
 </pre></div>
@@ -2076,10 +2079,10 @@ designed to produce uniquely identifying identifiers for blocks
 or whole files in order to verify data <a class="reference internal" href="information-systems#integrity"><span class="std std-ref">Integrity</span></a>.</p>
 <ul class="simple">
 <li>A <em>hash</em> is the output of a hash function.</li>
-<li>In <a class="reference internal" href="../tools/index#python"><span class="std std-ref">Python</span></a>, <code class="docutils literal"><span class="pre">dict</span></code> keys must be <em>hashable</em>
-(must have a <code class="docutils literal"><span class="pre">__hash__</span></code> method).</li>
+<li>In <a class="reference internal" href="../tools/index#python"><span class="std std-ref">Python</span></a>, <code class="docutils literal notranslate"><span class="pre">dict</span></code> keys must be <em>hashable</em>
+(must have a <code class="docutils literal notranslate"><span class="pre">__hash__</span></code> method).</li>
 <li>In <a class="reference internal" href="../tools/index#java"><span class="std std-ref">Java</span></a>, <a class="reference internal" href="../tools/index#scala"><span class="std std-ref">Scala</span></a>, and many other languages
-<code class="docutils literal"><span class="pre">dicts</span></code> are called <code class="docutils literal"><span class="pre">HashMaps</span></code>.</li>
+<code class="docutils literal notranslate"><span class="pre">dicts</span></code> are called <code class="docutils literal notranslate"><span class="pre">HashMaps</span></code>.</li>
 <li><a class="reference internal" href="#md5"><span class="std std-ref">MD5</span></a> is a checksum algorithm.</li>
 <li><a class="reference internal" href="#sha"><span class="std std-ref">SHA</span></a> is a group of checksum algorithms.</li>
 </ul>
@@ -2102,7 +2105,7 @@ for error detection based upon an extra <em>check value</em>.</p>
 </div>
 <p>MD5 is a 128-bit hash function which is now broken, and deprecated
 in favor of <a class="reference internal" href="#sha"><span class="std std-ref">SHA-2</span></a> or better.</p>
-<div class="code bash highlight-default"><div class="highlight"><pre><span></span><span class="n">md5</span>
+<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">md5</span>
 <span class="n">md5sums</span>
 </pre></div>
 </div>
@@ -2113,12 +2116,12 @@ in favor of <a class="reference internal" href="#sha"><span class="std std-ref">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Secure_Hash_Algorithm">https://en.wikipedia.org/wiki/Secure_Hash_Algorithm</a></div>
 </div>
 <ul class="simple">
-<li>SHA-0 &#8211;  160 bit (retracted 1993)</li>
-<li>SHA-1 &#8212; 160 bit (deprecated 2010)</li>
-<li>SHA-2 &#8212; sha-256, sha-512</li>
+<li>SHA-0 –  160 bit (retracted 1993)</li>
+<li>SHA-1 — 160 bit (deprecated 2010)</li>
+<li>SHA-2 — sha-256, sha-512</li>
 <li>SHA-3 (2012)</li>
 </ul>
-<div class="code bash highlight-default"><div class="highlight"><pre><span></span><span class="n">shasum</span>
+<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">shasum</span>
 <span class="n">shasum</span> <span class="o">-</span><span class="n">a</span> <span class="mi">1</span>
 <span class="n">shasum</span> <span class="o">-</span><span class="n">a</span> <span class="mi">224</span>
 <span class="n">shasum</span> <span class="o">-</span><span class="n">a</span> <span class="mi">256</span>
@@ -2152,7 +2155,7 @@ represented in a persistent physical medium.</p>
 <p>RAID (<em>redundant array of independent disks</em>)
 is set of configurations for <a class="reference internal" href="computer-engineering#hard-drives"><span class="std std-ref">Hard Drives</span></a> and <a class="reference internal" href="computer-engineering#ssd"><span class="std std-ref">SSDs</span></a>
 to <em>stripe</em> and/or <em>mirror</em> with <em>parity</em>.</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">RAID</span> <span class="mi">0</span> <span class="o">--</span> <span class="n">striping</span><span class="p">,</span>        <span class="o">-</span><span class="p">,</span>             <span class="n">no</span> <span class="n">parity</span> <span class="o">...</span> <span class="n">throughput</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">RAID</span> <span class="mi">0</span> <span class="o">--</span> <span class="n">striping</span><span class="p">,</span>        <span class="o">-</span><span class="p">,</span>             <span class="n">no</span> <span class="n">parity</span> <span class="o">...</span> <span class="n">throughput</span>
 <span class="n">RAID</span> <span class="mi">1</span> <span class="o">--</span> <span class="n">no</span> <span class="n">striping</span><span class="p">,</span>  <span class="n">mirroring</span><span class="p">,</span>        <span class="n">no</span> <span class="n">parity</span> <span class="o">...</span>
 <span class="n">RAID</span> <span class="mi">2</span> <span class="o">--</span> <span class="n">bit</span> <span class="n">striping</span><span class="p">,</span>    <span class="o">-</span><span class="p">,</span>             <span class="n">no</span> <span class="n">parity</span> <span class="o">...</span> <span class="n">legacy</span>
 <span class="n">RAID</span> <span class="mi">3</span> <span class="o">--</span> <span class="n">byte</span> <span class="n">striping</span><span class="p">,</span>   <span class="o">-</span><span class="p">,</span>      <span class="n">dedicated</span> <span class="n">parity</span> <span class="o">...</span> <span class="n">uncommon</span>
@@ -2172,7 +2175,7 @@ multiple drive connectors.</p>
 </li>
 <li><p class="first"><a class="reference external" href="https://en.wikipedia.org/wiki/RAID#Software-based">https://en.wikipedia.org/wiki/RAID#Software-based</a></p>
 </li>
-<li><p class="first"><a class="reference external" href="https://en.wikipedia.org/wiki/RAID#Firmware-_and_driver-based">https://en.wikipedia.org/wiki/RAID#Firmware-_and_driver-based</a> (&#8220;<em>fake RAID</em>&#8221;)</p>
+<li><p class="first"><a class="reference external" href="https://en.wikipedia.org/wiki/RAID#Firmware-_and_driver-based">https://en.wikipedia.org/wiki/RAID#Firmware-_and_driver-based</a> (“<em>fake RAID</em>”)</p>
 </li>
 <li><dl class="first docutils">
 <dt>Data Scrubbing</dt>
@@ -2235,10 +2238,10 @@ online resize and allocation and a number of additional features.</p>
 <li>In LVM, there are <em>Volume Groups</em> (VG),
 <em>Physical Volumes</em> (PV), and <em>Logical Volumes</em> (LV).</li>
 <li>LVM can do striping and high-availability sofware <a class="reference internal" href="#raid"><span class="std std-ref">RAID</span></a>.</li>
-<li>LVM and <code class="docutils literal"><span class="pre">device-mapper</span></code> are now part of the <a class="reference internal" href="../tools/index#linux"><span class="std std-ref">Linux</span></a>
+<li>LVM and <code class="docutils literal notranslate"><span class="pre">device-mapper</span></code> are now part of the <a class="reference internal" href="../tools/index#linux"><span class="std std-ref">Linux</span></a>
 kernel tree
 (the LVM <a class="reference internal" href="../tools/index#linux"><span class="std std-ref">Linux</span></a> kernel modules are built and included
-with most distributions&#8217; default kernel build).</li>
+with most distributions’ default kernel build).</li>
 <li>LVM Logical Volumes can be resized online
 (without e.g. rebooting to busybox or a LiveCD);
 but many <a class="reference internal" href="#filesystems"><span class="std std-ref">Filesystems</span></a> support only
@@ -2304,36 +2307,36 @@ with OSXFuse and FUSE-EXT2.</li>
 <span id="index-81"></span><span id="id61"></span><h4><a class="toc-backref" href="#id279">ISO9660</a><a class="headerlink" href="#iso9660" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/ISO_9660">https://en.wikipedia.org/wiki/ISO_9660</a></div>
-<div class="line">FileExt: <code class="docutils literal"><span class="pre">.iso</span></code></div>
+<div class="line">FileExt: <code class="docutils literal notranslate"><span class="pre">.iso</span></code></div>
 </div>
 <p>ISO9660 is an <a class="reference internal" href="#iso"><span class="std std-ref">ISO</span></a> standard for <a class="reference internal" href="computer-engineering#disc-drives"><span class="std std-ref">disc drive</span></a> images
 which specifies a standard for booting from a filesystem image.</p>
 <ul>
 <li><p class="first">Many <a class="reference internal" href="../tools/index#operating-systems"><span class="std std-ref">Operating System</span></a>
 distributions are distributed
-as <a class="reference internal" href="#iso9660"><span class="std std-ref">ISO9660</span></a> <code class="docutils literal"><span class="pre">.iso</span></code> files.</p>
+as <a class="reference internal" href="#iso9660"><span class="std std-ref">ISO9660</span></a> <code class="docutils literal notranslate"><span class="pre">.iso</span></code> files.</p>
 </li>
 <li><p class="first">ISO9660 and <a class="reference internal" href="../tools/index#linux"><span class="std std-ref">Linux</span></a>:</p>
 <ul>
 <li><p class="first">An ISO9660 ISO can be <em>loop mounted</em>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">mount</span> <span class="o">-</span><span class="n">o</span> <span class="n">loop</span><span class="p">,</span><span class="n">ro</span> <span class="o">-</span><span class="n">t</span> <span class="n">iso9660</span> <span class="o">./</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">file</span><span class="o">.</span><span class="n">iso</span> <span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">cdrom</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mount</span> <span class="o">-</span><span class="n">o</span> <span class="n">loop</span><span class="p">,</span><span class="n">ro</span> <span class="o">-</span><span class="n">t</span> <span class="n">iso9660</span> <span class="o">./</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">file</span><span class="o">.</span><span class="n">iso</span> <span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">cdrom</span>
 </pre></div>
 </div>
 </li>
 <li><p class="first">An ISO8660 CD can be <em>mounted</em>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">mount</span> <span class="o">-</span><span class="n">o</span> <span class="n">ro</span> <span class="o">-</span><span class="n">t</span> <span class="n">iso9660</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">cdrom</span> <span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">cdrom</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mount</span> <span class="o">-</span><span class="n">o</span> <span class="n">ro</span> <span class="o">-</span><span class="n">t</span> <span class="n">iso9660</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">cdrom</span> <span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">cdrom</span>
 </pre></div>
 </div>
 </li>
 </ul>
 </li>
-<li><p class="first">Most CD/DVD burning utilities support ISO9660 <code class="docutils literal"><span class="pre">.iso</span></code>
+<li><p class="first">Most CD/DVD burning utilities support ISO9660 <code class="docutils literal notranslate"><span class="pre">.iso</span></code>
 files.</p>
 </li>
 <li><p class="first">ISO9660 is useful in that it specifies how to encode
 the boot sector (<em>El Torito</em>) and partition layout.</p>
 </li>
-<li><p class="first">Nowadays, ISO9660 <code class="docutils literal"><span class="pre">.iso</span></code> files are often
+<li><p class="first">Nowadays, ISO9660 <code class="docutils literal notranslate"><span class="pre">.iso</span></code> files are often
 converted to raw drive images and written to
 bootable <a class="reference internal" href="computer-engineering#usb"><span class="std std-ref">USB</span></a> Mass Storage devices
 (e.g. to write a install / recovery disq
@@ -2358,7 +2361,7 @@ or MacDrive</p>
 <p><a class="reference external" href="http://www.makeuseof.com/tag/4-ways-read-mac-formatted-drive-windows/">http://www.makeuseof.com/tag/4-ways-read-mac-formatted-drive-windows/</a></p>
 </li>
 <li><p class="first"><a class="reference internal" href="../tools/index#linux"><span class="std std-ref">Linux</span></a> machines can access HFS+ partitions with
-<code class="docutils literal"><span class="pre">hfsprogs</span></code> (<code class="docutils literal"><span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">hfsprogs</span></code>, <code class="docutils literal"><span class="pre">yum</span> <span class="pre">install</span> <span class="pre">hfsprogs</span></code>).</p>
+<code class="docutils literal notranslate"><span class="pre">hfsprogs</span></code> (<code class="docutils literal notranslate"><span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">hfsprogs</span></code>, <code class="docutils literal notranslate"><span class="pre">yum</span> <span class="pre">install</span> <span class="pre">hfsprogs</span></code>).</p>
 </li>
 </ul>
 </div>
@@ -2447,12 +2450,12 @@ for files with attributes like owner, group, permissions)
 written in <a class="reference internal" href="../tools/index#id66"><span class="std std-ref">C++</span></a> and <a class="reference internal" href="../tools/index#perl"><span class="std std-ref">Perl</span></a>
 which runs over top of one or more on-disk filesystems.</p>
 <ul class="simple">
-<li>Ceph Block Device (<em>rbd</em>) &#8211; striping, caching, snapshots, copy-on-write,
+<li>Ceph Block Device (<em>rbd</em>) – striping, caching, snapshots, copy-on-write,
 <a class="reference internal" href="../tools/index#kvm"><span class="std std-ref">KVM</span></a>, <a class="reference internal" href="../tools/index#libvirt"><span class="std std-ref">Libvirt</span></a>, <a class="reference internal" href="../tools/index#openstack"><span class="std std-ref">OpenStack</span></a> Cinder block storage</li>
-<li>Ceph Filesystem (<em>cephfs</em>) &#8211; <a class="reference internal" href="../tools/index#posix"><span class="std std-ref">POSIX</span></a>
+<li>Ceph Filesystem (<em>cephfs</em>) – <a class="reference internal" href="../tools/index#posix"><span class="std std-ref">POSIX</span></a>
 <a class="reference internal" href="#filesystems"><span class="std std-ref">filesystem</span></a> with
 <a class="reference internal" href="#fuse"><span class="std std-ref">FUSE</span></a>, <a class="reference internal" href="#nfs"><span class="std std-ref">NFS</span></a>, <a class="reference internal" href="#cifs"><span class="std std-ref">CIFS</span></a>, and <a class="reference internal" href="#hdfs"><span class="std std-ref">HDFS</span></a> APIs</li>
-<li>Ceph Object Gateway (<em>radosgw</em>) &#8211; <a class="reference internal" href="information-systems#term-restful-api"><span class="xref std std-term">RESTful API</span></a>,
+<li>Ceph Object Gateway (<em>radosgw</em>) – <a class="reference internal" href="information-systems#term-restful-api"><span class="xref std std-term">RESTful API</span></a>,
 <a class="reference internal" href="information-systems#aws"><span class="std std-ref">Amazon AWS</span></a> S3 API, <a class="reference internal" href="../tools/index#openstack"><span class="std std-ref">OpenStack</span></a> Swift API,
 <a class="reference internal" href="../tools/index#openstack"><span class="std std-ref">OpenStack</span></a> Keystone authentication</li>
 </ul>
@@ -2462,7 +2465,7 @@ which runs over top of one or more on-disk filesystems.</p>
 <p>CIFS (<em>Common Internet File System</em>) is a centralized network filesystem
 protocol.</p>
 <ul class="simple">
-<li>Samba <code class="docutils literal"><span class="pre">smbd</span></code> is one implementation of a <a class="reference internal" href="#cifs"><span class="std std-ref">CIFS</span></a> network file server.</li>
+<li>Samba <code class="docutils literal notranslate"><span class="pre">smbd</span></code> is one implementation of a <a class="reference internal" href="#cifs"><span class="std std-ref">CIFS</span></a> network file server.</li>
 </ul>
 </div>
 <div class="section" id="ddfs">
@@ -2522,7 +2525,7 @@ many languages:
 <a class="reference internal" href="../tools/index#ruby"><span class="std std-ref">Ruby</span></a>, <a class="reference internal" href="../tools/index#perl"><span class="std std-ref">Perl</span></a>, <a class="reference internal" href="../tools/index#haskell"><span class="std std-ref">Haskell</span></a>, <a class="reference internal" href="../tools/index#id66"><span class="std std-ref">C++</span></a></li>
 <li><a class="reference internal" href="../tools/index#mesos"><span class="std std-ref">Mesos</span></a> can manage distributed HDFS grids.</li>
 <li><a class="reference internal" href="#elasticsearch"><span class="std std-ref">ElasticSearch</span></a></li>
-<li>It&#8217;s possible to configure a <cite>Jenkins</cite> <a class="reference internal" href="software-development#continuous-integration"><span class="std std-ref">Continuous Integration</span></a> cluster
+<li>It’s possible to configure a <cite>Jenkins</cite> <a class="reference internal" href="software-development#continuous-integration"><span class="std std-ref">Continuous Integration</span></a> cluster
 as <a class="reference internal" href="#hadoop"><span class="std std-ref">Hadoop</span></a> cluster.</li>
 <li>Many databases support storage over HDFS
 (<a class="reference internal" href="#hbase"><span class="std std-ref">HBase</span></a>, <a class="reference internal" href="#cassandra"><span class="std std-ref">Cassandra</span></a>, <a class="reference internal" href="#accumulo"><span class="std std-ref">Accumulo</span></a>, <a class="reference internal" href="#spark"><span class="std std-ref">Spark</span></a>)</li>
@@ -2581,13 +2584,13 @@ centralized network filesystem.</p>
 is a network filesystem protocol built with <a class="reference internal" href="#http"><span class="std std-ref">HTTP</span></a>.</p>
 <ul class="simple">
 <li>WebDAV specifies a number of unique <a class="reference internal" href="#http"><span class="std std-ref">HTTP</span></a> methods:<ul>
-<li><code class="docutils literal"><span class="pre">PROPFIND</span></code> (<code class="docutils literal"><span class="pre">ls</span></code>, <code class="docutils literal"><span class="pre">stat</span></code>, <code class="docutils literal"><span class="pre">getfacl</span></code>),</li>
-<li><code class="docutils literal"><span class="pre">PROPPATCH</span></code> (<code class="docutils literal"><span class="pre">touch</span></code>, <code class="docutils literal"><span class="pre">setfacl</span></code>)</li>
-<li><code class="docutils literal"><span class="pre">MKCOL</span></code> (<code class="docutils literal"><span class="pre">mkdir</span></code>)</li>
-<li><code class="docutils literal"><span class="pre">COPY</span></code> (<code class="docutils literal"><span class="pre">cp</span></code>)</li>
-<li><code class="docutils literal"><span class="pre">MOVE</span></code> (<code class="docutils literal"><span class="pre">mv</span></code>)</li>
-<li><code class="docutils literal"><span class="pre">LOCK</span></code> (<a class="reference internal" href="#file-locking"><span class="std std-ref">File Locking</span></a>)</li>
-<li><code class="docutils literal"><span class="pre">UNLOCK</span></code> ()</li>
+<li><code class="docutils literal notranslate"><span class="pre">PROPFIND</span></code> (<code class="docutils literal notranslate"><span class="pre">ls</span></code>, <code class="docutils literal notranslate"><span class="pre">stat</span></code>, <code class="docutils literal notranslate"><span class="pre">getfacl</span></code>),</li>
+<li><code class="docutils literal notranslate"><span class="pre">PROPPATCH</span></code> (<code class="docutils literal notranslate"><span class="pre">touch</span></code>, <code class="docutils literal notranslate"><span class="pre">setfacl</span></code>)</li>
+<li><code class="docutils literal notranslate"><span class="pre">MKCOL</span></code> (<code class="docutils literal notranslate"><span class="pre">mkdir</span></code>)</li>
+<li><code class="docutils literal notranslate"><span class="pre">COPY</span></code> (<code class="docutils literal notranslate"><span class="pre">cp</span></code>)</li>
+<li><code class="docutils literal notranslate"><span class="pre">MOVE</span></code> (<code class="docutils literal notranslate"><span class="pre">mv</span></code>)</li>
+<li><code class="docutils literal notranslate"><span class="pre">LOCK</span></code> (<a class="reference internal" href="#file-locking"><span class="std std-ref">File Locking</span></a>)</li>
+<li><code class="docutils literal notranslate"><span class="pre">UNLOCK</span></code> ()</li>
 </ul>
 </li>
 </ul>
@@ -2673,7 +2676,7 @@ is a network filesystem protocol built with <a class="reference internal" href="
 <li><a class="reference internal" href="#virtuoso"><span class="std std-ref">Virtuoso</span></a></li>
 <li><a class="reference external" href="http://db-engines.com/en/ranking/relational+dbms">http://db-engines.com/en/ranking/relational+dbms</a></li>
 </ul>
-<p>What doesn&#8217;t SQL do?</p>
+<p>What doesn’t SQL do?</p>
 <ul class="simple">
 <li><a class="reference internal" href="#rdf"><span class="std std-ref">RDF</span></a>, <a class="reference internal" href="#owl"><span class="std std-ref">OWL</span></a></li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/OLAP">https://en.wikipedia.org/wiki/OLAP</a></li>
@@ -2707,7 +2710,7 @@ Security Error (2011))</li>
 <div class="line">Docs: <a class="reference external" href="http://www.drizzle.org/content/documentation">http://www.drizzle.org/content/documentation</a></div>
 <div class="line">Docs: <a class="reference external" href="http://docs.drizzle.org/">http://docs.drizzle.org/</a></div>
 </div>
-<p>Drizzle is an <a class="reference internal" href="open-source#open-source"><span class="std std-ref">Open Source</span></a> relational database &#8220;for the cloud&#8221;
+<p>Drizzle is an <a class="reference internal" href="open-source#open-source"><span class="std std-ref">Open Source</span></a> relational database “for the cloud”
 which was forked from <a class="reference internal" href="#mysql"><span class="std std-ref">MySQL</span></a> 6.0.</p>
 <ul class="simple">
 <li>Drizzle stores all data as UTF-8.</li>
@@ -2753,7 +2756,7 @@ which was forked from <a class="reference internal" href="#mysql"><span class="s
 <div class="line">Docs: <a class="reference external" href="https://www.sqlite.org/different.html">https://www.sqlite.org/different.html</a></div>
 <div class="line">Docs: <a class="reference external" href="https://www.sqlite.org/threadsafe.html">https://www.sqlite.org/threadsafe.html</a></div>
 <div class="line">Docs: <a class="reference external" href="https://www.sqlite.org/uri.html">https://www.sqlite.org/uri.html</a></div>
-<div class="line">FileExt: <code class="docutils literal"><span class="pre">.sqlite</span></code></div>
+<div class="line">FileExt: <code class="docutils literal notranslate"><span class="pre">.sqlite</span></code></div>
 </div>
 <p>SQLite is a serverless <a class="reference internal" href="open-source#open-source"><span class="std std-ref">Open Source</span></a> relational database
 which stores all data in one file.</p>
@@ -2971,7 +2974,7 @@ for HA (<em>high availability</em>).</p>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/CubicWeb">https://en.wikipedia.org/wiki/CubicWeb</a></li>
 <li><a class="reference internal" href="#rdflib"><span class="std std-ref">RDFLib</span></a></li>
 </ul>
-<p><code class="docutils literal"><span class="pre">rdfs:seeAlso</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">rdfs:seeAlso</span></code></p>
 <ul class="simple">
 <li><a class="reference internal" href="#linked-data"><span class="std std-ref">Linked Data</span></a></li>
 <li><a class="reference internal" href="#semantic-web"><span class="std std-ref">Semantic Web</span></a></li>
@@ -3200,18 +3203,16 @@ computation platform.</p>
 <p><a class="reference internal" href="#distributed-databases"><span class="std std-ref">Distributed Databases</span></a> and distributed <a class="reference internal" href="information-systems#information-systems"><span class="std std-ref">Information Systems</span></a>
 implement <a class="reference internal" href="#distributed-algorithms"><span class="std std-ref">Distributed Algorithms</span></a> designed to solve for
 <a class="reference internal" href="information-systems#confidentiality"><span class="std std-ref">Confidentiality</span></a>, <a class="reference internal" href="information-systems#integrity"><span class="std std-ref">Integrity</span></a>, and <a class="reference internal" href="information-systems#availability"><span class="std std-ref">Availability</span></a>.</p>
-<p>As separate records / statements to be <code class="docutils literal"><span class="pre">yield</span></code>-ed or emitted:</p>
-<ul>
+<p>As separate records / statements to be <code class="docutils literal notranslate"><span class="pre">yield</span></code>-ed or emitted:</p>
+<ul class="simple">
 <li><dl class="first docutils">
 <dt><a class="reference internal" href="#distributed-databases"><span class="std std-ref">Distributed Databases</span></a></dt>
-<dd><p class="first last">implement <a class="reference internal" href="#distributed-algorithms"><span class="std std-ref">Distributed Algorithms</span></a>.</p>
-</dd>
+<dd>implement <a class="reference internal" href="#distributed-algorithms"><span class="std std-ref">Distributed Algorithms</span></a>.</dd>
 </dl>
 </li>
 <li><dl class="first docutils">
 <dt>Distributed <a class="reference internal" href="information-systems#information-systems"><span class="std std-ref">Information Systems</span></a></dt>
-<dd><p class="first last">implement <a class="reference internal" href="#distributed-algorithms"><span class="std std-ref">Distributed Algorithms</span></a>.</p>
-</dd>
+<dd>implement <a class="reference internal" href="#distributed-algorithms"><span class="std std-ref">Distributed Algorithms</span></a>.</dd>
 </dl>
 </li>
 </ul>
@@ -3275,7 +3276,7 @@ implement a DHT (e.g. with <a class="reference internal" href="#websockets"><spa
 contain a <em>key</em>,
 which is a <em>checksum</em> of a manifest,
 which can be retrieved from a <a class="reference internal" href="#dht"><span class="std std-ref">DHT</span></a>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># &lt;a href=&quot;magnet:?xt=urn:btih:IJBDPDSBT4QZLBIJ6NX7LITSZHZQ7F5I&quot;&gt;.&lt;/a&gt;</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># &lt;a href=&quot;magnet:?xt=urn:btih:IJBDPDSBT4QZLBIJ6NX7LITSZHZQ7F5I&quot;&gt;.&lt;/a&gt;</span>
 <span class="c1"># key_uri = &quot;IJBDPDSBT4QZLBIJ6NX7LITSZHZQ7F5I&quot;</span>
 <span class="n">dht</span> <span class="o">=</span> <span class="n">DHT</span><span class="p">();</span> <span class="n">value</span> <span class="o">=</span> <span class="n">dht</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">key_uri</span><span class="p">)</span>
 </pre></div>
@@ -3374,7 +3375,7 @@ BSP.</li>
 </div>
 <ul class="simple">
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Comparison_of_data_serialization_formats">https://en.wikipedia.org/wiki/Comparison_of_data_serialization_formats</a></li>
-<li><a class="reference internal" href="../tools/index#programming-languages"><span class="std std-ref">Programming Languages</span></a>&#8216; implementations:<ul>
+<li><a class="reference internal" href="../tools/index#programming-languages"><span class="std std-ref">Programming Languages</span></a>’ implementations:<ul>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Java_Remote_Method_Invocation">https://en.wikipedia.org/wiki/Java_Remote_Method_Invocation</a></li>
 <li><a class="reference external" href="https://twisted.readthedocs.io/en/latest/core/howto/pb-usage.html">https://twisted.readthedocs.io/en/latest/core/howto/pb-usage.html</a></li>
 </ul>
@@ -3415,15 +3416,15 @@ with a limited set of datatypes (see also <a class="reference internal" href="#x
 <li>CORBA ORBs (<em>Object Request Brokers</em>)
 route requests for objects (see also <a class="reference internal" href="#esb"><span class="std std-ref">ESB</span></a>)</li>
 <li>CORBA objects are either in
-local address space (see also <code class="docutils literal"><span class="pre">file://</span></code> / <code class="docutils literal"><span class="pre">/dev/mem</span></code>)
+local address space (see also <code class="docutils literal notranslate"><span class="pre">file://</span></code> / <code class="docutils literal notranslate"><span class="pre">/dev/mem</span></code>)
 or remote address space
 (see also dereferencable <a class="reference internal" href="#http"><span class="std std-ref">HTTP</span></a>, <a class="reference internal" href="#https"><span class="std std-ref">HTTPS</span></a>
 <a class="reference internal" href="web-development#term-url"><span class="xref std std-term">URLs</span></a> )</li>
 <li>CORBA objects can be looked up by reference
 (by <a class="reference internal" href="web-development#term-url"><span class="xref std std-term">URL</span></a>, or <em>NameService</em> (see also <a class="reference internal" href="web-development#term-dns"><span class="xref std std-term">DNS</span></a>))</li>
-<li>&#8220;CORBA Objects are passed by reference, while data
-(integers, doubles, structs, enums, etc.) are passed by value&#8221;
-&#8211; <a class="reference external" href="https://en.wikipedia.org/wiki/Common_Object_Request_Broker_Architecture#Features">https://en.wikipedia.org/wiki/Common_Object_Request_Broker_Architecture#Features</a></li>
+<li>“CORBA Objects are passed by reference, while data
+(integers, doubles, structs, enums, etc.) are passed by value”
+– <a class="reference external" href="https://en.wikipedia.org/wiki/Common_Object_Request_Broker_Architecture#Features">https://en.wikipedia.org/wiki/Common_Object_Request_Broker_Architecture#Features</a></li>
 </ul>
 </div>
 <div class="section" id="message-passing">
@@ -3478,7 +3479,7 @@ with implementations in many languages.</p>
 <ul class="simple">
 <li>Many supercomputing applications are built with MPI.</li>
 <li>MPI is faster than <a class="reference internal" href="#json"><span class="std std-ref">JSON</span></a>.</li>
-<li><a class="reference internal" href="../tools/index#ipython"><span class="std std-ref">IPython</span></a> <code class="docutils literal"><span class="pre">ipyparallel</span></code> supports MPI:
+<li><a class="reference internal" href="../tools/index#ipython"><span class="std std-ref">IPython</span></a> <code class="docutils literal notranslate"><span class="pre">ipyparallel</span></code> supports MPI:
 <a class="reference external" href="https://ipyparallel.readthedocs.io/en/latest/">https://ipyparallel.readthedocs.io/en/latest/</a></li>
 </ul>
 </div>
@@ -3490,7 +3491,7 @@ with implementations in many languages.</p>
 <p><a class="reference internal" href="#xml"><span class="std std-ref">XML</span></a> Remote Procedure Call defines method names with parameters
 and values for making function calls with XML.</p>
 <ul>
-<li><p class="first">Python <code class="docutils literal"><span class="pre">xmlrpclib</span></code>:
+<li><p class="first">Python <code class="docutils literal notranslate"><span class="pre">xmlrpclib</span></code>:
 <a class="reference external" href="https://docs.python.org/2/library/xmlrpclib.html">https://docs.python.org/2/library/xmlrpclib.html</a></p>
 <p><a class="reference external" href="https://docs.python.org/3/library/xmlrpc.client.html">https://docs.python.org/3/library/xmlrpc.client.html</a></p>
 <p><a class="reference external" href="https://docs.python.org/3/library/xmlrpc.server.html">https://docs.python.org/3/library/xmlrpc.server.html</a></p>
@@ -3594,7 +3595,7 @@ for distributed computing.</p>
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/List_of_web_service_specifications">https://en.wikipedia.org/wiki/List_of_web_service_specifications</a></div>
 </div>
 <p>There are many web service specifications; many
-web service specifications often start with <code class="docutils literal"><span class="pre">WS-</span></code>.</p>
+web service specifications often start with <code class="docutils literal notranslate"><span class="pre">WS-</span></code>.</p>
 <ul class="simple">
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/List_of_web_service_specifications">https://en.wikipedia.org/wiki/List_of_web_service_specifications</a></li>
 <li>Many/most WS-* standards specify <a class="reference internal" href="#xml"><span class="std std-ref">XML</span></a>.</li>
@@ -3637,18 +3638,18 @@ for describing services and request and response objects.</p>
 <div class="line">Awesome: <a class="reference external" href="https://github.com/marmelab/awesome-rest">https://github.com/marmelab/awesome-rest</a></div>
 </div>
 <p>REST (<em>Representational State Transfer</em>) is a pattern for interacting with
-web resources using regular <a class="reference internal" href="#http"><span class="std std-ref">HTTP</span></a> methods like <code class="docutils literal"><span class="pre">GET</span></code>, <code class="docutils literal"><span class="pre">POST</span></code>,
-<code class="docutils literal"><span class="pre">PUT</span></code>, and <code class="docutils literal"><span class="pre">DELETE</span></code>.</p>
+web resources using regular <a class="reference internal" href="#http"><span class="std std-ref">HTTP</span></a> methods like <code class="docutils literal notranslate"><span class="pre">GET</span></code>, <code class="docutils literal notranslate"><span class="pre">POST</span></code>,
+<code class="docutils literal notranslate"><span class="pre">PUT</span></code>, and <code class="docutils literal notranslate"><span class="pre">DELETE</span></code>.</p>
 <ul>
 <li><p class="first">A REST <a class="reference internal" href="information-systems#term-api"><span class="xref std std-term">API</span></a> is known as a RESTful API.</p>
 </li>
 <li><p class="first">A REST implementation maps Create, Read, Update, Delete (CRUD) methods
 for URI-named collections of <strong>resources</strong>
-onto HTTP verbs like <code class="docutils literal"><span class="pre">GET</span></code>, <code class="docutils literal"><span class="pre">POST</span></code>, <code class="docutils literal"><span class="pre">PATCH</span></code>.</p>
+onto HTTP verbs like <code class="docutils literal notranslate"><span class="pre">GET</span></code>, <code class="docutils literal notranslate"><span class="pre">POST</span></code>, <code class="docutils literal notranslate"><span class="pre">PATCH</span></code>.</p>
 </li>
 <li><p class="first">Sometimes, a REST implementation accepts a <a class="reference internal" href="#url"><span class="std std-ref">URL</span></a> parameter
-like <code class="docutils literal"><span class="pre">?method=PUT</span></code> e.g. for <a class="reference internal" href="../tools/index#javascript"><span class="std std-ref">JavaScript</span></a> implementations
-on browsers which only support e.g. <code class="docutils literal"><span class="pre">GET</span></code> and <code class="docutils literal"><span class="pre">POST</span></code>.</p>
+like <code class="docutils literal notranslate"><span class="pre">?method=PUT</span></code> e.g. for <a class="reference internal" href="../tools/index#javascript"><span class="std std-ref">JavaScript</span></a> implementations
+on browsers which only support e.g. <code class="docutils literal notranslate"><span class="pre">GET</span></code> and <code class="docutils literal notranslate"><span class="pre">POST</span></code>.</p>
 </li>
 <li><p class="first">There are many software libraries for implementing REST API Servers:</p>
 <ul>
@@ -3788,7 +3789,7 @@ with a <a class="reference internal" href="information-systems#term-restful-api"
 search response times when
 <em>ElasticSearch Mappings</em> are specified.</li>
 <li>ElasticSearch mappings can be (manually) transformed
-to <a class="reference internal" href="#json-ld"><span class="std std-ref">JSON-LD</span></a> <code class="docutils literal"><span class="pre">&#64;context</span></code> mappings:
+to <a class="reference internal" href="#json-ld"><span class="std std-ref">JSON-LD</span></a> <code class="docutils literal notranslate"><span class="pre">&#64;context</span></code> mappings:
 <a class="reference external" href="https://github.com/westurner/elasticsearchjsonld">https://github.com/westurner/elasticsearchjsonld</a></li>
 </ul>
 </div>
@@ -3913,7 +3914,7 @@ and for <cite>Terrestrial Time</cite> (Earth and Space).</p>
 <div class="line">Homepage: <a class="reference external" href="https://en.wikipedia.org/wiki/Long_Now_Foundation">https://en.wikipedia.org/wiki/Long_Now_Foundation</a></div>
 <div class="line">Docs: <a class="reference external" href="https://en.wikipedia.org/wiki/Year_10,000_problem">https://en.wikipedia.org/wiki/Year_10,000_problem</a></div>
 </div>
-<div class="highlight-default"><div class="highlight"><pre><span></span> <span class="mi">2015</span>    <span class="c1"># ISO8601 date</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span> <span class="mi">2015</span>    <span class="c1"># ISO8601 date</span>
 <span class="mi">02015</span>    <span class="c1"># 5-digit Y10K date</span>
 </pre></div>
 </div>
@@ -3941,8 +3942,8 @@ time)</li>
 since 00:00:00 Coordinated Universal Time (UTC),
 Thursday, 1 January 1970, not counting leap seconds</div></blockquote>
 <p>Unix time is the delta in seconds since
-<code class="docutils literal"><span class="pre">1970-01-01T00:00:00Z</span></code>, not counting leap seconds:</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="mi">0</span>                       <span class="c1"># Unix time</span>
+<code class="docutils literal notranslate"><span class="pre">1970-01-01T00:00:00Z</span></code>, not counting leap seconds:</p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">0</span>                       <span class="c1"># Unix time</span>
 <span class="mi">1970</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">01</span><span class="n">T00</span><span class="p">:</span><span class="mi">00</span><span class="p">:</span><span class="mi">00</span><span class="n">Z</span>    <span class="c1"># ISO8601 timestamp</span>
 
 <span class="mi">1435255816</span>              <span class="c1"># Unix time</span>
@@ -3992,7 +3993,7 @@ does not include a <cite>year zero</cite>;
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Before_Present">https://en.wikipedia.org/wiki/Before_Present</a></div>
 </div>
 <p>Before Present (<em>BP</em>) dates are relative to the current date
-(or <em>date of publication</em>); e.g. &#8220;2.6 million years ago&#8221;.</p>
+(or <em>date of publication</em>); e.g. “2.6 million years ago”.</p>
 </div>
 <div class="section" id="common-era-ce">
 <span id="ce"></span><span id="index-193"></span><h3>Common Era (CE)<a class="headerlink" href="#common-era-ce" title="Permalink to this headline">¶</a></h3>
@@ -4014,7 +4015,7 @@ does not include a <cite>year zero</cite>;
 </li>
 </ul>
 <p>Common Era and <a class="reference internal" href="#year-zero"><span class="std std-ref">Year Zero</span></a>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="mi">5000</span> <span class="n">BCE</span> <span class="o">==</span> <span class="o">-</span><span class="mi">5000</span> <span class="n">CE</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">5000</span> <span class="n">BCE</span> <span class="o">==</span> <span class="o">-</span><span class="mi">5000</span> <span class="n">CE</span>
    <span class="mi">1</span> <span class="n">BCE</span> <span class="o">==</span>    <span class="o">-</span><span class="mi">1</span> <span class="n">CE</span>
    <span class="mi">0</span> <span class="n">BCE</span> <span class="o">==</span>     <span class="mi">0</span> <span class="n">CE</span>
    <span class="mi">0</span>  <span class="n">CE</span> <span class="o">==</span>     <span class="mi">0</span> <span class="n">BCE</span>
@@ -4026,14 +4027,14 @@ does not include a <cite>year zero</cite>;
 <p class="first admonition-title">Note</p>
 <p>Are these off by one?</p>
 <ul class="last simple">
-<li><a class="reference internal" href="#astronomical-year-numbering"><span class="std std-ref">Astronomical year numbering</span></a> &#8211;
+<li><a class="reference internal" href="#astronomical-year-numbering"><span class="std std-ref">Astronomical year numbering</span></a> –
 you must convert from julian/gregorian dates
 to <a class="reference internal" href="#astronomical-year-numbering"><span class="std std-ref">Astronomical year numbering</span></a>.</li>
-<li><a class="reference internal" href="#year-zero"><span class="std std-ref">Year Zero</span></a> &#8211; they are off by one (&#8220;there is no year zero&#8221;).</li>
+<li><a class="reference internal" href="#year-zero"><span class="std std-ref">Year Zero</span></a> – they are off by one (“there is no year zero”).</li>
 </ul>
 </div>
 <p>Common Era and <a class="reference internal" href="../tools/index#python"><span class="std std-ref">Python</span></a> datetime calculations:</p>
-<div class="code python highlight-default"><div class="highlight"><pre><span></span># Paleolithic Era (2.6m years ago -&gt; 12000 years ago)
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span># Paleolithic Era (2.6m years ago -&gt; 12000 years ago)
 # &quot;2.6m years ago&quot; = (2.6m - (2015)) BCE = 2597985 BCE = -2597985 CE
 
 2597985 BCE == -2597985 CE
@@ -4089,7 +4090,7 @@ offsets from <cite>UTC</cite>.</li>
 <li>UTC time is set determined by <a class="reference internal" href="#iat"><span class="std std-ref">International Atomic Time (IAT)</span></a>;
 with occasional leap seconds
 to account for the difference between
-Earth&#8217;s rotational time and
+Earth’s rotational time and
 the actual passage of time
 according to the decay rate of cesium atoms
 (an <a class="reference internal" href="units#si-units"><span class="std std-ref">SI Unit</span></a> calibrated with an <em>atomic clock</em>;
@@ -4222,7 +4223,7 @@ exactly synchronized with <a class="reference internal" href="#iat"><span class=
 and <strong>ends on the first Sunday in November</strong>,
 with the time changes taking place <strong>at 2:00 a.m. local time</strong>.</p>
 <p>With a mnemonic word play referring to seasons,
-clocks <em>&#8220;spring forward and fall back&#8221;</em> — that is,
+clocks <em>“spring forward and fall back”</em> — that is,
 in spring (technically late winter) the clocks are
 moved forward from 2:00 a.m. to 3:00 a.m.,
 and in fall they are
@@ -4279,9 +4280,9 @@ moved back from 2:00 am to 1:00 am.</p>
 <p>ISO8601 is an <a class="reference internal" href="#iso"><span class="std std-ref">ISO</span></a> standard for specifying Gregorian
 dates, times, datetime intervals, durations, and recurring datetimes.</p>
 <ul>
-<li><p class="first">The <code class="docutils literal"><span class="pre">date</span></code> command can print <a class="reference internal" href="#iso8601"><span class="std std-ref">ISO8601</span></a> -compatible
+<li><p class="first">The <code class="docutils literal notranslate"><span class="pre">date</span></code> command can print <a class="reference internal" href="#iso8601"><span class="std std-ref">ISO8601</span></a> -compatible
 datestrings:</p>
-<div class="code bash highlight-default"><div class="highlight"><pre><span></span>$ date +&#39;%FT%T%z&#39;
+<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span>$ date +&#39;%FT%T%z&#39;
 2016-01-01T22:11:59-0600
 
 $ date +&#39;%F %T%z&#39;
@@ -4295,26 +4296,26 @@ dash
 month,
 dash
 day,
-(<code class="docutils literal"><span class="pre">T</span></code> or `` `` [space-character]),
+(<code class="docutils literal notranslate"><span class="pre">T</span></code> or `` `` [space-character]),
 hour,
 colon,
 minute,
 colon,
 second,
-(<code class="docutils literal"><span class="pre">Z</span></code> [for UTC] or a
+(<code class="docutils literal notranslate"><span class="pre">Z</span></code> [for UTC] or a
 <a class="reference internal" href="#time-zones"><span class="std std-ref">time zone</span></a> offset
-(e.g. <code class="docutils literal"><span class="pre">+</span></code>/<code class="docutils literal"><span class="pre">-</span></code> <code class="docutils literal"><span class="pre">-0000</span></code>, <code class="docutils literal"><span class="pre">+0000</span></code>));
+(e.g. <code class="docutils literal notranslate"><span class="pre">+</span></code>/<code class="docutils literal notranslate"><span class="pre">-</span></code> <code class="docutils literal notranslate"><span class="pre">-0000</span></code>, <code class="docutils literal notranslate"><span class="pre">+0000</span></code>));
 where the dashes and colons are optional.</p>
 </li>
 <li><p class="first">ISO8601 specifies a standard for absolute time durations:
 start date, forward-slash, end date.</p>
 </li>
 <li><p class="first">ISO8601 specifies a standard for relative time durations:
-number of years <code class="docutils literal"><span class="pre">Y</span></code>, months <code class="docutils literal"><span class="pre">M</span></code>, days <code class="docutils literal"><span class="pre">D</span></code>,
-hours <code class="docutils literal"><span class="pre">H</span></code>, minutes <code class="docutils literal"><span class="pre">M</span></code>, and seconds <code class="docutils literal"><span class="pre">S</span></code>.</p>
+number of years <code class="docutils literal notranslate"><span class="pre">Y</span></code>, months <code class="docutils literal notranslate"><span class="pre">M</span></code>, days <code class="docutils literal notranslate"><span class="pre">D</span></code>,
+hours <code class="docutils literal notranslate"><span class="pre">H</span></code>, minutes <code class="docutils literal notranslate"><span class="pre">M</span></code>, and seconds <code class="docutils literal notranslate"><span class="pre">S</span></code>.</p>
 </li>
-<li><p class="first">A <code class="docutils literal"><span class="pre">Z</span></code> timezone specifies <strong>UTC</strong> (<em>Universal Coordinated Time</em>)
-(or &#8220;Zulu&#8221;) time.</p>
+<li><p class="first">A <code class="docutils literal notranslate"><span class="pre">Z</span></code> timezone specifies <strong>UTC</strong> (<em>Universal Coordinated Time</em>)
+(or “Zulu”) time.</p>
 </li>
 <li><p class="first">Many/most <a class="reference internal" href="#w3c"><span class="std std-ref">W3C</span></a> standards (such as <a class="reference internal" href="#xsd"><span class="std std-ref">XSD</span></a>)
 specify <a class="reference internal" href="#iso8601"><span class="std std-ref">ISO8601</span></a> time formats:
@@ -4322,7 +4323,7 @@ specify <a class="reference internal" href="#iso8601"><span class="std std-ref">
 </li>
 </ul>
 <p>A few examples of ISO8601:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="mi">2014</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">2014</span>
 <span class="mi">2014</span><span class="o">-</span><span class="mi">10</span>
 <span class="mi">2014</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">23</span>
 <span class="mi">20141023</span>
@@ -4577,8 +4578,8 @@ body.</p>
 <div class="line">Standard: <a class="reference external" href="https://tools.ietf.org/html/rfc2616">https://tools.ietf.org/html/rfc2616</a></div>
 <div class="line">Standard: <a class="reference external" href="http://tools.ietf.org/html/rfc7230#page-5">http://tools.ietf.org/html/rfc7230#page-5</a></div>
 <div class="line">Docs: <a class="reference external" href="https://www.mnot.net/blog/2014/06/07/rfc2616_is_dead">https://www.mnot.net/blog/2014/06/07/rfc2616_is_dead</a></div>
-<div class="line">URI Scheme: <code class="docutils literal"><span class="pre">http://</span></code></div>
-<div class="line">URI Scheme: <code class="docutils literal"><span class="pre">https://</span></code></div>
+<div class="line">URI Scheme: <code class="docutils literal notranslate"><span class="pre">http://</span></code></div>
+<div class="line">URI Scheme: <code class="docutils literal notranslate"><span class="pre">https://</span></code></div>
 </div>
 <p>HTTP (<em>HyperText Transfer Protocol</em>) is an <a class="reference internal" href="open-source#open-source"><span class="std std-ref">Open Source</span></a>
 text-based request-response
@@ -4594,10 +4595,10 @@ TCP/IP protocol for text and binary data interchange.</p>
 <div class="line">Namespace: <a href="#id222"><span class="problematic" id="id223">`&lt;http://www.w3.org/2011/http-headers&gt; .`__</span></a></div>
 <div class="line">Namespace: <a href="#id222"><span class="problematic" id="id224">`&lt;http://www.w3.org/2011/http-methods&gt; .`__</span></a></div>
 <div class="line">Namespace: <a href="#id222"><span class="problematic" id="id225">`&lt;http://www.w3.org/2011/http-statusCodes&gt; .`__</span></a></div>
-<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">http:</span> <span class="pre">&lt;http://www.w3.org/2011/http#&gt;</span> <span class="pre">.</span></code></div>
-<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">http-headers:</span> <span class="pre">&lt;http://www.w3.org/2011/http-headers&gt;</span> <span class="pre">.</span></code></div>
-<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">http-methods:</span> <span class="pre">&lt;http://www.w3.org/2011/http-methods&gt;</span> <span class="pre">.</span></code></div>
-<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">http-statusCodes:</span> <span class="pre">&lt;http://www.w3.org/2011/http-statusCodes&gt;</span> <span class="pre">.</span></code></div>
+<div class="line">xmlns: <code class="docutils literal notranslate"><span class="pre">&#64;prefix</span> <span class="pre">http:</span> <span class="pre">&lt;http://www.w3.org/2011/http#&gt;</span> <span class="pre">.</span></code></div>
+<div class="line">xmlns: <code class="docutils literal notranslate"><span class="pre">&#64;prefix</span> <span class="pre">http-headers:</span> <span class="pre">&lt;http://www.w3.org/2011/http-headers&gt;</span> <span class="pre">.</span></code></div>
+<div class="line">xmlns: <code class="docutils literal notranslate"><span class="pre">&#64;prefix</span> <span class="pre">http-methods:</span> <span class="pre">&lt;http://www.w3.org/2011/http-methods&gt;</span> <span class="pre">.</span></code></div>
+<div class="line">xmlns: <code class="docutils literal notranslate"><span class="pre">&#64;prefix</span> <span class="pre">http-statusCodes:</span> <span class="pre">&lt;http://www.w3.org/2011/http-statusCodes&gt;</span> <span class="pre">.</span></code></div>
 <div class="line">LOVLink: <a class="reference external" href="http://lov.okfn.org/dataset/lov/vocabs/http">http://lov.okfn.org/dataset/lov/vocabs/http</a></div>
 </div>
 <p>HTTP-in-RDF is a standard for representing <a class="reference internal" href="#http"><span class="std std-ref">HTTP</span></a> as <a class="reference internal" href="#rdf"><span class="std std-ref">RDF</span></a>.</p>
@@ -4674,7 +4675,7 @@ and is becoming as or more widely deployed than Flash Player
 <span id="websockets"></span><span id="index-226"></span><h3>WebSocket<a class="headerlink" href="#websocket" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/WebSocket">https://en.wikipedia.org/wiki/WebSocket</a></div>
-<div class="line">URI Scheme: <code class="docutils literal"><span class="pre">ws://</span></code></div>
+<div class="line">URI Scheme: <code class="docutils literal notranslate"><span class="pre">ws://</span></code></div>
 </div>
 <p>WebSocket is a full-duplex (two-way) TCP/IP protocol
 for audio, video, and data
@@ -4754,7 +4755,7 @@ documents with tags, attributes, and <strong>hyperlinks</strong>.</p>
 which is being superseded by <a class="reference internal" href="#html5"><span class="std std-ref">HTML5</span></a>.</p>
 <p>Compared to <a class="reference internal" href="#html4"><span class="std std-ref">HTML4</span></a>,
 XHTML requires closing tags, suports additional namespace declarations,
-and expects things to be wrapped in <code class="docutils literal"><span class="pre">CDATA</span></code> blocks,
+and expects things to be wrapped in <code class="docutils literal notranslate"><span class="pre">CDATA</span></code> blocks,
 among a few other notable differences.</p>
 <p>XHTML has not gained the widespread adoption of <a class="reference internal" href="#html4"><span class="std std-ref">HTML4</span></a>,
 and is being largely superseded by <a class="reference internal" href="#html5"><span class="std std-ref">HTML5</span></a>.</p>
@@ -4800,7 +4801,7 @@ with tags and attributes.</p>
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/XML_Schema_(W3C)">https://en.wikipedia.org/wiki/XML_Schema_(W3C)</a></div>
 <div class="line">Standard: <a class="reference external" href="http://www.w3.org/TR/xmlschema11-2/">http://www.w3.org/TR/xmlschema11-2/</a></div>
 <div class="line">Namespace: <a class="reference external" href="http://www.w3.org/2001/XMLSchema#">http://www.w3.org/2001/XMLSchema#</a></div>
-<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">xsd:</span> <span class="pre">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span> <span class="pre">.</span></code></div>
+<div class="line">xmlns: <code class="docutils literal notranslate"><span class="pre">&#64;prefix</span> <span class="pre">xsd:</span> <span class="pre">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span> <span class="pre">.</span></code></div>
 <div class="line">LOVLink: <a class="reference external" href="http://lov.okfn.org/dataset/lov/vocabs/xsd">http://lov.okfn.org/dataset/lov/vocabs/xsd</a></div>
 </div>
 <p>XSD (<em>XML Schema Datatypes</em>) are standard datatypes for things like
@@ -4820,18 +4821,18 @@ strings, integers, floats, and dates for <a class="reference internal" href="#xm
 data in a JavaScript compatible way; with a restricted set of
 data types.</p>
 <p>Conforming JSON does not contain JavaScript code, only data.
-It is not safe to <code class="docutils literal"><span class="pre">eval</span></code> JSON, because it could contain code.</p>
+It is not safe to <code class="docutils literal notranslate"><span class="pre">eval</span></code> JSON, because it could contain code.</p>
 <p>There are many parsers for JSON.</p>
 <p><a class="reference internal" href="#json-ld"><span class="std std-ref">JSON-LD</span></a> adds <a class="reference internal" href="#rdf"><span class="std std-ref">RDF</span></a> Linked Data support to JSON
-with <code class="docutils literal"><span class="pre">&#64;context</span></code>.</p>
+with <code class="docutils literal notranslate"><span class="pre">&#64;context</span></code>.</p>
 </div>
 <div class="section" id="csv">
 <span id="index-237"></span><span id="id178"></span><h3>CSV<a class="headerlink" href="#csv" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Comma-separated_values">https://en.wikipedia.org/wiki/Comma-separated_values</a></div>
 <div class="line">Standard: <a class="reference external" href="https://tools.ietf.org/html/rfc4180">https://tools.ietf.org/html/rfc4180</a></div>
-<div class="line">Extension: <code class="docutils literal"><span class="pre">.csv</span></code></div>
-<div class="line">MIME Type: <code class="docutils literal"><span class="pre">text/csv</span></code></div>
+<div class="line">Extension: <code class="docutils literal notranslate"><span class="pre">.csv</span></code></div>
+<div class="line">MIME Type: <code class="docutils literal notranslate"><span class="pre">text/csv</span></code></div>
 </div>
 <p>CSV (<em>Comma Separated Values</em>) as a flat file representation
 for columnar data with rows and columns.</p>
@@ -4846,7 +4847,7 @@ from a sheet into a CSV file, for use with many other tools.</p>
 <div class="line">Standard: <a class="reference external" href="http://www.w3.org/TR/csv2json/">http://www.w3.org/TR/csv2json/</a></div>
 <div class="line">Standard: <a class="reference external" href="http://www.w3.org/TR/csv2rdf/">http://www.w3.org/TR/csv2rdf/</a></div>
 <div class="line">Namespace: <a class="reference external" href="http://www.w3.org/ns/csvw#">http://www.w3.org/ns/csvw#</a></div>
-<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">csvw:</span> <span class="pre">&lt;http://www.w3.org/ns/csvw#&gt;</span> <span class="pre">.</span></code></div>
+<div class="line">xmlns: <code class="docutils literal notranslate"><span class="pre">&#64;prefix</span> <span class="pre">csvw:</span> <span class="pre">&lt;http://www.w3.org/ns/csvw#&gt;</span> <span class="pre">.</span></code></div>
 <div class="line">&#64;context: <a class="reference external" href="http://www.w3.org/ns/csvw.jsonld">http://www.w3.org/ns/csvw.jsonld</a></div>
 </div>
 <p>CSVW (<em>CSV on the Web</em>) is a set of relatively new standards
@@ -4854,7 +4855,7 @@ for representing <a class="reference internal" href="#csv"><span class="std std-
 as <a class="reference internal" href="#rdf"><span class="std std-ref">RDF</span></a> (and <a class="reference internal" href="#json"><span class="std std-ref">JSON</span></a> / <a class="reference internal" href="#json-ld"><span class="std std-ref">JSON-LD</span></a>)
 along with <em>metadata</em>.</p>
 <ul class="simple">
-<li>URIs for datatypes (<a class="reference internal" href="#xsd"><span class="std std-ref">XSD</span></a>, ...)</li>
+<li>URIs for datatypes (<a class="reference internal" href="#xsd"><span class="std std-ref">XSD</span></a>, …)</li>
 <li>URIs for columns (<a class="reference internal" href="#rdf"><span class="std std-ref">RDF</span></a>)</li>
 <li>Document Metadata</li>
 <li><a class="reference internal" href="#csv"><span class="std std-ref">CSV</span></a> -&gt; <a class="reference internal" href="#json"><span class="std std-ref">JSON</span></a> ( -&gt; <a class="reference internal" href="#json-ld"><span class="std std-ref">JSON-LD</span></a> -&gt; <a class="reference internal" href="#rdf"><span class="std std-ref">RDF</span></a> )</li>
@@ -4866,7 +4867,7 @@ along with <em>metadata</em>.</p>
 <span id="index-239"></span><span id="id180"></span><h3>RDF<a class="headerlink" href="#rdf" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Resource_Description_Framework">https://en.wikipedia.org/wiki/Resource_Description_Framework</a></div>
-<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">rdf:</span> <span class="pre">&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span> <span class="pre">.</span></code></div>
+<div class="line">xmlns: <code class="docutils literal notranslate"><span class="pre">&#64;prefix</span> <span class="pre">rdf:</span> <span class="pre">&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span> <span class="pre">.</span></code></div>
 <div class="line">LOVLink: <a class="reference external" href="http://lov.okfn.org/dataset/lov/vocabs/rdf">http://lov.okfn.org/dataset/lov/vocabs/rdf</a></div>
 </div>
 <p>RDF (<em>Resource Description Framework</em>) is a standard data model
@@ -4892,9 +4893,9 @@ for representing data as triples.</p>
 </ul>
 <p><strong>Useful Resources</strong></p>
 <ul class="simple">
-<li>&#8220;Linked Data Patterns:
+<li>“Linked Data Patterns:
 A pattern catalogue for modelling, publishing, and
-consuming Linked Data&#8221;
+consuming Linked Data”
 <a class="reference external" href="http://patterns.dataincubator.org/book/">http://patterns.dataincubator.org/book/</a></li>
 </ul>
 <p>See also: <a class="reference internal" href="#triplestores"><span class="std std-ref">RDF Triplestores</span></a></p>
@@ -4908,16 +4909,16 @@ consuming Linked Data&#8221;
 for <a class="reference internal" href="#rdf"><span class="std std-ref">RDF</span></a> APIs (e.g. as implemented by RDF libraries
 and <a class="reference internal" href="#triplestores"><span class="std std-ref">RDF Triplestores</span></a>.</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">createBlankNode</span></code> &#8211;&gt; <code class="docutils literal"><span class="pre">BlankNode</span></code></li>
-<li><code class="docutils literal"><span class="pre">createNamedNode</span></code> &#8211;&gt; <code class="docutils literal"><span class="pre">NamedNode</span></code></li>
-<li><code class="docutils literal"><span class="pre">createLiteral</span></code> &#8211;&gt; <code class="docutils literal"><span class="pre">Literal</span></code></li>
-<li><code class="docutils literal"><span class="pre">createTriple</span></code> &#8211;&gt; <code class="docutils literal"><span class="pre">Triple</span></code>
-(<code class="docutils literal"><span class="pre">RDFNode</span></code> s, <code class="docutils literal"><span class="pre">RDFNode</span></code> p, <code class="docutils literal"><span class="pre">RDFNode</span></code>, o)</li>
-<li><code class="docutils literal"><span class="pre">createGraph</span></code> &#8211;&gt; <code class="docutils literal"><span class="pre">[]Triple</span></code></li>
-<li><code class="docutils literal"><span class="pre">createAction</span></code> &#8211;&gt; <code class="docutils literal"><span class="pre">TripleAction</span></code> (<code class="docutils literal"><span class="pre">TripleFilter</span></code>, <code class="docutils literal"><span class="pre">TripleCallback</span></code>)</li>
-<li><code class="docutils literal"><span class="pre">createProfile</span></code> &#8211;&gt; <code class="docutils literal"><span class="pre">Profile</span></code></li>
-<li><code class="docutils literal"><span class="pre">createTermMap</span></code> &#8211;&gt; <code class="docutils literal"><span class="pre">TermMap</span></code></li>
-<li><code class="docutils literal"><span class="pre">createPrefixMap</span></code> &#8211;&gt; <code class="docutils literal"><span class="pre">PrefixMap</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">createBlankNode</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">BlankNode</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">createNamedNode</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">NamedNode</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">createLiteral</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Literal</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">createTriple</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Triple</span></code>
+(<code class="docutils literal notranslate"><span class="pre">RDFNode</span></code> s, <code class="docutils literal notranslate"><span class="pre">RDFNode</span></code> p, <code class="docutils literal notranslate"><span class="pre">RDFNode</span></code>, o)</li>
+<li><code class="docutils literal notranslate"><span class="pre">createGraph</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">[]Triple</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">createAction</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">TripleAction</span></code> (<code class="docutils literal notranslate"><span class="pre">TripleFilter</span></code>, <code class="docutils literal notranslate"><span class="pre">TripleCallback</span></code>)</li>
+<li><code class="docutils literal notranslate"><span class="pre">createProfile</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">Profile</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">createTermMap</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">TermMap</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">createPrefixMap</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">PrefixMap</span></code></li>
 </ul>
 <p>Implementations of RDF Interfaces:</p>
 <ul>
@@ -4948,31 +4949,31 @@ and <a class="reference internal" href="#triplestores"><span class="std std-ref"
 </li>
 <li><p class="first"><a class="reference internal" href="#rdflib"><span class="std std-ref">RDFLib</span></a> (<a class="reference internal" href="../tools/index#python"><span class="std std-ref">Python</span></a>) mappings to RDF Interfaces:</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">BlankNode</span></code> -&gt; <code class="docutils literal"><span class="pre">rdflib.term.BNode</span></code></li>
-<li><code class="docutils literal"><span class="pre">NamedNode</span></code> -&gt; <code class="docutils literal"><span class="pre">rdflib.term.URIRef</span></code>, <code class="docutils literal"><span class="pre">rdflib.term.Variable</span></code> ? TODO</li>
-<li><code class="docutils literal"><span class="pre">Literal</span></code> -&gt; <code class="docutils literal"><span class="pre">rdflib.term.Literal</span></code></li>
-<li><code class="docutils literal"><span class="pre">Triple</span></code> -&gt;  <code class="docutils literal"><span class="pre">tuple()</span></code></li>
-<li><code class="docutils literal"><span class="pre">Graph</span></code> -&gt; <code class="docutils literal"><span class="pre">rdflib.graph.Graph</span></code>,
-<code class="docutils literal"><span class="pre">rdflib.graph.ConjunctiveGraph</span></code>,
-<code class="docutils literal"><span class="pre">rdflib.graph.QuotedGraph</span></code>, <code class="docutils literal"><span class="pre">list()</span></code></li>
-<li><code class="docutils literal"><span class="pre">Action</span></code> -&gt; _____ TODO</li>
-<li><code class="docutils literal"><span class="pre">TripleFilter</span></code> / <code class="docutils literal"><span class="pre">TripleCallback</span></code> -&gt;
-<code class="docutils literal"><span class="pre">rdflib.store.TripleAddedEvent`,</span>
+<li><code class="docutils literal notranslate"><span class="pre">BlankNode</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">rdflib.term.BNode</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">NamedNode</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">rdflib.term.URIRef</span></code>, <code class="docutils literal notranslate"><span class="pre">rdflib.term.Variable</span></code> ? TODO</li>
+<li><code class="docutils literal notranslate"><span class="pre">Literal</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">rdflib.term.Literal</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">Triple</span></code> -&gt;  <code class="docutils literal notranslate"><span class="pre">tuple()</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">Graph</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">rdflib.graph.Graph</span></code>,
+<code class="docutils literal notranslate"><span class="pre">rdflib.graph.ConjunctiveGraph</span></code>,
+<code class="docutils literal notranslate"><span class="pre">rdflib.graph.QuotedGraph</span></code>, <code class="docutils literal notranslate"><span class="pre">list()</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">Action</span></code> -&gt; _____ TODO</li>
+<li><code class="docutils literal notranslate"><span class="pre">TripleFilter</span></code> / <code class="docutils literal notranslate"><span class="pre">TripleCallback</span></code> -&gt;
+<code class="docutils literal notranslate"><span class="pre">rdflib.store.TripleAddedEvent`,</span>
 <span class="pre">``rdflib.store.TripleRemovedEvent</span></code></li>
 <li><a class="reference external" href="https://rdflib.readthedocs.io/en/latest/apidocs/rdflib.html#rdflib.term.Node">https://rdflib.readthedocs.io/en/latest/apidocs/rdflib.html#rdflib.term.Node</a></li>
-<li><code class="docutils literal"><span class="pre">Profile</span></code> -&gt; ______ TODO</li>
-<li><code class="docutils literal"><span class="pre">TermMap</span></code> -&gt;  ____ TODO</li>
-<li><code class="docutils literal"><span class="pre">PrefixMap</span></code> -&gt; <code class="docutils literal"><span class="pre">rdflib.namespace.NamespaceManager</span></code>
+<li><code class="docutils literal notranslate"><span class="pre">Profile</span></code> -&gt; ______ TODO</li>
+<li><code class="docutils literal notranslate"><span class="pre">TermMap</span></code> -&gt;  ____ TODO</li>
+<li><code class="docutils literal notranslate"><span class="pre">PrefixMap</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">rdflib.namespace.NamespaceManager</span></code>
 <a class="reference external" href="https://rdflib.readthedocs.io/en/latest/apidocs/rdflib.html#rdflib.namespace.NamespaceManager">https://rdflib.readthedocs.io/en/latest/apidocs/rdflib.html#rdflib.namespace.NamespaceManager</a></li>
 </ul>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p>rdflib is not order-preserving at this time,
-because internally Graphs are represented as <code class="docutils literal"><span class="pre">dict</span></code> and not yet
-<code class="docutils literal"><span class="pre">collections.OrderedDict</span></code> (for which there is a now C-implementation
+because internally Graphs are represented as <code class="docutils literal notranslate"><span class="pre">dict</span></code> and not yet
+<code class="docutils literal notranslate"><span class="pre">collections.OrderedDict</span></code> (for which there is a now C-implementation
 in the Python 3.5 standard library);
 so output may not be in the same sequence as input
-(or a <code class="docutils literal"><span class="pre">rdflib.store.Store</span></code>, even)
+(or a <code class="docutils literal notranslate"><span class="pre">rdflib.store.Store</span></code>, even)
 even when there are no changes made to the graph.</p>
 <ul class="last">
 <li><p class="first">It would be preferable to maintain the input source order
@@ -4980,24 +4981,24 @@ even when there are no changes made to the graph.</p>
 which merge triples into one context,
 sorted / source order is not a good assumption to make).</p>
 </li>
-<li><p class="first"><code class="docutils literal"><span class="pre">rdf:List</span></code> are ordered.</p>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">rdf:List</span></code> are ordered.</p>
 <ul>
-<li><p class="first"><code class="docutils literal"><span class="pre">rdf:List</span></code> with <a class="reference internal" href="#turtle"><span class="std std-ref">Turtle</span></a> / <a class="reference internal" href="#n3"><span class="std std-ref">N3</span></a>:
-<code class="docutils literal"><span class="pre">:examplePredicate</span> <span class="pre">[</span> <span class="pre">&quot;uno&quot;&#64;es,</span> <span class="pre">&quot;one&quot;&#64;en</span> <span class="pre">]</span> <span class="pre">;</span></code>)</p>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">rdf:List</span></code> with <a class="reference internal" href="#turtle"><span class="std std-ref">Turtle</span></a> / <a class="reference internal" href="#n3"><span class="std std-ref">N3</span></a>:
+<code class="docutils literal notranslate"><span class="pre">:examplePredicate</span> <span class="pre">[</span> <span class="pre">&quot;uno&quot;&#64;es,</span> <span class="pre">&quot;one&quot;&#64;en</span> <span class="pre">]</span> <span class="pre">;</span></code>)</p>
 <blockquote>
 <div><ul class="simple">
 <li><a class="reference external" href="http://www.w3.org/TR/rdf-schema/#ch_list">http://www.w3.org/TR/rdf-schema/#ch_list</a></li>
-<li><code class="docutils literal"><span class="pre">rdf:first</span></code>, <code class="docutils literal"><span class="pre">rdf:rest</span></code>, <code class="docutils literal"><span class="pre">rdf:nil</span></code>:
-&#8220;RDFS does not require that there be only one first element of a list-like structure, or even that a list-like structure have a first element.&#8221;</li>
+<li><code class="docutils literal notranslate"><span class="pre">rdf:first</span></code>, <code class="docutils literal notranslate"><span class="pre">rdf:rest</span></code>, <code class="docutils literal notranslate"><span class="pre">rdf:nil</span></code>:
+“RDFS does not require that there be only one first element of a list-like structure, or even that a list-like structure have a first element.”</li>
 </ul>
 </div></blockquote>
 </li>
-<li><p class="first"><code class="docutils literal"><span class="pre">rdf:List</span></code> with <a class="reference internal" href="#json-ld"><span class="std std-ref">JSON-LD</span></a> <code class="docutils literal"><span class="pre">&#64;context</span></code>:</p>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">rdf:List</span></code> with <a class="reference internal" href="#json-ld"><span class="std std-ref">JSON-LD</span></a> <code class="docutils literal notranslate"><span class="pre">&#64;context</span></code>:</p>
 <ul class="simple">
 <li><a class="reference external" href="http://www.w3.org/TR/json-ld/#lists-and-sets">http://www.w3.org/TR/json-ld/#lists-and-sets</a></li>
 <li><a class="reference external" href="http://www.w3.org/TR/json-ld/#sets-and-lists">http://www.w3.org/TR/json-ld/#sets-and-lists</a></li>
-<li><code class="docutils literal"><span class="pre">{&quot;&#64;context&quot;:</span> <span class="pre">{&quot;attr&quot;:</span> <span class="pre">{&quot;&#64;container&quot;:</span> <span class="pre">&quot;&#64;list&quot;}}}</span></code></li>
-<li><code class="docutils literal"><span class="pre">{&quot;attr&quot;:</span> <span class="pre">{&quot;&#64;list&quot;:</span> <span class="pre">[&quot;one&quot;,</span> <span class="pre">&quot;uno&quot;]}}</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">{&quot;&#64;context&quot;:</span> <span class="pre">{&quot;attr&quot;:</span> <span class="pre">{&quot;&#64;container&quot;:</span> <span class="pre">&quot;&#64;list&quot;}}}</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">{&quot;attr&quot;:</span> <span class="pre">{&quot;&#64;list&quot;:</span> <span class="pre">[&quot;one&quot;,</span> <span class="pre">&quot;uno&quot;]}}</span></code></li>
 </ul>
 </li>
 </ul>
@@ -5012,8 +5013,8 @@ sorted / source order is not a good assumption to make).</p>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/N-Triples">https://en.wikipedia.org/wiki/N-Triples</a></div>
 <div class="line">Standard: <a class="reference external" href="http://www.w3.org/TR/n-triples/">http://www.w3.org/TR/n-triples/</a></div>
-<div class="line">Extension: <code class="docutils literal"><span class="pre">.nt</span></code></div>
-<div class="line">MIME Type: <code class="docutils literal"><span class="pre">application/n-triples</span></code></div>
+<div class="line">Extension: <code class="docutils literal notranslate"><span class="pre">.nt</span></code></div>
+<div class="line">MIME Type: <code class="docutils literal notranslate"><span class="pre">application/n-triples</span></code></div>
 </div>
 <p>N-Triples is a standard for serializing <a class="reference internal" href="#rdf"><span class="std std-ref">RDF</span></a> triples to text.</p>
 </div>
@@ -5022,8 +5023,8 @@ sorted / source order is not a good assumption to make).</p>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/RDF/XML">https://en.wikipedia.org/wiki/RDF/XML</a></div>
 <div class="line">Standard: <a class="reference external" href="http://www.w3.org/TR/rdf-syntax-grammar/">http://www.w3.org/TR/rdf-syntax-grammar/</a></div>
-<div class="line">Extension: <code class="docutils literal"><span class="pre">.rdf</span></code></div>
-<div class="line">MIME Type: <code class="docutils literal"><span class="pre">application/rdf+xml</span></code></div>
+<div class="line">Extension: <code class="docutils literal notranslate"><span class="pre">.rdf</span></code></div>
+<div class="line">MIME Type: <code class="docutils literal notranslate"><span class="pre">application/rdf+xml</span></code></div>
 </div>
 <p>RDF/XML is a standard for serializing <a class="reference internal" href="#rdf"><span class="std std-ref">RDF</span></a> as <a class="reference internal" href="#xml"><span class="std std-ref">XML</span></a>.</p>
 </div>
@@ -5044,14 +5045,14 @@ with named graphs.</p>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Notation3">https://en.wikipedia.org/wiki/Notation3</a></div>
 <div class="line">Standard: <a class="reference external" href="http://www.w3.org/TeamSubmission/n3/">http://www.w3.org/TeamSubmission/n3/</a></div>
-<div class="line">Extension: <code class="docutils literal"><span class="pre">.n3</span></code></div>
-<div class="line">MIME Type: <code class="docutils literal"><span class="pre">text/n3</span></code></div>
+<div class="line">Extension: <code class="docutils literal notranslate"><span class="pre">.n3</span></code></div>
+<div class="line">MIME Type: <code class="docutils literal notranslate"><span class="pre">text/n3</span></code></div>
 </div>
 <p>N3 (<em>Notation3</em>) is a standard which extends
 the <a class="reference internal" href="#turtle"><span class="std std-ref">Turtle</span></a> <a class="reference internal" href="#rdf"><span class="std std-ref">RDF</span></a> serialization standard
 with a few extra features.</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">=&gt;</span></code> implies (useful for specifying production rules)</li>
+<li><code class="docutils literal notranslate"><span class="pre">=&gt;</span></code> implies (useful for specifying production rules)</li>
 </ul>
 </div>
 <div class="section" id="turtle">
@@ -5059,8 +5060,8 @@ with a few extra features.</p>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Turtle_(syntax)">https://en.wikipedia.org/wiki/Turtle_(syntax)</a></div>
 <div class="line">Standard: <a class="reference external" href="http://www.w3.org/TR/turtle/">http://www.w3.org/TR/turtle/</a></div>
-<div class="line">Extension: <code class="docutils literal"><span class="pre">.ttl</span></code></div>
-<div class="line">MIME type: <code class="docutils literal"><span class="pre">text/turtle</span></code></div>
+<div class="line">Extension: <code class="docutils literal notranslate"><span class="pre">.ttl</span></code></div>
+<div class="line">MIME type: <code class="docutils literal notranslate"><span class="pre">text/turtle</span></code></div>
 </div>
 <p>Turtle is a standard for serializing <a class="reference internal" href="#rdf"><span class="std std-ref">RDF</span></a> triples
 into human-readable text.</p>
@@ -5070,14 +5071,14 @@ into human-readable text.</p>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/TriG_(syntax)">https://en.wikipedia.org/wiki/TriG_(syntax)</a></div>
 <div class="line">Standard: <a class="reference external" href="http://www.w3.org/TR/trig/">http://www.w3.org/TR/trig/</a></div>
-<div class="line">Extension: <code class="docutils literal"><span class="pre">.trig</span></code></div>
-<div class="line">MIME Type: <code class="docutils literal"><span class="pre">application/trig</span></code></div>
+<div class="line">Extension: <code class="docutils literal notranslate"><span class="pre">.trig</span></code></div>
+<div class="line">MIME Type: <code class="docutils literal notranslate"><span class="pre">application/trig</span></code></div>
 </div>
-<p>TriG (...) extends the <a class="reference internal" href="#turtle"><span class="std std-ref">Turtle</span></a> <a class="reference internal" href="#rdf"><span class="std std-ref">RDF</span></a> standard
+<p>TriG (…) extends the <a class="reference internal" href="#turtle"><span class="std std-ref">Turtle</span></a> <a class="reference internal" href="#rdf"><span class="std std-ref">RDF</span></a> standard
 to allow multiple named graphs to be expressed in one file
-(as triples with a named graph IRI (&#8220;quads&#8221;)).</p>
+(as triples with a named graph IRI (“quads”)).</p>
 <p>Triples without a specified named graph are, by default,
-part of the &#8220;Default Graph&#8221;.</p>
+part of the “Default Graph”.</p>
 </div>
 <div class="section" id="rdfa">
 <span id="index-248"></span><span id="id188"></span><h4>RDFa<a class="headerlink" href="#rdfa" title="Permalink to this headline">¶</a></h4>
@@ -5108,7 +5109,7 @@ RDFa.</p>
 vocabulary namespaces and URIs (<em>prefix mappings</em>).</p>
 <p>An example <a class="reference internal" href="#rdfa"><span class="std std-ref">RDFa</span></a> <a class="reference internal" href="#html5"><span class="std std-ref">HTML5</span></a> fragment with vocabularies drawn from
 the <a class="reference internal" href="#rdfa"><span class="std std-ref">RDFa</span></a> 1.1 Core Context:</p>
-<div class="code html highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">div</span> <span class="n">vocab</span><span class="o">=</span><span class="s2">&quot;schema: http://schema.org/&quot;</span><span class="o">&gt;</span>
+<div class="code html highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">div</span> <span class="n">vocab</span><span class="o">=</span><span class="s2">&quot;schema: http://schema.org/&quot;</span><span class="o">&gt;</span>
   <span class="o">&lt;</span><span class="n">div</span> <span class="n">typeof</span><span class="o">=</span><span class="s2">&quot;schema:Thing&quot;</span><span class="o">&gt;</span>
     <span class="o">&lt;</span><span class="n">span</span> <span class="nb">property</span><span class="o">=</span><span class="s2">&quot;schema:name&quot;</span><span class="o">&gt;</span><span class="n">RDFa</span> <span class="mf">1.1</span> <span class="n">JSON</span><span class="o">-</span><span class="n">LD</span> <span class="n">Core</span> <span class="n">Context</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;</span>
     <span class="o">&lt;</span><span class="n">a</span> <span class="nb">property</span><span class="o">=</span><span class="s2">&quot;schema:url&quot;</span><span class="o">&gt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">w3</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="mi">2013</span><span class="o">/</span><span class="n">json</span><span class="o">-</span><span class="n">ld</span><span class="o">-</span><span class="n">context</span><span class="o">/</span><span class="n">rdfa11</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;</span>
@@ -5117,7 +5118,7 @@ the <a class="reference internal" href="#rdfa"><span class="std std-ref">RDFa</s
 </pre></div>
 </div>
 <p>An example <a class="reference internal" href="#json-ld"><span class="std std-ref">JSON-LD</span></a> document with the <a class="reference internal" href="#rdfa"><span class="std std-ref">RDFa</span></a> 1.1 Core Context:</p>
-<div class="code javascript highlight-default"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;@context&quot;</span><span class="p">:</span> <span class="s2">&quot;http://www.w3.org/2013/json-ld-context/rdfa11&quot;</span><span class="p">,</span>
+<div class="code javascript highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;@context&quot;</span><span class="p">:</span> <span class="s2">&quot;http://www.w3.org/2013/json-ld-context/rdfa11&quot;</span><span class="p">,</span>
  <span class="s2">&quot;@graph&quot;</span><span class="p">:</span> <span class="p">[</span>
    <span class="p">{</span><span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;schema:Thing&quot;</span>
     <span class="s2">&quot;schema:name&quot;</span><span class="p">:</span> <span class="s2">&quot;RDFa 1.1 JSON-LD Core Context&quot;</span><span class="p">,</span>
@@ -5131,7 +5132,7 @@ the <a class="reference internal" href="#rdfa"><span class="std std-ref">RDFa</s
 <p>Schema.org does, in many places, reimplement other vocabularies
 e.g. for consistency with Schema.org/DataType s like schema.org/Number.</p>
 <p class="last">There is also <a class="reference internal" href="#schema-org-rdf"><span class="std std-ref">Schema.org RDF</span></a>,
-which, for example maps <code class="docutils literal"><span class="pre">schema:name</span></code> to <code class="docutils literal"><span class="pre">rdfs:label</span></code>;
+which, for example maps <code class="docutils literal notranslate"><span class="pre">schema:name</span></code> to <code class="docutils literal notranslate"><span class="pre">rdfs:label</span></code>;
 and <a class="reference internal" href="#owl"><span class="std std-ref">OWL</span></a>.</p>
 </div>
 </div>
@@ -5145,7 +5146,7 @@ and <a class="reference internal" href="#owl"><span class="std std-ref">OWL</spa
 </div>
 <p>JSON-LD (<em>JSON Linked Data</em>) is a standard for expressing
 <a class="reference internal" href="#rdf"><span class="std std-ref">RDF</span></a> <a class="reference internal" href="#linked-data"><span class="std std-ref">Linked Data</span></a> as <a class="reference internal" href="#json"><span class="std std-ref">JSON</span></a>.</p>
-<p>JSON-LD specifies a <code class="docutils literal"><span class="pre">&#64;context</span></code> for regular JSON documents
+<p>JSON-LD specifies a <code class="docutils literal notranslate"><span class="pre">&#64;context</span></code> for regular JSON documents
 which maps JSON attributes to URIs with datatypes and, optionally, languages.</p>
 <ul class="simple">
 <li><a class="reference external" href="http://json-ld.org/playground/">http://json-ld.org/playground/</a></li>
@@ -5158,25 +5159,25 @@ which maps JSON attributes to URIs with datatypes and, optionally, languages.</p
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/RDF_Schema">https://en.wikipedia.org/wiki/RDF_Schema</a></div>
 <div class="line">Standard: <a class="reference external" href="http://www.w3.org/TR/rdf-schema/">http://www.w3.org/TR/rdf-schema/</a></div>
 <div class="line">Namespace: <a class="reference external" href="http://www.w3.org/2000/01/rdf-schema#">http://www.w3.org/2000/01/rdf-schema#</a></div>
-<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">rdfs:</span> <span class="pre">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span> <span class="pre">.</span></code></div>
+<div class="line">xmlns: <code class="docutils literal notranslate"><span class="pre">&#64;prefix</span> <span class="pre">rdfs:</span> <span class="pre">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span> <span class="pre">.</span></code></div>
 <div class="line">LOVLink: <a class="reference external" href="http://lov.okfn.org/dataset/lov/vocabs/rdfs">http://lov.okfn.org/dataset/lov/vocabs/rdfs</a></div>
 </div>
 <p>RDFS (<em>RDF Schema</em>) is an <a class="reference internal" href="#rdf"><span class="std std-ref">RDF</span></a> standard for classes
 and properties.</p>
 <p>A few notable RDFS classes:</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">rdfs:Resource</span></code> (everything in RDF)</li>
-<li><code class="docutils literal"><span class="pre">rdfs:Literal</span></code> (strings, integers)</li>
-<li><code class="docutils literal"><span class="pre">rdfs:Class</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">rdfs:Resource</span></code> (everything in RDF)</li>
+<li><code class="docutils literal notranslate"><span class="pre">rdfs:Literal</span></code> (strings, integers)</li>
+<li><code class="docutils literal notranslate"><span class="pre">rdfs:Class</span></code></li>
 </ul>
 <p>A few notable / frequently used properties:</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">rdfs:label</span></code></li>
-<li><code class="docutils literal"><span class="pre">rdfs:comment</span></code></li>
-<li><code class="docutils literal"><span class="pre">rdfs:seeAlso</span></code></li>
-<li><code class="docutils literal"><span class="pre">rdfs:domain</span></code></li>
-<li><code class="docutils literal"><span class="pre">rdfs:range</span></code></li>
-<li><code class="docutils literal"><span class="pre">rdfs:subPropertyOf</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">rdfs:label</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">rdfs:comment</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">rdfs:seeAlso</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">rdfs:domain</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">rdfs:range</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">rdfs:subPropertyOf</span></code></li>
 </ul>
 <p><a class="reference internal" href="#owl"><span class="std std-ref">OWL</span></a> builds upon many RDFS concepts.</p>
 <span class="target" id="index-253"></span><span class="target" id="index-254"></span><div class="section" id="dcmi">
@@ -5185,10 +5186,10 @@ and properties.</p>
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Dublin_Core">https://en.wikipedia.org/wiki/Dublin_Core</a></div>
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Dublin_Core#DCMI_Metadata_Terms">https://en.wikipedia.org/wiki/Dublin_Core#DCMI_Metadata_Terms</a></div>
 <div class="line">Namespace: <a class="reference external" href="http://purl.org/dc/terms">http://purl.org/dc/terms</a></div>
-<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">dcterms:</span> <span class="pre">&lt;http://purl.org/dc/terms&gt;</span> <span class="pre">.</span></code></div>
+<div class="line">xmlns: <code class="docutils literal notranslate"><span class="pre">&#64;prefix</span> <span class="pre">dcterms:</span> <span class="pre">&lt;http://purl.org/dc/terms&gt;</span> <span class="pre">.</span></code></div>
 <div class="line">LOVLink: <a class="reference external" href="http://lov.okfn.org/dataset/lov/vocabs/dcterms">http://lov.okfn.org/dataset/lov/vocabs/dcterms</a></div>
 <div class="line">Namespace: <a class="reference external" href="http://purl.org/dc/dcmitype/">http://purl.org/dc/dcmitype/</a></div>
-<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">dctypes:</span> <span class="pre">&lt;http://purl.org/dc/dcmitype/&gt;</span> <span class="pre">.</span></code></div>
+<div class="line">xmlns: <code class="docutils literal notranslate"><span class="pre">&#64;prefix</span> <span class="pre">dctypes:</span> <span class="pre">&lt;http://purl.org/dc/dcmitype/&gt;</span> <span class="pre">.</span></code></div>
 <div class="line">LOVLink: <a class="reference external" href="http://lov.okfn.org/dataset/lov/vocabs/dctype">http://lov.okfn.org/dataset/lov/vocabs/dctype</a></div>
 </div>
 <p>DCTYPES (<em>Dublin Core Types</em>) and DCTERMS (<em>Dublin Core Terms</em>)
@@ -5200,7 +5201,7 @@ that have been mapped to <a class="reference internal" href="#xml"><span class="
 <div class="line-block">
 <div class="line">Standard: <a class="reference external" href="https://www.w3.org/TR/EARL10/">https://www.w3.org/TR/EARL10/</a></div>
 <div class="line">Namespace: <a class="reference external" href="http://www.w3.org/ns/earl#">http://www.w3.org/ns/earl#</a></div>
-<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">earl:</span> <span class="pre">http://www.w3.org/ns/earl#</span></code></div>
+<div class="line">xmlns: <code class="docutils literal notranslate"><span class="pre">&#64;prefix</span> <span class="pre">earl:</span> <span class="pre">http://www.w3.org/ns/earl#</span></code></div>
 <div class="line">LOVLink: <a class="reference external" href="http://lov.okfn.org/dataset/lov/vocabs/earl">http://lov.okfn.org/dataset/lov/vocabs/earl</a></div>
 </div>
 <p><a class="reference internal" href="#w3c"><span class="std std-ref">W3C</span></a> EARL (<em>Evaluation and Reporting Language</em>) is an RDFS
@@ -5219,7 +5220,7 @@ vocabulary for automated, semi-automated, and manual test results.</p>
 <div class="line-block">
 <div class="line">Standard: <a class="reference external" href="http://www.w3.org/TR/vocab-data-cube/">http://www.w3.org/TR/vocab-data-cube/</a></div>
 <div class="line">Namespace: <a class="reference external" href="http://purl.org/linked-data/cube#">http://purl.org/linked-data/cube#</a></div>
-<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">qb:</span> <span class="pre">&lt;http://purl.org/linked-data/cube#&gt;</span> <span class="pre">.</span></code></div>
+<div class="line">xmlns: <code class="docutils literal notranslate"><span class="pre">&#64;prefix</span> <span class="pre">qb:</span> <span class="pre">&lt;http://purl.org/linked-data/cube#&gt;</span> <span class="pre">.</span></code></div>
 <div class="line">LOVLink: <a class="reference external" href="http://lov.okfn.org/dataset/lov/vocabs/qb">http://lov.okfn.org/dataset/lov/vocabs/qb</a></div>
 </div>
 <p>RDF Data Cubes vocabulary is an <a class="reference internal" href="#rdf"><span class="std std-ref">RDF</span></a> standard vocabulary for expressing
@@ -5237,7 +5238,7 @@ RDF Data Cubes vocabulary</li>
 <div class="line">Standard: <a class="reference external" href="http://www.w3.org/TR/skos-reference/">http://www.w3.org/TR/skos-reference/</a></div>
 <div class="line">Standard: <a class="reference external" href="http://www.w3.org/TR/skos-reference/skos.html">http://www.w3.org/TR/skos-reference/skos.html</a></div>
 <div class="line">Namespace: <a class="reference external" href="http://www.w3.org/2004/02/skos/core#">http://www.w3.org/2004/02/skos/core#</a></div>
-<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">skos:</span> <span class="pre">&lt;http://www.w3.org/2004/02/skos/core#&gt;</span> <span class="pre">.</span></code></div>
+<div class="line">xmlns: <code class="docutils literal notranslate"><span class="pre">&#64;prefix</span> <span class="pre">skos:</span> <span class="pre">&lt;http://www.w3.org/2004/02/skos/core#&gt;</span> <span class="pre">.</span></code></div>
 <div class="line">LOVLink: <a class="reference external" href="http://lov.okfn.org/dataset/lov/vocabs/skos">http://lov.okfn.org/dataset/lov/vocabs/skos</a></div>
 </div>
 <p>SKOS (<em>Simple Knowledge Organization System</em>) is an <a class="reference internal" href="#rdf"><span class="std std-ref">RDF</span></a> standard
@@ -5250,7 +5251,7 @@ vocabulary for linking concepts and vocabulary terms.</p>
 <div class="line">Standard: <a class="reference external" href="http://rdf-vocabulary.ddialliance.org/xkos.html">http://rdf-vocabulary.ddialliance.org/xkos.html</a></div>
 <div class="line">Source: <a class="reference external" href="https://github.com/linked-statistics/xkos">https://github.com/linked-statistics/xkos</a></div>
 <div class="line">Namespace: <a class="reference external" href="http://rdf-vocabulary.ddialliance.org/xkos#">http://rdf-vocabulary.ddialliance.org/xkos#</a></div>
-<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">xkos:</span> <span class="pre">&lt;http://rdf-vocabulary.ddialliance.org/xkos#&gt;</span> <span class="pre">.</span></code></div>
+<div class="line">xmlns: <code class="docutils literal notranslate"><span class="pre">&#64;prefix</span> <span class="pre">xkos:</span> <span class="pre">&lt;http://rdf-vocabulary.ddialliance.org/xkos#&gt;</span> <span class="pre">.</span></code></div>
 <div class="line">LOVLink: <a class="reference external" href="http://lov.okfn.org/dataset/lov/vocabs/xkos">http://lov.okfn.org/dataset/lov/vocabs/xkos</a></div>
 </div>
 <p>XKOS (<em>Extended Knowledge Organization System</em>) is an <a class="reference internal" href="#rdf"><span class="std std-ref">RDF</span></a>
@@ -5264,7 +5265,7 @@ for linking concepts and statistical measures.</p>
 <div class="line">Homepage: <a class="reference external" href="http://www.foaf-project.org/">http://www.foaf-project.org/</a></div>
 <div class="line">Standard: <a class="reference external" href="http://xmlns.com/foaf/spec/">http://xmlns.com/foaf/spec/</a></div>
 <div class="line">Namespace: <a class="reference external" href="http://xmlns.com/foaf/0.1/">http://xmlns.com/foaf/0.1/</a></div>
-<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">foaf:</span> <span class="pre">&lt;http://xmlns.com/foaf/0.1/&gt;</span> <span class="pre">.</span></code></div>
+<div class="line">xmlns: <code class="docutils literal notranslate"><span class="pre">&#64;prefix</span> <span class="pre">foaf:</span> <span class="pre">&lt;http://xmlns.com/foaf/0.1/&gt;</span> <span class="pre">.</span></code></div>
 <div class="line">LOVLink: <a class="reference external" href="http://lov.okfn.org/dataset/lov/vocabs/foaf">http://lov.okfn.org/dataset/lov/vocabs/foaf</a></div>
 </div>
 <p>FOAF (<em>Friend of a Friend</em>) is an <a class="reference internal" href="#rdf"><span class="std std-ref">RDF</span></a> standard vocabulary for
@@ -5275,7 +5276,7 @@ expressing social networks and contact information.</p>
 <div class="line-block">
 <div class="line">Standard: <a class="reference external" href="https://www.w3.org/TR/shacl/">https://www.w3.org/TR/shacl/</a></div>
 <div class="line">Namespace: <a class="reference external" href="http://www.w3.org/ns/shacl#">http://www.w3.org/ns/shacl#</a></div>
-<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">sh:</span> <span class="pre">&lt;http://www.w3.org/ns/shacl#&gt;</span> <span class="pre">.</span></code></div>
+<div class="line">xmlns: <code class="docutils literal notranslate"><span class="pre">&#64;prefix</span> <span class="pre">sh:</span> <span class="pre">&lt;http://www.w3.org/ns/shacl#&gt;</span> <span class="pre">.</span></code></div>
 <div class="line">LOVLink:</div>
 </div>
 <p><a class="reference internal" href="#w3c"><span class="std std-ref">W3C</span></a> SHACL (<em>Shapes Constraint Language</em>) is a language for describing
@@ -5284,7 +5285,7 @@ expressing social networks and contact information.</p>
 <li>SHACL relaxes specific RDFS restrictions:
 <a class="reference external" href="https://www.w3.org/TR/shacl/#shacl-rdfs">https://www.w3.org/TR/shacl/#shacl-rdfs</a></li>
 <li>Required RDFS / <a class="reference internal" href="#owl"><span class="std std-ref">OWL</span></a> <a class="reference internal" href="#entailment"><span class="std std-ref">Entailment</span></a> can be specified in SHACL with
-the <code class="docutils literal"><span class="pre">sh:entailment</span></code> property and e.g. <a class="reference internal" href="#sparql"><span class="std std-ref">SPARQL</span></a> 1.1 entailment
+the <code class="docutils literal notranslate"><span class="pre">sh:entailment</span></code> property and e.g. <a class="reference internal" href="#sparql"><span class="std std-ref">SPARQL</span></a> 1.1 entailment
 IRIs.
 <a class="reference external" href="https://www.w3.org/TR/shacl/#entailment">https://www.w3.org/TR/shacl/#entailment</a></li>
 <li><a class="reference external" href="https://github.com/TopQuadrant/shacl">https://github.com/TopQuadrant/shacl</a></li>
@@ -5296,7 +5297,7 @@ IRIs.
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Semantically-Interlinked_Online_Communities">https://en.wikipedia.org/wiki/Semantically-Interlinked_Online_Communities</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://www.sioc-project.org/">http://www.sioc-project.org/</a></div>
 <div class="line">Namespace: <a class="reference external" href="http://rdfs.org/sioc/ns#">http://rdfs.org/sioc/ns#</a></div>
-<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">sioc:</span> <span class="pre">&lt;http://rdfs.org/sioc/ns#&gt;</span> <span class="pre">.</span></code></div>
+<div class="line">xmlns: <code class="docutils literal notranslate"><span class="pre">&#64;prefix</span> <span class="pre">sioc:</span> <span class="pre">&lt;http://rdfs.org/sioc/ns#&gt;</span> <span class="pre">.</span></code></div>
 <div class="line">LOVLink: <a class="reference external" href="http://lov.okfn.org/dataset/lov/vocabs/sioc">http://lov.okfn.org/dataset/lov/vocabs/sioc</a></div>
 </div>
 <p>SIOC (<em>Semantically Interlinked Online Communities</em>) is an <a class="reference internal" href="#rdf"><span class="std std-ref">RDF</span></a>
@@ -5309,7 +5310,7 @@ like blog, forum, and mailing list posts.</p>
 <div class="line">Homepage: <a class="reference external" href="http://www.openannotation.org/">http://www.openannotation.org/</a></div>
 <div class="line">Standard: <a class="reference external" href="http://www.openannotation.org/spec/core/">http://www.openannotation.org/spec/core/</a></div>
 <div class="line">Namespace: <a class="reference external" href="http://www.w3.org/ns/oa#">http://www.w3.org/ns/oa#</a></div>
-<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">oa:</span> <span class="pre">&lt;http://www.w3.org/ns/oa#&gt;</span> <span class="pre">.</span></code></div>
+<div class="line">xmlns: <code class="docutils literal notranslate"><span class="pre">&#64;prefix</span> <span class="pre">oa:</span> <span class="pre">&lt;http://www.w3.org/ns/oa#&gt;</span> <span class="pre">.</span></code></div>
 <div class="line">LOVLink: <a class="reference external" href="http://lov.okfn.org/dataset/lov/vocabs/oa">http://lov.okfn.org/dataset/lov/vocabs/oa</a></div>
 </div>
 <p>OA (<em>Open Annotation</em>) is an <a class="reference internal" href="#rdf"><span class="std std-ref">RDF</span></a> standard for
@@ -5344,8 +5345,8 @@ commenting on anything with a URI.</p>
 <p>Schema.org can be expressed as microdata, <a class="reference internal" href="#rdf"><span class="std std-ref">RDF</span></a>, <a class="reference internal" href="#rdfa"><span class="std std-ref">RDFa</span></a>,
 and <a class="reference internal" href="#json-ld"><span class="std std-ref">JSON-LD</span></a>.</p>
 <ul class="simple">
-<li><a class="reference external" href="http://">http://</a> &#8211; vocab <a class="reference internal" href="web-development#term-uri"><span class="xref std std-term">URIs</span></a></li>
-<li><a class="reference external" href="https://">https://</a> &#8211; docs, <a class="reference internal" href="#http-sts"><span class="std std-ref">HTTP STS</span></a> (?)</li>
+<li><a class="reference external" href="http://">http://</a> – vocab <a class="reference internal" href="web-development#term-uri"><span class="xref std std-term">URIs</span></a></li>
+<li><a class="reference external" href="https://">https://</a> – docs, <a class="reference internal" href="#http-sts"><span class="std std-ref">HTTP STS</span></a> (?)</li>
 <li><a class="reference external" href="https://schema.org/docs/full.html">https://schema.org/docs/full.html</a></li>
 <li><a class="reference external" href="https://schema.org/docs/schemas.html">https://schema.org/docs/schemas.html</a></li>
 <li><a class="reference external" href="https://schema.org/docs/releases.html">https://schema.org/docs/releases.html</a></li>
@@ -5355,9 +5356,9 @@ and <a class="reference internal" href="#json-ld"><span class="std std-ref">JSON
 </ul>
 <p>.</p>
 <ul class="simple">
-<li>&#8220;Schema.org: Evolution of Structured Data on the Web&#8221; (2015)
+<li>“Schema.org: Evolution of Structured Data on the Web” (2015)
 <a class="reference external" href="https://queue.acm.org/detail.cfm?id=2857276">https://queue.acm.org/detail.cfm?id=2857276</a></li>
-<li>&#8220;Evolving Schema.org in Practice Pt1: The Bits and Pieces&#8221; (2016)
+<li>“Evolving Schema.org in Practice Pt1: The Bits and Pieces” (2016)
 <a class="reference external" href="http://dataliberate.com/2016/02/evolving-schema-org-in-practice-pt1-the-bits-and-pieces/">http://dataliberate.com/2016/02/evolving-schema-org-in-practice-pt1-the-bits-and-pieces/</a></li>
 <li><a class="reference internal" href="#rdfa"><span class="std std-ref">RDFa</span></a><ul>
 <li><a class="reference external" href="https://github.com/schemaorg/schemaorg/blob/sdo-callisto/data/schema.rdfa">https://github.com/schemaorg/schemaorg/blob/sdo-callisto/data/schema.rdfa</a></li>
@@ -5378,7 +5379,7 @@ but the schema.org terms are HTTP <strong>URIs</strong></p>
 <div class="section" id="schemaorg-rdf">
 <span id="schema-org-rdf"></span><span id="index-271"></span><span id="id200"></span><h4>Schema.org RDF<a class="headerlink" href="#schemaorg-rdf" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
-<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">schema:</span> <span class="pre">&lt;http://schema.org/&gt;</span> <span class="pre">.</span></code></div>
+<div class="line">xmlns: <code class="docutils literal notranslate"><span class="pre">&#64;prefix</span> <span class="pre">schema:</span> <span class="pre">&lt;http://schema.org/&gt;</span> <span class="pre">.</span></code></div>
 <div class="line">LOVLink: <a class="reference external" href="http://lov.okfn.org/dataset/lov/vocabs/schema">http://lov.okfn.org/dataset/lov/vocabs/schema</a></div>
 <div class="line">Standard: <a class="reference external" href="https://schema.org/docs/schema_org_rdfa.html">https://schema.org/docs/schema_org_rdfa.html</a> [<a class="reference internal" href="#rdfa"><span class="std std-ref">RDFa</span></a>]</div>
 </div>
@@ -5395,8 +5396,8 @@ but the schema.org terms are HTTP <strong>URIs</strong></p>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="http://topbraid.org/schema/">http://topbraid.org/schema/</a></div>
 <div class="line">Docs: <a class="reference external" href="http://topbraid.org/schema/">http://topbraid.org/schema/</a></div>
-<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">schema:</span> <span class="pre">&lt;http://schema.org/&gt;</span> <span class="pre">.</span></code></div>
-<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">schemax:</span> <span class="pre">&lt;http://topbraid.org/schemax/&gt;</span> <span class="pre">.</span></code></div>
+<div class="line">xmlns: <code class="docutils literal notranslate"><span class="pre">&#64;prefix</span> <span class="pre">schema:</span> <span class="pre">&lt;http://schema.org/&gt;</span> <span class="pre">.</span></code></div>
+<div class="line">xmlns: <code class="docutils literal notranslate"><span class="pre">&#64;prefix</span> <span class="pre">schemax:</span> <span class="pre">&lt;http://topbraid.org/schemax/&gt;</span> <span class="pre">.</span></code></div>
 </div>
 <p>TopBraid maintains more complete <a class="reference internal" href="#owl"><span class="std std-ref">OWL</span></a> <a class="reference internal" href="#rdf"><span class="std std-ref">RDF</span></a>
 transformations of <a class="reference internal" href="#schema-org"><span class="std std-ref">Schema.org</span></a>.</p>
@@ -5427,10 +5428,10 @@ for <a class="reference internal" href="#rdf"><span class="std std-ref">RDF</spa
 <p>Challenges:</p>
 <ul class="simple">
 <li>SPARQL query requests and responses are over HTTP;
-however, it&#8217;s best &#8211; and often required &#8211;
+however, it’s best – and often required –
 to build SPARQL queries with a server application,
 on behalf of clients.</li>
-<li>SPARQL default <code class="docutils literal"><span class="pre">LIMIT</span></code> clauses and paging windows
+<li>SPARQL default <code class="docutils literal notranslate"><span class="pre">LIMIT</span></code> clauses and paging windows
 could allow for more efficient caching</li>
 <li>See: <a class="reference internal" href="#ldp"><span class="std std-ref">LDP</span></a> for more of a resource-based RESTful API
 that can be implemented on top of
@@ -5441,7 +5442,7 @@ the graph pattern queries supported by SPARQL.</li>
 <span id="index-275"></span><span id="id202"></span><h3>LDP<a class="headerlink" href="#ldp" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Spec <a class="reference external" href="http://www.w3.org/TR/ldp/">http://www.w3.org/TR/ldp/</a></div>
-<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">ldp:</span> <span class="pre">&lt;http://www.w3.org/ns/ldp#&gt;</span> <span class="pre">.</span></code></div>
+<div class="line">xmlns: <code class="docutils literal notranslate"><span class="pre">&#64;prefix</span> <span class="pre">ldp:</span> <span class="pre">&lt;http://www.w3.org/ns/ldp#&gt;</span> <span class="pre">.</span></code></div>
 <div class="line">LOVLink: <a class="reference external" href="http://lov.okfn.org/dataset/lov/vocabs/ldp">http://lov.okfn.org/dataset/lov/vocabs/ldp</a></div>
 </div>
 <p>LDP (<em>Linked Data Platform</em>) is a standard for building <a class="reference internal" href="#http"><span class="std std-ref">HTTP</span></a> REST APIs
@@ -5464,7 +5465,7 @@ containing Linked Data Plaform <strong>Resources</strong> (LDPR)</li>
 <div class="line">Standard: <a class="reference external" href="http://www.w3.org/TR/owl2-primer/">http://www.w3.org/TR/owl2-primer/</a></div>
 <div class="line">Standard: <a class="reference external" href="http://www.w3.org/TR/owl2-quick-reference/">http://www.w3.org/TR/owl2-quick-reference/</a></div>
 <div class="line">Standard: <a class="reference external" href="http://www.w3.org/TR/owl2-profiles/">http://www.w3.org/TR/owl2-profiles/</a></div>
-<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">owl:</span> <span class="pre">&lt;http://www.w3.org/2002/07/owl#&gt;</span> <span class="pre">.</span></code></div>
+<div class="line">xmlns: <code class="docutils literal notranslate"><span class="pre">&#64;prefix</span> <span class="pre">owl:</span> <span class="pre">&lt;http://www.w3.org/2002/07/owl#&gt;</span> <span class="pre">.</span></code></div>
 <div class="line">LOVLink: <a class="reference external" href="http://lov.okfn.org/dataset/lov/vocabs/owl">http://lov.okfn.org/dataset/lov/vocabs/owl</a></div>
 </div>
 <p>OWL (<em>Web Ontology Language</em>) layers semantics, reasoning, inference,
@@ -5477,44 +5478,44 @@ theory).</p>
 </ul>
 <p>A few notable OWL classes:</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">owl:Class</span></code> a <code class="docutils literal"><span class="pre">owl:Class</span></code> ;
-<code class="docutils literal"><span class="pre">rdfs:subClassOf</span></code> <code class="docutils literal"><span class="pre">rdfs:Class</span></code> (<a class="reference internal" href="#rdfs"><span class="std std-ref">RDFS</span></a>)</li>
-<li><code class="docutils literal"><span class="pre">owl:Thing</span></code> a <code class="docutils literal"><span class="pre">owl:Class</span></code> &#8211; universal class</li>
-<li><code class="docutils literal"><span class="pre">owl:Nothing</span></code> a <code class="docutils literal"><span class="pre">owl:Class</span></code> &#8211; empty class</li>
-<li><code class="docutils literal"><span class="pre">owl:Restriction</span></code> a <code class="docutils literal"><span class="pre">rdfs:Class</span></code> ;
-<code class="docutils literal"><span class="pre">rdfs:subClassOf</span></code> <code class="docutils literal"><span class="pre">owl:Class</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">owl:Class</span></code> a <code class="docutils literal notranslate"><span class="pre">owl:Class</span></code> ;
+<code class="docutils literal notranslate"><span class="pre">rdfs:subClassOf</span></code> <code class="docutils literal notranslate"><span class="pre">rdfs:Class</span></code> (<a class="reference internal" href="#rdfs"><span class="std std-ref">RDFS</span></a>)</li>
+<li><code class="docutils literal notranslate"><span class="pre">owl:Thing</span></code> a <code class="docutils literal notranslate"><span class="pre">owl:Class</span></code> – universal class</li>
+<li><code class="docutils literal notranslate"><span class="pre">owl:Nothing</span></code> a <code class="docutils literal notranslate"><span class="pre">owl:Class</span></code> – empty class</li>
+<li><code class="docutils literal notranslate"><span class="pre">owl:Restriction</span></code> a <code class="docutils literal notranslate"><span class="pre">rdfs:Class</span></code> ;
+<code class="docutils literal notranslate"><span class="pre">rdfs:subClassOf</span></code> <code class="docutils literal notranslate"><span class="pre">owl:Class</span></code></li>
 </ul>
 <p>A few OWL Property types:</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">owl:DatatypeProperty</span></code></li>
-<li><code class="docutils literal"><span class="pre">owl:ObjectProperty</span></code></li>
-<li><code class="docutils literal"><span class="pre">owl:ReflexiveProperty</span></code></li>
-<li><code class="docutils literal"><span class="pre">owl:IrreflexiveProperty</span></code></li>
-<li><code class="docutils literal"><span class="pre">owl:SymmetricProperty</span></code></li>
-<li><code class="docutils literal"><span class="pre">owl:TransitiveProperty</span></code></li>
-<li><code class="docutils literal"><span class="pre">owl:FunctionalProperty</span></code></li>
-<li><code class="docutils literal"><span class="pre">owl:InverseFunctionalProperty</span></code></li>
-<li><code class="docutils literal"><span class="pre">owl:OntologyProperty</span></code></li>
-<li><code class="docutils literal"><span class="pre">owl:AnnotationProperty</span></code></li>
-<li><code class="docutils literal"><span class="pre">owl:AsymmetricProperty</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">owl:DatatypeProperty</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">owl:ObjectProperty</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">owl:ReflexiveProperty</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">owl:IrreflexiveProperty</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">owl:SymmetricProperty</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">owl:TransitiveProperty</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">owl:FunctionalProperty</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">owl:InverseFunctionalProperty</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">owl:OntologyProperty</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">owl:AnnotationProperty</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">owl:AsymmetricProperty</span></code></li>
 </ul>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Cardinality">https://en.wikipedia.org/wiki/Cardinality</a></p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">owl:minCardinality</span></code></li>
-<li><code class="docutils literal"><span class="pre">owl:cardinality</span></code></li>
-<li><code class="docutils literal"><span class="pre">owl:maxCardinality</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">owl:minCardinality</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">owl:cardinality</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">owl:maxCardinality</span></code></li>
 </ul>
 <p>.</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">owl:intersectionOf</span></code></li>
-<li><code class="docutils literal"><span class="pre">owl:unionOf</span></code></li>
-<li><code class="docutils literal"><span class="pre">owl:complementOf</span></code></li>
-<li><code class="docutils literal"><span class="pre">owl:oneOf</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">owl:intersectionOf</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">owl:unionOf</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">owl:complementOf</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">owl:oneOf</span></code></li>
 </ul>
 <p>.</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">owl:allValuesFrom</span></code></li>
-<li><code class="docutils literal"><span class="pre">owl:someValuesFrom</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">owl:allValuesFrom</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">owl:someValuesFrom</span></code></li>
 </ul>
 <p>.</p>
 <div class="line-block">
@@ -5530,7 +5531,7 @@ theory).</p>
 <div class="line">Standard: <a class="reference external" href="http://www.w3.org/TR/prov-primer/">http://www.w3.org/TR/prov-primer/</a></div>
 <div class="line">Standard: <a class="reference external" href="http://www.w3.org/TR/prov-o/">http://www.w3.org/TR/prov-o/</a></div>
 <div class="line">Namespace: <a class="reference external" href="http://www.w3.org/ns/prov#">http://www.w3.org/ns/prov#</a></div>
-<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">prov:</span> <span class="pre">&lt;http://www.w3.org/ns/prov#&gt;</span> <span class="pre">.</span></code></div>
+<div class="line">xmlns: <code class="docutils literal notranslate"><span class="pre">&#64;prefix</span> <span class="pre">prov:</span> <span class="pre">&lt;http://www.w3.org/ns/prov#&gt;</span> <span class="pre">.</span></code></div>
 <div class="line">LOVLink: <a class="reference external" href="http://lov.okfn.org/dataset/lov/vocabs/prov">http://lov.okfn.org/dataset/lov/vocabs/prov</a></div>
 </div>
 <p>PROV (<em>Provenance</em>) ontology is an <a class="reference internal" href="#owl"><span class="std std-ref">OWL</span></a> <a class="reference internal" href="#rdf"><span class="std std-ref">RDF</span></a> standard
@@ -5545,7 +5546,7 @@ extent).</p>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="http://wiki.dbpedia.org/Ontology">http://wiki.dbpedia.org/Ontology</a></div>
 <div class="line">Namespace: <a class="reference external" href="http://dbpedia.org/ontology/">http://dbpedia.org/ontology/</a></div>
-<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">dbpedia-owl:</span> <span class="pre">&lt;http://dbpedia.org/ontology/&gt;</span> <span class="pre">.</span></code></div>
+<div class="line">xmlns: <code class="docutils literal notranslate"><span class="pre">&#64;prefix</span> <span class="pre">dbpedia-owl:</span> <span class="pre">&lt;http://dbpedia.org/ontology/&gt;</span> <span class="pre">.</span></code></div>
 <div class="line">LOVLink: <a class="reference external" href="http://dbpedia.org/ontology/">http://dbpedia.org/ontology/</a></div>
 </div>
 <p>DBpedia is an <a class="reference internal" href="#owl"><span class="std std-ref">OWL</span></a> <a class="reference internal" href="#rdf"><span class="std std-ref">RDF</span></a> vocabulary for expressing
@@ -5574,8 +5575,8 @@ structured data from Wikipedia sidebar infoboxes.</p>
 <div class="line">Docs: <a class="reference external" href="http://www.linkedmodel.org/catalog/qudt/1.1/">http://www.linkedmodel.org/catalog/qudt/1.1/</a></div>
 <div class="line">Namespace: <a class="reference external" href="http://qudt.org/schema/qudt#">http://qudt.org/schema/qudt#</a></div>
 <div class="line">Namespace: <a class="reference external" href="http://qudt.org/1.1/schema/qudt#">http://qudt.org/1.1/schema/qudt#</a></div>
-<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">qudt:</span> <span class="pre">&lt;http://qudt.org/schema/qudt#&gt;</span> <span class="pre">.</span></code></div>
-<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">qudt-1.1:</span>&nbsp; <span class="pre">&lt;http://qudt.org/1.1/schema/qudt#&gt;</span> <span class="pre">.</span></code></div>
+<div class="line">xmlns: <code class="docutils literal notranslate"><span class="pre">&#64;prefix</span> <span class="pre">qudt:</span> <span class="pre">&lt;http://qudt.org/schema/qudt#&gt;</span> <span class="pre">.</span></code></div>
+<div class="line">xmlns: <code class="docutils literal notranslate"><span class="pre">&#64;prefix</span> <span class="pre">qudt-1.1:</span>&#160; <span class="pre">&lt;http://qudt.org/1.1/schema/qudt#&gt;</span> <span class="pre">.</span></code></div>
 <div class="line">LOVLink: <a class="reference external" href="http://lov.okfn.org/dataset/lov/vocabs/qudt">http://lov.okfn.org/dataset/lov/vocabs/qudt</a></div>
 </div>
 <p>QUDT (<em>Quantities, Units, Dimensions, and Types</em>) is an <a class="reference internal" href="#rdf"><span class="std std-ref">RDF</span></a> standard
@@ -5586,9 +5587,9 @@ vocabulary for representing physical units.</p>
 </ul>
 <p>Examples:</p>
 <ul>
-<li><p class="first"><code class="docutils literal"><span class="pre">qudt:SpaceAndTimeUnit</span></code></p>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">qudt:SpaceAndTimeUnit</span></code></p>
 <blockquote>
-<div><div class="code n3 highlight-default"><div class="highlight"><pre><span></span><span class="n">qudt</span><span class="p">:</span><span class="n">SpaceAndTimeUnit</span>
+<div><div class="code n3 highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">qudt</span><span class="p">:</span><span class="n">SpaceAndTimeUnit</span>
    <span class="n">rdf</span><span class="p">:</span><span class="nb">type</span> <span class="n">owl</span><span class="p">:</span><span class="n">Class</span> <span class="p">;</span>
    <span class="n">rdfs</span><span class="p">:</span><span class="n">label</span> <span class="s2">&quot;Space And Time Unit&quot;</span><span class="o">^^</span><span class="n">xsd</span><span class="p">:</span><span class="n">string</span> <span class="p">;</span>
    <span class="n">rdfs</span><span class="p">:</span><span class="n">subClassOf</span> <span class="n">qudt</span><span class="p">:</span><span class="n">PhysicalUnit</span> <span class="p">;</span>
@@ -5602,7 +5603,7 @@ vocabulary for representing physical units.</p>
 </div></blockquote>
 </li>
 <li><p class="first">QUDT Namespaces:</p>
-<div class="code n3 highlight-default"><div class="highlight"><pre><span></span><span class="nd">@prefix</span> <span class="n">qudt</span><span class="p">:</span>           <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">qudt</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">schema</span><span class="o">/</span><span class="n">qudt</span><span class="c1">#&gt; .</span>
+<div class="code n3 highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@prefix</span> <span class="n">qudt</span><span class="p">:</span>           <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">qudt</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">schema</span><span class="o">/</span><span class="n">qudt</span><span class="c1">#&gt; .</span>
 <span class="nd">@prefix</span> <span class="n">qudt</span><span class="o">-</span><span class="mf">1.1</span><span class="p">:</span>       <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">qudt</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="mf">1.1</span><span class="o">/</span><span class="n">schema</span><span class="o">/</span><span class="n">qudt</span><span class="c1">#&gt; .</span>
 <span class="nd">@prefix</span> <span class="n">qudt</span><span class="o">-</span><span class="n">dimension</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">qudt</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">vocab</span><span class="o">/</span><span class="n">dimension</span><span class="c1">#&gt; .</span>
 <span class="nd">@prefix</span> <span class="n">qudt</span><span class="o">-</span><span class="n">quantity</span><span class="p">:</span>  <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">qudt</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">vocab</span><span class="o">/</span><span class="n">quantity</span><span class="c1">#&gt; .</span>
@@ -5621,12 +5622,12 @@ vocabulary for representing physical units.</p>
 <div class="line-block">
 <div class="line">Standard: <a class="reference external" href="http://qudt.org/1.1/schema/quantity">http://qudt.org/1.1/schema/quantity</a></div>
 <div class="line">Namespace: <a class="reference external" href="http://qudt.org/1.1/schema/quantity#">http://qudt.org/1.1/schema/quantity#</a></div>
-<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">quantity:</span> <span class="pre">&lt;http://data.nasa.gov/qudt/owl/quantity#&gt;</span> <span class="pre">.</span></code></div>
+<div class="line">xmlns: <code class="docutils literal notranslate"><span class="pre">&#64;prefix</span> <span class="pre">quantity:</span> <span class="pre">&lt;http://data.nasa.gov/qudt/owl/quantity#&gt;</span> <span class="pre">.</span></code></div>
 <div class="line">Turtle: <a class="reference external" href="http://qudt.org/1.1/schema/OSG_quantity-(v1.1).ttl">http://qudt.org/1.1/schema/OSG_quantity-(v1.1).ttl</a></div>
 </div>
 <p>Vocabulary</p>
 <div class="line-block">
-<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">qudt-quantity:</span> <span class="pre">&lt;http://qudt.org/1.1/vocab/quantity#&gt;</span> <span class="pre">.</span></code></div>
+<div class="line">xmlns: <code class="docutils literal notranslate"><span class="pre">&#64;prefix</span> <span class="pre">qudt-quantity:</span> <span class="pre">&lt;http://qudt.org/1.1/vocab/quantity#&gt;</span> <span class="pre">.</span></code></div>
 <div class="line">Namespace: <a class="reference external" href="http://qudt.org/1.1/vocab/quantity#">http://qudt.org/1.1/vocab/quantity#</a></div>
 <div class="line">Turtle: <a class="reference external" href="http://qudt.org/1.1/vocab/OVG_quantities-qudt-(v1.1).ttl">http://qudt.org/1.1/vocab/OVG_quantities-qudt-(v1.1).ttl</a></div>
 </div>
@@ -5634,8 +5635,8 @@ vocabulary for representing physical units.</p>
 physical quantities.</p>
 <p>Examples from <a class="reference external" href="http://qudt.org/1.1/vocab/OVG_quantities-qudt-(v1.1).ttl">http://qudt.org/1.1/vocab/OVG_quantities-qudt-(v1.1).ttl</a> :</p>
 <ul>
-<li><p class="first"><code class="docutils literal"><span class="pre">qudt-quantity:Time</span></code></p>
-<div class="code n3 highlight-default"><div class="highlight"><pre><span></span><span class="n">qudt</span><span class="o">-</span><span class="n">quantity</span><span class="p">:</span><span class="n">Time</span>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">qudt-quantity:Time</span></code></p>
+<div class="code n3 highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">qudt</span><span class="o">-</span><span class="n">quantity</span><span class="p">:</span><span class="n">Time</span>
     <span class="n">rdf</span><span class="p">:</span><span class="nb">type</span> <span class="n">qudt</span><span class="p">:</span><span class="n">SpaceAndTimeQuantityKind</span> <span class="p">;</span>
     <span class="n">rdfs</span><span class="p">:</span><span class="n">label</span> <span class="s2">&quot;Time&quot;</span><span class="o">^^</span><span class="n">xsd</span><span class="p">:</span><span class="n">string</span> <span class="p">;</span>
     <span class="n">qudt</span><span class="p">:</span><span class="n">description</span> <span class="s2">&quot;Time is a basic component of the measuring system used to sequence events, to compare the durations of events and the intervals between them, and to quantify the motions of objects.&quot;</span><span class="o">^^</span><span class="n">xsd</span><span class="p">:</span><span class="n">string</span> <span class="p">;</span>
@@ -5647,8 +5648,8 @@ physical quantities.</p>
 </pre></div>
 </div>
 </li>
-<li><p class="first"><code class="docutils literal"><span class="pre">qudt-quantity:AreaTimeTemperature</span></code></p>
-<div class="code n3 highlight-default"><div class="highlight"><pre><span></span><span class="n">qudt</span><span class="o">-</span><span class="n">quantity</span><span class="p">:</span><span class="n">AreaTimeTemperature</span>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">qudt-quantity:AreaTimeTemperature</span></code></p>
+<div class="code n3 highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">qudt</span><span class="o">-</span><span class="n">quantity</span><span class="p">:</span><span class="n">AreaTimeTemperature</span>
     <span class="n">rdf</span><span class="p">:</span><span class="nb">type</span> <span class="n">qudt</span><span class="p">:</span><span class="n">ThermodynamicsQuantityKind</span> <span class="p">;</span>
     <span class="n">rdfs</span><span class="p">:</span><span class="n">label</span> <span class="s2">&quot;Area Time Temperature&quot;</span><span class="o">^^</span><span class="n">xsd</span><span class="p">:</span><span class="n">string</span> <span class="o">.</span>
 <span class="c1"># ...</span>
@@ -5664,16 +5665,16 @@ physical quantities.</p>
 <div class="line-block">
 <div class="line">Standard: <a class="reference external" href="http://qudt.org/1.1/vocab/unit">http://qudt.org/1.1/vocab/unit</a></div>
 <div class="line">Namespace: <a class="reference external" href="http://qudt.org/1.1/vocab/unit#">http://qudt.org/1.1/vocab/unit#</a></div>
-<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">unit:</span> <span class="pre">&lt;http://qudt.org/1.1/vocab/unit&gt;</span> <span class="pre">.</span></code></div>
-<div class="line">xmlns: <code class="docutils literal"><span class="pre">&#64;prefix</span> <span class="pre">qudt-unit-1.1:</span>&nbsp; <span class="pre">&lt;http://qudt.org/1.1/vocab/unit#&gt;</span> <span class="pre">.</span></code></div>
+<div class="line">xmlns: <code class="docutils literal notranslate"><span class="pre">&#64;prefix</span> <span class="pre">unit:</span> <span class="pre">&lt;http://qudt.org/1.1/vocab/unit&gt;</span> <span class="pre">.</span></code></div>
+<div class="line">xmlns: <code class="docutils literal notranslate"><span class="pre">&#64;prefix</span> <span class="pre">qudt-unit-1.1:</span>&#160; <span class="pre">&lt;http://qudt.org/1.1/vocab/unit#&gt;</span> <span class="pre">.</span></code></div>
 <div class="line">Turtle: <a class="reference external" href="http://qudt.org/1.1/vocab/OVG_units-qudt-(v1.1).ttl">http://qudt.org/1.1/vocab/OVG_units-qudt-(v1.1).ttl</a></div>
 </div>
 <p>The <a class="reference internal" href="#qudt"><span class="std std-ref">QUDT</span></a> Units Ontology is an <a class="reference internal" href="#rdf"><span class="std std-ref">RDF</span></a> vocabulary
 defining many units of measure.</p>
 <p>Examples:</p>
 <ul>
-<li><p class="first"><code class="docutils literal"><span class="pre">unit:SecondTime</span></code></p>
-<div class="code n3 highlight-default"><div class="highlight"><pre><span></span><span class="n">unit</span><span class="p">:</span><span class="n">SecondTime</span>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">unit:SecondTime</span></code></p>
+<div class="code n3 highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">unit</span><span class="p">:</span><span class="n">SecondTime</span>
       <span class="n">rdf</span><span class="p">:</span><span class="nb">type</span> <span class="n">qudt</span><span class="p">:</span><span class="n">SIBaseUnit</span> <span class="p">,</span> <span class="n">qudt</span><span class="p">:</span><span class="n">TimeUnit</span> <span class="p">;</span>
       <span class="n">rdfs</span><span class="p">:</span><span class="n">label</span> <span class="s2">&quot;Second&quot;</span><span class="o">^^</span><span class="n">xsd</span><span class="p">:</span><span class="n">string</span> <span class="p">;</span>
       <span class="n">qudt</span><span class="p">:</span><span class="n">abbreviation</span> <span class="s2">&quot;s&quot;</span><span class="o">^^</span><span class="n">xsd</span><span class="p">:</span><span class="n">string</span> <span class="p">;</span>
@@ -5689,9 +5690,9 @@ defining many units of measure.</p>
 </div>
 <p><a class="reference external" href="http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#SecondTime">http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#SecondTime</a></p>
 </li>
-<li><p class="first"><code class="docutils literal"><span class="pre">unit:HorsepowerElectric</span></code></p>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">unit:HorsepowerElectric</span></code></p>
 <p><a class="reference external" href="http://qudt.org/1.1/vocab/OVG_units-qudt-(v1.1).ttl">http://qudt.org/1.1/vocab/OVG_units-qudt-(v1.1).ttl</a></p>
-<div class="code n3 highlight-default"><div class="highlight"><pre><span></span><span class="n">unit</span><span class="p">:</span><span class="n">HorsepowerElectric</span>
+<div class="code n3 highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">unit</span><span class="p">:</span><span class="n">HorsepowerElectric</span>
     <span class="n">rdf</span><span class="p">:</span><span class="nb">type</span> <span class="n">qudt</span><span class="p">:</span><span class="n">NotUsedWithSIUnit</span> <span class="p">,</span> <span class="n">qudt</span><span class="p">:</span><span class="n">PowerUnit</span> <span class="p">;</span>
     <span class="n">rdfs</span><span class="p">:</span><span class="n">label</span> <span class="s2">&quot;Horsepower Electric&quot;</span><span class="o">^^</span><span class="n">xsd</span><span class="p">:</span><span class="n">string</span> <span class="p">;</span>
     <span class="n">qudt</span><span class="p">:</span><span class="n">abbreviation</span> <span class="s2">&quot;hp/V&quot;</span><span class="o">^^</span><span class="n">xsd</span><span class="p">:</span><span class="n">string</span> <span class="p">;</span>
@@ -5700,9 +5701,9 @@ defining many units of measure.</p>
 </pre></div>
 </div>
 </li>
-<li><p class="first"><code class="docutils literal"><span class="pre">unit:SystemOfUnits_SI</span></code></p>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">unit:SystemOfUnits_SI</span></code></p>
 <p><a class="reference external" href="http://qudt.org/1.1/vocab/OVG_units-qudt-(v1.1).ttl">http://qudt.org/1.1/vocab/OVG_units-qudt-(v1.1).ttl</a></p>
-<div class="code n3 highlight-default"><div class="highlight"><pre><span></span><span class="n">unit</span><span class="p">:</span><span class="n">SystemOfUnits_SI</span>
+<div class="code n3 highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">unit</span><span class="p">:</span><span class="n">SystemOfUnits_SI</span>
       <span class="n">rdf</span><span class="p">:</span><span class="nb">type</span> <span class="n">qudt</span><span class="p">:</span><span class="n">SystemOfUnits</span> <span class="p">;</span>
       <span class="n">rdfs</span><span class="p">:</span><span class="n">label</span> <span class="s2">&quot;International System of Units&quot;</span><span class="o">^^</span><span class="n">xsd</span><span class="p">:</span><span class="n">string</span> <span class="p">;</span>
       <span class="n">qudt</span><span class="p">:</span><span class="n">abbreviation</span> <span class="s2">&quot;SI&quot;</span><span class="o">^^</span><span class="n">xsd</span><span class="p">:</span><span class="n">string</span> <span class="p">;</span>
@@ -5818,9 +5819,8 @@ language.</p>
 </li>
 </ul>
 <p>See:</p>
-<ul>
-<li><p class="first"><a class="reference internal" href="#rdf-interfaces"><span class="std std-ref">RDF Interfaces</span></a></p>
-</li>
+<ul class="simple">
+<li><a class="reference internal" href="#rdf-interfaces"><span class="std std-ref">RDF Interfaces</span></a></li>
 <li><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -5881,14 +5881,14 @@ for working with <a class="reference internal" href="#rdf"><span class="std std-
 <div class="line">SPARQL: <a class="reference external" href="http://lov.okfn.org/dataset/lov/sparql">http://lov.okfn.org/dataset/lov/sparql</a></div>
 <div class="line">Docs: <a class="reference external" href="http://lov.okfn.org/dataset/lov/api">http://lov.okfn.org/dataset/lov/api</a></div>
 </div>
-<p>LOV (&#8220;Linked Open Vocabularies&#8221;) is a web application
+<p>LOV (“Linked Open Vocabularies”) is a web application
 for cataloging and viewing metadata of and links between
 vocabularies (<a class="reference internal" href="#rdf"><span class="std std-ref">RDF</span></a>, <a class="reference internal" href="#rdfs"><span class="std std-ref">RDFS</span></a>, <a class="reference internal" href="#owl"><span class="std std-ref">OWL</span></a>)</p>
 <ul>
 <li><p class="first">All of the vocabularies stored in LOV as a bubble chart:</p>
 <p><a class="reference external" href="http://lov.okfn.org/dataset/lov/">http://lov.okfn.org/dataset/lov/</a></p>
 </li>
-<li><p class="first">LOV has a &#8220;suggest a vocabulary&#8221; feature</p>
+<li><p class="first">LOV has a “suggest a vocabulary” feature</p>
 </li>
 <li><p class="first">Many of the vocabularies stored in LOV
 can also be searched or looked up from <a class="reference internal" href="#prefix-cc"><span class="std std-ref">prefix.cc</span></a>.</p>
@@ -5913,7 +5913,7 @@ can also be searched or looked up from <a class="reference internal" href="#pref
 <div class="line">Datasets: <a class="reference external" href="http://datahub.io/group/lodcloud">http://datahub.io/group/lodcloud</a></div>
 <div class="line">Download: <a class="reference external" href="http://lod-cloud.net/data/void.ttl">http://lod-cloud.net/data/void.ttl</a></div>
 </div>
-<p>The LOD (&#8220;Linking Open Data&#8221;) cloud diagram visualizes
+<p>The LOD (“Linking Open Data”) cloud diagram visualizes
 the nodes and edges of the <em>Linked Open Data Cloud</em></p>
 <ul class="simple">
 <li><a class="reference external" href="http://lod-cloud.net/#history">http://lod-cloud.net/#history</a></li>

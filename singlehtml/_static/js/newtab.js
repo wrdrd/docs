@@ -105,11 +105,19 @@ $(document).ready(function() {
     Cookies.set('options', options);
   });
 
+  function create_stylesheet() {
+    var css = document.createElement('style');
+    css.id = 'newtabcss';
+    css.type = 'text/css';
+    $('head').append(css);
+    return css.sheet;
+  }
+
+  var stylesheet = create_stylesheet();
 
   // show_visited_links
   var localstate = { };
   function set_showvisitedcss() {
-    var stylesheet = document.styleSheets[0];
     if (options['show_visited_links'] === true) {
       localstate['show_visited_links/a:visited/color'] = (
         stylesheet.insertRule('a:visited { color: #551A8B !important; }',

@@ -4397,7 +4397,7 @@ Vagrant
 | Wikipedia: `<https://en.wikipedia.org/wiki/Vagrant_(software)>`_
 | Homepage: https://www.vagrantup.com/
 | Docs: http://docs.vagrantup.com/v2/
-| Src: git https://github.com/mitchellh/vagrant
+| Src: git https://github.com/hashicorp/vagrant
 
 
 Vagrant is a tool written in :ref:`Ruby`

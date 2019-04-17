@@ -56,6 +56,7 @@
     <script type="text/javascript" src="../_static/js/jquery.min.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/js/local.js"></script>
     <script type="text/javascript" src="../_static/js/bootstrap3.min.js"></script>
 <script type="text/javascript" src="../_static/js/jquery.cookie.min.js"></script>
@@ -65,6 +66,8 @@
     <link rel="search" type="application/opensearchdescription+xml"
     title="Search within WRD R&amp;D Documentation"
     href="../_static/opensearch.xml"/>
+    <link rel="index" title="Index" href="../genindex" />
+    <link rel="search" title="Search" href="../search" />
     <link rel="top" title="WRD R&amp;D Documentation" href="../index" />
     <link rel="next" title="Units" href="units" />
     <link rel="prev" title="Information Systems" href="information-systems" /> 
@@ -207,7 +210,7 @@
               <li><a href="../py-modindex" title="Python Module Index" >modules </a></li>
               <li><a href="../genindex" title="General Index" accesskey="I">index </a></li>
             
-            <li class="visible-xs"><a href="../_sources/consulting/data-science.txt" rel="nofollow">Show Source</a></li>
+            <li class="visible-xs"><a href="../_sources/consulting/data-science.rst.txt" rel="nofollow">Show Source</a></li>
 
             <li class="visible-xs">
                 <form class="search form-search form-inline navbar-form navbar-right sp-searchbox" action="../search" method="get">
@@ -239,7 +242,7 @@
          
 <div class="col-md-3 hidden-xs" id="sidebar-wrapper">
   <div class="sidebar hidden-xs" role="navigation" aria-label="main navigation">
-  <h3><a href="../index">Table Of Contents</a></h3>
+  <h3><a href="../index">Table of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Data Science</a><ul>
 <li><a class="reference internal" href="#datasciencemasters-org">datasciencemasters.org</a></li>
@@ -377,7 +380,7 @@
 <div class="widget navlinks">
   <h3>This Page</h3>
   <ul class="this-page-menu">
-    <li><a href="../_sources/consulting/data-science.txt"
+    <li><a href="../_sources/consulting/data-science.rst.txt"
             rel="nofollow"
             target="_blank">Source RST</a></li>
     <li><a href="https://github.com/wrdrd/docs/blob/master/docs/consulting/data-science.rst"
@@ -456,7 +459,7 @@
 <div class="section" id="datasciencemasters-org">
 <span id="index-1"></span><span id="id2"></span><h2>datasciencemasters.org<a class="headerlink" href="#datasciencemasters-org" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line">&#8220;The Open Source Data Science Masters&#8221;</div>
+<div class="line">“The Open Source Data Science Masters”</div>
 <div class="line"><a class="reference external" href="http://datasciencemasters.org/">http://datasciencemasters.org/</a></div>
 <div class="line"><br /></div>
 </div>
@@ -471,7 +474,7 @@
 <div class="section" id="tensimplerules-for-reproducible-computational-research">
 <h3>#TenSimpleRules for Reproducible Computational Research<a class="headerlink" href="#tensimplerules-for-reproducible-computational-research" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
-<div class="line">&#8220;Ten Simple Rules for Reproducible Computational Research&#8221;</div>
+<div class="line">“Ten Simple Rules for Reproducible Computational Research”</div>
 <div class="line"><a class="reference external" href="http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1003285">http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1003285</a></div>
 <div class="line">DOI: 10.1371/journal.pcbi.1003285 Featured in PLOS Collections</div>
 </div>
@@ -508,8 +511,8 @@
 </li>
 <li><p class="first">Archive the Exact Versions of All External Programs Used</p>
 <ul class="simple">
-<li><a class="reference internal" href="education-technology#jupyter-and-reproducibility"><span class="std std-ref">Jupyter and Reproducibility</span></a> (<code class="docutils literal"><span class="pre">%version_information</span></code>,
-<code class="docutils literal"><span class="pre">%watermark</span></code>) (should be &#8220;Reproducibility and Jupyter Notebook&#8221;)</li>
+<li><a class="reference internal" href="education-technology#jupyter-and-reproducibility"><span class="std std-ref">Jupyter and Reproducibility</span></a> (<code class="docutils literal notranslate"><span class="pre">%version_information</span></code>,
+<code class="docutils literal notranslate"><span class="pre">%watermark</span></code>) (should be “Reproducibility and Jupyter Notebook”)</li>
 </ul>
 </li>
 <li><p class="first">Version Control All Custom Scripts</p>
@@ -524,7 +527,7 @@
 </li>
 <li><p class="first">For Analyses That Include Randomness, Note Underlying Random Seeds</p>
 <p>Python random functions:</p>
-<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;PYTHONHASHSEED&#39;</span><span class="p">])</span>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;PYTHONHASHSEED&#39;</span><span class="p">])</span>
 <span class="n">RANDOMSEED</span> <span class="o">=</span> <span class="mi">1</span>  <span class="c1"># /dev/[x]random</span>
 
 <span class="kn">import</span> <span class="nn">random</span>
@@ -543,19 +546,19 @@
 </ul>
 <p>Python hash randomization and algorithmic determinism:</p>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">python</span> <span class="pre">-R</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-R</span></code></div>
 <div class="line"><a class="reference external" href="https://docs.python.org/3/using/cmdline.html#cmdoption-R">https://docs.python.org/3/using/cmdline.html#cmdoption-R</a></div>
-<div class="line"><code class="docutils literal"><span class="pre">PYTHONHASHSEED</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">PYTHONHASHSEED</span></code></div>
 <div class="line"><a class="reference external" href="https://docs.python.org/3/using/cmdline.html#envvar-PYTHONHASHSEED">https://docs.python.org/3/using/cmdline.html#envvar-PYTHONHASHSEED</a></div>
 </div>
 </li>
 <li><p class="first">Always Store Raw Data behind Plots</p>
 <ul class="simple">
-<li>Or, &#8220;Generate all plots from [source-controlled] [transforms-of]
-raw data&#8221;</li>
-<li><code class="docutils literal"><span class="pre">./data</span></code></li>
-<li><code class="docutils literal"><span class="pre">./tests/data</span></code></li>
-<li><code class="docutils literal"><span class="pre">./nb/data</span></code> (<code class="docutils literal"><span class="pre">./notebooks</span></code>)</li>
+<li>Or, “Generate all plots from [source-controlled] [transforms-of]
+raw data”</li>
+<li><code class="docutils literal notranslate"><span class="pre">./data</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">./tests/data</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">./nb/data</span></code> (<code class="docutils literal notranslate"><span class="pre">./notebooks</span></code>)</li>
 <li><a class="reference internal" href="#data-visualization"><span class="std std-ref">Data Visualization</span></a>, <a class="reference internal" href="#data-visualization-tools"><span class="std std-ref">Data Visualization Tools</span></a></li>
 </ul>
 </li>
@@ -575,33 +578,33 @@ Allowing Layers of Increasing Detail to Be Inspected</p>
 <div class="line"><a class="reference external" href="http://www.w3.org/TR/skos-reference/">http://www.w3.org/TR/skos-reference/</a></div>
 <div class="line"><a class="reference external" href="http://www.w3.org/TR/skos-reference/skos.html">http://www.w3.org/TR/skos-reference/skos.html</a></div>
 </div>
-<p><code class="docutils literal"><span class="pre">skos:narrower</span></code>, <code class="docutils literal"><span class="pre">skos:narrowerTransitive</span></code>,
-<code class="docutils literal"><span class="pre">skos:broader</span></code> , <code class="docutils literal"><span class="pre">skos:broaderTransistive</span></code>,
-[...]</p>
+<p><code class="docutils literal notranslate"><span class="pre">skos:narrower</span></code>, <code class="docutils literal notranslate"><span class="pre">skos:narrowerTransitive</span></code>,
+<code class="docutils literal notranslate"><span class="pre">skos:broader</span></code> , <code class="docutils literal notranslate"><span class="pre">skos:broaderTransistive</span></code>,
+[…]</p>
 </li>
-<li><p class="first"><a class="reference internal" href="knowledge-engineering#xkos"><span class="std std-ref">XKOS</span></a>: &#8220;An SKOS extension for representing
-statistical classifications&#8221;</p>
+<li><p class="first"><a class="reference internal" href="knowledge-engineering#xkos"><span class="std std-ref">XKOS</span></a>: “An SKOS extension for representing
+statistical classifications”</p>
 <p><a class="reference external" href="http://rdf-vocabulary.ddialliance.org/xkos.html">http://rdf-vocabulary.ddialliance.org/xkos.html</a></p>
 </li>
-<li><p class="first"><a class="reference internal" href="knowledge-engineering#qb"><span class="std std-ref">RDF Data Cubes</span></a>: &#8220;The RDF Data Cube Vocabulary&#8221;</p>
-<p><code class="docutils literal"><span class="pre">qb:DataSet</span></code>,
-<code class="docutils literal"><span class="pre">qb:Dimension</span></code>,
-<code class="docutils literal"><span class="pre">qb:ObservationGroup</span></code>,
-<code class="docutils literal"><span class="pre">qb:Slice</span></code>, [...]</p>
+<li><p class="first"><a class="reference internal" href="knowledge-engineering#qb"><span class="std std-ref">RDF Data Cubes</span></a>: “The RDF Data Cube Vocabulary”</p>
+<p><code class="docutils literal notranslate"><span class="pre">qb:DataSet</span></code>,
+<code class="docutils literal notranslate"><span class="pre">qb:Dimension</span></code>,
+<code class="docutils literal notranslate"><span class="pre">qb:ObservationGroup</span></code>,
+<code class="docutils literal notranslate"><span class="pre">qb:Slice</span></code>, […]</p>
 <p><a class="reference external" href="http://www.w3.org/TR/vocab-data-cube/">http://www.w3.org/TR/vocab-data-cube/</a></p>
 </li>
 </ul>
 </li>
 <li><p class="first">Connect Textual Statements to Underlying Results</p>
 <ul class="simple">
-<li><a class="reference internal" href="knowledge-engineering#linked-data"><span class="std std-ref">Linked Data</span></a>: <a class="reference internal" href="knowledge-engineering#uri"><span class="std std-ref">URIs</span></a>, <a class="reference internal" href="knowledge-engineering#url"><span class="std std-ref">URLs</span></a>, <code class="docutils literal"><span class="pre">#uri-fragments</span></code></li>
-<li><a class="reference internal" href="knowledge-engineering#turtle"><span class="std std-ref">Turtle</span></a> / <a class="reference internal" href="knowledge-engineering#trig"><span class="std std-ref">TriG</span></a>: <code class="docutils literal"><span class="pre">&lt;&gt;</span></code> (this document, this named graph)</li>
+<li><a class="reference internal" href="knowledge-engineering#linked-data"><span class="std std-ref">Linked Data</span></a>: <a class="reference internal" href="knowledge-engineering#uri"><span class="std std-ref">URIs</span></a>, <a class="reference internal" href="knowledge-engineering#url"><span class="std std-ref">URLs</span></a>, <code class="docutils literal notranslate"><span class="pre">#uri-fragments</span></code></li>
+<li><a class="reference internal" href="knowledge-engineering#turtle"><span class="std std-ref">Turtle</span></a> / <a class="reference internal" href="knowledge-engineering#trig"><span class="std std-ref">TriG</span></a>: <code class="docutils literal notranslate"><span class="pre">&lt;&gt;</span></code> (this document, this named graph)</li>
 <li><a class="reference internal" href="../tools/index#restructuredtext"><span class="std std-ref">ReStructuredText</span></a><ul>
 <li><a class="reference external" href="http://sphinx-doc.org/rest.html#footnotes">http://sphinx-doc.org/rest.html#footnotes</a> #citations #substitutions</li>
 <li><a class="reference external" href="https://github.com/yoloseem/awesome-sphinxdoc">https://github.com/yoloseem/awesome-sphinxdoc</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#linked-reproducibility"><span class="std std-ref">Linked Reproducibility</span></a>: <a class="reference internal" href="knowledge-engineering#uri"><span class="std std-ref">URIs</span></a>, <a class="reference internal" href="knowledge-engineering#url"><span class="std std-ref">URLs</span></a>, <code class="docutils literal"><span class="pre">#uri-fragments</span></code></li>
+<li><a class="reference internal" href="#linked-reproducibility"><span class="std std-ref">Linked Reproducibility</span></a>: <a class="reference internal" href="knowledge-engineering#uri"><span class="std std-ref">URIs</span></a>, <a class="reference internal" href="knowledge-engineering#url"><span class="std std-ref">URLs</span></a>, <code class="docutils literal notranslate"><span class="pre">#uri-fragments</span></code></li>
 </ul>
 </li>
 <li><p class="first">Provide Public Access to Scripts, Runs, and Results</p>
@@ -626,7 +629,7 @@ statistical classifications&#8221;</p>
 <div class="section" id="tensimplerules-for-creating-a-good-data-management-plan">
 <h3>#TenSimpleRules for Creating a Good Data Management Plan<a class="headerlink" href="#tensimplerules-for-creating-a-good-data-management-plan" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
-<div class="line">&#8220;Ten Simple Rules for Creating a Good Data Management Plan&#8221;</div>
+<div class="line">“Ten Simple Rules for Creating a Good Data Management Plan”</div>
 <div class="line"><a class="reference external" href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004525">http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004525</a></div>
 <div class="line">DOI: 10.1371/journal.pcbi.1004525</div>
 </div>
@@ -655,7 +658,7 @@ statistical classifications&#8221;</p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Knowledge">https://en.wikipedia.org/wiki/Knowledge</a>
 (see: <a class="reference internal" href="knowledge-engineering#knowledge-engineering"><span class="std std-ref">Knowledge Engineering</span></a>)</p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Wisdom">https://en.wikipedia.org/wiki/Wisdom</a></p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Lead -&gt; Gold</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Lead -&gt; Gold</span>
 </pre></div>
 </div>
 <ul class="simple">
@@ -670,7 +673,7 @@ statistical classifications&#8221;</p>
 <p>Find local and global optima (maxima and minima)
 within an n-dimensional field which may be
 limited by resource constraints.</p>
-<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Global optima of a 1-dimensional list</span>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Global optima of a 1-dimensional list</span>
 <span class="n">points</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
 <span class="n">global_max</span><span class="p">,</span> <span class="n">global_min</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">points</span><span class="p">),</span> <span class="nb">min</span><span class="p">(</span><span class="n">points</span><span class="p">)</span>
 <span class="k">assert</span> <span class="n">global_max</span> <span class="o">==</span> <span class="mi">100</span>
@@ -705,28 +708,28 @@ limited by resource constraints.</p>
 <p><strong>Data</strong></p>
 <p>Inputs, Outputs</p>
 <p>Revenue:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>2014-01-01 1200 CDT  $80
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>2014-01-01 1200 CDT  $80
 2014-01-01 1210 CDT  $100
 2014-01-01 1500 CDT  $20
 </pre></div>
 </div>
 <p>Expenses:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>2014-01-01 wages     $256 ($8/hr * 8hrs * 4 people)
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>2014-01-01 wages     $256 ($8/hr * 8hrs * 4 people)
 2014-01-01 utilities $100
 </pre></div>
 </div>
 <p><strong>Information</strong></p>
 <p>Aggregations, Tendencies</p>
 <p>Revenue (gross):</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>2014-01-01  total: $200
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>2014-01-01  total: $200
 </pre></div>
 </div>
 <p>Expenses:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>2014-01-01  total: $356
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>2014-01-01  total: $356
 </pre></div>
 </div>
 <p>Net:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>2013-01-01  net:  -$200
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>2013-01-01  net:  -$200
 2014-01-01  net:  -$156
 </pre></div>
 </div>
@@ -743,7 +746,7 @@ but, our loyal customers would not be happy about that.</p>
 <div class="section" id="body-temperature">
 <h3>Body Temperature<a class="headerlink" href="#body-temperature" title="Permalink to this headline">¶</a></h3>
 <p><strong>Data</strong></p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">time</span><span class="p">,</span> <span class="n">body</span> <span class="n">temp</span><span class="p">,</span> <span class="n">outdoor</span> <span class="n">temp</span><span class="p">,</span> <span class="n">indoors</span><span class="o">/</span><span class="n">outdoors</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">time</span><span class="p">,</span> <span class="n">body</span> <span class="n">temp</span><span class="p">,</span> <span class="n">outdoor</span> <span class="n">temp</span><span class="p">,</span> <span class="n">indoors</span><span class="o">/</span><span class="n">outdoors</span>
 <span class="n">time</span><span class="p">,</span> <span class="n">exercise</span> <span class="nb">type</span><span class="p">,</span> <span class="n">intensity</span><span class="p">,</span> <span class="n">duration</span>
 </pre></div>
 </div>
@@ -756,8 +759,8 @@ but, our loyal customers would not be happy about that.</p>
 <li>Exercise increases body temperature</li>
 </ul>
 <p><strong>Wisdom</strong></p>
-<p>If it&#8217;s 1745, and body temperature is n degrees above baseline,
-I&#8217;m probably walking outside and it is hot out.</p>
+<p>If it’s 1745, and body temperature is n degrees above baseline,
+I’m probably walking outside and it is hot out.</p>
 </div>
 </div>
 <div class="section" id="theory">
@@ -778,8 +781,8 @@ I&#8217;m probably walking outside and it is hot out.</p>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Logical_fallacies#See_also">https://en.wikipedia.org/wiki/Logical_fallacies#See_also</a></li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/List_of_fallacies">https://en.wikipedia.org/wiki/List_of_fallacies</a></li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Controlling_for_a_variable">https://en.wikipedia.org/wiki/Controlling_for_a_variable</a><ul>
-<li>&#8220;distance walked per day&#8221;</li>
-<li>&#8220;sports played&#8221; (sport, years)</li>
+<li>“distance walked per day”</li>
+<li>“sports played” (sport, years)</li>
 </ul>
 </li>
 </ul>
@@ -832,7 +835,7 @@ I&#8217;m probably walking outside and it is hot out.</p>
 <div class="section" id="linked-reproducibility">
 <span id="index-12"></span><span id="id9"></span><h5>Linked Reproducibility<a class="headerlink" href="#linked-reproducibility" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
-<div class="line">Hashtag: <code class="docutils literal"><span class="pre">#LinkedReproducibility</span></code></div>
+<div class="line">Hashtag: <code class="docutils literal notranslate"><span class="pre">#LinkedReproducibility</span></code></div>
 <div class="line">Twitter: <a class="reference external" href="https://twitter.com/hashtag/LinkedReproducibility">https://twitter.com/hashtag/LinkedReproducibility</a></div>
 <div class="line">Wrdrddocs: <a class="reference internal" href="linkedreproducibility#linkedreproducibility"><span class="std std-ref">LinkedReproducibility</span></a></div>
 </div>
@@ -878,7 +881,7 @@ I&#8217;m probably walking outside and it is hot out.</p>
 </li>
 <li><p class="first"><a class="reference internal" href="#information-theory"><span class="std std-ref">Information Theory</span></a></p>
 </li>
-<li><p class="first">&#8220;Mathematics for Computer Science&#8221; (CC-BY-SA 3.0)</p>
+<li><p class="first">“Mathematics for Computer Science” (CC-BY-SA 3.0)</p>
 <p><a class="reference external" href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-spring-2015/readings/MIT6_042JS15_textbook.pdf">https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-spring-2015/readings/MIT6_042JS15_textbook.pdf</a></p>
 </li>
 <li><p class="first"><a class="reference external" href="https://www.khanacademy.org/math/recreational-math">https://www.khanacademy.org/math/recreational-math</a></p>
@@ -927,7 +930,7 @@ I&#8217;m probably walking outside and it is hot out.</p>
 </div>
 <ul class="simple">
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/LaTeX#Example">https://en.wikipedia.org/wiki/LaTeX#Example</a></li>
-<li>&#8220;A Primer on Using LaTeX in Jupyter Notebooks&#8221;
+<li>“A Primer on Using LaTeX in Jupyter Notebooks”
 <a class="reference external" href="http://data-blog.udacity.com/posts/2016/10/latex-primer/">http://data-blog.udacity.com/posts/2016/10/latex-primer/</a></li>
 </ul>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Comparison_of_TeX_editors">https://en.wikipedia.org/wiki/Comparison_of_TeX_editors</a></p>
@@ -939,7 +942,7 @@ I&#8217;m probably walking outside and it is hot out.</p>
 <div><p>Completely new LaTeX editor in <a class="reference external" href="https://cocalc.com">https://cocalc.com</a> .  Open source, is
 written in React, has unlimited multipanel views, realtime collab,
 records all edits (TimeTravel), forward an inverse search, clickable
-links in the PDF,supports SageTex out of the box, and autoformat...</p>
+links in the PDF,supports SageTex out of the box, and autoformat…</p>
 </div></blockquote>
 </li>
 </ul>
@@ -980,7 +983,7 @@ in a browser.</p>
 <li><a class="reference external" href="http://ipython.org/ipython-doc/dev/install/install.html#mathjax">http://ipython.org/ipython-doc/dev/install/install.html#mathjax</a></li>
 <li><a class="reference external" href="https://nbviewer.jupyter.org/github/jupyter/notebook/blob/master/docs/source/examples/Notebook/Typesetting%20Equations.ipynb">https://nbviewer.jupyter.org/github/jupyter/notebook/blob/master/docs/source/examples/Notebook/Typesetting%20Equations.ipynb</a></li>
 <li><a class="reference external" href="http://nbviewer.ipython.org/gist/rpmuller/5920182">http://nbviewer.ipython.org/gist/rpmuller/5920182</a></li>
-<li>&#8220;A Primer on Using LaTeX in Jupyter Notebooks&#8221;
+<li>“A Primer on Using LaTeX in Jupyter Notebooks”
 <a class="reference external" href="http://data-blog.udacity.com/posts/2016/10/latex-primer/">http://data-blog.udacity.com/posts/2016/10/latex-primer/</a></li>
 </ul>
 </div>
@@ -1218,7 +1221,7 @@ in a browser.</p>
 <li><a class="reference internal" href="units#units"><span class="std std-ref">Units</span></a> of measure</li>
 <li>I/O Transforms of <a class="reference internal" href="#information-theory"><span class="std std-ref">information(/energy)</span></a></li>
 </ul>
-<p>&#8220;Data Provenance&#8221;, &#8220;Data Lineage&#8221;</p>
+<p>“Data Provenance”, “Data Lineage”</p>
 <ul class="simple">
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Provenance#Data_provenance">https://en.wikipedia.org/wiki/Provenance#Data_provenance</a></li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Data_lineage#Data_Provenance">https://en.wikipedia.org/wiki/Data_lineage#Data_Provenance</a></li>
@@ -1245,7 +1248,7 @@ in a browser.</p>
 <ul class="simple">
 <li><a class="reference internal" href="#scientific-method"><span class="std std-ref">Scientific Method</span></a></li>
 <li><a class="reference internal" href="#reproducibility"><span class="std std-ref">Reproducibility</span></a></li>
-<li><a class="reference external" href="https://en.wikipedia.org/wiki/Occam's_razor">https://en.wikipedia.org/wiki/Occam&#8217;s_razor</a></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Occam's_razor">https://en.wikipedia.org/wiki/Occam’s_razor</a></li>
 </ul>
 <blockquote class="pull-quote">
 <div><p>Q: Is there confirmation bias in starting with
@@ -1341,7 +1344,7 @@ to useful <a class="reference external" href="https://en.wikipedia.org/wiki/Data
 </li>
 <li><p class="first"><a class="reference external" href="http://mpld3.github.io/">http://mpld3.github.io/</a> (Matplotlib + D3.js)</p>
 </li>
-<li><p class="first"><code class="docutils literal"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">matplotlib</span></code> (<a class="reference internal" href="../tools/index#conda"><span class="std std-ref">Conda</span></a> (<a class="reference internal" href="../tools/index#anaconda"><span class="std std-ref">Anaconda</span></a>))</p>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">matplotlib</span></code> (<a class="reference internal" href="../tools/index#conda"><span class="std std-ref">Conda</span></a> (<a class="reference internal" href="../tools/index#anaconda"><span class="std std-ref">Anaconda</span></a>))</p>
 </li>
 </ul>
 <p>.</p>
@@ -1356,9 +1359,9 @@ to useful <a class="reference external" href="https://en.wikipedia.org/wiki/Data
 <div class="line">Docs: <a class="reference external" href="http://seaborn.pydata.org/examples/">http://seaborn.pydata.org/examples/</a></div>
 </div>
 <ul class="simple">
-<li>&#8220;Seaborn is a Python visualization library based on <a class="reference internal" href="#matplotlib"><span class="std std-ref">Matplotlib</span></a>.
+<li>“Seaborn is a Python visualization library based on <a class="reference internal" href="#matplotlib"><span class="std std-ref">Matplotlib</span></a>.
 It provides a high-level interface for drawing attractive statistical
-graphics.&#8221;</li>
+graphics.”</li>
 </ul>
 </div>
 </div>
@@ -1370,7 +1373,7 @@ graphics.&#8221;</li>
 <div class="line">Docs: <a class="reference external" href="http://docs.enthought.com/mayavi/mayavi/">http://docs.enthought.com/mayavi/mayavi/</a></div>
 </div>
 <ul>
-<li><p class="first">&#8220;Mayavi: 3D scientific data visualization and plotting in <a class="reference internal" href="../tools/index#python"><span class="std std-ref">Python</span></a>&#8220;</p>
+<li><p class="first">“Mayavi: 3D scientific data visualization and plotting in <a class="reference internal" href="../tools/index#python"><span class="std std-ref">Python</span></a>”</p>
 </li>
 <li><p class="first">ref:<cite>Scipy lectures</cite>:</p>
 <p><a class="reference external" href="https://scipy-lectures.github.io/packages/3d_plotting/">https://scipy-lectures.github.io/packages/3d_plotting/</a></p>

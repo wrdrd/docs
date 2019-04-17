@@ -56,6 +56,7 @@
     <script type="text/javascript" src="../_static/js/jquery.min.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/js/local.js"></script>
     <script type="text/javascript" src="../_static/js/bootstrap3.min.js"></script>
 <script type="text/javascript" src="../_static/js/jquery.cookie.min.js"></script>
@@ -65,6 +66,8 @@
     <link rel="search" type="application/opensearchdescription+xml"
     title="Search within WRD R&amp;D Documentation"
     href="../_static/opensearch.xml"/>
+    <link rel="index" title="Index" href="../genindex" />
+    <link rel="search" title="Search" href="../search" />
     <link rel="top" title="WRD R&amp;D Documentation" href="../index" />
     <link rel="next" title="Education Technology" href="education-technology" />
     <link rel="prev" title="Personal Finance" href="personal-finance" /> 
@@ -162,7 +165,7 @@
               <li><a href="../py-modindex" title="Python Module Index" >modules </a></li>
               <li><a href="../genindex" title="General Index" accesskey="I">index </a></li>
             
-            <li class="visible-xs"><a href="../_sources/consulting/investing.txt" rel="nofollow">Show Source</a></li>
+            <li class="visible-xs"><a href="../_sources/consulting/investing.rst.txt" rel="nofollow">Show Source</a></li>
 
             <li class="visible-xs">
                 <form class="search form-search form-inline navbar-form navbar-right sp-searchbox" action="../search" method="get">
@@ -194,7 +197,7 @@
          
 <div class="col-md-3 hidden-xs" id="sidebar-wrapper">
   <div class="sidebar hidden-xs" role="navigation" aria-label="main navigation">
-  <h3><a href="../index">Table Of Contents</a></h3>
+  <h3><a href="../index">Table of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Investing</a><ul>
 <li><a class="reference internal" href="#basics">Basics</a><ul>
@@ -287,7 +290,7 @@
 <div class="widget navlinks">
   <h3>This Page</h3>
   <ul class="this-page-menu">
-    <li><a href="../_sources/consulting/investing.txt"
+    <li><a href="../_sources/consulting/investing.rst.txt"
             rel="nofollow"
             target="_blank">Source RST</a></li>
     <li><a href="https://github.com/wrdrd/docs/blob/master/docs/consulting/investing.rst"
@@ -371,7 +374,7 @@ or advice of any kind.</p>
 </div>
 <ul class="simple">
 <li>Gross Revenue</li>
-<li>Net Revenue: revenue after [returns, chargebacks, ...]</li>
+<li>Net Revenue: revenue after [returns, chargebacks, …]</li>
 <li><a class="reference external" href="http://www.investopedia.com/ask/answers/102714/what-are-difference-between-gross-revenue-reporting-and-net-revenue-reporting.asp">http://www.investopedia.com/ask/answers/102714/what-are-difference-between-gross-revenue-reporting-and-net-revenue-reporting.asp</a></li>
 </ul>
 </div>
@@ -547,7 +550,7 @@ generating valuation reports).</p>
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Stock_market_crash">https://en.wikipedia.org/wiki/Stock_market_crash</a></div>
 </div>
 <ul class="simple">
-<li><a class="reference external" href="https://en.wikipedia.org/wiki/Wall_Street_Crash_of_1929">https://en.wikipedia.org/wiki/Wall_Street_Crash_of_1929</a> (&#8220;Black Tuesday&#8221;)<ul>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Wall_Street_Crash_of_1929">https://en.wikipedia.org/wiki/Wall_Street_Crash_of_1929</a> (“Black Tuesday”)<ul>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Great_Depression">https://en.wikipedia.org/wiki/Great_Depression</a></li>
 </ul>
 </li>
@@ -596,7 +599,7 @@ generating valuation reports).</p>
 <ul>
 <li><p class="first">Pandas requires <a class="reference internal" href="../tools/index#cython"><span class="std std-ref">Cython</span></a>, <a class="reference internal" href="../tools/index#numpy"><span class="std std-ref">NumPy</span></a>,
 and a number of additional libraries.</p>
-<div class="code bash highlight-default"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">install</span> <span class="n">pandas</span>
+<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">install</span> <span class="n">pandas</span>
 </pre></div>
 </div>
 <ul class="simple">
@@ -643,7 +646,7 @@ and a number of additional libraries.</p>
 <ul>
 <li><p class="first">quandl-python requires <a class="reference internal" href="../tools/index#numpy"><span class="std std-ref">NumPy</span></a>,
 which is really easy to install with <a class="reference internal" href="../tools/index#conda"><span class="std std-ref">Conda</span></a>.</p>
-<div class="code bash highlight-default"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">install</span> <span class="n">numpy</span> <span class="n">pandas</span> <span class="n">requests</span> <span class="n">pip</span>
+<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">install</span> <span class="n">numpy</span> <span class="n">pandas</span> <span class="n">requests</span> <span class="n">pip</span>
 <span class="n">pip</span> <span class="n">install</span> <span class="n">quandl</span><span class="o">-</span><span class="n">python</span>
 </pre></div>
 </div>
@@ -731,9 +734,9 @@ community; who can clone and modify at will.<ul>
 <p>Zipline is an <a class="reference internal" href="#algorithmic-trading"><span class="std std-ref">Algorithmic trading</span></a> library written in
 <a class="reference internal" href="../tools/index#python"><span class="std std-ref">Python</span></a>.</p>
 <ul class="simple">
-<li>Zipline does backtesting. (&#8220;How would this trading algorithm have
-perfomed based upon historical data?&#8221;)</li>
-<li>Zipline does live-trading. (&#8220;When to buy/sell?&#8221;)</li>
+<li>Zipline does backtesting. (“How would this trading algorithm have
+perfomed based upon historical data?”)</li>
+<li>Zipline does live-trading. (“When to buy/sell?”)</li>
 <li><a class="reference internal" href="#quantopian"><span class="std std-ref">Quantopian</span></a> hosts zipline (and other components).</li>
 </ul>
 </div>
@@ -744,7 +747,7 @@ perfomed based upon historical data?&#8221;)</li>
 <div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/qgrid">https://pypi.python.org/pypi/qgrid</a></div>
 <div class="line">Docs: <a class="reference external" href="https://qgrid.readthedocs.io/en/latest/">https://qgrid.readthedocs.io/en/latest/</a></div>
 </div>
-<p>qgrid is &#8220;An Interactive Grid for Sorting and Filtering
+<p>qgrid is “An Interactive Grid for Sorting and Filtering
 [<a class="reference internal" href="#pandas"><span class="std std-ref">pandas</span></a>] DataFrames in <a class="reference internal" href="../tools/index#ipython-notebook"><span class="std std-ref">IPython Notebook</span></a>.</p>
 </div>
 </div>

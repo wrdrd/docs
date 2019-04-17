@@ -56,6 +56,7 @@
     <script type="text/javascript" src="../_static/js/jquery.min.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/js/local.js"></script>
     <script type="text/javascript" src="../_static/js/bootstrap3.min.js"></script>
 <script type="text/javascript" src="../_static/js/jquery.cookie.min.js"></script>
@@ -65,6 +66,8 @@
     <link rel="search" type="application/opensearchdescription+xml"
     title="Search within WRD R&amp;D Documentation"
     href="../_static/opensearch.xml"/>
+    <link rel="index" title="Index" href="../genindex" />
+    <link rel="search" title="Search" href="../search" />
     <link rel="top" title="WRD R&amp;D Documentation" href="../index" />
     <link rel="next" title="Knowledge Engineering" href="knowledge-engineering" />
     <link rel="prev" title="Data Science" href="data-science" /> 
@@ -212,7 +215,7 @@
               <li><a href="../py-modindex" title="Python Module Index" >modules </a></li>
               <li><a href="../genindex" title="General Index" accesskey="I">index </a></li>
             
-            <li class="visible-xs"><a href="../_sources/consulting/units.txt" rel="nofollow">Show Source</a></li>
+            <li class="visible-xs"><a href="../_sources/consulting/units.rst.txt" rel="nofollow">Show Source</a></li>
 
             <li class="visible-xs">
                 <form class="search form-search form-inline navbar-form navbar-right sp-searchbox" action="../search" method="get">
@@ -244,7 +247,7 @@
          
 <div class="col-md-3 hidden-xs" id="sidebar-wrapper">
   <div class="sidebar hidden-xs" role="navigation" aria-label="main navigation">
-  <h3><a href="../index">Table Of Contents</a></h3>
+  <h3><a href="../index">Table of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Units</a><ul>
 <li><a class="reference internal" href="#mass-noun">Mass noun</a></li>
@@ -387,7 +390,7 @@
 <div class="widget navlinks">
   <h3>This Page</h3>
   <ul class="this-page-menu">
-    <li><a href="../_sources/consulting/units.txt"
+    <li><a href="../_sources/consulting/units.rst.txt"
             rel="nofollow"
             target="_blank">Source RST</a></li>
     <li><a href="https://github.com/wrdrd/docs/blob/master/docs/consulting/units.rst"
@@ -471,13 +474,13 @@ with <a class="reference internal" href="knowledge-engineering#rdf"><span class=
 <p>Spreadsheet tools:</p>
 <ul class="simple">
 <li>Specify units in each column heading
-(e.g. <code class="docutils literal"><span class="pre">&quot;time</span> <span class="pre">[[s]]&quot;,&quot;speed</span> <span class="pre">[[m/s]]&quot;</span></code>)</li>
+(e.g. <code class="docutils literal notranslate"><span class="pre">&quot;time</span> <span class="pre">[[s]]&quot;,&quot;speed</span> <span class="pre">[[m/s]]&quot;</span></code>)</li>
 <li>Extra column per column for units
-(e.g. <code class="docutils literal"><span class="pre">&quot;time&quot;,&quot;time</span> <span class="pre">unit&quot;,&quot;speed&quot;,&quot;speed</span> <span class="pre">unit&quot;</span></code>)</li>
+(e.g. <code class="docutils literal notranslate"><span class="pre">&quot;time&quot;,&quot;time</span> <span class="pre">unit&quot;,&quot;speed&quot;,&quot;speed</span> <span class="pre">unit&quot;</span></code>)</li>
 <li><a class="reference internal" href="knowledge-engineering#csvw"><span class="std std-ref">CSVW</span></a>: Columns have URIs, which are objects
 that can have subjects and predicates
 (for <a class="reference internal" href="knowledge-engineering#xsd"><span class="std std-ref">XSD</span></a> types; metadata (author, date,
-<code class="docutils literal"><span class="pre">rdfs:label</span> <span class="pre">&quot;time&quot;&#64;en&quot;</span></code>),
+<code class="docutils literal notranslate"><span class="pre">rdfs:label</span> <span class="pre">&quot;time&quot;&#64;en&quot;</span></code>),
 and possibly units of measure)</li>
 </ul>
 <p>Unit and/or precision-aware calculations:</p>
@@ -731,7 +734,7 @@ because the USA has not yet converted to the <a class="reference internal" href=
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Metre">https://en.wikipedia.org/wiki/Metre</a></div>
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Meter">https://en.wikipedia.org/wiki/Meter</a></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">m</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">m</span></code></div>
 </div>
 <blockquote>
 <div>The metre is the length of the path travelled by light in vacuum
@@ -744,10 +747,10 @@ during a time interval of 1/299792458 of a second</div></blockquote>
 <span id="index-18"></span><span id="id13"></span><h4>litre<a class="headerlink" href="#litre" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Litre">https://en.wikipedia.org/wiki/Litre</a></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">L</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">L</span></code></div>
 </div>
 <ul class="simple">
-<li>Conversion: 1 <a class="reference internal" href="#litre"><span class="std std-ref">litre</span></a> == <code class="docutils literal"><span class="pre">10e−3</span> <span class="pre">m**3</span></code> (<a class="reference internal" href="#metre"><span class="std std-ref">metres</span></a> cubed)</li>
+<li>Conversion: 1 <a class="reference internal" href="#litre"><span class="std std-ref">litre</span></a> == <code class="docutils literal notranslate"><span class="pre">10e−3</span> <span class="pre">m**3</span></code> (<a class="reference internal" href="#metre"><span class="std std-ref">metres</span></a> cubed)</li>
 <li>Conversion: 1 <a class="reference internal" href="#litre"><span class="std std-ref">litre</span></a> == 0.2641720523 US <a class="reference internal" href="#gallon"><span class="std std-ref">gallon</span></a></li>
 </ul>
 </div>
@@ -767,7 +770,7 @@ during a time interval of 1/299792458 of a second</div></blockquote>
 <span id="g"></span><span id="index-23"></span><h5>gram<a class="headerlink" href="#gram" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Gram">https://en.wikipedia.org/wiki/Gram</a></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">g</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">g</span></code></div>
 </div>
 <ul class="simple">
 <li>Conversion: 1 <a class="reference internal" href="#g"><span class="std std-ref">gram</span></a> == 1/28 <a class="reference internal" href="#oz"><span class="std std-ref">ounce</span></a></li>
@@ -782,8 +785,8 @@ during a time interval of 1/299792458 of a second</div></blockquote>
 <span id="index-26"></span><span id="id17"></span><h4>second<a class="headerlink" href="#second" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Second">https://en.wikipedia.org/wiki/Second</a> #TODO</div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">sec</span></code></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">s</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">sec</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">s</span></code></div>
 </div>
 <div class="section" id="microsecond">
 <span id="index-27"></span><span id="id18"></span><h5>microsecond<a class="headerlink" href="#microsecond" title="Permalink to this headline">¶</a></h5>
@@ -800,7 +803,7 @@ during a time interval of 1/299792458 of a second</div></blockquote>
 <span id="index-28"></span><span id="id19"></span><h5>millisecond<a class="headerlink" href="#millisecond" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Millisecond">https://en.wikipedia.org/wiki/Millisecond</a> #TODO</div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">ms</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">ms</span></code></div>
 </div>
 <ul class="simple">
 <li>Conversion: 1 <a class="reference internal" href="#millisecond"><span class="std std-ref">millisecond</span></a> == 1/1000 of a <a class="reference internal" href="#second"><span class="std std-ref">second</span></a></li>
@@ -811,8 +814,8 @@ during a time interval of 1/299792458 of a second</div></blockquote>
 <span id="index-30"></span><span id="id20"></span><h5>minute<a class="headerlink" href="#minute" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Minute">https://en.wikipedia.org/wiki/Minute</a></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">min</span></code></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">m</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">min</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">m</span></code></div>
 </div>
 <ul class="simple">
 <li>Conversion: 1 <a class="reference internal" href="#minute"><span class="std std-ref">minute</span></a> == 60 <a class="reference internal" href="#second"><span class="std std-ref">seconds</span></a></li>
@@ -822,9 +825,9 @@ during a time interval of 1/299792458 of a second</div></blockquote>
 <span id="index-31"></span><span id="id21"></span><h5>hour<a class="headerlink" href="#hour" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Hour">https://en.wikipedia.org/wiki/Hour</a></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">hr</span></code></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">hrs</span></code></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">h</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">hr</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">hrs</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">h</span></code></div>
 </div>
 <ul class="simple">
 <li>Conversion: 1 <a class="reference internal" href="#hour"><span class="std std-ref">hour</span></a> == 60 <a class="reference internal" href="#minute"><span class="std std-ref">minutes</span></a></li>
@@ -835,7 +838,7 @@ during a time interval of 1/299792458 of a second</div></blockquote>
 <span id="index-32"></span><span id="id22"></span><h5>day<a class="headerlink" href="#day" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Day">https://en.wikipedia.org/wiki/Day</a></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">d</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">d</span></code></div>
 </div>
 <ul class="simple">
 <li>Conversion: 1 <a class="reference internal" href="#day"><span class="std std-ref">day</span></a> == 24 <a class="reference internal" href="#hour"><span class="std std-ref">hours</span></a></li>
@@ -848,9 +851,9 @@ during a time interval of 1/299792458 of a second</div></blockquote>
 <span id="index-33"></span><span id="id23"></span><h5>week<a class="headerlink" href="#week" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Week">https://en.wikipedia.org/wiki/Week</a></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">wk</span></code></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">wks</span></code></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">w</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">wk</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">wks</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">w</span></code></div>
 </div>
 <ul class="simple">
 <li>Conversion: 1 <a class="reference internal" href="#week"><span class="std std-ref">week</span></a> == 7 <a class="reference internal" href="#day"><span class="std std-ref">days</span></a></li>
@@ -863,9 +866,9 @@ during a time interval of 1/299792458 of a second</div></blockquote>
 <span id="index-34"></span><span id="id24"></span><h5>month<a class="headerlink" href="#month" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Month">https://en.wikipedia.org/wiki/Month</a></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">mon</span></code></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">mons</span></code></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">m</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">mon</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">mons</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">m</span></code></div>
 </div>
 <ul class="simple">
 <li>A month contains either 28 (Feb; 29 on a leap year),
@@ -873,8 +876,8 @@ during a time interval of 1/299792458 of a second</div></blockquote>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Thirty_days_hath_September">https://en.wikipedia.org/wiki/Thirty_days_hath_September</a></li>
 <li>Two hands of knuckles with peaks and valleys together:<ul>
 <li>start with an outside knuckle</li>
-<li>up (peak; knuckle) &#8211; 31 days</li>
-<li>down (peak; knuckle) &#8211; 30 day (except for February, which has 28/29)</li>
+<li>up (peak; knuckle) – 31 days</li>
+<li>down (peak; knuckle) – 30 day (except for February, which has 28/29)</li>
 </ul>
 </li>
 </ul>
@@ -883,9 +886,9 @@ during a time interval of 1/299792458 of a second</div></blockquote>
 <span id="index-35"></span><span id="id25"></span><h5>year<a class="headerlink" href="#year" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Year">https://en.wikipedia.org/wiki/Year</a></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">yr</span></code></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">yrs</span></code></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">y</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">yr</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">yrs</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">y</span></code></div>
 </div>
 <ul class="simple">
 <li>Conversion: 1 <a class="reference internal" href="#year"><span class="std std-ref">year</span></a> == 365.25 <a class="reference internal" href="#day"><span class="std std-ref">days</span></a> (<em>1 leap day</em>/4.0)</li>
@@ -905,7 +908,7 @@ our singular planetary star: <em>the sun</em>.</li>
 <span id="hz"></span><span id="index-38"></span><h4>hertz<a class="headerlink" href="#hertz" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Hertz">https://en.wikipedia.org/wiki/Hertz</a></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">Hz</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">Hz</span></code></div>
 </div>
 <ul class="simple">
 <li>TODO: cycles per time</li>
@@ -919,8 +922,8 @@ our singular planetary star: <em>the sun</em>.</li>
 <span id="index-41"></span><span id="id28"></span><h4>ampere<a class="headerlink" href="#ampere" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Ampere">https://en.wikipedia.org/wiki/Ampere</a></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">A</span></code>  # TODO</div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">amp</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">A</span></code>  # TODO</div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">amp</span></code></div>
 </div>
 <p># TODO</p>
 </div>
@@ -930,7 +933,7 @@ our singular planetary star: <em>the sun</em>.</li>
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Volt">https://en.wikipedia.org/wiki/Volt</a></div>
 </div>
 <div class="line-block">
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">V</span></code>  # TODO</div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">V</span></code>  # TODO</div>
 </div>
 <p># TODO frequency / current relation</p>
 </div>
@@ -956,7 +959,7 @@ our singular planetary star: <em>the sun</em>.</li>
 <span id="index-47"></span><span id="id34"></span><h4>celsius<a class="headerlink" href="#celsius" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Celsius">https://en.wikipedia.org/wiki/Celsius</a></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">C</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">C</span></code></div>
 </div>
 <ul class="simple">
 <li>Water (H2O) freezes at 0 degrees <a class="reference internal" href="#celsius"><span class="std std-ref">celsius</span></a>.</li>
@@ -968,7 +971,7 @@ our singular planetary star: <em>the sun</em>.</li>
 <span id="index-48"></span><span id="id35"></span><h4>kelvin<a class="headerlink" href="#kelvin" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Kelvin">https://en.wikipedia.org/wiki/Kelvin</a></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">K</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">K</span></code></div>
 </div>
 </div>
 </div>
@@ -978,7 +981,7 @@ our singular planetary star: <em>the sun</em>.</li>
 <span id="index-50"></span><span id="id37"></span><h4>mole<a class="headerlink" href="#mole" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Mole_(unit)">https://en.wikipedia.org/wiki/Mole_(unit)</a></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">mol</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">mol</span></code></div>
 </div>
 </div>
 </div>
@@ -988,7 +991,7 @@ our singular planetary star: <em>the sun</em>.</li>
 <span id="index-52"></span><span id="id39"></span><h4>candela<a class="headerlink" href="#candela" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Candela">https://en.wikipedia.org/wiki/Candela</a></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">cd</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">cd</span></code></div>
 </div>
 </div>
 </div>
@@ -998,18 +1001,18 @@ our singular planetary star: <em>the sun</em>.</li>
 <span id="index-55"></span><span id="id41"></span><h4>bit<a class="headerlink" href="#bit" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Bit">https://en.wikipedia.org/wiki/Bit</a></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">b</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">b</span></code></div>
 </div>
-<p>A bit can be <code class="docutils literal"><span class="pre">1</span></code> or <code class="docutils literal"><span class="pre">0</span></code>.</p>
+<p>A bit can be <code class="docutils literal notranslate"><span class="pre">1</span></code> or <code class="docutils literal notranslate"><span class="pre">0</span></code>.</p>
 <ul>
-<li><p class="first">A bit may indicate <em>set containment</em> (e.g. <code class="docutils literal"><span class="pre">True</span></code> or <code class="docutils literal"><span class="pre">False</span></code>,
-<code class="docutils literal"><span class="pre">Black</span></code> or <code class="docutils literal"><span class="pre">White</span></code>) [<a class="reference internal" href="knowledge-engineering#set-theory"><span class="std std-ref">Set Theory</span></a>]</p>
+<li><p class="first">A bit may indicate <em>set containment</em> (e.g. <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>,
+<code class="docutils literal notranslate"><span class="pre">Black</span></code> or <code class="docutils literal notranslate"><span class="pre">White</span></code>) [<a class="reference internal" href="knowledge-engineering#set-theory"><span class="std std-ref">Set Theory</span></a>]</p>
 </li>
 <li><p class="first">A bit may be part of an ordered set of bits
 which ascribe left-to-right (<em>little endian</em>)
 or right-to-left (<em>big endian</em>)
 place values to each binary digit:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">4</span> <span class="mi">8</span>   <span class="c1"># little endian</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">4</span> <span class="mi">8</span>   <span class="c1"># little endian</span>
 <span class="mi">0</span> <span class="mi">1</span> <span class="mi">0</span> <span class="mi">1</span>   <span class="c1"># == 0 + 2 + 0 + 8 == 9 (base 10)</span>
 
 <span class="mi">8</span> <span class="mi">4</span> <span class="mi">2</span> <span class="mi">1</span>   <span class="c1"># big endian</span>
@@ -1025,7 +1028,7 @@ place values to each binary digit:</p>
 <span id="index-57"></span><span id="id42"></span><h4>byte<a class="headerlink" href="#byte" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Byte">https://en.wikipedia.org/wiki/Byte</a></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">B</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">B</span></code></div>
 </div>
 <ul class="simple">
 <li>Conversion: 1 <a class="reference internal" href="#byte"><span class="std std-ref">byte</span></a> == 8 <a class="reference internal" href="#bit"><span class="std std-ref">bits</span></a></li>
@@ -1200,7 +1203,7 @@ do now specify the <a class="reference internal" href="#metric-system"><span cla
 <span id="index-60"></span><span id="id45"></span><h4>inch<a class="headerlink" href="#inch" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Inch">https://en.wikipedia.org/wiki/Inch</a></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">in</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">in</span></code></div>
 </div>
 <ul class="simple">
 <li>Conversion: 1 <a class="reference internal" href="#inch"><span class="std std-ref">inch</span></a> ~== 2.54 <cite>cm</cite> (centi- <a class="reference internal" href="#metre"><span class="std std-ref">meters</span></a>)</li>
@@ -1209,7 +1212,7 @@ do now specify the <a class="reference internal" href="#metric-system"><span cla
 <span id="index-61"></span><span id="id46"></span><h5>foot<a class="headerlink" href="#foot" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Foot">https://en.wikipedia.org/wiki/Foot</a></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">ft</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">ft</span></code></div>
 </div>
 <ul class="simple">
 <li>Conversion: 1 <a class="reference internal" href="#foot"><span class="std std-ref">foot</span></a> == 12 <a class="reference internal" href="#inch"><span class="std std-ref">inches</span></a></li>
@@ -1219,7 +1222,7 @@ do now specify the <a class="reference internal" href="#metric-system"><span cla
 <span id="index-62"></span><span id="id47"></span><h5>yard<a class="headerlink" href="#yard" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Foot">https://en.wikipedia.org/wiki/Foot</a></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">yd</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">yd</span></code></div>
 </div>
 <ul class="simple">
 <li>Conversion: 1 <a class="reference internal" href="#yard"><span class="std std-ref">yard</span></a> == 3 <a class="reference internal" href="#foot"><span class="std std-ref">feet</span></a></li>
@@ -1229,8 +1232,8 @@ do now specify the <a class="reference internal" href="#metric-system"><span cla
 <span id="index-63"></span><span id="id48"></span><h5>mile<a class="headerlink" href="#mile" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Mile">https://en.wikipedia.org/wiki/Mile</a></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">mi</span></code></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">m</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">mi</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">m</span></code></div>
 </div>
 <ul class="simple">
 <li>Conversion 1 <a class="reference internal" href="#mile"><span class="std std-ref">mile</span></a> == 1760 <a class="reference internal" href="#yard"><span class="std std-ref">yards</span></a></li>
@@ -1246,8 +1249,8 @@ do now specify the <a class="reference internal" href="#metric-system"><span cla
 <span id="index-65"></span><span id="id50"></span><h4>teaspoon<a class="headerlink" href="#teaspoon" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Teaspoon">https://en.wikipedia.org/wiki/Teaspoon</a></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">t</span></code></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">tsp.</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">t</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">tsp.</span></code></div>
 </div>
 <ul class="simple">
 <li>Conversion: 1 US <a class="reference internal" href="#teaspoon"><span class="std std-ref">teaspoon</span></a> == 1/3 of a US <a class="reference internal" href="#tablespoon"><span class="std std-ref">tablespoon</span></a></li>
@@ -1271,8 +1274,8 @@ do now specify the <a class="reference internal" href="#metric-system"><span cla
 <span id="index-67"></span><span id="id52"></span><h4>tablespoon<a class="headerlink" href="#tablespoon" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Tablespoon">https://en.wikipedia.org/wiki/Tablespoon</a></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">T</span></code></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">Tbsp.</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">T</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">Tbsp.</span></code></div>
 </div>
 <ul class="simple">
 <li>Conversion: 1 US <a class="reference internal" href="#tablespoon"><span class="std std-ref">tablespoon</span></a> == 1/6 US <a class="reference internal" href="#fl-oz"><span class="std std-ref">fluid ounce</span></a></li>
@@ -1282,7 +1285,7 @@ do now specify the <a class="reference internal" href="#metric-system"><span cla
 <span id="index-68"></span><span id="id53"></span><h4>cup<a class="headerlink" href="#cup" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Cup_(unit)">https://en.wikipedia.org/wiki/Cup_(unit)</a></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">c</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">c</span></code></div>
 </div>
 <ul class="simple">
 <li>Metric cup:
@@ -1306,8 +1309,8 @@ do now specify the <a class="reference internal" href="#metric-system"><span cla
 <span id="fl-oz"></span><span id="index-69"></span><h4>fluid ounce<a class="headerlink" href="#fluid-ounce" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Fluid_ounce">https://en.wikipedia.org/wiki/Fluid_ounce</a></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">fl</span> <span class="pre">oz</span></code></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">oz</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">fl</span> <span class="pre">oz</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">oz</span></code></div>
 </div>
 <ul class="simple">
 <li>Serving size: 1 US can of e.g. soda == 12 US <a class="reference internal" href="#fl-oz"><span class="std std-ref">fluid ounce</span></a></li>
@@ -1318,7 +1321,7 @@ do now specify the <a class="reference internal" href="#metric-system"><span cla
 <span id="index-70"></span><span id="id54"></span><h4>pint<a class="headerlink" href="#pint" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Pint">https://en.wikipedia.org/wiki/Pint</a></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">pt</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">pt</span></code></div>
 </div>
 <ul class="simple">
 <li>Conversion: 1 US <a class="reference internal" href="#pint"><span class="std std-ref">pint</span></a> == 16 US <a class="reference internal" href="#fl-oz"><span class="std std-ref">fluid ounce</span></a></li>
@@ -1330,7 +1333,7 @@ do now specify the <a class="reference internal" href="#metric-system"><span cla
 <span id="index-71"></span><span id="id55"></span><h4>quart<a class="headerlink" href="#quart" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Quart">https://en.wikipedia.org/wiki/Quart</a></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">qt</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">qt</span></code></div>
 </div>
 <ul class="simple">
 <li>Conversion: 1 US liquid <a class="reference internal" href="#quart"><span class="std std-ref">quart</span></a> == 32 <a class="reference internal" href="#fl-oz"><span class="std std-ref">fluid ounce</span></a></li>
@@ -1344,7 +1347,7 @@ do now specify the <a class="reference internal" href="#metric-system"><span cla
 <span id="index-72"></span><span id="id56"></span><h4>gallon<a class="headerlink" href="#gallon" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Gallon">https://en.wikipedia.org/wiki/Gallon</a></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">gal</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">gal</span></code></div>
 </div>
 <ul class="simple">
 <li>Conversion: 1 <a class="reference internal" href="#gallon"><span class="std std-ref">gallon</span></a> == 128 <a class="reference internal" href="#fl-oz"><span class="std std-ref">oz</span></a></li>
@@ -1369,22 +1372,22 @@ do now specify the <a class="reference internal" href="#metric-system"><span cla
 <span id="id60"></span><h4>gram<a class="headerlink" href="#id59" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Gram">https://en.wikipedia.org/wiki/Gram</a></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">g</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">g</span></code></div>
 </div>
 </div>
 <div class="section" id="ounce">
 <span id="oz"></span><span id="index-76"></span><h4>ounce<a class="headerlink" href="#ounce" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Ounce">https://en.wikipedia.org/wiki/Ounce</a></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">oz</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">oz</span></code></div>
 </div>
 </div>
 <div class="section" id="pound">
 <span id="lb"></span><span id="index-77"></span><h4>pound<a class="headerlink" href="#pound" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Pound">https://en.wikipedia.org/wiki/Pound</a></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">lb</span></code></div>
-<div class="line">Abbr: <code class="docutils literal"><span class="pre">lbm</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">lb</span></code></div>
+<div class="line">Abbr: <code class="docutils literal notranslate"><span class="pre">lbm</span></code></div>
 </div>
 <ul class="simple">
 <li>Conversion: 1 <a class="reference internal" href="#lb"><span class="std std-ref">pound</span></a> == 16 <a class="reference internal" href="#oz"><span class="std std-ref">ounces (oz)</span></a></li>

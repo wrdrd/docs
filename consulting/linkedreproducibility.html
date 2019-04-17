@@ -56,6 +56,7 @@
     <script type="text/javascript" src="../_static/js/jquery.min.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/js/local.js"></script>
     <script type="text/javascript" src="../_static/js/bootstrap3.min.js"></script>
 <script type="text/javascript" src="../_static/js/jquery.cookie.min.js"></script>
@@ -65,6 +66,8 @@
     <link rel="search" type="application/opensearchdescription+xml"
     title="Search within WRD R&amp;D Documentation"
     href="../_static/opensearch.xml"/>
+    <link rel="index" title="Index" href="../genindex" />
+    <link rel="search" title="Search" href="../search" />
     <link rel="top" title="WRD R&amp;D Documentation" href="../index" />
     <link rel="next" title="Research" href="research" />
     <link rel="prev" title="Knowledge Engineering" href="knowledge-engineering" /> 
@@ -107,7 +110,7 @@
               <li><a href="../py-modindex" title="Python Module Index" >modules </a></li>
               <li><a href="../genindex" title="General Index" accesskey="I">index </a></li>
             
-            <li class="visible-xs"><a href="../_sources/consulting/linkedreproducibility.txt" rel="nofollow">Show Source</a></li>
+            <li class="visible-xs"><a href="../_sources/consulting/linkedreproducibility.rst.txt" rel="nofollow">Show Source</a></li>
 
             <li class="visible-xs">
                 <form class="search form-search form-inline navbar-form navbar-right sp-searchbox" action="../search" method="get">
@@ -139,7 +142,7 @@
          
 <div class="col-md-3 hidden-xs" id="sidebar-wrapper">
   <div class="sidebar hidden-xs" role="navigation" aria-label="main navigation">
-  <h3><a href="../index">Table Of Contents</a></h3>
+  <h3><a href="../index">Table of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">LinkedReproducibility</a><ul>
 <li><a class="reference internal" href="#studygraph-document-nodes-and-link-edges">StudyGraph: Document Nodes and Link Edges</a></li>
@@ -177,7 +180,7 @@
 <div class="widget navlinks">
   <h3>This Page</h3>
   <ul class="this-page-menu">
-    <li><a href="../_sources/consulting/linkedreproducibility.txt"
+    <li><a href="../_sources/consulting/linkedreproducibility.rst.txt"
             rel="nofollow"
             target="_blank">Source RST</a></li>
     <li><a href="https://github.com/wrdrd/docs/blob/master/docs/consulting/linkedreproducibility.rst"
@@ -231,7 +234,7 @@
   <div class="section" id="linkedreproducibility">
 <span id="index-0"></span><span id="id1"></span><h1>LinkedReproducibility<a class="headerlink" href="#linkedreproducibility" title="Permalink to this headline">¶</a></h1>
 <div class="line-block">
-<div class="line">Hashtag: <code class="docutils literal"><span class="pre">#LinkedReproducibility</span></code></div>
+<div class="line">Hashtag: <code class="docutils literal notranslate"><span class="pre">#LinkedReproducibility</span></code></div>
 <div class="line">Twitter: <a class="reference external" href="https://twitter.com/hashtag/LinkedReproducibility">https://twitter.com/hashtag/LinkedReproducibility</a></div>
 </div>
 <ul class="simple">
@@ -248,11 +251,11 @@
 </ul>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p>This page (<code class="docutils literal"><span class="pre">linkedreproducibility.rst</span></code>) is licensed with
+<p>This page (<code class="docutils literal notranslate"><span class="pre">linkedreproducibility.rst</span></code>) is licensed with
 <a class="reference external" href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>
 (Public Domain).</p>
 <p>Please do implement these ideas and specifications.</p>
-<p class="last">&#8211; <a class="reference external" href="https://twitter.com/westurner">&#64;westurner</a></p>
+<p class="last">– <a class="reference external" href="https://twitter.com/westurner">&#64;westurner</a></p>
 </div>
 <div class="section" id="studygraph-document-nodes-and-link-edges">
 <span id="studygraph"></span><span id="index-1"></span><h2>StudyGraph: Document Nodes and Link Edges<a class="headerlink" href="#studygraph-document-nodes-and-link-edges" title="Permalink to this headline">¶</a></h2>
@@ -266,10 +269,10 @@ than threaded comments).</p>
 <li>PLoS, for example</li>
 </ul>
 </li>
-<li>Then, a &#8220;study&#8221; is a document<ul>
-<li>title &#8211; <a class="reference external" href="schema.org/name">schema.org/name</a></li>
-<li>authors &#8211; lead first (usu.)<ul>
-<li>schema.org/TODO &#8211; author, creator, contributor</li>
+<li>Then, a “study” is a document<ul>
+<li>title – <a class="reference external" href="schema.org/name">schema.org/name</a></li>
+<li>authors – lead first (usu.)<ul>
+<li>schema.org/TODO – author, creator, contributor</li>
 </ul>
 </li>
 <li>abstract</li>
@@ -303,7 +306,7 @@ normalization / de-pluralization / etc</li>
 </li>
 <li>What we lack are <strong>structured edges/relations</strong> between the actual studies<ul>
 <li>ex:confirms, ex:seemsToConfirm -&gt; ex:confirmatoryEdge<ul>
-<li>[strength of association [&#8220;magnitude&#8221;]]</li>
+<li>[strength of association [“magnitude”]]</li>
 </ul>
 </li>
 <li>ex:reproduces, ex:seemsToReproduce -&gt; ex:reproducibilityEdge</li>
@@ -326,7 +329,7 @@ normalization / de-pluralization / etc</li>
 </ul>
 <ul class="simple">
 <li>Develop best practices guidelines and
-and/or an <a class="reference internal" href="knowledge-engineering#rdf"><span class="std std-ref">RDF</span></a> schema and vocabulary (&#8220;<code class="docutils literal"><span class="pre">repro:</span></code>)
+and/or an <a class="reference internal" href="knowledge-engineering#rdf"><span class="std std-ref">RDF</span></a> schema and vocabulary (“<code class="docutils literal notranslate"><span class="pre">repro:</span></code>)
 for linking between studies, their supporting data,
 and their collection methods with URIs.<ul>
 <li>developing vocabularies:<ul>
@@ -336,11 +339,11 @@ and their collection methods with URIs.<ul>
 </ul>
 </li>
 <li>linked reproduciblity edges:<ul>
-<li><code class="docutils literal"><span class="pre">similarTo</span></code></li>
-<li><code class="docutils literal"><span class="pre">concursWith</span></code></li>
-<li><code class="docutils literal"><span class="pre">discordantWith</span></code></li>
-<li><code class="docutils literal"><span class="pre">intendedToReproduce</span></code></li>
-<li><code class="docutils literal"><span class="pre">reproduces</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">similarTo</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">concursWith</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">discordantWith</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">intendedToReproduce</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">reproduces</span></code></li>
 </ul>
 </li>
 <li>linked reproducibility classes and properties:<ul>
@@ -388,8 +391,8 @@ and their collection methods with URIs.<ul>
 <li><a class="reference internal" href="../tools/index#nbformat"><span class="std std-ref">nbformat</span></a> (IPython / Jupyter notebook format)<ul>
 <li>insufficient because we need stable premise permalinks
 (across versioned publishing URIs)<ul>
-<li><code class="docutils literal"><span class="pre">#premise-1</span></code></li>
-<li><code class="docutils literal"><span class="pre">#premise-abc398f</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">#premise-1</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">#premise-abc398f</span></code></li>
 </ul>
 </li>
 </ul>
@@ -401,7 +404,7 @@ and their collection methods with URIs.<ul>
 <li>this is a computation graph</li>
 <li>it should have links (edges) to the datasets<ul>
 <li><a class="reference external" href="https://schema.org/Dataset">https://schema.org/Dataset</a></li>
-<li>&#8220;ENH: Linked Datasets (RDF)&#8221;
+<li>“ENH: Linked Datasets (RDF)”
 <a class="reference external" href="https://github.com/pydata/pandas/issues/3402">https://github.com/pydata/pandas/issues/3402</a></li>
 </ul>
 </li>
@@ -419,7 +422,7 @@ and their collection methods with URIs.<ul>
 <li><p class="first">further questions</p>
 <blockquote>
 <div><ul class="simple">
-<li>&#8220;downstream&#8221; studies / implementations</li>
+<li>“downstream” studies / implementations</li>
 <li>retraction management</li>
 <li>decisions / policy predicated on said conclusions</li>
 </ul>
@@ -448,8 +451,8 @@ and their collection methods with URIs.<ul>
 </li>
 <li><p class="first">evaluation of controls</p>
 <ul class="simple">
-<li>&#8220;the URI says they did a Triple Blind Study, but it doesn&#8217;t sound
-like they had groups named just e.g. X, Y, and Z&#8221;<ul>
+<li>“the URI says they did a Triple Blind Study, but it doesn’t sound
+like they had groups named just e.g. X, Y, and Z”<ul>
 <li>disqualified / questionable / etc</li>
 <li>schema.org/MedicalTrial -&gt; schema.org/ScientificTrial</li>
 </ul>
@@ -486,7 +489,7 @@ like they had groups named just e.g. X, Y, and Z&#8221;<ul>
 <ul class="simple">
 <li>Deadline</li>
 <li>Only if you also produce your own meta-analyses</li>
-<li>Only if we&#8217;re doing Open Access (as required by stipulations of
+<li>Only if we’re doing Open Access (as required by stipulations of
 federal funding)</li>
 </ul>
 </li>
@@ -495,12 +498,12 @@ federal funding)</li>
 <div class="section" id="rdf-example">
 <h2>RDF Example<a class="headerlink" href="#rdf-example" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference internal" href="knowledge-engineering#linked-data"><span class="std std-ref">Linked Data</span></a> + <a class="reference internal" href="data-science#reproducibility"><span class="std std-ref">Reproducibility</span></a> =&gt; <a class="reference internal" href="data-science#linked-reproducibility"><span class="std std-ref">Linked Reproducibility</span></a></p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Reproducibility</span> <span class="o">---</span>\<span class="n">___</span>  <span class="n">Linked</span> <span class="n">Reproducibility</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Reproducibility</span> <span class="o">---</span>\<span class="n">___</span>  <span class="n">Linked</span> <span class="n">Reproducibility</span>
 <span class="n">Linked</span> <span class="n">Data</span>     <span class="o">---/</span>
 </pre></div>
 </div>
 <p>In <a class="reference internal" href="knowledge-engineering#turtle"><span class="std std-ref">Turtle</span></a> <a class="reference internal" href="knowledge-engineering#rdf"><span class="std std-ref">RDF</span></a> syntax:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">LinkedData</span> <span class="n">rdf</span><span class="p">:</span><span class="nb">type</span> <span class="n">skos</span><span class="p">:</span><span class="n">Concept</span> <span class="p">;</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">LinkedData</span> <span class="n">rdf</span><span class="p">:</span><span class="nb">type</span> <span class="n">skos</span><span class="p">:</span><span class="n">Concept</span> <span class="p">;</span>
     <span class="n">rdfs</span><span class="p">:</span><span class="n">label</span> <span class="s2">&quot;Linked Data&quot;</span><span class="nd">@en</span> <span class="p">;</span>
     <span class="n">schema</span><span class="p">:</span><span class="n">name</span> <span class="s2">&quot;Linked Data&quot;</span><span class="nd">@en</span> <span class="p">;</span>
     <span class="n">owl</span><span class="p">:</span><span class="n">sameAs</span> <span class="o">&lt;</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">en</span><span class="o">.</span><span class="n">wikipedia</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">wiki</span><span class="o">/</span><span class="n">Linked_data</span><span class="o">&gt;</span> <span class="p">;</span>
@@ -532,10 +535,10 @@ federal funding)</li>
 <div class="section" id="csv-csvw-and-metadata-rows">
 <span id="index-3"></span><span id="id2"></span><h2>CSV, CSVW, and metadata rows<a class="headerlink" href="#csv-csvw-and-metadata-rows" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><a class="reference internal" href="knowledge-engineering#csv"><span class="std std-ref">CSV</span></a> &#8211; Comma Separated Values</li>
-<li><a class="reference internal" href="knowledge-engineering#csvw"><span class="std std-ref">CSVW</span></a> &#8211; CSV on the Web ( <a class="reference internal" href="knowledge-engineering#rdf"><span class="std std-ref">RDF</span></a>, <a class="reference internal" href="knowledge-engineering#json"><span class="std std-ref">JSON</span></a>,
+<li><a class="reference internal" href="knowledge-engineering#csv"><span class="std std-ref">CSV</span></a> – Comma Separated Values</li>
+<li><a class="reference internal" href="knowledge-engineering#csvw"><span class="std std-ref">CSVW</span></a> – CSV on the Web ( <a class="reference internal" href="knowledge-engineering#rdf"><span class="std std-ref">RDF</span></a>, <a class="reference internal" href="knowledge-engineering#json"><span class="std std-ref">JSON</span></a>,
 <a class="reference internal" href="knowledge-engineering#json-ld"><span class="std std-ref">JSON-LD</span></a> )</li>
-<li><a class="reference internal" href="knowledge-engineering#rdf"><span class="std std-ref">RDF</span></a> &#8211; Resource Description Framework<ul>
+<li><a class="reference internal" href="knowledge-engineering#rdf"><span class="std std-ref">RDF</span></a> – Resource Description Framework<ul>
 <li>A two dimensional spreadsheet containing just data values
 (e.g. <a class="reference internal" href="knowledge-engineering#csv"><span class="std std-ref">CSV</span></a>) is a projection of an RDF graph
 which can be expressed as <a class="reference internal" href="knowledge-engineering#csvw"><span class="std std-ref">CSVW</span></a>.</li>
@@ -561,19 +564,19 @@ which can be expressed as <a class="reference internal" href="knowledge-engineer
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><th class="stub">&nbsp;</th>
+<tr class="row-even"><th class="stub">&#160;</th>
 <td>1</td>
 <td>2016-06-19T06:28:49-0500</td>
 <td>20.0</td>
 <td>30.0</td>
 </tr>
-<tr class="row-odd"><th class="stub">&nbsp;</th>
+<tr class="row-odd"><th class="stub">&#160;</th>
 <td>2</td>
 <td>2016-06-19T06:29:22-0500</td>
 <td>40.0</td>
 <td>50.0</td>
 </tr>
-<tr class="row-even"><th class="stub">&nbsp;</th>
+<tr class="row-even"><th class="stub">&#160;</th>
 <td>3</td>
 <td>2016-06-19T06:29:48-0500</td>
 <td>60.0</td>
@@ -614,44 +617,44 @@ DataType, unit, accuracy, precision, significant figures):</p>
 <th class="head"><a class="reference external" href="http://schema.org/Float">schema.org/Float</a></th>
 </tr>
 <tr class="row-even"><th class="head stub">Unit</th>
-<th class="head">&nbsp;</th>
-<th class="head">&nbsp;</th>
+<th class="head">&#160;</th>
+<th class="head">&#160;</th>
 <th class="head">unit:Meter</th>
 <th class="head">unit:Meter</th>
 </tr>
 <tr class="row-odd"><th class="head stub"><strong>accuracy</strong></th>
-<th class="head">&nbsp;</th>
-<th class="head">&nbsp;</th>
-<th class="head">&nbsp;</th>
-<th class="head">&nbsp;</th>
+<th class="head">&#160;</th>
+<th class="head">&#160;</th>
+<th class="head">&#160;</th>
+<th class="head">&#160;</th>
 </tr>
 <tr class="row-even"><th class="head stub"><strong>precision</strong></th>
-<th class="head">&nbsp;</th>
-<th class="head">&nbsp;</th>
-<th class="head">&nbsp;</th>
-<th class="head">&nbsp;</th>
+<th class="head">&#160;</th>
+<th class="head">&#160;</th>
+<th class="head">&#160;</th>
+<th class="head">&#160;</th>
 </tr>
 <tr class="row-odd"><th class="head stub"><strong>significant figures</strong></th>
-<th class="head">&nbsp;</th>
-<th class="head">&nbsp;</th>
+<th class="head">&#160;</th>
+<th class="head">&#160;</th>
 <th class="head">*.1</th>
 <th class="head">*.1</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><th class="stub">&nbsp;</th>
+<tr class="row-even"><th class="stub">&#160;</th>
 <td>1</td>
 <td>2016-06-19T06:28:49-0500</td>
 <td>20.0</td>
 <td>30.0</td>
 </tr>
-<tr class="row-odd"><th class="stub">&nbsp;</th>
+<tr class="row-odd"><th class="stub">&#160;</th>
 <td>2</td>
 <td>2016-06-19T06:29:22-0500</td>
 <td>40.0</td>
 <td>50.0</td>
 </tr>
-<tr class="row-even"><th class="stub">&nbsp;</th>
+<tr class="row-even"><th class="stub">&#160;</th>
 <td>3</td>
 <td>2016-06-19T06:29:48-0500</td>
 <td>60.0</td>
@@ -662,7 +665,7 @@ DataType, unit, accuracy, precision, significant figures):</p>
 <ul class="simple">
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Significant_figures">https://en.wikipedia.org/wiki/Significant_figures</a></li>
 <li><a class="reference external" href="https://en.wikipedia.org/wiki/Accuracy_and_precision">https://en.wikipedia.org/wiki/Accuracy_and_precision</a></li>
-<li><a class="reference internal" href="knowledge-engineering#qudt"><span class="std std-ref">QUDT</span></a> <code class="docutils literal"><span class="pre">unit:</span></code><ul>
+<li><a class="reference internal" href="knowledge-engineering#qudt"><span class="std std-ref">QUDT</span></a> <code class="docutils literal notranslate"><span class="pre">unit:</span></code><ul>
 <li><a class="reference external" href="http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Meter">http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Meter</a></li>
 <li><a class="reference external" href="http://prefix.cc/unit:Meter">http://prefix.cc/unit:Meter</a></li>
 <li>These should be full <a class="reference internal" href="knowledge-engineering#uri"><span class="std std-ref">URIs</span></a> ( <a class="reference internal" href="knowledge-engineering#uris-for-units"><span class="std std-ref">URIs for Units</span></a> )</li>
