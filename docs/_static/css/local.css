@@ -7,10 +7,6 @@ div.navbar-header a:visited, ul.navbar-nav a:visited, div.sidebar h3 a {
     color: #777 !important;
 }
 
-a.youarehere:visited {
-    color: #337ab7 !important;
-}
-
 button.navbar-toggle {
     z-index: 1000;
     background-color: #f0f0f0;
@@ -108,16 +104,23 @@ ul.simple {
     margin-bottom:10px;
 }
 
+li.youarehere {
+    list-style-type: "➡ "
+    /* text-decoration: underline; */
+}
+
 #sidebar-wrapper a.youarehere,
 #navbar-top a.youarehere {
     font-size: 1.2em;
     font-weight: bold;
-    /* text-decoration: underline; */
 }
 
-#sidebar-wrapper a.youarehere:after,
 #navbar-top a.youarehere:after {
     content: " ⬅" !important;
+}
+
+#sidebar-wrapper li.youarehere {
+    list-style-type: "➡ ";
 }
 
 #content-wrapper a.headerlink {
