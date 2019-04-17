@@ -1,14 +1,21 @@
 
+li.youarehere {
+    list-style-type: "➡ "
+    /* text-decoration: underline; */
+}
+
 #sidebar-wrapper a.youarehere,
 #navbar-top a.youarehere {
     font-size: 1.2em;
     font-weight: bold;
-    /* text-decoration: underline; */
 }
 
-#sidebar-wrapper a.youarehere:after,
 #navbar-top a.youarehere:after {
     content: " ⬅" !important;
+}
+
+#sidebar-wrapper li.youarehere {
+    list-style-type: "➡ ";
 }
 
 #content-wrapper a.headerlink {

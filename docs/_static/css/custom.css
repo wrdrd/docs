@@ -6,10 +6,6 @@ div.navbar-header a:visited, ul.navbar-nav a:visited, div.sidebar h3 a {
     color: #777 !important;
 }
 
-a.youarehere:visited {
-    color: #337ab7 !important;
-}
-
 button.navbar-toggle {
     z-index: 1000;
     background-color: #f0f0f0;
