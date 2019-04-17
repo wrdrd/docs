@@ -104,6 +104,31 @@ ul.simple {
     margin-bottom:10px;
 }
 
+@media print {
+    .affix,
+    #sidebar-wrapper.affix-bottom,
+    #sidebar-wrapper.affix-top {
+        position: inherit !important;
+        margin-top: 0 !important;
+    }
+    #content-wrapper {
+        left: 0 !important;
+        margin-left: 0 !important;
+        width: 100% !important;
+        clear: both !important;
+        border: 0 !important;
+        overflow-y: visible !important;
+    }
+
+    a {
+        text-decoration: underline !important;
+    }
+
+    a[href]::after {
+        opacity: 0.5;
+    }
+}
+
 li.youarehere {
     list-style-type: "➡ "
     /* text-decoration: underline; */
