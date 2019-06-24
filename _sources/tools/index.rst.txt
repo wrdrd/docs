@@ -7431,25 +7431,320 @@ with implementations in many languages.
 * :ref:`Salt` serializes messages with :ref:`MsgPack` by default.
 
 
+.. index:: Text Editors
+.. _text-editors:
+
+Text Editors
+=============
+| Wikipedia: https://en.wikipedia.org/wiki/Text_editor
+| Wikipedia: https://en.wikipedia.org/wiki/Source_code_editor
+| WikipediaCategory: https://en.wikipedia.org/wiki/Category:Free_text_editors
+
+- A text editor may be a *source code editor*
+  or have some :ref:`IDE` features
+  like syntax highlighting or syntax checking
+  for :ref:`Programming Languages`.
+- Most :ref:`IDEs` are source code text editors.
+
+- https://en.wikipedia.org/wiki/Comparison_of_text_editors
+- https://en.wikipedia.org/wiki/List_of_text_editors
+
+
+.. index:: Gedit
+.. _gedit:
+
+Gedit
+~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Gedit
+| Homepage: https://wiki.gnome.org/Apps/Gedit
+| Src: git https://gitlab.gnome.org/GNOME/gedit/
+
+Gedit is an open source text editor written in
+:ref:`C` and :ref:`Python` (:ref:`GTK`, GtkSourceView, and :ref:`Gnome`)
+that's available for :ref:`Linux`, :ref:`OSX`, and :ref:`Windows`).
+
+- Gedit supports tabbed editing.
+- Gedit plugins are written in :ref:`Python`.
+- Gedit is the default :ref:`Gnome` text editor;
+  where it's called "Text Editor".
+
+
+.. index:: Notepad++
+.. _notepadplusplus:
+
+Notepad++
+~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Notepad%2B%2B
+| Homepage: https://notepad-plus-plus.org/
+| Src: https://github.com/notepad-plus-plus/notepad-plus-plus
+| Docs: http://docs.notepad-plus-plus.org/index.php/Main_Page
+| ChocolateyPackage: https://chocolatey.org/packages/notepadplusplus
+
+Notepad++ is an open source text editor written in :ref:`C++`
+for :ref:`Windows` which has tabbed editing.
+
+- Notepad++ supports tabbed editing.
+- Notepad++ plugins are written in :ref:`C` or :ref:`C++`:
+
+  - http://docs.notepad-plus-plus.org/index.php/Plugin_Central
+  - https://github.com/notepad-plus-plus/nppPluginList/blob/master/src/pl.x64.json
+
+- npppythonscript is a plugin that enables scripting
+  Notepad++ with :ref:`Python`
+
+  - http://npppythonscript.sourceforge.net/
+
+- Notepad++ was the most used editor according to a 2015 Stack OVerflow
+  survey.
+
+
+.. index:: IDEs
+.. index:: Integrated Development Environments
+.. _ide:
+.. _ides:
+
+IDEs
+======
+| Wikipedia: https://en.wikipedia.org/wiki/Integrated_development_environment
+| WikipediaCategory: https://en.wikipedia.org/wiki/Category:Integrated_development_environments
+
+An IDE (*Integrated Development Environment*) is a software tool
+for developing software.
+
+- Most IDEs are source code :ref:`Text Editors`.
+- Some IDEs are visual development tools for various types of
+  not code trees and graphs.
+- IDEs have a concept of a project,
+  which may be defined in a config file
+  in the current working directory
+  or otherwise selected through the GUI.
+- An IDE has some sort of language server that understands
+  the source code at a deeper level than syntax
+  in order to do cool things like code completion and
+  code refactorings
+  like renaming a method in every file in the project.
+- https://en.wikipedia.org/wiki/Comparison_of_integrated_development_environments
+
+
+.. index:: Emacs
+.. index:: GNU Emacs
+.. _gnu emacs:
+.. _emacs:
+
+Emacs
+~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/GNU_Emacs
+| Homepage: https://www.gnu.org/software/emacs/
+| Src: git https://git.savannah.gnu.org/cgit/emacs.git
+| Docs: https://www.gnu.org/software/emacs/documentation.html
+
+GNU Emacs is an open source text editor
+written in Emacs :ref:`Lisp` and :ref:`C`
+that's available for :ref:`Linux`, :ref:`OSX`, and :ref:`Windows`.
+
+- Emacs pinky is allegedly a result of the default emacs 
+  ``Control`` key keybindings
+  https://en.wikipedia.org/wiki/Emacs#Emacs_pinky
+- :ref:`Spacemacs` uses the ``Space`` key instead of
+  the ``Control`` key.
+
+
+.. index:: Spacemacs
+.. _spacemacs:
+
+Spacemacs
++++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/Spacemacs
+| Homepage: http://spacemacs.org/
+| Src: https://github.com/syl20bnr/spacemacs
+| Docs: http://spacemacs.org/doc/DOCUMENTATION
+| Docs: http://spacemacs.org/doc/QUICK_START
+
+Print help:
+
+.. code::
+
+    SPC h SPC
+
+
+.. index:: org-mode
+.. _org-mode:
+
+org-mode
++++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/Org-mode
+| Homepage: https://orgmode.org/
+| Src: git https://code.orgmode.org/bzg/org-mode
+| Docs: https://orgmode.org/#docs
+| Docs: https://orgmode.org/org.html
+| Docs: https://orgmode.org/org.html#Introduction
+
+Org-mode is an open source document editing mode originally
+written in :ref:`Emacs Lisp`
+for :ref:`Emacs`
+that's now available in some form for a number of editors
+including :ref:`Vim`.
+
+- Org-mode makes it really easy to work with outlines
+  in plain text documents.
+- The org-mode wikipedia page lists a number of org-mode
+  implementations for other editors.
+
+
+.. index:: org-babel
+.. _org-babel:
+
+org-babel
+++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/Org-mode#Org-babel
+| Homepage: https://orgmode.org/worg/org-contrib/babel/
+| Src: git https://code.orgmode.org/bzg/org-mode
+| Docs: https://orgmode.org/manual/Working-with-source-code.html
+
+- Babel makes it possible to execute source code in
+  org-mode
+- Babel is also the name of an :ref:`ECMAScript` compiler
+- :ref:`Jupyter Notebook` with :ref:`Jupytext` and/or
+  emacs and vim plugins for working with Jupyter
+  are similar to Babel org-mode.
+
+
+
+.. index:: VSCode
+.. _vscode:
+
+VSCode
+~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Visual_Studio_Code
+| Homepage: https://code.visualstudio.com/
+| Src: https://github.com/Microsoft/vscode
+| Download: https://code.visualstudio.com/Download
+| ChocolateyPkg: https://chocolatey.org/packages/vscode 
+| Docs: https://code.visualstudio.com/docs
+| Docs: https://code.visualstudio.com/docs/getstarted/tips-and-tricks
+| Docs: https://code.visualstudio.com/docs/getstarted/keybindings
+
+VSCode (*Visual Studio Code*) is an open source programmer's text editor
+written in :ref:`TypeScript`, :ref:`Javascript`, and :ref:`CSS`
+that's available for :ref:`Windows`, :ref:`Mac`, and :ref:`Linux`.
+
+* VSCode extensions are written in :ref:`Javascript`.
+* VSCode has collaborative editing features with multiple cursors.
+* VSCode and MS Visual Studio are different projects.
+* VSCode supports many of the Visual Studio keyboard shortcuts.
+* There is an official :ref:`Vim` extension for :ref:`VSCode`.
+* In VSCode, ``Ctrl+Space`` opens the
+  context-sensitive Intellisense Code Completion
+* In VScode, ``Ctrl-p`` opens the quick open dialogue 
+* IN VScode, ``Ctrl-Shift-p`` opens the command palette
+  (which lists "all available commands based on your current context")
+
+You can install VSCode by downloading from the Download page
+or with :ref:`Chocolatey`:
+
+.. code::
+
+  choco install vscode
+
+
 .. index:: Vim
 .. _vim:
 
 Vim
-====
+~~~~
 | Wikipedia: `<https://en.wikipedia.org/wiki/Vim_(text_editor)>`__
 | Homepage: http://www.vim.org/
 | Docs: http://www.vim.org/docs.php
+| Docs: https://learnxinyminutes.com/docs/vim/
 | Src: git https://github.com/vim/vim
 
+ViM (VI-iMproved) is an open source text editor written in :ref:`C`
+that's available on very many platforms.
 
-* https://github.com/scrooloose/nerdtree
-* https://github.com/westurner/dotvim
+* Vim help can be accessed with ``:help`` and ``:help help``
+  (Press ``<esc>``, Type ``:help help``, Press Enter)
+* Vi is almost always installed on Linux and BSD boxes.
+* Vi is often included with :ref:`Busybox`.
+* Vi and Vim are installed with :ref:`OSX`.
+* Vi and Vim are installed by default with many :ref:`Linux
+  Distributions`
+* Vim runs in a terminal, over SSH, and with a GUI window manager
+  (Gvim, Macvim)
+* Vim configuration is written in the vim language.
+* Vim reads a few vimrc configuration files in sequence (``:help vimrc``)
+* GVim is Vim for :ref:`Gnome` window manager
+* GVim reads a few vimrc configuration files in sequence (``:help gvimrc``)
+* MacVim is Vim for :ref:`OSX`
+* One way to write changes and exit vim: ``:wq!``
+  (Press ``<esc>``, Type ``:wq!``, Press Enter) 
+* There are many plugins for vim.
+* NERDTree is an example of a vim plugin:
+  https://github.com/scrooloose/nerdtree (``:help nerdtree``)
+* :ref:`SpaceVim` and :ref:`westurner/dotvim` include the NERDtree plugin
+* Vim keyboard shortcuts are calling mappings.
+* Vim mappings are defined in a vimrc file.
+* Examples of vim mappings:
+  ``\e`` opens NERDTree, ``\E`` opens NERDTree to the current file
+* Vim mappings can be defined for different vim modes:
+  ``:map \e`` (command mode), ``:imap \e`` (insert mode) (``:help modes``)
+* Press ``i`` or ``a`` while in command mode to enter
+  insert or append mode (``:help vim-modes``)
+* Press ``<Esc>`` to return to command mode
 
-Vim browser extensions:
+:ref:`Browser extensions` with vim-style keyboard shortcuts:
 
 * :ref:`Vimium` (Chrome)
 * :ref:`Vimperator` (Firefox)
 * :ref:`Wasavi` (Chrome, Opera, Firefox)
+
+A number of web apps support vim-style keyboard shortcuts
+like ``j`` and ``k`` for up and down:
+
+- GMail (``?`` for help)
+- Facebook (``?`` for help)
+- Twitter (``?`` for help)
+
+
+.. index:: westurner/dotvim
+.. _westurner-dotvim:
+
+westurner/dotvim
+++++++++++++++++++
+| Docs: https://westurner.github.io/dotfiles/usage/#vim
+| Src: https://github.com/westurner/dotvim
+| Src: https://github.com/westurner/dotvim/blob/master/Makefile
+| Src: https://github.com/westurner/dotvim/blob/master/vimrc
+| Src: https://github.com/westurner/dotvim/blob/master/vimrc.full.bundles.vimrc
+| Src: https://github.com/westurner/dotvim/blob/master/vimrc.tinyvim.bundles.vimrc
+
+westurner/dotvim is a set of plugins and configuration defaults for :ref:`Vim`.
+
+
+.. index:: SpaceVim
+.. _spacevim:
+
+SpaceVim
++++++++++++++
+| Homepage: https://spacevim.org/
+| Src: https://github.com/SpaceVim/SpaceVim
+| Docs: https://spacevim.org/documentation/
+| Docs: https://spacevim.org/documentation/#general-key-bindings
+
+SpaceVim is a set of plugins, configuration defaults, and keybindings
+for :ref:`Vim`.
+
+- :ref:`Spacemacs` is like SpaceVim for :ref:`Emacs`
+
+
+.. index:: WRD R&D Documentation
+.. _wrdrd documentation:
+
+WRD R&D Documentation
+======================
+| Docs: https://wrdrd.github.io/docs/
+| Docs: https://wrdrd.github.io/docs/tools/
+| Src: git https://github.com/wrdrd/docs
+
 
 *****
 
