@@ -17,17 +17,24 @@ Installation Requirements:
 
 """
 
-import StringIO
 import datetime
 import functools
 import itertools
 import logging
 import sys
-import urlparse
 from collections import Counter
 from collections import OrderedDict
 from collections import defaultdict
 from collections import namedtuple
+
+if sys.version_info[0] > 2:
+    import io as StringIO
+    import urllib.parse as urlparse
+else:
+    import StringIO
+    import urlparse
+    sys._stdout = sys.stdout
+    sys.stdout = get_unicode_stdout(sys.stdout)
 
 import bs4
 import requests
@@ -58,9 +65,6 @@ def get_unicode_stdout(stdout=None, errors='replace', **kwargs):
     import codecs
     stdout = stdout or sys.stdout
     return codecs.getwriter('utf-8')(stdout, errors=errors, **kwargs)
-
-sys._stdout = sys.stdout
-sys.stdout = get_unicode_stdout(sys.stdout)
 
 log = logging.getLogger()
 urllib3log = logging.getLogger('requests.packages.urllib3.connectionpool')
