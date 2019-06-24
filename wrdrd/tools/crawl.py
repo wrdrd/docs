@@ -14,6 +14,9 @@ Installation Requirements:
    pip install -r requirements.txt
    # pip install requests beautifulsoup4 urlobject networkx # nltk textblob
 
+   python -c 'import nltk; nltk.download("stopwords")'
+   python -m textblob.download_corpora
+
 
 """
 
@@ -30,11 +33,26 @@ from collections import namedtuple
 if sys.version_info[0] > 2:
     import io as StringIO
     import urllib.parse as urlparse
+
+    unicode = str
+
+    def itervalues(obj):
+        return obj.values()
+
+    def iteritems(obj):
+        return obj.items()
+
 else:
     import StringIO
     import urlparse
     sys._stdout = sys.stdout
     sys.stdout = get_unicode_stdout(sys.stdout)
+
+    def itervalues(obj):
+        return obj.itervalues()
+
+    def iteritems(obj):
+        return obj.iteritems()
 
 import bs4
 import requests
@@ -228,7 +246,8 @@ def extract_words_from_bs(bs):
     """
     body = bs.find('body')
     if not body:
-        raise Exception(body)
+        log.debug("No <body> tag found")
+        return u''
     body = strip_script_styles_from_bs(body)
     return get_text_from_bs(body)
 
@@ -393,7 +412,9 @@ class ResultStore(object):
         Returns:
             iterable: an iterable over the values in ``self.db``
         """
-        return self.db.itervalues()
+        return itervalues(self.db)
+
+    values = itervalues
 
 
 def expand_link(_src, _url):
@@ -497,7 +518,9 @@ def crawl_url(start_url, output=sys.stdout):
             crawled[url] = crawl_status
             continue
 
-        bs = bs4.BeautifulSoup(resp.content)
+        bs = bs4.BeautifulSoup(
+                resp.content,
+                features="html.parser")
 
         _links = extract_links(url, bs)
         _links = list(_links)
@@ -538,7 +561,7 @@ def sum_counters(iterable):
     """
     totals = defaultdict(lambda: 0)
     for counts in iterable:
-        for key, value in counts.iteritems():
+        for key, value in iteritems(counts):
             totals[key] += value
     return totals
 
@@ -553,7 +576,7 @@ def frequency_table(counterdict, sort_by='count'):
     Yields:
         tuple: (%, count, key)
     """
-    total = float(sum(counterdict.itervalues()))
+    total = float(sum(itervalues(counterdict)))
     keyfunc = lambda x: x
     reverse = None
 
@@ -565,7 +588,7 @@ def frequency_table(counterdict, sort_by='count'):
         reverse = False
 
     keyword_counts = sorted(
-        counterdict.iteritems(),
+        iteritems(counterdict),
         key=keyfunc,
         reverse=reverse)
 
@@ -688,7 +711,7 @@ def wrdcrawler(url, output=sys.stdout):
 
     crawled = crawl_url(url)
 
-    keywords = (page.get('keywords') for page in crawled.itervalues())
+    keywords = (page.get('keywords') for page in itervalues(crawled))
     word_frequencies = sum_counters(k.frequencies for k in keywords if k)
 
     write("Crawled pages")
@@ -700,7 +723,7 @@ def wrdcrawler(url, output=sys.stdout):
 
 
     if 0:
-        links = (page.get('links') for page in crawled.itervalues())
+        links = (page.get('links') for page in itervalues(crawled))
         links = (l for l in links if l)
         write("Page Graph")
         write("==========")
@@ -801,7 +824,7 @@ class Test_wrdcrawler(unittest.TestCase):
         c1 = {'a': 2, 'b': 1, 'c': 3}
         c2 = {'a': 1, 'b': 2,         'd': 3}
         csum = sum_counters([c1, c2])
-        for k,v in csum.iteritems():
+        for k,v in iteritems(csum):
             self.assertEqual(v, 3, k)
 
     def test_tokenize(self):
