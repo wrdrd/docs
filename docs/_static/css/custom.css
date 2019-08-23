@@ -112,6 +112,12 @@ span.pre {
     word-wrap: break-word;
 }
 
+table.docutils caption {
+    padding: 8px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
 @media print {
     .affix,
     #sidebar-wrapper.affix-bottom,
