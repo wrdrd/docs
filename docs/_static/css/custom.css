@@ -107,6 +107,10 @@ ul.simple {
     margin-bottom:10px;
 }
 
+span.pre {
+    word-wrap: break-word;
+}
+
 @media print {
     .affix,
     #sidebar-wrapper.affix-bottom,
