@@ -49,7 +49,8 @@ div.body h1 {
     padding-bottom: 10px;
 }
 
-div.body a {
+div.body a,
+div.body p {
     word-wrap: break-word;
 }
 
@@ -110,6 +111,12 @@ ul.simple {
 
 span.pre {
     word-wrap: break-word;
+}
+
+table.docutils caption {
+    padding: 8px;
+    font-weight: bold;
+    font-size: 1.1em;
 }
 
 @media print {
