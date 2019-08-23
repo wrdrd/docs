@@ -30,30 +30,6 @@ from collections import OrderedDict
 from collections import defaultdict
 from collections import namedtuple
 
-if sys.version_info[0] > 2:
-    import io as StringIO
-    import urllib.parse as urlparse
-
-    unicode = str
-
-    def itervalues(obj):
-        return obj.values()
-
-    def iteritems(obj):
-        return obj.items()
-
-else:
-    import StringIO
-    import urlparse
-    sys._stdout = sys.stdout
-    sys.stdout = get_unicode_stdout(sys.stdout)
-
-    def itervalues(obj):
-        return obj.itervalues()
-
-    def iteritems(obj):
-        return obj.iteritems()
-
 import bs4
 import requests
 import urlobject
@@ -83,6 +59,31 @@ def get_unicode_stdout(stdout=None, errors='replace', **kwargs):
     import codecs
     stdout = stdout or sys.stdout
     return codecs.getwriter('utf-8')(stdout, errors=errors, **kwargs)
+
+if sys.version_info[0] > 2:
+    import io as StringIO
+    import urllib.parse as urlparse
+
+    unicode = str
+
+    def itervalues(obj):
+        return obj.values()
+
+    def iteritems(obj):
+        return obj.items()
+
+else:
+    import StringIO
+    import urlparse
+    sys._stdout = sys.stdout
+    sys.stdout = get_unicode_stdout(sys.stdout)
+
+    def itervalues(obj):
+        return obj.itervalues()
+
+    def iteritems(obj):
+        return obj.iteritems()
+
 
 log = logging.getLogger()
 urllib3log = logging.getLogger('requests.packages.urllib3.connectionpool')
