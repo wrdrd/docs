@@ -17,8 +17,11 @@ if (document.location.hostname in keymap) {
 }
 
 
-// Add table-responsive around all tables
-$('table.docutils').wrap('<div class="table-responsive"></div>');
+
+$(document).ready(function() {
+    // Add table-responsive around all tables
+    $('table.docutils').wrap('<div class="table-responsive"></div>');
+});
 /*!
  * JavaScript Cookie v2.1.1
  * https://github.com/js-cookie/js-cookie
