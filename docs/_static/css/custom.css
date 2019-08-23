@@ -48,7 +48,8 @@ div.body h1 {
     padding-bottom: 10px;
 }
 
-div.body a {
+div.body a,
+div.body p {
     word-wrap: break-word;
 }
 
