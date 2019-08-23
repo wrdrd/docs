@@ -2006,27 +2006,7 @@
 <li class="toctree-l3"><a class="reference internal" href="index.html#messagepack">MessagePack</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#text-editors">Text Editors</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="index.html#gedit">Gedit</a></li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#notepad">Notepad++</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#ides">IDEs</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="index.html#emacs">Emacs</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="index.html#spacemacs">Spacemacs</a></li>
-<li class="toctree-l4"><a class="reference internal" href="index.html#org-mode">org-mode</a></li>
-<li class="toctree-l4"><a class="reference internal" href="index.html#org-babel">org-babel</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#vscode">VSCode</a></li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#vim">Vim</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="index.html#westurner-dotvim">westurner/dotvim</a></li>
-<li class="toctree-l4"><a class="reference internal" href="index.html#spacevim">SpaceVim</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#wrd-r-d-documentation">WRD R&amp;D Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#vim">Vim</a></li>
 </ul>
 </li>
 </ul>
@@ -2041,7 +2021,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="index.html#document-wrdrd/wrdrd.tools">wrdrd.tools package</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="index.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#module-wrdrd.tools.crawl">wrdrd.tools.crawl module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#wrdrd-tools-crawl-module">wrdrd.tools.crawl module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#module-wrdrd.tools.domain">wrdrd.tools.domain module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#module-wrdrd.tools.stripsinglehtml">wrdrd.tools.stripsinglehtml module</a></li>
 </ul>
@@ -3133,7 +3113,7 @@ that identify a named resource <em>in a namespace</em>.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">urn</span><span class="p">:</span><span class="n">namespace</span><span class="p">:</span><span class="n">key</span>
 
 <span class="n">urn</span><span class="p">:</span><span class="n">isbn</span><span class="p">:</span><span class="mi">0</span><span class="o">-</span><span class="mi">486</span><span class="o">-</span><span class="mi">27557</span><span class="o">-</span><span class="mi">4</span>
-<span class="n">urn</span><span class="p">:</span><span class="n">uuid</span><span class="p">:</span><span class="mf">6e8</span><span class="n">bc430</span><span class="o">-</span><span class="mi">9</span><span class="n">c3a</span><span class="o">-</span><span class="mi">11</span><span class="n">d9</span><span class="o">-</span><span class="mi">9669</span><span class="o">-</span><span class="mi">0800200</span><span class="n">c9a66</span>
+<span class="n">urn</span><span class="p">:</span><span class="n">uuid</span><span class="p">:</span><span class="mi">6</span><span class="n">e8bc430</span><span class="o">-</span><span class="mi">9</span><span class="n">c3a</span><span class="o">-</span><span class="mi">11</span><span class="n">d9</span><span class="o">-</span><span class="mi">9669</span><span class="o">-</span><span class="mi">0800200</span><span class="n">c9a66</span>
 </pre></div>
 </div>
 <div class="last line-block">
@@ -3156,36 +3136,41 @@ to open Magnet URIs with other programs.</li>
 identifier for a resource.</p>
 <p><a class="reference internal" href="index.html#ietf"><span class="std std-ref">IETF</span></a> RFC 4122 defines 5 different algorithms
 for generating <a class="reference internal" href="#term-uuid"><span class="xref std std-term">UUID</span></a>:</p>
-<ul class="simple">
+<ul>
 <li><dl class="first docutils">
 <dt>UUID 1</dt>
-<dd>A UUID 1 identifier contains a
+<dd><p class="first last">A UUID 1 identifier contains a
 <a class="reference internal" href="#term-mac-address"><span class="xref std std-term">mac address</span></a> and a <a class="reference internal" href="index.html#time-standards"><span class="std std-ref">datetime</span></a>
-with 100- nano-<a class="reference internal" href="index.html#second"><span class="std std-ref">second</span></a> resolution.</dd>
+with 100- nano-<a class="reference internal" href="index.html#second"><span class="std std-ref">second</span></a> resolution.</p>
+</dd>
 </dl>
 </li>
 <li><dl class="first docutils">
 <dt>UUID 2</dt>
-<dd>A UUID 2 identifier contains a
-<a class="reference internal" href="#term-mac-address"><span class="xref std std-term">mac address</span></a> and a <a class="reference internal" href="index.html#posix"><span class="std std-ref">POSIX</span></a> UID or GID.</dd>
+<dd><p class="first last">A UUID 2 identifier contains a
+<a class="reference internal" href="#term-mac-address"><span class="xref std std-term">mac address</span></a> and a <a class="reference internal" href="index.html#posix"><span class="std std-ref">POSIX</span></a> UID or GID.</p>
+</dd>
 </dl>
 </li>
 <li><dl class="first docutils">
 <dt>UUID 3</dt>
-<dd>A UUID 3 identifier contains an <a class="reference internal" href="index.html#md5"><span class="std std-ref">MD5</span></a>
-hash of a <a class="reference internal" href="#term-uri"><span class="xref std std-term">URI</span></a>, <a class="reference internal" href="#term-urn"><span class="xref std std-term">URN</span></a>, or <a class="reference internal" href="index.html#url"><span class="std std-ref">URL</span></a>.</dd>
+<dd><p class="first last">A UUID 3 identifier contains an <a class="reference internal" href="index.html#md5"><span class="std std-ref">MD5</span></a>
+hash of a <a class="reference internal" href="#term-uri"><span class="xref std std-term">URI</span></a>, <a class="reference internal" href="#term-urn"><span class="xref std std-term">URN</span></a>, or <a class="reference internal" href="index.html#url"><span class="std std-ref">URL</span></a>.</p>
+</dd>
 </dl>
 </li>
 <li><dl class="first docutils">
 <dt>UUID 4</dt>
-<dd>A UUID 4 identifier contains a random identifier
-as determined by the configured source of random.</dd>
+<dd><p class="first last">A UUID 4 identifier contains a random identifier
+as determined by the configured source of random.</p>
+</dd>
 </dl>
 </li>
 <li><dl class="first docutils">
 <dt>UUID 5</dt>
-<dd>A UUID 5 identifier contains an <a class="reference internal" href="index.html#sha"><span class="std std-ref">SHA-1</span></a>
-hash of a <a class="reference internal" href="#term-uri"><span class="xref std std-term">URI</span></a>, <a class="reference internal" href="#term-urn"><span class="xref std std-term">URN</span></a>, or <a class="reference internal" href="index.html#url"><span class="std std-ref">URL</span></a>.</dd>
+<dd><p class="first last">A UUID 5 identifier contains an <a class="reference internal" href="index.html#sha"><span class="std std-ref">SHA-1</span></a>
+hash of a <a class="reference internal" href="#term-uri"><span class="xref std std-term">URI</span></a>, <a class="reference internal" href="#term-urn"><span class="xref std std-term">URN</span></a>, or <a class="reference internal" href="index.html#url"><span class="std std-ref">URL</span></a>.</p>
+</dd>
 </dl>
 </li>
 </ul>
@@ -9502,7 +9487,7 @@ s3=&quot;&quot;${Here}&quot;&#39;s one&quot;
 <li>Python 3 Unicode HOWTO: <a class="reference external" href="https://docs.python.org/3/howto/unicode.html">https://docs.python.org/3/howto/unicode.html</a></li>
 <li>Python 2 Unicode HOWTO: <a class="reference external" href="https://docs.python.org/2/howto/unicode.html">https://docs.python.org/2/howto/unicode.html</a></li>
 </ul>
-<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">c1</span> <span class="o">=</span> <span class="sa">u</span><span class="s1">&#39;∴&#39;</span>  <span class="c1"># Python 2.6-3.2, 3.4+</span>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">c1</span> <span class="o">=</span> <span class="s1">u&#39;∴&#39;</span>  <span class="c1"># Python 2.6-3.2, 3.4+</span>
 <span class="n">c2</span> <span class="o">=</span>  <span class="s1">&#39;∴&#39;</span>  <span class="c1"># Python 3.0+</span>
 <span class="n">c3</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="se">\N{THEREFORE}</span><span class="s1">&#39;</span> <span class="c1"># howto/unicode#the-string-type glyph name</span>
 <span class="n">u1</span> <span class="o">=</span> <span class="n">unichr</span><span class="p">(</span><span class="mh">0x2234</span><span class="p">)</span>  <span class="c1"># Python 2+</span>
@@ -11616,15 +11601,17 @@ computation platform.</p>
 implement <a class="reference internal" href="#distributed-algorithms"><span class="std std-ref">Distributed Algorithms</span></a> designed to solve for
 <a class="reference internal" href="index.html#confidentiality"><span class="std std-ref">Confidentiality</span></a>, <a class="reference internal" href="index.html#integrity"><span class="std std-ref">Integrity</span></a>, and <a class="reference internal" href="index.html#availability"><span class="std std-ref">Availability</span></a>.</p>
 <p>As separate records / statements to be <code class="docutils literal notranslate"><span class="pre">yield</span></code>-ed or emitted:</p>
-<ul class="simple">
+<ul>
 <li><dl class="first docutils">
 <dt><a class="reference internal" href="#distributed-databases"><span class="std std-ref">Distributed Databases</span></a></dt>
-<dd>implement <a class="reference internal" href="#distributed-algorithms"><span class="std std-ref">Distributed Algorithms</span></a>.</dd>
+<dd><p class="first last">implement <a class="reference internal" href="#distributed-algorithms"><span class="std std-ref">Distributed Algorithms</span></a>.</p>
+</dd>
 </dl>
 </li>
 <li><dl class="first docutils">
 <dt>Distributed <a class="reference internal" href="index.html#information-systems"><span class="std std-ref">Information Systems</span></a></dt>
-<dd>implement <a class="reference internal" href="#distributed-algorithms"><span class="std std-ref">Distributed Algorithms</span></a>.</dd>
+<dd><p class="first last">implement <a class="reference internal" href="#distributed-algorithms"><span class="std std-ref">Distributed Algorithms</span></a>.</p>
+</dd>
 </dl>
 </li>
 </ul>
@@ -14231,8 +14218,9 @@ language.</p>
 </li>
 </ul>
 <p>See:</p>
-<ul class="simple">
-<li><a class="reference internal" href="#rdf-interfaces"><span class="std std-ref">RDF Interfaces</span></a></li>
+<ul>
+<li><p class="first"><a class="reference internal" href="#rdf-interfaces"><span class="std std-ref">RDF Interfaces</span></a></p>
+</li>
 <li><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -20110,7 +20098,7 @@ Group Interaction with Group Support Systems (GSS)”
 <div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/Collaborative_software">https://en.wikipedia.org/wiki/Collaborative_software</a></div>
 <div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/Collaborative_software#Classification">https://en.wikipedia.org/wiki/Collaborative_software#Classification</a></div>
 </div>
-<table border="1" class="colwidths-given table-responsive table-striped docutils" id="id13">
+<table border="1" class="table-responsive table-striped docutils" id="id13">
 <caption><span class="caption-text">Classifying Collaborative Software</span><a class="headerlink" href="#id13" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="40%" />
@@ -21586,8 +21574,8 @@ with <code class="docutils literal notranslate"><span class="pre">master</span><
 and <code class="docutils literal notranslate"><span class="pre">support</span></code> branches (<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">flow</span></code>).</p>
 <p>Gitflow branch names and prefixes are configured in <code class="docutils literal notranslate"><span class="pre">.git/config</span></code>;
 the defaults are:</p>
-<table border="1" class="table-striped table-responsive docutils" id="id304">
-<caption><span class="caption-text">GitFlow Branch Names</span><a class="headerlink" href="#id304" title="Permalink to this table">¶</a></caption>
+<table border="1" class="table-striped table-responsive docutils" id="id294">
+<caption><span class="caption-text">GitFlow Branch Names</span><a class="headerlink" href="#id294" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="20%" />
 <col width="80%" />
@@ -21669,8 +21657,8 @@ that adds extremely useful commands for working with <a class="reference interna
 GitHub <strong>pull requests</strong>.</p>
 <p>HubFlow branch names and prefixes are configured in <code class="docutils literal notranslate"><span class="pre">.git/config</span></code>;
 the defaults are as follows:</p>
-<table border="1" class="table-striped table-responsive docutils" id="id305">
-<caption><span class="caption-text">HubFlow Branch Names</span><a class="headerlink" href="#id305" title="Permalink to this table">¶</a></caption>
+<table border="1" class="table-striped table-responsive docutils" id="id295">
+<caption><span class="caption-text">HubFlow Branch Names</span><a class="headerlink" href="#id295" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="20%" />
 <col width="80%" />
@@ -22752,12 +22740,12 @@ and binary format for the web.</p>
 <p>YAML (“YAML Ain’t Markup Language”) is a concise data serialization format.</p>
 <p>Most <a class="reference internal" href="#salt"><span class="std std-ref">Salt</span></a> states and pillar data are written in YAML. Here’s an
 example <code class="docutils literal notranslate"><span class="pre">top.sls</span></code> file:</p>
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">base</span><span class="p">:</span>
- <span class="nt">&#39;*&#39;</span><span class="p">:</span>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">base</span><span class="p p-Indicator">:</span>
+ <span class="s">&#39;*&#39;</span><span class="p p-Indicator">:</span>
    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">openssh</span>
- <span class="nt">&#39;*-webserver&#39;</span><span class="p">:</span>
+ <span class="s">&#39;*-webserver&#39;</span><span class="p p-Indicator">:</span>
    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">webserver</span>
- <span class="nt">&#39;*-workstation&#39;</span><span class="p">:</span>
+ <span class="s">&#39;*-workstation&#39;</span><span class="p p-Indicator">:</span>
    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">gnome</span>
    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">i3</span>
 </pre></div>
@@ -24420,7 +24408,7 @@ for one of many platforms:</p>
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Vagrant_(software)">https://en.wikipedia.org/wiki/Vagrant_(software)</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://www.vagrantup.com/">https://www.vagrantup.com/</a></div>
 <div class="line">Docs: <a class="reference external" href="http://docs.vagrantup.com/v2/">http://docs.vagrantup.com/v2/</a></div>
-<div class="line">Src: git <a class="reference external" href="https://github.com/hashicorp/vagrant">https://github.com/hashicorp/vagrant</a></div>
+<div class="line">Src: git <a class="reference external" href="https://github.com/mitchellh/vagrant">https://github.com/mitchellh/vagrant</a></div>
 </div>
 <p>Vagrant is a tool written in <a class="reference internal" href="#ruby"><span class="std std-ref">Ruby</span></a>
 for creating and managing virtual machine instances
@@ -24895,8 +24883,8 @@ components like <a class="reference internal" href="#ipython"><span class="std s
 to provide a multi-user web-based shell
 for many languages (<a class="reference internal" href="#python"><span class="std std-ref">Python</span></a>, <a class="reference internal" href="#ruby"><span class="std std-ref">Ruby</span></a>, <a class="reference internal" href="#java"><span class="std std-ref">Java</span></a>,
 <a class="reference internal" href="#haskell"><span class="std std-ref">Haskell</span></a>, Julia, R).</p>
-<table border="1" class="table-striped table-responsive docutils" id="id306">
-<caption><span class="caption-text">IPython Jupyter comparison (adapted from <a class="reference external" href="http://jupyter.org">http://jupyter.org</a>)</span><a class="headerlink" href="#id306" title="Permalink to this table">¶</a></caption>
+<table border="1" class="table-striped table-responsive docutils" id="id296">
+<caption><span class="caption-text">IPython Jupyter comparison (adapted from <a class="reference external" href="http://jupyter.org">http://jupyter.org</a>)</span><a class="headerlink" href="#id296" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="34%" />
 <col width="66%" />
@@ -27103,285 +27091,24 @@ with implementations in many languages.</p>
 </ul>
 </div>
 </div>
-<div class="section" id="text-editors">
-<span id="index-336"></span><span id="id293"></span><h4>Text Editors<a class="headerlink" href="#text-editors" title="Permalink to this headline">¶</a></h4>
-<div class="line-block">
-<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Text_editor">https://en.wikipedia.org/wiki/Text_editor</a></div>
-<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Source_code_editor">https://en.wikipedia.org/wiki/Source_code_editor</a></div>
-<div class="line">WikipediaCategory: <a class="reference external" href="https://en.wikipedia.org/wiki/Category:Free_text_editors">https://en.wikipedia.org/wiki/Category:Free_text_editors</a></div>
-</div>
-<ul class="simple">
-<li>A text editor may be a <em>source code editor</em>
-or have some <a class="reference internal" href="#ide"><span class="std std-ref">IDEs</span></a> features
-like syntax highlighting or syntax checking
-for <a class="reference internal" href="#programming-languages"><span class="std std-ref">Programming Languages</span></a>.</li>
-<li>Most <a class="reference internal" href="#ides"><span class="std std-ref">IDEs</span></a> are source code text editors.</li>
-<li><a class="reference external" href="https://en.wikipedia.org/wiki/Comparison_of_text_editors">https://en.wikipedia.org/wiki/Comparison_of_text_editors</a></li>
-<li><a class="reference external" href="https://en.wikipedia.org/wiki/List_of_text_editors">https://en.wikipedia.org/wiki/List_of_text_editors</a></li>
-</ul>
-<div class="section" id="gedit">
-<span id="index-337"></span><span id="id294"></span><h5>Gedit<a class="headerlink" href="#gedit" title="Permalink to this headline">¶</a></h5>
-<div class="line-block">
-<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Gedit">https://en.wikipedia.org/wiki/Gedit</a></div>
-<div class="line">Homepage: <a class="reference external" href="https://wiki.gnome.org/Apps/Gedit">https://wiki.gnome.org/Apps/Gedit</a></div>
-<div class="line">Src: git <a class="reference external" href="https://gitlab.gnome.org/GNOME/gedit/">https://gitlab.gnome.org/GNOME/gedit/</a></div>
-</div>
-<p>Gedit is an open source text editor written in
-<a class="reference internal" href="#c"><span class="std std-ref">C</span></a> and <a class="reference internal" href="#python"><span class="std std-ref">Python</span></a> (<span class="xref std std-ref">GTK</span>, GtkSourceView, and <a class="reference internal" href="#gnome"><span class="std std-ref">Gnome</span></a>)
-that’s available for <a class="reference internal" href="#linux"><span class="std std-ref">Linux</span></a>, <a class="reference internal" href="#osx"><span class="std std-ref">OS X</span></a>, and <a class="reference internal" href="#windows"><span class="std std-ref">Windows</span></a>).</p>
-<ul class="simple">
-<li>Gedit supports tabbed editing.</li>
-<li>Gedit plugins are written in <a class="reference internal" href="#python"><span class="std std-ref">Python</span></a>.</li>
-<li>Gedit is the default <a class="reference internal" href="#gnome"><span class="std std-ref">Gnome</span></a> text editor;
-where it’s called “Text Editor”.</li>
-</ul>
-</div>
-<div class="section" id="notepad">
-<span id="notepadplusplus"></span><span id="index-338"></span><h5>Notepad++<a class="headerlink" href="#notepad" title="Permalink to this headline">¶</a></h5>
-<div class="line-block">
-<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Notepad%2B%2B">https://en.wikipedia.org/wiki/Notepad%2B%2B</a></div>
-<div class="line">Homepage: <a class="reference external" href="https://notepad-plus-plus.org/">https://notepad-plus-plus.org/</a></div>
-<div class="line">Src: <a class="reference external" href="https://github.com/notepad-plus-plus/notepad-plus-plus">https://github.com/notepad-plus-plus/notepad-plus-plus</a></div>
-<div class="line">Docs: <a class="reference external" href="http://docs.notepad-plus-plus.org/index.php/Main_Page">http://docs.notepad-plus-plus.org/index.php/Main_Page</a></div>
-<div class="line">ChocolateyPackage: <a class="reference external" href="https://chocolatey.org/packages/notepadplusplus">https://chocolatey.org/packages/notepadplusplus</a></div>
-</div>
-<p>Notepad++ is an open source text editor written in <a class="reference internal" href="#id66"><span class="std std-ref">C++</span></a>
-for <a class="reference internal" href="#windows"><span class="std std-ref">Windows</span></a> which has tabbed editing.</p>
-<ul class="simple">
-<li>Notepad++ supports tabbed editing.</li>
-<li>Notepad++ plugins are written in <a class="reference internal" href="#c"><span class="std std-ref">C</span></a> or <a class="reference internal" href="#id66"><span class="std std-ref">C++</span></a>:<ul>
-<li><a class="reference external" href="http://docs.notepad-plus-plus.org/index.php/Plugin_Central">http://docs.notepad-plus-plus.org/index.php/Plugin_Central</a></li>
-<li><a class="reference external" href="https://github.com/notepad-plus-plus/nppPluginList/blob/master/src/pl.x64.json">https://github.com/notepad-plus-plus/nppPluginList/blob/master/src/pl.x64.json</a></li>
-</ul>
-</li>
-<li>npppythonscript is a plugin that enables scripting
-Notepad++ with <a class="reference internal" href="#python"><span class="std std-ref">Python</span></a><ul>
-<li><a class="reference external" href="http://npppythonscript.sourceforge.net/">http://npppythonscript.sourceforge.net/</a></li>
-</ul>
-</li>
-<li>Notepad++ was the most used editor according to a 2015 Stack OVerflow
-survey.</li>
-</ul>
-<span class="target" id="index-339"></span></div>
-</div>
-<div class="section" id="ides">
-<span id="ide"></span><span id="index-340"></span><span id="id295"></span><h4>IDEs<a class="headerlink" href="#ides" title="Permalink to this headline">¶</a></h4>
-<div class="line-block">
-<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Integrated_development_environment">https://en.wikipedia.org/wiki/Integrated_development_environment</a></div>
-<div class="line">WikipediaCategory: <a class="reference external" href="https://en.wikipedia.org/wiki/Category:Integrated_development_environments">https://en.wikipedia.org/wiki/Category:Integrated_development_environments</a></div>
-</div>
-<p>An IDE (<em>Integrated Development Environment</em>) is a software tool
-for developing software.</p>
-<ul class="simple">
-<li>Most IDEs are source code <span class="xref std std-ref">Text Editors</span>.</li>
-<li>Some IDEs are visual development tools for various types of
-not code trees and graphs.</li>
-<li>IDEs have a concept of a project,
-which may be defined in a config file
-in the current working directory
-or otherwise selected through the GUI.</li>
-<li>An IDE has some sort of language server that understands
-the source code at a deeper level than syntax
-in order to do cool things like code completion and
-code refactorings
-like renaming a method in every file in the project.</li>
-<li><a class="reference external" href="https://en.wikipedia.org/wiki/Comparison_of_integrated_development_environments">https://en.wikipedia.org/wiki/Comparison_of_integrated_development_environments</a></li>
-</ul>
-<span class="target" id="index-341"></span><div class="section" id="emacs">
-<span id="gnu-emacs"></span><span id="index-342"></span><span id="id296"></span><h5>Emacs<a class="headerlink" href="#emacs" title="Permalink to this headline">¶</a></h5>
-<div class="line-block">
-<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/GNU_Emacs">https://en.wikipedia.org/wiki/GNU_Emacs</a></div>
-<div class="line">Homepage: <a class="reference external" href="https://www.gnu.org/software/emacs/">https://www.gnu.org/software/emacs/</a></div>
-<div class="line">Src: git <a class="reference external" href="https://git.savannah.gnu.org/cgit/emacs.git">https://git.savannah.gnu.org/cgit/emacs.git</a></div>
-<div class="line">Docs: <a class="reference external" href="https://www.gnu.org/software/emacs/documentation.html">https://www.gnu.org/software/emacs/documentation.html</a></div>
-</div>
-<p>GNU Emacs is an open source text editor
-written in Emacs <span class="xref std std-ref">Lisp</span> and <a class="reference internal" href="#c"><span class="std std-ref">C</span></a>
-that’s available for <a class="reference internal" href="#linux"><span class="std std-ref">Linux</span></a>, <a class="reference internal" href="#osx"><span class="std std-ref">OS X</span></a>, and <a class="reference internal" href="#windows"><span class="std std-ref">Windows</span></a>.</p>
-<ul class="simple">
-<li>Emacs pinky is allegedly a result of the default emacs
-<code class="docutils literal notranslate"><span class="pre">Control</span></code> key keybindings
-<a class="reference external" href="https://en.wikipedia.org/wiki/Emacs#Emacs_pinky">https://en.wikipedia.org/wiki/Emacs#Emacs_pinky</a></li>
-<li><a class="reference internal" href="#spacemacs"><span class="std std-ref">Spacemacs</span></a> uses the <code class="docutils literal notranslate"><span class="pre">Space</span></code> key instead of
-the <code class="docutils literal notranslate"><span class="pre">Control</span></code> key.</li>
-</ul>
-<div class="section" id="spacemacs">
-<span id="index-343"></span><span id="id297"></span><h6>Spacemacs<a class="headerlink" href="#spacemacs" title="Permalink to this headline">¶</a></h6>
-<div class="line-block">
-<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Spacemacs">https://en.wikipedia.org/wiki/Spacemacs</a></div>
-<div class="line">Homepage: <a class="reference external" href="http://spacemacs.org/">http://spacemacs.org/</a></div>
-<div class="line">Src: <a class="reference external" href="https://github.com/syl20bnr/spacemacs">https://github.com/syl20bnr/spacemacs</a></div>
-<div class="line">Docs: <a class="reference external" href="http://spacemacs.org/doc/DOCUMENTATION">http://spacemacs.org/doc/DOCUMENTATION</a></div>
-<div class="line">Docs: <a class="reference external" href="http://spacemacs.org/doc/QUICK_START">http://spacemacs.org/doc/QUICK_START</a></div>
-</div>
-<p>Print help:</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SPC</span> <span class="n">h</span> <span class="n">SPC</span>
-</pre></div>
-</div>
-</div>
-<div class="section" id="org-mode">
-<span id="index-344"></span><span id="id298"></span><h6>org-mode<a class="headerlink" href="#org-mode" title="Permalink to this headline">¶</a></h6>
-<div class="line-block">
-<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Org-mode">https://en.wikipedia.org/wiki/Org-mode</a></div>
-<div class="line">Homepage: <a class="reference external" href="https://orgmode.org/">https://orgmode.org/</a></div>
-<div class="line">Src: git <a class="reference external" href="https://code.orgmode.org/bzg/org-mode">https://code.orgmode.org/bzg/org-mode</a></div>
-<div class="line">Docs: <a class="reference external" href="https://orgmode.org/#docs">https://orgmode.org/#docs</a></div>
-<div class="line">Docs: <a class="reference external" href="https://orgmode.org/org.html">https://orgmode.org/org.html</a></div>
-<div class="line">Docs: <a class="reference external" href="https://orgmode.org/org.html#Introduction">https://orgmode.org/org.html#Introduction</a></div>
-</div>
-<p>Org-mode is an open source document editing mode originally
-written in <span class="xref std std-ref">Emacs Lisp</span>
-for <a class="reference internal" href="#emacs"><span class="std std-ref">Emacs</span></a>
-that’s now available in some form for a number of editors
-including <a class="reference internal" href="#vim"><span class="std std-ref">Vim</span></a>.</p>
-<ul class="simple">
-<li>Org-mode makes it really easy to work with outlines
-in plain text documents.</li>
-<li>The org-mode wikipedia page lists a number of org-mode
-implementations for other editors.</li>
-</ul>
-</div>
-<div class="section" id="org-babel">
-<span id="index-345"></span><span id="id299"></span><h6>org-babel<a class="headerlink" href="#org-babel" title="Permalink to this headline">¶</a></h6>
-<div class="line-block">
-<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Org-mode#Org-babel">https://en.wikipedia.org/wiki/Org-mode#Org-babel</a></div>
-<div class="line">Homepage: <a class="reference external" href="https://orgmode.org/worg/org-contrib/babel/">https://orgmode.org/worg/org-contrib/babel/</a></div>
-<div class="line">Src: git <a class="reference external" href="https://code.orgmode.org/bzg/org-mode">https://code.orgmode.org/bzg/org-mode</a></div>
-<div class="line">Docs: <a class="reference external" href="https://orgmode.org/manual/Working-with-source-code.html">https://orgmode.org/manual/Working-with-source-code.html</a></div>
-</div>
-<ul class="simple">
-<li>Babel makes it possible to execute source code in
-org-mode</li>
-<li>Babel is also the name of an <span class="xref std std-ref">ECMAScript</span> compiler</li>
-<li><a class="reference internal" href="#jupyter-notebook"><span class="std std-ref">Jupyter Notebook</span></a> with <span class="xref std std-ref">Jupytext</span> and/or
-emacs and vim plugins for working with Jupyter
-are similar to Babel org-mode.</li>
-</ul>
-</div>
-</div>
-<div class="section" id="vscode">
-<span id="index-346"></span><span id="id300"></span><h5>VSCode<a class="headerlink" href="#vscode" title="Permalink to this headline">¶</a></h5>
-<div class="line-block">
-<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Visual_Studio_Code">https://en.wikipedia.org/wiki/Visual_Studio_Code</a></div>
-<div class="line">Homepage: <a class="reference external" href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></div>
-<div class="line">Src: <a class="reference external" href="https://github.com/Microsoft/vscode">https://github.com/Microsoft/vscode</a></div>
-<div class="line">Download: <a class="reference external" href="https://code.visualstudio.com/Download">https://code.visualstudio.com/Download</a></div>
-<div class="line">ChocolateyPkg: <a class="reference external" href="https://chocolatey.org/packages/vscode">https://chocolatey.org/packages/vscode</a></div>
-<div class="line">Docs: <a class="reference external" href="https://code.visualstudio.com/docs">https://code.visualstudio.com/docs</a></div>
-<div class="line">Docs: <a class="reference external" href="https://code.visualstudio.com/docs/getstarted/tips-and-tricks">https://code.visualstudio.com/docs/getstarted/tips-and-tricks</a></div>
-<div class="line">Docs: <a class="reference external" href="https://code.visualstudio.com/docs/getstarted/keybindings">https://code.visualstudio.com/docs/getstarted/keybindings</a></div>
-</div>
-<p>VSCode (<em>Visual Studio Code</em>) is an open source programmer’s text editor
-written in <a class="reference internal" href="#typescript"><span class="std std-ref">TypeScript</span></a>, <a class="reference internal" href="#javascript"><span class="std std-ref">JavaScript</span></a>, and <a class="reference internal" href="index.html#css"><span class="std std-ref">CSS</span></a>
-that’s available for <a class="reference internal" href="#windows"><span class="std std-ref">Windows</span></a>, <span class="xref std std-ref">Mac</span>, and <a class="reference internal" href="#linux"><span class="std std-ref">Linux</span></a>.</p>
-<ul class="simple">
-<li>VSCode extensions are written in <a class="reference internal" href="#javascript"><span class="std std-ref">JavaScript</span></a>.</li>
-<li>VSCode has collaborative editing features with multiple cursors.</li>
-<li>VSCode and MS Visual Studio are different projects.</li>
-<li>VSCode supports many of the Visual Studio keyboard shortcuts.</li>
-<li>There is an official <a class="reference internal" href="#vim"><span class="std std-ref">Vim</span></a> extension for <a class="reference internal" href="#vscode"><span class="std std-ref">VSCode</span></a>.</li>
-<li>In VSCode, <code class="docutils literal notranslate"><span class="pre">Ctrl+Space</span></code> opens the
-context-sensitive Intellisense Code Completion</li>
-<li>In VScode, <code class="docutils literal notranslate"><span class="pre">Ctrl-p</span></code> opens the quick open dialogue</li>
-<li>IN VScode, <code class="docutils literal notranslate"><span class="pre">Ctrl-Shift-p</span></code> opens the command palette
-(which lists “all available commands based on your current context”)</li>
-</ul>
-<p>You can install VSCode by downloading from the Download page
-or with <span class="xref std std-ref">Chocolatey</span>:</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">choco</span> <span class="n">install</span> <span class="n">vscode</span>
-</pre></div>
-</div>
-</div>
 <div class="section" id="vim">
-<span id="index-347"></span><span id="id301"></span><h5>Vim<a class="headerlink" href="#vim" title="Permalink to this headline">¶</a></h5>
+<span id="index-336"></span><span id="id293"></span><h4>Vim<a class="headerlink" href="#vim" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Vim_(text_editor)">https://en.wikipedia.org/wiki/Vim_(text_editor)</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://www.vim.org/">http://www.vim.org/</a></div>
 <div class="line">Docs: <a class="reference external" href="http://www.vim.org/docs.php">http://www.vim.org/docs.php</a></div>
-<div class="line">Docs: <a class="reference external" href="https://learnxinyminutes.com/docs/vim/">https://learnxinyminutes.com/docs/vim/</a></div>
 <div class="line">Src: git <a class="reference external" href="https://github.com/vim/vim">https://github.com/vim/vim</a></div>
 </div>
-<p>ViM (VI-iMproved) is an open source text editor written in <a class="reference internal" href="#c"><span class="std std-ref">C</span></a>
-that’s available on very many platforms.</p>
 <ul class="simple">
-<li>Vim help can be accessed with <code class="docutils literal notranslate"><span class="pre">:help</span></code> and <code class="docutils literal notranslate"><span class="pre">:help</span> <span class="pre">help</span></code>
-(Press <code class="docutils literal notranslate"><span class="pre">&lt;esc&gt;</span></code>, Type <code class="docutils literal notranslate"><span class="pre">:help</span> <span class="pre">help</span></code>, Press Enter)</li>
-<li>Vi is almost always installed on Linux and BSD boxes.</li>
-<li>Vi is often included with <span class="xref std std-ref">Busybox</span>.</li>
-<li>Vi and Vim are installed with <a class="reference internal" href="#osx"><span class="std std-ref">OS X</span></a>.</li>
-<li>Vi and Vim are installed by default with many <span class="xref std std-ref">Linux
-Distributions</span></li>
-<li>Vim runs in a terminal, over SSH, and with a GUI window manager
-(Gvim, Macvim)</li>
-<li>Vim configuration is written in the vim language.</li>
-<li>Vim reads a few vimrc configuration files in sequence (<code class="docutils literal notranslate"><span class="pre">:help</span> <span class="pre">vimrc</span></code>)</li>
-<li>GVim is Vim for <a class="reference internal" href="#gnome"><span class="std std-ref">Gnome</span></a> window manager</li>
-<li>GVim reads a few vimrc configuration files in sequence (<code class="docutils literal notranslate"><span class="pre">:help</span> <span class="pre">gvimrc</span></code>)</li>
-<li>MacVim is Vim for <a class="reference internal" href="#osx"><span class="std std-ref">OS X</span></a></li>
-<li>One way to write changes and exit vim: <code class="docutils literal notranslate"><span class="pre">:wq!</span></code>
-(Press <code class="docutils literal notranslate"><span class="pre">&lt;esc&gt;</span></code>, Type <code class="docutils literal notranslate"><span class="pre">:wq!</span></code>, Press Enter)</li>
-<li>There are many plugins for vim.</li>
-<li>NERDTree is an example of a vim plugin:
-<a class="reference external" href="https://github.com/scrooloose/nerdtree">https://github.com/scrooloose/nerdtree</a> (<code class="docutils literal notranslate"><span class="pre">:help</span> <span class="pre">nerdtree</span></code>)</li>
-<li><a class="reference internal" href="#spacevim"><span class="std std-ref">SpaceVim</span></a> and <span class="xref std std-ref">westurner/dotvim</span> include the NERDtree plugin</li>
-<li>Vim keyboard shortcuts are calling mappings.</li>
-<li>Vim mappings are defined in a vimrc file.</li>
-<li>Examples of vim mappings:
-<code class="docutils literal notranslate"><span class="pre">\e</span></code> opens NERDTree, <code class="docutils literal notranslate"><span class="pre">\E</span></code> opens NERDTree to the current file</li>
-<li>Vim mappings can be defined for different vim modes:
-<code class="docutils literal notranslate"><span class="pre">:map</span> <span class="pre">\e</span></code> (command mode), <code class="docutils literal notranslate"><span class="pre">:imap</span> <span class="pre">\e</span></code> (insert mode) (<code class="docutils literal notranslate"><span class="pre">:help</span> <span class="pre">modes</span></code>)</li>
-<li>Press <code class="docutils literal notranslate"><span class="pre">i</span></code> or <code class="docutils literal notranslate"><span class="pre">a</span></code> while in command mode to enter
-insert or append mode (<code class="docutils literal notranslate"><span class="pre">:help</span> <span class="pre">vim-modes</span></code>)</li>
-<li>Press <code class="docutils literal notranslate"><span class="pre">&lt;Esc&gt;</span></code> to return to command mode</li>
+<li><a class="reference external" href="https://github.com/scrooloose/nerdtree">https://github.com/scrooloose/nerdtree</a></li>
+<li><a class="reference external" href="https://github.com/westurner/dotvim">https://github.com/westurner/dotvim</a></li>
 </ul>
-<p><a class="reference internal" href="#browser-extensions"><span class="std std-ref">Browser Extensions</span></a> with vim-style keyboard shortcuts:</p>
+<p>Vim browser extensions:</p>
 <ul class="simple">
 <li><a class="reference internal" href="#vimium"><span class="std std-ref">Vimium</span></a> (Chrome)</li>
 <li><a class="reference internal" href="#vimperator"><span class="std std-ref">Vimperator</span></a> (Firefox)</li>
 <li><a class="reference internal" href="#wasavi"><span class="std std-ref">Wasavi</span></a> (Chrome, Opera, Firefox)</li>
 </ul>
-<p>A number of web apps support vim-style keyboard shortcuts
-like <code class="docutils literal notranslate"><span class="pre">j</span></code> and <code class="docutils literal notranslate"><span class="pre">k</span></code> for up and down:</p>
-<ul class="simple">
-<li>GMail (<code class="docutils literal notranslate"><span class="pre">?</span></code> for help)</li>
-<li>Facebook (<code class="docutils literal notranslate"><span class="pre">?</span></code> for help)</li>
-<li>Twitter (<code class="docutils literal notranslate"><span class="pre">?</span></code> for help)</li>
-</ul>
-<div class="section" id="westurner-dotvim">
-<span id="index-348"></span><span id="id302"></span><h6>westurner/dotvim<a class="headerlink" href="#westurner-dotvim" title="Permalink to this headline">¶</a></h6>
-<div class="line-block">
-<div class="line">Docs: <a class="reference external" href="https://westurner.github.io/dotfiles/usage/#vim">https://westurner.github.io/dotfiles/usage/#vim</a></div>
-<div class="line">Src: <a class="reference external" href="https://github.com/westurner/dotvim">https://github.com/westurner/dotvim</a></div>
-<div class="line">Src: <a class="reference external" href="https://github.com/westurner/dotvim/blob/master/Makefile">https://github.com/westurner/dotvim/blob/master/Makefile</a></div>
-<div class="line">Src: <a class="reference external" href="https://github.com/westurner/dotvim/blob/master/vimrc">https://github.com/westurner/dotvim/blob/master/vimrc</a></div>
-<div class="line">Src: <a class="reference external" href="https://github.com/westurner/dotvim/blob/master/vimrc.full.bundles.vimrc">https://github.com/westurner/dotvim/blob/master/vimrc.full.bundles.vimrc</a></div>
-<div class="line">Src: <a class="reference external" href="https://github.com/westurner/dotvim/blob/master/vimrc.tinyvim.bundles.vimrc">https://github.com/westurner/dotvim/blob/master/vimrc.tinyvim.bundles.vimrc</a></div>
-</div>
-<p>westurner/dotvim is a set of plugins and configuration defaults for <a class="reference internal" href="#vim"><span class="std std-ref">Vim</span></a>.</p>
-</div>
-<div class="section" id="spacevim">
-<span id="index-349"></span><span id="id303"></span><h6>SpaceVim<a class="headerlink" href="#spacevim" title="Permalink to this headline">¶</a></h6>
-<div class="line-block">
-<div class="line">Homepage: <a class="reference external" href="https://spacevim.org/">https://spacevim.org/</a></div>
-<div class="line">Src: <a class="reference external" href="https://github.com/SpaceVim/SpaceVim">https://github.com/SpaceVim/SpaceVim</a></div>
-<div class="line">Docs: <a class="reference external" href="https://spacevim.org/documentation/">https://spacevim.org/documentation/</a></div>
-<div class="line">Docs: <a class="reference external" href="https://spacevim.org/documentation/#general-key-bindings">https://spacevim.org/documentation/#general-key-bindings</a></div>
-</div>
-<p>SpaceVim is a set of plugins, configuration defaults, and keybindings
-for <a class="reference internal" href="#vim"><span class="std std-ref">Vim</span></a>.</p>
-<ul class="simple">
-<li><a class="reference internal" href="#spacemacs"><span class="std std-ref">Spacemacs</span></a> is like SpaceVim for <a class="reference internal" href="#emacs"><span class="std std-ref">Emacs</span></a></li>
-</ul>
-</div>
-</div>
-</div>
-<div class="section" id="wrd-r-d-documentation">
-<span id="wrdrd-documentation"></span><span id="index-350"></span><h4>WRD R&amp;D Documentation<a class="headerlink" href="#wrd-r-d-documentation" title="Permalink to this headline">¶</a></h4>
-<div class="line-block">
-<div class="line">Docs: <a class="reference external" href="https://wrdrd.github.io/docs/">https://wrdrd.github.io/docs/</a></div>
-<div class="line">Docs: <a class="reference external" href="https://wrdrd.github.io/docs/tools/">https://wrdrd.github.io/docs/tools/</a></div>
-<div class="line">Src: git <a class="reference external" href="https://github.com/wrdrd/docs">https://github.com/wrdrd/docs</a></div>
-</div>
 <hr class="docutils" />
 <p><a class="reference external" href="#">^top^</a></p>
 </div>
@@ -27454,882 +27181,14 @@ for <a class="reference internal" href="#vim"><span class="std std-ref">Vim</spa
 <div class="section" id="submodules">
 <h3>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h3>
 </div>
-<div class="section" id="module-wrdrd.tools.crawl">
-<span id="wrdrd-tools-crawl-module"></span><h3>wrdrd.tools.crawl module<a class="headerlink" href="#module-wrdrd.tools.crawl" title="Permalink to this headline">¶</a></h3>
-<dl class="class">
-<dt id="wrdrd.tools.crawl.CSS">
-<em class="property">class </em><code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">CSS</code><span class="sig-paren">(</span><em>loc</em>, <em>src</em><span class="sig-paren">)</span><a class="headerlink" href="#wrdrd.tools.crawl.CSS" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></p>
-<dl class="attribute">
-<dt id="wrdrd.tools.crawl.CSS.loc">
-<code class="descname">loc</code><a class="headerlink" href="#wrdrd.tools.crawl.CSS.loc" title="Permalink to this definition">¶</a></dt>
-<dd><p>Alias for field number 0</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="wrdrd.tools.crawl.CSS.src">
-<code class="descname">src</code><a class="headerlink" href="#wrdrd.tools.crawl.CSS.src" title="Permalink to this definition">¶</a></dt>
-<dd><p>Alias for field number 1</p>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="class">
-<dt id="wrdrd.tools.crawl.CrawlRequest">
-<em class="property">class </em><code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">CrawlRequest</code><span class="sig-paren">(</span><em>src</em>, <em>url</em>, <em>datetime</em><span class="sig-paren">)</span><a class="headerlink" href="#wrdrd.tools.crawl.CrawlRequest" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></p>
-<dl class="attribute">
-<dt id="wrdrd.tools.crawl.CrawlRequest.datetime">
-<code class="descname">datetime</code><a class="headerlink" href="#wrdrd.tools.crawl.CrawlRequest.datetime" title="Permalink to this definition">¶</a></dt>
-<dd><p>Alias for field number 2</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="wrdrd.tools.crawl.CrawlRequest.src">
-<code class="descname">src</code><a class="headerlink" href="#wrdrd.tools.crawl.CrawlRequest.src" title="Permalink to this definition">¶</a></dt>
-<dd><p>Alias for field number 0</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="wrdrd.tools.crawl.CrawlRequest.url">
-<code class="descname">url</code><a class="headerlink" href="#wrdrd.tools.crawl.CrawlRequest.url" title="Permalink to this definition">¶</a></dt>
-<dd><p>Alias for field number 1</p>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="class">
-<dt id="wrdrd.tools.crawl.Image">
-<em class="property">class </em><code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">Image</code><span class="sig-paren">(</span><em>loc</em>, <em>src</em>, <em>alt</em>, <em>height</em>, <em>width</em>, <em>text</em><span class="sig-paren">)</span><a class="headerlink" href="#wrdrd.tools.crawl.Image" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></p>
-<dl class="attribute">
-<dt id="wrdrd.tools.crawl.Image.alt">
-<code class="descname">alt</code><a class="headerlink" href="#wrdrd.tools.crawl.Image.alt" title="Permalink to this definition">¶</a></dt>
-<dd><p>Alias for field number 2</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="wrdrd.tools.crawl.Image.height">
-<code class="descname">height</code><a class="headerlink" href="#wrdrd.tools.crawl.Image.height" title="Permalink to this definition">¶</a></dt>
-<dd><p>Alias for field number 3</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="wrdrd.tools.crawl.Image.loc">
-<code class="descname">loc</code><a class="headerlink" href="#wrdrd.tools.crawl.Image.loc" title="Permalink to this definition">¶</a></dt>
-<dd><p>Alias for field number 0</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="wrdrd.tools.crawl.Image.src">
-<code class="descname">src</code><a class="headerlink" href="#wrdrd.tools.crawl.Image.src" title="Permalink to this definition">¶</a></dt>
-<dd><p>Alias for field number 1</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="wrdrd.tools.crawl.Image.text">
-<code class="descname">text</code><a class="headerlink" href="#wrdrd.tools.crawl.Image.text" title="Permalink to this definition">¶</a></dt>
-<dd><p>Alias for field number 5</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="wrdrd.tools.crawl.Image.width">
-<code class="descname">width</code><a class="headerlink" href="#wrdrd.tools.crawl.Image.width" title="Permalink to this definition">¶</a></dt>
-<dd><p>Alias for field number 4</p>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="class">
-<dt id="wrdrd.tools.crawl.JS">
-<em class="property">class </em><code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">JS</code><span class="sig-paren">(</span><em>loc</em>, <em>src</em><span class="sig-paren">)</span><a class="headerlink" href="#wrdrd.tools.crawl.JS" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></p>
-<dl class="attribute">
-<dt id="wrdrd.tools.crawl.JS.loc">
-<code class="descname">loc</code><a class="headerlink" href="#wrdrd.tools.crawl.JS.loc" title="Permalink to this definition">¶</a></dt>
-<dd><p>Alias for field number 0</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="wrdrd.tools.crawl.JS.src">
-<code class="descname">src</code><a class="headerlink" href="#wrdrd.tools.crawl.JS.src" title="Permalink to this definition">¶</a></dt>
-<dd><p>Alias for field number 1</p>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="class">
-<dt id="wrdrd.tools.crawl.KeywordFrequency">
-<em class="property">class </em><code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">KeywordFrequency</code><span class="sig-paren">(</span><em>url</em>, <em>frequencies</em><span class="sig-paren">)</span><a class="headerlink" href="#wrdrd.tools.crawl.KeywordFrequency" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></p>
-<dl class="attribute">
-<dt id="wrdrd.tools.crawl.KeywordFrequency.frequencies">
-<code class="descname">frequencies</code><a class="headerlink" href="#wrdrd.tools.crawl.KeywordFrequency.frequencies" title="Permalink to this definition">¶</a></dt>
-<dd><p>Alias for field number 1</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="wrdrd.tools.crawl.KeywordFrequency.url">
-<code class="descname">url</code><a class="headerlink" href="#wrdrd.tools.crawl.KeywordFrequency.url" title="Permalink to this definition">¶</a></dt>
-<dd><p>Alias for field number 0</p>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="class">
-<dt id="wrdrd.tools.crawl.Link">
-<em class="property">class </em><code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">Link</code><span class="sig-paren">(</span><em>loc</em>, <em>href</em>, <em>name</em>, <em>target</em>, <em>text</em>, <em>parent_id</em><span class="sig-paren">)</span><a class="headerlink" href="#wrdrd.tools.crawl.Link" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></p>
-<dl class="attribute">
-<dt id="wrdrd.tools.crawl.Link.href">
-<code class="descname">href</code><a class="headerlink" href="#wrdrd.tools.crawl.Link.href" title="Permalink to this definition">¶</a></dt>
-<dd><p>Alias for field number 1</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="wrdrd.tools.crawl.Link.loc">
-<code class="descname">loc</code><a class="headerlink" href="#wrdrd.tools.crawl.Link.loc" title="Permalink to this definition">¶</a></dt>
-<dd><p>Alias for field number 0</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="wrdrd.tools.crawl.Link.name">
-<code class="descname">name</code><a class="headerlink" href="#wrdrd.tools.crawl.Link.name" title="Permalink to this definition">¶</a></dt>
-<dd><p>Alias for field number 2</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="wrdrd.tools.crawl.Link.parent_id">
-<code class="descname">parent_id</code><a class="headerlink" href="#wrdrd.tools.crawl.Link.parent_id" title="Permalink to this definition">¶</a></dt>
-<dd><p>Alias for field number 5</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="wrdrd.tools.crawl.Link.target">
-<code class="descname">target</code><a class="headerlink" href="#wrdrd.tools.crawl.Link.target" title="Permalink to this definition">¶</a></dt>
-<dd><p>Alias for field number 3</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="wrdrd.tools.crawl.Link.text">
-<code class="descname">text</code><a class="headerlink" href="#wrdrd.tools.crawl.Link.text" title="Permalink to this definition">¶</a></dt>
-<dd><p>Alias for field number 4</p>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="class">
-<dt id="wrdrd.tools.crawl.ResultStore">
-<em class="property">class </em><code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">ResultStore</code><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#ResultStore"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.ResultStore" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<p>Result store interface</p>
-<dl class="method">
-<dt id="wrdrd.tools.crawl.ResultStore.itervalues">
-<code class="descname">itervalues</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#ResultStore.itervalues"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.ResultStore.itervalues" title="Permalink to this definition">¶</a></dt>
-<dd><p>Get an iterable over the values in <code class="docutils literal notranslate"><span class="pre">self.db</span></code></p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">an iterable over the values in <code class="docutils literal notranslate"><span class="pre">self.db</span></code></td>
-</tr>
-<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">iterable</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="method">
-<dt id="wrdrd.tools.crawl.ResultStore.values">
-<code class="descname">values</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#wrdrd.tools.crawl.ResultStore.values" title="Permalink to this definition">¶</a></dt>
-<dd><p>Get an iterable over the values in <code class="docutils literal notranslate"><span class="pre">self.db</span></code></p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">an iterable over the values in <code class="docutils literal notranslate"><span class="pre">self.db</span></code></td>
-</tr>
-<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">iterable</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="class">
-<dt id="wrdrd.tools.crawl.Test_wrdcrawler">
-<em class="property">class </em><code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">Test_wrdcrawler</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#Test_wrdcrawler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.Test_wrdcrawler" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
-<dl class="method">
-<dt id="wrdrd.tools.crawl.Test_wrdcrawler.test_build_networkx_graph">
-<code class="descname">test_build_networkx_graph</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#Test_wrdcrawler.test_build_networkx_graph"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.Test_wrdcrawler.test_build_networkx_graph" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="method">
-<dt id="wrdrd.tools.crawl.Test_wrdcrawler.test_crawl_url">
-<code class="descname">test_crawl_url</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#Test_wrdcrawler.test_crawl_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.Test_wrdcrawler.test_crawl_url" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="method">
-<dt id="wrdrd.tools.crawl.Test_wrdcrawler.test_expand_link">
-<code class="descname">test_expand_link</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#Test_wrdcrawler.test_expand_link"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.Test_wrdcrawler.test_expand_link" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="method">
-<dt id="wrdrd.tools.crawl.Test_wrdcrawler.test_other">
-<code class="descname">test_other</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#Test_wrdcrawler.test_other"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.Test_wrdcrawler.test_other" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="method">
-<dt id="wrdrd.tools.crawl.Test_wrdcrawler.test_same_netloc">
-<code class="descname">test_same_netloc</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#Test_wrdcrawler.test_same_netloc"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.Test_wrdcrawler.test_same_netloc" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="method">
-<dt id="wrdrd.tools.crawl.Test_wrdcrawler.test_strip_fragment">
-<code class="descname">test_strip_fragment</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#Test_wrdcrawler.test_strip_fragment"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.Test_wrdcrawler.test_strip_fragment" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="method">
-<dt id="wrdrd.tools.crawl.Test_wrdcrawler.test_sum_counters">
-<code class="descname">test_sum_counters</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#Test_wrdcrawler.test_sum_counters"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.Test_wrdcrawler.test_sum_counters" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="method">
-<dt id="wrdrd.tools.crawl.Test_wrdcrawler.test_tokenize">
-<code class="descname">test_tokenize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#Test_wrdcrawler.test_tokenize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.Test_wrdcrawler.test_tokenize" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="method">
-<dt id="wrdrd.tools.crawl.Test_wrdcrawler.test_wrdcrawler">
-<code class="descname">test_wrdcrawler</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#Test_wrdcrawler.test_wrdcrawler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.Test_wrdcrawler.test_wrdcrawler" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-<dl class="class">
-<dt id="wrdrd.tools.crawl.URLCrawlQueue">
-<em class="property">class </em><code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">URLCrawlQueue</code><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#URLCrawlQueue"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.URLCrawlQueue" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<p>Queue of CrawlRequest URLs to crawl and their states</p>
-<dl class="attribute">
-<dt id="wrdrd.tools.crawl.URLCrawlQueue.DONE">
-<code class="descname">DONE</code><em class="property"> = 2</em><a class="headerlink" href="#wrdrd.tools.crawl.URLCrawlQueue.DONE" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="wrdrd.tools.crawl.URLCrawlQueue.ERROR">
-<code class="descname">ERROR</code><em class="property"> = 3</em><a class="headerlink" href="#wrdrd.tools.crawl.URLCrawlQueue.ERROR" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="wrdrd.tools.crawl.URLCrawlQueue.NEW">
-<code class="descname">NEW</code><em class="property"> = 0</em><a class="headerlink" href="#wrdrd.tools.crawl.URLCrawlQueue.NEW" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="wrdrd.tools.crawl.URLCrawlQueue.OUT">
-<code class="descname">OUT</code><em class="property"> = 1</em><a class="headerlink" href="#wrdrd.tools.crawl.URLCrawlQueue.OUT" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="method">
-<dt id="wrdrd.tools.crawl.URLCrawlQueue.count">
-<code class="descname">count</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#URLCrawlQueue.count"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.URLCrawlQueue.count" title="Permalink to this definition">¶</a></dt>
-<dd><p>Get the count of <code class="docutils literal notranslate"><span class="pre">URLCrawlQueue.NEW</span></code> <a class="reference internal" href="#wrdrd.tools.crawl.CrawlRequest" title="wrdrd.tools.crawl.CrawlRequest"><code class="xref py py-class docutils literal notranslate"><span class="pre">CrawlRequest</span></code></a> objects</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">count of <code class="docutils literal notranslate"><span class="pre">URLCrawlQueue.NEW</span></code> <a class="reference internal" href="#wrdrd.tools.crawl.CrawlRequest" title="wrdrd.tools.crawl.CrawlRequest"><code class="xref py py-class docutils literal notranslate"><span class="pre">CrawlRequest</span></code></a> objects</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">int</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="method">
-<dt id="wrdrd.tools.crawl.URLCrawlQueue.done">
-<code class="descname">done</code><span class="sig-paren">(</span><em>item</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#URLCrawlQueue.done"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.URLCrawlQueue.done" title="Permalink to this definition">¶</a></dt>
-<dd><p>Mark a CrawlRequest as <code class="docutils literal notranslate"><span class="pre">URLCrawlQueue.DONE</span></code></p>
-</dd></dl>
-
-<dl class="method">
-<dt id="wrdrd.tools.crawl.URLCrawlQueue.error">
-<code class="descname">error</code><span class="sig-paren">(</span><em>item</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#URLCrawlQueue.error"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.URLCrawlQueue.error" title="Permalink to this definition">¶</a></dt>
-<dd><p>Mark a CrawlRequest as <code class="docutils literal notranslate"><span class="pre">URLCrawlQueue.ERROR</span></code></p>
-</dd></dl>
-
-<dl class="method">
-<dt id="wrdrd.tools.crawl.URLCrawlQueue.pop">
-<code class="descname">pop</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#URLCrawlQueue.pop"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.URLCrawlQueue.pop" title="Permalink to this definition">¶</a></dt>
-<dd><p>Pop a CrawlRequest off the queue and mark it as <code class="docutils literal notranslate"><span class="pre">URLCrawlQueue.OUT</span></code></p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="#wrdrd.tools.crawl.CrawlRequest" title="wrdrd.tools.crawl.CrawlRequest"><code class="xref py py-class docutils literal notranslate"><span class="pre">CrawlRequest</span></code></a></td>
-</tr>
-<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="index.html#wrdrd.tools.crawl.CrawlRequest" title="wrdrd.tools.crawl.CrawlRequest">CrawlRequest</a></td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="method">
-<dt id="wrdrd.tools.crawl.URLCrawlQueue.push">
-<code class="descname">push</code><span class="sig-paren">(</span><em>item</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#URLCrawlQueue.push"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.URLCrawlQueue.push" title="Permalink to this definition">¶</a></dt>
-<dd><p>Push a CrawlRequest onto the queue and mark it as <code class="docutils literal notranslate"><span class="pre">URLCrawlQueue.NEW</span></code></p>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="function">
-<dt id="wrdrd.tools.crawl.build_networkx_graph">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">build_networkx_graph</code><span class="sig-paren">(</span><em>url</em>, <em>links</em>, <em>label=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#build_networkx_graph"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.build_networkx_graph" title="Permalink to this definition">¶</a></dt>
-<dd><p>Build a networkx.DiGraph from an iterable of links from a given URL</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>url</strong> (<em>str</em>) – URL from which the given links are derived</li>
-<li><strong>links</strong> (<em>iterable</em>) – iterable of <a class="reference internal" href="#wrdrd.tools.crawl.Link" title="wrdrd.tools.crawl.Link"><code class="xref py py-class docutils literal notranslate"><span class="pre">Link</span></code></a> objects</li>
-<li><strong>label</strong> (<em>str</em>) – label/title for graph</li>
-</ul>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">directed graph of links</p>
-</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">networkx.DiGraph</p>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="wrdrd.tools.crawl.crawl_url">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">crawl_url</code><span class="sig-paren">(</span><em>start_url</em>, <em>output=&lt;_io.TextIOWrapper name='&lt;stdout&gt;' mode='w' encoding='UTF-8'&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#crawl_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.crawl_url" title="Permalink to this definition">¶</a></dt>
-<dd><p>Crawl pages starting at <code class="docutils literal notranslate"><span class="pre">start_url</span></code></p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>start_url</strong> (<em>str</em>) – URL to start crawling from</li>
-<li><strong>output</strong> (<em>filelike</em>) – file to <code class="docutils literal notranslate"><span class="pre">.write()</span></code> output to</li>
-</ul>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference internal" href="#wrdrd.tools.crawl.ResultStore" title="wrdrd.tools.crawl.ResultStore"><code class="xref py py-class docutils literal notranslate"><span class="pre">ResultStore</span></code></a> of (URL, crawl_status_dict) pairs</p>
-</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="index.html#wrdrd.tools.crawl.ResultStore" title="wrdrd.tools.crawl.ResultStore">ResultStore</a></p>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="wrdrd.tools.crawl.current_datetime">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">current_datetime</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#current_datetime"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.current_datetime" title="Permalink to this definition">¶</a></dt>
-<dd><p>Get the current datetime in ISO format</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">current datetime in ISO format</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">str</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="wrdrd.tools.crawl.expand_link">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">expand_link</code><span class="sig-paren">(</span><em>_src</em>, <em>_url</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#expand_link"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.expand_link" title="Permalink to this definition">¶</a></dt>
-<dd><p>Expand a link given the containing document’s URI</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>_src</strong> (<em>str</em>) – containing document’s URI</li>
-<li><strong>_url</strong> (<em>str</em>) – link URI</li>
-</ul>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">expanded URI</p>
-</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">str</p>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="wrdrd.tools.crawl.extract_css">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">extract_css</code><span class="sig-paren">(</span><em>url</em>, <em>bs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#extract_css"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.extract_css" title="Permalink to this definition">¶</a></dt>
-<dd><p>Find CSS <code class="docutils literal notranslate"><span class="pre">&lt;link&gt;</span></code> links in a given BeautifulSoup object</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>url</strong> (<em>str</em>) – URL of the BeautifulSoup object</li>
-<li><strong>bs</strong> (<em>bs4.BeautifulSoup</em>) – BeautifulSoup object</li>
-</ul>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Yields:</th><td class="field-body"><p class="first last"><em>CSS</em> – a <a class="reference internal" href="#wrdrd.tools.crawl.CSS" title="wrdrd.tools.crawl.CSS"><code class="xref py py-class docutils literal notranslate"><span class="pre">CSS</span></code></a></p>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="wrdrd.tools.crawl.extract_images">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">extract_images</code><span class="sig-paren">(</span><em>url</em>, <em>bs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#extract_images"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.extract_images" title="Permalink to this definition">¶</a></dt>
-<dd><p>Find <code class="docutils literal notranslate"><span class="pre">&lt;img&gt;</span></code> images in a given BeautifulSoup object</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>url</strong> (<em>str</em>) – URL of the BeautifulSoup object</li>
-<li><strong>bs</strong> (<em>bs4.BeautifulSoup</em>) – BeautifulSoup object</li>
-</ul>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Yields:</th><td class="field-body"><p class="first last"><em>Image</em> – a <a class="reference internal" href="#wrdrd.tools.crawl.Image" title="wrdrd.tools.crawl.Image"><code class="xref py py-class docutils literal notranslate"><span class="pre">Image</span></code></a></p>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="wrdrd.tools.crawl.extract_js">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">extract_js</code><span class="sig-paren">(</span><em>url</em>, <em>bs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#extract_js"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.extract_js" title="Permalink to this definition">¶</a></dt>
-<dd><p>Find JS <code class="docutils literal notranslate"><span class="pre">&lt;script&gt;</span></code> links in a given BeautifulSoup object</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>url</strong> (<em>str</em>) – URL of the BeautifulSoup object</li>
-<li><strong>bs</strong> (<em>bs4.BeautifulSoup</em>) – BeautifulSoup object</li>
-</ul>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Yields:</th><td class="field-body"><p class="first last"><em>JS</em> – a <a class="reference internal" href="#wrdrd.tools.crawl.JS" title="wrdrd.tools.crawl.JS"><code class="xref py py-class docutils literal notranslate"><span class="pre">JS</span></code></a></p>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="wrdrd.tools.crawl.extract_keywords">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">extract_keywords</code><span class="sig-paren">(</span><em>url</em>, <em>bs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#extract_keywords"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.extract_keywords" title="Permalink to this definition">¶</a></dt>
-<dd><p>Extract keyword frequencies from a given BeautifulSoup object</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>url</strong> (<em>str</em>) – URL of the BeautifulSoup object</li>
-<li><strong>bs</strong> (<em>bs4.BeautifulSoup</em>) – BeautifulSoup object</li>
-</ul>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference internal" href="#wrdrd.tools.crawl.KeywordFrequency" title="wrdrd.tools.crawl.KeywordFrequency"><code class="xref py py-class docutils literal notranslate"><span class="pre">KeywordFrequency</span></code></a></p>
-</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="index.html#wrdrd.tools.crawl.KeywordFrequency" title="wrdrd.tools.crawl.KeywordFrequency">KeywordFrequency</a></p>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="wrdrd.tools.crawl.extract_links">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">extract_links</code><span class="sig-paren">(</span><em>url</em>, <em>bs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#extract_links"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.extract_links" title="Permalink to this definition">¶</a></dt>
-<dd><p>Find <code class="docutils literal notranslate"><span class="pre">&lt;a&gt;</span></code> links in a given BeautifulSoup object</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>url</strong> (<em>str</em>) – URL of the BeautifulSoup object</li>
-<li><strong>bs</strong> (<em>bs4.BeautifulSoup</em>) – BeautifulSoup object</li>
-</ul>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Yields:</th><td class="field-body"><p class="first last"><em>Link</em> – a <a class="reference internal" href="#wrdrd.tools.crawl.Link" title="wrdrd.tools.crawl.Link"><code class="xref py py-class docutils literal notranslate"><span class="pre">Link</span></code></a></p>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="wrdrd.tools.crawl.extract_words_from_bs">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">extract_words_from_bs</code><span class="sig-paren">(</span><em>bs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#extract_words_from_bs"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.extract_words_from_bs" title="Permalink to this definition">¶</a></dt>
-<dd><p>Get just the text from an HTML page</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>bs</strong> (<em>bs4.BeautifulSoup</em>) – BeautifulSoup object</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">newline-joined unicode string</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">unicode</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="wrdrd.tools.crawl.frequency_table">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">frequency_table</code><span class="sig-paren">(</span><em>counterdict</em>, <em>sort_by='count'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#frequency_table"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.frequency_table" title="Permalink to this definition">¶</a></dt>
-<dd><p>Calculate and sort a frequency table from a collections.Counter dict</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>counterdict</strong> (<em>dict</em>) – a collections.Counter dict of (key, count) pairs</li>
-<li><strong>sort_by</strong> (<em>str</em>) – either <code class="docutils literal notranslate"><span class="pre">count</span></code> or <code class="docutils literal notranslate"><span class="pre">name</span></code></li>
-</ul>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Yields:</th><td class="field-body"><p class="first last"><em>tuple</em> – (%, count, key)</p>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="wrdrd.tools.crawl.get_stop_words">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">get_stop_words</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#get_stop_words"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.get_stop_words" title="Permalink to this definition">¶</a></dt>
-<dd><p>Get english stop words from NLTK with a few modifications</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">dictionary of stop words</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">dict</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="wrdrd.tools.crawl.get_text_from_bs">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">get_text_from_bs</code><span class="sig-paren">(</span><em>bs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#get_text_from_bs"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.get_text_from_bs" title="Permalink to this definition">¶</a></dt>
-<dd><p>Get text from a BeautifulSoup object</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>bs</strong> (<em>bs4.BeautifulSoup</em>) – BeautifulSoup object</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">space-joined unicode string with newlines replaced by spaces</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">unicode</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="wrdrd.tools.crawl.get_unicode_stdout">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">get_unicode_stdout</code><span class="sig-paren">(</span><em>stdout=None</em>, <em>errors='replace'</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#get_unicode_stdout"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.get_unicode_stdout" title="Permalink to this definition">¶</a></dt>
-<dd><p>Wrap stdout as a utf-8 unicode writer</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>stdout</strong> (<em>filelike</em>) – <code class="docutils literal notranslate"><span class="pre">sys.stdout</span></code></li>
-<li><strong>errors</strong> (<em>str</em>) – what to do with errors</li>
-<li><strong>kwargs</strong> (<em>dict</em>) – <code class="docutils literal notranslate"><span class="pre">**kwargs</span></code></li>
-</ul>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">output to <code class="docutils literal notranslate"><span class="pre">.write()</span></code> to</p>
-</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">filelike</p>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="wrdrd.tools.crawl.iteritems">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">iteritems</code><span class="sig-paren">(</span><em>obj</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#iteritems"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.iteritems" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="function">
-<dt id="wrdrd.tools.crawl.itervalues">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">itervalues</code><span class="sig-paren">(</span><em>obj</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#itervalues"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.itervalues" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="function">
-<dt id="wrdrd.tools.crawl.main">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">main</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#main"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.main" title="Permalink to this definition">¶</a></dt>
-<dd><p><a class="reference internal" href="#module-wrdrd.tools.crawl" title="wrdrd.tools.crawl"><code class="xref py py-mod docutils literal notranslate"><span class="pre">wrdrd.tools.crawl</span></code></a> main method: parse arguments and run commands</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>args</strong> (<em>list</em>) – list of commandline arguments</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">nonzero returncode on error</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">int</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="wrdrd.tools.crawl.print_frequency_table">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">print_frequency_table</code><span class="sig-paren">(</span><em>frequencies</em>, <em>output=&lt;_io.TextIOWrapper name='&lt;stdout&gt;' mode='w' encoding='UTF-8'&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#print_frequency_table"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.print_frequency_table" title="Permalink to this definition">¶</a></dt>
-<dd><p>Print a formatted ASCII frequency table</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>frequencies</strong> (<em>iterable</em>) – iterable of (%, count, word) tuples</li>
-<li><strong>output</strong> (<em>filelike</em>) – output to <code class="docutils literal notranslate"><span class="pre">print()</span></code> to</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="wrdrd.tools.crawl.same_netloc">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">same_netloc</code><span class="sig-paren">(</span><em>url1</em>, <em>url2</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#same_netloc"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.same_netloc" title="Permalink to this definition">¶</a></dt>
-<dd><p>Check whether two URIs have the same netloc</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>url1</strong> (<em>str</em>) – first URI</li>
-<li><strong>url2</strong> (<em>str</em>) – second URI</li>
-</ul>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">True if both URIs have the same netloc</p>
-</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">bool</p>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="wrdrd.tools.crawl.strip_fragment">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">strip_fragment</code><span class="sig-paren">(</span><em>url</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#strip_fragment"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.strip_fragment" title="Permalink to this definition">¶</a></dt>
-<dd><p>Strip the #fragment portion from a URI</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>url</strong> (<em>str</em>) – URI to strip #fragment from</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">stripped URI (<code class="docutils literal notranslate"><span class="pre">/</span></code> if otherwise empty)</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">str</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="wrdrd.tools.crawl.strip_script_styles_from_bs">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">strip_script_styles_from_bs</code><span class="sig-paren">(</span><em>bs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#strip_script_styles_from_bs"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.strip_script_styles_from_bs" title="Permalink to this definition">¶</a></dt>
-<dd><p>Strip <code class="docutils literal notranslate"><span class="pre">&lt;script&gt;</span></code> and <code class="docutils literal notranslate"><span class="pre">&lt;style&gt;</span></code> tags from a BeautifulSoup object</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>bs</strong> (<em>bs4.BeautifulSoup</em>) – BeautifulSoup object</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">BeautifulSoup object with tags removed</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">bs4.BeautifulSoup</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="wrdrd.tools.crawl.sum_counters">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">sum_counters</code><span class="sig-paren">(</span><em>iterable</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#sum_counters"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.sum_counters" title="Permalink to this definition">¶</a></dt>
-<dd><p>Sum the counts of an iterable</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>iterable</strong> (<em>iterable</em>) – iterable of collections.Counter dicts</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">dict of (key, count) pairs</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">defaultdict</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="wrdrd.tools.crawl.to_a_search_engine">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">to_a_search_engine</code><span class="sig-paren">(</span><em>url</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#to_a_search_engine"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.to_a_search_engine" title="Permalink to this definition">¶</a></dt>
-<dd><p>Get a list of words (e.g. as a classic search engine)</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>url</strong> (<em>str</em>) – URL to <code class="docutils literal notranslate"><span class="pre">HTTP</span> <span class="pre">GET</span></code> with <code class="docutils literal notranslate"><span class="pre">requests.get</span></code></td>
-</tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">iterable of tokens</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">iterable</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="wrdrd.tools.crawl.tokenize">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">tokenize</code><span class="sig-paren">(</span><em>text</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#tokenize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.tokenize" title="Permalink to this definition">¶</a></dt>
-<dd><p>Tokenize the given text with textblob.tokenizers.word_tokenize</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>text</strong> (<em>str</em>) – text to tokenize</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">tokens</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">iterable</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="wrdrd.tools.crawl.word_frequencies">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">word_frequencies</code><span class="sig-paren">(</span><em>url</em>, <em>keywords</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#word_frequencies"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.word_frequencies" title="Permalink to this definition">¶</a></dt>
-<dd><p>Get frequencies (counts) for a set of (non-stopword) keywords</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>url</strong> (<em>str</em>) – URL from which keywords were derived</li>
-<li><strong>keywords</strong> (<em>iterable</em>) – iterable of keywords</li>
-</ul>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><a class="reference internal" href="#wrdrd.tools.crawl.KeywordFrequency" title="wrdrd.tools.crawl.KeywordFrequency"><code class="xref py py-class docutils literal notranslate"><span class="pre">KeywordFrequency</span></code></a></p>
-</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="index.html#wrdrd.tools.crawl.KeywordFrequency" title="wrdrd.tools.crawl.KeywordFrequency">KeywordFrequency</a></p>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="wrdrd.tools.crawl.wrdcrawler">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">wrdcrawler</code><span class="sig-paren">(</span><em>url</em>, <em>output=&lt;_io.TextIOWrapper name='&lt;stdout&gt;' mode='w' encoding='UTF-8'&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#wrdcrawler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.wrdcrawler" title="Permalink to this definition">¶</a></dt>
-<dd><p>Fetch and generate a report from the given URL</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>url</strong> (<em>str</em>) – URL to fetch</li>
-<li><strong>output</strong> (<em>filelike</em>) – output to <code class="docutils literal notranslate"><span class="pre">print()</span></code> to</li>
-</ul>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">output</p>
-</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">filelike</p>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="wrdrd.tools.crawl.write_nxgraph_to_dot">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">write_nxgraph_to_dot</code><span class="sig-paren">(</span><em>g</em>, <em>output</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#write_nxgraph_to_dot"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.write_nxgraph_to_dot" title="Permalink to this definition">¶</a></dt>
-<dd><p>Write a networkx graph as DOT to the specified output</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>g</strong> (<em>networkx.Graph</em>) – graph to write as DOT</li>
-<li><strong>output</strong> (<em>filelike</em>) – output to write to</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="wrdrd.tools.crawl.write_nxgraph_to_json">
-<code class="descclassname">wrdrd.tools.crawl.</code><code class="descname">write_nxgraph_to_json</code><span class="sig-paren">(</span><em>g</em>, <em>output</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/crawl.html#write_nxgraph_to_json"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.write_nxgraph_to_json" title="Permalink to this definition">¶</a></dt>
-<dd><p>Write a networkx graph as JSON to the specified output</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>g</strong> (<em>networkx.Graph</em>) – graph to write as JSON</li>
-<li><strong>output</strong> (<em>filelike</em>) – output to write to</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
+<div class="section" id="wrdrd-tools-crawl-module">
+<h3>wrdrd.tools.crawl module<a class="headerlink" href="#wrdrd-tools-crawl-module" title="Permalink to this headline">¶</a></h3>
 </div>
 <div class="section" id="module-wrdrd.tools.domain">
 <span id="wrdrd-tools-domain-module"></span><h3>wrdrd.tools.domain module<a class="headerlink" href="#module-wrdrd.tools.domain" title="Permalink to this headline">¶</a></h3>
 <dl class="function">
 <dt id="wrdrd.tools.domain.check_google_dkim">
-<code class="descclassname">wrdrd.tools.domain.</code><code class="descname">check_google_dkim</code><span class="sig-paren">(</span><em>domain</em>, <em>prefix='google'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/domain.html#check_google_dkim"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.domain.check_google_dkim" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.domain.</code><code class="descname">check_google_dkim</code><span class="sig-paren">(</span><em>domain</em>, <em>prefix='google'</em><span class="sig-paren">)</span><a class="headerlink" href="#wrdrd.tools.domain.check_google_dkim" title="Permalink to this definition">¶</a></dt>
 <dd><p>Check a Google DKIM DNS TXT record</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -28367,7 +27226,7 @@ and <strong>does not validate DKIM signatures</strong>.</p>
 
 <dl class="function">
 <dt id="wrdrd.tools.domain.check_google_dmarc">
-<code class="descclassname">wrdrd.tools.domain.</code><code class="descname">check_google_dmarc</code><span class="sig-paren">(</span><em>domain</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/domain.html#check_google_dmarc"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.domain.check_google_dmarc" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.domain.</code><code class="descname">check_google_dmarc</code><span class="sig-paren">(</span><em>domain</em><span class="sig-paren">)</span><a class="headerlink" href="#wrdrd.tools.domain.check_google_dmarc" title="Permalink to this definition">¶</a></dt>
 <dd><p>Check a Google DMARC DNS TXT record</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -28389,7 +27248,7 @@ and <strong>does not validate DKIM signatures</strong>.</p>
 
 <dl class="function">
 <dt id="wrdrd.tools.domain.check_google_domain">
-<code class="descclassname">wrdrd.tools.domain.</code><code class="descname">check_google_domain</code><span class="sig-paren">(</span><em>domain</em>, <em>dkim_prefix='google'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/domain.html#check_google_domain"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.domain.check_google_domain" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.domain.</code><code class="descname">check_google_domain</code><span class="sig-paren">(</span><em>domain</em>, <em>dkim_prefix='google'</em><span class="sig-paren">)</span><a class="headerlink" href="#wrdrd.tools.domain.check_google_domain" title="Permalink to this definition">¶</a></dt>
 <dd><p>Check DNS MX, SPF, DMARC, and DKIM records for a Google Apps domain</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -28416,7 +27275,7 @@ and <strong>does not validate DKIM signatures</strong>.</p>
 
 <dl class="function">
 <dt id="wrdrd.tools.domain.check_google_mx">
-<code class="descclassname">wrdrd.tools.domain.</code><code class="descname">check_google_mx</code><span class="sig-paren">(</span><em>domain</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/domain.html#check_google_mx"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.domain.check_google_mx" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.domain.</code><code class="descname">check_google_mx</code><span class="sig-paren">(</span><em>domain</em><span class="sig-paren">)</span><a class="headerlink" href="#wrdrd.tools.domain.check_google_mx" title="Permalink to this definition">¶</a></dt>
 <dd><p>Check Google MX DNS records</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -28437,7 +27296,7 @@ and <strong>does not validate DKIM signatures</strong>.</p>
 
 <dl class="function">
 <dt id="wrdrd.tools.domain.check_google_spf">
-<code class="descclassname">wrdrd.tools.domain.</code><code class="descname">check_google_spf</code><span class="sig-paren">(</span><em>domain</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/domain.html#check_google_spf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.domain.check_google_spf" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.domain.</code><code class="descname">check_google_spf</code><span class="sig-paren">(</span><em>domain</em><span class="sig-paren">)</span><a class="headerlink" href="#wrdrd.tools.domain.check_google_spf" title="Permalink to this definition">¶</a></dt>
 <dd><p>Check a Google SPF DNS TXT record</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -28458,7 +27317,7 @@ and <strong>does not validate DKIM signatures</strong>.</p>
 
 <dl class="function">
 <dt id="wrdrd.tools.domain.dig_all">
-<code class="descclassname">wrdrd.tools.domain.</code><code class="descname">dig_all</code><span class="sig-paren">(</span><em>domain</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/domain.html#dig_all"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.domain.dig_all" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.domain.</code><code class="descname">dig_all</code><span class="sig-paren">(</span><em>domain</em><span class="sig-paren">)</span><a class="headerlink" href="#wrdrd.tools.domain.dig_all" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get all DNS records with dig</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -28476,7 +27335,7 @@ and <strong>does not validate DKIM signatures</strong>.</p>
 
 <dl class="function">
 <dt id="wrdrd.tools.domain.dig_dnskey">
-<code class="descclassname">wrdrd.tools.domain.</code><code class="descname">dig_dnskey</code><span class="sig-paren">(</span><em>zone</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/domain.html#dig_dnskey"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.domain.dig_dnskey" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.domain.</code><code class="descname">dig_dnskey</code><span class="sig-paren">(</span><em>zone</em><span class="sig-paren">)</span><a class="headerlink" href="#wrdrd.tools.domain.dig_dnskey" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get DNSSEC DNS records with dig</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -28494,7 +27353,7 @@ and <strong>does not validate DKIM signatures</strong>.</p>
 
 <dl class="function">
 <dt id="wrdrd.tools.domain.dig_mx">
-<code class="descclassname">wrdrd.tools.domain.</code><code class="descname">dig_mx</code><span class="sig-paren">(</span><em>domain</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/domain.html#dig_mx"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.domain.dig_mx" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.domain.</code><code class="descname">dig_mx</code><span class="sig-paren">(</span><em>domain</em><span class="sig-paren">)</span><a class="headerlink" href="#wrdrd.tools.domain.dig_mx" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get MX DNS records with dig</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -28515,7 +27374,7 @@ and <strong>does not validate DKIM signatures</strong>.</p>
 
 <dl class="function">
 <dt id="wrdrd.tools.domain.dig_ns">
-<code class="descclassname">wrdrd.tools.domain.</code><code class="descname">dig_ns</code><span class="sig-paren">(</span><em>domain</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/domain.html#dig_ns"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.domain.dig_ns" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.domain.</code><code class="descname">dig_ns</code><span class="sig-paren">(</span><em>domain</em><span class="sig-paren">)</span><a class="headerlink" href="#wrdrd.tools.domain.dig_ns" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get DNS NS records with dig</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -28533,7 +27392,7 @@ and <strong>does not validate DKIM signatures</strong>.</p>
 
 <dl class="function">
 <dt id="wrdrd.tools.domain.dig_spf">
-<code class="descclassname">wrdrd.tools.domain.</code><code class="descname">dig_spf</code><span class="sig-paren">(</span><em>domain</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/domain.html#dig_spf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.domain.dig_spf" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.domain.</code><code class="descname">dig_spf</code><span class="sig-paren">(</span><em>domain</em><span class="sig-paren">)</span><a class="headerlink" href="#wrdrd.tools.domain.dig_spf" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get SPF DNS TXT records with dig</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -28554,7 +27413,7 @@ and <strong>does not validate DKIM signatures</strong>.</p>
 
 <dl class="function">
 <dt id="wrdrd.tools.domain.dig_txt">
-<code class="descclassname">wrdrd.tools.domain.</code><code class="descname">dig_txt</code><span class="sig-paren">(</span><em>domain</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/domain.html#dig_txt"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.domain.dig_txt" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.domain.</code><code class="descname">dig_txt</code><span class="sig-paren">(</span><em>domain</em><span class="sig-paren">)</span><a class="headerlink" href="#wrdrd.tools.domain.dig_txt" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get DNS TXT records with dig</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -28572,7 +27431,7 @@ and <strong>does not validate DKIM signatures</strong>.</p>
 
 <dl class="function">
 <dt id="wrdrd.tools.domain.domain_tools">
-<code class="descclassname">wrdrd.tools.domain.</code><code class="descname">domain_tools</code><span class="sig-paren">(</span><em>domain</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/domain.html#domain_tools"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.domain.domain_tools" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.domain.</code><code class="descname">domain_tools</code><span class="sig-paren">(</span><em>domain</em><span class="sig-paren">)</span><a class="headerlink" href="#wrdrd.tools.domain.domain_tools" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get whois and DNS information for a domain.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -28590,7 +27449,7 @@ and <strong>does not validate DKIM signatures</strong>.</p>
 
 <dl class="function">
 <dt id="wrdrd.tools.domain.main">
-<code class="descclassname">wrdrd.tools.domain.</code><code class="descname">main</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/domain.html#main"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.domain.main" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.domain.</code><code class="descname">main</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="headerlink" href="#wrdrd.tools.domain.main" title="Permalink to this definition">¶</a></dt>
 <dd><p><a class="reference internal" href="#module-wrdrd.tools.domain" title="wrdrd.tools.domain"><code class="xref py py-mod docutils literal notranslate"><span class="pre">wrdrd.tools.domain</span></code></a> main method</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -28608,7 +27467,7 @@ and <strong>does not validate DKIM signatures</strong>.</p>
 
 <dl class="function">
 <dt id="wrdrd.tools.domain.nslookup">
-<code class="descclassname">wrdrd.tools.domain.</code><code class="descname">nslookup</code><span class="sig-paren">(</span><em>domain</em>, <em>nameserver=''</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/domain.html#nslookup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.domain.nslookup" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.domain.</code><code class="descname">nslookup</code><span class="sig-paren">(</span><em>domain</em>, <em>nameserver=''</em><span class="sig-paren">)</span><a class="headerlink" href="#wrdrd.tools.domain.nslookup" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get nslookup information with nslookup (resolve a domainname to an IP)</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -28632,7 +27491,7 @@ and <strong>does not validate DKIM signatures</strong>.</p>
 
 <dl class="function">
 <dt id="wrdrd.tools.domain.whois">
-<code class="descclassname">wrdrd.tools.domain.</code><code class="descname">whois</code><span class="sig-paren">(</span><em>domain</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/domain.html#whois"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.domain.whois" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.domain.</code><code class="descname">whois</code><span class="sig-paren">(</span><em>domain</em><span class="sig-paren">)</span><a class="headerlink" href="#wrdrd.tools.domain.whois" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get whois information with whois</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -28653,18 +27512,18 @@ and <strong>does not validate DKIM signatures</strong>.</p>
 <span id="wrdrd-tools-stripsinglehtml-module"></span><h3>wrdrd.tools.stripsinglehtml module<a class="headerlink" href="#module-wrdrd.tools.stripsinglehtml" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="wrdrd.tools.stripsinglehtml.Test_stripsinglehtml">
-<em class="property">class </em><code class="descclassname">wrdrd.tools.stripsinglehtml.</code><code class="descname">Test_stripsinglehtml</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/stripsinglehtml.html#Test_stripsinglehtml"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.stripsinglehtml.Test_stripsinglehtml" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">wrdrd.tools.stripsinglehtml.</code><code class="descname">Test_stripsinglehtml</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#wrdrd.tools.stripsinglehtml.Test_stripsinglehtml" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
 <dl class="method">
 <dt id="wrdrd.tools.stripsinglehtml.Test_stripsinglehtml.test_stripsinglehtml">
-<code class="descname">test_stripsinglehtml</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/stripsinglehtml.html#Test_stripsinglehtml.test_stripsinglehtml"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.stripsinglehtml.Test_stripsinglehtml.test_stripsinglehtml" title="Permalink to this definition">¶</a></dt>
+<code class="descname">test_stripsinglehtml</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#wrdrd.tools.stripsinglehtml.Test_stripsinglehtml.test_stripsinglehtml" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="function">
 <dt id="wrdrd.tools.stripsinglehtml.main">
-<code class="descclassname">wrdrd.tools.stripsinglehtml.</code><code class="descname">main</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/stripsinglehtml.html#main"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.stripsinglehtml.main" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.stripsinglehtml.</code><code class="descname">main</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="headerlink" href="#wrdrd.tools.stripsinglehtml.main" title="Permalink to this definition">¶</a></dt>
 <dd><p><a class="reference internal" href="#module-wrdrd.tools.stripsinglehtml" title="wrdrd.tools.stripsinglehtml"><code class="xref py py-mod docutils literal notranslate"><span class="pre">wrdrd.tools.stripsinglehtml</span></code></a> main method: print unicode
 stripsinglehtml output to <code class="docutils literal notranslate"><span class="pre">stdout</span></code>.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -28683,7 +27542,7 @@ stripsinglehtml output to <code class="docutils literal notranslate"><span class
 
 <dl class="function">
 <dt id="wrdrd.tools.stripsinglehtml.stripsinglehtml">
-<code class="descclassname">wrdrd.tools.stripsinglehtml.</code><code class="descname">stripsinglehtml</code><span class="sig-paren">(</span><em>path='index.html'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrdrd/tools/stripsinglehtml.html#stripsinglehtml"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.stripsinglehtml.stripsinglehtml" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">wrdrd.tools.stripsinglehtml.</code><code class="descname">stripsinglehtml</code><span class="sig-paren">(</span><em>path='index.html'</em><span class="sig-paren">)</span><a class="headerlink" href="#wrdrd.tools.stripsinglehtml.stripsinglehtml" title="Permalink to this definition">¶</a></dt>
 <dd><p>strip markup from sphinx singlehtml files
 (rather than writing a sphinx […]-er)</p>
 <table class="docutils field-list" frame="void" rules="none">
