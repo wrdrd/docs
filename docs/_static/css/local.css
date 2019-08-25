@@ -119,6 +119,21 @@ table.docutils caption {
     font-size: 1.1em;
 }
 
+a.external {
+    border-bottom: 1px dotted #c0c0c0;
+}
+
+div.body a.internal {
+    /* background: #f0f0f0;
+    padding: 3px 4px 2px 4px; */
+    border-bottom: 1px solid;
+}
+
+code {
+    background-color: #f2f2f2;
+    color: #a7052e;
+}
+
 @media print {
     .affix,
     #sidebar-wrapper.affix-bottom,
