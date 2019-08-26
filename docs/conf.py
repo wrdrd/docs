@@ -46,6 +46,7 @@ extensions = [
     'sphinx.ext.napoleon',
     'sphinx.ext.viewcode',
     'sphinxjp.themes.basicstrap',
+    'wrd_sphinx_theme',
     'sphinxcontrib.srclinks',
 ]
 
@@ -120,39 +121,12 @@ pygments_style = 'default'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'basicstrap'
+html_theme = 'wrd_sphinx_theme'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-html_theme_options = {
-    'lang': 'en',
-    'nosidebar': False,
-    'rightsidebar': False,
-    'sidebar_span': 3,
-    'nav_fixed_top': False,
-    'nav_fixed': False,
-    'nav_width': '900px',
-    'content_fixed': False,
-    'content_width': '768px',
-    'row_fixed': False,
-    'noresponsive': False,
-    'noresponsiverelbar': True,
-    'googlewebfont': False,
-    'googlewebfont_url': 'http://fonts.googleapis.com/css?family=Lily+Script+One',
-    'googlewebfont_style': u"font-family: 'Lily Script One' cursive;",
-    'header_inverse': False,
-    'relbar_inverse': False,
-    'inner_theme': False
-    #    'inner_theme_name': 'bootswatch-readable',
-    #    'inner_theme_name': 'bootswatch-superhero',
-    #    'h1_size': '3.0em',
-    #    'h2_size': '2.6em',
-    #    'h3_size': '2.2em',
-    #    'h4_size': '1.8em',
-    #    'h5_size': '1.4em',
-    #    'h6_size': '1.1em',
-}
+# html_theme_options = { }
 
 # Add any paths that contain custom themes here, relative to this directory.
 #html_theme_path = []
@@ -363,8 +337,8 @@ def configure_meta_tags(app, pagename, templatename, context, doctree):
 
 
 def setup(app):
-    app.add_javascript('js/local.js')
-    app.add_stylesheet('css/local.css')
+    # app.add_javascript('js/local.js')
+    # app.add_stylesheet('css/local.css')
     app.connect('html-page-context', configure_meta_tags)
 
 
