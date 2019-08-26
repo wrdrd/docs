@@ -18,6 +18,7 @@ $(document).ready(function() {
     var options_defaults = {
       'open_in_new_tab': true,
       'show_visited_links': true,
+      'shorten_links': true
     };
     options = options_defaults;
   } else {
@@ -94,6 +95,14 @@ $(document).ready(function() {
         ></input> \
         <label for='chk_showvisited'>Show visited links</label> \
       </li> \
+      <li> \
+        <input id='chk_shortenlinks' \
+          type='checkbox' \
+          aria-label='Shorten links' \
+          title='Shorten links' \
+        ></input> \
+        <label for='chk_shortenlinks'>Shorten links</label> \
+      </li> \
     </ul> \
   </div>");
   sidebar.append(options_widget);
@@ -148,5 +157,22 @@ $(document).ready(function() {
     Cookies.set('options', options);
     set_showvisitedcss();
   });
+
+
+  var chk = $('input#chk_shortenlinks');
+  chk.prop('checked', options['shorten_links']);
+  chk.on('change', function(e) {
+    options['shorten_links'] = this.checked;
+    Cookies.set('options', options);
+    if (options['shorten_links'] === true) {
+      shortenLinks();
+    } else {
+      unshortenLinks();
+    }
+  });
+  if (options['shorten_links'] === true) {
+    shortenLinks();
+  }
+
 });
 

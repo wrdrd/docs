@@ -2,6 +2,17 @@
     margin-bottom: 0;
 }
 
+@media (max-width: 768px) {
+    .navbar-brand {
+        float: none;
+        padding: 0;
+    }
+    .navbar-header {
+        padding-top: 8px;
+        padding-left: 15px;
+    }
+}
+
 div.navbar-header a:visited, ul.navbar-nav a:visited, div.sidebar h3 a {
     color: #777 !important;
 }
@@ -129,6 +140,10 @@ div.body a.internal {
     border-bottom: 1px solid;
 }
 
+div.body a.internal[href^="#term-"] {
+    border-bottom: 2px dotted !important;
+}
+
 code {
     background-color: #f2f2f2;
     color: #a7052e;
@@ -145,11 +160,6 @@ div#searchbox form.search {
 ol.upperalpha {
     padding-left: 18px;
 }
-
-div.shortenText {
-    display: inline;
-}
-
 
 @media print {
     .affix,

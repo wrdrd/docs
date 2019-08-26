@@ -1,7 +1,13 @@
 
 li.youarehere {
-    list-style-type: "➡ "
+    list-style-type: none;
+    /* list-style-type: "➡ " */
     /* text-decoration: underline; */
+}
+
+li.youarehere:before {
+  content: "➡ ";
+  margin-left: -1.1em;
 }
 
 #sidebar-wrapper a.youarehere,
@@ -9,6 +15,7 @@ li.youarehere {
     font-size: 1.2em;
     font-weight: bold;
     margin-left: -1px;
+    word-wrap: break-word;
 }
 
 #navbar-top a.youarehere:after {

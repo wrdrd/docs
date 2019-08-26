@@ -5,8 +5,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 var keymap = {
-    "www.wrdrd.com": 'UA-55346955-1',
-    "wrdrd.com": 'UA-55346955-2'
+    "example.com": "UA-xxxxxxxx-1"
 };
 
 if (document.location.hostname in keymap) {
@@ -173,158 +172,6 @@ $(document).ready(function() {
 
 	return init(function () {});
 }));
-
-// newtab.js
-//
-// Requires
-// * jQuery: https://github.com/jquery/jquery
-// * js-cookie: https://github.com/js-cookie/js-cookie
-//
-// References
-// * https://mathiasbynens.github.io/rel-noopener/
-//
-// License: MIT LICENSE
-$(document).ready(function() {
-
-
-  var options;
-  var options_cookie_json = Cookies.getJSON('options');
-  if (options_cookie_json === undefined) {
-    var options_defaults = {
-      'open_in_new_tab': true,
-      'show_visited_links': true,
-    };
-    options = options_defaults;
-  } else {
-    options = options_cookie_json;
-  }
-  console.log('options:');
-  console.log(options);
-
-  function match_external_url_elem(elem) {
-    var elem = $(elem);
-    if (elem === undefined) {
-      return false;
-    }
-    var url = elem.attr('href');
-    if (url === undefined) {
-      return false;
-    }
-    var relstr = elem.attr('rel');
-    var rels = [];
-    if (relstr !== undefined) {
-      rels = relstr.split(' ');
-    }
-    // skip rel="noreferrer" (because window.open)
-    if (rels.indexOf('noreferrer') !== -1)
-    {
-      return false;
-    }
-    if (
-      (   elem.attr('target') === '_blank')
-      || (rels.indexOf('noopener') > -1)
-      || (rels.indexOf('external') !== -1)
-      || (elem.hasClass('external'))  // [sphinx,]
-      || (url.substring(0,8) === 'http://')
-      || (url.substring(0,9) === 'https://')
-      || (url.substring(0,3) === '//')
-      || (url.substring(0,7) === 'ftp://')
-      || (url.substring(0,7) === 'svn://')
-      || (url.substring(0,7) === 'git://')
-    ) {
-        return true;
-    }
-    return false;
-  }
-  $(document).on('click', 'a', function(e) {
-    if (options['open_in_new_tab']) {
-      if (match_external_url_elem(this)) {
-        var url = $(this).attr('href');
-        e.preventDefault();
-        var otherWindow = window.open();
-        otherWindow.opener = null;
-        otherWindow.location = url;
-      }
-    }
-  });
-
-  var sidebar = $("#sidebar-wrapper").find("div.sidebar");
-      var options_widget = $("\
-  <div class='widget sidebar-options'> \
-    <h3>Options</h3> \
-    <ul> \
-      <li> \
-        <input id='chk_newtab' \
-          type='checkbox' \
-          aria-label='Open links in a new tab' \
-          title='Open links in a new tab' \
-        ></input> \
-        <label for='chk_newtab'>Open links in a new tab</label> \
-      </li> \
-      <li> \
-        <input id='chk_showvisited' \
-          type='checkbox' \
-          aria-label='Show visited links' \
-          title='Show visited links' \
-        ></input> \
-        <label for='chk_showvisited'>Show visited links</label> \
-      </li> \
-    </ul> \
-  </div>");
-  sidebar.append(options_widget);
-
-  var chk = $('input#chk_newtab');
-  chk.prop('checked', options['open_in_new_tab']);
-  chk.on('change', function(e) {
-    options['open_in_new_tab'] = this.checked;
-    Cookies.set('options', options);
-  });
-
-  function create_stylesheet() {
-    var css = document.createElement('style');
-    css.id = 'newtabcss';
-    css.type = 'text/css';
-    $('head').append(css);
-    return css.sheet;
-  }
-
-  var stylesheet = create_stylesheet();
-
-  // show_visited_links
-  var localstate = { };
-  function set_showvisitedcss() {
-    if (options['show_visited_links'] === true) {
-      localstate['show_visited_links/a:visited/color'] = (
-        stylesheet.insertRule('a:visited { color: #551A8B !important; }',
-                             stylesheet.cssRules.length)
-      );
-    } else {
-      var ruleidx = localstate['show_visited_links/a:visited/color'];
-      if (ruleidx !== undefined) {
-        if (stylesheet.cssRules) {
-          if (stylesheet.cssRules.length) {
-            stylesheet.deleteRule(ruleidx);
-          }
-        } else { // IE < 9
-          if (stylesheet.rules.length) {
-            stylesheet.removeRule(ruleidx);
-          }
-        }
-      }
-      localstate['show_visited_links/a:visited/color'] = undefined;
-    }
-  }
-  set_showvisitedcss();
-
-  var chk = $('input#chk_showvisited');
-  chk.prop('checked', options['show_visited_links']);
-  chk.on('change', function(e) {
-    options['show_visited_links'] = this.checked;
-    Cookies.set('options', options);
-    set_showvisitedcss();
-  });
-});
-
 
 // <affix-sidenav>
 $(document).ready(function() {
@@ -746,4 +593,249 @@ function navbar_init() {
 
 
 $(document).ready(navbar_init);
+
+
+/**
+ * linkstyles.js - Shorten URLs
+ */
+
+/**
+ * Strip ^https:// from links
+ * @param {Number} i - positional index from a map expression
+ * @param {HTMLElement} - link element to modify
+ */
+function striphttps(i, link) {
+    if (link.text.startsWith('https://')) { link.text = link.text.substring(8); }
+}
+
+/**
+ * Strip 'en.wikipedia.org/wiki/[Category:?]' from links and,
+ * move 'Wikipedia:' and 'WikipediaCategory:' into the link if present
+ * @param {Number} i - positional index from a map expression
+ * @param {HTMLElement} - link element to modify
+ */
+function stripenwikipedia(i, link) {
+    if (link.text.startsWith('en.wikipedia.org/wiki/')) {
+        if (link.text.startsWith('en.wikipedia.org/wiki/Category:')) {
+            link.text = "Wikipedia Category: " + link.text.substring(31);
+        } else {
+            link.text = "Wikipedia: " + link.text.substring(22);
+        }
+        l = $(link);
+        l.addClass('linkShortened');
+        prevText = l[0].parentElement.childNodes[0];
+        if ((prevText.textContent === "Wikipedia: ") ||
+            (prevText.textContent === "WikipediaCategory: ")) {
+            if (!(prevText.classList)) {
+                $(prevText).wrap('<div class="shortenText hidden"></div>');
+            } else if (prevText.classList.contains("shortenText")) {
+                $(prevText).addClass("hidden");
+            }
+        }
+    }
+}
+
+/**
+ * Shorten links with striphttps and stripenwikipedia
+ */
+function shortenLinks() {
+    links = $('a.reference.external');
+    links.map(striphttps);
+    links.map(stripenwikipedia);
+}
+
+/**
+ * Perform the inverse of shorten links
+ */
+function unshortenLinks() {
+    $('div.shortenText').removeClass('hidden');
+    $('a.reference.external.linkShortened').map(
+        function (i, e) { e.text = e.href }
+    );
+}
+
+/* see: newtab.js for cookie-state-conditional init
+$(document).ready(function() {
+    shortenLinks();
+}) */
+
+/* end linkstypes.js */
+
+
+// newtab.js
+//
+// Requires
+// * jQuery: https://github.com/jquery/jquery
+// * js-cookie: https://github.com/js-cookie/js-cookie
+//
+// References
+// * https://mathiasbynens.github.io/rel-noopener/
+//
+// License: MIT LICENSE
+$(document).ready(function() {
+
+
+  var options;
+  var options_cookie_json = Cookies.getJSON('options');
+  if (options_cookie_json === undefined) {
+    var options_defaults = {
+      'open_in_new_tab': true,
+      'show_visited_links': true,
+      'shorten_links': true
+    };
+    options = options_defaults;
+  } else {
+    options = options_cookie_json;
+  }
+  console.log('options:');
+  console.log(options);
+
+  function match_external_url_elem(elem) {
+    var elem = $(elem);
+    if (elem === undefined) {
+      return false;
+    }
+    var url = elem.attr('href');
+    if (url === undefined) {
+      return false;
+    }
+    var relstr = elem.attr('rel');
+    var rels = [];
+    if (relstr !== undefined) {
+      rels = relstr.split(' ');
+    }
+    // skip rel="noreferrer" (because window.open)
+    if (rels.indexOf('noreferrer') !== -1)
+    {
+      return false;
+    }
+    if (
+      (   elem.attr('target') === '_blank')
+      || (rels.indexOf('noopener') > -1)
+      || (rels.indexOf('external') !== -1)
+      || (elem.hasClass('external'))  // [sphinx,]
+      || (url.substring(0,8) === 'http://')
+      || (url.substring(0,9) === 'https://')
+      || (url.substring(0,3) === '//')
+      || (url.substring(0,7) === 'ftp://')
+      || (url.substring(0,7) === 'svn://')
+      || (url.substring(0,7) === 'git://')
+    ) {
+        return true;
+    }
+    return false;
+  }
+  $(document).on('click', 'a', function(e) {
+    if (options['open_in_new_tab']) {
+      if (match_external_url_elem(this)) {
+        var url = $(this).attr('href');
+        e.preventDefault();
+        var otherWindow = window.open();
+        otherWindow.opener = null;
+        otherWindow.location = url;
+      }
+    }
+  });
+
+  var sidebar = $("#sidebar-wrapper").find("div.sidebar");
+      var options_widget = $("\
+  <div class='widget sidebar-options'> \
+    <h3>Options</h3> \
+    <ul> \
+      <li> \
+        <input id='chk_newtab' \
+          type='checkbox' \
+          aria-label='Open links in a new tab' \
+          title='Open links in a new tab' \
+        ></input> \
+        <label for='chk_newtab'>Open links in a new tab</label> \
+      </li> \
+      <li> \
+        <input id='chk_showvisited' \
+          type='checkbox' \
+          aria-label='Show visited links' \
+          title='Show visited links' \
+        ></input> \
+        <label for='chk_showvisited'>Show visited links</label> \
+      </li> \
+      <li> \
+        <input id='chk_shortenlinks' \
+          type='checkbox' \
+          aria-label='Shorten links' \
+          title='Shorten links' \
+        ></input> \
+        <label for='chk_shortenlinks'>Shorten links</label> \
+      </li> \
+    </ul> \
+  </div>");
+  sidebar.append(options_widget);
+
+  var chk = $('input#chk_newtab');
+  chk.prop('checked', options['open_in_new_tab']);
+  chk.on('change', function(e) {
+    options['open_in_new_tab'] = this.checked;
+    Cookies.set('options', options);
+  });
+
+  function create_stylesheet() {
+    var css = document.createElement('style');
+    css.id = 'newtabcss';
+    css.type = 'text/css';
+    $('head').append(css);
+    return css.sheet;
+  }
+
+  var stylesheet = create_stylesheet();
+
+  // show_visited_links
+  var localstate = { };
+  function set_showvisitedcss() {
+    if (options['show_visited_links'] === true) {
+      localstate['show_visited_links/a:visited/color'] = (
+        stylesheet.insertRule('a:visited { color: #551A8B !important; }',
+                             stylesheet.cssRules.length)
+      );
+    } else {
+      var ruleidx = localstate['show_visited_links/a:visited/color'];
+      if (ruleidx !== undefined) {
+        if (stylesheet.cssRules) {
+          if (stylesheet.cssRules.length) {
+            stylesheet.deleteRule(ruleidx);
+          }
+        } else { // IE < 9
+          if (stylesheet.rules.length) {
+            stylesheet.removeRule(ruleidx);
+          }
+        }
+      }
+      localstate['show_visited_links/a:visited/color'] = undefined;
+    }
+  }
+  set_showvisitedcss();
+
+  var chk = $('input#chk_showvisited');
+  chk.prop('checked', options['show_visited_links']);
+  chk.on('change', function(e) {
+    options['show_visited_links'] = this.checked;
+    Cookies.set('options', options);
+    set_showvisitedcss();
+  });
+
+
+  var chk = $('input#chk_shortenlinks');
+  chk.prop('checked', options['shorten_links']);
+  chk.on('change', function(e) {
+    options['shorten_links'] = this.checked;
+    Cookies.set('options', options);
+    if (options['shorten_links'] === true) {
+      shortenLinks();
+    } else {
+      unshortenLinks();
+    }
+  });
+  if (options['shorten_links'] === true) {
+    shortenLinks();
+  }
+
+});
 
