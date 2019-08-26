@@ -31,6 +31,7 @@ div.sidebar {
 
 div.sidebar pre {
     font-size: 9px;
+    text-indent: 0;
 }
 
 div.sidebar h3 {
@@ -132,6 +133,23 @@ code {
     background-color: #f2f2f2;
     color: #a7052e;
 }
+
+div.widget.srclinks ul {
+    padding-left: 0;
+}
+
+div#searchbox form.search {
+    margin: 8px 0;
+}
+
+ol.upperalpha {
+    padding-left: 18px;
+}
+
+div.shortenText {
+    display: inline;
+}
+
 
 @media print {
     .affix,
