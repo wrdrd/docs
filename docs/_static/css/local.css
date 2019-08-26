@@ -130,6 +130,10 @@ div.body a.internal {
     border-bottom: 1px solid;
 }
 
+div.body a.internal[href^="#term-"] {
+    border-bottom: 2px dotted !important;
+}
+
 code {
     background-color: #f2f2f2;
     color: #a7052e;
