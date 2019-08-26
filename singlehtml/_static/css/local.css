@@ -147,6 +147,11 @@ ol.upperalpha {
     padding-left: 18px;
 }
 
+div.shortenText {
+    display: inline;
+}
+
+
 @media print {
     .affix,
     #sidebar-wrapper.affix-bottom,
@@ -181,6 +186,7 @@ li.youarehere {
 #navbar-top a.youarehere {
     font-size: 1.2em;
     font-weight: bold;
+    margin-left: -1px;
 }
 
 #navbar-top a.youarehere:after {
