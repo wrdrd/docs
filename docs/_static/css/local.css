@@ -181,6 +181,7 @@ li.youarehere {
 #navbar-top a.youarehere {
     font-size: 1.2em;
     font-weight: bold;
+    margin-left: -1px;
 }
 
 #navbar-top a.youarehere:after {
