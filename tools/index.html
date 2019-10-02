@@ -6611,7 +6611,7 @@ to only connect over HTTPS to sites listed in its database.</p>
 <div class="line">Docs: <a class="reference external" href="https://www.ublock.org/faq/">https://www.ublock.org/faq/</a></div>
 </div>
 <div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_repo</span><span class="o">=</span><span class="s2">&quot;chrisaljoudi/ublock&quot;</span>
-<span class="n">curl</span> <span class="o">-</span><span class="n">s</span> <span class="s2">&quot;https://api.github.com/repos/$</span><span class="si">{_repo}</span><span class="s2">/releases&quot;</span> <span class="o">&gt;</span> <span class="o">./</span><span class="n">releases</span><span class="o">.</span><span class="n">json</span>
+<span class="n">curl</span> <span class="o">-</span><span class="n">Ls</span> <span class="s2">&quot;https://api.github.com/repos/$</span><span class="si">{_repo}</span><span class="s2">/releases&quot;</span> <span class="o">&gt;</span> <span class="o">./</span><span class="n">releases</span><span class="o">.</span><span class="n">json</span>
 <span class="n">cat</span> <span class="n">releases</span><span class="o">.</span><span class="n">json</span> \
     <span class="o">|</span> <span class="n">grep</span> <span class="n">browser_download_url</span> \
     <span class="o">|</span> <span class="n">pyline</span> <span class="s1">&#39;w and w[1][1:-1]&#39;</span> \
@@ -6873,6 +6873,7 @@ useful developer tools and bookmarklets in a structured menu.</p>
 <div class="line">Src: git <a class="reference external" href="https://github.com/philc/vimium">https://github.com/philc/vimium</a></div>
 <div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb">https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb</a></div>
 <div class="line">FirefoxExt: <a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/vimium-ff/">https://addons.mozilla.org/en-US/firefox/addon/vimium-ff/</a></div>
+<div class="line">SafariExt: <a class="reference external" href="https://github.com/televator-apps/vimari">https://github.com/televator-apps/vimari</a></div>
 </div>
 <p>Vimium is a Chrome Extension which adds <a class="reference internal" href="#vim"><span class="std std-ref">Vim</span></a>-like functionality.</p>
 <table border="1" class="table-striped table-responsive docutils" id="id308">

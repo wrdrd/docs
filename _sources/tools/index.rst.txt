@@ -6231,7 +6231,7 @@ uBlock
 .. code:: bash
 
    _repo="chrisaljoudi/ublock"
-   curl -s "https://api.github.com/repos/${_repo}/releases" > ./releases.json
+   curl -Ls "https://api.github.com/repos/${_repo}/releases" > ./releases.json
    cat releases.json \
        | grep browser_download_url \
        | pyline 'w and w[1][1:-1]' \
@@ -6558,6 +6558,7 @@ Vimium
 | Src: git https://github.com/philc/vimium
 | ChromeExt: https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb
 | FirefoxExt: https://addons.mozilla.org/en-US/firefox/addon/vimium-ff/
+| SafariExt: https://github.com/televator-apps/vimari
 
 Vimium is a Chrome Extension which adds :ref:`vim`-like functionality.
 
