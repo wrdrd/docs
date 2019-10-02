@@ -398,6 +398,23 @@ DVI is a video display interface.
   as well as Mini-DVI and Micro-DVI connectors.
 
 
+.. index:: DisplayPort
+.. _displayport:
+
+DisplayPort
+~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/DisplayPort
+
+
+.. index:: Mini DisplayPort
+.. _mini displayport:
+
+=================
+Mini DisplayPort
+=================
+| Wikipedia: https://en.wikipedia.org/wiki/Mini_DisplayPort
+
+
 .. index:: HDMI
 .. _hdmi:
 
@@ -716,7 +733,144 @@ not require voltage to be applied to maintain state.
 * SSDs are more energy efficient than :ref:`hard drives`.
 * Notebooks and netbooks may include or be upgraded with an SSD.
 * Servers benefit from SSDs for caching, fast reads, and fast writes.
+* There are lots of SSD devices with various connectors:
 
+  * :ref:`NVMe`
+  * :ref:`M.2`
+  * :ref:`MMC`
+
+    * :ref:`eMMC`
+
+  * :ref:`SD Card`, :ref:`USB Key`
+    (we usually don't refer to SD Cards as SSDs, though
+    they are)
+
+    * :ref:`MicroSD Card`
+
+
+.. index:: SATA SSD
+.. _sata ssd:
+
+=========
+SATA SSD
+=========
+
+
+.. index:: NVMe SSD
+.. _nvme ssd:
+
+====
+NVMe
+====
+| Wikipedia: https://en.wikipedia.org/wiki/NVM_Express
+
+.. index:: M.2
+.. _m2:
+
+====
+M.2
+====
+| Wikipedia: https://en.wikipedia.org/wiki/M.2
+
+- M.2 was fomerly known as NGFF (*Next Generation Form Factor*)
+- M.2 supports :ref:`PCI Express` cards, :ref:`SATA` drives,
+  and :ref:`USB 3.0` devices
+
+
+.. index:: MMC
+.. index:: MultiMediaCard
+
+===
+MMC
+===
+| Wikipedia: https://en.wikipedia.org/wiki/MultiMediaCard
+
+- MMC (*MultiMediaCard*) is a standard for flash memory.
+- Most current devices support :ref:`SD Cards <sd card>` instead
+  of MMC.
+
+.. index:: eMMC
+.. _emmc:
+
+-----
+eMMC
+-----
+| Wikipedia: https://en.wikipedia.org/wiki/MultiMediaCard#eMMC
+
+- eMMC (*Embedded MMC*) is a standard for flash memory
+  that's generally soldered into the board.
+- Phones and Tablets are moving from eMMC to :ref:`UFS`.
+- Phones and tablets usually refer to flash storage
+  as "Internal Storage".
+
+
+.. index:: SD Card
+.. _sd card:
+
+SD Card
+~~~~~~~~~
+
+
+.. index:: MicroSD Card
+.. _microsd card:
+
+==============
+MicroSD Card
+==============
+
+
+.. index:: USB Storage
+.. _usb storage:
+
+USB Storage
+~~~~~~~~~~~~
+
+.. index:: USB Mass Storage Device
+.. _usb mass storage device:
+
+=========================
+USB Mass Storage Device
+=========================
+| Wikipedia: https://en.wikipedia.org/wiki/USB_mass_storage_device_class
+
+- External USB :ref:`Hard Drives`, :ref:`USB Flash Drives`,
+  Phones, Cameras, and USB :ref:`SD Card` adapters
+  typically all implement the USB Mass Storage Device interface
+- All major operating systems support USB Mass Storage Devices;
+  so you don't need to install any drivers in order to read from and
+  write to the media
+
+
+.. index:: USB Flash Drive
+.. index:: USB Thumbdrive
+.. index:: USB Key
+.. index:: Thumbdrive
+.. _usb key:
+
+===============
+USB Flash Drive
+===============
+| Wikipedia: https://en.wikipedia.org/wiki/USB_flash_drive
+
+- USB Flash Drives are also known as "USB Thumbdrives"
+- USB Flash Drives may support USB 1, 2, or 3.
+- If a USB Flash Drive supports USB 3.0, it also supports USB 1 and USB
+  2.
+
+
+.. index:: UFS
+.. _ufs:
+
+UFS
+~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Universal_Flash_Storage
+
+- UFS (*Universal Flash Storage*) is a standard for flash storage
+  preceded by :ref:`eMMC`
+- Phones and Tablets may have UFS (or :ref:`eMMC`) flash storage
+  soldered to the board.
+- Phones and tablets usually refer to flash storage
+  as "Internal Storage".
 
 .. index:: Disc Drives
 .. _disc drives:
@@ -729,6 +883,14 @@ Disc Drives
 * [3D-] optical storage
 
 See: :ref:`data engineering`
+
+
+.. index:: Thunderbolt
+.. _thunderbolt:
+
+Thunderbolt
+---------------
+| Wikipedia: https://en.wikipedia.org/wiki/Thunderbolt_(interface)
 
 
 .. index:: Network interfaces
