@@ -6557,6 +6557,7 @@ Vimium
 | Homepage: https://vimium.github.io/
 | Src: git https://github.com/philc/vimium
 | ChromeExt: https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb
+| FirefoxExt: https://addons.mozilla.org/en-US/firefox/addon/vimium-ff/
 
 Vimium is a Chrome Extension which adds :ref:`vim`-like functionality.
 
