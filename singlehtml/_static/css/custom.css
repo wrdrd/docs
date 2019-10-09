@@ -161,6 +161,12 @@ ol.upperalpha {
     padding-left: 18px;
 }
 
+blockquote {
+    font-size: 1.1em;
+    font-style: italic;
+    margin: 0px 0px 10px;
+}
+
 @media print {
     .affix,
     #sidebar-wrapper.affix-bottom,
