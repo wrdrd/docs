@@ -578,6 +578,24 @@ ABC Mouse
 - ABC Mouse sponsors :ref:`PBS Kids`
 
 
+.. index:: SimCity: BuildIt
+.. _simcity-buildit:
+
+SimCity: BuildIt
+=================
+| Wikipedia: https://en.wikipedia.org/wiki/SimCity:_BuildIt
+| Homepage: https://www.ea.com/games/simcity/simcity-buildit
+| iOSApp: https://apps.apple.com/us/app/simcity-buildit/id913292932
+| AndroidApp: https://play.google.com/store/apps/details?id=com.ea.game.simcitymobile_row
+| AmazonApp: https://www.amazon.com/gp/mas/dl/android?asin=B00XJNMALC
+
+SimCity: BuildIt is a city-building simulation game
+that teaches about civil infrastructure (fire, water, police, health,
+sewage, roads, public parks, property values)
+commodities trading, production of raw materials and goods,
+and opportunity cost.
+
+
 .. index:: Mobile phone family plan GPS
 .. _mobile phone family plan gps:
 
