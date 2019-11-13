@@ -639,7 +639,7 @@ OWASP Juice Shop
 | Homepage: https://www.owasp.org/index.php/OWASP_Juice_Shop_Project
 
 - OWASP Juice Shop is a deliberately vulnerable web application
-  written with :ref:`NodeJS`.
+  written with :ref:`Node.JS`.
 
    "Pwning OWASP Juice Shop" is the official companion guide for this
    project. It will give you a complete overview of the vulnerabilities
