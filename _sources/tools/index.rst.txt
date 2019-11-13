@@ -2032,17 +2032,17 @@ A JVM ("Java Virtual Machine") runs :ref:`Java` code (classes and JARs).
 
 
 .. index:: Javascript
-.. _Javascript:
+.. _js:
+.. _javascript:
 
-JavaScript
+Javascript
 ~~~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/JavaScript
-| Docs: https://en.wikipedia.org/wiki/ECMAScript
 | Docs: http://learnxinyminutes.com/docs/javascript/
 
-JavaScript is a free and open source
+Javascript (JS) is a free and open source
 third-generation programming language
-designed to run in an interpreter; now specified as *ECMAScript*.
+designed to run in an interpreter; now specified as :ref:`ECMAScript`.
 
 All major web browsers support Javascript.
 
@@ -2055,7 +2055,66 @@ often with :ref:`Node.js`, :ref:`NPM`, and :ref:`Bower` packages.
    and developer ecosystems.
 
 
+.. index:: ECMAScript
+.. _ecmascript:
+
+ECMAScript
++++++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/ECMAScript
+| Homepage: https://www.ecma-international.org/ecma-262/
+| Src: https://github.com/tc39/ecma262#ecmascript
+| Spec: https://www.ecma-international.org/ecma-262/
+| Spec: https://tc39.github.io/ecma262/
+| Spec: https://tc39.es/ecma262/
+
+ECMAScript (ES) is an evolving, formally-specified,
+weakly-typed scripting language
+from which :ref:`Javascript` and ActionScript are derived.
+
+- There are multiple versions of ECMAScript (ES):
+
+  - ES1 -- ES1997
+  - ES2 -- ES1998
+  - ES3 -- ES1999
+  - ES5 -- ES2009
+  - ES6 -- ES2015
+  - ES7 -- ES2016
+  - ES8 -- ES2017
+  - ES9 -- ES2018
+  - ES10 -- ES2019
+  - ES.Next
+
+- :ref:`Babel` compiles ECMAScript (ES6+) to Javascript.
+- Some browsers support various versions (ES7) of ECMAScript.
+
+  - https://en.wikipedia.org/wiki/List_of_ECMAScript_engines
+
+- :ref:`Firefox` is built upon the SpiderMonkey ECMAScript engine.
+- Google :ref:`Chrome`,
+  :ref:`Node.JS`,
+  and the latest Microsoft :ref:`Edge`
+  are built upon the V8 ECMAEscript engine.
+
+
+.. index:: Babel
+.. _babel:
+
+Babel
+++++++
+| Wikipedia: `<https://en.wikipedia.org/wiki/Babel_(compiler)>`__
+| Homepage: https://babeljs.io/
+| Src: https://github.com/babel/babel
+| Docs: https://babeljs.io/docs/en/
+
+Babel is a :ref:`Javascript` (:ref:`ECMAScript`) compiler that transforms
+ES6 (ES2015) and beyond into browser-compatible JS.
+
+- :ref:`ReactJS` developers commonly compile ES6+
+  and :ref:`JSX` to JS with Babel.
+
+
 .. index:: Node.js
+.. _nodejs:
 .. _node.js:
 
 Node.js
@@ -2063,6 +2122,7 @@ Node.js
 | Wikipedia: https://en.wikipedia.org/wiki/Node.js
 | Homepage: http://www.nodejs.org
 | Src: https://github.com/joyent/node
+| Docs: https://nodejs.org/en/docs/
 
 Node.js is a free and open source
 framework for :ref:`Javascript` applications
