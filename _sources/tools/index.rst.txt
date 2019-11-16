@@ -55,16 +55,10 @@ Anaconda
 ~~~~~~~~~~
 | Wikipedia: `<https://en.wikipedia.org/wiki/Anaconda_(Python_distribution)>`__
 | Homepage: https://store.continuum.io/cshop/anaconda/
-| Docs: http://docs.continuum.io/anaconda/
-| Docs: http://docs.continuum.io/anaconda/pkg-docs.html
+| Docs: https://docs.continuum.io/anaconda/
 
 Anaconda is a maintained distribution of :ref:`Conda`
 packages for many languages; especially :ref:`Python`.
-
-* :ref:`Anaconda` maintains a working set of :ref:`Conda` packages
-  for Python 2.6, 2.7, 3.3, and 3.4:
-  http://docs.continuum.io/anaconda/pkg-docs.html
-
 
 .. note:: `<https://en.wikipedia.org/wiki/Anaconda_(installer)>`__ (1999)
    is the installer for :ref:`RPM`-based :ref:`Linux` distributions; which is
@@ -155,7 +149,7 @@ A ``BUILD`` file describes a :ref:`Pants Build` build.
 Cabal
 ~~~~~~
 | Homepage: https://www.haskell.org/cabal/
-| Docs: http://hackage.haskell.org/
+| Docs: https://hackage.haskell.org/
 | Docs: https://www.haskell.org/cabal/users-guide/
 | Docs: https://www.haskell.org/cabal/release/cabal-latest/doc/API/Cabal/
 
@@ -171,7 +165,7 @@ Hackage is the community Cabal package index: https://hackage.haskell.org/
 Conda
 ~~~~~~~
 | Wikipedia: `<https://en.wikipedia.org/wiki/Conda_(package_manager)>`__
-| Docs: http://conda.pydata.org/docs/
+| Docs: https://conda.io/en/latest/
 | Src: git https://github.com/conda/conda
 | PyPI: https://pypi.python.org/pypi/conda
 
@@ -263,7 +257,7 @@ Work with conda envs and ``environment.yml`` files:
 
 To install a conda package from a custom channel:
 
-- http://www.pydanny.com/building-conda-packages-for-multiple-operating-systems.html
+- https://www.pydanny.com/building-conda-packages-for-multiple-operating-systems.html
 - https://github.com/conda/conda-recipes/tree/master/cookiecutter
 - https://binstar.org/pydanny/cookiecutter
 
@@ -275,7 +269,7 @@ The conda-forge custom channel packages are built with :ref:`continuous
 integration` on multiple platforms:
 
 * https://conda-forge.github.io/
-* http://anaconda.org/conda-forge
+* https://anaconda.org/conda-forge
 
 Sources:
 
@@ -313,27 +307,27 @@ conda-forge
 * https://conda-forge.github.io/#add_recipe
 
   * A. fork: https://github.com/conda-forge/staged-recipes
-  
+
     * meta.yaml https://github.com/conda-forge/staged-recipes/blob/master/recipes/example/meta.yaml
-    
+
   * B. conda-smithy
-    
+
   * meta.yaml
-  
+
     * Docs: numpy x.x: https://conda-forge.github.io/docs/meta.html#building-against-numpy
-    
+
   * circle.yml
-  
+
     * https://github.com/conda-forge/staged-recipes/blob/master/circle.yml
-    
+
   * .travis.yml
-  
+
     * https://github.com/conda-forge/staged-recipes/blob/master/.travis.yml
-    
+
   * appveyor.yml
-  
+
     * https://github.com/conda-forge/staged-recipes/blob/master/appveyor.yml
-    
+
   * conda-forge.yml
   * run_docker_build.sh
     https://github.com/conda-forge/staged-recipes/blob/master/scripts/run_docker_build.sh
@@ -361,8 +355,8 @@ conda-forge
     cat ./scripts/run_docker_build.sh
     ./scripts/run_docker_build.sh
     ./ci_support/run_docker_build.sh
-    
-    
+
+
 .. index:: conda-smithy
 .. _conda-smithy:
 
@@ -408,7 +402,7 @@ Dpkg is a collection of tools for creating and working with
 dnf
 ~~~~~
 | Wikipedia: `<https://en.wikipedia.org/wiki/DNF_(software)>`__
-| Homepage: http://dnf.baseurl.org/
+| Homepage: https://fedoraproject.org/wiki/DNF
 | Homepage: https://fedoraproject.org/wiki/Features/DNF
 | Src: git https://github.com/rpm-software-management/dnf
 | Docs: https://dnf.readthedocs.io/en/latest/
@@ -498,7 +492,7 @@ often more easily than working with the actual package manager.
 Homebrew
 ~~~~~~~~~~
 | Wikipedia: `<https://en.wikipedia.org/wiki/Homebrew_(package_management_software)>`__
-| Homepage: http://brew.sh/
+| Homepage: https://brew.sh/
 | Src: https://github.com/Homebrew/brew
 
 Homebrew is a package manager (``brew``) for :ref:`OSX`.
@@ -642,7 +636,7 @@ for an :ref:`AUR` :ref:`Arch` :ref:`linux` software package.
 Portage
 ~~~~~~~~~
 | Wikipedia: `<https://en.wikipedia.org/wiki/Portage_(software)>`__
-| Homepage: http://wiki.gentoo.org/wiki/Project:Portage
+| Homepage: https://wiki.gentoo.org/wiki/Project:Portage
 | Docs: https://wiki.gentoo.org/wiki/Project:Package_Manager_Specification
 | Docs: https://projects.gentoo.org/pms/6/pms.html
 
@@ -799,7 +793,7 @@ Setuptools
 ++++++++++++
 | Wikipedia: https://en.wikipedia.org/wiki/Setuptools
 | Docs: https://pythonhosted.org/setuptools/
-| Src: hg https://bitbucket.org/pypa/setuptools
+| Src: https://github.com/pypa/setuptools
 | PyPI: https://pypi.python.org/pypi/setuptools
 
 
@@ -899,7 +893,7 @@ Pip is a tool for installing, upgrading, and uninstalling
    for every dependency listed in a ``requirements.txt`` file.
 
    For more information, see:
-   http://legacy.python.org/dev/peps/pep-0476/#python-versions
+   https://legacy.python.org/dev/peps/pep-0476/#python-versions
 
 .. glossary::
 
@@ -959,10 +953,11 @@ PyPI
 | Docs: https://wiki.python.org/moin/CheeseShop
 | Docs: https://wiki.python.org/moin/CheeseShopDev
 | Homepage: https://pypi.python.org/pypi
-| Src: https://bitbucket.org/pypa/pypi
+| Src: https://github.com/pypa/pypi-legacy
 
 
-PyPI is the Python Package Index.
+PyPI-legacy is the original Python Package Index.
+PyPI is now powered by :ref:`Warehouse`
 
 
 .. index:: Warehouse
@@ -985,17 +980,13 @@ All packages uploaded to :ref:`PyPI` are also available from Warehouse.
 
 Devpi
 ++++++++
-| Homepage: http://doc.devpi.net/
-| Src: hg https://bitbucket.org/hpk42/devpi
-| Issues: https://bitbucket.org/hpk42/devpi/issues
+| Homepage: https://doc.devpi.net/
+| Src: https://github.com/devpi/devpi
+| Issues: https://github.com/devpi/devpiissues
 | PyPI: https://pypi.python.org/pypi/devpi-server
 | PyPI: https://pypi.python.org/pypi/devpi-web
 | PyPI: https://pypi.python.org/pypi/devpi-client
-| Docs: http://doc.devpi.net/latest/
-| Docs: http://doc.devpi.net/latest/userman/
-| Docs: http://doc.devpi.net/latest/userman/devpi_concepts.html
-| Docs: http://doc.devpi.net/latest/userman/devpi_commands.html#cmdref-test
-| Docs: http://doc.devpi.net/latest/userman/devpi_misc.html
+| Docs: https://doc.devpi.net/latest/
 
 Devpi is a server and client solution for :ref:`Python package <python
 packages>` mirroring, hosting, and testing.
@@ -1007,9 +998,9 @@ packages>` mirroring, hosting, and testing.
 
 Wheel
 ++++++
-| Docs: http://legacy.python.org/dev/peps/pep-0427/
+| Docs: https://legacy.python.org/dev/peps/pep-0427/
 | Docs: https://wheel.readthedocs.io/en/latest/
-| Src: hg https://bitbucket.org/pypa/wheel/
+| Src: https://github.com/pypa/wheel
 | PyPI: https://pypi.python.org/pypi/wheel
 
 
@@ -1020,7 +1011,7 @@ Wheel
 * Wheels can be uploaded to PyPI.
 * Wheels are generally faster than traditional Python packages.
 
-Packages available as wheels are listed at `<http://pythonwheels.com/>`__.
+Packages available as wheels are listed at `<https://pythonwheels.com/>`__.
 
 
 .. index:: Ruby Gem
@@ -1031,7 +1022,7 @@ RubyGems
 ~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/RubyGems
 | Homepage: https://rubygems.org/
-| Docs: http://guides.rubygems.org/
+| Docs: https://guides.rubygems.org/
 | Src: https://github.com/rubygems/rubygems
 
 RubyGems is a package manager for :ref:`Ruby` packages ("Gems").
@@ -1104,10 +1095,10 @@ in change management.
 
 CVS
 ~~~~~
-| Homepage: http://www.nongnu.org/cvs/
-| Homepage: http://savannah.nongnu.org/projects/cvs
+| Homepage: https://www.nongnu.org/cvs/
+| Homepage: https://savannah.nongnu.org/projects/cvs
 | Wikipedia: https://en.wikipedia.org/wiki/Concurrent_Versions_System
-| Docs: http://www.nongnu.org/cvs/#documentation
+| Docs: https://www.nongnu.org/cvs/#documentation
 
 CVS (``cvs``) is a centralized version control system (VCS) written in :ref:`C`.
 
@@ -1123,7 +1114,8 @@ Subversion
 | Wikipedia: https://en.wikipedia.org/wiki/Apache_Subversion
 | Docs: https://subversion.apache.org/docs/
 | Docs: https://subversion.apache.org/quick-start
-| Src: svn http://svn.apache.org/repos/asf/subversion/trunk
+| Src: svn https://svn.apache.org/repos/asf/subversion/trunk
+| Src: https://github.com/apache/subversion
 
 Apache Subversion (``svn``) is a centralized revision control system (VCS)
 written in :ref:`C`.
@@ -1132,7 +1124,7 @@ To checkout a revision of a repository with ``svn``:
 
 .. code:: bash
 
-   svn co http://svn.apache.org/repos/asf/subversion/trunk subversion
+   svn co https://svn.apache.org/repos/asf/subversion/trunk subversion
 
 
 .. index:: Bazaar
@@ -1141,7 +1133,7 @@ To checkout a revision of a repository with ``svn``:
 Bazaar
 ~~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/GNU_Bazaar
-| Homepage: http://bazaar.canonical.com/en/
+| Homepage: https://bazaar.canonical.com/en/
 | Homepage: https://launchpad.net/bzr
 | Docs: http://doc.bazaar.canonical.com/en/
 | Docs: http://doc.bazaar.canonical.com/latest/en/mini-tutorial/index.html
@@ -1150,7 +1142,7 @@ Bazaar
 GNU Bazaar (``bzr``) is a distributed revision control system (DVCS, RCS, VCS)
 written in :ref:`Python` and :ref:`C`.
 
-http://launchpad.net hosts Bazaar repositories;
+https://launchpad.net hosts Bazaar repositories;
 with special support from the ``bzr`` tool in the form of ``lp:`` URIs
 like ``lp:bzr``.
 
@@ -1168,11 +1160,11 @@ To clone a repository with ``bzr``:
 Git
 ~~~~~~~~~~~~~~
 | Wikipedia: `<https://en.wikipedia.org/wiki/Git_(software)>`_
-| Homepage: http://git-scm.com/
-| Docs: http://git-scm.com/documentation
-| Docs: http://git-scm.com/book/en/
-| Docs: http://documentup.com/skwp/git-workflows-book
-| Docs: http://learnxinyminutes.com/docs/git/
+| Homepage: https://git-scm.com/
+| Docs: https://git-scm.com/documentation
+| Docs: https://git-scm.com/book/en/
+| Docs: https://documentup.com/skwp/git-workflows-book
+| Docs: https://learnxinyminutes.com/docs/git/
 | Src: git https://github.com/git/git
 
 
@@ -1193,7 +1185,7 @@ To clone a repository with ``git``:
 GitFlow
 ~~~~~~~~~
 | Src: https://github.com/nvie/gitflow
-| Docs: http://nvie.com/posts/a-successful-git-branching-model/
+| Docs: https://nvie.com/posts/a-successful-git-branching-model/
 | Docs: https://github.com/nvie/gitflow/wiki
 | Docs: https://github.com/nvie/gitflow/wiki/Command-Line-Arguments
 | Docs: https://github.com/nvie/gitflow/wiki/Config-values
@@ -1371,11 +1363,11 @@ and understanding any DVCS workflow:
 Mercurial
 ~~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/Mercurial
-| Homepage: http://hg.selenic.org/
-| Docs: http://mercurial.selenic.com/guide
-| Docs: http://hgbook.red-bean.com/
-| Src: hg http://selenic.com/hg
-| Src: hg http://hg.intevation.org/mercurial/crew
+| Homepage: https://www.mercurial-scm.org/
+| Docs: https://www.mercurial-scm.org/guide
+| Docs: https://book.mercurial-scm.org/
+| Src: hg https://www.mercurial-scm.org/repo/hg
+| Src: hg http://hg.intevation.org/mercurial
 
 Mercurial (``hg``) is a distributed revision control system
 written in :ref:`Python` and :ref:`C` (DVCS, VCS, RCS).
@@ -1384,7 +1376,7 @@ To clone a repository with ``hg``:
 
 .. code:: bash
 
-   hg clone http://selenic.com/hg
+   hg clone https://www.mercurial-scm.org/repo/hg
 
 
 .. index:: Project Templates
@@ -1512,21 +1504,21 @@ for projects written in :ref:`Python` and other languages.
 yeoman
 ~~~~~~~~
 | Wikipedia: `<https://en.wikipedia.org/wiki/Yeoman_(computing)>`__
-| Homepage: http://yeoman.io/
+| Homepage: https://yeoman.io/
 | Src: git https://github.com/yeoman/yeoman
 | Src: https://github.com/yeoman
 | NPM: https://www.npmjs.com/package/yo
 | NPMPkg: ``yo``
-| Docs: http://yeoman.io/learning/
-| Docs: http://yeoman.io/codelab/
-| Docs: http://yeoman.io/authoring
-| Docs: http://yeoman.io/learning/resources.html
+| Docs: https://yeoman.io/learning/
+| Docs: https://yeoman.io/codelab/
+| Docs: https://yeoman.io/authoring
+| Docs: https://yeoman.io/learning/resources.html
 
 * https://github.com/yeoman/generator-generator
 
   Generate a Yeoman generator (``./authoring``).
 
-* http://yeoman.io/generators/
+* https://yeoman.io/generators/
 
   List of Yeoman generators
 
@@ -1609,9 +1601,9 @@ Lightweight Markup Language
 BBCode
 ++++++++
 | Wikipedia: https://en.wikipedia.org/wiki/BBCode
-| Homepage: http://www.bbcode.org/
-| Docs: http://www.bbcode.org/reference.php
-| Docs: http://www.bbcode.org/examples/
+| Homepage: https://www.bbcode.org/
+| Docs: https://www.bbcode.org/reference.php
+| Docs: https://www.bbcode.org/examples/
 
 BBCode is a :ref:`Lightweight markup language`
 often used by bulletin boards and forums.
@@ -1625,9 +1617,9 @@ Markdown
 | Wikipedia: https://en.wikipedia.org/wiki/Markdown
 | Homepage: https://daringfireball.net/projects/markdown/
 | Standard: https://daringfireball.net/projects/markdown/syntax
-| Docs: http://www.w3.org/community/markdown/wiki/MarkdownImplementations
+| Docs: https://www.w3.org/community/markdown/wiki/MarkdownImplementations
 | Docs: https://en.wikipedia.org/wiki/Markdown#Implementations
-| Docs: http://learnxinyminutes.com/docs/markdown/
+| Docs: https://learnxinyminutes.com/docs/markdown/
 | Docs: https://guides.github.com/features/mastering-markdown/
 | Docs: https://help.github.com/articles/github-flavored-markdown/
 | Docs: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
@@ -1649,9 +1641,9 @@ valid :ref:`HTML-`.
 
 CommonMark
 +++++++++++++
-| Homepage: http://commonmark.org
-| Standard: http://spec.commonmark.org/0.22/
-| Src:  https://github.com/jgm/CommonMark
+| Homepage: https://commonmark.org
+| Standard: https://spec.commonmark.org/0.29/
+| Src: https://github.com/commonmark/commonmark-spec
 
 :ref:`CommonMark` is one effort to standardize :ref:`Markdown`.
 
@@ -1725,7 +1717,7 @@ ReStructuredText
 | Docs: http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html
 | Docs: http://docutils.sourceforge.net/docs/ref/rst/directives.html
 | Docs: http://docutils.sourceforge.net/docs/ref/rst/roles.html
-| Docs: http://sphinx-doc.org/rest.html
+| Docs: https://www.sphinx-doc.org/rest.html
 
 ReStructuredText (*ReST*, *RST*) is a
 :ref:`Lightweight markup language` commonly used for
@@ -1811,7 +1803,7 @@ C
 | Docs: https://www.securecoding.cert.org/confluence/display/c/SEI+CERT+C+Coding+Standard
 | Docs: https://cwe.mitre.org/top25/#CWE-120
 | Docs: https://cwe.mitre.org/data/definitions/120.html#Demonstrative_Examples
-| Docs: http://learnxinyminutes.com/docs/c/
+| Docs: https://learnxinyminutes.com/docs/c/
 
 C is a third-generation programming language which affords relatively
 low-level machine access while providing helpful abstractions.
@@ -1858,7 +1850,7 @@ Glibc
 | Homepage: https://www.gnu.org/software/libc/
 | Docs: https://www.gnu.org/software/libc/documentation.html
 | Docs: https://www.gnu.org/software/libc/manual/html_mono/libc.html
-| Docs: http://sourceware.org/glibc/wiki/HomePage
+| Docs: https://sourceware.org/glibc/wiki/HomePage
 | Src: https://en.wikipedia.org/wiki/GNU_C_Library
 
 Glibc is the GNU :ref:`C` Library (:ref:`libc`).
@@ -1875,8 +1867,8 @@ BSD Libc
 ---------
 | Wikipedia: https://en.wikipedia.org/wiki/C_standard_library#BSD_libc
 | Src: https://svnweb.freebsd.org/base/head/lib/libc/
-| Src: http://cvsweb.openbsd.org/cgi-bin/cvsweb/src/lib/libc/
-| Src: http://www.opensource.apple.com/source/Libc/
+| Src: https://cvsweb.openbsd.org/cgi-bin/cvsweb/src/lib/libc/
+| Src: https://opensource.apple.com/source/Libc/
 
 BSD libc are a superset of :ref:`POSIX`.
 
@@ -1905,7 +1897,7 @@ Bionic is the :ref:`Android` :ref:`libc`, which is a :ref:`BSD Libc
 C++
 ~~~~
 | Wikipedia: `<https://en.wikipedia.org/wiki/C++>`__
-| Docs: http://learnxinyminutes.com/docs/c++/
+| Docs: https://learnxinyminutes.com/docs/c++/
 
 C++ is a free and open source
 third-generation programming language
@@ -1939,7 +1931,7 @@ Haskell
 | Download: https://www.haskell.org/downloads
 | Download: https://www.haskell.org/platform/
 | Docs: https://www.haskell.org/documentation
-| Docs: http://learnxinyminutes.com/docs/haskell/
+| Docs: https://learnxinyminutes.com/docs/haskell/
 | Docs: http://learnyouahaskell.com/chapters
 | Docs: https://en.wikipedia.org/wiki/Haskell_features
 
@@ -1974,7 +1966,7 @@ Java
 ~~~~~
 | Wikipedia: `<https://en.wikipedia.org/wiki/Java_(programming_language)>`__
 | Docs: http://javadocs.org/
-| Docs: http://learnxinyminutes.com/docs/java/
+| Docs: https://learnxinyminutes.com/docs/java/
 
 
 Java is a third-generation programming language which is
@@ -2006,19 +1998,19 @@ A JVM ("Java Virtual Machine") runs :ref:`Java` code (classes and JARs).
   + Oracle Java (was **Sun Java**)
 
     | Wikipedia: https://en.wikipedia.org/wiki/Java_Development_Kit
-    | Download: http://www.oracle.com/technetwork/java/javase/
-    | Download: http://www.oracle.com/technetwork/java/javase/downloads/
+    | Download: https://www.oracle.com/technetwork/java/javase/
+    | Download: https://www.oracle.com/technetwork/java/javase/downloads/
     | Download: https://www.java.com/en/download/
     | Docs: https://www.java.com/en/download/help/index_installing.xml?os=All+Platforms
 
   + OpenJDK (open source)
 
     | Wikipedia: https://en.wikipedia.org/wiki/OpenJDK
-    | Homepage: http://openjdk.java.net/
-    | Download: http://openjdk.java.net/install/
-    | Src: http://hg.openjdk.java.net/
+    | Homepage: https://openjdk.java.net/
+    | Download: https://openjdk.java.net/install/
+    | Src: https://hg.openjdk.java.net/
     | Docs: https://wiki.openjdk.java.net/
-    | Docs: http://openjdk.java.net/guide/
+    | Docs: https://openjdk.java.net/guide/
 
     + IcedTea (open source)
 
@@ -2038,7 +2030,7 @@ A JVM ("Java Virtual Machine") runs :ref:`Java` code (classes and JARs).
 Javascript
 ~~~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/JavaScript
-| Docs: http://learnxinyminutes.com/docs/javascript/
+| Docs: https://learnxinyminutes.com/docs/javascript/
 
 Javascript (JS) is a free and open source
 third-generation programming language
@@ -2120,9 +2112,10 @@ ES6 (ES2015) and beyond into browser-compatible JS.
 Node.js
 +++++++++
 | Wikipedia: https://en.wikipedia.org/wiki/Node.js
-| Homepage: http://www.nodejs.org
+| Homepage: https://nodejs.org/
 | Src: https://github.com/joyent/node
 | Docs: https://nodejs.org/en/docs/
+| Docs: https://nodejs.org/api/
 
 Node.js is a free and open source
 framework for :ref:`Javascript` applications
@@ -2136,10 +2129,10 @@ written in :ref:`C`, :ref:`C++`, and :ref:`Javascript`.
 Jinja2
 ~~~~~~~
 | Wikipedia: `<https://en.wikipedia.org/wiki/Jinja_%28template_engine%29>`__
-| Homepage: http://jinja.pocoo.org/
-| Src: https://github.com/mitsuhiko/jinja2
+| Homepage: https://palletsprojects.com/p/jinja/
+| Src: https://github.com/pallets/jinja
 | Docs: https://jinja2.readthedocs.io/en/latest/
-| Docs: http://jinja.pocoo.org/docs/dev/
+| Docs: https://jinja.palletsprojects.com/
 
 Jinja2 is a free and open source
 templating engine written in :ref:`Python`.
@@ -2152,9 +2145,9 @@ templating engine written in :ref:`Python`.
 Perl
 ~~~~~~~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/Perl
-| Homepage: http://www.perl.org/
-| Project: http://dev.perl.org/perl5/
-| Docs: http://www.perl.org/docs.html
+| Homepage: https://www.perl.org/
+| Project: https://dev.perl.org/perl5/
+| Docs: https://www.perl.org/docs.html
 | Src: git git://perl5.git.perl.org/perl.git
 
 Perl is a free and open source,
@@ -2179,13 +2172,13 @@ Python
 | Docs: https://docs.python.org/devguide/
 | Docs: https://docs.python.org/devguide/documenting.html
 | Docs: https://wiki.python.org/moin/PythonBooks
-| Docs: http://www.onlineprogrammingbooks.com/python/
+| Docs: https://www.onlineprogrammingbooks.com/python/
 | Docs: https://www.reddit.com/r/learnpython/wiki/index
 | Docs: https://www.reddit.com/r/learnpython/wiki/books
 | Docs: https://www.quora.com/Python-programming-language-1/What-are-the-best-books-courses-for-learning-Python
 | Docs: https://en.wikiversity.org/wiki/Python
 | Docs: https://www.class-central.com/search?q=python
-| Docs: http://learnxinyminutes.com/docs/python/
+| Docs: https://learnxinyminutes.com/docs/python/
 | Awesome: https://github.com/vinta/awesome-python
 
 Python is a free and open source
@@ -2233,7 +2226,7 @@ CPython
 | Docs: https://docs.python.org/2/
 | Docs: https://docs.python.org/devguide/
 | Docs: https://docs.python.org/devguide/documenting.html
-| Docs: http://learnxinyminutes.com/docs/python/
+| Docs: https://learnxinyminutes.com/docs/python/
 | Src: hg https://hg.python.org/cpython
 
 CPython is the reference :ref:`Python` language implementation written in
@@ -2255,10 +2248,10 @@ through a number of interfaces:
 Cython
 ++++++++
 | Wikipedia: https://en.wikipedia.org/wiki/Cython
-| Homepage: http://cython.org/
+| Homepage: https://cython.org/
 | PyPI: https://pypi.python.org/pypi/Cython
-| Docs: http://docs.cython.org/
-| Docs: http://docs.cython.org/src/userguide/language_basics.html
+| Docs: https://docs.cython.org/
+| Docs: https://docs.cython.org/src/userguide/language_basics.html
 
 Cython is a superset of :ref:`CPython` which adds static type definitions;
 making :ref:`CPython` code faster, in many cases.
@@ -2270,20 +2263,20 @@ making :ref:`CPython` code faster, in many cases.
 NumPy
 ++++++
 | Wikipedia: https://en.wikipedia.org/wiki/NumPy
-| Homepage: http://www.numpy.org/
+| Homepage: https://www.numpy.org/
 | Src: https://github.com/numpy/numpy
-| Docs: http://docs.scipy.org/doc/numpy/
+| Docs: https://docs.scipy.org/doc/numpy/
 
 NumPy is a library of array-based mathematical functions
 implemented in :ref:`C` and :ref:`Python`.
 
-* http://nbviewer.ipython.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-2-Numpy.ipynb
+* https://nbviewer.jupyter.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-2-Numpy.ipynb
 * https://scipy-lectures.github.io/intro/numpy/index.html
 * https://scipy-lectures.github.io/advanced/advanced_numpy/index.html
 
 NumPy and other languages:
 
-* http://wiki.scipy.org/NumPy_for_Matlab_Users
+* https://docs.scipy.org/doc/numpy/user/numpy-for-matlab-users.html
 * https://github.com/ipython/ipython/wiki/Extensions-Index
 
 
@@ -2293,16 +2286,16 @@ NumPy and other languages:
 SciPy
 ++++++++
 | Wikipedia: https://en.wikipedia.org/wiki/SciPy
-| Homepage: http://scipy.org/
+| Homepage: https://scipy.org/
 | Src: https://github.com/scipy/scipy
-| Docs: http://www.scipy.org/docs.html
-| Docs: http://docs.scipy.org/doc/scipy/reference/
-| Docs: http://www.scipy.org/install.html
+| Docs: https://www.scipy.org/docs.html
+| Docs: https://docs.scipy.org/doc/scipy/reference/
+| Docs: https://www.scipy.org/install.html
 
 SciPy is a set of science and engineering libraries
 for :ref:`Python`, primarily written in :ref:`C`.
 
-* http://nbviewer.ipython.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-3-Scipy.ipynb
+* https://nbviewer.jupyter.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-3-Scipy.ipynb
 * https://scipy-lectures.github.io/intro/scipy.html
 
 * The :ref:`SciPy Stack <scipystack>` specification
@@ -2314,8 +2307,8 @@ for :ref:`Python`, primarily written in :ref:`C`.
 
 SciPy Stack
 +++++++++++++
-| Docs: http://www.scipy.org/stackspec.html
-| Docs: http://www.scipy.org/install.html
+| Docs: https://www.scipy.org/stackspec.html
+| Docs: https://www.scipy.org/install.html
 
 Python Distributions
 
@@ -2350,7 +2343,7 @@ Jupyter Docker Stacks
 * :ref:`Jupyter` and :ref:`Scipystack` :ref:`Docker` containers:
 
   * https://hub.docker.com/r/jupyter/datascience-notebook/
-  
+
     * https://github.com/jupyter/docker-stacks/tree/master/datascience-notebook#docker-options
     * :ref:`conda`
 
@@ -2368,7 +2361,7 @@ See also:
 PyPy
 +++++
 | Wikipedia: https://en.wikipedia.org/wiki/PyPy
-| Homepage: http://pypy.org/
+| Homepage: https://pypy.org/
 | Src: https://bitbucket.org/pypy/pypy
 | Docs: http://buildbot.pypy.org/waterfall
 | Docs: https://pypy.readthedocs.io/en/latest/
@@ -2389,7 +2382,7 @@ NumPyPy is a port of :ref:`NumPy` to :ref:`PyPy`:
 
 | Src: https://bitbucket.org/pypy/numpypy
 | Docs: http://buildbot.pypy.org/numpy-status/latest.html
-| Docs: http://pypy.org/numpydonate.html
+| Docs: https://pypy.org/numpydonate.html
 
 
 .. index:: Python 3
@@ -2400,7 +2393,7 @@ Python 3
 | Docs: https://docs.python.org/3/
 | Docs: https://docs.python.org/3/howto/pyporting.html
 | Docs: https://docs.python.org/3/howto/cporting.html
-| Docs: http://learnxinyminutes.com/docs/python3/
+| Docs: https://learnxinyminutes.com/docs/python3/
 
 
 Python 3 made a number of incompatible changes,
@@ -2417,11 +2410,11 @@ There are a number of projects which help bridge the gap between
 the two language versions:
 
 * https://pypi.python.org/pypi/six
-* http://pythonhosted.org/six/
+* https://six.readthedocs.io/
 * https://pypi.python.org/pypi/nine
 * https://github.com/nandoflorestan/nine/blob/master/nine/__init__.py
 * https://pypi.python.org/pypi/future
-* http://python-future.org/
+* https://python-future.org/
 
 
 See also: :ref:`Anaconda`
@@ -2443,7 +2436,7 @@ Tox
 ++++++++++++++
 | Homepage: https://testrun.org/tox/
 | Docs: https://tox.readthedocs.io/en/latest/
-| Src: hg https://bitbucket.org/hpk42/tox
+| Src: https://github.com/tox-dev/tox
 | Pypi: https://pypi.python.org/pypi/tox
 
 
@@ -2465,9 +2458,9 @@ Ruby
 ~~~~~~~~~~~~~~~
 | Wikipedia: `<https://en.wikipedia.org/wiki/Ruby_(programming_language)>`_
 | Homepage: https://www.ruby-lang.org/
-| Src: svn http://svn.ruby-lang.org/repos/ruby/trunk
+| Src: https://github.com/ruby/ruby
 | Docs: https://www.ruby-lang.org/en/documentation/
-| Docs: http://learnxinyminutes.com/docs/ruby/
+| Docs: https://learnxinyminutes.com/docs/ruby/
 
 Ruby is a free and open source
 dynamically-typed programming language.
@@ -2481,10 +2474,10 @@ dynamically-typed programming language.
 Rust
 ~~~~~
 | Wikipedia: `<https://en.wikipedia.org/wiki/Rust_(programming_language)>`__
-| Homepage: http://www.rust-lang.org/
+| Homepage: https://www.rust-lang.org/
 | Docs: https://doc.rust-lang.org/stable/
 | Docs: https://doc.rust-lang.org/nightly/
-| Docs: http://learnxinyminutes.com/docs/rust/
+| Docs: https://learnxinyminutes.com/docs/rust/
 | Docs: https://doc.rust-lang.org/book/
 
 Rust is a free and open source
@@ -2518,12 +2511,12 @@ multi-paradigm programming language.
 Scala
 ~~~~~~~
 | Wikipedia: `<https://en.wikipedia.org/wiki/Scala_(programming_language)>`__
-| Homepage: http://scala-lang.org/
+| Homepage: https://scala-lang.org/
 | Src: git https://github.com/scala/scala
 | Twitter: https://twitter.com/scala_lang
-| Docs: http://scala-lang.org/api/current/
-| Docs: http://www.scala-lang.org/api/current/#scala.collection.mutable.LinkedHashMap
-| Docs: http://learnxinyminutes.com/docs/scala/
+| Docs: https://scala-lang.org/api/current/
+| Docs: https://scala-lang.org/api/current/#scala.collection.mutable.LinkedHashMap
+| Docs: https://learnxinyminutes.com/docs/scala/
 
 Scala is a free and open source
 object-oriented and functional
@@ -2537,15 +2530,15 @@ object-oriented and functional
 TypeScript
 ~~~~~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/TypeScript
-| Homepage: http://www.typescriptlang.org/
-| Src: git https://github.com/Microsoft/TypeScript
+| Homepage: https://www.typescriptlang.org/
+| Src: https://github.com/Microsoft/TypeScript
 | NPM: https://www.npmjs.com/package/typescript
 | NPMPkg: typescript
 | Standard: https://github.com/Microsoft/TypeScript/blob/master/doc/spec.md
 | FileExt: ``.ts``
-| Docs: http://www.typescriptlang.org/Tutorial
-| Docs: http://www.typescriptlang.org/Handbook
-| Docs: http://learnxinyminutes.com/docs/typescript/
+| Docs: https://www.typescriptlang.org/Tutorial
+| Docs: https://www.typescriptlang.org/Handbook
+| Docs: https://learnxinyminutes.com/docs/typescript/
 
 TypeScript is a free and open source :ref:`Programming Language`
 developed as a superset of :ref:`Javascript` with optional
@@ -2582,8 +2575,8 @@ and binary format for the web.
 YAML
 ~~~~~~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/YAML
-| Homepage: http://yaml.org
-| Docs: http://learnxinyminutes.com/docs/yaml/
+| Homepage: https://yaml.org
+| Docs: https://learnxinyminutes.com/docs/yaml/
 
 
 YAML ("YAML Ain't Markup Language") is a concise data serialization format.
@@ -2703,10 +2696,10 @@ the GNU linker (``ld``).
 Clang
 ~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/Clang
-| Homepage: http://clang.llvm.org/
+| Homepage: https://clang.llvm.org/
 | Src: git https://github.com/llvm/llvm-project
-| Docs: http://clang.llvm.org/docs/
-| Docs: http://clang.llvm.org/docs/UsersManual.html
+| Docs: https://clang.llvm.org/docs/
+| Docs: https://clang.llvm.org/docs/UsersManual.html
 
 Clang is a compiler front end for :ref:`C`, :ref:`C++`, and Objective C/++.
 Clang is part of the :ref:`LLVM` project.
@@ -2737,12 +2730,12 @@ There are now GCC frontends for many languages, including
 LLVM
 ~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/LLVM
-| Homepage: http://llvm.org/
+| Homepage: https://llvm.org/
 | Src: git https://github.com/llvm/llvm-project
-| Docs: http://llvm.org/docs/
-| Docs: http://llvm.org/docs/GettingStarted.html
-| Docs: http://llvm.org/docs/ReleaseNotes.html
-| Docs: http://llvm.org/ProjectsWithLLVM/
+| Docs: https://llvm.org/docs/
+| Docs: https://llvm.org/docs/GettingStarted.html
+| Docs: https://llvm.org/docs/ReleaseNotes.html
+| Docs: https://llvm.org/ProjectsWithLLVM/
 
 LLVM "*Low Level Virtual Machine*" is a reusable compiler infrastructure
 with frontends for many languages.
@@ -2777,7 +2770,7 @@ Operating Systems
 
   https://en.wikipedia.org/wiki/Comparison_of_operating_systems
 
-  * http://distrowatch.com/
+  * https://distrowatch.com/
 
 * https://en.wikipedia.org/wiki/List_of_important_publications_in_computer_science#Operating_systems
 
@@ -2873,11 +2866,11 @@ that is built from :ref:`DEB` packages.
 Ubuntu
 +++++++++++++++++
 | Wikipedia: `<https://en.wikipedia.org/wiki/Ubuntu_(operating_system)>`_
-| Homepage: http://www.ubuntu.com/
+| Homepage: https://ubuntu.com/
 | Src: https://launchpad.net/ubuntu
 | Src: http://archive.ubuntu.com/
 | Src: http://releases.ubuntu.com/
-| Download: http://www.ubuntu.com/download
+| Download: https://ubuntu.com/download
 | DockerHub: https://hub.docker.com/_/ubuntu/
 | Docs: https://help.ubuntu.com/
 | Q&A: https://askubuntu.com
@@ -2966,9 +2959,7 @@ which is derived from :ref:`RHEL <redhat>`.
 Oracle
 ------------
 | Wikipedia: https://en.wikipedia.org/wiki/Oracle_Linux
-| Homepage: http://www.oracle.com/linux
-| Docs: http://www.oracle.com/us/technologies/linux/resources/index.html
-| Docs: http://www.oracle.com/us/technologies/linux/openstack/overview/index.html
+| Homepage: https://www.oracle.com/linux
 
 Oracle Linux is a :ref:`Linux Distribution <linux-distributions>`
 that is built from :ref:`RPM` packages
@@ -3083,11 +3074,11 @@ a key-value store with a D-Bus interface.
 SteamOS
 ++++++++
 | Wikipedia:
-| Homepage: http://store.steampowered.com/steamos
-| Download: http://store.steampowered.com/steamos/download
-| Docs: http://store.steampowered.com/steamos/oem
-| Docs: http://store.steampowered.com/steamos/buildyourown
-| DistroWatch: http://distrowatch.com/table.php?distribution=steamos
+| Homepage: https://store.steampowered.com/steamos
+| Download: https://store.steampowered.com/steamos/download
+| Docs: https://store.steampowered.com/steamos/oem
+| Docs: https://store.steampowered.com/steamos/buildyourown
+| DistroWatch: https://distrowatch.com/table.php?distribution=steamos
 
 
 SteamOS is a :ref:`Linux Distribution <linux-distributions>`
@@ -3177,7 +3168,9 @@ Android Studio
 OS X
 ~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/OS_X
-| Homepage: http://www.apple.com/osx
+| Wikipedia: https://en.wikipedia.org/wiki/MacOS
+| Homepage: https://www.apple.com/osx
+| Homepage: https://www.apple.com/macos/
 | Docs: https://developer.apple.com/technologies/mac/
 | Docs: https://developer.apple.com/library/mac/navigation/
 | Docs: https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/
@@ -3280,8 +3273,8 @@ OSX Fresh Install
 OSX Dual Boot
 --------------
 
-* http://www.howtogeek.com/187410/how-to-install-and-dual-boot-linux-on-a-mac/
-* http://www.rodsbooks.com/refind/installing.html#osx
+* https://www.howtogeek.com/187410/how-to-install-and-dual-boot-linux-on-a-mac/
+* https://www.rodsbooks.com/refind/installing.html#osx
 
 
 
@@ -3292,7 +3285,7 @@ OSX Dual Boot
 Windows
 ~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/Microsoft_Windows
-| Homepage: http://windows.microsoft.com/
+| Homepage: https://www.microsoft.com/en-us/windows/
 | Docs: https://www.microsoft.com/enable/products/docs/
 | Docs:
 
@@ -3310,10 +3303,9 @@ Windows Sysinternals
 | Wikipedia: https://en.wikipedia.org/wiki/Sysinternals
 | Homepage: https://technet.microsoft.com/en-us/sysinternals
 | Download: https://technet.microsoft.com/en-us/sysinternals/bb842062
-| Download: http://live.sysinternals.com/
+| Download: https://live.sysinternals.com/
 | Docs: https://technet.microsoft.com/en-us/sysinternals/bb545027
-| Docs: http://blogs.technet.com/sysinternals
-| Docs: http://blogs.technet.com/b/sysinternals/
+| Docs: https://blogs.technet.microsoft.com/sysinternals/
 
 Windows Sysinternals is a group of tools for working with
 :ref:`Windows`.
@@ -3347,7 +3339,7 @@ Windows Sysinternals is a group of tools for working with
             eventvwr.msc  # event viewer
             Wupdmgr       # windows update manager
 
-        * http://www.pcsteps.com/1675-run-command-complete-list-windows/
+        * https://www.pcsteps.com/1675-run-command-complete-list-windows/
 
       * `<https://en.wikipedia.org/wiki/PATH_(variable)#DOS.2C_OS.2F2.2C_and_Windows>`__
 
@@ -3413,15 +3405,15 @@ https://gist.github.com/westurner/10950476#file-cinst_workstation_minimal-ps1
 
   * [ ] (Optional) uncomment salt first (optionally specify master) [OR Install salt]
 
-* [ ] Install salt: http://docs.saltstack.com/en/latest/topics/installation/windows.html
+* [ ] Install salt: https://docs.saltstack.com/en/latest/topics/installation/windows.html
 
 * ``<Win>+R`` (Start > Run)
 * [ ] Run ``services.msc`` and log/prune unutilized services
   (e.g. workstation, server) and record changes made
 
   * https://en.wikipedia.org/wiki/Windows_service
-  * http://docs.saltstack.com/en/latest/ref/modules/all/salt.modules.win_service.html
-  * http://docs.saltstack.com/en/latest/ref/states/providers.html#provider-service
+  * https://docs.saltstack.com/en/latest/ref/modules/all/salt.modules.win_service.html
+  * https://docs.saltstack.com/en/latest/ref/states/providers.html#provider-service
 
 ------------------
 Windows Dual Boot
@@ -3462,7 +3454,7 @@ Configuration Management
 Ansible
 ~~~~~~~~~
 | Wikipedia: `<https://en.wikipedia.org/wiki/Ansible_(software)>`__
-| Homepage: http://ansible.com/
+| Homepage: https://ansible.com/
 | Src: https://github.com/ansible/ansible
 | Docs: https://docs.ansible.com/
 | Docs: https://docs.ansible.com/ansible/latest/
@@ -3488,10 +3480,10 @@ Cobbler
 ~~~~~~~~
 | Wikipedia: `<https://en.wikipedia.org/wiki/Cobbler_(software)>`__
 | Homepage: https://cobbler.github.io/
-| Download: https://cobbler.github.io/downloads/2.6.x.html
+| Download: https://cobbler.github.io/downloads/2.8.x.html
 | Src: git https://github.com/cobbler/cobbler
 | Docs: https://cobbler.github.io/manuals/quickstart/
-| Docs: https://cobbler.github.io/manuals/2.6.0/
+| Docs: https://cobbler.github.io/manuals/2.8.0/
 
 Cobbler is a machine image configuration, repository mirroring,
 and networked booting server with support for DNS, DHCP, TFTP, and PXE.
@@ -3520,9 +3512,9 @@ See also: `crowbar`, :ref:`OpenStack` Ironic bare-metal deployment
 Gradle
 ~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/Gradle
-| Homepage: http://www.gradle.org/
+| Homepage: https://gradle.org/
 | Src: git https://github.com/gradle/gradle
-| Download: http://gradle.org/downloads
+| Download: https://gradle.org/downloads
 | Docs: https://docs.gradle.org/current/release-notes
 | Docs: https://docs.gradle.org/current/userguide/userguide.html
 | Twitter: https://twitter.com/gradle
@@ -3536,10 +3528,10 @@ which builds a directed acyclic graph (DAG).
 
 Grunt
 ~~~~~~
-| Homepage: http://gruntjs.com/
+| Homepage: https://gruntjs.com/
 | Src: git https://github.com/gruntjs/grunt
-| Docs: http://gruntjs.com/getting-started
-| Docs: http://gruntjs.com/plugins
+| Docs: https://gruntjs.com/getting-started
+| Docs: https://gruntjs.com/plugins
 | Twitter: https://twitter.com/gruntjs
 
 Grunt is a build tool written in :ref:`Javascript`
@@ -3551,11 +3543,11 @@ which builds a directed acyclic graph (DAG).
 
 Gulp
 ~~~~~
-| Homepage: http://gulpjs.com/
+| Homepage: https://gulpjs.com/
 | Src: https://github.com/gulpjs/gulp
 | Docs: https://github.com/gulpjs/gulp/blob/master/docs/
 | Docs: https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md
-| Docs: http://gulpjs.com/plugins/
+| Docs: https://gulpjs.com/plugins/
 | Twitter: https://twitter.com/gulpjs
 
 Gulp is a build tool written in :ref:`Javascript`
@@ -3567,11 +3559,11 @@ which builds a directed acyclic graph (DAG).
 
 Jake
 ~~~~~
-| Homepage: http://jakejs.com/
+| Homepage: https://jakejs.com/
 | Src: git https://github.com/jakejs/jake
 | NPMPkg: jake
 | NPM: https://www.npmjs.com/package/jake
-| Docs: http://jakejs.com/docs
+| Docs: https://jakejs.com/docs-page.html
 
 Jake is a :ref:`Javascript` build tool written in :ref:`Javascript`
 (for :ref:`Node.js`) similar to :ref:`Make` or :ref:`Rake`.
@@ -3583,11 +3575,11 @@ Jake is a :ref:`Javascript` build tool written in :ref:`Javascript`
 Juju
 ~~~~~~
 | Wikipedia: `<https://en.wikipedia.org/wiki/Juju_(software)>`__
-| Homepage: https://jujucharms.com/
-| Src:
-| Docs: https://jujucharms.com/docs/
+| Homepage: https://jaas.ai/
+| Src: https://github.com/juju/juju
+| Docs: https://jaas.ai/docs
+| Docs: https://jaas.ai/search?type=charm
 | TcpPort: 8001
-| Twitter: http://www.twitter.com/ubuntucloud
 
 Juju is a :ref:`Configuration Management` tool
 written in :ref:`Python`
@@ -3678,8 +3670,8 @@ Puppet
 ~~~~~~~~
 | Wikipedia: `<https://en.wikipedia.org/wiki/Puppet_(software)>`__
 | Homepage: https://puppetlabs.com/
-| Docs: http://docs.puppetlabs.com/
-| Docs: http://docs.puppetlabs.com/puppet/
+| Docs: https://puppet.com/docs
+| Docs: https://puppet.com/docs/puppet/
 | Src: git https://github.com/puppetlabs
 | TcpPort: 8140
 
@@ -3699,7 +3691,7 @@ one or more physical and virtual machines running various operating systems.
 Salt
 ~~~~~~~~~~~~~~~
 | Wikipedia: `<https://en.wikipedia.org/wiki/Salt_(software)>`_
-| Homepage: http://www.saltstack.com
+| Homepage: https://www.saltstack.com
 | Src: git https://github.com/saltstack/salt
 | Docs: https://docs.saltstack.com/en/latest/
 | Docs: https://docs.saltstack.com/en/latest/salt-modindex.html
@@ -3849,7 +3841,7 @@ Salt transports include:
       Salt Formulas are reusable packages of salt states
       and example pillar configuration data.
 
-      | Docs: http://docs.saltstack.com/en/latest/topics/development/conventions/formulas.html
+      | Docs: https://docs.saltstack.com/en/latest/topics/development/conventions/formulas.html
 
       * https://github.com/saltstack-formulas
       * https://github.com/saltstack-formulas/salt-formula/blob/master/pillar.example#L136 #"salt_formulas"
@@ -3861,9 +3853,9 @@ Salt transports include:
       for transforming / preprocessing :term:`Salt States`,
       :term:`Salt Pillar` files, and really any text document.
 
-      | Docs: http://docs.saltstack.com/en/develop/ref/renderers/
+      | Docs: https://docs.saltstack.com/en/develop/ref/renderers/
 
-      * http://docs.saltstack.com/en/latest/ref/renderers/all/salt.renderers.jinja.html
+      * https://docs.saltstack.com/en/latest/ref/renderers/all/salt.renderers.jinja.html
       * Jinja + YAML, Mako + YAML, Wempy + YAML, Jinja + json, Mako + json, Wempy + json.
 
    Salt Pillar
@@ -3879,8 +3871,8 @@ Salt transports include:
       * In a master/minion configuration, minions do not have access to
         the whole pillar.
 
-      | Docs: http://docs.saltstack.com/en/develop/ref/pillar/
-      | Docs: http://docs.saltstack.com/en/develop/ref/pillar/all/#all-salt-pillars
+      | Docs: https://docs.saltstack.com/en/develop/ref/pillar/
+      | Docs: https://docs.saltstack.com/en/develop/ref/pillar/all/#all-salt-pillars
 
       * https://github.com/saltstack-formulas/salt-formula/blob/master/pillar.example
 
@@ -3932,7 +3924,7 @@ Cgroups
 ~~~~~~~~
 | Wikipedia: `<https://en.wikipedia.org/wiki/Cgroups>`__
 | Docs: https://www.kernel.org/doc/Documentation/cgroups/
-| Docs: http://www.freedesktop.org/wiki/Software/systemd/ControlGroupInterface/
+| Docs: https://www.freedesktop.org/wiki/Software/systemd/ControlGroupInterface/
 | Docs: https://docs.fedoraproject.org/en-US/Fedora/17/html-single/Resource_Management_Guide/index.html#sec-How_Control_Groups_Are_Organized
 | Docs: https://wiki.archlinux.org/index.php/Cgroups
 
@@ -3962,7 +3954,7 @@ libcontainer is a library built by :ref:`Docker` to replace :ref:`LXC`.
 
   -- https://github.com/opencontainers/runc/tree/master/libcontainer
 
-- libcontainer is now developed as part of 
+- libcontainer is now developed as part of
   :ref:`OCI` :ref:`runC`.
 
 
@@ -3979,7 +3971,7 @@ Open Container Initiative
 | Src: https://github.com/opencontainers
 | Twitter: https://twitter.com/oci_org
 
-The Open Container Initiative (*OCI*) is a Linux Foundation 
+The Open Container Initiative (*OCI*) is a Linux Foundation
 collaborative project dedicated to developing a working, portable
 software container specification.
 
@@ -3989,11 +3981,10 @@ software container specification.
 
 runC
 ~~~~~~
-| Homepage: http://runc.io/
 | Homepage: https://www.opencontainers.org/
 | Src: https://github.com/opencontainers/runc
 
-runC is a container abstraction 
+runC is a container abstraction
 
   runc is a CLI tool for spawning and running containers according to
   the :ref:`OCI` specification.
@@ -4041,13 +4032,13 @@ to partition process workloads across one or more host systems.
         implementation.
 
     Docker Machine
-        Docker Machine is the container management application 
+        Docker Machine is the container management application
         which implements the :term:`Docker API`.
 
     Docker Swarm
         Docker Swarm is a cluster management system for Docker
         containers hosted on one or more :term:`Docker Machines <Docker
-        Machine>` 
+        Machine>`
 
     Docker Universal Control Plane
         Docker Universal Control Plane is an enterprise-grade cluster
@@ -4101,7 +4092,7 @@ to partition process workloads across one or more host systems.
 
 * https://github.com/saltstack-formulas/docker-formula
 * https://docs.saltstack.com/en/latest/ref/states/all/salt.states.dockerio.html
-* http://docs.saltstack.com/en/latest/ref/modules/all/salt.modules.dockerio.html
+* https://docs.saltstack.com/en/latest/ref/modules/all/salt.modules.dockerio.html
 
 
 
@@ -4126,14 +4117,14 @@ for cloud and container industry collaboration.
 Kubernetes
 ~~~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/Kubernetes
-| Homepage: http://kubernetes.io/
+| Homepage: https://kubernetes.io/
 | Src: https://github.com/GoogleCloudPlatform/kubernetes
-| Docs: http://kubernetes.io/gettingstarted/
+| Docs: https://kubernetes.io/gettingstarted/
 | Docs: https://github.com/GoogleCloudPlatform/kubernetes/blob/master/docs/getting-started-guides/docker.md
 | Docs: https://github.com/GoogleCloudPlatform/kubernetes/blob/master/docs/getting-started-guides/vagrant.md
 | Docs: https://github.com/GoogleCloudPlatform/kubernetes/blob/master/docs/getting-started-guides/coreos.md
 | Docs: https://github.com/GoogleCloudPlatform/kubernetes/blob/master/docs/getting-started-guides/mesos.md
-| Q&A: http://stackoverflow.com/questions/tagged/kubernetes
+| Q&A: https://stackoverflow.com/questions/tagged/kubernetes
 | Twitter: https://twitter.com/kubernetesio
 | Awesome: https://github.com/ramitsurana/awesome-kubernetes
 
@@ -4142,6 +4133,22 @@ which works with groups of :ref:`Docker` containers
 called Pods.
 
 - Google donated Kubernetes to the :ref:`CNCF`.
+
+
+.. index:: k3s
+.. _k3s:
+
+k3s
+~~~~
+| Homepage: https://k3s.io/
+| Src: https://github.com/rancher/k3s
+| Docs: https://rancher.com/docs/k3s/latest/en/
+
+k3s is a lightweight :ref:`Kubernetes` distribution
+which runs on x86-64, ARM6, ARM7; only requires 512Mb of RAM;
+and is distributed as a single :ref:`Go` binary.
+
+- You've heard of k8s? This is k8s - 5.
 
 
 .. index:: Kubernetes-Mesos
@@ -4174,8 +4181,8 @@ kubernetes-mesos integrates
 KVM
 ~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/Kernel-based_Virtual_Machine
-| Homepage: http://www.linux-kvm.org/
-| Docs: http://www.linux-kvm.org/page/Documents
+| Homepage: https://www.linux-kvm.org/
+| Docs: https://www.linux-kvm.org/page/Documents
 
 KVM is a full virtualization platform with support for
 Intel VT and AMD-V; which supports running
@@ -4302,7 +4309,7 @@ OpenStack
 | Src: https://git.openstack.org
 | Src: https://github.com/openstack
 | Q&A: https://stackoverflow.com/questions/tagged/openstack
-| Docs: http://docs.openstack.org/
+| Docs: https://docs.openstack.org/
 | Docs: https://wiki.openstack.org/
 | Docs: https://wiki.openstack.org/wiki/Get_OpenStack
 | Twitter: https://twitter.com/openstack
@@ -4318,49 +4325,49 @@ for running a cloud datacenter (a *private* or a *public* cloud).
   authentication (authN) and authorization (authZ)
   as a service.
 
-  * Src: git https://github.com/openstack/keystone
+  * Src: https://github.com/openstack/keystone
   * Wiki: https://wiki.openstack.org/wiki/Keystone
 
 * OpenStack **Nova** implements a Hypervisor API
   which abstracts various :ref:`Virtualization` providers
   (e.g. :ref:`KVM`, :ref:`Docker`, :ref:`LXC`, :ref:`LXD`).
 
-  * Src: git https://github.com/openstack/nova
+  * Src: https://github.com/openstack/nova
   * Wiki: https://wiki.openstack.org/wiki/Nova
   * Docs: https://wiki.openstack.org/wiki/HypervisorSupportMatrix
-  * Docs: http://docs.openstack.org/developer/nova/support-matrix.html
+  * Docs: https://docs.openstack.org/nova/latest/user/support-matrix.html
 
 * OpenStack **Swift** -- redundant HTTP-based Object Storage
   as a service.
 
-  * Src: git https://github.com/openstack/swift
+  * Src: https://github.com/openstack/swift
   * Wiki: https://wiki.openstack.org/wiki/Swift
-  * Docs: http://docs.openstack.org/developer/swift/
-  * Docs: http://docs.openstack.org/developer/swift/overview_auth.html
-  * Docs: http://docs.openstack.org/developer/swift/overview_object_versioning.html
+  * Docs: https://docs.openstack.org/swift/latest/
+  * Docs: https://docs.openstack.org/swift/latest/overview_auth.html
+  * Docs: https://docs.openstack.org/swift/latest/overview_object_versioning.html
 
 * OpenStack **Neutron** (*Quantum*)-- software defined networking (SDN), VLAN,
   switch configuration, virtual and physical
   enterprise networking as a service.
 
-  * Src: git https://github.com/openstack/neutron
+  * Src: https://github.com/openstack/neutron
   * Wiki: https://wiki.openstack.org/wiki/Neutron
 
 * OpenStack **Designate** -- DNS as a service (Bind9, PowerDNS)
   integrated with OpenStack Keystone, Neutron, and Nova.
 
-  * Src: git https://github.com/openstack/designate
+  * Src: https://github.com/openstack/designate
   * Wiki: https://wiki.openstack.org/wiki/Designate
 
 * OpenStack **Poppy** -- CDN as a service CDN vendor API
 
-  * Src: git https://github.com/stackforge/poppy
+  * Src: https://github.com/stackforge/poppy
   * Wiki: https://wiki.openstack.org/wiki/Poppy
 
 * OpenStack **Horizon** -- web-based OpenStack Dashboard
   which is written in Django.
 
-  * Src: git https://github.com/openstack/horizon
+  * Src: https://github.com/openstack/horizon
   * https://wiki.openstack.org/wiki/Horizon
 
 OpenStack makes it possible for end-users to create a new virtual
@@ -4375,9 +4382,9 @@ machine from the available pool of resources.
 
 OpenStack DevStack
 ~~~~~~~~~~~~~~~~~~
-| Docs: http://docs.openstack.org/developer/devstack/
-| Docs: http://docs.openstack.org/developer/devstack/overview.html
-| Src: git https://github.com/openstack-dev/devstack
+| Src: https://github.com/openstack-dev/devstack
+| Docs: https://docs.openstack.org/devstack/latest/
+| Docs: https://docs.openstack.org/devstack/latest/overview.html
 | Issues: https://launchpad.net/devstack
 
 OpenStack DevStack is a default development configuration
@@ -4401,9 +4408,9 @@ There are many alternatives to and implementations of OpenStack DevStack:
 Packer
 ~~~~~~~~~~~~~~~~~
 | Homepage: https://www.packer.io/
-| Docs: http://www.packer.io/docs
-| Docs: http://www.packer.io/docs/basics/terminology.html
-| Src: git https://github.com/mitchellh/packer
+| Src: https://github.com/hashicorp/packer
+| Docs: https://www.packer.io/docs
+| Docs: https://www.packer.io/docs/basics/terminology.html
 
 Packer generates machine images for multiple platforms, clouds,
 and hypervisors from a parameterizable template.
@@ -4431,7 +4438,7 @@ and hypervisors from a parameterizable template.
       - EC2
       - VMware
       - QEMU (:ref:`KVM`, Xen)
-      - http://www.packer.io/docs/templates/builders.html
+      - https://www.packer.io/docs/templates/builders.html
 
    Packer Provisioner
       Packer components for provisioning machine images at build time
@@ -4456,8 +4463,8 @@ Vagrant
 ~~~~~~~~~~~~~~~~~~
 | Wikipedia: `<https://en.wikipedia.org/wiki/Vagrant_(software)>`_
 | Homepage: https://www.vagrantup.com/
-| Docs: http://docs.vagrantup.com/v2/
-| Src: git https://github.com/hashicorp/vagrant
+| Docs: https://www.vagrantup.com/docs/
+| Src: https://github.com/hashicorp/vagrant
 
 
 Vagrant is a tool written in :ref:`Ruby`
@@ -4599,7 +4606,7 @@ Shells
 Bash
 ~~~~~~~~~~~~~~~
 | Wikipedia: `<https://en.wikipedia.org/wiki/Bash_(Unix_shell)>`__
-| Homepage: http://www.gnu.org/software/bash/
+| Homepage: https://www.gnu.org/software/bash/
 | Docs: https://www.gnu.org/software/bash/manual/
 | Src: git git://git.savannah.gnu.org/bash.git
 
@@ -4641,11 +4648,11 @@ Linux/Mac/Windows: Almost Always / Bash 3.2 / Cygwin/Mingwin
 Readline
 ~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/GNU_Readline
-| Homepage: http://tiswww.case.edu/php/chet/readline/rltop.html
-| Docs: http://tiswww.case.edu/php/chet/readline/readline.html
-| Docs: http://tiswww.case.edu/php/chet/readline/history.html
-| Docs: http://tiswww.case.edu/php/chet/readline/rluserman.html
-| Src: ftp ftp://ftp.gnu.org/gnu/readline/readline-6.3.tar.gz
+| Homepage: https://tiswww.case.edu/php/chet/readline/rltop.html
+| Docs: https://tiswww.case.edu/php/chet/readline/readline.html
+| Docs: https://tiswww.case.edu/php/chet/readline/history.html
+| Docs: https://tiswww.case.edu/php/chet/readline/rluserman.html
+| Src: ftp ftp://ftp.gnu.org/gnu/readline/readline-8.0.tar.gz
 | Pypi: https://pypi.python.org/pypi/gnureadline
 
 
@@ -4656,15 +4663,14 @@ Readline
 IPython
 ~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/IPython
-| Homepage: http://ipython.org/
+| Homepage: https://ipython.org/
 | Src: git https://github.com/ipython/ipython
 | DockerHub: https://hub.docker.com/repos/ipython/
-| Docs: http://ipython.org/ipython-doc/stable/
-| Docs: http://ipython.org/ipython-doc/stable/interactive/
-| Docs: http://ipython.org/ipython-doc/stable/notebook/
-| Docs: http://ipython.org/ipython-doc/stable/parallel/
+| Docs: https://ipython.readthedocs.io/en/stable/
+| Docs: https://ipython.readthedocs.io/en/stable/interactive/
+| Docs: https://ipython.readthedocs.io/en/stable/parallel/
 | Docs: https://github.com/ipython/ipython/wiki/Extensions-Index
-| Docs: https://github.com/ipython/ipython/wiki/IPython-kernels-for-other-languages
+| Docs: https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
 | Docs: https://github.com/ipython/ipython/wiki/Install:-Docker
 
 IPython is an interactive REPL and distributed computation framework
@@ -4715,7 +4721,7 @@ Windows PowerShell is a shell for :ref:`Windows`.
 ZSH
 ~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/Z_shell
-| Homepage: http://www.zsh.org/
+| Homepage: https://www.zsh.org/
 | Docs: http://zsh.sourceforge.net/Guide/zshguide.html
 | Docs: http://zsh.sourceforge.net/Doc/
 | Src: git git://git.code.sf.net/p/zsh/code
@@ -4768,8 +4774,8 @@ Grep is a commandline utility for pattern-based text matching.
 Htop
 ~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/Htop
-| Homepage: http://hisham.hm/htop/
-| Src: git http://hisham.hm/htop/
+| Homepage: https://hisham.hm/htop/
+| Src: https://github.com/hishamhm/htop
 
 Htop is a commandline task manager; like ``top`` extended.
 
@@ -4856,12 +4862,12 @@ IPython Notebook
 ~~~~~~~~~~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/IPython#Notebook
 | Src: https://github.com/ipython/ipython/tree/3.x/IPython/html
-| Docs: http://ipython.org/ipython-doc/stable/notebook/
-| Docs: http://ipython.org/ipython-doc/stable/notebook/notebook.html
-| Docs: http://ipython.org/ipython-doc/stable/notebook/nbformat.html
-| Docs: http://ipython.org/ipython-doc/stable/notebook/nbconvert.html
-| Docs: http://ipython.org/ipython-doc/stable/notebook/public_server.html
-| Docs: http://ipython.org/ipython-doc/stable/notebook/security.html
+| Docs: http://ipython.readthedocs.io/en/stable/notebook/
+| Docs: http://ipython.readthedocs.io/en/stable/notebook/notebook.html
+| Docs: http://ipython.readthedocs.io/en/stable/notebook/nbformat.html
+| Docs: http://ipython.readthedocs.io/en/stable/notebook/nbconvert.html
+| Docs: http://ipython.readthedocs.io/en/stable/notebook/public_server.html
+| Docs: http://ipython.readthedocs.io/en/stable/notebook/security.html
 | Docs: https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks
 
 :ref:`IPython` Notebook is a web-based shell for interactive
@@ -4984,17 +4990,10 @@ Jupyter
 | Wikipedia: https://en.wikipedia.org/wiki/IPython#Project_Jupyter
 | Homepage: http://jupyter.org/
 | Src: https://github.com/jupyter/
-| Src: git https://github.com/jupyter/notebook
-| Src: git https://github.com/jupyter/jupyterhub
-| Src: https://hub.docker.com/r/jupyter/tmpnb/
-| DockerHub: https://hub.docker.com/repos/ipython/
 | DockerHub: https://hub.docker.com/repos/jupyter/
-| Docs: https://github.com/ipython/ipython/wiki/Install:-Docker
-| Docs: https://github.com/ipython/ipython/wiki/IPython-kernels-for-other-languages
-| Docs: https://github.com/jupyter/jupyter/blob/master/docs/source/index.rst
-| Docs: https://github.com/jupyter/jupyterhub/wiki
-| Docs: https://github.com/jupyter/jupyterhub/wiki/Authenticators
-| Docs: https://github.com/jupyter/jupyterhub/wiki/Spawners
+| Docs: https://jupyter.readthedocs.io/en/latest/
+
+
 
 Project Jupyter expands upon
 components like :ref:`IPython` and :ref:`IPython Notebook`
@@ -5024,6 +5023,8 @@ Jupyter Notebook
 +++++++++++++++++++
 | Wikipedia: https://en.wikipedia.org/wiki/Jupyter#Notebook
 | Src: https://github.com/jupyter/notebook
+| CondaPkg: ``notebook``
+| Docs: https://jupyter-notebook.readthedocs.io/en/stable/
 
 :ref:`Jupyter` Notebook is the latest :ref:`IPython Notebook`.
 
@@ -5038,17 +5039,56 @@ Jupyter Notebook
    implement best practices like process isolation and privilege separation
    with e.g. :ref:`Docker` and/or :ref:`Jupyter` Hub.
 
+:ref:`JupyterLab`
 
-.. index:: Jupyter Drive
-.. _jupyter drive:
 
-Jupyter Drive
-++++++++++++++++++++++++++
-| Src: git https://github.com/jupyter/jupyter-drive
+.. index:: JupyterLab
+.. _jupyterlab:
 
-Jupyter Drive adds support to :ref:`Jupyter Notebook`
-for reading and writing :ref:`nbformat` notebook ``.ipynb``
-files to and from Google Drive.
+JupyterLab
++++++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/Project_Jupyter#JupyterLab
+| Src: https://github.com/jupyterlab/jupyterlab
+| CondaPkg: ``jupyterlab``
+| Docs: https://jupyterlab.readthedocs.io/en/stable/
+| Docs: https://jupyterlab.readthedocs.io/en/stable/user/extensions.html
+| Docs: https://jupyterlab.readthedocs.io/en/stable/developer/extension_dev.html
+
+JupyterLab is a web-based tabbed :ref:`IDE` with integrated support for
+:ref:`Jupyter Notebook`, terminals, text editing, and a new extension
+API.
+
+- Installing JupyterLab also installs Jupyter Notebook.
+- A few UI differences between JupyterLab and Jupyter Notebook:
+
+  - JupyterLab has tabbed editing: you can open files, notebooks,
+    and terminals in tabs
+  - JupyterLab has a sidebar with a file selector pane
+
+
+.. index:: JupyterHub
+.. _jupyterhub:
+
+JupyterHub
+++++++++++++
+| Src: https://github.com/jupyter/jupyterhub
+| Docs: https://jupyterhub.readthedocs.io/en/latest/
+| Docs: https://github.com/jupyter/jupyterhub/wiki
+| Docs: https://github.com/jupyter/jupyterhub/wiki/Authenticators
+| Docs: https://github.com/jupyter/jupyterhub/wiki/Spawners
+
+JupyterHub makes it easy to serve :ref:`Jupyter Notebook`
+and/or :ref:`Jupyter Lab` for multiple users on one or more servers.
+
+- JupyterHub spawns individual
+  Jupyter Notebook / JupyterLab server instances
+  for logged-in users.
+- JupyterHub enables users to log-in with Authenticator backends:
+  system users, LDAP, SSO, OAuth (e.g. Google accounts)
+- If so configured, JupyterHub can launch additional servers
+  to serve one or more Notebook/Lab :ref:`Docker` containers
+  and then shut those down when they're idle
+  or, for example, when a course session is complete.
 
 
 .. index:: nbconvert
@@ -5056,42 +5096,83 @@ files to and from Google Drive.
 
 nbconvert
 +++++++++++
-| Docs: http://ipython.org/ipython-doc/stable/notebook/nbconvert.html
-|
+| Src: https://github.com/jupyter/nbconvert
+| Docs: https://nbconvert.readthedocs.io/en/latest/
 
 nbconvert is the code that converts (transforms) an ``.ipynb`` notebook
 (:ref:`nbformat` :ref:`JSON <json->`) file
-( into an output representation (e.g. HTML,
-slides (reveal.js), LaTeX, PDF, ePub, Mobi).
+into an output representation (e.g. :ref:`HTML`,
+HTML slides (:ref:`reveal.js`), :ref:`LaTeX`, PDF, ePub, Mobi).
 
-* nbconvert is included with :ref:`IPython`
-* nbconvert is part of :ref:`Project Jupyter<jupyter>`
+* nbconvert is included with :ref:`Jupyter Notebook` and
+  :ref:`JupyterLab`
 
   .. code:: bash
 
     pip install nbconvert
     # pip install -e git+https://github.com/jupyter/nbconvert@master#egg=nbconvert
 
-    ipython nbconvert --to html mynotebook.ipynb
     jupyter nbconvert --to html mynotebook.ipynb
 
 
-* reveal.js is an HTML presentation framework
-  for slides in a 1D or 2D arrangement.
+.. index:: reveal.js
+.. _reveal.js:
 
-  | https://github.com/hakimel/reveal.js
+----------
+reveal.js
+----------
+| Src: https://github.com/hakimel/reveal.js
 
-  * Presentation content that doesn't fit on the slide is hidden
-    and unscrollable (*only put a slide worth of data in each cell
-    for a Jupyter reveal.js presentation*).
+reveal.js is a :ref:`Javascript` and :ref:`HTML` library
+for slide presentations served from an HTML file.
 
-    .. code:: bash
+- Reveal.js slides can be in a 1-dimensional or a 2-dimensional arrangement.
+- You can generate reveal.js slides from Jupyter notebooks in two ways:
+  with ``nbconvert --to slides`` or with the GUI:
+  "File" > "Export Notebok As..." > "Export Notebook to reveal.js
+  slides"
 
-        jupyter nbconvert --to slides mynotebook.ipynb
+  .. code:: bash
 
-* RISE does live reveal.js notebook presentations
+      jupyter nbconvert --to slides mynotebook.ipynb
 
-  https://github.com/damianavila/RISE
+  .. note:: Presentation content that doesn't fit on a slide is hidden
+     and unscrollable: *only put a slide worth of data in each cell
+     for a Jupyter reveal.js presentation*.
+
+     Alternatives to presenting notebooks as reveal.js slides:
+
+     - Increase the browser font size (Jupyter Notebook)
+     - "View" > "Presentation Mode" (JupyterLab)
+     - Select a keyboard shortcut set
+       use the "Select Cell Below" / "Select Cell Above"
+       keyboard shortcuts to highlight cells and scroll them into view
+
+       - Press "<Escape>"
+       - Press "j" to "Select Cell Below"
+       - Press "k" to "Select Cell Above"
+
+- The :ref:`RISE` extension also generates reveal.js slides.
+
+
+.. index:: RISE
+.. _rise:
+
+------
+RISE
+------
+| Src: https://github.com/damianavila/RISE
+| Docs: https://rise.readthedocs.io/en/latest/
+
+RISE is a :ref:`Jupyter Notebook` and :ref:`JupyterLab` extension
+that generates live :ref:`reveal.js` presentations from Jupyter
+notebooks.
+
+- Install the RISE extension
+- Click the RISE button to generate a *live* :ref:`reveal.js`
+  slide presentation wherein you can execute cells
+  on the slides with "Ctrl-Enter" and "Shift-Enter"
+  just like you can in the Notebook interface.
 
 
 .. index:: nbformat
@@ -5099,7 +5180,7 @@ slides (reveal.js), LaTeX, PDF, ePub, Mobi).
 
 nbformat
 ++++++++++
-| Docs: http://ipython.org/ipython-doc/dev/notebook/nbformat.html
+| Src: https://github.com/jupyter/nbformat
 | Docs: https://nbformat.readthedocs.io/en/latest/
 | Docs: https://nbformat.readthedocs.io/en/latest/format_description.html#backward-compatible-changes
 
@@ -5114,8 +5195,8 @@ new version on the next save.
    code for languages other than :ref:`Python`.
 
 * nbformat does not specify any schema for the user-supplied
-  metadata dict (TODO) that can be edited
-  so, JSON that conforms to an externally
+  metadata dict (TODO: :ref:`nbmeta`),
+  so JSON that conforms to an externally
   managed :ref:`JSON-LD <json-ld->` ``@context``
   would work.
 
@@ -5125,18 +5206,21 @@ new version on the next save.
 
 nbgrader
 ++++++++
-| Src: git https://github.com/jupyter/nbgrader
+| Src: https://github.com/jupyter/nbgrader
 | Docs: https://nbgrader.readthedocs.io/en/stable/
 | Docs: https://nbgrader.readthedocs.io/en/stable/user_guide/
 | Docs: https://nbgrader.readthedocs.io/en/latest/
 | Docs: https://nbgrader.readthedocs.io/en/latest/user_guide/
 | Docs: https://nbgrader.readthedocs.io/en/latest/command_line_tools/
 
-nbgrader is a solution for centrally receiving and grading :ref:`Jupyter notebooks <jupyter notebook>`.
+nbgrader is a solution for centrally receiving and grading :ref:`Jupyter
+notebooks <jupyter notebook>`.
+
+- You mark notebook cells as TODO
 
 See also:
 
-* :ref:`sagemathcloud` Course management
+* :ref:`CoCalc` Course management
 * https://wrdrd.github.io/docs/consulting/education-technology#jupyter-and-tdd
 
   * :ref:`jupyter and tdd`
@@ -5147,15 +5231,29 @@ See also:
 
 nbviewer
 +++++++++++
-| Homepage: http://nbviewer.ipython.org
+| Homepage: https://nbviewer.jupyter.org
 | Src: git https://github.com/jupyter/nbviewer
 | Dockerfile: https://github.com/jupyter/nbviewer/blob/master/Dockerfile
 
-:ref:`Jupyter Notebook` Viewer (``nbviewer``)
+(``nbviewer``)
 is an application for serving read-only
-versions of ``.ipynb`` files which have HTTP URLs.
+versions of Jupyter notebooks from HTTP URLs.
 
-GitHub now also renders static ``.ipynb`` files, CSV, SVG, and PDF.
+- When you enter a URL, GitHub ``username``,
+  GitHub ``username/repo``, or Gist ID
+  into the text box at
+  https://nbviewer.jupyter.org/ and click 'Go!' (or press Enter),
+  nbviewer nbconverts the notebook to HTML or shows a file browser
+  and branch/tag selector
+  for the git repo.
+- You do not need to look up the raw GitHub URL for the notebook,
+  because nbviewer automatically rewrites the GitHub /blob/ file URL
+  to a raw.githubusercontent.com URL.
+
+- GitHub now also renders static ``.ipynb`` files, CSV, SVG, and PDF.
+  However, GitHub does not execute any JS in the notebook due
+  to security concerns (XSS)
+- GitLab renders Jupyter notebooks with JS.
 
 
 .. index:: runipy
@@ -5250,25 +5348,11 @@ jupyter_contrib_nbextensions
 ++++++++++++++++++++++++++++++
 | Src: https://github.com/ipython-contrib/jupyter_contrib_nbextensions
 | Docs: https://github.com/ipython-contrib/jupyter_contrib_nbextensions#1-install-the-python-package
+| CondaPkg: ``jupyter_contrib_nbextensions``
 
 - https://github.com/ipython-contrib/jupyter_contrib_nbextensions#pip
 - https://github.com/ipython-contrib/jupyter_contrib_nbextensions#conda
 
-
-
-.. index:: RISE
-.. index:: Jupyter RISE
-.. _rise:
-
-RISE
-+++++++++++++
-| Src: https://github.com/damianavila/RISE
-
-    Reveal.js - Jupyter/IPython Slideshow Extension,
-    also known as ``live_reveal``
-
-* :ref:`Jupyter Notebook`
-* Interactive presentations with live source code evaluation
 
 
 .. index:: NBPresent
@@ -5314,7 +5398,7 @@ SageMathCloud
 * Linux Terminal
 * :ref:`Sage Math`
 * CodeMirror
-* Login with: 
+* Login with:
 
 
 .. index:: Wakari
@@ -5467,7 +5551,7 @@ To launch an interactive shell within a venv:
 
 Virtualenv
 ~~~~~~~~~~~~~~~~~~~~
-| Homepage: http://www.virtualenv.org
+| Homepage: https://virtualenv.pypa.io/en/latest/
 | Docs: https://virtualenv.pypa.io/en/latest/
 | Src: git https://github.com/pypa/virtualenv
 | PyPI: https://pypi.python.org/pypi/virtualenv
@@ -5665,7 +5749,7 @@ or as needed.
 Gnome
 ~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/GNOME
-| Homepage: http://www.gnome.org/
+| Homepage: https://www.gnome.org/
 | Docs: https://help.gnome.org/
 | Src: https://git.gnome.org/browse/
 
@@ -5679,9 +5763,9 @@ Gnome
 i3wm
 ~~~~~~~~~
 | Wikipedia: `<https://en.wikipedia.org/wiki/I3_(window_manager)>`__
-| Homepage: http://i3wm.org/
-| Download: http://i3wm.org/downloads/
-| Docs: http://i3wm.org/docs/
+| Homepage: https://i3wm.org/
+| Download: https://i3wm.org/downloads/
+| Docs: https://i3wm.org/docs/
 | Src: git git://code.i3wm.org/i3
 
 i3wm is a tiling window manager for :ref:`X11` (:ref:`Linux`)
@@ -5720,13 +5804,13 @@ Qt
 ~~~
 | Wikipedia: https://en.wikipedia.org/wiki/Qt_Project
 | Homepage: https://qt-project.org/
-| Homepage: http://qt.io/
-| Docs: http://doc.qt.io/
-| Docs: http://doc.qt.io/qt-5/qtexamplesandtutorials.html
-| Docs: http://www.qt.io/contribute/
-| Docs: http://wiki.qt.io/Main_Page
+| Homepage: https://www.qt.io/
+| Docs: https://doc.qt.io/
+| Docs: https://doc.qt.io/qt-5/qtexamplesandtutorials.html
+| Docs: https://www.qt.io/contribute/
+| Docs: https://wiki.qt.io/Main_Page
 | Docs: https://wiki.qt.io/Get_the_Source
-| Src: git http://code.qt.io/cgit/
+| Src: git https://code.qt.io/cgit/
 
 Qt is a Graphical User Interface toolkit for
 developing applications with
@@ -5739,8 +5823,8 @@ Android, iOS, :ref:`OSX`, Windows, Embedded :ref:`Linux`, and :ref:`X11`.
 Wayland
 ~~~~~~~~~
 | Wikipedia: `<https://en.wikipedia.org/wiki/Wayland_(display_server_protocol)>`_
-| Homepage: http://wayland.freedesktop.org/
-| Src:
+| Homepage: https://wayland.freedesktop.org/
+| Src: https://gitlab.freedesktop.org/wayland/wayland
 
 
 Wayland is a display server protocol for GUI window management.
@@ -5757,8 +5841,8 @@ The reference Wayland implementation, Weston, is written in :ref:`C`.
 X11
 ~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/X_Window_System
-| Homepage: http://www.x.org/
-| Docs: http://www.x.org/wiki/Documentation/
+| Homepage: https://www.x.org/
+| Docs: https://www.x.org/wiki/Documentation/
 | Src: git git://anongit.freedesktop.org/git/xorg/
 
 
@@ -6022,7 +6106,7 @@ Firefox Android Extensions
 Internet Explorer
 ~~~~~~~~~~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/?title=Internet_Explorer
-| Homepage: http://microsoft.com/ie
+| Homepage: https://microsoft.com/ie
 
 Internet Explorer is the web browser included with :ref:`Windows`.
 
@@ -6045,18 +6129,17 @@ Microsoft Edge will be replacing :ref:`Internet Explorer`.
 Opera
 ~~~~~~~
 | Wikipedia: `<https://en.wikipedia.org/wiki/Opera_(web_browser)>`__
-| Homepage: http://www.opera.com/
-| Download: http://www.opera.com/computer/windows
-| Download: http://www.opera.com/computer/mac
-| Download: http://www.opera.com/computer/linux
-| Download: http://www.opera.com/computer/beta
-| Download: http://www.opera.com/mobile
+| Homepage: https://www.opera.com/
+| Download: https://www.opera.com/computer/windows
+| Download: https://www.opera.com/computer/mac
+| Download: https://www.opera.com/computer/linux
+| Download: https://www.opera.com/computer/beta
+| Download: https://www.opera.com/mobile
 | AndroidApp: https://play.google.com/store/apps/details?id=com.opera.browser
 | AndroidApp: https://play.google.com/store/apps/details?id=com.opera.mini.native
 | AndroidApp: https://play.google.com/store/apps/details?id=com.opera.max.global #Proxy Compression
 | iOSApp: https://itunes.apple.com/app/id363729560 #Opera Mini
 | iOSApp: https://itunes.apple.com/app/id674024845 #Opera Coast
-| WinMoApp: http://www.windowsphone.com/en-us/store/app/opera-mini-beta/b3bf000a-e004-4ecb-a8fb-9fc817cdab90
 | Src: https://github.com/operasoftware
 
 Opera is a multi-platform :ref:`web browser <browsers>` written in :ref:`C++`.
@@ -6125,7 +6208,7 @@ WebKit
 ~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/WebKit
 | Homepage: https://www.webkit.org/
-| Download: http://nightly.webkit.org/
+| Download: https://webkit.org/build-archives/
 | Src: https://github.com/WebKit/webkit
 | Docs: https://www.webkit.org/coding/coding-style.html
 | Docs: https://trac.webkit.org/wiki
@@ -6167,7 +6250,7 @@ Accessibility Developer Tools
 
 ChromeVox
 ++++++++++
-| Homepage: http://www.chromevox.com/
+| Homepage: https://www.chromevox.com/
 | ChromeExt: https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn
 
 
@@ -6364,7 +6447,7 @@ Zotero archives and tags resources with bibliographic metadata.
   in one of many citation styles ("CSL") (e.g. MLA, APA, [Journal XYZ])
 
   * https://www.zotero.org/styles
-  * http://citationstyles.org/
+  * https://citationstyles.org/
 
 * Zotero can export a collection of resources' bibliographic metadata
   as RDF
@@ -6413,7 +6496,7 @@ OneTab
 
 Snipe
 +++++++
-| Homepage: http://joe.sh/snipe
+| Homepage: https://joe.sh/snipe
 | Src: https://github.com/josephschmitt/Snipe
 | ChromeExt: https://chrome.google.com/webstore/detail/snipe/glmjakogmemenallddiiajdgjfoogegl
 
@@ -6431,7 +6514,7 @@ Tabs Outliner
 
 Tree Style Tab
 +++++++++++++++
-| Homepage: http://piro.sakura.ne.jp/xul/_treestyletab.html.en
+| Homepage: https://piro.sakura.ne.jp/xul/_treestyletab.html.en
 | FirefoxExt: https://addons.mozilla.org/en-US/firefox/addon/tree-style-tab/
 
 
@@ -6455,7 +6538,7 @@ AngularJS Batarang
 
 FireBug
 +++++++++
-| Homepage: http://getfirebug.com/
+| Homepage: https://getfirebug.com/
 | FirefoxExt: https://addons.mozilla.org/en-us/firefox/addon/firebug/
 | FirefoxXPI: https://addons.mozilla.org/firefox/downloads/latest/1843/addon-1843-latest.xpi
 | ChromeExt: https://chrome.google.com/extensions/detail/bmagokdooijbeehmkpknfglimnifench
@@ -6469,7 +6552,7 @@ FireBug
 
 FireLogger
 ++++++++++++
-| Homepage: http://firelogger.binaryage.com/
+| Homepage: https://firelogger.binaryage.com/
 | Src: https://github.com/binaryage/firelogger
 | FirefoxExt: https://addons.mozilla.org/en-US/firefox/addon/firelogger/
 | FirefoxXPI: https://addons.mozilla.org/firefox/downloads/file/226289/firelogger-1.3-fx.xpi
@@ -6582,7 +6665,7 @@ Require local `NPM`_ modules with `Requirify`_
 Web Developer
 ++++++++++++++
 | ChromeExt: https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm
-| Homepage: http://chrispederick.com/work/web-developer/
+| Homepage: https://chrispederick.com/work/web-developer/
 | Src: https://github.com/chrispederick/web-developer/
 | FirefoxExt: https://addons.mozilla.org/en-us/firefox/addon/web-developer/
 | FirefoxXPI: https://addons.mozilla.org/firefox/downloads/latest/60/addon-60-latest.xpi
@@ -6655,19 +6738,19 @@ Vimperator connects a JS shell with VIM command interpretation
 to the Firefox API, with :ref:`vim`-like functionality.
 
 * ``vimperatorrc`` can configure settings in ``about:config``
-
+* Vimperator stopped working after Firefox 57
 
 .. index:: Wasavi
 .. _wasavi:
 
 Wasavi
 +++++++
-| Homepage: http://appsweets.net/wasavi/
+| Homepage: https://appsweets.net/wasavi/
 | Src: https://github.com/akahuku/wasavi
 | ChromeExt: https://chrome.google.com/webstore/detail/wasavi/dgogifpkoilgiofhhhodbodcfgomelhe
 | OperaExt: https://addons.opera.com/en/extensions/details/wasavi/
 | FirefoxExt: https://addons.mozilla.org/en-US/firefox/addon/wasavi/
-| Docs: http://appsweets.net/wasavi/
+| Docs: https://appsweets.net/wasavi/
 
 Wasavi converts the focused ``textarea`` to an in-page editor with
 :ref:`vim`-like functionality.
@@ -6701,10 +6784,10 @@ server written in :ref:`C` and :ref:`C++`.
 Nginx
 ~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/Nginx
-| Homepage: http://nginx.org/
-| Download: http://nginx.org/en/download.html
-| Src: hg http://hg.nginx.org/nginx
-| Docs: http://nginx.org/en/docs/
+| Homepage: https://nginx.org/
+| Download: https://nginx.org/en/download.html
+| Src: https://github.com/nginx/nginx
+| Docs: https://nginx.org/en/docs/
 | Twitter: https://twitter.com/nginxorg
 
 Nginx is a scriptable, lightweight `HTTP` server
@@ -6717,17 +6800,17 @@ written in :ref:`C`.
 Tengine
 ~~~~~~~~~
 | Wikipedia: https://zh.wikipedia.org/wiki/Tengine
-| Homepage: http://tengine.taobao.org/
+| Homepage: https://tengine.taobao.org/
 | Src: git https://github.com/alibaba/tengine
-| Download: http://tengine.taobao.org/download.html
-| Docs: http://tengine.taobao.org/documentation.html
+| Download: https://tengine.taobao.org/download.html
+| Docs: https://tengine.taobao.org/documentation.html
 
 Tengine is a fork of :ref:`Nginx` with many useful
 modules and features bundled in.
 
-* http://tengine.taobao.org/document/http_ssl.html
-* http://tengine.taobao.org/document/http_upstream_check.html
-* http://tengine.taobao.org/document/http_reqstat.html
+* https://tengine.taobao.org/document/http_ssl.html
+* https://tengine.taobao.org/document/http_upstream_check.html
+* https://tengine.taobao.org/document/http_reqstat.html
 
 
 .. index:: Documentation
@@ -6766,9 +6849,9 @@ XML, JSON, and a number of other formats.
 Pandoc
 ~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/Pandoc
-| Homepage: http://pandoc.org/
-| Docs: http://pandoc.org/README.html
-| Docs: http://pandoc.org/releases.html
+| Homepage: https://pandoc.org/
+| Docs: https://pandoc.org/README.html
+| Docs: https://pandoc.org/releases.html
 | Download: https://github.com/jgm/pandoc/releases
 | BrewPkg: pandoc
 | AptPkg: pandoc
@@ -6841,11 +6924,11 @@ Sphinx
 | Homepage: https://pypi.python.org/pypi/Sphinx
 | Src: git https://github.com/sphinx-doc/sphinx
 | Pypi: https://pypi.python.org/pypi/Sphinx
-| Docs: http://sphinx-doc.org/contents.html
-| Docs: http://sphinx-doc.org/markup/code.html
-| Docs: http://www.sphinx-doc.org/en/stable/markup/inline.html#ref-role
-| Docs: http://pygments.org/docs/lexers/
-| Docs: http://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html
+| Docs: https://www.sphinx-doc.org/contents.html
+| Docs: https://www.sphinx-doc.org/markup/code.html
+| Docs: https://www.sphinx-doc.org/en/stable/markup/inline.html#ref-role
+| Docs: https://pygments.org/docs/lexers/
+| Docs: https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html
 | Docs: https://github.com/yoloseem/awesome-sphinxdoc
 
 
@@ -6932,7 +7015,7 @@ so, for example,
          * OpenDocument (OpenOffice)
          * Office Open XML (MS Word)
 
-      See: `Sphinx Builders <http://sphinx-doc.org/builders.html>`_
+      See: `Sphinx Builders <https://www.sphinx-doc.org/builders.html>`_
 
    Sphinx ReStructuredText
       Sphinx extends :ref:`ReStructuredText` with roles and directives
@@ -6951,7 +7034,7 @@ so, for example,
             installation
             usage
 
-      See: `Sphinx Directives <http://sphinx-doc.org/rest.html#directives>`_
+      See: `Sphinx Directives <https://sphinx-doc.org/rest.html#directives>`_
 
    Sphinx Role
       Sphinx extensions of :ref:`Docutils` :ref:`RestructuredText` roles
@@ -7055,12 +7138,12 @@ and rolling checksums.
 Clonezilla
 ~~~~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/Clonezilla
-| DistroWatch: http://distrowatch.com/table.php?distribution=clonezilla
-| Homepage: http://clonezilla.org/
+| DistroWatch: https://distrowatch.com/table.php?distribution=clonezilla
+| Homepage: https://clonezilla.org/
 | Src: git https://github.com/stevenshiau/clonezilla
-| Docs: http://clonezilla.org/clonezilla-live.php 
-| Docs: http://clonezilla.org/clonezilla-SE/
-| Docs: http://clonezilla.org/related-links/
+| Docs: https://clonezilla.org/clonezilla-live.php
+| Docs: https://clonezilla.org/clonezilla-SE/
+| Docs: https://clonezilla.org/related-links/
 
 Clonezilla is an open source :ref:`Linux` distribution
 which is bootable from a CD/DVD/USB (a LiveCD, LiveDVD, LiveUSB)
@@ -7116,14 +7199,14 @@ a number of actions for redundantly storing backups.
 FSArchiver
 ~~~~~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/FSArchiver
-| Homepage: http://www.fsarchiver.org/
-| Src:  http://sourceforge.net/projects/fsarchiver/files/fsarchiver-src/
-| Download: http://sourceforge.net/projects/fsarchiver/files/fsarchiver-bin/
-| Docs: http://www.fsarchiver.org/QuickStart
-| Docs: http://www.fsarchiver.org/Live-backup
-| Docs: http://www.fsarchiver.org/Attributes#SELinux_.28Security_Enhanced_Linux.29
-| Docs: http://www.fsarchiver.org/Fsarchiver_vs_partimage
-| Docs: http://www.sysresccd.org/Sysresccd-manual-en_LVM_Making-consistent-backups-with-LVM
+| Homepage: https://www.fsarchiver.org/
+| Src:  https://sourceforge.net/projects/fsarchiver/files/fsarchiver-src/
+| Download: https://sourceforge.net/projects/fsarchiver/files/fsarchiver-bin/
+| Docs: https://www.fsarchiver.org/QuickStart
+| Docs: https://www.fsarchiver.org/Live-backup
+| Docs: https://www.fsarchiver.org/Attributes#SELinux_.28Security_Enhanced_Linux.29
+| Docs: https://www.fsarchiver.org/Fsarchiver_vs_partimage
+| Docs: https://www.sysresccd.org/Sysresccd-manual-en_LVM_Making-consistent-backups-with-LVM
 
 FSAchiver is an open source filesystem backup (*disk cloning*) utility
 which can preserve file permissions, labels, and extended attributes.
@@ -7139,12 +7222,12 @@ which can preserve file permissions, labels, and extended attributes.
 
 partclone
 ~~~~~~~~~~~~
-| Homepage: http://partclone.org/
-| Project: http://sourceforge.net/projects/partclone/
-| Download: http://partclone.org/download/
+| Homepage: https://partclone.org/
+| Project: https://sourceforge.net/projects/partclone/
+| Download: https://partclone.org/download/
 | Src: git https://github.com/Thomas-Tsai/partclone
-| Docs: http://partclone.org/help/
-| Docs: http://partclone.org/usage/
+| Docs: https://partclone.org/help/
+| Docs: https://partclone.org/usage/
 | Docs: https://github.com/Thomas-Tsai/partclone/wiki
 
 partclone is an open source utility for making
@@ -7162,7 +7245,7 @@ partimage
 ~~~~~~~~~~~
 | Homepage: http://www.partimage.org/Main_Page
 | Download: http://www.partimage.org/Download
-| Src: http://sourceforge.net/projects/partimage/files/stable/
+| Src: https://sourceforge.net/projects/partimage/files/stable/
 | Docs: http://www.partimage.org/Partimage-manual
 | Docs: http://www.partimage.org/Supported-Filesystems
 
@@ -7257,13 +7340,13 @@ rdiff is the open source relative delta algorithm of :ref:`rsync`.
 
 rsnapshot
 +++++++++++
-| Homepage: http://rsnapshot.org/
-| Download: http://rsnapshot.org/download.html
-| Download: http://rsnapshot.org/downloads/
+| Homepage: https://rsnapshot.org/
+| Download: https://rsnapshot.org/download.html
+| Download: https://rsnapshot.org/downloads/
 | Src: git https://github.com/rsnapshot/rsnapshot
-| Docs: http://rsnapshot.org/faq.html
+| Docs: https://rsnapshot.org/faq.html
 | Docs: https://wiki.archlinux.org/index.php/Rsnapshot
-| Docs: http://linux.die.net/man/1/rsnapshot
+| Docs: https://linux.die.net/man/1/rsnapshot
 
 rsnapshot is an open source incremental file directory backup utility
 built with :ref:`rsync`.
@@ -7275,13 +7358,13 @@ built with :ref:`rsync`.
 
 rdiff-backup
 ~~~~~~~~~~~~~
-| Homepage: http://www.nongnu.org/rdiff-backup/
-| Download: http://download.savannah.gnu.org/releases/rdiff-backup/
+| Homepage: https://nongnu.org/rdiff-backup/
+| Download: https://download.savannah.gnu.org/releases/rdiff-backup/
 | Project: https://savannah.nongnu.org/projects/rdiff-backup
 | Src: svn svn://svn.savannah.nongnu.org/rdiff-backup/
-| Docs: http://www.nongnu.org/rdiff-backup/rdiff-backup.1.html
-| Docs: http://www.nongnu.org/rdiff-backup/docs.html
-| Docs: http://www.nongnu.org/rdiff-backup/examples.html
+| Docs: https://nongnu.org/rdiff-backup/rdiff-backup.1.html
+| Docs: https://nongnu.org/rdiff-backup/docs.html
+| Docs: https://nongnu.org/rdiff-backup/examples.html
 
 rdiff-backup is an open source incremental file directory backup utility.
 
@@ -7299,8 +7382,8 @@ SystemRescueCD
 | Wikipedia: https://en.wikipedia.org/wiki/SystemRescueCD
 | Homepage: http://www.sysresccd.org/SystemRescueCd_Homepage
 | Download: http://www.sysresccd.org/Download
-| Project: http://sourceforge.net/projects/systemrescuecd/
-| DistroWatch: http://distrowatch.com/table.php?distribution=systemrescue
+| Project: https://sourceforge.net/projects/systemrescuecd/
+| DistroWatch: https://distrowatch.com/table.php?distribution=systemrescue
 | Docs: http://www.sysresccd.org/Online-Manual-EN
 
 SystemRescueCD is a :ref:`Linux` distribution which is
@@ -7345,7 +7428,7 @@ web framworks.
 Filesystem Hierarchy Standard
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard
-| Website: http://www.linuxfoundation.org/collaborate/workgroups/lsb/fhs
+| Website: https://wiki.linuxfoundation.org/lsb/fhs
 
 The Filesystem Hierarchy Standard (*FHS*) is a well-worn industry-supported
 system file naming structure.
@@ -7395,14 +7478,15 @@ HTML
 .. _json-:
 
 JSON
-~~~~~~~~~~~~~~~
+~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/JSON
-| Homepage: http://json.org/
-| Docs: http://learnxinyminutes.com/docs/json/
+| Homepage: https://json.org/
+| Spec: https://www.ecma-international.org/publications/standards/Ecma-404.htm
+| Docs: https://learnxinyminutes.com/docs/json/
 
 
 JSON is an object representation in :ref:`Javascript` syntax
-which is now supported by libraries for many languages.
+which is now supported by libraries written in many languages.
 
 A list of objects with ``key`` and ``value`` attributes in JSON syntax:
 
@@ -7411,7 +7495,7 @@ A list of objects with ``key`` and ``value`` attributes in JSON syntax:
     [
     { "key": "language", "value": "Javascript" },
     { "key": "version", "value": 1 },
-    { "key": "example", "value": true },
+    { "key": "example", "value": true }
     ]
 
 Machine-generated JSON is often not very readable, because it doesn't
@@ -7425,6 +7509,52 @@ for parsing and indenting ("prettifying") JSON from the commandline ::
   https://wrdrd.github.io/docs/consulting/knowledge-engineering#json
 
 
+.. index:: JSON5
+.. _json5:
+
+JSON5
+~~~~~~
+| Wikipedia:
+| Homepage: https://json5.org/
+| Src: https://github.com/json5/json5
+| Speci: https://spec.json5.org/
+
+JSON5 is JSON extended with support for a number of additional features:
+comments, trailing commas, IEEE 754 +/- infinity and NaN, hexadecimal
+numbers, leading and trailing decimal points, single-quoted strings,
+multiline strings, and escaped characters.
+
+- Regular JSON libraries do not support JSON5.
+
+
+.. code:: javascript
+
+    {
+    // comment
+    key:   [0, +1, 2., .3, NaN, +inf, -inf, 0xF, 'thing1', "thing2"],
+    "str": "this is a \
+    multi-line string", // trailing comma
+    }
+
+
+.. index:: JSON-lines
+.. _json-lines:
+
+JSON-lines
+~~~~~~~~~~~
+| Homepage: http://jsonlines.org/
+
+JSON-lines (newline-delimited JSON) is an informal spec
+for line-based processing of JSON e.g. for streaming records
+and unix pipes.
+
+
+.. code:: javascript
+
+    {"key": "red", "value": 1}
+    {"key": "green", "value": 2}
+
+
 .. index:: JSONLD
 .. index:: JSON-LD
 .. _json-ld-:
@@ -7432,13 +7562,13 @@ for parsing and indenting ("prettifying") JSON from the commandline ::
 JSON-LD
 ~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/JSON-LD
-| Homepage: http://json-ld.org
-| Docs: http://json-ld.org/playground/
+| Homepage: https://json-ld.org
+| Docs: https://json-ld.org/playground/
 | Docs: https://wrdrd.github.io/docs/consulting/knowledge-engineering#json-ld
 
 JSON-LD is a web standard for **Linked Data** in :ref:`JSON <json->`.
 
-An example from the *JSON-LD Playground* (`<http://goo.gl/xxZ410>`__):
+An example from the *JSON-LD Playground* (`<https://goo.gl/xxZ410>`__):
 
 .. code-block:: javascript
 
@@ -7488,7 +7618,7 @@ An example from the *JSON-LD Playground* (`<http://goo.gl/xxZ410>`__):
 MessagePack
 ~~~~~~~~~~~~~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/MessagePack
-| Homepage: http://msgpack.org/
+| Homepage: https://msgpack.org/
 
 
 MessagePack (*msgpack*) is a data interchange format
@@ -7545,7 +7675,7 @@ Notepad++
 | Wikipedia: https://en.wikipedia.org/wiki/Notepad%2B%2B
 | Homepage: https://notepad-plus-plus.org/
 | Src: https://github.com/notepad-plus-plus/notepad-plus-plus
-| Docs: http://docs.notepad-plus-plus.org/index.php/Main_Page
+| Docs: https://notepad-plus-plus.org/online-help/
 | ChocolateyPackage: https://chocolatey.org/packages/notepadplusplus
 
 Notepad++ is an open source text editor written in :ref:`C++`
@@ -7554,7 +7684,7 @@ for :ref:`Windows` which has tabbed editing.
 - Notepad++ supports tabbed editing.
 - Notepad++ plugins are written in :ref:`C` or :ref:`C++`:
 
-  - http://docs.notepad-plus-plus.org/index.php/Plugin_Central
+  - https://github.com/notepad-plus-plus/nppPluginList
   - https://github.com/notepad-plus-plus/nppPluginList/blob/master/src/pl.x64.json
 
 - npppythonscript is a plugin that enables scripting
@@ -7610,7 +7740,7 @@ GNU Emacs is an open source text editor
 written in Emacs :ref:`Lisp` and :ref:`C`
 that's available for :ref:`Linux`, :ref:`OSX`, and :ref:`Windows`.
 
-- Emacs pinky is allegedly a result of the default emacs 
+- Emacs pinky is allegedly a result of the default emacs
   ``Control`` key keybindings
   https://en.wikipedia.org/wiki/Emacs#Emacs_pinky
 - :ref:`Spacemacs` uses the ``Space`` key instead of
@@ -7623,10 +7753,10 @@ that's available for :ref:`Linux`, :ref:`OSX`, and :ref:`Windows`.
 Spacemacs
 +++++++++++
 | Wikipedia: https://en.wikipedia.org/wiki/Spacemacs
-| Homepage: http://spacemacs.org/
+| Homepage: https://wwww.spacemacs.org/
 | Src: https://github.com/syl20bnr/spacemacs
-| Docs: http://spacemacs.org/doc/DOCUMENTATION
-| Docs: http://spacemacs.org/doc/QUICK_START
+| Docs: https://www.spacemacs.org/doc/DOCUMENTATION
+| Docs: https://wwww.spacemacs.org/doc/QUICK_START
 
 Print help:
 
@@ -7687,7 +7817,7 @@ VSCode
 | Homepage: https://code.visualstudio.com/
 | Src: https://github.com/Microsoft/vscode
 | Download: https://code.visualstudio.com/Download
-| ChocolateyPkg: https://chocolatey.org/packages/vscode 
+| ChocolateyPkg: https://chocolatey.org/packages/vscode
 | Docs: https://code.visualstudio.com/docs
 | Docs: https://code.visualstudio.com/docs/getstarted/tips-and-tricks
 | Docs: https://code.visualstudio.com/docs/getstarted/keybindings
@@ -7703,7 +7833,7 @@ that's available for :ref:`Windows`, :ref:`Mac`, and :ref:`Linux`.
 * There is an official :ref:`Vim` extension for :ref:`VSCode`.
 * In VSCode, ``Ctrl+Space`` opens the
   context-sensitive Intellisense Code Completion
-* In VScode, ``Ctrl-p`` opens the quick open dialogue 
+* In VScode, ``Ctrl-p`` opens the quick open dialogue
 * IN VScode, ``Ctrl-Shift-p`` opens the command palette
   (which lists "all available commands based on your current context")
 
@@ -7721,8 +7851,8 @@ or with :ref:`Chocolatey`:
 Vim
 ~~~~
 | Wikipedia: `<https://en.wikipedia.org/wiki/Vim_(text_editor)>`__
-| Homepage: http://www.vim.org/
-| Docs: http://www.vim.org/docs.php
+| Homepage: https://www.vim.org/
+| Docs: https://www.vim.org/docs.php
 | Docs: https://learnxinyminutes.com/docs/vim/
 | Src: git https://github.com/vim/vim
 
@@ -7744,7 +7874,7 @@ that's available on very many platforms.
 * GVim reads a few vimrc configuration files in sequence (``:help gvimrc``)
 * MacVim is Vim for :ref:`OSX`
 * One way to write changes and exit vim: ``:wq!``
-  (Press ``<esc>``, Type ``:wq!``, Press Enter) 
+  (Press ``<esc>``, Type ``:wq!``, Press Enter)
 * There are many plugins for vim.
 * NERDTree is an example of a vim plugin:
   https://github.com/scrooloose/nerdtree (``:help nerdtree``)
