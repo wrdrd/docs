@@ -548,58 +548,6 @@ Pacman is an open source package manager which installs
 ``.pkg.tar.xz`` files for :ref:`Arch` Linux.
 
 
-.. index:: Pants
-.. index:: Pants Build
-.. _pants build:
-.. _pants:
-
-Pants Build
-~~~~~~~~~~~
-| Homepage: https://pantsbuild.github.io/
-| Src: git https://github.com/pantsbuild/pants
-| Docs: https://pantsbuild.github.io/first_concepts.html
-| Docs: https://pantsbuild.github.io/install.html
-| Docs: https://pantsbuild.github.io/first_tutorial.html
-| Docs: https://pantsbuild.github.io/JVMProjects.html
-| Docs: https://pantsbuild.github.io/scala.html
-| Docs: https://pantsbuild.github.io/python-readme.html
-| Docs: https://pantsbuild.github.io/pex_design.html
-| Docs: https://pantsbuild.github.io/build_files.html
-| Docs: https://pantsbuild.github.io/build_dictionary.html
-| Docs: https://pantsbuild.github.io/options_reference.html
-| Docs: https://pantsbuild.github.io/export.html
-| Docs: https://pantsbuild.github.io/internals.html
-| Docs: https://pantsbuild.github.io/howto_contribute.html
-
-Pants Build is a build tool for :ref:`JVM` [:ref:`Java`, :ref:`Scala`,
-:ref:`Android`], :ref:`C++`, :ref:`Go`, :ref:`Haskell`, and :ref:`Python`
-[:ref:`CPython`] software projects.
-
-* A Pants ``BUILD`` file defines one or more build targets:
-
-  + Pants can build *Deployable Bundles*, *Runnable Binaries*,
-    *Importable Code*, *Tests*, and *Generated Code* (e.g.
-    Java from :ref:`Thrift` ``.thrift`` definitions).
-  + Pants can build :ref:`PEX` files (*Python EXecutables*);
-    which are essentially executable ZIP files
-    with inlined dependency sets.
-  + Pants can build :ref:`DEX` files (:ref:`Android` *Dalvik Executables*)
-  + https://pantsbuild.github.io/build_files.html
-  + https://pantsbuild.github.io/build_dictionary.html
-  + https://pantsbuild.github.io/options_reference.html
-
-* A Pants ``pants.ini`` file in a top-level source directory
-  defines options for binaries, tools, goals, tasks (sub-goals)
-
-  + https://pantsbuild.github.io/setup_repo.html#configuring-with-pantsini
-  + https://pantsbuild.github.io/options_reference.html
-
-* :ref:`Vim` plugin for Pants Build ``BUILD`` syntax:
-  https://github.com/pantsbuild/vim-pants
-* :ref:`IntelliJ` plugin for Pants Build:
-  https://github.com/pantsbuild/intellij-pants-plugin
-
-
 .. index:: PEX
 .. _pex:
 
@@ -2642,6 +2590,8 @@ and binary format for the web.
 
 * WebAssembly is initially derived from asm.js and PNaCL.
 * WebAssembly is an industry-wide effort.
+* :ref:`LLVM` can generate WebAssembly from e.g. :ref:`C` and :ref:`C++`
+  code.
 
 
 .. index:: YAML
@@ -2795,8 +2745,21 @@ GCC
 The GNU Compiler Collection started as a Free and Open Source
 compiler for :ref:`C`.
 
-There are now GCC frontends for many languages, including
-:ref:`C++`, :ref:`Fortran`, :ref:`Java`, and :ref:`Go`.
+- There are now GCC frontends for many languages, including
+  :ref:`C++`, :ref:`Fortran`, :ref:`Java`, and :ref:`Go`.
+- The :ref:`C++` GCC frontend binary is called ``g++``.
+
+
+.. index:: GNU Linker
+.. index:: ld
+.. _ld:
+
+GNU Linker
+~~~~~~~~~~~~
+| Wikipedia: `<https://en.wikipedia.org/wiki/Linker_(computing)#GNU_linker>`__
+
+The GNU Linker is the GNU implementation of the ``ld`` command
+for linking object files and libraries.
 
 
 .. index:: LLVM
@@ -2815,8 +2778,11 @@ LLVM
 LLVM "*Low Level Virtual Machine*" is a reusable compiler infrastructure
 with frontends for many languages.
 
-* :ref:`Clang`
-* :ref:`PyPy`
+* :ref:`Clang` is an LLVM frontend for C-based languages like
+  :ref:`C`, :ref:`C++`, :ref:`CUDA`, and :ref:`OpenCL`.
+- There is a :ref:`WASM` LLVM backend:
+  LLVM can produce :ref:`WebAssembly` binaries.
+- The :ref:`C++` LLVM frontend binary is called ``clang++``.
 
 
 
@@ -3581,6 +3547,246 @@ and networked booting server with support for DNS, DHCP, TFTP, and PXE.
 See also: `crowbar`, :ref:`OpenStack` Ironic bare-metal deployment
 
 
+.. index:: JuJu
+.. _juju:
+
+Juju
+~~~~~~
+| Wikipedia: `<https://en.wikipedia.org/wiki/Juju_(software)>`__
+| Homepage: https://jaas.ai/
+| Src: https://github.com/juju/juju
+| Docs: https://jaas.ai/docs
+| Docs: https://jaas.ai/search?type=charm
+| TcpPort: 8001
+
+Juju is a :ref:`Configuration Management` tool
+written in :ref:`Python`
+which runs Juju Charms
+written in :ref:`Python`
+on one or more systems over SSH,
+for managing
+one or more physical and virtual machines running :ref:`Ubuntu`.
+
+* https://github.com/juju/juju/issues/470
+
+
+.. index:: osquery
+.. _osquery:
+
+osquery
+~~~~~~~~
+| Homepage: https://osquery.io/
+| Src: https://github.com/facebook/osquery
+| Docs: https://osquery.io/docs/tables/
+| Docs: https://osquery.readthedocs.io/en/stable/
+
+osquery is a tool for reading and querying
+many sources of system data
+with SQL
+for :ref:`OSX` and :ref:`Linux`.
+
+* https://docs.saltstack.com/en/develop/ref/modules/all/salt.modules.osquery.html
+* https://github.com/westurner/dotfiles/blob/develop/scripts/osquery-all.sh
+
+
+.. index:: Puppet
+.. _puppet:
+
+Puppet
+~~~~~~~~
+| Wikipedia: `<https://en.wikipedia.org/wiki/Puppet_(software)>`__
+| Homepage: https://puppetlabs.com/
+| Docs: https://puppet.com/docs
+| Docs: https://puppet.com/docs/puppet/
+| Src: git https://github.com/puppetlabs
+| TcpPort: 8140
+
+Puppet is a :ref:`Configuration Management` system
+written in :ref:`Ruby`
+which runs Puppet Modules
+written in Puppet DSL or :ref:`Ruby`
+for managing
+one or more physical and virtual machines running various operating systems.
+
+* https://github.com/nanliu/puppet-transport
+
+
+.. index:: Salt
+.. _salt:
+
+Salt
+~~~~~~~~~~~~~~~
+| Wikipedia: `<https://en.wikipedia.org/wiki/Salt_(software)>`_
+| Homepage: https://www.saltstack.com
+| Src: git https://github.com/saltstack/salt
+| Docs: https://docs.saltstack.com/en/latest/
+| Docs: https://docs.saltstack.com/en/latest/salt-modindex.html
+| Docs: https://docs.saltstack.com/en/latest/ref/states/all/index.html
+| Docs: https://docs.saltstack.com/en/latest/ref/clients/index.html#python-api
+| Docs: https://docs.saltstack.com/en/latest/topics/development/hacking.html
+| Docs: https://docs.saltstack.com/en/latest/glossary.html
+| Pypi: https://pypi.python.org/pypi/salt
+| Twitter: https://twitter.com/SaltStackInc
+| IRC: ``#salt``
+| TcpPort: 4505 (salt zmq)
+| TcpPort: 4506 (salt zmq)
+| TcpPort: 22 (salt-ssh)
+
+Salt is a :ref:`Configuration Management` system
+written in :ref:`Python`
+which runs Salt Formulas
+written in :ref:`YAML`, :ref:`Jinja2`, :ref:`Python`
+for managing
+one or more physical and virtual machines running various operating systems.
+
+
+
+.. index:: Software Build Tools
+.. index:: Build Automation Tools
+.. _software build tools:
+.. _build automation tools:
+
+Build Automation Tools
+=======================
+| Wikipedia: https://en.wikipedia.org/wiki/Build_automation
+
+- https://en.wikipedia.org/wiki/List_of_build_automation_software
+
+
+.. index:: Autotools
+.. _autoconf:
+.. _automake:
+.. _autotools:
+
+GNU Autotools
+~~~~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/GNU_Autotools
+| Homepage: https://www.gnu.org/software/automake/
+| Homepage: https://www.gnu.org/software/automake/
+| Docs: https://www.gnu.org/software/autoconf/manual/autoconf.html
+| Docs: https://www.gnu.org/software/automake/manual/automake.html
+| Docs: https://www.gnu.org/software/automake/manual/automake.html#Standard-Configuration-Variables
+
+GNU Autotools (*GNU Build System*) are a set of tools for
+software build automation: autoconf, automake, libtool, and gnulib.
+
+- The traditional ``./configure --help; make; make install``
+  build workflow comes from the GNU Build System.
+- Autoconf uses a ``configure.ac`` configure *include* file
+  in generating a ``configure`` script that checks
+  for platform and software dependencies and caches
+  the results in a ``config.status`` script,
+  which generates ``config.h`` C header file that caches the results
+- Automake uses a ``Makefile.am`` to generate a
+  ``Makefile.in`` makefile *include* file
+  that generates a :ref:`GNU Make` ``Makefile``
+- GNU Coding Standards define a number of standard configuration
+  variables: ``CC``, ``CFLAGS``, ``CXX``, ``CXXFLAGS``, ``LDFLAGS``,
+  ``CPPFLAGS`` which tools such as :ref:`GNU Make` automatically
+  add to e.g. :ref:`GCC` (and :ref:`ld`) build program arguments
+
+.. code:: bash
+
+    $ # autoconf  # configure.ac -> ./configure
+    $ ./configure --help
+    $ ./configure --prefix=/usr/local --with-this-or-that
+    make
+
+
+.. index:: Bake
+.. _bake:
+
+Bake
+~~~~~~
+| Src: https://github.com/kennethreitz/bake
+
+Bake is a free and open source software build automation tool
+similar in form and function to :ref:`Make`.
+
+- Bake uses ``Bakefile`` files to describe builds.
+- Bakefiles can contain e.g. :ref:`Bash` and :ref:`Python` scripts
+  (instead of :ref:`Make` syntax)
+
+
+
+.. index:: BUILD
+.. _build:
+
+BUILD
+~~~~~~~
+A number of tools use (incompatible)
+``BUILD`` files to describe software builds:
+
+- Google :ref:`Blaze`
+- :ref:`Bazel`
+- Twitter :ref:`Pants Build`
+
+
+.. index:: Google Blaze
+.. index:: Blaze
+.. _google blaze:
+.. _blaze:
+
+Blaze
+~~~~~~~
+Blaze is an internal software build automation tool developed by Google.
+
+- Blaze was the first build tool to use :ref:`BUILD` files.
+- :ref:`Bazel` is an open source rewrite of Blaze.
+
+
+.. index:: Bazel
+.. _bazel:
+
+Bazel
+~~~~~~~
+| Wikipedia: `<https://en.wikipedia.org/wiki/Bazel_(software)>`__
+| Homepage: https://bazel.build/
+| Src: https://github.com/bazelbuild/bazel
+| Docs: https://docs.bazel.build/
+| Docs: https://docs.bazel.build/versions/1.2.0/build-ref.html
+
+Bazel is a free and open source software build automation tool
+developed as a rewrite of Google :ref:`Blaze`.
+
+- A ``WORKSPACE`` or ``WORKSPACE.bazel``  file indicates the root of a
+  Bazel workspace.
+- Bazel uses :ref:`BUILD` (or ``BUILD.bazel``) files to describe builds.
+- :ref:`Buck` was released before :ref:`Bazel` was open-sourced.
+
+
+.. index:: BuckBuild
+.. index:: Buck
+.. _buck:
+
+Buck
+~~~~~~
+| Wikipedia: `<https://en.wikipedia.org/wiki/Buck_(software)>`__
+| Homepage: https://buck.build/
+| Src: https://github.com/facebook/buck
+| Docs: https://buck.build/setup/getting_started.html
+| Docs: https://buck.build/about/overview.html
+
+- Buck uses ``BUCK`` files to describe builds.
+
+
+.. index:: CMake
+.. _cmake:
+
+CMake
+~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/CMake
+| Homepage: https://cmake.org/
+| Src: https://gitlab.kitware.com/cmake/cmake
+| Docs: https://cmake.org/cmake/help/latest/
+| Docs: https://cmake.org/cmake/help/latest/guide/tutorial/
+
+CMake is a free and open source software build automation tool.
+
+- CMake generates build configurations for a number of tools:
+  Unix Makefiles, Ninja, Visual Studio
+
+
 .. index:: Gradle
 .. _gradle:
 
@@ -3644,29 +3850,6 @@ Jake is a :ref:`Javascript` build tool written in :ref:`Javascript`
 (for :ref:`Node.js`) similar to :ref:`Make` or :ref:`Rake`.
 
 
-.. index:: JuJu
-.. _juju:
-
-Juju
-~~~~~~
-| Wikipedia: `<https://en.wikipedia.org/wiki/Juju_(software)>`__
-| Homepage: https://jaas.ai/
-| Src: https://github.com/juju/juju
-| Docs: https://jaas.ai/docs
-| Docs: https://jaas.ai/search?type=charm
-| TcpPort: 8001
-
-Juju is a :ref:`Configuration Management` tool
-written in :ref:`Python`
-which runs Juju Charms
-written in :ref:`Python`
-on one or more systems over SSH,
-for managing
-one or more physical and virtual machines running :ref:`Ubuntu`.
-
-* https://github.com/juju/juju/issues/470
-
-
 .. index:: Make
 .. _make:
 
@@ -3675,11 +3858,11 @@ Make
 | Wikipedia: `<https://en.wikipedia.org/wiki/Make_(software)>`_
 | Homepage:  https://www.gnu.org/software/make/
 | Project: https://savannah.gnu.org/projects/make/
-| Docs:  https://www.gnu.org/software/make/manual/make.html
 | Src: git git://git.savannah.gnu.org/make.git
+| Docs:  https://www.gnu.org/software/make/manual/make.html
 
 
-GNU Make is a classic, ubiquitous software build tool
+GNU Make is a classic, ubiquitous software build automation tool
 designed for file-based source code compilation
 which builds a directed acyclic graph (DAG).
 
@@ -3714,276 +3897,58 @@ Cons
    make test
 
 
-.. index:: osquery
-.. _osquery:
+.. index:: Pants
+.. index:: Pants Build
+.. _pants build:
+.. _pants:
+
+Pants Build
+~~~~~~~~~~~
+| Homepage: https://pantsbuild.github.io/
+| Src: git https://github.com/pantsbuild/pants
+| Docs: https://pantsbuild.github.io/first_concepts.html
+| Docs: https://pantsbuild.github.io/install.html
+| Docs: https://pantsbuild.github.io/first_tutorial.html
+| Docs: https://pantsbuild.github.io/JVMProjects.html
+| Docs: https://pantsbuild.github.io/scala.html
+| Docs: https://pantsbuild.github.io/python-readme.html
+| Docs: https://pantsbuild.github.io/pex_design.html
+| Docs: https://pantsbuild.github.io/build_files.html
+| Docs: https://pantsbuild.github.io/build_dictionary.html
+| Docs: https://pantsbuild.github.io/options_reference.html
+| Docs: https://pantsbuild.github.io/export.html
+| Docs: https://pantsbuild.github.io/internals.html
+| Docs: https://pantsbuild.github.io/howto_contribute.html
+
+Pants Build is a build tool for :ref:`JVM` [:ref:`Java`, :ref:`Scala`,
+:ref:`Android`], :ref:`C++`, :ref:`Go`, :ref:`Haskell`, :ref:`Node`,
+and :ref:`Python`
+[:ref:`CPython`] software projects.
+
+* A Pants :ref:`BUILD` file defines one or more build targets:
+
+  + Pants can build *Deployable Bundles*, *Runnable Binaries*,
+    *Importable Code*, *Tests*, and *Generated Code* (e.g.
+    Java from :ref:`Thrift` ``.thrift`` definitions).
+  + Pants can build :ref:`PEX` files (*Python EXecutables*);
+    which are essentially executable ZIP files
+    with inlined dependency sets.
+  + Pants can build :ref:`DEX` files (:ref:`Android` *Dalvik Executables*)
+  + https://pantsbuild.github.io/build_files.html
+  + https://pantsbuild.github.io/build_dictionary.html
+  + https://pantsbuild.github.io/options_reference.html
+
+* A Pants ``pants.ini`` file in a top-level source directory
+  defines options for binaries, tools, goals, tasks (sub-goals)
+
+  + https://pantsbuild.github.io/setup_repo.html#configuring-with-pantsini
+  + https://pantsbuild.github.io/options_reference.html
+
+* :ref:`Vim` plugin for Pants Build ``BUILD`` syntax:
+  https://github.com/pantsbuild/vim-pants
+* :ref:`IntelliJ` plugin for Pants Build:
+  https://github.com/pantsbuild/intellij-pants-plugin
 
-osquery
-~~~~~~~~
-| Homepage: https://osquery.io/
-| Src: https://github.com/facebook/osquery
-| Docs: https://osquery.io/docs/tables/
-| Docs: https://osquery.readthedocs.io/en/stable/
-
-osquery is a tool for reading and querying
-many sources of system data
-with SQL
-for :ref:`OSX` and :ref:`Linux`.
-
-* https://docs.saltstack.com/en/develop/ref/modules/all/salt.modules.osquery.html
-* https://github.com/westurner/dotfiles/blob/develop/scripts/osquery-all.sh
-
-
-Pants
-~~~~~~
-See: :ref:`Pants Build`
-
-
-.. index:: Puppet
-.. _puppet:
-
-Puppet
-~~~~~~~~
-| Wikipedia: `<https://en.wikipedia.org/wiki/Puppet_(software)>`__
-| Homepage: https://puppetlabs.com/
-| Docs: https://puppet.com/docs
-| Docs: https://puppet.com/docs/puppet/
-| Src: git https://github.com/puppetlabs
-| TcpPort: 8140
-
-Puppet is a :ref:`Configuration Management` system
-written in :ref:`Ruby`
-which runs Puppet Modules
-written in Puppet DSL or :ref:`Ruby`
-for managing
-one or more physical and virtual machines running various operating systems.
-
-* https://github.com/nanliu/puppet-transport
-
-
-.. index:: Salt
-.. _salt:
-
-Salt
-~~~~~~~~~~~~~~~
-| Wikipedia: `<https://en.wikipedia.org/wiki/Salt_(software)>`_
-| Homepage: https://www.saltstack.com
-| Src: git https://github.com/saltstack/salt
-| Docs: https://docs.saltstack.com/en/latest/
-| Docs: https://docs.saltstack.com/en/latest/salt-modindex.html
-| Docs: https://docs.saltstack.com/en/latest/ref/states/all/index.html
-| Docs: https://docs.saltstack.com/en/latest/ref/clients/index.html#python-api
-| Docs: https://docs.saltstack.com/en/latest/topics/development/hacking.html
-| Docs: https://docs.saltstack.com/en/latest/glossary.html
-| Pypi: https://pypi.python.org/pypi/salt
-| Twitter: https://twitter.com/SaltStackInc
-| IRC: ``#salt``
-| TcpPort: 4505 (salt zmq)
-| TcpPort: 4506 (salt zmq)
-| TcpPort: 22 (salt-ssh)
-
-
-Salt is a :ref:`Configuration Management` system
-written in :ref:`Python`
-which runs Salt Formulas
-written in :ref:`YAML`, :ref:`Jinja2`, :ref:`Python`
-for managing
-one or more physical and virtual machines running various operating systems.
-
-Salt runs modules defined by states over a transport.
-Salt transports include:
-
-* :ref:`ZeroMQ` Transport (TCP, msgpack) (libzmq, (default)
-* TCP Transport
-* RAET: Reliable Asynchronous Event Transport (UDP, msgpack) (libsodium, libnacl)
-* :term:`salt-ssh <salt ssh>` runs salt states over SSH
-
-.. glossary::
-
-   Salt Top File
-      A Salt *Top File* (``top.sls``) defines the
-      Root of a Salt Environment.
-
-      The Top File contains:
-
-      * YAML + Jinja2 (SLS)
-      * References to :term:`Salt States` defined in :term:`Salt
-        Formulas` (e.g. ``- docker``)
-      * Jinja2 logic
-
-        * ``{% if %}``
-        * ``{% for x in iterable %}``
-        * Conditional on :term:`Salt Grains`
-
-   Salt Environment
-      A Salt Environment is a
-      folder of :term:`Salt States` with a ``top.sls`` :ref:`Salt Top File`.
-
-      A :term:`Salt Master` and/or a (standalone) :term:`Salt Minion`
-      maintain a Salt Environment.
-
-   Salt Bootstrap
-      The Salt Bootstrap script (``bootstrap-salt.sh``) is a shell script
-      installer for a
-      :term:`salt master` and/or :term:`salt minion`.
-
-      Salt Bootstrap can install from source (``git``),
-      from (mostly) Python packages served from e.g. :ref:`PyPI`, with
-      :ref:`pip`, OS Packages (e.g. :ref:`deb`, :ref:`rpm`).
-
-      * ``bootstrap-salt.sh -h``:
-        https://github.com/saltstack/salt-bootstrap/blob/stable/bootstrap-salt.sh
-
-   Salt Minion
-      A Salt Minion is a
-      daemon process which executes
-      the :ref:`Salt Modules <salt module>` defined by
-      :ref:`Salt States <salt state>` on the local machine.
-
-
-
-
-      Can run as a background daemon.
-      Can retrieve and execute states from a salt master
-
-      Can execute local states in a standalone minion setup::
-
-         salt-call --local grains.items
-
-   Salt Minion ID
-      Machine ID value uniquely identifying a minion instance
-      to a Salt Master.
-
-      By default the minion ID is set to the FQDN
-
-      .. code-block:: bash
-
-         python -c 'import socket; print(socket.getfqdn())'
-
-      The minion ID can be set explicitly in two ways:
-
-      * /etc/salt/minion.conf::
-
-         id: devserver-123.example.org
-
-      * /etc/salt/minion_id::
-
-         $ hostname -f > /etc/salt/minion_id
-         $ cat /etc/salt/minion_id
-         devserver-123.example.org
-
-   Salt Master
-      Server daemon which compiles pillar data for and executes commands
-      on Salt Minions::
-
-         salt '*' grains.items
-
-   Salt SSH
-      Execute salt commands and states over SSH without a minion process::
-
-          salt-ssh '*' grains.items
-
-   Salt Grains
-      Static system information keys and values
-
-      * hostname
-      * operating system
-      * ip address
-      * interfaces
-
-      Show grains on the local system::
-
-         salt-call --local grains.items
-
-   Salt Modules
-      Remote execution functions for files, packages, services, commands.
-
-      Can be called with salt-call
-
-   Salt States
-      Salt states are
-      graphs of nodes, edges, and attributes
-      which are templated and compiled into
-      ordered sequences of system configuration steps.
-
-      * Salt states can be expressed as ``.sls`` :ref:`YAML` files
-        (transformed by the ``sls`` :term:`Salt Renderer <salt renderers>`)
-        parsed by ``salt.states.<state>.py``.
-
-      Salt States files are processed as :ref:`Jinja2` templates (by default);
-      they can access system-specific grains and pillar data at compile time.
-
-   Salt Formulas
-      Salt Formulas are reusable packages of salt states
-      and example pillar configuration data.
-
-      | Docs: https://docs.saltstack.com/en/latest/topics/development/conventions/formulas.html
-
-      * https://github.com/saltstack-formulas
-      * https://github.com/saltstack-formulas/salt-formula/blob/master/pillar.example#L136 #"salt_formulas"
-      * https://github.com/westurner/cookiecutter-saltformula
-
-   Salt Renderers
-      A Salt Renderer is a transformation function
-      (e.g. a templating engine (default: :ref:`Jinja2`))
-      for transforming / preprocessing :term:`Salt States`,
-      :term:`Salt Pillar` files, and really any text document.
-
-      | Docs: https://docs.saltstack.com/en/develop/ref/renderers/
-
-      * https://docs.saltstack.com/en/latest/ref/renderers/all/salt.renderers.jinja.html
-      * Jinja + YAML, Mako + YAML, Wempy + YAML, Jinja + json, Mako + json, Wempy + json.
-
-   Salt Pillar
-      A Salt Pillar is composed of
-      nested key value pillar
-      over interface for storing and making available
-      global and host-specific values for minions:
-      values like hostnames, usernames, and keys.
-
-      * Pillar configuration must be kept separate from states
-        (e.g. users, keys) but works the same way.
-
-      * In a master/minion configuration, minions do not have access to
-        the whole pillar.
-
-      | Docs: https://docs.saltstack.com/en/develop/ref/pillar/
-      | Docs: https://docs.saltstack.com/en/develop/ref/pillar/all/#all-salt-pillars
-
-      * https://github.com/saltstack-formulas/salt-formula/blob/master/pillar.example
-
-   Salt Cloud
-      Salt Cloud can provision cloud image, instance, and networking services
-      with various cloud providers (:ref:`libcloud`):
-
-      + Google Compute Engine (GCE) [KVM]
-      + Amazon EC2 [Xen]
-      + Rackspace Cloud [KVM]
-      + OpenStack [https://wiki.openstack.org/wiki/HypervisorSupportMatrix]
-      + Linux LXC (Cgroups)
-      + KVM
-
-
-* Salt output formats (``salt --out=pprint``, ``salt-call
-  --out=pprint``, ``salt-call --help``)::
-
-      grains
-      highstate
-      json
-      key
-      nested
-      newline_values_only
-      no_return
-      overstatestage
-      pprint
-      quiet
-      raw
-      txt
-      virt_query
-      yaml
-
-* A few examples of :ref:`salt` commandline usage in a :ref:`Makefile <make>`:
-  https://github.com/westurner/provis/blob/master/Makefile
-  (``make salt_<TAB>``)
 
 
 .. index:: Virtualization
