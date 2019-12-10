@@ -1904,6 +1904,81 @@ third-generation programming language
 which adds object orientation and a standard library to :ref:`C`.
 
 * C++ is an ISO specification: C++98, C++03, C++11 (C++0x), C++14, [ C++17 ]
+* There are many template libraries for C++:
+  https://en.wikipedia.org/wiki/List_of_C%2B%2B_template_libraries
+
+
+.. index:: Standard Template Library
+.. _standard template library:
+
+Standard Template Library
+++++++++++++++++++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/Standard_Template_Library
+
+
+.. index:: libstdc++
+.. _libstdc++:
+
+-----------
+libstdc++
+-----------
+| Src: https://gcc.gnu.org/git/?p=gcc.git;a=tree;f=libstdc%2B%2B-v3
+| Src: https://github.com/gcc-mirror/gcc/tree/master/libstdc%2B%2B-v3
+| Docs: https://gcc.gnu.org/onlinedocs/libstdc++/
+
+libstdc++ is the
+free and open source
+GNU :ref:`C++` :ref:`Standard Template Library`.
+
+- :ref:`GCC` (:ref:`G++`) typically builds with libstdc++.
+
+
+-------------
+libc++
+-------------
+| Homepage: https://libcxx.llvm.org/
+| Src: https://github.com/llvm/llvm-project/tree/master/libcxx/
+| Docs: https://libcxx.llvm.org/docs/
+
+libc++ (libcxx) is the
+free and open source
+:ref:`LLVM`
+:ref:`C++` :ref:`Standard Template Library`.
+
+- :ref:`Clang` (:ref:`clang++`) typically builds with libc++ (libcxx).
+
+
+.. index:: Microsoft STL
+.. _microsoft stl:
+
+---------------
+Microsoft STL
+---------------
+| Src: https://github.com/microsoft/STL
+
+Microsoft STL is Microsoft's
+free and open source
+implementation of the :ref:`C++`
+:ref:`Standard Template Library`.
+
+* Microsoft Visual C++ typically builds with the Microsoft STL.
+
+
+.. index:: Boost
+.. _boost:
+
+Boost
++++++++
+| Wikipedia: `<https://en.wikipedia.org/wiki/Boost_(C%2B%2B_libraries)>`__
+| Homepage: https://www.boost.org/
+| Src: https://github.com/boostorg/boost
+| Docs: https://www.boost.org/doc/
+| Docs: https://www.boost.org/doc/libs/release/
+| Docs: https://www.boost.org/doc/libs/release/more/getting_started/
+| Docs: https://www.boost.org/doc/libs/release/libs/python/doc/html/
+
+Boost is a free and open source
+set of :ref:`C++` libraries for doing lots of things in C++.
 
 
 .. index:: Fortran
