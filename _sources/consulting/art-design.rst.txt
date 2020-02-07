@@ -1439,9 +1439,7 @@ MilkDrop Presets
 
 ProjectM
 ~~~~~~~~
-| Homepage: http://projectm.sourceforge.net/
-| Project: http://sourceforge.net/projects/projectm/
-| Source: git git://git.code.sf.net/p/projectm/code
+| Source: https://github.com/projectM-visualizer/projectm
 
 ProjectM is an :ref:`open source` implementation
 of :ref:`MilkDrop` with :ref:`OpenGL`.

@@ -65,6 +65,10 @@ div.body p {
     word-wrap: break-word;
 }
 
+div.body li p {
+    margin-bottom: 4px;
+}
+
 #sidebar-wrapper {
     overflow-y: auto;
     height: 100%;
@@ -95,10 +99,6 @@ body {
     background: #f8f8f8;
 }
 
-div.document ul {
-    padding-left: 18px;
-}
-
 div.footer-relbar {
     margin-top: 0;
     margin-bottom: 10px;
@@ -114,10 +114,6 @@ footer {
     background: white;
     border: 1px solid #e7e7e7;
     margin-top: -1px;
-}
-
-ul.simple {
-    margin-bottom:10px;
 }
 
 span.pre {
