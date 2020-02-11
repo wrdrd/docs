@@ -18,3 +18,5 @@ ghp-import
 
 pygments-markdown-lexer
 #-e git+https://github.com/jhermann/pygments-markdown-lexer#egg=pygments-markdown-lexer
+
+-e git+https://github.com/westurner/wrd_sphinx_theme#egg=wrd_sphinx_theme
