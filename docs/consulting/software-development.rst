@@ -548,7 +548,7 @@ Given-When-Then
     * - Vows
       - test suite, ``@Vows.Batch``, ``Vows.Context``, ``topic()``
       - vow -- ``def should_quack(self, topic):``
-      - vow -- ``    expect(topic.quack()).to_equal(value)``
+      - vow -- ``expect(topic.quack()).to_equal(value)``
 
 
 .. index:: User Story
