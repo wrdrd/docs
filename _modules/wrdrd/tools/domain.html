@@ -151,7 +151,7 @@
   <h1>Source code for wrdrd.tools.domain</h1><div class="highlight"><pre>
 <span></span><span class="ch">#!/usr/bin/env python</span>
 <span class="c1"># encoding: utf-8</span>
-<span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">print_function</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span>
 <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">wrdrd.tools.domain</span>
 
@@ -356,7 +356,7 @@
     <span class="n">output</span> <span class="o">=</span> <span class="n">proc</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">rstrip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">output</span><span class="p">:</span>
         <span class="n">log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;TXT&#39;</span><span class="p">,</span> <span class="n">record</span><span class="o">=</span><span class="n">line</span><span class="p">)</span>
-        <span class="n">expected</span> <span class="o">=</span> <span class="s2">u&quot;</span><span class="se">\&quot;</span><span class="s2">v=spf1 include:_spf.google.com ~all</span><span class="se">\&quot;</span><span class="s2">&quot;</span>
+        <span class="n">expected</span> <span class="o">=</span> <span class="sa">u</span><span class="s2">&quot;</span><span class="se">\&quot;</span><span class="s2">v=spf1 include:_spf.google.com ~all</span><span class="se">\&quot;</span><span class="s2">&quot;</span>
         <span class="k">if</span> <span class="n">line</span> <span class="o">==</span> <span class="n">expected</span><span class="p">:</span>
             <span class="k">return</span> <span class="mi">0</span>
 
@@ -385,7 +385,7 @@
     <span class="n">output</span> <span class="o">=</span> <span class="n">proc</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">rstrip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">output</span><span class="p">:</span>
         <span class="n">log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;TXT&#39;</span><span class="p">,</span> <span class="n">record</span><span class="o">=</span><span class="n">line</span><span class="p">)</span>
-        <span class="n">expected</span> <span class="o">=</span> <span class="s2">u&quot;</span><span class="se">\&quot;</span><span class="s2">v=DMARC1&quot;</span>  <span class="c1"># ... &quot;\; p=none\; rua=mailto:&quot;</span>
+        <span class="n">expected</span> <span class="o">=</span> <span class="sa">u</span><span class="s2">&quot;</span><span class="se">\&quot;</span><span class="s2">v=DMARC1&quot;</span>  <span class="c1"># ... &quot;\; p=none\; rua=mailto:&quot;</span>
         <span class="k">if</span> <span class="n">line</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="n">expected</span><span class="p">):</span>
             <span class="k">if</span> <span class="s1">&#39;p=&#39;</span> <span class="ow">in</span> <span class="n">line</span><span class="p">:</span>
                 <span class="k">return</span> <span class="mi">0</span>
@@ -427,7 +427,7 @@
     <span class="n">output</span> <span class="o">=</span> <span class="n">proc</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">rstrip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">output</span><span class="p">:</span>
         <span class="n">log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;TXT&#39;</span><span class="p">,</span> <span class="n">record</span><span class="o">=</span><span class="n">line</span><span class="p">)</span>
-        <span class="n">expected</span> <span class="o">=</span> <span class="s2">u&quot;</span><span class="se">\&quot;</span><span class="s2">v=DKIM1&quot;</span>  <span class="c1"># ... &quot;\; p=none\; rua=mailto:&quot;</span>
+        <span class="n">expected</span> <span class="o">=</span> <span class="sa">u</span><span class="s2">&quot;</span><span class="se">\&quot;</span><span class="s2">v=DKIM1&quot;</span>  <span class="c1"># ... &quot;\; p=none\; rua=mailto:&quot;</span>
         <span class="k">if</span> <span class="n">line</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="n">expected</span><span class="p">):</span>
             <span class="k">if</span> <span class="s1">&#39;k=&#39;</span> <span class="ow">in</span> <span class="n">line</span> <span class="ow">and</span> <span class="s1">&#39;p=&#39;</span> <span class="ow">in</span> <span class="n">line</span><span class="p">:</span>
                 <span class="k">return</span> <span class="mi">0</span>
@@ -622,7 +622,7 @@
     <span class="k">return</span> <span class="n">returncode</span></div>
 
 
-<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
     <span class="kn">import</span> <span class="nn">sys</span>
     <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">main</span><span class="p">())</span>
 </pre></div>

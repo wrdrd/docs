@@ -316,19 +316,6 @@ Mastery Learning
 - stltoday article
 
 
-.. index:: Differentiated instruction
-
-Differentiated instruction
------------------------------
-| Wikipedia: https://en.wikipedia.org/wiki/Differentiated_instruction
-
-
-.. index:: Flipped classroom
-
-Flipped classroom
-------------------
-
-
 
 .. index:: Teaching as a Profession
 .. _teaching as a profession:

@@ -239,24 +239,26 @@
 <div class="line">Twitter: <a class="reference external" href="https://twitter.com/hashtag/LinkedReproducibility">https://twitter.com/hashtag/LinkedReproducibility</a></div>
 </div>
 <ul class="simple">
-<li><a class="reference internal" href="data-science#data-science"><span class="std std-ref">Data Science</span></a></li>
-<li><a class="reference internal" href="knowledge-engineering#knowledge-engineering"><span class="std std-ref">Knowledge Engineering</span></a> &gt; <a class="reference internal" href="knowledge-engineering#linked-data"><span class="std std-ref">Linked Data</span></a><ul>
-<li><a class="reference internal" href="units#units"><span class="std std-ref">Units</span></a> &gt; <a class="reference internal" href="units#rdf-and-units"><span class="std std-ref">RDF and Units</span></a> [<a class="reference internal" href="knowledge-engineering#qudt"><span class="std std-ref">QUDT</span></a>,]</li>
+<li><p><a class="reference internal" href="data-science#data-science"><span class="std std-ref">Data Science</span></a></p></li>
+<li><p><a class="reference internal" href="knowledge-engineering#knowledge-engineering"><span class="std std-ref">Knowledge Engineering</span></a> &gt; <a class="reference internal" href="knowledge-engineering#linked-data"><span class="std std-ref">Linked Data</span></a></p>
+<ul>
+<li><p><a class="reference internal" href="units#units"><span class="std std-ref">Units</span></a> &gt; <a class="reference internal" href="units#rdf-and-units"><span class="std std-ref">RDF and Units</span></a> [<a class="reference internal" href="knowledge-engineering#qudt"><span class="std std-ref">QUDT</span></a>,]</p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="information-systems#information-systems"><span class="std std-ref">Information Systems</span></a></li>
-<li>ELI5: Our data is probably already aware of a cure.<ul>
-<li>Cure: Win/Win solution</li>
+<li><p><a class="reference internal" href="information-systems#information-systems"><span class="std std-ref">Information Systems</span></a></p></li>
+<li><p>ELI5: Our data is probably already aware of a cure.</p>
+<ul>
+<li><p>Cure: Win/Win solution</p></li>
 </ul>
 </li>
 </ul>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="admonition-title">Note</p>
 <p>This page (<code class="docutils literal notranslate"><span class="pre">linkedreproducibility.rst</span></code>) is licensed with
 <a class="reference external" href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>
 (Public Domain).</p>
 <p>Please do implement these ideas and specifications.</p>
-<p class="last">– <a class="reference external" href="https://twitter.com/westurner">&#64;westurner</a></p>
+<p>– <a class="reference external" href="https://twitter.com/westurner">&#64;westurner</a></p>
 </div>
 <div class="section" id="studygraph-document-nodes-and-link-edges">
 <span id="studygraph"></span><span id="index-1"></span><h2>StudyGraph: Document Nodes and Link Edges<a class="headerlink" href="#studygraph-document-nodes-and-link-edges" title="Permalink to this headline">¶</a></h2>
@@ -265,106 +267,125 @@ various studies with comparable and incomparable analyses. (e.g.
 <a class="reference internal" href="art-design#openannotation"><span class="std std-ref">OpenAnnotation</span></a> <a class="reference internal" href="knowledge-engineering#oa"><span class="std std-ref">OA</span></a> <a class="reference internal" href="knowledge-engineering#rdf"><span class="std std-ref">RDF</span></a> <a class="reference internal" href="knowledge-engineering#owl"><span class="std std-ref">OWL</span></a> with more data
 than threaded comments).</p>
 <ul class="simple">
-<li>PDFs are the de-facto standard for scientific publishing</li>
-<li>Many journals also / instead request HTML<ul>
-<li>PLoS, for example</li>
+<li><p>PDFs are the de-facto standard for scientific publishing</p></li>
+<li><p>Many journals also / instead request HTML</p>
+<ul>
+<li><p>PLoS, for example</p></li>
 </ul>
 </li>
-<li>Then, a “study” is a document<ul>
-<li>title – <a class="reference external" href="schema.org/name">schema.org/name</a></li>
-<li>authors – lead first (usu.)<ul>
-<li>schema.org/TODO – author, creator, contributor</li>
+<li><p>Then, a “study” is a document</p>
+<ul>
+<li><p>title – <a class="reference external" href="schema.org/name">schema.org/name</a></p></li>
+<li><p>authors – lead first (usu.)</p>
+<ul>
+<li><p>schema.org/TODO – author, creator, contributor</p></li>
 </ul>
 </li>
-<li>abstract</li>
-<li>tags/labels/keywords are <strong>edges</strong> to a tag/label/keyword node<ul>
-<li>hierarchical<ul>
-<li>MESH</li>
-<li>PyPI Trove Classifiers</li>
+<li><p>abstract</p></li>
+<li><p>tags/labels/keywords are <strong>edges</strong> to a tag/label/keyword node</p>
+<ul>
+<li><p>hierarchical</p>
+<ul>
+<li><p>MESH</p></li>
+<li><p>PyPI Trove Classifiers</p></li>
 </ul>
 </li>
-<li>folksonomy<ul>
-<li>tags<ul>
-<li>tags often require deduplication / part of speech
-normalization / de-pluralization / etc</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Concept URIs<ul>
-<li>wikipedia, dbpedia, wikidata, etc</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>links to <a class="reference internal" href="knowledge-engineering#linked-data"><span class="std std-ref">Linked Data</span></a><ul>
-<li><a class="reference external" href="https://schema.org/Dataset">https://schema.org/Dataset</a></li>
-<li><a class="reference internal" href="knowledge-engineering#csvw"><span class="std std-ref">CSVW</span></a></li>
-<li><a class="reference internal" href="#structuredpremises"><span class="std std-ref">StructuredPremises: Premises as structured data</span></a></li>
+<li><p>folksonomy</p>
+<ul>
+<li><p>tags</p>
+<ul>
+<li><p>tags often require deduplication / part of speech
+normalization / de-pluralization / etc</p></li>
 </ul>
 </li>
 </ul>
 </li>
-<li>What we lack are <strong>structured edges/relations</strong> between the actual studies<ul>
-<li>ex:confirms, ex:seemsToConfirm -&gt; ex:confirmatoryEdge<ul>
-<li>[strength of association [“magnitude”]]</li>
+<li><p>Concept URIs</p>
+<ul>
+<li><p>wikipedia, dbpedia, wikidata, etc</p></li>
 </ul>
 </li>
-<li>ex:reproduces, ex:seemsToReproduce -&gt; ex:reproducibilityEdge</li>
-<li>ex:refutes</li>
-<li>ex:disproves</li>
-<li>TODO: see the list i brainstormed
--</li>
-<li>frameworks for edges:<ul>
-<li><a class="reference internal" href="knowledge-engineering#networkx"><span class="std std-ref">NetworkX</span></a></li>
-<li><a class="reference internal" href="knowledge-engineering#rdf"><span class="std std-ref">RDF</span></a><ul>
-<li><a class="reference external" href="http://patterns.dataincubator.org/book/qualified-relation.html">http://patterns.dataincubator.org/book/qualified-relation.html</a></li>
-<li><a class="reference external" href="http://patterns.dataincubator.org/book/nary-relation.html">http://patterns.dataincubator.org/book/nary-relation.html</a></li>
 </ul>
 </li>
-<li>OpenCog AtomSpace (strength of association)</li>
+<li><p>links to <a class="reference internal" href="knowledge-engineering#linked-data"><span class="std std-ref">Linked Data</span></a></p>
+<ul>
+<li><p><a class="reference external" href="https://schema.org/Dataset">https://schema.org/Dataset</a></p></li>
+<li><p><a class="reference internal" href="knowledge-engineering#csvw"><span class="std std-ref">CSVW</span></a></p></li>
+<li><p><a class="reference internal" href="#structuredpremises"><span class="std std-ref">StructuredPremises: Premises as structured data</span></a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>What we lack are <strong>structured edges/relations</strong> between the actual studies</p>
+<ul>
+<li><p>ex:confirms, ex:seemsToConfirm -&gt; ex:confirmatoryEdge</p>
+<ul>
+<li><p>[strength of association [“magnitude”]]</p></li>
+</ul>
+</li>
+<li><p>ex:reproduces, ex:seemsToReproduce -&gt; ex:reproducibilityEdge</p></li>
+<li><p>ex:refutes</p></li>
+<li><p>ex:disproves</p></li>
+<li><p>TODO: see the list i brainstormed
+-</p></li>
+<li><p>frameworks for edges:</p>
+<ul>
+<li><p><a class="reference internal" href="knowledge-engineering#networkx"><span class="std std-ref">NetworkX</span></a></p></li>
+<li><p><a class="reference internal" href="knowledge-engineering#rdf"><span class="std std-ref">RDF</span></a></p>
+<ul>
+<li><p><a class="reference external" href="http://patterns.dataincubator.org/book/qualified-relation.html">http://patterns.dataincubator.org/book/qualified-relation.html</a></p></li>
+<li><p><a class="reference external" href="http://patterns.dataincubator.org/book/nary-relation.html">http://patterns.dataincubator.org/book/nary-relation.html</a></p></li>
+</ul>
+</li>
+<li><p>OpenCog AtomSpace (strength of association)</p></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 <ul class="simple">
-<li>Develop best practices guidelines and
+<li><p>Develop best practices guidelines and
 and/or an <a class="reference internal" href="knowledge-engineering#rdf"><span class="std std-ref">RDF</span></a> schema and vocabulary (“<code class="docutils literal notranslate"><span class="pre">repro:</span></code>)
 for linking between studies, their supporting data,
-and their collection methods with URIs.<ul>
-<li>developing vocabularies:<ul>
-<li><a class="reference internal" href="knowledge-engineering#semantic-web-tools"><span class="std std-ref">Semantic Web Tools</span></a></li>
-<li><a class="reference internal" href="../tools/index#git"><span class="std std-ref">Git</span></a>, <a class="reference internal" href="education-technology#github-pages"><span class="std std-ref">GitHub Pages</span></a></li>
-<li>[ ] <a class="reference internal" href="knowledge-engineering#schema-org"><span class="std std-ref">Schema.org</span></a> extension vocabularies</li>
+and their collection methods with URIs.</p>
+<ul>
+<li><p>developing vocabularies:</p>
+<ul>
+<li><p><a class="reference internal" href="knowledge-engineering#semantic-web-tools"><span class="std std-ref">Semantic Web Tools</span></a></p></li>
+<li><p><a class="reference internal" href="../tools/index#git"><span class="std std-ref">Git</span></a>, <a class="reference internal" href="education-technology#github-pages"><span class="std std-ref">GitHub Pages</span></a></p></li>
+<li><p>[ ] <a class="reference internal" href="knowledge-engineering#schema-org"><span class="std std-ref">Schema.org</span></a> extension vocabularies</p></li>
 </ul>
 </li>
-<li>linked reproduciblity edges:<ul>
-<li><code class="docutils literal notranslate"><span class="pre">similarTo</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">concursWith</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">discordantWith</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">intendedToReproduce</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">reproduces</span></code></li>
+<li><p>linked reproduciblity edges:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">similarTo</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">concursWith</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">discordantWith</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">intendedToReproduce</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">reproduces</span></code></p></li>
 </ul>
 </li>
-<li>linked reproducibility classes and properties:<ul>
-<li>[x] schema.org/MedicalStudy, MedicalObservationalStudy, MedicalTrial<ul>
-<li>[ ] <a class="reference external" href="https://github.com/twamarc/ScheMed">https://github.com/twamarc/ScheMed</a><ul>
-<li><a class="reference external" href="http://schema.org/MedicalTrialDesign">http://schema.org/MedicalTrialDesign</a></li>
-<li><a class="reference external" href="http://schema.org/DoubleBlindedTrial">http://schema.org/DoubleBlindedTrial</a></li>
-<li><a class="reference external" href="http://schema.org/InternationalTrial">http://schema.org/InternationalTrial</a></li>
-<li><a class="reference external" href="http://schema.org/MultiCenterTrial">http://schema.org/MultiCenterTrial</a></li>
-<li><a class="reference external" href="http://schema.org/OpenTrial">http://schema.org/OpenTrial</a></li>
-<li><a class="reference external" href="http://schema.org/PlaceboControlledTrial">http://schema.org/PlaceboControlledTrial</a></li>
-<li><a class="reference external" href="http://schema.org/RandomizedTrial">http://schema.org/RandomizedTrial</a></li>
-<li><a class="reference external" href="http://schema.org/SingleBlindedTrial">http://schema.org/SingleBlindedTrial</a></li>
-<li><a class="reference external" href="http://schema.org/SingleCenterTrial">http://schema.org/SingleCenterTrial</a></li>
-<li><a class="reference external" href="http://schema.org/TripleBlindedTrial">http://schema.org/TripleBlindedTrial</a></li>
+<li><p>linked reproducibility classes and properties:</p>
+<ul>
+<li><p>[x] schema.org/MedicalStudy, MedicalObservationalStudy, MedicalTrial</p>
+<ul>
+<li><p>[ ] <a class="reference external" href="https://github.com/twamarc/ScheMed">https://github.com/twamarc/ScheMed</a></p>
+<ul>
+<li><p><a class="reference external" href="http://schema.org/MedicalTrialDesign">http://schema.org/MedicalTrialDesign</a></p></li>
+<li><p><a class="reference external" href="http://schema.org/DoubleBlindedTrial">http://schema.org/DoubleBlindedTrial</a></p></li>
+<li><p><a class="reference external" href="http://schema.org/InternationalTrial">http://schema.org/InternationalTrial</a></p></li>
+<li><p><a class="reference external" href="http://schema.org/MultiCenterTrial">http://schema.org/MultiCenterTrial</a></p></li>
+<li><p><a class="reference external" href="http://schema.org/OpenTrial">http://schema.org/OpenTrial</a></p></li>
+<li><p><a class="reference external" href="http://schema.org/PlaceboControlledTrial">http://schema.org/PlaceboControlledTrial</a></p></li>
+<li><p><a class="reference external" href="http://schema.org/RandomizedTrial">http://schema.org/RandomizedTrial</a></p></li>
+<li><p><a class="reference external" href="http://schema.org/SingleBlindedTrial">http://schema.org/SingleBlindedTrial</a></p></li>
+<li><p><a class="reference external" href="http://schema.org/SingleCenterTrial">http://schema.org/SingleCenterTrial</a></p></li>
+<li><p><a class="reference external" href="http://schema.org/TripleBlindedTrial">http://schema.org/TripleBlindedTrial</a></p></li>
 </ul>
 </li>
 </ul>
 </li>
-<li>See: <a class="reference external" href="https://westurner.github.io/opengov/us/#personal-health-agenda">https://westurner.github.io/opengov/us/#personal-health-agenda</a></li>
+<li><p>See: <a class="reference external" href="https://westurner.github.io/opengov/us/#personal-health-agenda">https://westurner.github.io/opengov/us/#personal-health-agenda</a></p></li>
 </ul>
 </li>
 </ul>
@@ -377,55 +398,59 @@ and their collection methods with URIs.<ul>
 <div class="section" id="structuredpremises-premises-as-structured-data">
 <span id="structuredpremises"></span><span id="index-2"></span><h2>StructuredPremises: Premises as structured data<a class="headerlink" href="#structuredpremises-premises-as-structured-data" title="Permalink to this headline">¶</a></h2>
 <ul>
-<li><p class="first">And then URIs for controls / study design</p>
+<li><p>And then URIs for controls / study design</p>
 <ul class="simple">
-<li>see schema.org/MedicalTrialDesign<ul>
-<li>[ ] these could/should be extended to all of science</li>
+<li><p>see schema.org/MedicalTrialDesign</p>
+<ul>
+<li><p>[ ] these could/should be extended to all of science</p></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p class="first">logical premises (sequence of propositions)</p>
-</li>
-<li><p class="first">i/o sequences</p>
+<li><p>logical premises (sequence of propositions)</p></li>
+<li><p>i/o sequences</p>
 <ul class="simple">
-<li><a class="reference internal" href="../tools/index#nbformat"><span class="std std-ref">nbformat</span></a> (IPython / Jupyter notebook format)<ul>
-<li>insufficient because we need stable premise permalinks
-(across versioned publishing URIs)<ul>
-<li><code class="docutils literal notranslate"><span class="pre">#premise-1</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">#premise-abc398f</span></code></li>
+<li><p><a class="reference internal" href="../tools/index#nbformat"><span class="std std-ref">nbformat</span></a> (IPython / Jupyter notebook format)</p>
+<ul>
+<li><p>insufficient because we need stable premise permalinks
+(across versioned publishing URIs)</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">#premise-1</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">#premise-abc398f</span></code></p></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p class="first">conclusions (derivations)</p>
+<li><p>conclusions (derivations)</p>
 <ul class="simple">
-<li>this is a computation graph</li>
-<li>it should have links (edges) to the datasets<ul>
-<li><a class="reference external" href="https://schema.org/Dataset">https://schema.org/Dataset</a></li>
-<li>“ENH: Linked Datasets (RDF)”
-<a class="reference external" href="https://github.com/pydata/pandas/issues/3402">https://github.com/pydata/pandas/issues/3402</a></li>
+<li><p>this is a computation graph</p></li>
+<li><p>it should have links (edges) to the datasets</p>
+<ul>
+<li><p><a class="reference external" href="https://schema.org/Dataset">https://schema.org/Dataset</a></p></li>
+<li><p>“ENH: Linked Datasets (RDF)”
+<a class="reference external" href="https://github.com/pydata/pandas/issues/3402">https://github.com/pydata/pandas/issues/3402</a></p></li>
 </ul>
 </li>
-<li>figures should have links (edges) to the datasets<ul>
-<li>permalinks to premises</li>
+<li><p>figures should have links (edges) to the datasets</p>
+<ul>
+<li><p>permalinks to premises</p></li>
 </ul>
 </li>
 </ul>
 <ul class="simple">
-<li>#TenSimpleRules for Reproducibile Computational Research
+<li><p>#TenSimpleRules for Reproducibile Computational Research
 | <a class="reference external" href="http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1003285">http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1003285</a>
-| <a class="reference external" href="https://wrdrd.github.io/docs/consulting/data-science#tensimplerules-for-reproducible-computational-research">https://wrdrd.github.io/docs/consulting/data-science#tensimplerules-for-reproducible-computational-research</a></li>
+| <a class="reference external" href="https://wrdrd.github.io/docs/consulting/data-science#tensimplerules-for-reproducible-computational-research">https://wrdrd.github.io/docs/consulting/data-science#tensimplerules-for-reproducible-computational-research</a></p></li>
 </ul>
 </li>
-<li><p class="first">further questions</p>
+<li><p>further questions</p>
 <blockquote>
 <div><ul class="simple">
-<li>“downstream” studies / implementations</li>
-<li>retraction management</li>
-<li>decisions / policy predicated on said conclusions</li>
+<li><p>“downstream” studies / implementations</p></li>
+<li><p>retraction management</p></li>
+<li><p>decisions / policy predicated on said conclusions</p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -434,64 +459,64 @@ and their collection methods with URIs.<ul>
 <div class="section" id="linkedmetaanalyses">
 <h2>LinkedMetaAnalyses<a class="headerlink" href="#linkedmetaanalyses" title="Permalink to this headline">¶</a></h2>
 <ul>
-<li><p class="first">You evaluated 10, I evaluated (the same / a different) 10 studies</p>
+<li><p>You evaluated 10, I evaluated (the same / a different) 10 studies</p>
 <ul>
-<li><p class="first">PRISMA</p>
+<li><p>PRISMA</p>
 <ul>
-<li><div class="first line-block">
+<li><div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="http://www.prisma-statement.org/">http://www.prisma-statement.org/</a></div>
 </div>
 </li>
-<li><p class="first"><a class="reference external" href="http://www.prisma-statement.org/PRISMAStatement/">http://www.prisma-statement.org/PRISMAStatement/</a></p>
-</li>
-<li><p class="first">Checklist: <a class="reference external" href="http://www.prisma-statement.org/documents/PRISMA%202009%20checklist.pdf">http://www.prisma-statement.org/documents/PRISMA%202009%20checklist.pdf</a></p>
-</li>
-<li><p class="first">Flow Diagram: <a class="reference external" href="http://www.prisma-statement.org/documents/PRISMA%202009%20flow%20diagram.pdf">http://www.prisma-statement.org/documents/PRISMA%202009%20flow%20diagram.pdf</a></p>
-</li>
+<li><p><a class="reference external" href="http://www.prisma-statement.org/PRISMAStatement/">http://www.prisma-statement.org/PRISMAStatement/</a></p></li>
+<li><p>Checklist: <a class="reference external" href="http://www.prisma-statement.org/documents/PRISMA%202009%20checklist.pdf">http://www.prisma-statement.org/documents/PRISMA%202009%20checklist.pdf</a></p></li>
+<li><p>Flow Diagram: <a class="reference external" href="http://www.prisma-statement.org/documents/PRISMA%202009%20flow%20diagram.pdf">http://www.prisma-statement.org/documents/PRISMA%202009%20flow%20diagram.pdf</a></p></li>
 </ul>
 </li>
-<li><p class="first">evaluation of controls</p>
+<li><p>evaluation of controls</p>
 <ul class="simple">
-<li>“the URI says they did a Triple Blind Study, but it doesn’t sound
-like they had groups named just e.g. X, Y, and Z”<ul>
-<li>disqualified / questionable / etc</li>
-<li>schema.org/MedicalTrial -&gt; schema.org/ScientificTrial</li>
+<li><p>“the URI says they did a Triple Blind Study, but it doesn’t sound
+like they had groups named just e.g. X, Y, and Z”</p>
+<ul>
+<li><p>disqualified / questionable / etc</p></li>
+<li><p>schema.org/MedicalTrial -&gt; schema.org/ScientificTrial</p></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p class="first">C = Class (RDFS)</p>
-</li>
-<li><p class="first">P = Property (RDFS)</p>
-</li>
-<li><p class="first"><a class="reference internal" href="knowledge-engineering#schemaorg"><span class="std std-ref">schema.org/</span></a></p>
+<li><p>C = Class (RDFS)</p></li>
+<li><p>P = Property (RDFS)</p></li>
+<li><p><a class="reference internal" href="knowledge-engineering#schemaorg"><span class="std std-ref">schema.org/</span></a></p>
 <ul class="simple">
-<li>[ ] C: MetaAnalysis<ul>
-<li>[ ] C: CriteriaBase type<ul>
-<li>[ ] C: Criterion</li>
+<li><p>[ ] C: MetaAnalysis</p>
+<ul>
+<li><p>[ ] C: CriteriaBase type</p>
+<ul>
+<li><p>[ ] C: Criterion</p></li>
 </ul>
 </li>
-<li>[ ] C: ScientificStudy<ul>
-<li>[x] C: MedicalStudy<ul>
-<li>[ ] C: MedicalObservationalStudy &lt;- ScientificObservationalStudy</li>
-<li>[ ] C: MedicalTrial &lt;- ScientificTrial</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>[x] C: Dataset</li>
-</ul>
-</li>
+<li><p>[ ] C: ScientificStudy</p>
+<ul>
+<li><p>[x] C: MedicalStudy</p>
+<ul>
+<li><p>[ ] C: MedicalObservationalStudy &lt;- ScientificObservationalStudy</p></li>
+<li><p>[ ] C: MedicalTrial &lt;- ScientificTrial</p></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p class="first">When do we show?</p>
+<li><p>[x] C: Dataset</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>When do we show?</p>
 <ul class="simple">
-<li>Deadline</li>
-<li>Only if you also produce your own meta-analyses</li>
-<li>Only if we’re doing Open Access (as required by stipulations of
-federal funding)</li>
+<li><p>Deadline</p></li>
+<li><p>Only if you also produce your own meta-analyses</p></li>
+<li><p>Only if we’re doing Open Access (as required by stipulations of
+federal funding)</p></li>
 </ul>
 </li>
 </ul>
@@ -536,140 +561,142 @@ federal funding)</li>
 <div class="section" id="csv-csvw-and-metadata-rows">
 <span id="index-3"></span><span id="id2"></span><h2>CSV, CSVW, and metadata rows<a class="headerlink" href="#csv-csvw-and-metadata-rows" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><a class="reference internal" href="knowledge-engineering#csv"><span class="std std-ref">CSV</span></a> – Comma Separated Values</li>
-<li><a class="reference internal" href="knowledge-engineering#csvw"><span class="std std-ref">CSVW</span></a> – CSV on the Web ( <a class="reference internal" href="knowledge-engineering#rdf"><span class="std std-ref">RDF</span></a>, <a class="reference internal" href="knowledge-engineering#json"><span class="std std-ref">JSON</span></a>,
-<a class="reference internal" href="knowledge-engineering#json-ld"><span class="std std-ref">JSON-LD</span></a> )</li>
-<li><a class="reference internal" href="knowledge-engineering#rdf"><span class="std std-ref">RDF</span></a> – Resource Description Framework<ul>
-<li>A two dimensional spreadsheet containing just data values
+<li><p><a class="reference internal" href="knowledge-engineering#csv"><span class="std std-ref">CSV</span></a> – Comma Separated Values</p></li>
+<li><p><a class="reference internal" href="knowledge-engineering#csvw"><span class="std std-ref">CSVW</span></a> – CSV on the Web ( <a class="reference internal" href="knowledge-engineering#rdf"><span class="std std-ref">RDF</span></a>, <a class="reference internal" href="knowledge-engineering#json"><span class="std std-ref">JSON</span></a>,
+<a class="reference internal" href="knowledge-engineering#json-ld"><span class="std std-ref">JSON-LD</span></a> )</p></li>
+<li><p><a class="reference internal" href="knowledge-engineering#rdf"><span class="std std-ref">RDF</span></a> – Resource Description Framework</p>
+<ul>
+<li><p>A two dimensional spreadsheet containing just data values
 (e.g. <a class="reference internal" href="knowledge-engineering#csv"><span class="std std-ref">CSV</span></a>) is a projection of an RDF graph
-which can be expressed as <a class="reference internal" href="knowledge-engineering#csvw"><span class="std std-ref">CSVW</span></a>.</li>
+which can be expressed as <a class="reference internal" href="knowledge-engineering#csvw"><span class="std std-ref">CSVW</span></a>.</p></li>
 </ul>
 </li>
 </ul>
 <p>A classic data table with 1 metadata header row (column label):</p>
-<table border="1" class="table-striped table-responsive docutils" id="id3">
+<table class="table-striped table-responsive docutils align-default" id="id3">
 <caption><span class="caption-text">Table with 1 metadata header row</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
 <colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
 </colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head stub"><strong>column label</strong></th>
-<th class="head">sample</th>
-<th class="head">date</th>
-<th class="head">width</th>
-<th class="head">height</th>
+<thead>
+<tr class="row-odd"><th class="head stub"><p><strong>column label</strong></p></th>
+<th class="head"><p>sample</p></th>
+<th class="head"><p>date</p></th>
+<th class="head"><p>width</p></th>
+<th class="head"><p>height</p></th>
 </tr>
 </thead>
-<tbody valign="top">
-<tr class="row-even"><th class="stub">&#160;</th>
-<td>1</td>
-<td>2016-06-19T06:28:49-0500</td>
-<td>20.0</td>
-<td>30.0</td>
+<tbody>
+<tr class="row-even"><th class="stub"></th>
+<td><p>1</p></td>
+<td><p>2016-06-19T06:28:49-0500</p></td>
+<td><p>20.0</p></td>
+<td><p>30.0</p></td>
 </tr>
-<tr class="row-odd"><th class="stub">&#160;</th>
-<td>2</td>
-<td>2016-06-19T06:29:22-0500</td>
-<td>40.0</td>
-<td>50.0</td>
+<tr class="row-odd"><th class="stub"></th>
+<td><p>2</p></td>
+<td><p>2016-06-19T06:29:22-0500</p></td>
+<td><p>40.0</p></td>
+<td><p>50.0</p></td>
 </tr>
-<tr class="row-even"><th class="stub">&#160;</th>
-<td>3</td>
-<td>2016-06-19T06:29:48-0500</td>
-<td>60.0</td>
-<td>70.0</td>
+<tr class="row-even"><th class="stub"></th>
+<td><p>3</p></td>
+<td><p>2016-06-19T06:29:48-0500</p></td>
+<td><p>60.0</p></td>
+<td><p>70.0</p></td>
 </tr>
 </tbody>
 </table>
 <p>A data table with 7 metadata header rows (column label, property URI path,
 DataType, unit, accuracy, precision, significant figures):</p>
-<table border="1" class="table-striped table-responsive docutils" id="id4">
+<table class="table-striped table-responsive docutils align-default" id="id4">
 <caption><span class="caption-text">Table with 7 metadata header rows</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
 <colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
 </colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head stub"><strong>column label</strong></th>
-<th class="head">sample</th>
-<th class="head">date</th>
-<th class="head">width</th>
-<th class="head">height</th>
+<thead>
+<tr class="row-odd"><th class="head stub"><p><strong>column label</strong></p></th>
+<th class="head"><p>sample</p></th>
+<th class="head"><p>date</p></th>
+<th class="head"><p>width</p></th>
+<th class="head"><p>height</p></th>
 </tr>
-<tr class="row-even"><th class="head stub"><strong>property URI path</strong></th>
-<th class="head"><a class="reference external" href="http://schema.org/name">schema.org/name</a></th>
-<th class="head"><a class="reference external" href="http://schema.org/dateCreated">schema.org/dateCreated</a></th>
-<th class="head">[<a class="reference external" href="http://schema.org/height">schema.org/height</a>,
-<a class="reference external" href="http://schema.org/value">schema.org/value</a>]</th>
-<th class="head">[<a class="reference external" href="http://schema.org/width">schema.org/width</a>,
-<a class="reference external" href="http://schema.org/value">schema.org/value</a>]</th>
+<tr class="row-even"><th class="head stub"><p><strong>property URI path</strong></p></th>
+<th class="head"><p><a class="reference external" href="http://schema.org/name">schema.org/name</a></p></th>
+<th class="head"><p><a class="reference external" href="http://schema.org/dateCreated">schema.org/dateCreated</a></p></th>
+<th class="head"><p>[<a class="reference external" href="http://schema.org/height">schema.org/height</a>,
+<a class="reference external" href="http://schema.org/value">schema.org/value</a>]</p></th>
+<th class="head"><p>[<a class="reference external" href="http://schema.org/width">schema.org/width</a>,
+<a class="reference external" href="http://schema.org/value">schema.org/value</a>]</p></th>
 </tr>
-<tr class="row-odd"><th class="head stub"><a class="reference external" href="http://schema.org/DataType">schema.org/DataType</a></th>
-<th class="head"><a class="reference external" href="http://schema.org/Integer">schema.org/Integer</a></th>
-<th class="head"><a class="reference external" href="http://schema.org/Date">schema.org/Date</a></th>
-<th class="head"><a class="reference external" href="http://schema.org/Float">schema.org/Float</a></th>
-<th class="head"><a class="reference external" href="http://schema.org/Float">schema.org/Float</a></th>
+<tr class="row-odd"><th class="head stub"><p><a class="reference external" href="http://schema.org/DataType">schema.org/DataType</a></p></th>
+<th class="head"><p><a class="reference external" href="http://schema.org/Integer">schema.org/Integer</a></p></th>
+<th class="head"><p><a class="reference external" href="http://schema.org/Date">schema.org/Date</a></p></th>
+<th class="head"><p><a class="reference external" href="http://schema.org/Float">schema.org/Float</a></p></th>
+<th class="head"><p><a class="reference external" href="http://schema.org/Float">schema.org/Float</a></p></th>
 </tr>
-<tr class="row-even"><th class="head stub">Unit</th>
-<th class="head">&#160;</th>
-<th class="head">&#160;</th>
-<th class="head">unit:Meter</th>
-<th class="head">unit:Meter</th>
+<tr class="row-even"><th class="head stub"><p>Unit</p></th>
+<th class="head"></th>
+<th class="head"></th>
+<th class="head"><p>unit:Meter</p></th>
+<th class="head"><p>unit:Meter</p></th>
 </tr>
-<tr class="row-odd"><th class="head stub"><strong>accuracy</strong></th>
-<th class="head">&#160;</th>
-<th class="head">&#160;</th>
-<th class="head">&#160;</th>
-<th class="head">&#160;</th>
+<tr class="row-odd"><th class="head stub"><p><strong>accuracy</strong></p></th>
+<th class="head"></th>
+<th class="head"></th>
+<th class="head"></th>
+<th class="head"></th>
 </tr>
-<tr class="row-even"><th class="head stub"><strong>precision</strong></th>
-<th class="head">&#160;</th>
-<th class="head">&#160;</th>
-<th class="head">&#160;</th>
-<th class="head">&#160;</th>
+<tr class="row-even"><th class="head stub"><p><strong>precision</strong></p></th>
+<th class="head"></th>
+<th class="head"></th>
+<th class="head"></th>
+<th class="head"></th>
 </tr>
-<tr class="row-odd"><th class="head stub"><strong>significant figures</strong></th>
-<th class="head">&#160;</th>
-<th class="head">&#160;</th>
-<th class="head">*.1</th>
-<th class="head">*.1</th>
+<tr class="row-odd"><th class="head stub"><p><strong>significant figures</strong></p></th>
+<th class="head"></th>
+<th class="head"></th>
+<th class="head"><p>*.1</p></th>
+<th class="head"><p>*.1</p></th>
 </tr>
 </thead>
-<tbody valign="top">
-<tr class="row-even"><th class="stub">&#160;</th>
-<td>1</td>
-<td>2016-06-19T06:28:49-0500</td>
-<td>20.0</td>
-<td>30.0</td>
+<tbody>
+<tr class="row-even"><th class="stub"></th>
+<td><p>1</p></td>
+<td><p>2016-06-19T06:28:49-0500</p></td>
+<td><p>20.0</p></td>
+<td><p>30.0</p></td>
 </tr>
-<tr class="row-odd"><th class="stub">&#160;</th>
-<td>2</td>
-<td>2016-06-19T06:29:22-0500</td>
-<td>40.0</td>
-<td>50.0</td>
+<tr class="row-odd"><th class="stub"></th>
+<td><p>2</p></td>
+<td><p>2016-06-19T06:29:22-0500</p></td>
+<td><p>40.0</p></td>
+<td><p>50.0</p></td>
 </tr>
-<tr class="row-even"><th class="stub">&#160;</th>
-<td>3</td>
-<td>2016-06-19T06:29:48-0500</td>
-<td>60.0</td>
-<td>70.0</td>
+<tr class="row-even"><th class="stub"></th>
+<td><p>3</p></td>
+<td><p>2016-06-19T06:29:48-0500</p></td>
+<td><p>60.0</p></td>
+<td><p>70.0</p></td>
 </tr>
 </tbody>
 </table>
 <ul class="simple">
-<li><a class="reference external" href="https://en.wikipedia.org/wiki/Significant_figures">https://en.wikipedia.org/wiki/Significant_figures</a></li>
-<li><a class="reference external" href="https://en.wikipedia.org/wiki/Accuracy_and_precision">https://en.wikipedia.org/wiki/Accuracy_and_precision</a></li>
-<li><a class="reference internal" href="knowledge-engineering#qudt"><span class="std std-ref">QUDT</span></a> <code class="docutils literal notranslate"><span class="pre">unit:</span></code><ul>
-<li><a class="reference external" href="http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Meter">http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Meter</a></li>
-<li><a class="reference external" href="http://prefix.cc/unit:Meter">http://prefix.cc/unit:Meter</a></li>
-<li>These should be full <a class="reference internal" href="knowledge-engineering#uri"><span class="std std-ref">URIs</span></a> ( <a class="reference internal" href="knowledge-engineering#uris-for-units"><span class="std std-ref">URIs for Units</span></a> )</li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Significant_figures">https://en.wikipedia.org/wiki/Significant_figures</a></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Accuracy_and_precision">https://en.wikipedia.org/wiki/Accuracy_and_precision</a></p></li>
+<li><p><a class="reference internal" href="knowledge-engineering#qudt"><span class="std std-ref">QUDT</span></a> <code class="docutils literal notranslate"><span class="pre">unit:</span></code></p>
+<ul>
+<li><p><a class="reference external" href="http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Meter">http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#Meter</a></p></li>
+<li><p><a class="reference external" href="http://prefix.cc/unit:Meter">http://prefix.cc/unit:Meter</a></p></li>
+<li><p>These should be full <a class="reference internal" href="knowledge-engineering#uri"><span class="std std-ref">URIs</span></a> ( <a class="reference internal" href="knowledge-engineering#uris-for-units"><span class="std std-ref">URIs for Units</span></a> )</p></li>
 </ul>
 </li>
 </ul>
@@ -677,10 +704,11 @@ DataType, unit, accuracy, precision, significant figures):</p>
 <div class="section" id="references">
 <h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>TODO: &#64;westurner<ul>
-<li>reddit</li>
-<li>twitter</li>
-<li>hackernews</li>
+<li><p>TODO: &#64;westurner</p>
+<ul>
+<li><p>reddit</p></li>
+<li><p>twitter</p></li>
+<li><p>hackernews</p></li>
 </ul>
 </li>
 </ul>
