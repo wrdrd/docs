@@ -40,7 +40,7 @@ Installation Requirements:
 try:
     import nltk
     import textblob
-except ImportError as e:
+except ImportError:
     nltk = None
     textblob = None
 
@@ -76,7 +76,7 @@ if sys.version_info[0] > 2:
 
 
 else:
-    import StringIO
+    import StringIO  # noqa: F401
     import urlparse
 
     sys._stdout = sys.stdout
@@ -377,7 +377,8 @@ class URLCrawlQueue(object):
         Get the count of ``URLCrawlQueue.NEW`` :py:class:`CrawlRequest` objects
 
         Returns:
-            int: count of ``URLCrawlQueue.NEW`` :py:class:`CrawlRequest` objects
+            int: count of ``URLCrawlQueue.NEW`` :py:class:`CrawlRequest`
+                objects
         """
         return len(self.q)
 
@@ -506,7 +507,7 @@ def crawl_url(start_url, output=sys.stdout):
 
     crawled = ResultStore()
     headers = {
-        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.100 Safari/537.36",
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.100 Safari/537.36",  # noqa: E501
     }
 
     while queue.count():  # TODO
@@ -598,14 +599,14 @@ def frequency_table(counterdict, sort_by="count"):
         tuple: (%, count, key)
     """
     total = float(sum(itervalues(counterdict)))
-    keyfunc = lambda x: x
+    keyfunc = lambda x: x  # noqa: E731
     reverse = None
 
     if sort_by == "count":
-        keyfunc = lambda x: (x[1], x[0])
+        keyfunc = lambda x: (x[1], x[0])  # noqa: E731
         reverse = True
     elif sort_by == "name":
-        keyfunc = lambda x: (x[0], x[1])
+        keyfunc = lambda x: (x[0], x[1])  # noqa: E731
         reverse = False
 
     keyword_counts = sorted(
