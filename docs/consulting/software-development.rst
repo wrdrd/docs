@@ -205,6 +205,7 @@ Code Golf
 Project Management
 -------------------
 | Wikipedia: https://en.wikipedia.org/wiki/Project_management
+| Awesome: https://github.com/shahedbd/awesome-project-management #Books
 
 * https://en.wikipedia.org/wiki/DMAIC
 * https://en.wikipedia.org/wiki/Kaizen
