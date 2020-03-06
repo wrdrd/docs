@@ -711,31 +711,38 @@ Content Filtering
 
 DNS Content Filtering
 ^^^^^^^^^^^^^^^^^^^^^^^
-- DNS is used to transform a domain name ("localhost.org")
-  to an IPv4 or an IPv6 address ("127.0.0.1", "::1").
-- HTTP and HTTPS may use DNS or connect directly to an IP
+- DNS is a OSI Layer 7 ("application layer") network protocol
+  for cached, distributed key-value lookup
+  that's just about as old as the internet.
+- :ref:`DNS` is used to lookup
+  an IPv4 ("A record") or an IPv6 ("AAAA record" / "quad-a record")
+  address ("127.0.0.1", "::1") for a
+  domain name ("localhost.org").
+- DNS records are typically cached on first request:
+  a DNS resolver cache is typically not *flushed* until the browser
+  and/or operating system are restarted.
+- :ref:`HTTP` and :ref:`HTTPS` may use DNS or connect directly to an IP
   (in which case no DNS resolution occurs).
 - Domain names are resolved to IP addresses by sending a request
   and receiving a reply from a DNS resolver.
-- DNS resolvers can be set through DHCP (when a machine connects to the
-  internet and receives an IP address, a subnet, a gateway IP, and a DNS
+- DNS resolver addresses can be set through :ref:`DHCP`
+  (when a machine connects to
+  a router running a DHCP server
+  and receives e.g. an IP address, a subnet, a gateway IP, and a DNS
   server address) or manually.
 - DNS resolver IPs
-  can be set on the router or on a particular machine.
-  Depending on the operating system, you may need admin rights
+  can be set on the router and/or on a particular machine.
+- Depending on the operating system, you may need admin rights
   to change the DNS resolver IPs for a given connection for a given
   user.
-
 - *A VPN,
-  DNS over HTTPS,
-  and DNS over TLS can bypass any DNS resolver
-  configuration on the router.*
-
+  DNS over HTTPS (DoH),
+  and DNS over TLS (DoT) can bypass any DNS resolver
+  configuration on the router or the device.*
 - Many (free) wireless hotspots will not work with
   custom DNS resolver IPs because of the way their captive portal
   attempts to redirect any request for any URL to the hotspot login
   page.
-
 - In the US, ISPs are allowed to sell customers' DNS usage history
   (regardless of the unknown age of the user(s))
 - There are third-party DNS services which pledge not to sell DNS usage
