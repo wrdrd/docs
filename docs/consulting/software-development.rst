@@ -229,9 +229,10 @@ Everyone Codes
 ++++++++++++++++
 
     Q. Everyone?
-    A. Everyone but
 
-* https://code.org/
+    A. Everyone but:
+
+* :ref:`Code.org`
 
 
 .. index:: Agile
