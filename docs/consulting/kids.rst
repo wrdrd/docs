@@ -636,7 +636,10 @@ Cybersecurity for all ages
 
 OWASP Juice Shop
 ^^^^^^^^^^^^^^^^^
-| Homepage: https://www.owasp.org/index.php/OWASP_Juice_Shop_Project
+| Homepage: https://owasp.org/www-project-juice-shop/
+| Source: https://github.com/bkimminich/juice-shop
+| Source: https://github.com/bkimminich/pwning-juice-shop
+| Dockerfile: https://hub.docker.com/r/bkimminich/juice-shop/dockerfile
 
 - OWASP Juice Shop is a deliberately vulnerable web application
   written with :ref:`Node.JS`.
@@ -646,6 +649,21 @@ OWASP Juice Shop
    found in the application including hints how to spot and exploit
    them. In the appendix you will even find complete step-by-step
    solutions to every challenge. 
+
+
+- To run the Juice Shop application on your local machine
+  *where you may have record of authorized permission to hack*:
+
+  - Install :ref:`Docker`
+  - Run the Juice Shop Docker container:
+    .. code:: bash
+
+        docker run --rm --name=js -p 3000:3000 bkimminich/juice-shop
+        # <Ctrl-C>
+
+  - Open your browser to http://localhost:3000/
+  - Read and work through the book:
+    https://pwning.owasp-juice.shop/
 
 
 .. index:: Internet Privacy
