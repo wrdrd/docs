@@ -656,6 +656,7 @@ OWASP Juice Shop
 
   - Install :ref:`Docker`
   - Run the Juice Shop Docker container:
+
     .. code:: bash
 
         docker run --rm --name=js -p 3000:3000 bkimminich/juice-shop
