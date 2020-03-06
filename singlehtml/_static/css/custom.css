@@ -60,6 +60,10 @@ div.body h1 {
     padding-bottom: 10px;
 }
 
+div.body h5 {
+    font-size: 17px;
+}
+
 div.body a,
 div.body p {
     word-wrap: break-word;

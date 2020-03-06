@@ -695,15 +695,23 @@ Content Filtering
 -------------------
 | Wikipedia: https://en.wikipedia.org/wiki/Content-control_software
 
-- Freedom of speech
-- Protecting children
-  (from things we haven't discussed yet)
+- Freedom of Speech
 
-  | https://en.wikipedia.org/wiki/Developmental_psychology
+  - https://en.wikipedia.org/wiki/Freedom_of_speech
+  - https://en.wikipedia.org/wiki/Universal_Declaration_of_Human_Rights
+    Article 19
+  - https://en.wikipedia.org/wiki/Freedom_of_speech_in_the_United_States
+
+    - https://en.wikipedia.org/wiki/First_Amendment_to_the_United_States_Constitution
+
+- Protecting Children
+  (from things *we* haven't discussed yet)
+
+  - https://en.wikipedia.org/wiki/Developmental_psychology
 
 - Children's Rights
 
-  | https://en.wikipedia.org/wiki/Children%27s_rights#United_States_law
+  - https://en.wikipedia.org/wiki/Children%27s_rights#United_States_law
 
 
 .. index:: DNS content filtering
@@ -711,31 +719,38 @@ Content Filtering
 
 DNS Content Filtering
 ^^^^^^^^^^^^^^^^^^^^^^^
-- DNS is used to transform a domain name ("localhost.org")
-  to an IPv4 or an IPv6 address ("127.0.0.1", "::1").
-- HTTP and HTTPS may use DNS or connect directly to an IP
+- DNS is a OSI Layer 7 ("application layer") network protocol
+  for cached, distributed key-value lookup
+  that's just about as old as the internet.
+- :ref:`DNS` is used to lookup
+  an IPv4 ("A record") or an IPv6 ("AAAA record" / "quad-a record")
+  address ("127.0.0.1", "::1") for a
+  domain name ("localhost.org").
+- DNS records are typically cached on first request:
+  a DNS resolver cache is typically not *flushed* until the browser
+  and/or operating system are restarted.
+- :ref:`HTTP` and :ref:`HTTPS` may use DNS or connect directly to an IP
   (in which case no DNS resolution occurs).
 - Domain names are resolved to IP addresses by sending a request
   and receiving a reply from a DNS resolver.
-- DNS resolvers can be set through DHCP (when a machine connects to the
-  internet and receives an IP address, a subnet, a gateway IP, and a DNS
+- DNS resolver addresses can be set through :ref:`DHCP`
+  (when a machine connects to
+  a router running a DHCP server
+  and receives e.g. an IP address, a subnet, a gateway IP, and a DNS
   server address) or manually.
 - DNS resolver IPs
-  can be set on the router or on a particular machine.
-  Depending on the operating system, you may need admin rights
+  can be set on the router and/or on a particular machine.
+- Depending on the operating system, you may need admin rights
   to change the DNS resolver IPs for a given connection for a given
   user.
-
 - *A VPN,
-  DNS over HTTPS,
-  and DNS over TLS can bypass any DNS resolver
-  configuration on the router.*
-
+  DNS over HTTPS (DoH),
+  and DNS over TLS (DoT) can bypass any DNS resolver
+  configuration on the router or the device.*
 - Many (free) wireless hotspots will not work with
   custom DNS resolver IPs because of the way their captive portal
   attempts to redirect any request for any URL to the hotspot login
   page.
-
 - In the US, ISPs are allowed to sell customers' DNS usage history
   (regardless of the unknown age of the user(s))
 - There are third-party DNS services which pledge not to sell DNS usage
@@ -820,7 +835,9 @@ CleanBrowsing.org is a DNS-based content filtering service
     2a0d:2a00:1::2
     2a0d:2a00:2::2
 
-- Paid Custom
+- Paid Custom CleanBrowsing.org
+  costs $55/year (Families), $110/year (Small Organizations),
+  to $220/year (Large Organizations).
 
 
 .. index:: Enforcing SafeSearch
@@ -829,6 +846,7 @@ CleanBrowsing.org is a DNS-based content filtering service
 -------------------------------
 Enforcing SafeSearch with DNS
 -------------------------------
+- https://en.wikipedia.org/wiki/SafeSearch
 - https://www.leowkahman.com/2017/09/11/enforce-safe-search-on-google-youtube-bing/
 - (This is how :ref:`Cleanbrowsing.org DNS` enforces SafeSearch, too)
 

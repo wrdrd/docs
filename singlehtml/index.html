@@ -18061,41 +18061,62 @@ service.</p></li>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Content-control_software">https://en.wikipedia.org/wiki/Content-control_software</a></div>
 </div>
+<ul class="simple">
+<li><p>Freedom of Speech</p>
 <ul>
-<li><p>Freedom of speech</p></li>
-<li><p>Protecting children
-(from things we haven’t discussed yet)</p>
-<div class="line-block">
-<div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/Developmental_psychology">https://en.wikipedia.org/wiki/Developmental_psychology</a></div>
-</div>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Freedom_of_speech">https://en.wikipedia.org/wiki/Freedom_of_speech</a></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Universal_Declaration_of_Human_Rights">https://en.wikipedia.org/wiki/Universal_Declaration_of_Human_Rights</a>
+Article 19</p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Freedom_of_speech_in_the_United_States">https://en.wikipedia.org/wiki/Freedom_of_speech_in_the_United_States</a></p>
+<ul>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/First_Amendment_to_the_United_States_Constitution">https://en.wikipedia.org/wiki/First_Amendment_to_the_United_States_Constitution</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Protecting Children
+(from things <em>we</em> haven’t discussed yet)</p>
+<ul>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Developmental_psychology">https://en.wikipedia.org/wiki/Developmental_psychology</a></p></li>
+</ul>
 </li>
 <li><p>Children’s Rights</p>
-<div class="line-block">
-<div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/Children%27s_rights#United_States_law">https://en.wikipedia.org/wiki/Children%27s_rights#United_States_law</a></div>
-</div>
+<ul>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Children%27s_rights#United_States_law">https://en.wikipedia.org/wiki/Children%27s_rights#United_States_law</a></p></li>
+</ul>
 </li>
 </ul>
 <div class="section" id="dns-content-filtering">
 <span id="index-41"></span><span id="id38"></span><h5>DNS Content Filtering<a class="headerlink" href="#dns-content-filtering" title="Permalink to this headline">¶</a></h5>
 <ul>
-<li><p>DNS is used to transform a domain name (“localhost.org”)
-to an IPv4 or an IPv6 address (“127.0.0.1”, “::1”).</p></li>
-<li><p>HTTP and HTTPS may use DNS or connect directly to an IP
+<li><p>DNS is a OSI Layer 7 (“application layer”) network protocol
+for cached, distributed key-value lookup
+that’s just about as old as the internet.</p></li>
+<li><p><span class="xref std std-ref">DNS</span> is used to lookup
+an IPv4 (“A record”) or an IPv6 (“AAAA record” / “quad-a record”)
+address (“127.0.0.1”, “::1”) for a
+domain name (“localhost.org”).</p></li>
+<li><p>DNS records are typically cached on first request:
+a DNS resolver cache is typically not <em>flushed</em> until the browser
+and/or operating system are restarted.</p></li>
+<li><p><a class="reference internal" href="index.html#http"><span class="std std-ref">HTTP</span></a> and <a class="reference internal" href="index.html#https"><span class="std std-ref">HTTPS</span></a> may use DNS or connect directly to an IP
 (in which case no DNS resolution occurs).</p></li>
 <li><p>Domain names are resolved to IP addresses by sending a request
 and receiving a reply from a DNS resolver.</p></li>
-<li><p>DNS resolvers can be set through DHCP (when a machine connects to the
-internet and receives an IP address, a subnet, a gateway IP, and a DNS
+<li><p>DNS resolver addresses can be set through <span class="xref std std-ref">DHCP</span>
+(when a machine connects to
+a router running a DHCP server
+and receives e.g. an IP address, a subnet, a gateway IP, and a DNS
 server address) or manually.</p></li>
 <li><p>DNS resolver IPs
-can be set on the router or on a particular machine.
-Depending on the operating system, you may need admin rights
+can be set on the router and/or on a particular machine.</p></li>
+<li><p>Depending on the operating system, you may need admin rights
 to change the DNS resolver IPs for a given connection for a given
 user.</p></li>
 <li><p><em>A VPN,
-DNS over HTTPS,
-and DNS over TLS can bypass any DNS resolver
-configuration on the router.</em></p></li>
+DNS over HTTPS (DoH),
+and DNS over TLS (DoT) can bypass any DNS resolver
+configuration on the router or the device.</em></p></li>
 <li><p>Many (free) wireless hotspots will not work with
 custom DNS resolver IPs because of the way their captive portal
 attempts to redirect any request for any URL to the hotspot login
@@ -18184,12 +18205,15 @@ history.</p>
 </pre></div>
 </div>
 </li>
-<li><p>Paid Custom</p></li>
+<li><p>Paid Custom CleanBrowsing.org
+costs $55/year (Families), $110/year (Small Organizations),
+to $220/year (Large Organizations).</p></li>
 </ul>
 </div>
 <div class="section" id="enforcing-safesearch-with-dns">
 <span id="enforcing-safesearch"></span><span id="index-44"></span><h6>Enforcing SafeSearch with DNS<a class="headerlink" href="#enforcing-safesearch-with-dns" title="Permalink to this headline">¶</a></h6>
 <ul class="simple">
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/SafeSearch">https://en.wikipedia.org/wiki/SafeSearch</a></p></li>
 <li><p><a class="reference external" href="https://www.leowkahman.com/2017/09/11/enforce-safe-search-on-google-youtube-bing/">https://www.leowkahman.com/2017/09/11/enforce-safe-search-on-google-youtube-bing/</a></p></li>
 <li><p>(This is how <a class="reference internal" href="#cleanbrowsing-org-dns"><span class="std std-ref">CleanBrowsing.org DNS</span></a> enforces SafeSearch, too)</p></li>
 </ul>
