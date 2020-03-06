@@ -734,3 +734,49 @@ OpenDNS
   https://welcome.opendns.com/
 
 
+.. index:: CleanBrowsing.org DNS
+.. _cleanbrowsing.org DNS:
+
+CleanBrowsing.org DNS
+--------------------------
+| Homepage: https://cleanbrowsing.org/
+
+CleanBrowsing.org is a DNS-based content filtering service
+**with support for encrypted DNS: DNS over TLS (port 853) and DNScrypt
+(port 8443)**.
+
+- Family Filter::
+
+  IPv4 address: 185.228.168.168 and 185.228.169.168
+  IPv6 address: 2a0d:2a00:1:: and 2a0d:2a00:2::
+
+- Adult Filter::
+
+  IPv4 address: 185.228.168.10 and 185.228.169.11
+  IPv6 address: 2a0d:2a00:1::1 and 2a0d:2a00:2::1
+
+- Security Filter::
+
+  IPv4 address: 185.228.168.9 and 185.228.169.9
+  IPv6 address: 2a0d:2a00:1::2 and 2a0d:2a00:2::2
+
+- Paid Custom
+
+
+.. index:: Enforcing SafeSearch
+.. _enforcing safesearch:
+
+Enforcing SafeSearch with DNS
+-------------------------------
+- https://www.leowkahman.com/2017/09/11/enforce-safe-search-on-google-youtube-bing/
+- (This is how :ref:`Cleanbrowsing.org DNS` enforces SafeSearch, too)
+
+=================== ============================= ============== =====================
+Safe Search Service	CNAME	                      IPv4	         IPv4-over-IPv6
+=================== ============================= ============== =====================
+Google              forcesafesearch.google.com    216.239.38.120 ::ffff:216.239.38.120
+YouTube Strict      restrict.youtube.com          216.239.38.120 ::ffff:216.239.38.120
+YouTube Moderate    restrictmoderate.youtube.com  216.239.38.119 ::ffff:216.239.38.119
+Bing                strict.bing.com               204.79.197.220 ::ffff:204.79.197.220
+DuckDuckGo          safe.duckduckgo.com           46.137.218.113 ::ffff:46.137.218.113
+=================== ============================= ============== =====================
