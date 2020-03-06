@@ -655,6 +655,11 @@ https://en.wikipedia.org/wiki/Signal-to-noise_ratio
 https://en.wikipedia.org/wiki/Probability_theory
 
 * https://www.khanacademy.org/math/probability
+* https://www.khanacademy.org/computing/computer-science/informationtheory
+
+https://en.wikipedia.org/wiki/Quantum_information_science
+
+* https://en.wikipedia.org/wiki/Quantum_information
 
 
 .. index:: Linear Algebra
