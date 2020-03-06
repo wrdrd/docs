@@ -835,7 +835,9 @@ CleanBrowsing.org is a DNS-based content filtering service
     2a0d:2a00:1::2
     2a0d:2a00:2::2
 
-- Paid Custom
+- Paid Custom CleanBrowsing.org
+  costs $55/year (Families), $110/year (Small Organizations),
+  to $220/year (Large Organizations).
 
 
 .. index:: Enforcing SafeSearch
@@ -844,6 +846,7 @@ CleanBrowsing.org is a DNS-based content filtering service
 -------------------------------
 Enforcing SafeSearch with DNS
 -------------------------------
+- https://en.wikipedia.org/wiki/SafeSearch
 - https://www.leowkahman.com/2017/09/11/enforce-safe-search-on-google-youtube-bing/
 - (This is how :ref:`Cleanbrowsing.org DNS` enforces SafeSearch, too)
 
