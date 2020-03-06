@@ -688,29 +688,45 @@ Children's Online Privacy Protection Act
 
 
 
-.. index:: OpenDNS
-.. _opendns:
+.. index:: Content Filtering
+.. _content filtering:
 
-OpenDNS
----------
-| Wikipedia: https://en.wikipedia.org/wiki/OpenDNS
-| Homepage: https://www.opendns.com/
+Content Filtering
+-------------------
+| Wikipedia: https://en.wikipedia.org/wiki/Content-control_software
 
-- The free OpenDNS FamilyShield DNS IPs are::
+- Freedom of speech
+- Protecting children
+  (from things we haven't discussed yet)
 
-   208.67.222.123
-   208.67.220.123
-   ::ffff:d043:de7b
-   ::ffff:d043:dc7b
 
-  https://www.opendns.com/setupguide/#familyshield
+.. index:: DNS content filtering
+.. _dns content filtering:
 
-- OpenDNS VIP costs $20/yr for custom whitelists and log review.
+DNS Content Filtering
+^^^^^^^^^^^^^^^^^^^^^^^
 - DNS resolver IPs
-  can be set on the router or on a particular machine given admin rights.
+  can be set on the router or on a particular machine.
+  Depending on the operating system, you may need admin rights
+  to change the DNS resolver IPs for a given connection for a given
+  user.
 
-  - DNS over HTTPS and DNS over TLS can bypass any DNS resolver
-    configuration on the router.
+- *A VPN,
+  DNS over HTTPS,
+  and DNS over TLS can bypass any DNS resolver
+  configuration on the router.*
+
+- Many (free) wireless hotspots will not work with
+  custom DNS resolver IPs because of the way their captive portal
+  attempts to redirect any request for any URL to the hotspot login
+  page.
+
+- ISPs are allowed to sell customers' DNS usage history.
+- There are third-party DNS services which pledge not to sell DNS usage
+  history.
+
+  - :ref:`OpenDNS`
+  - :ref:`CleanBrowsing.org`
   - CloudFlare DNS::
 
      1.1.1.1
@@ -729,6 +745,26 @@ OpenDNS
 
     https://developers.google.com/speed/public-dns/
 
+
+.. index:: OpenDNS
+.. _opendns:
+
+---------
+OpenDNS
+---------
+| Wikipedia: https://en.wikipedia.org/wiki/OpenDNS
+| Homepage: https://www.opendns.com/
+
+- The free OpenDNS FamilyShield DNS IPs are::
+
+   208.67.222.123
+   208.67.220.123
+   ::ffff:d043:de7b
+   ::ffff:d043:dc7b
+
+  https://www.opendns.com/setupguide/#familyshield
+
+- OpenDNS VIP costs $20/yr for custom whitelists and log review.
 - Cisco purchased OpenDNS in 2015.
 - You can tell whether OpenDNS is configured from:
   https://welcome.opendns.com/
@@ -737,8 +773,10 @@ OpenDNS
 .. index:: CleanBrowsing.org DNS
 .. _cleanbrowsing.org DNS:
 
+--------------------------
 CleanBrowsing.org DNS
 --------------------------
+| Wikipedia: https://en.wikipedia.org/wiki/CleanBrowsing
 | Homepage: https://cleanbrowsing.org/
 
 CleanBrowsing.org is a DNS-based content filtering service
@@ -772,6 +810,7 @@ CleanBrowsing.org is a DNS-based content filtering service
 .. index:: Enforcing SafeSearch
 .. _enforcing safesearch:
 
+-------------------------------
 Enforcing SafeSearch with DNS
 -------------------------------
 - https://www.leowkahman.com/2017/09/11/enforce-safe-search-on-google-youtube-bing/
