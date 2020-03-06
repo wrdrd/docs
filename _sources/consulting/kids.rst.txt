@@ -747,18 +747,24 @@ CleanBrowsing.org is a DNS-based content filtering service
 
 - Family Filter::
 
-  IPv4 address: 185.228.168.168 and 185.228.169.168
-  IPv6 address: 2a0d:2a00:1:: and 2a0d:2a00:2::
+    185.228.168.168
+    185.228.169.168
+    2a0d:2a00:1::
+    2a0d:2a00:2::
 
 - Adult Filter::
 
-  IPv4 address: 185.228.168.10 and 185.228.169.11
-  IPv6 address: 2a0d:2a00:1::1 and 2a0d:2a00:2::1
+    185.228.168.10
+    185.228.169.11
+    2a0d:2a00:1::1
+    2a0d:2a00:2::1
 
 - Security Filter::
 
-  IPv4 address: 185.228.168.9 and 185.228.169.9
-  IPv6 address: 2a0d:2a00:1::2 and 2a0d:2a00:2::2
+    185.228.168.9
+    185.228.169.9
+    2a0d:2a00:1::2
+    2a0d:2a00:2::2
 
 - Paid Custom
 
