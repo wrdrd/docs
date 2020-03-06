@@ -695,15 +695,23 @@ Content Filtering
 -------------------
 | Wikipedia: https://en.wikipedia.org/wiki/Content-control_software
 
-- Freedom of speech
-- Protecting children
-  (from things we haven't discussed yet)
+- Freedom of Speech
 
-  | https://en.wikipedia.org/wiki/Developmental_psychology
+  - https://en.wikipedia.org/wiki/Freedom_of_speech
+  - https://en.wikipedia.org/wiki/Universal_Declaration_of_Human_Rights
+    Article 19
+  - https://en.wikipedia.org/wiki/Freedom_of_speech_in_the_United_States
+
+    - https://en.wikipedia.org/wiki/First_Amendment_to_the_United_States_Constitution
+
+- Protecting Children
+  (from things *we* haven't discussed yet)
+
+  - https://en.wikipedia.org/wiki/Developmental_psychology
 
 - Children's Rights
 
-  | https://en.wikipedia.org/wiki/Children%27s_rights#United_States_law
+  - https://en.wikipedia.org/wiki/Children%27s_rights#United_States_law
 
 
 .. index:: DNS content filtering
