@@ -5,8 +5,8 @@
 
 @media (max-width: 768px) {
     .navbar-brand {
-        float: none;
-        padding: 0;
+        /* float: none; */
+        padding-left: 0;
     }
     .navbar-header {
         padding-top: 8px;
@@ -199,7 +199,7 @@ li.youarehere {
     /* text-decoration: underline; */
 }
 
-li.youarehere:before {
+div.sidebar li.youarehere:before {
   content: "➡ ";
   margin-left: -1.1em;
 }

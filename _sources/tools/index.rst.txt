@@ -3336,6 +3336,32 @@ Microsoft Windows is a NT-kernel based operating system.
 * Chocolatey maintains a set of :ref:`NuGet` packages for Windows.
 
 
+.. index:: Windows Subsystem for Linux
+.. index:: WSL
+.. _wsl:
+.. _windows subsystem for linux:
+
+Windows Subsystem for Linux
+++++++++++++++++++++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux
+| Homepage: https://docs.microsoft.com/en-us/windows/wsl
+| Source: https://github.com/Microsoft/WSL
+
+Windows Subsystem for Linux (*WSL*) is a binary compatibility layer
+which allows many Linux programs to be run on Windows 10+.
+
+    The Windows Subsystem for Linux lets developers run a GNU/Linux
+    environment -- including most command-line tools, utilities, and
+    applications -- directly on Windows, unmodified, without the
+    overhead of a virtual machine.
+
+- Windows Subsystem for Linux is not a complete :ref:`virtualization`
+  solution; but it does allow you to run e.g. :ref:`Ubuntu`
+  or :ref:`Fedora` (and thus e.g. :ref:`Bash`) on a Windows machine.
+- :ref:`Docker` for Windows is one alternative to Windows Subsystem for
+  Linux.
+
+
 .. index:: Windows Sysinternals
 .. _windows sysinternals:
 
@@ -4647,13 +4673,20 @@ Bash
 ~~~~~~~~~~~~~~~
 | Wikipedia: `<https://en.wikipedia.org/wiki/Bash_(Unix_shell)>`__
 | Homepage: https://www.gnu.org/software/bash/
-| Docs: https://www.gnu.org/software/bash/manual/
 | Src: git git://git.savannah.gnu.org/bash.git
+| Docs: https://www.gnu.org/software/bash/manual/
+| LearnXinYMinutes: https://learnxinyminutes.com/docs/bash/
+| Awesome: https://github.com/awesome-lists/awesome-bash
 
-GNU Bash, the Bourne-again shell.
+GNU Bash, the Bourne-again shell, is an open source command-line program
+written in :ref:`C`
+for running commands in a text-based terminal.
+
+A few commands to try when learning to shell with Bash:
 
 .. code-block:: bash
 
+   echo $SHELL; echo "$SHELL"; echo "${SHELL}"
    type bash
    bash --help
    help help
@@ -4662,24 +4695,133 @@ GNU Bash, the Bourne-again shell.
    info bash
    man bash
 
-* Designed to work with unix command outputs and return codes
-* Functions
+* Bash works with unix command outputs and return codes:
+  a program returns nonzero when there is an error:
+
+  .. code:: bash
+
+     true;  echo $?  # 0
+     false; echo $?  # 1
+     echo "Hello" && echo " World!"  # Hello World!
+     false || echo "World!"          # World!
+
+* Functions: Bash supports functions with arguments that can
+  print to standard out and/or return an integer return code:
+
+  .. code:: bash
+
+     function add_a {
+        echo "$1 + $2 = $(( $1 + $2 ))"
+     }
+     add_b () {
+        echo "$1 + $2 = $(( $1 + $2 ))"
+     }
+     add_xy () {
+        echo "$x + $y = $(( $x + $y ))"
+     }
+     add_a 3 5       # "3 + 5 = 8"
+     add_b 3 5       # "3 + 5 = 8"
+
+     x=3 y=5 add_xy  # "3 + 5 = 8"
+     x=3; y=5;
+     add_xy          # "3 + 5 = 8"
+
+     output=$(add_a 3 5)
+     echo "${output}"
+
+     help test
+     help [
+     help [[
+     help return
+
+     test "$(add_a 3 5)" == "3 + 5 = 8" && echo 'OK'
+
+     test_add_a () {
+        if [[ "$(add_a 3 5)" == "3 + 5 = 8" ]]; then
+            echo 'OK'
+            return 0
+        else
+            echo 'Test failed'
+            return 1
+        fi
+     }
+     test_add_a
+
+     help trap
+     help exit
+
 * Portability: sh (sh, bash, dash, zsh) shell scripts are mostly
-  compatible
-* Logging::
+  compatible; though bash supports some features that other shells do
+  not.
+* Logging: You can configure bash to print commands and arguments
+  as bash executes scripts:
 
-   set -x  # print commands and arguments
-   set -v  # print source
+  .. code:: bash
 
-Bash Configuration::
+     set -x  # print commands and arguments
+     set -v  # print source
+
+Bash reads various configuration files at startup time:
+
+.. code:: bash
 
    /etc/profile
    /etc/bash.bashrc
    /etc/profile.d/*.sh
    ${HOME}/.profile        /etc/skel/.profile   # PATH=+$HOME/bin  # umask
    ${HOME}/.bash_profile   # empty. preempts .profile
+   ${HOME}/.bashrc
 
-Linux/Mac/Windows: Almost Always / Bash 3.2 / Cygwin/Mingwin
+Bash and various :ref:`Operating Systems`:
+
+- Linux: Bash is almost always installed as the default shell on Linux
+  boxes.
+- Mac:
+
+  - MacOS includes Bash 3.2.
+  - You can ``brew install bash`` to get
+    a more recent version. (:ref:`homebrew`)
+
+- Windows:
+
+  - :ref:`Windows Subsystem for Linux` (WSL) installs Linux
+    distributions which include bash.
+  - You can also install bash on Windows by installing git
+    with ``choco install git -y`` (:ref:`Chocolatey`)
+  - You can also install bash on Windows by installing
+    MSYS2 (Mingw) or Cygwin with ``choco install msys2`` or ``choco install
+    cygwin``
+
+While Bash is ubiquitous,
+shell scripts are loose with quoting; which makes shell scripts flexible
+but **dangerous** and thus often avoided in favor of other
+languages:
+
+.. code:: bash
+
+    ## Shell script quoting example 1:
+
+    # This prints a newline
+    echo $(echo "-e a\nb")
+
+    # This prints "-e a\nb"
+    echo "$(echo "-e a\nb")"
+
+This isn't an issue with e.g. :ref:`Python` (a popular language that's
+also useful for system administration).
+
+.. code:: python
+
+    import subprocess
+    print(subprocess.check_output(['echo', "-e a\nb"])
+    print(subprocess.check_output('echo "-e a\nb"', shell=True))
+
+    # Though, note that Python subprocess shell=True is a security risk:
+    # - avoid shell=True
+    # - pass the command as a list of already-tokenized arguments
+    # - use something like sarge (or ansible) instead of shell=True
+
+:ref:`IPython` is one of many alternatives to Bash.
 
 
 .. index:: Readline

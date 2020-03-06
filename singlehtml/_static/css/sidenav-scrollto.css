@@ -5,7 +5,7 @@ li.youarehere {
     /* text-decoration: underline; */
 }
 
-li.youarehere:before {
+div.sidebar li.youarehere:before {
   content: "➡ ";
   margin-left: -1.1em;
 }

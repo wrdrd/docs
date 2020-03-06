@@ -4,8 +4,8 @@
 
 @media (max-width: 768px) {
     .navbar-brand {
-        float: none;
-        padding: 0;
+        /* float: none; */
+        padding-left: 0;
     }
     .navbar-header {
         padding-top: 8px;
