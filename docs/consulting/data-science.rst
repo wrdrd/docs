@@ -656,6 +656,7 @@ https://en.wikipedia.org/wiki/Probability_theory
 
 * https://www.khanacademy.org/math/probability
 * https://www.khanacademy.org/computing/computer-science/informationtheory
+* https://www.khanacademy.org/science/physics/quantum-physics
 
 https://en.wikipedia.org/wiki/Quantum_information_science
 
