@@ -18013,7 +18013,10 @@ need to know about in order to make good decisions.</p></li>
 <div class="section" id="owasp-juice-shop">
 <span id="index-36"></span><span id="id35"></span><h5>OWASP Juice Shop<a class="headerlink" href="#owasp-juice-shop" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
-<div class="line">Homepage: <a class="reference external" href="https://www.owasp.org/index.php/OWASP_Juice_Shop_Project">https://www.owasp.org/index.php/OWASP_Juice_Shop_Project</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://owasp.org/www-project-juice-shop/">https://owasp.org/www-project-juice-shop/</a></div>
+<div class="line">Source: <a class="reference external" href="https://github.com/bkimminich/juice-shop">https://github.com/bkimminich/juice-shop</a></div>
+<div class="line">Source: <a class="reference external" href="https://github.com/bkimminich/pwning-juice-shop">https://github.com/bkimminich/pwning-juice-shop</a></div>
+<div class="line">Dockerfile: <a class="reference external" href="https://hub.docker.com/r/bkimminich/juice-shop/dockerfile">https://hub.docker.com/r/bkimminich/juice-shop/dockerfile</a></div>
 </div>
 <ul>
 <li><p>OWASP Juice Shop is a deliberately vulnerable web application
@@ -18025,6 +18028,22 @@ found in the application including hints how to spot and exploit
 them. In the appendix you will even find complete step-by-step
 solutions to every challenge.</p>
 </div></blockquote>
+</li>
+<li><p>To run the Juice Shop application on your local machine
+<em>where you may have record of authorized permission to hack</em>:</p>
+<ul>
+<li><p>Install <a class="reference internal" href="index.html#docker"><span class="std std-ref">Docker</span></a></p></li>
+<li><p>Run the Juice Shop Docker container:
+.. code:: bash</p>
+<blockquote>
+<div><p>docker run –rm –name=js -p 3000:3000 bkimminich/juice-shop
+# &lt;Ctrl-C&gt;</p>
+</div></blockquote>
+</li>
+<li><p>Open your browser to <a class="reference external" href="http://localhost:3000/">http://localhost:3000/</a></p></li>
+<li><p>Read and work through the book:
+<a class="reference external" href="https://pwning.owasp-juice.shop/">https://pwning.owasp-juice.shop/</a></p></li>
+</ul>
 </li>
 </ul>
 </div>
