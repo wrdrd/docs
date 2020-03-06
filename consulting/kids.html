@@ -1019,6 +1019,15 @@ service.</p></li>
 <div class="section" id="dns-content-filtering">
 <span id="index-41"></span><span id="id38"></span><h4>DNS Content Filtering<a class="headerlink" href="#dns-content-filtering" title="Permalink to this headline">¶</a></h4>
 <ul>
+<li><p>DNS is used to transform a domain name (“localhost.org”)
+to an IPv4 or an IPv6 address (“127.0.0.1”, “::1”).</p></li>
+<li><p>HTTP and HTTPS may use DNS or connect directly to an IP
+(in which case no DNS resolution occurs).</p></li>
+<li><p>Domain names are resolved to IP addresses by sending a request
+and receiving a reply from a DNS resolver.</p></li>
+<li><p>DNS resolvers can be set through DHCP (when a machine connects to the
+internet and receives an IP address, a subnet, a gateway IP, and a DNS
+server address) or manually.</p></li>
 <li><p>DNS resolver IPs
 can be set on the router or on a particular machine.
 Depending on the operating system, you may need admin rights
@@ -1032,29 +1041,30 @@ configuration on the router.</em></p></li>
 custom DNS resolver IPs because of the way their captive portal
 attempts to redirect any request for any URL to the hotspot login
 page.</p></li>
-<li><p>ISPs are allowed to sell customers’ DNS usage history.</p></li>
+<li><p>In the US, ISPs are allowed to sell customers’ DNS usage history
+(regardless of the unknown age of the user(s))</p></li>
 <li><p>There are third-party DNS services which pledge not to sell DNS usage
 history.</p>
 <ul>
 <li><p><a class="reference internal" href="#opendns"><span class="std std-ref">OpenDNS</span></a></p></li>
-<li><p><span class="xref std std-ref">CleanBrowsing.org</span></p></li>
-<li><p>CloudFlare DNS:</p>
+<li><p><a class="reference internal" href="#cleanbrowsing-org-dns"><span class="std std-ref">CleanBrowsing.org DNS</span></a></p></li>
+<li><p>CloudFlare DNS</p>
+<p><a class="reference external" href="https://1.1.1.1/">https://1.1.1.1/</a></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mf">1.1</span><span class="o">.</span><span class="mf">1.1</span>
 <span class="mf">1.0</span><span class="o">.</span><span class="mf">0.1</span>
 <span class="mi">2606</span><span class="p">:</span><span class="mi">4700</span><span class="p">:</span><span class="mi">4700</span><span class="p">::</span><span class="mi">1111</span>
 <span class="mi">2606</span><span class="p">:</span><span class="mi">4700</span><span class="p">:</span><span class="mi">4700</span><span class="p">::</span><span class="mi">1001</span>
 </pre></div>
 </div>
-<p><a class="reference external" href="https://1.1.1.1/">https://1.1.1.1/</a></p>
 </li>
-<li><p>Google DNS:</p>
+<li><p>Google DNS</p>
+<p><a class="reference external" href="https://developers.google.com/speed/public-dns/">https://developers.google.com/speed/public-dns/</a></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mf">8.8</span><span class="o">.</span><span class="mf">8.8</span>
 <span class="mf">8.8</span><span class="o">.</span><span class="mf">4.4</span>
 <span class="mi">2001</span><span class="p">:</span><span class="mi">4860</span><span class="p">:</span><span class="mi">4860</span><span class="p">::</span><span class="mi">8888</span>
 <span class="mi">2001</span><span class="p">:</span><span class="mi">4860</span><span class="p">:</span><span class="mi">4860</span><span class="p">::</span><span class="mi">8844</span>
 </pre></div>
 </div>
-<p><a class="reference external" href="https://developers.google.com/speed/public-dns/">https://developers.google.com/speed/public-dns/</a></p>
 </li>
 </ul>
 </li>

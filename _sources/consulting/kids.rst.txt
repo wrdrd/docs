@@ -711,6 +711,15 @@ Content Filtering
 
 DNS Content Filtering
 ^^^^^^^^^^^^^^^^^^^^^^^
+- DNS is used to transform a domain name ("localhost.org")
+  to an IPv4 or an IPv6 address ("127.0.0.1", "::1").
+- HTTP and HTTPS may use DNS or connect directly to an IP
+  (in which case no DNS resolution occurs).
+- Domain names are resolved to IP addresses by sending a request
+  and receiving a reply from a DNS resolver.
+- DNS resolvers can be set through DHCP (when a machine connects to the
+  internet and receives an IP address, a subnet, a gateway IP, and a DNS
+  server address) or manually.
 - DNS resolver IPs
   can be set on the router or on a particular machine.
   Depending on the operating system, you may need admin rights
@@ -727,29 +736,30 @@ DNS Content Filtering
   attempts to redirect any request for any URL to the hotspot login
   page.
 
-- ISPs are allowed to sell customers' DNS usage history.
+- In the US, ISPs are allowed to sell customers' DNS usage history
+  (regardless of the unknown age of the user(s))
 - There are third-party DNS services which pledge not to sell DNS usage
   history.
 
   - :ref:`OpenDNS`
-  - :ref:`CleanBrowsing.org`
-  - CloudFlare DNS::
+  - :ref:`CleanBrowsing.org DNS`
+  - CloudFlare DNS
+
+    https://1.1.1.1/ ::
 
      1.1.1.1
      1.0.0.1
      2606:4700:4700::1111
      2606:4700:4700::1001
 
-    https://1.1.1.1/
+  - Google DNS
 
-  - Google DNS::
+    https://developers.google.com/speed/public-dns/ ::
 
      8.8.8.8
      8.8.4.4
      2001:4860:4860::8888
      2001:4860:4860::8844
-
-    https://developers.google.com/speed/public-dns/
 
 
 .. index:: OpenDNS
