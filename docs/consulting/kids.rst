@@ -699,6 +699,12 @@ Content Filtering
 - Protecting children
   (from things we haven't discussed yet)
 
+  | https://en.wikipedia.org/wiki/Developmental_psychology
+
+- Children's Rights
+
+  | https://en.wikipedia.org/wiki/Children%27s_rights#United_States_law
+
 
 .. index:: DNS content filtering
 .. _dns content filtering:
