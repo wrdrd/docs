@@ -676,6 +676,40 @@ https://en.wikipedia.org/wiki/Linear_algebra
   (:ref:`Jupyter Notebooks <jupyter notebook>`)
 
 
+
+.. index:: Linear Algebra Software
+.. _linear algebra software:
+
+Linear Algebra Software
+`````````````````````````
+* https://docs.scipy.org/doc/numpy/reference/routines.linalg.html
+* https://docs.scipy.org/doc/scipy/reference/tutorial/linalg.html
+* https://docs.scipy.org/doc/scipy/reference/linalg.html
+* https://docs.sympy.org/latest/modules/matrices/matrices.html
+* https://docs.sympy.org/latest/modules/solvers/solvers.html
+* https://scipy-lectures.org/advanced/scipy_sparse/
+* http://scipy-lectures.org/intro/numpy/operations.html#broadcasting
+
+  .. figure:: https://i.stack.imgur.com/JcKv1.png
+     :target: https://i.stack.imgur.com/JcKv1.png
+
+     Array Broadcasting in :ref:`NumPy`:
+
+* https://hadrienj.github.io/posts/Deep-Learning-Book-Series-2.1-Scalars-Vectors-Matrices-and-Tensors/#21-scalars-vectors-matrices-and-tensors
+
+  .. figure:: https://hadrienj.github.io/assets/images/2.1/scalar-vector-matrix-tensor.png
+     :target: https://hadrienj.github.io/assets/images/2.1/scalar-vector-matrix-tensor.png
+
+     Scalar, Vector, Matrix, Tensor:
+
+* http://deeplearning.net/software/theano/library/tensor/basic.html#linear-algebra
+* https://doc.sagemath.org/html/en/tutorial/tour_linalg.html
+* https://doc.sagemath.org/html/en/reference/#linear-algebra
+* https://python.quantecon.org/linear_algebra.html
+* https://github.com/ULAFF/notebooks
+* https://scikit-learn.org/stable/modules/linear_model.html
+
+
 .. index:: Calculus
 .. _calculus:
 
@@ -689,12 +723,23 @@ https://en.wikipedia.org/wiki/Calculus
 * https://www.khanacademy.org/math/multivariable-calculus
 * https://www.khanacademy.org/math/differential-equations
 * https://en.wikipedia.org/wiki/AP_Calculus
-* http://apcentral.collegeboard.com/apc/public/courses/teachers_corner/2178.html
+
+  * http://apcentral.collegeboard.com/apc/public/courses/teachers_corner/2178.html
+
+* https://www.class-central.com/subject/calculus-and-mathematical-analysis
+
+
+.. index:: Calculus Software
+.. _calculus software:
+
+Calculus Software
+``````````````````
+
 * http://www.sagemath.org/calctut/
-* http://boxen.math.washington.edu/home/wdj/teaching/calc1-sage/
+* https://doc.sagemath.org/html/en/reference/index.html#calculus-and-analysis
+* https://docs.sympy.org/latest/tutorial/calculus.html
 * http://nbviewer.ipython.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-5-Sympy.ipynb
 * http://scipy-lectures.github.io/advanced/sympy.html#calculus
-* https://www.class-central.com/subject/calculus-and-mathematical-analysis
 
 
 .. index:: Statistics
@@ -782,6 +827,26 @@ https://en.wikipedia.org/wiki/Receiver_operating_characteristic
 
 https://en.wikipedia.org/wiki/Post_hoc_ergo_propter_hoc
 
+
+
+.. index:: Probability and Statistics Software
+.. _probability and statistics software:
+
+Probability and Statistics Software
+````````````````````````````````````
+* https://doc.sagemath.org/html/en/reference/index.html#probability-and-statistics
+* https://docs.scipy.org/doc/numpy/reference/routines.statistics.html
+* https://docs.scipy.org/doc/scipy/reference/tutorial/stats.html
+* https://docs.scipy.org/doc/scipy/reference/stats.html
+* https://docs.sympy.org/latest/modules/stats.html
+* https://scipy-lectures.org/packages/statistics/
+* https://hadrienj.github.io/posts/Probability-Mass-and-Density-Functions/
+* https://www.statsmodels.org/stable/gettingstarted.html
+* https://www.statsmodels.org/stable/examples/
+* https://greenteapress.com/wp/think-stats-2e/
+*
+  * https://greenteapress.com/thinkstats2/html/
+  * https://github.com/AllenDowney/ThinkStats2
 
 .. index:: Data Analysis
 .. _data-analysis:
