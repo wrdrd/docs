@@ -738,30 +738,52 @@ Content Filtering
 
 DNS Content Filtering
 ^^^^^^^^^^^^^^^^^^^^^^^
-- DNS is a OSI Layer 7 ("application layer") network protocol
-  for cached, distributed key-value lookup
-  that's just about as old as the internet.
+- DNS domain names are resolved to IP addresses by sending a request to
+  and receiving a reply from a DNS nameserver.
 - :ref:`DNS` is used to lookup
   an IPv4 ("A record") or an IPv6 ("AAAA record" / "quad-a record")
   address ("127.0.0.1", "::1") for a
   domain name ("localhost.org").
-- DNS records are typically cached on first request:
+- Most systems will attempt to lookup the IP address
+  for a domain name from a local ``/etc/hosts`` or
+  ``C:\Windows\System32\Drivers\etc\hosts`` file
+  before sending a request to one of the DNS nameservers listed in 
+  ``/etc/resolv.conf``.
+- Instead of everyone regularly downloading an ``/etc/hosts``
+  file containing every domain and IP, we have :ref:`DNS`.
+- DNS is an OSI Layer 7 ("application layer") network protocol
+  for cached distributed key-value lookup
+  that's just about as old as the internet.
+- DNS records are typically cached (stored locally) on first request:
   a DNS resolver cache is typically not *flushed* until the browser
   and/or operating system are restarted.
-- :ref:`HTTP` and :ref:`HTTPS` may use DNS or connect directly to an IP
-  (in which case no DNS resolution occurs).
-- Domain names are resolved to IP addresses by sending a request
-  and receiving a reply from a DNS resolver.
-- DNS resolver addresses can be set through :ref:`DHCP`
-  (when a machine connects to
-  a router running a DHCP server
-  and receives e.g. an IP address, a subnet, a gateway IP, and a DNS
-  server address) or manually.
-- DNS resolver IPs
+  DNS lookups will be served from the local cache
+  until the DNS record TTL expires or the cache is flushed.
+- DNS nameserver IPs
   can be set on the router and/or on a particular machine.
+- DNS nameserver addresses can be set manually
+  or automatically from whatever is listed in a :ref:`DHCP` response.
+- When a device connects to a network,
+  it broadcasts a request for a DHCP server ("DHCPDiscover").
+  The router or gateway runs a DHCP server daemon process
+  which replies to the DHCPDiscover request with a DHCP response
+  ("DHCPOffer")
+  that contains a unique IP address for the requesting device to assign
+  to itself, a subnet from which IP routes can be created,
+  a gateway IP to use as the default route,
+  *one or more DNS nameserver IPs*, and maybe an :ref:`NTP` time server address.
+- Typically, when a router gets a public IP from the ISP over :ref:`DHCP`,
+  it also receives the ISP's DNS nameserver IPs;
+  which it will use by default itself
+  and relay requests to on behalf of devices on the LAN
+  which request DNS.
 - Depending on the operating system, you may need admin rights
-  to change the DNS resolver IPs for a given connection for a given
+  to change the DNS nameserver IPs for a given connection for a given
   user.
+- :ref:`HTTP` and :ref:`HTTPS` connections
+  may lookup the server's IP with DNS or connect directly to an IP
+  (in which case no DNS resolution occurs and so no DNS content
+  filtering can occur).
 - *A VPN,
   DNS over HTTPS (DoH),
   and DNS over TLS (DoT) can bypass any DNS resolver
