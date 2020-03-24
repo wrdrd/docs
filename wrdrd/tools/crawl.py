@@ -215,9 +215,7 @@ def get_stop_words():
         STOP_WORDS = dict.fromkeys(nltk.corpus.stopwords.words("english"), 1)
         STOP_WORDS.update({"pm": 1, "am": 1})
         STOP_WORDS.pop("about")
-
-
-get_stop_words()
+    return STOP_WORDS
 
 
 def get_text_from_bs(bs):
@@ -268,7 +266,7 @@ def extract_words_from_bs(bs):
 KeywordFrequency = namedtuple("KeywordFrequency", ("url", "frequencies"))
 
 
-def word_frequencies(url, keywords, stopwords=STOP_WORDS):
+def word_frequencies(url, keywords, stopwords=None):
     """
     Get frequencies (counts) for a set of (non-stopword) keywords
 
@@ -278,6 +276,8 @@ def word_frequencies(url, keywords, stopwords=STOP_WORDS):
     Returns:
         KeywordFrequency: :py:class:`KeywordFrequency`
     """
+    if stopwords is None:
+        stopwords = get_stop_words()
     words = (x.lower() for x in keywords)
     return KeywordFrequency(
         url, Counter(w for w in words if len(w) > 1 and w not in stopwords)
