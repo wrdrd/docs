@@ -227,8 +227,8 @@ Teaching Tools
 
 Projector
 -------------
-Projection Screen
-Sheet
+- Projection Screens
+  - Sheet
 
 
 .. index:: Presentation Tools
@@ -249,10 +249,12 @@ A/V: Audio/Visual
 
 
 .. index:: Software for Learning
-.. _software for learning:
+.. _software for learning teachers:
 
 Software for Learning
 ======================
+
+See also: :ref:`Kids` > :ref:`Software for Learning`
 
 
 .. index:: CMS: Content Management System
@@ -261,7 +263,7 @@ Software for Learning
 
 CMS: Content Management System
 --------------------------------
-
+| Wikipedia: https://en.wikipedia.org/wiki/Content_management_system
 
 
 .. index:: LMS: Learning Managment System
@@ -269,6 +271,7 @@ CMS: Content Management System
 
 LMS: Learning Managment System
 -------------------------------
+| Wikipedia: https://en.wikipedia.org/wiki/Learning_management_system
 
 
 
@@ -278,6 +281,7 @@ LMS: Learning Managment System
 
 LRS: Learning Record Store
 ---------------------------
+| Wikipedia: https://en.wikipedia.org/wiki/Learning_Record_Store
 
 
 .. index:: SIS: School Information System
@@ -286,8 +290,7 @@ LRS: Learning Record Store
 
 SIS: School Information System
 --------------------------------
-
-
+| Wikipedia: https://en.wikipedia.org/wiki/Student_information_system
 
 
 
