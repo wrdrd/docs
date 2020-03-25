@@ -366,7 +366,7 @@ Theory
 
 Science
 +++++++++
-https://en.wikipedia.org/wiki/Science
+| Wikipedia: https://en.wikipedia.org/wiki/Science
 
 https://en.wikipedia.org/wiki/Outline_of_science
 
@@ -378,7 +378,7 @@ https://en.wikipedia.org/wiki/Category:Science
 
 Cognitive Biases
 ~~~~~~~~~~~~~~~~~~
-https://en.wikipedia.org/wiki/Cognitive_bias
+| Wikipedia: https://en.wikipedia.org/wiki/Cognitive_bias
 
 https://en.wikipedia.org/wiki/Heuristics_in_judgment_and_decision-making
 
@@ -401,7 +401,7 @@ https://en.wikipedia.org/wiki/Critical_thinking
 
 Open Science
 ~~~~~~~~~~~~~~
-https://en.wikipedia.org/wiki/Open_science
+| Wikipedia: https://en.wikipedia.org/wiki/Open_science
 
 * https://en.wikipedia.org/wiki/Open_source
 * https://en.wikipedia.org/wiki/Open_standard
@@ -421,7 +421,7 @@ https://en.wikipedia.org/wiki/Peer_review
 
 Scientific Method
 ~~~~~~~~~~~~~~~~~~
-https://en.wikipedia.org/wiki/Scientific_method
+| Wikipedia: https://en.wikipedia.org/wiki/Scientific_method
 
 https://en.wikipedia.org/wiki/Argument
 
@@ -440,23 +440,34 @@ https://en.wikipedia.org/wiki/Hypothesis
 
 Reproducibility
 ``````````````````
-https://en.wikipedia.org/wiki/Design_of_experiments
+| Wikipedia:  https://en.wikipedia.org/wiki/Reproducibility
 
+* https://en.wikipedia.org/wiki/Design_of_experiments
 * https://en.wikipedia.org/wiki/Design_of_experiments#Discussion_topics_when_setting_up_an_experimental_design
 * https://en.wikipedia.org/wiki/Repeatability
-* https://en.wikipedia.org/wiki/Reproducibility
 
-See: :ref:`Jupyter and Reproducibility`
+See:
+
+* :ref:`Jupyter and Reproducibility`
+* :ref:`LinkedReproducibility`
 
 
 .. index:: Systematic Review
-.. index:: Meta-analysis
+.. _systematic review:
 
 Systematic Review
 ```````````````````
-https://en.wikipedia.org/wiki/Meta-analysis
+| Wikipedia: https://en.wikipedia.org/wiki/Systematic_review
 
-https://en.wikipedia.org/wiki/Systematic_review
+
+
+.. index:: Meta-analysis
+.. _meta-analysis:
+
+Meta-analysis
+```````````````
+| Wikipedia: https://en.wikipedia.org/wiki/Meta-analysis
+
 
 
 .. index:: Linked Reproducibility
@@ -483,7 +494,6 @@ https://en.wikipedia.org/wiki/Outline_of_mathematics
 
 https://en.wikipedia.org/wiki/Mathematics_education#Methods
 
-* http://www.iflscience.com/brain/math-gifs-will-help-you-understand-these-concepts-better-your-teacher-ever-did
 
 
 .. index:: Math Courses
@@ -517,11 +527,11 @@ Math Courses
 
 Project Euler
 ~~~~~~~~~~~~~~
-https://en.wikipedia.org/wiki/Project_Euler
+| Wikipedia: https://en.wikipedia.org/wiki/Project_Euler
+| Homepage: https://projecteuler.net/
 
-https://projecteuler.net/
-
-Math Algorithm Problems
+Project Euler is an very well-known set of math algorithm problems
+with free online grading.
 
 
 .. index:: Rosalind
@@ -531,7 +541,8 @@ Rosalind
 ~~~~~~~~~~
 | Web: http://rosalind.info/
 
-Bioinformatics and Data Science Algorithm Problems and Exercises
+Rosalind hosts a number of :ref:`Python`-based Bioinformatics and Data Science
+Problems and Exercises with free online grading.
 
 
 .. index:: Mathematical Notation
@@ -586,12 +597,28 @@ latex2sympy
 `````````````
 | Pypi: https://pypi.org/project/latex2sympy3/
 | Src: https://github.com/augustt198/latex2sympy
+| Doc: https://docs.sympy.org/latest/modules/parsing.html
 
-At a point, it makes a lot of sense to use executable specifications for
-mathematical concepts.  latex2sympy converts from :ref:`LaTeX` to Pyghon
+latex2sympy converts from :ref:`LaTeX` to Python
 code that works with the :ref:`SymPy` CAS (:ref:`Computer Algebra
 System`).
 
+* latex2sympy is now integrated with :ref:`SymPy` as
+  ``sympy.parsing.latex.parse_latex``:
+  https://docs.sympy.org/latest/modules/parsing.html
+
+  .. code:: python
+
+     #! pip install -y antlr4-python3-runtime
+     #! conda install -y antlr-python-runtime
+     from sympy.parsing.latex import parse_latex
+
+     parse_latex(r'\frac{n(n+1)(2n+1)}{6}')
+     # ((2*n + 1)*n(n + 1))/6
+     parse_latex(r'\prod\limits_{i=1}^n x = x^n')
+     # LaTeXParsingError: I don't understand this
+     # \prod\limits_{i=1}^n x = x^n
+     # ~~~~~^
 
 .. index:: MathJax
 .. _mathjax:
@@ -599,7 +626,8 @@ System`).
 MathJax
 ````````
 | Wikipedia: https://en.wikipedia.org/wiki/MathJax
-| Docs: http://docs.mathjax.org/en/latest/tex.html
+| Homepage: https://www.mathjax.org/
+| Docs: https://docs.mathjax.org/en/latest/input/tex/
 
 MathJax is a :ref:`Javascript` library for displaying
 :ref:`mathml`,
@@ -609,13 +637,81 @@ in a browser.
 
 * http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference
 
-MathJax and :ref:`IPython Notebook` / :ref:`Jupyter Notebook`:
 
-* http://ipython.org/ipython-doc/dev/install/install.html#mathjax
+.. index:: Jupyter and LaTeX
+.. _jupyter and latex:
+
+Jupyter and LaTeX
+``````````````````
+:ref:`Jupyter Notebook` supports a number of different ways
+to include LaTeX/MathTeX in a notebook with :ref:`MathJax`:
+
+1. In a Markdown cell, wrap the LaTeX in double dollar signs: ``$$``:
+
+   .. code:: markdown
+
+      $$c = \sqrt{a^2 + b^2}$$
+
+      Note that these render differently:
+      $$x = share price_today^2 $$
+      $$x = {share price}_{today}^2 $$
+      $$x = \text{share price}_{today}^2 $$
+      $$x = \textit{share price}_{today}^2 $$
+
+2. To display a LaTeX expression inline (without surrounding newline),
+   wrap it in single dollar signs: ``$``:
+
+   .. code:: markdown
+
+      The quadratic equation, $c = \sqrt{a^2 + b^2}$, looks curiously
+      like the quantum probability amplitude equation.
+
+   To display multiple regular dollar signs, escape them with
+   double-backslash ``\\``:
+
+   .. code:: markdown
+
+      One dollar sign: \\$ and another \\$
+
+3. Start a Markdown cell with ``%%latex``:
+
+   .. code:: markdown
+
+      %%latex
+      c = \sqrt{a^2 + b^2}
+
+4. Wrap a latex block with ``$`` and ``\begin{align}``:
+
+   .. code:: markdown
+
+      $
+      \begin{align}
+      \textit{Earnings Per Share} & = \frac{\textit{Earnings}}{\textit{Market Value Per Share}} \\
+      \textit{EPS} & = \frac{\textit{Earnings}}{\textit{Share Price}}
+      \end{align}
+      $
+
+5. Call the ``display()`` function with one or more Math/Latex objects,
+   or just return a ``Math``/``Latex`` object:
+
+   .. code:: python
+
+      from IPython.display import Math
+      Math(r'c = \sqrt{a^2 + b^2}')
+
+   .. code:: python
+
+      from IPython.display import Math, Latex, display
+      display(
+         Math(r'c = \sqrt{a^2 + b^2}'),
+         Latex(r'''\begin{align}''' +'\n'+ 'y = mx+b' +'\n'+ '\end{align}')))
+
+
+Resources for learning :ref:`Jupyter` and :ref:`LaTeX`:
+
+* https://ipython.org/ipython-doc/dev/install/install.html#mathjax
+* https://stackoverflow.com/questions/13208286/how-to-write-latex-in-ipython-notebook
 * https://nbviewer.jupyter.org/github/jupyter/notebook/blob/master/docs/source/examples/Notebook/Typesetting%20Equations.ipynb
-* http://nbviewer.ipython.org/gist/rpmuller/5920182
-* "A Primer on Using LaTeX in Jupyter Notebooks"
-  http://data-blog.udacity.com/posts/2016/10/latex-primer/
 
 
 .. index:: MathML
