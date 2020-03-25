@@ -87,7 +87,7 @@ Hour of Code
 K12 CS Framework
 ------------------
 | Homepage: https://k12cs.org/
-| PDF: http://k12cs.org/wp-content/uploads/2016/09/K%E2%80%9312-Computer-Science-Framework.pdf
+| PDF: https://k12cs.org/wp-content/uploads/2016/09/K%E2%80%9312-Computer-Science-Framework.pdf
 
    The K–12 Computer Science Framework is a high-level set of guidelines
    that informs the development of standards, curriculum, course
@@ -174,7 +174,7 @@ https://www.aap.org/en-us/about-the-aap/aap-press-room/Pages/American-Academy-of
 
 - Ages 0-5:
   "Media and Young Minds"
-  http://pediatrics.aappublications.org/content/early/2016/10/19/peds.2016-2591
+  https://pediatrics.aappublications.org/content/early/2016/10/19/peds.2016-2591
 
      The chief factor that facilitates toddlers’ learning from
      commercial media (starting around 15 months of age) is parents
@@ -184,11 +184,11 @@ https://www.aap.org/en-us/about-the-aap/aap-press-room/Pages/American-Academy-of
 
 - Ages 5-18:
   "Media Use in School-Aged Children and Adolescents"
-  http://pediatrics.aappublications.org/content/early/2016/10/19/peds.2016-2592
+  https://pediatrics.aappublications.org/content/early/2016/10/19/peds.2016-2592
 
 
 - "Children and Adolescents and Digital Media"
-  http://pediatrics.aappublications.org/content/early/2016/10/19/peds.2016-2593
+  https://pediatrics.aappublications.org/content/early/2016/10/19/peds.2016-2593
 
 
 
@@ -328,7 +328,7 @@ Khan Academy Kids
 | Homepage: https://www.khanacademy.org/kids
 | iOSapp: https://itunes.apple.com/app/apple-store/id1378467217
 | AndroidApp: https://play.google.com/store/apps/details?id=org.khankids.android
-| AmazonApp: http://www.amazon.com/gp/mas/dl/android?p=org.khankids.android
+| AmazonApp: https://www.amazon.com/gp/mas/dl/android?p=org.khankids.android
 
 Khan Academy Kids is an app for kids from TODO years
 
@@ -505,9 +505,9 @@ See: :ref:`Kerbal Space Program`
 PBS Kids
 ============
 | Wikipedia: https://en.wikipedia.org/wiki/PBS_Kids
-| Docs: http://www.pbs.org/about/support-pbs/
-| Docs: http://www.pbs.org/foundation/ways-to-give/
-| Homepage: http://pbskids.org/
+| Docs: https://www.pbs.org/about/support-pbs/
+| Docs: https://www.pbs.org/foundation/ways-to-give/
+| Homepage: https://pbskids.org/
 
 PBS Kids is programming for children.
 
@@ -517,7 +517,7 @@ PBS Kids is programming for children.
 
    - https://shop.pbskids.org/pbs-kids-donation
    - https://www.pbs.org/donate/
-   - http://www.pbs.org/foundation/ways-to-give/
+   - https://www.pbs.org/foundation/ways-to-give/
 
 
 .. index:: PBS Kids Video App
@@ -599,7 +599,7 @@ Peg + Cat
 Super Why
 ----------
 | Wikipedia: `<https://en.wikipedia.org/wiki/Super_Why!>`__
-| Homepage: http://pbskids.org/superwhy/
+| Homepage: https://pbskids.org/superwhy/
 
 - Super Why teaches **letters**, **words**, and **reading**.
 
@@ -610,7 +610,7 @@ Super Why
 Ready Jet Go!
 --------------
 | Wikipedia: https://en.wikipedia.org/wiki/Ready_Jet_Go!
-| Homepage: http://pbskids.org/readyjetgo/
+| Homepage: https://pbskids.org/readyjetgo/
 
 - Ready Jet Go! teaches **science** like **physics** and **space**,
   and interpersonal dynamics.
@@ -675,10 +675,18 @@ Cosmos: A Personal Voyage
 Cosmos: A Spacetime Odyssey
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 | Wikipedia: https://en.wikipedia.org/wiki/Cosmos:_A_Spacetime_Odyssey
-| Homepage: http://channel.nationalgeographic.com/cosmos-a-spacetime-odyssey/
 
 - First aired on National Geographic channel in 2014
-- A sequel series will air in 2019
+
+.. index:: Cosmos: Possible Worlds
+.. _cosmos: possible worlds:
+
+Cosmos: Possible Worlds
+^^^^^^^^^^^^^^^^^^^^^^^^
+| Wikipedia: https://en.wikipedia.org/wiki/Cosmos:_Possible_Worlds
+| Homepage: https://www.nationalgeographic.com/tv/shows/cosmos-possible-worlds
+
+- First aired on National Geographic channel in 2020
 
 
 .. index:: One Strange Rock
@@ -687,7 +695,7 @@ Cosmos: A Spacetime Odyssey
 One Strange Rock
 -----------------
 | Wikipedia: `<https://en.wikipedia.org/wiki/One_Strange_Rock_(TV_series)>`__
-| Homepage: http://channel.nationalgeographic.com/one-strange-rock/
+| Homepage: https://channel.nationalgeographic.com/one-strange-rock/
 
 
 .. index:: Blue Planet II
@@ -696,7 +704,7 @@ One Strange Rock
 Blue Planet II
 ---------------
 | Wikipedia: https://en.wikipedia.org/wiki/Blue_Planet_II
-| Homepage: http://www.bbcearth.com/blueplanet2/
+| Homepage: https://www.bbcearth.com/blueplanet2/
 
 
 .. index:: Planet Earth II
@@ -705,7 +713,7 @@ Blue Planet II
 Planet Earth II
 -----------------
 | Wikipedia: https://en.wikipedia.org/wiki/Planet_Earth_II
-| Homepage: http://www.bbcearth.com/planetearth2/
+| Homepage: https://www.bbcearth.com/planetearth2/
 
 
 .. index:: March of the Penguins
