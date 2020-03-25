@@ -24,12 +24,12 @@ Kids and Computer Science
       - :ref:`Code.org <codedotorg>` & :ref:`Hour of Code`
       - Visual Programming
 
-        - https://scratch.mit.edu/
+        - https://scratch.mit.edu/ (:ref:`Scratch`, :ref:`Scratch Jr.`)
 
       - :ref:`Javascript` (JS)
 
         - https://learnxinyminutes.com/docs/javascript/
-        - https://grasshopper.codes/ (Android, iOS)
+        - https://grasshopper.codes/ (:ref:`Grasshopper`, Android, iOS)
 
       - :ref:`Python`
 
@@ -207,9 +207,18 @@ GCompris
 | Wikipedia: https://en.wikipedia.org/wiki/GCompris
 | Homepage: https://gcompris.net/
 | Source: https://cgit.kde.org/gcompris.git/
+| Download: https://gcompris.net/downloads-en.html
+| AndroidApp: https://play.google.com/store/apps/details?id=net.gcompris.full
+| iOSApp: https://apps.apple.com/us/app/gcompris-educational-game/id1020904808
+| WindowsApp: https://www.microsoft.com/en-us/store/p/gcompris/9pgxjtcxn8qm
 
 GCompris is an open source educational software suite
-written with Qt and Python/C and now Qt and C++/QML.
+written with Qt and Python/C and now Qt and C++/QML
+available on Linux, Android, Windows, MacOS, and iOS.
+
+* GCompris has activities for learning how to use a mouse
+* Some activities seem to be easier with an actual mouse than a trackpad
+* GCompris has activities for learning how to use a keyboard
 
 
 .. index:: Scratch
@@ -255,6 +264,25 @@ Scratch Jr.
 | iOSApp: https://itunes.apple.com/us/app/scratchjr/id895485086
 | AndroidApp: https://play.google.com/store/apps/details?id=org.scratchjr.android
 | AmazonApp: https://www.amazon.com/gp/product/B01AKGTD2E
+
+
+.. index:: Grasshopper
+.. _grasshopper:
+
+Grasshopper
+-------------
+| Homepage: https://grasshopper.app/
+| WebApp: https://learn.grasshopper.app/
+| AndroidApp: https://play.google.com/store/apps/details?id=com.area120.grasshopper
+| iOSApp: https://itunes.apple.com/us/app/id1354133284
+
+Grasshopper is a free app by :ref:`Code with Google`
+for learning how to code in :ref:`JS`.
+
+* Grasshopper curriculum:
+  https://grasshopper.app/curriculum/
+* Grasshopper glossary:
+  https://grasshopper.app/glossary/
 
 
 .. index:: Sugar
