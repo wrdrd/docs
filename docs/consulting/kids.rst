@@ -221,6 +221,23 @@ available on Linux, Android, Windows, MacOS, and iOS.
 * GCompris has activities for learning how to use a keyboard
 
 
+.. index:: Scratch Jr.
+.. _scratch jr.:
+
+Scratch Jr.
+------------
+| Wikipedia: https://en.wikipedia.org/wiki/ScratchJr
+| Homepage: https://www.scratchjr.org/
+| Src: https://github.com/LLK/scratchjr
+| Twitter: https://twitter.com/ScratchJr
+| Facebook: https://www.facebook.com/scratchjr
+| iOSApp: https://itunes.apple.com/us/app/scratchjr/id895485086
+| AndroidApp: https://play.google.com/store/apps/details?id=org.scratchjr.android
+| AmazonApp: https://www.amazon.com/gp/product/B01AKGTD2E
+
+Scratch Jr. is version of :ref:`Scratch` for 5-7 year olds.
+
+
 .. index:: Scratch
 .. _scratch:
 
@@ -228,6 +245,9 @@ Scratch
 ---------
 | Wikipedia: `<https://en.wikipedia.org/wiki/Scratch_(programming_language)>`__
 | Homepage: https://scratch.mit.edu/
+| Src: https://github.com/LLK/scratch-www
+| Src: https://github.com/LLK/scratch-gui
+| Src: https://github.com/scratux/scratux
 | Docs: https://en.scratch-wiki.info/wiki/Scratch_Wiki_Home
 | Download: https://scratch.mit.edu/download
 
@@ -247,23 +267,7 @@ available for Windows, MacOS, ChromeOS, Android tablets, and Linux.
 * Scratch Desktop app:
   https://scratch.mit.edu/download
 * Scratch Desktop app for Linux:
-
-  * https://scratux.org/
-  * https://github.com/scratux/scratux
-
-
-.. index:: Scratch Jr.
-.. _scratch jr.:
-
-Scratch Jr.
-------------
-| Wikipedia: https://en.wikipedia.org/wiki/ScratchJr
-| Homepage: https://www.scratchjr.org/
-| Twitter: https://twitter.com/ScratchJr
-| Facebook: https://www.facebook.com/scratchjr
-| iOSApp: https://itunes.apple.com/us/app/scratchjr/id895485086
-| AndroidApp: https://play.google.com/store/apps/details?id=org.scratchjr.android
-| AmazonApp: https://www.amazon.com/gp/product/B01AKGTD2E
+  https://scratux.org/
 
 
 .. index:: Grasshopper
