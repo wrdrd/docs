@@ -290,7 +290,7 @@ for learning how to code in :ref:`JS`.
 
 Sugar
 ------
-| Wikipedia: https://en.wikipedia.org/wiki/Sugar_(software)
+| Wikipedia: `<https://en.wikipedia.org/wiki/Sugar_(software)>`__
 | Homepage: https://sugarlabs.org/
 | Source: https://github.com/sugarlabs/sugar
 
@@ -298,9 +298,15 @@ Sugar is an open source educational software suite
 originally written for the OLPC (One Laptop Per Child) program
 that's written in Python with GTK.
 
-* There's also a web-based version of sugar:
+* There's a web-based version of sugar:
   https://try.sugarizer.org/
-
+* There's a bootable USB stick version of Sugar
+  called "Sugar on a Stick":
+  https://wiki.sugarlabs.org/go/Sugar_on_a_Stick/Installation
+* Sugar packages are in the :ref:`Fedora`, :ref:`Debian`, and :ref:`Ubuntu`
+  package repositories
+* Sugar works on a $35 Raspberry Pi 3b+ ARM computer:
+  https://sugarlabs.org/sugar-for-raspberry-pi/
 
 .. index:: ABC Mouse
 .. _abc mouse:
