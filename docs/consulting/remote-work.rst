@@ -206,6 +206,10 @@ Remote Work Processes
 ----------------------
 - Define all workflows and business processes in the :ref:`Company Handbook`.
 - :ref:`Software Development` > :ref:`Three Questions`
+- https://en.wikipedia.org/wiki/Business_process#Related_concepts
+
+  - https://en.wikipedia.org/wiki/Workflow
+  - [...]
 
 
 .. index:: Synchronous and Asynchronous Timing
