@@ -33,6 +33,7 @@ WRD R&D Documentation
    consulting/art-design
    consulting/ux
    consulting/team-building
+   consulting/remote-work
    consulting/collaboration-plan
    authors
    license

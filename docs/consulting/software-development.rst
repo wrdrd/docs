@@ -268,8 +268,23 @@ Three Questions
 | Wikipedia: https://en.wikipedia.org/wiki/Stand-up_meeting#Three_Questions
 
  1. What did I accomplish yesterday?
+    (What have I accomplished "Since" our last meeting)
  2. What will I do today?
+    (What do I plan to be working on "Until" we meet next)
  3. What obstacles are impeding my progress?
+    ("Obstacles")
+
+An alternative form of the three questions: 
+"Since", "Until", "Obstacles":
+
+.. code:: markdown
+
+   # team/project
+   ## yyyy-mm-dd
+   ### @username
+   #### Since
+   #### Until
+   #### Obstacles
 
 
 .. index:: Digital Stand Up Meeting
@@ -318,13 +333,13 @@ Digital Stand Up Meeting Process Checklist:
        ## 2015-01-01
 
        ### @username1
-       1. yesterday: #1, #2, http://
-       2. today: #2
+       1. since: #1, #2, http://
+       2. until: #2
        3. obstacles: -
 
        ### @username2
-       1. yesterday: #3, #2, https://
-       2. today: #2
+       1. since: #3, #2, https://
+       2. until: #2
        3. obstacles: -
 
 - [ ] Share the link to the live doc with the team
