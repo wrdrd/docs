@@ -157,9 +157,9 @@ Video Conferencing Procedures and Etiquette
 - Ahead of time,
   verify that your camera and microphone work with the software
   that the team has chosen to work with.
-- Have a plain text bullet point agenda.
+- Have a plain text agenda (e.g. in :ref:`Markdown`)
 
-  - If you're leading the meeting, have a bullet point agenda.
+  - If you're leading the meeting, have a plain text agenda.
   - How long is the meeting expected to last?
   - Post the agenda in the text chat.
   - If you're participating in the meeting, it'll likely be very helpful
@@ -192,7 +192,7 @@ Video Conferencing Procedures and Etiquette
 
 - Is video chat necessary, or can we rely upon emoji and written tone
   in a text chat that we can easily log and use verbatim
-  as e.g. quarterly board minutes.
+  as e.g. quarterly board minutes?
 - Concurrent text-based chat:
 
   - Always paste the URLs to the resources that we're discussing.
