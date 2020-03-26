@@ -188,6 +188,8 @@ Video Conferencing Procedures and Etiquette
   - You may need to get up to sign for a package or attend to
     something that may not require formal wear.
 
+        Why am I wearing a tuxedo t-shirt today?
+
 - Is video chat necessary, or can we rely upon emoji and written tone
   in a text chat that we can easily log and use verbatim
   as e.g. quarterly board minutes.
