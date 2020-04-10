@@ -18,9 +18,10 @@ https://en.wikipedia.org/wiki/Data_science
 
 :ref:`Open Source` :ref:`Tools`:
 
-* :ref:`SageMathCloud` (:ref:`SageMath`)
 * :ref:`Jupyter Notebook`
 
+  * :ref:`CoCalc` (:ref:`SageMath`)
+  * :ref:`Google Colab`
   * :ref:`Jupyter Docker Stacks` (:ref:`Conda`)
   * :ref:`Jupyter Extensions`
   * :ref:`Jupyter and Reproducibility`
@@ -67,6 +68,7 @@ Ten Simple Rules
 
 1. For Every Result, Keep Track of How It Was Produced
 
+   * :ref:`git`
    * :ref:`RDF`, :ref:`JSON-LD` (e.g. :ref:`W3C` :ref:`PROV`)
    * :ref:`Workflow`
    * :ref:`Knowledge Engineering` > :ref:`Linked Data`
@@ -77,6 +79,7 @@ Ten Simple Rules
    * :ref:`Continuous Delivery`
 
      * :ref:`Test Automation` (e.g. :ref:`Test Driven Development <TDD>`)
+   * Data pipelines composed of containers
 
 3. Archive the Exact Versions of All External Programs Used
 
@@ -175,6 +178,7 @@ Ten Simple Rules
 
 10. Provide Public Access to Scripts, Runs, and Results
 
+    * :ref:`BinderHub`
     * :ref:`Jupyter and Reproducibility`
     * https://en.wikipedia.org/wiki/Comparison_of_source_code_hosting_facilities
 

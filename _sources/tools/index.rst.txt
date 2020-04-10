@@ -5174,6 +5174,8 @@ Jupyter
 | Src: https://github.com/jupyter/
 | DockerHub: https://hub.docker.com/repos/jupyter/
 | Docs: https://jupyter.readthedocs.io/en/latest/
+| Awesome: https://github.com/markusschanta/awesome-jupyter
+| **Awesome:** https://github.com/quobit/awesome-python-in-education#jupyter
 
 
 
@@ -5561,38 +5563,58 @@ Anaconda Jupyter Notebook Extensions
 * :ref:`Conda` environments, :ref:`Anaconda`, :ref:`Jupyter Notebook`
 
 
+.. index:: CoCalc
 .. index:: SageMathCloud
+.. _cocalc:
 .. _sagemathcloud:
 
-SageMathCloud
+CoCalc
 ~~~~~~~~~~~~~~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/SageMathCloud
-| Homepage: https://cloud.sagemath.com/
-| Src: https://github.com/sagemathinc/smc
-| ChromeExt: https://chrome.google.com/webstore/detail/the-sagemath-cloud/eocdndagganmilahaiclppjigemcinmb
-| Docs: https://github.com/sagemathinc/smc/wiki
+| Wikipedia: https://en.wikipedia.org/wiki/CoCalc
+| Homepage: https://cocalc.com/
+| Src: https://github.com/sagemathinc/cocalc
+| Src: https://github.com/sagemathinc/cocalc-docker
+| ChromeExt: https://chrome.google.com/webstore/detail/cocalc/eocdndagganmilahaiclppjigemcinmb
+| Docs: https://doc.cocalc.com/
+| Docs: https://doc.cocalc.com/teaching-instructors.html
+| Docs: https://doc.cocalc.com/teaching-students.html
 
-* https://cloud.sagemath.com/
+* https://cocalc.com/
 * Interactive Worksheets
-* Course Management
+* Course Management: Assignments, Handouts, :ref:`nbgrader`
 * :ref:`LaTeX` Editor
 * :ref:`Jupyter Notebook`
 * Linux Terminal
 * :ref:`Sage Math`
-* CodeMirror
-* Login with:
 
 
-.. index:: Wakari
-.. _wakari:
+.. index:: Google Colab
+.. index:: Colab
+.. _colab:
+.. _google colab:
 
-Wakari
-~~~~~~~
-| Homepage: https://wakari.io/
-| Src: https://anaconda.org/wakari
+Google Colab
+~~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Project_Jupyter#Colaboratory
+| Homepage: https://colab.research.google.com/
+| Src: https://github.com/googlecolab
+| Docs: https://research.google.com/colaboratory/faq.html
+| Awesome: https://github.com/firmai/awesome-google-colab
 
-* :ref:`Anaconda`, SSH
-* https://github.com/liftoff/GateOne
+Google Colab is a hosted :ref:`Jupyter Notebook` system.
+
+- Colab has a number of packages installed in the default environment.
+  If you want additional packages, you need to ``!pip install`` them
+  once when you first open the notebook.
+- Colab is forked from a previous version of Jupyter Notebook,
+  and so does not have some newer Jupyter Notebook
+  or any Jupyter Lab features.
+- :ref:`ipywidgets` are not yet implemented on Colab.
+- Colab saves to Google Drive.
+- Colab instances are free and can use some GPU time if needed.
+- There is a Colab Pro.
+- Google AI Platform Notebooks hosts :ref:`JupyterLab` notebooks:
+  https://cloud.google.com/ai-platform-notebooks
 
 
 .. index:: Dotfiles
