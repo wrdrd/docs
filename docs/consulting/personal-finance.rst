@@ -13,7 +13,7 @@ Personal Finance
 Dave Ramsey
 -------------
 | Wikipedia: https://en.wikipedia.org/wiki/Dave_Ramsey
-| Homepage: http://www.daveramsey.com/
+| Homepage: https://www.daveramsey.com/
 | Twitter: https://twitter.com/daveramsey
 
 * The 7 Baby Steps
