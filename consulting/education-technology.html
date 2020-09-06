@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- OpenGraph metadata: ogp.me -->
+    <meta property="og:title" content="Education Technology" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="WRD R&D" />
+    <!--
+    <meta property="og:description" content="" />
+    -->
+    <meta property="og:image" content="https://wrdrd.github.io/static/png/drawing-7.09-v0.1.1--_desk.svg-470x242.png" />
+    <meta property="og:image:width" content="470" />
+    <meta property="og:image:height" content="242" />
+    <!--
+    <meta property="og:image:secure_url" content="./_static/img/logo.png" />
+    -->
+    <!-- Twitter metadata -->
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:title" content="Education Technology" />
+    <meta property="twitter:description" content="" />
+    <meta property="twitter:site" content="wrdrd" />
+    <meta property="twitter:creator" content="wrdrd" />
+    
+    <title>Education Technology &mdash; WRD R&amp;D Documentation</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    
+
+<link rel="stylesheet" href="../_static/css/basicstrap-base.css" type="text/css" />
+<link rel="stylesheet" id="current-theme" href="../_static/css/bootstrap3/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" id="current-adjust-theme" type="text/css" />
+
+<link rel="stylesheet" href="../_static/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+<link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+<link rel="stylesheet" href="../_static/css/local.css" type="text/css" />
+    
+<script type="text/javascript">
+  var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:    '../',
+            VERSION:     '0.2.0',
+            COLLAPSE_INDEX: false,
+            FILE_SUFFIX: '.html',
+            HAS_SOURCE:  true
+  };
+</script>
+    <script type="text/javascript" src="../_static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/js/local.js"></script>
+    <script type="text/javascript" src="../_static/js/bootstrap3.min.js"></script>
+<script type="text/javascript" src="../_static/js/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="../_static/js/basicstrap.js"></script>
+<script type="text/javascript">
+</script>
+    <link rel="search" type="application/opensearchdescription+xml"
+    title="Search within WRD R&amp;D Documentation"
+    href="../_static/opensearch.xml"/>
+    <link rel="index" title="Index" href="../genindex" />
+    <link rel="search" title="Search" href="../search" />
+    <link rel="top" title="WRD R&amp;D Documentation" href="../index" />
+    <link rel="next" title="Educational Testing" href="educational-testing" />
+    <link rel="prev" title="Investing" href="investing" /> 
+  </head>
+  <body role="document">
+    <div id="navbar-top" class="navbar navbar-default" role="navigation" aria-label="top navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index">WRD R&amp;D Documentation</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown visible-xs">
+                <a role="button" id="localToc" data-toggle="dropdown" data-target="#" href="#">Table Of Contents <b class="caret"></b></a>
+                <ul class="dropdown-menu localtoc sp-localtoc" role="menu" aria-labelledby="localToc">
+                <ul>
+<li><a class="reference internal" href="#">Education Technology</a><ul>
+<li><a class="reference internal" href="#stem">STEM</a></li>
+<li><a class="reference internal" href="#publishing">Publishing</a><ul>
+<li><a class="reference internal" href="#github-pages">GitHub Pages</a></li>
+<li><a class="reference internal" href="#gitlab-pages">GitLab Pages</a></li>
+<li><a class="reference internal" href="#readthedocs">ReadTheDocs</a></li>
+<li><a class="reference internal" href="#self-directed-learning">Self Directed Learning</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#online-courses">Online Courses</a><ul>
+<li><a class="reference internal" href="#class-central">Class Central</a></li>
+<li><a class="reference internal" href="#coursera">Coursera</a></li>
+<li><a class="reference internal" href="#edx">edX</a><ul>
+<li><a class="reference internal" href="#jupyter-and-edx">Jupyter and edX</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#udacity">Udacity</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#jupyter-and-learning">Jupyter and Learning</a><ul>
+<li><a class="reference internal" href="#jupyter-and-reproducibility">Jupyter and Reproducibility</a></li>
+<li><a class="reference internal" href="#jupyter-and-tdd">Jupyter and TDD</a><ul>
+<li><a class="reference internal" href="#nbgrader">nbgrader</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#jupyterhub-servers">JupyterHub Servers</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#knowledge-engineering">Knowledge Engineering</a><ul>
+<li><a class="reference internal" href="#linked-curricula-graphs">Linked Curricula Graphs</a></li>
+<li><a class="reference internal" href="#openbadges">OpenBadges</a></li>
+<li><a class="reference internal" href="#openbadges-backpack">OpenBadges Backpack</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+                </ul>
+              </li>
+
+            
+              <li><a href="investing" title="Investing" accesskey="P">previous </a></li>
+              <li><a href="educational-testing" title="Educational Testing" accesskey="N">next </a></li>
+              <li><a href="../py-modindex" title="Python Module Index" >modules </a></li>
+              <li><a href="../genindex" title="General Index" accesskey="I">index </a></li>
+            
+            <li class="visible-xs"><a href="../_sources/consulting/education-technology.rst.txt" rel="nofollow">Show Source</a></li>
+
+            <li class="visible-xs">
+                <form class="search form-search form-inline navbar-form navbar-right sp-searchbox" action="../search" method="get">
+                  <div class="input-append input-group">
+                    <input type="text" class="search-query form-control" name="q" placeholder="Search...">
+                    <span class="input-group-btn">
+                    <input type="submit" class="btn" value="Go" />
+                    </span>
+                  </div>
+                  <input type="hidden" name="check_keywords" value="yes" />
+                  <input type="hidden" name="area" value="default" />
+                </form>
+            </li>
+
+            
+
+          </ul>
+
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- container -->
+    <div class="container-fluid">
+
+      <!-- row -->
+      <div class="row">
+         
+<div class="col-md-3 hidden-xs" id="sidebar-wrapper">
+  <div class="sidebar hidden-xs" role="navigation" aria-label="main navigation">
+  <h3><a href="../index">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Education Technology</a><ul>
+<li><a class="reference internal" href="#stem">STEM</a></li>
+<li><a class="reference internal" href="#publishing">Publishing</a><ul>
+<li><a class="reference internal" href="#github-pages">GitHub Pages</a></li>
+<li><a class="reference internal" href="#gitlab-pages">GitLab Pages</a></li>
+<li><a class="reference internal" href="#readthedocs">ReadTheDocs</a></li>
+<li><a class="reference internal" href="#self-directed-learning">Self Directed Learning</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#online-courses">Online Courses</a><ul>
+<li><a class="reference internal" href="#class-central">Class Central</a></li>
+<li><a class="reference internal" href="#coursera">Coursera</a></li>
+<li><a class="reference internal" href="#edx">edX</a><ul>
+<li><a class="reference internal" href="#jupyter-and-edx">Jupyter and edX</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#udacity">Udacity</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#jupyter-and-learning">Jupyter and Learning</a><ul>
+<li><a class="reference internal" href="#jupyter-and-reproducibility">Jupyter and Reproducibility</a></li>
+<li><a class="reference internal" href="#jupyter-and-tdd">Jupyter and TDD</a><ul>
+<li><a class="reference internal" href="#nbgrader">nbgrader</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#jupyterhub-servers">JupyterHub Servers</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#knowledge-engineering">Knowledge Engineering</a><ul>
+<li><a class="reference internal" href="#linked-curricula-graphs">Linked Curricula Graphs</a></li>
+<li><a class="reference internal" href="#openbadges">OpenBadges</a></li>
+<li><a class="reference internal" href="#openbadges-backpack">OpenBadges Backpack</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="investing"
+                        title="previous chapter">Investing</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="educational-testing"
+                        title="next chapter">Educational Testing</a></p>
+<div id="searchbox" role="search">
+  <h3>Quick search</h3>
+  <form class="search form-inline" action="../search" method="get">
+      <div class="input-append input-group">
+        <input type="text" class="search-query form-control" name="q" placeholder="Search...">
+        <span class="input-group-btn">
+        <input type="submit" class="btn" value="Go" />
+        </span>
+      </div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+
+<div class="widget navlinks">
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/consulting/education-technology.rst.txt"
+            rel="nofollow"
+            target="_blank">Source RST</a></li>
+    <li><a href="https://github.com/wrdrd/docs/blob/master/docs/consulting/education-technology.rst"
+            rel="nofollow"
+            target="_blank">Source</a></li>
+    <li><a href="https://github.com/wrdrd/docs/edit/master/docs/consulting/education-technology.rst"
+            rel="nofollow"
+            target="_blank">Edit</a></li>
+     <li><a href="https://github.com/wrdrd/docs/commits/master/docs/consulting/education-technology.rst"
+             rel="nofollow"
+             target="_blank">History</a></li>
+     <li><a href="https://github.com/wrdrd/docs/blame/master/docs/consulting/education-technology.rst"
+             rel="nofollow"
+             target="_blank">Annotate</a></li>
+  </ul>
+</div>
+<div class="widget srclinks">
+  <h3>Source</h3>
+  <h5><a href="https://github.com/wrdrd/docs">github.com/wrdrd/docs</a>
+      / <a href="https://github.com/wrdrd/docs/tree/master"
+                rel="nofollow"
+                target="_blank"
+                font="monospace">master</a>
+  </h5>
+  <ul>
+    <li><pre>git clone https://github.com/wrdrd/docs</pre></li>
+    <li><pre>git clone ssh://git@github.com/wrdrd/docs</pre></li>
+    <li><pre>git clone git://github.com/wrdrd/docs</pre></li>
+  </ul>
+</div><div class="widget">
+    <h3><a href="https://wrdrd.github.io/">wrdrd.github.io</a></h3>
+    <ul>
+        <li><a href="https://wrdrd.github.io/">wrdrd.github.io/</a></li>
+        <li><a href="https://wrdrd.github.io/docs/">wrdrd.github.io/docs/</a></li>
+        <li><a href="https://wrdrd.github.io/wiki/">wrdrd.github.io/wiki/</a></li>
+        <li><a href="https://github.com/wrdrd">github.com/wrdrd</a></li>
+        <li><a href="https://google.com/+Wrdrdrd">+Wrdrdrd</a></li>
+        <li><a href="https://twitter.com/wrdrd">@wrdrd</a></li>
+    </ul>
+</div>
+  </div>
+</div> 
+        
+
+        <div class="col-md-9" id="content-wrapper">
+          <div class="document" role="main">
+            <div class="documentwrapper">
+              <div class="bodywrapper">
+                <div class="body">
+                  
+  <span class="target" id="index-0"></span><div class="section" id="education-technology">
+<span id="index-1"></span><span id="id1"></span><h1>Education Technology<a class="headerlink" href="#education-technology" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Educational_technology">https://en.wikipedia.org/wiki/Educational_technology</a></div>
+<div class="line">Hashtags: <code class="docutils literal notranslate"><span class="pre">#EdTech</span></code>, <code class="docutils literal notranslate"><span class="pre">#EduTech</span></code></div>
+</div>
+<span class="target" id="index-2"></span><div class="section" id="stem">
+<span id="index-3"></span><span id="id2"></span><h2>STEM<a class="headerlink" href="#stem" title="Permalink to this headline">¶</a></h2>
+<p>STEM (<em>Science, Technology, Engineering, and Mathematics</em>)
+is a broad field of R&amp;D fields.</p>
+<ul class="simple">
+<li><p>Science (<a class="reference internal" href="data-science#science"><span class="std std-ref">Science</span></a>, <a class="reference internal" href="data-science#data-science"><span class="std std-ref">Data Science</span></a>)</p></li>
+<li><p>Technology (<a class="reference internal" href="software-development#computer-science"><span class="std std-ref">Computer Science</span></a>, <a class="reference internal" href="information-systems#information-systems"><span class="std std-ref">Information Systems</span></a>,
+<a class="reference internal" href="art-design#id1"><span class="std std-ref">Art &amp; Design</span></a>, <a class="reference internal" href="#education-technology"><span class="std std-ref">Education Technology</span></a>)</p></li>
+<li><p>Engineering (<a class="reference internal" href="knowledge-engineering#knowledge-engineering"><span class="std std-ref">Knowledge Engineering</span></a>,
+<a class="reference internal" href="software-development#software-development"><span class="std std-ref">Software Development</span></a>,
+<a class="reference internal" href="software-development#project-management"><span class="std std-ref">Project Management</span></a>)</p></li>
+<li><p><a class="reference internal" href="data-science#math"><span class="std std-ref">Mathematics</span></a> (<a class="reference internal" href="data-science#data-science"><span class="std std-ref">Data Science</span></a>)</p></li>
+</ul>
+<p>Why STEM?</p>
+<ul class="simple">
+<li><p>STEM combines fields for holism</p></li>
+<li><p>STEM combines fields for allocation efficiency</p></li>
+<li><p><strong>STEAM</strong> includes <a class="reference internal" href="art-design#id1"><span class="std std-ref">Art &amp; Design</span></a></p></li>
+</ul>
+<p>Why CS?</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="software-development#computer-science"><span class="std std-ref">Computer Science</span></a> tools are foundational to
+<a class="reference internal" href="data-science#data-science"><span class="std std-ref">Data Science</span></a>,
+which is foundational to <a class="reference internal" href="#stem"><span class="std std-ref">STEM</span></a>,
+which is foundational to <a class="reference internal" href="information-systems#term-Infrastructure"><span class="xref std std-term">infrastructure</span></a>.</p></li>
+</ul>
+</div>
+<div class="section" id="publishing">
+<span id="index-4"></span><span id="id3"></span><h2>Publishing<a class="headerlink" href="#publishing" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Publishing">https://en.wikipedia.org/wiki/Publishing</a></p>
+<ul class="simple">
+<li><p>Project Code and Artifact Repositories</p>
+<ul>
+<li><p><a class="reference internal" href="../tools/index#vcs"><span class="std std-ref">Version Control</span></a>: <a class="reference internal" href="../tools/index#git"><span class="std std-ref">Git</span></a>, <a class="reference internal" href="../tools/index#mercurial"><span class="std std-ref">Mercurial</span></a></p></li>
+<li><p>Project Forge: GitHub, BitBucket, SourceForge</p></li>
+<li><p>Artifacts: built packages, reports, PDFs, data files</p></li>
+</ul>
+</li>
+<li><p><strong>DOI</strong>-granting repositories (“getting a citable identifier
+which resolves to a <a class="reference internal" href="web-development#term-URL"><span class="xref std std-term">URL</span></a>” (~like a shorturl)):</p>
+<ul>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Digital_object_identifier">https://en.wikipedia.org/wiki/Digital_object_identifier</a> (<a class="reference internal" href="web-development#term-URN"><span class="xref std std-term">URN</span></a>)</p></li>
+<li><p><a class="reference external" href="https://guides.github.com/activities/citable-code/">https://guides.github.com/activities/citable-code/</a></p></li>
+<li><p><a class="reference external" href="https://figshare.com">https://figshare.com</a></p></li>
+<li><p><a class="reference external" href="https://zenodo.org/">https://zenodo.org/</a></p></li>
+</ul>
+</li>
+<li><p>Data Hosting (see: <a class="reference internal" href="art-design#web-distribution"><span class="std std-ref">Web Distribution</span></a>):</p>
+<ul>
+<li><p>HTTP Object Storage (private/public <a class="reference internal" href="art-design#cdn"><span class="std std-ref">CDN</span></a>)</p></li>
+<li><p><a class="reference internal" href="art-design#bittorrent"><span class="std std-ref">BitTorrent</span></a></p>
+<ul>
+<li><p>BitTorrent + <a class="reference internal" href="knowledge-engineering#http"><span class="std std-ref">HTTP</span></a> <a class="reference internal" href="art-design#term-Web-Seeding"><span class="xref std std-term">Web Seeds</span></a></p></li>
+</ul>
+</li>
+<li><p><strong>It is faster to run the code next to the data.</strong></p>
+<ul>
+<li><p><a class="reference internal" href="knowledge-engineering#hdfs"><span class="std std-ref">HDFS</span></a>, <a class="reference internal" href="knowledge-engineering#hadoop"><span class="std std-ref">Hadoop</span></a>, <a class="reference internal" href="knowledge-engineering#hive"><span class="std std-ref">Hive</span></a>,
+<a class="reference internal" href="knowledge-engineering#cassandra"><span class="std std-ref">Cassandra</span></a>, <a class="reference internal" href="knowledge-engineering#spark"><span class="std std-ref">Spark</span></a>, <a class="reference internal" href="../tools/index#mesos"><span class="std std-ref">Mesos</span></a>, <span class="xref std std-ref">ibis</span>,
+<a class="reference internal" href="knowledge-engineering#ddfs"><span class="std std-ref">DDFS</span></a></p></li>
+<li><p><a class="reference internal" href="knowledge-engineering#accumulo"><span class="std std-ref">Accumulo</span></a> iterators</p></li>
+<li><p><a class="reference internal" href="knowledge-engineering#sql"><span class="std std-ref">SQL</span></a> (<a class="reference internal" href="knowledge-engineering#relational-databases"><span class="std std-ref">Relational Database</span></a>)</p></li>
+<li><p><a class="reference internal" href="knowledge-engineering#sparql"><span class="std std-ref">SPARQL</span></a> (<a class="reference internal" href="knowledge-engineering#linked-data"><span class="std std-ref">Linked Data</span></a>)</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Publishing Tools</p>
+<ul>
+<li><p><a class="reference internal" href="#github-pages"><span class="std std-ref">GitHub Pages</span></a></p></li>
+<li><p><a class="reference internal" href="#readthedocs"><span class="std std-ref">ReadTheDocs</span></a></p></li>
+<li><p><a class="reference internal" href="../tools/index#sphinx"><span class="std std-ref">Sphinx</span></a></p></li>
+<li><p><a class="reference internal" href="../tools/index#jupyter-notebook"><span class="std std-ref">Jupyter Notebook</span></a></p>
+<ul>
+<li><p><a class="reference internal" href="../tools/index#nbformat"><span class="std std-ref">nbformat</span></a> JSON -&gt; HTML, HTML slides, LaTeX, PDF, ePub, MOBI</p></li>
+<li><p><a class="reference internal" href="../tools/index#nbviewer"><span class="std std-ref">nbviewer</span></a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="../tools/index#documentation-tools"><span class="std std-ref">Documentation Tools</span></a></p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="github-pages">
+<span id="index-5"></span><span id="id4"></span><h3>GitHub Pages<a class="headerlink" href="#github-pages" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Homepage: <a class="reference external" href="https://pages.github.com/">https://pages.github.com/</a></div>
+</div>
+<p>GitHub Pages serves webpages from <a class="reference internal" href="../tools/index#git"><span class="std std-ref">Git</span></a> branches.</p>
+<ul class="simple">
+<li><p>GitHub Pages serves from the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch of project repositories</p></li>
+<li><p>GitHub Pages serves from the <code class="docutils literal notranslate"><span class="pre">master</span></code> branch of user and organization
+repos</p></li>
+<li><p>GitHub Pages is backed by a <a class="reference internal" href="art-design#cdn"><span class="std std-ref">CDN</span></a></p></li>
+<li><p>GitHub Pages get URLs like: <a class="reference external" href="https://wrdrd.github.io/">https://wrdrd.github.io/</a></p></li>
+<li><p>GitHub Pages can have URLs like: <a class="reference external" href="https://wrdrd.com/">https://wrdrd.com/</a></p>
+<ul>
+<li><p>Adding a <code class="docutils literal notranslate"><span class="pre">./CNAME</span></code> file to a repo causes GitHub Pages
+to redirect URLs to the CNAME (e.g. <a class="reference external" href="https://wrdrd.com/">https://wrdrd.com/</a>)</p></li>
+<li><p>If the <a class="reference internal" href="web-development#term-DNS"><span class="xref std std-term">DNS</span></a> <a class="reference internal" href="web-development#term-Domain-Name"><span class="xref std std-term">domain name</span></a> does not resolve,
+GitHub Pages still redirects to the address in the <code class="docutils literal notranslate"><span class="pre">./CNAME</span></code> file</p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="../tools/index#pgs"><span class="std std-ref">Pgs</span></a> can also serve webpages from <a class="reference internal" href="../tools/index#git"><span class="std std-ref">Git</span></a> branches
+like <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> and <code class="docutils literal notranslate"><span class="pre">master</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="gitlab-pages">
+<span id="id5"></span><h3>GitLab Pages<a class="headerlink" href="#gitlab-pages" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Homepage: <a class="reference external" href="https://pages.gitlab.io/">https://pages.gitlab.io/</a></div>
+</div>
+</div>
+<div class="section" id="readthedocs">
+<span id="index-6"></span><span id="id6"></span><h3>ReadTheDocs<a class="headerlink" href="#readthedocs" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Homepage: <a class="reference external" href="https://readthedocs.org/">https://readthedocs.org/</a></div>
+<div class="line">Source: git <a class="reference external" href="https://github.com/rtfd/readthedocs.io">https://github.com/rtfd/readthedocs.io</a></div>
+<div class="line">Source: git <a class="reference external" href="https://github.com/rtfd/readthedocs-docker-images">https://github.com/rtfd/readthedocs-docker-images</a></div>
+<div class="line">Docs: <a class="reference external" href="https://read-the-docs.readthedocs.io/en/latest/">https://read-the-docs.readthedocs.io/en/latest/</a></div>
+</div>
+<p>ReadTheDocs is a free and <a class="reference internal" href="open-source#open-source"><span class="std std-ref">Open Source</span></a>
+web service for publishing <a class="reference internal" href="../tools/index#sphinx"><span class="std std-ref">Sphinx</span></a> documentation sets
+which functions like a <a class="reference internal" href="software-development#continuous-integration"><span class="std std-ref">Continuous Integration</span></a> build server
+and artifact publisher.</p>
+<ul class="simple">
+<li><p>ReadTheDocs can rebuild HTML, PDF, and ePub from
+<a class="reference internal" href="../tools/index#sphinx"><span class="std std-ref">Sphinx</span></a> <a class="reference internal" href="../tools/index#restructuredtext"><span class="std std-ref">ReStructuredText</span></a>
+every time a commit is made to a e.g. GitHub or BitBucket
+repository: <a class="reference external" href="https://read-the-docs.readthedocs.io/en/latest/webhooks.html">https://read-the-docs.readthedocs.io/en/latest/webhooks.html</a></p></li>
+<li><p>ReadTheDocs can build and serve localized versions
+for one or more languages: <a class="reference external" href="https://read-the-docs.readthedocs.io/en/latest/localization.html">https://read-the-docs.readthedocs.io/en/latest/localization.html</a></p></li>
+<li><p>ReadTheDocs can build and serve multiple versions or <a class="reference internal" href="../tools/index#vcs"><span class="std std-ref">Version Control Systems</span></a>
+revisions. By default, ReadTheDocs will try appending <code class="docutils literal notranslate"><span class="pre">/en/latest/</span></code>,
+so these links all redirect to the first link</p>
+<ul>
+<li><p><a class="reference external" href="https://read-the-docs.readthedocs.io/en/latest/">https://read-the-docs.readthedocs.io/en/latest/</a></p></li>
+<li><p><a class="reference external" href="https://read-the-docs.readthedocs.io/">https://read-the-docs.readthedocs.io/</a></p></li>
+<li><p><a class="reference external" href="https://read-the-docs.rtfd.org/">https://read-the-docs.rtfd.org/</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="self-directed-learning">
+<h3>Self Directed Learning<a class="headerlink" href="#self-directed-learning" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">“Self-Directed Learning with Online Resources:</div>
+<div class="line-block">
+<div class="line">An independent study of challenges, opportunities and</div>
+<div class="line">strategies for encouraging feedback</div>
+<div class="line">between tools and resources in online learning systems” (2012)</div>
+<div class="line"><br /></div>
+</div>
+<div class="line">Source: git <a class="reference external" href="https://github.com/westurner/self-directed-learning">https://github.com/westurner/self-directed-learning</a></div>
+<div class="line">HTML: <a class="reference external" href="https://westurner.github.io/self-directed-learning/">https://westurner.github.io/self-directed-learning/</a></div>
+<div class="line">HTML: <a class="reference external" href="https://self-directed-learning.readthedocs.io/">https://self-directed-learning.readthedocs.io/</a></div>
+<div class="line">HTML (zip): <a class="reference external" href="https://media.readthedocs.io/htmlzip/self-directed-learning/self-directed-learning.zip">https://media.readthedocs.io/htmlzip/self-directed-learning/self-directed-learning.zip</a></div>
+<div class="line">PDF: <a class="reference external" href="https://media.readthedocs.io/pdf/self-directed-learning/latest/self-directed-learning.pdf">https://media.readthedocs.io/pdf/self-directed-learning/latest/self-directed-learning.pdf</a></div>
+<div class="line">ePub: <a class="reference external" href="https://media.readthedocs.io/epub/self-directed-learning/latest/self-directed-learning.epub">https://media.readthedocs.io/epub/self-directed-learning/latest/self-directed-learning.epub</a></div>
+</div>
+<p>Report Process:</p>
+<ul class="simple">
+<li><p>[X] Goals: overbroad scope</p></li>
+<li><p>[X] Generate: 1 ream of paper; 1 pack of pens</p></li>
+<li><p>[o] Generate, Reduce, Clarify: Bookmarks, Zotero</p></li>
+<li><p>[X] Reduce, Clarify: match, cluster, re-sequence sheets (2D)</p></li>
+<li><p>[X] Products: transcribe handwritten sheets of paper as slides</p></li>
+<li><p>[o] Products: glossary</p></li>
+<li><p>[ ] Products: essay form</p></li>
+<li><p>[o] Tools: <a class="reference internal" href="../tools/index#sphinx"><span class="std std-ref">Sphinx</span></a>, <a class="reference internal" href="../tools/index#restructuredtext"><span class="std std-ref">ReStructuredText</span></a>, <a class="reference internal" href="#readthedocs"><span class="std std-ref">ReadTheDocs</span></a></p></li>
+<li><p>[o] <a class="reference external" href="https://westurner.github.io/self-directed-learning/process.html">https://westurner.github.io/self-directed-learning/process.html</a></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="online-courses">
+<span id="index-7"></span><span id="id7"></span><h2>Online Courses<a class="headerlink" href="#online-courses" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Course Catalogs</p>
+<ul>
+<li><p><a class="reference internal" href="#class-central"><span class="std std-ref">Class Central</span></a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#linked-curricula-graphs"><span class="std std-ref">Linked Curricula Graphs</span></a> (<a class="reference internal" href="knowledge-engineering#rdf"><span class="std std-ref">RDF</span></a>, <a class="reference internal" href="knowledge-engineering#rdfa"><span class="std std-ref">RDFa</span></a>,
+<a class="reference internal" href="knowledge-engineering#schema-org"><span class="std std-ref">Schema.org</span></a>/Course)</p></li>
+</ul>
+<div class="section" id="class-central">
+<span id="index-8"></span><span id="id8"></span><h3>Class Central<a class="headerlink" href="#class-central" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Homepage: <a class="reference external" href="https://www.class-central.com/">https://www.class-central.com/</a></div>
+<div class="line">Source: git <a class="reference external" href="https://github.com/dhawalhshah/class-central/">https://github.com/dhawalhshah/class-central/</a></div>
+<div class="line">OpenBadges: [ ]</div>
+</div>
+<p>Class Central aggregates lists of <a class="reference internal" href="#online-courses"><span class="std std-ref">Online Courses</span></a>.</p>
+</div>
+<div class="section" id="coursera">
+<span id="index-9"></span><span id="id9"></span><h3>Coursera<a class="headerlink" href="#coursera" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Coursera">https://en.wikipedia.org/wiki/Coursera</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://www.coursera.org/">https://www.coursera.org/</a></div>
+<div class="line">Courses: <a class="reference external" href="https://www.coursera.org/courses">https://www.coursera.org/courses</a></div>
+<div class="line">OpenBadges: [ ]</div>
+<div class="line">AndroidApp: <a class="reference external" href="https://play.google.com/store/apps/details?id=org.coursera.android">https://play.google.com/store/apps/details?id=org.coursera.android</a></div>
+<div class="line">iOSApp: <a class="reference external" href="https://itunes.apple.com/us/app/coursera/id736535961">https://itunes.apple.com/us/app/coursera/id736535961</a></div>
+<div class="line">Source: <a class="reference external" href="https://github.com/coursera">https://github.com/coursera</a></div>
+<div class="line">Docs: <a class="reference external" href="https://tech.coursera.org/app-platform/">https://tech.coursera.org/app-platform/</a></div>
+</div>
+<p>Coursera is a platform for <a class="reference internal" href="#online-courses"><span class="std std-ref">Online Courses</span></a>.</p>
+</div>
+<div class="section" id="edx">
+<span id="index-10"></span><span id="id10"></span><h3>edX<a class="headerlink" href="#edx" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/EdX">https://en.wikipedia.org/wiki/EdX</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://www.edx.org/">https://www.edx.org/</a></div>
+<div class="line">Courses: <a class="reference external" href="https://www.edx.org/course">https://www.edx.org/course</a></div>
+<div class="line">OpenBadges: [ ]</div>
+<div class="line">Homepage: <a class="reference external" href="https://open.edx.org/">https://open.edx.org/</a></div>
+<div class="line">AndroidApp: <a class="reference external" href="https://play.google.com/store/apps/details?id=org.edx.mobile">https://play.google.com/store/apps/details?id=org.edx.mobile</a></div>
+<div class="line">iOSApp: <a class="reference external" href="https://itunes.apple.com/us/app/edx/id945480667">https://itunes.apple.com/us/app/edx/id945480667</a></div>
+<div class="line">Source: <a class="reference external" href="https://github.com/edx">https://github.com/edx</a></div>
+<div class="line">Source: git <a class="reference external" href="https://github.com/edx/edx-platform">https://github.com/edx/edx-platform</a></div>
+<div class="line">Docs: <a class="reference external" href="http://docs.edx.org/">http://docs.edx.org/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://edx.readthedocs.io/projects/edx-guide-for-students/en/latest/">https://edx.readthedocs.io/projects/edx-guide-for-students/en/latest/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://edx.readthedocs.io/projects/edx-partner-course-staff/en/latest/">https://edx.readthedocs.io/projects/edx-partner-course-staff/en/latest/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://github.com/edx/edx-platform/wiki">https://github.com/edx/edx-platform/wiki</a></div>
+<div class="line">Docs: <a class="reference external" href="https://github.com/edx/edx-platform/wiki/Sites-powered-by-Open-edX">https://github.com/edx/edx-platform/wiki/Sites-powered-by-Open-edX</a></div>
+<div class="line">Docs: <a class="reference external" href="https://open.edx.org/open-edx-rest-apis">https://open.edx.org/open-edx-rest-apis</a></div>
+<div class="line">Docs: <a class="reference external" href="https://open.edx.org/features-roadmap/all">https://open.edx.org/features-roadmap/all</a></div>
+<div class="line">Twitter: <a class="reference external" href="https://twitter.com/edXOnline">https://twitter.com/edXOnline</a></div>
+</div>
+<p>edX is an <a class="reference internal" href="open-source#open-source"><span class="std std-ref">Open Source</span></a> platform for <a class="reference internal" href="#online-courses"><span class="std std-ref">Online Courses</span></a>
+written mostly in <a class="reference internal" href="../tools/index#python"><span class="std std-ref">Python</span></a> and <a class="reference internal" href="../tools/index#javascript"><span class="std std-ref">Javascript</span></a>.</p>
+<div class="section" id="jupyter-and-edx">
+<span id="index-11"></span><span id="id11"></span><h4>Jupyter and edX<a class="headerlink" href="#jupyter-and-edx" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p><a class="reference internal" href="../tools/index#jupyter-notebook"><span class="std std-ref">Jupyter Notebook</span></a> and <a class="reference internal" href="#edx"><span class="std std-ref">edX</span></a> are mostly written in <a class="reference internal" href="../tools/index#python"><span class="std std-ref">Python</span></a></p></li>
+<li><p>It’s possible to generate an edX course from Jupyter notebooks:</p>
+<ul>
+<li><p><a class="reference external" href="http://mail.scipy.org/pipermail/ipython-dev/2015-February/015911.html">http://mail.scipy.org/pipermail/ipython-dev/2015-February/015911.html</a></p></li>
+<li><p><a class="reference external" href="https://github.com/topocm/topocm_content/">https://github.com/topocm/topocm_content/</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="udacity">
+<span id="index-12"></span><span id="id12"></span><h3>Udacity<a class="headerlink" href="#udacity" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Udacity">https://en.wikipedia.org/wiki/Udacity</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://www.udacity.com/">https://www.udacity.com/</a></div>
+<div class="line">Courses: <a class="reference external" href="https://www.udacity.com/courses/">https://www.udacity.com/courses/</a></div>
+<div class="line">OpenBadges: [ ]</div>
+<div class="line">Docs: <a class="reference external" href="https://www.udacity.com/wiki/">https://www.udacity.com/wiki/</a></div>
+</div>
+<p>Udacity is a platform for <a class="reference internal" href="#online-courses"><span class="std std-ref">Online Courses</span></a>.</p>
+<ul class="simple">
+<li><p>Udacity offers “Nanodegrees”: <a class="reference external" href="https://www.udacity.com/nanodegree">https://www.udacity.com/nanodegree</a></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="jupyter-and-learning">
+<span id="index-13"></span><span id="id13"></span><h2>Jupyter and Learning<a class="headerlink" href="#jupyter-and-learning" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="../tools/index#jupyter"><span class="std std-ref">Jupyter</span></a> Project is great for learning and education.</p>
+<ul>
+<li><p><a class="reference internal" href="../tools/index#jupyter-notebook"><span class="std std-ref">Jupyter Notebook</span></a>, <a class="reference internal" href="../tools/index#jupyter"><span class="std std-ref">JupyterHub</span></a></p></li>
+<li><p>Jupyter Notebook supports over 42 languages other than <a class="reference internal" href="../tools/index#python"><span class="std std-ref">Python</span></a>.</p></li>
+<li><p>Jupyter notebooks can be published as HTML, PDF, ePub, MOBI.</p></li>
+<li><p>Jupyter notebooks can be published as reveal.js HTML slide presentations.</p></li>
+<li><p>Jupyter notebooks can be published to and served directly from GitHub repos.</p></li>
+<li><p>Jupyter notebooks can be published as <a class="reference internal" href="#edx"><span class="std std-ref">edX</span></a> courses
+(<a class="reference internal" href="#jupyter-and-edx"><span class="std std-ref">Jupyter and edX</span></a>)</p></li>
+<li><p>Jupyter notebooks can be structured into
+per-user, per-class, per-project <a class="reference internal" href="../tools/index#docker"><span class="std std-ref">Docker</span></a> containers
+(and folders)</p></li>
+<li><p>Jupyter notebooks can be saved to and read from Google Drive:</p>
+<p><a class="reference external" href="https://github.com/jupyter/jupyter-drive">https://github.com/jupyter/jupyter-drive</a></p>
+</li>
+<li><p>Jupyter notebooks are great for taking notes:</p>
+<p><a class="reference external" href="https://github.com/notablemind/notablemind">https://github.com/notablemind/notablemind</a></p>
+</li>
+<li><p>Jupyter notebooks should specify package dependencies
+(see: <cite>Jupyter and Reproducibility</cite>)</p>
+<ul class="simple">
+<li><p>Jupyter notebooks can utilize code from <a class="reference internal" href="../tools/index#scipystack"><span class="std std-ref">SciPy Stack</span></a> <a class="reference internal" href="../tools/index#packages"><span class="std std-ref">Packages</span></a>
+(e.g. <a class="reference internal" href="../tools/index#pip"><span class="std std-ref">Pip</span></a> <a class="reference internal" href="../tools/index#python-packages"><span class="std std-ref">Python Packages</span></a>, <a class="reference internal" href="../tools/index#conda"><span class="std std-ref">Conda</span></a>, <a class="reference internal" href="../tools/index#anaconda"><span class="std std-ref">Anaconda</span></a>)</p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="../tools/index#jupyter"><span class="std std-ref">JupyterHub</span></a> servers host <a class="reference internal" href="../tools/index#jupyter-notebook"><span class="std std-ref">Jupyter Notebook</span></a> servers
+for one or more users; with authentication
+and optional Docker integration.</p></li>
+</ul>
+<p>Learning Topics:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="software-development#computer-science"><span class="std std-ref">Computer Science</span></a></p></li>
+<li><p><a class="reference internal" href="data-science#data-learning"><span class="std std-ref">Data Science &gt; Data Learning</span></a></p></li>
+<li><p><a class="reference internal" href="software-development#software-development"><span class="std std-ref">Software Development</span></a></p></li>
+<li><p><a class="reference internal" href="../tools/index#python"><span class="std std-ref">Python</span></a></p></li>
+<li><p><a class="reference internal" href="../tools/index#awesome-python-testing"><span class="std std-ref">awesome-python-testing</span></a></p></li>
+</ul>
+<div class="section" id="jupyter-and-reproducibility">
+<span id="index-14"></span><span id="id14"></span><h3>Jupyter and Reproducibility<a class="headerlink" href="#jupyter-and-reproducibility" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="../tools/index#jupyter-notebook"><span class="std std-ref">Jupyter Notebook</span></a>,
+<a class="reference internal" href="data-science#open-science"><span class="std std-ref">Open Science</span></a>,
+and <a class="reference internal" href="data-science#reproducibility"><span class="std std-ref">Reproducibility</span></a>.</p>
+<div class="line-block">
+<div class="line">Lecture notes (in <a class="reference internal" href="../tools/index#ipython-notebook"><span class="std std-ref">IPython Notebook</span></a> format) on</div>
+<div class="line">Reproducible Science And Modern Scientific Software</div>
+<div class="line"><a class="reference external" href="https://github.com/fperez/reprosw">https://github.com/fperez/reprosw</a></div>
+</div>
+<div class="line-block">
+<div class="line">“Ten Simple Rules for Reproducible Computational Research”</div>
+<div class="line"><a class="reference external" href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003285">http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003285</a></div>
+</div>
+<blockquote>
+<div><p>Rule 3: Archive the Exact Versions of All External Programs Used</p>
+</div></blockquote>
+<ul>
+<li><p>[ ] List required <a class="reference internal" href="../tools/index#packages"><span class="std std-ref">Packages</span></a> and extensions</p>
+<ul>
+<li><p>watermark: datetime stamp, package versions</p>
+<p><a class="reference external" href="https://github.com/rasbt/watermark">https://github.com/rasbt/watermark</a></p>
+</li>
+<li><p>version_information: Python interpreter,
+and <a class="reference internal" href="../tools/index#python-packages"><span class="std std-ref">Python Package</span></a> versions</p>
+<p><a class="reference external" href="https://github.com/jrjohansson/version_information">https://github.com/jrjohansson/version_information</a></p>
+</li>
+</ul>
+</li>
+<li><p>[ ] List <em>instaleld</em> <a class="reference internal" href="../tools/index#packages"><span class="std std-ref">Packages</span></a> and extensions</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="../tools/index#pip"><span class="std std-ref">Pip</span></a>: <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">freeze</span></code></p></li>
+<li><p><a class="reference internal" href="../tools/index#conda"><span class="std std-ref">Conda</span></a>: <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">export</span></code></p></li>
+<li><p><a class="reference internal" href="../tools/index#dpkg"><span class="std std-ref">Dpkg</span></a>: <code class="docutils literal notranslate"><span class="pre">dpkg-query</span> <span class="pre">-l</span></code>, <code class="docutils literal notranslate"><span class="pre">dpkg</span> <span class="pre">--get-selections</span></code>,
+<code class="docutils literal notranslate"><span class="pre">wajig</span> <span class="pre">list-installed</span></code></p></li>
+</ul>
+</li>
+<li><p>[ ] List reference and other maybe supported <a class="reference internal" href="../tools/index#operating-systems"><span class="std std-ref">OS</span></a></p>
+<ul class="simple">
+<li><p><a class="reference internal" href="../tools/index#osx"><span class="std std-ref">OS X</span></a>, <a class="reference internal" href="../tools/index#linux"><span class="std std-ref">Linux</span></a>: <code class="docutils literal notranslate"><span class="pre">uname</span> <span class="pre">-a</span></code></p></li>
+<li><p><a class="reference internal" href="../tools/index#windows"><span class="std std-ref">Windows</span></a>: <code class="docutils literal notranslate"><span class="pre">systeminfo</span></code></p></li>
+</ul>
+</li>
+<li><p>[ ] List reference and other maybe supported platforms</p>
+<ul class="simple">
+<li><p>CPU: i386, i686, x86-64, ARMv</p></li>
+<li><p>GPU</p></li>
+<li><p>RAM</p></li>
+<li><p><a class="reference internal" href="../tools/index#osquery"><span class="std std-ref">osquery</span></a></p></li>
+<li><p><span class="xref std std-term">Salt Grains</span></p></li>
+</ul>
+</li>
+<li><p>[ ] Generate complete machine image (Backup, Restore, <a class="reference internal" href="../tools/index#virtualization"><span class="std std-ref">Virtualization</span></a>)</p>
+<ul class="simple">
+<li><p>Machine image process:</p>
+<ul>
+<li><p>[ ] Backup: Take snapshot</p></li>
+<li><p>[ ] Post-process: compress, add metadata, test decompression</p></li>
+<li><p>[ ] Archive: share/store/backup/upload/verify</p></li>
+</ul>
+</li>
+<li><p>Machine Imaging Tools:</p>
+<ul>
+<li><p><cite>clonezilla</cite> (backup and restore partitions from
+CD/DVD, LAN, HTTP, SSH, PXE)</p></li>
+<li><p><cite>bup</cite> (<a class="reference internal" href="../tools/index#git"><span class="std std-ref">Git</span></a>-like backups for very many and very large files)</p></li>
+<li><p><cite>rsync</cite>, <cite>rsnapshot</cite>, <cite>rdiff</cite></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="../tools/index#virtualization"><span class="std std-ref">Virtualization</span></a> Machine Imaging Tools</p>
+<ul>
+<li><p><a class="reference internal" href="../tools/index#docker"><span class="std std-ref">Docker</span></a> <a class="reference internal" href="../tools/index#term-Dockerfile"><span class="xref std std-term">Dockerfile</span></a> and image</p></li>
+<li><p><a class="reference internal" href="../tools/index#packer"><span class="std std-ref">Packer</span></a> config and image</p></li>
+<li><p><a class="reference internal" href="../tools/index#vagrant"><span class="std std-ref">Vagrant</span></a> <a class="reference internal" href="../tools/index#term-vagrantfile"><span class="xref std std-term">Vagrantfile</span></a> and box</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="jupyter-and-tdd">
+<span id="index-15"></span><span id="id15"></span><h3>Jupyter and TDD<a class="headerlink" href="#jupyter-and-tdd" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>The input/output feedback cycle of IPython and Jupyter notebooks
+captures the essence of <a class="reference internal" href="software-development#tdd"><span class="std std-ref">Test Driven Development</span></a></p></li>
+<li><p>Jupyter notebooks can be tested with <a class="reference internal" href="../tools/index#runipy"><span class="std std-ref">runipy</span></a> and <a class="reference internal" href="../tools/index#ipython-nose"><span class="std std-ref">ipython_nose</span></a></p></li>
+<li><p>Jupyter notebooks can be tested and graded with <a class="reference internal" href="../tools/index#nbgrader"><span class="std std-ref">nbgrader</span></a></p></li>
+<li><p><a class="reference internal" href="../tools/index#awesome-python-testing"><span class="std std-ref">awesome-python-testing</span></a> links to a number of testing concepts
+and <a class="reference internal" href="../tools/index#python"><span class="std std-ref">Python</span></a> tools</p></li>
+</ul>
+<div class="section" id="nbgrader">
+<span id="index-16"></span><span id="id16"></span><h4>nbgrader<a class="headerlink" href="#nbgrader" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Source: git <a class="reference external" href="https://github.com/jupyter/nbgrader">https://github.com/jupyter/nbgrader</a></div>
+</div>
+<p><a class="reference internal" href="../tools/index#jupyter-notebook"><span class="std std-ref">Jupyter notebooks</span></a>
+can be submitted and centrally graded with nbgrader.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>While it’s possible to run tests of all code cells
+in a Jupyter notebook programmatically with runipy,
+<strong>it’s usually preferable to factor
+testable code into a module and a package</strong>
+(e.g. <a class="reference internal" href="../tools/index#python-packages"><span class="std std-ref">Python Package</span></a>, <a class="reference internal" href="../tools/index#conda"><span class="std std-ref">Conda package</span></a>)
+and then reference those tested functions from within
+a <a class="reference internal" href="../tools/index#jupyter-notebook"><span class="std std-ref">Jupyter notebook</span></a>.</p>
+</div>
+</div>
+</div>
+<div class="section" id="jupyterhub-servers">
+<span id="index-17"></span><span id="id17"></span><h3>JupyterHub Servers<a class="headerlink" href="#jupyterhub-servers" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p>Sharing resources affords many challenges and opportunities</p>
+<ul class="simple">
+<li><p>Timeshare resource exhaustion (CPU, RAM, Storage)</p></li>
+<li><p>Security</p></li>
+</ul>
+</li>
+<li><p>Principle of least privilege
+(“privilege separation”, <a class="reference internal" href="information-systems#confidentiality"><span class="std std-ref">Confidentiality</span></a>)</p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Principle_of_least_privilege">https://en.wikipedia.org/wiki/Principle_of_least_privilege</a></p>
+</li>
+<li><p>There are <a class="reference internal" href="../tools/index#docker"><span class="std std-ref">Docker</span></a> containers for <a class="reference internal" href="../tools/index#ipython-notebook"><span class="std std-ref">IPython Notebook</span></a>,
+<a class="reference internal" href="../tools/index#jupyter-notebook"><span class="std std-ref">Jupyter Notebook</span></a>, <a class="reference internal" href="../tools/index#jupyter"><span class="std std-ref">JupyterHub</span></a>
+and supporting services.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/ipython/ipython/wiki/Install:-Docker">https://github.com/ipython/ipython/wiki/Install:-Docker</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="../tools/index#jupyter"><span class="std std-ref">JupyterHub</span></a> servers spawn and proxy to
+separate instances of <a class="reference internal" href="../tools/index#jupyter-notebook"><span class="std std-ref">Jupyter Notebook</span></a>;
+which run on different ports, IPs, and/or containers.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/jupyter/jupyterhub/wiki/Spawners">https://github.com/jupyter/jupyterhub/wiki/Spawners</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="../tools/index#jupyter"><span class="std std-ref">JupyterHub</span></a> servers authenticate users from a number
+of sources (local, OAuth, GitHub)</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/jupyter/jupyterhub/wiki/Authenticators">https://github.com/jupyter/jupyterhub/wiki/Authenticators</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="knowledge-engineering">
+<h2>Knowledge Engineering<a class="headerlink" href="#knowledge-engineering" title="Permalink to this headline">¶</a></h2>
+<p>See: <a class="reference internal" href="knowledge-engineering#knowledge-engineering"><span class="std std-ref">Knowledge Engineering</span></a></p>
+<div class="section" id="linked-curricula-graphs">
+<span id="index-18"></span><span id="id18"></span><h3>Linked Curricula Graphs<a class="headerlink" href="#linked-curricula-graphs" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p><a class="reference external" href="https://westurner.github.io/self-directed-learning/slides.html#knowledge-graph">https://westurner.github.io/self-directed-learning/slides.html#knowledge-graph</a> (2012)</p></li>
+<li><p><a class="reference external" href="https://westurner.github.io/redditlog/#comment/ci3c1o3">https://westurner.github.io/redditlog/#comment/ci3c1o3</a> (2014)</p></li>
+<li><p>[ ] Add <a class="reference internal" href="knowledge-engineering#rdfa"><span class="std std-ref">RDFa</span></a> to Course Catalog / Index HTML pages</p>
+<ul class="simple">
+<li><p>[ ] schema.org/Course: <a class="reference external" href="https://github.com/schemaorg/schemaorg/issues/195">https://github.com/schemaorg/schemaorg/issues/195</a></p></li>
+</ul>
+</li>
+<li><p>[ ] Link each component of the curriculum to a <strong>Concept URI</strong></p>
+<ul>
+<li><p><a class="reference internal" href="knowledge-engineering#knowledge-engineering"><span class="std std-ref">Knowledge Engineering</span></a>
+lists a number of <strong>Wikipedia Concept URIs</strong></p>
+<p>Wikipedia (-&gt; DBpedia RDF &lt;- <a class="reference internal" href="knowledge-engineering#lodcloud"><span class="std std-ref">LODCloud</span></a>))</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/DBpedia">https://en.wikipedia.org/wiki/DBpedia</a> – Wikipedia page for “DBpedia”</p></li>
+<li><p><a class="reference external" href="https://dbpedia.org/page/DBpedia">https://dbpedia.org/page/DBpedia</a> – DBpedia page for “DBpedia”</p></li>
+<li><p><a class="reference external" href="https://www.wikidata.org/wiki/Q465">https://www.wikidata.org/wiki/Q465</a> – Wikidata page for DBpedia (“Q465”)</p></li>
+</ul>
+</li>
+<li><p>A more local/structured vocabulary (with #permalink <a class="reference internal" href="web-development#term-URI"><span class="xref std std-term">URIs</span></a>)
+could also defined mppings from local <cite>Concept URIs</cite> to
+one or more <cite>Wikipedia Concept URIs</cite></p>
+<ul class="simple">
+<li><p><cite>Common Core</cite></p></li>
+<li><p><cite>LRMI</cite></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>[ ] Write tools to discover curriculum resources
+relevant to one or more concept <a class="reference internal" href="web-development#term-URI"><span class="xref std std-term">URIs</span></a></p></li>
+<li><p>[ ] Write tools to sequence curriculum resources which have
+<a class="reference internal" href="web-development#term-URI"><span class="xref std std-term">URIs</span></a></p>
+<ul class="simple">
+<li><p><a class="reference internal" href="art-design#web-production"><span class="std std-ref">Art &amp; Design &gt; Web Production</span></a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="openbadges">
+<span id="index-19"></span><span id="id19"></span><h3>OpenBadges<a class="headerlink" href="#openbadges" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Homepage: <a class="reference external" href="http://openbadges.org/">http://openbadges.org/</a></div>
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Mozilla_Open_Badges">https://en.wikipedia.org/wiki/Mozilla_Open_Badges</a></div>
+<div class="line">Standard: <a class="reference external" href="https://github.com/openbadges/openbadges-specification">https://github.com/openbadges/openbadges-specification</a></div>
+<div class="line">Docs: <a class="reference external" href="https://wiki.mozilla.org/Badges">https://wiki.mozilla.org/Badges</a></div>
+<div class="line">Twitter: <a class="reference external" href="https://twitter.com/openbadges">https://twitter.com/openbadges</a></div>
+</div>
+<ul>
+<li><p>[ ] OpenBadges <a class="reference internal" href="knowledge-engineering#json"><span class="std std-ref">JSON</span></a> Web Signatures and <a class="reference internal" href="knowledge-engineering#schema-org"><span class="std std-ref">Schema.org</span></a>
+(<a class="reference internal" href="knowledge-engineering#rdfa"><span class="std std-ref">RDFa</span></a>, <a class="reference internal" href="knowledge-engineering#json-ld"><span class="std std-ref">JSON-LD</span></a>):</p>
+<p><a class="reference external" href="https://github.com/openbadges/openbadges-specification/issues/9">https://github.com/openbadges/openbadges-specification/issues/9</a></p>
+</li>
+</ul>
+</div>
+<div class="section" id="openbadges-backpack">
+<span id="index-20"></span><span id="id20"></span><h3>OpenBadges Backpack<a class="headerlink" href="#openbadges-backpack" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Homepage: <a class="reference external" href="https://backpack.openbadges.org/backpack/">https://backpack.openbadges.org/backpack/</a></div>
+<div class="line">Source: <a class="reference external" href="https://github.com/mozilla/openbadges-backpack">https://github.com/mozilla/openbadges-backpack</a></div>
+</div>
+<p>See also: <a class="reference internal" href="team-building#team-building"><span class="std std-ref">Team Building</span></a>, <a class="reference internal" href="../tools/index#jupyter"><span class="std std-ref">Jupyter</span></a></p>
+</div>
+</div>
+</div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div><!-- /row -->
+
+      <!-- row -->
+      <div class="row footer-relbar">
+<div id="navbar-related" class=" related navbar navbar-default" role="navigation" aria-label="related navigation">
+  <div class="navbar-inner">
+    <ul class="nav navbar-nav text-center">
+        <li><a href="../index">WRD R&amp;D Documentation</a></li>
+    </ul>
+<ul class="nav navbar-nav text-center">
+      
+        <li><a href="investing" title="Investing" >previous</a></li>
+        <li><a href="educational-testing" title="Educational Testing" >next</a></li>
+        <li><a href="../py-modindex" title="Python Module Index" >modules</a></li>
+        <li><a href="../genindex" title="General Index" >index</a></li>
+        <li><a href="#">top</a></li> 
+      
+    </ul>
+  </div>
+</div>
+      </div><!-- /row -->
+
+      <!-- footer -->
+      <footer role="contentinfo">
+          &copy; <a href="../license">Copyright</a> WRD R&amp;D 2014 - 2020.
+
+      <br/>
+      <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+        <img alt="Creative Commons License"
+        style="border-width:0; padding:12px"
+        src="../_static/img/cc-by-sa-4.0-88x31.png" /></a>
+      <br />
+      <span xmlns:dct="http://purl.org/dc/terms/"
+        property="dct:title">WRD R&amp;D Documentation</span> is licensed under a 
+      <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"
+        >Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+      </footer>
+      <!-- /footer -->
+
+    </div>
+    <!-- /container -->
+
+  </body>
+</html>
