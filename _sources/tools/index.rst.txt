@@ -4695,6 +4695,9 @@ A few commands to try when learning to shell with Bash:
    info bash
    man bash
 
+   man man
+   info info  # [down arrow] and then [enter] to select, or 'n' for next
+
 * Bash works with unix command outputs and return codes:
   a program returns nonzero when there is an error:
 

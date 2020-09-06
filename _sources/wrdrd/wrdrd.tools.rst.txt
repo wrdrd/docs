@@ -32,4 +32,3 @@ wrdrd.tools.stripsinglehtml module
    :members:
    :undoc-members:
    :show-inheritance:
-

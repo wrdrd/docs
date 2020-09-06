@@ -1752,9 +1752,9 @@ all called “fiber to the x (<em>FTTX</em>)”.</p>
 <div class="section" id="network-glossary">
 <h2>Network Glossary<a class="headerlink" href="#network-glossary" title="Permalink to this headline">¶</a></h2>
 <dl class="glossary">
-<dt id="term-soho">SOHO</dt><dd><p>Small home office</p>
+<dt id="term-SOHO">SOHO</dt><dd><p>Small home office</p>
 </dd>
-<dt id="term-modem">Modem</dt><dd><p>Modulator/demodulator.
+<dt id="term-Modem">Modem</dt><dd><p>Modulator/demodulator.
 Transforms signals between
 <a class="reference internal" href="#ethernet"><span class="std std-ref">Ethernet</span></a>,
 <a class="reference internal" href="#ethernet"><span class="std std-ref">Ethernet</span></a> over <a class="reference internal" href="#usb"><span class="std std-ref">USB</span></a>,
@@ -1765,8 +1765,8 @@ High Frequency Radio <a class="reference internal" href="#mobile-broadband"><spa
 SDR (<em>Software Defined Radio</em>),
 <a class="reference internal" href="#fiber-to-the-x"><span class="std std-ref">Fiber to the x</span></a>.</p>
 </dd>
-<dt id="term-arp">ARP</dt><dd><p>ARP (<em>Address Resolution Protocol</em>) is an <a class="reference internal" href="knowledge-engineering#ietf"><span class="std std-ref">IETF</span></a> standard
-for linking <a class="reference internal" href="web-development#term-ip"><span class="xref std std-term">IP</span></a> addresses with <a class="reference internal" href="#ethernet"><span class="std std-ref">Ethernet</span></a> addresses.</p>
+<dt id="term-ARP">ARP</dt><dd><p>ARP (<em>Address Resolution Protocol</em>) is an <a class="reference internal" href="knowledge-engineering#ietf"><span class="std std-ref">IETF</span></a> standard
+for linking <a class="reference internal" href="web-development#term-IP"><span class="xref std std-term">IP</span></a> addresses with <a class="reference internal" href="#ethernet"><span class="std std-ref">Ethernet</span></a> addresses.</p>
 <div class="line-block">
 <div class="line">Standard: <a class="reference external" href="https://tools.ietf.org/html/rfc826">https://tools.ietf.org/html/rfc826</a></div>
 </div>
@@ -1776,7 +1776,7 @@ arp -n  <span class="c1"># do not resolve DNS addresses (display IPs instead)</s
 </pre></div>
 </div>
 </dd>
-<dt id="term-dhcp">DHCP</dt><dd><p>DHCP (<em>Dynamic Host Configuration Protocol</em>) is an internet standard
+<dt id="term-DHCP">DHCP</dt><dd><p>DHCP (<em>Dynamic Host Configuration Protocol</em>) is an internet standard
 for acquiring IP address leases and e.g. DNS resolver configuration
 settings.</p>
 <p>Most SOHO routers include a DHCP server.</p>
@@ -1794,20 +1794,20 @@ for this is to preemptively renew the DHCP lease
 <p>To troubleshoot an ISP connection by removing the router
 and directly attaching a device with a firewall that starts at boot
 time,
-it’s often necessary to ‘clone’ the <a class="reference internal" href="web-development#term-mac-address"><span class="xref std std-term">MAC address</span></a>
+it’s often necessary to ‘clone’ the <a class="reference internal" href="web-development#term-MAC-address"><span class="xref std std-term">MAC address</span></a>
 (for a static IP) or release the DHCP lease and/or power-cycle the
 modem.</p>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol">https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol</a></div>
 </div>
 </dd>
-<dt id="term-gateway">Gateway</dt><dd><p>A gateway provides a connection to another <a class="reference internal" href="web-development#term-ip"><span class="xref std std-term">IP</span></a> network.</p>
-<p>A routing table may include a default gateway <a class="reference internal" href="#term-network-route"><span class="xref std std-term">network route</span></a>
+<dt id="term-Gateway">Gateway</dt><dd><p>A gateway provides a connection to another <a class="reference internal" href="web-development#term-IP"><span class="xref std std-term">IP</span></a> network.</p>
+<p>A routing table may include a default gateway <a class="reference internal" href="#term-Network-Route"><span class="xref std std-term">network route</span></a>
 and zero or more additional routes defined by system configuration
-and/or <a class="reference internal" href="web-development#term-dhcp"><span class="xref std std-term">DHCP</span></a></p>
+and/or <a class="reference internal" href="web-development#term-DHCP"><span class="xref std std-term">DHCP</span></a></p>
 </dd>
-<dt id="term-network-interface">Network Interface</dt><dd><p>A network interface is a software identifier for a “port”
-on a <a class="reference internal" href="#term-nic"><span class="xref std std-term">NIC</span></a>.</p>
+<dt id="term-Network-Interface">Network Interface</dt><dd><p>A network interface is a software identifier for a “port”
+on a <a class="reference internal" href="#term-NIC"><span class="xref std std-term">NIC</span></a>.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1">## List interfaces</span>
 ifconfig    <span class="c1"># UNIX, BSD, Linux</span>
 ipconfig    <span class="c1"># Windows</span>
@@ -1824,27 +1824,27 @@ ip l <span class="nb">set</span> dev eth0 down
 </div>
 <ul>
 <li><p>There may be one or more network interfaces registered to a
-<a class="reference internal" href="#term-nic"><span class="xref std std-term">NIC</span></a>:</p>
+<a class="reference internal" href="#term-NIC"><span class="xref std std-term">NIC</span></a>:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ip addr add <span class="m">127</span>.1.2.3 dev lo netmask <span class="m">255</span>.255.255.0
 </pre></div>
 </div>
 </li>
 </ul>
 </dd>
-<dt id="term-nic">NIC</dt><dd><p>A NIC (<a class="reference internal" href="#term-network-interface"><span class="xref std std-term">Network Interface</span></a> <em>Card</em>), or <em>Network Card</em>,
+<dt id="term-NIC">NIC</dt><dd><p>A NIC (<a class="reference internal" href="#term-Network-Interface"><span class="xref std std-term">Network Interface</span></a> <em>Card</em>), or <em>Network Card</em>,
 is a physical adapter
 for connecting to a network (generally with a physical
 <a class="reference internal" href="#ethernet"><span class="std std-ref">Ethernet</span></a> (or <a class="reference internal" href="#fiber"><span class="std std-ref">Fiber</span></a>) cable).</p>
 <ul class="simple">
-<li><p>A <a class="reference internal" href="#wireless"><span class="std std-ref">Wireless</span></a> <a class="reference internal" href="#term-nic"><span class="xref std std-term">NIC</span></a> is also called
+<li><p>A <a class="reference internal" href="#wireless"><span class="std std-ref">Wireless</span></a> <a class="reference internal" href="#term-NIC"><span class="xref std std-term">NIC</span></a> is also called
 a <em>wireless card</em> or <em>wireless adapter</em>.</p></li>
 </ul>
 <div class="line-block">
 <div class="line">Docs: <a class="reference internal" href="#nic"><span class="std std-ref">NIC</span></a></div>
 </div>
 </dd>
-<dt id="term-network-route">Network Route</dt><dd><p>Packets are routed based upon network routing tables: rules
-for which <a class="reference internal" href="#term-network-interface"><span class="xref std std-term">network interface(s)</span></a>
+<dt id="term-Network-Route">Network Route</dt><dd><p>Packets are routed based upon network routing tables: rules
+for which <a class="reference internal" href="#term-Network-Interface"><span class="xref std std-term">network interface(s)</span></a>
 and/or link(s)/tunnel(s) to send packets destined
 for anywhere (default gateway) or a specific network subnet
 (identified by e.g. a /24 prefix or a 255.255.255.0 subnet mask).</p>
@@ -1867,7 +1867,7 @@ ip r add <span class="m">10</span>.2.3.0/24 via <span class="m">10</span>.2.2.25
 </pre></div>
 </div>
 </dd>
-<dt id="term-hub">Hub</dt><dd><p>A network hub connects (or <em>bridges</em>) multiple network interfaces
+<dt id="term-Hub">Hub</dt><dd><p>A network hub connects (or <em>bridges</em>) multiple network interfaces
 to a shared bus; where all machines get a copy of all packets
 as repeated by the hub.</p>
 <ul class="simple">
@@ -1875,11 +1875,11 @@ as repeated by the hub.</p>
 to select only packets destined for local addresses.</p></li>
 <li><p>(In <em>promiscuous mode</em>, an interface receives all packets
 regardless of the packet protocol destination field.
-(Useful for debugging e.g. <a class="reference internal" href="web-development#term-arp"><span class="xref std std-term">ARP</span></a>)).</p></li>
+(Useful for debugging e.g. <a class="reference internal" href="web-development#term-ARP"><span class="xref std std-term">ARP</span></a>)).</p></li>
 </ul>
 </dd>
-<dt id="term-bridge">Bridge</dt><dd><p>A network bridge is a <a class="reference internal" href="#term-hub"><span class="xref std std-term">hub</span></a>; often
-a software defined bridge to which <a class="reference internal" href="#term-network-interface"><span class="xref std std-term">network interfaces</span></a> can be <em>added</em>/<em>attached</em> and <em>deleted</em>/<em>removed</em>.</p>
+<dt id="term-Bridge">Bridge</dt><dd><p>A network bridge is a <a class="reference internal" href="#term-Hub"><span class="xref std std-term">hub</span></a>; often
+a software defined bridge to which <a class="reference internal" href="#term-Network-Interface"><span class="xref std std-term">network interfaces</span></a> can be <em>added</em>/<em>attached</em> and <em>deleted</em>/<em>removed</em>.</p>
 <p>In <a class="reference internal" href="../tools/index#linux"><span class="std std-ref">Linux</span></a>, network bridges are configured with <code class="docutils literal notranslate"><span class="pre">brctl</span></code>:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>brctl
 brctl show
@@ -1893,17 +1893,17 @@ brctl showmacs br0
 </pre></div>
 </div>
 </dd>
-<dt id="term-switch">Switch</dt><dd><p>A network switch routes packets to specific ports based upon
-an <a class="reference internal" href="web-development#term-arp"><span class="xref std std-term">ARP</span></a> table.</p>
+<dt id="term-Switch">Switch</dt><dd><p>A network switch routes packets to specific ports based upon
+an <a class="reference internal" href="web-development#term-ARP"><span class="xref std std-term">ARP</span></a> table.</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#term-soho"><span class="xref std std-term">SOHO</span></a> <a class="reference internal" href="#term-router"><span class="xref std std-term">Routers</span></a> are often
+<li><p><a class="reference internal" href="#term-SOHO"><span class="xref std std-term">SOHO</span></a> <a class="reference internal" href="#term-Router"><span class="xref std std-term">Routers</span></a> are often
 configured as a switch (relay packets);
 with a fallback or configuration setting to
-<a class="reference internal" href="#term-hub"><span class="xref std std-term">hub</span></a> mode (repeat all packets).</p></li>
+<a class="reference internal" href="#term-Hub"><span class="xref std std-term">hub</span></a> mode (repeat all packets).</p></li>
 </ul>
 </dd>
-<dt id="term-router">Router</dt><dd><p>A <a class="reference internal" href="#term-soho"><span class="xref std std-term">SOHO</span></a> Router is usually configured as a
-<a class="reference internal" href="#term-gateway"><span class="xref std std-term">Gateway</span></a> and a <a class="reference internal" href="#term-switch"><span class="xref std std-term">Switch</span></a>
+<dt id="term-Router">Router</dt><dd><p>A <a class="reference internal" href="#term-SOHO"><span class="xref std std-term">SOHO</span></a> Router is usually configured as a
+<a class="reference internal" href="#term-Gateway"><span class="xref std std-term">Gateway</span></a> and a <a class="reference internal" href="#term-Switch"><span class="xref std std-term">Switch</span></a>
 (with at least one port allocated to a different network
 connection).</p>
 <ul class="simple">
@@ -1912,18 +1912,18 @@ router is usually configured as a <cite>Router</cite>,
 with routing table advertisement protocols
 like RIP, BGP, and <strong>IPv6 radvd</strong>; in order to optimize throughput
 and minimize latency.</p></li>
-<li><p><a class="reference internal" href="#term-soho"><span class="xref std std-term">SOHO</span></a> <a class="reference internal" href="#term-router"><span class="xref std std-term">Routers</span></a> are often
+<li><p><a class="reference internal" href="#term-SOHO"><span class="xref std std-term">SOHO</span></a> <a class="reference internal" href="#term-Router"><span class="xref std std-term">Routers</span></a> are often
 configured as a switch (relay packets);
 with a fallback or configuration setting to
-<a class="reference internal" href="#term-hub"><span class="xref std std-term">hub</span></a> mode (repeat all packets).</p></li>
+<a class="reference internal" href="#term-Hub"><span class="xref std std-term">hub</span></a> mode (repeat all packets).</p></li>
 </ul>
 </dd>
-<dt id="term-ap">AP</dt><dd><p>A <a class="reference internal" href="#wireless"><span class="std std-ref">Wireless</span></a> access point (<em>AP</em>) is a wireless <a class="reference internal" href="#term-nic"><span class="xref std std-term">NIC</span></a>
+<dt id="term-AP">AP</dt><dd><p>A <a class="reference internal" href="#wireless"><span class="std std-ref">Wireless</span></a> access point (<em>AP</em>) is a wireless <a class="reference internal" href="#term-NIC"><span class="xref std std-term">NIC</span></a>
 with one or more antennas and a power source;
 which often also acts as a router and/or a wireless mesh router.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Cool <a class="reference internal" href="#term-ap"><span class="xref std std-term">AP</span></a> Ideas
+<p>Cool <a class="reference internal" href="#term-AP"><span class="xref std std-term">AP</span></a> Ideas
 (cost, maintenance, spacing, redundancy, resiliency):</p>
 <ul class="simple">
 <li><p>[ ] Wifi Streetlamp posts</p></li>
@@ -1934,7 +1934,7 @@ water/cleaning/maintenance)</p></li>
 </ul>
 </div>
 </dd>
-<dt id="term-wifi">WiFi</dt><dd><p>WiFi is a name for a set of
+<dt id="term-WiFi">WiFi</dt><dd><p>WiFi is a name for a set of
 <a class="reference internal" href="#id78"><span class="std std-ref">IEEE 802.11</span></a> <a class="reference internal" href="#wireless"><span class="std std-ref">Wireless</span></a> standards.</p>
 </dd>
 </dl>
