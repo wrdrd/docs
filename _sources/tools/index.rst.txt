@@ -4861,23 +4861,35 @@ IPython
 IPython is an interactive REPL and distributed computation framework
 written in :ref:`Python`.
 
-.. code:: python
+.. code::
 
+    ## Formatting expression output with the Python interpreter
     1 + 1
     x = 1+1
-    print("1 + 1 = %d" (x))
+    print("1 + 1 = 2")
+    print('1 + 1 = %d' % (x))
+    print('1 + 1 = {0}'.format(x))   # Python 2.7+
+    print('1 + 1 = {x}'.format(x=x)) # Python 2.7+
+    print(f'1 + 1 = {x}')            # Python 3.6+
+    print(f'{1 + 1 = }')             # Python 3.8+
 
-    # IPython
-    ?                              # help
+    ## IPython
+    !ipython --help                # run `$SHELL -c 'ipython --help'`
+    !python -m IPython --help      # run `ipython --help`
+
+    ?                              # print IPython help within IPython
+
     %lsmagic
     %<tab>                         # list magic commands and aliases
+    %paste?                        # help for the %paste magic command
     %logstart?                     # help for the %logstart magic command
     %logstart -o logoutput.log.py  # log input and output to a file
+
     import json
     json?                          # print(json.__doc__)
     json??                         # print(inspect.getsource(json))
 
-    # IPython shell
+    ## IPython shell
     !cat ./README.rst; echo $PWD   # run shell commands
     lines = !ls -al                # capture shell command output
     print(lines[0:])
@@ -4886,6 +4898,45 @@ written in :ref:`Python`.
     %run -d example.py             # run a script with pdb
     %pdb on                        # automatically run pdb on Exception
 
+- IPython uses the ``ipykernel`` Jupyter kernel for Python.
+- To use other kernels with IPython, you must install `jupyter_console`
+  and a kernel:
+
+  .. note:: Windows chose to use <Ctrl-Z> for EOF instead of <Ctrl-D>.
+
+  .. code:: bash
+
+    pip install jupyter_console  # conda install -y jupyter_console
+
+    ipython console --kernel python  # ipykernel
+    jupyter console --kernel python  # ipykernel
+    # <Ctrl-D> | <Ctrl-C> | "exit()"
+
+    pip install bash_kernel  # conda install -y bash_kernel
+    jupyter console --kernel bash
+    # "exit"
+
+    conda install -y -c conda-forge xeus-cling
+    jupyter console --kernel xcpp11
+    # <Ctrl-D>
+
+    conda install -y nodejs; npm install -g ijavascript; ijsinstall
+    jupyter console --kernel javascript
+    # <Ctrl-D>
+
+    conda install -y nodejs; npm install -g jp-babel; jp-babel-install
+    jupyter console --kernel typescript
+    # <Ctrl-D>
+
+    conda install -y nodejs; npm install -g itypescript; its --install=local
+    jupyter console --kernel typescript
+    # <Ctrl-D>
+
+    jupyter kernelspec list
+
+- There are very many Jupyter kernels:
+  https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+- :ref:`Jupyter Notebook` and :ref:`Jupyter Lab` are built atop IPython.
 
 
 .. index:: PowerShell
@@ -5458,7 +5509,7 @@ and can write errors to stderr.
 
 :ref:`Jupyter notebook <Jupyter Notebook>` *manual* test review process:
 
-.. code:: python
+.. code::
 
     # - run Jupyter Notebook server
     !jupyter notebook
@@ -5482,7 +5533,7 @@ and can write errors to stderr.
 
 :ref:`Jupyter notebook <Jupyter Notebook>` TODO review process:
 
-.. code:: python
+.. code::
 
    # - run Jupyter Notebook server
    !jupyter notebook
@@ -5506,7 +5557,7 @@ and can write errors to stderr.
 
 :ref:`Jupyter notebook <Jupyter Notebook>` runipy review process:
 
-.. code:: python
+.. code::
 
     # - runipy the Jupyter notebook
     !runipy mynotebook.ipynb

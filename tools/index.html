@@ -5404,21 +5404,33 @@ also useful for system administration).</p>
 </div>
 <p>IPython is an interactive REPL and distributed computation framework
 written in <a class="reference internal" href="#python"><span class="std std-ref">Python</span></a>.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>1 + 1
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>## Formatting expression output with the Python interpreter
+1 + 1
 x = 1+1
-print(&quot;1 + 1 = %d&quot; (x))
+print(&quot;1 + 1 = 2&quot;)
+print(&#39;1 + 1 = %d&#39; % (x))
+print(&#39;1 + 1 = {0}&#39;.format(x))   # Python 2.7+
+print(&#39;1 + 1 = {x}&#39;.format(x=x)) # Python 2.7+
+print(f&#39;1 + 1 = {x}&#39;)            # Python 3.6+
+print(f&#39;{1 + 1 = }&#39;)             # Python 3.8+
 
-# IPython
-?                              # help
+## IPython
+!ipython --help                # run `$SHELL -c &#39;ipython --help&#39;`
+!python -m IPython --help      # run `ipython --help`
+
+?                              # print IPython help within IPython
+
 %lsmagic
 %&lt;tab&gt;                         # list magic commands and aliases
+%paste?                        # help for the %paste magic command
 %logstart?                     # help for the %logstart magic command
 %logstart -o logoutput.log.py  # log input and output to a file
+
 import json
 json?                          # print(json.__doc__)
 json??                         # print(inspect.getsource(json))
 
-# IPython shell
+## IPython shell
 !cat ./README.rst; echo $PWD   # run shell commands
 lines = !ls -al                # capture shell command output
 print(lines[0:])
@@ -5428,6 +5440,48 @@ print(lines[0:])
 %pdb on                        # automatically run pdb on Exception
 </pre></div>
 </div>
+<ul>
+<li><p>IPython uses the <code class="docutils literal notranslate"><span class="pre">ipykernel</span></code> Jupyter kernel for Python.</p></li>
+<li><p>To use other kernels with IPython, you must install <cite>jupyter_console</cite>
+and a kernel:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Windows chose to use &lt;Ctrl-Z&gt; for EOF instead of &lt;Ctrl-D&gt;.</p>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install jupyter_console  <span class="c1"># conda install -y jupyter_console</span>
+
+ipython console --kernel python  <span class="c1"># ipykernel</span>
+jupyter console --kernel python  <span class="c1"># ipykernel</span>
+<span class="c1"># &lt;Ctrl-D&gt; | &lt;Ctrl-C&gt; | &quot;exit()&quot;</span>
+
+pip install bash_kernel  <span class="c1"># conda install -y bash_kernel</span>
+jupyter console --kernel bash
+<span class="c1"># &quot;exit&quot;</span>
+
+conda install -y -c conda-forge xeus-cling
+jupyter console --kernel xcpp11
+<span class="c1"># &lt;Ctrl-D&gt;</span>
+
+conda install -y nodejs<span class="p">;</span> npm install -g ijavascript<span class="p">;</span> ijsinstall
+jupyter console --kernel javascript
+<span class="c1"># &lt;Ctrl-D&gt;</span>
+
+conda install -y nodejs<span class="p">;</span> npm install -g jp-babel<span class="p">;</span> jp-babel-install
+jupyter console --kernel typescript
+<span class="c1"># &lt;Ctrl-D&gt;</span>
+
+conda install -y nodejs<span class="p">;</span> npm install -g itypescript<span class="p">;</span> its --install<span class="o">=</span><span class="nb">local</span>
+jupyter console --kernel typescript
+<span class="c1"># &lt;Ctrl-D&gt;</span>
+
+jupyter kernelspec list
+</pre></div>
+</div>
+</li>
+<li><p>There are very many Jupyter kernels:
+<a class="reference external" href="https://github.com/jupyter/jupyter/wiki/Jupyter-kernels">https://github.com/jupyter/jupyter/wiki/Jupyter-kernels</a></p></li>
+<li><p><a class="reference internal" href="#jupyter-notebook"><span class="std std-ref">Jupyter Notebook</span></a> and <span class="xref std std-ref">Jupyter Lab</span> are built atop IPython.</p></li>
+</ul>
 <span class="target" id="index-211"></span></div>
 <div class="section" id="powershell">
 <span id="index-212"></span><span id="id181"></span><h3>PowerShell<a class="headerlink" href="#powershell" title="Permalink to this headline">¶</a></h3>
@@ -5943,7 +5997,7 @@ from a <a class="reference internal" href="#shells"><span class="std std-ref">Sh
 <cite>HTML</cite> reports,
 and can write errors to stderr.</p>
 <p><a class="reference internal" href="#jupyter-notebook"><span class="std std-ref">Jupyter notebook</span></a> <em>manual</em> test review process:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span># - run Jupyter Notebook server
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># - run Jupyter Notebook server
 !jupyter notebook
 # - Browser
 #     - navigate to / upload / drag and drop the notebook
@@ -5964,7 +6018,7 @@ and can write errors to stderr.</p>
 </pre></div>
 </div>
 <p><a class="reference internal" href="#jupyter-notebook"><span class="std std-ref">Jupyter notebook</span></a> TODO review process:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span># - run Jupyter Notebook server
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># - run Jupyter Notebook server
 !jupyter notebook
 # - Browser
 #     - navigate to / upload / drag and drop the notebook
@@ -5985,7 +6039,7 @@ and can write errors to stderr.</p>
 </pre></div>
 </div>
 <p><a class="reference internal" href="#jupyter-notebook"><span class="std std-ref">Jupyter notebook</span></a> runipy review process:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span># - runipy the Jupyter notebook
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># - runipy the Jupyter notebook
 !runipy mynotebook.ipynb
 # - review stdout and stderr from runipy
 # - review in browser (optional; recommended)
