@@ -5441,13 +5441,10 @@ print<span class="o">(</span>lines<span class="o">[</span><span class="m">0</spa
 </pre></div>
 </div>
 <ul>
-<li><p>IPython uses the <code class="docutils literal notranslate"><span class="pre">ipykernel</span></code> Jupyter kernel for Python.</p></li>
+<li><p>If a kernel is not specified,
+IPython uses the <code class="docutils literal notranslate"><span class="pre">ipykernel</span></code> Jupyter kernel.</p></li>
 <li><p>To use other kernels with IPython, you must install <cite>jupyter_console</cite>
 and a kernel:</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Windows chose to use &lt;Ctrl-Z&gt; for EOF instead of &lt;Ctrl-D&gt;.</p>
-</div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install jupyter_console  <span class="c1"># conda install -y jupyter_console</span>
 
 ipython console --kernel python  <span class="c1"># ipykernel</span>
@@ -5460,7 +5457,7 @@ jupyter console --kernel bash
 
 conda install -y -c conda-forge xeus-cling
 jupyter console --kernel xcpp11
-<span class="c1"># &lt;Ctrl-D&gt;</span>
+<span class="c1"># &lt;Ctrl-D&gt; (&lt;Ctrl-Z&gt; on Windows)</span>
 
 conda install -y nodejs<span class="p">;</span> npm install -g ijavascript<span class="p">;</span> ijsinstall
 jupyter console --kernel javascript
@@ -5480,7 +5477,9 @@ jupyter kernelspec list
 </li>
 <li><p>There are very many Jupyter kernels:
 <a class="reference external" href="https://github.com/jupyter/jupyter/wiki/Jupyter-kernels">https://github.com/jupyter/jupyter/wiki/Jupyter-kernels</a></p></li>
-<li><p><a class="reference internal" href="#jupyter-notebook"><span class="std std-ref">Jupyter Notebook</span></a> and <span class="xref std std-ref">Jupyter Lab</span> are built atop IPython.</p></li>
+<li><p><a class="reference internal" href="#jupyter-notebook"><span class="std std-ref">Jupyter Notebook</span></a> and <span class="xref std std-ref">Jupyter Lab</span> are built atop IPython:
+a Jupyter notebook file is a <a class="reference internal" href="../consulting/knowledge-engineering#json"><span class="std std-ref">JSON</span></a> file with an <cite>.ipynb</cite> extension
+which contains inputs and text and binary outputs.</p></li>
 </ul>
 <span class="target" id="index-211"></span></div>
 <div class="section" id="powershell">

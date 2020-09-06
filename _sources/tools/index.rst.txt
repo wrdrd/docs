@@ -4898,11 +4898,10 @@ written in :ref:`Python`.
     %run -d example.py             # run a script with pdb
     %pdb on                        # automatically run pdb on Exception
 
-- IPython uses the ``ipykernel`` Jupyter kernel for Python.
+- If a kernel is not specified,
+  IPython uses the ``ipykernel`` Jupyter kernel.
 - To use other kernels with IPython, you must install `jupyter_console`
   and a kernel:
-
-  .. note:: Windows chose to use <Ctrl-Z> for EOF instead of <Ctrl-D>.
 
   .. code:: bash
 
@@ -4918,7 +4917,7 @@ written in :ref:`Python`.
 
     conda install -y -c conda-forge xeus-cling
     jupyter console --kernel xcpp11
-    # <Ctrl-D>
+    # <Ctrl-D> (<Ctrl-Z> on Windows)
 
     conda install -y nodejs; npm install -g ijavascript; ijsinstall
     jupyter console --kernel javascript
@@ -4936,7 +4935,9 @@ written in :ref:`Python`.
 
 - There are very many Jupyter kernels:
   https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
-- :ref:`Jupyter Notebook` and :ref:`Jupyter Lab` are built atop IPython.
+- :ref:`Jupyter Notebook` and :ref:`Jupyter Lab` are built atop IPython:
+  a Jupyter notebook file is a :ref:`JSON` file with an `.ipynb` extension
+  which contains inputs and text and binary outputs.
 
 
 .. index:: PowerShell
