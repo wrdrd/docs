@@ -4861,7 +4861,7 @@ IPython
 IPython is an interactive REPL and distributed computation framework
 written in :ref:`Python`.
 
-.. code::
+.. code:: bash
 
     ## Formatting expression output with the Python interpreter
     1 + 1
@@ -4925,7 +4925,7 @@ written in :ref:`Python`.
     # <Ctrl-D>
 
     conda install -y nodejs; npm install -g jp-babel; jp-babel-install
-    jupyter console --kernel typescript
+    jupyter console --kernel babel
     # <Ctrl-D>
 
     conda install -y nodejs; npm install -g itypescript; its --install=local

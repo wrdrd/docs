@@ -26204,40 +26204,40 @@ also useful for system administration).</p>
 </div>
 <p>IPython is an interactive REPL and distributed computation framework
 written in <a class="reference internal" href="#python"><span class="std std-ref">Python</span></a>.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>## Formatting expression output with the Python interpreter
-1 + 1
-x = 1+1
-print(&quot;1 + 1 = 2&quot;)
-print(&#39;1 + 1 = %d&#39; % (x))
-print(&#39;1 + 1 = {0}&#39;.format(x))   # Python 2.7+
-print(&#39;1 + 1 = {x}&#39;.format(x=x)) # Python 2.7+
-print(f&#39;1 + 1 = {x}&#39;)            # Python 3.6+
-print(f&#39;{1 + 1 = }&#39;)             # Python 3.8+
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1">## Formatting expression output with the Python interpreter</span>
+<span class="m">1</span> + <span class="m">1</span>
+<span class="nv">x</span> <span class="o">=</span> <span class="m">1</span>+1
+print<span class="o">(</span><span class="s2">&quot;1 + 1 = 2&quot;</span><span class="o">)</span>
+print<span class="o">(</span><span class="s1">&#39;1 + 1 = %d&#39;</span> % <span class="o">(</span>x<span class="o">))</span>
+print<span class="o">(</span><span class="s1">&#39;1 + 1 = {0}&#39;</span>.format<span class="o">(</span>x<span class="o">))</span>   <span class="c1"># Python 2.7+</span>
+print<span class="o">(</span><span class="s1">&#39;1 + 1 = {x}&#39;</span>.format<span class="o">(</span><span class="nv">x</span><span class="o">=</span>x<span class="o">))</span> <span class="c1"># Python 2.7+</span>
+print<span class="o">(</span>f<span class="s1">&#39;1 + 1 = {x}&#39;</span><span class="o">)</span>            <span class="c1"># Python 3.6+</span>
+print<span class="o">(</span>f<span class="s1">&#39;{1 + 1 = }&#39;</span><span class="o">)</span>             <span class="c1"># Python 3.8+</span>
 
-## IPython
-!ipython --help                # run `$SHELL -c &#39;ipython --help&#39;`
-!python -m IPython --help      # run `ipython --help`
+<span class="c1">## IPython</span>
+!ipython --help                <span class="c1"># run `$SHELL -c &#39;ipython --help&#39;`</span>
+!python -m IPython --help      <span class="c1"># run `ipython --help`</span>
 
-?                              # print IPython help within IPython
+?                              <span class="c1"># print IPython help within IPython</span>
 
 %lsmagic
-%&lt;tab&gt;                         # list magic commands and aliases
-%paste?                        # help for the %paste magic command
-%logstart?                     # help for the %logstart magic command
-%logstart -o logoutput.log.py  # log input and output to a file
+%&lt;tab&gt;                         <span class="c1"># list magic commands and aliases</span>
+%paste?                        <span class="c1"># help for the %paste magic command</span>
+%logstart?                     <span class="c1"># help for the %logstart magic command</span>
+%logstart -o logoutput.log.py  <span class="c1"># log input and output to a file</span>
 
 import json
-json?                          # print(json.__doc__)
-json??                         # print(inspect.getsource(json))
+json?                          <span class="c1"># print(json.__doc__)</span>
+json??                         <span class="c1"># print(inspect.getsource(json))</span>
 
-## IPython shell
-!cat ./README.rst; echo $PWD   # run shell commands
-lines = !ls -al                # capture shell command output
-print(lines[0:])
-%run -i -t example.py          # run a script with timing info,
-                               # in the local namespace
-%run -d example.py             # run a script with pdb
-%pdb on                        # automatically run pdb on Exception
+<span class="c1">## IPython shell</span>
+!cat ./README.rst<span class="p">;</span> <span class="nb">echo</span> <span class="nv">$PWD</span>   <span class="c1"># run shell commands</span>
+<span class="nv">lines</span> <span class="o">=</span> !ls -al                <span class="c1"># capture shell command output</span>
+print<span class="o">(</span>lines<span class="o">[</span><span class="m">0</span>:<span class="o">])</span>
+%run -i -t example.py          <span class="c1"># run a script with timing info,</span>
+                               <span class="c1"># in the local namespace</span>
+%run -d example.py             <span class="c1"># run a script with pdb</span>
+%pdb on                        <span class="c1"># automatically run pdb on Exception</span>
 </pre></div>
 </div>
 <ul>
@@ -26267,7 +26267,7 @@ jupyter console --kernel javascript
 <span class="c1"># &lt;Ctrl-D&gt;</span>
 
 conda install -y nodejs<span class="p">;</span> npm install -g jp-babel<span class="p">;</span> jp-babel-install
-jupyter console --kernel typescript
+jupyter console --kernel babel
 <span class="c1"># &lt;Ctrl-D&gt;</span>
 
 conda install -y nodejs<span class="p">;</span> npm install -g itypescript<span class="p">;</span> its --install<span class="o">=</span><span class="nb">local</span>
