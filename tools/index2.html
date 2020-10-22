@@ -6,7 +6,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- OpenGraph metadata: ogp.me -->
     <meta property="og:title" content="westurner/tools" />
@@ -15,7 +15,7 @@
     <!--
     <meta property="og:description" content="" />
     -->
-    <meta property="og:image" content="https://wrdrd.com/static/png/drawing-7.09-v0.1.1--_desk.svg-470x242.png" />
+    <meta property="og:image" content="https://wrdrd.github.io/static/png/drawing-7.09-v0.1.1--_desk.svg-470x242.png" />
     <meta property="og:image:width" content="470" />
     <meta property="og:image:height" content="242" />
     <!--
@@ -40,7 +40,7 @@
 
 <link rel="stylesheet" href="../_static/css/font-awesome.min.css">
 
-<link rel="stylesheet" href="../_static/css/basicstrap.css" type="text/css" />
+<link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
 <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
 <link rel="stylesheet" href="../_static/css/local.css" type="text/css" />
     
@@ -580,9 +580,24 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="index#web-servers">Web Servers</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="index#acme">ACME</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="index#letsencrypt">LetsEncrypt</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="index#apache-httpd">Apache HTTPD</a></li>
-<li class="toctree-l3"><a class="reference internal" href="index#nginx">Nginx</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index#busybox-httpd">BusyBox HTTPD</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index#caddy">Caddy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index#netcat-web-server">Netcat web server</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="index#ncat">ncat</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index#nginx">Nginx</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="index#python-http-server">Python http.server</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="index#tengine">Tengine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index#traefik">Traefik</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index#kubernetes-ingress">Kubernetes Ingress</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="index#documentation-tools">Documentation Tools</a><ul>
@@ -684,7 +699,7 @@
 
       <!-- footer -->
       <footer role="contentinfo">
-          &copy; <a href="../license">Copyright</a> WRD R&amp;D 2014 - 2015.
+          &copy; <a href="../license">Copyright</a> WRD R&amp;D 2014 - 2020.
 
       <br/>
       <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">

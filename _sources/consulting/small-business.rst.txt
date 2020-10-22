@@ -1,3 +1,7 @@
+
+.. index:: Small Business Consulting
+.. _small business consulting:
+
 Small Business Consulting
 =========================
 
@@ -29,17 +33,21 @@ Solving a:
 
 
 .. index:: Business Books
-.. _business-books:
+.. _business books:
 
 Books
 ~~~~~~
 
-* http://personalmba.com/best-business-books/
+* The Personal MBA: Master The Art of Business
+
+  | https://personalmba.com/
+  | https://personalmba.com/best-business-books
+
 * https://www.quora.com/What-books-should-entrepreneurs-read
 * https://en.wikipedia.org/wiki/The_Five_Dysfunctions_of_a_Team
 * https://en.wikipedia.org/wiki/Getting_Things_Done
 
-seeAlso:
+See also:
 
 * :ref:`Art & Design <art-design>` > :ref:`Screenwriting`, :ref:`Web
   Production`, :ref:`Web Distribution`
@@ -49,7 +57,7 @@ seeAlso:
 
 .. index:: Strategy (Business)
 .. index:: Business Strategy
-.. _business-strategy:
+.. _business strategy:
 
 Strategy
 -----------
@@ -71,7 +79,7 @@ https://en.wikipedia.org/wiki/Business_process
 
 
 .. index:: Business Modeling
-.. _business-modeling:
+.. _business modeling:
 
 Business Modeling
 --------------------
@@ -88,7 +96,7 @@ https://en.wikipedia.org/wiki/Risk
 
 .. index:: ROI
 .. index:: Business ROI
-.. _business-roi:
+.. _business roi:
 
 ROI
 ~~~~
@@ -109,19 +117,25 @@ What are our desired outcomes from this experiment?
 
 What do we want to happen when our message reaches people?
 
-See: :ref:`Information Systems > ROI <is-roi>`
+See: :ref:`Information Systems > ROI <is roi>`
 
 
 .. index:: Business Plans
-.. _business-plans:
+.. _business plans:
 
 Business Plans
 ---------------
 https://en.wikipedia.org/wiki/Business_plan
 
-* https://en.wikipedia.org/wiki/Business_plan#Content
+* https://en.wikipedia.org/wiki/Business_plan#Presentation
+
+  * List of business plan sections
+
 * https://www.sba.gov/writing-business-plan
 * https://en.wikipedia.org/wiki/Open_business#Main_ideas
+* MATT: Milestones, Assumptions, Tests, Tasks
+
+  * A far simpler approach to planning a business venture
 
 "How to make your business plan stand out?"
 
@@ -515,11 +529,149 @@ https://en.wikipedia.org/wiki/List_of_social_networking_websites
 
 Twitter
 +++++++++
-- [ ] Are you ``@tweetable``?
-- [ ] Can we enqueue these for followup?
+| Wikipedia: https://en.wikipedia.org/wiki/Twitter
+| Homepage: https://twitter.com
+| Homepage: https://twttr.com
+| Source: https://github.com/twitter
+| Twitter: https://twitter.com/twitter
+| Twitter: https://twitter.com/gov
+| Twitter: https://twitter.com/TwitterIR
+| Twitter: https://twitter.com/TwitterSmallBiz
+| Twitter: https://twitter.com/support
+| Twitter: https://twitter.com/TwitterDev
+| Twitter: https://twitter.com/TwitterEng
+| Twitter: https://twitter.com/TwitterAPI
+| Twitter: https://twitter.com/TwitterOSS
+| Twitter: https://twitter.com/TwitterData
+| Twitter: https://twitter.com/design
+| Twitter: https://twitter.com/TwitterMedia
+| Twitter: https://twitter.com/TwitterStage
+| Twitter: https://twitter.com/TwitterMusic
+| Twitter: https://twitter.com/TwitterMovies
+| Twitter: https://twitter.com/TwitterSports
+| Twitter: https://twitter.com/TwitterFood
+| Twitter: https://twitter.com/TwitterBooks
+| Twitter: https://twitter.com/Nonprofits
+| Twitter: https://twitter.com/TwitterAds
+| Twitter: https://twitter.com/TwitterForNews
+| Twitter: https://twitter.com/TwitterMoments
+| Docs: https://support.twitter.com/
+| Docs: https://dev.twitter.com/
+| Docs: https://dev.twitter.com/cards/overview
 
-  * SalesForce :ref:`CRM` TwitterForce
-  * Zapier (Twitter -> ______): https://zapier.com/zapbook/twitter/
+- [ ] Are you ``tweetable``?
+
+  [ ] Can I (send you a) ``tweet`` you sometime?
+
+  [ ] What's your Twitter [(optional) username / handle / :ref:`URL`]?
+
+- When you add ``@username`` (with the ``@`` *at* symbol,
+  the username is then linked and added to a notification list.
+
+  Tweets that start with ``@username`` show in the "Tweets & replies"
+  Twitter User Profile view.
+
+  Tweets that start with ``.@username`` show in the "Tweets"
+  Twitter User Profile view; may be linked replies; and still do send a
+  notification to ``@username`` and any other ``@``-addressed Tweeters.
+
+- When you add ``#example`` (with the ``#`` *hashtag* symbol) before a word
+  -- like in :ref:`IRC` clients and old :ref:`BBS` systems --
+  the hashtag becomes a link to a current search for
+  other tweets containing that hashtag
+  and/or similar terms
+  (after the ``140 character`` limit).
+
+  (e.g. regex ``#\w+``),
+  except for Unicode; and Right-To-Left languages.
+
+  https://github.com/twitter/twitter-text-js
+
+- [ ] :ref:`#webdev <web development>`:
+  * :ref:`HTML` templates:
+  Add Twitter cards :ref:`RDFa` attributes and vocabulary markup
+
+- [ ] Support: Can we enqueue these for followup?
+
+  -
+  -
+  - :ref:`Zapier`: :ref:`Twitter` <--> <:term:`API`>
+
+    - https://zapier.com/zapbook/twitter/
+    - New tweet <-> New sheet row
+    - New tweet -> New support ticket / issue / case
+    - New tweet <-> New webchat (e.g. Slack, Gitter,) message
+    - {...}
+
+
+.. index:: Zapier
+
+.. _zapier:
+
+Zapier
++++++++
+| Homepage: https://zapier.com/
+| Source: https://github.com/zapier
+| Twitter: https://twitter.com/zapier
+| Twitter: https://twitter.com/zapierstatus
+| Docs: https://zapier.com/zapbook/
+| Docs: https://zapier.com/zapbook/use-cases/
+| Docs: https://zapier.com/status/
+| Docs: https://zapier.com/help/
+| Docs: https://zapier.com/developer/
+| Docs: https://zapier.com/developer/documentation/v2/
+| Docs: https://zapier.com/developer/documentation/v2/scripting/
+| Docs: https://zapier.com/developer/documentation/v2/reference/
+| Docs: https://zapier.com/engineering/
+| Docs: https://zapier.com/learn/the-ultimate-guide-to-remote-working/
+
+Zapier (z'API-er, ~"happier") is a
+software-development-free :ref:`SaaS` web service
+for integrating 600+ great web APIS through Zaps:
+*triggers* (when this) and *actions* (do this).
+
+* Users can find and select Zaps from the Zapbook (App Directory).
+* Users can CRUD (create, read, update (edit), delete) Zaps.
+* Zaps run in worker instances with free and paid time and memory
+  limits.
+* Users can review Zap logs and data.
+
+See also:
+
+* :ref:`Given-When-Then`
+
+
+.. index:: IFTT
+.. _ifttt:
+
+IFTTT
++++++++
+| Homepage: https://ifttt.com/
+| Src: https://github.com/ifttt
+
+See also:
+
+* :ref:`Given-When-Then`
+
+
+.. _opengraph:
+
+OpenGraph
++++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/Facebook_Platform#Open_Graph_protocol
+| Homepage: http://ogp.me/
+
+OpenGraph is an :ref:`RDFa` standard for structured data.
+
+* When you share a link,
+  Facebook reads the OpenGraph :ref:`RDFa` tags from the linked
+  :ref:`HTML` for e.g. name, description, image.
+
+See:
+
+* :ref:`Web Development Checklist`
+* :ref:`Knowledge Engineering` > :ref:`Linked Data`
+* :ref:`Schema.org` -- https://schema.org/Thing
 
 
 .. index:: Location Based Services

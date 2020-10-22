@@ -6,7 +6,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- OpenGraph metadata: ogp.me -->
     <meta property="og:title" content="Web Development" />
@@ -15,7 +15,7 @@
     <!--
     <meta property="og:description" content="" />
     -->
-    <meta property="og:image" content="https://wrdrd.com/static/png/drawing-7.09-v0.1.1--_desk.svg-470x242.png" />
+    <meta property="og:image" content="https://wrdrd.github.io/static/png/drawing-7.09-v0.1.1--_desk.svg-470x242.png" />
     <meta property="og:image:width" content="470" />
     <meta property="og:image:height" content="242" />
     <!--
@@ -40,7 +40,7 @@
 
 <link rel="stylesheet" href="../_static/css/font-awesome.min.css">
 
-<link rel="stylesheet" href="../_static/css/basicstrap.css" type="text/css" />
+<link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
 <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
 <link rel="stylesheet" href="../_static/css/local.css" type="text/css" />
     
@@ -110,8 +110,21 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#websec">WebSec</a><ul>
+<li><a class="reference internal" href="#responsible-disclosure">Responsible Disclosure</a><ul>
+<li><a class="reference internal" href="#bug-bounty-program">Bug Bounty Program</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sans-cis-consensus-audit-guidelines">SANS/CIS Consensus Audit Guidelines:</a></li>
+<li><a class="reference internal" href="#common-weakness-enumeration">CWE</a></li>
+<li><a class="reference internal" href="#owasp">OWASP</a></li>
+<li><a class="reference internal" href="#websec-forums">WebSec Forums</a></li>
+<li><a class="reference internal" href="#http">HTTP</a></li>
 <li><a class="reference internal" href="#https">HTTPS</a></li>
 <li><a class="reference internal" href="#http-sts">HTTP STS</a></li>
+<li><a class="reference internal" href="#acme-protocol">ACME Protocol</a><ul>
+<li><a class="reference internal" href="#letsencrypt">Letsencrypt</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a class="reference internal" href="#web-development-requirements">Web Development Requirements</a><ul>
@@ -185,8 +198,21 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#websec">WebSec</a><ul>
+<li><a class="reference internal" href="#responsible-disclosure">Responsible Disclosure</a><ul>
+<li><a class="reference internal" href="#bug-bounty-program">Bug Bounty Program</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sans-cis-consensus-audit-guidelines">SANS/CIS Consensus Audit Guidelines:</a></li>
+<li><a class="reference internal" href="#common-weakness-enumeration">CWE</a></li>
+<li><a class="reference internal" href="#owasp">OWASP</a></li>
+<li><a class="reference internal" href="#websec-forums">WebSec Forums</a></li>
+<li><a class="reference internal" href="#http">HTTP</a></li>
 <li><a class="reference internal" href="#https">HTTPS</a></li>
 <li><a class="reference internal" href="#http-sts">HTTP STS</a></li>
+<li><a class="reference internal" href="#acme-protocol">ACME Protocol</a><ul>
+<li><a class="reference internal" href="#letsencrypt">Letsencrypt</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a class="reference internal" href="#web-development-requirements">Web Development Requirements</a><ul>
@@ -219,6 +245,8 @@
     Enter search terms or a module, class or function name.
     </p>
 </div>
+
+<div class="widget navlinks">
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="../_sources/consulting/web-development.rst.txt"
@@ -237,6 +265,8 @@
              rel="nofollow"
              target="_blank">Annotate</a></li>
   </ul>
+</div>
+<div class="widget srclinks">
   <h3>Source</h3>
   <h5><a href="https://github.com/wrdrd/docs">github.com/wrdrd/docs</a>
       / <a href="https://github.com/wrdrd/docs/tree/master"
@@ -244,17 +274,17 @@
                 target="_blank"
                 font="monospace">master</a>
   </h5>
-
   <ul>
     <li><pre>git clone https://github.com/wrdrd/docs</pre></li>
     <li><pre>git clone ssh://git@github.com/wrdrd/docs</pre></li>
     <li><pre>git clone git://github.com/wrdrd/docs</pre></li>
-  </ul><div class="widget">
-    <h3><a href="https://wrdrd.com/">wrdrd.com</a></h3>
+  </ul>
+</div><div class="widget">
+    <h3><a href="https://wrdrd.github.io/">wrdrd.github.io</a></h3>
     <ul>
-        <li><a href="https://wrdrd.com/">wrdrd.com/</a></li>
-        <li><a href="https://wrdrd.com/docs/">wrdrd.com/docs/</a></li>
-        <li><a href="https://wrdrd.com/wiki/">wrdrd.com/wiki/</a></li>
+        <li><a href="https://wrdrd.github.io/">wrdrd.github.io/</a></li>
+        <li><a href="https://wrdrd.github.io/docs/">wrdrd.github.io/docs/</a></li>
+        <li><a href="https://wrdrd.github.io/wiki/">wrdrd.github.io/wiki/</a></li>
         <li><a href="https://github.com/wrdrd">github.com/wrdrd</a></li>
         <li><a href="https://twitter.com/wrdrd">@wrdrd</a></li>
     </ul>
@@ -270,7 +300,10 @@
                 <div class="body">
                   
   <div class="section" id="web-development">
-<h1>Web Development<a class="headerlink" href="#web-development" title="Permalink to this headline">¶</a></h1>
+<span id="index-0"></span><span id="id1"></span><h1>Web Development<a class="headerlink" href="#web-development" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Web_development">https://en.wikipedia.org/wiki/Web_development</a></div>
+</div>
 <div class="section" id="web-glossary">
 <h2>Web Glossary<a class="headerlink" href="#web-glossary" title="Permalink to this headline">¶</a></h2>
 <dl class="glossary">
@@ -290,7 +323,7 @@ of interlinked <a class="reference internal" href="knowledge-engineering#html"><
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Web_page">https://en.wikipedia.org/wiki/Web_page</a></div>
 </div>
 </dd>
-<dt id="term-Website">Website</dt><dd><p>A website is a set of interlinked <a class="reference internal" href="knowledge-engineering#html"><span class="std std-ref">HTML</span></a> pages.
+<dt id="term-Website">Website</dt><dt id="term-Web-site">Web site</dt><dd><p>A website is a set of interlinked <a class="reference internal" href="knowledge-engineering#html"><span class="std std-ref">HTML</span></a> pages.
 Also used to refer to a web page.</p>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Website">https://en.wikipedia.org/wiki/Website</a></div>
@@ -449,7 +482,7 @@ settings.</p>
 </div>
 </dd>
 <dt id="term-DNS">DNS</dt><dd><p>Domain Name System. Converts a <a class="reference internal" href="#term-Domain-Name"><span class="xref std std-term">domain name</span></a>
-(e.g. <code class="docutils literal notranslate"><span class="pre">localhost</span></code> or <code class="docutils literal notranslate"><span class="pre">wrdrd.com</span></code>) into an
+(e.g. <code class="docutils literal notranslate"><span class="pre">localhost</span></code> or <code class="docutils literal notranslate"><span class="pre">wrdrd.github.io</span></code>) into an
 <a class="reference internal" href="#term-IP-Address"><span class="xref std std-term">IP address</span></a> (e.g. <code class="docutils literal notranslate"><span class="pre">127.0.0.1</span></code> (IPv4) or <code class="docutils literal notranslate"><span class="pre">::1</span></code> (IPv6)).</p>
 <ul class="simple">
 <li><p>Initial DNS hosting costs are often covered by Web Hosts.</p></li>
@@ -475,7 +508,7 @@ a resource location.</p>
 a URL is of the form:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">scheme</span><span class="p">:</span><span class="o">//</span><span class="n">host</span><span class="p">:</span><span class="n">port</span><span class="o">/</span><span class="n">p</span><span class="o">/</span><span class="n">a</span><span class="o">/</span><span class="n">t</span><span class="o">/</span><span class="n">h</span>
 
-<span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">wrdrd</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">docs</span><span class="o">/</span>   <span class="c1"># https, wrdrd.com, port 443, /docs/</span>
+<span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">wrdrd</span><span class="o">.</span><span class="n">github</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="n">docs</span><span class="o">/</span>   <span class="c1"># https, wrdrd.github.io, port 443, /docs/</span>
 </pre></div>
 </div>
 <ul class="simple">
@@ -490,7 +523,7 @@ a URL is of the form:</p>
 a resource.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>scheme://host:port/p/a/t/h?query#fragment
 
-https://wrdrd.com/docs/#wrdrd
+https://wrdrd.github.io/docs/#wrdrd
 </pre></div>
 </div>
 <ul class="simple">
@@ -598,7 +631,7 @@ the objects in a particular document
 depending on Web Standards and individual implementations.</p>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Document_Object_Model">https://en.wikipedia.org/wiki/Document_Object_Model</a></div>
-<div class="line">Docs: <a class="reference internal" href="#web-design"><span class="std std-ref">Web Design</span></a></div>
+<div class="line">Docs: <span class="xref std std-ref">Web Design</span></div>
 </div>
 </dd>
 <dt id="term-Web-Standard">Web Standard</dt><dd><p>An agreed-upon standard specification for web things like
@@ -620,18 +653,20 @@ data interchange, structure, and presentation.</p>
 <a class="reference internal" href="knowledge-engineering#rdf"><span class="std std-ref">RDF</span></a>)</p>
 </dd>
 </dl>
-<span class="target" id="index-0"></span></div>
+<span class="target" id="index-1"></span></div>
 <div class="section" id="web-content">
-<span id="index-1"></span><span id="id1"></span><h2>Web Content<a class="headerlink" href="#web-content" title="Permalink to this headline">¶</a></h2>
+<span id="index-2"></span><span id="id2"></span><h2>Web Content<a class="headerlink" href="#web-content" title="Permalink to this headline">¶</a></h2>
 <p>Media Resources: Copy, Text, Photos, Images, Videos
 (things with <a class="reference internal" href="knowledge-engineering#http"><span class="std std-ref">HTTP</span></a> URLs)</p>
-<p>See <a class="reference internal" href="knowledge-engineering#web-standards"><span class="std std-ref">Web Standards</span></a>, <a class="reference internal" href="art-design#art-design"><span class="std std-ref">Art &amp; Design</span></a></p>
+<p>See <a class="reference internal" href="knowledge-engineering#web-standards"><span class="std std-ref">Web Standards</span></a>, <a class="reference internal" href="art-design#id1"><span class="std std-ref">Art &amp; Design</span></a></p>
 </div>
 <div class="section" id="web-design">
-<span id="index-2"></span><span id="id2"></span><h2>Web Design<a class="headerlink" href="#web-design" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/Web_design">https://en.wikipedia.org/wiki/Web_design</a></p>
+<span id="index-3"></span><span id="id3"></span><h2>Web Design<a class="headerlink" href="#web-design" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Web_design">https://en.wikipedia.org/wiki/Web_design</a></div>
+</div>
 <div class="section" id="css">
-<span id="css-webdev"></span><span id="index-3"></span><h3>CSS<a class="headerlink" href="#css" title="Permalink to this headline">¶</a></h3>
+<span id="css-webdev"></span><span id="index-4"></span><h3>CSS<a class="headerlink" href="#css" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">https://en.wikipedia.org/wiki/Cascading_Style_Sheets</a></div>
 <div class="line">Docs: <a class="reference internal" href="knowledge-engineering#css"><span class="std std-ref">CSS</span></a></div>
@@ -645,7 +680,7 @@ With javascript, the separation is then data, code, and presentation.</p></li>
 </ul>
 </div>
 <div class="section" id="web-layout">
-<span id="index-4"></span><span id="id3"></span><h3>Web Layout<a class="headerlink" href="#web-layout" title="Permalink to this headline">¶</a></h3>
+<span id="index-5"></span><span id="id4"></span><h3>Web Layout<a class="headerlink" href="#web-layout" title="Permalink to this headline">¶</a></h3>
 <p>A <em>web layout</em> is a box-model composition of <a class="reference internal" href="#term-DOM"><span class="xref std std-term">DOM</span></a> objects,
 their styles, and their
 behaviors at various screen sizes and resolutions.</p>
@@ -670,7 +705,7 @@ which work across browsers, devices, and various screen sizes.</p>
 <li><p><a class="reference external" href="https://en.wikipedia.org/wiki/List_of_displays_by_pixel_density">https://en.wikipedia.org/wiki/List_of_displays_by_pixel_density</a></p></li>
 </ul>
 <div class="section" id="image-based-layouts">
-<span id="id4"></span><h4>Image Based Layouts<a class="headerlink" href="#image-based-layouts" title="Permalink to this headline">¶</a></h4>
+<span id="id5"></span><h4>Image Based Layouts<a class="headerlink" href="#image-based-layouts" title="Permalink to this headline">¶</a></h4>
 <p>At first glance, it may seem that an image-based layout with fixed
 dimensions (as might be developed in a traditional graphic design program)
 would be simpler and easier; however:</p>
@@ -690,7 +725,7 @@ there.</p>
 </div>
 </div>
 <div class="section" id="screen-captures">
-<span id="index-5"></span><span id="id5"></span><h3>Screen Captures<a class="headerlink" href="#screen-captures" title="Permalink to this headline">¶</a></h3>
+<span id="index-6"></span><span id="id6"></span><h3>Screen Captures<a class="headerlink" href="#screen-captures" title="Permalink to this headline">¶</a></h3>
 <p>There are many tools and services for collecting screen captures (or
 screen shots) of web layouts.</p>
 <p>Features to look for:</p>
@@ -713,31 +748,47 @@ testing tools (e.g. <a class="reference internal" href="../tools/index#javascrip
 <p>See: <a class="reference internal" href="art-design#video-production"><span class="std std-ref">Video Production</span></a></p>
 </div>
 <div class="section" id="bootstrap">
-<span id="index-6"></span><span id="id6"></span><h3>Bootstrap<a class="headerlink" href="#bootstrap" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)">https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)</a></p>
-<ul class="simple">
-<li><p>What is Bootstrap?</p>
+<span id="index-7"></span><span id="id7"></span><h3>Bootstrap<a class="headerlink" href="#bootstrap" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)">https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://getbootstrap.com/">https://getbootstrap.com/</a></div>
+<div class="line">Source: git <a class="reference external" href="https://github.com/twbs/bootstrap">https://github.com/twbs/bootstrap</a></div>
+</div>
 <ul>
-<li><p>A responsive HTML and CSS (LESS) Framework</p></li>
-<li><p><a class="reference external" href="http://getbootstrap.com/">http://getbootstrap.com/</a></p></li>
+<li><p>What is Bootstrap?</p>
+<ul class="simple">
+<li><p>A responsive HTML and CSS (LESS, Sass SCSS (4.0)) Framework.</p></li>
 <li><p><a class="reference external" href="https://en.wikipedia.org/wiki/LESS_(stylesheet_language)">https://en.wikipedia.org/wiki/LESS_(stylesheet_language)</a></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Sass_(stylesheet_language)">https://en.wikipedia.org/wiki/Sass_(stylesheet_language)</a></p></li>
 </ul>
 </li>
-<li><p>Styles / Themes / Templates</p>
+<li><p>Bootstrap <a class="reference internal" href="#term-Web-site"><span class="xref std std-term">Web Site</span></a> Styles / Themes / Templates</p>
+<p><a class="reference external" href="https://expo.getbootstrap.com/resources/">https://expo.getbootstrap.com/resources/</a></p>
 <ul>
-<li><p>From Scratch / Customizing</p>
-<ul>
-<li><p><a class="reference external" href="http://getbootstrap.com/customize/#less-variables">http://getbootstrap.com/customize/#less-variables</a></p></li>
+<li><p>Custom:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://getbootstrap.com/customize/#less-variables">https://getbootstrap.com/customize/#less-variables</a></p></li>
 <li><p><a class="reference external" href="http://bootply.com/">http://bootply.com/</a></p></li>
 </ul>
 </li>
-<li><p>Templates</p>
+<li><p>Templates:</p>
 <ul>
-<li><p><a class="reference external" href="http://bootswatch.com/">http://bootswatch.com/</a> (FREE)</p></li>
+<li><p><a class="reference external" href="https://themes.getbootstrap.com/">https://themes.getbootstrap.com/</a> (Updated, Free, Official)</p>
+<p><a class="reference external" href="https://themes.getbootstrap.com/pages/our-license">https://themes.getbootstrap.com/pages/our-license</a></p>
+</li>
+<li><p><a class="reference external" href="https://expo.getbootstrap.com/resources/#themes">https://expo.getbootstrap.com/resources/#themes</a></p></li>
+<li><p><a class="reference external" href="https://bootswatch.com/">https://bootswatch.com/</a> (Free)</p></li>
 <li><p><a class="reference external" href="http://www.themesforbootstrap.com/">http://www.themesforbootstrap.com/</a></p></li>
 <li><p><a class="reference external" href="https://wrapbootstrap.com/">https://wrapbootstrap.com/</a></p></li>
 <li><p><a class="reference external" href="https://wrapbootstrap.com/theme/deusone-responsive-one-page-template-WB0271X52">https://wrapbootstrap.com/theme/deusone-responsive-one-page-template-WB0271X52</a></p></li>
 <li><p><a class="reference external" href="http://themeforest.net/search?utf8=%E2%9C%93&amp;term=bootstrap">http://themeforest.net/search?utf8=%E2%9C%93&amp;term=bootstrap</a></p></li>
+</ul>
+</li>
+<li><p>Examples:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://expo.getbootstrap.com/">https://expo.getbootstrap.com/</a></p></li>
+<li><p><a class="reference external" href="http://builtwithbootstrap.com/">http://builtwithbootstrap.com/</a></p></li>
+<li><p><a class="reference external" href="http://v4-alpha.getbootstrap.com/examples/">http://v4-alpha.getbootstrap.com/examples/</a></p></li>
 </ul>
 </li>
 </ul>
@@ -746,7 +797,7 @@ testing tools (e.g. <a class="reference internal" href="../tools/index#javascrip
 </div>
 </div>
 <div class="section" id="web-development-checklist">
-<span id="index-7"></span><span id="id7"></span><h2>Web Development Checklist<a class="headerlink" href="#web-development-checklist" title="Permalink to this headline">¶</a></h2>
+<span id="index-8"></span><span id="id8"></span><h2>Web Development Checklist<a class="headerlink" href="#web-development-checklist" title="Permalink to this headline">¶</a></h2>
 <p>A checklist for building a modern website
 with structured data; for search,
 social web, sharing.</p>
@@ -934,7 +985,13 @@ underscore, Backbone, Angular, React)</p></li>
 <div class="section" id="hosting-dns">
 <h2>Hosting / DNS<a class="headerlink" href="#hosting-dns" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="dns-configuration">
-<span id="index-8"></span><span id="id8"></span><h3>DNS Configuration<a class="headerlink" href="#dns-configuration" title="Permalink to this headline">¶</a></h3>
+<span id="index-9"></span><span id="id9"></span><h3>DNS Configuration<a class="headerlink" href="#dns-configuration" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Domain_Name_System">https://en.wikipedia.org/wiki/Domain_Name_System</a></div>
+<div class="line">Standards: <a class="reference external" href="https://en.wikipedia.org/wiki/Domain_Name_System#RFC_documents">https://en.wikipedia.org/wiki/Domain_Name_System#RFC_documents</a></div>
+<div class="line">Standards: <a class="reference external" href="https://en.wikipedia.org/wiki/List_of_DNS_record_types">https://en.wikipedia.org/wiki/List_of_DNS_record_types</a></div>
+<div class="line">Standards: <a class="reference external" href="https://en.wikipedia.org/wiki/Domain_Name_System_Security_Extensions">https://en.wikipedia.org/wiki/Domain_Name_System_Security_Extensions</a></div>
+</div>
 <p><a class="reference internal" href="#term-DNS"><span class="xref std std-term">DNS</span></a> <a class="reference internal" href="#term-Domain-Name"><span class="xref std std-term">Domain Name</span></a> Information (<code class="docutils literal notranslate"><span class="pre">A</span></code>, <code class="docutils literal notranslate"><span class="pre">AAAA</span></code>, <code class="docutils literal notranslate"><span class="pre">CNAME</span></code>,
 <code class="docutils literal notranslate"><span class="pre">TXT</span></code>, <code class="docutils literal notranslate"><span class="pre">MX</span></code>, <code class="docutils literal notranslate"><span class="pre">SRV</span></code>)</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>DOMAIN=&quot;&lt;domainname&gt;&quot;
@@ -961,14 +1018,17 @@ whois $DOMAIN | egrep &#39;Registrar|Date|Domain Status|Registrant|Admin&#39;
 </li>
 <li><p>Online Whois Tools</p>
 <ul class="simple">
-<li><p><a class="reference external" href="http://whois.domaintools.com/$DOMAIN">http://whois.domaintools.com/$DOMAIN</a></p></li>
+<li><p><a class="reference external" href="https://whois.domaintools.com/$DOMAIN">https://whois.domaintools.com/$DOMAIN</a></p></li>
 </ul>
 </li>
 </ul>
 <p>See: <a class="reference internal" href="../wrdrd/wrdrd.tools#module-wrdrd.tools.domain" title="wrdrd.tools.domain"><code class="xref py py-mod docutils literal notranslate"><span class="pre">wrdrd.tools.domain</span></code></a></p>
 </div>
 <div class="section" id="web-hosting">
-<span id="index-9"></span><span id="id9"></span><h3>Web Hosting<a class="headerlink" href="#web-hosting" title="Permalink to this headline">¶</a></h3>
+<span id="index-10"></span><span id="id10"></span><h3>Web Hosting<a class="headerlink" href="#web-hosting" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Web_hosting_service">https://en.wikipedia.org/wiki/Web_hosting_service</a></div>
+</div>
 <p><a class="reference internal" href="#term-Web-Hosting-Service"><span class="xref std std-term">Web Hosting</span></a> Information</p>
 <ul class="simple">
 <li><p>Reverse IP (How many sites are hosted from the same
@@ -982,7 +1042,11 @@ whois $DOMAIN | egrep &#39;Registrar|Date|Domain Status|Registrant|Admin&#39;
 </div>
 </div>
 <div class="section" id="websec">
-<span id="index-10"></span><span id="id10"></span><h2>WebSec<a class="headerlink" href="#websec" title="Permalink to this headline">¶</a></h2>
+<span id="index-11"></span><span id="id11"></span><h2>WebSec<a class="headerlink" href="#websec" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">WikipediaCategory: <a class="reference external" href="https://en.wikipedia.org/wiki/Category:Web_security_exploits">https://en.wikipedia.org/wiki/Category:Web_security_exploits</a></div>
+<div class="line">WikipediaCategory: <a class="reference external" href="https://en.wikipedia.org/wiki/Category:Internet_security">https://en.wikipedia.org/wiki/Category:Internet_security</a></div>
+</div>
 <p>WebSec (<em>web security</em>) is <a class="reference internal" href="information-systems#information-security"><span class="std std-ref">Information Security</span></a>
 for web applications.</p>
 <p>Security at <a class="reference internal" href="knowledge-engineering#w3c"><span class="std std-ref">W3C</span></a> :</p>
@@ -992,41 +1056,170 @@ for web applications.</p>
 <li><p><a class="reference external" href="http://www.w3.org/2011/webappsec/">http://www.w3.org/2011/webappsec/</a></p></li>
 <li><p><a class="reference internal" href="knowledge-engineering#web-standards"><span class="std std-ref">Web Standards</span></a></p></li>
 </ul>
-<p>CWE:</p>
+<div class="section" id="responsible-disclosure">
+<span id="index-12"></span><span id="id12"></span><h3>Responsible Disclosure<a class="headerlink" href="#responsible-disclosure" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Responsible_disclosure">https://en.wikipedia.org/wiki/Responsible_disclosure</a></div>
+</div>
 <ul class="simple">
-<li><p><a class="reference external" href="https://cwe.mitre.org/">https://cwe.mitre.org/</a></p></li>
+<li><p><a class="reference external" href="https://www.owasp.org/index.php/Vulnerability_Disclosure_Cheat_Sheet">https://www.owasp.org/index.php/Vulnerability_Disclosure_Cheat_Sheet</a></p></li>
+</ul>
+<div class="section" id="bug-bounty-program">
+<span id="index-13"></span><span id="id13"></span><h4>Bug Bounty Program<a class="headerlink" href="#bug-bounty-program" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Bug_bounty_program">https://en.wikipedia.org/wiki/Bug_bounty_program</a></div>
+</div>
+<ul>
+<li><p>Hacker One:</p>
+<ul class="simple">
+<li><p>Homepage: <a class="reference external" href="https://hackerone.com/">https://hackerone.com/</a></p></li>
+<li><p><a class="reference external" href="https://hackerone.com/twitter">https://hackerone.com/twitter</a></p></li>
+</ul>
+</li>
+<li><p>Professional integrity:</p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Integrity">https://en.wikipedia.org/wiki/Integrity</a></p>
+</li>
+<li><p><a class="reference internal" href="open-source#open-source"><span class="std std-ref">Open Source</span></a></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="sans-cis-consensus-audit-guidelines">
+<span id="index-14"></span><span id="id14"></span><h3>SANS/CIS Consensus Audit Guidelines:<a class="headerlink" href="#sans-cis-consensus-audit-guidelines" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Consensus_audit_guidelines">https://en.wikipedia.org/wiki/Consensus_audit_guidelines</a></div>
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/The_CIS_Critical_Security_Controls_for_Effective_Cyber_Defense">https://en.wikipedia.org/wiki/The_CIS_Critical_Security_Controls_for_Effective_Cyber_Defense</a></div>
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/CSC_Version_6.0">https://en.wikipedia.org/wiki/CSC_Version_6.0</a></div>
+</div>
+<ul class="simple">
+<li><p>“SANS Top 20”: <a class="reference external" href="https://www.sans.org/critical-security-controls/">https://www.sans.org/critical-security-controls/</a></p></li>
+<li><p>“SANS Top 25”: <a class="reference external" href="https://cwe.mitre.org/top25/">https://cwe.mitre.org/top25/</a></p></li>
+<li><p>CIS:</p>
+<ul>
+<li><p><a class="reference external" href="https://www.cisecurity.org/critical-controls.cfm">https://www.cisecurity.org/critical-controls.cfm</a></p></li>
+<li><p><a class="reference external" href="https://www.cisecurity.org/critical-controls/reports/">https://www.cisecurity.org/critical-controls/reports/</a></p></li>
+<li><p>PDF for email.</p></li>
+</ul>
+</li>
+</ul>
+<span class="target" id="index-15"></span></div>
+<div class="section" id="common-weakness-enumeration">
+<span id="cwe"></span><span id="index-16"></span><span id="id15"></span><h3>CWE<a class="headerlink" href="#common-weakness-enumeration" title="Permalink to this headline">¶</a></h3>
+<p>CWE (<em>Common Weakness Enumeration</em>)</p>
+<div class="line-block">
+<div class="line">Homepage: <a class="reference external" href="https://cwe.mitre.org/">https://cwe.mitre.org/</a></div>
+</div>
+<ul class="simple">
 <li><p><a class="reference external" href="https://cwe.mitre.org/top25/">https://cwe.mitre.org/top25/</a></p></li>
 <li><p><a class="reference external" href="https://cwe.mitre.org/top25/#CWE-89">https://cwe.mitre.org/top25/#CWE-89</a></p></li>
 <li><p><a class="reference external" href="https://cwe.mitre.org/data/definitions/89.html">https://cwe.mitre.org/data/definitions/89.html</a></p></li>
 </ul>
-<p>OWASP:</p>
+</div>
+<div class="section" id="owasp">
+<span id="index-17"></span><span id="id16"></span><h3>OWASP<a class="headerlink" href="#owasp" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Homepage: <a class="reference external" href="https://www.owasp.org/">https://www.owasp.org/</a></div>
+</div>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project">https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project</a></p></li>
 <li><p><a class="reference external" href="https://www.owasp.org/index.php/OWASP_Proactive_Controls">https://www.owasp.org/index.php/OWASP_Proactive_Controls</a></p></li>
 <li><p><a class="reference external" href="https://www.owasp.org/index.php/Top_10_2013-Table_of_Contents">https://www.owasp.org/index.php/Top_10_2013-Table_of_Contents</a></p></li>
 <li><p><a class="reference external" href="https://www.owasp.org/index.php/Web_Standards_and_Specifications">https://www.owasp.org/index.php/Web_Standards_and_Specifications</a></p></li>
 </ul>
+</div>
+<div class="section" id="websec-forums">
+<span id="index-18"></span><span id="id17"></span><h3>WebSec Forums<a class="headerlink" href="#websec-forums" title="Permalink to this headline">¶</a></h3>
+<p>Internet Forums for WebSec (“Web Security”)</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#responsible-disclosure"><span class="std std-ref">Responsible Disclosure</span></a> / Vulnerability Disclosure</p></li>
+<li><p><a class="reference external" href="https://www.cvedetails.com/">https://www.cvedetails.com/</a></p></li>
+<li><p><span class="xref std std-ref">IRC</span>, <span class="xref std std-ref">Slack</span>, <span class="xref std std-ref">Mattermost</span></p></li>
+<li><p><a class="reference external" href="https://www.reddit.com/r/websec">https://www.reddit.com/r/websec</a></p></li>
+<li><p><a class="reference external" href="https://www.reddit.com/r/netsec">https://www.reddit.com/r/netsec</a></p></li>
+<li><p><a class="reference external" href="https://twitter.com/search?q=websec">https://twitter.com/search?q=websec</a></p></li>
+<li><p><a class="reference external" href="https://twitter.com/search?q=netsec">https://twitter.com/search?q=netsec</a></p></li>
+<li><p><a class="reference external" href="https://twitter.com/search?q=netsec">https://twitter.com/search?q=netsec</a></p></li>
+<li><p><a class="reference external" href="https://twitter.com/search?q=infosec">https://twitter.com/search?q=infosec</a></p></li>
+</ul>
+</div>
+<div class="section" id="http">
+<span id="index-19"></span><span id="id18"></span><h3>HTTP<a class="headerlink" href="#http" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">WikipediaCategory: <a class="reference external" href="https://en.wikipedia.org/wiki/Category:Hypertext_Transfer_Protocol">https://en.wikipedia.org/wiki/Category:Hypertext_Transfer_Protocol</a></div>
+<div class="line">WikipediaCategory: <a class="reference external" href="https://en.wikipedia.org/wiki/Category:Hypertext_Transfer_Protocol_headers">https://en.wikipedia.org/wiki/Category:Hypertext_Transfer_Protocol_headers</a></div>
+</div>
+<p>See:</p>
+<ul class="simple">
+<li><p>Knowledge Engineering &gt; <a class="reference internal" href="knowledge-engineering#http"><span class="std std-ref">HTTP</span></a></p></li>
+<li><p><a class="reference internal" href="knowledge-engineering#https"><span class="std std-ref">HTTPS</span></a>, <a class="reference internal" href="#https"><span class="std std-ref">HTTPS</span></a></p></li>
+</ul>
+</div>
 <div class="section" id="https">
-<span id="index-11"></span><span id="id11"></span><h3>HTTPS<a class="headerlink" href="#https" title="Permalink to this headline">¶</a></h3>
+<span id="index-20"></span><span id="id19"></span><h3>HTTPS<a class="headerlink" href="#https" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/HTTPS">https://en.wikipedia.org/wiki/HTTPS</a></div>
 </div>
-<p>See: <a class="reference internal" href="knowledge-engineering#https"><span class="std std-ref">HTTPS</span></a>, <a class="reference internal" href="knowledge-engineering#http"><span class="std std-ref">HTTP</span></a></p>
-<span class="target" id="index-12"></span></div>
+<p>See:</p>
+<ul class="simple">
+<li><p>Knowledge Engineering &gt; <a class="reference internal" href="knowledge-engineering#https"><span class="std std-ref">HTTPS</span></a></p></li>
+<li><p><a class="reference internal" href="knowledge-engineering#http"><span class="std std-ref">HTTP</span></a>, <a class="reference internal" href="../tools/index#http"><span class="std std-ref">HTTP</span></a></p></li>
+</ul>
+<span class="target" id="index-21"></span></div>
 <div class="section" id="http-sts">
-<span id="index-13"></span><span id="id12"></span><h3>HTTP STS<a class="headerlink" href="#http-sts" title="Permalink to this headline">¶</a></h3>
+<span id="index-22"></span><span id="id20"></span><h3>HTTP STS<a class="headerlink" href="#http-sts" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security">https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</a></div>
 </div>
 <p>HTTP STS (<em>HTTP Strict Transport Security</em>) is
 a standardized extension for notifying browsers
-that all requests should be made over <a class="reference internal" href="knowledge-engineering#http"><span class="std std-ref">HTTP</span></a>
+that all requests should be made over <a class="reference internal" href="knowledge-engineering#https"><span class="std std-ref">HTTPS</span></a>
 indefinitely or for a specified time period.</p>
-<p>See also: <a class="reference internal" href="../tools/index#https-everywhere"><span class="std std-ref">HTTPS Everywhere</span></a></p>
+<p>See also:</p>
+<ul class="simple">
+<li><p>Knowledge Engineering &gt; <a class="reference internal" href="knowledge-engineering#http-sts"><span class="std std-ref">HTTP STS</span></a></p></li>
+<li><p><a class="reference internal" href="../tools/index#https-everywhere"><span class="std std-ref">HTTPS Everywhere</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="acme-protocol">
+<span id="index-23"></span><span id="id21"></span><h3>ACME Protocol<a class="headerlink" href="#acme-protocol" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Automated_Certificate_Management_Environment">https://en.wikipedia.org/wiki/Automated_Certificate_Management_Environment</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/ietf-wg-acme/acme/">https://github.com/ietf-wg-acme/acme/</a></div>
+<div class="line">Spec: <a class="reference external" href="https://tools.ietf.org/html/draft-ietf-acme-acme">https://tools.ietf.org/html/draft-ietf-acme-acme</a></div>
+<div class="line">Spec: <a class="reference external" href="https://ietf-wg-acme.github.io/acme/draft-ietf-acme-acme.html">https://ietf-wg-acme.github.io/acme/draft-ietf-acme-acme.html</a></div>
+</div>
+<ul class="simple">
+<li><p>ACME (Automated Certificate Management Environment) is a protocol
+for Web PKI with X.509 Certificates and <a class="reference internal" href="knowledge-engineering#https"><span class="std std-ref">HTTPS</span></a> (TLS/SL).</p></li>
+<li><p>ACME Spec Introduction:
+<a class="reference external" href="https://tools.ietf.org/html/draft-ietf-acme-acme#section-1">https://tools.ietf.org/html/draft-ietf-acme-acme#section-1</a></p></li>
+<li><p><a class="reference internal" href="../tools/index#letsencrypt"><span class="std std-ref">LetsEncrypt</span></a> implements the <a class="reference internal" href="../tools/index#acme"><span class="std std-ref">ACME</span></a> spec.</p></li>
+</ul>
+<div class="section" id="letsencrypt">
+<span id="index-24"></span><span id="id22"></span><h4>Letsencrypt<a class="headerlink" href="#letsencrypt" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Let%27s_Encrypt">https://en.wikipedia.org/wiki/Let%27s_Encrypt</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://letsencrypt.org/">https://letsencrypt.org/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/letsencrypt">https://github.com/letsencrypt</a></div>
+<div class="line">Docs: <a class="reference external" href="https://letsencrypt.readthedocs.io/en/latest/">https://letsencrypt.readthedocs.io/en/latest/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://letsencrypt.readthedocs.io/en/latest/using.html#getting-certificates-and-choosing-plugins">https://letsencrypt.readthedocs.io/en/latest/using.html#getting-certificates-and-choosing-plugins</a></div>
+<div class="line">Docs: <a class="reference external" href="https://letsencrypt.readthedocs.io/en/latest/using.html#third-party-plugins">https://letsencrypt.readthedocs.io/en/latest/using.html#third-party-plugins</a></div>
+</div>
+<ul>
+<li><p>“A free, automated, and open certificate authority.”</p></li>
+<li><p>Certs are valid for 90 days</p></li>
+<li><p>Use the staging server to avoid the certificate roll rate limit</p></li>
+<li><p>There are many <a class="reference internal" href="../tools/index#acme"><span class="std std-ref">ACME</span></a> clients (that work with letsencrypt):</p>
+<p><a class="reference external" href="https://letsencrypt.org/docs/client-options/">https://letsencrypt.org/docs/client-options/</a></p>
+<ul class="simple">
+<li><p>Certbot is an official, packaged Python client.</p></li>
+</ul>
+</li>
+</ul>
+</div>
 </div>
 </div>
 <div class="section" id="web-development-requirements">
-<span id="index-14"></span><span id="id13"></span><h2>Web Development Requirements<a class="headerlink" href="#web-development-requirements" title="Permalink to this headline">¶</a></h2>
+<span id="index-25"></span><span id="id23"></span><h2>Web Development Requirements<a class="headerlink" href="#web-development-requirements" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>[ ] <a class="reference internal" href="software-development#project-management"><span class="std std-ref">Software Development &gt; Project Management</span></a></p></li>
 <li><p>[ ] <a class="reference internal" href="team-building#collaboration-checklist"><span class="std std-ref">Team Building &gt; Collaboration Checklist</span></a></p></li>
@@ -1052,9 +1245,11 @@ is a long and arduous journey; often with multiple parts.</p></li>
 and assigned arbitrary but relatively relevant point values
 with e.g. <a class="reference internal" href="software-development#planning-poker"><span class="std std-ref">Planning Poker</span></a> and/or a <a class="reference internal" href="software-development#kanban"><span class="std std-ref">Kanban</span></a> web application.</p></li>
 </ul>
-<p>See also:
-<a class="reference internal" href="software-development#agile"><span class="std std-ref">Software Development &gt; Agile</span></a>,
-<a class="reference internal" href="team-building#six-patterns-of-collaboration"><span class="std std-ref">Six Patterns of Collaboration</span></a></p>
+<p>See also:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="software-development#software-development"><span class="std std-ref">Software Development</span></a> &gt; <a class="reference internal" href="software-development#agile"><span class="std std-ref">Agile</span></a> &gt; <a class="reference internal" href="software-development#user-story"><span class="std std-ref">User Story</span></a></p></li>
+<li><p><a class="reference internal" href="team-building#team-building"><span class="std std-ref">Team Building</span></a> &gt; <a class="reference internal" href="team-building#six-patterns-of-collaboration"><span class="std std-ref">Six Patterns of Collaboration</span></a></p></li>
+</ul>
 </div>
 </div>
 </div>
@@ -1091,7 +1286,7 @@ with e.g. <a class="reference internal" href="software-development#planning-poke
 
       <!-- footer -->
       <footer role="contentinfo">
-          &copy; <a href="../license">Copyright</a> WRD R&amp;D 2014 - 2015.
+          &copy; <a href="../license">Copyright</a> WRD R&amp;D 2014 - 2020.
 
       <br/>
       <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">

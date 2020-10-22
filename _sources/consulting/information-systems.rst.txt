@@ -11,6 +11,11 @@ Information Systems
 * https://en.wikipedia.org/wiki/List_of_collaborative_software
 
 
+See also:
+
+* :ref:`Team Building` > :ref:`Collaborative Software`
+
+
 .. index:: Information Systems Glossary
 .. _information systems glossary:
 
@@ -23,7 +28,7 @@ Information Systems Glossary
       An interconnected graph of nodes linked with edges through which
       flow produces predictable and unpredictable behaviors.
 
-      https://en.wikipedia.org/wiki/System
+      | https://en.wikipedia.org/wiki/System
 
    Infrastructure
       Core :term:`system` components.
@@ -38,14 +43,14 @@ Information Systems Glossary
       A :term:`system` with :term:`information` inputs and outputs
       designed to solve a problem.
 
-      https://en.wikipedia.org/wiki/Information_system
+      | https://en.wikipedia.org/wiki/Information_system
 
    Information Technology
       Hardware and software :term:`information systems <information
       system>`
       for solving business problems.
 
-      https://en.wikipedia.org/wiki/Information_technology
+      | https://en.wikipedia.org/wiki/Information_technology
 
    Application
       An application of technology for a particular domain.
@@ -57,7 +62,7 @@ Information Systems Glossary
       Software for running :term:`applications <application>`
       and working with devices.
 
-      https://en.wikipedia.org/wiki/Operating_system
+      | https://en.wikipedia.org/wiki/Operating_system
 
    API
       Advanced Programming Interface.
@@ -79,11 +84,9 @@ Information Systems Glossary
       system components are loosely coupled and thus interchangeable
       and incrementally upgradeable.
 
-      https://en.wikipedia.org/wiki/Application_programming_interface
-
-      https://en.wikipedia.org/wiki/Loose_coupling
-
-      `<https://en.wikipedia.org/wiki/Abstraction_(computer_science)>`__
+      | https://en.wikipedia.org/wiki/Application_programming_interface
+      | https://en.wikipedia.org/wiki/Loose_coupling
+      | `<https://en.wikipedia.org/wiki/Abstraction_(computer_science)>`__
 
    Operating System API
       An :term:`API` provided by one or more
@@ -102,11 +105,9 @@ Information Systems Glossary
 
       * https://en.wikipedia.org/wiki/WebGL
 
-      https://en.wikipedia.org/wiki/Public_interface
-
-      `<https://en.wikipedia.org/wiki/Protocol_(object-oriented_programming)>`__
-
-      https://en.wikipedia.org/wiki/Standard_library
+      | https://en.wikipedia.org/wiki/Public_interface
+      | `<https://en.wikipedia.org/wiki/Protocol_(object-oriented_programming)>`__
+      | https://en.wikipedia.org/wiki/Standard_library
 
    Web API
       An :term:`API` for interacting with local (browser) or remote
@@ -117,7 +118,7 @@ Information Systems Glossary
       :term:`Operating System APIs <Operating System API>` and
       :term:`Language APIs <Language API>`.
 
-      https://en.wikipedia.org/wiki/Web_API
+      | https://en.wikipedia.org/wiki/Web_API
 
    Web Service
       A :term:`Web API` with a formal specification.
@@ -126,7 +127,7 @@ Information Systems Glossary
       traditionally (as in the *enterprisey* ``WS-*`` standards)
       with :ref:`XML`, but, more recently, with :ref:`JSON`.
 
-      https://en.wikipedia.org/wiki/Web_service
+      | https://en.wikipedia.org/wiki/Web_service
 
    Webhook
       A webhook is an HTTP message for an event.
@@ -156,10 +157,8 @@ Information Systems Glossary
       by existing, well-tested libraries
       available for most languages.
 
-      https://en.wikipedia.org/wiki/Representational_state_transfer
-
-      https://en.wikipedia.org/wiki/Create,_read,_update_and_delete
-
+      | https://en.wikipedia.org/wiki/Representational_state_transfer
+      | https://en.wikipedia.org/wiki/Create,_read,_update_and_delete
 
 
 .. _is-criteria:
@@ -176,13 +175,13 @@ seeAlso:
 * :ref:`Information Security` (Risk)
 
 
-.. _is-roi:
+.. _is roi:
 
 ROI
 ++++
-The investment should be justified by gains in productivity / efficiency.
+The investment should be justified by gains in productivity & efficiency.
 
-Productivity / Efficiency::
+Productivity & Efficiency::
 
     output / input
     returns / costs
@@ -193,10 +192,25 @@ Productivity / Efficiency::
 * Dollars
 * :ref:`Units`: e.g. :ref:`qudt` :ref:`URIs <URI>` (:ref:`RDF`)
 
+
+::
+
+    widgets / hours ---**---> widgets/hour
+
+    ** curves
+
+
+
+::
+
+    reduction in {risk, error, loss} / time spent on {workflow, automation}
+
+
 seeAlso:
 
-* :ref:`Business > ROI <business-roi>`
+* :ref:`Business > ROI <business roi>`
 * https://en.wikipedia.org/wiki/Productivity
+* https://en.wikipedia.org/wiki/Efficiency
 
 
 Need / Want
@@ -286,7 +300,7 @@ Cloud Application Layers
   * Message Queue (Task Queue, Channels, :ref:`WebSockets <websockets>`, AMQP,
     Worker Pools)
 
-    * Celery: https://celery.readthedocs.org/en/latest/getting-started/brokers/
+    * Celery: https://celery.readthedocs.io/en/latest/getting-started/brokers/
     * AppEngine/AppScale Tasks API
     * :ref:`Mesos` schedulers (Aurora, Chronos, Marathon)
 
@@ -305,7 +319,7 @@ Cloud Application Layers
 
   * HTTP Object Storage
 
-    * :ref:`libcloud` (https://libcloud.readthedocs.org/en/latest/storage/)
+    * :ref:`libcloud` (https://libcloud.readthedocs.io/en/latest/storage/)
     * Amazon :ref:`AWS` :ref:`S3`
     * :ref:`OpenStack` Swift (:ref:`Swift`, :ref:`S3` APIs)
     * :ref:`Linux`: :ref:`Ceph` RADOS Gateway (:ref:`Swift`, :ref:`S3` APIs)
@@ -358,7 +372,7 @@ Cloud Application Layers
     + Internet connections
     + VLANs, IPv6 6to4 tunnels
     + SDN --- Software Defined Networking
-        
+
       * :ref:`OpenStack` Neutron
       * :ref:`Docker` networking
       * :ref:`Docker` Swarm networking
@@ -375,7 +389,7 @@ Cloud Application Layers
       - Central file storage (:ref:`NFS`, :ref:`CIFS`, :ref:`WebDAV`)
       - distributed file storage: (:ref:`Ceph`, :ref:`GlusterFS`)
       - persistent block storage: (:ref:`AWS` S3, :ref:`OpenStack` Cinder)
-      - on-disk filesystems: (ref:`ext4 <ext>`, :ref:`LVM`, :ref:`BTRFS`,
+      - on-disk filesystems: (:ref:`ext4 <ext>`, :ref:`LVM`, :ref:`BTRFS`,
         :ref:`NTFS`, :ref:`FAT`, :ref:`HFS+`)
 
     + Physical storage
@@ -390,10 +404,24 @@ Cloud Application Layers
 
       - #HVAC: Cooling (Active / Passive)
       - #HVAC: Heating (Active / Passive)
-      - #Fire: Extinguishers
-      - #Fire: Sprinklers: ~**"do not pour water on an
-        #lectrical fire"** --- 20,000 Leagues Under the Sea
-      - #Fire: Halon
+      - #Fire: Sprinklers
+      - #Fire: Fire Extinguishers
+
+        - Class A Fire Extinguisher -- silver -- water
+        - Class C Fire Extinguisher -- red -- chemicals (e.g. CO2)
+
+            Do not pour water on an electrical fire until
+            you have switched off the power source
+            at the circuit breaker box.
+
+        - Novels/films: 20,000 Leagues Under the Sea, Sphere
+        - **How to Extinguish a Fire at the Initial Stages**:
+          http://www.wikihow.com/Extinguish-a-Fire-at-the-Initial-Stages
+
+          - Extinguishing **Electrial** Fires: **Red** **Class C** Extinguisher
+          - Extinguishing **Liquid/Oil** Fires
+          - Extinguishing **Organic** Fires
+
       - #Power: Power supplies (AC --> DC conversion)
       - #Power: Batteries  (AC --> DC --> Batteries --> AC/DC)
       - #Power: Generators
@@ -434,7 +462,7 @@ Examples of SaaS:
 * Many :ref:`CRM` software applications are offered as
   :ref:`SaaS` subscription services
 
-* See: :ref:`business-modeling`
+* See: :ref:`business modeling`
 
   :ref:`SaaS` is distinct from e.g. subscription software licensing;
   because :ref:`SaaS` applications are usually
@@ -675,7 +703,7 @@ Examples of IaaS:
 * :ref:`Rackspace Cloud`
 * :ref:`libcloud` implements a :ref:`Python` :term:`language api`
   over very many :ref:`IaaS` and :ref:`PaaS` clouds:
-  https://libcloud.readthedocs.org/en/latest/supported_providers.html
+  https://libcloud.readthedocs.io/en/latest/supported_providers.html
 
 
 .. index:: AWS
@@ -846,7 +874,7 @@ https://en.wikipedia.org/wiki/Service-level_agreement
 
 
 .. index:: Business Continuity
-.. _business-continuity:
+.. _business continuity:
 
 Business Continuity
 ~~~~~~~~~~~~~~~~~~~~

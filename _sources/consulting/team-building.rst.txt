@@ -28,6 +28,17 @@ Personal Development
 * https://en.wikipedia.org/wiki/Virtue
 
 
+.. index:: Golden Rule
+.. _golden rule:
+
+Golden Rule
+++++++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/Golden_Rule
+
+* https://en.wikipedia.org/wiki/Empathy
+* https://en.wikipedia.org/wiki/Compassion
+
+
 .. index:: Emotional Intelligence
 .. _emotional intelligence:
 
@@ -35,6 +46,8 @@ Emotional Intelligence
 ++++++++++++++++++++++++
 | Wikipedia: https://en.wikipedia.org/wiki/Emotional_intelligence
 | https://en.wikipedia.org/wiki/Industrial_and_organizational_psychology
+
+https://en.wikipedia.org/wiki/Contrasting_and_categorization_of_emotions
 
 https://en.wikipedia.org/wiki/Motivation
 
@@ -131,34 +144,78 @@ Collaborative Software
 | https://en.wikipedia.org/wiki/Collaborative_software
 | https://en.wikipedia.org/wiki/Collaborative_software#Classification
 
-Classifying Collaborative Software
+.. list-table:: Classifying Collaborative Software
+   :widths: 40 20 20 20
+   :header-rows: 1
+   :class: table-responsive table-striped
 
-    + Core capabilities
-    + Data contributions
-    + Data relationships
-    + Data limits
-    + Data persistence
-    + Actions
-    + Synchronicity
-    + Identifiability
-    + Access Controls
-    + Roles
-    + Awareness indicators
-    + Interruption alerts
-    + Instructions
+   * - Features
+     - X_n
+     - X_1
+     - X-2
+   * - Core capabilities
+     -
+     -
+     -
+   * - Data contributions
+     -
+     -
+     -
+   * - Data relationships
+     -
+     -
+     -
+   * - Data limits
+     -
+     -
+     -
+   * - Data persistence
+     -
+     -
+     -
+   * - Actions
+     -
+     -
+     -
+   * - Synchronicity
+     -
+     -
+     -
+   * - Identifiability
+     -
+     -
+     -
+   * - Access Controls
+     -
+     -
+     -
+   * - Roles
+     -
+     -
+     -
+   * - Awareness indicators
+     -
+     -
+     -
+   * - Interruption alerts
+     -
+     -
+     -
+   * - Instructions
+     -
+     -
+     -
 
 * "Toward a Taxonomy of Groupware Technologies" (2008)
 
-  https://books.google.com/books?id=ONRsCQAAQBAJ&pg=PA309
-
-  https://www.worldcat.org/title/groupware-design-implementation-and-use-14th-international-workshop-criwg-2008-omaha-ne-usa-september-14-18-2008-revised-selected-papers/oclc/760695691
+  | https://books.google.com/books?id=ONRsCQAAQBAJ&pg=PA309
+  | https://www.worldcat.org/title/groupware-design-implementation-and-use-14th-international-workshop-criwg-2008-omaha-ne-usa-september-14-18-2008-revised-selected-papers/oclc/760695691
 
   
 * "Classification of Collaboration Technology" (2013)
 
-  https://books.google.com/books?id=gTR0AgAAQBAJ&pg=PA44
-
-  https://www.worldcat.org/title/collaboration-systems-concept-value-and-use/oclc/867930692
+  | https://books.google.com/books?id=gTR0AgAAQBAJ&pg=PA44
+  | https://www.worldcat.org/title/collaboration-systems-concept-value-and-use/oclc/867930692
 
 See also:
 
@@ -187,7 +244,7 @@ The same page
 * `<https://www.google.com/search?q="on+the+same+page">`__
 * `<https://www.bing.com/search?q="on+the+same+page">`__
 * `<https://search.yahoo.com/search?p="on+the+same+page">`__
-* https://wrdrd.com/docs/consulting/team-building#the-same-page
+* https://wrdrd.github.io/docs/consulting/team-building#the-same-page
   (:ref:`Sphinx`, :ref:`Git`
   
   * Source, Edit, History, Annotate sidebar links
@@ -225,7 +282,7 @@ Text Templates
 Collaboration Checklist
 -------------------------
 
-* [X] Read https://wrdrd.com/docs/consulting/team-building
+* [X] Read https://wrdrd.github.io/docs/consulting/team-building
 * [ ] Collaboration Plan (`Seven Layer Model of Collaboration`_)
 
   1. [ ] Goals

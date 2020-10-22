@@ -6198,8 +6198,11 @@ Chrome DevTools
 | Homepage: https://developer.chrome.com/devtools
 | Docs: https://developer.chrome.com/devtools
 
+How to open Chrome (and Firefox) DevTools:
+
 * Right-click > "Inspect Element"
-* OSX: ``<option>`` + ``<command>`` + ``i``
+* Linux: ``<ctrl><shift>i``
+* OSX: ``<option><command>i``
 
 DevTools Emulation
 
@@ -7135,6 +7138,30 @@ Web Servers
 | https://en.wikipedia.org/wiki/Web_server
 
 
+.. index:: ACME
+.. _acme:
+
+ACME
+~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Automated_Certificate_Management_Environment
+
+
+.. index:: LetsEncrypt
+.. _letsencrypt:
+
+LetsEncrypt
+++++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/Let%27s_Encrypt
+| Homepage: https://letsencrypt.org/
+| Src: https://github.com/letsencrypt
+| Src: https://github.com/certbot/certbot
+| Docs: https://letsencrypt.org/docs/
+| Docs: https://letsencrypt.org/docs/ct-logs/
+
+- List of LetEncrypt ACME clients:
+  https://letsencrypt.org/docs/client-options/
+
+
 .. index:: Apache HTTPD
 .. _apache httpd:
 
@@ -7147,6 +7174,84 @@ Apache HTTPD
 
 Apache HTTPD is a scriptable, industry-mainstay `HTTP`
 server written in :ref:`C` and :ref:`C++`.
+
+
+
+.. index:: BusyBox HTTPD
+.. _busybox httpd:
+
+BusyBox HTTPD
+~~~~~~~~~~~~~~
+| Docs: https://busybox.net/downloads/BusyBox.html#httpd
+
+.. code:: bash
+
+   busybox httpd --help
+   busybox httpd -p 8082 
+
+See also: :ref:`python http.server`
+
+
+.. index:: Caddy
+.. _caddy:
+
+Caddy
+~~~~~~
+| Wikipedia: `<https://en.wikipedia.org/wiki/Caddy_(web_server)>`__
+| Src: https://github.com/caddyserver/caddy
+| Docs: https://caddyserver.com/docs/
+
+
+.. index:: Netcat
+.. _netcat:
+
+Netcat web server
+~~~~~~~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Netcat
+| 
+
+.. code:: bash
+
+   # Serve a file over HTTP then close
+   { printf 'HTTP/1.0 200 OK\r\nContent-Length: %d\r\n\r\n' "$(wc -c < some.file)"; cat some.file; } | nc -l 8082
+
+   # Serve the date over HTTP then start another server
+   while true ; do nc -l -p 8082 -c 'echo -e "HTTP/1.1 200 OK\n\n $(date -Is)"'; done &
+
+   # Make an HTTP request with netcat
+   printf "GET / HTTP/1.0\r\nHost: localhost\r\n\r\n" | nc localhost 8082
+
+   # Make an HTTP request with curl
+   curl localhost:8082
+   curl -v localhost:8082
+
+   # Make an HTTP request with wget
+   wget -O - localhost:8082
+   wget -d -O - localhost:8082
+
+
+.. code:: python
+
+   from urllib.request import urlopen
+   resp = urlopen("http://localhost:8082")
+   assert resp.code == 200
+   assert resp.headers.get_content_type() == 'text/plain'
+   body = resp.read()
+   print(body)
+
+
+.. index:: ncat
+.. _ncat:
+
+ncat
++++++
+| Wikipedia: https://en.wikipedia.org/wiki/Netcat#ncat
+
+
+.. code:: bash
+
+   nc --help
+   ncat --help
 
 
 .. index:: Nginx
@@ -7163,6 +7268,26 @@ Nginx
 
 Nginx is a scriptable, lightweight `HTTP` server
 written in :ref:`C`.
+
+
+
+.. index:: Python http.server
+.. _python http.server:
+
+Python http.server
++++++++++++++++++++
+| Src: https://github.com/python/cpython/blob/master/Lib/http/server.py
+| Docs: https://docs.python.org/3/library/http.server.html
+| Docs: https://docs.python.org/3/library/http.server.html#http.server.CGIHTTPRequestHandler
+
+.. code:: bash
+
+   python -m http.server --help
+   python -m http.server --directory . 8082
+   python -m http.server --directory . --cgi 8082
+
+
+See also: :ref:`pgs`
 
 
 .. index:: Tengine
@@ -7182,6 +7307,33 @@ modules and features bundled in.
 * https://tengine.taobao.org/document/http_ssl.html
 * https://tengine.taobao.org/document/http_upstream_check.html
 * https://tengine.taobao.org/document/http_reqstat.html
+
+
+
+.. index:: Traefik
+.. _traefik:
+
+Traefik
+~~~~~~~~~
+| Src: https://github.com/traefik/traefik
+| Homepage: https://traefik.io/traefik/
+| Docs: https://doc.traefik.io/traefik/
+| Docs: https://doc.traefik.io/traefik/https/acme/
+| Docs: https://doc.traefik.io/traefik/user-guides/docker-compose/acme-tls/
+| Docs: https://doc.traefik.io/traefik/reference/dynamic-configuration/docker/
+
+- Load Balancing, API Gateway (config, stats), :ref:`Kubernetes
+  Ingress`, :ref:`ACME`/:ref:`LetsEncrypt`
+
+
+.. index:: Kubernetes Ingress
+.. _kubernetes ingress:
+
+Kubernetes Ingress
+~~~~~~~~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Kubernetes
+| Docs: https://kubernetes.io/docs/concepts/services-networking/ingress/
+| Docs: https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/
 
 
 .. index:: Documentation

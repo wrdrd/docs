@@ -17,6 +17,297 @@ Knowledge Engineering
 * https://en.wikipedia.org/wiki/Schema
 
 
+.. contents:
+
+
+.. index:: Symbols
+.. _symbols:
+
+Symbols
+---------
+| Wikipedia: https://en.wikipedia.org/wiki/Symbol
+| WikipediaCategory: https://en.wikipedia.org/wiki/Category:Symbols
+
+
+* `<https://en.wikipedia.org/wiki/Symbol_(disambiguation)>`__
+* https://en.wikipedia.org/wiki/List_of_logic_symbols
+
+* :ref:`Art & Design`
+
+  * [...]
+
+* :ref:`URI` are symbols:
+
+  * :ref:`urn` (:term:`term: URN <urn>`)
+  * :ref:`url` (:term:`term: URL <url>`)
+
+* Linguistics
+  https://en.wikipedia.org/wiki/Linguistics
+
+  * https://en.wikipedia.org/wiki/Morpheme
+
+    + https://en.wikipedia.org/wiki/Phoneme
+    + https://en.wikipedia.org/wiki/Grapheme
+
+  * https://en.wikipedia.org/wiki/Word
+  * https://en.wikipedia.org/wiki/Phrase
+  * https://en.wikipedia.org/wiki/Clause
+  * `<https://en.wikipedia.org/wiki/Sentence_(linguistics)>`__
+  * https://en.wikipedia.org/wiki/Paragraph
+  * https://en.wikipedia.org/wiki/Document
+
+* :ref:`Mathematical Notation`
+
+  * :ref:`LaTeX`
+  * :ref:`MathML`
+  * :ref:`ASCIIMathML`
+  * :ref:`MathJax`
+
+.. index:: Character encoding
+.. index:: Character set
+.. index:: Character map
+.. index:: Codeset
+.. _character encoding:
+.. _character set:
+
+Character encoding
+++++++++++++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/Character_encoding
+| WikipedaCategory: https://en.wikipedia.org/wiki/Category:Character_encoding
+
+* https://en.wikipedia.org/wiki/Character_encoding#Common_character_encodings
+
+
+.. index:: Control Characters
+.. _control character:
+.. _control characters:
+
+Control Characters
+````````````````````
+| Wikipedia: https://en.wikipedia.org/wiki/Control_character
+
+* :ref:`ASCII` Control Characters
+
+  https://en.wikipedia.org/wiki/Control_character#In_ASCII
+
+* :ref:`Unicode` Control Characters
+
+  https://en.wikipedia.org/wiki/Unicode_control_characters
+
+
+.. warning:: Control characters are often significant.
+
+   Common security errors involving control characters:
+
+   * https://cwe.mitre.org/data/definitions/74.html
+
+     CWE-74: Improper Neutralization of Special Elements in Output
+     Used by a Downstream Component ('Injection')
+
+     * https://cwe.mitre.org/data/definitions/93.html
+
+       CWE-93: Improper Neutralization of CRLF Sequences ('CRLF Injection')
+
+       .. code:: python
+
+           x = "line1_start"
+           x2 = "thing\r\n\0line1_end"
+           x = x + x2
+           x = x + "line2...line2_end\n"
+           records = x.splitlines()  # ! error
+
+   * https://cwe.mitre.org/data/definitions/140.html
+
+     CWE-140: Improper Neutralization of Delimiters
+
+     + https://cwe.mitre.org/data/definitions/141.html
+
+       CWE-141: Improper Neutralization of Parameter/Argument Delimiters
+
+     + https://cwe.mitre.org/data/definitions/142.html
+
+       CWE-142: Improper Neutralization of Value Delimiters
+
+     + https://cwe.mitre.org/data/definitions/143.html
+       
+       CWE-143: Improper Neutralization of Record Delimiters
+
+     + https://cwe.mitre.org/data/definitions/144.html
+
+       CWE-144: Improper Neutralization of Line Delimiters
+
+     + https://cwe.mitre.org/data/definitions/145.html
+
+       CWE-145: Improper Neutralization of Section Delimiters
+
+   
+
+.. index:: Escape Sequences
+.. _escape sequences:
+
+Escape Sequences
+~~~~~~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Escape_sequence
+
+* https://en.wikipedia.org/wiki/Escape_sequences_in_C#Table_of_escape_sequences
+* https://en.wikipedia.org/wiki/CDATA
+
+  * https://en.wikipedia.org/wiki/CDATA#Nesting
+
+* :ref:`XML`, :ref:`HTML` & escape sequences::
+
+  &
+  < > />
+  " 
+  <!-- -->
+  <![CDATA[ ]]>
+
+  # HTML & Templates
+  <p id="{{attr}}">text</p>   # attr='here"s one'
+
+
+* :ref:`Python` escape sequences:
+
+  .. code:: python
+
+    s =   "Here's one"
+    s =   'Here\'s one'
+    s = '''Here's one'''
+    s =   'Here\N{APOSTROPHE}s one'
+    s =   'Here'"'s"' one'
+
+* :ref:`Bash` escape sequences:
+
+  .. code:: bash
+
+    s1="$Here's one"
+    s1="${Here}'s one"
+    s2='${Here}\'s one'  # ! error
+    s2='${Here}'"'s"' one'
+    s3=""$Here"'s one"
+    s3=""${Here}"'s one"
+
+
+.. index:: ASCII
+.. _ascii:
+
+ASCII
+```````
+| Wikipedia: https://en.wikipedia.org/wiki/ASCII
+
+ASCII (*American Standard Code for Information Exchance*) defines
+128 characters.
+
+* https://en.wikipedia.org/wiki/Teleprinter#Teleprinter_operation
+* https://en.wikipedia.org/wiki/Telegraph_code
+
+- Python:
+
+  .. code:: python
+
+      from __future__ import print_function
+      for i in range(0,128):
+          print("{0:<3d} {1!r} {1:s}.".format(i, chr(i)))
+
+
+.. index:: Unicode
+.. _unicode:
+
+Unicode
+`````````
+| Wikipedia: https://en.wikipedia.org/wiki/Unicode
+| Wikipedia: https://en.wikipedia.org/wiki/Unicode_symbols
+
+* https://en.wikipedia.org/wiki/Unicode_symbols#Symbol_block_list
+* Entering Unicode Symbols:
+
+  | https://en.wikipedia.org/wiki/Unicode_input#Hexadecimal_code_input
+
+  - https://en.wikipedia.org/wiki/Unicode_input#Hexadecimal_code_input
+
+  + ∴ -- Therefore -- ``u+2234``
+
+    - :ref:`X11`: ``ctrl-shift-u 2234``
+    - :ref:`Vim`: ``ctrl-v u2234``
+
+    - :ref:`Python`:
+
+      * Python 3 Unicode HOWTO: https://docs.python.org/3/howto/unicode.html
+      * Python 2 Unicode HOWTO: https://docs.python.org/2/howto/unicode.html
+
+      .. code:: python
+
+          c1 = u'∴'  # Python 2.6-3.2, 3.4+
+          c2 =  '∴'  # Python 3.0+
+          c3 = '\N{THEREFORE}' # howto/unicode#the-string-type glyph name
+          u1 = unichr(0x2234)  # Python 2+
+          u2 =    chr(0x2234)  # Python 3.0+
+          from builtins import chr  # Python 2 & 3
+          u3 =    chr(0x2234)       # Python 2 & 3
+          u4 =    chr(8756)    # int(hex(8756)[2:], 16) == 8756 (0x2234)
+          chars = [c1, c2, u1, u2, u3, u4]
+          from operator import eq
+          assert all((eq(x, chars[0]) for x in chars))
+
+* Python and :ref:`UTF-8`:
+
+  * Python 2 Codecs docs: https://docs.python.org/2/library/codecs.html
+  *
+  * https://pymotw.com/2/codecs/
+  * e.g. :ref:`JSON` with :ref:`UTF-8`:
+
+    .. code:: python
+
+        # Read an assumed UTF-8 encoded JSON file with Python 2+, 3+
+        import codecs
+        with codecs.open('filename.json', encoding='utf8') as file_:
+            text = file_.read()
+
+
+Unicode encodings:
+
+* UTF-1
+* UTF-5
+* UTF-6
+* :ref:`UTF-8`
+* UTF-9, UTF-18
+* UTF-16
+* UTF-32
+
+
+.. index:: UTF-8
+.. _utf-8:
+.. _utf8:
+
+UTF-8
+~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/UTF-8
+
+UTF-8 is a :ref:`Unicode` :ref:`Character encoding` which can
+represent all Unicode symbols with 8-bit code units.
+
+* https://en.wikipedia.org/wiki/UTF-8#Examples
+* In 2015, UTF-8 is the most common web character
+  encoding.
+
+  * :ref:`HTML` ``charset`` meta attribute:
+
+    ``<meta charset="UTF-8">``
+
+  * :ref:`XML` Header:
+
+    ``<?xml version="1.0" encoding="UTF-8"?>``
+
+  * :ref:`HTTP` Header:
+
+    ``content-type: text/html; charset=UTF-8``
+
+* Why use UTF-8?
+  https://www.w3.org/International/questions/qa-choosing-encodings#useunicode
+
+
+.. index:: Logic, Reasoning, and Inference
+.. _logic reasoning and inference:
 
 Logic, Reasoning, and Inference
 ---------------------------------
@@ -38,7 +329,12 @@ Logic
 | Wikipedia: https://en.wikipedia.org/wiki/Logic
 | WikipediaCategory: https://en.wikipedia.org/wiki/Category:Logic
 
-https://en.wikipedia.org/wiki/List_of_logic_symbols
+* https://en.wikipedia.org/wiki/List_of_logic_symbols
+* https://en.wikipedia.org/wiki/Category:Latin_logical_phrases
+
+See:
+
+* :ref:`Inference`
 
 
 .. index:: Set Theory
@@ -98,12 +394,96 @@ Probabilistic Logic
 | Wikipedia: https://en.wikipedia.org/wiki/Probabilistic_logic
 
 
+.. index:: Propositional Calculus
 .. index:: Propositional Logic
-.. _propsitional-logic:
+.. _propsitional logic:
+.. _propsitional calculus:
 
-Propositional Logic
-`````````````````````
-| Wikipedia: https://en.wikipedia.org/wiki/Propositional_logic
+Propositional Calculus
+```````````````````````
+| Wikipedia: https://en.wikipedia.org/wiki/Propositional_calculus
+| WikipediaCategory: https://en.wikipedia.org/wiki/Category:Propositional_calculus
+| WikipediaCategory: https://en.wikipedia.org/wiki/Category:Theorems_in_propositional_logic
+
+* Premise ``P``
+* Conclusion ``Q``
+
+
+.. index:: Modus ponens
+.. _modus ponens:
+
+Modus ponens
+~~~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Modus_ponens
+
+  + ``P -> Q`` -- Premise 1 ``P1`` ``P_1`` ("P sub 1")
+  + ``P`` -- Premise 2 ``P2`` ``P_2`` ("P sub 2")
+  + ``∴ Q`` -- Conclusion ``Q`` ``Q_0`` ("Q sub 0")
+
+
+.. index:: Predicate Logic
+.. _predicate logic:
+
+Predicate Logic
+`````````````````
+| Wikipedia: https://en.wikipedia.org/wiki/Predicate_logic
+
+* Universe of discourse
+* Predicate
+
+  * ∃ -- There exists -- Existential quantifier
+  * ∀ -- For all -- Universal quantifier
+
+
+
+.. index:: Existential quantification
+.. _existential quantification:
+
+Existential quantification
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Existential_quantification
+
+* ∃ -- "There exists" is the **Existential quantifier** symbol.
+
+* An existential quantifier
+  is true ("holds true")
+  if there is one (or more) example in which
+  the condition holds true.
+
+* An existential quantifier is
+  *satisfied* by **one** (or more) examples.
+
+
+
+.. index:: Universal quantification
+.. _universal quantification:
+
+Universal quantification
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Existential_quantification
+
+* ∀ -- "For all" is the **Universal quantifier** symbol.
+* A universal quantification is **disproven by one counterexample**
+  where the condition does not hold true.
+
+  * disproven by one counterexample.
+
+
+.. index:: Hoare Logic
+.. _hoare logic:
+
+Hoare Logic
+`````````````
+| Wikipedia: https://en.wikipedia.org/wiki/Hoare_logic
+
+   * precondition ``P``
+   * command ``C``
+   * postcondition ``Q``
+
+See:
+
+* :ref:`Propositional Calculus`, :ref:`Predicate Logic`
+* :ref:`Given-When-Then`
 
 
 .. index:: First-order Logic
@@ -114,12 +494,61 @@ First-order Logic
 ```````````````````
 | Wikipedia: https://en.wikipedia.org/wiki/First-order_logic
 
-First-order (*FOL*)
+First-order logic (*FOL*)
+
+* Terms
+
+  + Variables
+
+    + ``x``, ``y``, ``z``
+    + ``x``, ``x_0`` ("x subscript 0", "x sub 0")
+
+  + Functions
+
+    + ``f(x)`` -- function symbol (arity 1)
+    + ``a`` -- constant symbol (arity 0) ( ``a()`` )
+
++ Formulas ("formulae")
+
+  + Equality
+
+    * ``=`` -- equality
+
+  + Logical Connectives ("unary", "binary", sequence/tuple/list)
+
+    + ``¬`` --  ``~``, ``!`` -- negation (unary)
+    + ...
+    + ``∧`` -- ``^``, ``&&``, ``and`` -- conjunction
+    + ``∨`` -- ``v``, ``||``, ``or`` -- disjunction
+    + ``→`` -- ``->``, ``⊃`` -- implication
+    + ``↔`` -- ``<->``, ``≡`` -- biconditional
+    + ...
+    + ``XOR``
+    + ``NAND``
+
+  + Grouping Operators
+
+    + Parentheses ``( )``
+    + Brackets ``< >``
+
+  + Relations
+
+    + ``P(x)`` -- predicate symbol (n_args=1, arity 1, valence 1)
+    + ``R(x)`` -- relation symbol  (n_args=1, arity 1, valence 1)
+    + ``Q(x,y)`` -- binary predicate/relation symbol (n_args=2, ...)
+
+  + Quantifier Symbols "universe relation"
+
+    * :ref:`∃ <Existential Quantification>`
+    * :ref:`∀ <Universal Quantification>`
+
+  + ... https://en.wikipedia.org/wiki/First-order_logic
 
 
 .. index:: Description Logic
 .. index:: DL
-.. _DL:
+.. _description logic:
+.. _dl:
 
 Description Logic
 ```````````````````
@@ -130,7 +559,9 @@ Description Logic (*DL*; DLP (Description Logic Programming))
 * https://en.wikipedia.org/wiki/Description_logic#Notation
 * https://en.wikipedia.org/wiki/Description_logic#Relationship_with_other_logics
 
-Knowledge Base = TBox + ABox
+::
+
+    Knowledge Base = TBox + ABox
 
 * https://en.wikipedia.org/wiki/TBox (Schema: Class/Property Ontology)
 * https://en.wikipedia.org/wiki/ABox (Facts / Instances)
@@ -140,6 +571,7 @@ See:
 * :ref:`OWL`, :ref:`entailment`
 * :ref:`Semantic web`
 * :ref:`N3` for ``=>`` implies
+
 
 .. index:: Reasoning
 .. _reasoning:
@@ -154,6 +586,7 @@ https://en.wikipedia.org/wiki/Semantic_reasoner
 
 See: :ref:`DL`
 
+
 .. index:: Inference
 .. _inference:
 
@@ -161,9 +594,12 @@ Inference
 ```````````
 | Inference: https://en.wikipedia.org/wiki/Inference
 
-* https://en.wikipedia.org/wiki/Rule_of_inference (Logic)
-* https://en.wikipedia.org/wiki/Category:Statistical_inference (Logic + Math)
 
+* https://en.wikipedia.org/wiki/Rule_of_inference (Logic)
+* https://en.wikipedia.org/wiki/List_of_rules_of_inference
+
+
+* https://en.wikipedia.org/wiki/Category:Statistical_inference (Logic + Math)
 
 .. index:: Entailment
 .. _entailment:
@@ -172,7 +608,7 @@ Entailment
 ~~~~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/Entailment
 
-* http://www.w3.org/TR/owl2-profiles/#Introduction
+* https://www.w3.org/TR/owl2-profiles/#Introduction
 
 See: :ref:`data science`
 
@@ -354,10 +790,10 @@ Data Structures
 | WikipediaCategory: https://en.wikipedia.org/wiki/Category:Data_structures
 | Docs: https://en.wikipedia.org/wiki/List_of_data_structures
 
-* http://rosettacode.org/wiki/Category:Programming_Tasks
+* https://rosettacode.org/wiki/Category:Programming_Tasks
 
-  * http://rosettacode.org/wiki/Greatest_common_divisor
-  * http://rosettacode.org/wiki/Go_Fish
+  * https://rosettacode.org/wiki/Greatest_common_divisor
+  * https://rosettacode.org/wiki/Go_Fish
 
 
 .. index:: Arrays
@@ -470,11 +906,10 @@ NetworkX
 | Wikipedia: https://en.wikipedia.org/wiki/NetworkX
 | Homepage: https://networkx.github.io/
 | Source: git https://github.com/networkx/networkx
-| Docs: https://networkx.github.io/documentation.html
-| Docs: https://networkx.github.io/documentation/latest/
-| Docs: https://networkx.github.io/documentation/latest/tutorial/
-| Docs: https://networkx.github.io/documentation/latest/reference/classes.html
-| Docs: https://networkx.github.io/documentation/latest/reference/algorithms.html
+| Docs: https://networkx.readthedocs.io/en/latest/
+| Docs: https://networkx.readthedocs.io/en/latest/tutorial/
+| Docs: https://networkx.readthedocs.io/en/latest/reference/classes.html
+| Docs: https://networkx.readthedocs.io/en/latest/reference/algorithms.html
 
 NetworkX is an :ref:`open source` graph algorithms library
 written in :ref:`Python`.
@@ -586,7 +1021,7 @@ topological sorting, or is topologically sorted.
 Trees
 ```````
 | Wikipedia: https://en.wikipedia.org/wiki/Tree_data_structure
-| Docs: http://rosettacode.org/wiki/Tree_traversal
+| Docs: https://rosettacode.org/wiki/Tree_traversal
 
 A tree is a directed :ref:`graph <graphs>`.
 
@@ -635,7 +1070,7 @@ gzip
 | Wikipedia: https://en.wikipedia.org/wiki/Gzip
 | Homepage: https://www.gnu.org/software/gzip/
 | File Extension: ``.gz``
-| Source: http://ftp.gnu.org/gnu/gzip/
+| Source: https://ftp.gnu.org/gnu/gzip/
 | Docs: https://www.gnu.org/software/gzip/manual/
 | Docs: https://www.gnu.org/software/gzip/manual/gzip.html
 
@@ -866,8 +1301,8 @@ LVM
 | Homepage: https://www.sourceware.org/lvm2/
 | Source: ftp://sources.redhat.com/pub/lvm2/
 | Docs: https://www.sourceware.org/dm/
-| Docs: http://www.tldp.org/HOWTO/LVM-HOWTO/index.html
-| Docs: http://www.tldp.org/HOWTO/LVM-HOWTO/anatomy.html
+| Docs: https://www.tldp.org/HOWTO/LVM-HOWTO/index.html
+| Docs: https://www.tldp.org/HOWTO/LVM-HOWTO/anatomy.html
 
 LVM (*Logical Volume Manager*) is an :ref:`open source`
 software disk abstraction layer with snapshotting, copy-on-write,
@@ -1000,13 +1435,13 @@ is the filesystem for Mac OS 8.1+ and :ref:`OSX`.
 
 * HFS+ is required for :ref:`OSX` and Time Machine.
 
-  http://www.cnet.com/how-to/the-best-ways-to-format-an-external-drive-for-windows-and-mac/
+  https://www.cnet.com/how-to/the-best-ways-to-format-an-external-drive-for-windows-and-mac/
 
 * :ref:`Windows` machines can access HFS+ partitions with:
   HFSExplorer (free, :ref:`Java`), Paragon HFS+ for Windows,
   or MacDrive
 
-  http://www.makeuseof.com/tag/4-ways-read-mac-formatted-drive-windows/
+  https://www.makeuseof.com/tag/4-ways-read-mac-formatted-drive-windows/
 
 * :ref:`Linux` machines can access HFS+ partitions with
   ``hfsprogs`` (``apt-get install hfsprogs``, ``yum install hfsprogs``).
@@ -1033,13 +1468,9 @@ NTFS is a proprietary journaling filesytem.
 FUSE
 `````
 | Wikipedia: https://en.wikipedia.org/wiki/Filesystem_in_Userspace
-| Homepage: http://fuse.sourceforge.net/
-| Download: http://sourceforge.net/projects/fuse/files/fuse-2.X/
-| Source: git http://git.code.sf.net/p/fuse/fuse
-| Docs: http://fuse.sourceforge.net/doxygen/index.html
-| Docs: http://sourceforge.net/p/fuse/wiki/FileSystems/
-| Docs: http://sourceforge.net/p/fuse/wiki/LanguageBindings/
-| Docs: http://sourceforge.net/p/fuse/wiki/OperatingSystems/
+| Homepage: https://github.com/libfuse/libfuse
+| Source: https://github.com/libfuse/libfuse
+| Docs: https://libfuse.github.io/doxygen/
 
 FUSE (*Filesystem in Userspace*) is a userspace filesystem API
 for implementing filesystems in userspace.
@@ -1051,7 +1482,7 @@ Interesting FUSE implementations:
 
 * PyFilesystem is a :ref:`Python` :term:`language api`
   interface which supports `FUSE`:
-  http://docs.pyfilesystem.org/en/latest/
+  https://docs.pyfilesystem.org/en/latest/
 * There are FUSE bindings for :ref:`Hadoop` :ref:`HDFS`.
 * :ref:`Ceph` can be mounted with/over/through `FUSE`.
 * :ref:`GlusterFS` can be mounted with/over/through `FUSE`.
@@ -1067,9 +1498,7 @@ Interesting FUSE implementations:
 SSHFS
 ~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/SSHFS
-| Homepage: http://fuse.sourceforge.net/sshfs.html
-| Download: http://sourceforge.net/projects/fuse/files/sshfs-fuse/
-| Source: git http://git.code.sf.net/p/fuse/sshfs
+| Source: https://github.com/libfuse/sshfs
 | Docs: https://wiki.archlinux.org/index.php/Sshfs
 | Docs: https://help.ubuntu.com/community/SSHFS
 | Docs: https://github.com/osxfuse/osxfuse/wiki/SSHFS
@@ -1093,16 +1522,15 @@ Network Filesystems
 Ceph
 `````
 | Wikipedia: `<https://en.wikipedia.org/wiki/Ceph_(software)>`__
-| Homepage: http://ceph.com/
-| Download: http://ceph.com/resources/downloads/
+| Homepage: https://ceph.io/
 | Source: git https://github.com/ceph/ceph
-| Docs: http://ceph.com/docs/master/
-| Docs: http://ceph.com/docs/master/rados/
-| Docs: http://ceph.com/docs/master/radosgw/
-| Docs: http://ceph.com/docs/master/radosgw/s3/
-| Docs: http://ceph.com/docs/master/radosgw/swift/
-| Docs: http://ceph.com/docs/master/radosgw/keystone/
-| Docs: http://ceph.com/docs/master/rbd/rbd-openstack/
+| Docs: https://docs.ceph.com/docs/master/
+| Docs: https://docs.ceph.com/docs/master/rados/
+| Docs: https://docs.ceph.com/docs/master/radosgw/
+| Docs: https://docs.ceph.com/docs/master/radosgw/s3/
+| Docs: https://docs.ceph.com/docs/master/radosgw/swift/
+| Docs: https://docs.ceph.com/docs/master/radosgw/keystone/
+| Docs: https://docs.ceph.com/docs/master/rbd/rbd-openstack/
 
 Ceph is an :ref:`open source` network filesystem
 (a :ref:`distributed database <distributed databases>`
@@ -1153,15 +1581,14 @@ written in :ref:`Python` and :ref:`C`.
 GlusterFS
 ```````````
 | Wikipedia: https://en.wikipedia.org/wiki/GlusterFS
-| Homepage: http://www.gluster.org/
-| Project: https://forge.gluster.org/glusterfs-core
-| Source: git https://git.forge.gluster.org/glusterfs-core/glusterfs.git
-| Docs: https://gluster.readthedocs.org/en/latest/
-| Docs: https://gluster.readthedocs.org/en/latest/Quick-Start-Guide/Quickstart/
-| Docs: https://gluster.readthedocs.org/en/latest/Install-Guide/Setup_virt/
-| Docs: https://gluster.readthedocs.org/en/latest/Install-Guide/Setup_Bare_metal/
-| Docs: https://gluster.readthedocs.org/en/latest/Install-Guide/Setup_aws/
-| Docs: https://gluster.readthedocs.org/en/latest/Administrator%20Guide/GlusterFS%20Cinder/
+| Homepage: https://www.gluster.org/
+| Source: https://github.com/gluster/glusterfs
+| Docs: https://gluster.readthedocs.io/en/latest/
+| Docs: https://gluster.readthedocs.io/en/latest/Quick-Start-Guide/Quickstart/
+| Docs: https://gluster.readthedocs.io/en/latest/Install-Guide/Setup_virt/
+| Docs: https://gluster.readthedocs.io/en/latest/Install-Guide/Setup_Bare_metal/
+| Docs: https://gluster.readthedocs.io/en/latest/Install-Guide/Setup_aws/
+| Docs: https://gluster.readthedocs.io/en/latest/Administrator%20Guide/GlusterFS%20Cinder/
 | Tcp ports: 111, 24007, 24008, 24009, 24010, 24011, 38465:38469
 
 GlusterFS is an :ref:`open source` network filesystem
@@ -1303,7 +1730,7 @@ Databases
 
 * https://en.wikipedia.org/wiki/Category:Database_software_comparisons
 
-  * http://db-engines.com/en/ranking
+  * https://db-engines.com/en/ranking
 
 
 .. index:: ORM
@@ -1322,6 +1749,32 @@ https://en.wikipedia.org/wiki/Object-relational_impedance_mismatch
 * https://en.wikipedia.org/wiki/List_of_object-relational_mapping_software
 
 
+.. index:: Relation Algebra
+.. _relation algebra:
+
+Relation Algebra
+`````````````````````
+| Wikipedia: https://en.wikipedia.org/wiki/Relation_algebra
+
+* https://en.wikipedia.org/wiki/Relation_algebra#Expressing_properties_of_binary_relations_in_RA
+
+See: :ref:`relational algebra`
+
+
+.. index:: Relational Algebra
+.. _relational algebra:
+
+Relational Algebra
+```````````````````````
+| Wikipedia: https://en.wikipedia.org/wiki/Relational_algebra
+
+* `<https://en.wikipedia.org/wiki/Projection_(relational_algebra)>`_
+* https://en.wikipedia.org/wiki/Relational_algebra#Joins_and_join-like_operators
+* https://en.wikipedia.org/wiki/Relational_algebra#Common_extensions
+
+See: :ref:`relation algebra`, :ref:`relational databases`
+
+
 .. index:: Relational Databases
 .. index:: SQL Databases
 .. _relational databases:
@@ -1332,11 +1785,7 @@ Relational Databases
 
 https://en.wikipedia.org/wiki/Relational_model
 
-https://en.wikipedia.org/wiki/Relational_algebra
-
-* `<https://en.wikipedia.org/wiki/Projection_(relational_algebra)>`_
-* https://en.wikipedia.org/wiki/Relational_algebra#Joins_and_join-like_operators
-* https://en.wikipedia.org/wiki/Relational_algebra#Common_extensions
+:ref:`relational algebra`
 
 https://en.wikipedia.org/wiki/Database_normalization
 
@@ -1355,7 +1804,7 @@ https://en.wikipedia.org/wiki/Relational_database_management_system
 * :ref:`postgresql`
 * :ref:`sqlite`
 * :ref:`Virtuoso`
-* http://db-engines.com/en/ranking/relational+dbms
+* https://db-engines.com/en/ranking/relational+dbms
 
 What doesn't SQL do?
 
@@ -1372,31 +1821,15 @@ SQL
 
 * `<https://en.wikipedia.org/wiki/Null_(SQL)#Comparisons_with_NULL_and_the_three-valued_logic_.283VL.29>`_
 * `<https://en.wikipedia.org/wiki/Join_(SQL)>`_
+* https://en.wikipedia.org/wiki/Hierarchical_and_recursive_queries_in_SQL
+
+SQL security:
+
 * https://en.wikipedia.org/wiki/SQL_injection
-* http://cwe.mitre.org/top25/#CWE-89 (#1 Most Prevalent Dangerous
+* https://cwe.mitre.org/top25/#CWE-89 (#1 Most Prevalent Dangerous
   Security Error (2011))
 
 See: :ref:`Object Relational Modeling <orm>`
-
-
-.. index:: Drizzle
-.. _drizzle:
-
-Drizzle
-~~~~~~~~~
-| Wikipedia: `<https://en.wikipedia.org/wiki/Drizzle_(database_server)>`__
-| Homepage: http://www.drizzle.org/
-| Project: https://launchpad.net/drizzle
-| Download: http://www.drizzle.org/content/download
-| Source: bzr lp:drizzle
-| Docs: http://www.drizzle.org/content/documentation
-| Docs: http://docs.drizzle.org/
-
-Drizzle is an :ref:`open source` relational database "for the cloud"
-which was forked from :ref:`MySQL` 6.0.
-
-* Drizzle stores all data as UTF-8.
-* Drizzle has a minimal core and a plugin API.
 
 
 .. index:: MySQL
@@ -1419,12 +1852,12 @@ MySQL Community Edition is an :ref:`open source` relational database.
 PostgreSQL
 ~~~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/PostgreSQL
-| Homepage: http://www.postgresql.org/
-| Download: http://www.postgresql.org/download/
-| Source: git http://git.postgresql.org/git/postgresql.git
-| Docs: http://www.postgresql.org/docs/
-| Docs: http://www.postgresql.org/docs/9.4/static/index.html
-| Docs: http://www.postgresql.org/docs/9.4/static/sql.html
+| Homepage: https://www.postgresql.org/
+| Download: https://www.postgresql.org/download/
+| Source: git https://git.postgresql.org/git/postgresql.git
+| Docs: https://www.postgresql.org/docs/
+| Docs: https://www.postgresql.org/docs/12/index.html
+| Docs: https://www.postgresql.org/docs/12/sql.html
 
 PostgreSQL is an :ref:`open source` relational database.
 
@@ -1460,7 +1893,7 @@ which stores all data in one file.
 Virtuoso
 ~~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/Virtuoso_Universal_Server
-| Homepage: http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/
+| Homepage: https://virtuoso.openlinksw.com
 | Source: git https://github.com/openlink/virtuoso-opensource
 | Docs: http://docs.openlinksw.com/virtuoso/
 | Docs: http://docs.openlinksw.com/virtuoso/sqlreference.html
@@ -1468,7 +1901,7 @@ Virtuoso
 | Docs: http://docs.openlinksw.com/virtuoso/rdfsparql.html
 | Docs: http://docs.openlinksw.com/virtuoso/rdfsparqlrule.html
 | Docs: http://docs.openlinksw.com/virtuoso/rdfgraphsecurity.html
-| Docs: http://docs.openlinksw.com/virtuoso/virtuososponger.html
+| Docs: http://docs.openlinksw.com/virtuoso/virtuosospongerusage/
 
 Virtuoso :ref:`open source` edition is a multi-paradigm
 :ref:`relational database <relational databases>` /
@@ -1506,7 +1939,7 @@ NoSQL Databases
 
 * `<https://en.wikipedia.org/wiki/Column_family>`_
 * `<https://en.wikipedia.org/wiki/Super_column>`_
-* https://en.wikipedia.org/wiki/Apache_Accumulo
+* https://en.wikipedia.org/wiki/Apache:
 
 
 .. index:: Graph Databases
@@ -1523,7 +1956,7 @@ https://en.wikipedia.org/wiki/Graph_database#Graph_database_projects
 * :ref:`neo4j`
 * :ref:`Accumulo` + https://en.wikipedia.org/wiki/Sqrrl
 * :ref:`Virtuoso` [:ref:`RDF`, :ref:`OWL`]
-* http://db-engines.com/en/ranking/graph+dbms
+* https://db-engines.com/en/ranking/graph+dbms
 
 Graph Queries
 
@@ -1539,15 +1972,15 @@ Graph Queries
 
 Blazegraph
 ~~~~~~~~~~~~
-| Homepage: http://www.blazegraph.com/
-| Download: http://www.blazegraph.com/download
-| Src: git git://git.code.sf.net/p/bigdata/git
-| Docs: http://www.blazegraph.com/learn
-| Docs: http://www.blazegraph.com/inference
-| Docs: http://www.blazegraph.com/blueprints
-| Docs: http://www.blazegraph.com/sesame
-| Docs: http://www.blazegraph.com/develop
-| Docs: http://www.blazegraph.com/docs/api/
+| Homepage: https://www.blazegraph.com/
+| Download: https://www.blazegraph.com/download
+| Src: https://github.com/blazegraph/database
+| Docs: https://www.blazegraph.com/learn
+| Docs: https://www.blazegraph.com/inference
+| Docs: https://www.blazegraph.com/blueprints
+| Docs: https://www.blazegraph.com/sesame
+| Docs: https://www.blazegraph.com/develop
+| Docs: https://www.blazegraph.com/docs/api/
 | Docs: https://wiki.blazegraph.com/wiki/index.php/Main_Page
 
 Blazegraph is an :ref:`open source` :ref:`graph database <graph databases>`
@@ -1625,7 +2058,7 @@ for traversing property graphs.
 Neo4j
 ~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/Neo4j
-| Homepage: http://neo4j.com/
+| Homepage: https://neo4j.com/
 | Download: http://neo4j.com/download/
 | Src: git https://github.com/neo4j/neo4j
 | Docs: http://neo4j.com/developer/get-started/
@@ -1663,7 +2096,7 @@ https://en.wikipedia.org/wiki/List_of_subject-predicate-object_databases
 * `<https://en.wikipedia.org/wiki/Jena_(framework)>`__
 * `<https://en.wikipedia.org/wiki/Sesame_(framework)>`__
 * :ref:`Virtuoso`
-* http://db-engines.com/en/ranking/rdf+store
+* https://db-engines.com/en/ranking/rdf+store
 
 Graph Pattern Query Results
 
@@ -1728,7 +2161,7 @@ and a number of additional features.
 BigTable
 ~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/BigTable
-| Docs: http://research.google.com/archive/bigtable.html
+| Docs: https://research.google.com/archive/bigtable.html
 
 Google BigTable is a open reference design for a distributed key/value
 column store
@@ -1739,6 +2172,23 @@ and a proprietary production database system.
 * Cloud BigTable is a :ref:`PaaS` / :ref:`SaaS` service
   with :ref:`Java` integration through an adaptation of
   :ref:`HBase` API.
+
+
+.. index:: Beam
+.. index:: Apache Beam
+.. _apache-beam:
+.. _beam:
+
+Apache Beam
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+| Homepage: https://beam.apache.org/
+| Src: git://git.apache.org/beam.git
+| Src: https://github.com/apache/beam
+| Docs: https://beam.apache.org/documentation/
+
+Apache Beam is an open source batch and streaming
+parallel data processing framework with support for
+Apache Apex, Apache Flink, `Apache Spark`_, and Google Cloud Dataflow. 
 
 
 .. index:: Cassandra
@@ -1752,8 +2202,8 @@ Cassandra
 | Source: git https://github.com/apache/cassandra
 | Docs: https://wiki.apache.org/cassandra/FrontPage
 | Docs: https://wiki.apache.org/cassandra/GettingStarted
-| Docs: http://docs.datastax.com/en/latest-dsc/
-| Docs: http://docs.datastax.com/en/cassandra/2.1/cassandra/architecture/architectureIntro_c.html
+| Docs: https://docs.datastax.com/en/cassandra-oss/3.x/
+| Docs: https://docs.datastax.com/en/cassandra-oss/3.x/cassandra/architecture/archIntro.html
 
 Apache Cassandra is an :ref:`open source` distributed key/value
 super column store written in :ref:`Java`.
@@ -1774,8 +2224,8 @@ Hadoop
 | Download: https://hadoop.apache.org/releases.html
 | Source: git git://git.apache.org/hadoop.git
 | Source: git https://github.com/apache/hadoop
-| Docs: http://hadoop.apache.org/docs/current/
-| Docs: http://hadoop.apache.org/docs/stable/
+| Docs: https://hadoop.apache.org/docs/current/
+| Docs: https://hadoop.apache.org/docs/stable/
 
 Apache Hadoop is a collection of :ref:`open source`
 distributed computing components;
@@ -2026,11 +2476,28 @@ Paxos
 | Wikipedia: `<https://en.wikipedia.org/wiki/Paxos_(computer_science)>`__
 | Docs: `<https://en.wikipedia.org/wiki/Paxos_(computer_science)#Production_use_of_Paxos>`__
 
-* https://en.wikipedia.org/wiki/Paxos_(computer_science)#Production_use_of_Paxos
+* `<https://en.wikipedia.org/wiki/Paxos_(computer_science)#Production_use_of_Paxos>`__
 
   * :ref:`BigTable`, Spanner, Megastore
   * :ref:`Ceph`
-  * neo4j
+  * :ref:`neo4j`
+
+
+.. index:: Raft
+.. _raft:
+
+Raft
+``````
+| Wikipedia: `<https://en.wikipedia.org/wiki/Raft_(computer_science)>`__
+| Homepage: https://raft.github.io/
+
+* `<https://en.wikipedia.org/wiki/Raft_(computer_science)#Basics>`__
+
+  * Leader / Candidate / Follower
+  * Heartbeat (Leader -> Followers [-> Candidates])
+  * :ref:`etcd` (:ref:`CoreOS`, :ref:`Kubernetes`, :ref:`configuration
+    management`)
+  * :ref:`skydns`
 
 
 .. index:: BSP
@@ -2058,13 +2525,17 @@ for distributed computation.
 Distributed Computing Protocols
 +++++++++++++++++++++++++++++++++
 
-* :ref:`CORBA`
-* :ref:`Message Passing`
-* :ref:`MPI`
-* https://en.wikipedia.org/wiki/XML-RPC
-* https://en.wikipedia.org/wiki/Java_Remote_Method_Invocation
+.. contents::
+   :local:
+
+* https://en.wikipedia.org/wiki/Comparison_of_data_serialization_formats
+* :ref:`Programming Languages`' implementations:
+
+  - https://en.wikipedia.org/wiki/Java_Remote_Method_Invocation
+  - https://twisted.readthedocs.io/en/latest/core/howto/pb-usage.html
+
 * :ref:`ws-`
-* :term:`RESTful HTTP <restful api>`
+* :ref:`REST` (:term:`RESTful HTTP API <restful api>`)
 * :ref:`Protocol Buffers`
 * :ref:`Thrift`
 * :ref:`Avro`
@@ -2073,6 +2544,8 @@ Distributed Computing Protocols
 * :ref:`WebRTC`
 * :ref:`JSON-WSP`
 * :ref:`LDP` (:ref:`Turtle` or :ref:`JSON-LD` :ref:`RDF` over :ref:`HTTP`)
+* :ref:`REST`
+* :ref:`WAMP`
 * https://en.wikipedia.org/wiki/List_of_web_service_protocols
 
 
@@ -2155,7 +2628,7 @@ with or as a message queue (*MQ*).
 * ESBs can also maintain state, or logging.
 * ESB services can often be described with e.g.
   :ref:`WSDL` and/or :ref:`JSON-WSP`.
-
+* https://en.wikipedia.org/wiki/Category:Message-oriented_middleware
 
 
 .. index:: MPI
@@ -2172,8 +2645,43 @@ with implementations in many languages.
 
 * Many supercomputing applications are built with MPI.
 * MPI is faster than :ref:`JSON`.
-* :ref:`IPython` supports MPI:
-  https://ipython.org/ipython-doc/3/parallel/parallel_mpi.html
+* :ref:`IPython` ``ipyparallel`` supports MPI:
+  https://ipyparallel.readthedocs.io/en/latest/
+
+
+.. index:: XML-RPC
+.. _xml-rpc:
+
+XML-RPC
+``````````
+| Wikipedia: https://en.wikipedia.org/wiki/XML-RPC
+
+:ref:`XML` Remote Procedure Call defines method names with parameters
+and values for making function calls with XML.
+
+* Python ``xmlrpclib``:
+  https://docs.python.org/2/library/xmlrpclib.html
+
+  https://docs.python.org/3/library/xmlrpc.client.html
+
+  https://docs.python.org/3/library/xmlrpc.server.html
+
+See also:
+
+* :ref:`JSON-RPC`
+* ~:ref:`C` structs: :ref:`Protocol Buffers`, :ref:`Thrift`, :ref:`Avro`
+* :ref:`SOA` Web Services: :ref:`ws-`, :ref:`WSDL`
+* :ref:`ROA` Web Services: :ref:`REST`
+
+
+.. index:: JSON-RPC
+.. _json-rpc:
+
+JSON-RPC
+``````````
+| Wikipedia: https://en.wikipedia.org/wiki/JSON-RPC
+| Specification: https://www.jsonrpc.org/specification
+
 
 
 .. index:: Avro
@@ -2203,6 +2711,10 @@ with implementations in many languages.
   but does not require code generation.
 * Avro stores *schemas* within the data.
 
+seeAlso:
+
+* :ref:`JSON-LD` maps to :ref:`RDF`
+* :ref:`5stardata`
 
 
 .. index:: Protocol Buffers
@@ -2211,13 +2723,18 @@ with implementations in many languages.
 Protocol Buffers
 ``````````````````
 | Homepage: https://developers.google.com/protocol-buffers/
-| Source: git https://github.com/google/protobuf
-| Docs:
+| Src: https://github.com/google/protobuf
+| Docs: https://developers.google.com/protocol-buffers/docs/overview
 
 Protocol Buffers (*PB*) is a standard
 for structured data interchange.
 
 * Protocol Buffers are faster than :ref:`JSON`
+
+See also:
+
+* :ref:`Thrift`
+* :ref:`Avro`
 
 
 .. index:: Thrift
@@ -2225,12 +2742,22 @@ for structured data interchange.
 
 Thrift
 ````````
+| Wikipedia: https://en.wikipedia.org/wiki/Apache_Thrift
+| Homepage: https://thrift.apache.org
+| Src: https://github.com/apache/thrift
+| Docs: https://thrift.apache.org/docs/
+| Docs: https://thrift.apache.org/docs/idl
+
 Thrift is a standard
 for structured data interchange
 in the style of :ref:`Protocol Buffers`.
 
 * Thrift is faster than :ref:`JSON`.
 
+See also:
+
+* :ref:`Protocol Buffers`
+* :ref:`Avro`
 
 .. index:: SOA
 .. _soa:
@@ -2286,6 +2813,112 @@ for describing services and request and response objects.
 * JSON-WSP is similar in function to :ref:`WSDL` and :ref:`CORBA` IDL.
 
 See also: :ref:`Linked Data Platform (LDP) <ldp>`
+
+
+.. index:: ROA
+.. index:: Resource-Oriented Architecture
+.. _roa:
+
+ROA
+`````
+| Wikipedia: https://en.wikipedia.org/wiki/Resource-oriented_architecture
+
+
+.. index:: REST
+.. index:: Representational State Transfer
+.. _rest api:
+.. _restful api:
+.. _restful:
+.. _rest:
+
+REST
+~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Representational_state_transfer
+| Awesome: https://github.com/marmelab/awesome-rest
+
+REST (*Representational State Transfer*) is a pattern for interacting with
+web resources using regular :ref:`HTTP` methods like ``GET``, ``POST``,
+``PUT``, and ``DELETE``.
+
+* A REST :term:`API` is known as a RESTful API.
+* A REST implementation maps Create, Read, Update, Delete (CRUD) methods
+  for URI-named collections of **resources**
+  onto HTTP verbs like ``GET``, ``POST``, ``PATCH``.
+* Sometimes, a REST implementation accepts a :ref:`URL` parameter
+  like ``?method=PUT`` e.g. for :ref:`Javascript` implementations
+  on browsers which only support e.g. ``GET`` and ``POST``.
+* There are many software libraries for implementing REST API Servers:
+
+  * Java, JS: Restlet:
+
+    | Wikipedia: https://en.wikipedia.org/wiki/Restlet
+    | Src: https://github.com/restlet
+
+  * Ruby: Grape:
+
+    | Src: https://github.com/ruby-grape/grape
+
+  * Python: Django REST Framework:
+
+    | Src: https://github.com/encode/django-rest-framework
+
+* There are many software libraries for implementing REST API Clients:
+
+  * Python REST API client libraries:
+
+    * requests:
+
+      | Src: https://github.com/psf/requests
+      | Docs: https://requests.readthedocs.io/en/master/
+
+      + httpie is a CLI utility written on top of requests:
+
+        | Src: https://github.com/jkbrzt/httpie
+
+    * WebTest:
+
+      | Src: https://github.com/Pylons/webtest
+      | Docs: https://webtest.readthedocs.io/en/latest/
+
+      * https://pypi.python.org/pypi/webtest-plus/ (requests-auth)
+      * https://github.com/django-webtest/django-webtest
+
+    * | Docs: https://westurner.github.io/wiki/awesome-python-testing#web-applications
+
+
+.. index:: WAMP
+.. _wamp:
+
+WAMP
+`````
+| Wikipedia: https://en.wikipedia.org/wiki/Web_Application_Messaging_Protocol
+| Homepage: https://wamp-proto.org
+| Specification: https://tools.ietf.org/html/draft-oberstet-hybi-tavendo-wamp
+| Src: https://github.com/wamp-proto/wamp-proto
+| Docs: https://wamp-proto.org/why/
+| Docs: https://wamp-proto.org/faq/
+| Docs: https://wamp-proto.org/implementations/
+
+WAMP (*Web Application Messaging Protocol*) defines Publish/Subscribe
+(PubSub) and Remote Procedure Call (RPC) over :ref:`WebSockets`,
+:ref:`JSON`, and :term:`URIs <uri>`
+
+    Using WAMP, you can have a browser-based UI,
+    the embedded device and your backend talk to each other in real-time:
+
+* WAMP Router = Broker (PubSub topic broker) + Dealer (RPC)
+* WAMP can run on other transports (e.g. :ref:`msgpack`)
+  than the preferred :ref:`WebSockets` w/ :ref:`JSON`.
+
+  * :ref:`JSON-LD`
+
+* Implementations:
+
+  * https://wamp-proto.org/implementations/
+
+* https://tools.ietf.org/html/draft-oberstet-hybi-tavendo-wamp#section-6.5
+
+  WAMP Message Codes and Direction
 
 
 .. index:: Data Grid
@@ -2347,7 +2980,7 @@ Haystack
 | Homepage: http://haystacksearch.org/
 | Source: git https://github.com/django-haystack/django-haystack
 | PyPI: https://pypi.python.org/pypi/django-haystack
-| Docs: https://django-haystack.readthedocs.org/en/latest/
+| Docs: https://django-haystack.readthedocs.io/en/latest/
 
 Haystack is an :ref:`open source`
 :ref:`Python` Django API for a number of search
@@ -2364,7 +2997,8 @@ Lucene
 | Wikipedia: https://en.wikipedia.org/wiki/Lucene
 | Homepage: https://lucene.apache.org/
 | Download: https://lucene.apache.org/core/downloads.html
-| Source: svn http://svn.apache.org/repos/asf/lucene/dev/trunk
+| Source: https://github.com/apache/lucene-sol
+
 | Docs: https://lucene.apache.org/core/
 | Docs: https://lucene.apache.org/core/5_2_0/
 
@@ -2436,9 +3070,9 @@ written in :ref:`Python`.
 Xapian
 ````````
 | Wikipedia: https://en.wikipedia.org/wiki/Xapian
-| Homepage: http://xapian.org/
-| Docs: http://xapian.org/docs/
-| Docs: http://xapian.org/docs/apidoc/html/inherits.html
+| Homepage: https://xapian.org/
+| Docs: https://xapian.org/docs/
+| Docs: https://xapian.org/docs/apidoc/html/inherits.html
 
 Xapian is an :ref:`open source` search library written in :ref:`C++`
 with bindings for many languages.
@@ -2450,12 +3084,12 @@ with bindings for many languages.
 Information Retrieval
 ```````````````````````
 | Wikipedia: https://en.wikipedia.org/wiki/Information_retrieval
-| Docs: http://nlp.stanford.edu/IR-book/information-retrieval.html
+| Docs: https://nlp.stanford.edu/IR-book/information-retrieval.html
 
 * Christopher D. Manning, Prabhakar Raghavan and Hinrich Schütze,
   *Introduction to Information Retrieval*, Cambridge University Press. 2008.
 
-  http://nlp.stanford.edu/IR-book/
+  https://nlp.stanford.edu/IR-book/
 
 
 .. index:: Time Standards
@@ -2565,7 +3199,7 @@ Tools with support for :ref:`astronomical year numbering`:
 
 * AstroPy is a :ref:`Python` library that supports astronomical year numbering:
 
-  https://astropy.readthedocs.org/en/latest/time/
+  https://astropy.readthedocs.io/en/latest/time/
 
 
 
@@ -2643,7 +3277,7 @@ Common Era and :ref:`Python` datetime calculations:
     <Arrow [0001-01-01T00:00:00+00:00]>
 
     ### astropy.time.Time supports (1 BCE <= dates >= 1 CE) and/or *Year Zero*
-    ### https://astropy.readthedocs.org/en/latest/time/
+    ### https://astropy.readthedocs.io/en/latest/time/
     >>> !conda install astropy
     >>> import astropy.time
     >>> # TimeJulianEpoch (Julian date (jd) ~= Common Era (CE))
@@ -2706,6 +3340,97 @@ https://en.wikipedia.org/wiki/Time_in_the_United_States#Standard_time_and_daylig
 https://en.wikipedia.org/wiki/History_of_time_in_the_United_States
 
 
+Time Zone names, URIs, and :ref:`iso8601` UTC offsets:
+
+.. table:: Table of US Time Zones
+    :class: table-responsive table-striped
+
+    +----------------------------------------------------------+----------------+--------------------+
+    | **Time Zone names, URNs, URIs**                          | **UTC Offset** | **UTC DST Offset** |
+    +----------------------------------------------------------+----------------+--------------------+
+    | https://en.wikipedia.org/wiki/Coordinated_Universal_Time |                |                    |
+    |                                                          |                |                    |
+    | #tz: Coordinated Universal Time, **UTC**, **Zulu**       | -0000 Z        |  +0000 Z           |
+    +----------------------------------------------------------+----------------+--------------------+
+    | https://en.wikipedia.org/wiki/Atlantic_Time_Zone         |                |                    |
+    |                                                          |                |                    |
+    | https://en.wikipedia.org/wiki/America/Halifax            |                |                    |
+    |                                                          |                |                    |
+    | #tz: Atlantic, Antarctica (Palmer), **AST**, ADT         | -0400 AST      | -0300 ADT          |
+    |                                                          |                |                    |
+    | America/Halifax                                          |                |                    |
+    +----------------------------------------------------------+----------------+--------------------+
+    | https://en.wikipedia.org/wiki/America/St_Thomas          |                |                    |
+    |                                                          |                |                    |
+    | #tz: America/St_Thomas, America/Virgin                   | -0400          | -0400              |
+    +----------------------------------------------------------+----------------+--------------------+
+    | https://en.wikipedia.org/wiki/Eastern_Time_Zone          |                |                    |
+    |                                                          |                |                    |
+    | https://en.wikipedia.org/wiki/EST5EDT                    |                |                    |
+    |                                                          |                |                    |
+    | #tz: Eastern, **EST**, EDT                               | -0500 EST      | -0400 EDT          |
+    |                                                          |                |                    |
+    | America/New_York                                         |                |                    |
+    +----------------------------------------------------------+----------------+--------------------+
+    | https://en.wikipedia.org/wiki/Central_Time_Zone          |                |                    |
+    |                                                          |                |                    |
+    | https://en.wikipedia.org/wiki/CST6CDT                    |                |                    |
+    |                                                          |                |                    |
+    | #tz: Central, **CST**, CDT                               | -0600 CST      | -0500 CDT          |
+    |                                                          |                |                    |
+    | America/Chicago                                          |                |                    |
+    +----------------------------------------------------------+----------------+--------------------+
+    | https://en.wikipedia.org/wiki/Mountain_Time_Zone         |                |                    |
+    |                                                          |                |                    |
+    | https://en.wikipedia.org/wiki/MST7MDT                    |                |                    |
+    |                                                          |                |                    |
+    | #tz: Mountain, **MST**, MDT                              | -0700 MST      | -0600 MDT          |
+    |                                                          |                |                    |
+    | America/Denver                                           |                |                    |
+    +----------------------------------------------------------+----------------+--------------------+
+    | https://en.wikipedia.org/wiki/Pacific_Time_Zone          |                |                    |
+    |                                                          |                |                    |
+    | https://en.wikipedia.org/wiki/PST8PDT                    |                |                    |
+    |                                                          |                |                    |
+    | #tz: Pacific, **PST**, PDT                               | -0800 PST      | -0700 PDT          |
+    |                                                          |                |                    |
+    | America/Los_Angeles                                      |                |                    |
+    +----------------------------------------------------------+----------------+--------------------+
+    | https://en.wikipedia.org/wiki/Alaska_Time_Zone           |                |                    |
+    |                                                          |                |                    |
+    | AKST9AKDT                                                |                |                    |
+    |                                                          |                |                    |
+    | #tz: Alaska, **AKST**, AKDT                              | -0900 AKST     | -0800 AKDT         |
+    |                                                          |                |                    |
+    | America/Juneau                                           |                |                    |
+    +----------------------------------------------------------+----------------+--------------------+
+    | https://en.wikipedia.org/wiki/Hawaii-Aleutian_Time_Zone  |                |                    |
+    |                                                          |                |                    |
+    | HAST10HADT                                               |                |                    |
+    |                                                          |                |                    |
+    | #tz: Hawaii Aleutian, **HAST**, HADT                     | -1000 HAST     | -0900 HADT         |
+    |                                                          |                |                    |
+    | Pacific/Honolulu                                         |                |                    |
+    +----------------------------------------------------------+----------------+--------------------+
+    | https://en.wikipedia.org/wiki/Samoa_Time_Zone            |                |                    |
+    |                                                          |                |                    |
+    | #tz: Samoa Time Zone, **SST**                            | -1100 SST      | -1100 SST          |
+    |                                                          |                |                    |
+    | Pacific/Samoa                                            |                |                    |
+    +----------------------------------------------------------+----------------+--------------------+
+    | https://en.wikipedia.org/wiki/Chamorro_Time_Zone         |                |                    |
+    |                                                          |                |                    |
+    | #tz: Chamorro, Guam                                      | +1000          | +1000              |
+    |                                                          |                |                    |
+    | Pacific/Guam                                             |                |                    |
+    +----------------------------------------------------------+----------------+--------------------+
+    | https://en.wikipedia.org/wiki/Time_in_Antarctica         |                |                    |
+    |                                                          |                |                    |
+    | Antarctica (Amundsen, McMurdo), South Pole               | +1200          | +1300              |
+    |                                                          |                |                    |
+    | Antarctica/South_Pole                                    |                |                    |
+    +----------------------------------------------------------+----------------+--------------------+
+
 .. index:: US Daylight Saving Time
 .. index:: Daylight Saving Time
 .. _daylight saving time:
@@ -2714,21 +3439,21 @@ US Daylight Saving Time
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/Daylight_saving_time_in_the_United_States
 
-    Currently, daylight saving time
-    **starts on the second Sunday in March**
-    and **ends on the first Sunday in November**,
-    with the time changes taking place **at 2:00 a.m. local time**.
+   Currently, daylight saving time
+   **starts on the second Sunday in March**
+   and **ends on the first Sunday in November**,
+   with the time changes taking place **at 2:00 a.m. local time**.
 
-    With a mnemonic word play referring to seasons,
-    clocks *"spring forward and fall back"* — that is,
-    in spring (technically late winter) the clocks are
-    moved forward from 2:00 a.m. to 3:00 a.m.,
-    and in fall they are
-    moved back from 2:00 am to 1:00 am.
+   With a mnemonic word play referring to seasons,
+   clocks *"spring forward and fall back"* — that is,
+   in spring (technically late winter) the clocks are
+   moved forward from 2:00 a.m. to 3:00 a.m.,
+   and in fall they are
+   moved back from 2:00 am to 1:00 am.
 
 
 Daylight Savings Time Starts and Ends on the following dates
-(from https://en.wikipedia.org/wiki/Time_in_the_United_States#Daylight_saving_time):
+(from `<https://en.wikipedia.org/wiki/Time_in_the_United_States#Daylight_saving_time_(DST)>`__):
 
 +----------+--------------------+------------------+
 | **Year** | **DST start date** | **DST end date** |
@@ -2745,94 +3470,24 @@ Daylight Savings Time Starts and Ends on the following dates
 +----------+--------------------+------------------+
 | 2020     | 2020-03-08 02:00   | 2020-11-01 02:00 |
 +----------+--------------------+------------------+
-
-Time Zone names, URIs, and :ref:`iso8601` UTC offsets:
-
-+----------------------------------------------------------+----------------+--------------------+
-| **Time zone names, URNs, URIs**                          | **UTC Offset** | **UTC DST Offset** |
-+----------------------------------------------------------+----------------+--------------------+
-| https://en.wikipedia.org/wiki/Coordinated_Universal_Time | -0000 Z        | +0000 Z            |
-|                                                          |                |                    |
-| Coordinated Universal Time, **UTC**, **Zulu**            |                |                    |
-+----------------------------------------------------------+----------------+--------------------+
-| https://en.wikipedia.org/wiki/Atlantic_Time_Zone         |                |                    |
-|                                                          |                |                    |
-| https://en.wikipedia.org/wiki/America/Halifax            |                |                    |
-|                                                          |                |                    |
-| Atlantic, Antarctica (Palmer), AST, ADT                  | -0400 AST      | -0300 ADT          |
-|                                                          |                |                    |
-| America/Halifax                                          |                |                    |
-+----------------------------------------------------------+----------------+--------------------+
-| https://en.wikipedia.org/wiki/America/St_Thomas          |                |                    |
-|                                                          |                |                    |
-| America/St_Thomas, America/Virgin                        | -0400          | -0400              |
-+----------------------------------------------------------+----------------+--------------------+
-| https://en.wikipedia.org/wiki/Eastern_Time_Zone          |                |                    |
-|                                                          |                |                    |
-| https://en.wikipedia.org/wiki/EST5EDT                    |                |                    |
-|                                                          |                |                    |
-| Eastern, EST, EDT                                        | -0500 EST      | -0400 EDT          |
-|                                                          |                |                    |
-| America/New_York                                         |                |                    |
-+----------------------------------------------------------+----------------+--------------------+
-| https://en.wikipedia.org/wiki/Central_Time_Zone          |                |                    |
-|                                                          |                |                    |
-| https://en.wikipedia.org/wiki/CST6CDT                    |                |                    |
-|                                                          |                |                    |
-| Central, CST, CDT                                        | -0600 CST      | -0500 CDT          |
-|                                                          |                |                    |
-| America/Chicago                                          |                |                    |
-+----------------------------------------------------------+----------------+--------------------+
-| https://en.wikipedia.org/wiki/Mountain_Time_Zone         |                |                    |
-|                                                          |                |                    |
-| https://en.wikipedia.org/wiki/MST7MDT                    |                |                    |
-|                                                          |                |                    |
-| Mountain, MST, MDT                                       | -0700 MST      | -0600 MDT          |
-|                                                          |                |                    |
-| America/Denver                                           |                |                    |
-+----------------------------------------------------------+----------------+--------------------+
-| https://en.wikipedia.org/wiki/Pacific_Time_Zone          |                |                    |
-|                                                          |                |                    |
-| https://en.wikipedia.org/wiki/PST8PDT                    |                |                    |
-|                                                          |                |                    |
-| Pacific, PST, PDT                                        | -0800 PST      | -0700 PDT          |
-|                                                          |                |                    |
-| America/Los_Angeles                                      |                |                    |
-+----------------------------------------------------------+----------------+--------------------+
-| https://en.wikipedia.org/wiki/Alaska_Time_Zone           |                |                    |
-|                                                          |                |                    |
-| AKST9AKDT                                                |                |                    |
-|                                                          |                |                    |
-| Alaska, AKST, AKDT                                       | -0900 AKST     | -0800 AKDT         |
-|                                                          |                |                    |
-| America/Juneau                                           |                |                    |
-+----------------------------------------------------------+----------------+--------------------+
-| https://en.wikipedia.org/wiki/Hawaii-Aleutian_Time_Zone  |                |                    |
-|                                                          |                |                    |
-| HAST10HADT                                               |                |                    |
-|                                                          |                |                    |
-| Hawaii Aleutian, HAST, HADT                              | -1000 HAST     | -0900 HADT         |
-|                                                          |                |                    |
-| Pacific/Honolulu                                         |                |                    |
-+----------------------------------------------------------+----------------+--------------------+
-| https://en.wikipedia.org/wiki/Samoa_Time_Zone            |                |                    |
-|                                                          |                |                    |
-| Samoa Time Zone, SST                                     | -1100 SST      | -1100 SST          |
-|                                                          |                |                    |
-| Pacific/Samoa                                            |                |                    |
-+----------------------------------------------------------+----------------+--------------------+
-| https://en.wikipedia.org/wiki/Chamorro_Time_Zone         |                |                    |
-|                                                          |                |                    |
-| Chamorro, Guam                                           | +1000          | +1000              |
-|                                                          |                |                    |
-| Pacific/Guam                                             |                |                    |
-+----------------------------------------------------------+----------------+--------------------+
-| https://en.wikipedia.org/wiki/Time_in_Antarctica         |                |                    |
-|                                                          |                |                    |
-| Antarctica (Amundsen, McMurdo), South Pole               | +1200          | +1300              |
-|                                                          |                |                    |
-| Antarctica/South_Pole                                    |                |                    |
-+----------------------------------------------------------+----------------+--------------------+
+| 2021     | 2019-03-14 02:00   | 2019-11-07 02:00 |
++----------+--------------------+------------------+
+| 2022     | 2020-03-13 02:00   | 2020-11-06 02:00 |
++----------+--------------------+------------------+
+| 2023     | 2019-03-12 02:00   | 2019-11-05 02:00 |
++----------+--------------------+------------------+
+| 2024     | 2020-03-10 02:00   | 2020-11-03 02:00 |
++----------+--------------------+------------------+
+| 2025     | 2019-03-09 02:00   | 2019-11-02 02:00 |
++----------+--------------------+------------------+
+| 2026     | 2020-03-08 02:00   | 2020-11-01 02:00 |
++----------+--------------------+------------------+
+| 2027     | 2019-03-14 02:00   | 2019-11-07 02:00 |
++----------+--------------------+------------------+
+| 2028     | 2020-03-12 02:00   | 2020-11-05 02:00 |
++----------+--------------------+------------------+
+| 2029     | 2019-03-11 02:00   | 2019-11-04 02:00 |
++----------+--------------------+------------------+
 
 
 .. index:: ISO8601
@@ -2842,10 +3497,27 @@ Time Zone names, URIs, and :ref:`iso8601` UTC offsets:
 ISO8601
 +++++++++
 | Wikipedia: https://en.wikipedia.org/wiki/ISO_8601
-| Standard: http://www.iso.org/iso/iso8601
+| Standard: https://www.iso.org/iso/iso8601
 
 ISO8601 is an :ref:`ISO` standard for specifying Gregorian
 dates, times, datetime intervals, durations, and recurring datetimes.
+
+* The ``date`` command can print :ref:`iso8601` -compatible
+  datestrings:
+
+  .. code:: bash
+
+      $ date +'%FT%T%z'
+      2016-01-01T22:11:59-0600
+
+      $ date +'%F %T%z'
+      2016-01-01 22:11:59-0600
+
+      $ date -Iseconds --utc  # GNU date
+      2020-03-26T03:35:24+00:00
+
+      $ date -Is -u           # GNU date
+      2020-03-26T03:35:24+00:00
 
 * Roughly, an ISO8601 datetime is specified as:
   year,
@@ -2853,14 +3525,15 @@ dates, times, datetime intervals, durations, and recurring datetimes.
   month,
   dash
   day,
-  (``T`` or space),
+  (``T`` or `` `` [space-character]),
   hour,
   colon,
   minute,
   colon,
   second,
-  (``Z`` (for UTC)) or (plus/minus
-  :ref:`time zone <time zones>` offset));
+  (``Z`` [for UTC] or a
+  :ref:`time zone <time zones>` offset
+  (e.g. ``+``/``-`` ``-0000``, ``+0000``));
   where the dashes and colons are optional.
 
 * ISO8601 specifies a standard for absolute time durations:
@@ -2875,7 +3548,7 @@ dates, times, datetime intervals, durations, and recurring datetimes.
 
 * Many/most :ref:`W3C` standards (such as :ref:`XSD`)
   specify :ref:`ISO8601` time formats:
-  http://www.w3.org/TR/NOTE-datetime
+  https://www.w3.org/TR/NOTE-datetime
 
 A few examples of ISO8601:
 
@@ -2917,7 +3590,7 @@ A few examples of ISO8601:
 NTP
 ++++
 | Wikipedia: https://en.wikipedia.org/wiki/Network_Time_Protocol
-| Homepage: http://www.pool.ntp.org/en/
+| Homepage: https://www.pool.ntp.org/en/
 
 NTP (*Network Time Protocol*) is a standard for synchronizing
 clock times.
@@ -2939,7 +3612,10 @@ Linked Data
 -------------
 | Wikipedia: https://en.wikipedia.org/wiki/Linked_data
 
-* http://www.w3.org/DesignIssues/LinkedData.html
+* https://www.w3.org/DesignIssues/LinkedData.html
+* Linked Data Standards:
+
+  * W3C: https://www.w3.org/TR/#tr_Linked_Data
 
 
 .. index:: 5 Star Open Data
@@ -2948,7 +3624,7 @@ Linked Data
 
 5 ★ Linked Data
 ++++++++++++++++++
-http://www.w3.org/TR/ld-glossary/#x5-star-linked-open-data
+https://www.w3.org/TR/ld-glossary/#x5-star-linked-open-data
 
 .. epigraph::
 
@@ -2992,7 +3668,7 @@ http://www.w3.org/TR/ld-glossary/#x5-star-linked-open-data
    (`URLs <https://en.wikipedia.org/wiki/Uniform_resource_locator>`_)
    to useful `data <https://en.wikipedia.org/wiki/Data>`_ sources.
 
-   -- http://5stardata.info/
+   -- https://5stardata.info/
 
 
 See: :ref:`Semantic Web`
@@ -3012,9 +3688,9 @@ https://en.wikipedia.org/wiki/Template:Semantic_Web
 
 :ref:`W3C` Semantic Web Wiki:
 
-* http://www.w3.org/2001/sw/wiki
-* http://www.w3.org/2001/sw/wiki/Books
-* http://www.w3.org/2001/sw/wiki/Tools
+* https://www.w3.org/2001/sw/wiki
+* https://www.w3.org/2001/sw/wiki/Books
+* https://www.w3.org/2001/sw/wiki/Tools
 
 
 .. index:: Semantic Web Standards
@@ -3109,7 +3785,7 @@ URN
 IEC
 +++++
 | Wikipedia: https://en.wikipedia.org/wiki/International_Electrotechnical_Commission
-| Homepage: http://www.iec.ch/
+| Homepage: https://www.iec.ch/
 
 IEC (*International Electrotechnical Commission*) is a standards body.
 
@@ -3135,12 +3811,12 @@ IETF (*Internet Engineering Task Force*) is a standards body.
 ISO
 ++++
 | Wikipedia: https://en.wikipedia.org/wiki/International_Organization_for_Standardization
-| Homepage: http://www.iso.org/
+| Homepage: https://www.iso.org/
 
 ISO (*International Organization for Standardization*) is a standards
 body.
 
-* List of ISO standards: http://www.iso.org/iso/home/standards.htm
+* List of ISO standards: https://www.iso.org/iso/home/standards.htm
 
 
 .. index:: OMG
@@ -3149,13 +3825,13 @@ body.
 OMG
 ++++
 | Wikipedia: https://en.wikipedia.org/wiki/Object_Management_Group
-| Homepage: http://www.omg.org/
+| Homepage: https://www.omg.org/
 
 OMG (*Object Management Group*) is a standards body.
 
 * UML is an OMG standard.
 * :ref:`CORBA` is now an OMG standard.
-* List of OMG standards: http://www.omg.org/spec/
+* List of OMG standards: https://www.omg.org/spec/
 
   https://en.wikipedia.org/wiki/Object_Management_Group#OMG_Standards
 
@@ -3166,21 +3842,23 @@ OMG (*Object Management Group*) is a standards body.
 W3C
 ++++
 | Wikipedia: https://en.wikipedia.org/wiki/World_Wide_Web_Consortium
-| Homepage: http://www.w3.org/
+| Homepage: https://www.w3.org/
 
 W3C (*World Wide Web Consortium*) is a standards body.
 
-* List of W3C standards: http://www.w3.org/TR/
+* List of W3C standards / "Technical Recommendations": https://www.w3.org/TR/
+
+  - https://www.w3.org/TR/#tr_Linked_Data
 
 
 .. index:: HTTP
-.. _HTTP:
+.. _http:
 
 HTTP
 +++++
 | Wikipedia: https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
 | Standard: https://tools.ietf.org/html/rfc2616
-| Standard: http://tools.ietf.org/html/rfc7230#page-5
+| Standard: https://tools.ietf.org/html/rfc7230#page-5
 | Docs: https://www.mnot.net/blog/2014/06/07/rfc2616_is_dead
 | URI Scheme: ``http://``
 | URI Scheme: ``https://``
@@ -3193,17 +3871,20 @@ TCP/IP protocol for text and binary data interchange.
 
 
 .. index:: HTTP in RDF
-.. _httprdf:
+.. _http in rdf:
 
 HTTP in RDF
 `````````````
-| Standard: http://www.w3.org/TR/HTTP-in-RDF10/
-| Namespace: `<http://www.w3.org/2011/http#>`__
-| xmlns: ``@prefix http: <http://www.w3.org/2011/http#> .``
-| xmlns: ``@prefix http-headers: <http://www.w3.org/2011/http-headers> .``
-| xmlns: ``@prefix http-methods: <http://www.w3.org/2011/http-methods> .``
-| xmlns: ``@prefix http-statusCodes: <http://www.w3.org/2011/http-statusCodes> .``
-| LOVLink: http://lov.okfn.org/dataset/lov/vocabs/http
+| Standard: https://www.w3.org/TR/HTTP-in-RDF10/
+| Namespace: `<https://www.w3.org/2011/http#>`__
+| Namespace: `<https://www.w3.org/2011/http-headers> .`__
+| Namespace: `<https://www.w3.org/2011/http-methods> .`__
+| Namespace: `<https://www.w3.org/2011/http-statusCodes> .`__
+| xmlns: ``@prefix http: <https://www.w3.org/2011/http#> .``
+| xmlns: ``@prefix http-headers: <https://www.w3.org/2011/http-headers> .``
+| xmlns: ``@prefix http-methods: <https://www.w3.org/2011/http-methods> .``
+| xmlns: ``@prefix http-statusCodes: <https://www.w3.org/2011/http-statusCodes> .``
+| LOVLink: https://lov.linkeddata.es/dataset/lov/vocabs/http
 
 HTTP-in-RDF is a standard for representing :ref:`HTTP` as :ref:`RDF`.
 
@@ -3318,8 +3999,8 @@ See also: https://en.wikipedia.org/wiki/Push_technology, :ref:`WebRTC`
 WebRTC
 ++++++++
 | Wikipedia: https://en.wikipedia.org/wiki/WebRTC
-| Homepage: http://www.webrtc.org/
-| Standard: http://tools.ietf.org/wg/rtcweb/
+| Homepage: https://www.webrtc.org/
+| Standard: https://tools.ietf.org/wg/rtcweb/
 | Docs: https://webrtc.github.io/samples/
 
 WebRTC is a :ref:`web standard <web standards>` for
@@ -3329,11 +4010,8 @@ in :ref:`browser <browsers>`,
 without having to download any plugins.
 
 
-.. note:: WebRTC is supported by a growing number of browsers:
+.. note:: WebRTC is supported by most browsers:
    http://iswebrtcreadyyet.com/
-
-   Notably, :ref:`Internet Explorer` and :ref:`Safari` still require
-   a plugin to handle :ref:`WebRTC`.
 
 
 .. index:: HTTP/2
@@ -3374,7 +4052,7 @@ Recent HTML standards include :ref:`HTML4`, :ref:`XHTML`, and :ref:`HTML5`.
 
 HTML4
 ```````
-| Standard: http://www.w3.org/TR/html4/
+| Standard: https://www.w3.org/TR/html4/
 
 HTML4 is the fourth generation :ref:`HTML` standard.
 
@@ -3385,7 +4063,7 @@ HTML4 is the fourth generation :ref:`HTML` standard.
 XHTML
 ``````
 | Wikipedia: https://en.wikipedia.org/wiki/XHTML
-| Standard: http://www.w3.org/TR/xhtml2/
+| Standard: https://www.w3.org/TR/xhtml2/
 
 XHTML is an :ref:`XML`-conforming :ref:`HTML` standard
 which is being superseded by :ref:`HTML5`.
@@ -3404,7 +4082,7 @@ and is being largely superseded by :ref:`HTML5`.
 
 HTML5
 ``````
-| Standard: http://www.w3.org/TR/html5/
+| Standard: https://www.w3.org/TR/html5/
 
 HTML5 is the fifth generation :ref:`HTML` standard
 with many new (and removed) features.
@@ -3426,7 +4104,7 @@ https://html-differences.whatwg.org/
 
 HTML 5.1 is in the works:
 
-* http://www.w3.org/html/wg/drafts/html/master/
+* https://www.w3.org/html/wg/drafts/html/master/
 
 
 .. index:: XML
@@ -3435,7 +4113,7 @@ HTML 5.1 is in the works:
 XML
 ++++
 | Wikipedia: https://en.wikipedia.org/wiki/XML
-| Standard: http://www.w3.org/TR/xml/
+| Standard: https://www.w3.org/TR/xml/
 
 XML (*Extensible Markup Language*) is a standard for representing data
 with tags and attributes.
@@ -3444,18 +4122,20 @@ Like PDF, XML is derived from SGML.
 
 
 .. index:: XSD
-.. _XSD:
+.. _xsd:
 
 XSD
 ++++
 | Wikipedia: `<https://en.wikipedia.org/wiki/XML_Schema_(W3C)>`__
-| Standard: http://www.w3.org/TR/xmlschema11-2/
-| Namespace: `<http://www.w3.org/2001/XMLSchema#>`__
-| xmlns: ``@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .``
-| LOVLink: http://lov.okfn.org/dataset/lov/vocabs/xsd
+| Standard: https://www.w3.org/TR/xmlschema11-2/
+| Namespace: `<https://www.w3.org/2001/XMLSchema#>`__
+| xmlns: ``@prefix xsd: <https://www.w3.org/2001/XMLSchema#> .``
+| LOVLink: https://lov.linkeddata.es/dataset/lov/vocabs/xsd
 
 XSD (*XML Schema Datatypes*) are standard datatypes for things like
 strings, integers, floats, and dates for :ref:`XML` and also :ref:`RDF`.
+
+- https://www.w3.org/TR/xmlschema11-2/#built-in-datatypes
 
 
 .. index:: JSON
@@ -3465,7 +4145,7 @@ JSON
 +++++
 | Wikipedia: https://en.wikipedia.org/wiki/JSON
 | Standard: https://tools.ietf.org/html/rfc7159
-| Homepage: http://json.org/
+| Homepage: https://www.json.org/
 
 JSON (*JavaScript Object Notation*) is a standard for representing
 data in a JavaScript compatible way; with a restricted set of
@@ -3503,13 +4183,13 @@ from a sheet into a CSV file, for use with many other tools.
 CSVW
 `````
 | Homepage: https://w3c.github.io/csvw/
-| Standard: http://www.w3.org/TR/tabular-data-model/
-| Standard: http://www.w3.org/TR/tabular-metadata/
-| Standard: http://www.w3.org/TR/csv2json/
-| Standard: http://www.w3.org/TR/csv2rdf/
-| Namespace: `<http://www.w3.org/ns/csvw#>`__
-| xmlns: ``@prefix csvw: <http://www.w3.org/ns/csvw#> .``
-| @context: http://www.w3.org/ns/csvw.jsonld
+| Standard: https://www.w3.org/TR/tabular-data-model/
+| Standard: https://www.w3.org/TR/tabular-metadata/
+| Standard: https://www.w3.org/TR/csv2json/
+| Standard: https://www.w3.org/TR/csv2rdf/
+| Namespace: `<https://www.w3.org/ns/csvw#>`__
+| xmlns: ``@prefix csvw: <https://www.w3.org/ns/csvw#> .``
+| @context: https://www.w3.org/ns/csvw.jsonld
 
 CSVW (*CSV on the Web*) is a set of relatively new standards
 for representing :ref:`CSV` rows and columns
@@ -3529,37 +4209,37 @@ along with *metadata*.
 RDF
 ++++
 | Wikipedia: https://en.wikipedia.org/wiki/Resource_Description_Framework
-| xmlns: ``@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .``
-| LOVLink: http://lov.okfn.org/dataset/lov/vocabs/rdf
+| xmlns: ``@prefix rdf: <https://www.w3.org/1999/02/22-rdf-syntax-ns#> .``
+| LOVLink: https://lov.linkeddata.es/dataset/lov/vocabs/rdf
 
 RDF (*Resource Description Framework*) is a standard data model
 for representing data as triples.
 
 **Primer**
 
-* http://www.w3.org/TR/rdf-primer/
-* http://www.w3.org/TR/rdf11-primer/
-* ** `<http://www.w3.org/TR/rdf11-primer/#section-Introduction>`__ **
-* http://www.w3.org/TR/rdf11-primer/#section-vocabulary
-* http://www.w3.org/TR/rdf11-primer/#section-data-model
+* https://www.w3.org/TR/rdf-primer/
+* https://www.w3.org/TR/rdf11-primer/
+* ** `<https://www.w3.org/TR/rdf11-primer/#section-Introduction>`__ **
+* https://www.w3.org/TR/rdf11-primer/#section-vocabulary
+* https://www.w3.org/TR/rdf11-primer/#section-data-model
 
 **Concepts**
 
-* http://www.w3.org/TR/rdf-concepts/
-* http://www.w3.org/TR/rdf11-concepts/
-* http://www.w3.org/TR/rdf11-concepts/#data-model
-* http://www.w3.org/TR/rdf11-concepts/#change-over-time
-* http://www.w3.org/TR/rdf11-concepts/#entailment
-* http://www.w3.org/TR/rdf11-concepts/#section-blank-nodes
-* http://www.w3.org/TR/rdf11-concepts/#xsd-datatypes
-* http://www.w3.org/TR/rdf11-concepts/#section-html
+* https://www.w3.org/TR/rdf-concepts/
+* https://www.w3.org/TR/rdf11-concepts/
+* https://www.w3.org/TR/rdf11-concepts/#data-model
+* https://www.w3.org/TR/rdf11-concepts/#change-over-time
+* https://www.w3.org/TR/rdf11-concepts/#entailment
+* https://www.w3.org/TR/rdf11-concepts/#section-blank-nodes
+* https://www.w3.org/TR/rdf11-concepts/#xsd-datatypes
+* https://www.w3.org/TR/rdf11-concepts/#section-html
 
 **Useful Resources**
 
 * "Linked Data Patterns:
   A pattern catalogue for modelling, publishing, and
   consuming Linked Data"
-  http://patterns.dataincubator.org/book/
+  https://patterns.dataincubator.org/book/
 
 See also: :ref:`triplestores`
 
@@ -3569,8 +4249,8 @@ See also: :ref:`triplestores`
 
 RDF Interfaces
 ````````````````
-| Standard: http://www.w3.org/TR/rdf-interfaces/
-| Docs: http://www.w3.org/TR/rdf-interfaces/#high-level-api
+| Standard: https://www.w3.org/TR/rdf-interfaces/
+| Docs: https://www.w3.org/TR/rdf-interfaces/#high-level-api
 
 RDF Interfaces is an :ref:`open source` standard
 for :ref:`RDF` APIs (e.g. as implemented by RDF libraries
@@ -3591,11 +4271,15 @@ Implementations of RDF Interfaces:
 
 * :ref:`Javascript` and/or :ref:`Node.js` implementations of RDF Interfaces:
 
-  http://www.w3.org/community/rdfjs/wiki/Comparison_of_RDFJS_libraries
+  https://www.w3.org/community/rdfjs/wiki/Comparison_of_RDFJS_libraries
 
   + https://github.com/Acubed/node-rdf
   + https://github.com/antoniogarrote/rdfstore-js
   + https://github.com/bergos/rdf-ext
+  
+    + | Src: https://github.com/rdf-ext/rdf-ext
+    + | Standard: https://github.com/rdf-ext/rdf-ext-spec
+    + | Standard: https://github.com/rdf-ext/rdf-ext-spec/blob/gh-pages/API.md
 
 * :ref:`rdflib` (:ref:`python`) mappings to RDF Interfaces:
 
@@ -3611,11 +4295,11 @@ Implementations of RDF Interfaces:
     ``rdflib.store.TripleAddedEvent`,
     ``rdflib.store.TripleRemovedEvent``
 
-  + https://rdflib.readthedocs.org/en/latest/apidocs/rdflib.html#rdflib.term.Node
+  + https://rdflib.readthedocs.io/en/latest/apidocs/rdflib.html#rdflib.term.Node
   + ``Profile`` -> ______ TODO
   + ``TermMap`` ->  ____ TODO
   + ``PrefixMap`` -> ``rdflib.namespace.NamespaceManager``
-    https://rdflib.readthedocs.org/en/latest/apidocs/rdflib.html#rdflib.namespace.NamespaceManager
+    https://rdflib.readthedocs.io/en/latest/apidocs/rdflib.html#rdflib.namespace.NamespaceManager
 
   .. note:: rdflib is not order-preserving at this time,
      because internally Graphs are represented as ``dict`` and not yet
@@ -3634,14 +4318,14 @@ Implementations of RDF Interfaces:
        * ``rdf:List`` with :ref:`Turtle` / :ref:`N3`:
          ``:examplePredicate [ "uno"@es, "one"@en ] ;``)
 
-          * http://www.w3.org/TR/rdf-schema/#ch_list
+          * https://www.w3.org/TR/rdf-schema/#ch_list
           * ``rdf:first``, ``rdf:rest``, ``rdf:nil``:
             "RDFS does not require that there be only one first element of a list-like structure, or even that a list-like structure have a first element."
 
        * ``rdf:List`` with :ref:`JSON-LD` ``@context``:
 
-         * http://www.w3.org/TR/json-ld/#lists-and-sets
-         * http://www.w3.org/TR/json-ld/#sets-and-lists
+         * https://www.w3.org/TR/json-ld/#lists-and-sets
+         * https://www.w3.org/TR/json-ld/#sets-and-lists
          * ``{"@context": {"attr": {"@container": "@list"}}}``
          * ``{"attr": {"@list": ["one", "uno"]}}``
 
@@ -3652,7 +4336,7 @@ Implementations of RDF Interfaces:
 N-Triples
 ```````````
 | Wikipedia: https://en.wikipedia.org/wiki/N-Triples
-| Standard: http://www.w3.org/TR/n-triples/
+| Standard: https://www.w3.org/TR/n-triples/
 | Extension: ``.nt``
 | MIME Type: ``application/n-triples``
 
@@ -3665,7 +4349,7 @@ N-Triples is a standard for serializing :ref:`RDF` triples to text.
 RDF/XML
 ````````
 | Wikipedia: https://en.wikipedia.org/wiki/RDF/XML
-| Standard: http://www.w3.org/TR/rdf-syntax-grammar/
+| Standard: https://www.w3.org/TR/rdf-syntax-grammar/
 | Extension: ``.rdf``
 | MIME Type: ``application/rdf+xml``
 
@@ -3679,7 +4363,7 @@ TriX
 `````
 | Wikipedia: `<https://en.wikipedia.org/wiki/TriX_(syntax)>`_
 
-* http://www.w3.org/2004/03/trix/rdfg-1/
+* https://www.w3.org/2004/03/trix/rdfg-1/
 
 TriX is a standard which extends
 the :ref:`RDF/XML` :ref:`RDF` serialization standard
@@ -3692,7 +4376,7 @@ with named graphs.
 N3
 ````
 | Wikipedia: https://en.wikipedia.org/wiki/Notation3
-| Standard: http://www.w3.org/TeamSubmission/n3/
+| Standard: https://www.w3.org/TeamSubmission/n3/
 | Extension: ``.n3``
 | MIME Type: ``text/n3``
 
@@ -3709,7 +4393,7 @@ with a few extra features.
 Turtle
 ````````
 | Wikipedia: `<https://en.wikipedia.org/wiki/Turtle_(syntax)>`_
-| Standard: http://www.w3.org/TR/turtle/
+| Standard: https://www.w3.org/TR/turtle/
 | Extension: ``.ttl``
 | MIME type: ``text/turtle``
 
@@ -3722,7 +4406,7 @@ into human-readable text.
 TriG
 `````
 | Wikipedia: `<https://en.wikipedia.org/wiki/TriG_(syntax)>`_
-| Standard: http://www.w3.org/TR/trig/
+| Standard: https://www.w3.org/TR/trig/
 | Extension: ``.trig``
 | MIME Type: ``application/trig``
 
@@ -3740,12 +4424,13 @@ part of the "Default Graph".
 RDFa
 ``````
 | Wikipedia: https://en.wikipedia.org/wiki/RDFa
-| Homepage: http://www.w3.org/2001/sw/wiki/RDFa
-| Standard: http://www.w3.org/TR/rdfa-core/
-| Standard: http://www.w3.org/TR/rdfa-lite/
-| Standard: http://www.w3.org/TR/html-rdfa/
-| Standard: http://www.w3.org/TR/rdfa-syntax/
-| Docs: http://www.w3.org/TR/rdfa-primer/
+| Homepage: https://www.w3.org/2001/sw/wiki/RDFa
+| Standard: https://www.w3.org/TR/rdfa-core/
+| Standard: https://www.w3.org/TR/rdfa-lite/
+| Standard: https://www.w3.org/TR/html-rdfa/
+| Standard: https://www.w3.org/TR/rdfa-syntax/
+| Standard: https://www.w3.org/2011/rdfa-context/rdfa-1.1
+| Docs: https://www.w3.org/TR/rdfa-primer/
 
 RDFa (*RDF in attributes*) is a standard for storing
 structured data (:ref:`RDF` triples) in :ref:`HTML`,
@@ -3755,14 +4440,62 @@ structured data (:ref:`RDF` triples) in :ref:`HTML`,
 RDFa.
 
 
+.. index:: RDFa Core Context
+.. _rdfa core context:
+
+RDFa 1.1 Core Context
+```````````````````````
+| Standard: https://www.w3.org/2011/rdfa-context/rdfa-1.1
+| Standard:  https://www.w3.org/2013/json-ld-context/rdfa11
+| Docs: https://github.com/RDFLib/rdflib/blob/master/rdflib/plugins/parsers/pyRdfa/initialcontext.py
+
+The RDFa 1.1 Core Context defines a number of commonly used
+vocabulary namespaces and URIs (*prefix mappings*).
+
+An example :ref:`RDFa` :ref:`HTML5` fragment with vocabularies drawn from
+the :ref:`RDFa` 1.1 Core Context:
+
+.. code:: html
+
+   <div vocab="schema: http://schema.org/">
+     <div typeof="schema:Thing">
+       <span property="schema:name">RDFa 1.1 JSON-LD Core Context</span>
+       <a property="schema:url">https://www.w3.org/2013/json-ld-context/rdfa11</a>
+     </div>
+   </div>
+
+An example :ref:`JSON-LD` document with the :ref:`RDFa` 1.1 Core Context:
+
+.. code:: javascript
+
+   {"@context": "https://www.w3.org/2013/json-ld-context/rdfa11",
+    "@graph": [
+      {"@type": "schema:Thing"
+       "schema:name": "RDFa 1.1 JSON-LD Core Context",
+       "schema:url": "https://www.w3.org/2013/json-ld-context/rdfa11"}
+    ]}
+
+
+.. note:: :ref:`Schema.org` is included in the RDFa 1.1 Core Context.
+
+   Schema.org does, in many places, reimplement other vocabularies
+   e.g. for consistency with Schema.org/DataType s like schema.org/Number.
+
+   There is also :ref:`Schema.org RDF <schema.org-rdf>`,
+   which, for example maps ``schema:name`` to ``rdfs:label``;
+   and :ref:`OWL`.
+
+
 .. index:: JSON-LD
-.. _JSON-LD:
+.. _jsonld:
+.. _json-ld:
 
 JSON-LD
 ````````
 | Wikipedia: https://en.wikipedia.org/wiki/JSON-LD
-| Homepage: http://json-ld.org/
-| Standard: http://www.w3.org/TR/json-ld/
+| Homepage: https://json-ld.org/
+| Standard: https://www.w3.org/TR/json-ld/
+| Docs: http://manu.sporny.org/2014/json-ld-origins-2/
 
 JSON-LD (*JSON Linked Data*) is a standard for expressing
 :ref:`RDF` :ref:`Linked Data` as :ref:`JSON`.
@@ -3770,7 +4503,7 @@ JSON-LD (*JSON Linked Data*) is a standard for expressing
 JSON-LD specifies a ``@context`` for regular JSON documents
 which maps JSON attributes to URIs with datatypes and, optionally, languages.
 
-* http://json-ld.org/playground/
+* https://json-ld.org/playground/
 
 
 .. index:: RDFS
@@ -3780,10 +4513,10 @@ which maps JSON attributes to URIs with datatypes and, optionally, languages.
 RDFS
 +++++
 | Wikipedia: https://en.wikipedia.org/wiki/RDF_Schema
-| Standard: http://www.w3.org/TR/rdf-schema/
-| Namespace: `<http://www.w3.org/2000/01/rdf-schema#>`__
-| xmlns: ``@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .``
-| LOVLink: http://lov.okfn.org/dataset/lov/vocabs/rdfs
+| Standard: https://www.w3.org/TR/rdf-schema/
+| Namespace: `<https://www.w3.org/2000/01/rdf-schema#>`__
+| xmlns: ``@prefix rdfs: <https://www.w3.org/2000/01/rdf-schema#> .``
+| LOVLink: https://lov.linkeddata.es/dataset/lov/vocabs/rdfs
 
 RDFS (*RDF Schema*) is an :ref:`RDF` standard for classes
 and properties.
@@ -3818,15 +4551,33 @@ DCMI
 | Wikipedia: https://en.wikipedia.org/wiki/Dublin_Core#DCMI_Metadata_Terms
 | Namespace: http://purl.org/dc/terms
 | xmlns: ``@prefix dcterms: <http://purl.org/dc/terms> .``
-| LOVLink: http://lov.okfn.org/dataset/lov/vocabs/dcterms
+| LOVLink: https://lov.linkeddata.es/dataset/lov/vocabs/dcterms
 | Namespace: http://purl.org/dc/dcmitype/
 | xmlns: ``@prefix dctypes: <http://purl.org/dc/dcmitype/> .``
-| LOVLink: http://lov.okfn.org/dataset/lov/vocabs/dctype
+| LOVLink: https://lov.linkeddata.es/dataset/lov/vocabs/dctype
 
 DCTYPES (*Dublin Core Types*) and DCTERMS (*Dublin Core Terms*)
 are standards for common types, classes, and properties
 that have been mapped to :ref:`XML` and :ref:`RDF`.
 
+
+.. index:: EARL
+.. _earl:
+
+EARL
+``````
+| Standard: https://www.w3.org/TR/EARL10/
+| Namespace: `<https://www.w3.org/ns/earl#>`__
+| xmlns: ``@prefix earl: https://www.w3.org/ns/earl#``
+| LOVLink: https://lov.linkeddata.es/dataset/lov/vocabs/earl
+
+:ref:`W3C` EARL (*Evaluation and Reporting Language*) is an RDFS
+vocabulary for automated, semi-automated, and manual test results.
+
+* The JSON-LD Implementation test results are expressed with EARL:
+
+  | https://json-ld.org/test-suite/
+  | https://json-ld.org/test-suite/reports/
 
 
 .. index:: RDF Data Cube
@@ -3835,10 +4586,10 @@ that have been mapped to :ref:`XML` and :ref:`RDF`.
 
 RDF Data Cubes
 ```````````````
-| Standard: http://www.w3.org/TR/vocab-data-cube/
+| Standard: https://www.w3.org/TR/vocab-data-cube/
 | Namespace: `<http://purl.org/linked-data/cube#>`__
 | xmlns: ``@prefix qb: <http://purl.org/linked-data/cube#> .``
-| LOVLink: http://lov.okfn.org/dataset/lov/vocabs/qb
+| LOVLink: https://lov.linkeddata.es/dataset/lov/vocabs/qb
 
 RDF Data Cubes vocabulary is an :ref:`RDF` standard vocabulary for expressing
 linked multi-dimensional statistical data and aggregations.
@@ -3855,11 +4606,11 @@ linked multi-dimensional statistical data and aggregations.
 SKOS
 `````
 | Wikipedia: https://en.wikipedia.org/wiki/Simple_Knowledge_Organization_System
-| Standard: http://www.w3.org/TR/skos-reference/
-| Standard: http://www.w3.org/TR/skos-reference/skos.html
-| Namespace: `<http://www.w3.org/2004/02/skos/core#>`_
-| xmlns: ``@prefix skos: <http://www.w3.org/2004/02/skos/core#> .``
-| LOVLink: http://lov.okfn.org/dataset/lov/vocabs/skos
+| Standard: https://www.w3.org/TR/skos-reference/
+| Standard: https://www.w3.org/TR/skos-reference/skos.html
+| Namespace: `<https://www.w3.org/2004/02/skos/core#>`_
+| xmlns: ``@prefix skos: <https://www.w3.org/2004/02/skos/core#> .``
+| LOVLink: https://lov.linkeddata.es/dataset/lov/vocabs/skos
 
 SKOS (*Simple Knowledge Organization System*) is an :ref:`RDF` standard
 vocabulary for linking concepts and vocabulary terms.
@@ -3871,12 +4622,12 @@ vocabulary for linking concepts and vocabulary terms.
 
 XKOS
 ``````
-| Homepage: http://www.ddialliance.org/Specification/RDF/XKOS
+| Homepage: https://ddialliance.org/Specification/RDF/XKOS
 | Standard: http://rdf-vocabulary.ddialliance.org/xkos.html
 | Source: https://github.com/linked-statistics/xkos
 | Namespace: `<http://rdf-vocabulary.ddialliance.org/xkos#>`__
 | xmlns: ``@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .``
-| LOVLink: http://lov.okfn.org/dataset/lov/vocabs/xkos
+| LOVLink: https://lov.linkeddata.es/dataset/lov/vocabs/xkos
 
 XKOS (*Extended Knowledge Organization System*) is an :ref:`RDF`
 standard which extends :ref:`SKOS`
@@ -3894,10 +4645,32 @@ FOAF
 | Standard: http://xmlns.com/foaf/spec/
 | Namespace: `<http://xmlns.com/foaf/0.1/>`__
 | xmlns: ``@prefix foaf: <http://xmlns.com/foaf/0.1/> .``
-| LOVLink: http://lov.okfn.org/dataset/lov/vocabs/foaf
+| LOVLink: https://lov.linkeddata.es/dataset/lov/vocabs/foaf
 
 FOAF (*Friend of a Friend*) is an :ref:`RDF` standard vocabulary for
 expressing social networks and contact information.
+
+
+.. index:: SHACL
+.. _shacl:
+
+SHACL
+```````
+| Standard: https://www.w3.org/TR/shacl/
+| Namespace: `<https://www.w3.org/ns/shacl#>`__
+| xmlns: ``@prefix sh: <https://www.w3.org/ns/shacl#> .``
+| LOVLink:
+
+:ref:`W3C` SHACL (*Shapes Constraint Language*) is a language for describing
+:ref:`RDF` and :ref:`RDFS` graph shape constraints.
+
+* SHACL relaxes specific RDFS restrictions:
+  https://www.w3.org/TR/shacl/#shacl-rdfs
+* Required RDFS / :ref:`OWL` :ref:`entailment` can be specified in SHACL with
+  the ``sh:entailment`` property and e.g. :ref:`SPARQL` 1.1 entailment
+  IRIs.
+  https://www.w3.org/TR/shacl/#entailment
+* https://github.com/TopQuadrant/shacl
 
 
 .. index:: SIOC
@@ -3910,7 +4683,7 @@ SIOC
 | Homepage: http://www.sioc-project.org/
 | Namespace: `<http://rdfs.org/sioc/ns#>`__
 | xmlns: ``@prefix sioc: <http://rdfs.org/sioc/ns#> .``
-| LOVLink: http://lov.okfn.org/dataset/lov/vocabs/sioc
+| LOVLink: https://lov.linkeddata.es/dataset/lov/vocabs/sioc
 
 SIOC (*Semantically Interlinked Online Communities*) is an :ref:`RDF`
 standard for online social networks and resources
@@ -3925,9 +4698,9 @@ OA
 ````
 | Homepage: http://www.openannotation.org/
 | Standard: http://www.openannotation.org/spec/core/
-| Namespace: `<http://www.w3.org/ns/oa#>`__
-| xmlns: ``@prefix oa: <http://www.w3.org/ns/oa#> .``
-| LOVLink: http://lov.okfn.org/dataset/lov/vocabs/oa
+| Namespace: `<https://www.w3.org/ns/oa#>`__
+| xmlns: ``@prefix oa: <https://www.w3.org/ns/oa#> .``
+| LOVLink: https://lov.linkeddata.es/dataset/lov/vocabs/oa
 
 OA (*Open Annotation*) is an :ref:`RDF` standard for
 commenting on anything with a URI.
@@ -3942,56 +4715,74 @@ Features:
 Implementations:
 
 * https://github.com/hypothesis/h (Python, Pyramid)
-* https://github.com/openannotation/annotator (http://annotatorjs.org/)
+* https://github.com/openannotation/annotator (https://annotatorjs.org/)
 
 
 .. index:: Schema.org
 .. _schemaorg:
-.. _Schema.org:
+.. _schema.org:
 
 Schema.org
 +++++++++++
 | Wikipedia: https://en.wikipedia.org/wiki/Schema.org
-| Homepage: http://schema.org
+| Homepage: https://schema.org
 | Download: https://schema.org/version/latest/
 | Source: https://github.com/schemaorg/schemaorg
 | Source: https://github.com/schemaorg/schemaorg/tree/sdo-phobos/data/releases/2.2
+| Docs: http://dataliberate.com/2016/02/evolving-schema-org-in-practice-pt1-the-bits-and-pieces/
+| Issues: https://github.com/schemaorg/schemaorg/issues
+| IssueLabels: https://github.com/schemaorg/schemaorg/labels
 
 Schema.org is a vocabulary for expressing structured data on the web.
 
 Schema.org can be expressed as microdata, :ref:`RDF`, :ref:`RDFa`,
 and :ref:`JSON-LD`.
 
-* http://schema.org/docs/full.html
-* http://schema.org/docs/schemas.html
-* http://schema.org/docs/releases.html
-* http://www.w3.org/wiki/WebSchemas
-* http://www.w3.org/wiki/WebSchemas/SchemaDotOrgProposals
+* http:// -- vocab :term:`URIs <URI>`
+* https:// -- docs, :ref:`HTTP STS` (?)
+* https://schema.org/docs/full.html
+* https://schema.org/docs/schemas.html
+* https://schema.org/docs/releases.html
+* https://www.w3.org/wiki/WebSchemas
+* https://www.w3.org/wiki/WebSchemas/SchemaDotOrgProposals
+* https://www.w3.org/wiki/WebSchemas/Accessibility
+
+.
+
+* "Schema.org: Evolution of Structured Data on the Web" (2015)
+  https://queue.acm.org/detail.cfm?id=2857276
+
+* "Evolving Schema.org in Practice Pt1: The Bits and Pieces" (2016)
+  https://dataliberate.com/2016/02/evolving-schema-org-in-practice-pt1-the-bits-and-pieces/
+
+* :ref:`RDFa`
+
+  - https://github.com/schemaorg/schemaorg/blob/sdo-callisto/data/schema.rdfa
+  - https://raw.githubusercontent.com/schemaorg/schemaorg/sdo-callisto/data/schema.rdfa
+
+* :ref:`JSONLD`
+
+  - https://github.com/schemaorg/schemaorg/blob/sdo-callisto/data/releases/3.2/all-layers.jsonld
+  - https://github.com/schemaorg/schemaorg/raw/sdo-callisto/data/releases/3.2/all-layers.jsonld
+
+.. note:: The `<https://schema.org/>`__ site is served over HTTPS,
+   but the schema.org terms are HTTP **URIs**
 
 
 .. index:: Schema.org RDF
 .. _schema.org-rdf:
+.. _schemaorg rdf:
 
 Schema.org RDF
 ````````````````
 | xmlns: ``@prefix schema: <http://schema.org/> .``
-| xmlns: ``@prefix schemax: <http://topbraid.org/schemax/> .``
-| LOVLink: http://lov.okfn.org/dataset/lov/vocabs/schema
+| LOVLink: https://lov.linkeddata.es/dataset/lov/vocabs/schema
+| Standard: https://schema.org/docs/schema_org_rdfa.html [:ref:`RDFa`]
 
-TopBraid maintains more complete :ref:`OWL` :ref:`RDF`
-transformations of :ref:`Schema.org`.
+* :ref:`RDFa`
 
-* http://topbraid.org/schema/
-* http://topbraid.org/schema/schema.rdf
-* http://topbraid.org/schema/schema.ttl
-* http://topbraid.org/schema/schema-single-range.ttl
-
-Tools and Mappings
-
-* https://github.com/mhausenblas/schema-org-rdf
-* http://schema.rdfs.org/tools.html
-* http://schema.rdfs.org/mappings.html
-
+  - https://github.com/schemaorg/schemaorg/blob/sdo-callisto/data/schema.rdfa
+  - https://raw.githubusercontent.com/schemaorg/schemaorg/sdo-callisto/data/schema.rdfa
 
 
 .. index:: SPARQL
@@ -4000,17 +4791,17 @@ Tools and Mappings
 SPARQL
 +++++++
 | Wikipedia: https://en.wikipedia.org/wiki/SPARQL
-| Standard: http://www.w3.org/TR/sparql11-overview/
-| Standard: http://www.w3.org/TR/sparql11-query/
-| Standard: http://www.w3.org/TR/sparql11-update/
-| Standard: http://www.w3.org/TR/sparql11-entailment/
-| Standard: http://www.w3.org/TR/sparql11-federated-query/
+| Standard: https://www.w3.org/TR/sparql11-overview/
+| Standard: https://www.w3.org/TR/sparql11-query/
+| Standard: https://www.w3.org/TR/sparql11-update/
+| Standard: https://www.w3.org/TR/sparql11-entailment/
+| Standard: https://www.w3.org/TR/sparql11-federated-query/
 
 SPARQL is a text-based query and update language
 for :ref:`RDF` triples (and quads).
 
-* http://www.w3.org/wiki/SparqlImplementations
-* http://www.w3.org/2009/sparql/implementations/#sparql11-entailment
+* https://www.w3.org/wiki/SparqlImplementations
+* https://www.w3.org/2009/sparql/implementations/#sparql11-entailment
 
 Challenges:
 
@@ -4031,14 +4822,14 @@ Challenges:
 
 LDP
 ++++
-| Spec http://www.w3.org/TR/ldp/
-| xmlns: ``@prefix ldp: <http://www.w3.org/ns/ldp#> .``
-| LOVLink: http://lov.okfn.org/dataset/lov/vocabs/ldp
+| Spec https://www.w3.org/TR/ldp/
+| xmlns: ``@prefix ldp: <https://www.w3.org/ns/ldp#> .``
+| LOVLink: https://lov.linkeddata.es/dataset/lov/vocabs/ldp
 
 LDP (*Linked Data Platform*) is a standard for building :ref:`HTTP` REST APIs
 for :ref:`RDF` :ref:`Linked Data`.
 
-* http://www.w3.org/TR/ldp/#terms
+* https://www.w3.org/TR/ldp/#terms
 
 Features:
 
@@ -4051,20 +4842,71 @@ Features:
 
 .. index:: OWL
 .. index:: Web Ontology Language
-.. _OWL:
+.. _owl:
 
 OWL
 +++++
 | Wikipedia: https://en.wikipedia.org/wiki/Web_Ontology_Language
-| Standard: http://www.w3.org/TR/owl2-overview/
-| Standard: http://www.w3.org/TR/owl2-primer/
-| Standard: http://www.w3.org/TR/owl2-quick-reference/
-| Standard: http://www.w3.org/TR/owl2-profiles/
-| xmlns: ``@prefix owl: <http://www.w3.org/2002/07/owl#> .``
-| LOVLink: http://lov.okfn.org/dataset/lov/vocabs/owl
+| Standard: https://www.w3.org/TR/owl2-overview/
+| Standard: https://www.w3.org/TR/owl2-primer/
+| Standard: https://www.w3.org/TR/owl2-quick-reference/
+| Standard: https://www.w3.org/TR/owl2-profiles/
+| xmlns: ``@prefix owl: <https://www.w3.org/2002/07/owl#> .``
+| LOVLink: https://lov.linkeddata.es/dataset/lov/vocabs/owl
 
-OWL (*Web Ontology Language*) adds semantics, reasoning, inference,
-and entailment capabilities to :ref:`RDF`.
+OWL (*Web Ontology Language*) layers semantics, reasoning, inference,
+and entailment capabilities onto :ref:`RDF` (and general logical set
+theory).
+
+* OWL as :ref:`Turtle`: `<https://www.w3.org/2002/07/owl#>`__
+* https://www.w3.org/TR/owl2-quick-reference/#Names.2C_Prefixes.2C_and_Notation
+* https://www.w3.org/TR/owl2-quick-reference/#OWL_2_constructs_and_axioms
+
+A few notable OWL classes:
+
+* ``owl:Class`` a ``owl:Class`` ;
+  ``rdfs:subClassOf`` ``rdfs:Class`` (:ref:`RDFS`)
+* ``owl:Thing`` a ``owl:Class`` -- universal class
+* ``owl:Nothing`` a ``owl:Class`` -- empty class
+* ``owl:Restriction`` a ``rdfs:Class`` ;
+  ``rdfs:subClassOf`` ``owl:Class``
+
+A few OWL Property types:
+
+* ``owl:DatatypeProperty``
+* ``owl:ObjectProperty``
+* ``owl:ReflexiveProperty``
+* ``owl:IrreflexiveProperty``
+* ``owl:SymmetricProperty``
+* ``owl:TransitiveProperty``
+* ``owl:FunctionalProperty``
+* ``owl:InverseFunctionalProperty``
+* ``owl:OntologyProperty``
+* ``owl:AnnotationProperty``
+* ``owl:AsymmetricProperty``
+
+https://en.wikipedia.org/wiki/Cardinality
+
+* ``owl:minCardinality``
+* ``owl:cardinality``
+* ``owl:maxCardinality``
+
+.
+
+* ``owl:intersectionOf``
+* ``owl:unionOf``
+* ``owl:complementOf``
+* ``owl:oneOf``
+
+.
+
+* ``owl:allValuesFrom``
+* ``owl:someValuesFrom``
+
+.
+
+| `<https://www.w3.org/2002/07/owl#>`__
+| https://www.w3.org/TR/owl2-quick-reference/
 
 
 .. index:: PROV
@@ -4072,14 +4914,14 @@ and entailment capabilities to :ref:`RDF`.
 
 PROV
 ```````
-| Homepage: http://www.w3.org/2011/prov/wiki/Main_Page
-| Standard: http://www.w3.org/ns/prov.owl
-| Standard: http://www.w3.org/TR/prov-overview/
-| Standard: http://www.w3.org/TR/prov-primer/
-| Standard: http://www.w3.org/TR/prov-o/
-| Namespace: `<http://www.w3.org/ns/prov#>`_
-| xmlns: ``@prefix prov: <http://www.w3.org/ns/prov#> .``
-| LOVLink: http://lov.okfn.org/dataset/lov/vocabs/prov
+| Homepage: https://www.w3.org/2011/prov/wiki/Main_Page
+| Standard: https://www.w3.org/ns/prov.owl
+| Standard: https://www.w3.org/TR/prov-overview/
+| Standard: https://www.w3.org/TR/prov-primer/
+| Standard: https://www.w3.org/TR/prov-o/
+| Namespace: `<https://www.w3.org/ns/prov#>`_
+| xmlns: ``@prefix prov: <https://www.w3.org/ns/prov#> .``
+| LOVLink: https://lov.linkeddata.es/dataset/lov/vocabs/prov
 
 PROV (*Provenance*) ontology is an :ref:`OWL` :ref:`RDF` standard
 for expressing data provenance (who, what, when, and how, to a certain
@@ -4093,7 +4935,7 @@ extent).
 
 DBpedia
 ``````````
-| Homepage: http://wiki.dbpedia.org/Ontology
+| Homepage: https://wiki.dbpedia.org/Ontology
 | Namespace: http://dbpedia.org/ontology/
 | xmlns: ``@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .``
 | LOVLink: http://dbpedia.org/ontology/
@@ -4106,7 +4948,7 @@ DBpedia is currently the most central (most linked to and from)
 
 Example:
 
-* http://dbpedia.org/page/DBpedia
+* https://dbpedia.org/page/DBpedia
 * http://en.wikipedia.org/wiki/DBpedia
 * https://en.wikipedia.org/wiki/DBpedia
 * https://en.wikipedia.org/wiki/dbpedia
@@ -4114,7 +4956,7 @@ Example:
 * `<http://ja.dbpedia.org/resource/DBペディア>`__
 * `<https://ja.wikipedia.org/wiki/DBペディア>`__
 * https://www.wikidata.org/wiki/Q465
-* http://sw.cyc.com/concept/Mx4r7PXDuWpqTcmfojZNIu56eQ
+* https://sw.cyc.com/concept/Mx4r7PXDuWpqTcmfojZNIu56eQ
 
 DBpedia is generated by batch extraction on a regular basis.
 
@@ -4124,14 +4966,13 @@ DBpedia is generated by batch extraction on a regular basis.
 
 QUDT
 ``````
-| Homepage: http://www.linkedmodel.org/doc/qudt/1.1/
-| Standard: http://qudt.org/
-| Docs: http://www.linkedmodel.org/catalog/qudt/1.1/
-| Namespace: `<http://qudt.org/schema/qudt#>`__
-| Namespace: `<http://qudt.org/1.1/schema/qudt#>`__
+| Homepage: https://qudt.org/
+| Src: https://github.com/qudt/qudt-public-repo
+| Namespace: `<http://qudt.org/2.1/schema/qudt#>`__
 | xmlns: ``@prefix qudt: <http://qudt.org/schema/qudt#> .``
 | xmlns: ``@prefix qudt-1.1:  <http://qudt.org/1.1/schema/qudt#> .``
-| LOVLink: http://lov.okfn.org/dataset/lov/vocabs/qudt
+| xmlns: ``@prefix qudt-2.1:  <http://qudt.org/2.1/schema/qudt#> .``
+| LOVLink: https://lov.linkeddata.es/dataset/lov/vocabs/qudt
 
 QUDT (*Quantities, Units, Dimensions, and Types*) is an :ref:`RDF` standard
 vocabulary for representing physical units.
@@ -4159,15 +5000,14 @@ Examples:
 
   .. code:: n3
 
-      @prefix qudt:           <http://qudt.org/schema/qudt#> .
-      @prefix qudt-1.1:       <http://qudt.org/1.1/schema/qudt#> .
-      @prefix qudt-dimension: <http://qudt.org/vocab/dimension#> .
-      @prefix qudt-quantity:  <http://qudt.org/vocab/quantity#> .
-      @prefix qudt-unit-1.1:  <http://qudt.org/1.1/vocab/unit#> .
-      @prefix unit:           <http://qudt.org/vocab/unit#> .
+      @prefix qudt:           <http://qudt.org/2.1/schema/qudt#> .
+      @prefix qudt-dimension: <http://qudt.org/2.1/vocab/dimensionvector#> .
+      @prefix qudt-quantity:  <http://qudt.org/2.1/vocab/quantitykind#> .
+      @prefix qudt-unit:      <http://qudt.org/2.1/vocab/unit#> .
+      @prefix unit:           <http://qudt.org/2.1/vocab/unit#> .
 
 This diagram explains how each of the vocabularies are linked and derived:
-http://www.linkedmodel.org/catalog/qudt/1.1/
+https://github.com/qudt/qudt-public-repo#overview
 
 
 .. index:: QUDT Quantities
@@ -4310,7 +5150,7 @@ Wikidata is an :ref:`open source` collaboratively edited knowledgebase.
 
 Semantic Web Tools
 ---------------------
-| Homepage: http://www.w3.org/2001/sw/wiki/Tools
+| Homepage: https://www.w3.org/2001/sw/wiki/Tools
 
 :ref:`Semantic Web` Tools are designed to work with :ref:`RDF` formats.
 
@@ -4323,16 +5163,16 @@ See also: :ref:`triplestores`
 CKAN
 ++++++
 | Wikipedia: https://en.wikipedia.org/wiki/CKAN
-| Homepage: http://ckan.org/
+| Homepage: https://ckan.org/
 | Source: git https://github.com/ckan/ckan
 | Source: git https://github.com/ckan/ckan-docker
 | DockerHub: https://registry.hub.docker.com/u/ckan/ckan/
-| Docs: http://docs.ckan.org/en/latest/
-| Docs: http://docs.ckan.org/en/latest/maintaining/installing/index.html
-| Docs: http://docs.ckan.org/en/latest/maintaining/data-viewer.html
-| Docs: http://docs.ckan.org/en/latest/maintaining/paster.html
-| Docs: http://docs.ckan.org/en/latest/maintaining/linked-data-and-rdf.html
-| Docs: http://docs.ckan.org/en/latest/api/
+| Docs: https://docs.ckan.org/en/latest/
+| Docs: https://docs.ckan.org/en/latest/maintaining/installing/index.html
+| Docs: https://docs.ckan.org/en/latest/maintaining/data-viewer.html
+| Docs: https://docs.ckan.org/en/latest/maintaining/paster.html
+| Docs: https://docs.ckan.org/en/latest/maintaining/linked-data-and-rdf.html
+| Docs: https://docs.ckan.org/en/latest/api/
 
 CKAN (*Comprehensive Knowledge Archive Network*)
 is an :ref:`open source` data repository :term:`web application`
@@ -4356,8 +5196,8 @@ written in :ref:`python` with support for :ref:`rdf`.
 Protégé
 +++++++++
 | Wikipedia: `<https://en.wikipedia.org/wiki/Protégé_(software)>`__
-| Homepage: http://protege.stanford.edu/
-| Homepage: http://webprotege.stanford.edu/
+| Homepage: https://protege.stanford.edu/
+| Homepage: https://webprotege.stanford.edu/
 
 Protégé is a knowledge management software application with support for
 :ref:`RDF`, :ref:`OWL`, and a few different reasoners.
@@ -4373,14 +5213,33 @@ Protégé is a Free and Open Source software tool.
 
 RDFJS
 ++++++
-| Homepage: http://www.w3.org/community/rdfjs/
+| Homepage: https://www.w3.org/community/rdfjs/
+| Src: https://github.com/rdfjs
 
 RDFJS (:ref:`RDF` Javascript) is an acronym for referring to
 tools for working with :ref:`RDF` in the Javascript programming
 language.
 
-http://www.w3.org/community/rdfjs/wiki/Comparison_of_RDFJS_libraries
+* https://www.w3.org/community/rdfjs/wiki/Comparison_of_RDFJS_libraries
+* https://github.com/rdfjs/rdfjs.github.io
 
+  * https://github.com/rdfjs/rdfjs.github.io/wiki/Relevant-Specs
+  * https://github.com/rdfjs/rdfjs.github.io/wiki/Relevant-Specs#tangential-technologies
+  
+* https://github.com/rdfjs/representation-task-force/wiki
+
+  * Subject, Predicate, Object
+  
+    https://github.com/rdfjs/representation-task-force/wiki/Existing-triple-and-quad-representations#subject-predicate-object 
+  
+  * Node type matrix
+  
+    https://github.com/rdfjs/representation-task-force/wiki/Existing-triple-and-quad-representations#node-types
+
+See:
+
+* :ref:`RDF Interfaces`
+* :ref:
 
 .. index:: RDFHDT
 .. _RDFHDT:
@@ -4407,14 +5266,14 @@ RDFLib
 | Wikipedia: https://en.wikipedia.org/wiki/RDFLib
 | Homepage: https://github.com/RDFLib
 | Source: https://github.com/RDFLib/rdflib
-| Docs: https://rdflib.readthedocs.org/en/latest/
+| Docs: https://rdflib.readthedocs.io/en/latest/
 
 RDFLib is a library (and a collection of companion libraries)
 for working with :ref:`RDF` in the Python programming language.
 
-* https://rdflib.readthedocs.org/en/latest/gettingstarted.html
-* https://rdflib.readthedocs.org/en/latest/apidocs/examples.html
-* https://rdflib.readthedocs.org/en/latest/apidocs/rdflib.html#module-rdflib.resource
+* https://rdflib.readthedocs.io/en/latest/gettingstarted.html
+* https://rdflib.readthedocs.io/en/latest/apidocs/examples.html
+* https://rdflib.readthedocs.io/en/latest/apidocs/rdflib.html#module-rdflib.resource
 
 
 .. index:: Semantic Web Schema Resources
@@ -4428,7 +5287,7 @@ Semantic Web Schema Resources
 
 prefix.cc
 ++++++++++++
-| Homepage: http://prefix.cc
+| Homepage: https://prefix.cc
 | Docs:
 
 Lookup :ref:`RDF` vocabularies, classes, and properties
@@ -4440,10 +5299,10 @@ Lookup :ref:`RDF` vocabularies, classes, and properties
 
 LOV
 ++++
-| Homepage: http://lov.okfn.org/
+| Homepage: https://lov.linkeddata.es/
 | Source: git https://github.com/pyvandenbussche/lov
-| SPARQL: http://lov.okfn.org/dataset/lov/sparql
-| Docs: http://lov.okfn.org/dataset/lov/api
+| SPARQL: https://lov.linkeddata.es/dataset/lov/sparql
+| Docs: https://lov.linkeddata.es/dataset/lov/api
 
 LOV ("Linked Open Vocabularies") is a web application
 for cataloging and viewing metadata of and links between
@@ -4451,7 +5310,7 @@ vocabularies (:ref:`RDF`, :ref:`RDFS`, :ref:`OWL`)
 
 * All of the vocabularies stored in LOV as a bubble chart:
 
-  http://lov.okfn.org/dataset/lov/
+  https://lov.linkeddata.es/dataset/lov/
 
 * LOV has a "suggest a vocabulary" feature
 * Many of the vocabularies stored in LOV
@@ -4476,15 +5335,18 @@ URIs for Units
 
 LODCloud
 +++++++++
-| Homepage: http://lod-cloud.net
+| Homepage: https://lod-cloud.net
 | Source: git https://github.com/lod-cloud/datahub2void
-| Datasets: http://datahub.io/group/lodcloud
-| Download: http://lod-cloud.net/data/void.ttl
+| Datasets: https://lod-cloud.net/lod-data.json
 
 The LOD ("Linking Open Data") cloud diagram visualizes
 the nodes and edges of the *Linked Open Data Cloud*
 
-* http://lod-cloud.net/#history
-* http://lod-cloud.net/versions/2014-08-30/lod-cloud.svg
+* https://lod-cloud.net/#history
 
+.. figure:: https://lod-cloud.net/versions/2019-03-29/lod-cloud.png
 
+   :target: https://lod-cloud.net/
+
+You can add datasets to the LODCloud:
+https://lod-cloud.net/add-dataset

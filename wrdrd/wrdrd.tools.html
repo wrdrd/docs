@@ -6,7 +6,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- OpenGraph metadata: ogp.me -->
     <meta property="og:title" content="wrdrd.tools package" />
@@ -15,7 +15,7 @@
     <!--
     <meta property="og:description" content="" />
     -->
-    <meta property="og:image" content="https://wrdrd.com/static/png/drawing-7.09-v0.1.1--_desk.svg-470x242.png" />
+    <meta property="og:image" content="https://wrdrd.github.io/static/png/drawing-7.09-v0.1.1--_desk.svg-470x242.png" />
     <meta property="og:image:width" content="470" />
     <meta property="og:image:height" content="242" />
     <!--
@@ -40,7 +40,7 @@
 
 <link rel="stylesheet" href="../_static/css/font-awesome.min.css">
 
-<link rel="stylesheet" href="../_static/css/basicstrap.css" type="text/css" />
+<link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
 <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
 <link rel="stylesheet" href="../_static/css/local.css" type="text/css" />
     
@@ -92,7 +92,7 @@
                 <ul>
 <li><a class="reference internal" href="#">wrdrd.tools package</a><ul>
 <li><a class="reference internal" href="#submodules">Submodules</a></li>
-<li><a class="reference internal" href="#wrdrd-tools-crawl-module">wrdrd.tools.crawl module</a></li>
+<li><a class="reference internal" href="#module-wrdrd.tools.crawl">wrdrd.tools.crawl module</a></li>
 <li><a class="reference internal" href="#module-wrdrd.tools.domain">wrdrd.tools.domain module</a></li>
 <li><a class="reference internal" href="#module-wrdrd.tools.stripsinglehtml">wrdrd.tools.stripsinglehtml module</a></li>
 </ul>
@@ -144,7 +144,7 @@
   <ul>
 <li><a class="reference internal" href="#">wrdrd.tools package</a><ul>
 <li><a class="reference internal" href="#submodules">Submodules</a></li>
-<li><a class="reference internal" href="#wrdrd-tools-crawl-module">wrdrd.tools.crawl module</a></li>
+<li><a class="reference internal" href="#module-wrdrd.tools.crawl">wrdrd.tools.crawl module</a></li>
 <li><a class="reference internal" href="#module-wrdrd.tools.domain">wrdrd.tools.domain module</a></li>
 <li><a class="reference internal" href="#module-wrdrd.tools.stripsinglehtml">wrdrd.tools.stripsinglehtml module</a></li>
 </ul>
@@ -195,8 +195,745 @@
 <div class="section" id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="wrdrd-tools-crawl-module">
-<h2>wrdrd.tools.crawl module<a class="headerlink" href="#wrdrd-tools-crawl-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-wrdrd.tools.crawl">
+<span id="wrdrd-tools-crawl-module"></span><h2>wrdrd.tools.crawl module<a class="headerlink" href="#module-wrdrd.tools.crawl" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="wrdrd.tools.crawl.CSS">
+<em class="property">class </em><code class="sig-prename descclassname">wrdrd.tools.crawl.</code><code class="sig-name descname">CSS</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">loc</span></em>, <em class="sig-param"><span class="n">src</span></em><span class="sig-paren">)</span><a class="headerlink" href="#wrdrd.tools.crawl.CSS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></p>
+<dl class="py attribute">
+<dt id="wrdrd.tools.crawl.CSS.loc">
+<code class="sig-name descname">loc</code><a class="headerlink" href="#wrdrd.tools.crawl.CSS.loc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wrdrd.tools.crawl.CSS.src">
+<code class="sig-name descname">src</code><a class="headerlink" href="#wrdrd.tools.crawl.CSS.src" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="wrdrd.tools.crawl.CrawlRequest">
+<em class="property">class </em><code class="sig-prename descclassname">wrdrd.tools.crawl.</code><code class="sig-name descname">CrawlRequest</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">src</span></em>, <em class="sig-param"><span class="n">url</span></em>, <em class="sig-param"><span class="n">datetime</span></em><span class="sig-paren">)</span><a class="headerlink" href="#wrdrd.tools.crawl.CrawlRequest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></p>
+<dl class="py attribute">
+<dt id="wrdrd.tools.crawl.CrawlRequest.datetime">
+<code class="sig-name descname">datetime</code><a class="headerlink" href="#wrdrd.tools.crawl.CrawlRequest.datetime" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 2</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wrdrd.tools.crawl.CrawlRequest.src">
+<code class="sig-name descname">src</code><a class="headerlink" href="#wrdrd.tools.crawl.CrawlRequest.src" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wrdrd.tools.crawl.CrawlRequest.url">
+<code class="sig-name descname">url</code><a class="headerlink" href="#wrdrd.tools.crawl.CrawlRequest.url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="wrdrd.tools.crawl.Image">
+<em class="property">class </em><code class="sig-prename descclassname">wrdrd.tools.crawl.</code><code class="sig-name descname">Image</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">loc</span></em>, <em class="sig-param"><span class="n">src</span></em>, <em class="sig-param"><span class="n">alt</span></em>, <em class="sig-param"><span class="n">height</span></em>, <em class="sig-param"><span class="n">width</span></em>, <em class="sig-param"><span class="n">text</span></em><span class="sig-paren">)</span><a class="headerlink" href="#wrdrd.tools.crawl.Image" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></p>
+<dl class="py attribute">
+<dt id="wrdrd.tools.crawl.Image.alt">
+<code class="sig-name descname">alt</code><a class="headerlink" href="#wrdrd.tools.crawl.Image.alt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 2</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wrdrd.tools.crawl.Image.height">
+<code class="sig-name descname">height</code><a class="headerlink" href="#wrdrd.tools.crawl.Image.height" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 3</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wrdrd.tools.crawl.Image.loc">
+<code class="sig-name descname">loc</code><a class="headerlink" href="#wrdrd.tools.crawl.Image.loc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wrdrd.tools.crawl.Image.src">
+<code class="sig-name descname">src</code><a class="headerlink" href="#wrdrd.tools.crawl.Image.src" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wrdrd.tools.crawl.Image.text">
+<code class="sig-name descname">text</code><a class="headerlink" href="#wrdrd.tools.crawl.Image.text" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 5</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wrdrd.tools.crawl.Image.width">
+<code class="sig-name descname">width</code><a class="headerlink" href="#wrdrd.tools.crawl.Image.width" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 4</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="wrdrd.tools.crawl.JS">
+<em class="property">class </em><code class="sig-prename descclassname">wrdrd.tools.crawl.</code><code class="sig-name descname">JS</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">loc</span></em>, <em class="sig-param"><span class="n">src</span></em><span class="sig-paren">)</span><a class="headerlink" href="#wrdrd.tools.crawl.JS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></p>
+<dl class="py attribute">
+<dt id="wrdrd.tools.crawl.JS.loc">
+<code class="sig-name descname">loc</code><a class="headerlink" href="#wrdrd.tools.crawl.JS.loc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wrdrd.tools.crawl.JS.src">
+<code class="sig-name descname">src</code><a class="headerlink" href="#wrdrd.tools.crawl.JS.src" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="wrdrd.tools.crawl.KeywordFrequency">
+<em class="property">class </em><code class="sig-prename descclassname">wrdrd.tools.crawl.</code><code class="sig-name descname">KeywordFrequency</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">url</span></em>, <em class="sig-param"><span class="n">frequencies</span></em><span class="sig-paren">)</span><a class="headerlink" href="#wrdrd.tools.crawl.KeywordFrequency" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></p>
+<dl class="py attribute">
+<dt id="wrdrd.tools.crawl.KeywordFrequency.frequencies">
+<code class="sig-name descname">frequencies</code><a class="headerlink" href="#wrdrd.tools.crawl.KeywordFrequency.frequencies" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wrdrd.tools.crawl.KeywordFrequency.url">
+<code class="sig-name descname">url</code><a class="headerlink" href="#wrdrd.tools.crawl.KeywordFrequency.url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="wrdrd.tools.crawl.Link">
+<em class="property">class </em><code class="sig-prename descclassname">wrdrd.tools.crawl.</code><code class="sig-name descname">Link</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">loc</span></em>, <em class="sig-param"><span class="n">href</span></em>, <em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">target</span></em>, <em class="sig-param"><span class="n">text</span></em>, <em class="sig-param"><span class="n">parent_id</span></em><span class="sig-paren">)</span><a class="headerlink" href="#wrdrd.tools.crawl.Link" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></p>
+<dl class="py attribute">
+<dt id="wrdrd.tools.crawl.Link.href">
+<code class="sig-name descname">href</code><a class="headerlink" href="#wrdrd.tools.crawl.Link.href" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wrdrd.tools.crawl.Link.loc">
+<code class="sig-name descname">loc</code><a class="headerlink" href="#wrdrd.tools.crawl.Link.loc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wrdrd.tools.crawl.Link.name">
+<code class="sig-name descname">name</code><a class="headerlink" href="#wrdrd.tools.crawl.Link.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 2</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wrdrd.tools.crawl.Link.parent_id">
+<code class="sig-name descname">parent_id</code><a class="headerlink" href="#wrdrd.tools.crawl.Link.parent_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 5</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wrdrd.tools.crawl.Link.target">
+<code class="sig-name descname">target</code><a class="headerlink" href="#wrdrd.tools.crawl.Link.target" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 3</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wrdrd.tools.crawl.Link.text">
+<code class="sig-name descname">text</code><a class="headerlink" href="#wrdrd.tools.crawl.Link.text" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 4</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="wrdrd.tools.crawl.ResultStore">
+<em class="property">class </em><code class="sig-prename descclassname">wrdrd.tools.crawl.</code><code class="sig-name descname">ResultStore</code><a class="reference internal" href="../_modules/wrdrd/tools/crawl#ResultStore"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.ResultStore" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Result store interface</p>
+<dl class="py method">
+<dt id="wrdrd.tools.crawl.ResultStore.itervalues">
+<code class="sig-name descname">itervalues</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdrd/tools/crawl#ResultStore.itervalues"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.ResultStore.itervalues" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get an iterable over the values in <code class="docutils literal notranslate"><span class="pre">self.db</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>an iterable over the values in <code class="docutils literal notranslate"><span class="pre">self.db</span></code></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>iterable</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="wrdrd.tools.crawl.ResultStore.values">
+<code class="sig-name descname">values</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#wrdrd.tools.crawl.ResultStore.values" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get an iterable over the values in <code class="docutils literal notranslate"><span class="pre">self.db</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>an iterable over the values in <code class="docutils literal notranslate"><span class="pre">self.db</span></code></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>iterable</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="wrdrd.tools.crawl.URLCrawlQueue">
+<em class="property">class </em><code class="sig-prename descclassname">wrdrd.tools.crawl.</code><code class="sig-name descname">URLCrawlQueue</code><a class="reference internal" href="../_modules/wrdrd/tools/crawl#URLCrawlQueue"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.URLCrawlQueue" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Queue of CrawlRequest URLs to crawl and their states</p>
+<dl class="py attribute">
+<dt id="wrdrd.tools.crawl.URLCrawlQueue.DONE">
+<code class="sig-name descname">DONE</code><em class="property"> = 2</em><a class="headerlink" href="#wrdrd.tools.crawl.URLCrawlQueue.DONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="wrdrd.tools.crawl.URLCrawlQueue.ERROR">
+<code class="sig-name descname">ERROR</code><em class="property"> = 3</em><a class="headerlink" href="#wrdrd.tools.crawl.URLCrawlQueue.ERROR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="wrdrd.tools.crawl.URLCrawlQueue.NEW">
+<code class="sig-name descname">NEW</code><em class="property"> = 0</em><a class="headerlink" href="#wrdrd.tools.crawl.URLCrawlQueue.NEW" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="wrdrd.tools.crawl.URLCrawlQueue.OUT">
+<code class="sig-name descname">OUT</code><em class="property"> = 1</em><a class="headerlink" href="#wrdrd.tools.crawl.URLCrawlQueue.OUT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="wrdrd.tools.crawl.URLCrawlQueue.count">
+<code class="sig-name descname">count</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdrd/tools/crawl#URLCrawlQueue.count"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.URLCrawlQueue.count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the count of <code class="docutils literal notranslate"><span class="pre">URLCrawlQueue.NEW</span></code> <a class="reference internal" href="#wrdrd.tools.crawl.CrawlRequest" title="wrdrd.tools.crawl.CrawlRequest"><code class="xref py py-class docutils literal notranslate"><span class="pre">CrawlRequest</span></code></a> objects</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>count of <code class="docutils literal notranslate"><span class="pre">URLCrawlQueue.NEW</span></code> <a class="reference internal" href="#wrdrd.tools.crawl.CrawlRequest" title="wrdrd.tools.crawl.CrawlRequest"><code class="xref py py-class docutils literal notranslate"><span class="pre">CrawlRequest</span></code></a></dt><dd><p>objects</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="wrdrd.tools.crawl.URLCrawlQueue.done">
+<code class="sig-name descname">done</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">item</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdrd/tools/crawl#URLCrawlQueue.done"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.URLCrawlQueue.done" title="Permalink to this definition">¶</a></dt>
+<dd><p>Mark a CrawlRequest as <code class="docutils literal notranslate"><span class="pre">URLCrawlQueue.DONE</span></code></p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="wrdrd.tools.crawl.URLCrawlQueue.error">
+<code class="sig-name descname">error</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">item</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdrd/tools/crawl#URLCrawlQueue.error"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.URLCrawlQueue.error" title="Permalink to this definition">¶</a></dt>
+<dd><p>Mark a CrawlRequest as <code class="docutils literal notranslate"><span class="pre">URLCrawlQueue.ERROR</span></code></p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="wrdrd.tools.crawl.URLCrawlQueue.pop">
+<code class="sig-name descname">pop</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdrd/tools/crawl#URLCrawlQueue.pop"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.URLCrawlQueue.pop" title="Permalink to this definition">¶</a></dt>
+<dd><p>Pop a CrawlRequest off the queue and mark it as <code class="docutils literal notranslate"><span class="pre">URLCrawlQueue.OUT</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#wrdrd.tools.crawl.CrawlRequest" title="wrdrd.tools.crawl.CrawlRequest"><code class="xref py py-class docutils literal notranslate"><span class="pre">CrawlRequest</span></code></a></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#wrdrd.tools.crawl.CrawlRequest" title="wrdrd.tools.crawl.CrawlRequest">CrawlRequest</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="wrdrd.tools.crawl.URLCrawlQueue.push">
+<code class="sig-name descname">push</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">item</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdrd/tools/crawl#URLCrawlQueue.push"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.URLCrawlQueue.push" title="Permalink to this definition">¶</a></dt>
+<dd><p>Push a CrawlRequest onto the queue and mark it as <code class="docutils literal notranslate"><span class="pre">URLCrawlQueue.NEW</span></code></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="wrdrd.tools.crawl.build_networkx_graph">
+<code class="sig-prename descclassname">wrdrd.tools.crawl.</code><code class="sig-name descname">build_networkx_graph</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">url</span></em>, <em class="sig-param"><span class="n">links</span></em>, <em class="sig-param"><span class="n">label</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdrd/tools/crawl#build_networkx_graph"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.build_networkx_graph" title="Permalink to this definition">¶</a></dt>
+<dd><p>Build a networkx.DiGraph from an iterable of links from a given URL</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>url</strong> (<em>str</em>) – URL from which the given links are derived</p></li>
+<li><p><strong>links</strong> (<em>iterable</em>) – iterable of <a class="reference internal" href="#wrdrd.tools.crawl.Link" title="wrdrd.tools.crawl.Link"><code class="xref py py-class docutils literal notranslate"><span class="pre">Link</span></code></a> objects</p></li>
+<li><p><strong>label</strong> (<em>str</em>) – label/title for graph</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>directed graph of links</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>networkx.DiGraph</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="wrdrd.tools.crawl.crawl_url">
+<code class="sig-prename descclassname">wrdrd.tools.crawl.</code><code class="sig-name descname">crawl_url</code><span class="sig-paren">(</span><em class="sig-param">start_url</em>, <em class="sig-param">output=&lt;_io.TextIOWrapper name='&lt;stdout&gt;' mode='w' encoding='utf-8'&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdrd/tools/crawl#crawl_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.crawl_url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Crawl pages starting at <code class="docutils literal notranslate"><span class="pre">start_url</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>start_url</strong> (<em>str</em>) – URL to start crawling from</p></li>
+<li><p><strong>output</strong> (<em>filelike</em>) – file to <code class="docutils literal notranslate"><span class="pre">.write()</span></code> output to</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><a class="reference internal" href="#wrdrd.tools.crawl.ResultStore" title="wrdrd.tools.crawl.ResultStore"><code class="xref py py-class docutils literal notranslate"><span class="pre">ResultStore</span></code></a> of (URL, crawl_status_dict) pairs</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#wrdrd.tools.crawl.ResultStore" title="wrdrd.tools.crawl.ResultStore">ResultStore</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="wrdrd.tools.crawl.current_datetime">
+<code class="sig-prename descclassname">wrdrd.tools.crawl.</code><code class="sig-name descname">current_datetime</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdrd/tools/crawl#current_datetime"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.current_datetime" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the current datetime in ISO format</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>current datetime in ISO format</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="wrdrd.tools.crawl.expand_link">
+<code class="sig-prename descclassname">wrdrd.tools.crawl.</code><code class="sig-name descname">expand_link</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">_src</span></em>, <em class="sig-param"><span class="n">_url</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdrd/tools/crawl#expand_link"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.expand_link" title="Permalink to this definition">¶</a></dt>
+<dd><p>Expand a link given the containing document’s URI</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_src</strong> (<em>str</em>) – containing document’s URI</p></li>
+<li><p><strong>_url</strong> (<em>str</em>) – link URI</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>expanded URI</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="wrdrd.tools.crawl.extract_css">
+<code class="sig-prename descclassname">wrdrd.tools.crawl.</code><code class="sig-name descname">extract_css</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">url</span></em>, <em class="sig-param"><span class="n">bs</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdrd/tools/crawl#extract_css"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.extract_css" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find CSS <code class="docutils literal notranslate"><span class="pre">&lt;link&gt;</span></code> links in a given BeautifulSoup object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>url</strong> (<em>str</em>) – URL of the BeautifulSoup object</p></li>
+<li><p><strong>bs</strong> (<em>bs4.BeautifulSoup</em>) – BeautifulSoup object</p></li>
+</ul>
+</dd>
+<dt class="field-even">Yields</dt>
+<dd class="field-even"><p><em>CSS</em> – a <a class="reference internal" href="#wrdrd.tools.crawl.CSS" title="wrdrd.tools.crawl.CSS"><code class="xref py py-class docutils literal notranslate"><span class="pre">CSS</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="wrdrd.tools.crawl.extract_images">
+<code class="sig-prename descclassname">wrdrd.tools.crawl.</code><code class="sig-name descname">extract_images</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">url</span></em>, <em class="sig-param"><span class="n">bs</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdrd/tools/crawl#extract_images"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.extract_images" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find <code class="docutils literal notranslate"><span class="pre">&lt;img&gt;</span></code> images in a given BeautifulSoup object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>url</strong> (<em>str</em>) – URL of the BeautifulSoup object</p></li>
+<li><p><strong>bs</strong> (<em>bs4.BeautifulSoup</em>) – BeautifulSoup object</p></li>
+</ul>
+</dd>
+<dt class="field-even">Yields</dt>
+<dd class="field-even"><p><em>Image</em> – a <a class="reference internal" href="#wrdrd.tools.crawl.Image" title="wrdrd.tools.crawl.Image"><code class="xref py py-class docutils literal notranslate"><span class="pre">Image</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="wrdrd.tools.crawl.extract_js">
+<code class="sig-prename descclassname">wrdrd.tools.crawl.</code><code class="sig-name descname">extract_js</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">url</span></em>, <em class="sig-param"><span class="n">bs</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdrd/tools/crawl#extract_js"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.extract_js" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find JS <code class="docutils literal notranslate"><span class="pre">&lt;script&gt;</span></code> links in a given BeautifulSoup object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>url</strong> (<em>str</em>) – URL of the BeautifulSoup object</p></li>
+<li><p><strong>bs</strong> (<em>bs4.BeautifulSoup</em>) – BeautifulSoup object</p></li>
+</ul>
+</dd>
+<dt class="field-even">Yields</dt>
+<dd class="field-even"><p><em>JS</em> – a <a class="reference internal" href="#wrdrd.tools.crawl.JS" title="wrdrd.tools.crawl.JS"><code class="xref py py-class docutils literal notranslate"><span class="pre">JS</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="wrdrd.tools.crawl.extract_keywords">
+<code class="sig-prename descclassname">wrdrd.tools.crawl.</code><code class="sig-name descname">extract_keywords</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">url</span></em>, <em class="sig-param"><span class="n">bs</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdrd/tools/crawl#extract_keywords"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.extract_keywords" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extract keyword frequencies from a given BeautifulSoup object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>url</strong> (<em>str</em>) – URL of the BeautifulSoup object</p></li>
+<li><p><strong>bs</strong> (<em>bs4.BeautifulSoup</em>) – BeautifulSoup object</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><a class="reference internal" href="#wrdrd.tools.crawl.KeywordFrequency" title="wrdrd.tools.crawl.KeywordFrequency"><code class="xref py py-class docutils literal notranslate"><span class="pre">KeywordFrequency</span></code></a></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#wrdrd.tools.crawl.KeywordFrequency" title="wrdrd.tools.crawl.KeywordFrequency">KeywordFrequency</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="wrdrd.tools.crawl.extract_links">
+<code class="sig-prename descclassname">wrdrd.tools.crawl.</code><code class="sig-name descname">extract_links</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">url</span></em>, <em class="sig-param"><span class="n">bs</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdrd/tools/crawl#extract_links"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.extract_links" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find <code class="docutils literal notranslate"><span class="pre">&lt;a&gt;</span></code> links in a given BeautifulSoup object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>url</strong> (<em>str</em>) – URL of the BeautifulSoup object</p></li>
+<li><p><strong>bs</strong> (<em>bs4.BeautifulSoup</em>) – BeautifulSoup object</p></li>
+</ul>
+</dd>
+<dt class="field-even">Yields</dt>
+<dd class="field-even"><p><em>Link</em> – a <a class="reference internal" href="#wrdrd.tools.crawl.Link" title="wrdrd.tools.crawl.Link"><code class="xref py py-class docutils literal notranslate"><span class="pre">Link</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="wrdrd.tools.crawl.extract_words_from_bs">
+<code class="sig-prename descclassname">wrdrd.tools.crawl.</code><code class="sig-name descname">extract_words_from_bs</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">bs</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdrd/tools/crawl#extract_words_from_bs"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.extract_words_from_bs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get just the text from an HTML page</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>bs</strong> (<em>bs4.BeautifulSoup</em>) – BeautifulSoup object</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>newline-joined unicode string</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>unicode</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="wrdrd.tools.crawl.frequency_table">
+<code class="sig-prename descclassname">wrdrd.tools.crawl.</code><code class="sig-name descname">frequency_table</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">counterdict</span></em>, <em class="sig-param"><span class="n">sort_by</span><span class="o">=</span><span class="default_value">'count'</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdrd/tools/crawl#frequency_table"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.frequency_table" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate and sort a frequency table from a collections.Counter dict</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>counterdict</strong> (<em>dict</em>) – a collections.Counter dict of (key, count) pairs</p></li>
+<li><p><strong>sort_by</strong> (<em>str</em>) – either <code class="docutils literal notranslate"><span class="pre">count</span></code> or <code class="docutils literal notranslate"><span class="pre">name</span></code></p></li>
+</ul>
+</dd>
+<dt class="field-even">Yields</dt>
+<dd class="field-even"><p><em>tuple</em> – (%, count, key)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="wrdrd.tools.crawl.get_stop_words">
+<code class="sig-prename descclassname">wrdrd.tools.crawl.</code><code class="sig-name descname">get_stop_words</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdrd/tools/crawl#get_stop_words"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.get_stop_words" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get english stop words from NLTK with a few modifications</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>dictionary of stop words</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="wrdrd.tools.crawl.get_text_from_bs">
+<code class="sig-prename descclassname">wrdrd.tools.crawl.</code><code class="sig-name descname">get_text_from_bs</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">bs</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdrd/tools/crawl#get_text_from_bs"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.get_text_from_bs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get text from a BeautifulSoup object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>bs</strong> (<em>bs4.BeautifulSoup</em>) – BeautifulSoup object</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>space-joined unicode string with newlines replaced by spaces</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>unicode</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="wrdrd.tools.crawl.get_unicode_stdout">
+<code class="sig-prename descclassname">wrdrd.tools.crawl.</code><code class="sig-name descname">get_unicode_stdout</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">stdout</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">errors</span><span class="o">=</span><span class="default_value">'replace'</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdrd/tools/crawl#get_unicode_stdout"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.get_unicode_stdout" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wrap stdout as a utf-8 unicode writer</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>stdout</strong> (<em>filelike</em>) – <code class="docutils literal notranslate"><span class="pre">sys.stdout</span></code></p></li>
+<li><p><strong>errors</strong> (<em>str</em>) – what to do with errors</p></li>
+<li><p><strong>kwargs</strong> (<em>dict</em>) – <code class="docutils literal notranslate"><span class="pre">**kwargs</span></code></p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>output to <code class="docutils literal notranslate"><span class="pre">.write()</span></code> to</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>filelike</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="wrdrd.tools.crawl.iteritems">
+<code class="sig-prename descclassname">wrdrd.tools.crawl.</code><code class="sig-name descname">iteritems</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">obj</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdrd/tools/crawl#iteritems"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.iteritems" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="wrdrd.tools.crawl.itervalues">
+<code class="sig-prename descclassname">wrdrd.tools.crawl.</code><code class="sig-name descname">itervalues</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">obj</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdrd/tools/crawl#itervalues"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.itervalues" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="wrdrd.tools.crawl.main">
+<code class="sig-prename descclassname">wrdrd.tools.crawl.</code><code class="sig-name descname">main</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdrd/tools/crawl#main"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.main" title="Permalink to this definition">¶</a></dt>
+<dd><p><a class="reference internal" href="#module-wrdrd.tools.crawl" title="wrdrd.tools.crawl"><code class="xref py py-mod docutils literal notranslate"><span class="pre">wrdrd.tools.crawl</span></code></a> main method: parse arguments and run commands</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>args</strong> (<em>list</em>) – list of commandline arguments</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>nonzero returncode on error</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="wrdrd.tools.crawl.print_frequency_table">
+<code class="sig-prename descclassname">wrdrd.tools.crawl.</code><code class="sig-name descname">print_frequency_table</code><span class="sig-paren">(</span><em class="sig-param">frequencies</em>, <em class="sig-param">output=&lt;_io.TextIOWrapper name='&lt;stdout&gt;' mode='w' encoding='utf-8'&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdrd/tools/crawl#print_frequency_table"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.print_frequency_table" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print a formatted ASCII frequency table</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>frequencies</strong> (<em>iterable</em>) – iterable of (%, count, word) tuples</p></li>
+<li><p><strong>output</strong> (<em>filelike</em>) – output to <code class="docutils literal notranslate"><span class="pre">print()</span></code> to</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="wrdrd.tools.crawl.same_netloc">
+<code class="sig-prename descclassname">wrdrd.tools.crawl.</code><code class="sig-name descname">same_netloc</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">url1</span></em>, <em class="sig-param"><span class="n">url2</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdrd/tools/crawl#same_netloc"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.same_netloc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check whether two URIs have the same netloc</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>url1</strong> (<em>str</em>) – first URI</p></li>
+<li><p><strong>url2</strong> (<em>str</em>) – second URI</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>True if both URIs have the same netloc</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="wrdrd.tools.crawl.strip_fragment">
+<code class="sig-prename descclassname">wrdrd.tools.crawl.</code><code class="sig-name descname">strip_fragment</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">url</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdrd/tools/crawl#strip_fragment"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.strip_fragment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Strip the #fragment portion from a URI</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>url</strong> (<em>str</em>) – URI to strip #fragment from</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>stripped URI (<code class="docutils literal notranslate"><span class="pre">/</span></code> if otherwise empty)</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="wrdrd.tools.crawl.strip_script_styles_from_bs">
+<code class="sig-prename descclassname">wrdrd.tools.crawl.</code><code class="sig-name descname">strip_script_styles_from_bs</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">bs</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdrd/tools/crawl#strip_script_styles_from_bs"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.strip_script_styles_from_bs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Strip <code class="docutils literal notranslate"><span class="pre">&lt;script&gt;</span></code> and <code class="docutils literal notranslate"><span class="pre">&lt;style&gt;</span></code> tags from a BeautifulSoup object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>bs</strong> (<em>bs4.BeautifulSoup</em>) – BeautifulSoup object</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>BeautifulSoup object with tags removed</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bs4.BeautifulSoup</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="wrdrd.tools.crawl.sum_counters">
+<code class="sig-prename descclassname">wrdrd.tools.crawl.</code><code class="sig-name descname">sum_counters</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">iterable</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdrd/tools/crawl#sum_counters"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.sum_counters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sum the counts of an iterable</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>iterable</strong> (<em>iterable</em>) – iterable of collections.Counter dicts</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>dict of (key, count) pairs</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>defaultdict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="wrdrd.tools.crawl.to_a_search_engine">
+<code class="sig-prename descclassname">wrdrd.tools.crawl.</code><code class="sig-name descname">to_a_search_engine</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">url</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdrd/tools/crawl#to_a_search_engine"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.to_a_search_engine" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of words (e.g. as a classic search engine)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>url</strong> (<em>str</em>) – URL to <code class="docutils literal notranslate"><span class="pre">HTTP</span> <span class="pre">GET</span></code> with <code class="docutils literal notranslate"><span class="pre">requests.get</span></code></p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>iterable of tokens</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>iterable</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="wrdrd.tools.crawl.tokenize">
+<code class="sig-prename descclassname">wrdrd.tools.crawl.</code><code class="sig-name descname">tokenize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdrd/tools/crawl#tokenize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.tokenize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tokenize the given text with textblob.tokenizers.word_tokenize</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>text</strong> (<em>str</em>) – text to tokenize</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>tokens</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>iterable</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="wrdrd.tools.crawl.word_frequencies">
+<code class="sig-prename descclassname">wrdrd.tools.crawl.</code><code class="sig-name descname">word_frequencies</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">url</span></em>, <em class="sig-param"><span class="n">keywords</span></em>, <em class="sig-param"><span class="n">stopwords</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdrd/tools/crawl#word_frequencies"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.word_frequencies" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get frequencies (counts) for a set of (non-stopword) keywords</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>url</strong> (<em>str</em>) – URL from which keywords were derived</p></li>
+<li><p><strong>keywords</strong> (<em>iterable</em>) – iterable of keywords</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><a class="reference internal" href="#wrdrd.tools.crawl.KeywordFrequency" title="wrdrd.tools.crawl.KeywordFrequency"><code class="xref py py-class docutils literal notranslate"><span class="pre">KeywordFrequency</span></code></a></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#wrdrd.tools.crawl.KeywordFrequency" title="wrdrd.tools.crawl.KeywordFrequency">KeywordFrequency</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="wrdrd.tools.crawl.wrdcrawler">
+<code class="sig-prename descclassname">wrdrd.tools.crawl.</code><code class="sig-name descname">wrdcrawler</code><span class="sig-paren">(</span><em class="sig-param">url</em>, <em class="sig-param">output=&lt;_io.TextIOWrapper name='&lt;stdout&gt;' mode='w' encoding='utf-8'&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdrd/tools/crawl#wrdcrawler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.wrdcrawler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetch and generate a report from the given URL</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>url</strong> (<em>str</em>) – URL to fetch</p></li>
+<li><p><strong>output</strong> (<em>filelike</em>) – output to <code class="docutils literal notranslate"><span class="pre">print()</span></code> to</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>output</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>filelike</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="wrdrd.tools.crawl.write_nxgraph_to_dot">
+<code class="sig-prename descclassname">wrdrd.tools.crawl.</code><code class="sig-name descname">write_nxgraph_to_dot</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">g</span></em>, <em class="sig-param"><span class="n">output</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdrd/tools/crawl#write_nxgraph_to_dot"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.write_nxgraph_to_dot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write a networkx graph as DOT to the specified output</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>g</strong> (<em>networkx.Graph</em>) – graph to write as DOT</p></li>
+<li><p><strong>output</strong> (<em>filelike</em>) – output to write to</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="wrdrd.tools.crawl.write_nxgraph_to_json">
+<code class="sig-prename descclassname">wrdrd.tools.crawl.</code><code class="sig-name descname">write_nxgraph_to_json</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">g</span></em>, <em class="sig-param"><span class="n">output</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/wrdrd/tools/crawl#write_nxgraph_to_json"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#wrdrd.tools.crawl.write_nxgraph_to_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write a networkx graph as JSON to the specified output</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>g</strong> (<em>networkx.Graph</em>) – graph to write as JSON</p></li>
+<li><p><strong>output</strong> (<em>filelike</em>) – output to write to</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
 <div class="section" id="module-wrdrd.tools.domain">
 <span id="wrdrd-tools-domain-module"></span><h2>wrdrd.tools.domain module<a class="headerlink" href="#module-wrdrd.tools.domain" title="Permalink to this headline">¶</a></h2>
@@ -582,7 +1319,7 @@ stripsinglehtml output to <code class="docutils literal notranslate"><span class
 
       <!-- footer -->
       <footer role="contentinfo">
-          &copy; <a href="../license">Copyright</a> WRD R&amp;D 2014 - 2015.
+          &copy; <a href="../license">Copyright</a> WRD R&amp;D 2014 - 2020.
 
       <br/>
       <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
