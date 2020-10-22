@@ -1,5 +1,5 @@
 #sarge
--e hg+https://bitbucket.org/vinay.sajip/sarge#egg=sarge
+-e git+https://bitbucket.org/vinay.sajip/sarge#egg=sarge
 
 #structlog
 -e git+https://github.com/hynek/structlog#egg=structlog
