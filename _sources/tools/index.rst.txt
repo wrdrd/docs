@@ -1596,6 +1596,25 @@ CommonMark
 :ref:`CommonMark` is one effort to standardize :ref:`Markdown`.
 
 
+
+.. index:: MyST Markdown
+.. index:: MyST
+.. _myst:
+.. _myst markdown:
+
+MyST Markdown
+++++++++++++++
+| Src: https://github.com/executablebooks/MyST-Parser
+| Src: https://github.com/executablebooks/MyST-NB
+| Docs: https://myst-parser.readthedocs.io/en/latest/
+| Docs:  https://myst-nb.readthedocs.io/en/latest/
+
+MyST Markdown is :ref:`CommonMark` :ref:`Markdown` with support
+for :ref:`Sphinx` roles and directives.
+
+- :ref:`jupyter-book` implemented MyST Markdown.
+
+
 .. index:: MediaWiki Markup
 .. _mediawiki markup:
 
@@ -7571,11 +7590,31 @@ so, for example,
             A link to :ref:`anchor <anchor-name>`.
 
 
+.. index:: jupyter-book
+.. _jupyter-book:
+
+jupyter-book
++++++++++++++
+| Src: https://github.com/executablebooks/jupyter-book
+| Docs: https://jupyterbook.org/
+
+- :ref:`MyST Markdown` (Sphinx roles and directives in :ref:`Markdown`)
+
+
+.. index:: nbsphinx
+.. _nbsphinx:
+
+nbsphinx
++++++++++
+| Src: https://github.com/spatialaudio/nbsphinx
+| Docs: http://nbsphinx.readthedocs.io/
+
+
 .. index:: Tinkerer
 .. _tinkerer:
 
 Tinkerer
-~~~~~~~~~
++++++++++
 | Homepage: http://tinkerer.me/
 | Src: https://github.com/vladris/tinkerer
 | Docs: http://tinkerer.me/pages/documentation.html
