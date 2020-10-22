@@ -3,3 +3,12 @@
 
 #structlog
 -e git+https://github.com/hynek/structlog#egg=structlog
+
+#requests-cache
+-e git+https://github.com/reclosedev/requests-cache#egg=requests-cache
+
+#requests-html
+-e git+https://github.com/psf/requests-html#egg=requests-html
+
+#wrd_sphinx_theme
+-e git+https://github.com/westurner/wrd_sphinx_theme#egg=wrd_sphinx_theme
