@@ -42,6 +42,9 @@ coverage:
 	coverage html
 	open htmlcov/index.html
 
+install:
+	pip install -r requirements-dev.txt -r requirements.txt -r requirements-docs.txt
+
 
 BUILDDIR:=docs/_build
 BUILDDIRHTML:=${BUILDDIR}/html
