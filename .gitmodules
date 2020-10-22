@@ -1,3 +1,12 @@
 [submodule "docs/tools"]
 	path = docs/tools
 	url = ssh://git@github.com/westurner/tools
+[submodule "src/sphinxcontrib-srclinks"]
+	path = src/sphinxcontrib-srclinks
+	url = https://github.com/westurner/sphinxcontrib-srclinks
+[submodule "src/sphinxjp.themes.basicstrap"]
+	path = src/sphinxjp.themes.basicstrap
+	url = https://github.com/westurner/sphinxjp.themes.basicstrap
+[submodule "src/wrd_sphinx_theme"]
+	path = src/wrd_sphinx_theme
+	url = https://github.com/westurner/wrd_sphinx_theme
