@@ -7821,6 +7821,22 @@ over the network or to a local device.
   for EXT4 and BTRFS support, see :ref:`fsarchiver`.
 
 
+.. index:: rclone
+.. _rclone:
+
+rclone
+~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Rclone
+| Src: https://github.com/rclone/rclone
+| Homepage: https://rclone.org/
+| Docs: https://rclone.org/
+
+Rclone is an open source utility for managing files on cloud storages
+like local disk, SFTP, WebDAV, Dropbox, and Google Drive.
+
+- Rclone supports very many cloud storages
+
+
 .. index:: rsync
 .. _rsync:
 
