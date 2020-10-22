@@ -44,6 +44,7 @@ coverage:
 
 install:
 	pip install -r requirements-dev.txt -r requirements.txt -r requirements-docs.txt
+	pip install -e .
 
 
 BUILDDIR:=docs/_build
