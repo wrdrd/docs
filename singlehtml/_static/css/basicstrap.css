@@ -79,13 +79,5 @@ h2, h3, h4, h5, h6 {
 /* for desktop */
 @media (min-width: 768px) {
   
-  .navbar-inner div.container {
-    width: 900px;
-  }
-  
-  
-  div.container {
-    width: 768px;
-  }
   
 }

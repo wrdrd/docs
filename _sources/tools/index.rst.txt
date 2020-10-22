@@ -6513,6 +6513,20 @@ ChromeVox
 | ChromeExt: https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn
 
 
+.. index:: Dark Reader
+.. _dark reader:
+
+Dark Reader
+++++++++++++
+| Src: https://github.com/darkreader/darkreader
+| Homepage: https://darkreader.org/
+| ChromeExt: https://chrome.google.com/webstore/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh
+| FirefoxExt: https://addons.mozilla.org/en-US/firefox/addon/darkreader/
+| SafariExt: https://darkreader.org/safari
+| EdgeExt: https://microsoftedge.microsoft.com/addons/detail/ifoakfbpdcdoeenechcleahebpibofpc
+| Twitter: https://twitter.com/darkreaderapp
+
+
 .. index:: Deluminate
 .. _deluminate:
 
@@ -6521,6 +6535,17 @@ Deluminate
 | Homepage: https://deluminate.github.io/
 | Src: https://github.com/abstiles/deluminate
 | ChromeExt: https://chrome.google.com/webstore/detail/deluminate/iebboopaeangfpceklajfohhbpkkfiaa
+
+
+.. index:: GitHub Dark Theme
+.. _github dark theme:
+
+GitHub Dark Theme
+++++++++++++++++++
+| Docs:  https://poychang.github.io/github-dark-theme/
+| Src: https://github.com/poychang/github-dark-theme
+| ChromeExt: https://chrome.google.com/webstore/detail/github-dark-theme/odkdlljoangmamjilkamahebpkgpeacp
+| FirefoxExt: https://addons.mozilla.org/addon/github-dark-theme/
 
 
 .. index:: High Contrast
@@ -6538,6 +6563,16 @@ NASA Night Launch
 ++++++++++++++++++
 | FirefoxExt: https://addons.mozilla.org/en-us/firefox/addon/nasa-night-launch/
 | FirefoxXPI: https://addons.mozilla.org/firefox/downloads/latest/4908/addon-4908-latest.xpi
+
+
+.. index:: ShadowFox
+.. _shadowfox:
+
+ShadowFox
++++++++++
+| Src: https://github.com/overdodactyl/ShadowFox
+| Homepage: https://overdodactyl.github.io/ShadowFox/
+| Docs: https://github.com/overdodactyl/ShadowFox/wiki
 
 
 .. index:: Spectrum
@@ -6580,6 +6615,26 @@ The Tiësto Chrome Theme is a Dark Theme for Chrome.
 
 Safety Extensions
 ~~~~~~~~~~~~~~~~~~~
+
+
+.. index:: Facebook Container
+.. _facebook container:
+
+Facebook Container
++++++++++++++++++++
+| Src: https://github.com/mozilla/contain-facebook
+| FirefoxExt: https://addons.mozilla.org/en-US/firefox/addon/facebook-container/
+
+
+
+.. index:: Firefox Multi-Account Containers
+.. _firefox multi-account containers:
+
+Firefox Multi-Account Containers
++++++++++++++++++++++++++++++++++
+| Src: https://github.com/mozilla/multi-account-containers/
+| FirefoxExt: https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/
+
 
 .. index:: Ghostery
 .. _ghostery:
@@ -6642,6 +6697,19 @@ uBlock
            'rgx and rgx.group(1,2)'
 
 
+
+.. index:: uBlock Origin
+.. _ublock origin:
+
+uBlock Origin
+++++++++++++++
+| Src: https://github.com/gorhill/uBlock
+| ChromeExt: https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm
+| FirefoxExt: https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/
+| EdgeExt: https://microsoftedge.microsoft.com/addons/detail/odfafepnkmbhccpbejgmiehpchacaeak
+| SafariExt: 
+
+
 .. index:: Browser Extensions > Content
 .. index:: Content Extensions
 .. _content-extensions:
@@ -6664,6 +6732,20 @@ Hypothesis can also be included as a sidebar on a site:
 .. code:: html
 
    <script async defer src="//hypothes.is/embed.js"></script>
+
+
+.. index:: OpenLink Structured Data Sniffer
+.. _openlink structured data sniffer:
+
+OpenLink Structured Data Sniffer
+++++++++++++++++++++++++++++++++++
+| Src:  https://github.com/openlink/structured-data-sniffer
+| Homepage:  http://osds.openlinksw.com/
+| ChromeExt:  https://chrome.google.com/webstore/detail/openlink-structured-data/egdaiaihbdoiibopledjahjaihbmjhdj?hl=en
+| FirefoxExt:  https://addons.mozilla.org/en-US/firefox/addon/openlink-structured-data-sniff/
+| EdgeExtDoc:  http://osds.openlinksw.com/#DownloadEdge
+
+- :ref:`JSON-LD`, :ref:`Microdata`, :ref:`RDFa`, :ref:`Turtle`
 
 
 .. index:: Pocket
@@ -6736,6 +6818,14 @@ Zotero archives and tags resources with bibliographic metadata.
 
 Tab Extensions
 ~~~~~~~~~~~~~~~~
+.. index:: FoxyTab
+.. _foxytab:
+
+FoxyTab
+++++++++
+| FirefoxExt:  https://addons.mozilla.org/en-US/firefox/addon/foxytab/
+| Support:  https://github.com/erosman/support/issues
+
 
 .. index:: OneTab
 .. _onetab:
@@ -6866,12 +6956,34 @@ Postman
 | Twitter: https://twitter.com/postmanclient
 
 
+.. index:: Preact Devtools
+.. _preact devtools
+
+Preact Devtools
+++++++++++++++++
+| Src:  https://github.com/preactjs/preact-devtools
+| Homepage: https://preactjs.github.io/preact-devtools/
+| ChromeExt: https://chrome.google.com/webstore/detail/preact-developer-tools/ilcajpmogmhpliinlbcdebhbcanbghmd
+| FirefoxExt:  https://addons.mozilla.org/en-US/firefox/addon/preact-devtools/
+| EdgeExt: https://microsoftedge.microsoft.com/addons/detail/hdkhobcafnfejjieimdkmjaiihkjpmhk
+
+
 .. index:: React Developer Tools
 .. _react developer tools:
 
 React Developer Tools
 ++++++++++++++++++++++
 | ChromeExt: https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi
+
+
+.. index:: Refined Github
+.. _refined github:
+
+Refined Github
++++++++++++++++
+| Src: https://github.com/sindresorhus/refined-github
+| ChromeExt: https://chrome.google.com/webstore/detail/refined-github/hlepfoohegkhhmjieoechaddaejaokhf
+| FirefoxExt: https://addons.mozilla.org/en-US/firefox/addon/refined-github-/
 
 
 .. index:: Responsive Web Design Tester

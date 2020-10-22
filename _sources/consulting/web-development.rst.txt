@@ -1,12 +1,5 @@
-
-
-.. index:: Web Development
-.. _web development:
-
 Web Development
 -----------------
-| Wikipedia: https://en.wikipedia.org/wiki/Web_development
-
 
 Web Glossary
 ~~~~~~~~~~~~~~~
@@ -28,7 +21,6 @@ Web Glossary
         | Wikipedia: https://en.wikipedia.org/wiki/Web_page
 
     Website
-    Web site
         A website is a set of interlinked :ref:`HTML` pages.
         Also used to refer to a web page.
 
@@ -192,7 +184,7 @@ Web Glossary
 
     DNS
         Domain Name System. Converts a :term:`domain name`
-        (e.g. ``localhost`` or ``wrdrd.github.io``) into an
+        (e.g. ``localhost`` or ``wrdrd.com``) into an
         :term:`IP address` (e.g. ``127.0.0.1`` (IPv4) or ``::1`` (IPv6)).
 
         * Initial DNS hosting costs are often covered by Web Hosts.
@@ -220,7 +212,7 @@ Web Glossary
 
             scheme://host:port/p/a/t/h
 
-            https://wrdrd.github.io/docs/   # https, wrdrd.github.io, port 443, /docs/
+            https://wrdrd.com/docs/   # https, wrdrd.com, port 443, /docs/
 
         * With an :ref:`http <HTTP>` scheme, the default port is 80.
         * With an :ref:`https <HTTPS>` scheme, the default port is 443.
@@ -235,7 +227,7 @@ Web Glossary
 
             scheme://host:port/p/a/t/h?query#fragment
 
-            https://wrdrd.github.io/docs/#wrdrd
+            https://wrdrd.com/docs/#wrdrd
 
         * :term:`URLs <url>` are URIs.
         * :term:`URNs <urn>` are URIs.
@@ -364,11 +356,11 @@ See :ref:`web standards`, :ref:`Art & Design <art-design>`
 
 
 .. index:: Web Design
-.. _web design:
+.. _web-design:
 
 Web Design
 ~~~~~~~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/Web_design
+https://en.wikipedia.org/wiki/Web_design
 
 
 .. index:: CSS
@@ -475,42 +467,28 @@ See: :ref:`Video Production`
 
 Bootstrap
 +++++++++++
-| Wikipedia: `<https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)>`_
-| Homepage: https://getbootstrap.com/
-| Source: git https://github.com/twbs/bootstrap
+`<https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)>`_
 
 * What is Bootstrap?
 
-  * A responsive HTML and CSS (LESS, Sass SCSS (4.0)) Framework.
+  * A responsive HTML and CSS (LESS) Framework
+  * http://getbootstrap.com/
   * `<https://en.wikipedia.org/wiki/LESS_(stylesheet_language)>`_
-  * `<https://en.wikipedia.org/wiki/Sass_(stylesheet_language)>`_
-  
-* Bootstrap :term:`Web Site` Styles / Themes / Templates
 
-  https://expo.getbootstrap.com/resources/
+* Styles / Themes / Templates
 
-  * Custom:
+  * From Scratch / Customizing
 
-    * https://getbootstrap.com/customize/#less-variables
+    * http://getbootstrap.com/customize/#less-variables
     * http://bootply.com/
 
-  * Templates:
+  * Templates
 
-    * https://themes.getbootstrap.com/ (Updated, Free, Official)
-
-      https://themes.getbootstrap.com/pages/our-license
-    * https://expo.getbootstrap.com/resources/#themes
-    * https://bootswatch.com/ (Free)
+    * http://bootswatch.com/ (FREE)
     * http://www.themesforbootstrap.com/
     * https://wrapbootstrap.com/
     * https://wrapbootstrap.com/theme/deusone-responsive-one-page-template-WB0271X52
     * http://themeforest.net/search?utf8=%E2%9C%93&term=bootstrap
-
-  * Examples:
-
-    * https://expo.getbootstrap.com/
-    * http://builtwithbootstrap.com/
-    * http://v4-alpha.getbootstrap.com/examples/
 
 
 .. index:: Web Development Checklist
@@ -696,11 +674,6 @@ Hosting / DNS
 
 DNS Configuration
 +++++++++++++++++++
-| Wikipedia: https://en.wikipedia.org/wiki/Domain_Name_System
-| Standards: https://en.wikipedia.org/wiki/Domain_Name_System#RFC_documents
-| Standards: https://en.wikipedia.org/wiki/List_of_DNS_record_types
-| Standards: https://en.wikipedia.org/wiki/Domain_Name_System_Security_Extensions
-
 :term:`DNS` :term:`Domain Name` Information (``A``, ``AAAA``, ``CNAME``,
 ``TXT``, ``MX``, ``SRV``)
 ::
@@ -725,7 +698,7 @@ DNS Configuration
 
 * Online Whois Tools
 
-  * https://whois.domaintools.com/$DOMAIN
+  * http://whois.domaintools.com/$DOMAIN
 
 See: :py:mod:`wrdrd.tools.domain`
 
@@ -735,8 +708,6 @@ See: :py:mod:`wrdrd.tools.domain`
 
 Web Hosting
 +++++++++++++
-| Wikipedia: https://en.wikipedia.org/wiki/Web_hosting_service
-
 :term:`Web Hosting <Web Hosting Service>` Information
 
 * Reverse IP (How many sites are hosted from the same
@@ -752,10 +723,6 @@ See: :ref:`Information Systems > Clouds <clouds>`
 
 WebSec
 ~~~~~~~~~
-| WikipediaCategory: https://en.wikipedia.org/wiki/Category:Web_security_exploits
-| WikipediaCategory: https://en.wikipedia.org/wiki/Category:Internet_security
-
-
 WebSec (*web security*) is :ref:`Information Security`
 for web applications.
 
@@ -766,116 +733,19 @@ Security at :ref:`W3C` :
 * http://www.w3.org/2011/webappsec/
 * :ref:`Web Standards`
 
+CWE:
 
-.. index:: Resonsible Disclosure
-.. _responsible disclosure:
-
-Responsible Disclosure
-+++++++++++++++++++++++++
-| Wikipedia: https://en.wikipedia.org/wiki/Responsible_disclosure
-
-- https://www.owasp.org/index.php/Vulnerability_Disclosure_Cheat_Sheet
-
-
-.. index:: Bug Bounty Program
-.. _bug bounty program:
-
-Bug Bounty Program
-``````````````````````
-| Wikipedia: https://en.wikipedia.org/wiki/Bug_bounty_program
-
-- Hacker One:
-
-  - Homepage: https://hackerone.com/
-  - https://hackerone.com/twitter
-
-- Professional integrity:
-
-  https://en.wikipedia.org/wiki/Integrity
-
-- :ref:`Open Source`
-
-
-.. index:: SANS/CIS Consensus Audit Guidelines:
-.. _sans/cis consensus audit guidelines:
-
-SANS/CIS Consensus Audit Guidelines:
-+++++++++++++++++++++++++++++++++++++++++
-| Wikipedia: https://en.wikipedia.org/wiki/Consensus_audit_guidelines
-| Wikipedia: https://en.wikipedia.org/wiki/The_CIS_Critical_Security_Controls_for_Effective_Cyber_Defense
-| Wikipedia: https://en.wikipedia.org/wiki/CSC_Version_6.0
-
-* "SANS Top 20": https://www.sans.org/critical-security-controls/
-* "SANS Top 25": https://cwe.mitre.org/top25/
-
-* CIS: 
-
-  * https://www.cisecurity.org/critical-controls.cfm
-  * https://www.cisecurity.org/critical-controls/reports/
-  * PDF for email.
-
-
-.. index:: CWE
-.. index:: Common Weakness Enumeration
-.. _cwe:
-.. _common weakness enumeration:
-
-CWE
-++++++
-CWE (*Common Weakness Enumeration*)
-
-| Homepage: https://cwe.mitre.org/
-
-
+* https://cwe.mitre.org/
 * https://cwe.mitre.org/top25/
 * https://cwe.mitre.org/top25/#CWE-89
 * https://cwe.mitre.org/data/definitions/89.html
 
-
-.. index:: OWASP
-.. _owasp:
-
-OWASP
-++++++++
-| Homepage: https://www.owasp.org/
+OWASP:
 
 * https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project
 * https://www.owasp.org/index.php/OWASP_Proactive_Controls
 * https://www.owasp.org/index.php/Top_10_2013-Table_of_Contents
 * https://www.owasp.org/index.php/Web_Standards_and_Specifications
-
-
-.. index:: WebSec Forums
-.. _websec forums:
-
-WebSec Forums
-++++++++++++++++++
-Internet Forums for WebSec ("Web Security")
-
-* :ref:`Responsible Disclosure` / Vulnerability Disclosure
-* https://www.cvedetails.com/
-* :ref:`IRC`, :ref:`Slack`, :ref:`Mattermost`
-* https://www.reddit.com/r/websec
-* https://www.reddit.com/r/netsec
-* https://twitter.com/search?q=websec
-* https://twitter.com/search?q=netsec
-* https://twitter.com/search?q=netsec
-* https://twitter.com/search?q=infosec
-
-
-.. index:: HTTP
-.. _http-:
-
-HTTP
-++++++
-| WikipediaCategory: https://en.wikipedia.org/wiki/Category:Hypertext_Transfer_Protocol
-| WikipediaCategory: https://en.wikipedia.org/wiki/Category:Hypertext_Transfer_Protocol_headers
-
-
-See:
-
-* Knowledge Engineering > :ref:`HTTP`
-* :ref:`HTTPS`, :ref:`HTTPS-`
 
 
 .. index:: HTTPS
@@ -885,10 +755,7 @@ HTTPS
 +++++++
 | Wikipedia: https://en.wikipedia.org/wiki/HTTPS
 
-See:
-
-* Knowledge Engineering > :ref:`HTTPS`
-* :ref:`HTTP`, :ref:`HTTP-`
+See: :ref:`HTTPS`, :ref:`HTTP`
 
 
 .. index:: HTTP STS
@@ -901,52 +768,10 @@ HTTP STS
 
 HTTP STS (*HTTP Strict Transport Security*) is
 a standardized extension for notifying browsers
-that all requests should be made over :ref:`HTTPS`
+that all requests should be made over :ref:`HTTP`
 indefinitely or for a specified time period.
 
-See also:
-
-* Knowledge Engineering > :ref:`HTTP STS`
-* :ref:`https everywhere`
-
-
-.. index:: ACME Protocol
-.. _acme protocol:
-
-ACME Protocol
-++++++++++++++++
-| Wikipedia: https://en.wikipedia.org/wiki/Automated_Certificate_Management_Environment
-| Src: https://github.com/ietf-wg-acme/acme/
-| Spec: https://tools.ietf.org/html/draft-ietf-acme-acme
-| Spec: https://ietf-wg-acme.github.io/acme/draft-ietf-acme-acme.html
-
-- ACME (Automated Certificate Management Environment) is a protocol
-  for Web PKI with X.509 Certificates and :ref:`HTTPS` (TLS/SL).
-- ACME Spec Introduction:
-  https://tools.ietf.org/html/draft-ietf-acme-acme#section-1
-- :ref:`Letsencrypt` implements the :ref:`ACME` spec.
-
-
-.. index:: Letsencrypt
-.. _letsencrypt:
-
-Letsencrypt
-````````````````
-| Wikipedia: https://en.wikipedia.org/wiki/Let%27s_Encrypt
-| Homepage: https://letsencrypt.org/
-| Src: https://github.com/letsencrypt
-| Docs: https://letsencrypt.readthedocs.io/en/latest/
-| Docs: https://letsencrypt.readthedocs.io/en/latest/using.html#getting-certificates-and-choosing-plugins
-| Docs: https://letsencrypt.readthedocs.io/en/latest/using.html#third-party-plugins
-
-- "A free, automated, and open certificate authority."
-- Certs are valid for 90 days
-- Use the staging server to avoid the certificate roll rate limit
-- There are many :ref:`ACME` clients (that work with letsencrypt):
-  
-  https://letsencrypt.org/docs/client-options/
-
-  - Certbot is an official, packaged Python client.
+See also: :ref:`https everywhere`
 
 
 .. index:: Web Development Requirements
@@ -962,7 +787,6 @@ Web Development Requirements
 * [ ] :ref:`Social Media Images`
 * [ ] :ref:`Web Hosting`
 * [ ] :ref:`Web Development Checklist`
-
 
 User Stories
 +++++++++++++
@@ -981,6 +805,5 @@ for capturing structured requires on *cards* (or as *issues* in e.g. GitHub).
 
 
 See also:
-
-* :ref:`Software Development` > :ref:`Agile <agile>` > :ref:`User Story`
-* :ref:`Team Building` > :ref:`six patterns of collaboration`
+:ref:`Software Development > Agile <agile>`,
+:ref:`six patterns of collaboration`

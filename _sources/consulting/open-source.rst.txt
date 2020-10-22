@@ -31,13 +31,13 @@ https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licens
 http://opensource.org/licenses
 
 * http://choosealicense.com/licenses/
-* https://github.com/github/choosealicense.com
+
 * https://developer.github.com/v3/licenses/
 
 * Q: What is the default license of [public GitHub repositories]?
   
   A: All Rights Reserved; though free public repositories
-  are for open source projects (which must be forkable and changeable).
+  are for open source projects.
 
   When you create a new repository, you have the option to 
   select an Open Source license (and a ``.gitignore``)

@@ -6,7 +6,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- OpenGraph metadata: ogp.me -->
     <meta property="og:title" content="westurner/tools" />
@@ -15,7 +15,7 @@
     <!--
     <meta property="og:description" content="" />
     -->
-    <meta property="og:image" content="https://wrdrd.github.io/static/png/drawing-7.09-v0.1.1--_desk.svg-470x242.png" />
+    <meta property="og:image" content="https://wrdrd.com/static/png/drawing-7.09-v0.1.1--_desk.svg-470x242.png" />
     <meta property="og:image:width" content="470" />
     <meta property="og:image:height" content="242" />
     <!--
@@ -40,7 +40,7 @@
 
 <link rel="stylesheet" href="../_static/css/font-awesome.min.css">
 
-<link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+<link rel="stylesheet" href="../_static/css/basicstrap.css" type="text/css" />
 <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
 <link rel="stylesheet" href="../_static/css/local.css" type="text/css" />
     
@@ -513,22 +513,29 @@
 <li class="toctree-l3"><a class="reference internal" href="index#accessibility-extensions">Accessibility Extensions</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="index#accessibility-developer-tools">Accessibility Developer Tools</a></li>
 <li class="toctree-l4"><a class="reference internal" href="index#chromevox">ChromeVox</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index#dark-reader">Dark Reader</a></li>
 <li class="toctree-l4"><a class="reference internal" href="index#deluminate">Deluminate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index#github-dark-theme">GitHub Dark Theme</a></li>
 <li class="toctree-l4"><a class="reference internal" href="index#high-contrast">High Contrast</a></li>
 <li class="toctree-l4"><a class="reference internal" href="index#nasa-night-launch">NASA Night Launch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index#shadowfox">ShadowFox</a></li>
 <li class="toctree-l4"><a class="reference internal" href="index#spectrum">Spectrum</a></li>
 <li class="toctree-l4"><a class="reference internal" href="index#stylish">Stylish</a></li>
 <li class="toctree-l4"><a class="reference internal" href="index#tiesto">Tiësto</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="index#safety-extensions">Safety Extensions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="index#facebook-container">Facebook Container</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index#firefox-multi-account-containers">Firefox Multi-Account Containers</a></li>
 <li class="toctree-l4"><a class="reference internal" href="index#ghostery">Ghostery</a></li>
 <li class="toctree-l4"><a class="reference internal" href="index#https-everywhere">HTTPS Everywhere</a></li>
 <li class="toctree-l4"><a class="reference internal" href="index#ublock">uBlock</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index#ublock-origin">uBlock Origin</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="index#content-extensions">Content Extensions</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="index#hypothesis">Hypothesis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index#openlink-structured-data-sniffer">OpenLink Structured Data Sniffer</a></li>
 <li class="toctree-l4"><a class="reference internal" href="index#pocket">Pocket</a></li>
 <li class="toctree-l4"><a class="reference internal" href="index#zotero">Zotero</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="index#zotero-and-schema-org-rdfa">[ ] Zotero and Schema.org RDFa</a></li>
@@ -537,6 +544,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="index#tab-extensions">Tab Extensions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="index#foxytab">FoxyTab</a></li>
 <li class="toctree-l4"><a class="reference internal" href="index#onetab">OneTab</a></li>
 <li class="toctree-l4"><a class="reference internal" href="index#snipe">Snipe</a></li>
 <li class="toctree-l4"><a class="reference internal" href="index#tabs-outliner">Tabs Outliner</a></li>
@@ -551,7 +559,9 @@
 <li class="toctree-l4"><a class="reference internal" href="index#jsonview">JSONView</a></li>
 <li class="toctree-l4"><a class="reference internal" href="index#ng-inspector-for-angularjs">ng-inspector for AngularJS</a></li>
 <li class="toctree-l4"><a class="reference internal" href="index#postman">Postman</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index#preact-devtools">Preact Devtools</a></li>
 <li class="toctree-l4"><a class="reference internal" href="index#react-developer-tools">React Developer Tools</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index#refined-github">Refined Github</a></li>
 <li class="toctree-l4"><a class="reference internal" href="index#responsive-web-design-tester">Responsive Web Design Tester</a></li>
 <li class="toctree-l4"><a class="reference internal" href="index#requirify">Requirify</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="index#local-requirify">Local-requirify</a></li>
@@ -674,7 +684,7 @@
 
       <!-- footer -->
       <footer role="contentinfo">
-          &copy; <a href="../license">Copyright</a> WRD R&amp;D 2014 - 2020.
+          &copy; <a href="../license">Copyright</a> WRD R&amp;D 2014 - 2015.
 
       <br/>
       <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">

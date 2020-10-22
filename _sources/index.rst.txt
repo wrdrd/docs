@@ -5,6 +5,7 @@
 
 WRD R&D Documentation
 =======================
+| Docs: https://wrdrd.com/docs/
 | Docs: https://wrdrd.github.io/docs/
 | Src: https://github.com/wrdrd/docs
 
@@ -21,33 +22,14 @@ WRD R&D Documentation
    consulting/data-science
    consulting/units
    consulting/knowledge-engineering
-   consulting/linkedreproducibility
-   consulting/research
    consulting/entrepreneurship
-   consulting/personal-finance
-   consulting/investing
    consulting/education-technology
-   consulting/educational-testing
-   consulting/teachers
-   consulting/kids
    consulting/art-design
-   consulting/ux
    consulting/team-building
-   consulting/remote-work
    consulting/collaboration-plan
+   tools/index
    authors
    license
-
-
-Tools
-------
-| Homepage: https://westurner.github.io/tools/
-| Source: git https://github.com/westurner/tools
-
-.. toctree::
-  :maxdepth: 7
-
-  tools/index
 
 
 wrdrd

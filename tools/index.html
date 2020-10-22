@@ -6,7 +6,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- OpenGraph metadata: ogp.me -->
     <meta property="og:title" content="Tools" />
@@ -15,7 +15,7 @@
     <!--
     <meta property="og:description" content="" />
     -->
-    <meta property="og:image" content="https://wrdrd.github.io/static/png/drawing-7.09-v0.1.1--_desk.svg-470x242.png" />
+    <meta property="og:image" content="https://wrdrd.com/static/png/drawing-7.09-v0.1.1--_desk.svg-470x242.png" />
     <meta property="og:image:width" content="470" />
     <meta property="og:image:height" content="242" />
     <!--
@@ -40,7 +40,7 @@
 
 <link rel="stylesheet" href="../_static/css/font-awesome.min.css">
 
-<link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+<link rel="stylesheet" href="../_static/css/basicstrap.css" type="text/css" />
 <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
 <link rel="stylesheet" href="../_static/css/local.css" type="text/css" />
     
@@ -69,8 +69,8 @@
     <link rel="index" title="Index" href="../genindex" />
     <link rel="search" title="Search" href="../search" />
     <link rel="top" title="WRD R&amp;D Documentation" href="../index" />
-    <link rel="next" title="wrdrd" href="../wrdrd/readme" />
-    <link rel="prev" title="License" href="../license" /> 
+    <link rel="next" title="Credits" href="../authors" />
+    <link rel="prev" title="Collaboration Plan" href="../consulting/collaboration-plan" /> 
   </head>
   <body role="document">
     <div id="navbar-top" class="navbar navbar-default" role="navigation" aria-label="top navigation">
@@ -438,22 +438,29 @@
 <li><a class="reference internal" href="#accessibility-extensions">Accessibility Extensions</a><ul>
 <li><a class="reference internal" href="#accessibility-developer-tools">Accessibility Developer Tools</a></li>
 <li><a class="reference internal" href="#chromevox">ChromeVox</a></li>
+<li><a class="reference internal" href="#dark-reader">Dark Reader</a></li>
 <li><a class="reference internal" href="#deluminate">Deluminate</a></li>
+<li><a class="reference internal" href="#github-dark-theme">GitHub Dark Theme</a></li>
 <li><a class="reference internal" href="#high-contrast">High Contrast</a></li>
 <li><a class="reference internal" href="#nasa-night-launch">NASA Night Launch</a></li>
+<li><a class="reference internal" href="#shadowfox">ShadowFox</a></li>
 <li><a class="reference internal" href="#spectrum">Spectrum</a></li>
 <li><a class="reference internal" href="#stylish">Stylish</a></li>
 <li><a class="reference internal" href="#tiesto">Tiësto</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#safety-extensions">Safety Extensions</a><ul>
+<li><a class="reference internal" href="#facebook-container">Facebook Container</a></li>
+<li><a class="reference internal" href="#firefox-multi-account-containers">Firefox Multi-Account Containers</a></li>
 <li><a class="reference internal" href="#ghostery">Ghostery</a></li>
 <li><a class="reference internal" href="#https-everywhere">HTTPS Everywhere</a></li>
 <li><a class="reference internal" href="#ublock">uBlock</a></li>
+<li><a class="reference internal" href="#ublock-origin">uBlock Origin</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#content-extensions">Content Extensions</a><ul>
 <li><a class="reference internal" href="#hypothesis">Hypothesis</a></li>
+<li><a class="reference internal" href="#openlink-structured-data-sniffer">OpenLink Structured Data Sniffer</a></li>
 <li><a class="reference internal" href="#pocket">Pocket</a></li>
 <li><a class="reference internal" href="#zotero">Zotero</a><ul>
 <li><a class="reference internal" href="#zotero-and-schema-org-rdfa">[ ] Zotero and Schema.org RDFa</a></li>
@@ -462,6 +469,7 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#tab-extensions">Tab Extensions</a><ul>
+<li><a class="reference internal" href="#foxytab">FoxyTab</a></li>
 <li><a class="reference internal" href="#onetab">OneTab</a></li>
 <li><a class="reference internal" href="#snipe">Snipe</a></li>
 <li><a class="reference internal" href="#tabs-outliner">Tabs Outliner</a></li>
@@ -476,7 +484,9 @@
 <li><a class="reference internal" href="#jsonview">JSONView</a></li>
 <li><a class="reference internal" href="#ng-inspector-for-angularjs">ng-inspector for AngularJS</a></li>
 <li><a class="reference internal" href="#postman">Postman</a></li>
+<li><a class="reference internal" href="#preact-devtools">Preact Devtools</a></li>
 <li><a class="reference internal" href="#react-developer-tools">React Developer Tools</a></li>
+<li><a class="reference internal" href="#refined-github">Refined Github</a></li>
 <li><a class="reference internal" href="#responsive-web-design-tester">Responsive Web Design Tester</a></li>
 <li><a class="reference internal" href="#requirify">Requirify</a><ul>
 <li><a class="reference internal" href="#local-requirify">Local-requirify</a></li>
@@ -569,8 +579,8 @@
               </li>
 
             
-              <li><a href="../license" title="License" accesskey="P">previous </a></li>
-              <li><a href="../wrdrd/readme" title="wrdrd" accesskey="N">next </a></li>
+              <li><a href="../consulting/collaboration-plan" title="Collaboration Plan" accesskey="P">previous </a></li>
+              <li><a href="../authors" title="Credits" accesskey="N">next </a></li>
               <li><a href="../py-modindex" title="Python Module Index" >modules </a></li>
               <li><a href="../genindex" title="General Index" accesskey="I">index </a></li>
             
@@ -956,22 +966,29 @@
 <li><a class="reference internal" href="#accessibility-extensions">Accessibility Extensions</a><ul>
 <li><a class="reference internal" href="#accessibility-developer-tools">Accessibility Developer Tools</a></li>
 <li><a class="reference internal" href="#chromevox">ChromeVox</a></li>
+<li><a class="reference internal" href="#dark-reader">Dark Reader</a></li>
 <li><a class="reference internal" href="#deluminate">Deluminate</a></li>
+<li><a class="reference internal" href="#github-dark-theme">GitHub Dark Theme</a></li>
 <li><a class="reference internal" href="#high-contrast">High Contrast</a></li>
 <li><a class="reference internal" href="#nasa-night-launch">NASA Night Launch</a></li>
+<li><a class="reference internal" href="#shadowfox">ShadowFox</a></li>
 <li><a class="reference internal" href="#spectrum">Spectrum</a></li>
 <li><a class="reference internal" href="#stylish">Stylish</a></li>
 <li><a class="reference internal" href="#tiesto">Tiësto</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#safety-extensions">Safety Extensions</a><ul>
+<li><a class="reference internal" href="#facebook-container">Facebook Container</a></li>
+<li><a class="reference internal" href="#firefox-multi-account-containers">Firefox Multi-Account Containers</a></li>
 <li><a class="reference internal" href="#ghostery">Ghostery</a></li>
 <li><a class="reference internal" href="#https-everywhere">HTTPS Everywhere</a></li>
 <li><a class="reference internal" href="#ublock">uBlock</a></li>
+<li><a class="reference internal" href="#ublock-origin">uBlock Origin</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#content-extensions">Content Extensions</a><ul>
 <li><a class="reference internal" href="#hypothesis">Hypothesis</a></li>
+<li><a class="reference internal" href="#openlink-structured-data-sniffer">OpenLink Structured Data Sniffer</a></li>
 <li><a class="reference internal" href="#pocket">Pocket</a></li>
 <li><a class="reference internal" href="#zotero">Zotero</a><ul>
 <li><a class="reference internal" href="#zotero-and-schema-org-rdfa">[ ] Zotero and Schema.org RDFa</a></li>
@@ -980,6 +997,7 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#tab-extensions">Tab Extensions</a><ul>
+<li><a class="reference internal" href="#foxytab">FoxyTab</a></li>
 <li><a class="reference internal" href="#onetab">OneTab</a></li>
 <li><a class="reference internal" href="#snipe">Snipe</a></li>
 <li><a class="reference internal" href="#tabs-outliner">Tabs Outliner</a></li>
@@ -994,7 +1012,9 @@
 <li><a class="reference internal" href="#jsonview">JSONView</a></li>
 <li><a class="reference internal" href="#ng-inspector-for-angularjs">ng-inspector for AngularJS</a></li>
 <li><a class="reference internal" href="#postman">Postman</a></li>
+<li><a class="reference internal" href="#preact-devtools">Preact Devtools</a></li>
 <li><a class="reference internal" href="#react-developer-tools">React Developer Tools</a></li>
+<li><a class="reference internal" href="#refined-github">Refined Github</a></li>
 <li><a class="reference internal" href="#responsive-web-design-tester">Responsive Web Design Tester</a></li>
 <li><a class="reference internal" href="#requirify">Requirify</a><ul>
 <li><a class="reference internal" href="#local-requirify">Local-requirify</a></li>
@@ -1084,11 +1104,11 @@
 </ul>
 
   <h4>Previous topic</h4>
-  <p class="topless"><a href="../license"
-                        title="previous chapter">License</a></p>
+  <p class="topless"><a href="../consulting/collaboration-plan"
+                        title="previous chapter">Collaboration Plan</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="../wrdrd/readme"
-                        title="next chapter">wrdrd</a></p>
+  <p class="topless"><a href="../authors"
+                        title="next chapter">Credits</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -2133,8 +2153,8 @@ with <code class="docutils literal notranslate"><span class="pre">master</span><
 and <code class="docutils literal notranslate"><span class="pre">support</span></code> branches (<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">flow</span></code>).</p>
 <p>Gitflow branch names and prefixes are configured in <code class="docutils literal notranslate"><span class="pre">.git/config</span></code>;
 the defaults are:</p>
-<table class="table-striped table-responsive docutils align-default" id="id324">
-<caption><span class="caption-text">GitFlow Branch Names</span><a class="headerlink" href="#id324" title="Permalink to this table">¶</a></caption>
+<table class="table-striped table-responsive docutils align-default" id="id333">
+<caption><span class="caption-text">GitFlow Branch Names</span><a class="headerlink" href="#id333" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 20%" />
 <col style="width: 80%" />
@@ -2216,8 +2236,8 @@ that adds extremely useful commands for working with <a class="reference interna
 GitHub <strong>pull requests</strong>.</p>
 <p>HubFlow branch names and prefixes are configured in <code class="docutils literal notranslate"><span class="pre">.git/config</span></code>;
 the defaults are as follows:</p>
-<table class="table-striped table-responsive docutils align-default" id="id325">
-<caption><span class="caption-text">HubFlow Branch Names</span><a class="headerlink" href="#id325" title="Permalink to this table">¶</a></caption>
+<table class="table-striped table-responsive docutils align-default" id="id334">
+<caption><span class="caption-text">HubFlow Branch Names</span><a class="headerlink" href="#id334" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 20%" />
 <col style="width: 80%" />
@@ -5731,8 +5751,8 @@ components like <a class="reference internal" href="#ipython"><span class="std s
 to provide a multi-user web-based shell
 for many languages (<a class="reference internal" href="#python"><span class="std std-ref">Python</span></a>, <a class="reference internal" href="#ruby"><span class="std std-ref">Ruby</span></a>, <a class="reference internal" href="#java"><span class="std std-ref">Java</span></a>,
 <a class="reference internal" href="#haskell"><span class="std std-ref">Haskell</span></a>, Julia, R).</p>
-<table class="table-striped table-responsive docutils align-default" id="id326">
-<caption><span class="caption-text">IPython Jupyter comparison (adapted from <a class="reference external" href="http://jupyter.org">http://jupyter.org</a>)</span><a class="headerlink" href="#id326" title="Permalink to this table">¶</a></caption>
+<table class="table-striped table-responsive docutils align-default" id="id335">
+<caption><span class="caption-text">IPython Jupyter comparison (adapted from <a class="reference external" href="http://jupyter.org">http://jupyter.org</a>)</span><a class="headerlink" href="#id335" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 34%" />
 <col style="width: 66%" />
@@ -6195,8 +6215,8 @@ and <a class="reference internal" href="#ipython"><span class="std std-ref">IPyt
 environment variables,
 and aliases
 for routinizing workflow.</p>
-<table class="table-striped table-responsive docutils align-default" id="id327">
-<caption><span class="caption-text">Venv paths and cdaliases</span><a class="headerlink" href="#id327" title="Permalink to this table">¶</a></caption>
+<table class="table-striped table-responsive docutils align-default" id="id336">
+<caption><span class="caption-text">Venv paths and cdaliases</span><a class="headerlink" href="#id336" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 16%" />
 <col style="width: 24%" />
@@ -6651,7 +6671,7 @@ project sources.</p></li>
 <li><p><a class="reference internal" href="#high-contrast">High Contrast</a></p></li>
 <li><p><a class="reference internal" href="#spectrum">Spectrum</a></p></li>
 <li><p><a class="reference internal" href="#stylish">Stylish</a></p></li>
-<li><p><a class="reference internal" href="#id250">Tiësto</a> (Dark Chrome Theme)</p></li>
+<li><p><a class="reference internal" href="#id253">Tiësto</a> (Dark Chrome Theme)</p></li>
 <li><p>See also: <a class="reference internal" href="#f-lux"><span class="std std-ref">f.lux</span></a></p></li>
 </ul>
 <p><strong>Safety</strong></p>
@@ -6674,17 +6694,17 @@ project sources.</p></li>
 </ul>
 <p><strong>Development</strong></p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#id266">AngularJS Batarang</a></p></li>
+<li><p><a class="reference internal" href="#id274">AngularJS Batarang</a></p></li>
 <li><p><a class="reference internal" href="#firebug">FireBug</a> (see: <a class="reference internal" href="#id227">Chrome DevTools</a>)</p></li>
 <li><p><a class="reference internal" href="#firelogger-for-chrome">FireLogger for Chrome</a></p></li>
 <li><p><a class="reference internal" href="#jsonview">JSONView</a></p></li>
 <li><p><a class="reference internal" href="#ng-inspector-for-angularjs">ng-inspector for AngularJS</a></p></li>
 <li><p><a class="reference internal" href="#postman">Postman</a></p></li>
 <li><p><a class="reference internal" href="#react-developer-tools">React Developer Tools</a></p></li>
-<li><p><a class="reference internal" href="#id273">Responsive Web Design Tester</a></p></li>
+<li><p><a class="reference internal" href="#id282">Responsive Web Design Tester</a></p></li>
 <li><p><a class="reference internal" href="#requirify">Requirify</a></p></li>
 <li><p><a class="reference internal" href="#web-developer">Web Developer</a></p></li>
-<li><p><a class="reference internal" href="#id276">Window Resizer</a></p></li>
+<li><p><a class="reference internal" href="#id285">Window Resizer</a></p></li>
 </ul>
 <p><strong>Vim</strong></p>
 <ul class="simple">
@@ -6896,36 +6916,65 @@ written in <a class="reference internal" href="#id65"><span class="std std-ref">
 <div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn">https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn</a></div>
 </div>
 </div>
+<div class="section" id="dark-reader">
+<span id="index-284"></span><span id="id245"></span><h4>Dark Reader<a class="headerlink" href="#dark-reader" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/darkreader/darkreader">https://github.com/darkreader/darkreader</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://darkreader.org/">https://darkreader.org/</a></div>
+<div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh">https://chrome.google.com/webstore/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh</a></div>
+<div class="line">FirefoxExt: <a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/darkreader/">https://addons.mozilla.org/en-US/firefox/addon/darkreader/</a></div>
+<div class="line">SafariExt: <a class="reference external" href="https://darkreader.org/safari">https://darkreader.org/safari</a></div>
+<div class="line">EdgeExt: <a class="reference external" href="https://microsoftedge.microsoft.com/addons/detail/ifoakfbpdcdoeenechcleahebpibofpc">https://microsoftedge.microsoft.com/addons/detail/ifoakfbpdcdoeenechcleahebpibofpc</a></div>
+<div class="line">Twitter: <a class="reference external" href="https://twitter.com/darkreaderapp">https://twitter.com/darkreaderapp</a></div>
+</div>
+</div>
 <div class="section" id="deluminate">
-<span id="index-284"></span><span id="id245"></span><h4>Deluminate<a class="headerlink" href="#deluminate" title="Permalink to this headline">¶</a></h4>
+<span id="index-285"></span><span id="id246"></span><h4>Deluminate<a class="headerlink" href="#deluminate" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="https://deluminate.github.io/">https://deluminate.github.io/</a></div>
 <div class="line">Src: <a class="reference external" href="https://github.com/abstiles/deluminate">https://github.com/abstiles/deluminate</a></div>
 <div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/deluminate/iebboopaeangfpceklajfohhbpkkfiaa">https://chrome.google.com/webstore/detail/deluminate/iebboopaeangfpceklajfohhbpkkfiaa</a></div>
 </div>
 </div>
+<div class="section" id="github-dark-theme">
+<span id="index-286"></span><span id="id247"></span><h4>GitHub Dark Theme<a class="headerlink" href="#github-dark-theme" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Docs:  <a class="reference external" href="https://poychang.github.io/github-dark-theme/">https://poychang.github.io/github-dark-theme/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/poychang/github-dark-theme">https://github.com/poychang/github-dark-theme</a></div>
+<div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/github-dark-theme/odkdlljoangmamjilkamahebpkgpeacp">https://chrome.google.com/webstore/detail/github-dark-theme/odkdlljoangmamjilkamahebpkgpeacp</a></div>
+<div class="line">FirefoxExt: <a class="reference external" href="https://addons.mozilla.org/addon/github-dark-theme/">https://addons.mozilla.org/addon/github-dark-theme/</a></div>
+</div>
+</div>
 <div class="section" id="high-contrast">
-<span id="index-285"></span><span id="id246"></span><h4>High Contrast<a class="headerlink" href="#high-contrast" title="Permalink to this headline">¶</a></h4>
+<span id="index-287"></span><span id="id248"></span><h4>High Contrast<a class="headerlink" href="#high-contrast" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/high-contrast/djcfdncoelnlbldjfhinnjlhdjlikmph">https://chrome.google.com/webstore/detail/high-contrast/djcfdncoelnlbldjfhinnjlhdjlikmph</a></div>
 </div>
 </div>
 <div class="section" id="nasa-night-launch">
-<span id="index-286"></span><span id="id247"></span><h4>NASA Night Launch<a class="headerlink" href="#nasa-night-launch" title="Permalink to this headline">¶</a></h4>
+<span id="index-288"></span><span id="id249"></span><h4>NASA Night Launch<a class="headerlink" href="#nasa-night-launch" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">FirefoxExt: <a class="reference external" href="https://addons.mozilla.org/en-us/firefox/addon/nasa-night-launch/">https://addons.mozilla.org/en-us/firefox/addon/nasa-night-launch/</a></div>
 <div class="line">FirefoxXPI: <a class="reference external" href="https://addons.mozilla.org/firefox/downloads/latest/4908/addon-4908-latest.xpi">https://addons.mozilla.org/firefox/downloads/latest/4908/addon-4908-latest.xpi</a></div>
 </div>
 </div>
+<div class="section" id="shadowfox">
+<span id="index-289"></span><span id="id250"></span><h4>ShadowFox<a class="headerlink" href="#shadowfox" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/overdodactyl/ShadowFox">https://github.com/overdodactyl/ShadowFox</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://overdodactyl.github.io/ShadowFox/">https://overdodactyl.github.io/ShadowFox/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://github.com/overdodactyl/ShadowFox/wiki">https://github.com/overdodactyl/ShadowFox/wiki</a></div>
+</div>
+</div>
 <div class="section" id="spectrum">
-<span id="index-287"></span><span id="id248"></span><h4>Spectrum<a class="headerlink" href="#spectrum" title="Permalink to this headline">¶</a></h4>
+<span id="index-290"></span><span id="id251"></span><h4>Spectrum<a class="headerlink" href="#spectrum" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Src: <a class="reference external" href="https://github.com/lvivski/spectrum">https://github.com/lvivski/spectrum</a></div>
 <div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/spectrum/ofclemegkcmilinpcimpjkfhjfgmhieb">https://chrome.google.com/webstore/detail/spectrum/ofclemegkcmilinpcimpjkfhjfgmhieb</a></div>
 </div>
 </div>
 <div class="section" id="stylish">
-<span id="index-288"></span><span id="id249"></span><h4>Stylish<a class="headerlink" href="#stylish" title="Permalink to this headline">¶</a></h4>
+<span id="index-291"></span><span id="id252"></span><h4>Stylish<a class="headerlink" href="#stylish" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe">https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe</a></div>
 <div class="line">FirefoxExt: <a class="reference external" href="https://addons.mozilla.org/en-us/firefox/addon/stylish/">https://addons.mozilla.org/en-us/firefox/addon/stylish/</a></div>
@@ -6939,17 +6988,31 @@ written in <a class="reference internal" href="#id65"><span class="std std-ref">
 </ul>
 </div>
 <div class="section" id="tiesto">
-<span id="index-289"></span><span id="id250"></span><h4>Tiësto<a class="headerlink" href="#tiesto" title="Permalink to this headline">¶</a></h4>
+<span id="index-292"></span><span id="id253"></span><h4>Tiësto<a class="headerlink" href="#tiesto" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/ti%C3%ABsto/mnmeobddjkkgkglnogihcaejaleikhdh">https://chrome.google.com/webstore/detail/ti%C3%ABsto/mnmeobddjkkgkglnogihcaejaleikhdh</a></div>
 </div>
 <p>The Tiësto Chrome Theme is a Dark Theme for Chrome.</p>
-<span class="target" id="index-290"></span></div>
+<span class="target" id="index-293"></span></div>
 </div>
 <div class="section" id="safety-extensions">
-<span id="index-291"></span><span id="id251"></span><h3>Safety Extensions<a class="headerlink" href="#safety-extensions" title="Permalink to this headline">¶</a></h3>
+<span id="index-294"></span><span id="id254"></span><h3>Safety Extensions<a class="headerlink" href="#safety-extensions" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="facebook-container">
+<span id="index-295"></span><span id="id255"></span><h4>Facebook Container<a class="headerlink" href="#facebook-container" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/mozilla/contain-facebook">https://github.com/mozilla/contain-facebook</a></div>
+<div class="line">FirefoxExt: <a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/facebook-container/">https://addons.mozilla.org/en-US/firefox/addon/facebook-container/</a></div>
+</div>
+</div>
+<div class="section" id="firefox-multi-account-containers">
+<span id="index-296"></span><span id="id256"></span><h4>Firefox Multi-Account Containers<a class="headerlink" href="#firefox-multi-account-containers" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/mozilla/multi-account-containers/">https://github.com/mozilla/multi-account-containers/</a></div>
+<div class="line">FirefoxExt: <a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/">https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/</a></div>
+</div>
+</div>
 <div class="section" id="ghostery">
-<span id="index-292"></span><span id="id252"></span><h4>Ghostery<a class="headerlink" href="#ghostery" title="Permalink to this headline">¶</a></h4>
+<span id="index-297"></span><span id="id257"></span><h4>Ghostery<a class="headerlink" href="#ghostery" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="https://www.ghostery.com/en/home">https://www.ghostery.com/en/home</a></div>
 <div class="line">Src: <a class="reference external" href="https://www.ghostery.com/en/download">https://www.ghostery.com/en/download</a></div>
@@ -6966,7 +7029,7 @@ written in <a class="reference internal" href="#id65"><span class="std std-ref">
 </div>
 </div>
 <div class="section" id="https-everywhere">
-<span id="index-293"></span><span id="id253"></span><h4>HTTPS Everywhere<a class="headerlink" href="#https-everywhere" title="Permalink to this headline">¶</a></h4>
+<span id="index-298"></span><span id="id258"></span><h4>HTTPS Everywhere<a class="headerlink" href="#https-everywhere" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/HTTPS_Everywhere">https://en.wikipedia.org/wiki/HTTPS_Everywhere</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://www.eff.org/https-everywhere">https://www.eff.org/https-everywhere</a></div>
@@ -6980,7 +7043,7 @@ written in <a class="reference internal" href="#id65"><span class="std std-ref">
 to only connect over HTTPS to sites listed in its database.</p>
 </div>
 <div class="section" id="ublock">
-<span id="index-294"></span><span id="id254"></span><h4>uBlock<a class="headerlink" href="#ublock" title="Permalink to this headline">¶</a></h4>
+<span id="index-299"></span><span id="id259"></span><h4>uBlock<a class="headerlink" href="#ublock" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="https://www.ublock.org/">https://www.ublock.org/</a></div>
 <div class="line">Src: <a class="reference external" href="https://github.com/chrisaljoudi/ublock">https://github.com/chrisaljoudi/ublock</a></div>
@@ -7000,12 +7063,22 @@ cat releases.json <span class="se">\</span>
         <span class="s1">&#39;rgx and rgx.group(1,2)&#39;</span>
 </pre></div>
 </div>
-<span class="target" id="index-295"></span></div>
+</div>
+<div class="section" id="ublock-origin">
+<span id="index-300"></span><span id="id260"></span><h4>uBlock Origin<a class="headerlink" href="#ublock-origin" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/gorhill/uBlock">https://github.com/gorhill/uBlock</a></div>
+<div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm">https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm</a></div>
+<div class="line">FirefoxExt: <a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/">https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/</a></div>
+<div class="line">EdgeExt: <a class="reference external" href="https://microsoftedge.microsoft.com/addons/detail/odfafepnkmbhccpbejgmiehpchacaeak">https://microsoftedge.microsoft.com/addons/detail/odfafepnkmbhccpbejgmiehpchacaeak</a></div>
+<div class="line">SafariExt:</div>
+</div>
+<span class="target" id="index-301"></span></div>
 </div>
 <div class="section" id="content-extensions">
-<span id="index-296"></span><span id="id255"></span><h3>Content Extensions<a class="headerlink" href="#content-extensions" title="Permalink to this headline">¶</a></h3>
+<span id="index-302"></span><span id="id261"></span><h3>Content Extensions<a class="headerlink" href="#content-extensions" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="hypothesis">
-<span id="index-297"></span><span id="id256"></span><h4>Hypothesis<a class="headerlink" href="#hypothesis" title="Permalink to this headline">¶</a></h4>
+<span id="index-303"></span><span id="id262"></span><h4>Hypothesis<a class="headerlink" href="#hypothesis" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="https://hypothes.is/">https://hypothes.is/</a></div>
 <div class="line">Src: <a class="reference external" href="https://github.com/hypothesis/h">https://github.com/hypothesis/h</a></div>
@@ -7017,8 +7090,21 @@ cat releases.json <span class="se">\</span>
 </pre></div>
 </div>
 </div>
+<div class="section" id="openlink-structured-data-sniffer">
+<span id="index-304"></span><span id="id263"></span><h4>OpenLink Structured Data Sniffer<a class="headerlink" href="#openlink-structured-data-sniffer" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Src:  <a class="reference external" href="https://github.com/openlink/structured-data-sniffer">https://github.com/openlink/structured-data-sniffer</a></div>
+<div class="line">Homepage:  <a class="reference external" href="http://osds.openlinksw.com/">http://osds.openlinksw.com/</a></div>
+<div class="line">ChromeExt:  <a class="reference external" href="https://chrome.google.com/webstore/detail/openlink-structured-data/egdaiaihbdoiibopledjahjaihbmjhdj?hl=en">https://chrome.google.com/webstore/detail/openlink-structured-data/egdaiaihbdoiibopledjahjaihbmjhdj?hl=en</a></div>
+<div class="line">FirefoxExt:  <a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/openlink-structured-data-sniff/">https://addons.mozilla.org/en-US/firefox/addon/openlink-structured-data-sniff/</a></div>
+<div class="line">EdgeExtDoc:  <a class="reference external" href="http://osds.openlinksw.com/#DownloadEdge">http://osds.openlinksw.com/#DownloadEdge</a></div>
+</div>
+<ul class="simple">
+<li><p><a class="reference internal" href="../consulting/knowledge-engineering#json-ld"><span class="std std-ref">JSON-LD</span></a>, <span class="xref std std-ref">Microdata</span>, <a class="reference internal" href="../consulting/knowledge-engineering#rdfa"><span class="std std-ref">RDFa</span></a>, <a class="reference internal" href="../consulting/knowledge-engineering#turtle"><span class="std std-ref">Turtle</span></a></p></li>
+</ul>
+</div>
 <div class="section" id="pocket">
-<span id="index-298"></span><span id="id257"></span><h4>Pocket<a class="headerlink" href="#pocket" title="Permalink to this headline">¶</a></h4>
+<span id="index-305"></span><span id="id264"></span><h4>Pocket<a class="headerlink" href="#pocket" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="https://getpocket.com/">https://getpocket.com/</a></div>
 <div class="line">ChromeApp: <a class="reference external" href="https://chrome.google.com/webstore/detail/pocket/mjcnijlhddpbdemagnpefmlkjdagkogk">https://chrome.google.com/webstore/detail/pocket/mjcnijlhddpbdemagnpefmlkjdagkogk</a></div>
@@ -7030,7 +7116,7 @@ cat releases.json <span class="se">\</span>
 </div>
 </div>
 <div class="section" id="zotero">
-<span id="index-299"></span><span id="id258"></span><h4>Zotero<a class="headerlink" href="#zotero" title="Permalink to this headline">¶</a></h4>
+<span id="index-306"></span><span id="id265"></span><h4>Zotero<a class="headerlink" href="#zotero" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="https://www.zotero.org/">https://www.zotero.org/</a></div>
 <div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/zotero-connector/ekhagklcjbdpajgpjgmbionohlpdbjgc">https://chrome.google.com/webstore/detail/zotero-connector/ekhagklcjbdpajgpjgmbionohlpdbjgc</a></div>
@@ -7063,7 +7149,7 @@ as RDF</p></li>
 </li>
 </ul>
 <div class="section" id="zotero-and-schema-org-rdfa">
-<span id="index-300"></span><span id="id259"></span><h5>[ ] Zotero and Schema.org RDFa<a class="headerlink" href="#zotero-and-schema-org-rdfa" title="Permalink to this headline">¶</a></h5>
+<span id="index-307"></span><span id="id266"></span><h5>[ ] Zotero and Schema.org RDFa<a class="headerlink" href="#zotero-and-schema-org-rdfa" title="Permalink to this headline">¶</a></h5>
 <ul class="simple">
 <li><p><a class="reference external" href="https://forums.zotero.org/discussion/35992/export-to-schemaorg-rdfa-andor-microdata/">https://forums.zotero.org/discussion/35992/export-to-schemaorg-rdfa-andor-microdata/</a></p></li>
 </ul>
@@ -7073,13 +7159,20 @@ as RDF</p></li>
 <li><p><a class="reference external" href="https://lists.w3.org/Archives/Public/public-vocabs/2014Apr/0202.html">https://lists.w3.org/Archives/Public/public-vocabs/2014Apr/0202.html</a>
 (COinS, Citeproc-js, OpenAnnotation (+1))</p></li>
 </ul>
-<span class="target" id="index-301"></span></div>
+<span class="target" id="index-308"></span></div>
 </div>
 </div>
 <div class="section" id="tab-extensions">
-<span id="index-302"></span><span id="id260"></span><h3>Tab Extensions<a class="headerlink" href="#tab-extensions" title="Permalink to this headline">¶</a></h3>
+<span id="index-309"></span><span id="id267"></span><h3>Tab Extensions<a class="headerlink" href="#tab-extensions" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="foxytab">
+<span id="index-310"></span><span id="id268"></span><h4>FoxyTab<a class="headerlink" href="#foxytab" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">FirefoxExt:  <a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/foxytab/">https://addons.mozilla.org/en-US/firefox/addon/foxytab/</a></div>
+<div class="line">Support:  <a class="reference external" href="https://github.com/erosman/support/issues">https://github.com/erosman/support/issues</a></div>
+</div>
+</div>
 <div class="section" id="onetab">
-<span id="index-303"></span><span id="id261"></span><h4>OneTab<a class="headerlink" href="#onetab" title="Permalink to this headline">¶</a></h4>
+<span id="index-311"></span><span id="id269"></span><h4>OneTab<a class="headerlink" href="#onetab" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="https://www.one-tab.com/">https://www.one-tab.com/</a></div>
 <div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/onetab/chphlpgkkbolifaimnlloiipkdnihall">https://chrome.google.com/webstore/detail/onetab/chphlpgkkbolifaimnlloiipkdnihall</a></div>
@@ -7091,7 +7184,7 @@ as RDF</p></li>
 </ul>
 </div>
 <div class="section" id="snipe">
-<span id="index-304"></span><span id="id262"></span><h4>Snipe<a class="headerlink" href="#snipe" title="Permalink to this headline">¶</a></h4>
+<span id="index-312"></span><span id="id270"></span><h4>Snipe<a class="headerlink" href="#snipe" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="https://joe.sh/snipe">https://joe.sh/snipe</a></div>
 <div class="line">Src: <a class="reference external" href="https://github.com/josephschmitt/Snipe">https://github.com/josephschmitt/Snipe</a></div>
@@ -7099,30 +7192,30 @@ as RDF</p></li>
 </div>
 </div>
 <div class="section" id="tabs-outliner">
-<span id="index-305"></span><span id="id263"></span><h4>Tabs Outliner<a class="headerlink" href="#tabs-outliner" title="Permalink to this headline">¶</a></h4>
+<span id="index-313"></span><span id="id271"></span><h4>Tabs Outliner<a class="headerlink" href="#tabs-outliner" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/tabs-outliner/eggkanocgddhmamlbiijnphhppkpkmkl">https://chrome.google.com/webstore/detail/tabs-outliner/eggkanocgddhmamlbiijnphhppkpkmkl</a></div>
 </div>
 </div>
 <div class="section" id="tree-style-tab">
-<span id="index-306"></span><span id="id264"></span><h4>Tree Style Tab<a class="headerlink" href="#tree-style-tab" title="Permalink to this headline">¶</a></h4>
+<span id="index-314"></span><span id="id272"></span><h4>Tree Style Tab<a class="headerlink" href="#tree-style-tab" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="https://piro.sakura.ne.jp/xul/_treestyletab.html.en">https://piro.sakura.ne.jp/xul/_treestyletab.html.en</a></div>
 <div class="line">FirefoxExt: <a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/tree-style-tab/">https://addons.mozilla.org/en-US/firefox/addon/tree-style-tab/</a></div>
 </div>
-<span class="target" id="index-307"></span></div>
+<span class="target" id="index-315"></span></div>
 </div>
 <div class="section" id="development-extensions">
-<span id="index-308"></span><span id="id265"></span><h3>Development Extensions<a class="headerlink" href="#development-extensions" title="Permalink to this headline">¶</a></h3>
+<span id="index-316"></span><span id="id273"></span><h3>Development Extensions<a class="headerlink" href="#development-extensions" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="angularjs-batarang">
-<span id="index-309"></span><span id="id266"></span><h4>AngularJS Batarang<a class="headerlink" href="#angularjs-batarang" title="Permalink to this headline">¶</a></h4>
+<span id="index-317"></span><span id="id274"></span><h4>AngularJS Batarang<a class="headerlink" href="#angularjs-batarang" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Src: <a class="reference external" href="https://github.com/spalger/angularjs-batarang">https://github.com/spalger/angularjs-batarang</a></div>
 <div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/angularjs-batarang-stable/niopocochgahfkiccpjmmpchncjoapek">https://chrome.google.com/webstore/detail/angularjs-batarang-stable/niopocochgahfkiccpjmmpchncjoapek</a></div>
 </div>
 </div>
 <div class="section" id="firebug">
-<span id="index-310"></span><span id="id267"></span><h4>FireBug<a class="headerlink" href="#firebug" title="Permalink to this headline">¶</a></h4>
+<span id="index-318"></span><span id="id275"></span><h4>FireBug<a class="headerlink" href="#firebug" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="https://getfirebug.com/">https://getfirebug.com/</a></div>
 <div class="line">FirefoxExt: <a class="reference external" href="https://addons.mozilla.org/en-us/firefox/addon/firebug/">https://addons.mozilla.org/en-us/firefox/addon/firebug/</a></div>
@@ -7135,7 +7228,7 @@ as RDF</p></li>
 </ul>
 </div>
 <div class="section" id="firelogger">
-<span id="index-311"></span><span id="id268"></span><h4>FireLogger<a class="headerlink" href="#firelogger" title="Permalink to this headline">¶</a></h4>
+<span id="index-319"></span><span id="id276"></span><h4>FireLogger<a class="headerlink" href="#firelogger" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="https://firelogger.binaryage.com/">https://firelogger.binaryage.com/</a></div>
 <div class="line">Src: <a class="reference external" href="https://github.com/binaryage/firelogger">https://github.com/binaryage/firelogger</a></div>
@@ -7151,7 +7244,7 @@ as RDF</p></li>
 </ul>
 </div>
 <div class="section" id="firelogger-for-chrome">
-<span id="index-312"></span><span id="id269"></span><h4>FireLogger for Chrome<a class="headerlink" href="#firelogger-for-chrome" title="Permalink to this headline">¶</a></h4>
+<span id="index-320"></span><span id="id277"></span><h4>FireLogger for Chrome<a class="headerlink" href="#firelogger-for-chrome" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Src: <a class="reference external" href="https://github.com/MattSkala/chrome-firelogger">https://github.com/MattSkala/chrome-firelogger</a></div>
 <div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/firelogger-for-chrome/hmagilfopmdjkeomnjpchokglfdfjfeh">https://chrome.google.com/webstore/detail/firelogger-for-chrome/hmagilfopmdjkeomnjpchokglfdfjfeh</a></div>
@@ -7159,14 +7252,14 @@ as RDF</p></li>
 <p>See: <a class="reference internal" href="#firelogger">FireLogger</a></p>
 </div>
 <div class="section" id="jsonview">
-<span id="index-313"></span><span id="id270"></span><h4>JSONView<a class="headerlink" href="#jsonview" title="Permalink to this headline">¶</a></h4>
+<span id="index-321"></span><span id="id278"></span><h4>JSONView<a class="headerlink" href="#jsonview" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Src: <a class="reference external" href="https://github.com/gildas-lormeau/JSONView-for-Chrome">https://github.com/gildas-lormeau/JSONView-for-Chrome</a></div>
 <div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc">https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc</a></div>
 </div>
-<span class="target" id="index-314"></span></div>
+<span class="target" id="index-322"></span></div>
 <div class="section" id="ng-inspector-for-angularjs">
-<span id="ng-inspector-angularjs"></span><span id="index-315"></span><h4>ng-inspector for AngularJS<a class="headerlink" href="#ng-inspector-for-angularjs" title="Permalink to this headline">¶</a></h4>
+<span id="ng-inspector-angularjs"></span><span id="index-323"></span><h4>ng-inspector for AngularJS<a class="headerlink" href="#ng-inspector-for-angularjs" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="http://ng-inspector.org/">http://ng-inspector.org/</a></div>
 <div class="line">Src: <a class="reference external" href="https://github.com/rev087/ng-inspector">https://github.com/rev087/ng-inspector</a></div>
@@ -7176,21 +7269,39 @@ as RDF</p></li>
 </div>
 </div>
 <div class="section" id="postman">
-<span id="index-316"></span><span id="id271"></span><h4>Postman<a class="headerlink" href="#postman" title="Permalink to this headline">¶</a></h4>
+<span id="index-324"></span><span id="id279"></span><h4>Postman<a class="headerlink" href="#postman" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Src: <a class="reference external" href="https://github.com/a85/POSTMan-Chrome-Extension">https://github.com/a85/POSTMan-Chrome-Extension</a></div>
 <div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm">https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm</a></div>
 <div class="line">Twitter: <a class="reference external" href="https://twitter.com/postmanclient">https://twitter.com/postmanclient</a></div>
 </div>
+<span class="target" id="index-325"></span></div>
+<div class="section" id="preact-devtools">
+<h4>Preact Devtools<a class="headerlink" href="#preact-devtools" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Src:  <a class="reference external" href="https://github.com/preactjs/preact-devtools">https://github.com/preactjs/preact-devtools</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://preactjs.github.io/preact-devtools/">https://preactjs.github.io/preact-devtools/</a></div>
+<div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/preact-developer-tools/ilcajpmogmhpliinlbcdebhbcanbghmd">https://chrome.google.com/webstore/detail/preact-developer-tools/ilcajpmogmhpliinlbcdebhbcanbghmd</a></div>
+<div class="line">FirefoxExt:  <a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/preact-devtools/">https://addons.mozilla.org/en-US/firefox/addon/preact-devtools/</a></div>
+<div class="line">EdgeExt: <a class="reference external" href="https://microsoftedge.microsoft.com/addons/detail/hdkhobcafnfejjieimdkmjaiihkjpmhk">https://microsoftedge.microsoft.com/addons/detail/hdkhobcafnfejjieimdkmjaiihkjpmhk</a></div>
+</div>
 </div>
 <div class="section" id="react-developer-tools">
-<span id="index-317"></span><span id="id272"></span><h4>React Developer Tools<a class="headerlink" href="#react-developer-tools" title="Permalink to this headline">¶</a></h4>
+<span id="index-326"></span><span id="id280"></span><h4>React Developer Tools<a class="headerlink" href="#react-developer-tools" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi">https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi</a></div>
 </div>
 </div>
+<div class="section" id="refined-github">
+<span id="index-327"></span><span id="id281"></span><h4>Refined Github<a class="headerlink" href="#refined-github" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/sindresorhus/refined-github">https://github.com/sindresorhus/refined-github</a></div>
+<div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/refined-github/hlepfoohegkhhmjieoechaddaejaokhf">https://chrome.google.com/webstore/detail/refined-github/hlepfoohegkhhmjieoechaddaejaokhf</a></div>
+<div class="line">FirefoxExt: <a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/refined-github-/">https://addons.mozilla.org/en-US/firefox/addon/refined-github-/</a></div>
+</div>
+</div>
 <div class="section" id="responsive-web-design-tester">
-<span id="index-318"></span><span id="id273"></span><h4>Responsive Web Design Tester<a class="headerlink" href="#responsive-web-design-tester" title="Permalink to this headline">¶</a></h4>
+<span id="index-328"></span><span id="id282"></span><h4>Responsive Web Design Tester<a class="headerlink" href="#responsive-web-design-tester" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/responsive-web-design-tes/objclahbaimlfnbjdeobicmmlnbhamkg">https://chrome.google.com/webstore/detail/responsive-web-design-tes/objclahbaimlfnbjdeobicmmlnbhamkg</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://www.esolutions.se/">https://www.esolutions.se/</a></div>
@@ -7198,7 +7309,7 @@ as RDF</p></li>
 <p>See also: <a class="reference internal" href="#chrome-devtools"><span class="std std-ref">Chrome DevTools</span></a> Emulation</p>
 </div>
 <div class="section" id="requirify">
-<span id="index-319"></span><span id="id274"></span><h4>Requirify<a class="headerlink" href="#requirify" title="Permalink to this headline">¶</a></h4>
+<span id="index-329"></span><span id="id283"></span><h4>Requirify<a class="headerlink" href="#requirify" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="https://wzrd.in/">https://wzrd.in/</a></div>
 <div class="line">Src: <a class="reference external" href="https://github.com/mathisonian/requirify">https://github.com/mathisonian/requirify</a></div>
@@ -7210,7 +7321,7 @@ as RDF</p></li>
 JS console).</p>
 <p>&gt; require() npm modules in the browser console</p>
 <div class="section" id="local-requirify">
-<span id="index-320"></span><span id="id275"></span><h5>Local-requirify<a class="headerlink" href="#local-requirify" title="Permalink to this headline">¶</a></h5>
+<span id="index-330"></span><span id="id284"></span><h5>Local-requirify<a class="headerlink" href="#local-requirify" title="Permalink to this headline">¶</a></h5>
 <div class="line-block">
 <div class="line">NPM: <a class="reference external" href="https://www.npmjs.com/package/local-requirify">https://www.npmjs.com/package/local-requirify</a></div>
 </div>
@@ -7218,7 +7329,7 @@ JS console).</p>
 </div>
 </div>
 <div class="section" id="web-developer">
-<span id="web-developer-extension"></span><span id="index-321"></span><h4>Web Developer<a class="headerlink" href="#web-developer" title="Permalink to this headline">¶</a></h4>
+<span id="web-developer-extension"></span><span id="index-331"></span><h4>Web Developer<a class="headerlink" href="#web-developer" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm">https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://chrispederick.com/work/web-developer/">https://chrispederick.com/work/web-developer/</a></div>
@@ -7230,7 +7341,7 @@ JS console).</p>
 useful developer tools and bookmarklets in a structured menu.</p>
 </div>
 <div class="section" id="window-resizer">
-<span id="index-322"></span><span id="id276"></span><h4>Window Resizer<a class="headerlink" href="#window-resizer" title="Permalink to this headline">¶</a></h4>
+<span id="index-332"></span><span id="id285"></span><h4>Window Resizer<a class="headerlink" href="#window-resizer" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">ChromeExt: <a class="reference external" href="https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh">https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh</a></div>
 </div>
@@ -7238,9 +7349,9 @@ useful developer tools and bookmarklets in a structured menu.</p>
 </div>
 </div>
 <div class="section" id="vim-extensions">
-<span id="index-323"></span><span id="id277"></span><h3>Vim Extensions<a class="headerlink" href="#vim-extensions" title="Permalink to this headline">¶</a></h3>
+<span id="index-333"></span><span id="id286"></span><h3>Vim Extensions<a class="headerlink" href="#vim-extensions" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="vimium">
-<span id="index-324"></span><span id="id278"></span><h4>Vimium<a class="headerlink" href="#vimium" title="Permalink to this headline">¶</a></h4>
+<span id="index-334"></span><span id="id287"></span><h4>Vimium<a class="headerlink" href="#vimium" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Vimium">https://en.wikipedia.org/wiki/Vimium</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://vimium.github.io/">https://vimium.github.io/</a></div>
@@ -7250,8 +7361,8 @@ useful developer tools and bookmarklets in a structured menu.</p>
 <div class="line">SafariExt: <a class="reference external" href="https://github.com/televator-apps/vimari">https://github.com/televator-apps/vimari</a></div>
 </div>
 <p>Vimium is a Chrome Extension which adds <a class="reference internal" href="#vim"><span class="std std-ref">Vim</span></a>-like functionality.</p>
-<table class="table-striped table-responsive docutils align-default" id="id328">
-<caption><span class="caption-text">Vimium shortcuts</span><a class="headerlink" href="#id328" title="Permalink to this table">¶</a></caption>
+<table class="table-striped table-responsive docutils align-default" id="id337">
+<caption><span class="caption-text">Vimium shortcuts</span><a class="headerlink" href="#id337" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 66%" />
 <col style="width: 34%" />
@@ -7279,7 +7390,7 @@ useful developer tools and bookmarklets in a structured menu.</p>
 </table>
 </div>
 <div class="section" id="vimperator">
-<span id="index-325"></span><span id="id279"></span><h4>Vimperator<a class="headerlink" href="#vimperator" title="Permalink to this headline">¶</a></h4>
+<span id="index-335"></span><span id="id288"></span><h4>Vimperator<a class="headerlink" href="#vimperator" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Vimperator">https://en.wikipedia.org/wiki/Vimperator</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://www.vimperator.org/">http://www.vimperator.org/</a></div>
@@ -7294,7 +7405,7 @@ to the Firefox API, with <a class="reference internal" href="#vim"><span class="
 </ul>
 </div>
 <div class="section" id="wasavi">
-<span id="index-326"></span><span id="id280"></span><h4>Wasavi<a class="headerlink" href="#wasavi" title="Permalink to this headline">¶</a></h4>
+<span id="index-336"></span><span id="id289"></span><h4>Wasavi<a class="headerlink" href="#wasavi" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="https://appsweets.net/wasavi/">https://appsweets.net/wasavi/</a></div>
 <div class="line">Src: <a class="reference external" href="https://github.com/akahuku/wasavi">https://github.com/akahuku/wasavi</a></div>
@@ -7309,12 +7420,12 @@ to the Firefox API, with <a class="reference internal" href="#vim"><span class="
 </div>
 </div>
 <div class="section" id="web-servers">
-<span id="index-327"></span><span id="id281"></span><h2>Web Servers<a class="headerlink" href="#web-servers" title="Permalink to this headline">¶</a></h2>
+<span id="index-337"></span><span id="id290"></span><h2>Web Servers<a class="headerlink" href="#web-servers" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
 <div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/Web_server">https://en.wikipedia.org/wiki/Web_server</a></div>
 </div>
 <div class="section" id="apache-httpd">
-<span id="index-328"></span><span id="id282"></span><h3>Apache HTTPD<a class="headerlink" href="#apache-httpd" title="Permalink to this headline">¶</a></h3>
+<span id="index-338"></span><span id="id291"></span><h3>Apache HTTPD<a class="headerlink" href="#apache-httpd" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Apache_HTTP_Server">https://en.wikipedia.org/wiki/Apache_HTTP_Server</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://httpd.apache.org/">https://httpd.apache.org/</a></div>
@@ -7325,7 +7436,7 @@ to the Firefox API, with <a class="reference internal" href="#vim"><span class="
 server written in <a class="reference internal" href="#c"><span class="std std-ref">C</span></a> and <a class="reference internal" href="#id65"><span class="std std-ref">C++</span></a>.</p>
 </div>
 <div class="section" id="nginx">
-<span id="index-329"></span><span id="id283"></span><h3>Nginx<a class="headerlink" href="#nginx" title="Permalink to this headline">¶</a></h3>
+<span id="index-339"></span><span id="id292"></span><h3>Nginx<a class="headerlink" href="#nginx" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Nginx">https://en.wikipedia.org/wiki/Nginx</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://nginx.org/">https://nginx.org/</a></div>
@@ -7338,7 +7449,7 @@ server written in <a class="reference internal" href="#c"><span class="std std-r
 written in <a class="reference internal" href="#c"><span class="std std-ref">C</span></a>.</p>
 </div>
 <div class="section" id="tengine">
-<span id="index-330"></span><span id="id284"></span><h3>Tengine<a class="headerlink" href="#tengine" title="Permalink to this headline">¶</a></h3>
+<span id="index-340"></span><span id="id293"></span><h3>Tengine<a class="headerlink" href="#tengine" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://zh.wikipedia.org/wiki/Tengine">https://zh.wikipedia.org/wiki/Tengine</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://tengine.taobao.org/">https://tengine.taobao.org/</a></div>
@@ -7356,12 +7467,12 @@ modules and features bundled in.</p>
 </div>
 </div>
 <div class="section" id="documentation-tools">
-<span id="index-331"></span><span id="id285"></span><h2>Documentation Tools<a class="headerlink" href="#documentation-tools" title="Permalink to this headline">¶</a></h2>
+<span id="index-341"></span><span id="id294"></span><h2>Documentation Tools<a class="headerlink" href="#documentation-tools" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
 <div class="line">Docs: <a class="reference external" href="https://wrdrd.github.io/docs/consulting/education-technology#publishing">https://wrdrd.github.io/docs/consulting/education-technology#publishing</a></div>
 </div>
 <div class="section" id="docutils">
-<span id="index-332"></span><span id="id286"></span><h3>Docutils<a class="headerlink" href="#docutils" title="Permalink to this headline">¶</a></h3>
+<span id="index-342"></span><span id="id295"></span><h3>Docutils<a class="headerlink" href="#docutils" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="http://docutils.sourceforge.net">http://docutils.sourceforge.net</a></div>
 <div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/docutils">https://pypi.python.org/pypi/docutils</a></div>
@@ -7380,7 +7491,7 @@ Open Document files,
 XML, JSON, and a number of other formats.</p>
 </div>
 <div class="section" id="pandoc">
-<span id="index-333"></span><span id="id287"></span><h3>Pandoc<a class="headerlink" href="#pandoc" title="Permalink to this headline">¶</a></h3>
+<span id="index-343"></span><span id="id296"></span><h3>Pandoc<a class="headerlink" href="#pandoc" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Pandoc">https://en.wikipedia.org/wiki/Pandoc</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://pandoc.org/">https://pandoc.org/</a></div>
@@ -7400,7 +7511,7 @@ which can convert between HTML,
 HTML, and a number of other formats.</p>
 </div>
 <div class="section" id="pgs">
-<span id="index-334"></span><span id="id288"></span><h3>Pgs<a class="headerlink" href="#pgs" title="Permalink to this headline">¶</a></h3>
+<span id="index-344"></span><span id="id297"></span><h3>Pgs<a class="headerlink" href="#pgs" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Src: <a class="reference external" href="https://github.com/westurner/pgs">https://github.com/westurner/pgs</a></div>
 <div class="line">PyPI: <a class="reference external" href="https://pypi.python.org/pypi/pgs">https://pypi.python.org/pypi/pgs</a></div>
@@ -7446,7 +7557,7 @@ supports).</p></li>
 </ul>
 </div>
 <div class="section" id="sphinx">
-<span id="index-335"></span><span id="id289"></span><h3>Sphinx<a class="headerlink" href="#sphinx" title="Permalink to this headline">¶</a></h3>
+<span id="index-345"></span><span id="id298"></span><h3>Sphinx<a class="headerlink" href="#sphinx" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Sphinx_(documentation_generator)">https://en.wikipedia.org/wiki/Sphinx_(documentation_generator)</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://pypi.python.org/pypi/Sphinx">https://pypi.python.org/pypi/Sphinx</a></div>
@@ -7557,7 +7668,7 @@ A link to <span class="na">:ref:</span><span class="nv">`anchor &lt;anchor-name&
 </dl>
 </div>
 <div class="section" id="tinkerer">
-<span id="index-336"></span><span id="id290"></span><h3>Tinkerer<a class="headerlink" href="#tinkerer" title="Permalink to this headline">¶</a></h3>
+<span id="index-346"></span><span id="id299"></span><h3>Tinkerer<a class="headerlink" href="#tinkerer" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="http://tinkerer.me/">http://tinkerer.me/</a></div>
 <div class="line">Src: <a class="reference external" href="https://github.com/vladris/tinkerer">https://github.com/vladris/tinkerer</a></div>
@@ -7576,7 +7687,7 @@ or any other web hosting service.</p>
 </div>
 </div>
 <div class="section" id="backup-tools">
-<span id="index-337"></span><span id="id291"></span><h2>Backup Tools<a class="headerlink" href="#backup-tools" title="Permalink to this headline">¶</a></h2>
+<span id="index-347"></span><span id="id300"></span><h2>Backup Tools<a class="headerlink" href="#backup-tools" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Disk_cloning">https://en.wikipedia.org/wiki/Disk_cloning</a></p></li>
 <li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Disk_image#Virtualization">https://en.wikipedia.org/wiki/Disk_image#Virtualization</a></p></li>
@@ -7589,7 +7700,7 @@ or any other web hosting service.</p>
 <li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Comparison_of_file_synchronization_software">https://en.wikipedia.org/wiki/Comparison_of_file_synchronization_software</a></p></li>
 </ul>
 <div class="section" id="backup-ninja">
-<span id="index-338"></span><span id="id292"></span><h3>Backup Ninja<a class="headerlink" href="#backup-ninja" title="Permalink to this headline">¶</a></h3>
+<span id="index-348"></span><span id="id301"></span><h3>Backup Ninja<a class="headerlink" href="#backup-ninja" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="https://labs.riseup.net/code/projects/backupninja">https://labs.riseup.net/code/projects/backupninja</a></div>
 <div class="line">Src: git git://labs.riseup.net/backupninja.git</div>
@@ -7609,7 +7720,7 @@ and LDAP.</p></li>
 </ul>
 </div>
 <div class="section" id="bup">
-<span id="index-339"></span><span id="id293"></span><h3>bup<a class="headerlink" href="#bup" title="Permalink to this headline">¶</a></h3>
+<span id="index-349"></span><span id="id302"></span><h3>bup<a class="headerlink" href="#bup" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="https://bup.github.io/">https://bup.github.io/</a></div>
 <div class="line">Src: git <a class="reference external" href="https://github.com/bup/bup">https://github.com/bup/bup</a></div>
@@ -7633,7 +7744,7 @@ Access Control Lists, or extended attributes
 </ul>
 </div>
 <div class="section" id="clonezilla">
-<span id="index-340"></span><span id="id294"></span><h3>Clonezilla<a class="headerlink" href="#clonezilla" title="Permalink to this headline">¶</a></h3>
+<span id="index-350"></span><span id="id303"></span><h3>Clonezilla<a class="headerlink" href="#clonezilla" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Clonezilla">https://en.wikipedia.org/wiki/Clonezilla</a></div>
 <div class="line">DistroWatch: <a class="reference external" href="https://distrowatch.com/table.php?distribution=clonezilla">https://distrowatch.com/table.php?distribution=clonezilla</a></div>
@@ -7670,7 +7781,7 @@ and boot them with PXE and/or Wake-on-Lan.</p>
 </ul>
 </div>
 <div class="section" id="duplicity">
-<span id="index-341"></span><span id="id295"></span><h3>Duplicity<a class="headerlink" href="#duplicity" title="Permalink to this headline">¶</a></h3>
+<span id="index-351"></span><span id="id304"></span><h3>Duplicity<a class="headerlink" href="#duplicity" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Duplicity_(software)">https://en.wikipedia.org/wiki/Duplicity_(software)</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://duplicity.nongnu.org/">http://duplicity.nongnu.org/</a></div>
@@ -7691,7 +7802,7 @@ S3, Google Cloud Storage, Rackspace Cloudfiles (OpenStack Swift)).</p></li>
 </ul>
 </div>
 <div class="section" id="fsarchiver">
-<span id="index-342"></span><span id="id296"></span><h3>FSArchiver<a class="headerlink" href="#fsarchiver" title="Permalink to this headline">¶</a></h3>
+<span id="index-352"></span><span id="id305"></span><h3>FSArchiver<a class="headerlink" href="#fsarchiver" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/FSArchiver">https://en.wikipedia.org/wiki/FSArchiver</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://www.fsarchiver.org/">https://www.fsarchiver.org/</a></div>
@@ -7713,7 +7824,7 @@ filesystem.</p></li>
 </ul>
 </div>
 <div class="section" id="partclone">
-<span id="index-343"></span><span id="id297"></span><h3>partclone<a class="headerlink" href="#partclone" title="Permalink to this headline">¶</a></h3>
+<span id="index-353"></span><span id="id306"></span><h3>partclone<a class="headerlink" href="#partclone" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="https://partclone.org/">https://partclone.org/</a></div>
 <div class="line">Project: <a class="reference external" href="https://sourceforge.net/projects/partclone/">https://sourceforge.net/projects/partclone/</a></div>
@@ -7732,7 +7843,7 @@ with each specific filesystem driver.</p>
 </ul>
 </div>
 <div class="section" id="partimage">
-<span id="index-344"></span><span id="id298"></span><h3>partimage<a class="headerlink" href="#partimage" title="Permalink to this headline">¶</a></h3>
+<span id="index-354"></span><span id="id307"></span><h3>partimage<a class="headerlink" href="#partimage" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="http://www.partimage.org/Main_Page">http://www.partimage.org/Main_Page</a></div>
 <div class="line">Download: <a class="reference external" href="http://www.partimage.org/Download">http://www.partimage.org/Download</a></div>
@@ -7751,7 +7862,7 @@ for EXT4 and BTRFS support, see <a class="reference internal" href="#fsarchiver"
 </ul>
 </div>
 <div class="section" id="rsync">
-<span id="index-345"></span><span id="id299"></span><h3>rsync<a class="headerlink" href="#rsync" title="Permalink to this headline">¶</a></h3>
+<span id="index-355"></span><span id="id308"></span><h3>rsync<a class="headerlink" href="#rsync" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Rsync">https://en.wikipedia.org/wiki/Rsync</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://rsync.samba.org/">https://rsync.samba.org/</a></div>
@@ -7811,7 +7922,7 @@ rsync A/ B/
 </div>
 </div>
 <div class="section" id="rdiff">
-<span id="index-346"></span><span id="id300"></span><h4>rdiff<a class="headerlink" href="#rdiff" title="Permalink to this headline">¶</a></h4>
+<span id="index-356"></span><span id="id309"></span><h4>rdiff<a class="headerlink" href="#rdiff" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Rsync#rdiff">https://en.wikipedia.org/wiki/Rsync#rdiff</a></div>
 </div>
@@ -7822,7 +7933,7 @@ rsync A/ B/
 </ul>
 </div>
 <div class="section" id="rsnapshot">
-<span id="index-347"></span><span id="id301"></span><h4>rsnapshot<a class="headerlink" href="#rsnapshot" title="Permalink to this headline">¶</a></h4>
+<span id="index-357"></span><span id="id310"></span><h4>rsnapshot<a class="headerlink" href="#rsnapshot" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="https://rsnapshot.org/">https://rsnapshot.org/</a></div>
 <div class="line">Download: <a class="reference external" href="https://rsnapshot.org/download.html">https://rsnapshot.org/download.html</a></div>
@@ -7837,7 +7948,7 @@ built with <a class="reference internal" href="#rsync"><span class="std std-ref"
 </div>
 </div>
 <div class="section" id="rdiff-backup">
-<span id="index-348"></span><span id="id302"></span><h3>rdiff-backup<a class="headerlink" href="#rdiff-backup" title="Permalink to this headline">¶</a></h3>
+<span id="index-358"></span><span id="id311"></span><h3>rdiff-backup<a class="headerlink" href="#rdiff-backup" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="https://nongnu.org/rdiff-backup/">https://nongnu.org/rdiff-backup/</a></div>
 <div class="line">Download: <a class="reference external" href="https://download.savannah.gnu.org/releases/rdiff-backup/">https://download.savannah.gnu.org/releases/rdiff-backup/</a></div>
@@ -7856,7 +7967,7 @@ to previous revisions.</p></li>
 </ul>
 </div>
 <div class="section" id="systemrescuecd">
-<span id="index-349"></span><span id="id303"></span><h3>SystemRescueCD<a class="headerlink" href="#systemrescuecd" title="Permalink to this headline">¶</a></h3>
+<span id="index-359"></span><span id="id312"></span><h3>SystemRescueCD<a class="headerlink" href="#systemrescuecd" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/SystemRescueCD">https://en.wikipedia.org/wiki/SystemRescueCD</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://www.sysresccd.org/SystemRescueCd_Homepage">http://www.sysresccd.org/SystemRescueCd_Homepage</a></div>
@@ -7875,13 +7986,13 @@ for system maintenance.</p>
 </div>
 </div>
 <div class="section" id="standards">
-<span id="index-350"></span><span id="id304"></span><h2>Standards<a class="headerlink" href="#standards" title="Permalink to this headline">¶</a></h2>
+<span id="index-360"></span><span id="id313"></span><h2>Standards<a class="headerlink" href="#standards" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
 <div class="line">Docs: <a class="reference external" href="https://wrdrd.github.io/docs/consulting/knowledge-engineering#web-standards">https://wrdrd.github.io/docs/consulting/knowledge-engineering#web-standards</a></div>
 <div class="line">Docs: <a class="reference external" href="https://wrdrd.github.io/docs/consulting/knowledge-engineering#semantic-web-standards">https://wrdrd.github.io/docs/consulting/knowledge-engineering#semantic-web-standards</a></div>
 </div>
-<span class="target" id="index-351"></span><div class="section" id="css">
-<span id="index-352"></span><span id="id305"></span><h3>CSS<a class="headerlink" href="#css" title="Permalink to this headline">¶</a></h3>
+<span class="target" id="index-361"></span><div class="section" id="css">
+<span id="index-362"></span><span id="id314"></span><h3>CSS<a class="headerlink" href="#css" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">https://en.wikipedia.org/wiki/Cascading_Style_Sheets</a></div>
 <div class="line">Docs: <a class="reference external" href="https://wrdrd.github.io/docs/consulting/knowledge-engineering#css">https://wrdrd.github.io/docs/consulting/knowledge-engineering#css</a></div>
@@ -7895,7 +8006,7 @@ With javascript, the separation is then data, code, and presentation.</p></li>
 </ul>
 </div>
 <div class="section" id="filesystem-hierarchy-standard">
-<span id="fhs"></span><span id="index-353"></span><h3>Filesystem Hierarchy Standard<a class="headerlink" href="#filesystem-hierarchy-standard" title="Permalink to this headline">¶</a></h3>
+<span id="fhs"></span><span id="index-363"></span><h3>Filesystem Hierarchy Standard<a class="headerlink" href="#filesystem-hierarchy-standard" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard">https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard</a></div>
 <div class="line">Website: <a class="reference external" href="https://wiki.linuxfoundation.org/lsb/fhs">https://wiki.linuxfoundation.org/lsb/fhs</a></div>
@@ -7917,14 +8028,14 @@ with e.g. UnionFS, AUFS, and BTRFS filesystems.</p></li>
 </ul>
 </div>
 <div class="section" id="http">
-<span id="index-354"></span><span id="id306"></span><h3>HTTP<a class="headerlink" href="#http" title="Permalink to this headline">¶</a></h3>
+<span id="index-364"></span><span id="id315"></span><h3>HTTP<a class="headerlink" href="#http" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/HTTP">https://en.wikipedia.org/wiki/HTTP</a></div>
 <div class="line">Docs: <a class="reference external" href="https://wrdrd.github.io/docs/consulting/knowledge-engineering#http">https://wrdrd.github.io/docs/consulting/knowledge-engineering#http</a></div>
 <div class="line">Docs: <a class="reference external" href="https://wrdrd.github.io/docs/consulting/knowledge-engineering#http2">https://wrdrd.github.io/docs/consulting/knowledge-engineering#http2</a></div>
 </div>
 <div class="section" id="https">
-<span id="index-355"></span><span id="id307"></span><h4>HTTPS<a class="headerlink" href="#https" title="Permalink to this headline">¶</a></h4>
+<span id="index-365"></span><span id="id316"></span><h4>HTTPS<a class="headerlink" href="#https" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/HTTPS">https://en.wikipedia.org/wiki/HTTPS</a></div>
 <div class="line">Docs: <a class="reference external" href="https://wrdrd.github.io/docs/consulting/knowledge-engineering#https">https://wrdrd.github.io/docs/consulting/knowledge-engineering#https</a></div>
@@ -7932,14 +8043,14 @@ with e.g. UnionFS, AUFS, and BTRFS filesystems.</p></li>
 </div>
 </div>
 <div class="section" id="html">
-<span id="index-356"></span><span id="id308"></span><h3>HTML<a class="headerlink" href="#html" title="Permalink to this headline">¶</a></h3>
+<span id="index-366"></span><span id="id317"></span><h3>HTML<a class="headerlink" href="#html" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/HTML">https://en.wikipedia.org/wiki/HTML</a></div>
 <div class="line">Docs: <a class="reference external" href="https://wrdrd.github.io/docs/consulting/knowledge-engineering#html5">https://wrdrd.github.io/docs/consulting/knowledge-engineering#html5</a></div>
 </div>
 </div>
 <div class="section" id="json">
-<span id="index-357"></span><span id="id309"></span><h3>JSON<a class="headerlink" href="#json" title="Permalink to this headline">¶</a></h3>
+<span id="index-367"></span><span id="id318"></span><h3>JSON<a class="headerlink" href="#json" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/JSON">https://en.wikipedia.org/wiki/JSON</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://json.org/">https://json.org/</a></div>
@@ -7951,7 +8062,7 @@ which is now supported by libraries written in many languages.</p>
 <p>A list of objects with <code class="docutils literal notranslate"><span class="pre">key</span></code> and <code class="docutils literal notranslate"><span class="pre">value</span></code> attributes in JSON syntax:</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
 <span class="p">{</span> <span class="s2">&quot;key&quot;</span><span class="o">:</span> <span class="s2">&quot;language&quot;</span><span class="p">,</span> <span class="s2">&quot;value&quot;</span><span class="o">:</span> <span class="s2">&quot;Javascript&quot;</span> <span class="p">},</span>
-<span class="p">{</span> <span class="s2">&quot;key&quot;</span><span class="o">:</span> <span class="s2">&quot;version&quot;</span><span class="p">,</span> <span class="s2">&quot;value&quot;</span><span class="o">:</span> <span class="mi">1</span> <span class="p">},</span>
+<span class="p">{</span> <span class="s2">&quot;key&quot;</span><span class="o">:</span> <span class="s2">&quot;version&quot;</span><span class="p">,</span> <span class="s2">&quot;value&quot;</span><span class="o">:</span> <span class="mf">1</span> <span class="p">},</span>
 <span class="p">{</span> <span class="s2">&quot;key&quot;</span><span class="o">:</span> <span class="s2">&quot;example&quot;</span><span class="p">,</span> <span class="s2">&quot;value&quot;</span><span class="o">:</span> <span class="kc">true</span> <span class="p">}</span>
 <span class="p">]</span>
 </pre></div>
@@ -7969,7 +8080,7 @@ for parsing and indenting (“prettifying”) JSON from the commandline</p>
 </ul>
 </div>
 <div class="section" id="json5">
-<span id="index-358"></span><span id="id310"></span><h3>JSON5<a class="headerlink" href="#json5" title="Permalink to this headline">¶</a></h3>
+<span id="index-368"></span><span id="id319"></span><h3>JSON5<a class="headerlink" href="#json5" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia:</div>
 <div class="line">Homepage: <a class="reference external" href="https://json5.org/">https://json5.org/</a></div>
@@ -7985,7 +8096,7 @@ multiline strings, and escaped characters.</p>
 </ul>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
 <span class="c1">// comment</span>
-<span class="nx">key</span><span class="o">:</span>   <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="mf">2.</span><span class="p">,</span> <span class="mf">.3</span><span class="p">,</span> <span class="kc">NaN</span><span class="p">,</span> <span class="o">+</span><span class="nx">inf</span><span class="p">,</span> <span class="o">-</span><span class="nx">inf</span><span class="p">,</span> <span class="mh">0xF</span><span class="p">,</span> <span class="s1">&#39;thing1&#39;</span><span class="p">,</span> <span class="s2">&quot;thing2&quot;</span><span class="p">],</span>
+<span class="nx">key</span><span class="o">:</span>   <span class="p">[</span><span class="mf">0</span><span class="p">,</span> <span class="o">+</span><span class="mf">1</span><span class="p">,</span> <span class="mf">2.</span><span class="p">,</span> <span class="mf">.3</span><span class="p">,</span> <span class="kc">NaN</span><span class="p">,</span> <span class="o">+</span><span class="nx">inf</span><span class="p">,</span> <span class="o">-</span><span class="nx">inf</span><span class="p">,</span> <span class="mh">0xF</span><span class="p">,</span> <span class="s1">&#39;thing1&#39;</span><span class="p">,</span> <span class="s2">&quot;thing2&quot;</span><span class="p">],</span>
 <span class="s2">&quot;str&quot;</span><span class="o">:</span> <span class="s2">&quot;this is a \</span>
 <span class="s2">multi-line string&quot;</span><span class="p">,</span> <span class="c1">// trailing comma</span>
 <span class="p">}</span>
@@ -7993,20 +8104,20 @@ multiline strings, and escaped characters.</p>
 </div>
 </div>
 <div class="section" id="json-lines">
-<span id="index-359"></span><span id="id311"></span><h3>JSON-lines<a class="headerlink" href="#json-lines" title="Permalink to this headline">¶</a></h3>
+<span id="index-369"></span><span id="id320"></span><h3>JSON-lines<a class="headerlink" href="#json-lines" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="http://jsonlines.org/">http://jsonlines.org/</a></div>
 </div>
 <p>JSON-lines (newline-delimited JSON) is an informal spec
 for line-based processing of JSON e.g. for streaming records
 and unix pipes.</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;key&quot;</span><span class="o">:</span> <span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="s2">&quot;value&quot;</span><span class="o">:</span> <span class="mi">1</span><span class="p">}</span>
-<span class="p">{</span><span class="s2">&quot;key&quot;</span><span class="o">:</span> <span class="s2">&quot;green&quot;</span><span class="p">,</span> <span class="s2">&quot;value&quot;</span><span class="o">:</span> <span class="mi">2</span><span class="p">}</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;key&quot;</span><span class="o">:</span> <span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="s2">&quot;value&quot;</span><span class="o">:</span> <span class="mf">1</span><span class="p">}</span>
+<span class="p">{</span><span class="s2">&quot;key&quot;</span><span class="o">:</span> <span class="s2">&quot;green&quot;</span><span class="p">,</span> <span class="s2">&quot;value&quot;</span><span class="o">:</span> <span class="mf">2</span><span class="p">}</span>
 </pre></div>
 </div>
-<span class="target" id="index-360"></span></div>
+<span class="target" id="index-370"></span></div>
 <div class="section" id="json-ld">
-<span id="index-361"></span><span id="id312"></span><h3>JSON-LD<a class="headerlink" href="#json-ld" title="Permalink to this headline">¶</a></h3>
+<span id="index-371"></span><span id="id321"></span><h3>JSON-LD<a class="headerlink" href="#json-ld" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/JSON-LD">https://en.wikipedia.org/wiki/JSON-LD</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://json-ld.org">https://json-ld.org</a></div>
@@ -8057,7 +8168,7 @@ and unix pipes.</p>
 </div>
 </div>
 <div class="section" id="messagepack">
-<span id="msgpack"></span><span id="index-362"></span><h3>MessagePack<a class="headerlink" href="#messagepack" title="Permalink to this headline">¶</a></h3>
+<span id="msgpack"></span><span id="index-372"></span><h3>MessagePack<a class="headerlink" href="#messagepack" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/MessagePack">https://en.wikipedia.org/wiki/MessagePack</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://msgpack.org/">https://msgpack.org/</a></div>
@@ -8072,7 +8183,7 @@ with implementations in many languages.</p>
 </div>
 </div>
 <div class="section" id="text-editors">
-<span id="index-363"></span><span id="id313"></span><h2>Text Editors<a class="headerlink" href="#text-editors" title="Permalink to this headline">¶</a></h2>
+<span id="index-373"></span><span id="id322"></span><h2>Text Editors<a class="headerlink" href="#text-editors" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Text_editor">https://en.wikipedia.org/wiki/Text_editor</a></div>
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Source_code_editor">https://en.wikipedia.org/wiki/Source_code_editor</a></div>
@@ -8088,7 +8199,7 @@ for <a class="reference internal" href="#programming-languages"><span class="std
 <li><p><a class="reference external" href="https://en.wikipedia.org/wiki/List_of_text_editors">https://en.wikipedia.org/wiki/List_of_text_editors</a></p></li>
 </ul>
 <div class="section" id="gedit">
-<span id="index-364"></span><span id="id314"></span><h3>Gedit<a class="headerlink" href="#gedit" title="Permalink to this headline">¶</a></h3>
+<span id="index-374"></span><span id="id323"></span><h3>Gedit<a class="headerlink" href="#gedit" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Gedit">https://en.wikipedia.org/wiki/Gedit</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://wiki.gnome.org/Apps/Gedit">https://wiki.gnome.org/Apps/Gedit</a></div>
@@ -8105,7 +8216,7 @@ where it’s called “Text Editor”.</p></li>
 </ul>
 </div>
 <div class="section" id="notepad">
-<span id="notepadplusplus"></span><span id="index-365"></span><h3>Notepad++<a class="headerlink" href="#notepad" title="Permalink to this headline">¶</a></h3>
+<span id="notepadplusplus"></span><span id="index-375"></span><h3>Notepad++<a class="headerlink" href="#notepad" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Notepad%2B%2B">https://en.wikipedia.org/wiki/Notepad%2B%2B</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://notepad-plus-plus.org/">https://notepad-plus-plus.org/</a></div>
@@ -8132,10 +8243,10 @@ Notepad++ with <a class="reference internal" href="#python"><span class="std std
 <li><p>Notepad++ was the most used editor according to a 2015 Stack OVerflow
 survey.</p></li>
 </ul>
-<span class="target" id="index-366"></span></div>
+<span class="target" id="index-376"></span></div>
 </div>
 <div class="section" id="ides">
-<span id="ide"></span><span id="index-367"></span><span id="id315"></span><h2>IDEs<a class="headerlink" href="#ides" title="Permalink to this headline">¶</a></h2>
+<span id="ide"></span><span id="index-377"></span><span id="id324"></span><h2>IDEs<a class="headerlink" href="#ides" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Integrated_development_environment">https://en.wikipedia.org/wiki/Integrated_development_environment</a></div>
 <div class="line">WikipediaCategory: <a class="reference external" href="https://en.wikipedia.org/wiki/Category:Integrated_development_environments">https://en.wikipedia.org/wiki/Category:Integrated_development_environments</a></div>
@@ -8157,8 +8268,8 @@ code refactorings
 like renaming a method in every file in the project.</p></li>
 <li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Comparison_of_integrated_development_environments">https://en.wikipedia.org/wiki/Comparison_of_integrated_development_environments</a></p></li>
 </ul>
-<span class="target" id="index-368"></span><div class="section" id="emacs">
-<span id="gnu-emacs"></span><span id="index-369"></span><span id="id316"></span><h3>Emacs<a class="headerlink" href="#emacs" title="Permalink to this headline">¶</a></h3>
+<span class="target" id="index-378"></span><div class="section" id="emacs">
+<span id="gnu-emacs"></span><span id="index-379"></span><span id="id325"></span><h3>Emacs<a class="headerlink" href="#emacs" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/GNU_Emacs">https://en.wikipedia.org/wiki/GNU_Emacs</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://www.gnu.org/software/emacs/">https://www.gnu.org/software/emacs/</a></div>
@@ -8176,7 +8287,7 @@ that’s available for <a class="reference internal" href="#linux"><span class="
 the <code class="docutils literal notranslate"><span class="pre">Control</span></code> key.</p></li>
 </ul>
 <div class="section" id="spacemacs">
-<span id="index-370"></span><span id="id317"></span><h4>Spacemacs<a class="headerlink" href="#spacemacs" title="Permalink to this headline">¶</a></h4>
+<span id="index-380"></span><span id="id326"></span><h4>Spacemacs<a class="headerlink" href="#spacemacs" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Spacemacs">https://en.wikipedia.org/wiki/Spacemacs</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://wwww.spacemacs.org/">https://wwww.spacemacs.org/</a></div>
@@ -8190,7 +8301,7 @@ the <code class="docutils literal notranslate"><span class="pre">Control</span><
 </div>
 </div>
 <div class="section" id="org-mode">
-<span id="index-371"></span><span id="id318"></span><h4>org-mode<a class="headerlink" href="#org-mode" title="Permalink to this headline">¶</a></h4>
+<span id="index-381"></span><span id="id327"></span><h4>org-mode<a class="headerlink" href="#org-mode" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Org-mode">https://en.wikipedia.org/wiki/Org-mode</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://orgmode.org/">https://orgmode.org/</a></div>
@@ -8212,7 +8323,7 @@ implementations for other editors.</p></li>
 </ul>
 </div>
 <div class="section" id="org-babel">
-<span id="index-372"></span><span id="id319"></span><h4>org-babel<a class="headerlink" href="#org-babel" title="Permalink to this headline">¶</a></h4>
+<span id="index-382"></span><span id="id328"></span><h4>org-babel<a class="headerlink" href="#org-babel" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Org-mode#Org-babel">https://en.wikipedia.org/wiki/Org-mode#Org-babel</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://orgmode.org/worg/org-contrib/babel/">https://orgmode.org/worg/org-contrib/babel/</a></div>
@@ -8230,7 +8341,7 @@ are similar to Babel org-mode.</p></li>
 </div>
 </div>
 <div class="section" id="vscode">
-<span id="index-373"></span><span id="id320"></span><h3>VSCode<a class="headerlink" href="#vscode" title="Permalink to this headline">¶</a></h3>
+<span id="index-383"></span><span id="id329"></span><h3>VSCode<a class="headerlink" href="#vscode" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Visual_Studio_Code">https://en.wikipedia.org/wiki/Visual_Studio_Code</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></div>
@@ -8263,7 +8374,7 @@ or with <span class="xref std std-ref">Chocolatey</span>:</p>
 </div>
 </div>
 <div class="section" id="vim">
-<span id="index-374"></span><span id="id321"></span><h3>Vim<a class="headerlink" href="#vim" title="Permalink to this headline">¶</a></h3>
+<span id="index-384"></span><span id="id330"></span><h3>Vim<a class="headerlink" href="#vim" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Vim_(text_editor)">https://en.wikipedia.org/wiki/Vim_(text_editor)</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://www.vim.org/">https://www.vim.org/</a></div>
@@ -8318,7 +8429,7 @@ like <code class="docutils literal notranslate"><span class="pre">j</span></code
 <li><p>Twitter (<code class="docutils literal notranslate"><span class="pre">?</span></code> for help)</p></li>
 </ul>
 <div class="section" id="westurner-dotvim">
-<span id="index-375"></span><span id="id322"></span><h4>westurner/dotvim<a class="headerlink" href="#westurner-dotvim" title="Permalink to this headline">¶</a></h4>
+<span id="index-385"></span><span id="id331"></span><h4>westurner/dotvim<a class="headerlink" href="#westurner-dotvim" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Docs: <a class="reference external" href="https://westurner.github.io/dotfiles/usage/#vim">https://westurner.github.io/dotfiles/usage/#vim</a></div>
 <div class="line">Src: <a class="reference external" href="https://github.com/westurner/dotvim">https://github.com/westurner/dotvim</a></div>
@@ -8330,7 +8441,7 @@ like <code class="docutils literal notranslate"><span class="pre">j</span></code
 <p>westurner/dotvim is a set of plugins and configuration defaults for <a class="reference internal" href="#vim"><span class="std std-ref">Vim</span></a>.</p>
 </div>
 <div class="section" id="spacevim">
-<span id="index-376"></span><span id="id323"></span><h4>SpaceVim<a class="headerlink" href="#spacevim" title="Permalink to this headline">¶</a></h4>
+<span id="index-386"></span><span id="id332"></span><h4>SpaceVim<a class="headerlink" href="#spacevim" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="https://spacevim.org/">https://spacevim.org/</a></div>
 <div class="line">Src: <a class="reference external" href="https://github.com/SpaceVim/SpaceVim">https://github.com/SpaceVim/SpaceVim</a></div>
@@ -8346,7 +8457,7 @@ for <a class="reference internal" href="#vim"><span class="std std-ref">Vim</spa
 </div>
 </div>
 <div class="section" id="wrd-r-d-documentation">
-<span id="wrdrd-documentation"></span><span id="index-377"></span><h2>WRD R&amp;D Documentation<a class="headerlink" href="#wrd-r-d-documentation" title="Permalink to this headline">¶</a></h2>
+<span id="wrdrd-documentation"></span><span id="index-387"></span><h2>WRD R&amp;D Documentation<a class="headerlink" href="#wrd-r-d-documentation" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
 <div class="line">Docs: <a class="reference external" href="https://wrdrd.github.io/docs/">https://wrdrd.github.io/docs/</a></div>
 <div class="line">Docs: <a class="reference external" href="https://wrdrd.github.io/docs/tools/">https://wrdrd.github.io/docs/tools/</a></div>
@@ -8376,8 +8487,8 @@ for <a class="reference internal" href="#vim"><span class="std std-ref">Vim</spa
     </ul>
 <ul class="nav navbar-nav text-center">
       
-        <li><a href="../license" title="License" >previous</a></li>
-        <li><a href="../wrdrd/readme" title="wrdrd" >next</a></li>
+        <li><a href="../consulting/collaboration-plan" title="Collaboration Plan" >previous</a></li>
+        <li><a href="../authors" title="Credits" >next</a></li>
         <li><a href="../py-modindex" title="Python Module Index" >modules</a></li>
         <li><a href="../genindex" title="General Index" >index</a></li>
         <li><a href="#">top</a></li> 
@@ -8389,7 +8500,7 @@ for <a class="reference internal" href="#vim"><span class="std std-ref">Vim</spa
 
       <!-- footer -->
       <footer role="contentinfo">
-          &copy; <a href="../license">Copyright</a> WRD R&amp;D 2014 - 2020.
+          &copy; <a href="../license">Copyright</a> WRD R&amp;D 2014 - 2015.
 
       <br/>
       <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">

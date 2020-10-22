@@ -6,39 +6,21 @@ Data Science
 =============
 https://en.wikipedia.org/wiki/Data_science
 
-* :ref:`Science`
+* :ref:`Linked Reproducibility`
 
-  * :ref:`Open Science`
-  * :ref:`Scientific Method`
-
-* :ref:`Reproducibility`
-
-  * :ref:`Ten Simple Rules`
-  * :ref:`Linked Reproducibility`
-
-:ref:`Open Source` :ref:`Tools`:
-
-* :ref:`Jupyter Notebook`
-
-  * :ref:`CoCalc` (:ref:`SageMath`)
-  * :ref:`Google Colab`
-  * :ref:`Jupyter Docker Stacks` (:ref:`Conda`)
-  * :ref:`Jupyter Extensions`
+* :ref:`IPython Notebook` -> :ref:`Jupyter Notebook`
+ 
+  * https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks
   * :ref:`Jupyter and Reproducibility`
+  * ``conda install jupyter`` (:ref:`Conda` (:ref:`Anaconda`))
 
 
-.. index:: datasciencemasters.org
-.. _datasciencemasters.org: 
 
 datasciencemasters.org
 -------------------------
 | "The Open Source Data Science Masters"
 | http://datasciencemasters.org/
 |
-
-
-.. index:: Ten Simple Rules
-.. _ten simple rules:
 
 Ten Simple Rules
 ------------------
@@ -68,7 +50,6 @@ Ten Simple Rules
 
 1. For Every Result, Keep Track of How It Was Produced
 
-   * :ref:`git`
    * :ref:`RDF`, :ref:`JSON-LD` (e.g. :ref:`W3C` :ref:`PROV`)
    * :ref:`Workflow`
    * :ref:`Knowledge Engineering` > :ref:`Linked Data`
@@ -77,9 +58,8 @@ Ten Simple Rules
 
    * :ref:`Workflow`
    * :ref:`Continuous Delivery`
-
+     
      * :ref:`Test Automation` (e.g. :ref:`Test Driven Development <TDD>`)
-   * Data pipelines composed of containers
 
 3. Archive the Exact Versions of All External Programs Used
 
@@ -113,7 +93,7 @@ Ten Simple Rules
        np.random.randn(4, 2) # "standard normal" distribution
 
    * http://docs.scipy.org/doc/numpy/reference/routines.random.html#distributions
-   *
+   * 
 
    Python hash randomization and algorithmic determinism:
 
@@ -135,16 +115,11 @@ Ten Simple Rules
    Allowing Layers of Increasing Detail to Be Inspected
 
 
-   * :ref:`pandas`:
-
-     * http://pandas.pydata.org/pandas-docs/stable/reshaping.html#reshaping-by-stacking-and-unstacking
-     * http://pandas.pydata.org/pandas-docs/stable/reshaping.html#combining-with-stats-and-groupby
-
    * :ref:`Schema.org`: https://schema.org/docs/full.html
    * :ref:`SKOS`:
-
-     | http://www.w3.org/TR/skos-reference/
-     | http://www.w3.org/TR/skos-reference/skos.html
+     
+      | http://www.w3.org/TR/skos-reference/
+      | http://www.w3.org/TR/skos-reference/skos.html
 
      ``skos:narrower``, ``skos:narrowerTransitive``,
      ``skos:broader`` , ``skos:broaderTransistive``,
@@ -152,11 +127,11 @@ Ten Simple Rules
 
    * :ref:`XKOS`: "An SKOS extension for representing
      statistical classifications"
-
+     
      http://rdf-vocabulary.ddialliance.org/xkos.html
 
    * :ref:`QB`: "The RDF Data Cube Vocabulary"
-
+     
      ``qb:DataSet``,
      ``qb:Dimension``,
      ``qb:ObservationGroup``,
@@ -173,26 +148,13 @@ Ten Simple Rules
      * http://sphinx-doc.org/rest.html#footnotes #citations #substitutions
      * https://github.com/yoloseem/awesome-sphinxdoc
 
-   * :ref:`Linked Reproducibility`: :ref:`URIs <URI>`, :ref:`URLs
-     <URL>`, ``#uri-fragments``
-
 10. Provide Public Access to Scripts, Runs, and Results
 
-    * :ref:`BinderHub`
     * :ref:`Jupyter and Reproducibility`
     * https://en.wikipedia.org/wiki/Comparison_of_source_code_hosting_facilities
 
-      * :ref:`GitHub`: :ref:`Git`
-      * :ref:`BitBucket`: :ref:`Hg`, :ref:`Git`
-
-    * https://en.wikipedia.org/wiki/Digital_object_identifier
-
-      * https://en.wikipedia.org/wiki/Figshare
-      * https://en.wikipedia.org/wiki/Zenodo
-
-    * :ref:`Linked Reproducibility`
-    * :ref:`Education Technology` > :ref:`Publishing`
-
+      * :ref:`GitHub`: Git
+      * :ref:`BitBucket`: Hg, Git
 
 #TenSimpleRules for Creating a Good Data Management Plan
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -272,9 +234,6 @@ limited by resource constraints.
   + http://scikit-learn.org/stable/tutorial/machine_learning_map/
   + https://en.wikipedia.org/wiki/Firefly_algorithm
 
-
-.. index:: Smoothies
-.. _smoothies:
 
 Smoothies
 +++++++++++
@@ -370,7 +329,7 @@ Theory
 
 Science
 +++++++++
-| Wikipedia: https://en.wikipedia.org/wiki/Science
+https://en.wikipedia.org/wiki/Science
 
 https://en.wikipedia.org/wiki/Outline_of_science
 
@@ -382,7 +341,7 @@ https://en.wikipedia.org/wiki/Category:Science
 
 Cognitive Biases
 ~~~~~~~~~~~~~~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/Cognitive_bias
+https://en.wikipedia.org/wiki/Cognitive_bias
 
 https://en.wikipedia.org/wiki/Heuristics_in_judgment_and_decision-making
 
@@ -405,7 +364,7 @@ https://en.wikipedia.org/wiki/Critical_thinking
 
 Open Science
 ~~~~~~~~~~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/Open_science
+https://en.wikipedia.org/wiki/Open_science
 
 * https://en.wikipedia.org/wiki/Open_source
 * https://en.wikipedia.org/wiki/Open_standard
@@ -425,7 +384,7 @@ https://en.wikipedia.org/wiki/Peer_review
 
 Scientific Method
 ~~~~~~~~~~~~~~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/Scientific_method
+https://en.wikipedia.org/wiki/Scientific_method
 
 https://en.wikipedia.org/wiki/Argument
 
@@ -444,34 +403,23 @@ https://en.wikipedia.org/wiki/Hypothesis
 
 Reproducibility
 ``````````````````
-| Wikipedia:  https://en.wikipedia.org/wiki/Reproducibility
+https://en.wikipedia.org/wiki/Design_of_experiments
 
-* https://en.wikipedia.org/wiki/Design_of_experiments
 * https://en.wikipedia.org/wiki/Design_of_experiments#Discussion_topics_when_setting_up_an_experimental_design
 * https://en.wikipedia.org/wiki/Repeatability
+* https://en.wikipedia.org/wiki/Reproducibility
 
-See:
-
-* :ref:`Jupyter and Reproducibility`
-* :ref:`LinkedReproducibility`
+See: :ref:`Jupyter and Reproducibility`
 
 
 .. index:: Systematic Review
-.. _systematic review:
+.. index:: Meta-analysis
 
 Systematic Review
 ```````````````````
-| Wikipedia: https://en.wikipedia.org/wiki/Systematic_review
+https://en.wikipedia.org/wiki/Meta-analysis
 
-
-
-.. index:: Meta-analysis
-.. _meta-analysis:
-
-Meta-analysis
-```````````````
-| Wikipedia: https://en.wikipedia.org/wiki/Meta-analysis
-
+https://en.wikipedia.org/wiki/Systematic_review
 
 
 .. index:: Linked Reproducibility
@@ -479,12 +427,77 @@ Meta-analysis
 
 Linked Reproducibility
 `````````````````````````
-| Hashtag: ``#LinkedReproducibility``
-| Twitter: https://twitter.com/hashtag/LinkedReproducibility
-| Wrdrddocs: :ref:`linkedreproducibility`
+:ref:`linked data` + :ref:`Reproducibility` => :ref:`Linked Reproducibility`
 
-.. note::
-   This heading is now merged into a separate page: :ref:`linkedreproducibility`
+::
+
+    Reproducibility ---\___  Linked Reproducibility
+    Linked Data     ---/
+
+
+In :ref:`turtle` :ref:`rdf` syntax:
+::
+
+    :LinkedData rdf:type skos:Concept ;
+        rdfs:label "Linked Data"@en ;
+        schema:name "Linked Data"@en ;
+        owl:sameAs <https://en.wikipedia.org/wiki/Linked_data> ;
+        owl:sameAs <http://dbpedia.org/page/Linked_data> ;
+
+        owl:sameAs <http://ja.dbpedia.org/resource/Linked_data>
+        owl:sameAs <http://es.dbpedia.org/resource/Datos_enlazados> ;
+        owl:sameAs <http://fr.dbpedia.org/resource/Web_des_donn%C3%A9es> ;
+        owl:sameAs <http://nl.dbpedia.org/resource/Linked_data>
+        owl:sameAs <http://ko.dbpedia.org/resource/링크드_데이터> ;
+        owl:sameAs <http://wikidata.org/entity/Q515701> ;
+        .
+
+    :Reproducibility a skos:Concept ;
+        rdfs:label "Reproducibility"@en ;
+        schema:name "Reproducibility"@en ;
+        owl:sameAs <https://en.wikipedia.org/wiki/Reproducibility> ;
+        owl:sameAs <http://dbpedia.org/page/Reproducibility> ;
+        .
+
+    :LinkedReproducibility a skos:Concept ;
+        rdfs:label "Linked Reproducibility"@en ;
+        schema:name "Linked Reproducibility"@en ;
+        skos:related [ :LinkedData, :Reproducibility ] ;
+        .
+
+Further Objectives:
+
+* Develop best practices guidelines and
+  and/or an :ref:`RDF` schema and vocabulary ("``repro:``)
+  for linking between studies, their supporting data,
+  and their collection methods with URIs.
+
+  * developing vocabularies:
+
+    + :ref:`semantic web tools`
+    + :ref:`Git`, :ref:`GitHub Pages`
+    + [ ] :ref:`schema.org` extension vocabularies
+
+  * linked reproduciblity edges:
+
+    + ``similarTo``
+    + ``concursWith``
+    + ``discordantWith``
+    + ``intendedToReproduce``
+    + ``reproduces``
+
+  * linked reproducibility classes and properties:
+
+    * [x] schema.org/MedicalStudy, MedicalObservationalStudy, MedicalTrial
+
+      * [ ] @schemed
+
+    * [ ] Study, ObservationalStudy, RandomizedControlledTrial, RCT
+    * [ ] StudyProtocol
+    * [ ] StudyGroup (design, admin, participant, stats)
+    * [ ] StudyGroup.masked <bool>, StudyProtocol.url
+    * See: https://westurner.org/opengov/us/#personal-health-agenda
+
 
 .. index:: Math
 .. index:: Mathematics
@@ -498,6 +511,7 @@ https://en.wikipedia.org/wiki/Outline_of_mathematics
 
 https://en.wikipedia.org/wiki/Mathematics_education#Methods
 
+* http://www.iflscience.com/brain/math-gifs-will-help-you-understand-these-concepts-better-your-teacher-ever-did
 
 
 .. index:: Math Courses
@@ -519,7 +533,7 @@ Math Courses
 * :ref:`information theory`
 * "Mathematics for Computer Science" (CC-BY-SA 3.0)
 
-  https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-spring-2015/readings/MIT6_042JS15_textbook.pdf
+  http://courses.csail.mit.edu/6.042/spring14/mcs.pdf
 * https://www.khanacademy.org/math/recreational-math
 * https://www.khanacademy.org/math/competition-math
 * https://www.class-central.com/subject/maths
@@ -531,11 +545,11 @@ Math Courses
 
 Project Euler
 ~~~~~~~~~~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/Project_Euler
-| Homepage: https://projecteuler.net/
+https://en.wikipedia.org/wiki/Project_Euler
 
-Project Euler is an very well-known set of math algorithm problems
-with free online grading.
+https://projecteuler.net/
+
+Math Algorithm Problems
 
 
 .. index:: Rosalind
@@ -543,197 +557,38 @@ with free online grading.
 
 Rosalind
 ~~~~~~~~~~
-| Web: http://rosalind.info/
+http://rosalind.info/
 
-Rosalind hosts a number of :ref:`Python`-based Bioinformatics and Data Science
-Problems and Exercises with free online grading.
+Bioinformatics and Science Algorithm Problems
 
 
 .. index:: Mathematical Notation
-.. _mathematical notation:
+.. _mathematical-notation:
 
 Mathematical Notation
 ~~~~~~~~~~~~~~~~~~~~~~~
 * https://en.wikipedia.org/wiki/Outline_of_mathematics#Mathematical_notation
 * https://en.wikipedia.org/wiki/List_of_mathematical_symbols
-* https://en.wikipedia.org/wiki/List_of_mathematical_symbols_by_subject
 * https://en.wikipedia.org/wiki/Greek_letters_used_in_mathematics,_science,_and_engineering
 * https://en.wikipedia.org/wiki/Latin_letters_used_in_mathematics
 
 
-See:
-
-* :ref:`Knowledge Engineering` > :ref:`symbols`
-* :ref:`Units` > :ref:`Units and RDF`
-
-
 .. index:: LaTeX
-.. _latex:
+.. _LaTeX:
 
 LaTeX
-``````
-| Wikipedia: https://en.wikipedia.org/wiki/LaTeX
-| LearnXinYMinutes: https://learnxinyminutes.com/docs/latex/
-| Docs: http://en.wikibooks.org/wiki/LaTeX
+~~~~~~
+https://en.wikipedia.org/wiki/LaTeX
 
-* https://en.wikipedia.org/wiki/LaTeX#Example
-* "A Primer on Using LaTeX in Jupyter Notebooks"
-  http://data-blog.udacity.com/posts/2016/10/latex-primer/
-
-https://en.wikipedia.org/wiki/Comparison_of_TeX_editors
-
-- https://en.wikipedia.org/wiki/LyX
-- https://twitter.com/wstein389/status/1002446637908811776
-
-      Completely new LaTeX editor in https://cocalc.com .  Open source, is
-      written in React, has unlimited multipanel views, realtime collab,
-      records all edits (TimeTravel), forward an inverse search, clickable
-      links in the PDF,supports SageTex out of the box, and autoformat...
-
- - https://github.com/jupyterlab/jupyterlab-latex
- - https://www.google.com/search?q=collaborative+latex
-
-
-.. index:: latex2sympy
-.. _latex2sympy:
-
-latex2sympy
-`````````````
-| Pypi: https://pypi.org/project/latex2sympy3/
-| Src: https://github.com/augustt198/latex2sympy
-| Doc: https://docs.sympy.org/latest/modules/parsing.html
-
-latex2sympy converts from :ref:`LaTeX` to Python
-code that works with the :ref:`SymPy` CAS (:ref:`Computer Algebra
-System`).
-
-* latex2sympy is now integrated with :ref:`SymPy` as
-  ``sympy.parsing.latex.parse_latex``:
-  https://docs.sympy.org/latest/modules/parsing.html
-
-  .. code:: python
-
-     #! pip install -y antlr4-python3-runtime
-     #! conda install -y antlr-python-runtime
-     from sympy.parsing.latex import parse_latex
-
-     parse_latex(r'\frac{n(n+1)(2n+1)}{6}')
-     # ((2*n + 1)*n(n + 1))/6
-     parse_latex(r'\prod\limits_{i=1}^n x = x^n')
-     # LaTeXParsingError: I don't understand this
-     # \prod\limits_{i=1}^n x = x^n
-     # ~~~~~^
-
-.. index:: MathJax
-.. _mathjax:
-
-MathJax
-````````
-| Wikipedia: https://en.wikipedia.org/wiki/MathJax
-| Homepage: https://www.mathjax.org/
-| Docs: https://docs.mathjax.org/en/latest/input/tex/
-
-MathJax is a :ref:`Javascript` library for displaying
-:ref:`mathml`,
-:ref:`latex`,
-and :ref:`ASCIIMathML` markup
-in a browser.
-
+* https://en.wikipedia.org/wiki/LaTeX#Examples
 * http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference
+* http://nbviewer.ipython.org/github/ipython/ipython/blob/master/examples/Notebook/Typesetting%20Equations.ipynb
 
+Tools
 
-.. index:: Jupyter and LaTeX
-.. _jupyter and latex:
-
-Jupyter and LaTeX
-``````````````````
-:ref:`Jupyter Notebook` supports a number of different ways
-to include LaTeX/MathTeX in a notebook with :ref:`MathJax`:
-
-1. In a Markdown cell, wrap the LaTeX in double dollar signs: ``$$``:
-
-   .. code:: markdown
-
-      $$c = \sqrt{a^2 + b^2}$$
-
-      Note that these render differently:
-      $$x = share price_today^2 $$
-      $$x = {share price}_{today}^2 $$
-      $$x = \text{share price}_{today}^2 $$
-      $$x = \textit{share price}_{today}^2 $$
-
-2. To display a LaTeX expression inline (without surrounding newline),
-   wrap it in single dollar signs: ``$``:
-
-   .. code:: markdown
-
-      The quadratic equation, $c = \sqrt{a^2 + b^2}$, looks curiously
-      like the quantum probability amplitude equation.
-
-   To display multiple regular dollar signs, escape them with
-   double-backslash ``\\``:
-
-   .. code:: markdown
-
-      One dollar sign: \\$ and another \\$
-
-3. Start a Markdown cell with ``%%latex``:
-
-   .. code:: markdown
-
-      %%latex
-      c = \sqrt{a^2 + b^2}
-
-4. Wrap a latex block with ``$`` and ``\begin{align}``:
-
-   .. code:: markdown
-
-      $
-      \begin{align}
-      \textit{Earnings Per Share} & = \frac{\textit{Earnings}}{\textit{Market Value Per Share}} \\
-      \textit{EPS} & = \frac{\textit{Earnings}}{\textit{Share Price}}
-      \end{align}
-      $
-
-5. Call the ``display()`` function with one or more Math/Latex objects,
-   or just return a ``Math``/``Latex`` object:
-
-   .. code:: python
-
-      from IPython.display import Math
-      Math(r'c = \sqrt{a^2 + b^2}')
-
-   .. code:: python
-
-      from IPython.display import Math, Latex, display
-      display(
-         Math(r'c = \sqrt{a^2 + b^2}'),
-         Latex(r'''\begin{align}''' +'\n'+ 'y = mx+b' +'\n'+ '\end{align}')))
-
-
-Resources for learning :ref:`Jupyter` and :ref:`LaTeX`:
-
-* https://ipython.org/ipython-doc/dev/install/install.html#mathjax
-* https://stackoverflow.com/questions/13208286/how-to-write-latex-in-ipython-notebook
-* https://nbviewer.jupyter.org/github/jupyter/notebook/blob/master/docs/source/examples/Notebook/Typesetting%20Equations.ipynb
-
-
-.. index:: MathML
-.. _mathml:
-
-MathML
-```````
-| Wikipedia: https://en.wikipedia.org/wiki/MathML
-
-.. index:: ASCIIMathML
-.. _asciimathml:
-
-ASCIIMathML
-^^^^^^^^^^^^
-| Wikipedia: https://en.wikipedia.org/wiki/ASCIIMathML
-
-* :ref:`ASCII`
-* :ref:`MathML`
+* http://docs.mathjax.org/en/latest/tex.html
+* http://ipython.org/ipython-doc/dev/install/install.html#mathjax
+* http://nbviewer.ipython.org/gist/rpmuller/5920182
 
 
 .. index:: Information Theory
@@ -755,12 +610,6 @@ https://en.wikipedia.org/wiki/Signal-to-noise_ratio
 https://en.wikipedia.org/wiki/Probability_theory
 
 * https://www.khanacademy.org/math/probability
-* https://www.khanacademy.org/computing/computer-science/informationtheory
-* https://www.khanacademy.org/science/physics/quantum-physics
-
-https://en.wikipedia.org/wiki/Quantum_information_science
-
-* https://en.wikipedia.org/wiki/Quantum_information
 
 
 .. index:: Linear Algebra
@@ -776,40 +625,6 @@ https://en.wikipedia.org/wiki/Linear_algebra
   (:ref:`Jupyter Notebooks <jupyter notebook>`)
 
 
-
-.. index:: Linear Algebra Software
-.. _linear algebra software:
-
-Linear Algebra Software
-`````````````````````````
-* https://docs.scipy.org/doc/numpy/reference/routines.linalg.html
-* https://docs.scipy.org/doc/scipy/reference/tutorial/linalg.html
-* https://docs.scipy.org/doc/scipy/reference/linalg.html
-* https://docs.sympy.org/latest/modules/matrices/matrices.html
-* https://docs.sympy.org/latest/modules/solvers/solvers.html
-* https://scipy-lectures.org/advanced/scipy_sparse/
-* http://scipy-lectures.org/intro/numpy/operations.html#broadcasting
-
-  .. figure:: https://i.stack.imgur.com/JcKv1.png
-     :target: https://i.stack.imgur.com/JcKv1.png
-
-     Array Broadcasting in :ref:`NumPy`:
-
-* https://hadrienj.github.io/posts/Deep-Learning-Book-Series-2.1-Scalars-Vectors-Matrices-and-Tensors/#21-scalars-vectors-matrices-and-tensors
-
-  .. figure:: https://hadrienj.github.io/assets/images/2.1/scalar-vector-matrix-tensor.png
-     :target: https://hadrienj.github.io/assets/images/2.1/scalar-vector-matrix-tensor.png
-
-     Scalar, Vector, Matrix, Tensor:
-
-* http://deeplearning.net/software/theano/library/tensor/basic.html#linear-algebra
-* https://doc.sagemath.org/html/en/tutorial/tour_linalg.html
-* https://doc.sagemath.org/html/en/reference/#linear-algebra
-* https://python.quantecon.org/linear_algebra.html
-* https://github.com/ULAFF/notebooks
-* https://scikit-learn.org/stable/modules/linear_model.html
-
-
 .. index:: Calculus
 .. _calculus:
 
@@ -823,23 +638,12 @@ https://en.wikipedia.org/wiki/Calculus
 * https://www.khanacademy.org/math/multivariable-calculus
 * https://www.khanacademy.org/math/differential-equations
 * https://en.wikipedia.org/wiki/AP_Calculus
-
-  * http://apcentral.collegeboard.com/apc/public/courses/teachers_corner/2178.html
-
-* https://www.class-central.com/subject/calculus-and-mathematical-analysis
-
-
-.. index:: Calculus Software
-.. _calculus software:
-
-Calculus Software
-``````````````````
-
+* http://apcentral.collegeboard.com/apc/public/courses/teachers_corner/2178.html
 * http://www.sagemath.org/calctut/
-* https://doc.sagemath.org/html/en/reference/index.html#calculus-and-analysis
-* https://docs.sympy.org/latest/tutorial/calculus.html
+* http://boxen.math.washington.edu/home/wdj/teaching/calc1-sage/
 * http://nbviewer.ipython.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-5-Sympy.ipynb
 * http://scipy-lectures.github.io/advanced/sympy.html#calculus
+* https://www.class-central.com/subject/calculus-and-mathematical-analysis
 
 
 .. index:: Statistics
@@ -928,26 +732,6 @@ https://en.wikipedia.org/wiki/Receiver_operating_characteristic
 https://en.wikipedia.org/wiki/Post_hoc_ergo_propter_hoc
 
 
-
-.. index:: Probability and Statistics Software
-.. _probability and statistics software:
-
-Probability and Statistics Software
-````````````````````````````````````
-* https://doc.sagemath.org/html/en/reference/index.html#probability-and-statistics
-* https://docs.scipy.org/doc/numpy/reference/routines.statistics.html
-* https://docs.scipy.org/doc/scipy/reference/tutorial/stats.html
-* https://docs.scipy.org/doc/scipy/reference/stats.html
-* https://docs.sympy.org/latest/modules/stats.html
-* https://scipy-lectures.org/packages/statistics/
-* https://hadrienj.github.io/posts/Probability-Mass-and-Density-Functions/
-* https://www.statsmodels.org/stable/gettingstarted.html
-* https://www.statsmodels.org/stable/examples/
-* https://greenteapress.com/wp/think-stats-2e/
-*
-  * https://greenteapress.com/thinkstats2/html/
-  * https://github.com/AllenDowney/ThinkStats2
-
 .. index:: Data Analysis
 .. _data-analysis:
 
@@ -1009,28 +793,12 @@ https://en.wikipedia.org/wiki/Knowledge_extraction
 https://en.wikipedia.org/wiki/Extract,_transform,_load
 
 
-.. index:: Data Dredging
-.. _data dredging:
-
-Data Dredging
-~~~~~~~~~~~~~~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/Data_dredging
-
-* **!**
-* :ref:`causality`
-* spurious correlations
-
-  * http://tylervigen.com/spurious-correlations
-
-
 .. index:: Machine Learning
 .. _machine-learning:
 
 Machine Learning
 ~~~~~~~~~~~~~~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/Machine_learning
-| Awesome: https://github.com/onurakpolat/awesome-bigdata
-| Awesome: https://github.com/josephmisiti/awesome-machine-learning
+https://en.wikipedia.org/wiki/Machine_learning
 
 https://en.wikipedia.org/wiki/Online_machine_learning
 
@@ -1043,7 +811,7 @@ https://en.wikipedia.org/wiki/Online_machine_learning
 
 Deep Learning
 ~~~~~~~~~~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/Deep_learning
+https://en.wikipedia.org/wiki/Deep_learning
 
 * https://en.wikipedia.org/wiki/Biological_neural_network
 * https://en.wikipedia.org/wiki/Artificial_neural_network
@@ -1212,7 +980,7 @@ See: :ref:`knowledge engineering`,
 
 Data Visualization
 ++++++++++++++++++++
-| Wikipedia: https://en.wikipedia.org/wiki/Data_visualization
+https://en.wikipedia.org/wiki/Data_visualization
 
 
 .. index:: Visualizing Data Science
@@ -1220,6 +988,7 @@ Data Visualization
 
 Visualizing Data Science
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 The Data Science Venn Diagram
 
 * http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram
@@ -1236,167 +1005,66 @@ Field representations
 .. _data visualization tools:
 
 Data Visualization Tools
-==========================
-- https://github.com/vinta/awesome-python#data-visualization
-- https://github.com/sorrycc/awesome-javascript#data-visualization
-- https://pandas.pydata.org/pandas-docs/stable/ecosystem.html#visualization
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-.. index:: Matplotlib
-.. _matplotlib:
+https://en.wikipedia.org/wiki/Matplotlib
 
-Matplotlib
---------------------
-| Wikipedia: https://en.wikipedia.org/wiki/Matplotlib
-| Homepage: https://matplotlib.org/
-| Src: https://github.com/matplotlib/matplotlib
-| Docs: https://matplotlib.org/contents.html 
-
-* ref:`Scipy lectures`:
-  
-  http://scipy-lectures.github.io/intro/matplotlib/matplotlib.html
-* :ref:`Scientific-python-lectures`:
-  
-  http://nbviewer.ipython.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb
-* http://stanford.edu/~mwaskom/software/seaborn/index.html
+* http://scipy-lectures.github.io/intro/matplotlib/matplotlib.html
+* http://nbviewer.ipython.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb
 * http://tonysyu.github.com/mpltools/auto_examples/index.html#style-package
+* http://stanford.edu/~mwaskom/software/seaborn/index.html
 * http://mpld3.github.io/ (Matplotlib + D3.js)
 * ``conda install matplotlib`` (:ref:`Conda` (:ref:`Anaconda`))
 
-.
 
-* :ref:`Pandas` plot functions generate matplotlib charts.
+https://en.wikipedia.org/wiki/MayaVi
 
-
-.. index:: Seaborn
-.. _seaborn:
-
-Seaborn
-++++++++++
-| Src: https://github.com/mwaskom/seaborn
-| Docs: http://seaborn.pydata.org/
-| Docs: http://seaborn.pydata.org/examples/
-
-- "Seaborn is a Python visualization library based on :ref:`matplotlib`.
-  It provides a high-level interface for drawing attractive statistical
-  graphics."
+* https://github.com/enthought/mayavi
+* https://scipy-lectures.github.io/packages/3d_plotting/index.html
 
 
-.. index:: Mayavi
-.. _mayavi:
+http://bokeh.pydata.org/
 
-Mayavi
-----------
-| Wikipedia: https://en.wikipedia.org/wiki/MayaVi
-| Src: https://github.com/enthought/mayavi
-| Docs: http://docs.enthought.com/mayavi/mayavi/
+* https://github.com/bokeh/bokeh
 
-* "Mayavi: 3D scientific data visualization and plotting in :ref:`Python`"
-* ref:`Scipy lectures`:
+http://vispy.org/ (:ref:`OpenGL`)
 
-  https://scipy-lectures.github.io/packages/3d_plotting/
+* https://github.com/vispy/vispy
 
- 
-.. index:: Bokeh
-.. _bokeh:
+http://nbviewer.ipython.org/github/jakevdp/OpenVisConf2014/blob/master/PythonVis.ipynb
 
-Bokeh
-------------
-| Src: https://github.com/bokeh/bokeh
-| Docs: https://bokeh.pydata.org/
+https://trifacta.github.io/vega/
+
+* https://github.com/wrobstory/vincent
+
+https://en.wikipedia.org/wiki/Plotly
+
+* https://plot.ly/
 
 
-.. index:: VisPy
-.. _vispy:
+https://en.wikipedia.org/wiki/D3.js
 
-VisPy
----------
-| Homepage: http://vispy.org/ (:ref:`OpenGL`)
-| Src: https://github.com/vispy/vispy
+* http://d3js.org/
 
+https://en.wikipedia.org/wiki/Three.js
 
-.. index:: Vega
-.. _vega:
+* http://threejs.org/ (:ref:`WebGL`)
 
-Vega
-----------
-| Homepage: https://trifacta.github.io/vega/
+http://sigmajs.org/
 
-
-.. index:: Vincent
-.. _vincent:
-
-Vincent
-+++++++++++
-| Src: https://github.com/wrobstory/vincent
-
-
-.. index:: Plotly
-.. _plotly:
-
-Plotly
-----------
-| Wikipedia: https://en.wikipedia.org/wiki/Plotly
-| Homepage: https://plot.ly/
-
-
-.. index:: PyQtGraph
-.. _pyqtgraph:
-
-PyQtGraph
-------------
 http://www.pyqtgraph.org/ (:ref:`OpenGL`)
 
+http://pandas.pydata.org/pandas-docs/stable/ecosystem.html#visualization
+
+https://github.com/quantopian/qgrid (SlickGrid w/
+:ref:`IPython Notebook`
+(:ref:`Jupyter Notebook`))
+
+https://github.com/josephmisiti/awesome-machine-learning
+
+See: :ref:`Tools`, :ref:`Semantic Web Tools <semantic web tools>`,
+:ref:`Art & Design <art-design>`
 
 
-.. index:: qgrid
-.. _qgrid:
-
-qgrid
---------
-| Src: https://github.com/quantopian/qgrid
-
-- (SlickGrid w/ :ref:`IPython Notebook`/ :ref:`Jupyter Notebook`
-- :ref:`Pandas` support
-
-
-.. index:: D3.js
-.. index:: D3
-.. _d3:
-
-D3.js
-------
-| Wikipedia: https://en.wikipedia.org/wiki/D3.js
-| Homepage: http://d3js.org/
-
-.. index:: Three.js
-.. _threejs:
-
-Three.js
------------
-| Wikipedia: https://en.wikipedia.org/wiki/Three.js
-| Homepage: http://threejs.org/
-
-(:ref:`WebGL`)
-
-- :ref:`Google ARCore Web` is built on Three.js
-- :ref:`React VR` is built on Three.js
-
-
-.. index:: SigmaJS
-.. _sigmajs:
-
-Sigmajs
----------
-| Homepage: http://sigmajs.org/
-
-- :ref:`Graphs` in :ref:`Javascript`
-
-
-See Also
-===========
-
-- :ref:`Tools` > :ref:`Semantic Web Tools <semantic web tools>`
-- :ref:`Art & Design <art-design>`
-- :ref:`Machine Learning`
-
+.. _datasets:

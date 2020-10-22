@@ -25,7 +25,7 @@ domaintool
 ::
 
     # Retrieve DNS and Whois information for a domain
-    domaintool wrdrd.github.io
+    domaintool wrdrd.com
 
     # Print usage
     domaintool --help
@@ -42,13 +42,13 @@ crawl
     python -m nltk.downloader all
 
     # Crawl a website
-    crawl -c http://wrdrd.github.io/
+    crawl -c http://www.wrdrd.com/
 
     # Print HTML to stdout
-    crawl --html http://wrdrd.github.io/
+    crawl --html http://www.wrdrd.com/
 
     # Print text to stdout
-    crawl --text http://wrdrd.github.io/
+    crawl --text http://www.wrdrd.com/
 
     # Print usage
     crawl --help

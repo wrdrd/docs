@@ -31,7 +31,7 @@ function navbar_scrollto(node) {
 }
 function navbar_update(nodeurl) {
 
-    // console.log('navbar_update', nodeurl);
+    console.log('navbar_update', nodeurl);
 
     if (nodeurl.match('^#index-[0-9]+')) {
         return;
@@ -40,6 +40,8 @@ function navbar_update(nodeurl) {
     if (!(__node)) {
         console.log('navbar_update: nodeurl not found', nodeurl)
         return
+    } else {
+        console.log('node', __node);
     }
     var content = $('#content-wrapper');
     var navbar = $('#sidebar-wrapper').find('div.sidebar').first()[0];
@@ -49,45 +51,30 @@ function navbar_update(nodeurl) {
         .text('¶')
     );
     ($('#navbar-top')
+        .find('a.reference.internal')
+        .removeClass('youarehere')
+    );
+    ($(navbar)
         .find('a.youarehere')
         .removeClass('youarehere')
     );
-    ($('#navbar-top')
-        .find('li.youarehere')
-        .removeClass('youarehere')
-    );
-    var selectedlink = $(navbar)
-        .find('a.youarehere');
-    selectedlink
-        .removeClass('youarehere');
-    selectedlink.parent()
-        .removeClass('youarehere');
-
     if (nodeurl) {
-        var headerlink = $(content)
-            .find('a.headerlink[href="' + nodeurl + '"]');
-        headerlink
+        ($(content)
+            .find('a.headerlink[href="' + nodeurl + '"]')
             .addClass('youarehere')
-            .text('⬅');
-        headerlink.parent()
-            .addClass('youarehere');
+            .text('⬅')
+        );
 
-        var toplink = $('#navbar-top')
-            .find('a.reference.internal[href="' + nodeurl + '"]');
-        toplink
-            .addClass('youarehere');
-        toplink.parent()
-            .addClass('youarehere');
+        ($('#navbar-top')
+            .find('a.reference.internal[href="' + nodeurl + '"]')
+            .addClass('youarehere')
+        );
 
-        var navbarlink = $(navbar)
-            .find('a[href="' + nodeurl + '"]');
+        var navbarlink = $(navbar).find('a[href="' + nodeurl + '"]');
 
         if (navbarlink) {
-            navbarlink
-                .addClass('youarehere');
-            navbarlink.parent()
-                .addClass('youarehere');
-            // console.log(navbarlink);
+            navbarlink.addClass('youarehere');
+            console.log(navbarlink);
             try {
                 navbar_scrollto(navbarlink.first()); // # navbar a.youarehere
             } catch(e) {
@@ -130,29 +117,14 @@ function navbar_init() {
     navbar__remap_sphinx_toc_links();
     navbar__add_top_button();
 
-    function _updatenavbar(hash) {
+    window.onhashchange = function(e) {
         // console.log(e); // e.newURL , e.oldURL
-        var loc_hash_url = hash || window.location.hash;
-        // console.log(loc_hash_url);
+        var loc_hash_url = window.location.hash;
+        console.log(loc_hash_url);
         if (loc_hash_url != false) {
             navbar_update(loc_hash_url);
         };
-    }
-
-    window.addEventListener('hashchange', function(e) {
-        _updatenavbar();
-    }, false);
-
-    document.addEventListener('click', function(e) {
-        var e = window.e || e;
-        if (e.target.tagName !== 'A') {
-            return
-        }
-        // TODO: skip extra-page links
-        // a.headerlink
-        // a.internal
-        _updatenavbar(e.target.hash);
-    }, false);
+    };
 }
 
 

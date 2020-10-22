@@ -6,7 +6,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- OpenGraph metadata: ogp.me -->
     <meta property="og:title" content="Computer Engineering" />
@@ -15,7 +15,7 @@
     <!--
     <meta property="og:description" content="" />
     -->
-    <meta property="og:image" content="https://wrdrd.github.io/static/png/drawing-7.09-v0.1.1--_desk.svg-470x242.png" />
+    <meta property="og:image" content="https://wrdrd.com/static/png/drawing-7.09-v0.1.1--_desk.svg-470x242.png" />
     <meta property="og:image:width" content="470" />
     <meta property="og:image:height" content="242" />
     <!--
@@ -40,7 +40,7 @@
 
 <link rel="stylesheet" href="../_static/css/font-awesome.min.css">
 
-<link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+<link rel="stylesheet" href="../_static/css/basicstrap.css" type="text/css" />
 <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
 <link rel="stylesheet" href="../_static/css/local.css" type="text/css" />
     
@@ -125,10 +125,6 @@
 </li>
 <li><a class="reference internal" href="#vga">VGA</a></li>
 <li><a class="reference internal" href="#dvi">DVI</a></li>
-<li><a class="reference internal" href="#displayport">DisplayPort</a><ul>
-<li><a class="reference internal" href="#mini-displayport">Mini DisplayPort</a></li>
-</ul>
-</li>
 <li><a class="reference internal" href="#hdmi">HDMI</a><ul>
 <li><a class="reference internal" href="#mini-hdmi">Mini HDMI</a></li>
 <li><a class="reference internal" href="#micro-hdmi">Micro HDMI</a></li>
@@ -149,11 +145,7 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#sata">SATA</a><ul>
-<li><a class="reference internal" href="#esata">eSATA</a><ul>
-<li><a class="reference internal" href="#msata">mSATA</a></li>
-<li><a class="reference internal" href="#esatap">eSATAp</a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#esata">eSATA</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#scsi">SCSI</a></li>
@@ -161,30 +153,10 @@
 <li><a class="reference internal" href="#pata">PATA</a></li>
 <li><a class="reference internal" href="#persistent-storage">Persistent Storage</a><ul>
 <li><a class="reference internal" href="#hard-drives">Hard Drives</a></li>
-<li><a class="reference internal" href="#ssd">SSD</a><ul>
-<li><a class="reference internal" href="#sata-ssd">SATA SSD</a></li>
-<li><a class="reference internal" href="#nvme">NVMe</a></li>
-<li><a class="reference internal" href="#m-2">M.2</a></li>
-<li><a class="reference internal" href="#mmc">MMC</a><ul>
-<li><a class="reference internal" href="#emmc">eMMC</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a class="reference internal" href="#id48">SD Card</a><ul>
-<li><a class="reference internal" href="#microsd-card">MicroSD Card</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#usb-storage">USB Storage</a><ul>
-<li><a class="reference internal" href="#usb-mass-storage-device">USB Mass Storage Device</a></li>
-<li><a class="reference internal" href="#usb-flash-drive">USB Flash Drive</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#ufs">UFS</a></li>
+<li><a class="reference internal" href="#ssd">SSD</a></li>
 <li><a class="reference internal" href="#disc-drives">Disc Drives</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#thunderbolt">Thunderbolt</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#network-interfaces">Network Interfaces</a><ul>
@@ -206,22 +178,22 @@
 <li><a class="reference internal" href="#base-t">10BASE-T</a></li>
 <li><a class="reference internal" href="#base-tx">100BASE-TX</a></li>
 <li><a class="reference internal" href="#gigabit-ethernet">Gigabit Ethernet</a></li>
-<li><a class="reference internal" href="#id71">1000BASE-T</a></li>
+<li><a class="reference internal" href="#id59">1000BASE-T</a></li>
 <li><a class="reference internal" href="#base-x">1000BASE-X</a></li>
 <li><a class="reference internal" href="#gbase-t">10GBASE-T</a></li>
-<li><a class="reference internal" href="#id75">40GBASE-T</a></li>
+<li><a class="reference internal" href="#id63">40GBASE-T</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#wireless">Wireless</a><ul>
-<li><a class="reference internal" href="#id78">802.11</a></li>
+<li><a class="reference internal" href="#id66">802.11</a></li>
 <li><a class="reference internal" href="#wi-fi-direct">Wi-Fi Direct</a></li>
 <li><a class="reference internal" href="#wireless-mesh-network">Wireless mesh network</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#mobile-broadband">Mobile Broadband</a><ul>
 <li><a class="reference internal" href="#g">3G</a></li>
-<li><a class="reference internal" href="#id84">4G</a></li>
-<li><a class="reference internal" href="#id86">5G</a></li>
+<li><a class="reference internal" href="#id72">4G</a></li>
+<li><a class="reference internal" href="#id74">5G</a></li>
 <li><a class="reference internal" href="#cdma">CDMA</a></li>
 <li><a class="reference internal" href="#gsm">GSM</a></li>
 <li><a class="reference internal" href="#lte">LTE</a></li>
@@ -317,10 +289,6 @@
 </li>
 <li><a class="reference internal" href="#vga">VGA</a></li>
 <li><a class="reference internal" href="#dvi">DVI</a></li>
-<li><a class="reference internal" href="#displayport">DisplayPort</a><ul>
-<li><a class="reference internal" href="#mini-displayport">Mini DisplayPort</a></li>
-</ul>
-</li>
 <li><a class="reference internal" href="#hdmi">HDMI</a><ul>
 <li><a class="reference internal" href="#mini-hdmi">Mini HDMI</a></li>
 <li><a class="reference internal" href="#micro-hdmi">Micro HDMI</a></li>
@@ -341,11 +309,7 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#sata">SATA</a><ul>
-<li><a class="reference internal" href="#esata">eSATA</a><ul>
-<li><a class="reference internal" href="#msata">mSATA</a></li>
-<li><a class="reference internal" href="#esatap">eSATAp</a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#esata">eSATA</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#scsi">SCSI</a></li>
@@ -353,30 +317,10 @@
 <li><a class="reference internal" href="#pata">PATA</a></li>
 <li><a class="reference internal" href="#persistent-storage">Persistent Storage</a><ul>
 <li><a class="reference internal" href="#hard-drives">Hard Drives</a></li>
-<li><a class="reference internal" href="#ssd">SSD</a><ul>
-<li><a class="reference internal" href="#sata-ssd">SATA SSD</a></li>
-<li><a class="reference internal" href="#nvme">NVMe</a></li>
-<li><a class="reference internal" href="#m-2">M.2</a></li>
-<li><a class="reference internal" href="#mmc">MMC</a><ul>
-<li><a class="reference internal" href="#emmc">eMMC</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a class="reference internal" href="#id48">SD Card</a><ul>
-<li><a class="reference internal" href="#microsd-card">MicroSD Card</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#usb-storage">USB Storage</a><ul>
-<li><a class="reference internal" href="#usb-mass-storage-device">USB Mass Storage Device</a></li>
-<li><a class="reference internal" href="#usb-flash-drive">USB Flash Drive</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#ufs">UFS</a></li>
+<li><a class="reference internal" href="#ssd">SSD</a></li>
 <li><a class="reference internal" href="#disc-drives">Disc Drives</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#thunderbolt">Thunderbolt</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#network-interfaces">Network Interfaces</a><ul>
@@ -398,22 +342,22 @@
 <li><a class="reference internal" href="#base-t">10BASE-T</a></li>
 <li><a class="reference internal" href="#base-tx">100BASE-TX</a></li>
 <li><a class="reference internal" href="#gigabit-ethernet">Gigabit Ethernet</a></li>
-<li><a class="reference internal" href="#id71">1000BASE-T</a></li>
+<li><a class="reference internal" href="#id59">1000BASE-T</a></li>
 <li><a class="reference internal" href="#base-x">1000BASE-X</a></li>
 <li><a class="reference internal" href="#gbase-t">10GBASE-T</a></li>
-<li><a class="reference internal" href="#id75">40GBASE-T</a></li>
+<li><a class="reference internal" href="#id63">40GBASE-T</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#wireless">Wireless</a><ul>
-<li><a class="reference internal" href="#id78">802.11</a></li>
+<li><a class="reference internal" href="#id66">802.11</a></li>
 <li><a class="reference internal" href="#wi-fi-direct">Wi-Fi Direct</a></li>
 <li><a class="reference internal" href="#wireless-mesh-network">Wireless mesh network</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#mobile-broadband">Mobile Broadband</a><ul>
 <li><a class="reference internal" href="#g">3G</a></li>
-<li><a class="reference internal" href="#id84">4G</a></li>
-<li><a class="reference internal" href="#id86">5G</a></li>
+<li><a class="reference internal" href="#id72">4G</a></li>
+<li><a class="reference internal" href="#id74">5G</a></li>
 <li><a class="reference internal" href="#cdma">CDMA</a></li>
 <li><a class="reference internal" href="#gsm">GSM</a></li>
 <li><a class="reference internal" href="#lte">LTE</a></li>
@@ -453,8 +397,6 @@
     Enter search terms or a module, class or function name.
     </p>
 </div>
-
-<div class="widget navlinks">
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="../_sources/consulting/computer-engineering.rst.txt"
@@ -473,8 +415,6 @@
              rel="nofollow"
              target="_blank">Annotate</a></li>
   </ul>
-</div>
-<div class="widget srclinks">
   <h3>Source</h3>
   <h5><a href="https://github.com/wrdrd/docs">github.com/wrdrd/docs</a>
       / <a href="https://github.com/wrdrd/docs/tree/master"
@@ -482,19 +422,18 @@
                 target="_blank"
                 font="monospace">master</a>
   </h5>
+
   <ul>
     <li><pre>git clone https://github.com/wrdrd/docs</pre></li>
     <li><pre>git clone ssh://git@github.com/wrdrd/docs</pre></li>
     <li><pre>git clone git://github.com/wrdrd/docs</pre></li>
-  </ul>
-</div><div class="widget">
-    <h3><a href="https://wrdrd.github.io/">wrdrd.github.io</a></h3>
+  </ul><div class="widget">
+    <h3><a href="https://wrdrd.com/">wrdrd.com</a></h3>
     <ul>
-        <li><a href="https://wrdrd.github.io/">wrdrd.github.io/</a></li>
-        <li><a href="https://wrdrd.github.io/docs/">wrdrd.github.io/docs/</a></li>
-        <li><a href="https://wrdrd.github.io/wiki/">wrdrd.github.io/wiki/</a></li>
+        <li><a href="https://wrdrd.com/">wrdrd.com/</a></li>
+        <li><a href="https://wrdrd.com/docs/">wrdrd.com/docs/</a></li>
+        <li><a href="https://wrdrd.com/wiki/">wrdrd.com/wiki/</a></li>
         <li><a href="https://github.com/wrdrd">github.com/wrdrd</a></li>
-        <li><a href="https://google.com/+Wrdrdrd">+Wrdrdrd</a></li>
         <li><a href="https://twitter.com/wrdrd">@wrdrd</a></li>
     </ul>
 </div>
@@ -847,20 +786,8 @@ or just runs faster on a GPU.</p></li>
 as well as Mini-DVI and Micro-DVI connectors.</p></li>
 </ul>
 </div>
-<div class="section" id="displayport">
-<span id="index-25"></span><span id="id26"></span><h4>DisplayPort<a class="headerlink" href="#displayport" title="Permalink to this headline">¶</a></h4>
-<div class="line-block">
-<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/DisplayPort">https://en.wikipedia.org/wiki/DisplayPort</a></div>
-</div>
-<div class="section" id="mini-displayport">
-<span id="index-26"></span><span id="id27"></span><h5>Mini DisplayPort<a class="headerlink" href="#mini-displayport" title="Permalink to this headline">¶</a></h5>
-<div class="line-block">
-<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Mini_DisplayPort">https://en.wikipedia.org/wiki/Mini_DisplayPort</a></div>
-</div>
-</div>
-</div>
 <div class="section" id="hdmi">
-<span id="index-27"></span><span id="id28"></span><h4>HDMI<a class="headerlink" href="#hdmi" title="Permalink to this headline">¶</a></h4>
+<span id="index-25"></span><span id="id26"></span><h4>HDMI<a class="headerlink" href="#hdmi" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/HDMI">https://en.wikipedia.org/wiki/HDMI</a></div>
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/HDMI#Connectors">https://en.wikipedia.org/wiki/HDMI#Connectors</a></div>
@@ -881,7 +808,7 @@ interface standard.</p>
 <li><p>HDMI can also carry <a class="reference internal" href="#ethernet"><span class="std std-ref">Ethernet</span></a> signals.</p></li>
 </ul>
 <div class="section" id="mini-hdmi">
-<span id="index-28"></span><span id="id29"></span><h5>Mini HDMI<a class="headerlink" href="#mini-hdmi" title="Permalink to this headline">¶</a></h5>
+<span id="index-26"></span><span id="id27"></span><h5>Mini HDMI<a class="headerlink" href="#mini-hdmi" title="Permalink to this headline">¶</a></h5>
 <p>Mini HDMI is an <a class="reference internal" href="#hdmi"><span class="std std-ref">HDMI</span></a> Type C (“Mini HDMI Type A”) connector.</p>
 <ul class="simple">
 <li><p>Mini HDMI connectors are often found on older mobile devices.</p></li>
@@ -895,7 +822,7 @@ to e.g. a standard HDMI Type A connector on a TV.</p>
 </div>
 </div>
 <div class="section" id="micro-hdmi">
-<span id="index-29"></span><span id="id30"></span><h5>Micro HDMI<a class="headerlink" href="#micro-hdmi" title="Permalink to this headline">¶</a></h5>
+<span id="index-27"></span><span id="id28"></span><h5>Micro HDMI<a class="headerlink" href="#micro-hdmi" title="Permalink to this headline">¶</a></h5>
 <p>Micro HDMI is an <a class="reference internal" href="#hdmi"><span class="std std-ref">HDMI</span></a> Type E connector.</p>
 <ul class="simple">
 <li><p>Micro HDMI connectors are often found on newer mobile devices.</p></li>
@@ -912,10 +839,10 @@ to e.g. a standard HDMI Type A connector on a TV.</p>
 </div>
 </div>
 <div class="section" id="data-device-bus">
-<span id="index-30"></span><span id="id31"></span><h2>Data Device Bus<a class="headerlink" href="#data-device-bus" title="Permalink to this headline">¶</a></h2>
+<span id="index-28"></span><span id="id29"></span><h2>Data Device Bus<a class="headerlink" href="#data-device-bus" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Bus_(computing)">https://en.wikipedia.org/wiki/Bus_(computing)</a></p>
 <div class="section" id="usb">
-<span id="index-31"></span><span id="id32"></span><h3>USB<a class="headerlink" href="#usb" title="Permalink to this headline">¶</a></h3>
+<span id="index-29"></span><span id="id30"></span><h3>USB<a class="headerlink" href="#usb" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/USB">https://en.wikipedia.org/wiki/USB</a></div>
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/USB_2.0">https://en.wikipedia.org/wiki/USB_2.0</a></div>
@@ -964,7 +891,7 @@ of current (2.5 <a class="reference internal" href="units#watt"><span class="std
 </li>
 </ul>
 <div class="section" id="usb-hub">
-<span id="index-32"></span><span id="id33"></span><h4>USB Hub<a class="headerlink" href="#usb-hub" title="Permalink to this headline">¶</a></h4>
+<span id="index-30"></span><span id="id31"></span><h4>USB Hub<a class="headerlink" href="#usb-hub" title="Permalink to this headline">¶</a></h4>
 <p>A <a class="reference internal" href="#usb"><span class="std std-ref">USB</span></a> Hub is an n-way splitter with two or more
 USB connectors.</p>
 <ul class="simple">
@@ -978,14 +905,14 @@ and can charge many devices</p>
 </li>
 </ul>
 <div class="section" id="usb-keyboard">
-<span id="index-33"></span><span id="id34"></span><h5>USB Keyboard<a class="headerlink" href="#usb-keyboard" title="Permalink to this headline">¶</a></h5>
+<span id="index-31"></span><span id="id32"></span><h5>USB Keyboard<a class="headerlink" href="#usb-keyboard" title="Permalink to this headline">¶</a></h5>
 </div>
 <div class="section" id="usb-mouse">
-<span id="index-34"></span><span id="id35"></span><h5>USB Mouse<a class="headerlink" href="#usb-mouse" title="Permalink to this headline">¶</a></h5>
+<span id="index-32"></span><span id="id33"></span><h5>USB Mouse<a class="headerlink" href="#usb-mouse" title="Permalink to this headline">¶</a></h5>
 </div>
 </div>
 <div class="section" id="usb-type-c">
-<span id="index-35"></span><span id="id36"></span><h4>USB Type-C<a class="headerlink" href="#usb-type-c" title="Permalink to this headline">¶</a></h4>
+<span id="index-33"></span><span id="id34"></span><h4>USB Type-C<a class="headerlink" href="#usb-type-c" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/USB_Type-C">https://en.wikipedia.org/wiki/USB_Type-C</a></div>
 </div>
@@ -1003,10 +930,10 @@ and can charge many devices</p>
 </ul>
 </li>
 </ul>
-<span class="target" id="index-36"></span></div>
+<span class="target" id="index-34"></span></div>
 </div>
 <div class="section" id="sata">
-<span id="index-37"></span><span id="id37"></span><h3>SATA<a class="headerlink" href="#sata" title="Permalink to this headline">¶</a></h3>
+<span id="index-35"></span><span id="id35"></span><h3>SATA<a class="headerlink" href="#sata" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Serial_ATA">https://en.wikipedia.org/wiki/Serial_ATA</a></div>
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Serial_ATA#eSATA">https://en.wikipedia.org/wiki/Serial_ATA#eSATA</a></div>
@@ -1020,40 +947,16 @@ all current <a class="reference internal" href="#usb"><span class="std std-ref">
 <li><p><a class="reference internal" href="#esata"><span class="std std-ref">eSATA</span></a> is SATA for external drives.</p></li>
 </ul>
 <div class="section" id="esata">
-<span id="index-38"></span><span id="id38"></span><h4>eSATA<a class="headerlink" href="#esata" title="Permalink to this headline">¶</a></h4>
+<span id="index-36"></span><span id="id36"></span><h4>eSATA<a class="headerlink" href="#esata" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Serial_ATA#eSATA">https://en.wikipedia.org/wiki/Serial_ATA#eSATA</a></div>
 </div>
 <p>eSATA (<em>External</em> <a class="reference internal" href="#sata"><span class="std std-ref">SATA</span></a>) works with
 (powered, unpowered, portable) external drives.</p>
-<div class="section" id="msata">
-<span id="index-39"></span><span id="id39"></span><h5>mSATA<a class="headerlink" href="#msata" title="Permalink to this headline">¶</a></h5>
-<div class="line-block">
-<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Serial_ATA#Mini">https://en.wikipedia.org/wiki/Serial_ATA#Mini</a>-<a class="reference internal" href="#sata">SATA</a>.28mSATA.29</div>
-</div>
-<p>mSATA (Mini-SATA) is a smaller <a class="reference internal" href="#esata"><span class="std std-ref">eSATA</span></a> connector.</p>
-</div>
-<div class="section" id="esatap">
-<span id="index-40"></span><span id="id40"></span><h5>eSATAp<a class="headerlink" href="#esatap" title="Permalink to this headline">¶</a></h5>
-<div class="line-block">
-<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/ESATAp">https://en.wikipedia.org/wiki/ESATAp</a></div>
-</div>
-<p>eSATAp (Power eSATA) is a <a class="reference internal" href="#esata"><span class="std std-ref">eSATA</span></a> connector which also includes
-power and supports <a class="reference internal" href="#usb"><span class="std std-ref">USB</span></a>.</p>
-<blockquote>
-<div><p>An eSATAp port combines the four pins of the USB 2.0 (or earlier)
-port, the seven pins of the eSATA port, and optionally two 12 V
-power pins</p>
-</div></blockquote>
-<ul class="simple">
-<li><p>Without eSATAp, <a class="reference internal" href="#esata"><span class="std std-ref">eSATA</span></a> devices require an additional power
-source.</p></li>
-</ul>
-</div>
 </div>
 </div>
 <div class="section" id="scsi">
-<span id="index-41"></span><span id="id41"></span><h3>SCSI<a class="headerlink" href="#scsi" title="Permalink to this headline">¶</a></h3>
+<span id="index-37"></span><span id="id37"></span><h3>SCSI<a class="headerlink" href="#scsi" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/SCSI">https://en.wikipedia.org/wiki/SCSI</a></div>
 <div class="line">DevPrefix: <code class="docutils literal notranslate"><span class="pre">/dev/sg</span></code> (CD/DVD)</div>
@@ -1072,7 +975,7 @@ with newer <a class="reference internal" href="../tools/index#linux"><span class
 </ul>
 </div>
 <div class="section" id="ide-drive">
-<span id="index-42"></span><span id="ide"></span><h3>IDE<a class="headerlink" href="#ide-drive" title="Permalink to this headline">¶</a></h3>
+<span id="index-38"></span><span id="ide"></span><h3>IDE<a class="headerlink" href="#ide-drive" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Parallel_ATA#IDE_and_ATA-1">https://en.wikipedia.org/wiki/Parallel_ATA#IDE_and_ATA-1</a></div>
 </div>
@@ -1085,9 +988,9 @@ connectors
 (which, like IDE, all also require the drive to handle its own
 storage logic)</p></li>
 </ul>
-<span class="target" id="index-43"></span><span class="target" id="index-44"></span></div>
+<span class="target" id="index-39"></span><span class="target" id="index-40"></span></div>
 <div class="section" id="pata">
-<span id="index-45"></span><span id="id42"></span><h3>PATA<a class="headerlink" href="#pata" title="Permalink to this headline">¶</a></h3>
+<span id="index-41"></span><span id="id38"></span><h3>PATA<a class="headerlink" href="#pata" title="Permalink to this headline">¶</a></h3>
 <p>PATA, ATA (<em>Parallel ATA</em> (<em>AT Attachment</em>)) is a 40-pin
 drive interface standard
 based on <a class="reference internal" href="#ide-drive"><span class="std std-ref">IDE</span></a>, ATA, and ATAPI.</p>
@@ -1097,7 +1000,7 @@ based on <a class="reference internal" href="#ide-drive"><span class="std std-re
 </ul>
 </div>
 <div class="section" id="persistent-storage">
-<span id="index-46"></span><span id="id43"></span><h3>Persistent Storage<a class="headerlink" href="#persistent-storage" title="Permalink to this headline">¶</a></h3>
+<span id="index-42"></span><span id="id39"></span><h3>Persistent Storage<a class="headerlink" href="#persistent-storage" title="Permalink to this headline">¶</a></h3>
 <p>Slowest -&gt; Fastest:</p>
 <ul class="simple">
 <li><p>Punch cards</p></li>
@@ -1108,7 +1011,7 @@ based on <a class="reference internal" href="#ide-drive"><span class="std std-re
 <li><p><a class="reference internal" href="#ssd"><span class="std std-ref">SSDs</span></a></p></li>
 </ul>
 <div class="section" id="hard-drives">
-<span id="index-47"></span><span id="id44"></span><h4>Hard Drives<a class="headerlink" href="#hard-drives" title="Permalink to this headline">¶</a></h4>
+<span id="index-43"></span><span id="id40"></span><h4>Hard Drives<a class="headerlink" href="#hard-drives" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p>5400 RPM – notebook (energy savings; see also <a class="reference internal" href="#ssd"><span class="std std-ref">SSD</span></a>)</p></li>
 <li><p>7200 RPM – desktop, notebook</p></li>
@@ -1116,7 +1019,7 @@ based on <a class="reference internal" href="#ide-drive"><span class="std std-re
 </ul>
 </div>
 <div class="section" id="ssd">
-<span id="index-48"></span><span id="id45"></span><h4>SSD<a class="headerlink" href="#ssd" title="Permalink to this headline">¶</a></h4>
+<span id="index-44"></span><span id="id41"></span><h4>SSD<a class="headerlink" href="#ssd" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Solid-state_drive">https://en.wikipedia.org/wiki/Solid-state_drive</a></div>
 </div>
@@ -1128,122 +1031,10 @@ not require voltage to be applied to maintain state.</p>
 <li><p>SSDs are more energy efficient than <a class="reference internal" href="#hard-drives"><span class="std std-ref">Hard Drives</span></a>.</p></li>
 <li><p>Notebooks and netbooks may include or be upgraded with an SSD.</p></li>
 <li><p>Servers benefit from SSDs for caching, fast reads, and fast writes.</p></li>
-<li><p>There are lots of SSD devices with various connectors:</p>
-<ul>
-<li><p><span class="xref std std-ref">NVMe</span></p></li>
-<li><p><span class="xref std std-ref">M.2</span></p></li>
-<li><p><span class="xref std std-ref">MMC</span></p>
-<ul>
-<li><p><a class="reference internal" href="#emmc"><span class="std std-ref">eMMC</span></a></p></li>
-</ul>
-</li>
-<li><p><span class="xref std std-ref">SD Card</span>, <a class="reference internal" href="#usb-key"><span class="std std-ref">USB Flash Drive</span></a>
-(we usually don’t refer to SD Cards as SSDs, though
-they are)</p>
-<ul>
-<li><p><a class="reference internal" href="#microsd-card"><span class="std std-ref">MicroSD Card</span></a></p></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<div class="section" id="sata-ssd">
-<span id="index-49"></span><span id="id46"></span><h5>SATA SSD<a class="headerlink" href="#sata-ssd" title="Permalink to this headline">¶</a></h5>
-</div>
-<div class="section" id="nvme">
-<span id="nvme-ssd"></span><span id="index-50"></span><h5>NVMe<a class="headerlink" href="#nvme" title="Permalink to this headline">¶</a></h5>
-<div class="line-block">
-<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/NVM_Express">https://en.wikipedia.org/wiki/NVM_Express</a></div>
-</div>
-</div>
-<div class="section" id="m-2">
-<span id="m2"></span><span id="index-51"></span><h5>M.2<a class="headerlink" href="#m-2" title="Permalink to this headline">¶</a></h5>
-<div class="line-block">
-<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/M.2">https://en.wikipedia.org/wiki/M.2</a></div>
-</div>
-<ul class="simple">
-<li><p>M.2 was fomerly known as NGFF (<em>Next Generation Form Factor</em>)</p></li>
-<li><p>M.2 supports <span class="xref std std-ref">PCI Express</span> cards, <a class="reference internal" href="#sata"><span class="std std-ref">SATA</span></a> drives,
-and <span class="xref std std-ref">USB 3.0</span> devices</p></li>
-</ul>
-<span class="target" id="index-52"></span></div>
-<div class="section" id="mmc">
-<span id="index-53"></span><h5>MMC<a class="headerlink" href="#mmc" title="Permalink to this headline">¶</a></h5>
-<div class="line-block">
-<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/MultiMediaCard">https://en.wikipedia.org/wiki/MultiMediaCard</a></div>
-</div>
-<ul class="simple">
-<li><p>MMC (<em>MultiMediaCard</em>) is a standard for flash memory.</p></li>
-<li><p>Most current devices support <a class="reference internal" href="#sd-card"><span class="std std-ref">SD Cards</span></a> instead
-of MMC.</p></li>
-</ul>
-<div class="section" id="emmc">
-<span id="index-54"></span><span id="id47"></span><h6>eMMC<a class="headerlink" href="#emmc" title="Permalink to this headline">¶</a></h6>
-<div class="line-block">
-<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/MultiMediaCard#eMMC">https://en.wikipedia.org/wiki/MultiMediaCard#eMMC</a></div>
-</div>
-<ul class="simple">
-<li><p>eMMC (<em>Embedded MMC</em>) is a standard for flash memory
-that’s generally soldered into the board.</p></li>
-<li><p>Phones and Tablets are moving from eMMC to <a class="reference internal" href="#ufs"><span class="std std-ref">UFS</span></a>.</p></li>
-<li><p>Phones and tablets usually refer to flash storage
-as “Internal Storage”.</p></li>
-</ul>
-</div>
-</div>
-<p id="sd-card"><span id="index-55"></span>.. _sd card:</p>
-</div>
-<div class="section" id="id48">
-<h4>SD Card<a class="headerlink" href="#id48" title="Permalink to this headline">¶</a></h4>
-<div class="section" id="microsd-card">
-<span id="index-56"></span><span id="id49"></span><h5>MicroSD Card<a class="headerlink" href="#microsd-card" title="Permalink to this headline">¶</a></h5>
-</div>
-</div>
-<div class="section" id="usb-storage">
-<span id="index-57"></span><span id="id50"></span><h4>USB Storage<a class="headerlink" href="#usb-storage" title="Permalink to this headline">¶</a></h4>
-<div class="section" id="usb-mass-storage-device">
-<span id="index-58"></span><span id="id51"></span><h5>USB Mass Storage Device<a class="headerlink" href="#usb-mass-storage-device" title="Permalink to this headline">¶</a></h5>
-<div class="line-block">
-<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/USB_mass_storage_device_class">https://en.wikipedia.org/wiki/USB_mass_storage_device_class</a></div>
-</div>
-<ul class="simple">
-<li><p>External USB <a class="reference internal" href="#hard-drives"><span class="std std-ref">Hard Drives</span></a>, <span class="xref std std-ref">USB Flash Drives</span>,
-Phones, Cameras, and USB <span class="xref std std-ref">SD Card</span> adapters
-typically all implement the USB Mass Storage Device interface</p></li>
-<li><p>All major operating systems support USB Mass Storage Devices;
-so you don’t need to install any drivers in order to read from and
-write to the media</p></li>
-</ul>
-<span class="target" id="index-59"></span><span class="target" id="index-60"></span><span class="target" id="index-61"></span></div>
-<div class="section" id="usb-flash-drive">
-<span id="usb-key"></span><span id="index-62"></span><h5>USB Flash Drive<a class="headerlink" href="#usb-flash-drive" title="Permalink to this headline">¶</a></h5>
-<div class="line-block">
-<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/USB_flash_drive">https://en.wikipedia.org/wiki/USB_flash_drive</a></div>
-</div>
-<ul class="simple">
-<li><p>USB Flash Drives are also known as “USB Thumbdrives”</p></li>
-<li><p>USB Flash Drives may support USB 1, 2, or 3.</p></li>
-<li><p>If a USB Flash Drive supports USB 3.0, it also supports USB 1 and USB
-2.</p></li>
-</ul>
-</div>
-</div>
-<div class="section" id="ufs">
-<span id="index-63"></span><span id="id52"></span><h4>UFS<a class="headerlink" href="#ufs" title="Permalink to this headline">¶</a></h4>
-<div class="line-block">
-<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Universal_Flash_Storage">https://en.wikipedia.org/wiki/Universal_Flash_Storage</a></div>
-</div>
-<ul class="simple">
-<li><p>UFS (<em>Universal Flash Storage</em>) is a standard for flash storage
-preceded by <a class="reference internal" href="#emmc"><span class="std std-ref">eMMC</span></a></p></li>
-<li><p>Phones and Tablets may have UFS (or <a class="reference internal" href="#emmc"><span class="std std-ref">eMMC</span></a>) flash storage
-soldered to the board.</p></li>
-<li><p>Phones and tablets usually refer to flash storage
-as “Internal Storage”.</p></li>
 </ul>
 </div>
 <div class="section" id="disc-drives">
-<span id="index-64"></span><span id="id53"></span><h4>Disc Drives<a class="headerlink" href="#disc-drives" title="Permalink to this headline">¶</a></h4>
+<span id="index-45"></span><span id="id42"></span><h4>Disc Drives<a class="headerlink" href="#disc-drives" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p><em>CD</em></p></li>
 <li><p><em>DVD</em></p></li>
@@ -1253,17 +1044,11 @@ as “Internal Storage”.</p></li>
 <p>See: <a class="reference internal" href="knowledge-engineering#data-engineering"><span class="std std-ref">Data Engineering</span></a></p>
 </div>
 </div>
-<div class="section" id="thunderbolt">
-<span id="index-65"></span><span id="id54"></span><h3>Thunderbolt<a class="headerlink" href="#thunderbolt" title="Permalink to this headline">¶</a></h3>
-<div class="line-block">
-<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Thunderbolt_(interface">https://en.wikipedia.org/wiki/Thunderbolt_(interface</a>)</div>
-</div>
-</div>
 </div>
 <div class="section" id="network-interfaces">
-<span id="index-66"></span><span id="id55"></span><h2>Network Interfaces<a class="headerlink" href="#network-interfaces" title="Permalink to this headline">¶</a></h2>
+<span id="index-46"></span><span id="id43"></span><h2>Network Interfaces<a class="headerlink" href="#network-interfaces" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="rs-232">
-<span id="index-67"></span><span id="id56"></span><h3>RS-232<a class="headerlink" href="#rs-232" title="Permalink to this headline">¶</a></h3>
+<span id="index-47"></span><span id="id44"></span><h3>RS-232<a class="headerlink" href="#rs-232" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/RS-232">https://en.wikipedia.org/wiki/RS-232</a></div>
 </div>
@@ -1284,27 +1069,27 @@ to which a console may be attached.</p></li>
 </ul>
 </div>
 <div class="section" id="gigabit">
-<span id="index-68"></span><span id="id57"></span><h3>Gigabit<a class="headerlink" href="#gigabit" title="Permalink to this headline">¶</a></h3>
+<span id="index-48"></span><span id="id45"></span><h3>Gigabit<a class="headerlink" href="#gigabit" title="Permalink to this headline">¶</a></h3>
 <p>A gigabit is 1000 Mbps (1000 megabits per second).</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#id71"><span class="std std-ref">1000BASE-T</span></a>, <a class="reference internal" href="#base-x"><span class="std std-ref">1000BASE-X</span></a>,
-<a class="reference internal" href="#gbase-t"><span class="std std-ref">10GBASE-T</span></a>, and <a class="reference internal" href="#id75"><span class="std std-ref">40GBASE-T</span></a>
+<li><p><a class="reference internal" href="#id59"><span class="std std-ref">1000BASE-T</span></a>, <a class="reference internal" href="#base-x"><span class="std std-ref">1000BASE-X</span></a>,
+<a class="reference internal" href="#gbase-t"><span class="std std-ref">10GBASE-T</span></a>, and <a class="reference internal" href="#id63"><span class="std std-ref">40GBASE-T</span></a>
 can all handle <a class="reference internal" href="#gigabit-ethernet"><span class="std std-ref">Gigabit Ethernet</span></a> speeds (or greater)</p></li>
-<li><p>Wireless routers before <a class="reference internal" href="#id78"><span class="std std-ref">802.11ac</span></a>
+<li><p>Wireless routers before <a class="reference internal" href="#id66"><span class="std std-ref">802.11ac</span></a>
 are not fast enough to handle gigabit speeds.</p></li>
-<li><p>Wireless routers with <a class="reference internal" href="#id78"><span class="std std-ref">802.11ac</span></a> and up (TODO)
+<li><p>Wireless routers with <a class="reference internal" href="#id66"><span class="std std-ref">802.11ac</span></a> and up (TODO)
 handle (shared) gigabit speeds.</p></li>
 </ul>
 </div>
 <div class="section" id="nic">
-<span id="index-69"></span><span id="id58"></span><h3>NIC<a class="headerlink" href="#nic" title="Permalink to this headline">¶</a></h3>
+<span id="index-49"></span><span id="id46"></span><h3>NIC<a class="headerlink" href="#nic" title="Permalink to this headline">¶</a></h3>
 <p>A NIC (<em>Network Interface Card</em>) is a card
 that plugs into a <a class="reference internal" href="#system-bus"><span class="std std-ref">System Bus</span></a>
 which has one or more connectors
 for e.g. [wired <a class="reference internal" href="#gigabit-ethernet"><span class="std std-ref">Gigabit Ethernet</span></a> <span class="xref std std-ref">Patch Cable</span>].</p>
 </div>
 <div class="section" id="p8c">
-<span id="index-70"></span><span id="id59"></span><h3>8P8C<a class="headerlink" href="#p8c" title="Permalink to this headline">¶</a></h3>
+<span id="index-50"></span><span id="id47"></span><h3>8P8C<a class="headerlink" href="#p8c" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Modular_connector#8P8C">https://en.wikipedia.org/wiki/Modular_connector#8P8C</a></div>
 </div>
@@ -1321,7 +1106,7 @@ cables have <a class="reference internal" href="#p8c"><span class="std std-ref">
 </ul>
 </div>
 <div class="section" id="tia">
-<span id="index-71"></span><span id="id60"></span><h3>TIA<a class="headerlink" href="#tia" title="Permalink to this headline">¶</a></h3>
+<span id="index-51"></span><span id="id48"></span><h3>TIA<a class="headerlink" href="#tia" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Telecommunications_Industry_Association">https://en.wikipedia.org/wiki/Telecommunications_Industry_Association</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://www.tiaonline.org/">https://www.tiaonline.org/</a></div>
@@ -1335,8 +1120,8 @@ including specs for <a class="reference internal" href="#ethernet"><span class="
 <ul class="simple">
 <li><p>List of <a class="reference internal" href="#tia"><span class="std std-ref">TIA</span></a> standards: <a class="reference external" href="http://www.tiaonline.org/standards/">http://www.tiaonline.org/standards/</a></p></li>
 </ul>
-<span class="target" id="index-72"></span><div class="section" id="t568b">
-<span id="t568a"></span><span id="t568a-and-t568b"></span><span id="index-73"></span><span id="id61"></span><h4>T568A and T568B<a class="headerlink" href="#t568b" title="Permalink to this headline">¶</a></h4>
+<span class="target" id="index-52"></span><div class="section" id="t568b">
+<span id="t568a"></span><span id="t568a-and-t568b"></span><span id="index-53"></span><span id="id49"></span><h4>T568A and T568B<a class="headerlink" href="#t568b" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/TIA/EIA-568#T568A_and_T568B_termination">https://en.wikipedia.org/wiki/TIA/EIA-568#T568A_and_T568B_termination</a></div>
 </div>
@@ -1353,19 +1138,19 @@ on each end, respectively.</p></li>
 </ul>
 </div>
 <div class="section" id="cat-5">
-<span id="index-74"></span><span id="id62"></span><h4>CAT-5<a class="headerlink" href="#cat-5" title="Permalink to this headline">¶</a></h4>
+<span id="index-54"></span><span id="id50"></span><h4>CAT-5<a class="headerlink" href="#cat-5" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Category_5_cable">https://en.wikipedia.org/wiki/Category_5_cable</a></div>
 </div>
 <p>A CAT-5 (<em>Category 5</em>) cable is an <a class="reference internal" href="#ethernet"><span class="std std-ref">Ethernet</span></a> cable.</p>
 <ul class="simple">
-<li><p>CAT-5 can carry <a class="reference internal" href="#base-t"><span class="std std-ref">10BASE-T</span></a>, <a class="reference internal" href="#id69"><span class="std std-ref">100BASE-TX</span></a>,
-or <a class="reference internal" href="#id71"><span class="std std-ref">1000BASE-T</span></a></p></li>
+<li><p>CAT-5 can carry <a class="reference internal" href="#base-t"><span class="std std-ref">10BASE-T</span></a>, <a class="reference internal" href="#id57"><span class="std std-ref">100BASE-TX</span></a>,
+or <a class="reference internal" href="#id59"><span class="std std-ref">1000BASE-T</span></a></p></li>
 <li><p><a class="reference internal" href="#cat-5e"><span class="std std-ref">CAT-5e</span></a> is the newer CAT-5 standard.</p></li>
 </ul>
 </div>
 <div class="section" id="cat-5e">
-<span id="index-75"></span><span id="id63"></span><h4>CAT-5e<a class="headerlink" href="#cat-5e" title="Permalink to this headline">¶</a></h4>
+<span id="index-55"></span><span id="id51"></span><h4>CAT-5e<a class="headerlink" href="#cat-5e" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Category_5_cable#Category_5_vs._5e">https://en.wikipedia.org/wiki/Category_5_cable#Category_5_vs._5e</a></div>
 </div>
@@ -1373,37 +1158,37 @@ or <a class="reference internal" href="#id71"><span class="std std-ref">1000BASE
 <li><p>CAT-5e (<em>Category 5e</em>) cable is an <a class="reference internal" href="#ethernet"><span class="std std-ref">Ethernet</span></a> cable
 with more stringent <em>crosstalk</em> (~’interference’)
 specs than a <a class="reference internal" href="#cat-5"><span class="std std-ref">CAT-5</span></a> cable.</p></li>
-<li><p>CAT-5e can carry <a class="reference internal" href="#base-t"><span class="std std-ref">10BASE-T</span></a>, <a class="reference internal" href="#id69"><span class="std std-ref">100BASE-TX</span></a>,
-or <a class="reference internal" href="#id71"><span class="std std-ref">1000BASE-T</span></a></p></li>
+<li><p>CAT-5e can carry <a class="reference internal" href="#base-t"><span class="std std-ref">10BASE-T</span></a>, <a class="reference internal" href="#id57"><span class="std std-ref">100BASE-TX</span></a>,
+or <a class="reference internal" href="#id59"><span class="std std-ref">1000BASE-T</span></a></p></li>
 <li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Crosstalk">https://en.wikipedia.org/wiki/Crosstalk</a></p></li>
 <li><p>There is no CAT-6e, but there is a <a class="reference internal" href="#cat-6a"><span class="std std-ref">CAT-6A</span></a>.</p></li>
 </ul>
 </div>
 <div class="section" id="cat-6">
-<span id="index-76"></span><span id="id64"></span><h4>CAT-6<a class="headerlink" href="#cat-6" title="Permalink to this headline">¶</a></h4>
+<span id="index-56"></span><span id="id52"></span><h4>CAT-6<a class="headerlink" href="#cat-6" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Category_6_cable">https://en.wikipedia.org/wiki/Category_6_cable</a></div>
 </div>
 <p>A CAT-6 (<em>Category 6</em>) cable is an <a class="reference internal" href="#ethernet"><span class="std std-ref">Ethernet</span></a> cable</p>
 <ul class="simple">
-<li><p>CAT-6 can carry <a class="reference internal" href="#base-t"><span class="std std-ref">10BASE-T</span></a>, <a class="reference internal" href="#id69"><span class="std std-ref">100BASE-TX</span></a>,
-<a class="reference internal" href="#id71"><span class="std std-ref">1000BASE-T</span></a>, <a class="reference internal" href="#gbase-t"><span class="std std-ref">10GBASE-T</span></a>,</p></li>
+<li><p>CAT-6 can carry <a class="reference internal" href="#base-t"><span class="std std-ref">10BASE-T</span></a>, <a class="reference internal" href="#id57"><span class="std std-ref">100BASE-TX</span></a>,
+<a class="reference internal" href="#id59"><span class="std std-ref">1000BASE-T</span></a>, <a class="reference internal" href="#gbase-t"><span class="std std-ref">10GBASE-T</span></a>,</p></li>
 </ul>
 </div>
 <div class="section" id="cat-6a">
-<span id="index-77"></span><span id="id65"></span><h4>CAT-6A<a class="headerlink" href="#cat-6a" title="Permalink to this headline">¶</a></h4>
+<span id="index-57"></span><span id="id53"></span><h4>CAT-6A<a class="headerlink" href="#cat-6a" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Category_6_cable#Category_6A">https://en.wikipedia.org/wiki/Category_6_cable#Category_6A</a></div>
 </div>
 <p>A CAT-6A (<em>Category 6A</em>) cable is an <a class="reference internal" href="#ethernet"><span class="std std-ref">Ethernet</span></a> cable</p>
 <ul class="simple">
-<li><p>CAT-6A can carry <a class="reference internal" href="#base-t"><span class="std std-ref">10BASE-T</span></a>, <a class="reference internal" href="#id69"><span class="std std-ref">100BASE-TX</span></a>,
-<a class="reference internal" href="#id71"><span class="std std-ref">1000BASE-T</span></a>, <a class="reference internal" href="#gbase-t"><span class="std std-ref">10GBASE-T</span></a>,</p></li>
+<li><p>CAT-6A can carry <a class="reference internal" href="#base-t"><span class="std std-ref">10BASE-T</span></a>, <a class="reference internal" href="#id57"><span class="std std-ref">100BASE-TX</span></a>,
+<a class="reference internal" href="#id59"><span class="std std-ref">1000BASE-T</span></a>, <a class="reference internal" href="#gbase-t"><span class="std std-ref">10GBASE-T</span></a>,</p></li>
 </ul>
 </div>
 </div>
 <div class="section" id="ethernet">
-<span id="index-78"></span><span id="id66"></span><h3>Ethernet<a class="headerlink" href="#ethernet" title="Permalink to this headline">¶</a></h3>
+<span id="index-58"></span><span id="id54"></span><h3>Ethernet<a class="headerlink" href="#ethernet" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Ethernet_over_twisted_pair">https://en.wikipedia.org/wiki/Ethernet_over_twisted_pair</a></div>
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Fast_Ethernet">https://en.wikipedia.org/wiki/Fast_Ethernet</a></div>
@@ -1417,7 +1202,7 @@ to the ends of an ethernet <span class="xref std std-ref">patch cable</span> or 
 <a class="reference internal" href="#ethernet-crossover-cable"><span class="std std-ref">Ethernet Crossover Cable</span></a>.</p></li>
 </ul>
 <div class="section" id="ethernet-crossover-cable">
-<span id="index-79"></span><span id="id67"></span><h4>Ethernet Crossover Cable<a class="headerlink" href="#ethernet-crossover-cable" title="Permalink to this headline">¶</a></h4>
+<span id="index-59"></span><span id="id55"></span><h4>Ethernet Crossover Cable<a class="headerlink" href="#ethernet-crossover-cable" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Ethernet_crossover_cable">https://en.wikipedia.org/wiki/Ethernet_crossover_cable</a></div>
 </div>
@@ -1429,7 +1214,7 @@ swapped on one or both s of a cable (<a class="reference internal" href="#t568a"
 swapped, a crossover cable may be envisioned as a cable with one
 modular connector following <a class="reference internal" href="#t568a"><span class="std std-ref">T568A and T568B</span></a> and the other <a class="reference internal" href="#t568b"><span class="std std-ref">T568A and T568B</span></a>
 (see TIA/EIA-568 Wiring). Such a cable will work for <a class="reference internal" href="#base-t"><span class="std std-ref">10BASE-T</span></a>
-or <a class="reference internal" href="#id69"><span class="std std-ref">100BASE-TX</span></a>.</p>
+or <a class="reference internal" href="#id57"><span class="std std-ref">100BASE-TX</span></a>.</p>
 <p class="attribution">—<a class="reference external" href="https://en.wikipedia.org/wiki/Ethernet_crossover_cable#Overview">https://en.wikipedia.org/wiki/Ethernet_crossover_cable#Overview</a></p>
 </div></blockquote>
 <div class="admonition warning">
@@ -1464,7 +1249,7 @@ in a manual often also available online).</p></li>
 </ul>
 </div>
 <div class="section" id="base-t">
-<span id="index-80"></span><span id="id68"></span><h4>10BASE-T<a class="headerlink" href="#base-t" title="Permalink to this headline">¶</a></h4>
+<span id="index-60"></span><span id="id56"></span><h4>10BASE-T<a class="headerlink" href="#base-t" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia:  <a class="reference external" href="https://en.wikipedia.org/wiki/Ethernet_over_twisted_pair#Cabling">https://en.wikipedia.org/wiki/Ethernet_over_twisted_pair#Cabling</a></div>
 </div>
@@ -1472,9 +1257,9 @@ in a manual often also available online).</p></li>
 <ul class="simple">
 <li><p><span class="xref std std-ref">100BASE-TX</span> ultimately supersedes <a class="reference internal" href="#base-t"><span class="std std-ref">10BASE-T</span></a></p></li>
 </ul>
-<span class="target" id="index-81"></span></div>
+<span class="target" id="index-61"></span></div>
 <div class="section" id="base-tx">
-<span id="id69"></span><span id="index-82"></span><h4>100BASE-TX<a class="headerlink" href="#base-tx" title="Permalink to this headline">¶</a></h4>
+<span id="id57"></span><span id="index-62"></span><h4>100BASE-TX<a class="headerlink" href="#base-tx" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Fast_Ethernet#100BASE-TX">https://en.wikipedia.org/wiki/Fast_Ethernet#100BASE-TX</a></div>
 </div>
@@ -1486,15 +1271,15 @@ in a manual often also available online).</p></li>
 </ul>
 </div>
 <div class="section" id="gigabit-ethernet">
-<span id="index-83"></span><span id="id70"></span><h4>Gigabit Ethernet<a class="headerlink" href="#gigabit-ethernet" title="Permalink to this headline">¶</a></h4>
+<span id="index-63"></span><span id="id58"></span><h4>Gigabit Ethernet<a class="headerlink" href="#gigabit-ethernet" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
-<li><p>Copper Gigabit Ethernet: <a class="reference internal" href="#id71"><span class="std std-ref">1000BASE-T</span></a>, <a class="reference internal" href="#gbase-t"><span class="std std-ref">10GBASE-T</span></a>,
-<a class="reference internal" href="#id75"><span class="std std-ref">40GBASE-T</span></a></p></li>
+<li><p>Copper Gigabit Ethernet: <a class="reference internal" href="#id59"><span class="std std-ref">1000BASE-T</span></a>, <a class="reference internal" href="#gbase-t"><span class="std std-ref">10GBASE-T</span></a>,
+<a class="reference internal" href="#id63"><span class="std std-ref">40GBASE-T</span></a></p></li>
 <li><p>Fiber Gigabit Ethernet : <a class="reference internal" href="#base-x"><span class="std std-ref">1000BASE-X</span></a>, […]</p></li>
 </ul>
 </div>
-<div class="section" id="id71">
-<span id="index-84"></span><span id="id72"></span><h4>1000BASE-T<a class="headerlink" href="#id71" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id59">
+<span id="index-64"></span><span id="id60"></span><h4>1000BASE-T<a class="headerlink" href="#id59" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Gigabit_Ethernet#1000BASE-T">https://en.wikipedia.org/wiki/Gigabit_Ethernet#1000BASE-T</a></div>
 </div>
@@ -1506,7 +1291,7 @@ in a manual often also available online).</p></li>
 </ul>
 </div>
 <div class="section" id="base-x">
-<span id="index-85"></span><span id="id73"></span><h4>1000BASE-X<a class="headerlink" href="#base-x" title="Permalink to this headline">¶</a></h4>
+<span id="index-65"></span><span id="id61"></span><h4>1000BASE-X<a class="headerlink" href="#base-x" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Gigabit_Ethernet#1000BASE-X">https://en.wikipedia.org/wiki/Gigabit_Ethernet#1000BASE-X</a></div>
 </div>
@@ -1514,14 +1299,14 @@ in a manual often also available online).</p></li>
 <a class="reference internal" href="#fiber"><span class="std std-ref">Fiber</span></a> <a class="reference internal" href="#ethernet"><span class="std std-ref">Ethernet</span></a> standard.</p>
 </div>
 <div class="section" id="gbase-t">
-<span id="index-86"></span><span id="id74"></span><h4>10GBASE-T<a class="headerlink" href="#gbase-t" title="Permalink to this headline">¶</a></h4>
+<span id="index-66"></span><span id="id62"></span><h4>10GBASE-T<a class="headerlink" href="#gbase-t" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/10_Gigabit_Ethernet#10GBASE-T">https://en.wikipedia.org/wiki/10_Gigabit_Ethernet#10GBASE-T</a></div>
 </div>
 <p>10GBASE-T is a 10000 Mbps (10 Gbps) copper <a class="reference internal" href="#ethernet"><span class="std std-ref">Ethernet</span></a> standard.</p>
 </div>
-<div class="section" id="id75">
-<span id="index-87"></span><span id="id76"></span><h4>40GBASE-T<a class="headerlink" href="#id75" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id63">
+<span id="index-67"></span><span id="id64"></span><h4>40GBASE-T<a class="headerlink" href="#id63" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/100_Gigabit_Ethernet#40GBASE-T">https://en.wikipedia.org/wiki/100_Gigabit_Ethernet#40GBASE-T</a></div>
 </div>
@@ -1530,16 +1315,16 @@ with <a class="reference internal" href="knowledge-engineering#iso"><span class=
 </div>
 </div>
 <div class="section" id="wireless">
-<span id="index-88"></span><span id="id77"></span><h3>Wireless<a class="headerlink" href="#wireless" title="Permalink to this headline">¶</a></h3>
+<span id="index-68"></span><span id="id65"></span><h3>Wireless<a class="headerlink" href="#wireless" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Wireless">https://en.wikipedia.org/wiki/Wireless</a></div>
 </div>
 <ul class="simple">
 <li><p>Wireless / Mobile / Radiofrequency</p></li>
-<li><p><span class="xref std std-ref">Wi-Fi</span> == <a class="reference internal" href="#id78"><span class="std std-ref">802.11</span></a> wireless networking</p></li>
+<li><p><span class="xref std std-ref">Wi-Fi</span> == <a class="reference internal" href="#id66"><span class="std std-ref">802.11</span></a> wireless networking</p></li>
 </ul>
-<div class="section" id="id78">
-<span id="index-89"></span><span id="id79"></span><h4>802.11<a class="headerlink" href="#id78" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id66">
+<span id="index-69"></span><span id="id67"></span><h4>802.11<a class="headerlink" href="#id66" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/IEEE_802.11">https://en.wikipedia.org/wiki/IEEE_802.11</a></div>
 </div>
@@ -1621,16 +1406,16 @@ the 5 GHz (<a class="reference internal" href="units#hz"><span class="std std-re
 </div>
 </div>
 <div class="section" id="wi-fi-direct">
-<span id="index-90"></span><span id="id80"></span><h4>Wi-Fi Direct<a class="headerlink" href="#wi-fi-direct" title="Permalink to this headline">¶</a></h4>
+<span id="index-70"></span><span id="id68"></span><h4>Wi-Fi Direct<a class="headerlink" href="#wi-fi-direct" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Wi-Fi_Direct">https://en.wikipedia.org/wiki/Wi-Fi_Direct</a></div>
 </div>
 <p>Wi-Fi Direct is an alternative to <span class="xref std std-ref">Bluetooth</span> with
 relatively seamless
 wireless device pairing/configuration.</p>
-<span class="target" id="index-91"></span></div>
+<span class="target" id="index-71"></span></div>
 <div class="section" id="wireless-mesh-network">
-<span id="index-92"></span><span id="id81"></span><h4>Wireless mesh network<a class="headerlink" href="#wireless-mesh-network" title="Permalink to this headline">¶</a></h4>
+<span id="index-72"></span><span id="id69"></span><h4>Wireless mesh network<a class="headerlink" href="#wireless-mesh-network" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/Wireless_mesh_network">https://en.wikipedia.org/wiki/Wireless_mesh_network</a></div>
 </div>
@@ -1644,16 +1429,9 @@ in order to route with the wider internet.</p></li>
 </ul>
 <p>Mesh Wireless Approaches:</p>
 <ul>
-<li><p>OLPC (<em>One Laptop Per Child</em>) laptops support IEEE 802.11s
+<li><p>OLPC (<em>One-laptop per child</em>) laptops support IEEE 802.11s
 mesh networking with standard 802.11b/g wireless cards.</p>
-<div class="line-block">
-<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/One_Laptop_per_Child#Technology">https://en.wikipedia.org/wiki/One_Laptop_per_Child#Technology</a></div>
-<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/OLPC_XO#Networking">https://en.wikipedia.org/wiki/OLPC_XO#Networking</a></div>
-<div class="line">Docs: <a class="reference external" href="http://wiki.laptop.org/go/Mesh_Network_Details">http://wiki.laptop.org/go/Mesh_Network_Details</a></div>
-</div>
-<ul class="simple">
-<li><p><a class="reference external" href="http://wiki.laptop.org/go/XO-4_Touch">http://wiki.laptop.org/go/XO-4_Touch</a></p></li>
-</ul>
+<p><a class="reference external" href="http://wiki.laptop.org/go/Mesh_Network_Details">http://wiki.laptop.org/go/Mesh_Network_Details</a></p>
 </li>
 <li><p>Redstone Technologies LLC (<a class="reference internal" href="#gigabit"><span class="std std-ref">Gigabit</span></a> wireless mesh networks)</p>
 <ul class="simple">
@@ -1665,33 +1443,33 @@ mesh networking with standard 802.11b/g wireless cards.</p>
 </div>
 </div>
 <div class="section" id="mobile-broadband">
-<span id="index-93"></span><span id="id82"></span><h3>Mobile Broadband<a class="headerlink" href="#mobile-broadband" title="Permalink to this headline">¶</a></h3>
+<span id="index-73"></span><span id="id70"></span><h3>Mobile Broadband<a class="headerlink" href="#mobile-broadband" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/Mobile_broadband">https://en.wikipedia.org/wiki/Mobile_broadband</a></div>
 </div>
 <div class="section" id="g">
-<span id="index-94"></span><span id="id83"></span><h4>3G<a class="headerlink" href="#g" title="Permalink to this headline">¶</a></h4>
+<span id="index-74"></span><span id="id71"></span><h4>3G<a class="headerlink" href="#g" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/3G">https://en.wikipedia.org/wiki/3G</a></div>
 </div>
 </div>
-<div class="section" id="id84">
-<span id="index-95"></span><span id="id85"></span><h4>4G<a class="headerlink" href="#id84" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id72">
+<span id="index-75"></span><span id="id73"></span><h4>4G<a class="headerlink" href="#id72" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/4G">https://en.wikipedia.org/wiki/4G</a></div>
 </div>
 <ul class="simple">
-<li><p><a class="reference internal" href="#lte"><span class="std std-ref">LTE</span></a> is a <a class="reference internal" href="#id84"><span class="std std-ref">4G</span></a> wireless standard.</p></li>
+<li><p><a class="reference internal" href="#lte"><span class="std std-ref">LTE</span></a> is a <a class="reference internal" href="#id72"><span class="std std-ref">4G</span></a> wireless standard.</p></li>
 </ul>
 </div>
-<div class="section" id="id86">
-<span id="index-96"></span><span id="id87"></span><h4>5G<a class="headerlink" href="#id86" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id74">
+<span id="index-76"></span><span id="id75"></span><h4>5G<a class="headerlink" href="#id74" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/5G">https://en.wikipedia.org/wiki/5G</a></div>
 </div>
 </div>
 <div class="section" id="cdma">
-<span id="index-97"></span><span id="id88"></span><h4>CDMA<a class="headerlink" href="#cdma" title="Permalink to this headline">¶</a></h4>
+<span id="index-77"></span><span id="id76"></span><h4>CDMA<a class="headerlink" href="#cdma" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Code_division_multiple_access">https://en.wikipedia.org/wiki/Code_division_multiple_access</a></div>
 </div>
@@ -1700,15 +1478,15 @@ mesh networking with standard 802.11b/g wireless cards.</p>
 </ul>
 </div>
 <div class="section" id="gsm">
-<span id="index-98"></span><span id="id89"></span><h4>GSM<a class="headerlink" href="#gsm" title="Permalink to this headline">¶</a></h4>
+<span id="index-78"></span><span id="id77"></span><h4>GSM<a class="headerlink" href="#gsm" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/GSM">https://en.wikipedia.org/wiki/GSM</a></div>
 </div>
 </div>
 <div class="section" id="lte">
-<span id="index-99"></span><span id="id90"></span><h4>LTE<a class="headerlink" href="#lte" title="Permalink to this headline">¶</a></h4>
+<span id="index-79"></span><span id="id78"></span><h4>LTE<a class="headerlink" href="#lte" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
-<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/LTE_(telecommunication)">https://en.wikipedia.org/wiki/LTE_(telecommunication)</a></div>
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/LTE_(telecommunication">https://en.wikipedia.org/wiki/LTE_(telecommunication</a>)</div>
 </div>
 <ul class="simple">
 <li><p>Artemis pCell pWave LTE: <a class="reference external" href="http://www.artemis.com/pcell">http://www.artemis.com/pcell</a></p></li>
@@ -1716,14 +1494,14 @@ mesh networking with standard 802.11b/g wireless cards.</p>
 </div>
 </div>
 <div class="section" id="fiber">
-<span id="index-100"></span><span id="id91"></span><h3>Fiber<a class="headerlink" href="#fiber" title="Permalink to this headline">¶</a></h3>
+<span id="index-80"></span><span id="id79"></span><h3>Fiber<a class="headerlink" href="#fiber" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/Fiber-optic_communication">https://en.wikipedia.org/wiki/Fiber-optic_communication</a></div>
 <div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/Optical_fiber">https://en.wikipedia.org/wiki/Optical_fiber</a></div>
 </div>
 <p>Optical fiber can carry photons near the speed of light.</p>
 <div class="section" id="fiber-to-the-x">
-<span id="index-101"></span><span id="id92"></span><h4>Fiber to the x<a class="headerlink" href="#fiber-to-the-x" title="Permalink to this headline">¶</a></h4>
+<span id="index-81"></span><span id="id80"></span><h4>Fiber to the x<a class="headerlink" href="#fiber-to-the-x" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Fiber_to_the_x">https://en.wikipedia.org/wiki/Fiber_to_the_x</a></div>
 </div>
@@ -1741,7 +1519,7 @@ all called “fiber to the x (<em>FTTX</em>)”.</p>
 </ul>
 </div>
 <div class="section" id="fibre-channel">
-<span id="index-102"></span><span id="id93"></span><h4>Fibre Channel<a class="headerlink" href="#fibre-channel" title="Permalink to this headline">¶</a></h4>
+<span id="index-82"></span><span id="id81"></span><h4>Fibre Channel<a class="headerlink" href="#fibre-channel" title="Permalink to this headline">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Fibre_Channel">https://en.wikipedia.org/wiki/Fibre_Channel</a></div>
 </div>
@@ -1935,7 +1713,7 @@ water/cleaning/maintenance)</p></li>
 </div>
 </dd>
 <dt id="term-WiFi">WiFi</dt><dd><p>WiFi is a name for a set of
-<a class="reference internal" href="#id78"><span class="std std-ref">IEEE 802.11</span></a> <a class="reference internal" href="#wireless"><span class="std std-ref">Wireless</span></a> standards.</p>
+<a class="reference internal" href="#id66"><span class="std std-ref">IEEE 802.11</span></a> <a class="reference internal" href="#wireless"><span class="std std-ref">Wireless</span></a> standards.</p>
 </dd>
 </dl>
 </div>
@@ -1973,7 +1751,7 @@ water/cleaning/maintenance)</p></li>
 
       <!-- footer -->
       <footer role="contentinfo">
-          &copy; <a href="../license">Copyright</a> WRD R&amp;D 2014 - 2020.
+          &copy; <a href="../license">Copyright</a> WRD R&amp;D 2014 - 2015.
 
       <br/>
       <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
