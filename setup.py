@@ -11,9 +11,13 @@ except ImportError:
     from distutils.core import setup
 
 if sys.argv[-1] == "publish":
-    os.system("python setup.py sdist upload")
+    os.system("python setup.py sdist bdist_wheel")
+    os.system("twine upload dist/*")
     sys.exit()
 
+if sys.argv[-1] == "test":
+    os.system("pytest -v --cov-report=term-missing --cov=wrdrd ./tests/")
+    sys.exit()
 
 readme = Path("README.rst").read_text()
 history = Path("HISTORY.rst").read_text().replace(".. :changelog:", "")
