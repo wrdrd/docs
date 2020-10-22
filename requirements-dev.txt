@@ -1,8 +1,12 @@
 
-pytest
 pytest-cov
 pytest-xprocess
+#xprocess
 flake8
+black
+twine
+tox
+#precommit
 
 #sarge
 -e git+https://bitbucket.org/vinay.sajip/sarge#egg=sarge
