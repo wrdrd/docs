@@ -43,3 +43,6 @@ docs/_build
 
 # UndoTree
 *.un~
+
+# pytest-xprocess
+.xprocess/

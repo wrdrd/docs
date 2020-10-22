@@ -217,7 +217,7 @@ def get_stop_words():
         STOP_WORDS.pop("about")
 
 
-# get_stop_words()
+get_stop_words()
 
 
 def get_text_from_bs(bs):
@@ -268,7 +268,7 @@ def extract_words_from_bs(bs):
 KeywordFrequency = namedtuple("KeywordFrequency", ("url", "frequencies"))
 
 
-def word_frequencies(url, keywords):
+def word_frequencies(url, keywords, stopwords=STOP_WORDS):
     """
     Get frequencies (counts) for a set of (non-stopword) keywords
 
@@ -280,7 +280,7 @@ def word_frequencies(url, keywords):
     """
     words = (x.lower() for x in keywords)
     return KeywordFrequency(
-        url, Counter(w for w in words if len(w) > 1 and w not in STOP_WORDS)
+        url, Counter(w for w in words if len(w) > 1 and w not in stopwords)
     )
 
 
@@ -705,7 +705,7 @@ def write_nxgraph_to_dot(g, output):
     """
     import networkx
 
-    return networkx.drawing.write_dot(g, output)
+    return networkx.drawing.nx_pydot.write_dot(g, output)
 
 
 def write_nxgraph_to_json(g, output):

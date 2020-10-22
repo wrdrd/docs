@@ -1,3 +1,9 @@
+
+pytest
+pytest-cov
+pytest-xprocess
+flake8
+
 #sarge
 -e git+https://bitbucket.org/vinay.sajip/sarge#egg=sarge
 
@@ -12,3 +18,5 @@
 
 #wrd_sphinx_theme
 -e git+https://github.com/westurner/wrd_sphinx_theme#egg=wrd_sphinx_theme
+
+matplotlib

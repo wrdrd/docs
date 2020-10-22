@@ -21,6 +21,13 @@ history = Path("HISTORY.rst").read_text().replace(".. :changelog:", "")
 requires = [
     "sarge",
     "structlog",
+    "requests",
+    "beautifulsoup4",
+    "URLObject",
+    "NLTK",
+    "textblob",
+    "networkx",
+    "pydot",
 ]
 
 setup(
