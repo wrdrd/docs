@@ -41,7 +41,7 @@ setup(
     long_description=readme + "\n\n" + history,
     author="Wes Turner",
     author_email="wes@wrd.nu",
-    url="https://bitbucket.org/westurner/wrdrd",
+    url="https://github.com/westurner/wrdrd",
     packages=["wrdrd",],
     package_dir={"wrdrd": "wrdrd"},
     include_package_data=True,
