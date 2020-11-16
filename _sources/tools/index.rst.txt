@@ -5311,17 +5311,94 @@ JupyterLab
 | Docs: https://jupyterlab.readthedocs.io/en/stable/
 | Docs: https://jupyterlab.readthedocs.io/en/stable/user/extensions.html
 | Docs: https://jupyterlab.readthedocs.io/en/stable/developer/extension_dev.html
+| Awesome: https://github.com/mauhai/awesome-jupyterlab
 
-JupyterLab is a web-based tabbed :ref:`IDE` with integrated support for
-:ref:`Jupyter Notebook`, terminals, text editing, and a new extension
-API.
+JupyterLab is an open-source web-based tabbed :ref:`IDE <IDE>`
+written in :ref:`Python`, :ref:`Javascript`, and :ref:`TypeScript` 
+for working with
+:ref:`<jupyter notebooks> Jupyter Notebook`, terminals, text editing, undo, extensions.
 
-- Installing JupyterLab also installs Jupyter Notebook.
+- You can edit Jupyter notebooks with JupyterLab.
+- Installing JupyterLab also installs :ref:`Jupyter Notebook`.
+  (which doesn't support tabs or the new extension API)
 - A few UI differences between JupyterLab and Jupyter Notebook:
 
   - JupyterLab has tabbed editing: you can open files, notebooks,
     and terminals in tabs
   - JupyterLab has a sidebar with a file selector pane
+
+- Installing JupyterLab does not install any :ref:`scipystack`
+  or other packages.
+
+
+.. index:: JupyterLab (install)
+
+Install JupyterLab
++++++++++++++++++++++
+
+Install JupyterLab With :ref:`pip`:
+
+.. code:: bash
+
+   python -m pip install jupyterlab
+
+Install JupyterLab with :ref:`conda`:
+
+.. code:: bash
+
+   conda install -c conda-forge -y jupyterlab
+
+
+.. index:: Hosting JupyterLab
+.. index:: JupyterLab (hosting)
+.. _hosting jupyterlab:
+
+Hosting JupyterLab
++++++++++++++++++++
+You can host JupyterLab yourself:
+
+- :ref:`JupyterHub`
+
+  - "Zero to JupyterHub with :ref:`Kubernetes`"
+    https://zero-to-jupyterhub.readthedocs.io/en/latest/
+  - JupyterHub **Spawners** create new instances of JupyterLab (within containers, VMs,
+    a shell)
+
+    - https://jupyterhub.readthedocs.io/en/stable/reference/spawners.html
+    - https://github.com/jupyterhub/jupyterhub/wiki/Spawners
+
+  - JupyterHub **Authenticators** check names and credentials
+    from a file, PAM, Single Sign On APIs
+
+    - https://jupyterhub.readthedocs.io/en/stable/reference/authenticators.html
+    - https://github.com/jupyterhub/jupyterhub/wiki/Authenticators
+
+- :ref:`BinderHub` runs containers with :ref:`repo2docker`
+
+  - https://binderhub.readthedocs.io/en/latest/zero-to-binderhub/
+  - :ref:`mybinder.org` is powered by :ref:`BinderHub`
+
+
+
+.. index:: Hosted JupyterLab
+.. index:: JupyterLab (hosted)
+.. _hosted jupyterlab:
+
+Hosted JupyterLab
++++++++++++++++++++
+There are many providers of hosted :ref:`JupyterLab`
+and :ref:`Jupyter Notebook`;
+where they run Jupyter in a shell or a VM on their servers for you 
+and you connect over your internet connection.
+
+- https://github.com/markusschanta/awesome-jupyter#hosted-notebook-solutions
+- :ref:`Cocalc`
+- :ref:`Google AI Platform` has hosted JupyterLab Notebooks.
+- :ref:`Google Colab` is a fork of :ref:`Jupyter Notebook`.
+- :ref:`GitHub Codespaces` (:ref:`VSCode`)
+- :ref:`ml-workspace` -- https://github.com/ml-tooling/ml-workspace
+  (:ref:`VSCode`)
+- :ref:`MyBinder.org`
 
 
 .. index:: JupyterHub
