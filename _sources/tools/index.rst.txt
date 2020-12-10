@@ -5126,8 +5126,12 @@ IPython Notebook
 | Docs: http://ipython.readthedocs.io/en/stable/notebook/security.html
 | Docs: https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks
 
-:ref:`IPython` Notebook is a web-based shell for interactive
-and literate computing with IPython notebooks.
+:ref:`IPython` Notebook (now :ref:`Jupyter Notebook`)
+is an open source web-based shell
+written in :ref:`Python` and :ref:`Javascript`
+for interactive and literate computing with IPython notebooks
+composed of raw, markdown, or code **input**
+and plaintext- or rich- **output** cells.
 
 * An IPython notebook (``.ipynb``) is a
   :ref:`JSON-` document containing input and output
@@ -5136,7 +5140,16 @@ and literate computing with IPython notebooks.
   (e.g. :ref:`HTML-`, RST, LaTeX, PDF);
   and edited through the web with
   IPython Notebook.
+* IPython Notebook is a webapp written on :ref:`tornado`,
+  an asynchronous web application framework for Python.
+  
+  * seeAlso: westurner/brw (2007-))
+
 * IPython Notebook supports :ref:`Markdown` syntax for comment cells.
+
+  * :ref:`MyST Markdown` is a :ref:`commonmark` :ref:`Markdown` syntax
+    (which can also be used to express entire Jupyter notebooks)
+
 * IPython Notebook supports more than 40 different IPython kernels for
   other languages:
 
@@ -5183,9 +5196,26 @@ as defined in :ref:`Venv`):
 
 .. note:: IPython Notebook is now :ref:`Jupyter Notebook`.
 
-   Jupyter Notebook runs Python notebooks with the :ref:`IPython`
-   :ref:`CPython` kernel (from :ref:`IPython Notebook`).
+   Jupyter Notebook runs Python notebooks with :ref:`ipykernel`,
+   the :ref:`IPython` :ref:`Python` kernel from :ref:`IPython Notebook`
 
+
+
+.. index:: Jupyter kernels
+.. _jupyter kernels:
+
+Jupyter kernels
+++++++++++++++++
+| Src: https://github.com/ipython/ipykernel
+| Docs: https://ipython.readthedocs.io/en/stable/install/kernel_install.html
+
+
+.. index:: ipykernel
+.. _ipykernel:
+
+ipykernel
+++++++++++
+| Src: https://ipython.readthedocs.io/en/stable/install/kernel_install.html
 
 .. index:: ipython_nose
 .. _ipython_nose:
@@ -5282,22 +5312,77 @@ Jupyter Notebook
 | Wikipedia: https://en.wikipedia.org/wiki/Jupyter#Notebook
 | Src: https://github.com/jupyter/notebook
 | CondaPkg: ``notebook``
+| FileExt: ``.ipynb``
 | Docs: https://jupyter-notebook.readthedocs.io/en/stable/
 
-:ref:`Jupyter` Notebook is the latest :ref:`IPython Notebook`.
+:ref:`Jupyter` Notebook
+is an open source shell webapp
+written in :ref:`Python` and :ref:`Javascript`
+for interactive and literate computing with Jupyter notebooks
+composed of raw, markdown, or code **input**
+and plaintext- or rich- **output** cells.
 
-   The Jupyter HTML Notebook is a web-based notebook environment
-   for interactive computing.
+* ``.ipynb`` files are Jupyter Notebooks saved as 
+  :ref:`JSON-` documents .
+* An Jupyter notebook is a
+  document containing {meta, input, and output} records
+  for a linear sequence of cells;
+  which can be exported to many output formats
+  (e.g. :ref:`HTML-`, RST, LaTeX, PDF, Python, :ref:`MyST Markdown`);
+  and edited through the web with
+  Jupyter Notebook.
+* Jupyter Notebook is a webapp written on :ref:`tornado`,
+  an asynchronous web application framework for Python.
+  
+  * seeAlso: westurner/brw (2007-))
 
-.. warning:: Jupyter Notebook runs code and shell commands as
-   the user the process is running as, on a remote or local machine.
+* Jupyter Notebook supports :ref:`Markdown` syntax for comment cells.
 
-   Reproducible :ref:`SciPy Stack <scipystack>`
-   IPython Notebook / :ref:`Jupyter Notebook` servers
-   implement best practices like process isolation and privilege separation
-   with e.g. :ref:`Docker` and/or :ref:`Jupyter` Hub.
+  * :ref:`MyST Markdown` is a :ref:`commonmark` :ref:`Markdown` syntax
+    (which can also be used to express entire Jupyter notebooks)
 
-:ref:`JupyterLab`
+* Jupyter Notebook supports more than 40 different Jupyter kernels for
+  other languages:
+
+  https://github.com/ipython/ipython/wiki/Jupyter-kernels-for-other-languages
+
+To start IPython Notebook (assuming the ``_SRC`` variable
+as defined in :ref:`Venv`):
+
+.. code:: bash
+
+   pip install ipython[notebook]
+   # pip install -e git+https://github.com/ipython/ipython@rel-3.2.1#egg=ipython
+   # https://github.com/ipython/ipython/releases
+
+   mkdir $_SRC/notebooks; cd $_SRC/notebooks
+   ipython notebook
+
+   ipython notebook --notebook-dir="${_SRC}/notebooks"
+
+   # With HTTPS (TLS/SSL)
+   ipython notebook \
+    --ip=127.0.0.1 \
+    --certfile=mycert.pem \
+    --keyfile=privkey.pem \
+    --port=8888 \
+    --browser=web  # (optional) westurner/dotfiles/scripts/web
+
+    # List supported options
+    ipython notebook --help
+
+
+.. warning:: IPython Notebook runs code and shell commands as
+    the user the process is running as, on a remote or local machine.
+
+    Reproducible :ref:`SciPy Stack <scipystack>`
+    IPython Notebook / :ref:`Jupyter Notebook` servers
+    implement best practices like process isolation and privilege separation
+    with e.g. :ref:`Docker` and/or :ref:`Jupyter` Hub.
+
+.. note:: :ref:`JupyterLab` (a mostly-rewrite)
+   adds e.g. tabs and undo (and a new extension API)
+   to :ref:`Jupyter Notebook`.
 
 
 .. index:: JupyterLab
@@ -6917,6 +7002,16 @@ Zotero archives and tags resources with bibliographic metadata.
 
 Tab Extensions
 ~~~~~~~~~~~~~~~~
+
+.. index:: better-onetab
+.. _better-onetab:
+
+better-onetab
+++++++++++++++
+| Src:  https://github.com/cnwangjie/better-onetab
+| ChromeExt: https://chrome.google.com/webstore/detail/better-onetab/eookhngofldnbnidjlbkeecljkfpmfpg
+
+
 .. index:: FoxyTab
 .. _foxytab:
 
@@ -6937,6 +7032,7 @@ OneTab
 | FirefoxXPI: https://addons.mozilla.org/firefox/downloads/latest/525044/addon-525044-latest.xpi
 
 * https://github.com/Greduan/chrome-ext-tabulator
+* :ref:`better-onetab`
 
 
 .. index:: Snipe
