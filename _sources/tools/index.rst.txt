@@ -1218,12 +1218,16 @@ HubFlow
 | Docs: https://datasift.github.io/gitflow/TheHubFlowTools.html
 | Docs: https://datasift.github.io/gitflow/GitFlowForGitHub.html
 
+GitFlow is a named branch workflow for :ref:`git`
+with ``master``, ``develop``, ``feature``, ``release``, ``hotfix``,
+and ``support`` branches (``git flow``).
+
 HubFlow is a fork of :ref:`GitFlow`
-that adds extremely useful commands for working with :ref:`Git` and
+that adds useful commands for working with :ref:`Git` and
 GitHub **pull requests**.
 
 HubFlow branch names and prefixes are configured in ``.git/config``;
-the defaults are as follows:
+the defaults are:
 
 
 .. table:: HubFlow Branch Names
