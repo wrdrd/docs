@@ -2240,14 +2240,16 @@ and scientific software development.
   (e.g. the :ref:`Yum` and :ref:`dnf` package managers)
   are written in Python.
 
-* Gentoo :ref:`Portage` package manager is written in Python.
+* The Gentoo :ref:`Portage` package manager is written in Python.
 
-* :ref:`Conda` package manager is written in Python.
+* The :ref:`Conda` package manager is written in Python.
 
 * :ref:`IPython`, :ref:`Pip`, :ref:`Conda`,
   :ref:`Sphinx`, :ref:`Docutils`,
   :ref:`Mercurial`, :ref:`OpenStack`,
-  :ref:`Libcloud`, :ref:`Salt`, :ref:`Tox`, :ref:`Virtualenv`,
+  :ref:`Libcloud`, :ref:`Salt`, 
+  :ref:`Ansible`, 
+  :ref:`Tox`, :ref:`Virtualenv`,
   and :ref:`Virtualenvwrapper` are all written in Python.
 
 * :ref:`PyPI` is the Python community index
@@ -2259,7 +2261,7 @@ and the Python Infrastructure Team:
 
 * https://www.python.org/psf/sponsorship/
 * https://www.python.org/psf/members/#sponsor-members
-* http://infra.psf.io/
+* https://infra.psf.io/
 
   * https://github.com/python/psf-salt
 
