@@ -2259,7 +2259,14 @@ and the Python Infrastructure Team:
 
 * https://www.python.org/psf/sponsorship/
 * https://www.python.org/psf/members/#sponsor-members
-* https://psf-salt.readthedocs.io/en/latest/overview/
+* http://infra.psf.io/
+
+  * https://github.com/python/psf-salt
+
+* https://packaging.python.org/
+
+  * https://github.com/pypa/packaging.python.org
+
 
 
 .. index:: CPython
