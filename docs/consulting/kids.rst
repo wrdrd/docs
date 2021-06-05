@@ -386,6 +386,36 @@ Khan Academy
   - AP World History, AP US History, AP US Government, AP Art History
   - AP Microeconomics, AP Macroeconomics
   - https://www.khanacademy.org/computing
+
+    - https://www.khanacademy.org/computing/computers-and-internet --
+      Digital Information, Computers, The Internet,
+      Online Data Security (see also: :ref:`Internet Safety`),
+      Computing Innovations
+    - https://www.khanacademy.org/computing/computer-programming
+      -- Computer Programming (see also: :ref:`Software Development`)
+
+      - Intro :ref:`JS <Javascript>`, Intro :ref:`HTML`/:ref:`CSS`,
+        Intro :ref:`SQL`, Advanced JS: Games & Visualizations, Natural
+        Simulations
+
+    - https://www.khanacademy.org/computing/ap-computer-science-principles
+      -- AP Computer Science Principles
+    - https://www.khanacademy.org/computing/pixar -- Pixar in a Box
+
+        Pixar in a Box is a behind-the-scenes look at how Pixar artists
+        do their jobs. You will be able to animate bouncing balls, build a
+        swarm of robots, and make virtual fireworks explode. The subjects
+        you learn in school — math, science, computer science, and
+        humanities — are used every day to create amazing movies at Pixar. 
+
+    - https://www.khanacademy.org/computing/computer-science --
+      :ref:`Computer Science`
+
+      - :ref:`Algorithms`
+      - :ref:`Cryptography`
+      - :ref:`Information Theory`
+
+
   - https://www.khanacademy.org/hourofcode (:ref:`Code.org`)
 
 - All Khan Academy content is Creative Commons BY-NC-SA licensed.
