@@ -2038,6 +2038,29 @@ Media Tools
 *************
 http://distrowatch.com/search.php?category=Multimedia
 
+.. index:: Fedora Jam
+.. _fedora jam:
+
+Fedora Jam
+-------------
+| Homepage: https://labs.fedoraproject.org/en/jam/
+| Docs: https://fedoraproject.org/wiki/Fedora_jam
+| Src: https://pagure.io/fedora-kickstarts/blob/main/f/fedora-live-jam_kde.ks
+
+Included packages:
+
+- :ref:`Ardour` - DAW
+- :ref:`Qtractor`- MIDI sequencer
+- :ref:`Hydrogen` - drum machine
+- :ref:`Yoshimi` - synthesizer
+- :ref:`MuseScore` - scorewriting sequencer
+- :ref:`TuxGuitar` - multitrack guitar tab editor
+- :ref:`Guitarix` - guitar effects
+- :ref:`SuperLooper` - realtime looping
+- :ref:`Calf` - :ref:`JACK` plugins
+- https://fedoraproject.org/wiki/Fedora_jam#Included_Packages
+
+
 .. index:: DreamStudio
 .. index:: Celeum DreamStudio
 .. _dreamstudio:
