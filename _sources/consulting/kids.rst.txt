@@ -531,6 +531,32 @@ commodities trading, production of raw materials and goods,
 and opportunity cost.
 
 
+.. index:: Little Big Workshop
+.. _little big workshop:
+
+Little Big Workshop
+--------------------
+| Homepage: https://handy-games.com/en/games/little-big-workshop/
+| SteamApp: https://store.steampowered.com/app/574720/Little_Big_Workshop/
+| XboxLiveApp: https://www.microsoft.com/en-us/p/little-big-workshop/9p6pxdc2sxvr
+| PlaystationApp: https://store.playstation.com/en-us/product/UP0977-CUSA20082_00-LBWBASEGAME00000
+| SwitchApp: https://www.nintendo.com/games/detail/little-big-workshop-switch/
+| StadiaApp: https://stadia.google.com/store/details/1/sku/c00cecabcbde4e95bdab69be6e80b40bp
+
+Little Big Workshop is a workshop business simulation game
+that teaches about becoming a factory tycoon.
+
+- The factory must be scaled,
+- Demand and price for products varies over time, 
+- Workstations and machines fail, 
+- Workers pass out for days without coffee and a break room
+- Workers may be obstructed due to a factory layout in need of remodeling
+- Workers and workstations may be idle
+- In order to accept a manufacturing contract, a production plan including raw
+  materials and equipment and workstation assignments must be prepared.
+
+
+
 .. index:: Kerbal Space Program
 .. _kerbal space program for learning:
 
