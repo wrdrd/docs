@@ -300,7 +300,7 @@ CSV, CSVW, and metadata rows
 
 A classic data table with 1 metadata header row (column label):
 
-.. list-table:: Table with 1 metadata header row
+.. list-table:: Example Table A with 1 metadata header row
    :header-rows: 1
    :stub-columns: 1
    :class: table-striped table-responsive
@@ -329,7 +329,7 @@ A classic data table with 1 metadata header row (column label):
 A data table with 7 metadata header rows (column label, property URI path,
 DataType, unit, accuracy, precision, significant figures):
 
-.. list-table:: Table with 7 metadata header rows
+.. list-table:: Example Table A with 7 metadata header rows
    :header-rows: 7
    :stub-columns: 1
    :class: table-striped table-responsive
