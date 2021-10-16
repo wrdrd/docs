@@ -375,7 +375,6 @@ HTC Vive
 | Wikipedia: https://en.wikipedia.org/wiki/HTC_Vive
 | Homepage: https://www.htcvive.com/us/
 
-* Valve :ref:`Steam` VR
 
 
 .. index:: Oculus VR
@@ -1841,24 +1840,6 @@ Named Data Networking
 | Wikipedia: https://en.wikipedia.org/wiki/Named_data_networking
 |
 
-
-.. index:: Steam
-.. _steam:
-
-Steam
-~~~~~~~
-| Wikipedia: `<https://en.wikipedia.org/wiki/Steam_(software)>`__
-
-Steam is a game and game content distribution system.
-
-* Steam is part of :ref:`SteamOS`
-* Steam registers DRM licenses with Steam
-  for downloading files
-* Steam does not yet download files from
-  more local peers
-  (e.g. everyone at the LAN party purchases the game)
-
-
 .. index:: Kerbal Space Program
 .. _kerbal space program:
 
@@ -1866,8 +1847,7 @@ Steam is a game and game content distribution system.
 Kerbal Space Program
 ----------------------
 | Wikipedia: https://en.wikipedia.org/wiki/Kerbal_Space_Program
-| Homepage: https://kerbalspaceprogram.com/
-| Download: http://store.steampowered.com/app/220200/
+| Homepage: https://kerbalspaceprogram.comm
 | Docs: http://wiki.kerbalspaceprogram.com/wiki/
 | Docs: http://wiki.kerbalspaceprogram.com/wiki/Version_history
 
@@ -1885,7 +1865,6 @@ Kerbel Space Program is a space flight simulator game.
   and will affect the way a ship flies (or doesn't).
 
 
-* Kerbal Space Program is distributed over the :ref:`Steam` network
 * Kerbal Space Program has many cool **mods**:
   http://www.curse.com/ksp-mods/kerbal
 
@@ -2273,7 +2252,6 @@ Gaming Consoles
 
 [...]
 
-* :ref:`Steam` Machine (:ref:`SteamOS`)
 * NVIDIA Shield (:ref:`AndroidTV`)
 * XBox
   
