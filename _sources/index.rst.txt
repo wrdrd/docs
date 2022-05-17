@@ -26,6 +26,7 @@ WRD R&D Documentation
    consulting/entrepreneurship
    consulting/personal-finance
    consulting/investing
+   consulting/agronomy
    consulting/education-technology
    consulting/educational-testing
    consulting/teachers

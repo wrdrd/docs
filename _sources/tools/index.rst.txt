@@ -3141,30 +3141,6 @@ a key-value store with a D-Bus interface.
 * flannel -- Networking
 
 
-.. index:: SteamOS
-.. _steamos:
-
-SteamOS
-++++++++
-| Wikipedia:
-| Homepage: https://store.steampowered.com/steamos
-| Download: https://store.steampowered.com/steamos/download
-| Docs: https://store.steampowered.com/steamos/oem
-| Docs: https://store.steampowered.com/steamos/buildyourown
-| DistroWatch: https://distrowatch.com/table.php?distribution=steamos
-
-
-SteamOS is a :ref:`Linux Distribution <linux-distributions>`
-for gaming
-based on :ref:`Debian`.
-
-* SteamOS uses :ref:`Apt`, :ref:`Dpkg` and :ref:`DEB` :ref:`Packages`
-* Steam Machines run SteamOS
-* SteamOS runs Steam: https://en.wikipedia.org/wiki/Steam
-
-  * https://en.wikipedia.org/wiki/Kerbal_Space_Program
-
-
 .. index:: Linux Notes
 .. _linux-notes:
 
