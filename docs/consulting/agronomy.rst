@@ -1,5 +1,8 @@
 
 
+.. WRD R&D Docs > Agronomy
+.. https://wrdrd.github.io/docs/consulting/agronomy
+.. _author: @westurner 2021-05-17
 
 
 .. index:: Agronomy
@@ -272,7 +275,39 @@ Terra
 
 Soil
 ~~~~~~
-- TODO Dr. Elaine, soil lady
+
+
+
+.. index:: Dr. Elaine
+.. _dr. elaine:
+
+-----------
+Dr. Elaine
+-----------
+
+- Dr. Elaine Ingahm
+- "How to Build Great Soil - A Soil Science Masterclass with Dr. Elaine Ingham (Part 1 of 4)"
+  https://www.youtube.com/watch?v=ErMHR6Mc4Bk
+
+
+
+.. index:: Soil Food Web School
+.. _soil food web school:
+
+Soil Food Web School
+=======================
+| Homepage: https://www.soilfoodweb.com/
+| YouTube: https://www.youtube.com/channel/UCSAU5ludwNyqMHBaR1ZfheQ
+
+- "What is the Soil Food Web? | Soil Food Web School"
+  https://www.youtube.com/watch?v=uAMniWJm2vo
+
+  - Soil has a biome
+    (food web insects, earthworms, microrganisms fungi, bacteria)
+    that breaks down organic matter and releases nutrients in
+    plant-available form.
+
+- See also: :ref:`Hugelculture`
 
 
 .. index:: Terracing
@@ -280,15 +315,32 @@ Soil
 
 Terracing
 ~~~~~~~~~~~
+| Wikipedia: `<https://en.wikipedia.org/wiki/Terrace_(earthworks)>`__
 
+- Terracing is one of the most ancient methods of maximizing yield from
+  available sloped land.
+
+
+.. index:: Hügelkultur
 .. index:: Hugelculture
 .. _hugelculture:
 
-Hugelculture
+Hügelkultur
 ~~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/H%C3%BCgelkultur
 
-- it's a layer cake
+- It's a layer cake: 
+  Instead of just soil, build beds and containers from a base of 
+  logs, leaves, a bit of pine, and maybe sand or loam or sphagum peat
+  moss, and then bagged soil if you must, and then another layer of
+  actual compostable materials for plants to grow up throw.
 
+- Actual Hügelkultur involves mounding up and growing on the side of the
+  mounds, but the principles of composting apply to container beds (that
+  can get hot due to composting) as well.
+
+- See also: :ref:`Agardenpatch grow box` with just Potting Mix and the
+  weed-preventing organic fertilizer mats: what are those made from?
 
 
 .. index:: Water
@@ -638,12 +690,23 @@ Modern methods
 *****************
 
 
+
+.. index:: Organic farming
+.. _organic farming:
+
+Organic farming
+~~~~~~~~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Organic_farming
+
+
 .. index:: Container gardening
 .. _container gardening:
 
 Container gardening
 ~~~~~~~~~~~~~~~~~~~~
-- See: :ref:`Hugelculture`
+| Wikipedia: https://en.wikipedia.org/wiki/Container_garden
+
+- See also: :ref:`Soil` > :ref:`Hugelculture`
 
 
 .. index:: Raised beds
