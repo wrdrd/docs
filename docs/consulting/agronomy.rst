@@ -2,7 +2,7 @@
 
 .. WRD R&D Docs > Agronomy
 .. https://wrdrd.github.io/docs/consulting/agronomy
-.. _author: @westurner 2021-05-17
+.. _author: @westurner
 
 
 .. index:: Agronomy
