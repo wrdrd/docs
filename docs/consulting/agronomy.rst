@@ -285,8 +285,8 @@ Soil
 Dr. Elaine
 -----------
 
-- Dr. Elaine Ingahm
-- "How to Build Great Soil - A Soil Science Masterclass with Dr. Elaine Ingham (Part 1 of 4)"
+- Dr. Elaine Ingham
+- "How to Build Great Soil - A Soil Science Masterclass with Dr. Elaine Ingham (Part 1 of 4)"  
   https://www.youtube.com/watch?v=ErMHR6Mc4Bk
 
 
