@@ -20,3 +20,5 @@ matplotlib
 
 #wrd_sphinx_theme
 -e git+https://github.com/westurner/wrd_sphinx_theme#egg=wrd_sphinx_theme
+
+matplotlib
