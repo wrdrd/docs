@@ -1,6 +1,8 @@
 sarge
 structlog
 requests
+requests_cache
+requests-html
 beautifulsoup4
 URLObject
 NLTK
