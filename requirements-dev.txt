@@ -14,8 +14,6 @@ tox
 #structlog
 -e git+https://github.com/hynek/structlog#egg=structlog
 
-matplotlib
-
 #requests-cache
 -e git+https://github.com/reclosedev/requests-cache#egg=requests-cache
 

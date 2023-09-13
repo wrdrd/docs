@@ -386,6 +386,7 @@ Khan Academy
   - AP World History, AP US History, AP US Government, AP Art History
   - AP Microeconomics, AP Macroeconomics
   - https://www.khanacademy.org/computing
+<<<<<<< HEAD
 
     - https://www.khanacademy.org/computing/computers-and-internet --
       Digital Information, Computers, The Internet,
@@ -414,7 +415,6 @@ Khan Academy
       - :ref:`Algorithms`
       - :ref:`Cryptography`
       - :ref:`Information Theory`
-
 
   - https://www.khanacademy.org/hourofcode (:ref:`Code.org`)
 
@@ -531,6 +531,7 @@ commodities trading, production of raw materials and goods,
 and opportunity cost.
 
 
+<<<<<<< HEAD
 .. index:: Little Big Workshop
 .. _little big workshop:
 
@@ -547,8 +548,8 @@ Little Big Workshop is a workshop business simulation game
 that teaches about becoming a factory tycoon.
 
 - The factory must be scaled,
-- Demand and price for products varies over time, 
-- Workstations and machines fail, 
+  1. Demand and price for products varies over time,
+- Workstations and machines fail,
 - Workers pass out for days without coffee and a break room
 - Workers may be obstructed due to a factory layout in need of remodeling
 - Workers and workstations may be idle

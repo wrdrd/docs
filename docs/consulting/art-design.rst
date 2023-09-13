@@ -375,6 +375,7 @@ HTC Vive
 | Wikipedia: https://en.wikipedia.org/wiki/HTC_Vive
 | Homepage: https://www.htcvive.com/us/
 
+* Valve :ref:`Steam` VR
 
 
 .. index:: Oculus VR
