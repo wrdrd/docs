@@ -42,6 +42,8 @@
 
 <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
 <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+<link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+<link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
 <link rel="stylesheet" href="../../../_static/css/local.css" type="text/css" />
     
 <script type="text/javascript">
@@ -53,10 +55,9 @@
             HAS_SOURCE:  true
   };
 </script>
-    <script type="text/javascript" src="../../../_static/js/jquery.min.js"></script>
-    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
-    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    <script type="text/javascript" src="../../../_static/sphinx_highlight.js"></script>
     <script type="text/javascript" src="../../../_static/js/local.js"></script>
     <script type="text/javascript" src="../../../_static/js/bootstrap3.min.js"></script>
 <script type="text/javascript" src="../../../_static/js/jquery.cookie.min.js"></script>
@@ -168,8 +169,10 @@
 <span class="n">log</span> <span class="o">=</span> <span class="n">structlog</span><span class="o">.</span><span class="n">get_logger</span><span class="p">()</span>
 
 
-<div class="viewcode-block" id="nslookup"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools#wrdrd.tools.domain.nslookup">[docs]</a><span class="k">def</span> <span class="nf">nslookup</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">nameserver</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<div class="viewcode-block" id="nslookup">
+<a class="viewcode-back" href="../../../wrdrd/wrdrd.tools#wrdrd.tools.domain.nslookup">[docs]</a>
+<span class="k">def</span> <span class="nf">nslookup</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">nameserver</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Get nslookup information with nslookup (resolve a domainname to an IP)</span>
 
 <span class="sd">    Args:</span>
@@ -186,8 +189,11 @@
     <span class="k">return</span> <span class="n">output</span></div>
 
 
-<div class="viewcode-block" id="whois"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools#wrdrd.tools.domain.whois">[docs]</a><span class="k">def</span> <span class="nf">whois</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="whois">
+<a class="viewcode-back" href="../../../wrdrd/wrdrd.tools#wrdrd.tools.domain.whois">[docs]</a>
+<span class="k">def</span> <span class="nf">whois</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Get whois information with whois</span>
 
 <span class="sd">    Args:</span>
@@ -201,8 +207,11 @@
     <span class="k">return</span> <span class="n">output</span></div>
 
 
-<div class="viewcode-block" id="dig_all"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools#wrdrd.tools.domain.dig_all">[docs]</a><span class="k">def</span> <span class="nf">dig_all</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="dig_all">
+<a class="viewcode-back" href="../../../wrdrd/wrdrd.tools#wrdrd.tools.domain.dig_all">[docs]</a>
+<span class="k">def</span> <span class="nf">dig_all</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Get all DNS records with dig</span>
 
 <span class="sd">    Args:</span>
@@ -218,8 +227,11 @@
     <span class="k">return</span> <span class="n">output</span></div>
 
 
-<div class="viewcode-block" id="dig_ns"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools#wrdrd.tools.domain.dig_ns">[docs]</a><span class="k">def</span> <span class="nf">dig_ns</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="dig_ns">
+<a class="viewcode-back" href="../../../wrdrd/wrdrd.tools#wrdrd.tools.domain.dig_ns">[docs]</a>
+<span class="k">def</span> <span class="nf">dig_ns</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Get DNS NS records with dig</span>
 
 <span class="sd">    Args:</span>
@@ -235,8 +247,11 @@
     <span class="k">return</span> <span class="n">output</span></div>
 
 
-<div class="viewcode-block" id="dig_txt"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools#wrdrd.tools.domain.dig_txt">[docs]</a><span class="k">def</span> <span class="nf">dig_txt</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="dig_txt">
+<a class="viewcode-back" href="../../../wrdrd/wrdrd.tools#wrdrd.tools.domain.dig_txt">[docs]</a>
+<span class="k">def</span> <span class="nf">dig_txt</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Get DNS TXT records with dig</span>
 
 <span class="sd">    Args:</span>
@@ -252,8 +267,11 @@
     <span class="k">return</span> <span class="n">output</span></div>
 
 
-<div class="viewcode-block" id="dig_spf"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools#wrdrd.tools.domain.dig_spf">[docs]</a><span class="k">def</span> <span class="nf">dig_spf</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="dig_spf">
+<a class="viewcode-back" href="../../../wrdrd/wrdrd.tools#wrdrd.tools.domain.dig_spf">[docs]</a>
+<span class="k">def</span> <span class="nf">dig_spf</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Get SPF DNS TXT records with dig</span>
 
 <span class="sd">    Args:</span>
@@ -268,8 +286,11 @@
     <span class="k">return</span> <span class="n">output</span></div>
 
 
-<div class="viewcode-block" id="dig_mx"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools#wrdrd.tools.domain.dig_mx">[docs]</a><span class="k">def</span> <span class="nf">dig_mx</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="dig_mx">
+<a class="viewcode-back" href="../../../wrdrd/wrdrd.tools#wrdrd.tools.domain.dig_mx">[docs]</a>
+<span class="k">def</span> <span class="nf">dig_mx</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Get MX DNS records with dig</span>
 
 <span class="sd">    Args:</span>
@@ -287,8 +308,11 @@
     <span class="k">return</span> <span class="n">output</span></div>
 
 
-<div class="viewcode-block" id="dig_dnskey"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools#wrdrd.tools.domain.dig_dnskey">[docs]</a><span class="k">def</span> <span class="nf">dig_dnskey</span><span class="p">(</span><span class="n">zone</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="dig_dnskey">
+<a class="viewcode-back" href="../../../wrdrd/wrdrd.tools#wrdrd.tools.domain.dig_dnskey">[docs]</a>
+<span class="k">def</span> <span class="nf">dig_dnskey</span><span class="p">(</span><span class="n">zone</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Get DNSSEC DNS records with dig</span>
 
 <span class="sd">    Args:</span>
@@ -304,8 +328,11 @@
     <span class="k">return</span> <span class="n">output</span></div>
 
 
-<div class="viewcode-block" id="check_google_mx"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools#wrdrd.tools.domain.check_google_mx">[docs]</a><span class="k">def</span> <span class="nf">check_google_mx</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="check_google_mx">
+<a class="viewcode-back" href="../../../wrdrd/wrdrd.tools#wrdrd.tools.domain.check_google_mx">[docs]</a>
+<span class="k">def</span> <span class="nf">check_google_mx</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Check Google MX DNS records</span>
 
 <span class="sd">    Args:</span>
@@ -338,8 +365,11 @@
     <span class="k">return</span> <span class="n">result</span></div>
 
 
-<div class="viewcode-block" id="check_google_spf"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools#wrdrd.tools.domain.check_google_spf">[docs]</a><span class="k">def</span> <span class="nf">check_google_spf</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="check_google_spf">
+<a class="viewcode-back" href="../../../wrdrd/wrdrd.tools#wrdrd.tools.domain.check_google_spf">[docs]</a>
+<span class="k">def</span> <span class="nf">check_google_spf</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Check a Google SPF DNS TXT record</span>
 
 <span class="sd">    Args:</span>
@@ -365,8 +395,11 @@
     <span class="k">return</span> <span class="mi">1</span></div>
 
 
-<div class="viewcode-block" id="check_google_dmarc"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools#wrdrd.tools.domain.check_google_dmarc">[docs]</a><span class="k">def</span> <span class="nf">check_google_dmarc</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="check_google_dmarc">
+<a class="viewcode-back" href="../../../wrdrd/wrdrd.tools#wrdrd.tools.domain.check_google_dmarc">[docs]</a>
+<span class="k">def</span> <span class="nf">check_google_dmarc</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Check a Google DMARC DNS TXT record</span>
 
 <span class="sd">    Args:</span>
@@ -395,11 +428,14 @@
     <span class="k">return</span> <span class="mi">1</span></div>
 
 
+
 <span class="n">DEFAULT_GOOGLE_DKIM_PREFIX</span> <span class="o">=</span> <span class="s1">&#39;google&#39;</span>
 
 
-<div class="viewcode-block" id="check_google_dkim"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools#wrdrd.tools.domain.check_google_dkim">[docs]</a><span class="k">def</span> <span class="nf">check_google_dkim</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="n">DEFAULT_GOOGLE_DKIM_PREFIX</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<div class="viewcode-block" id="check_google_dkim">
+<a class="viewcode-back" href="../../../wrdrd/wrdrd.tools#wrdrd.tools.domain.check_google_dkim">[docs]</a>
+<span class="k">def</span> <span class="nf">check_google_dkim</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="n">DEFAULT_GOOGLE_DKIM_PREFIX</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Check a Google DKIM DNS TXT record</span>
 
 <span class="sd">    Args:</span>
@@ -437,8 +473,11 @@
     <span class="k">return</span> <span class="mi">1</span></div>
 
 
-<div class="viewcode-block" id="domain_tools"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools#wrdrd.tools.domain.domain_tools">[docs]</a><span class="k">def</span> <span class="nf">domain_tools</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="domain_tools">
+<a class="viewcode-back" href="../../../wrdrd/wrdrd.tools#wrdrd.tools.domain.domain_tools">[docs]</a>
+<span class="k">def</span> <span class="nf">domain_tools</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Get whois and DNS information for a domain.</span>
 
 <span class="sd">    Args:</span>
@@ -525,8 +564,11 @@
     <span class="k">return</span> <span class="n">returncode</span></div>
 
 
-<div class="viewcode-block" id="check_google_domain"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools#wrdrd.tools.domain.check_google_domain">[docs]</a><span class="k">def</span> <span class="nf">check_google_domain</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">dkim_prefix</span><span class="o">=</span><span class="n">DEFAULT_GOOGLE_DKIM_PREFIX</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="check_google_domain">
+<a class="viewcode-back" href="../../../wrdrd/wrdrd.tools#wrdrd.tools.domain.check_google_domain">[docs]</a>
+<span class="k">def</span> <span class="nf">check_google_domain</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">dkim_prefix</span><span class="o">=</span><span class="n">DEFAULT_GOOGLE_DKIM_PREFIX</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Check DNS MX, SPF, DMARC, and DKIM records for a Google Apps domain</span>
 
 <span class="sd">    Args:</span>
@@ -551,14 +593,17 @@
     <span class="k">return</span> <span class="n">returncode</span></div>
 
 
+
 <span class="c1">#import unittest</span>
 <span class="c1"># class Test_domain_tools(unittest.TestCase):</span>
 <span class="c1">#    def test_domain_tools(self):</span>
 <span class="c1">#        pass</span>
 
 
-<div class="viewcode-block" id="main"><a class="viewcode-back" href="../../../wrdrd/wrdrd.tools#wrdrd.tools.domain.main">[docs]</a><span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<div class="viewcode-block" id="main">
+<a class="viewcode-back" href="../../../wrdrd/wrdrd.tools#wrdrd.tools.domain.main">[docs]</a>
+<span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    :py:mod:`wrdrd.tools.domain` main method</span>
 
 <span class="sd">    Args:</span>
@@ -622,6 +667,7 @@
     <span class="k">return</span> <span class="n">returncode</span></div>
 
 
+
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
     <span class="kn">import</span> <span class="nn">sys</span>
     <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">main</span><span class="p">())</span>
@@ -657,7 +703,7 @@
 
       <!-- footer -->
       <footer role="contentinfo">
-          &copy; <a href="../../../license">Copyright</a> WRD R&amp;D 2014 - 2021.
+          &copy; <a href="../../../license">Copyright</a> WRD R&amp;D 2014 - 2023.
 
       <br/>
       <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">

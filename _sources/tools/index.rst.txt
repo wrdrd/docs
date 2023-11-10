@@ -8558,7 +8558,6 @@ VSCode
 | Src: https://github.com/Microsoft/vscode
 | Download: https://code.visualstudio.com/Download
 | ChocolateyPkg: https://chocolatey.org/packages/vscode
-| Docs: https://code.visualstudio.com/docs
 | Docs: https://code.visualstudio.com/docs/getstarted/tips-and-tricks
 | Docs: https://code.visualstudio.com/docs/getstarted/keybindings
 
@@ -8583,6 +8582,16 @@ or with :ref:`Chocolatey`:
 .. code::
 
   choco install vscode
+
+
+.. index:: VScode Flatpak
+.. _vscode flatpak:
+
+VSCode Flatpak
+~~~~~~~~~~~~~~~
+| Flatpak: https://flathub.org/apps/com.visualstudio.code
+| Src: https://github.com/flathub/com.visualstudio.code
+
 
 
 .. index:: Vim

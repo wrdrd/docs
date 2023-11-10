@@ -6,7 +6,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- OpenGraph metadata: ogp.me -->
     <meta property="og:title" content="wrdrd package" />
@@ -42,6 +43,8 @@
 
 <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
 <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+<link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+<link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
 <link rel="stylesheet" href="../_static/css/local.css" type="text/css" />
     
 <script type="text/javascript">
@@ -53,10 +56,9 @@
             HAS_SOURCE:  true
   };
 </script>
-    <script type="text/javascript" src="../_static/js/jquery.min.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/sphinx_highlight.js"></script>
     <script type="text/javascript" src="../_static/js/local.js"></script>
     <script type="text/javascript" src="../_static/js/bootstrap3.min.js"></script>
 <script type="text/javascript" src="../_static/js/jquery.cookie.min.js"></script>
@@ -133,14 +135,16 @@
          
 <div class="col-md-3 hidden-xs" id="sidebar-wrapper">
   <div class="sidebar hidden-xs" role="navigation" aria-label="main navigation">
-  <h3><a href="../index">Table of Contents</a></h3>
-  <ul>
+  <div>
+    <h3><a href="../index">Table of Contents</a></h3>
+    <ul>
 <li><a class="reference internal" href="#">wrdrd package</a><ul>
 <li><a class="reference internal" href="#subpackages">Subpackages</a></li>
 </ul>
 </li>
 </ul>
 
+  </div>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -174,23 +178,134 @@
               <div class="bodywrapper">
                 <div class="body">
                   
-  <div class="section" id="module-wrdrd">
-<span id="wrdrd-package"></span><h1>wrdrd package<a class="headerlink" href="#module-wrdrd" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="subpackages">
-<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+  <section id="module-wrdrd">
+<span id="wrdrd-package"></span><h1>wrdrd package<a class="headerlink" href="#module-wrdrd" title="Link to this heading">¶</a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Link to this heading">¶</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="wrdrd.tools">wrdrd.tools package</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="wrdrd.tools#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="wrdrd.tools#module-wrdrd.tools.crawl">wrdrd.tools.crawl module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="wrdrd.tools#module-wrdrd.tools.domain">wrdrd.tools.domain module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="wrdrd.tools#module-wrdrd.tools.stripsinglehtml">wrdrd.tools.stripsinglehtml module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wrdrd.tools#module-wrdrd.tools.crawl">wrdrd.tools.crawl module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.CSS"><code class="docutils literal notranslate"><span class="pre">CSS</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.CSS.loc"><code class="docutils literal notranslate"><span class="pre">CSS.loc</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.CSS.src"><code class="docutils literal notranslate"><span class="pre">CSS.src</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.CrawlRequest"><code class="docutils literal notranslate"><span class="pre">CrawlRequest</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.CrawlRequest.datetime"><code class="docutils literal notranslate"><span class="pre">CrawlRequest.datetime</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.CrawlRequest.src"><code class="docutils literal notranslate"><span class="pre">CrawlRequest.src</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.CrawlRequest.url"><code class="docutils literal notranslate"><span class="pre">CrawlRequest.url</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.Image"><code class="docutils literal notranslate"><span class="pre">Image</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.Image.alt"><code class="docutils literal notranslate"><span class="pre">Image.alt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.Image.height"><code class="docutils literal notranslate"><span class="pre">Image.height</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.Image.loc"><code class="docutils literal notranslate"><span class="pre">Image.loc</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.Image.src"><code class="docutils literal notranslate"><span class="pre">Image.src</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.Image.text"><code class="docutils literal notranslate"><span class="pre">Image.text</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.Image.width"><code class="docutils literal notranslate"><span class="pre">Image.width</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.JS"><code class="docutils literal notranslate"><span class="pre">JS</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.JS.loc"><code class="docutils literal notranslate"><span class="pre">JS.loc</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.JS.src"><code class="docutils literal notranslate"><span class="pre">JS.src</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.KeywordFrequency"><code class="docutils literal notranslate"><span class="pre">KeywordFrequency</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.KeywordFrequency.frequencies"><code class="docutils literal notranslate"><span class="pre">KeywordFrequency.frequencies</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.KeywordFrequency.url"><code class="docutils literal notranslate"><span class="pre">KeywordFrequency.url</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.Link"><code class="docutils literal notranslate"><span class="pre">Link</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.Link.href"><code class="docutils literal notranslate"><span class="pre">Link.href</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.Link.loc"><code class="docutils literal notranslate"><span class="pre">Link.loc</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.Link.name"><code class="docutils literal notranslate"><span class="pre">Link.name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.Link.parent_id"><code class="docutils literal notranslate"><span class="pre">Link.parent_id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.Link.target"><code class="docutils literal notranslate"><span class="pre">Link.target</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.Link.text"><code class="docutils literal notranslate"><span class="pre">Link.text</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.ResultStore"><code class="docutils literal notranslate"><span class="pre">ResultStore</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.ResultStore.itervalues"><code class="docutils literal notranslate"><span class="pre">ResultStore.itervalues()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.ResultStore.values"><code class="docutils literal notranslate"><span class="pre">ResultStore.values()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.URLCrawlQueue"><code class="docutils literal notranslate"><span class="pre">URLCrawlQueue</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.URLCrawlQueue.DONE"><code class="docutils literal notranslate"><span class="pre">URLCrawlQueue.DONE</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.URLCrawlQueue.ERROR"><code class="docutils literal notranslate"><span class="pre">URLCrawlQueue.ERROR</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.URLCrawlQueue.NEW"><code class="docutils literal notranslate"><span class="pre">URLCrawlQueue.NEW</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.URLCrawlQueue.OUT"><code class="docutils literal notranslate"><span class="pre">URLCrawlQueue.OUT</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.URLCrawlQueue.count"><code class="docutils literal notranslate"><span class="pre">URLCrawlQueue.count()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.URLCrawlQueue.done"><code class="docutils literal notranslate"><span class="pre">URLCrawlQueue.done()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.URLCrawlQueue.error"><code class="docutils literal notranslate"><span class="pre">URLCrawlQueue.error()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.URLCrawlQueue.pop"><code class="docutils literal notranslate"><span class="pre">URLCrawlQueue.pop()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.URLCrawlQueue.push"><code class="docutils literal notranslate"><span class="pre">URLCrawlQueue.push()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.build_networkx_graph"><code class="docutils literal notranslate"><span class="pre">build_networkx_graph()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.crawl_url"><code class="docutils literal notranslate"><span class="pre">crawl_url()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.current_datetime"><code class="docutils literal notranslate"><span class="pre">current_datetime()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.expand_link"><code class="docutils literal notranslate"><span class="pre">expand_link()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.extract_css"><code class="docutils literal notranslate"><span class="pre">extract_css()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.extract_images"><code class="docutils literal notranslate"><span class="pre">extract_images()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.extract_js"><code class="docutils literal notranslate"><span class="pre">extract_js()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.extract_keywords"><code class="docutils literal notranslate"><span class="pre">extract_keywords()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.extract_links"><code class="docutils literal notranslate"><span class="pre">extract_links()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.extract_words_from_bs"><code class="docutils literal notranslate"><span class="pre">extract_words_from_bs()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.frequency_table"><code class="docutils literal notranslate"><span class="pre">frequency_table()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.get_stop_words"><code class="docutils literal notranslate"><span class="pre">get_stop_words()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.get_text_from_bs"><code class="docutils literal notranslate"><span class="pre">get_text_from_bs()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.get_unicode_stdout"><code class="docutils literal notranslate"><span class="pre">get_unicode_stdout()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.iteritems"><code class="docutils literal notranslate"><span class="pre">iteritems()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.itervalues"><code class="docutils literal notranslate"><span class="pre">itervalues()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.print_frequency_table"><code class="docutils literal notranslate"><span class="pre">print_frequency_table()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.same_netloc"><code class="docutils literal notranslate"><span class="pre">same_netloc()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.strip_fragment"><code class="docutils literal notranslate"><span class="pre">strip_fragment()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.strip_script_styles_from_bs"><code class="docutils literal notranslate"><span class="pre">strip_script_styles_from_bs()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.sum_counters"><code class="docutils literal notranslate"><span class="pre">sum_counters()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.to_a_search_engine"><code class="docutils literal notranslate"><span class="pre">to_a_search_engine()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.tokenize"><code class="docutils literal notranslate"><span class="pre">tokenize()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.word_frequencies"><code class="docutils literal notranslate"><span class="pre">word_frequencies()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.wrdcrawler"><code class="docutils literal notranslate"><span class="pre">wrdcrawler()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.write_nxgraph_to_dot"><code class="docutils literal notranslate"><span class="pre">write_nxgraph_to_dot()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.crawl.write_nxgraph_to_json"><code class="docutils literal notranslate"><span class="pre">write_nxgraph_to_json()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="wrdrd.tools#module-wrdrd.tools.domain">wrdrd.tools.domain module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.domain.check_google_dkim"><code class="docutils literal notranslate"><span class="pre">check_google_dkim()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.domain.check_google_dmarc"><code class="docutils literal notranslate"><span class="pre">check_google_dmarc()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.domain.check_google_domain"><code class="docutils literal notranslate"><span class="pre">check_google_domain()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.domain.check_google_mx"><code class="docutils literal notranslate"><span class="pre">check_google_mx()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.domain.check_google_spf"><code class="docutils literal notranslate"><span class="pre">check_google_spf()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.domain.dig_all"><code class="docutils literal notranslate"><span class="pre">dig_all()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.domain.dig_dnskey"><code class="docutils literal notranslate"><span class="pre">dig_dnskey()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.domain.dig_mx"><code class="docutils literal notranslate"><span class="pre">dig_mx()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.domain.dig_ns"><code class="docutils literal notranslate"><span class="pre">dig_ns()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.domain.dig_spf"><code class="docutils literal notranslate"><span class="pre">dig_spf()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.domain.dig_txt"><code class="docutils literal notranslate"><span class="pre">dig_txt()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.domain.domain_tools"><code class="docutils literal notranslate"><span class="pre">domain_tools()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.domain.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.domain.nslookup"><code class="docutils literal notranslate"><span class="pre">nslookup()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.domain.whois"><code class="docutils literal notranslate"><span class="pre">whois()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="wrdrd.tools#module-wrdrd.tools.stripsinglehtml">wrdrd.tools.stripsinglehtml module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.stripsinglehtml.Test_stripsinglehtml"><code class="docutils literal notranslate"><span class="pre">Test_stripsinglehtml</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.stripsinglehtml.Test_stripsinglehtml.test_stripsinglehtml"><code class="docutils literal notranslate"><span class="pre">Test_stripsinglehtml.test_stripsinglehtml()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.stripsinglehtml.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wrdrd.tools#wrdrd.tools.stripsinglehtml.stripsinglehtml"><code class="docutils literal notranslate"><span class="pre">stripsinglehtml()</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
                 </div>
@@ -222,7 +337,7 @@
 
       <!-- footer -->
       <footer role="contentinfo">
-          &copy; <a href="../license">Copyright</a> WRD R&amp;D 2014 - 2021.
+          &copy; <a href="../license">Copyright</a> WRD R&amp;D 2014 - 2023.
 
       <br/>
       <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
