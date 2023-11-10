@@ -386,7 +386,6 @@ Khan Academy
   - AP World History, AP US History, AP US Government, AP Art History
   - AP Microeconomics, AP Macroeconomics
   - https://www.khanacademy.org/computing
-<<<<<<< HEAD
 
     - https://www.khanacademy.org/computing/computers-and-internet --
       Digital Information, Computers, The Internet,
@@ -531,7 +530,6 @@ commodities trading, production of raw materials and goods,
 and opportunity cost.
 
 
-<<<<<<< HEAD
 .. index:: Little Big Workshop
 .. _little big workshop:
 
@@ -559,11 +557,166 @@ that teaches about becoming a factory tycoon.
 
 
 .. index:: Kerbal Space Program
-.. _kerbal space program for learning:
+.. index:: Kerbal Space Program 2
+.. _kerbal space program 2:
 
-Kerbal Space Program
+Kerbal Space Program 2
 ----------------------
-See: :ref:`Kerbal Space Program`
+| Wikipedia: https://en.wikipedia.org/wiki/Kerbal_Space_Program_2
+| Homepage: https://www.kerbalspaceprogram.com/games-kerbal-space-program-2
+| Forums: https://forum.kerbalspaceprogram.com/
+| Wiki: https://wiki.kerbalspaceprogram.com/wiki/
+| SteamApp: https://store.steampowered.com/app/954850/Kerbal_Space_Program_2/
+| Docs: https://wiki.kerbalspaceprogram.com/wiki/Tutorials
+
+Kerbel Space Program 2 is a rocket building and space flight simulator game.
+
+- https://www.kerbalspaceprogram.com/challenges
+- KSP2 Mods:
+  https://forum.kerbalspaceprogram.com/forum/128-kerbal-space-program-2-mods/
+- See: :ref:`Kerbal Space Program`
+
+  - https://wiki.kerbalspaceprogram.com/wiki/KSP_2#Parts
+
+
+.. index:: Juno: New Origins
+.. _Juno:
+
+Juno: New Origins
+-------------------
+| Homepage: https://www.simplerockets.com/
+| Homepage: http://jundroo.com/app/simplerockets-2/
+| SteamApp: https://store.steampowered.com/app/870200/Juno_New_Origins/
+| AndroidApp: https://play.google.com/store/apps/details?id=com.jundroo.SimpleRockets2
+| iOSApp: https://apps.apple.com/us/app/simplerockets-2/id1294032921?ls=1
+
+Juno: New Origins is a rocket, car, plane, and rover simulator game.
+
+
+.. index:: LEGO Bricktales
+.. _lego brick tales:
+
+LEGO Bricktales
+-----------------
+| Homepage: https://thunderfulgames.com/games/lego-bricktales/
+| Homepage: https://www.lego.com/en-us/categories/games/bricktales
+| SteamApp: https://store.steampowered.com/app/1898290/LEGO_Bricktales/
+| AndroidApp: https://play.google.com/store/apps/details?id=com.thunderful.legobricktale
+| iOSApp: https://apps.apple.com/us/app/lego-bricktales/id1618206278
+| PlaystationApp: https://store.playstation.com/en-dk/concept/10004925?icmp=LP-SHQL-Standard-Lego_Bricktales_QL_Playstation-TH-NO-4SCOYFG4II
+| XboxApp: https://www.xbox.com/games/store/lego-bricktales/9mszqdn56d3g?icmp=LP-SHQL-Standard-Lego_Bricktales_QL_Xbox-TH-NO-92Z095FN8O
+| NintendoSwitchApp: https://www.nintendo.com/store/products/lego-bricktales-switch?icmp=LP-SHQL-Standard-Lego_Bricktales_QL_Nintendo_Switch-TH-NO-VGJ3I9IUP8
+
+
+
+.. index:: PC Building Simulator 1
+.. _pc building simulator 1
+
+PC Building Simulator 1
+------------------------
+| Wikipedia: https://en.wikipedia.org/wiki/PC_Building_Simulator
+| Homepage: https://www.pcbuildingsim.com/pc-building-simulator
+| SteamApp: https://store.steampowered.com/app/621060/PC_Building_Simulator/
+| SwitchApp: https://www.nintendo.com/us/store/products/pc-building-simulator-switch/
+| XboxApp: https://www.xbox.com/en-US/games/store/pc-building-simulator/9PGTZH51B3S8/0010
+| PlaystationApp: https://store.playstation.com/en-us/product/UP5097-CUSA15916_00-0000000000000000
+
+- https://en.wikipedia.org/wiki/PC_Building_Simulator_2
+
+
+
+.. index:: Microsoft MakeCode
+.. _microsoft makecode:
+
+Microsoft MakeCode
+-------------------
+| Homepage: https://www.microsoft.com/en-us/makecode
+
+
+
+.. index:: Minecraft Education
+.. _minecraft education:
+
+Minecraft Education
+--------------------
+| Homepage: https://education.minecraft.net/en-us
+| Download: https://education.minecraft.net/en-us/get-started/download
+| AndroidApp: https://play.google.com/store/apps/details?id=com.mojang.minecraftedu
+| Makecode: https://minecraft.makecode.com/
+| Docs: https://education.minecraft.net/en-us/get-started/educators
+
+
+- Minecraft Education Lesson Plans / tutorials:
+  https://education.minecraft.net/en-us/resources/explore-lessons
+
+  - See also: :ref:`SensorCraft`
+
+
+.. index:: Minecraft: Pi Edition
+.. _minecraft: pi edition:
+
+Minecraft: Pi Edition
+----------------------
+| Homepage: https://www.minecraft.net/en-us/edition/pi
+
+- https://github.com/martinohanlon/mcpi
+
+
+.. index:: SensorCraft
+.. _sensorcraft:
+
+SensorCraft
+-------------
+| Web: https://sensorcraft.rtfd.io/
+| Src: https://github.com/AFRL-RY/SensorCraft
+| Docs: https://sensorcraft.readthedocs.io/en/stable/
+
+
+
+.. index:: Wokwi
+.. _wokwi:
+
+Wokwi
+------
+| Homepage: https://wokwi.com/
+| Src: https://github.com/wokwi
+
+- https://wokwi.com/pi-pico
+
+  - https://wokwi.com/projects/new/micropython-pi-pico
+
+    - https://wokwi.com/micropython
+    - https://docs.micropython.org/en/latest/esp32/tutorial/pwm.html#pulse-width-modulation
+
+
+
+.. index:: Autodesk TinkerCAD
+.. index:: TinkerCAD
+.. _tinkercad:
+
+TinkerCAD
+----------
+| Wikipedia: https://en.wikipedia.org/wiki/Tinkercad
+| Homepage: https://www.tinkercad.com/
+
+- https://www.tinkercad.com/circuits
+- https://www.tinkercad.com/3d-design
+- https://www.tinkercad.com/simlab
+- https://www.tinkercad.com/codeblock
+
+
+
+.. index:: Sweet Home 3D
+.. _sweet home 3d:
+
+Sweet Home 3D
+--------------
+| Homepage: https://www.sweethome3d.com/
+| AndroidApp: https://play.google.com/store/apps/details?id=com.eteks.sweethome3d.mobile
+| iOSApp: https://apps.apple.com/app/sweet-home-3d-mobile/1178963471
+
+Sweet Home 3D is an open source 2D interior design
+CAD application with 3D rendering.
 
 
 .. index:: PBS Kids
