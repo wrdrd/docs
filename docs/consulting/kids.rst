@@ -270,17 +270,48 @@ available for Windows, MacOS, ChromeOS, Android tablets, and Linux.
   https://scratux.org/
 
 
+
+.. index:: EduBlocks
+.. _edublocks:
+
+EduBlocks
+----------
+| Web: https://edublocks.org/
+| Src: https://github.com/edublocks
+
+EduBlocks is a web-based coding environment like :ref:`Scratch` but with
+:ref:`Python` and optionally text code instead of block code.
+
+- As with Python, you must import modules first with EduBlocks.
+
+  EduBlocks supports various :ref:`Python` standard library modules
+  like `random` and `turtle`:
+
+  .. code:: python
+
+      from turtle import *
+      turtle = Turtle()
+      screen = Screen()
+      screen.bgcolor(0,0,0)
+      turtle.speed(2)
+      turtle.color('red')
+      turtle.forward(10); turtle.right(90); turtle.forward(10)
+
+  - https://docs.python.org/3/library/random.html
+  - https://docs.python.org/3/library/turtle.html
+
+- EduBlocks Curriculum:
+  https://curriculum.edublocks.org/
+
+
 .. index:: Grasshopper
 .. _grasshopper:
 
 Grasshopper
 -------------
-| Homepage: https://grasshopper.app/
-| WebApp: https://learn.grasshopper.app/
 | AndroidApp: https://play.google.com/store/apps/details?id=com.area120.grasshopper
-| iOSApp: https://itunes.apple.com/us/app/id1354133284
 
-Grasshopper is a free app by :ref:`Code with Google`
+Grasshopper was a free app by :ref:`Code with Google`
 for learning how to code in :ref:`JS`.
 
 * Grasshopper curriculum:
@@ -311,6 +342,7 @@ that's written in Python with GTK.
   package repositories
 * Sugar works on a $35 Raspberry Pi 3b+ ARM computer:
   https://sugarlabs.org/sugar-for-raspberry-pi/
+
 
 .. index:: ABC Mouse
 .. _abc mouse:
@@ -512,6 +544,55 @@ Facebook Messenger Kids
    Facebook is now for the whole community.
 
 
+
+.. index:: Toca Boca
+.. _toca boca:
+
+Toca Boca
+-----------
+| Homepage: https://tocaboca.com/
+| Wikipedia: https://en.wikipedia.org/wiki/Toca_Boca
+
+
+.. index:: Toca Lab: Plants
+.. _toca lab plants:
+
+Toca Lab: Plants
+^^^^^^^^^^^^^^^^^^
+| Homepage: https://tocaboca.com/app/toca-lab-plants/
+| AndroidApp: https://play.google.com/store/apps/details?id=com.tocaboca.tocalabplants
+| iOSApp: https://itunes.apple.com/app/apple-store/id1225994089
+| KindleApp: https://www.amazon.com/dp/B072KHJYRP/
+
+
+.. index:: Toca Lab: Elements
+.. _toca lab elements:
+
+Toca Lab: Elements
+^^^^^^^^^^^^^^^^^^
+| Homepage: https://tocaboca.com/app/toca-lab-elements/
+| AndroidApp: https://play.google.com/store/apps/details?id=com.tocaboca.tocalabelements
+| iOSApp: https://itunes.apple.com/app/apple-store/id1225994089
+| KindleApp: https://www.amazon.com/dp/B072KHJYRP/
+
+
+.. index:: Toca Life: Office
+.. _toca life office:
+
+Toca Life: Office
+^^^^^^^^^^^^^^^^^^^
+| AndroidApp: https://play.google.com/store/apps/details?id=com.tocaboca.tocaoffice
+
+
+.. index:: Toca Store
+.. _toca store:
+
+Toca Store
+^^^^^^^^^^^
+| Homepage: https://tocaboca.com/app/toca-store/
+| iOSApp: https://itunes.apple.com/app/id442705759
+
+
 .. index:: SimCity: BuildIt
 .. _simcity-buildit:
 
@@ -554,6 +635,40 @@ that teaches about becoming a factory tycoon.
 - In order to accept a manufacturing contract, a production plan including raw
   materials and equipment and workstation assignments must be prepared.
 
+
+
+.. index:: Hello Engineer
+.. _hello engineer:
+
+Hello Engineer
+---------------
+| Wikipedia: https://en.wikipedia.org/wiki/Hello_Neighbor#Hello_Engineer
+| Web: https://www.helloengineer.com/
+| SteamApp: https://store.steampowered.com/app/1856190/Hello_Engineer_Scrap_Machines_Constructor/
+| PlaystationApp: https://store.playstation.com/concept/10004583
+| XboxApp: https://www.xbox.com/games/store/hello-engineer/9MXFM3J19R5H
+| NintendoSwitchApp: https://www.nintendo.com/store/products/hello-engineer-switch/
+
+Hello Engineer: Scrap Machines Collector is a machine building game.
+
+
+
+.. index:: NoLimits 2
+.. _nolimits 2:
+
+NoLimits 2
+-----------
+| Wikipedia: https://en.wikipedia.org/wiki/NoLimits
+| SteamApp: https://store.steampowered.com/app/301320/NoLimits_2_Roller_Coaster_Simulation/
+| Web: https://www.nolimitscoaster.com/
+
+NoLimits 2 is a 3d roller coaster design and simulation game with force
+vectors.
+
+- https://en.wikipedia.org/wiki/NoLimits#Available_types_of_roller_coasters
+- https://nolimitscentral.com/
+- https://nolimitscentral.com/exchange
+- https://www.coastercrazy.com/
 
 
 .. index:: Kerbal Space Program
@@ -603,14 +718,14 @@ LEGO Bricktales
 | SteamApp: https://store.steampowered.com/app/1898290/LEGO_Bricktales/
 | AndroidApp: https://play.google.com/store/apps/details?id=com.thunderful.legobricktale
 | iOSApp: https://apps.apple.com/us/app/lego-bricktales/id1618206278
-| PlaystationApp: https://store.playstation.com/en-dk/concept/10004925?icmp=LP-SHQL-Standard-Lego_Bricktales_QL_Playstation-TH-NO-4SCOYFG4II
-| XboxApp: https://www.xbox.com/games/store/lego-bricktales/9mszqdn56d3g?icmp=LP-SHQL-Standard-Lego_Bricktales_QL_Xbox-TH-NO-92Z095FN8O
-| NintendoSwitchApp: https://www.nintendo.com/store/products/lego-bricktales-switch?icmp=LP-SHQL-Standard-Lego_Bricktales_QL_Nintendo_Switch-TH-NO-VGJ3I9IUP8
+| PlaystationApp: https://store.playstation.com/en-dk/concept/10004925
+| XboxApp: https://www.xbox.com/games/store/lego-bricktales/9mszqdn56d3g
+| NintendoSwitchApp: https://www.nintendo.com/store/products/lego-bricktales-switch
 
 
 
 .. index:: PC Building Simulator 1
-.. _pc building simulator 1
+.. _pc building simulator 1:
 
 PC Building Simulator 1
 ------------------------
@@ -644,7 +759,24 @@ Minecraft Education
 | AndroidApp: https://play.google.com/store/apps/details?id=com.mojang.minecraftedu
 | Makecode: https://minecraft.makecode.com/
 | Docs: https://education.minecraft.net/en-us/get-started/educators
+| Docs: https://minecraft.makecode.com/docs
+| Docs: https://minecraft.makecode.com/tutorials
 
+    THIS APP IS FOR SCHOOL AND ORGANIZATIONAL USE.
+    
+    Minecraft Education is a game-based platform that inspires creative,
+    inclusive learning through play. Explore blocky worlds that unlock new
+    ways to tackle any subject or challenge.
+    
+    Dive into subjects like reading, math, history, and coding with lessons and standardized curriculum designed for all 
+
+- https://minecraft.makecode.com/setup/minecraft-education-edition
+
+  - Press `c` to show the Code Builder window and then select
+    :ref:`Microsoft Makecode`
+
+  - .. figure:: https://pxt.azureedge.net/blob/cbfd657dbca0ce999c70b7a782c9872e23bbb30a/static/setup/keyboard-controls.png
+        :alt: Minecraft Keyboard Controls
 
 - Minecraft Education Lesson Plans / tutorials:
   https://education.minecraft.net/en-us/resources/explore-lessons
@@ -717,6 +849,93 @@ Sweet Home 3D
 
 Sweet Home 3D is an open source 2D interior design
 CAD application with 3D rendering.
+
+
+
+.. index:: Microsoft Flight Simulator
+.. _microsoft flight simulator:
+
+Microsoft Flight Simulator
+---------------------------
+| Wikipedia: https://en.wikipedia.org/wiki/Microsoft_Flight_Simulator
+| Wikipedia: `<https://en.wikipedia.org/wiki/Microsoft_Flight_Simulator_(2020_video_game)>`__
+| Homepage: https://www.flightsimulator.com/
+| SteamApp: https://store.steampowered.com/app/1250410/Microsoft_Flight_Simulator_40th_Anniversary_Edition/
+
+
+.. index:: X-Plane
+.. _x-plane:
+
+X-Plane
+-------
+| Wikipedia: https://en.wikipedia.org/wiki/X-Plane_(simulator)
+| Web: https://www.x-plane.com/
+| Forums: https://forums.x-plane.org/
+| SteamApp: https://store.steampowered.com/app/2014780/XPlane_12/
+| AndroidApp: https://play.google.com/store/apps/details?id=com.laminarresearch.x_plane10
+| iOSApp: https://itunes.apple.com/us/app/x-plane-10-flight-simulator/id566661426
+| Docs: https://x-plane.com/manuals/desktop/
+
+X-Plane is a flight simulator application. The X-Plane simulator is the
+basis for a commercial flight simulator that qualifies for flight
+training hours with certain crafts.
+
+- https://www.x-plane.com/aircraft/
+- https://www.x-plane.com/tutorial/platform/desktop/
+
+System Requirements:
+
+- https://www.x-plane.com/kb/x-plane-11-system-requirements/
+- https://www.x-plane.com/kb/x-plane-12-system-requirements/
+
+X-Plane 10 Mobile:
+
+- https://www.x-plane.com/tutorial/platform/mobile/
+- https://www.x-plane.com/challenge/platform/mobile/
+
+X-Plane Development Tools:
+
+- https://www.x-plane.com/desktop/extend-it/development-tools/
+- WorldEditor (WED)
+- Plane Maker
+
+X-Plane Plane Maker Manual:
+
+- https://developer.x-plane.com/manuals/planemaker/
+- See also:
+
+  - :ref:`Juno New Origins` -- Make vehicles, planes, helicopters,
+    rockets
+  - :ref:`Kerbal Space Program`  -- Make rockets and survive Kerbals
+  - :ref:`Blender` -- create 3d meshes and physical simulations
+
+
+.. index:: Human Fall Flat
+.. _human fall flat:
+
+Human Fall Flat
+----------------
+| Wikipedia: https://en.wikipedia.org/wiki/Human:_Fall_Flat
+| Homepage: https://nobrakesgames.com/games/human-fall-flat/
+| SteamApp: https://store.steampowered.com/app/477160/Human_Fall_Flat/
+| iOSApp: https://apps.apple.com/us/app/human-fall-flat/id1438091392
+| NintendoSwitchApp: https://www.nintendo.com/us/store/products/human-fall-flat-switch/
+| AndroidApp: https://play.google.com/store/apps/details?id=com.and.games505.humanfallflat
+
+
+Human Fall Flat is an escape-room style logic puzzle and controller game
+that supports multiple controller input.
+
+- Human Fall Flat has physics simulation.
+- Human Fall Flat has a sailboat simulator level.
+- Human Fall Flat requires you to learn how to use dual joysticks
+  and L1/L2.
+
+.. note:: The turboencabulator is a fictional machine.
+
+   - https://en.wikipedia.org/wiki/Turbo_encabulator
+   - The Hyperencabulator?
+     https://www.youtube.com/watch?v=5nKk_-Lvhzo
 
 
 .. index:: PBS Kids
@@ -899,7 +1118,7 @@ Cosmos: A Spacetime Odyssey
 - First aired on National Geographic channel in 2014
 
 .. index:: Cosmos: Possible Worlds
-.. _cosmos: possible worlds:
+.. _cosmos possible worlds:
 
 Cosmos: Possible Worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^
