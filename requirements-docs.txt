@@ -7,7 +7,7 @@ sphinx
 sphinxcontrib-srclinks
 #-e git+ssh://git@github.com/westurner/sphinxcontrib-srclinks#egg=sphinxcontrib-srclinks
 
--e git+https://github.com/gniezen/n3pygments#egg=n3pygments
+-e git+https://github.com/gniezen/n3pygments#egg=swlexers
 
 #sphinxjp.themes.basicstrap
 #-e git+https://github.com/tell-k/sphinxjp.themes.basicstrap@7a5b36d1deeb#egg=sphinxjp.themes.basicstrap
