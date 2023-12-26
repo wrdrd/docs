@@ -862,6 +862,12 @@ Microsoft Flight Simulator
 | Homepage: https://www.flightsimulator.com/
 | SteamApp: https://store.steampowered.com/app/1250410/Microsoft_Flight_Simulator_40th_Anniversary_Edition/
 
+.. note:: To use MSFS with a keyboard, you must have a numpad.
+   There are USB and Bluetooth External Numpads.
+
+   Constantly pressing on laptop keyboards can wear out keys that can't
+   be replaced without tearing down to the mainboard.
+
 
 .. index:: X-Plane
 .. _x-plane:
