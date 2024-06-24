@@ -790,7 +790,8 @@
 <span class="sd">        &gt;&gt;&gt; sorted(c.elements())</span>
 <span class="sd">        [&#39;A&#39;, &#39;A&#39;, &#39;B&#39;, &#39;B&#39;, &#39;C&#39;, &#39;C&#39;]</span>
 
-<span class="sd">        # Knuth&#39;s example for prime factors of 1836:  2**2 * 3**3 * 17**1</span>
+<span class="sd">        Knuth&#39;s example for prime factors of 1836:  2**2 * 3**3 * 17**1</span>
+
 <span class="sd">        &gt;&gt;&gt; import math</span>
 <span class="sd">        &gt;&gt;&gt; prime_factors = Counter({2: 2, 3: 3, 17: 1})</span>
 <span class="sd">        &gt;&gt;&gt; math.prod(prime_factors.elements())</span>
@@ -831,7 +832,7 @@
 
 <span class="sd">        &#39;&#39;&#39;</span>
         <span class="c1"># The regular dict.update() operation makes no sense here because the</span>
-        <span class="c1"># replace behavior results in the some of original untouched counts</span>
+        <span class="c1"># replace behavior results in some of the original untouched counts</span>
         <span class="c1"># being mixed-in with all of the other counts for a mismash that</span>
         <span class="c1"># doesn&#39;t have a straight-forward interpretation in most counting</span>
         <span class="c1"># contexts.  Instead, we implement straight-addition.  Both the inputs</span>
@@ -1773,7 +1774,7 @@
 
       <!-- footer -->
       <footer role="contentinfo">
-          &copy; <a href="../license">Copyright</a> WRD R&amp;D 2014 - 2023.
+          &copy; <a href="../license">Copyright</a> WRD R&amp;D 2014 - 2024.
 
       <br/>
       <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">

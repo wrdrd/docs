@@ -1053,11 +1053,12 @@ CVS (``cvs``) is a centralized version control system (VCS) written in :ref:`C`.
 CVS predates most/many other VCS.
 
 
+.. index:: SVN
 .. index:: Subversion
 .. _subversion:
 
-Subversion
-~~~~~~~~~~~~~
+svn: Subversion
+~~~~~~~~~~~~~~~~
 | Homepage: https://subversion.apache.org/
 | Wikipedia: https://en.wikipedia.org/wiki/Apache_Subversion
 | Docs: https://subversion.apache.org/docs/
@@ -1075,11 +1076,12 @@ To checkout a revision of a repository with ``svn``:
    svn co https://svn.apache.org/repos/asf/subversion/trunk subversion
 
 
+.. index:: bzr
 .. index:: Bazaar
 .. _bazaar:
 
-Bazaar
-~~~~~~~~~~
+bzr: Bazaar
+~~~~~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/GNU_Bazaar
 | Homepage: https://bazaar.canonical.com/en/
 | Homepage: https://launchpad.net/bzr
@@ -1108,15 +1110,19 @@ To clone a repository with ``bzr``:
 Git
 ~~~~~~~~~~~~~~
 | Wikipedia: `<https://en.wikipedia.org/wiki/Git_(software)>`_
+| Src: https://github.com/git/git
 | Homepage: https://git-scm.com/
 | Docs: https://git-scm.com/documentation
 | Docs: https://git-scm.com/book/en/
-| Docs: https://documentup.com/skwp/git-workflows-book
+| Docs: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+| Docs: https://github.com/skwp/git-workflows-book
+| Docs: https://github.com/skwp/git-workflows-book#the-index
 | Docs: https://learnxinyminutes.com/docs/git/
-| Src: git https://github.com/git/git
+| Docs: https://learngitbranching.js.org/
+| Docs: https://www.leshenko.net/p/ugit/
+| Docs: https://github.com/westurner/dotfiles/blob/develop/etc/.gitconfig
 
-
-Git (``git``) is a distributed version control system for tracking a branching
+Git (``git``) is an open source distributed version control system for tracking a branching
 and merging repository of file revisions written in :ref:`C` (DVCS, VCS,
 RCS).
 
@@ -1125,6 +1131,13 @@ To clone a repository with ``git``:
 .. code:: bash
 
   git clone https://github.com/git/git
+  cd ./git
+  git status; git remote -av; git reflog;
+
+  git help help; git help reflog
+
+
+- :ref:`jj` auto-saves and is compatible with git
 
 
 .. index:: GitFlow
@@ -1307,13 +1320,14 @@ and understanding any DVCS workflow:
    :alt: Numbered GitFlow Workflow Diagram
    :target:  https://datasift.github.io/gitflow/GitFlowForGitHub.html
 
+
 .. index:: Hg
 .. index:: Mercurial
 .. _hg:
 .. _mercurial:
 
-Mercurial
-~~~~~~~~~~
+hg: Mercurial
+~~~~~~~~~~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/Mercurial
 | Homepage: https://www.mercurial-scm.org/
 | Docs: https://www.mercurial-scm.org/guide
@@ -1329,6 +1343,195 @@ To clone a repository with ``hg``:
 .. code:: bash
 
    hg clone https://www.mercurial-scm.org/repo/hg
+
+
+.. index:: jujutsu
+.. index:: jj
+.. _jj:
+
+jj: jujutsu
+~~~~~~~~~~~~
+| Src: https://github.com/martinvonz/jj
+| Docs: https://martinvonz.github.io/jj/latest/
+| Docs: https://martinvonz.github.io/jj/latest/cli-reference/
+
+`jj` (jujutsu) is an open source :ref:`Version Control System` that works with
+:ref:`git`.
+
+- jj auto-saves changes
+
+  From the jj docs > Concepts > Working Copy :
+  https://martinvonz.github.io/jj/latest/working-copy/ :
+
+     Unlike most other VCSs, Jujutsu will automatically create commits
+     from the working-copy contents when they have changed. Most jj
+     commands you run will commit the working-copy changes if they have
+     changed. The resulting revision will replace the previous
+     working-copy revision.
+
+
+.. index:: GitHub
+.. _github: 
+
+GitHub
+=======
+| Wikipedia: https://en.wikipedia.org/wiki/GitHub
+| Web: https://github.com/
+| Src: https://github.com/github
+| Docs: https://docs.github.com/en
+| Docs: https://docs.github.com/en/get-started/quickstart/git-and-github-learning-resources
+| Docs: https://docs.github.com/en/get-started/quickstart/github-glossary
+| Docs: https://skills.github.com/
+| Docs: https://github.com/skills
+| Docs: **https://github.com/skills/introduction-to-github**
+| Docs: https://github.com/skills/communicate-using-markdown
+| StatusPage: https://www.githubstatus.com/
+
+:ref:`Git` repos, Issues, Pull Requests, Wikis, Pages, Actions, Project Boards, Webhooks
+
+- https://github.com/github/choosealicense.com
+- https://docs.github.com/en/get-started/quickstart/hello-world
+- https://docs.github.com/en/get-started/quickstart/github-flow
+- :ref:`hubflow` is a fork of :ref:`gitflow` for use with GitHub Pull requests
+- https://github.com/topics/awesome
+- https://github.com/devspace/awesome-github-templates
+- https://github.com/stevemao/github-issue-templates/blob/master/must-open-issue-before-pr/PULL_REQUEST_TEMPLATE.md
+- https://github.com/stevemao/github-issue-templates/blob/master/checklist2/PULL_REQUEST_TEMPLATE.md
+- https://github.com/abhisheknaiidu/awesome-github-profile-readme
+
+
+.. index:: GitHub CI 
+.. index:: GitHub Actions
+.. _github-actions:
+
+GitHub Actions
+~~~~~~~~~~~~~~~
+| Web: https://github.com/marketplace?type=actions
+| Src: https://github.com/actions
+| Src: https://github.com/actions/runner
+| Src: https://github.com/actions/runner-images
+| Src: https://github.com/actions/deploy-pages
+| Src: https://github.com/actions/upload-pages-artifact
+| Src: https://github.com/actions/upload-artifact
+| Src: https://github.com/actions/upload-release-asset
+| Src: https://github.com/softprops/action-gh-release
+| Docs: https://docs.github.com/en/actions
+| Docs: https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions
+| Docs: https://docs.github.com/en/actions/quickstart#creating-your-first-workflow
+| Docs: https://github.com/actions/starter-workflows
+
+
+- Src: https://github.com/nektos/act
+
+  - Run GitHub Actions locally; without GitHub Runner
+
+
+.. index:: GitHub Classroom
+.. _github-classroom:
+
+GitHub Classroom
+==================
+| Web: https://classroom.github.com/
+| Web: https://education.github.com/
+| Docs: https://docs.github.com/en/education/manage-coursework-with-github-classroom/get-started-with-github-classroom/about-github-classroom#github-classroom-features
+
+- :ref:`otter-grader` and :ref:`nbgrader` autograde :ref:`Jupyter` notebooks
+  (in containers for safety)
+  and can post grades to an LMS / LRS
+
+
+
+.. index:: GitLab
+.. _gitlab:
+
+GitLab
+========
+| Wikipedia: https://en.wikipedia.org/wiki/GitLab
+| Web: https://gitlab.com/
+| Src: https://gitlab.com/gitlab-org
+| Src: https://gitlab.com/gitlab-org/gitlab
+| Issues: https://gitlab.com/groups/gitlab-org/-/issues
+| Docs: https://docs.gitlab.com/
+| Docs: https://docs.gitlab.com/ee/user/markdown.html#where-you-can-use-gitlab-flavored-markdown
+| Docs: https://docs.gitlab.com/ee/install/install_methods.html
+| Docs: https://about.gitlab.com/direction/maturity/#package
+| Docs: https://about.gitlab.com/handbook/
+| Docs: https://about.gitlab.com/handbook/markdown-guide/
+| Docs: https://about.gitlab.com/company/kpis/
+| Docs: https://about.gitlab.com/company/okrs/
+| StatusPage: https://status.gitlab.com/
+
+- GitLab is written in :ref:`Ruby`, :ref:`Go`, and :ref:`JS`.
+
+
+.. index:: GitLab CI
+.. _gitlab-ci:
+
+GitLab CI
+~~~~~~~~~~~~~~~
+| Docs: https://docs.gitlab.com/ee/ci/yaml/
+| Docs: https://about.gitlab.com/competition/github/
+
+GitLab CI is an open source :ref:`Continuous Integration` system
+which runs commands in containers per tasks defined in a build :ref:`YAML` file
+on project events like `git push`, new Pull Request branch, new Issue.
+
+- `gitlab-ci.yml`
+- GitLab CI precedes :ref:`GitHub`. Travis-CI precedes GitLab CI and :ref:`GitHub Actions`. Bitten by Edgewall (Trac) precedes Travis CI.
+
+
+
+.. index:: Gitea 
+.. _gitea: 
+
+Gitea
+=======
+| Wikipedia: https://en.wikipedia.org/wiki/Gitea
+| Web: https://gitea.io/en-us/
+| Src: https://github.com/go-gitea/gitea
+| Docs: https://docs.gitea.io/en-us/
+| Docs: https://try.gitea.io/api/swagger
+
+Gitea is an open source project forge site written in :ref:`Go`;
+with :ref:`Git` repositories (repos), *Wiki* repos, Issues, Pull Requests; and
+:ref:`Continuous Integration` to run the build script (:ref:`YAML`) on events like `git push`, `new_issue`, and `new_pr`;
+
+:ref:`Package` repositories for released build artifacts,
+:ref:`Container` repository
+
+- https://docs.gitea.io/en-us/usage/automatically-linked-references/
+
+- https://docs.gitea.io/en-us/installation/install-with-docker-rootless/
+- https://docs.gitea.io/en-us/administration/https-setup/#using-acme-default-lets-encrypt
+- https://docs.gitea.io/en-us/installation/upgrade-from-gitea/
+- https://docs.gitea.io/en-us/administration/command-line/
+- https://docs.gitea.io/en-us/usage/repo-mirror/
+- https://github.com/maxkratz/github2gitea-mirror
+- https://docs.gitea.io/en-us/usage/packages/overview/#supported-package-managers
+- https://docs.gitea.io/en-us/usage/packages/container/
+- https://docs.gitea.io/en-us/usage/packages/conda/
+- https://docs.gitea.io/en-us/usage/packages/pypi/
+- https://docs.gitea.io/en-us/usage/packages/npm/
+- https://docs.gitea.io/en-us/administration/external-renderers/#example-jupyter-notebook
+- Gitea supports file-attachments in issues, pull requests, and releases (tagged git commits)
+- Forgejo is a fork of Gitea, like Gitea is a fork of Gogs (which is a clone of GitHub)
+  - https://github.com/topics/forgejo
+  - https://codeberg.org/forgejo/forgejo
+
+
+.. index:: Gitea Actions
+.. _gitea actions:
+
+Gitea Actions
+~~~~~~~~~~~~~~~
+- Src: https://github.com/go-gitea/gitea/tree/main/modules/actions
+- Src: https://github.com/go-gitea/gitea/tree/main/services/actions
+- Src: https://gitea.com/gitea/act_runner
+- Docs: https://docs.gitea.io/en-us/usage/usage/actions/overview/
+- Docs: https://docs.gitea.io/en-us/usage/usage/actions/quickstart/#set-up-runner
+- Docs: https://docs.gitea.io/en-us/usage/usage/actions/comparison/ w/ :ref:`GitHub Actions`
+- Docs: https://blog.gitea.io/2023/03/hacking-on-gitea-actions/
+
 
 
 .. index:: Project Templates
@@ -1616,7 +1819,9 @@ MyST Markdown
 MyST Markdown is :ref:`CommonMark` :ref:`Markdown` with support
 for :ref:`Sphinx` roles and directives.
 
-- :ref:`jupyter-book` implemented MyST Markdown.
+- :ref:`jupyter-book` builds HTML, LaTeX, and PDF books
+  from MyST Markdown, :ref:`ReStructuredText`, and :ref:`Jupyter` notebooks
+  in the sequence listed in `_toc.yml`.
 
 
 .. index:: MediaWiki Markup
@@ -1996,13 +2201,23 @@ programming language.
 Go
 ~~~~~~~~~~~~~
 | Wikipedia: `<https://en.wikipedia.org/wiki/Go_(programming_language)>`_
-| Homepage: https://golang.org/
-| Docs: https://golang.org/doc/
+| Homepage: https://go.dev/
 | Src: https://github.com/golang/go
-| Docs: https://learnxinyminutes.com/docs/go/
+| Docs: https://go.dev/doc/
+| Docs: https://go.dev/doc/effective_go
+| Docs: https://go.dev/security/fuzz/
+| Docs: https://pkg.go.dev/
+| Docs: https://pkg.go.dev/std
+| Docs: https://pkg.go.dev/testing
+| LearnXinYMinutes: https://learnxinyminutes.com/docs/go/
 
 Go is a free and open source
-statically-typed :reF:`C`-based third generation language.
+statically-typed :ref:`C`-based third generation language.
+
+- Go binaries may be compiled without a libc; may make direct kernel syscalls on the platform or platforms they're compiled for.
+  - https://github.com/goplus/libc
+- Better Go Playground
+  https://goplay.tools/
 
 
 .. index:: Java
@@ -2278,7 +2493,7 @@ CPython
 ++++++++
 | Wikipedia: `<https://en.wikipedia.org/wiki/Python_(programming_language)>`_
 | Homepage: https://www.python.org/
-| Docs: https://docs.python.org/2/
+| Docs: https://docs.python.org/
 | Docs: https://docs.python.org/devguide/
 | Docs: https://docs.python.org/devguide/documenting.html
 | Docs: https://learnxinyminutes.com/docs/python/
@@ -2287,14 +2502,23 @@ CPython
 CPython is the reference :ref:`Python` language implementation written in
 :ref:`C`.
 
-* https://github.com/python/cpython/blob/master/Grammar/Grammar
+* https://github.com/python/cpython/blob/master/Grammar/python.gram
 
 CPython can interface with other :ref:`C` libraries
 through a number of interfaces:
 
-* https://docs.python.org/2/c-api/
-* https://cffi.readthedocs.io/en/latest/
+* Python C-API: https://docs.python.org/3/c-api/
+* :ref:`CFFI`
+  | Docs: https://cffi.readthedocs.io/en/latest/
+
 * :ref:`Cython`
+
+There are other implementations of Python:
+
+* :ref:`Stackless Python`
+* :ref:`Jython`
+* :ref:`PyPy`
+* :ref:`RustPython`
 
 
 .. index:: Cython
@@ -4225,30 +4449,6 @@ and is distributed as a single :ref:`Go` binary.
 - You've heard of k8s? This is k8s - 5.
 
 
-.. index:: Kubernetes-Mesos
-.. _kubernetes-mesos:
-
-Kubernetes-Mesos
-~~~~~~~~~~~~~~~~~
-| Src: https://github.com/mesosphere/kubernetes-mesos
-
-kubernetes-mesos integrates
-:ref:`Kubernetes` :ref:`Docker` Pod scheduling with :ref:`Mesos`.
-
-.. epigraph::
-
-    Kubernetes and Mesos are a match made in heaven.
-
-    Kubernetes enables the Pod,
-    an abstraction that represents a group of co-located containers, along
-    with Labels for service discovery, load-balancing, and replication control.
-
-    Mesos provides the fine-grained resource allocations for pods
-    across nodes in a cluster,
-    and facilitates resource sharing
-    among Kubernetes and other frameworks running on the same cluster.
-
-
 .. index:: KVM
 .. _KVM:
 
@@ -4673,6 +4873,8 @@ VirtualBox:
 
 Shells
 ========
+| Wikipedia: https://en.wikipedia.org/wiki/Unix_shell
+
 
 .. index:: Bash
 .. _bash:
@@ -8650,6 +8852,28 @@ like ``j`` and ``k`` for up and down:
 - GMail (``?`` for help)
 - Facebook (``?`` for help)
 - Twitter (``?`` for help)
+
+
+.. index:: neovim
+.. neovim:
+
+neovim
+++++++++
+| Web:  https://neovim.io/
+| Src: https://github.com/neovim/neovim
+| Docs:  https://neovim.io/doc/
+| Docs:  https://neovim.io/doc/user/
+
+Neovim is an open source programmer's editor and :ref:`IDE`
+which is a rewrite of :ref:`Vim`.
+
+- Neovim supports :ref:`lua` and :ref:`vimscript` for scripting and
+  plugins.
+- Neovim does not run in a terminal like :ref:`vim`; neovim is GUI only
+  like :ref:`gvim` and :ref:`macvim`.
+- Neovim has a builtin :ref:`LSP` client,
+  so neovim can use the same LSP language servers as :ref:`vscode`
+  for code introspection and analysis.
 
 
 .. index:: westurner/dotvim
