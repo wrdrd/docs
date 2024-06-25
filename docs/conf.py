@@ -64,7 +64,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'WRD R&D Documentation'
-copyright = u'WRD R&D 2014 - 2023'
+copyright = u'WRD R&D 2014 - 2024'
 
 srclink_project = 'https://github.com/wrdrd/docs'
 srclink_branch = 'master'
@@ -337,8 +337,8 @@ def configure_meta_tags(app, pagename, templatename, context, doctree):
 
 
 def setup(app):
-    # app.add_javascript('js/local.js')
-    # app.add_stylesheet('css/local.css')
+    # app.add_js_file('js/local.js')
+    # app.add_css_file('css/local.css')
     app.connect('html-page-context', configure_meta_tags)
 
 
