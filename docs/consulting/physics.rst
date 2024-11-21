@@ -1,0 +1,48 @@
+
+.. index:: Physics
+.. _physics:
+
+Physics
+=============
+| Wikipedia: https://en.wikipedia.org/wiki/Physics
+
+
+.. = - + !
+
+
+From :ref:`Data Science` :
+
+* :ref:`Science`
+
+  * :ref:`Open Science`
+  * :ref:`Scientific Method`
+
+* :ref:`Reproducibility`
+
+  * :ref:`Ten Simple Rules`
+  * :ref:`Linked Reproducibility`
+
+* :ref:`Open Source` **:ref:`Tools`**:
+
+  * :ref:`Jupyter Notebook`
+
+    * :ref:`CoCalc`
+    * :ref:`Google Colab`
+    * :ref:`JupyterLite`
+    * :ref:`Jupyter Docker Stacks` (:ref:`Conda`)
+    * :ref:`Jupyter Extensions`
+    * :ref:`Jupyter and Reproducibility`
+
+
+
+.. index:: Waves
+.. _waves:
+
+Waves
+-------
+
+- Prompts one day
+++++++++++++++++++++
+- Teach me the Kirchhoff’s integral theorem and diffraction formula and the Maggi-Rubinowicz transformation using high-school math
+- Teach how Huygens’ oscillation theory is related to Kirchoff’s diffraction and the Helmholtz equation
+- What about backward secondary waves?
