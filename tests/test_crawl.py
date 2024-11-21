@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
 import itertools
-import socket
 import subprocess
 import sys
 from collections import Counter
