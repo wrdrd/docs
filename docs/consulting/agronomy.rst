@@ -144,10 +144,12 @@ OpenAg Data Alliance
 | Src: https://github.com/OADA/oada-docs
 | Src: https://github.com/OADA/oada-formats
 
-.. pullquote::
+.. pull-quote::
 
-    generic sensor data model, air-temperature, barometric-pressure, cloud-cover, dew-point, heading, location, rainfall, relative-humidity, soil-moisture, soil-temperature, solar-radiation, vibration, wind-direction, wind-speed, sensor-hub, sensor
-
+    generic sensor data model, air-temperature, barometric-pressure,
+    cloud-cover, dew-point, heading, location, rainfall,
+    relative-humidity, soil-moisture, soil-temperature, solar-radiation,
+    vibration, wind-direction, wind-speed, sensor-hub, sensor
 
 
 .. index:: AgStack
@@ -889,3 +891,57 @@ Planting
 -------------
 Maintenance
 -------------
+
+
+
+
+.. index:: Weather
+.. _weather:
+
+Weather
+**********
+
+
+
+.. index:: GraphCast
+.. _graphcast:
+
+GraphCast
+~~~~~~~~~~
+| Src: https://github.com/google-deepmind/graphcast
+
+GraphCast is an open source global weather forecasting model 
+
+- https://www.google.com/search?q=graphcast+api
+
+
+
+.. index:: NOAA Weather
+.. _noaa weather:
+
+NOAA Weather
+~~~~~~~~~~~~~~~
+| Src: https://github.com/NOAA-EMC/global-workflow
+
+- NOAA-EMC/global-workflow is the weather model behind the
+  US National Weather Service (NWS) API
+
+- https://github.com/NOAA-EMC/global-workflow/issues/796
+
+
+
+.. index:: NWS
+.. _nws:
+
+NWS
+~~~~
+
+
+.. .. index:: agstack/weather-forecast
+.. _agstack_weather_forecast:
+
+agstack/weather-forecast
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+| Src:  https://github.com/agstack/weather-forecast
+
+- https://github.com/agstack/weather-forecast/blob/main/app/models/weathermodels.py
