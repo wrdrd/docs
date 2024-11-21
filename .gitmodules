@@ -10,3 +10,6 @@
 [submodule "src/wrd_sphinx_theme"]
 	path = src/wrd_sphinx_theme
 	url = https://github.com/westurner/wrd_sphinx_theme
+[submodule "docs/MathJax"]
+	path = docs/MathJax
+	url = https://github.com/mathjax/MathJax
