@@ -32,8 +32,7 @@ Educational Testing Objectives
 
 USA Testing Standards
 ***********************
-| Wikipedia:
-`<https://en.wikipedia.org/wiki/List_of_standardized_tests_in_the_United_States>`__
+| Wikipedia: `<https://en.wikipedia.org/wiki/List_of_standardized_tests_in_the_United_States>`__
 
 * https://en.wikipedia.org/wiki/Education_in_the_United_States
 * https://en.wikipedia.org/wiki/History_of_education_in_the_United_States

@@ -1,0 +1,55 @@
+
+# Scientific Method Demo Notebook
+
+## Baking Soda and Vineger
+
+### Background (Bias)
+#### Likert Scale == Ph Scale
+List of things and their Ph:
+- Baking Soda
+  - ph: 
+- Vinegar
+  - ph:
+- Water
+  - ph:
+
+.
+
+- Acidic:
+  - . 
+- Basic:
+  - .
+
+#### Mixtures, Mixing, and Entropy
+If evenly mixed, eventually the ph in a mixture of substances with different Ph will be roughly near the average ph of the scaled masses of substances; the ph will be in the middle of the ph of the things mixed.
+
+If we were to sample the ph at various points in a solution over time and plot the scores,
+there would be a distribution with a central tendency.
+
+There could be exothermic (yields heat) and/or endothermic (consumes heat) reactions from mixing things with different ph.
+
+Eventually, given mixing due to physical effects over time like:
+ convection, titration (vibration), density (mass/volume), and buoyancy
+the mixture will be uniformly distributed;
+such that it doesn't matter at which vector (point) in the solution a sample is drawn from;
+we'll get the same score wherever we measure it, after a given amount of time.
+
+(On Entropy, Symmetry, and Conservation: while Energy is conserved, does information ever decrease?)
+
+### Questions
+- How will the ph scale of a solution change over time, at the same point(s) in the solution, given the masses and ph scores of the inputs?
+
+
+### Hypothesis
+Mixing Baking Soda (ph: ) with Vinegar (ph: ) will result in a ph score between the two.
+
+
+### Experiment
+#### Variables
+*Independent* variables:
+- amount of substance added
+- ph of substance added
+- time delays between adding and measuring
+
+Dependent variables:
+- ph score of the solution at each point over time

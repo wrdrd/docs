@@ -3,8 +3,8 @@ wrdrd package
 
 .. automodule:: wrdrd
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 Subpackages
 -----------

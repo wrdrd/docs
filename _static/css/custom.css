@@ -1,3 +1,11 @@
+
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  border-bottom: 2px solid #f0f0f0;
+  margin-top: 28px !important;
+}
+
+
 .navbar {
     margin-bottom: 0;
 }
@@ -132,6 +140,10 @@ table.docutils caption {
 
 a.external {
     border-bottom: 1px dotted #c0c0c0;
+}
+
+figure a.external {
+    display: contents;
 }
 
 div.body a.internal {

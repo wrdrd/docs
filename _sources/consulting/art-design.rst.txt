@@ -874,6 +874,14 @@ https://en.wikipedia.org/wiki/Comparison_of_audio_synthesis_environments
 * https://en.wikipedia.org/wiki/Effects_unit ("effects pedal")
 
 
+
+.. index:: Live Coding
+.. _live coding:
+
+Live Coding
+~~~~~~~~~~~~~
+
+
 .. index:: ChucK
 .. _chuck:
 
@@ -891,6 +899,7 @@ ChucK
 
 Chuck is an :ref:`open source`
 realtime, concurrent :ref:`musical composition` :ref:`audio synthesis`
+:ref:`Live Coding`
 programming language.
 
 * ChucK supports "On the Fly Programming":
@@ -929,6 +938,33 @@ programming library API.
    Csound is simultaneously both 'old school' and 'new school'.
 
    --- http://booki.flossmanuals.net/csound/introduction/
+
+
+
+.. index:: FoxDot
+.. _foxdot:
+
+FoxDot
+~~~~~~~
+| Web: https://foxdot.org/
+| Src: https://github.com/Qirky/FoxDot
+| Src: https://gitlab.com/iShapeNoise/foxdot
+| Docs: https://foxdot.org/docs/
+| Docs: https://foxdot.org/docs/pattern-basics/
+
+FoxDot is an :ref:`open source` :ref:`Live Coding`
+language and editor
+for realtime, concurrent :ref:`musical composition` :ref:`audio synthesis`
+written in :ref:`Python`
+that runs on :ref:`SuperCollider`.
+
+* FoxDot supports "On the Fly Programming":
+  code and loops can be changed while
+  the FoxDot program is running in :ref:`SuperCollider`
+* The iShapeNoise/foxdot "PitchGlitch" fork of FoxDot is
+  actively maintained, and has a different ``README``:
+
+  * | Src: https://gitlab.com/iShapeNoise/foxdot
 
 
 .. index:: Hookpad
@@ -977,6 +1013,8 @@ MIDI
 | https://en.wikipedia.org/wiki/DJ_digital_controller
 
 
+
+
 .. index:: STK
 .. _stk:
 
@@ -995,27 +1033,6 @@ STK is a realtime audio synthesis
 for simulating physical and synthesized sounds.
 
 * :ref:`ChucK` works with :ref:`STK`
-
-
-.. index:: VST
-.. index:: Virtual Studio Technology
-.. _vst:
-
-VST
-~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/Virtual_Studio_Technology
-| Homepage:
-
-VST is a reusable audio transform API for :ref:`Audio Synthesis`
-and :ref:`Sound Production` tools.
-
-* A VST plugin is a :ref:`packaged <packages>` module
-  of instruments, effects, and/or :ref:`MIDI` code
-* A VST host is a program which can run VST plugins
-
-  * :ref:`Ardour`
-  * :ref:`Audacity`
-  * ACID, Adobe Premiere, Cakewalk, FL Studio, Sound Forge, Vegas
 
 
 .. index:: Sound Production
@@ -1046,6 +1063,41 @@ Acoustical Engineering
 | https://en.wikipedia.org/wiki/Acoustical_engineering
 
 
+
+.. index:: EQ
+.. index:: Equalization
+.. _eq:
+
+---
+EQ
+---
+| Wikipedia: `<https://en.wikipedia.org/wiki/Equalization_(audio)>`__
+
+Audio equalization with an equalizer (EQ)
+is the process of adjusting the amplitude
+of a waveform at one or more frequencies.
+
+- A Graphic Equalizer ("Graphic EQ")
+  maps the waveform and/or the EQ parameters
+  to visual signals for visualization
+- A Parametric Equalizer ("Parametric EQ")
+  allows control of: 
+
+  - Amplitude or "boost" or "cut" (:ref:`decibels <dB>` of gain)
+  - Center Frequency (``F_0``)
+  - Bandwidth (``Q``)
+
+Types of EQ filters:
+
+- LP: Low-pass filter
+- HP: High-pass filter
+- BP: Band-pass filter
+- Shelving filter
+- First-order filters (can be implemented with resistor and capacitor)
+- Second-order filters (have a Q parameter)
+
+
+
 .. index:: DJ
 .. _dj:
 
@@ -1054,26 +1106,20 @@ DJ
 | https://en.wikipedia.org/wiki/Disc_jockey
 
 
-.. index:: AAC
-.. _aac:
 
-AAC
+.. index:: DAW
+.. _daw:
+
+DAW
 ~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/Advanced_Audio_Coding
-
-AAC is an audio compression standard designed to replace :ref:`MP3`.
-
-AAC is a component of :ref:`MPEG`-4 audio ("MP4").
-
-* AAC is a *lossy* audio compression algorithm
-* iTunes files are in AAC format (MPEG-4 Audio, MP4, M4a)
-
+| Wikipedia: https://en.wikipedia.org/wiki/Digital_audio_workstation
 
 .. index:: Ardour
 .. _ardour:
 
+-------
 Ardour
-~~~~~~~
+-------
 | Wikipedia: `<https://en.wikipedia.org/wiki/Ardour_(software)>`__
 | Homepage: https://ardour.org/
 |
@@ -1093,8 +1139,9 @@ editing, and mixing.
 .. index:: Audacity
 .. _audacity:
 
+----------
 Audacity
-~~~~~~~~~~
+----------
 | Wikipedia: `<https://en.wikipedia.org/wiki/Audacity_(audio_editor)>`__
 | Homepage: http://audacityteam.org/
 | Download: http://audacityteam.org/download/
@@ -1113,73 +1160,49 @@ sound recording and editing software tool.
 * Audacity is included in :ref:`DreamStudio`, :ref:`Ubuntu Studio`
 
 
-.. index:: FLAC
-.. _flac:
 
-FLAC
-~~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/FLAC
-| Homepage: https://xiph.org/flac/
-| Download: https://xiph.org/flac/download.html
-| Source: git https://git.xiph.org/flac.git
-| Docs: https://xiph.org/flac/documentation.html
+.. index:: BespokeSynth
+.. _bespokesynth:
 
-FLAC is an :ref:`open source` lossless audio codec.
+-------------
+BespokeSynth
+-------------
+| Wikipedia: https://en.wikipedia.org/wiki/BespokeSynth
+| Web: https://www.bespokesynth.com/
+| Src: https://github.com/BespokeSynth/BespokeSynth/
 
-* :ref:`FLAC` files are, on average, like 10x (TODO ?) the
-  file size of e.g. :ref:`MP3`, because they encode the full spectrum.
+BespokeSynth is an :ref:`open source` app
+for :ref:`live coding` and :ref:`modular synthesis`
+written in :ref:`C` and :ref:`C++`
 
+- audinux has a build of BespokeSynth:
 
-
-.. index:: JACK
-.. _jack:
-
-JACK
-~~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/JACK_Audio_Connection_Kit
-| Homepage: http://jackaudio.org/
-| Download: http://jackaudio.org/downloads/
-| Docs: https://github.com/jackaudio/jackaudio.github.com/wiki
-| Docs: http://jackaudio.org/api/
-
-JACK is a low-latency ("realtime") sound server for :ref:`POSIX`
-operating sytems (:ref:`Linux`, :ref:`OSX`, :ref:`Windows`)
-written in :ref:`C` and :ref:`C++`.
-
-* List of JACK-supporting applications:
-  http://jackaudio.org/applications/
-
-  * :ref:`Ardour`
-  * :ref:`Audacity`
-  * :ref:`LiVES`
-  * :ref:`Mixxx`
-  * :ref:`Blender`
-  * :ref:`VLC`
+  - | Web: https://copr.fedorainfracloud.org/coprs/ycollet/audinux/package/BespokeSynth/
+  - | Src: https://copr-dist-git.fedorainfracloud.org/cgit/ycollet/audinux/BespokeSynth.git/tree/bespokesynth.spec
+  - | Src: https://github.com/audinux/fedora-spec/blob/master/bespokesynth/bespokesynth.spec
+  - | Src: https://github.com/audinux/fedora-spec/blob/master/bespokesynth/bespokesynth-weekly.spec
 
 
-.. index:: LADSPA
-.. _ladspa:
 
-LADSPA
-~~~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/LADSPA
-| Homepage: http://www.ladspa.org/
+.. index:: Reaper
+.. _reaper:
 
-LADSPA ("Linux Audio Developer's Simple Plugin API") is
-an :ref:`open source`
-standard for audio filters and effects
-written in :ref:`C`.
+-------
+Reaper
+-------
+| Wikipedia: https://en.wikipedia.org/wiki/REAPER
 
-* :ref:`Ardour`, :ref:`Audacity`, :ref:`LiVES`,
-  and :ref:`Rosegarden`
-  all support LADSPA
+REAPER (Rapid Environment for Audio Production, Engineering, and Recording)
+is a :ref:`DAW`, :ref:`MIDI` sequencer and video editing software
+written in :ref:`C`, :ref:`C++`, and :ref:`ASM`.
 
 
 .. index:: Mixxx
 .. _mixxx:
 
+-----
 Mixxx
-~~~~~
+-----
 | Wikipedia: https://en.wikipedia.org/wiki/Mixxx
 | Homepage: http://mixxx.org/
 | Source: git https://github.com/mixxxdj/mixxx
@@ -1203,11 +1226,143 @@ written in :ref:`C++`, :ref:`Qt`, :ref:`XML`, and :ref:`Javascript`.
 * Mixx supports timecoded vinyl and CDs
 
 
+.. index:: JACK
+.. _jack:
+
+JACK
+~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/JACK_Audio_Connection_Kit
+| Homepage: http://jackaudio.org/
+| Download: http://jackaudio.org/downloads/
+| Src: https://github.com/jackaudio/jack2
+| Docs: https://github.com/jackaudio/jackaudio.github.com/wiki
+| Docs: http://jackaudio.org/api/
+
+JACK is a low-latency ("realtime") sound server for :ref:`POSIX`
+operating sytems (:ref:`Linux`, :ref:`OSX`, :ref:`Windows`)
+written in :ref:`C` and :ref:`C++`.
+
+* List of JACK-supporting applications:
+  http://jackaudio.org/applications/
+
+  * :ref:`Ardour`
+  * :ref:`Audacity`
+  * :ref:`LiVES`
+  * :ref:`Mixxx`
+  * :ref:`Blender`
+  * :ref:`VLC`
+
+* :ref:`PipeWire` supports :ref:`JACK`
+
+
+.. index:: LADSPA
+.. _ladspa:
+
+LADSPA
+~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/LADSPA
+| Homepage: http://www.ladspa.org/
+
+LADSPA ("Linux Audio Developer's Simple Plugin API") is
+an :ref:`open standard` for audio filters and effects
+written in :ref:`C`.
+
+* :ref:`Ardour`, :ref:`Audacity`, :ref:`LiVES`,
+  and :ref:`Rosegarden`
+  all support LADSPA
+
+
+
+.. index:: LV2
+.. _lv2:
+
+LV2
+~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/LV2
+| Source: https://gitlab.com/lv2/lv2
+
+LV2 (:ref:`LADSPA` version 2) is an :ref:`open standard`
+for audio filters and effects
+written in :ref:`C` and Turtle.
+
+* :ref:`Ardour`, :ref:`Audacity`, and
+  :ref:`BespokeSynth`
+  all support LV2
+
+
+.. index:: VST
+.. index:: VST3
+.. index:: Virtual Studio Technology
+.. _vst:
+
+VST
+~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Virtual_Studio_Technology
+| Web: https://www.steinberg.net/developers/
+
+VST2 and VST3 are a reusable audio transform APIs for :ref:`Audio Synthesis`
+and :ref:`Sound Production` tools by Steinberg.
+
+* A VST plugin is a :ref:`packaged <packages>` module
+  of instruments, effects, and/or :ref:`MIDI` code
+* A VST host is a program which can run VST plugins (VST2, VST3)
+
+  * :ref:`Ardour`
+  * :ref:`Audacity`
+  * :ref:`BespokeSynth`
+  * ACID, Adobe Premiere, Cakewalk, FL Studio, Sound Forge, Vegas
+  * Bridges: Carla, Yabridge
+
+
+
+
+.. index:: Audio Codecs
+.. _audio codecs:
+
+Audio Codecs
+~~~~~~~~~~~~~
+
+
+.. index:: AAC
+.. _aac:
+
+----
+AAC
+----
+| Wikipedia: https://en.wikipedia.org/wiki/Advanced_Audio_Coding
+
+AAC is an audio compression standard designed to replace :ref:`MP3`.
+
+AAC is a component of :ref:`MPEG`-4 audio ("MP4").
+
+* AAC is a *lossy* audio compression algorithm
+* iTunes files are in AAC format (MPEG-4 Audio, MP4, M4a)
+
+
+.. index:: FLAC
+.. _flac:
+
+------
+FLAC
+------
+| Wikipedia: https://en.wikipedia.org/wiki/FLAC
+| Homepage: https://xiph.org/flac/
+| Download: https://xiph.org/flac/download.html
+| Source: git https://git.xiph.org/flac.git
+| Docs: https://xiph.org/flac/documentation.html
+
+FLAC is an :ref:`open source` lossless audio codec.
+
+* :ref:`FLAC` files are, on average, like 10x (TODO ?) the
+  file size of e.g. :ref:`MP3`, because they encode the full spectrum.
+
+
 .. index:: MP3
 .. _mp3:
 
+-----
 MP3
-~~~~~
+-----
 | Wikipedia: https://en.wikipedia.org/wiki/MP3
 
 MP3 refers to one of two :ref:`MPEG` audio codecs.
@@ -1219,6 +1374,23 @@ MP3 refers to one of two :ref:`MPEG` audio codecs.
 * Amazon Music (Amazon MP3) files are in MP3 format
 
 See also: :ref:`AAC`, FLAC, Ogg, SHN
+
+
+.. index:: WAV
+.. _wav:
+
+-----
+WAV
+-----
+| Wikipedia: https://en.wikipedia.org/wiki/WAV
+
+WAV ("Waveform Audio Format") is a file format
+for storing an uncompressed audio bitstream.
+
+* Like WAV, Audio CDs are encoded with PCM; but unlike WAV,
+  Audio CDs are encoded with PCM and *Red Book audio*
+
+
 
 
 .. index:: PulseAudio
@@ -1301,19 +1473,10 @@ connected to a PC or a Pi on the other side of the room):
 * https://github.com/westurner/dotfiles/blob/master/scripts/pulse.sh
 
 
+.. note:: :ref:`PipeWire` supersedes :ref:`PulseAudio`, and then
+   PulseAudio tools work with PipeWire.
 
-.. index:: WAV
-.. _wav:
 
-WAV
-~~~~~
-| Wikipedia: https://en.wikipedia.org/wiki/WAV
-
-WAV ("Waveform Audio Format") is a file format
-for storing an uncompressed audio bitstream.
-
-* Like WAV, Audio CDs are encoded with PCM; but unlike WAV,
-  Audio CDs are encoded with PCM and *Red Book audio*
 
 
 .. index:: Audio/Visual Production
@@ -1326,6 +1489,25 @@ Audio/Visual Production
 | https://en.wikipedia.org/wiki/Remix_culture
 
 * https://en.wikipedia.org/wiki/Compression_artifact#Artistic_use
+
+
+.. index:: PipeWire
+.. _pipewire:
+
+PipeWire
+~~~~~~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Pipewire
+| Source:  https://gitlab.freedesktop.org/pipewire/pipewire
+| Web:  https://pipewire.org/
+
+PipeWire is an :ref:`open source` realtime sound and video server.
+
+- :ref:`PulseAudio` tools work with PipeWire
+- :ref:`ALSA` tools like ``alsamixer`` work with PipeWire
+- :ref:`JACK` tools work with PipeWire
+
+  - ``pipewire-jack-audio-connection-kit``
+    ``pipewire-jack-audio-connection-kit-devel``
 
 
 .. index:: VJ
@@ -2018,11 +2200,12 @@ Media Tools
 *************
 http://distrowatch.com/search.php?category=Multimedia
 
+
 .. index:: Fedora Jam
 .. _fedora jam:
 
 Fedora Jam
--------------
+~~~~~~~~~~~~~
 | Homepage: https://labs.fedoraproject.org/en/jam/
 | Docs: https://fedoraproject.org/wiki/Fedora_jam
 | Src: https://pagure.io/fedora-kickstarts/blob/main/f/fedora-live-jam_kde.ks

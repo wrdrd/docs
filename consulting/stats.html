@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- OpenGraph metadata: ogp.me -->
+    <meta property="og:title" content="Statistics" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="WRD R&D" />
+    <!--
+    <meta property="og:description" content="" />
+    -->
+    <meta property="og:image" content="https://wrdrd.github.io/static/png/drawing-7.09-v0.1.1--_desk.svg-470x242.png" />
+    <meta property="og:image:width" content="470" />
+    <meta property="og:image:height" content="242" />
+    <!--
+    <meta property="og:image:secure_url" content="./_static/img/logo.png" />
+    -->
+    <!-- Twitter metadata -->
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:title" content="Statistics" />
+    <meta property="twitter:description" content="" />
+    <meta property="twitter:site" content="wrdrd" />
+    <meta property="twitter:creator" content="wrdrd" />
+    
+    <title>Statistics &mdash; WRD R&amp;D Documentation</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    
+
+<link rel="stylesheet" href="../_static/css/basicstrap-base.css" type="text/css" />
+<link rel="stylesheet" id="current-theme" href="../_static/css/bootstrap3/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" id="current-adjust-theme" type="text/css" />
+
+<link rel="stylesheet" href="../_static/css/font-awesome.min.css">
+
+<link rel="stylesheet" x-style="css/basicstrap-base.css" href="../_static/css/basicstrap-base.css" type="text/css" />
+<link rel="stylesheet" x-style="css/basicstrap.css" href="../_static/css/basicstrap.css" type="text/css" />
+<link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+<link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+<link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+<link rel="stylesheet" href="../_static/css/local.css" type="text/css" />
+    
+<script type="text/javascript">
+  var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:    '../',
+            VERSION:     '0.2.0',
+            COLLAPSE_INDEX: false,
+            FILE_SUFFIX: '.html',
+            HAS_SOURCE:  true
+  };
+</script>
+    <script type="text/javascript" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/sphinx_highlight.js"></script>
+    <script type="text/javascript" src="../_static/js/local.js"></script>
+    <script type="text/javascript" src="../_static/js/bootstrap3.min.js"></script>
+<script type="text/javascript" src="../_static/js/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="../_static/js/basicstrap.js"></script>
+<script type="text/javascript">
+</script>
+    <link rel="search" type="application/opensearchdescription+xml"
+    title="Search within WRD R&amp;D Documentation"
+    href="../_static/opensearch.xml"/>
+    <link rel="index" title="Index" href="../genindex" />
+    <link rel="search" title="Search" href="../search" />
+    <link rel="top" title="WRD R&amp;D Documentation" href="../index" /> 
+  </head>
+  <body role="document">
+    <div id="navbar-top" class="navbar navbar-default" role="navigation" aria-label="top navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index">WRD R&amp;D Documentation</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown visible-xs">
+                <a role="button" id="localToc" data-toggle="dropdown" data-target="#" href="#">Table Of Contents <b class="caret"></b></a>
+                <ul class="dropdown-menu localtoc sp-localtoc" role="menu" aria-labelledby="localToc">
+                <ul>
+<li><a class="reference internal" href="#">Statistics</a><ul>
+<li><a class="reference internal" href="#relations-between-variables">Relations between variables</a><ul>
+<li><a class="reference internal" href="#relation">Relation</a></li>
+<li><a class="reference internal" href="#correlation">Correlation</a></li>
+<li><a class="reference internal" href="#covariance">Covariance</a></li>
+<li><a class="reference internal" href="#dependence">Dependence</a></li>
+<li><a class="reference internal" href="#causal">Causal</a></li>
+<li><a class="reference internal" href="#orthogonal">Orthogonal</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#types-of-variables">Types of variables</a></li>
+<li><a class="reference internal" href="#classical-data-structures-for-variables">Classical data structures for variables</a></li>
+<li><a class="reference internal" href="#data-structures-below-the-data-structures-for-variables">Data structures below the data structures for variables</a></li>
+<li><a class="reference internal" href="#file-structures">File structures</a></li>
+<li><a class="reference internal" href="#data-structures-for-variables">Data structures for variables</a></li>
+<li><a class="reference internal" href="#databases">databases</a></li>
+</ul>
+</li>
+</ul>
+
+                </ul>
+              </li>
+
+            
+              <li><a href="../py-modindex" title="Python Module Index" >modules </a></li>
+              <li><a href="../genindex" title="General Index" accesskey="I">index </a></li>
+            
+            <li class="visible-xs"><a href="../_sources/consulting/stats.md.txt" rel="nofollow">Show Source</a></li>
+
+            <li class="visible-xs">
+                <form class="search form-search form-inline navbar-form navbar-right sp-searchbox" action="../search" method="get">
+                  <div class="input-append input-group">
+                    <input type="text" class="search-query form-control" name="q" placeholder="Search...">
+                    <span class="input-group-btn">
+                    <input type="submit" class="btn" value="Go" />
+                    </span>
+                  </div>
+                  <input type="hidden" name="check_keywords" value="yes" />
+                  <input type="hidden" name="area" value="default" />
+                </form>
+            </li>
+
+            
+
+          </ul>
+
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- container -->
+    <div class="container-fluid">
+
+      <!-- row -->
+      <div class="row">
+         
+<div class="col-sm-3 hidden-xs" id="sidebar-wrapper">
+  <div class="sidebar hidden-xs" role="navigation" aria-label="main navigation">
+  <div>
+    <h3><a href="../index">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Statistics</a><ul>
+<li><a class="reference internal" href="#relations-between-variables">Relations between variables</a><ul>
+<li><a class="reference internal" href="#relation">Relation</a></li>
+<li><a class="reference internal" href="#correlation">Correlation</a></li>
+<li><a class="reference internal" href="#covariance">Covariance</a></li>
+<li><a class="reference internal" href="#dependence">Dependence</a></li>
+<li><a class="reference internal" href="#causal">Causal</a></li>
+<li><a class="reference internal" href="#orthogonal">Orthogonal</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#types-of-variables">Types of variables</a></li>
+<li><a class="reference internal" href="#classical-data-structures-for-variables">Classical data structures for variables</a></li>
+<li><a class="reference internal" href="#data-structures-below-the-data-structures-for-variables">Data structures below the data structures for variables</a></li>
+<li><a class="reference internal" href="#file-structures">File structures</a></li>
+<li><a class="reference internal" href="#data-structures-for-variables">Data structures for variables</a></li>
+<li><a class="reference internal" href="#databases">databases</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+<div id="searchbox" role="search">
+  <h3>Quick search</h3>
+  <form class="search form-inline" action="../search" method="get">
+      <div class="input-append input-group">
+        <input type="text" class="search-query form-control" name="q" placeholder="Search...">
+        <span class="input-group-btn">
+        <input type="submit" class="btn" value="Go" />
+        </span>
+      </div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<div class="widget navlinks">
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/consulting/stats.md.txt"
+            rel="nofollow"
+            target="_blank">Source RST</a></li>
+    <li><a href="https://github.com/wrdrd/docs/blob/master/docs/consulting/stats.md"
+            rel="nofollow"
+            target="_blank">Source</a></li>
+    <li><a href="https://github.com/wrdrd/docs/edit/master/docs/consulting/stats.md"
+            rel="nofollow"
+            target="_blank">Edit</a></li>
+     <li><a href="https://github.com/wrdrd/docs/commits/master/docs/consulting/stats.md"
+             rel="nofollow"
+             target="_blank">History</a></li>
+     <li><a href="https://github.com/wrdrd/docs/blame/master/docs/consulting/stats.md"
+             rel="nofollow"
+             target="_blank">Annotate</a></li>
+  </ul>
+</div>
+<div class="widget srclinks">
+  <h3>Source</h3>
+  <h5><a href="https://github.com/wrdrd/docs">github.com/wrdrd/docs</a>
+      / <a href="https://github.com/wrdrd/docs/tree/master"
+                rel="nofollow"
+                target="_blank"
+                font="monospace">master</a>
+  </h5>
+  <ul>
+    <li><pre>git clone https://github.com/wrdrd/docs</pre></li>
+    <li><pre>git clone ssh://git@github.com/wrdrd/docs</pre></li>
+    <li><pre>git clone git://github.com/wrdrd/docs</pre></li>
+  </ul>
+</div><div class="widget">
+    <h3><a href="https://wrdrd.github.io/">wrdrd.github.io</a></h3>
+    <ul>
+        <li><a href="https://wrdrd.github.io/">wrdrd.github.io/</a></li>
+        <li><a href="https://wrdrd.github.io/docs/">wrdrd.github.io/docs/</a></li>
+        <li><a href="https://wrdrd.github.io/wiki/">wrdrd.github.io/wiki/</a></li>
+        <li><a href="https://github.com/wrdrd">github.com/wrdrd</a></li>
+        <li><a href="https://twitter.com/wrdrd">@wrdrd</a></li>
+    </ul>
+</div>
+  </div>
+</div> 
+        
+
+        <div class="col-md-9" id="content-wrapper">
+          <div class="document" role="main">
+            <div class="documentwrapper">
+              <div class="bodywrapper">
+                <div class="body">
+                  
+  <section id="statistics">
+<h1>Statistics<a class="headerlink" href="#statistics" title="Link to this heading">¶</a></h1>
+<section id="relations-between-variables">
+<h2>Relations between variables<a class="headerlink" href="#relations-between-variables" title="Link to this heading">¶</a></h2>
+<p>Statistics describe relations between variables.</p>
+<section id="relation">
+<h3>Relation<a class="headerlink" href="#relation" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Binary relation</p>
+<ul>
+<li><p>A <relation> B</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="correlation">
+<h3>Correlation<a class="headerlink" href="#correlation" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>linear regression (“least squares”)</p>
+<ul>
+<li><p>r^2 statistic: https://en.wikipedia.org/wiki/Coefficient_of_determination</p></li>
+</ul>
+</li>
+<li><p>Pearson correlation</p></li>
+<li><p>ANOVA</p></li>
+<li><p>MANCOVA</p></li>
+<li><p>CANOVA</p></li>
+</ul>
+</section>
+<section id="covariance">
+<h3>Covariance<a class="headerlink" href="#covariance" title="Link to this heading">¶</a></h3>
+</section>
+<section id="dependence">
+<h3>Dependence<a class="headerlink" href="#dependence" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>statistical independence or dependence</p></li>
+</ul>
+</section>
+<section id="causal">
+<h3>Causal<a class="headerlink" href="#causal" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>causal charts</p></li>
+</ul>
+</section>
+<section id="orthogonal">
+<h3>Orthogonal<a class="headerlink" href="#orthogonal" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>https://www.youtube.com/watch?v=s5lCl3aQ_A4</p></li>
+</ul>
+</section>
+</section>
+<section id="types-of-variables">
+<h2>Types of variables<a class="headerlink" href="#types-of-variables" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>independent, dependent</p></li>
+<li><p>stochastic</p></li>
+<li><p>stationary // nonstationary</p></li>
+<li><p>parameter</p></li>
+<li><p>hyperparameter</p></li>
+<li><p>categorical</p></li>
+<li><p>continuous // discrete</p></li>
+<li><p>constant</p></li>
+<li><p>scalar</p></li>
+</ul>
+</section>
+<section id="classical-data-structures-for-variables">
+<h2>Classical data structures for variables<a class="headerlink" href="#classical-data-structures-for-variables" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Two-state transistors</p></li>
+<li><p>Computing Architecture</p>
+<ul>
+<li><p>Electronic RAM with or without ECC error :correction</p></li>
+<li><p>Buses: RAM bus, GPU bus</p></li>
+<li><p>CPU and L1, L2, [L3] caches</p></li>
+</ul>
+</li>
+<li><p>Software interfaces to computing architecture</p>
+<ul>
+<li><p>ASM; Assembly Language; Compilers and syscalls of operating systems</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">malloc()</span></code> and <code class="docutils literal notranslate"><span class="pre">free()</span></code>; C interfaces to ranges of userspace process memory</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="data-structures-below-the-data-structures-for-variables">
+<h2>Data structures below the data structures for variables<a class="headerlink" href="#data-structures-below-the-data-structures-for-variables" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Singly-linked list</p></li>
+<li><p>Doubly-linked list</p>
+<ul>
+<li><p>Python: <code class="docutils literal notranslate"><span class="pre">list()</span></code>, <code class="docutils literal notranslate"><span class="pre">[]</span></code>, <code class="docutils literal notranslate"><span class="pre">[1,2,3,4]</span></code></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="file-structures">
+<h2>File structures<a class="headerlink" href="#file-structures" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>record</p></li>
+<li><p>field</p></li>
+<li><p>record delimiters; <code class="docutils literal notranslate"><span class="pre">\n</span></code>, <code class="docutils literal notranslate"><span class="pre">\0</span></code>,</p></li>
+<li><p>field delimiters; <code class="docutils literal notranslate"><span class="pre">,</span></code>, <code class="docutils literal notranslate"><span class="pre">\t</span></code>,</p></li>
+<li><p>fixed-width field datatypes</p>
+<ul>
+<li><p>SQL: <code class="docutils literal notranslate"><span class="pre">varchar(8)</span></code>, <code class="docutils literal notranslate"><span class="pre">varchar(255)</span></code></p></li>
+<li><p>Python: <code class="docutils literal notranslate"><span class="pre">np.uint</span></code>, <code class="docutils literal notranslate"><span class="pre">np.float64</span></code></p></li>
+<li><p>C: <code class="docutils literal notranslate"><span class="pre">uint64_t</span></code>, <code class="docutils literal notranslate"><span class="pre">char[8]</span></code></p></li>
+</ul>
+</li>
+<li><p>variable-width field datatypes</p>
+<ul>
+<li><p>SQLite: <code class="docutils literal notranslate"><span class="pre">TEXT</span></code></p></li>
+<li><p>Python: <code class="docutils literal notranslate"><span class="pre">str</span></code>, <code class="docutils literal notranslate"><span class="pre">int</span></code></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="data-structures-for-variables">
+<h2>Data structures for variables<a class="headerlink" href="#data-structures-for-variables" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Primitive types</p>
+<ul>
+<li><p>Integer</p>
+<ul>
+<li><p>Python: <code class="docutils literal notranslate"><span class="pre">int()</span></code>,
+<code class="docutils literal notranslate"><span class="pre">np.int32()</span></code>, <code class="docutils literal notranslate"><span class="pre">np.int64()</span></code>, <code class="docutils literal notranslate"><span class="pre">np.uint64()</span></code>,
+<code class="docutils literal notranslate"><span class="pre">sy.Integer()</span></code></p></li>
+</ul>
+</li>
+<li><p>Float</p>
+<ul>
+<li><p>Python: <code class="docutils literal notranslate"><span class="pre">float()</span></code>,
+<code class="docutils literal notranslate"><span class="pre">np.float32()</span></code>, <code class="docutils literal notranslate"><span class="pre">np.float64()</span></code>,
+<code class="docutils literal notranslate"><span class="pre">np.float128()</span></code>, <code class="docutils literal notranslate"><span class="pre">sy.Float()</span></code></p></li>
+</ul>
+</li>
+<li><p>Character</p>
+<ul>
+<li><p>C: <code class="docutils literal notranslate"><span class="pre">char</span></code>, <code class="docutils literal notranslate"><span class="pre">char[8]</span></code></p></li>
+</ul>
+</li>
+<li><p>String (*)</p>
+<ul>
+<li><p>SQL: <code class="docutils literal notranslate"><span class="pre">TEXT</span></code></p></li>
+<li><p>Python: <code class="docutils literal notranslate"><span class="pre">str()</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;1,2,3,4&quot;</span></code></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Tuples</p>
+<ul>
+<li><p>Python: <code class="docutils literal notranslate"><span class="pre">tuple()</span></code>, <code class="docutils literal notranslate"><span class="pre">(,)</span></code>, <code class="docutils literal notranslate"><span class="pre">(1,)</span></code>, <code class="docutils literal notranslate"><span class="pre">(2,3,4)</span></code></p></li>
+</ul>
+</li>
+<li><p>Lists</p>
+<ul>
+<li><p>Python: <code class="docutils literal notranslate"><span class="pre">list()</span></code>, <code class="docutils literal notranslate"><span class="pre">[]</span></code>, <code class="docutils literal notranslate"><span class="pre">[1,2,3,4]</span></code></p></li>
+</ul>
+</li>
+<li><p>Sets</p>
+<ul>
+<li><p>Python: <code class="docutils literal notranslate"><span class="pre">set()</span></code>, <code class="docutils literal notranslate"><span class="pre">{}</span></code>, <code class="docutils literal notranslate"><span class="pre">{1,2,3,4}</span></code></p></li>
+</ul>
+</li>
+<li><p>Arrays</p>
+<ul>
+<li><p>Python: <code class="docutils literal notranslate"><span class="pre">np.array([1,2,3,4],</span> <span class="pre">dtype=np.int64)</span></code></p></li>
+</ul>
+</li>
+<li><p>Graphs</p>
+<ul>
+<li><p>Trees</p>
+<ul>
+<li><p>Binary trees</p></li>
+<li><p>Balanced trees</p>
+<ul>
+<li><p>B-trees, B*-trees (“b star tree”), B+ tree</p></li>
+<li><p>Red-Black trees</p>
+<ul>
+<li><p>cosmos/iavl</p></li>
+</ul>
+</li>
+<li><p>AVL tree</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Maps</p>
+<ul>
+<li><p>HashMap</p></li>
+<li><p>OrderedHashMap</p>
+<ul>
+<li><p>Python: <code class="docutils literal notranslate"><span class="pre">dict()</span></code>, <code class="docutils literal notranslate"><span class="pre">{}</span></code>, <code class="docutils literal notranslate"><span class="pre">{a:</span> <span class="pre">&quot;one&quot;,</span> <span class="pre">b:</span> <span class="pre">&quot;two&quot;}</span></code>, <code class="docutils literal notranslate"><span class="pre">dict(a=&quot;one&quot;,b=&quot;two&quot;)</span></code></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>.</p>
+<ul class="simple">
+<li><p>Matrices</p>
+<ul>
+<li><p>Python: <code class="docutils literal notranslate"><span class="pre">&#64;</span></code> (<code class="docutils literal notranslate"><span class="pre">operator.matmul()</span></code>), <code class="docutils literal notranslate"><span class="pre">np.matrix()</span></code>, <code class="docutils literal notranslate"><span class="pre">sp.Matrix()</span></code></p></li>
+</ul>
+</li>
+<li><p>Tensors</p>
+<ul>
+<li><p>Python: pytensor, tensorflow <code class="docutils literal notranslate"><span class="pre">tf.Tensor()</span></code>, pytorch
+<code class="docutils literal notranslate"><span class="pre">torch.Tensor()</span></code>, JAX <code class="docutils literal notranslate"><span class="pre">jax.numpy.array()</span></code></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="databases">
+<h2>databases<a class="headerlink" href="#databases" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Database indices are built upon tree data structures</p>
+<ul>
+<li><p>MySQL: InnoDB: <code class="docutils literal notranslate"><span class="pre">B-</span> <span class="pre">Tree</span></code> (B+ Tree), <code class="docutils literal notranslate"><span class="pre">R-Tree</span></code> (spatial)</p></li>
+<li><p>SQLite:</p></li>
+</ul>
+</li>
+<li><p>Journal file</p>
+<ul>
+<li><p>Databases keep a journal file containing the committed queries</p></li>
+<li><p>A journal file is a replayable transaction log,
+from which the database state can be reconstituted.</p></li>
+</ul>
+</li>
+<li><p>ACID;</p>
+<ul>
+<li><p>Atomicity - transactional semantics</p></li>
+<li><p>Consistency -</p></li>
+<li><p>Isolation -</p></li>
+<li><p>Durability - can replay journal or similar after power failure</p></li>
+</ul>
+</li>
+<li><p>CAP is hypothesized limit; that we must pick 2 out of 3</p>
+<ul>
+<li><p>Consistency - whether the replicas are synchronized (and how they avoid blocking to synchronize)</p></li>
+<li><p>Availability</p></li>
+<li><p>Partition tolerance</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div><!-- /row -->
+
+      <!-- row -->
+      <div class="row footer-relbar">
+<div id="navbar-related" class=" related navbar navbar-default" role="navigation" aria-label="related navigation">
+  <div class="navbar-inner">
+    <ul class="nav navbar-nav text-center">
+        <li><a href="../index">WRD R&amp;D Documentation</a></li>
+    </ul>
+<ul class="nav navbar-nav text-center">
+      
+        <li><a href="../py-modindex" title="Python Module Index" >modules</a></li>
+        <li><a href="../genindex" title="General Index" >index</a></li>
+        <li><a href="#">top</a></li> 
+      
+    </ul>
+  </div>
+</div>
+      </div><!-- /row -->
+
+      <!-- footer -->
+      <footer role="contentinfo">
+          &copy; <a href="../license">Copyright</a> WRD R&amp;D 2025.
+
+      <br/>
+      <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+        <img alt="Creative Commons License"
+        style="border-width:0; padding:12px"
+        src="../_static/img/cc-by-sa-4.0-88x31.png" /></a>
+      <br />
+      <span xmlns:dct="http://purl.org/dc/terms/"
+        property="dct:title">WRD R&amp;D Documentation</span> is licensed under a 
+      <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"
+        >Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+      </footer>
+      <!-- /footer -->
+
+    </div>
+    <!-- /container -->
+
+  </body>
+</html>

@@ -41,7 +41,8 @@
 
 <link rel="stylesheet" href="../_static/css/font-awesome.min.css">
 
-<link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+<link rel="stylesheet" x-style="css/basicstrap-base.css" href="../_static/css/basicstrap-base.css" type="text/css" />
+<link rel="stylesheet" x-style="css/basicstrap.css" href="../_static/css/basicstrap.css" type="text/css" />
 <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
 <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
 <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
@@ -59,7 +60,6 @@
     <script type="text/javascript" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/sphinx_highlight.js"></script>
-    <script type="text/javascript" src="../_static/js/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="../_static/js/local.js"></script>
     <script type="text/javascript" src="../_static/js/bootstrap3.min.js"></script>
 <script type="text/javascript" src="../_static/js/jquery.cookie.min.js"></script>
@@ -252,7 +252,7 @@
       <!-- row -->
       <div class="row">
          
-<div class="col-md-3 hidden-xs" id="sidebar-wrapper">
+<div class="col-sm-3 hidden-xs" id="sidebar-wrapper">
   <div class="sidebar hidden-xs" role="navigation" aria-label="main navigation">
   <div>
     <h3><a href="../index">Table of Contents</a></h3>
@@ -404,7 +404,6 @@
     Enter search terms or a module, class or function name.
     </p>
 </div>
-
 <div class="widget navlinks">
   <h3>This Page</h3>
   <ul class="this-page-menu">
@@ -564,10 +563,10 @@
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;PYTHONHASHSEED&#39;</span><span class="p">])</span>
 <span class="n">RANDOMSEED</span> <span class="o">=</span> <span class="mi">1</span>  <span class="c1"># /dev/[x]random</span>
 
-<span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
 <span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="n">RANDOMSEED</span><span class="p">)</span>
 
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="n">RANDOMSEED</span><span class="p">)</span>    <span class="c1"># Seed</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">get_state</span><span class="p">())</span>  <span class="c1"># State</span>
 <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="c1"># (rows, cols, [...])</span>
@@ -1013,7 +1012,7 @@ System</span>).</p>
 <a class="reference external" href="https://docs.sympy.org/latest/modules/parsing.html">https://docs.sympy.org/latest/modules/parsing.html</a></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#! pip install -y antlr4-python3-runtime</span>
 <span class="c1">#! conda install -y antlr-python-runtime</span>
-<span class="kn">from</span> <span class="nn">sympy.parsing.latex</span> <span class="kn">import</span> <span class="n">parse_latex</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sympy.parsing.latex</span><span class="w"> </span><span class="kn">import</span> <span class="n">parse_latex</span>
 
 <span class="n">parse_latex</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;\frac{n(n+1)(2n+1)}</span><span class="si">{6}</span><span class="s1">&#39;</span><span class="p">)</span>
 <span class="c1"># ((2*n + 1)*n(n + 1))/6</span>
@@ -1088,11 +1087,11 @@ $
 </li>
 <li><p>Call the <code class="docutils literal notranslate"><span class="pre">display()</span></code> function with one or more Math/Latex objects,
 or just return a <code class="docutils literal notranslate"><span class="pre">Math</span></code>/<code class="docutils literal notranslate"><span class="pre">Latex</span></code> object:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Math</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">Math</span>
 <span class="n">Math</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;c = \sqrt{a^2 + b^2}&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Math</span><span class="p">,</span> <span class="n">Latex</span><span class="p">,</span> <span class="n">display</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">Math</span><span class="p">,</span> <span class="n">Latex</span><span class="p">,</span> <span class="n">display</span>
 <span class="n">display</span><span class="p">(</span>
    <span class="n">Math</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;c = \sqrt{a^2 + b^2}&#39;</span><span class="p">),</span>
    <span class="n">Latex</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;&#39;&#39;\begin</span><span class="si">{align}</span><span class="s1">&#39;&#39;&#39;</span> <span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span> <span class="s1">&#39;y = mx+b&#39;</span> <span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span> <span class="s1">&#39;\end</span><span class="si">{align}</span><span class="s1">&#39;</span><span class="p">)))</span>
@@ -1162,7 +1161,8 @@ or just return a <code class="docutils literal notranslate"><span class="pre">Ma
 <li><p><a class="reference external" href="https://scipy-lectures.org/advanced/scipy_sparse/">https://scipy-lectures.org/advanced/scipy_sparse/</a></p></li>
 <li><p><a class="reference external" href="http://scipy-lectures.org/intro/numpy/operations.html#broadcasting">http://scipy-lectures.org/intro/numpy/operations.html#broadcasting</a></p>
 <figure class="align-default" id="id55">
-<a class="reference external image-reference" href="https://i.stack.imgur.com/JcKv1.png"><img alt="https://i.stack.imgur.com/JcKv1.png" src="https://i.stack.imgur.com/JcKv1.png" /></a>
+<a class="reference external image-reference" href="https://i.stack.imgur.com/JcKv1.png"><img alt="https://i.stack.imgur.com/JcKv1.png" src="https://i.stack.imgur.com/JcKv1.png" />
+</a>
 <figcaption>
 <p><span class="caption-text">Array Broadcasting in <a class="reference internal" href="../tools/index#numpy"><span class="std std-ref">NumPy</span></a>:</span><a class="headerlink" href="#id55" title="Link to this image">¶</a></p>
 </figcaption>
@@ -1170,7 +1170,8 @@ or just return a <code class="docutils literal notranslate"><span class="pre">Ma
 </li>
 <li><p><a class="reference external" href="https://hadrienj.github.io/posts/Deep-Learning-Book-Series-2.1-Scalars-Vectors-Matrices-and-Tensors/#21-scalars-vectors-matrices-and-tensors">https://hadrienj.github.io/posts/Deep-Learning-Book-Series-2.1-Scalars-Vectors-Matrices-and-Tensors/#21-scalars-vectors-matrices-and-tensors</a></p>
 <figure class="align-default" id="id56">
-<a class="reference external image-reference" href="https://hadrienj.github.io/assets/images/2.1/scalar-vector-matrix-tensor.png"><img alt="https://hadrienj.github.io/assets/images/2.1/scalar-vector-matrix-tensor.png" src="https://hadrienj.github.io/assets/images/2.1/scalar-vector-matrix-tensor.png" /></a>
+<a class="reference external image-reference" href="https://hadrienj.github.io/assets/images/2.1/scalar-vector-matrix-tensor.png"><img alt="https://hadrienj.github.io/assets/images/2.1/scalar-vector-matrix-tensor.png" src="https://hadrienj.github.io/assets/images/2.1/scalar-vector-matrix-tensor.png" />
+</a>
 <figcaption>
 <p><span class="caption-text">Scalar, Vector, Matrix, Tensor:</span><a class="headerlink" href="#id56" title="Link to this image">¶</a></p>
 </figcaption>
@@ -1684,7 +1685,7 @@ graphics.”</p></li>
 
       <!-- footer -->
       <footer role="contentinfo">
-          &copy; <a href="../license">Copyright</a> WRD R&amp;D 2014 - 2024.
+          &copy; <a href="../license">Copyright</a> WRD R&amp;D 2025.
 
       <br/>
       <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">

@@ -1,4 +1,12 @@
 
+
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  border-bottom: 2px solid #f0f0f0;
+  margin-top: 28px !important;
+}
+
+
 .navbar {
     margin-bottom: 0;
 }
@@ -135,6 +143,10 @@ a.external {
     border-bottom: 1px dotted #c0c0c0;
 }
 
+figure a.external {
+    display: contents;
+}
+
 div.body a.internal {
     /* background: #f0f0f0;
     padding: 3px 4px 2px 4px; */
@@ -199,7 +211,7 @@ li.youarehere {
     /* text-decoration: underline; */
 }
 
-div.sidebar li.youarehere:before {
+div.sidebar > li.youarehere:before {
   content: "➡ ";
   margin-left: -1.1em;
 }

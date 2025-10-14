@@ -41,7 +41,8 @@
 
 <link rel="stylesheet" href="../_static/css/font-awesome.min.css">
 
-<link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+<link rel="stylesheet" x-style="css/basicstrap-base.css" href="../_static/css/basicstrap-base.css" type="text/css" />
+<link rel="stylesheet" x-style="css/basicstrap.css" href="../_static/css/basicstrap.css" type="text/css" />
 <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
 <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
 <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
@@ -59,7 +60,7 @@
     <script type="text/javascript" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/sphinx_highlight.js"></script>
-    <script type="text/javascript" src="../_static/js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="../_static/mathjax/tex-mml-chtml.js"></script>
     <script type="text/javascript" src="../_static/js/local.js"></script>
     <script type="text/javascript" src="../_static/js/bootstrap3.min.js"></script>
 <script type="text/javascript" src="../_static/js/jquery.cookie.min.js"></script>
@@ -205,6 +206,7 @@
 <li><a class="reference internal" href="#fuel">Fuel</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#decibel">Decibel</a></li>
 </ul>
 </li>
 </ul>
@@ -248,7 +250,7 @@
       <!-- row -->
       <div class="row">
          
-<div class="col-md-3 hidden-xs" id="sidebar-wrapper">
+<div class="col-sm-3 hidden-xs" id="sidebar-wrapper">
   <div class="sidebar hidden-xs" role="navigation" aria-label="main navigation">
   <div>
     <h3><a href="../index">Table of Contents</a></h3>
@@ -365,6 +367,7 @@
 <li><a class="reference internal" href="#fuel">Fuel</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#decibel">Decibel</a></li>
 </ul>
 </li>
 </ul>
@@ -396,7 +399,6 @@
     Enter search terms or a module, class or function name.
     </p>
 </div>
-
 <div class="widget navlinks">
   <h3>This Page</h3>
   <ul class="this-page-menu">
@@ -520,13 +522,16 @@ which supports but does not require <cite>NumPy</cite>.</p>
 <span id="index-5"></span><span id="id6"></span><h2>Binary Prefixes<a class="headerlink" href="#binary-prefixes" title="Link to this heading">¶</a></h2>
 <table class="table-striped table-responsive docutils align-default" id="id64">
 <caption><span class="caption-text">Table of Binary Prefixes (adapted from:
-    <a class="reference external" href="https://en.wikipedia.org/wiki/Binary_prefix">https://en.wikipedia.org/wiki/Binary_prefix</a>)</span><a class="headerlink" href="#id64" title="Link to this table">¶</a></caption>
+    <a class="reference external" href="https://en.wikipedia.org/wiki/Binary_prefix">https://en.wikipedia.org/wiki/Binary_prefix</a> )</span><a class="headerlink" href="#id64" title="Link to this table">¶</a></caption>
 <tbody>
 <tr class="row-odd"><td><p><strong>Text</strong></p></td>
-<td><p><strong>Symbol</strong></p></td>
-<td><p><strong>Scalar (base 10)</strong></p></td>
-<td><p><strong>Scalar (base 1000)</strong></p></td>
-<td><p><strong>Scalar (base 1e1)</strong></p></td>
+<td><p><strong>Decimal
+Symbol</strong></p></td>
+<td><p><strong>SI (base 10)</strong></p></td>
+<td><p><strong>SI
+(base 1000)</strong></p></td>
+<td><p><strong>SI
+(base 1e1)</strong></p></td>
 </tr>
 <tr class="row-even"><td><p>kilo</p></td>
 <td><p>k</p></td>
@@ -575,6 +580,18 @@ which supports but does not require <cite>NumPy</cite>.</p>
 <td><p>1000000000000000000000000</p></td>
 <td><p>1000**8</p></td>
 <td><p>1e24</p></td>
+</tr>
+<tr class="row-even"><td><p>ronna</p></td>
+<td><p>R</p></td>
+<td><p>1000000000000000000000000000</p></td>
+<td><p>1000**9</p></td>
+<td><p>1e27</p></td>
+</tr>
+<tr class="row-odd"><td><p>quetta</p></td>
+<td><p>Q</p></td>
+<td><p>1000000000000000000000000000000</p></td>
+<td><p>1000**10</p></td>
+<td><p>1e30</p></td>
 </tr>
 </tbody>
 </table>
@@ -1161,7 +1178,31 @@ width</p>
 <td><p>1208925819614629174706176 bytes</p></td>
 </tr>
 <tr class="row-odd"><td><p>yottabyte (YB)</p></td>
-<td><p>1e21 bytes</p>
+<td><p>1e24 bytes</p>
+<p>1000**8 bytes</p>
+</td>
+<td><p>1000000000000000000000000 bytes</p></td>
+</tr>
+<tr class="row-even"><td><p>robibyte (YiB)</p></td>
+<td><p>2**80 bytes</p>
+<p>1024**8 bytes</p>
+</td>
+<td><p>1208925819614629174706176 bytes</p></td>
+</tr>
+<tr class="row-odd"><td><p>ronnabyte (YB)</p></td>
+<td><p>1e24 bytes</p>
+<p>1000**8 bytes</p>
+</td>
+<td><p>1000000000000000000000000 bytes</p></td>
+</tr>
+<tr class="row-even"><td><p>quebibyte (YiB)</p></td>
+<td><p>2**80 bytes</p>
+<p>1024**8 bytes</p>
+</td>
+<td><p>1208925819614629174706176 bytes</p></td>
+</tr>
+<tr class="row-odd"><td><p>quettabyte (YB)</p></td>
+<td><p>1e24 bytes</p>
 <p>1000**8 bytes</p>
 </td>
 <td><p>1000000000000000000000000 bytes</p></td>
@@ -1437,6 +1478,51 @@ not the curb weight of a vehicle.</p></li>
 </ul>
 </section>
 </section>
+<section id="decibel">
+<span id="decibels"></span><span id="index-82"></span><span id="index-81"></span><h2>Decibel<a class="headerlink" href="#decibel" title="Link to this heading">¶</a></h2>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Decibel">https://en.wikipedia.org/wiki/Decibel</a></div>
+</div>
+<p>The Decibel scale (<code class="docutils literal notranslate"><span class="pre">dB</span></code>) is a non SI-unit logarithmic scale
+for expressing relative signal strength.</p>
+<ul class="simple">
+<li><p>A 10 dB increase in sound intensity corresponds to
+a 2x increase in perceived loudness.</p></li>
+<li><p>A 20 db increase in sound intensity corresponds to
+a 4x increase in perceived loudness.</p></li>
+<li><p>Normal conversation is 40-60 dB(A) (relative to 0 dB)</p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Decibel#Definition">https://en.wikipedia.org/wiki/Decibel#Definition</a></p></li>
+</ul>
+<table class="table-striped table-responsive docutils align-default" id="id67">
+<caption><span class="caption-text">Table of Decibels</span><a class="headerlink" href="#id67" title="Link to this table">¶</a></caption>
+<tbody>
+<tr class="row-odd"><td><p>relative change <span class="math notranslate nohighlight">\({\Delta dB}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\({\Delta amplitude}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\({\Delta perceived loudness}\)</span>  TODO: db(A)</p></td>
+</tr>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>+10 dB</p></td>
+<td><p>3.162x</p></td>
+<td><p>2x</p></td>
+</tr>
+<tr class="row-even"><td><p>+20 dB</p></td>
+<td><p>100x</p></td>
+<td><p>4x</p></td>
+</tr>
+<tr class="row-odd"><td><p>+30 dB</p></td>
+<td><p>1000x</p></td>
+<td><p>8x</p></td>
+</tr>
+<tr class="row-even"><td><p>+40 dB</p></td>
+<td></td>
+<td><p>16x</p></td>
+</tr>
+</tbody>
+</table>
+</section>
 </section>
 
 
@@ -1471,7 +1557,7 @@ not the curb weight of a vehicle.</p></li>
 
       <!-- footer -->
       <footer role="contentinfo">
-          &copy; <a href="../license">Copyright</a> WRD R&amp;D 2014 - 2024.
+          &copy; <a href="../license">Copyright</a> WRD R&amp;D 2025.
 
       <br/>
       <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">

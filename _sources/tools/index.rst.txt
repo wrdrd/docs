@@ -513,6 +513,7 @@ NPM is a :ref:`Javascript` package manager created for :ref:`Node.js`.
 
 * an NPM package is defined by a ``package.json`` :ref:`JSON` file.
 * NPM packages are installed with the ``npm`` CLI utility.
+* :ref:`Yarn` builds upon NPM.
 * :ref:`Bower` builds upon NPM.
 
 
@@ -976,6 +977,20 @@ RubyGems
 RubyGems is a package manager for :ref:`Ruby` packages ("Gems").
 
 
+
+.. index:: Yarn
+.. _yarn:
+
+Yarn
+~~~~~
+| Wikipedia: `<https://en.wikipedia.org/wiki/Yarn_(package_manager)>`__
+| Homepage: https://yarnpkg.com/
+| Src: https://github.com/yarnpkg/berry
+
+Bower is "a package manager for the web" (:ref:`Javascript` packages)
+built to replace :ref:`NPM`.
+
+
 .. index:: Yum
 .. _yum:
 
@@ -983,10 +998,12 @@ Yum
 ~~~~~
 | Wikipedia: https://en.wikipedia.org/wiki/Yellowdog_Updater,_Modified
 | Homepage: http://yum.baseurl.org/
-
+| Src: https://github.com/rpm-software-management/yum
 
 Yum is a tool for installing, upgrading, and uninstalling :ref:`RPM`
 packages.
+
+- :ref:`dnf` builds upon :ref:`yum` and :ref:`rpm`
 
 
 .. index:: Version Control Systems
@@ -1749,6 +1766,10 @@ Lightweight Markup Language
 | Wikipedia: https://en.wikipedia.org/wiki/Lightweight_markup_language
 | WikipediaCategory: https://en.wikipedia.org/wiki/Category:Lightweight_markup_languages
 
+.. contents:: 
+    :local:
+    :depth: 3
+
 
 .. index:: BBCode
 .. _bbcode:
@@ -1968,6 +1989,131 @@ the primary implementation of ReStructuredText.
 
           A (between files) link to :ref:`example 2`.
 
+
+.. index:: ASM
+.. index:: Assembly language
+.. _asm:
+
+ASM
+~~~~
+| Wikipedia: https://en.wikipedia.org/wiki/Assembly_language
+| Wikipedia: https://en.wikipedia.org/wiki/Comparison_of_assemblers
+| Docs: https://wiki.osdev.org/Tool_Comparison
+| Docs: https://github.com/gcallah/Emu86/blob/master/kernels/Introduction%20to%20Assembly%20Language%20Tutorial.ipynb
+| Docs: https://github.com/DeepHorizons/iarm/blob/master/iarm_kernel/iarmkernel.py
+| Docs: https://github.com/DeepHorizons/iarm/blob/master/iarm/arm_instructions/arithmetic.py
+
+Assembly languages (ASM) are low-level, opcode-based instruction
+sequences which must be assembled to be executed.
+
+
+- There are many assembly languages:
+- There are many assemblers: :ref:`GNU Gas`, :ref:`MASM`, :ref:`NASM`,
+  :ref:`HLA`
+- An assembler is not a compiler or a linker.
+- An assembler assembles assembly language source code
+  in a syntax (e.g. AT&T or Intel syntax)
+  and produces a binary output (e.g. ELF, a.out, COFF, .bin, flat)
+- Binaries on a modern :ref:`Linux` system are in :ref:`ELF` format.
+- :ref:`a.out` format may be easier to read for demos.
+- :ref:`GCC` compiler defaults to ``a.out`` format (and filename)
+  if you don't specify `-o`
+- A comparison of Intel and AT&T assembly language syntaxes:
+  https://en.wikipedia.org/wiki/X86_assembly_language#Syntax
+
+  - AT&T syntax has `%` signs (`%eax`) to indicate that registers are registers
+  - Intel syntax does not have `%` signs (`eax`) for registers
+
+- A comparison of asm assembler output formats:
+  - https://wiki.osdev.org/A.out
+  - https://wiki.osdev.org/ELF
+
+See also:
+
+- :ref:`LLVM`'s LLIR: Low-Level Intermediate Representation
+- :ref:`GNU Gas`: `as`
+- :ref:`MASM`: `masm`
+- :ref:`NASM`: `nasm`
+- :ref:`HLA`
+- :ref:`POSIX`
+- :ref:`WebAssembly`: *WASM*
+- :ref:`WASI`: WebAssembly System Interface
+
+
+.. index:: GNU Gas
+.. _gnu gas:
+
+GNU Gas
+++++++++
+| Wikipedia:  https://en.wikipedia.org/wiki/GNU_Assembler
+| Web: https://www.gnu.org/software/binutils/
+| Src: 
+| Docs: https://sourceware.org/binutils/docs/as.html
+| Docs: https://en.wikibooks.org/wiki/X86_Assembly/GNU_assembly_syntax
+| FedoraPkg: binutils
+
+GNU Gas is an open source assembler for
+AT&T or Intel syntax
+:ref:`Assembly Language`
+
+
+:ref:`GCC` can compile :ref:`C` to asm with `gcc -S` and `-m64` or `-m32`:
+
+.. code:: bash
+
+   as --help; man as; info as   # press 'qq' to quit man & info
+
+   echo -e '\n#include <stdio.h>\n\nint main(void) {\n    printf("Hello, world!\\n");\n    return 0;\n}\n' > ./helloworld.c
+   cat helloworld.c
+
+   gcc -o helloworld ./helloworld.c
+   output="$(./helloworld)"; set -x && \
+    test "${output}" = 'Hello, world!' || (echo 'TESTFAIL' && echo "${output}")
+
+   gcc -S -m64 ./helloworld.c
+   cat ./helloworld.s
+
+
+.. index:: MASM
+.. _masm:
+
+MASM
++++++
+| Wikipedia: https://en.wikipedia.org/wiki/MASM
+
+
+.. index:: NASM
+.. _nasm:
+
+NASM
++++++
+| Wikipedia: https://en.wikipedia.org/wiki/Netwide_Assembler
+
+NASM is an open source assembler written in :ref:`ASM` and :ref:`C`
+for Intel syntax :ref:`Assembly Language`.
+
+.. index:: HLA
+.. _hla:
+
+HLA
++++++++++++++++++++++++++
+| Wikipedia: https://en.wikipedia.org/wiki/High_Level_Assembly
+| Web: https://plantation-productions.com/Webster/
+| Web: https://www.randallhyde.com/AssemblyLanguage/HighLevelAsm/
+| Web: https://www.plantation-productions.com/Webster/www.artofasm.com/
+| Web: https://www.plantation-productions.com/Webster/www.artofasm.com/Windows/
+| Web: https://www.plantation-productions.com/Webster/www.artofasm.com/Windows/HTML/AoATOC.html
+| Web: https://www.plantation-productions.com/Webster/www.artofasm.com/Linux/
+| Web: https://www.plantation-productions.com/Webster/www.artofasm.com/Linux/HTML/AoATOC.html
+| Web: https://www.plantation-productions.com/Webster/www.artofasm.com/DOS/AoADosIndex.html
+| Web: https://www.plantation-productions.com/Webster/www.artofasm.com/Linux/HTML/IntegerArithmetic.html
+| Web: https://www.plantation-productions.com/Webster/www.artofasm.com/Linux/HTML/MoreDataRepresentation.html
+
+HLA (*High Level Assembly*) is an open source TODO
+library of :ref:`ASM` functions and a few books by Randall Hyde.
+
+- https://github.com/jmahler/hla.vim/blob/master/syntax/hla.vim
+- https://github.com/GreenXenith/vscode-hla
 
 
 .. index:: C
@@ -2302,7 +2448,7 @@ All major web browsers support Javascript.
 Client-side (web) applications can be written in Javascript.
 
 Server-side (web) applications can be written in Javascript,
-often with :ref:`Node.js`, :ref:`NPM`, and :ref:`Bower` packages.
+often with :ref:`Node.js` and :ref:`NPM` packages.
 
 .. note:: Java and JavaScript are two distinctly different languages
    and developer ecosystems.
@@ -2399,6 +2545,43 @@ Jinja2 is a free and open source
 templating engine written in :ref:`Python`.
 
 :ref:`Sphinx` and :ref:`Salt` are two projects that utilize Jinja2.
+
+
+.. index:: lua
+.. _lua:
+
+lua
+~~~~
+| Wikipedia: `<https://en.wikipedia.org/wiki/Lua_(programming_language)>`__
+| Web: https://www.lua.org/
+| Src: https://github.com/lua/lua
+| Src: https://www.lua.org/source/5.4/
+| Docs: https://www.lua.org/docs.html
+| Docs: https://www.lua.org/manual/5.4/
+| Docs: https://www.lua.org/pil/contents.html
+| LearnXinYMinutes: https://learnxinyminutes.com/lua/
+
+Lua is an open source programming language designed to be embedded.
+
+
+.. index:: luau 
+.. _luau:
+
+luau
+~~~~~
+| Web: https://luau.org/
+| Src: https://github.com/luau-lang/luau
+| Docs: https://luau.org/syntax
+| Docs: https://luau.org/compatibility
+| Docs: https://luau.org/performance
+| Docs: https://luau.org/library
+| LearnXinYMinutes: https://learnxinyminutes.com/lua/
+  
+Luau is an open source fork of :ref:`Lua`` 5.1 for and by Roblox.
+
+- :ref:`lune` is a script runtime for running `.luau` `.lua` with luau. 
+
+
 
 .. index:: Perl
 .. _perl:
@@ -2758,6 +2941,7 @@ Rust
 | Docs: https://doc.rust-lang.org/nightly/
 | Docs: https://learnxinyminutes.com/docs/rust/
 | Docs: https://doc.rust-lang.org/book/
+| Docs: https://doc.rust-lang.org/std/all.html
 
 Rust is a free and open source
 strongly typed
@@ -2848,6 +3032,11 @@ and binary format for the web.
 * WebAssembly is an industry-wide effort.
 * :ref:`LLVM` can generate WebAssembly from e.g. :ref:`C` and :ref:`C++`
   code.
+
+
+See also:
+
+* :ref:`Assembly Language (ASM) <asm>`
 
 
 .. index:: YAML
@@ -3034,7 +3223,7 @@ LLVM
 LLVM "*Low Level Virtual Machine*" is a reusable compiler infrastructure
 with frontends for many languages.
 
-* :ref:`Clang` is an LLVM frontend for C-based languages like
+- :ref:`Clang` is an LLVM frontend for C-based languages like
   :ref:`C`, :ref:`C++`, :ref:`CUDA`, and :ref:`OpenCL`.
 - There is a :ref:`WASM` LLVM backend:
   LLVM can produce :ref:`WebAssembly` binaries.
@@ -7342,8 +7531,16 @@ Postman
 | Twitter: https://twitter.com/postmanclient
 
 
+.. index:: React Developer Tools
+.. _react developer tools:
+
+React Developer Tools
+++++++++++++++++++++++
+| ChromeExt: https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi
+
+
 .. index:: Preact Devtools
-.. _preact devtools
+.. _preact devtools:
 
 Preact Devtools
 ++++++++++++++++
@@ -7354,12 +7551,6 @@ Preact Devtools
 | EdgeExt: https://microsoftedge.microsoft.com/addons/detail/hdkhobcafnfejjieimdkmjaiihkjpmhk
 
 
-.. index:: React Developer Tools
-.. _react developer tools:
-
-React Developer Tools
-++++++++++++++++++++++
-| ChromeExt: https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi
 
 
 .. index:: Refined Github
@@ -8771,19 +8962,50 @@ that's available for :ref:`Windows`, :ref:`Mac`, and :ref:`Linux`.
 * VSCode has collaborative editing features with multiple cursors.
 * VSCode and MS Visual Studio are different projects.
 * VSCode supports many of the Visual Studio keyboard shortcuts.
+* VSCode takes inspiration from the NERDTree, CtrlP, and TagBar ViM extensions.
 * There is an official :ref:`Vim` extension for :ref:`VSCode`.
-* In VSCode, ``Ctrl+Space`` opens the
-  context-sensitive Intellisense Code Completion
-* In VScode, ``Ctrl-p`` opens the quick open dialogue
-* IN VScode, ``Ctrl-Shift-p`` opens the command palette
-  (which lists "all available commands based on your current context")
+* The vscode Outline view is below the open directory in the Explorer tab of the sidebar.
+* vscode keyboard shortcuts:
 
-You can install VSCode by downloading from the Download page
-or with :ref:`Chocolatey`:
-
-.. code::
-
-  choco install vscode
+  * ``Ctrl+Space`` opens the
+    context-sensitive Intellisense Code Completion
+  * ``Ctrl-p`` opens the quick open dialogue
+  * ``Ctrl-Shift-p`` opens the command palette
+    (which lists "all available commands based on your current context")
+  * ``Ctrl-Shift-p`` or ``F1`` opens the Command Palette
+  * ``Ctrl-p`` opens the Go to File dialogue
+    (which lists all available commands based on your current context)
+  * ``Ctrl-Space`` opens the context-sensitive Intellisense code completion
+  * ``Ctrl-\```  (Ctrl-backtick) toggles the Terminal open and closed
+  * ``Ctrl-D`` (or ``Enter``) advances to the next ``Ctrl-F`` search match.
+  * ``Ctrl-Shift-.`` opens breadcrumbs
+  * ``Ctrl-B`` toggles the sidebar
+  * ``Ctrl-Shift-E`` toggles or sets focus to Explorer
+  * ``Ctrl-Shift-G`` toggles or sets focus to Source Control (git)
+  * ``Ctrl-Shift-V`` opens a Markdown HTML preview
+  * ``Ctrl-W`` closes a tab
+  * ``Shift-Alt`` + Click-and-Drag selects a rectangle of rows and/or columns of characters
+  * ``Alt-Up/Down`` moves the current line or selection up or down 
+  * ``Home`` and ``End`` (``Fn-Left`` and ``Fn-Right``) go the the beginning and end of a line
+  * ``F5`` runs the file or the debugger
+  * ``Shift-F5`` stops the debugger
+  * ``F11`` / ``Shift-F11`` Step into/out
+  * ``F10`` Step over
+  * ``Ctrl-K Ctrl-R`` or ``Ctrl-Shift-P`` + "Help: Keyboard Shortcuts References"
+     opens the *online* vscode keyboard shortcuts document for Win/Mac/Lin:
+    * https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf ``Ctrl``
+    * https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf ``⌘``
+    * https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf ``Ctrl``
+  * VScode keybindings docs: https://code.visualstudio.com/docs/getstarted/keybindings
+* ``Ctrl-Shift-P`` "Remote Tunnels:" > "Get started with tunnels"
+  - https://aka.ms/remote-tunnels-doc
+* ``Ctrl-Shift-P`` "Remote-SSH:" > "Help", "Settings"
+  - https://aka.ms/vscode-remote/ssh
+* ``Ctrl-Shift-P`` "Dev Containers: Help"
+  - https://aka.ms/vscode-remote/containers
+* ``Ctrl-Shift-P`` "Dev Containers: Rebuild and Reopen in container"
+* ``Ctrl-Shift-P`` "Dev Containers: Rebuild container"
+* ``Ctrl-Shift-P`` "Dev Containers: Reopen folder locally"
 
 
 .. index:: VScode Flatpak
@@ -8793,6 +9015,102 @@ VSCode Flatpak
 ~~~~~~~~~~~~~~~
 | Flatpak: https://flathub.org/apps/com.visualstudio.code
 | Src: https://github.com/flathub/com.visualstudio.code
+
+
+.. index:: vscode.dev
+.. _vscode.dev:
+
+vscode.dev
+~~~~~~~~~~~
+- Homepage: https://vscode.dev/
+- Docs: https://code.visualstudio.com/docs/editor/vscode-web
+- Docs: https://code.visualstudio.com/api/extension-guides/web-extensions
+
+Visual Studio Code for the Web (vscode.dev) is a WASM (WebAssembly)
+build of ``vscode``_ that runs in a browser,
+optionally without connecting to a ``code-server`` on a server.
+
+* vscode.dev works in Chrome on Chromebooks.
+* The ``Ctrl-Shift-P`` to open Command Palette keyboard shortcut doesn't work in Firefox. 
+* some vscode extensions support vscode.dev
+
+Extensions that work in vscode.dev on a Chromebook:
+
+- vscode-pyodide: https://marketplace.visualstudio.com/items?itemName=joyceerhl.vscode-pyodide
+- Pyodide Runner: https://marketplace.visualstudio.com/items?itemName=tym-inc.pyodide
+- Python: https://marketplace.visualstudio.com/items?itemName=ms-python.python
+- Jupyter: https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter
+- container-wasm: https://marketplace.visualstudio.com/items?itemName=ktock.container-wasm
+  - container2wasm: https://github.com/ktock/container2wasm
+
+.. index:: devcontainer.json
+.. _devcontainer.json:
+
+devcontainer.json
+~~~~~~~~~~~~~~~~~~~~~~
+- Homepage: https://containers.dev/
+- Spec: https://containers.dev/implementors/json_reference/
+- Src: https://github.com/devcontainers/spec
+- Src: https://github.com/devcontainers/features/tree/main/src
+- Src: https://github.com/devcontainers/cli
+- Src: https://github.com/devcontainers
+
+Devcontainer.json is a specification for specifying one or more containers to run;
+specifically for IDEs like `vscode`_.
+
+.. index:: vscode Dev Containers
+.. _vscode-dev-containers:
+
+vscode Dev Containers
+~~~~~~~~~~~~~~~~~~~~~~
+- Docs: https://code.visualstudio.com/docs/devcontainers/containers
+
+Keyboard Shortcuts for vscode Dev Containers:
+
+- ``Ctrl-Shift-P`` "Dev Containers:"
+- ``Ctrl-Shift-P`` "Dev Containers: Open Container Configuration File"
+- ``Ctrl-Shift-P`` "Dev Containers: Open Folder in Container"
+- ``Ctrl-Shift-P`` "Dev Containers: Open Workspace in Container"
+- ``Ctrl-Shift P`` "Dev Containers: Reopen Folder Locally"
+- ``Ctrl-Shift P`` "Dev Containers: Help"
+
+Devcontainer Features:
+
+- Devcontainer Features are composable; you can add multiple features to a `devcontainer.json`.
+- Devcontainer Features split configuration that can be just one `Dockerfile` into many JSON & `Dockerfile` .
+- An SBOM tool could discover the versions of software installed in a devcontainer
+  by: instructions in the devcontainer.json, instructions in the Dockerfile, Devcontainer Features,
+  or other.
+
+
+.. index:: VScode Python setup
+.. _vscode python setup:
+
+A vscode setup for Python development
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- https://code.visualstudio.com/docs/python/testing
+- https://marketplace.visualstudio.com/items?itemName=LittleFoxTeam.vscode-python-test-adapter
+
+  - ``Ctrl-; Ctrl-Shift-A``  
+    Test: Run All Tests with Coverage
+  - ``Ctrl-; Ctrl-Shift-F``  
+    Test: Run Tests with Coverage in Current File
+
+:ref:`vscode` extensions for :ref:`Python`` development:
+
+- Ctrl-P ``ext install ms-vscode-remote.remote-containers``
+- Ctrl-P ``ext install <extension-id>``
+- https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers
+- https://marketplace.visualstudio.com/items?itemName=ms-python.python
+- https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter
+- https://marketplace.visualstudio.com/items?itemName=ms-python.isort
+- https://marketplace.visualstudio.com/items?itemName=ms-vscode.makefile-tools
+- https://marketplace.visualstudio.com/items?itemName=willemmirkovich.jupyter-vim-keymap
+- https://marketplace.visualstudio.com/items?itemName=trond-snekvik.simple-rst
+- https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff
+- https://marketplace.visualstudio.com/items?itemName=vscodevim.vim
+- https://marketplace.visualstudio.com/items?itemName=nlehmann.vscode-vim-search-and-replace
+- https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme
 
 
 
@@ -8807,7 +9125,7 @@ Vim
 | Docs: https://learnxinyminutes.com/docs/vim/
 | Src: git https://github.com/vim/vim
 
-ViM (VI-iMproved) is an open source text editor written in :ref:`C`
+ViM (Vi-iMproved) is an open source text editor written in :ref:`C`
 that's available on very many platforms.
 
 * Vim help can be accessed with ``:help`` and ``:help help``
@@ -8851,7 +9169,30 @@ like ``j`` and ``k`` for up and down:
 
 - GMail (``?`` for help)
 - Facebook (``?`` for help)
-- Twitter (``?`` for help)
+- X (``?`` for help)
+- GitHub (``?`` for help, ```<Esc>``` to close help)
+
+Games with support for vim-style keyboard shortcuts:
+
+- vimtutor: ``:e $VIMRUNTIME/tutor/en/vim-01-beginner.tutor`` or ``$ vimtutor`` (``:help vimtutor``)
+- https://vim-adventures.com/
+
+IDEs with support for vim-style keyboard shortcuts:
+
+- :ref:`vscode`, :ref:`vscode.dev`, :ref:`github.dev`, :ref:`gitpod`,
+- :ref:`jupyterlab`, :ref:`jupyterlite`
+- :ref:`colab <colaboratory>`
+- :ref:`neovim`
+- :ref:`vim`
+- :ref:`vi` (:ref:`busybox`,)
+
+How to access vim help:
+
+- ``:help`` -- open help in a split (``<Esc>``, then ``:help``, then **Enter** (`<CR>`); ``:q`` to close)
+- ``C-w-j`` -- focus a window down ((``<Esc>`` to exit insert or append mode), ``<Ctrl><w> <h/j/k/l>``; ``:map <C-W>J``)
+- ``Ctrl-]`` -- follow (help,) link under cursor
+- ``Ctrl-O`` -- go back
+- ``Ctrl-I`` -- go forward
 
 
 .. index:: neovim

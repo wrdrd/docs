@@ -41,7 +41,8 @@
 
 <link rel="stylesheet" href="../_static/css/font-awesome.min.css">
 
-<link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+<link rel="stylesheet" x-style="css/basicstrap-base.css" href="../_static/css/basicstrap-base.css" type="text/css" />
+<link rel="stylesheet" x-style="css/basicstrap.css" href="../_static/css/basicstrap.css" type="text/css" />
 <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
 <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
 <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
@@ -59,7 +60,6 @@
     <script type="text/javascript" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/sphinx_highlight.js"></script>
-    <script type="text/javascript" src="../_static/js/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="../_static/js/local.js"></script>
     <script type="text/javascript" src="../_static/js/bootstrap3.min.js"></script>
 <script type="text/javascript" src="../_static/js/jquery.cookie.min.js"></script>
@@ -178,31 +178,46 @@
 </li>
 <li><a class="reference internal" href="#musical-composition">Musical Composition</a><ul>
 <li><a class="reference internal" href="#audio-synthesis">Audio Synthesis</a></li>
+<li><a class="reference internal" href="#live-coding">Live Coding</a></li>
 <li><a class="reference internal" href="#chuck">ChucK</a></li>
 <li><a class="reference internal" href="#csound">Csound</a></li>
+<li><a class="reference internal" href="#foxdot">FoxDot</a></li>
 <li><a class="reference internal" href="#hookpad">Hookpad</a></li>
 <li><a class="reference internal" href="#hydrogen">Hydrogen</a></li>
 <li><a class="reference internal" href="#midi">MIDI</a></li>
 <li><a class="reference internal" href="#stk">STK</a></li>
-<li><a class="reference internal" href="#vst">VST</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#sound-production">Sound Production</a><ul>
-<li><a class="reference internal" href="#acoustical-engineering">Acoustical Engineering</a></li>
-<li><a class="reference internal" href="#dj">DJ</a></li>
-<li><a class="reference internal" href="#aac">AAC</a></li>
+<li><a class="reference internal" href="#acoustical-engineering">Acoustical Engineering</a><ul>
+<li><a class="reference internal" href="#eq">EQ</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id70">DJ</a></li>
+<li><a class="reference internal" href="#daw">DAW</a><ul>
 <li><a class="reference internal" href="#ardour">Ardour</a></li>
 <li><a class="reference internal" href="#audacity">Audacity</a></li>
-<li><a class="reference internal" href="#flac">FLAC</a></li>
+<li><a class="reference internal" href="#bespokesynth">BespokeSynth</a></li>
+<li><a class="reference internal" href="#reaper">Reaper</a></li>
+<li><a class="reference internal" href="#mixxx">Mixxx</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#jack">JACK</a></li>
 <li><a class="reference internal" href="#ladspa">LADSPA</a></li>
-<li><a class="reference internal" href="#mixxx">Mixxx</a></li>
+<li><a class="reference internal" href="#lv2">LV2</a></li>
+<li><a class="reference internal" href="#vst">VST</a></li>
+<li><a class="reference internal" href="#audio-codecs">Audio Codecs</a><ul>
+<li><a class="reference internal" href="#aac">AAC</a></li>
+<li><a class="reference internal" href="#flac">FLAC</a></li>
 <li><a class="reference internal" href="#mp3">MP3</a></li>
-<li><a class="reference internal" href="#pulseaudio">PulseAudio</a></li>
 <li><a class="reference internal" href="#wav">WAV</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#pulseaudio">PulseAudio</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#audio-visual-production">Audio/Visual Production</a><ul>
+<li><a class="reference internal" href="#pipewire">PipeWire</a></li>
 <li><a class="reference internal" href="#vj">VJ</a></li>
 <li><a class="reference internal" href="#advanced-visualization-studio">Advanced Visualization Studio</a></li>
 <li><a class="reference internal" href="#geiss">Geiss</a></li>
@@ -249,6 +264,7 @@
 </li>
 <li><a class="reference internal" href="#video-chat">Video Chat</a></li>
 <li><a class="reference internal" href="#media-tools">Media Tools</a><ul>
+<li><a class="reference internal" href="#fedora-jam">Fedora Jam</a></li>
 <li><a class="reference internal" href="#dreamstudio">DreamStudio</a></li>
 <li><a class="reference internal" href="#ubuntu-studio">Ubuntu Studio</a></li>
 <li><a class="reference internal" href="#vlc">VLC</a></li>
@@ -326,7 +342,7 @@
       <!-- row -->
       <div class="row">
          
-<div class="col-md-3 hidden-xs" id="sidebar-wrapper">
+<div class="col-sm-3 hidden-xs" id="sidebar-wrapper">
   <div class="sidebar hidden-xs" role="navigation" aria-label="main navigation">
   <div>
     <h3><a href="../index">Table of Contents</a></h3>
@@ -416,31 +432,46 @@
 </li>
 <li><a class="reference internal" href="#musical-composition">Musical Composition</a><ul>
 <li><a class="reference internal" href="#audio-synthesis">Audio Synthesis</a></li>
+<li><a class="reference internal" href="#live-coding">Live Coding</a></li>
 <li><a class="reference internal" href="#chuck">ChucK</a></li>
 <li><a class="reference internal" href="#csound">Csound</a></li>
+<li><a class="reference internal" href="#foxdot">FoxDot</a></li>
 <li><a class="reference internal" href="#hookpad">Hookpad</a></li>
 <li><a class="reference internal" href="#hydrogen">Hydrogen</a></li>
 <li><a class="reference internal" href="#midi">MIDI</a></li>
 <li><a class="reference internal" href="#stk">STK</a></li>
-<li><a class="reference internal" href="#vst">VST</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#sound-production">Sound Production</a><ul>
-<li><a class="reference internal" href="#acoustical-engineering">Acoustical Engineering</a></li>
-<li><a class="reference internal" href="#dj">DJ</a></li>
-<li><a class="reference internal" href="#aac">AAC</a></li>
+<li><a class="reference internal" href="#acoustical-engineering">Acoustical Engineering</a><ul>
+<li><a class="reference internal" href="#eq">EQ</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id70">DJ</a></li>
+<li><a class="reference internal" href="#daw">DAW</a><ul>
 <li><a class="reference internal" href="#ardour">Ardour</a></li>
 <li><a class="reference internal" href="#audacity">Audacity</a></li>
-<li><a class="reference internal" href="#flac">FLAC</a></li>
+<li><a class="reference internal" href="#bespokesynth">BespokeSynth</a></li>
+<li><a class="reference internal" href="#reaper">Reaper</a></li>
+<li><a class="reference internal" href="#mixxx">Mixxx</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#jack">JACK</a></li>
 <li><a class="reference internal" href="#ladspa">LADSPA</a></li>
-<li><a class="reference internal" href="#mixxx">Mixxx</a></li>
+<li><a class="reference internal" href="#lv2">LV2</a></li>
+<li><a class="reference internal" href="#vst">VST</a></li>
+<li><a class="reference internal" href="#audio-codecs">Audio Codecs</a><ul>
+<li><a class="reference internal" href="#aac">AAC</a></li>
+<li><a class="reference internal" href="#flac">FLAC</a></li>
 <li><a class="reference internal" href="#mp3">MP3</a></li>
-<li><a class="reference internal" href="#pulseaudio">PulseAudio</a></li>
 <li><a class="reference internal" href="#wav">WAV</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#pulseaudio">PulseAudio</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#audio-visual-production">Audio/Visual Production</a><ul>
+<li><a class="reference internal" href="#pipewire">PipeWire</a></li>
 <li><a class="reference internal" href="#vj">VJ</a></li>
 <li><a class="reference internal" href="#advanced-visualization-studio">Advanced Visualization Studio</a></li>
 <li><a class="reference internal" href="#geiss">Geiss</a></li>
@@ -487,6 +518,7 @@
 </li>
 <li><a class="reference internal" href="#video-chat">Video Chat</a></li>
 <li><a class="reference internal" href="#media-tools">Media Tools</a><ul>
+<li><a class="reference internal" href="#fedora-jam">Fedora Jam</a></li>
 <li><a class="reference internal" href="#dreamstudio">DreamStudio</a></li>
 <li><a class="reference internal" href="#ubuntu-studio">Ubuntu Studio</a></li>
 <li><a class="reference internal" href="#vlc">VLC</a></li>
@@ -552,7 +584,6 @@
     Enter search terms or a module, class or function name.
     </p>
 </div>
-
 <div class="widget navlinks">
   <h3>This Page</h3>
   <ul class="this-page-menu">
@@ -777,7 +808,7 @@ and remain smooth.</p>
 </div>
 <p>Blender is an <a class="reference internal" href="open-source#open-source"><span class="std std-ref">Open Source</span></a> 3D computer graphics software
 for movies, apps, and games
-written in <a class="reference internal" href="../tools/index#c"><span class="std std-ref">C</span></a>, <a class="reference internal" href="../tools/index#id70"><span class="std std-ref">C++</span></a>, and <a class="reference internal" href="../tools/index#python"><span class="std std-ref">Python</span></a>.</p>
+written in <a class="reference internal" href="../tools/index#c"><span class="std std-ref">C</span></a>, <a class="reference internal" href="../tools/index#id76"><span class="std std-ref">C++</span></a>, and <a class="reference internal" href="../tools/index#python"><span class="std std-ref">Python</span></a>.</p>
 <ul class="simple">
 <li><p>Blender has a scene graph over time <em>t</em></p></li>
 <li><p>Blender has multi-camera tracking</p></li>
@@ -1232,7 +1263,7 @@ musical score compositions
 with support for
 <a class="reference internal" href="#midi"><span class="std std-ref">MIDI</span></a>,
 <a class="reference internal" href="#musicxml"><span class="std std-ref">MusicXML</span></a>
-written in <a class="reference internal" href="../tools/index#id70"><span class="std std-ref">C++</span></a> and <a class="reference internal" href="../tools/index#qt"><span class="std std-ref">Qt</span></a>.</p>
+written in <a class="reference internal" href="../tools/index#id76"><span class="std std-ref">C++</span></a> and <a class="reference internal" href="../tools/index#qt"><span class="std std-ref">Qt</span></a>.</p>
 <ul class="simple">
 <li><p>MuseScore can read/write to <a class="reference internal" href="#musicxml"><span class="std std-ref">MusicXML</span></a>, <a class="reference internal" href="#midi"><span class="std std-ref">MIDI</span></a>, GuitarPro</p></li>
 <li><p>MuseScore can write to PDF, SVG, PNG, PostScript</p></li>
@@ -1338,8 +1369,11 @@ tool with support for <a class="reference internal" href="#musicxml"><span class
 <li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Effects_unit">https://en.wikipedia.org/wiki/Effects_unit</a> (“effects pedal”)</p></li>
 </ul>
 </section>
+<section id="live-coding">
+<span id="index-64"></span><span id="id59"></span><h3>Live Coding<a class="headerlink" href="#live-coding" title="Link to this heading">¶</a></h3>
+</section>
 <section id="chuck">
-<span id="index-64"></span><span id="id59"></span><h3>ChucK<a class="headerlink" href="#chuck" title="Link to this heading">¶</a></h3>
+<span id="index-65"></span><span id="id60"></span><h3>ChucK<a class="headerlink" href="#chuck" title="Link to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/ChucK">https://en.wikipedia.org/wiki/ChucK</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://chuck.cs.princeton.edu/">http://chuck.cs.princeton.edu/</a></div>
@@ -1353,6 +1387,7 @@ tool with support for <a class="reference internal" href="#musicxml"><span class
 </div>
 <p>Chuck is an <a class="reference internal" href="open-source#open-source"><span class="std std-ref">Open Source</span></a>
 realtime, concurrent <a class="reference internal" href="#musical-composition"><span class="std std-ref">Musical Composition</span></a> <a class="reference internal" href="#audio-synthesis"><span class="std std-ref">Audio Synthesis</span></a>
+<a class="reference internal" href="#live-coding"><span class="std std-ref">Live Coding</span></a>
 programming language.</p>
 <ul class="simple">
 <li><p>ChucK supports “On the Fly Programming”:
@@ -1363,7 +1398,7 @@ the ChucK program is running</p></li>
 </ul>
 </section>
 <section id="csound">
-<span id="index-65"></span><span id="id60"></span><h3>Csound<a class="headerlink" href="#csound" title="Link to this heading">¶</a></h3>
+<span id="index-66"></span><span id="id61"></span><h3>Csound<a class="headerlink" href="#csound" title="Link to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Csound">https://en.wikipedia.org/wiki/Csound</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://csound.github.io/">http://csound.github.io/</a></div>
@@ -1389,8 +1424,37 @@ Chrome Native Client (PNaCl),
 <p class="attribution">—<a class="reference external" href="http://booki.flossmanuals.net/csound/introduction/">http://booki.flossmanuals.net/csound/introduction/</a></p>
 </div></blockquote>
 </section>
+<section id="foxdot">
+<span id="index-67"></span><span id="id62"></span><h3>FoxDot<a class="headerlink" href="#foxdot" title="Link to this heading">¶</a></h3>
+<div class="line-block">
+<div class="line">Web: <a class="reference external" href="https://foxdot.org/">https://foxdot.org/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/Qirky/FoxDot">https://github.com/Qirky/FoxDot</a></div>
+<div class="line">Src: <a class="reference external" href="https://gitlab.com/iShapeNoise/foxdot">https://gitlab.com/iShapeNoise/foxdot</a></div>
+<div class="line">Docs: <a class="reference external" href="https://foxdot.org/docs/">https://foxdot.org/docs/</a></div>
+<div class="line">Docs: <a class="reference external" href="https://foxdot.org/docs/pattern-basics/">https://foxdot.org/docs/pattern-basics/</a></div>
+</div>
+<p>FoxDot is an <a class="reference internal" href="open-source#open-source"><span class="std std-ref">Open Source</span></a> <a class="reference internal" href="#live-coding"><span class="std std-ref">Live Coding</span></a>
+language and editor
+for realtime, concurrent <a class="reference internal" href="#musical-composition"><span class="std std-ref">Musical Composition</span></a> <a class="reference internal" href="#audio-synthesis"><span class="std std-ref">Audio Synthesis</span></a>
+written in <a class="reference internal" href="../tools/index#python"><span class="std std-ref">Python</span></a>
+that runs on <span class="xref std std-ref">SuperCollider</span>.</p>
+<ul>
+<li><p>FoxDot supports “On the Fly Programming”:
+code and loops can be changed while
+the FoxDot program is running in <span class="xref std std-ref">SuperCollider</span></p></li>
+<li><p>The iShapeNoise/foxdot “PitchGlitch” fork of FoxDot is
+actively maintained, and has a different <code class="docutils literal notranslate"><span class="pre">README</span></code>:</p>
+<ul>
+<li><div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://gitlab.com/iShapeNoise/foxdot">https://gitlab.com/iShapeNoise/foxdot</a></div>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</section>
 <section id="hookpad">
-<span id="index-66"></span><span id="id61"></span><h3>Hookpad<a class="headerlink" href="#hookpad" title="Link to this heading">¶</a></h3>
+<span id="index-68"></span><span id="id63"></span><h3>Hookpad<a class="headerlink" href="#hookpad" title="Link to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="http://www.hooktheory.com/hookpad/">http://www.hooktheory.com/hookpad/</a></div>
 <div class="line">Docs: <a class="reference external" href="http://www.hooktheory.com/hookpad/docs">http://www.hooktheory.com/hookpad/docs</a></div>
@@ -1406,7 +1470,7 @@ Chrome Native Client (PNaCl),
 </ul>
 </section>
 <section id="hydrogen">
-<span id="index-67"></span><span id="id62"></span><h3>Hydrogen<a class="headerlink" href="#hydrogen" title="Link to this heading">¶</a></h3>
+<span id="index-69"></span><span id="id64"></span><h3>Hydrogen<a class="headerlink" href="#hydrogen" title="Link to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Hydrogen_(software)">https://en.wikipedia.org/wiki/Hydrogen_(software)</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://hydrogen-music.org/hcms/">http://hydrogen-music.org/hcms/</a></div>
@@ -1421,7 +1485,7 @@ software with support for <a class="reference internal" href="#jack"><span class
 </ul>
 </section>
 <section id="midi">
-<span id="index-68"></span><span id="id63"></span><h3>MIDI<a class="headerlink" href="#midi" title="Link to this heading">¶</a></h3>
+<span id="index-70"></span><span id="id65"></span><h3>MIDI<a class="headerlink" href="#midi" title="Link to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/MIDI">https://en.wikipedia.org/wiki/MIDI</a></div>
 <div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/MIDI_controller">https://en.wikipedia.org/wiki/MIDI_controller</a></div>
@@ -1429,7 +1493,7 @@ software with support for <a class="reference internal" href="#jack"><span class
 </div>
 </section>
 <section id="stk">
-<span id="index-69"></span><span id="id64"></span><h3>STK<a class="headerlink" href="#stk" title="Link to this heading">¶</a></h3>
+<span id="index-71"></span><span id="id66"></span><h3>STK<a class="headerlink" href="#stk" title="Link to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Synthesis_Toolkit">https://en.wikipedia.org/wiki/Synthesis_Toolkit</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://ccrma.stanford.edu/software/stk/">https://ccrma.stanford.edu/software/stk/</a></div>
@@ -1440,35 +1504,15 @@ software with support for <a class="reference internal" href="#jack"><span class
 <div class="line">Docs: <a class="reference external" href="https://ccrma.stanford.edu/software/stk/tutorial.html">https://ccrma.stanford.edu/software/stk/tutorial.html</a></div>
 </div>
 <p>STK is a realtime audio synthesis
-<a class="reference internal" href="../tools/index#id70"><span class="std std-ref">C++</span></a> library API
+<a class="reference internal" href="../tools/index#id76"><span class="std std-ref">C++</span></a> library API
 for simulating physical and synthesized sounds.</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#chuck"><span class="std std-ref">ChucK</span></a> works with <a class="reference internal" href="#stk"><span class="std std-ref">STK</span></a></p></li>
 </ul>
 </section>
-<section id="vst">
-<span id="index-71"></span><span id="index-70"></span><span id="id65"></span><h3>VST<a class="headerlink" href="#vst" title="Link to this heading">¶</a></h3>
-<div class="line-block">
-<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Virtual_Studio_Technology">https://en.wikipedia.org/wiki/Virtual_Studio_Technology</a></div>
-<div class="line">Homepage:</div>
-</div>
-<p>VST is a reusable audio transform API for <a class="reference internal" href="#audio-synthesis"><span class="std std-ref">Audio Synthesis</span></a>
-and <a class="reference internal" href="#sound-production"><span class="std std-ref">Sound Production</span></a> tools.</p>
-<ul class="simple">
-<li><p>A VST plugin is a <a class="reference internal" href="../tools/index#packages"><span class="std std-ref">packaged</span></a> module
-of instruments, effects, and/or <a class="reference internal" href="#midi"><span class="std std-ref">MIDI</span></a> code</p></li>
-<li><p>A VST host is a program which can run VST plugins</p>
-<ul>
-<li><p><a class="reference internal" href="#ardour"><span class="std std-ref">Ardour</span></a></p></li>
-<li><p><a class="reference internal" href="#audacity"><span class="std std-ref">Audacity</span></a></p></li>
-<li><p>ACID, Adobe Premiere, Cakewalk, FL Studio, Sound Forge, Vegas</p></li>
-</ul>
-</li>
-</ul>
-</section>
 </section>
 <section id="sound-production">
-<span id="index-72"></span><span id="id66"></span><h2>Sound Production<a class="headerlink" href="#sound-production" title="Link to this heading">¶</a></h2>
+<span id="index-72"></span><span id="id67"></span><h2>Sound Production<a class="headerlink" href="#sound-production" title="Link to this heading">¶</a></h2>
 <div class="line-block">
 <div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/Sound">https://en.wikipedia.org/wiki/Sound</a></div>
 <div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/Sound_recording_and_reproduction">https://en.wikipedia.org/wiki/Sound_recording_and_reproduction</a></div>
@@ -1482,31 +1526,56 @@ of instruments, effects, and/or <a class="reference internal" href="#midi"><span
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Comparison_of_digital_audio_editors">https://en.wikipedia.org/wiki/Comparison_of_digital_audio_editors</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Recording_studio">https://en.wikipedia.org/wiki/Recording_studio</a></p>
 <section id="acoustical-engineering">
-<span id="index-73"></span><span id="id67"></span><h3>Acoustical Engineering<a class="headerlink" href="#acoustical-engineering" title="Link to this heading">¶</a></h3>
+<span id="index-73"></span><span id="id68"></span><h3>Acoustical Engineering<a class="headerlink" href="#acoustical-engineering" title="Link to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/Acoustical_engineering">https://en.wikipedia.org/wiki/Acoustical_engineering</a></div>
 </div>
+<section id="eq">
+<span id="index-75"></span><span id="index-74"></span><span id="id69"></span><h4>EQ<a class="headerlink" href="#eq" title="Link to this heading">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Equalization_(audio)">https://en.wikipedia.org/wiki/Equalization_(audio)</a></div>
+</div>
+<p>Audio equalization with an equalizer (EQ)
+is the process of adjusting the amplitude
+of a waveform at one or more frequencies.</p>
+<ul class="simple">
+<li><p>A Graphic Equalizer (“Graphic EQ”)
+maps the waveform and/or the EQ parameters
+to visual signals for visualization</p></li>
+<li><p>A Parametric Equalizer (“Parametric EQ”)
+allows control of:</p>
+<ul>
+<li><p>Amplitude or “boost” or “cut” (<span class="xref std std-ref">decibels</span> of gain)</p></li>
+<li><p>Center Frequency (<code class="docutils literal notranslate"><span class="pre">F_0</span></code>)</p></li>
+<li><p>Bandwidth (<code class="docutils literal notranslate"><span class="pre">Q</span></code>)</p></li>
+</ul>
+</li>
+</ul>
+<p>Types of EQ filters:</p>
+<ul class="simple">
+<li><p>LP: Low-pass filter</p></li>
+<li><p>HP: High-pass filter</p></li>
+<li><p>BP: Band-pass filter</p></li>
+<li><p>Shelving filter</p></li>
+<li><p>First-order filters (can be implemented with resistor and capacitor)</p></li>
+<li><p>Second-order filters (have a Q parameter)</p></li>
+</ul>
 </section>
-<section id="dj">
-<span id="index-74"></span><span id="id68"></span><h3>DJ<a class="headerlink" href="#dj" title="Link to this heading">¶</a></h3>
+<p id="dj"><span id="index-76"></span>.. _dj:</p>
+</section>
+<section id="id70">
+<h3>DJ<a class="headerlink" href="#id70" title="Link to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/Disc_jockey">https://en.wikipedia.org/wiki/Disc_jockey</a></div>
 </div>
 </section>
-<section id="aac">
-<span id="index-75"></span><span id="id69"></span><h3>AAC<a class="headerlink" href="#aac" title="Link to this heading">¶</a></h3>
+<section id="daw">
+<span id="index-77"></span><span id="id71"></span><h3>DAW<a class="headerlink" href="#daw" title="Link to this heading">¶</a></h3>
 <div class="line-block">
-<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Advanced_Audio_Coding">https://en.wikipedia.org/wiki/Advanced_Audio_Coding</a></div>
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Digital_audio_workstation">https://en.wikipedia.org/wiki/Digital_audio_workstation</a></div>
 </div>
-<p>AAC is an audio compression standard designed to replace <a class="reference internal" href="#mp3"><span class="std std-ref">MP3</span></a>.</p>
-<p>AAC is a component of <a class="reference internal" href="#mpeg"><span class="std std-ref">MPEG</span></a>-4 audio (“MP4”).</p>
-<ul class="simple">
-<li><p>AAC is a <em>lossy</em> audio compression algorithm</p></li>
-<li><p>iTunes files are in AAC format (MPEG-4 Audio, MP4, M4a)</p></li>
-</ul>
-</section>
 <section id="ardour">
-<span id="index-76"></span><span id="id70"></span><h3>Ardour<a class="headerlink" href="#ardour" title="Link to this heading">¶</a></h3>
+<span id="index-78"></span><span id="id72"></span><h4>Ardour<a class="headerlink" href="#ardour" title="Link to this heading">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Ardour_(software)">https://en.wikipedia.org/wiki/Ardour_(software)</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://ardour.org/">https://ardour.org/</a></div>
@@ -1525,7 +1594,7 @@ AudioUnit, <a class="reference internal" href="#ladspa"><span class="std std-ref
 </ul>
 </section>
 <section id="audacity">
-<span id="index-77"></span><span id="id71"></span><h3>Audacity<a class="headerlink" href="#audacity" title="Link to this heading">¶</a></h3>
+<span id="index-79"></span><span id="id73"></span><h4>Audacity<a class="headerlink" href="#audacity" title="Link to this heading">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Audacity_(audio_editor)">https://en.wikipedia.org/wiki/Audacity_(audio_editor)</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://audacityteam.org/">http://audacityteam.org/</a></div>
@@ -1545,65 +1614,50 @@ sound recording and editing software tool.</p>
 <li><p>Audacity is included in <a class="reference internal" href="#dreamstudio"><span class="std std-ref">DreamStudio</span></a>, <a class="reference internal" href="#ubuntu-studio"><span class="std std-ref">Ubuntu Studio</span></a></p></li>
 </ul>
 </section>
-<section id="flac">
-<span id="index-78"></span><span id="id72"></span><h3>FLAC<a class="headerlink" href="#flac" title="Link to this heading">¶</a></h3>
+<section id="bespokesynth">
+<span id="index-80"></span><span id="id74"></span><h4>BespokeSynth<a class="headerlink" href="#bespokesynth" title="Link to this heading">¶</a></h4>
 <div class="line-block">
-<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/FLAC">https://en.wikipedia.org/wiki/FLAC</a></div>
-<div class="line">Homepage: <a class="reference external" href="https://xiph.org/flac/">https://xiph.org/flac/</a></div>
-<div class="line">Download: <a class="reference external" href="https://xiph.org/flac/download.html">https://xiph.org/flac/download.html</a></div>
-<div class="line">Source: git <a class="reference external" href="https://git.xiph.org/flac.git">https://git.xiph.org/flac.git</a></div>
-<div class="line">Docs: <a class="reference external" href="https://xiph.org/flac/documentation.html">https://xiph.org/flac/documentation.html</a></div>
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/BespokeSynth">https://en.wikipedia.org/wiki/BespokeSynth</a></div>
+<div class="line">Web: <a class="reference external" href="https://www.bespokesynth.com/">https://www.bespokesynth.com/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/BespokeSynth/BespokeSynth/">https://github.com/BespokeSynth/BespokeSynth/</a></div>
 </div>
-<p>FLAC is an <a class="reference internal" href="open-source#open-source"><span class="std std-ref">Open Source</span></a> lossless audio codec.</p>
-<ul class="simple">
-<li><p><a class="reference internal" href="#flac"><span class="std std-ref">FLAC</span></a> files are, on average, like 10x (TODO ?) the
-file size of e.g. <a class="reference internal" href="#mp3"><span class="std std-ref">MP3</span></a>, because they encode the full spectrum.</p></li>
-</ul>
-</section>
-<section id="jack">
-<span id="index-79"></span><span id="id73"></span><h3>JACK<a class="headerlink" href="#jack" title="Link to this heading">¶</a></h3>
-<div class="line-block">
-<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/JACK_Audio_Connection_Kit">https://en.wikipedia.org/wiki/JACK_Audio_Connection_Kit</a></div>
-<div class="line">Homepage: <a class="reference external" href="http://jackaudio.org/">http://jackaudio.org/</a></div>
-<div class="line">Download: <a class="reference external" href="http://jackaudio.org/downloads/">http://jackaudio.org/downloads/</a></div>
-<div class="line">Docs: <a class="reference external" href="https://github.com/jackaudio/jackaudio.github.com/wiki">https://github.com/jackaudio/jackaudio.github.com/wiki</a></div>
-<div class="line">Docs: <a class="reference external" href="http://jackaudio.org/api/">http://jackaudio.org/api/</a></div>
-</div>
-<p>JACK is a low-latency (“realtime”) sound server for <a class="reference internal" href="../tools/index#posix"><span class="std std-ref">POSIX</span></a>
-operating sytems (<a class="reference internal" href="../tools/index#linux"><span class="std std-ref">Linux</span></a>, <a class="reference internal" href="../tools/index#osx"><span class="std std-ref">OS X</span></a>, <a class="reference internal" href="../tools/index#windows"><span class="std std-ref">Windows</span></a>)
-written in <a class="reference internal" href="../tools/index#c"><span class="std std-ref">C</span></a> and <a class="reference internal" href="../tools/index#id70"><span class="std std-ref">C++</span></a>.</p>
-<ul class="simple">
-<li><p>List of JACK-supporting applications:
-<a class="reference external" href="http://jackaudio.org/applications/">http://jackaudio.org/applications/</a></p>
+<p>BespokeSynth is an <a class="reference internal" href="open-source#open-source"><span class="std std-ref">Open Source</span></a> app
+for <a class="reference internal" href="#live-coding"><span class="std std-ref">Live Coding</span></a> and <span class="xref std std-ref">modular synthesis</span>
+written in <a class="reference internal" href="../tools/index#c"><span class="std std-ref">C</span></a> and <a class="reference internal" href="../tools/index#id76"><span class="std std-ref">C++</span></a></p>
 <ul>
-<li><p><a class="reference internal" href="#ardour"><span class="std std-ref">Ardour</span></a></p></li>
-<li><p><a class="reference internal" href="#audacity"><span class="std std-ref">Audacity</span></a></p></li>
-<li><p><a class="reference internal" href="#lives"><span class="std std-ref">LiVES</span></a></p></li>
-<li><p><a class="reference internal" href="#mixxx"><span class="std std-ref">Mixxx</span></a></p></li>
-<li><p><a class="reference internal" href="#blender"><span class="std std-ref">Blender</span></a></p></li>
-<li><p><a class="reference internal" href="#vlc"><span class="std std-ref">VLC</span></a></p></li>
+<li><p>audinux has a build of BespokeSynth:</p>
+<ul>
+<li><div class="line-block">
+<div class="line">Web: <a class="reference external" href="https://copr.fedorainfracloud.org/coprs/ycollet/audinux/package/BespokeSynth/">https://copr.fedorainfracloud.org/coprs/ycollet/audinux/package/BespokeSynth/</a></div>
+</div>
+</li>
+<li><div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://copr-dist-git.fedorainfracloud.org/cgit/ycollet/audinux/BespokeSynth.git/tree/bespokesynth.spec">https://copr-dist-git.fedorainfracloud.org/cgit/ycollet/audinux/BespokeSynth.git/tree/bespokesynth.spec</a></div>
+</div>
+</li>
+<li><div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/audinux/fedora-spec/blob/master/bespokesynth/bespokesynth.spec">https://github.com/audinux/fedora-spec/blob/master/bespokesynth/bespokesynth.spec</a></div>
+</div>
+</li>
+<li><div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/audinux/fedora-spec/blob/master/bespokesynth/bespokesynth-weekly.spec">https://github.com/audinux/fedora-spec/blob/master/bespokesynth/bespokesynth-weekly.spec</a></div>
+</div>
+</li>
 </ul>
 </li>
 </ul>
 </section>
-<section id="ladspa">
-<span id="index-80"></span><span id="id74"></span><h3>LADSPA<a class="headerlink" href="#ladspa" title="Link to this heading">¶</a></h3>
+<section id="reaper">
+<span id="index-81"></span><span id="id75"></span><h4>Reaper<a class="headerlink" href="#reaper" title="Link to this heading">¶</a></h4>
 <div class="line-block">
-<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/LADSPA">https://en.wikipedia.org/wiki/LADSPA</a></div>
-<div class="line">Homepage: <a class="reference external" href="http://www.ladspa.org/">http://www.ladspa.org/</a></div>
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/REAPER">https://en.wikipedia.org/wiki/REAPER</a></div>
 </div>
-<p>LADSPA (“Linux Audio Developer’s Simple Plugin API”) is
-an <a class="reference internal" href="open-source#open-source"><span class="std std-ref">Open Source</span></a>
-standard for audio filters and effects
-written in <a class="reference internal" href="../tools/index#c"><span class="std std-ref">C</span></a>.</p>
-<ul class="simple">
-<li><p><a class="reference internal" href="#ardour"><span class="std std-ref">Ardour</span></a>, <a class="reference internal" href="#audacity"><span class="std std-ref">Audacity</span></a>, <a class="reference internal" href="#lives"><span class="std std-ref">LiVES</span></a>,
-and <a class="reference internal" href="#rosegarden"><span class="std std-ref">Rosegarden</span></a>
-all support LADSPA</p></li>
-</ul>
+<p>REAPER (Rapid Environment for Audio Production, Engineering, and Recording)
+is a <a class="reference internal" href="#daw"><span class="std std-ref">DAW</span></a>, <a class="reference internal" href="#midi"><span class="std std-ref">MIDI</span></a> sequencer and video editing software
+written in <a class="reference internal" href="../tools/index#c"><span class="std std-ref">C</span></a>, <a class="reference internal" href="../tools/index#id76"><span class="std std-ref">C++</span></a>, and <a class="reference internal" href="../tools/index#asm"><span class="std std-ref">ASM</span></a>.</p>
 </section>
 <section id="mixxx">
-<span id="index-81"></span><span id="id75"></span><h3>Mixxx<a class="headerlink" href="#mixxx" title="Link to this heading">¶</a></h3>
+<span id="index-82"></span><span id="id76"></span><h4>Mixxx<a class="headerlink" href="#mixxx" title="Link to this heading">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Mixxx">https://en.wikipedia.org/wiki/Mixxx</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://mixxx.org/">http://mixxx.org/</a></div>
@@ -1618,9 +1672,9 @@ all support LADSPA</p></li>
 <p>Mixxx is an <a class="reference internal" href="open-source#open-source"><span class="std std-ref">Open Source</span></a>
 sound recording, mixing, editing, beatmatching, and production
 software tool
-with <a class="reference internal" href="#midi"><span class="std std-ref">MIDI</span></a> and HID <a class="reference internal" href="#dj"><span class="std std-ref">DJ</span></a> controller support
+with <a class="reference internal" href="#midi"><span class="std std-ref">MIDI</span></a> and HID <span class="xref std std-ref">DJ</span> controller support
 (for use with keyboards, analog turntables, CD players)
-written in <a class="reference internal" href="../tools/index#id70"><span class="std std-ref">C++</span></a>, <a class="reference internal" href="../tools/index#qt"><span class="std std-ref">Qt</span></a>, <a class="reference internal" href="knowledge-engineering#xml"><span class="std std-ref">XML</span></a>, and <a class="reference internal" href="../tools/index#javascript"><span class="std std-ref">Javascript</span></a>.</p>
+written in <a class="reference internal" href="../tools/index#id76"><span class="std std-ref">C++</span></a>, <a class="reference internal" href="../tools/index#qt"><span class="std std-ref">Qt</span></a>, <a class="reference internal" href="knowledge-engineering#xml"><span class="std std-ref">XML</span></a>, and <a class="reference internal" href="../tools/index#javascript"><span class="std std-ref">Javascript</span></a>.</p>
 <ul class="simple">
 <li><p>Mixx has dual and quad decks with scratchable waveforms
 and beatmatching indicators (“cue points”),
@@ -1628,8 +1682,118 @@ time stretching, beat looping, EQ, crossfading</p></li>
 <li><p>Mixx supports timecoded vinyl and CDs</p></li>
 </ul>
 </section>
+</section>
+<section id="jack">
+<span id="index-83"></span><span id="id77"></span><h3>JACK<a class="headerlink" href="#jack" title="Link to this heading">¶</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/JACK_Audio_Connection_Kit">https://en.wikipedia.org/wiki/JACK_Audio_Connection_Kit</a></div>
+<div class="line">Homepage: <a class="reference external" href="http://jackaudio.org/">http://jackaudio.org/</a></div>
+<div class="line">Download: <a class="reference external" href="http://jackaudio.org/downloads/">http://jackaudio.org/downloads/</a></div>
+<div class="line">Src: <a class="reference external" href="https://github.com/jackaudio/jack2">https://github.com/jackaudio/jack2</a></div>
+<div class="line">Docs: <a class="reference external" href="https://github.com/jackaudio/jackaudio.github.com/wiki">https://github.com/jackaudio/jackaudio.github.com/wiki</a></div>
+<div class="line">Docs: <a class="reference external" href="http://jackaudio.org/api/">http://jackaudio.org/api/</a></div>
+</div>
+<p>JACK is a low-latency (“realtime”) sound server for <a class="reference internal" href="../tools/index#posix"><span class="std std-ref">POSIX</span></a>
+operating sytems (<a class="reference internal" href="../tools/index#linux"><span class="std std-ref">Linux</span></a>, <a class="reference internal" href="../tools/index#osx"><span class="std std-ref">OS X</span></a>, <a class="reference internal" href="../tools/index#windows"><span class="std std-ref">Windows</span></a>)
+written in <a class="reference internal" href="../tools/index#c"><span class="std std-ref">C</span></a> and <a class="reference internal" href="../tools/index#id76"><span class="std std-ref">C++</span></a>.</p>
+<ul class="simple">
+<li><p>List of JACK-supporting applications:
+<a class="reference external" href="http://jackaudio.org/applications/">http://jackaudio.org/applications/</a></p>
+<ul>
+<li><p><a class="reference internal" href="#ardour"><span class="std std-ref">Ardour</span></a></p></li>
+<li><p><a class="reference internal" href="#audacity"><span class="std std-ref">Audacity</span></a></p></li>
+<li><p><a class="reference internal" href="#lives"><span class="std std-ref">LiVES</span></a></p></li>
+<li><p><a class="reference internal" href="#mixxx"><span class="std std-ref">Mixxx</span></a></p></li>
+<li><p><a class="reference internal" href="#blender"><span class="std std-ref">Blender</span></a></p></li>
+<li><p><a class="reference internal" href="#vlc"><span class="std std-ref">VLC</span></a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#pipewire"><span class="std std-ref">PipeWire</span></a> supports <a class="reference internal" href="#jack"><span class="std std-ref">JACK</span></a></p></li>
+</ul>
+</section>
+<section id="ladspa">
+<span id="index-84"></span><span id="id78"></span><h3>LADSPA<a class="headerlink" href="#ladspa" title="Link to this heading">¶</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/LADSPA">https://en.wikipedia.org/wiki/LADSPA</a></div>
+<div class="line">Homepage: <a class="reference external" href="http://www.ladspa.org/">http://www.ladspa.org/</a></div>
+</div>
+<p>LADSPA (“Linux Audio Developer’s Simple Plugin API”) is
+an <span class="xref std std-ref">open standard</span> for audio filters and effects
+written in <a class="reference internal" href="../tools/index#c"><span class="std std-ref">C</span></a>.</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#ardour"><span class="std std-ref">Ardour</span></a>, <a class="reference internal" href="#audacity"><span class="std std-ref">Audacity</span></a>, <a class="reference internal" href="#lives"><span class="std std-ref">LiVES</span></a>,
+and <a class="reference internal" href="#rosegarden"><span class="std std-ref">Rosegarden</span></a>
+all support LADSPA</p></li>
+</ul>
+</section>
+<section id="lv2">
+<span id="index-85"></span><span id="id79"></span><h3>LV2<a class="headerlink" href="#lv2" title="Link to this heading">¶</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/LV2">https://en.wikipedia.org/wiki/LV2</a></div>
+<div class="line">Source: <a class="reference external" href="https://gitlab.com/lv2/lv2">https://gitlab.com/lv2/lv2</a></div>
+</div>
+<p>LV2 (<a class="reference internal" href="#ladspa"><span class="std std-ref">LADSPA</span></a> version 2) is an <span class="xref std std-ref">open standard</span>
+for audio filters and effects
+written in <a class="reference internal" href="../tools/index#c"><span class="std std-ref">C</span></a> and Turtle.</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#ardour"><span class="std std-ref">Ardour</span></a>, <a class="reference internal" href="#audacity"><span class="std std-ref">Audacity</span></a>, and
+<a class="reference internal" href="#bespokesynth"><span class="std std-ref">BespokeSynth</span></a>
+all support LV2</p></li>
+</ul>
+</section>
+<section id="vst">
+<span id="index-88"></span><span id="index-87"></span><span id="index-86"></span><span id="id80"></span><h3>VST<a class="headerlink" href="#vst" title="Link to this heading">¶</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Virtual_Studio_Technology">https://en.wikipedia.org/wiki/Virtual_Studio_Technology</a></div>
+<div class="line">Web: <a class="reference external" href="https://www.steinberg.net/developers/">https://www.steinberg.net/developers/</a></div>
+</div>
+<p>VST2 and VST3 are a reusable audio transform APIs for <a class="reference internal" href="#audio-synthesis"><span class="std std-ref">Audio Synthesis</span></a>
+and <a class="reference internal" href="#sound-production"><span class="std std-ref">Sound Production</span></a> tools by Steinberg.</p>
+<ul class="simple">
+<li><p>A VST plugin is a <a class="reference internal" href="../tools/index#packages"><span class="std std-ref">packaged</span></a> module
+of instruments, effects, and/or <a class="reference internal" href="#midi"><span class="std std-ref">MIDI</span></a> code</p></li>
+<li><p>A VST host is a program which can run VST plugins (VST2, VST3)</p>
+<ul>
+<li><p><a class="reference internal" href="#ardour"><span class="std std-ref">Ardour</span></a></p></li>
+<li><p><a class="reference internal" href="#audacity"><span class="std std-ref">Audacity</span></a></p></li>
+<li><p><a class="reference internal" href="#bespokesynth"><span class="std std-ref">BespokeSynth</span></a></p></li>
+<li><p>ACID, Adobe Premiere, Cakewalk, FL Studio, Sound Forge, Vegas</p></li>
+<li><p>Bridges: Carla, Yabridge</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="audio-codecs">
+<span id="index-89"></span><span id="id81"></span><h3>Audio Codecs<a class="headerlink" href="#audio-codecs" title="Link to this heading">¶</a></h3>
+<section id="aac">
+<span id="index-90"></span><span id="id82"></span><h4>AAC<a class="headerlink" href="#aac" title="Link to this heading">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Advanced_Audio_Coding">https://en.wikipedia.org/wiki/Advanced_Audio_Coding</a></div>
+</div>
+<p>AAC is an audio compression standard designed to replace <a class="reference internal" href="#mp3"><span class="std std-ref">MP3</span></a>.</p>
+<p>AAC is a component of <a class="reference internal" href="#mpeg"><span class="std std-ref">MPEG</span></a>-4 audio (“MP4”).</p>
+<ul class="simple">
+<li><p>AAC is a <em>lossy</em> audio compression algorithm</p></li>
+<li><p>iTunes files are in AAC format (MPEG-4 Audio, MP4, M4a)</p></li>
+</ul>
+</section>
+<section id="flac">
+<span id="index-91"></span><span id="id83"></span><h4>FLAC<a class="headerlink" href="#flac" title="Link to this heading">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/FLAC">https://en.wikipedia.org/wiki/FLAC</a></div>
+<div class="line">Homepage: <a class="reference external" href="https://xiph.org/flac/">https://xiph.org/flac/</a></div>
+<div class="line">Download: <a class="reference external" href="https://xiph.org/flac/download.html">https://xiph.org/flac/download.html</a></div>
+<div class="line">Source: git <a class="reference external" href="https://git.xiph.org/flac.git">https://git.xiph.org/flac.git</a></div>
+<div class="line">Docs: <a class="reference external" href="https://xiph.org/flac/documentation.html">https://xiph.org/flac/documentation.html</a></div>
+</div>
+<p>FLAC is an <a class="reference internal" href="open-source#open-source"><span class="std std-ref">Open Source</span></a> lossless audio codec.</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#flac"><span class="std std-ref">FLAC</span></a> files are, on average, like 10x (TODO ?) the
+file size of e.g. <a class="reference internal" href="#mp3"><span class="std std-ref">MP3</span></a>, because they encode the full spectrum.</p></li>
+</ul>
+</section>
 <section id="mp3">
-<span id="index-82"></span><span id="id76"></span><h3>MP3<a class="headerlink" href="#mp3" title="Link to this heading">¶</a></h3>
+<span id="index-92"></span><span id="id84"></span><h4>MP3<a class="headerlink" href="#mp3" title="Link to this heading">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/MP3">https://en.wikipedia.org/wiki/MP3</a></div>
 </div>
@@ -1643,8 +1807,21 @@ depending on the encoding parameters</p></li>
 </ul>
 <p>See also: <a class="reference internal" href="#aac"><span class="std std-ref">AAC</span></a>, FLAC, Ogg, SHN</p>
 </section>
+<section id="wav">
+<span id="index-93"></span><span id="id85"></span><h4>WAV<a class="headerlink" href="#wav" title="Link to this heading">¶</a></h4>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/WAV">https://en.wikipedia.org/wiki/WAV</a></div>
+</div>
+<p>WAV (“Waveform Audio Format”) is a file format
+for storing an uncompressed audio bitstream.</p>
+<ul class="simple">
+<li><p>Like WAV, Audio CDs are encoded with PCM; but unlike WAV,
+Audio CDs are encoded with PCM and <em>Red Book audio</em></p></li>
+</ul>
+</section>
+</section>
 <section id="pulseaudio">
-<span id="index-83"></span><span id="id77"></span><h3>PulseAudio<a class="headerlink" href="#pulseaudio" title="Link to this heading">¶</a></h3>
+<span id="index-94"></span><span id="id86"></span><h3>PulseAudio<a class="headerlink" href="#pulseaudio" title="Link to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/PulseAudio">https://en.wikipedia.org/wiki/PulseAudio</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://www.freedesktop.org/wiki/Software/PulseAudio/">http://www.freedesktop.org/wiki/Software/PulseAudio/</a></div>
@@ -1723,22 +1900,15 @@ connected to a PC or a Pi on the other side of the room):</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/westurner/dotfiles/blob/master/scripts/pulse.sh">https://github.com/westurner/dotfiles/blob/master/scripts/pulse.sh</a></p></li>
 </ul>
-</section>
-<section id="wav">
-<span id="index-84"></span><span id="id78"></span><h3>WAV<a class="headerlink" href="#wav" title="Link to this heading">¶</a></h3>
-<div class="line-block">
-<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/WAV">https://en.wikipedia.org/wiki/WAV</a></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><a class="reference internal" href="#pipewire"><span class="std std-ref">PipeWire</span></a> supersedes <a class="reference internal" href="#pulseaudio"><span class="std std-ref">PulseAudio</span></a>, and then
+PulseAudio tools work with PipeWire.</p>
 </div>
-<p>WAV (“Waveform Audio Format”) is a file format
-for storing an uncompressed audio bitstream.</p>
-<ul class="simple">
-<li><p>Like WAV, Audio CDs are encoded with PCM; but unlike WAV,
-Audio CDs are encoded with PCM and <em>Red Book audio</em></p></li>
-</ul>
 </section>
 </section>
 <section id="audio-visual-production">
-<span id="avproduction"></span><span id="index-85"></span><h2>Audio/Visual Production<a class="headerlink" href="#audio-visual-production" title="Link to this heading">¶</a></h2>
+<span id="avproduction"></span><span id="index-95"></span><h2>Audio/Visual Production<a class="headerlink" href="#audio-visual-production" title="Link to this heading">¶</a></h2>
 <div class="line-block">
 <div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/Audiovisual_art">https://en.wikipedia.org/wiki/Audiovisual_art</a></div>
 <div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/Mashup_(video)">https://en.wikipedia.org/wiki/Mashup_(video)</a></div>
@@ -1747,8 +1917,27 @@ Audio CDs are encoded with PCM and <em>Red Book audio</em></p></li>
 <ul class="simple">
 <li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Compression_artifact#Artistic_use">https://en.wikipedia.org/wiki/Compression_artifact#Artistic_use</a></p></li>
 </ul>
+<section id="pipewire">
+<span id="index-96"></span><span id="id87"></span><h3>PipeWire<a class="headerlink" href="#pipewire" title="Link to this heading">¶</a></h3>
+<div class="line-block">
+<div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Pipewire">https://en.wikipedia.org/wiki/Pipewire</a></div>
+<div class="line">Source:  <a class="reference external" href="https://gitlab.freedesktop.org/pipewire/pipewire">https://gitlab.freedesktop.org/pipewire/pipewire</a></div>
+<div class="line">Web:  <a class="reference external" href="https://pipewire.org/">https://pipewire.org/</a></div>
+</div>
+<p>PipeWire is an <a class="reference internal" href="open-source#open-source"><span class="std std-ref">Open Source</span></a> realtime sound and video server.</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#pulseaudio"><span class="std std-ref">PulseAudio</span></a> tools work with PipeWire</p></li>
+<li><p><span class="xref std std-ref">ALSA</span> tools like <code class="docutils literal notranslate"><span class="pre">alsamixer</span></code> work with PipeWire</p></li>
+<li><p><a class="reference internal" href="#jack"><span class="std std-ref">JACK</span></a> tools work with PipeWire</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">pipewire-jack-audio-connection-kit</span></code>
+<code class="docutils literal notranslate"><span class="pre">pipewire-jack-audio-connection-kit-devel</span></code></p></li>
+</ul>
+</li>
+</ul>
+</section>
 <section id="vj">
-<span id="index-86"></span><span id="id79"></span><h3>VJ<a class="headerlink" href="#vj" title="Link to this heading">¶</a></h3>
+<span id="index-97"></span><span id="id88"></span><h3>VJ<a class="headerlink" href="#vj" title="Link to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/VJing">https://en.wikipedia.org/wiki/VJing</a></div>
 <div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/DVJ">https://en.wikipedia.org/wiki/DVJ</a></div>
@@ -1758,7 +1947,7 @@ Audio CDs are encoded with PCM and <em>Red Book audio</em></p></li>
 </div>
 </section>
 <section id="advanced-visualization-studio">
-<span id="index-87"></span><span id="id80"></span><h3>Advanced Visualization Studio<a class="headerlink" href="#advanced-visualization-studio" title="Link to this heading">¶</a></h3>
+<span id="index-98"></span><span id="id89"></span><h3>Advanced Visualization Studio<a class="headerlink" href="#advanced-visualization-studio" title="Link to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Advanced_Visualization_Studio">https://en.wikipedia.org/wiki/Advanced_Visualization_Studio</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://www.1014.org/code/nullsoft/avs/">http://www.1014.org/code/nullsoft/avs/</a></div>
@@ -1769,7 +1958,7 @@ tool for developing music visualization presets
 for the Winamp media player.</p>
 </section>
 <section id="geiss">
-<span id="index-88"></span><span id="id81"></span><h3>Geiss<a class="headerlink" href="#geiss" title="Link to this heading">¶</a></h3>
+<span id="index-99"></span><span id="id90"></span><h3>Geiss<a class="headerlink" href="#geiss" title="Link to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="http://www.geisswerks.com/geiss/">http://www.geisswerks.com/geiss/</a></div>
 <div class="line">Docs: <a class="reference external" href="http://www.geisswerks.com/geiss/shots.html">http://www.geisswerks.com/geiss/shots.html</a></div>
@@ -1785,7 +1974,7 @@ just download the screensaver version of Geiss.</p>
 </div></blockquote>
 </section>
 <section id="libvisual">
-<span id="index-89"></span><span id="id82"></span><h3>libvisual<a class="headerlink" href="#libvisual" title="Link to this heading">¶</a></h3>
+<span id="index-100"></span><span id="id91"></span><h3>libvisual<a class="headerlink" href="#libvisual" title="Link to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Libvisual">https://en.wikipedia.org/wiki/Libvisual</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://libvisual.org/">http://libvisual.org/</a></div>
@@ -1805,7 +1994,7 @@ which enables integration and reuse with a number of media players.</p>
 </ul>
 </section>
 <section id="milkdrop">
-<span id="index-90"></span><span id="id83"></span><h3>MilkDrop<a class="headerlink" href="#milkdrop" title="Link to this heading">¶</a></h3>
+<span id="index-101"></span><span id="id92"></span><h3>MilkDrop<a class="headerlink" href="#milkdrop" title="Link to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/MilkDrop">https://en.wikipedia.org/wiki/MilkDrop</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://www.geisswerks.com/milkdrop/">http://www.geisswerks.com/milkdrop/</a></div>
@@ -1821,7 +2010,7 @@ which enables integration and reuse with a number of media players.</p>
 <li><p><a class="reference internal" href="#kodi"><span class="std std-ref">Kodi</span></a> supports MilkDrop visualizations.</p></li>
 </ul>
 <section id="milkdrop-presets">
-<span id="index-91"></span><span id="id84"></span><h4>MilkDrop Presets<a class="headerlink" href="#milkdrop-presets" title="Link to this heading">¶</a></h4>
+<span id="index-102"></span><span id="id93"></span><h4>MilkDrop Presets<a class="headerlink" href="#milkdrop-presets" title="Link to this heading">¶</a></h4>
 <div class="line-block">
 <div class="line">Docs: <a class="reference external" href="http://www.geisswerks.com/milkdrop/milkdrop_preset_authoring.html">http://www.geisswerks.com/milkdrop/milkdrop_preset_authoring.html</a></div>
 </div>
@@ -1839,7 +2028,7 @@ which enables integration and reuse with a number of media players.</p>
 </section>
 </section>
 <section id="projectm">
-<span id="index-92"></span><span id="id85"></span><h3>ProjectM<a class="headerlink" href="#projectm" title="Link to this heading">¶</a></h3>
+<span id="index-103"></span><span id="id94"></span><h3>ProjectM<a class="headerlink" href="#projectm" title="Link to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">Source: <a class="reference external" href="https://github.com/projectM-visualizer/projectm">https://github.com/projectM-visualizer/projectm</a></div>
 </div>
@@ -1852,7 +2041,7 @@ of <a class="reference internal" href="#milkdrop"><span class="std std-ref">Milk
 </ul>
 </section>
 <section id="resolume">
-<span id="index-93"></span><span id="id86"></span><h3>Resolume<a class="headerlink" href="#resolume" title="Link to this heading">¶</a></h3>
+<span id="index-104"></span><span id="id95"></span><h3>Resolume<a class="headerlink" href="#resolume" title="Link to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="http://resolume.com">http://resolume.com</a></div>
 <div class="line">Download: <a class="reference external" href="http://resolume.com/download/">http://resolume.com/download/</a></div>
@@ -1868,7 +2057,7 @@ for live visuals.</p>
 </ul>
 </section>
 <section id="vvvv">
-<span id="vvvs"></span><span id="index-94"></span><h3>vvvv<a class="headerlink" href="#vvvv" title="Link to this heading">¶</a></h3>
+<span id="vvvs"></span><span id="index-105"></span><h3>vvvv<a class="headerlink" href="#vvvv" title="Link to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Vvvv">https://en.wikipedia.org/wiki/Vvvv</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://vvvv.org/">http://vvvv.org/</a></div>
@@ -1881,9 +2070,9 @@ for <a class="reference internal" href="../tools/index#windows"><span class="std
 </section>
 </section>
 <section id="web-production">
-<span id="index-95"></span><span id="id87"></span><h2>Web Production<a class="headerlink" href="#web-production" title="Link to this heading">¶</a></h2>
+<span id="index-106"></span><span id="id96"></span><h2>Web Production<a class="headerlink" href="#web-production" title="Link to this heading">¶</a></h2>
 <section id="m3u">
-<span id="index-96"></span><span id="id88"></span><h3>M3U<a class="headerlink" href="#m3u" title="Link to this heading">¶</a></h3>
+<span id="index-107"></span><span id="id97"></span><h3>M3U<a class="headerlink" href="#m3u" title="Link to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://git.xiph.org/flac.git">https://git.xiph.org/flac.git</a></div>
 </div>
@@ -1897,7 +2086,7 @@ for <a class="reference internal" href="../tools/index#windows"><span class="std
 </ul>
 </section>
 <section id="pls">
-<span id="index-97"></span><span id="id89"></span><h3>PLS<a class="headerlink" href="#pls" title="Link to this heading">¶</a></h3>
+<span id="index-108"></span><span id="id98"></span><h3>PLS<a class="headerlink" href="#pls" title="Link to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/PLS_(file_format)">https://en.wikipedia.org/wiki/PLS_(file_format)</a></div>
 </div>
@@ -1908,7 +2097,7 @@ for <a class="reference internal" href="../tools/index#windows"><span class="std
 </ul>
 </section>
 <section id="popcorn-maker">
-<span id="index-98"></span><span id="id90"></span><h3>Popcorn Maker<a class="headerlink" href="#popcorn-maker" title="Link to this heading">¶</a></h3>
+<span id="index-109"></span><span id="id99"></span><h3>Popcorn Maker<a class="headerlink" href="#popcorn-maker" title="Link to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="https://popcorn.webmaker.org/">https://popcorn.webmaker.org/</a></div>
 </div>
@@ -1919,7 +2108,7 @@ tool for creating multitrack web media presentations.</p>
 </ul>
 </section>
 <section id="stream-annotation">
-<span id="index-99"></span><span id="id91"></span><h3>Stream Annotation<a class="headerlink" href="#stream-annotation" title="Link to this heading">¶</a></h3>
+<span id="index-110"></span><span id="id100"></span><h3>Stream Annotation<a class="headerlink" href="#stream-annotation" title="Link to this heading">¶</a></h3>
 <p>Media codecs do not solve for commenting,
 other tools support commenting on points or ranges of timecodes
 (e.g. “this part is great!” or “who is that?”)</p>
@@ -1928,7 +2117,7 @@ other tools support commenting on points or ranges of timecodes
 <li><p>SoundCloud, MixCloud</p></li>
 </ul>
 <section id="openannotation">
-<span id="index-100"></span><span id="id92"></span><h4>OpenAnnotation<a class="headerlink" href="#openannotation" title="Link to this heading">¶</a></h4>
+<span id="index-111"></span><span id="id101"></span><h4>OpenAnnotation<a class="headerlink" href="#openannotation" title="Link to this heading">¶</a></h4>
 <p><a class="reference internal" href="knowledge-engineering#oa"><span class="std std-ref">OpenAnnotation</span></a> is an <a class="reference internal" href="open-source#open-source"><span class="std std-ref">Open Source</span></a>
 <a class="reference internal" href="knowledge-engineering#rdf"><span class="std std-ref">RDF</span></a> standard for threaded commenting
 on things with URLs and URIs.</p>
@@ -1963,7 +2152,7 @@ of an <a class="reference internal" href="knowledge-engineering#oa"><span class=
 </section>
 </section>
 <section id="xspf">
-<span id="index-101"></span><span id="id93"></span><h3>XSPF<a class="headerlink" href="#xspf" title="Link to this heading">¶</a></h3>
+<span id="index-112"></span><span id="id102"></span><h3>XSPF<a class="headerlink" href="#xspf" title="Link to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/XML_Shareable_Playlist_Format">https://en.wikipedia.org/wiki/XML_Shareable_Playlist_Format</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://xspf.org/">http://xspf.org/</a></div>
@@ -1990,7 +2179,7 @@ of resources from a given set of resource collections.</p></li>
 <li><p>schema.org/CreativeWork</p></li>
 </ul>
 <section id="jspf">
-<span id="index-102"></span><span id="id94"></span><h4>JSPF<a class="headerlink" href="#jspf" title="Link to this heading">¶</a></h4>
+<span id="index-113"></span><span id="id103"></span><h4>JSPF<a class="headerlink" href="#jspf" title="Link to this heading">¶</a></h4>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="http://xspf.org/jspf/">http://xspf.org/jspf/</a></div>
 </div>
@@ -2004,7 +2193,7 @@ and <a class="reference internal" href="web-development#term-URL"><span class="x
 </section>
 </section>
 <section id="web-distribution">
-<span id="index-103"></span><span id="id95"></span><h2>Web Distribution<a class="headerlink" href="#web-distribution" title="Link to this heading">¶</a></h2>
+<span id="index-114"></span><span id="id104"></span><h2>Web Distribution<a class="headerlink" href="#web-distribution" title="Link to this heading">¶</a></h2>
 <div class="line-block">
 <div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/Streaming_media">https://en.wikipedia.org/wiki/Streaming_media</a></div>
 <div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/New_media">https://en.wikipedia.org/wiki/New_media</a></div>
@@ -2036,7 +2225,7 @@ through a file / stream distribution / caching / archiving network:</p>
 </li>
 </ul>
 <section id="cdn">
-<span id="index-105"></span><span id="index-104"></span><span id="id96"></span><h3>CDN<a class="headerlink" href="#cdn" title="Link to this heading">¶</a></h3>
+<span id="index-116"></span><span id="index-115"></span><span id="id105"></span><h3>CDN<a class="headerlink" href="#cdn" title="Link to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Content_delivery_network">https://en.wikipedia.org/wiki/Content_delivery_network</a></div>
 <div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/Content_delivery_network#Notable_content_delivery_service_providers">https://en.wikipedia.org/wiki/Content_delivery_network#Notable_content_delivery_service_providers</a></div>
@@ -2069,7 +2258,7 @@ and geodistributedly.</p>
 </ul>
 </section>
 <section id="bittorrent">
-<span id="index-106"></span><span id="id97"></span><h3>BitTorrent<a class="headerlink" href="#bittorrent" title="Link to this heading">¶</a></h3>
+<span id="index-117"></span><span id="id106"></span><h3>BitTorrent<a class="headerlink" href="#bittorrent" title="Link to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/BitTorrent">https://en.wikipedia.org/wiki/BitTorrent</a></div>
 <div class="line"><a class="reference external" href="https://en.wikipedia.org/wiki/Comparison_of_BitTorrent_clients">https://en.wikipedia.org/wiki/Comparison_of_BitTorrent_clients</a></div>
@@ -2148,7 +2337,7 @@ when I just copy the file to my other device)
 can be shared over BitTorrent all the same.</p>
 </div>
 <section id="debtorrent">
-<span id="index-107"></span><span id="id98"></span><h4>debtorrent<a class="headerlink" href="#debtorrent" title="Link to this heading">¶</a></h4>
+<span id="index-118"></span><span id="id107"></span><h4>debtorrent<a class="headerlink" href="#debtorrent" title="Link to this heading">¶</a></h4>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="https://wiki.debian.org/DebTorrent">https://wiki.debian.org/DebTorrent</a></div>
 <div class="line">Standard: <a class="reference external" href="https://wiki.debian.org/DebTorrent/Protocol">https://wiki.debian.org/DebTorrent/Protocol</a></div>
@@ -2173,7 +2362,7 @@ from the other side of the network multiple times)</p></li>
 </ul>
 </section>
 <section id="webtorrent">
-<span id="index-108"></span><span id="id99"></span><h4>webtorrent<a class="headerlink" href="#webtorrent" title="Link to this heading">¶</a></h4>
+<span id="index-119"></span><span id="id108"></span><h4>webtorrent<a class="headerlink" href="#webtorrent" title="Link to this heading">¶</a></h4>
 <div class="line-block">
 <div class="line">Source: git <a class="reference external" href="https://github.com/feross/webtorrent">https://github.com/feross/webtorrent</a></div>
 </div>
@@ -2188,13 +2377,13 @@ or <a class="reference internal" href="../tools/index#node-js"><span class="std 
 </section>
 </section>
 <section id="named-data-networking">
-<span id="index-109"></span><span id="id100"></span><h3>Named Data Networking<a class="headerlink" href="#named-data-networking" title="Link to this heading">¶</a></h3>
+<span id="index-120"></span><span id="id109"></span><h3>Named Data Networking<a class="headerlink" href="#named-data-networking" title="Link to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Named_data_networking">https://en.wikipedia.org/wiki/Named_data_networking</a></div>
 <div class="line"><br /></div>
 </div>
 <section id="kerbal-space-program">
-<span id="index-110"></span><span id="id101"></span><h4>Kerbal Space Program<a class="headerlink" href="#kerbal-space-program" title="Link to this heading">¶</a></h4>
+<span id="index-121"></span><span id="id110"></span><h4>Kerbal Space Program<a class="headerlink" href="#kerbal-space-program" title="Link to this heading">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Kerbal_Space_Program">https://en.wikipedia.org/wiki/Kerbal_Space_Program</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://kerbalspaceprogram.comm">https://kerbalspaceprogram.comm</a></div>
@@ -2220,7 +2409,7 @@ and will affect the way a ship flies (or doesn’t).</p>
 </section>
 </section>
 <section id="tube-sites">
-<span id="index-111"></span><span id="id102"></span><h3>Tube Sites<a class="headerlink" href="#tube-sites" title="Link to this heading">¶</a></h3>
+<span id="index-122"></span><span id="id111"></span><h3>Tube Sites<a class="headerlink" href="#tube-sites" title="Link to this heading">¶</a></h3>
 <p>Fueled by the dramatic growth of YouTube,
 the term “Tube Site” refers to any of a number of sites
 serving (seekable) video;
@@ -2242,7 +2431,7 @@ and <a class="reference internal" href="#mpeg-dash"><span class="std std-ref">MP
 </ul>
 </section>
 <section id="http-live-streaming">
-<span id="index-113"></span><span id="index-112"></span><span id="id103"></span><h3>HTTP Live Streaming<a class="headerlink" href="#http-live-streaming" title="Link to this heading">¶</a></h3>
+<span id="index-124"></span><span id="index-123"></span><span id="id112"></span><h3>HTTP Live Streaming<a class="headerlink" href="#http-live-streaming" title="Link to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/HTTP_Live_Streaming">https://en.wikipedia.org/wiki/HTTP_Live_Streaming</a></div>
 <div class="line">Standard: <a class="reference external" href="http://tools.ietf.org/html/draft-pantos-http-live-streaming">http://tools.ietf.org/html/draft-pantos-http-live-streaming</a></div>
@@ -2265,7 +2454,7 @@ over <a class="reference internal" href="knowledge-engineering#http"><span class
 </ul>
 </section>
 <section id="mpeg-dash">
-<span id="index-114"></span><span id="id104"></span><h3>MPEG-DASH<a class="headerlink" href="#mpeg-dash" title="Link to this heading">¶</a></h3>
+<span id="index-125"></span><span id="id113"></span><h3>MPEG-DASH<a class="headerlink" href="#mpeg-dash" title="Link to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP">https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP</a></div>
 <div class="line">Standard: <a class="reference external" href="http://www.iso.org/iso/home/store/catalogue_ics/catalogue_detail_ics.htm?csnumber=65274">http://www.iso.org/iso/home/store/catalogue_ics/catalogue_detail_ics.htm?csnumber=65274</a></div>
@@ -2289,7 +2478,7 @@ which is not necessary to enjoy MPEG-DASH adaptability.</p></li>
 </ul>
 </section>
 <section id="nginx-rtmp-module">
-<span id="index-115"></span><span id="id105"></span><h3>nginx-rtmp-module<a class="headerlink" href="#nginx-rtmp-module" title="Link to this heading">¶</a></h3>
+<span id="index-126"></span><span id="id114"></span><h3>nginx-rtmp-module<a class="headerlink" href="#nginx-rtmp-module" title="Link to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">Source: <a class="reference external" href="https://github.com/arut/nginx-rtmp-module">https://github.com/arut/nginx-rtmp-module</a></div>
 <div class="line">Docs: <a class="reference external" href="https://github.com/arut/nginx-rtmp-module/wiki">https://github.com/arut/nginx-rtmp-module/wiki</a></div>
@@ -2310,7 +2499,7 @@ audio / video compression / decompression codecs</p></li>
 </section>
 </section>
 <section id="video-chat">
-<span id="index-116"></span><span id="id106"></span><h2>Video Chat<a class="headerlink" href="#video-chat" title="Link to this heading">¶</a></h2>
+<span id="index-127"></span><span id="id115"></span><h2>Video Chat<a class="headerlink" href="#video-chat" title="Link to this heading">¶</a></h2>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Videoconferencing">https://en.wikipedia.org/wiki/Videoconferencing</a></p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Videotelephony">https://en.wikipedia.org/wiki/Videotelephony</a></p>
 <p>Video chat: what might’ve been an exercise in
@@ -2347,10 +2536,12 @@ audio / video compression / decompression codecs</p></li>
 </ul>
 </section>
 <section id="media-tools">
-<span id="index-117"></span><span id="id107"></span><h2>Media Tools<a class="headerlink" href="#media-tools" title="Link to this heading">¶</a></h2>
+<span id="index-128"></span><span id="id116"></span><h2>Media Tools<a class="headerlink" href="#media-tools" title="Link to this heading">¶</a></h2>
 <p><a class="reference external" href="http://distrowatch.com/search.php?category=Multimedia">http://distrowatch.com/search.php?category=Multimedia</a></p>
-<div class="line-block" id="fedora-jam">
-<span id="index-118"></span><div class="line">Homepage: <a class="reference external" href="https://labs.fedoraproject.org/en/jam/">https://labs.fedoraproject.org/en/jam/</a></div>
+<section id="fedora-jam">
+<span id="index-129"></span><span id="id117"></span><h3>Fedora Jam<a class="headerlink" href="#fedora-jam" title="Link to this heading">¶</a></h3>
+<div class="line-block">
+<div class="line">Homepage: <a class="reference external" href="https://labs.fedoraproject.org/en/jam/">https://labs.fedoraproject.org/en/jam/</a></div>
 <div class="line">Docs: <a class="reference external" href="https://fedoraproject.org/wiki/Fedora_jam">https://fedoraproject.org/wiki/Fedora_jam</a></div>
 <div class="line">Src: <a class="reference external" href="https://pagure.io/fedora-kickstarts/blob/main/f/fedora-live-jam_kde.ks">https://pagure.io/fedora-kickstarts/blob/main/f/fedora-live-jam_kde.ks</a></div>
 </div>
@@ -2367,8 +2558,9 @@ audio / video compression / decompression codecs</p></li>
 <li><p><span class="xref std std-ref">Calf</span> - <a class="reference internal" href="#jack"><span class="std std-ref">JACK</span></a> plugins</p></li>
 <li><p><a class="reference external" href="https://fedoraproject.org/wiki/Fedora_jam#Included_Packages">https://fedoraproject.org/wiki/Fedora_jam#Included_Packages</a></p></li>
 </ul>
+</section>
 <section id="dreamstudio">
-<span id="index-120"></span><span id="index-119"></span><span id="id108"></span><h3>DreamStudio<a class="headerlink" href="#dreamstudio" title="Link to this heading">¶</a></h3>
+<span id="index-131"></span><span id="index-130"></span><span id="id118"></span><h3>DreamStudio<a class="headerlink" href="#dreamstudio" title="Link to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">Homepage: <a class="reference external" href="http://www.celeum.com/dreamstudio/">http://www.celeum.com/dreamstudio/</a></div>
 <div class="line">Source: <a class="reference external" href="http://sourceforge.net/projects/dreamstudio/">http://sourceforge.net/projects/dreamstudio/</a></div>
@@ -2385,7 +2577,7 @@ software licenses.</p></li>
 </ul>
 </section>
 <section id="ubuntu-studio">
-<span id="index-121"></span><span id="id109"></span><h3>Ubuntu Studio<a class="headerlink" href="#ubuntu-studio" title="Link to this heading">¶</a></h3>
+<span id="index-132"></span><span id="id119"></span><h3>Ubuntu Studio<a class="headerlink" href="#ubuntu-studio" title="Link to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Ubuntu_Studio">https://en.wikipedia.org/wiki/Ubuntu_Studio</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://ubuntustudio.org/">http://ubuntustudio.org/</a></div>
@@ -2407,7 +2599,7 @@ all Free and <a class="reference internal" href="open-source#open-source"><span 
 </ul>
 </section>
 <section id="vlc">
-<span id="index-122"></span><span id="id110"></span><h3>VLC<a class="headerlink" href="#vlc" title="Link to this heading">¶</a></h3>
+<span id="index-133"></span><span id="id120"></span><h3>VLC<a class="headerlink" href="#vlc" title="Link to this heading">¶</a></h3>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/VLC_media_player">https://en.wikipedia.org/wiki/VLC_media_player</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://www.videolan.org/vlc/">https://www.videolan.org/vlc/</a></div>
@@ -2426,11 +2618,11 @@ all Free and <a class="reference internal" href="open-source#open-source"><span 
 </section>
 </section>
 <section id="home-a-v">
-<span id="home-av"></span><span id="index-123"></span><h2>Home A/V<a class="headerlink" href="#home-a-v" title="Link to this heading">¶</a></h2>
+<span id="home-av"></span><span id="index-134"></span><h2>Home A/V<a class="headerlink" href="#home-a-v" title="Link to this heading">¶</a></h2>
 <section id="standards">
 <h3>Standards<a class="headerlink" href="#standards" title="Link to this heading">¶</a></h3>
 <section id="dial">
-<span id="index-125"></span><span id="index-124"></span><span id="id111"></span><h4>DIAL<a class="headerlink" href="#dial" title="Link to this heading">¶</a></h4>
+<span id="index-136"></span><span id="index-135"></span><span id="id121"></span><h4>DIAL<a class="headerlink" href="#dial" title="Link to this heading">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Discovery_and_Launch">https://en.wikipedia.org/wiki/Discovery_and_Launch</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://www.dial-multiscreen.org/">http://www.dial-multiscreen.org/</a></div>
@@ -2450,7 +2642,7 @@ API.</p></li>
 </ul>
 </section>
 <section id="dlna">
-<span id="index-126"></span><span id="id112"></span><h4>DLNA<a class="headerlink" href="#dlna" title="Link to this heading">¶</a></h4>
+<span id="index-137"></span><span id="id122"></span><h4>DLNA<a class="headerlink" href="#dlna" title="Link to this heading">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Digital_Living_Network_Alliance">https://en.wikipedia.org/wiki/Digital_Living_Network_Alliance</a></div>
 <div class="line">Homepage: <a class="reference external" href="http://www.dlna.org/">http://www.dlna.org/</a></div>
@@ -2464,7 +2656,7 @@ and networked stereos.</p>
 </dl>
 </section>
 <section id="google-cast-sdk">
-<span id="index-127"></span><span id="id113"></span><h4>Google Cast SDK<a class="headerlink" href="#google-cast-sdk" title="Link to this heading">¶</a></h4>
+<span id="index-138"></span><span id="id123"></span><h4>Google Cast SDK<a class="headerlink" href="#google-cast-sdk" title="Link to this heading">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Chromecast">https://en.wikipedia.org/wiki/Chromecast</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://developers.google.com/cast/">https://developers.google.com/cast/</a></div>
@@ -2489,7 +2681,7 @@ which drains a mobile device battery.</p></li>
 </ul>
 </section>
 <section id="ssdp">
-<span id="index-129"></span><span id="index-128"></span><span id="id114"></span><h4>SSDP<a class="headerlink" href="#ssdp" title="Link to this heading">¶</a></h4>
+<span id="index-140"></span><span id="index-139"></span><span id="id124"></span><h4>SSDP<a class="headerlink" href="#ssdp" title="Link to this heading">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Simple_Service_Discovery_Protocol">https://en.wikipedia.org/wiki/Simple_Service_Discovery_Protocol</a></div>
 <div class="line">Standard: <a class="reference external" href="https://tools.ietf.org/html/draft-cai-ssdp-v1">https://tools.ietf.org/html/draft-cai-ssdp-v1</a></div>
@@ -2500,7 +2692,7 @@ discovering services over HTTPU (<a class="reference internal" href="knowledge-e
 without <span class="xref std std-ref">DNS</span> or <span class="xref std std-ref">DHCP</span>.</p>
 </section>
 <section id="upnp">
-<span id="index-130"></span><span id="id115"></span><h4>UPnP<a class="headerlink" href="#upnp" title="Link to this heading">¶</a></h4>
+<span id="index-141"></span><span id="id125"></span><h4>UPnP<a class="headerlink" href="#upnp" title="Link to this heading">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Universal_Plug_and_Play">https://en.wikipedia.org/wiki/Universal_Plug_and_Play</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://en.wikipedia.org/wiki/Universal_Plug_and_Play">https://en.wikipedia.org/wiki/Universal_Plug_and_Play</a></div>
@@ -2515,7 +2707,7 @@ web services.</p>
 </ul>
 </section>
 <section id="zeroconf">
-<span id="index-131"></span><span id="id116"></span><h4>Zeroconf<a class="headerlink" href="#zeroconf" title="Link to this heading">¶</a></h4>
+<span id="index-142"></span><span id="id126"></span><h4>Zeroconf<a class="headerlink" href="#zeroconf" title="Link to this heading">¶</a></h4>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Zeroconf">https://en.wikipedia.org/wiki/Zeroconf</a></div>
 </div>
@@ -2537,9 +2729,9 @@ over multicast DNS.</p>
 </section>
 </section>
 <section id="foot-interfaces">
-<span id="index-132"></span><span id="id117"></span><h3>10-foot interfaces<a class="headerlink" href="#foot-interfaces" title="Link to this heading">¶</a></h3>
+<span id="index-143"></span><span id="id127"></span><h3>10-foot interfaces<a class="headerlink" href="#foot-interfaces" title="Link to this heading">¶</a></h3>
 <section id="gaming-consoles">
-<span id="index-133"></span><span id="id118"></span><h4>Gaming Consoles<a class="headerlink" href="#gaming-consoles" title="Link to this heading">¶</a></h4>
+<span id="index-144"></span><span id="id128"></span><h4>Gaming Consoles<a class="headerlink" href="#gaming-consoles" title="Link to this heading">¶</a></h4>
 <p>[…]</p>
 <ul class="simple">
 <li><p>NVIDIA Shield (<span class="xref std std-ref">AndroidTV</span>)</p></li>
@@ -2556,7 +2748,7 @@ an application for modded XBoxen way back in 2002.</p></li>
 </ul>
 </section>
 <section id="standalone-media-devices">
-<span id="index-134"></span><span id="id119"></span><h4>Standalone Media Devices<a class="headerlink" href="#standalone-media-devices" title="Link to this heading">¶</a></h4>
+<span id="index-145"></span><span id="id129"></span><h4>Standalone Media Devices<a class="headerlink" href="#standalone-media-devices" title="Link to this heading">¶</a></h4>
 <p>Pros:</p>
 <ul class="simple">
 <li><p>Upgradeable</p></li>
@@ -2568,7 +2760,7 @@ an application for modded XBoxen way back in 2002.</p></li>
 <li><p>Remote Control Integration</p></li>
 </ul>
 <section id="android-tv">
-<span id="index-135"></span><span id="id120"></span><h5>Android TV<a class="headerlink" href="#android-tv" title="Link to this heading">¶</a></h5>
+<span id="index-146"></span><span id="id130"></span><h5>Android TV<a class="headerlink" href="#android-tv" title="Link to this heading">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Android_TV">https://en.wikipedia.org/wiki/Android_TV</a></div>
 </div>
@@ -2579,7 +2771,7 @@ an application for modded XBoxen way back in 2002.</p></li>
 </ul>
 </section>
 <section id="chromecast">
-<span id="index-136"></span><span id="id121"></span><h5>Chromecast<a class="headerlink" href="#chromecast" title="Link to this heading">¶</a></h5>
+<span id="index-147"></span><span id="id131"></span><h5>Chromecast<a class="headerlink" href="#chromecast" title="Link to this heading">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Chromecast">https://en.wikipedia.org/wiki/Chromecast</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://www.google.com/chromecast/">https://www.google.com/chromecast/</a></div>
@@ -2593,7 +2785,7 @@ an application for modded XBoxen way back in 2002.</p></li>
 <li><p>Out: <a class="reference internal" href="computer-engineering#hdmi"><span class="std std-ref">HDMI</span></a></p></li>
 </ul>
 <section id="chromecast-audio">
-<span id="index-137"></span><span id="id122"></span><h6>Chromecast Audio<a class="headerlink" href="#chromecast-audio" title="Link to this heading">¶</a></h6>
+<span id="index-148"></span><span id="id132"></span><h6>Chromecast Audio<a class="headerlink" href="#chromecast-audio" title="Link to this heading">¶</a></h6>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Chromecast">https://en.wikipedia.org/wiki/Chromecast</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://www.google.com/chromecast/speakers/">https://www.google.com/chromecast/speakers/</a></div>
@@ -2611,7 +2803,7 @@ into a web-connected audio player.</p>
 </section>
 </section>
 <section id="apple-tv">
-<span id="index-138"></span><span id="id123"></span><h5>Apple TV<a class="headerlink" href="#apple-tv" title="Link to this heading">¶</a></h5>
+<span id="index-149"></span><span id="id133"></span><h5>Apple TV<a class="headerlink" href="#apple-tv" title="Link to this heading">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Apple_TV">https://en.wikipedia.org/wiki/Apple_TV</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://www.apple.com/tv/">https://www.apple.com/tv/</a></div>
@@ -2624,7 +2816,7 @@ into a web-connected audio player.</p>
 </ul>
 </section>
 <section id="kodi">
-<span id="index-139"></span><span id="id124"></span><h5>Kodi<a class="headerlink" href="#kodi" title="Link to this heading">¶</a></h5>
+<span id="index-150"></span><span id="id134"></span><h5>Kodi<a class="headerlink" href="#kodi" title="Link to this heading">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Kodi_(software)">https://en.wikipedia.org/wiki/Kodi_(software)</a></div>
 </div>
@@ -2645,7 +2837,7 @@ designed for use with a remote.</p>
 </ul>
 </section>
 <section id="mythtv">
-<span id="index-140"></span><span id="id125"></span><h5>MythTV<a class="headerlink" href="#mythtv" title="Link to this heading">¶</a></h5>
+<span id="index-151"></span><span id="id135"></span><h5>MythTV<a class="headerlink" href="#mythtv" title="Link to this heading">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/MythTV">https://en.wikipedia.org/wiki/MythTV</a></div>
 <div class="line"><br /></div>
@@ -2660,7 +2852,7 @@ with a number of client implementations.</p>
 </ul>
 </section>
 <section id="plex">
-<span id="index-141"></span><span id="id126"></span><h5>Plex<a class="headerlink" href="#plex" title="Link to this heading">¶</a></h5>
+<span id="index-152"></span><span id="id136"></span><h5>Plex<a class="headerlink" href="#plex" title="Link to this heading">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Plex_(software)">https://en.wikipedia.org/wiki/Plex_(software)</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://plex.tv/">https://plex.tv/</a></div>
@@ -2697,7 +2889,7 @@ client app for a computer attached to a TV (e.g. with <a class="reference intern
 </ul>
 </section>
 <section id="roku">
-<span id="index-142"></span><span id="id127"></span><h5>Roku<a class="headerlink" href="#roku" title="Link to this heading">¶</a></h5>
+<span id="index-153"></span><span id="id137"></span><h5>Roku<a class="headerlink" href="#roku" title="Link to this heading">¶</a></h5>
 <div class="line-block">
 <div class="line">Wikipedia: <a class="reference external" href="https://en.wikipedia.org/wiki/Roku">https://en.wikipedia.org/wiki/Roku</a></div>
 <div class="line">Homepage: <a class="reference external" href="https://www.roku.com/">https://www.roku.com/</a></div>
@@ -2754,7 +2946,7 @@ and a number of other channels:</p></li>
 
       <!-- footer -->
       <footer role="contentinfo">
-          &copy; <a href="../license">Copyright</a> WRD R&amp;D 2014 - 2024.
+          &copy; <a href="../license">Copyright</a> WRD R&amp;D 2025.
 
       <br/>
       <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">

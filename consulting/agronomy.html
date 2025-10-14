@@ -41,7 +41,8 @@
 
 <link rel="stylesheet" href="../_static/css/font-awesome.min.css">
 
-<link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+<link rel="stylesheet" x-style="css/basicstrap-base.css" href="../_static/css/basicstrap-base.css" type="text/css" />
+<link rel="stylesheet" x-style="css/basicstrap.css" href="../_static/css/basicstrap.css" type="text/css" />
 <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
 <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
 <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
@@ -59,7 +60,6 @@
     <script type="text/javascript" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/sphinx_highlight.js"></script>
-    <script type="text/javascript" src="../_static/js/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="../_static/js/local.js"></script>
     <script type="text/javascript" src="../_static/js/bootstrap3.min.js"></script>
 <script type="text/javascript" src="../_static/js/jquery.cookie.min.js"></script>
@@ -155,7 +155,8 @@
 </li>
 <li><a class="reference internal" href="#ecology">Ecology</a><ul>
 <li><a class="reference internal" href="#lawn-and-garden">Lawn and Garden</a><ul>
-<li><a class="reference internal" href="#organic-lawn-care">Organic Lawn care</a><ul>
+<li><a class="reference internal" href="#organic-lawn-care">Organic Lawn care</a></li>
+<li><a class="reference internal" href="#lawn-and-garden-tools">Lawn and Garden Tools</a><ul>
 <li><a class="reference internal" href="#hori-hori-garden-knife">Hori Hori Garden Knife</a></li>
 <li><a class="reference internal" href="#string-trimmer">String Trimmer</a></li>
 <li><a class="reference internal" href="#electric-lawn-equipmentn">Electric Lawn Equipmentn</a></li>
@@ -195,6 +196,13 @@
 <li><a class="reference internal" href="#maintenance">Maintenance</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li><a class="reference internal" href="#weather">Weather</a><ul>
+<li><a class="reference internal" href="#graphcast">GraphCast</a></li>
+<li><a class="reference internal" href="#noaa-weather">NOAA Weather</a></li>
+<li><a class="reference internal" href="#nws">NWS</a></li>
+<li><a class="reference internal" href="#agstack-weather-forecast">agstack/weather-forecast</a></li>
 </ul>
 </li>
 </ul>
@@ -240,7 +248,7 @@
       <!-- row -->
       <div class="row">
          
-<div class="col-md-3 hidden-xs" id="sidebar-wrapper">
+<div class="col-sm-3 hidden-xs" id="sidebar-wrapper">
   <div class="sidebar hidden-xs" role="navigation" aria-label="main navigation">
   <div>
     <h3><a href="../index">Table of Contents</a></h3>
@@ -307,7 +315,8 @@
 </li>
 <li><a class="reference internal" href="#ecology">Ecology</a><ul>
 <li><a class="reference internal" href="#lawn-and-garden">Lawn and Garden</a><ul>
-<li><a class="reference internal" href="#organic-lawn-care">Organic Lawn care</a><ul>
+<li><a class="reference internal" href="#organic-lawn-care">Organic Lawn care</a></li>
+<li><a class="reference internal" href="#lawn-and-garden-tools">Lawn and Garden Tools</a><ul>
 <li><a class="reference internal" href="#hori-hori-garden-knife">Hori Hori Garden Knife</a></li>
 <li><a class="reference internal" href="#string-trimmer">String Trimmer</a></li>
 <li><a class="reference internal" href="#electric-lawn-equipmentn">Electric Lawn Equipmentn</a></li>
@@ -349,6 +358,13 @@
 </li>
 </ul>
 </li>
+<li><a class="reference internal" href="#weather">Weather</a><ul>
+<li><a class="reference internal" href="#graphcast">GraphCast</a></li>
+<li><a class="reference internal" href="#noaa-weather">NOAA Weather</a></li>
+<li><a class="reference internal" href="#nws">NWS</a></li>
+<li><a class="reference internal" href="#agstack-weather-forecast">agstack/weather-forecast</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -380,7 +396,6 @@
     Enter search terms or a module, class or function name.
     </p>
 </div>
-
 <div class="widget navlinks">
   <h3>This Page</h3>
   <ul class="this-page-menu">
@@ -543,6 +558,12 @@ animal species/breeds, input materials, and log categories. See
 <div class="line">Src: <a class="reference external" href="https://github.com/OADA/oada-docs">https://github.com/OADA/oada-docs</a></div>
 <div class="line">Src: <a class="reference external" href="https://github.com/OADA/oada-formats">https://github.com/OADA/oada-formats</a></div>
 </div>
+<blockquote class="pull-quote">
+<div><p>generic sensor data model, air-temperature, barometric-pressure,
+cloud-cover, dew-point, heading, location, rainfall,
+relative-humidity, soil-moisture, soil-temperature, solar-radiation,
+vibration, wind-direction, wind-speed, sensor-hub, sensor</p>
+</div></blockquote>
 </section>
 <section id="agstack">
 <span id="index-9"></span><span id="id9"></span><h3>AgStack<a class="headerlink" href="#agstack" title="Link to this heading">¶</a></h3>
@@ -807,7 +828,10 @@ linked: a healthy lawn feeds bugs and birds to the beds.</p></li>
 <p class="admonition-title">Note</p>
 <p>Organic lawn care does not solve for e.g. termites.</p>
 </div>
-<span id="lawn-tools"></span><span id="index-43"></span><span id="index-42"></span><span id="index-41"></span><ul class="simple" id="gardening-tools">
+</section>
+<section id="lawn-and-garden-tools">
+<span id="gardening-tools"></span><span id="lawn-tools"></span><span id="index-43"></span><span id="index-42"></span><span id="index-41"></span><h4>Lawn and Garden Tools<a class="headerlink" href="#lawn-and-garden-tools" title="Link to this heading">¶</a></h4>
+<ul class="simple">
 <li><p><span class="xref std std-ref">Hori Hori garden knife</span></p></li>
 <li><p>Bulb planter (*)</p></li>
 <li><p>Auger drillbit (*)</p></li>
@@ -1130,6 +1154,42 @@ and for the plants.</p></li>
 </section>
 </section>
 </section>
+<section id="weather">
+<span id="index-64"></span><span id="id54"></span><h2>Weather<a class="headerlink" href="#weather" title="Link to this heading">¶</a></h2>
+<section id="graphcast">
+<span id="index-65"></span><span id="id55"></span><h3>GraphCast<a class="headerlink" href="#graphcast" title="Link to this heading">¶</a></h3>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/google-deepmind/graphcast">https://github.com/google-deepmind/graphcast</a></div>
+</div>
+<p>GraphCast is an open source global weather forecasting model</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.google.com/search?q=graphcast+api">https://www.google.com/search?q=graphcast+api</a></p></li>
+</ul>
+</section>
+<section id="noaa-weather">
+<span id="index-66"></span><span id="id56"></span><h3>NOAA Weather<a class="headerlink" href="#noaa-weather" title="Link to this heading">¶</a></h3>
+<div class="line-block">
+<div class="line">Src: <a class="reference external" href="https://github.com/NOAA-EMC/global-workflow">https://github.com/NOAA-EMC/global-workflow</a></div>
+</div>
+<ul class="simple">
+<li><p>NOAA-EMC/global-workflow is the weather model behind the
+US National Weather Service (NWS) API</p></li>
+<li><p><a class="reference external" href="https://github.com/NOAA-EMC/global-workflow/issues/796">https://github.com/NOAA-EMC/global-workflow/issues/796</a></p></li>
+</ul>
+</section>
+<section id="nws">
+<span id="index-67"></span><span id="id57"></span><h3>NWS<a class="headerlink" href="#nws" title="Link to this heading">¶</a></h3>
+</section>
+<section id="agstack-weather-forecast">
+<span id="id58"></span><h3>agstack/weather-forecast<a class="headerlink" href="#agstack-weather-forecast" title="Link to this heading">¶</a></h3>
+<div class="line-block">
+<div class="line">Src:  <a class="reference external" href="https://github.com/agstack/weather-forecast">https://github.com/agstack/weather-forecast</a></div>
+</div>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/agstack/weather-forecast/blob/main/app/models/weathermodels.py">https://github.com/agstack/weather-forecast/blob/main/app/models/weathermodels.py</a></p></li>
+</ul>
+</section>
+</section>
 </section>
 
 
@@ -1164,7 +1224,7 @@ and for the plants.</p></li>
 
       <!-- footer -->
       <footer role="contentinfo">
-          &copy; <a href="../license">Copyright</a> WRD R&amp;D 2014 - 2024.
+          &copy; <a href="../license">Copyright</a> WRD R&amp;D 2025.
 
       <br/>
       <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">

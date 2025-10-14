@@ -41,7 +41,8 @@
 
 <link rel="stylesheet" href="_static/css/font-awesome.min.css">
 
-<link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+<link rel="stylesheet" x-style="css/basicstrap-base.css" href="_static/css/basicstrap-base.css" type="text/css" />
+<link rel="stylesheet" x-style="css/basicstrap.css" href="_static/css/basicstrap.css" type="text/css" />
 <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
 <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
 <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
@@ -59,7 +60,6 @@
     <script type="text/javascript" src="_static/documentation_options.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/sphinx_highlight.js"></script>
-    <script type="text/javascript" src="_static/js/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="_static/js/local.js"></script>
     <script type="text/javascript" src="_static/js/bootstrap3.min.js"></script>
 <script type="text/javascript" src="_static/js/jquery.cookie.min.js"></script>
@@ -138,7 +138,7 @@
       <!-- row -->
       <div class="row">
          
-<div class="col-md-3 hidden-xs" id="sidebar-wrapper">
+<div class="col-sm-3 hidden-xs" id="sidebar-wrapper">
   <div class="sidebar hidden-xs" role="navigation" aria-label="main navigation">
 <h3><a href="#">Table of Contents</a></h3>
 <ul>
@@ -204,7 +204,6 @@
     Enter search terms or a module, class or function name.
     </p>
 </div>
-
 <div class="widget navlinks">
   <h3>This Page</h3>
   <ul class="this-page-menu">
@@ -892,6 +891,7 @@
 <li class="toctree-l3"><a class="reference internal" href="consulting/units#fuel">Fuel</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="consulting/units#decibel">Decibel</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="consulting/knowledge-engineering">Knowledge Engineering</a><ul>
@@ -1470,7 +1470,8 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="consulting/agronomy#ecology">Ecology</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="consulting/agronomy#lawn-and-garden">Lawn and Garden</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="consulting/agronomy#organic-lawn-care">Organic Lawn care</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="consulting/agronomy#organic-lawn-care">Organic Lawn care</a></li>
+<li class="toctree-l4"><a class="reference internal" href="consulting/agronomy#lawn-and-garden-tools">Lawn and Garden Tools</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="consulting/agronomy#hori-hori-garden-knife">Hori Hori Garden Knife</a></li>
 <li class="toctree-l5"><a class="reference internal" href="consulting/agronomy#string-trimmer">String Trimmer</a></li>
 <li class="toctree-l5"><a class="reference internal" href="consulting/agronomy#electric-lawn-equipmentn">Electric Lawn Equipmentn</a></li>
@@ -1510,6 +1511,13 @@
 <li class="toctree-l4"><a class="reference internal" href="consulting/agronomy#maintenance">Maintenance</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="consulting/agronomy#weather">Weather</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="consulting/agronomy#graphcast">GraphCast</a></li>
+<li class="toctree-l3"><a class="reference internal" href="consulting/agronomy#noaa-weather">NOAA Weather</a></li>
+<li class="toctree-l3"><a class="reference internal" href="consulting/agronomy#nws">NWS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="consulting/agronomy#agstack-weather-forecast">agstack/weather-forecast</a></li>
 </ul>
 </li>
 </ul>
@@ -1852,31 +1860,46 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="consulting/art-design#musical-composition">Musical Composition</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="consulting/art-design#audio-synthesis">Audio Synthesis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="consulting/art-design#live-coding">Live Coding</a></li>
 <li class="toctree-l3"><a class="reference internal" href="consulting/art-design#chuck">ChucK</a></li>
 <li class="toctree-l3"><a class="reference internal" href="consulting/art-design#csound">Csound</a></li>
+<li class="toctree-l3"><a class="reference internal" href="consulting/art-design#foxdot">FoxDot</a></li>
 <li class="toctree-l3"><a class="reference internal" href="consulting/art-design#hookpad">Hookpad</a></li>
 <li class="toctree-l3"><a class="reference internal" href="consulting/art-design#hydrogen">Hydrogen</a></li>
 <li class="toctree-l3"><a class="reference internal" href="consulting/art-design#midi">MIDI</a></li>
 <li class="toctree-l3"><a class="reference internal" href="consulting/art-design#stk">STK</a></li>
-<li class="toctree-l3"><a class="reference internal" href="consulting/art-design#vst">VST</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="consulting/art-design#sound-production">Sound Production</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="consulting/art-design#acoustical-engineering">Acoustical Engineering</a></li>
-<li class="toctree-l3"><a class="reference internal" href="consulting/art-design#dj">DJ</a></li>
-<li class="toctree-l3"><a class="reference internal" href="consulting/art-design#aac">AAC</a></li>
-<li class="toctree-l3"><a class="reference internal" href="consulting/art-design#ardour">Ardour</a></li>
-<li class="toctree-l3"><a class="reference internal" href="consulting/art-design#audacity">Audacity</a></li>
-<li class="toctree-l3"><a class="reference internal" href="consulting/art-design#flac">FLAC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="consulting/art-design#acoustical-engineering">Acoustical Engineering</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="consulting/art-design#eq">EQ</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="consulting/art-design#id70">DJ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="consulting/art-design#daw">DAW</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="consulting/art-design#ardour">Ardour</a></li>
+<li class="toctree-l4"><a class="reference internal" href="consulting/art-design#audacity">Audacity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="consulting/art-design#bespokesynth">BespokeSynth</a></li>
+<li class="toctree-l4"><a class="reference internal" href="consulting/art-design#reaper">Reaper</a></li>
+<li class="toctree-l4"><a class="reference internal" href="consulting/art-design#mixxx">Mixxx</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="consulting/art-design#jack">JACK</a></li>
 <li class="toctree-l3"><a class="reference internal" href="consulting/art-design#ladspa">LADSPA</a></li>
-<li class="toctree-l3"><a class="reference internal" href="consulting/art-design#mixxx">Mixxx</a></li>
-<li class="toctree-l3"><a class="reference internal" href="consulting/art-design#mp3">MP3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="consulting/art-design#lv2">LV2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="consulting/art-design#vst">VST</a></li>
+<li class="toctree-l3"><a class="reference internal" href="consulting/art-design#audio-codecs">Audio Codecs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="consulting/art-design#aac">AAC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="consulting/art-design#flac">FLAC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="consulting/art-design#mp3">MP3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="consulting/art-design#wav">WAV</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="consulting/art-design#pulseaudio">PulseAudio</a></li>
-<li class="toctree-l3"><a class="reference internal" href="consulting/art-design#wav">WAV</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="consulting/art-design#audio-visual-production">Audio/Visual Production</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="consulting/art-design#pipewire">PipeWire</a></li>
 <li class="toctree-l3"><a class="reference internal" href="consulting/art-design#vj">VJ</a></li>
 <li class="toctree-l3"><a class="reference internal" href="consulting/art-design#advanced-visualization-studio">Advanced Visualization Studio</a></li>
 <li class="toctree-l3"><a class="reference internal" href="consulting/art-design#geiss">Geiss</a></li>
@@ -1923,6 +1946,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="consulting/art-design#video-chat">Video Chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="consulting/art-design#media-tools">Media Tools</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="consulting/art-design#fedora-jam">Fedora Jam</a></li>
 <li class="toctree-l3"><a class="reference internal" href="consulting/art-design#dreamstudio">DreamStudio</a></li>
 <li class="toctree-l3"><a class="reference internal" href="consulting/art-design#ubuntu-studio">Ubuntu Studio</a></li>
 <li class="toctree-l3"><a class="reference internal" href="consulting/art-design#vlc">VLC</a></li>
@@ -2080,6 +2104,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#rubygems">RubyGems</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tools/index#yarn">Yarn</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#yum">Yum</a></li>
 </ul>
 </li>
@@ -2127,6 +2152,13 @@
 <li class="toctree-l4"><a class="reference internal" href="tools/index#restructuredtext">ReStructuredText</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="tools/index#asm">ASM</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tools/index#gnu-gas">GNU Gas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tools/index#masm">MASM</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tools/index#nasm">NASM</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tools/index#hla">HLA</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#c">C</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="tools/index#libc">Libc</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="tools/index#glibc">Glibc</a></li>
@@ -2136,10 +2168,10 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="tools/index#id70">C++</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tools/index#id76">C++</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="tools/index#standard-template-library">Standard Template Library</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="tools/index#libstdc">libstdc++</a></li>
-<li class="toctree-l5"><a class="reference internal" href="tools/index#id74">libc++</a></li>
+<li class="toctree-l5"><a class="reference internal" href="tools/index#id80">libc++</a></li>
 <li class="toctree-l5"><a class="reference internal" href="tools/index#microsoft-stl">Microsoft STL</a></li>
 </ul>
 </li>
@@ -2160,6 +2192,8 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#jinja2">Jinja2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tools/index#lua">lua</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tools/index#luau">luau</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#perl">Perl</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#python">Python</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="tools/index#cpython">CPython</a></li>
@@ -2268,7 +2302,7 @@
 <li class="toctree-l2"><a class="reference internal" href="tools/index#build-automation-tools">Build Automation Tools</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#gnu-autotools">GNU Autotools</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#bake">Bake</a></li>
-<li class="toctree-l3"><a class="reference internal" href="tools/index#id147">BUILD</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tools/index#id155">BUILD</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#blaze">Blaze</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#bazel">Bazel</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#buck">Buck</a></li>
@@ -2455,8 +2489,8 @@
 <li class="toctree-l4"><a class="reference internal" href="tools/index#jsonview">JSONView</a></li>
 <li class="toctree-l4"><a class="reference internal" href="tools/index#ng-inspector-for-angularjs">ng-inspector for AngularJS</a></li>
 <li class="toctree-l4"><a class="reference internal" href="tools/index#postman">Postman</a></li>
-<li class="toctree-l4"><a class="reference internal" href="tools/index#preact-devtools">Preact Devtools</a></li>
 <li class="toctree-l4"><a class="reference internal" href="tools/index#react-developer-tools">React Developer Tools</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tools/index#preact-devtools">Preact Devtools</a></li>
 <li class="toctree-l4"><a class="reference internal" href="tools/index#refined-github">Refined Github</a></li>
 <li class="toctree-l4"><a class="reference internal" href="tools/index#responsive-web-design-tester">Responsive Web Design Tester</a></li>
 <li class="toctree-l4"><a class="reference internal" href="tools/index#requirify">Requirify</a><ul>
@@ -2555,6 +2589,10 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#vscode">VSCode</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#vscode-flatpak">VSCode Flatpak</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tools/index#vscode-dev">vscode.dev</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tools/index#devcontainer-json">devcontainer.json</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tools/index#vscode-dev-containers">vscode Dev Containers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tools/index#a-vscode-setup-for-python-development">A vscode setup for Python development</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tools/index#vim">Vim</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="tools/index#neovim">neovim</a></li>
 <li class="toctree-l4"><a class="reference internal" href="tools/index#westurner-dotvim">westurner/dotvim</a></li>
@@ -2700,7 +2738,7 @@
 
       <!-- footer -->
       <footer role="contentinfo">
-          &copy; <a href="license">Copyright</a> WRD R&amp;D 2014 - 2024.
+          &copy; <a href="license">Copyright</a> WRD R&amp;D 2025.
 
       <br/>
       <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">

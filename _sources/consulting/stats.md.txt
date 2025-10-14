@@ -1,0 +1,132 @@
+
+# Statistics
+
+## Relations between variables
+Statistics describe relations between variables.
+
+
+### Relation
+- Binary relation
+  - A <relation> B
+
+### Correlation
+- linear regression ("least squares")
+  - r^2 statistic: https://en.wikipedia.org/wiki/Coefficient_of_determination
+- Pearson correlation
+- ANOVA
+- MANCOVA
+- CANOVA
+
+### Covariance
+
+### Dependence
+- statistical independence or dependence
+
+### Causal
+- causal charts
+
+### Orthogonal
+-  https://www.youtube.com/watch?v=s5lCl3aQ_A4
+
+
+## Types of variables
+- independent, dependent
+- stochastic
+- stationary // nonstationary
+- parameter
+- hyperparameter
+- categorical
+- continuous // discrete
+- constant
+- scalar
+
+## Classical data structures for variables
+- Two-state transistors
+- Computing Architecture
+  - Electronic RAM with or without ECC error :correction
+  - Buses: RAM bus, GPU bus
+  - CPU and L1, L2, [L3] caches
+- Software interfaces to computing architecture
+  - ASM; Assembly Language; Compilers and syscalls of operating systems
+  - `malloc()` and `free()`; C interfaces to ranges of userspace process memory
+
+## Data structures below the data structures for variables
+- Singly-linked list
+- Doubly-linked list
+  - Python: `list()`, `[]`, `[1,2,3,4]`
+
+## File structures
+- record
+- field
+- record delimiters; `\n`, `\0`,
+- field delimiters; `,`, `\t`,
+- fixed-width field datatypes
+  - SQL: `varchar(8)`, `varchar(255)`
+  - Python: `np.uint`, `np.float64`
+  - C: `uint64_t`, `char[8]`
+- variable-width field datatypes
+  - SQLite: `TEXT`
+  - Python: `str`, `int`
+
+## Data structures for variables
+- Primitive types
+  - Integer
+    - Python: `int()`,
+      `np.int32()`, `np.int64()`, `np.uint64()`,
+      `sy.Integer()`
+  - Float
+    - Python: `float()`,
+      `np.float32()`, `np.float64()`,
+      `np.float128()`, `sy.Float()`
+  - Character
+    - C: `char`, `char[8]`
+  - String (\*)
+    - SQL: `TEXT`
+    - Python: `str()`, `""`, `"1,2,3,4"`
+- Tuples
+  - Python: `tuple()`, `(,)`, `(1,)`, `(2,3,4)`
+- Lists
+  - Python: `list()`, `[]`, `[1,2,3,4]`
+- Sets
+  - Python: `set()`, `{}`, `{1,2,3,4}`
+- Arrays
+  - Python: `np.array([1,2,3,4], dtype=np.int64)`
+- Graphs
+  - Trees
+    - Binary trees
+    - Balanced trees
+      - B-trees, B*-trees ("b star tree"), B+ tree
+      - Red-Black trees
+        - cosmos/iavl
+      - AVL tree
+- Maps
+  - HashMap
+  - OrderedHashMap
+    - Python: `dict()`, `{}`, `{a: "one", b: "two"}`, `dict(a="one",b="two")`
+
+.
+
+- Matrices
+  - Python: `@` (`operator.matmul()`), `np.matrix()`, `sp.Matrix()`
+- Tensors
+  - Python: pytensor, tensorflow `tf.Tensor()`, pytorch
+    `torch.Tensor()`, JAX `jax.numpy.array()`
+
+
+## databases
+- Database indices are built upon tree data structures
+  - MySQL: InnoDB: `B- Tree` (B+ Tree), `R-Tree` (spatial)
+  - SQLite: 
+- Journal file
+  - Databases keep a journal file containing the committed queries
+  - A journal file is a replayable transaction log,
+    from which the database state can be reconstituted.
+- ACID; 
+  - Atomicity - transactional semantics
+  - Consistency - 
+  - Isolation - 
+  - Durability - can replay journal or similar after power failure
+- CAP is hypothesized limit; that we must pick 2 out of 3
+  - Consistency - whether the replicas are synchronized (and how they avoid blocking to synchronize)
+  - Availability
+  - Partition tolerance

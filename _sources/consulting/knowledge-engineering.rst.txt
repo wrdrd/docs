@@ -154,16 +154,18 @@ Escape Sequences
 
   * https://en.wikipedia.org/wiki/CDATA#Nesting
 
-* :ref:`XML`, :ref:`HTML` & escape sequences::
+* :ref:`XML`, :ref:`HTML` & escape sequences:
 
-  &
-  < > />
-  " 
-  <!-- -->
-  <![CDATA[ ]]>
+  ::
 
-  # HTML & Templates
-  <p id="{{attr}}">text</p>   # attr='here"s one'
+    &
+    < > />
+    " 
+    <!-- -->
+    <![CDATA[ ]]>
+
+    # HTML & Templates
+    <p id="{{attr}}">text</p>   # attr='here"s one'
 
 
 * :ref:`Python` escape sequences:
@@ -2188,7 +2190,7 @@ Apache Beam
 
 Apache Beam is an open source batch and streaming
 parallel data processing framework with support for
-Apache Apex, Apache Flink, `Apache Spark`_, and Google Cloud Dataflow. 
+Apache Apex, Apache Flink, Apache Spark, and Google Cloud Dataflow. 
 
 
 .. index:: Cassandra
@@ -3254,28 +3256,28 @@ Common Era and :ref:`Python` datetime calculations:
 
 .. code:: python
 
-    # Paleolithic Era (2.6m years ago -> 12000 years ago)
+    # Paleolithic Era (1.6m years ago -> 12000 years ago)
     # "2.6m years ago" = (2.6m - (2015)) BCE = 2597985 BCE = -2597985 CE
-
+    
     2597985 BCE == -2597985 CE
-
+    
     ### Python datetime w/ scientific notation string formatter
     >>> import datetime
     >>> year = datetime.datetime.now().year
     >>> '{:.6e}'.format(2.6e6 - year)
     '2.597985e+06'
-
+    
     ### Python datetime supports (dates >= 1 BCE).
     >>> datetime.date(1, 1, 1)
     datetime.date(1, 1, 1)
     >>> datetime.datetime(1, 1, 1)
     >>> datetime.datetime(1, 1, 1, 0, 0)
-
+      
     ### Python pypi:arrow supports (dates >= 1 BCE).
     >>> !pip install arrow
     >>> arrow.get(1, 1, 1)
     <Arrow [0001-01-01T00:00:00+00:00]>
-
+    
     ### astropy.time.Time supports (1 BCE <= dates >= 1 CE) and/or *Year Zero*
     ### https://astropy.readthedocs.io/en/latest/time/
     >>> !conda install astropy
@@ -5345,7 +5347,6 @@ the nodes and edges of the *Linked Open Data Cloud*
 * https://lod-cloud.net/#history
 
 .. figure:: https://lod-cloud.net/versions/2019-03-29/lod-cloud.png
-
    :target: https://lod-cloud.net/
 
 You can add datasets to the LODCloud:

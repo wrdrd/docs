@@ -3,8 +3,8 @@ wrdrd.tools package
 
 .. automodule:: wrdrd.tools
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 Submodules
 ----------
@@ -14,21 +14,21 @@ wrdrd.tools.crawl module
 
 .. automodule:: wrdrd.tools.crawl
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 wrdrd.tools.domain module
 -------------------------
 
 .. automodule:: wrdrd.tools.domain
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 wrdrd.tools.stripsinglehtml module
 ----------------------------------
 
 .. automodule:: wrdrd.tools.stripsinglehtml
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:

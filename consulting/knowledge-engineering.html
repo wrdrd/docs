@@ -41,7 +41,8 @@
 
 <link rel="stylesheet" href="../_static/css/font-awesome.min.css">
 
-<link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+<link rel="stylesheet" x-style="css/basicstrap-base.css" href="../_static/css/basicstrap-base.css" type="text/css" />
+<link rel="stylesheet" x-style="css/basicstrap.css" href="../_static/css/basicstrap.css" type="text/css" />
 <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
 <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
 <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
@@ -59,7 +60,6 @@
     <script type="text/javascript" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/sphinx_highlight.js"></script>
-    <script type="text/javascript" src="../_static/js/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="../_static/js/local.js"></script>
     <script type="text/javascript" src="../_static/js/bootstrap3.min.js"></script>
 <script type="text/javascript" src="../_static/js/jquery.cookie.min.js"></script>
@@ -463,7 +463,7 @@
       <!-- row -->
       <div class="row">
          
-<div class="col-md-3 hidden-xs" id="sidebar-wrapper">
+<div class="col-sm-3 hidden-xs" id="sidebar-wrapper">
   <div class="sidebar hidden-xs" role="navigation" aria-label="main navigation">
   <div>
     <h3><a href="../index">Table of Contents</a></h3>
@@ -826,7 +826,6 @@
     Enter search terms or a module, class or function name.
     </p>
 </div>
-
 <div class="widget navlinks">
   <h3>This Page</h3>
   <ul class="this-page-menu">
@@ -1018,15 +1017,16 @@ Used by a Downstream Component (‘Injection’)</p>
 </ul>
 </li>
 <li><p><a class="reference internal" href="#xml"><span class="std std-ref">XML</span></a>, <a class="reference internal" href="#html"><span class="std std-ref">HTML</span></a> &amp; escape sequences:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&amp;</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&amp;
+&lt; &gt; /&gt;
+&quot;
+&lt;!-- --&gt;
+&lt;![CDATA[ ]]&gt;
+
+# HTML &amp; Templates
+&lt;p id=&quot;{{attr}}&quot;&gt;text&lt;/p&gt;   # attr=&#39;here&quot;s one&#39;
 </pre></div>
 </div>
-<p>&lt; &gt; /&gt;
-”
-&lt;!– –&gt;
-&lt;![CDATA[ ]]&gt;</p>
-<p># HTML &amp; Templates
-&lt;p id=”{{attr}}”&gt;text&lt;/p&gt;   # attr=’here”s one’</p>
 </li>
 <li><p><a class="reference internal" href="../tools/index#python"><span class="std std-ref">Python</span></a> escape sequences:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span>   <span class="s2">&quot;Here&#39;s one&quot;</span>
@@ -1063,7 +1063,7 @@ Used by a Downstream Component (‘Injection’)</p>
 </ul>
 <ul>
 <li><p>Python:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">__future__</span><span class="w"> </span><span class="kn">import</span> <span class="n">print_function</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">128</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{0:&lt;3d}</span><span class="s2"> </span><span class="si">{1!r}</span><span class="s2"> </span><span class="si">{1:s}</span><span class="s2">.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="nb">chr</span><span class="p">(</span><span class="n">i</span><span class="p">)))</span>
 </pre></div>
@@ -1101,11 +1101,11 @@ Used by a Downstream Component (‘Injection’)</p>
 <span class="n">c3</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="se">\N{THEREFORE}</span><span class="s1">&#39;</span> <span class="c1"># howto/unicode#the-string-type glyph name</span>
 <span class="n">u1</span> <span class="o">=</span> <span class="n">unichr</span><span class="p">(</span><span class="mh">0x2234</span><span class="p">)</span>  <span class="c1"># Python 2+</span>
 <span class="n">u2</span> <span class="o">=</span>    <span class="nb">chr</span><span class="p">(</span><span class="mh">0x2234</span><span class="p">)</span>  <span class="c1"># Python 3.0+</span>
-<span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">chr</span>  <span class="c1"># Python 2 &amp; 3</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">builtins</span><span class="w"> </span><span class="kn">import</span> <span class="nb">chr</span>  <span class="c1"># Python 2 &amp; 3</span>
 <span class="n">u3</span> <span class="o">=</span>    <span class="nb">chr</span><span class="p">(</span><span class="mh">0x2234</span><span class="p">)</span>       <span class="c1"># Python 2 &amp; 3</span>
 <span class="n">u4</span> <span class="o">=</span>    <span class="nb">chr</span><span class="p">(</span><span class="mi">8756</span><span class="p">)</span>    <span class="c1"># int(hex(8756)[2:], 16) == 8756 (0x2234)</span>
 <span class="n">chars</span> <span class="o">=</span> <span class="p">[</span><span class="n">c1</span><span class="p">,</span> <span class="n">c2</span><span class="p">,</span> <span class="n">u1</span><span class="p">,</span> <span class="n">u2</span><span class="p">,</span> <span class="n">u3</span><span class="p">,</span> <span class="n">u4</span><span class="p">]</span>
-<span class="kn">from</span> <span class="nn">operator</span> <span class="kn">import</span> <span class="n">eq</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">operator</span><span class="w"> </span><span class="kn">import</span> <span class="n">eq</span>
 <span class="k">assert</span> <span class="nb">all</span><span class="p">((</span><span class="n">eq</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">chars</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">chars</span><span class="p">))</span>
 </pre></div>
 </div>
@@ -1121,7 +1121,7 @@ Used by a Downstream Component (‘Injection’)</p>
 <li><p><a class="reference external" href="https://pymotw.com/2/codecs/">https://pymotw.com/2/codecs/</a></p></li>
 <li><p>e.g. <a class="reference internal" href="#json"><span class="std std-ref">JSON</span></a> with <a class="reference internal" href="#utf-8"><span class="std std-ref">UTF-8</span></a>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Read an assumed UTF-8 encoded JSON file with Python 2+, 3+</span>
-<span class="kn">import</span> <span class="nn">codecs</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">codecs</span>
 <span class="k">with</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">&#39;filename.json&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file_</span><span class="p">:</span>
     <span class="n">text</span> <span class="o">=</span> <span class="n">file_</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
 </pre></div>
@@ -2460,7 +2460,7 @@ are all FUSE filesystems.</p></li>
 <p>Ceph is an <a class="reference internal" href="open-source#open-source"><span class="std std-ref">Open Source</span></a> network filesystem
 (a <a class="reference internal" href="#distributed-databases"><span class="std std-ref">distributed database</span></a>
 for files with attributes like owner, group, permissions)
-written in <a class="reference internal" href="../tools/index#id70"><span class="std std-ref">C++</span></a> and <a class="reference internal" href="../tools/index#perl"><span class="std std-ref">Perl</span></a>
+written in <a class="reference internal" href="../tools/index#id76"><span class="std std-ref">C++</span></a> and <a class="reference internal" href="../tools/index#perl"><span class="std std-ref">Perl</span></a>
 which runs over top of one or more on-disk filesystems.</p>
 <ul class="simple">
 <li><p>Ceph Block Device (<em>rbd</em>) – striping, caching, snapshots, copy-on-write,
@@ -2534,7 +2534,7 @@ WASB (Azure)</p></li>
 <li><p>There are HDFS <a class="reference internal" href="information-systems#term-Language-API"><span class="xref std std-term">language apis</span></a> for
 many languages:
 <a class="reference internal" href="../tools/index#java"><span class="std std-ref">Java</span></a>, <a class="reference internal" href="../tools/index#scala"><span class="std std-ref">Scala</span></a>, <a class="reference internal" href="../tools/index#go"><span class="std std-ref">Go</span></a>, <a class="reference internal" href="../tools/index#python"><span class="std std-ref">Python</span></a>,
-<a class="reference internal" href="../tools/index#ruby"><span class="std std-ref">Ruby</span></a>, <a class="reference internal" href="../tools/index#perl"><span class="std std-ref">Perl</span></a>, <a class="reference internal" href="../tools/index#haskell"><span class="std std-ref">Haskell</span></a>, <a class="reference internal" href="../tools/index#id70"><span class="std std-ref">C++</span></a></p></li>
+<a class="reference internal" href="../tools/index#ruby"><span class="std std-ref">Ruby</span></a>, <a class="reference internal" href="../tools/index#perl"><span class="std std-ref">Perl</span></a>, <a class="reference internal" href="../tools/index#haskell"><span class="std std-ref">Haskell</span></a>, <a class="reference internal" href="../tools/index#id76"><span class="std std-ref">C++</span></a></p></li>
 <li><p><a class="reference internal" href="../tools/index#mesos"><span class="std std-ref">Mesos</span></a> can manage distributed HDFS grids.</p></li>
 <li><p><a class="reference internal" href="#elasticsearch"><span class="std std-ref">ElasticSearch</span></a></p></li>
 <li><p>It’s possible to configure a <cite>Jenkins</cite> <a class="reference internal" href="software-development#continuous-integration"><span class="std std-ref">Continuous Integration</span></a> cluster
@@ -3031,7 +3031,7 @@ with <a class="reference internal" href="../tools/index#java"><span class="std s
 </div>
 <p>Apache Beam is an open source batch and streaming
 parallel data processing framework with support for
-Apache Apex, Apache Flink, <a href="#id374"><span class="problematic" id="id375">`Apache Spark`_</span></a>, and Google Cloud Dataflow.</p>
+Apache Apex, Apache Flink, Apache Spark, and Google Cloud Dataflow.</p>
 </section>
 <section id="cassandra">
 <span id="index-127"></span><span id="id95"></span><h5><a class="toc-backref" href="#id315" role="doc-backlink">Cassandra</a><a class="headerlink" href="#cassandra" title="Link to this heading">¶</a></h5>
@@ -3866,7 +3866,7 @@ written in <a class="reference internal" href="../tools/index#python"><span clas
 <div class="line">Docs: <a class="reference external" href="https://xapian.org/docs/">https://xapian.org/docs/</a></div>
 <div class="line">Docs: <a class="reference external" href="https://xapian.org/docs/apidoc/html/inherits.html">https://xapian.org/docs/apidoc/html/inherits.html</a></div>
 </div>
-<p>Xapian is an <a class="reference internal" href="open-source#open-source"><span class="std std-ref">Open Source</span></a> search library written in <a class="reference internal" href="../tools/index#id70"><span class="std std-ref">C++</span></a>
+<p>Xapian is an <a class="reference internal" href="open-source#open-source"><span class="std std-ref">Open Source</span></a> search library written in <a class="reference internal" href="../tools/index#id76"><span class="std std-ref">C++</span></a>
 with bindings for many languages.</p>
 </section>
 <section id="information-retrieval">
@@ -4027,13 +4027,13 @@ to <a class="reference internal" href="#astronomical-year-numbering"><span class
 </ul>
 </div>
 <p>Common Era and <a class="reference internal" href="../tools/index#python"><span class="std std-ref">Python</span></a> datetime calculations:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Paleolithic Era (2.6m years ago -&gt; 12000 years ago)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Paleolithic Era (1.6m years ago -&gt; 12000 years ago)</span>
 <span class="c1"># &quot;2.6m years ago&quot; = (2.6m - (2015)) BCE = 2597985 BCE = -2597985 CE</span>
 
 <span class="mi">2597985</span> <span class="n">BCE</span> <span class="o">==</span> <span class="o">-</span><span class="mi">2597985</span> <span class="n">CE</span>
 
 <span class="c1">### Python datetime w/ scientific notation string formatter</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">datetime</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span><span class="w"> </span><span class="nn">datetime</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">year</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">year</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;</span><span class="si">{:.6e}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mf">2.6e6</span> <span class="o">-</span> <span class="n">year</span><span class="p">)</span>
 <span class="s1">&#39;2.597985e+06&#39;</span>
@@ -4052,7 +4052,7 @@ to <a class="reference internal" href="#astronomical-year-numbering"><span class
 <span class="c1">### astropy.time.Time supports (1 BCE &lt;= dates &gt;= 1 CE) and/or *Year Zero*</span>
 <span class="c1">### https://astropy.readthedocs.io/en/latest/time/</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="err">!</span><span class="n">conda</span> <span class="n">install</span> <span class="n">astropy</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">astropy.time</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span><span class="w"> </span><span class="nn">astropy.time</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="c1"># TimeJulianEpoch (Julian date (jd) ~= Common Era (CE))</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">astropy</span><span class="o">.</span><span class="n">time</span><span class="o">.</span><span class="n">Time</span><span class="p">(</span><span class="o">-</span><span class="mf">2.6e6</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;jd&#39;</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="s1">&#39;utc&#39;</span><span class="p">)</span>
 <span class="o">&lt;</span><span class="n">Time</span> <span class="nb">object</span><span class="p">:</span> <span class="n">scale</span><span class="o">=</span><span class="s1">&#39;utc&#39;</span> <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;jd&#39;</span> <span class="n">value</span><span class="o">=-</span><span class="mf">2600000.0</span><span class="o">&gt;</span>
@@ -5914,7 +5914,8 @@ the nodes and edges of the <em>Linked Open Data Cloud</em></p>
 <li><p><a class="reference external" href="https://lod-cloud.net/#history">https://lod-cloud.net/#history</a></p></li>
 </ul>
 <figure class="align-default">
-<img alt="https://lod-cloud.net/versions/2019-03-29/lod-cloud.png" src="https://lod-cloud.net/versions/2019-03-29/lod-cloud.png" />
+<a class="reference external image-reference" href="https://lod-cloud.net/"><img alt="https://lod-cloud.net/versions/2019-03-29/lod-cloud.png" src="https://lod-cloud.net/versions/2019-03-29/lod-cloud.png" />
+</a>
 </figure>
 <p>You can add datasets to the LODCloud:
 <a class="reference external" href="https://lod-cloud.net/add-dataset">https://lod-cloud.net/add-dataset</a></p>
@@ -5954,7 +5955,7 @@ the nodes and edges of the <em>Linked Open Data Cloud</em></p>
 
       <!-- footer -->
       <footer role="contentinfo">
-          &copy; <a href="../license">Copyright</a> WRD R&amp;D 2014 - 2024.
+          &copy; <a href="../license">Copyright</a> WRD R&amp;D 2025.
 
       <br/>
       <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
